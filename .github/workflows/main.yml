@@ -32,6 +32,11 @@ jobs:
           enable-cache: true
           version: "0.9.7"
 
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 130.0.6723.58
+          
       - name: Synchronous Dependencies
         run: uv sync --locked --all-extras --dev
 
