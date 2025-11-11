@@ -271,7 +271,7 @@ def get_crossref_ieee_acm_records(searchText, createdTime):
 
 # 获取ArXiv、ACM、IEEE论文题目、作者、出版期刊/会议、URL、来源、摘要并存在到json文件。
 def getAllPapers(searchText, createdTime):
-    out_path = f"../papers/paper{createdTime}.json"
+    out_path = f"papers/paper{createdTime}.json"
     results = []
 
     def maybe_flush(force=False):
@@ -295,3 +295,4 @@ def getAllPapers(searchText, createdTime):
 # 脚本入口
 # =============================
 # getAllPapers(searchText)
+
