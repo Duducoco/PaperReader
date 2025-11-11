@@ -1,7 +1,7 @@
 name: PaperReader
 
 on: 
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   run-python:
@@ -16,5 +16,5 @@ jobs:
         with:
           python-version: '3.12'
 
-      -name: Run test.py
-       run: python test.py
+      - name: Run test.py
+        run: python test.py
