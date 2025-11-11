@@ -17,14 +17,14 @@ def getAbstractFromACM(URL):
     if platform.system().lower() == "windows":
         co = ChromiumOptions().set_paths(browser_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")
     else:
-        co = ChromiumOptions().set_paths(browser_path=r"/opt/google/chrome/google-chrome")
+        co = ChromiumOptions().set_paths(browser_path=r"/usr/bin/google-chrome")
 
     # 浏览器参数
     co.headless(True) # 设置无头模式
-    co.set_user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0") # 设置user-agent
+    co.set_user_agent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)") # 设置user-agent
     co.incognito(True) # 设置无痕模式
     # co.set_argument("--guest") # 设置访客模式
-    # co.set_argument("--no-sandbox") # 设置沙箱模式
+    co.set_argument("--no-sandbox") # 设置沙箱模式
     co.set_argument("--disable-gpu") # 设置禁用GPU
 
     browser = WebPage("d", chromium_options=co)
@@ -85,4 +85,5 @@ def getAbstractFromIEEE(URL):
 
 
 # getAbstractFromACM(URL)
+
 # getAbstractFromIEEE(URL)
