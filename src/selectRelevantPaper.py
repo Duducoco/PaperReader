@@ -43,7 +43,7 @@ def llm_is_relevant(title, abstract):
         "My research focuses on Electronic Design Automation (EDA) and Large Language Model (LLM)-assisted chip design.\n\n"
         "It includes code generation, static code analysis, lint violation detection and repair, coding standard violations, and security vulnerabilities.\n\n"
         "Please determine whether the following paper is related to or potentially useful for my research.\n\n"
-        "If the paper involves EDA, code generation, code analysis, program repair, code quality improvement, or automatic error detection, "
+        "If the paper involves EDA, or code generation, or code smell, or static code analysis, or code repair, or code quality improvement, or automatic error detection, "
         "please answer “Yes”. Otherwise, please answer “No”.\n\n"
         "Title: {title}\n\nAbstract: {abstract}"
     )
@@ -338,5 +338,6 @@ def select_error_message_email(ErrorMessage):
 # ========== 使用示例 ==========
 # Paperpath = "../papers/paper2025-11-08.json"
 # select_translate_and_email(Paperpath)
+
 
 
