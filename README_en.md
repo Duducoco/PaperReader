@@ -1,6 +1,6 @@
 # 📚 PaperReader
 
-> Automatically fetches the latest papers from **arXiv**, **IEEE Xplore**, and **ACM Digital Library** published on the previous day. Using an LLM-based intelligent filter, it identifies papers highly relevant to your research field and delivers them directly to your inbox — no need to manually monitor databases. Also supports local debugging via `uv`, enabling efficient academic tracking.
+> **Automatically fetches the latest papers from arXiv, IEEE Xplore, and ACM Digital Library published on the previous day. Using an LLM-based intelligent filter, it identifies papers highly relevant to your research field and delivers them directly to your inbox — no need to manually monitor databases. Also supports local debugging via `uv`, enabling efficient academic tracking!**
 
 ---
 
@@ -8,7 +8,7 @@
 
 - ⏰ **Scheduled Execution**: Automatically runs every day at **9:00 AM UTC** (Beijing Time 5:00 PM)  
 - 🔍 **Multi-Database Search**: Fetches the newest papers from arXiv, IEEE Xplore, and ACM Digital Library  
-- 🧠 **Intelligent Filtering**: Uses LLM to determine the paper’s relevance to your research direction  
+- 🧠 **Intelligent Filtering**: Uses LLM to determine the paper's relevance to your research direction  
 - 📧 **Email Delivery**: Sends the curated papers directly to your inbox  
 - 💻 **Local Execution**: Supports local debugging and manual runs via the `uv` CLI tool  
 
@@ -55,6 +55,8 @@ Add the following **required Secrets**:
 | `RECEIVER_EMAIL`  | Receiver email address |
 | `SMTP_SERVER`     | SMTP server address (default: `smtp.qq.com`) |
 | `SMTP_PORT`       | SMTP port (default: `465`) |
+| `BROAD_FIELD`     | Your broad research field |
+| `SPECIFIC_FIELD`  | Your specific research fields (comma-separated) |
 
 ---
 
@@ -87,6 +89,8 @@ $env:SENDER_PASS="authorization_code"
 $env:RECEIVER_EMAIL="xxx@xx.xx"
 $env:SMTP_SERVER="smtp.qq.com"
 $env:SMTP_PORT=465
+$env:BROAD_FIELD="your_broad_research_field"
+$env:SPECIFIC_FIELD="your_specific_research_fields"
 ```
 
 #### 🐧 macOS / Linux (Bash)
@@ -104,6 +108,8 @@ export SENDER_PASS="authorization_code"
 export RECEIVER_EMAIL="xxx@xx.xx"
 export SMTP_SERVER="smtp.qq.com"
 export SMTP_PORT=465
+export BROAD_FIELD="your_broad_research_field"
+export SPECIFIC_FIELD="your_specific_research_fields"
 ```
 
 ---
@@ -180,3 +186,5 @@ uv run src/main.py
 - This project is for **academic research only**; please follow the database usage policies  
 - All papers remain the copyright of their respective authors and publishers  
 - Use responsibly — avoid excessive querying that may burden database servers  
+
+---
