@@ -14,6 +14,7 @@ from getAbstract import getAbstractFromACM, getAbstractFromIEEE
 
 arXivCount = os.environ.get('ARXIV_COUNT', '5')
 crossrefCount = os.environ.get('CROSSREF_COUNT', '5')
+mailto_param = os.environ.get("RECEIVER_EMAIL", None)
 
 # 保存窗口大小
 chunk_size = 10
@@ -205,7 +206,7 @@ def get_crossref_ieee_acm_records(searchText, createdTime):
         "rows": crossrefCount,
         "select": "created,title,author,container-title,URL",
         "filter": f"prefix:10.1145,prefix:10.1109,from-created-date:{createdTime}",
-        "mailto": "1424057661@qq.com",
+        "mailto": mailto_param,
     }
 
     try:

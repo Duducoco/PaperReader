@@ -4,6 +4,7 @@ import os
 import json
 import html
 from datetime import date
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from setLLM import ChatModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -14,6 +15,7 @@ from email.mime.multipart import MIMEMultipart
 # ========== 可配置参数 ==========
 chunk_size = 10
 createdTime = date.today().strftime("%Y-%m-%d")
+LLM_MAX_WORKERS = int(os.environ.get('LLM_MAX_WORKERS', '4'))  # LLM 并行调用数
 
 # 邮件配置（请改为你自己的账号或使用环境变量）
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL')
@@ -101,42 +103,110 @@ def llm_translate_to_zh(text):
         print("翻译时出错：", e)
         return "None"
 
+
+def llm_translate_title_and_abstract(title, abstract):
+    """同时翻译标题和摘要，返回 (title_zh, abstract_zh)"""
+    if not title and not abstract:
+        return "None", "None"
+
+    system_template = "You are an experienced translator who translates English academic content into Chinese."
+    user_template = (
+        "Please translate the following paper title and abstract into Chinese.\n\n"
+        "Title: {title}\n\n"
+        "Abstract: {abstract}\n\n"
+        "Output format (use exactly this format):\n"
+        "标题：<translated title>\n"
+        "摘要：<translated abstract>"
+    )
+
+    prompt_template = ChatPromptTemplate.from_messages([
+        ("system", system_template),
+        ("user", user_template)
+    ])
+
+    output_parser = StrOutputParser()
+    chain = prompt_template | ChatModel | output_parser
+
+    try:
+        res = chain.invoke({"title": title or "None", "abstract": abstract or "None"})
+        res = (res or "").strip()
+
+        # 解析输出
+        title_zh = "None"
+        abstract_zh = "None"
+
+        if "标题：" in res and "摘要：" in res:
+            # 从"标题："开始截取，避免前面有其他文字
+            res = res[res.index("标题："):]
+            parts = res.split("摘要：", 1)
+            title_zh = parts[0].replace("标题：", "").strip()
+            abstract_zh = parts[1].strip() if len(parts) > 1 else "None"
+        else:
+            # 兜底：如果格式不对，尝试按行分割
+            lines = res.split("\n", 1)
+            title_zh = lines[0].strip()
+            abstract_zh = lines[1].strip() if len(lines) > 1 else "None"
+
+        return title_zh, abstract_zh
+    except Exception as e:
+        print("翻译时出错：", e)
+        return "None", "None"
+
 # ========== 主流程 ==========
 def select_translate_and_save(file_path):
-    """筛选相关论文并翻译标题和摘要"""
+    """筛选相关论文并翻译标题和摘要（LLM 相关性判断并行化）"""
     dir_name, base_name = os.path.split(file_path)
     out_path = f"papers/select_{base_name}"
-
 
     with open(file_path, 'r', encoding='utf-8') as f:
         papers = json.load(f)
 
-    yes_results = []
     total = len(papers)
+    print(f"开始并行判断 {total} 篇论文的相关性（并发数: {LLM_MAX_WORKERS}）...")
+
+    # 阶段1：并行判断所有论文的相关性
+    relevance_results = [None] * total  # 保持顺序
+
+    def check_relevance(idx, paper):
+        """单篇论文相关性检查任务"""
+        title = _safe_get(paper, 'title', 'No Title')
+        abstract = _safe_get(paper, 'abstract', 'No Abstract')
+        is_rel = llm_is_relevant(title, abstract, BROAD_FIELD, SPECIFIC_FIELD)
+        return idx, is_rel, title
+
+    with ThreadPoolExecutor(max_workers=LLM_MAX_WORKERS) as executor:
+        futures = {
+            executor.submit(check_relevance, idx, paper): idx
+            for idx, paper in enumerate(papers)
+        }
+        for future in as_completed(futures):
+            idx, is_rel, title = future.result()
+            relevance_results[idx] = is_rel
+            tag = "YES" if is_rel else "NO"
+            print(f"[{tag}] {idx + 1}/{total} | {title}")
+
+    # 阶段2：对相关论文进行翻译（串行，保持稳定输出）
+    yes_results = []
     yes_cnt = 0
 
-    for idx, paper in enumerate(papers, start=1):
-        title = _safe_get(paper, 'title', 'No Title')
-        abstract = _safe_get(paper, 'abstract', 'No Abstract')        
-
-        is_rel = llm_is_relevant(title, abstract, BROAD_FIELD, SPECIFIC_FIELD)
-        tag = "YES" if is_rel else "NO"
-
-        if is_rel:
+    for idx, paper in enumerate(papers):
+        if relevance_results[idx]:
             yes_cnt += 1
-            # 翻译标题和摘要
-            title_zh = llm_translate_to_zh(title)
-            abstract_zh = llm_translate_to_zh(abstract)
+            title = _safe_get(paper, 'title', 'No Title')
+            abstract = _safe_get(paper, 'abstract', 'No Abstract')
+
+            # 同时翻译标题和摘要（单次 LLM 调用）
+            title_zh, abstract_zh = llm_translate_title_and_abstract(title, abstract)
 
             paper_with_zh = dict(paper)
             paper_with_zh["title_zh"] = title_zh
             paper_with_zh["abstract_zh"] = abstract_zh
             yes_results.append(paper_with_zh)
 
-            if len(yes_results) % chunk_size == 0 or idx == total:
-                _checkpoint_write(out_path, yes_results)
+            print(f"[翻译] {yes_cnt} | {title}")
 
-        print(f"[{tag}] {idx}/{total} | {title}")
+            if len(yes_results) % chunk_size == 0:
+                _checkpoint_write(out_path, yes_results)
 
     _checkpoint_write(out_path, yes_results)
     print(f"筛选完成：共 {total} 篇；Yes = {yes_cnt} 篇；已保存到 {out_path}。")

@@ -1,0 +1,118 @@
+name: PaperReader
+displayName: 论文自动抓取与推送
+
+triggers:
+  # 定时触发：每天 UTC 9:00（北京时间 17:00）
+  schedule:
+    - cron: "0 0 9 * * ?"  # Gitee Go 使用 6 位 cron 表达式（秒 分 时 日 月 周）
+  # 手动触发
+  push:
+    branches:
+      include:
+        - main
+
+variables:
+  OPENAI_API_KEY:
+    value: ${{ secrets.OPENAI_API_KEY }}
+  OPENAI_API_BASE:
+    value: ${{ secrets.OPENAI_API_BASE }}
+  MODEL_PROVIDER:
+    value: ${{ secrets.MODEL_PROVIDER }}
+  MODEL:
+    value: ${{ secrets.MODEL }}
+  SEARCH_TEXT:
+    value: ${{ secrets.SEARCH_TEXT }}
+  ARXIV_COUNT:
+    value: ${{ secrets.ARXIV_COUNT }}
+  CROSSREF_COUNT:
+    value: ${{ secrets.CROSSREF_COUNT }}
+  SENDER_EMAIL:
+    value: ${{ secrets.SENDER_EMAIL }}
+  SENDER_PASS:
+    value: ${{ secrets.SENDER_PASS }}
+  RECEIVER_EMAIL:
+    value: ${{ secrets.RECEIVER_EMAIL }}
+  SMTP_SERVER:
+    value: ${{ secrets.SMTP_SERVER }}
+  SMTP_PORT:
+    value: ${{ secrets.SMTP_PORT }}
+  BROAD_FIELD:
+    value: ${{ secrets.BROAD_FIELD }}
+  SPECIFIC_FIELD:
+    value: ${{ secrets.SPECIFIC_FIELD }}
+
+stages:
+  - name: run-python
+    displayName: 运行论文抓取任务
+    strategy: naturally
+    trigger: auto
+    executor:
+      type: docker
+      image: python:3.12-slim
+    steps:
+      - step: checkout@1
+        name: checkout
+        displayName: 检出代码
+
+      - step: shell@1
+        name: install-dependencies
+        displayName: 安装系统依赖
+        script: |
+          apt-get update
+          apt-get install -y wget gnupg curl unzip
+          # 安装 Chrome
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+          apt-get update
+          apt-get install -y google-chrome-stable
+          # 安装 uv
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          export PATH="$HOME/.local/bin:$PATH"
+
+      - step: shell@1
+        name: setup-python
+        displayName: 安装 Python 依赖
+        script: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv sync --locked --all-extras --dev
+
+      - step: shell@1
+        name: prepare-directories
+        displayName: 创建输出目录
+        script: |
+          mkdir -p papers
+          mkdir -p runlog
+          echo "Directories ready: $(pwd)/papers"
+
+      - step: shell@1
+        name: run-main
+        displayName: 运行主程序
+        script: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run src/main.py
+        env:
+          OPENAI_API_KEY: ${{ variables.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ variables.OPENAI_API_BASE }}
+          MODEL_PROVIDER: ${{ variables.MODEL_PROVIDER }}
+          MODEL: ${{ variables.MODEL }}
+          SEARCH_TEXT: ${{ variables.SEARCH_TEXT }}
+          ARXIV_COUNT: ${{ variables.ARXIV_COUNT }}
+          CROSSREF_COUNT: ${{ variables.CROSSREF_COUNT }}
+          SENDER_EMAIL: ${{ variables.SENDER_EMAIL }}
+          SENDER_PASS: ${{ variables.SENDER_PASS }}
+          RECEIVER_EMAIL: ${{ variables.RECEIVER_EMAIL }}
+          SMTP_SERVER: ${{ variables.SMTP_SERVER }}
+          SMTP_PORT: ${{ variables.SMTP_PORT }}
+          BROAD_FIELD: ${{ variables.BROAD_FIELD }}
+          SPECIFIC_FIELD: ${{ variables.SPECIFIC_FIELD }}
+
+      - step: shell@1
+        name: commit-and-push
+        displayName: 提交并推送结果
+        script: |
+          git config --local user.email "gitee-go@gitee.com"
+          git config --local user.name "Gitee Go"
+          git add papers/ || true
+          git add runlog/ || true
+          git diff --staged --quiet || git commit -m "Add generated papers and logs from pipeline run"
+          git push origin HEAD:${{ gitee.ref_name }} || echo "Nothing to push"
