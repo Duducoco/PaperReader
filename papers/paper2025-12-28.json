@@ -1,0 +1,200 @@
+[
+  {
+    "date": "2025-12-26",
+    "title": "Bab_Sak Robotic Intubation System (BRIS): A Learning-Enabled Control Framework for Safe Fiberoptic Endotracheal Intubation",
+    "authors": "Saksham Gupta, Sarthak Mishra, Arshad Ayub, Kamran Farooque, Spandan Roy, Babita Gupta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21983v1",
+    "source": "arXiv",
+    "abstract": "Endotracheal intubation is a critical yet technically demanding procedure, with failure or improper tube placement leading to severe complications. Existing robotic and teleoperated intubation systems primarily focus on airway navigation and do not provide integrated control of endotracheal tube advancement or objective verification of tube depth relative to the carina. This paper presents the Robotic Intubation System (BRIS), a compact, human-in-the-loop platform designed to assist fiberoptic-guided intubation while enabling real-time, objective depth awareness. BRIS integrates a four-way steerable fiberoptic bronchoscope, an independent endotracheal tube advancement mechanism, and a camera-augmented mouthpiece compatible with standard clinical workflows. A learning-enabled closed-loop control framework leverages real-time shape sensing to map joystick inputs to distal bronchoscope tip motion in Cartesian space, providing stable and intuitive teleoperation under tendon nonlinearities and airway contact. Monocular endoscopic depth estimation is used to classify airway regions and provide interpretable, anatomy-aware guidance for safe tube positioning relative to the carina. The system is validated on high-fidelity airway mannequins under standard and difficult airway configurations, demonstrating reliable navigation and controlled tube placement. These results highlight BRIS as a step toward safer, more consistent, and clinically compatible robotic airway management."
+  },
+  {
+    "date": "2025-12-26",
+    "title": "Accelerate Speculative Decoding with Sparse Computation in Verification",
+    "authors": "Jikai Wang, Jianchao Tan, Yuxuan Hu, Jiayu Qin, Yerui Sun, Yuchen Xie, Xunliang Cai, Juntao Li, Min Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21911v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates autoregressive language model inference by verifying multiple draft tokens in parallel. However, the verification stage often becomes the dominant computational bottleneck, especially for long-context inputs and mixture-of-experts (MoE) models. Existing sparsification methods are designed primarily for standard token-by-token autoregressive decoding to remove substantial computational redundancy in LLMs. This work systematically adopts different sparse methods on the verification stage of the speculative decoding and identifies structured redundancy across multiple dimensions. Based on these observations, we propose a sparse verification framework that jointly sparsifies attention, FFN, and MoE components during the verification stage to reduce the dominant computation cost. The framework further incorporates an inter-draft token and inter-layer retrieval reuse strategy to further reduce redundant computation without introducing additional training. Extensive experiments across summarization, question answering, and mathematical reasoning datasets demonstrate that the proposed methods achieve favorable efficiency-accuracy trade-offs, while maintaining stable acceptance length."
+  },
+  {
+    "date": "2025-12-26",
+    "title": "Securing Cross-Domain Internet of Drones: An RFF-PUF Allied Authenticated Key Exchange Protocol With Over-the-Air Enrollment",
+    "authors": "Xuanyu Chen, Yue Zheng, Junqing Zhang, Guanxiong Shen, Chip-Hong Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21827v1",
+    "source": "arXiv",
+    "abstract": "The Internet of Drones (IoD) is an emerging and crucial paradigm enabling advanced applications that require seamless, secure communication across heterogeneous and untrusted domains. In such environments, access control and the transmission of sensitive data pose significant security challenges for IoD systems, necessitating the design of lightweight mutual authentication and key exchange protocols. Existing solutions are often hampered by high computation overhead, reliance on third parties, the requirement for secret storage in resource-constrained drones, and the need for a strictly controlled enrollment environment. These limitations make them impractical for dynamic cross-domain deployment. To address these limitations, we propose a lightweight mutual authentication mechanism that integrates Radio Frequency Fingerprint (RFF) and Physical Unclonable Function (PUF) technologies for secure drone-to-drone (D2D) and drone-to-ground station server (D2G) communication. RFF-based device identification is used to achieve over-the-air (OTA) enrollment, while the PUF serves as the root of trust for establishing mutual authentication among communication parties. Additionally, the on-the-fly key generation capability of the PUF is co-designed with One-Time-Pad (OTP) encryption to realize ephemeral keying and eliminate the need for storing secrets within drones. Both informal security analysis and ProVerif-based formal security verification comprehensively demonstrate the resilience of our protocol against common security attacks. The proposed protocol also outperforms existing IoD authentication schemes in terms of security features, as well as computation, communication, and storage overhead."
+  },
+  {
+    "date": "2025-12-25",
+    "title": "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+    "authors": "Jing Han, Binwei Yan, Tianyu Guo, Zheyuan Bai, Mengyu Zheng, Hanting Chen, Ying Nie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21708v1",
+    "source": "arXiv",
+    "abstract": "Despite recent advancements of fine-tuning large language models (LLMs) to facilitate agent tasks, parameter-efficient fine-tuning (PEFT) methodologies for agent remain largely unexplored. In this paper, we introduce three key strategies for PEFT in agent tasks: 1) Inspired by the increasingly dominant Reason+Action paradigm, we first decompose the capabilities necessary for the agent tasks into three distinct roles: reasoner, executor, and summarizer. The reasoner is responsible for comprehending the user's query and determining the next role based on the execution trajectory. The executor is tasked with identifying the appropriate functions and parameters to invoke. The summarizer conveys the distilled information from conversations back to the user. 2) We then propose the Mixture-of-Roles (MoR) framework, which comprises three specialized Low-Rank Adaptation (LoRA) groups, each designated to fulfill a distinct role. By focusing on their respective specialized capabilities and engaging in collaborative interactions, these LoRAs collectively accomplish the agent task. 3) To effectively fine-tune the framework, we develop a multi-role data generation pipeline based on publicly available datasets, incorporating role-specific content completion and reliability verification. We conduct extensive experiments and thorough ablation studies on various LLMs and agent benchmarks, demonstrating the effectiveness of the proposed method. This project is publicly available at https://mor-agent.github.io."
+  },
+  {
+    "date": "2025-12-25",
+    "title": "Regularity analysis and verification of Coons volume mappings",
+    "authors": "Yingying Yu, Yashu Liu, Jiaxuan Li, Xin Li, Ye Ji, Chungang Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21656v1",
+    "source": "arXiv",
+    "abstract": "The Coons volume provides a classical approach for constructing three-dimensional parametric mappings via boundary surface interpolation and is widely employed in volumetric mesh generation, computer-aided geometric design, and isogeometric analysis. However, due to curvature variations and continuity limitations of the boundary surfaces, the Jacobian determinant of a Coons volume may locally vanish or become negative, resulting in a non-regular mapping. This undermines mesh quality and compromises the stability of subsequent numerical computations. Ensuring the regularity of Coons volumes is therefore critical for robust parametric modeling. This paper develops a systematic framework for analyzing and verifying the regularity of Coons volumes. We first derive a general sufficient condition applicable to arbitrary boundary parameterizations, independent of specific analytical forms. For Bézier-form Coons volumes, we introduce a criterion based on the Bézier coefficients of the Jacobian determinant, transforming the verification problem into checking the positivity of control coefficients. Furthermore, we construct a necessary condition by applying a subdivision strategy combined with the Bézier blossoming technique, ensuring that regularity is preserved in all subdomains. By integrating these conditions, we design an efficient verification algorithm whose correctness and computational performance are validated through numerical experiments. We observe that the regularity of a Coons volume is closely related to the geometric similarity of its opposite boundary surfaces. Moreover, through Bézier extraction, the algorithm is extended to multi-patch B-spline volumes of arbitrary topology. Numerical tests show that the method completes regularity verification in milliseconds, enabling real-time application."
+  },
+  {
+    "date": "2025-12-25",
+    "title": "Quantitative Verification of Omega-regular Properties in Probabilistic Programming",
+    "authors": "Peixin Wang, Jianhao Bai, Min Zhang, C. -H. Luke Ong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21596v1",
+    "source": "arXiv",
+    "abstract": "Probabilistic programming provides a high-level framework for specifying statistical models as executable programs with built-in randomness and conditioning. Existing inference techniques, however, typically compute posterior distributions over program states at fixed time points, most often at termination, thereby failing to capture the temporal evolution of probabilistic behaviors. We introduce temporal posterior inference (TPI), a new framework that unifies probabilistic programming with temporal logic by computing posterior distributions over execution traces that satisfy omega-regular specifications, conditioned on possibly temporal observations. To obtain rigorous quantitative guarantees, we develop a new method for computing upper and lower bounds on the satisfaction probabilities of omega-regular properties. Our approach decomposes Rabin acceptance conditions into persistence and recurrence components and constructs stochastic barrier certificates that soundly bound each component. We implement our approach in a prototype tool, TPInfer, and evaluate it on a suite of benchmarks, demonstrating effective and efficient inference over rich temporal properties in probabilistic models."
+  },
+  {
+    "date": "2025-12-25",
+    "title": "Broadband tunable microwave photonic radar for simultaneous detection of human respiration, heartbeat, and speech with deep learning-based speech recognition",
+    "authors": "Lei Gao, Dingding Liang, Jiawei Gao, Chulun Lin, Zhiqiang Huang, Taixia Shi, Yang Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21566v1",
+    "source": "arXiv",
+    "abstract": "Multimodal vital sign monitoring and speech detection hold significant importance in medical health, public safety, and other fields. This study proposes a broadband tunable microwave photonic radar system that can simultaneously monitor respiration, heartbeat, and speech. The system works by generating broadband radar signals to detect subtle skin displacements caused by these physiological activities. It then utilizes phase variations in radar echo signals to extract and reconstruct the corresponding physiological signals. In order to enhance the processing capability for speech signals, a convolutional neural network with a dual-channel feature fusion model is incorporated, enabling high-precision speech recognition. In addition, the system's frequency-tunable characteristic allows it to flexibly switch frequency bands to adapt to different working environments, greatly improving its practicality and environmental adaptability. In concept-verification experiments, speech signals were reconstructed and recognized in the Ku, K, and Ka bands, achieving recognition accuracies of 97.20%, 98.07%, and 97.43%, respectively. The system's capability to detect multimodal vital signs was also thoroughly validated using a respiratory and heartbeat simulator. During a 20-second monitoring period, while accurately reconstructing speech, the maximum average error counts for respiratory and heartbeat monitoring were 0.39 and 0.87, respectively, proving its reliability and effectiveness in multimodal vital sign monitoring."
+  },
+  {
+    "date": "2025-12-25",
+    "title": "Legacy Lending Relationships and Credit Rationing: Evidence from the Paycheck Protection Program",
+    "authors": "Chunyu Qu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21553v1",
+    "source": "arXiv",
+    "abstract": "This article examines how legacy lending relationships shape the allocation of emergency credit under severe information frictions. Using a novel dataset linking Small Business Administration (SBA) loan records with Dun and Bradstreet microdata for over 26 million U.S. firms, I investigate whether prior participation in the SBA 7(a) program acted as a gateway to the Paycheck Protection Program (PPP). Employing entropy balancing to construct a strictly comparable counterfactual group, I document a distinct dynamic evolution in credit rationing. In the program's initial \"panic phase\" in April 2020, banks relied heavily on legacy ties as a screening technology: firms with prior 7(a) relationships were approximately 29 percentage points more likely to receive funding than observationally identical non-7(a) firms. By June 2021, however, this insider advantage had largely vanished, suggesting that policy adjustments and extended timelines eventually mitigated the initial intermediation frictions. These findings highlight a fundamental trade-off between speed and equity in crisis response. While leveraging existing credit rails accelerates deployment, it systematically excludes informationally opaque borrowers. I discuss policy implications for designing future digital infrastructure to decouple verification from historical lending relationships."
+  },
+  {
+    "date": "2025-12-25",
+    "title": "Fixed-Threshold Evaluation of a Hybrid CNN-ViT for AI-Generated Image Detection Across Photos and Art",
+    "authors": "Md Ashik Khan, Arafat Alam Jion",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21512v1",
+    "source": "arXiv",
+    "abstract": "AI image generators create both photorealistic images and stylized art, necessitating robust detectors that maintain performance under common post-processing transformations (JPEG compression, blur, downscaling). Existing methods optimize single metrics without addressing deployment-critical factors such as operating point selection and fixed-threshold robustness. This work addresses misleading robustness estimates by introducing a fixed-threshold evaluation protocol that holds decision thresholds, selected once on clean validation data, fixed across all post-processing transformations. Traditional methods retune thresholds per condition, artificially inflating robustness estimates and masking deployment failures. We report deployment-relevant performance at three operating points (Low-FPR, ROC-optimal, Best-F1) under systematic degradation testing using a lightweight CNN-ViT hybrid with gated fusion and optional frequency enhancement. Our evaluation exposes a statistically validated forensic-semantic spectrum: frequency-aided CNNs excel on pristine photos but collapse under compression (93.33% to 61.49%), whereas ViTs degrade minimally (92.86% to 88.36%) through robust semantic pattern recognition. Multi-seed experiments demonstrate that all architectures achieve 15% higher AUROC on artistic content (0.901-0.907) versus photorealistic images (0.747-0.759), confirming that semantic patterns provide fundamentally more reliable detection cues than forensic artifacts. Our hybrid approach achieves balanced cross-domain performance: 91.4% accuracy on tiny-genimage photos, 89.7% on AiArtData art/graphics, and 98.3% (competitive) on CIFAKE. Fixed-threshold evaluation eliminates retuning inflation, reveals genuine robustness gaps, and yields actionable deployment guidance: prefer CNNs for clean photo verification, ViTs for compressed content, and hybrids for art/graphics screening."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "EVE: A Generator-Verifier System for Generative Policies",
+    "authors": "Yusuf Ali, Gryphon Patlin, Karthik Kothuri, Muhammad Zubair Irshad, Wuwei Liang, Zsolt Kira",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21430v1",
+    "source": "arXiv",
+    "abstract": "Visuomotor policies based on generative architectures such as diffusion and flow-based matching have shown strong performance but degrade under distribution shifts, demonstrating limited recovery capabilities without costly finetuning. In the language modeling domain, test-time compute scaling has revolutionized reasoning capabilities of modern LLMs by leveraging additional inference-time compute for candidate solution refinement. These methods typically leverage foundation models as verification modules in a zero-shot manner to synthesize improved candidate solutions. In this work, we hypothesize that generative policies can similarly benefit from additional inference-time compute that employs zero-shot VLM-based verifiers. A systematic analysis of improving policy performance through the generation-verification framework remains relatively underexplored in the current literature. To this end, we introduce EVE - a modular, generator-verifier interaction framework - that boosts the performance of pretrained generative policies at test time, with no additional training. EVE wraps a frozen base policy with multiple zero-shot, VLM-based verifier agents. Each verifier proposes action refinements to the base policy candidate actions, while an action incorporator fuses the aggregated verifier output into the base policy action prediction to produce the final executed action. We study design choices for generator-verifier information interfacing across a system of verifiers with distinct capabilities. Across a diverse suite of manipulation tasks, EVE consistently improves task success rates without any additional policy training. Through extensive ablations, we isolate the contribution of verifier capabilities and action incorporator strategies, offering practical guidelines to build scalable, modular generator-verifier systems for embodied control."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "A Note on Publicly Verifiable Quantum Money with Low Quantum Computational Resources",
+    "authors": "Fabrizio Genovese, Lev Stambler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21304v1",
+    "source": "arXiv",
+    "abstract": "In this work we present a publicly verifiable quantum money protocol which assumes close to no quantum computational capabilities. We rely on one-time memories which in turn can be built from quantum conjugate coding and hardware-based assumptions. Specifically, our scheme allows for a limited number of verifications and also allows for quantum tokens for digital signatures. Double spending is prevented by the no-cloning principle of conjugate coding states. An implementation of the concepts presented in this work can be found at https://github.com/neverlocal/otm_billz."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "Declarative distributed broadcast using three-valued modal logic and semitopologies",
+    "authors": "Murdoch J. Gabbay",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21137v1",
+    "source": "arXiv",
+    "abstract": "We demonstrate how to formally specify distributed algorithms as declarative axiomatic theories in a modal logic. We exhibit the method on a simple voting protocol, a simple broadcast protocol, and a simple agreement protocol. The methods scale well and have been used to find errors in a proposed industrial protocol. The key novelty is to use modal logic to capture a declarative, high-level representation of essential system properties -- the logical essence of the algorithm -- while abstracting away from transitions of an abstract machine that implements it. It is like the difference between specifying code in a functional or logic programming language, versus specifying code in an imperative one. A logical axiomatisation in the style we propose provides a precise, compact, human-readable specification that abstractly captures essential system properties, while eliding low-level implementation details; it is more precise than a natural language description, yet more abstract than source code or a logical specification thereof. This creates new opportunities for reasoning about correctness, resilience, and failure, and could serve as a foundation for human- and machine verification efforts, design improvements, and even alternative protocol implementations."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "Verification of E-Voting Algorithms in Dafny",
+    "authors": "Robert Büttner, Fabian Franz Dießl, Patrick Janoschek, Ivana Kostadinovic, Henrik Oback, Kilian Voß, Franziska Alber, Roland Herrmann, Sibylle Möhle, Philipp Rümmer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21084v1",
+    "source": "arXiv",
+    "abstract": "Electronic voting procedures are implementations of electoral systems, making it possible to conduct polls or elections with the help of computers. This paper reports on the development of an open-source library of electronic voting procedures, which currently covers Score Voting, Instant-Runoff Voting, Borda Count, and Single Transferable Vote. The four procedures, of which two are discussed in detail, have been implemented in Dafny, formally verifying the consistency with functional specifications and key correctness properties. Using code extraction from the Dafny implementation, the library has been used to set up a voting web service."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "AInsteinBench: Benchmarking Coding Agents on Scientific Repositories",
+    "authors": "Titouan Duston, Shuo Xin, Yang Sun, Daoguang Zan, Aoyan Li, Shulin Xin, Kai Shen, Yixiao Chen, Qiming Sun, Ge Zhang, Jiashuo Liu, Huan Zhou, Jingkai Liu, Zhichen Pu, Yuanheng Wang, Bo-Xuan Ge, Xin Tong, Fei Ye, Zhi-Chao Zhao, Wen-Biao Han, Zhoujian Cao, Yueran Zhao, Weiluo Ren, Qingshen Long, Yuxiao Liu, Anni Huang, Yidi Du, Yuanyuan Rong, Jiahao Peng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.21373v1",
+    "source": "arXiv",
+    "abstract": "We introduce AInsteinBench, a large-scale benchmark for evaluating whether large language model (LLM) agents can operate as scientific computing development agents within real research software ecosystems. Unlike existing scientific reasoning benchmarks which focus on conceptual knowledge, or software engineering benchmarks that emphasize generic feature implementation and issue resolving, AInsteinBench evaluates models in end-to-end scientific development settings grounded in production-grade scientific repositories. The benchmark consists of tasks derived from maintainer-authored pull requests across six widely used scientific codebases, spanning quantum chemistry, quantum computing, molecular dynamics, numerical relativity, fluid dynamics, and cheminformatics. All benchmark tasks are carefully curated through multi-stage filtering and expert review to ensure scientific challenge, adequate test coverage, and well-calibrated difficulty. By leveraging evaluation in executable environments, scientifically meaningful failure modes, and test-driven verification, AInsteinBench measures a model's ability to move beyond surface-level code generation toward the core competencies required for computational scientific research."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "AegisAgent: An Autonomous Defense Agent Against Prompt Injection Attacks in LLM-HARs",
+    "authors": "Yihan Wang, Huanqi Yang, Shantanu Pal, Weitao Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.20986v1",
+    "source": "arXiv",
+    "abstract": "The integration of Large Language Models (LLMs) into wearable sensing is creating a new class of mobile applications capable of nuanced human activity understanding. However, the reliability of these systems is critically undermined by their vulnerability to prompt injection attacks, where attackers deliberately input deceptive instructions into LLMs. Traditional defenses, based on static filters and rigid rules, are insufficient to address the semantic complexity of these new attacks. We argue that a paradigm shift is needed -- from passive filtering to active protection and autonomous reasoning. We introduce AegisAgent, an autonomous agent system designed to ensure the security of LLM-driven HAR systems. Instead of merely blocking threats, AegisAgent functions as a cognitive guardian. It autonomously perceives potential semantic inconsistencies, reasons about the user's true intent by consulting a dynamic memory of past interactions, and acts by generating and executing a multi-step verification and repair plan. We implement AegisAgent as a lightweight, full-stack prototype and conduct a systematic evaluation on 15 common attacks with five state-of-the-art LLM-based HAR systems on three public datasets. Results show it reduces attack success rate by 30\\% on average while incurring only 78.6 ms of latency overhead on a GPU workstation. Our work makes the first step towards building secure and trustworthy LLM-driven HAR systems."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "A Blockchain-Monitored Agentic AI Architecture for Trusted Perception-Reasoning-Action Pipelines",
+    "authors": "Salman Jan, Hassan Ali Razzaqi, Ali Akarma, Mohammad Riyaz Belgaum",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.20985v1",
+    "source": "arXiv",
+    "abstract": "The application of agentic AI systems in autonomous decision-making is growing in the areas of healthcare, smart cities, digital forensics, and supply chain management. Even though these systems are flexible and offer real-time reasoning, they also raise concerns of trust and oversight, and integrity of the information and activities upon which they are founded. The paper suggests a single architecture model comprising of LangChain-based multi-agent system with a permissioned blockchain to guarantee constant monitoring, policy enforcement, and immutable auditability of agentic action. The framework relates the perception conceptualization-action cycle to a blockchain layer of governance that verifies the inputs, evaluates recommended actions, and documents the outcomes of the execution. A Hyperledger Fabric-based system, action executors MCP-integrated, and LangChain agent are introduced and experiments of smart inventory management, traffic-signal control, and healthcare monitoring are done. The results suggest that blockchain-security verification is efficient in preventing unauthorized practices, offers traceability throughout the whole decision-making process, and maintains operational latency within reasonable ranges. The suggested framework provides a universal system of implementing high-impact agentic AI applications that are autonomous yet responsible."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "DAO-Agent: Zero Knowledge-Verified Incentives for Decentralized Multi-Agent Coordination",
+    "authors": "Yihan Xia, Taotao Wang, Wenxin Xu, Shengli Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.20973v1",
+    "source": "arXiv",
+    "abstract": "Autonomous Large Language Model (LLM)-based multi-agent systems have emerged as a promising paradigm for facilitating cross-application and cross-organization collaborations. These autonomous agents often operate in trustless environments, where centralized coordination faces significant challenges, such as the inability to ensure transparent contribution measurement and equitable incentive distribution. While blockchain is frequently proposed as a decentralized coordination platform, it inherently introduces high on-chain computation costs and risks exposing sensitive execution information of the agents. Consequently, the core challenge lies in enabling auditable task execution and fair incentive distribution for autonomous LLM agents in trustless environments, while simultaneously preserving their strategic privacy and minimizing on-chain costs. To address this challenge, we propose DAO-Agent, a novel framework that integrates three key technical innovations: (1) an on-chain decentralized autonomous organization (DAO) governance mechanism for transparent coordination and immutable logging; (2) a ZKP mechanism approach that enables Shapley-based contribution measurement off-chain, and (3) a hybrid on-chain/off-chain architecture that verifies ZKP-validated contribution measurements on-chain with minimal computational overhead. We implement DAO-Agent and conduct end-to-end experiments using a crypto trading task as a case study. Experimental results demonstrate that DAO-Agent achieves up to 99.9% reduction in verification gas costs compared to naive on-chain alternatives, with constant-time verification complexity that remains stable as coalition size increases, thereby establishing a scalable foundation for agent coordination in decentralized environments."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "Information-Backed Currency (IBC): Designing a Resilient, Transparent, and Information-Centric Monetary Ecosystem",
+    "authors": "Lalit Kumar Shukla",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.20961v1",
+    "source": "arXiv",
+    "abstract": "The accelerating digitization of economic activity has made information a dominant driver of market expectations, coordination, and systemic risk. Yet contemporary monetary systems remain anchored in architectures designed for material scarcity, institutional authority, or cryptographic constraint, leaving them increasingly misaligned with information-driven economies. This conceptual paper proposes Information-Backed Currency (IBC) as a monetary framework in which verified, high-integrity information functions as the primary source of value creation and monetary stability. Drawing on insights from econophysics, information theory, and cognitive economics, the paper advances the proposition that economic value emerges when information measurably reduces uncertainty within complex systems. Building on this premise, the study develops an architectural model in which currency issuance is linked to quantified entropy reduction achieved through multi-path information verification, reproducibility assessment, and contextual validation. An ethical governance layer, termed the Dharma Protocol, is introduced to ensure that only socially stabilizing, non-manipulative information qualifies as currency-backing input. The proposed IBC architecture comprises four interdependent layers: information ingestion, verification and validation, ethical oversight, and monetization through a Verification Value Unit tied to uncertainty reduction. While the framework is intentionally conceptual and non-empirical, it offers a coherent blueprint for re-imagining monetary governance in an era characterized by information abundance, cognitive constraints, and systemic fragility."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "Reasoning-Driven Amodal Completion: Collaborative Agents and Perceptual Evaluation",
+    "authors": "Hongxing Fan, Shuyu Zhao, Jiayang Ao, Lu Sheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.20936v1",
+    "source": "arXiv",
+    "abstract": "Amodal completion, the task of inferring invisible object parts, faces significant challenges in maintaining semantic consistency and structural integrity. Prior progressive approaches are inherently limited by inference instability and error accumulation. To tackle these limitations, we present a Collaborative Multi-Agent Reasoning Framework that explicitly decouples Semantic Planning from Visual Synthesis. By employing specialized agents for upfront reasoning, our method generates a structured, explicit plan before pixel generation, enabling visually and semantically coherent single-pass synthesis. We integrate this framework with two critical mechanisms: (1) a self-correcting Verification Agent that employs Chain-of-Thought reasoning to rectify visible region segmentation and identify residual occluders strictly within the Semantic Planning phase, and (2) a Diverse Hypothesis Generator that addresses the ambiguity of invisible regions by offering diverse, plausible semantic interpretations, surpassing the limited pixel-level variations of standard random seed sampling. Furthermore, addressing the limitations of traditional metrics in assessing inferred invisible content, we introduce the MAC-Score (MLLM Amodal Completion Score), a novel human-aligned evaluation metric. Validated against human judgment and ground truth, these metrics establish a robust standard for assessing structural completeness and semantic consistency with visible context. Extensive experiments demonstrate that our framework significantly outperforms state-of-the-art methods across multiple datasets. Our project is available at: https://fanhongxing.github.io/remac-page."
+  },
+  {
+    "date": "2025-12-24",
+    "title": "Robustness Certificates for Neural Networks against Adversarial Attacks",
+    "authors": "Sara Taheri, Mahalakshmi Sabanayagam, Debarghya Ghoshdastidar, Majid Zamani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.20865v1",
+    "source": "arXiv",
+    "abstract": "The increasing use of machine learning in safety-critical domains amplifies the risk of adversarial threats, especially data poisoning attacks that corrupt training data to degrade performance or induce unsafe behavior. Most existing defenses lack formal guarantees or rely on restrictive assumptions about the model class, attack type, extent of poisoning, or point-wise certification, limiting their practical reliability. This paper introduces a principled formal robustness certification framework that models gradient-based training as a discrete-time dynamical system (dt-DS) and formulates poisoning robustness as a formal safety verification problem. By adapting the concept of barrier certificates (BCs) from control theory, we introduce sufficient conditions to certify a robust radius ensuring that the terminal model remains safe under worst-case ${\\ell}_p$-norm based poisoning. To make this practical, we parameterize BCs as neural networks trained on finite sets of poisoned trajectories. We further derive probably approximately correct (PAC) bounds by solving a scenario convex program (SCP), which yields a confidence lower bound on the certified robustness radius generalizing beyond the training set. Importantly, our framework also extends to certification against test-time attacks, making it the first unified framework to provide formal guarantees in both training and test-time attack settings. Experiments on MNIST, SVHN, and CIFAR-10 show that our approach certifies non-trivial perturbation budgets while being model-agnostic and requiring no prior knowledge of the attack or contamination level."
+  },
+  {
+    "date": "2025-12-29",
+    "title": "LLM-Enhanced Multi-Channel Recommendation with Adaptive Ensemble Ranking",
+    "authors": "Aijia Sun",
+    "publish": "Proceedings of the 4th International Conference on Artificial Intelligence and Intelligent Information Processing",
+    "url": "https://doi.org/10.1145/3778534.3778591",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2025-12-29",
+    "title": "Using LLM to Design Reward Function for Bipedal Walker-v3",
+    "authors": "Shuangyi Dong",
+    "publish": "Proceedings of the 4th International Conference on Artificial Intelligence and Intelligent Information Processing",
+    "url": "https://doi.org/10.1145/3778534.3778593",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
