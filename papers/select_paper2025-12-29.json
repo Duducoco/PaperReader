@@ -1,0 +1,57 @@
+[
+  {
+    "date": "2025-12-29",
+    "title": "The Dawn of Agentic EDA: A Survey of Autonomous Digital Chip Design",
+    "authors": "Zelin Zang, Yuhang Song, Bingo Wing-Kuen Ling, Aili Wang, Fuji Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.23189v1",
+    "source": "arXiv",
+    "abstract": "This survey provides a comprehensive overview of the integration of Generative AI and Agentic AI within the field of Digital Electronic Design Automation (EDA). The paper first reviews the paradigmatic evolution from traditional Computer-Aided Design (CAD) to AI-assisted EDA (AI4EDA), and finally to the emerging AI-Native and Agentic design paradigms. We detail the application of these paradigms across the digital chip design flow, including the construction of agentic cognitive architectures based on multimodal foundation models, frontend RTL code generation and intelligent verification, and backend physical design featuring algorithmic innovations and tool orchestration. We validate these methodologies through integrated case studies, demonstrating practical viability from microarchitecture definition to GDSII. Special emphasis is placed on the potential for cross-stage feedback loops where agents utilize backend PPA metrics to autonomously refine frontend logic. Furthermore, this survey delves into the dual-faceted impact on security, covering novel adversarial risks, automated vulnerability repair, and privacy-preserving infrastructure. Finally, the paper critically summarizes current challenges related to hallucinations, data scarcity, and black-box tools, and outlines future trends towards L4 autonomous chip design. Ultimately, this work aims to define the emerging field of Agentic EDA and provide a strategic roadmap for the transition from AI-assisted tools to fully autonomous design engineers.",
+    "title_zh": "代理EDA的曙光：自主数字芯片设计综述",
+    "abstract_zh": "本综述全面概述了生成式AI和代理AI在数字电子设计自动化（EDA）领域的整合。论文首先回顾了从传统计算机辅助设计（CAD）到AI辅助EDA（AI4EDA），再到新兴的AI原生和代理设计范式的演变。我们详细介绍了这些范式在数字芯片设计流程中的应用，包括基于多模态基础模型的代理认知架构构建、前端RTL代码生成和智能验证，以及后端物理设计中的算法创新和工具编排。我们通过综合案例研究验证了这些方法，从微架构定义到GDSII，展示了其实际可行性。特别强调了跨阶段反馈循环的潜力，代理可以利用后端PPA指标自主优化前端逻辑。此外，本综述深入探讨了对安全性的双重影响，涵盖了新型对抗性风险、自动化漏洞修复和隐私保护基础设施。最后，论文批判性地总结了与幻觉、数据稀缺和黑箱工具相关的当前挑战，并概述了未来向L4自主芯片设计发展的趋势。最终，这项工作旨在定义新兴的代理EDA领域，并提供从AI辅助工具到完全自主设计工程师的战略路线图。"
+  },
+  {
+    "date": "2025-12-29",
+    "title": "Gate-Breaker: An LLM-Powered Netlist-to-RTL Reverse Engineering Tool",
+    "authors": "Md Omar Faruque, Peter Jamieson, Ahmad Patooghy, Abdel-Hameed A. Badawy",
+    "publish": "2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)",
+    "url": "https://doi.org/10.1109/ipccc66453.2025.11304682",
+    "source": "IEEE",
+    "abstract": "The escalating sophistication of hardware intellectual property (IP) theft, a multi-billion dollar problem for the semiconductor industry, demands novel approaches to both understanding attack vectors and fortifying defenses. This paper evaluates the potential of Large Language Models (LLMs) to reverse engineer Register Transfer Level (RTL) designs from gate-level netlists. We introduce a framework for netlist-to-RTL conversion, leveraging pattern recognition and code generation capabilities of modern LLMs. Our evaluation of four available LLM models across 156 circuit benchmarks reveals that LLMs can indeed recover functional RTL with reasonable accuracy until the RTL benchmarks become our classified 4th quartile of code complexity. We also provide a similarity metrics-based methodology to evaluate and ascertain the quality of reverse engineering. Among the evaluated models, OpenAI's O3-Mini emerged as the best performer with 75.1 % overall success rate. While performance degrades significantly on the most complex 4th quartile (53.4 % success rate), when O3-Mini does succeed on these challenging designs, it maintains a high Abstract Syntax Tree (AST) similarity of 0.924 and achieves a moderate 0.871 Control Flow Graph (CFG) similarity.",
+    "title_zh": "Gate-Breaker：一种由大型语言模型驱动的网表到RTL逆向工程工具",
+    "abstract_zh": "硬件知识产权（IP）盗窃问题日益复杂，已成为半导体行业数十亿美元的难题，迫切需要新的方法来理解攻击向量并加强防御。本文评估了大型语言模型（LLMs）从门级网表逆向工程到寄存器传输级（RTL）设计的潜力。我们介绍了一种网表到RTL转换的框架，利用现代LLMs的模式识别和代码生成能力。我们对四种现有LLM模型在156个电路基准测试中的评估表明，LLMs确实能够在合理的准确度下恢复功能性RTL，直到RTL基准测试达到我们分类的代码复杂度第四四分位。我们还提供了一种基于相似性度量的方法来评估和确定逆向工程的质量。在评估的模型中，OpenAI的O3-Mini表现最佳，总体成功率为75.1%。虽然在最复杂的第四四分位上性能显著下降（成功率为53.4%），但当O3-Mini在这些具有挑战性的设计中成功时，它保持了0.924的高抽象语法树（AST）相似性，并实现了0.871的中等控制流图（CFG）相似性。"
+  },
+  {
+    "date": "2025-12-29",
+    "title": "ML-Driven Methodology for Converting Hand-Drawn FSM Diagrams in Specification Documents into RTL",
+    "authors": "Almonzer Alaaeldin, Ibrahim Amr, Bassem Osama, Ahmed Hussein, Khaled Salah",
+    "publish": "2025 IEEE East-West Design &amp;amp; Test Symposium (EWDTS)",
+    "url": "https://doi.org/10.1109/ewdts67441.2025.11303682",
+    "source": "IEEE",
+    "abstract": "This work proposes an algorithm for converting Finite State Machine diagrams from specification documents into Verilog HDL code. The design utilizes multiple YOLOv3 models for object detection, the Hough Transform for straight arrow detection, and k-nearest neighbours for number detection. The proposed methodology uses object recognition techniques to identify states/circles, state names, edges (arrows - straight and curved, arrowheads), source and destination states of an edge, input/output numbers on edges, etc. The validation test sets are machine printed images. Validation results show 98% accuracy and runtime under 30 seconds. The final accuracy represents the quality of the generated RTL.",
+    "title_zh": "基于机器学习的方法将规范文档中的手绘有限状态机图转换为RTL",
+    "abstract_zh": "本研究提出了一种算法，用于将规范文档中的有限状态机图转换为Verilog HDL代码。设计中使用了多个YOLOv3模型进行目标检测，霍夫变换用于直箭检测，k-最近邻算法用于数字检测。所提出的方法使用目标识别技术来识别状态/圆圈、状态名称、边（箭头 - 直线和曲线、箭头）、边的源和目标状态、边上的输入/输出数字等。验证测试集为机器打印图像。验证结果显示准确率为98%，运行时间在30秒以内。最终的准确率代表生成的RTL的质量。"
+  },
+  {
+    "date": "2025-12-29",
+    "title": "Machine Learning Based Power Prediction for RTL-Level MIPS Processor Design",
+    "authors": "Roopa G Desai, Basavaraj M Goudappanavar, Maneek Poojari, Kaushik Mallibhat",
+    "publish": "2025 International Conference on Intelligent Systems and Pioneering Innovations in Robotics and Electric Mobility (INSPIRE)",
+    "url": "https://doi.org/10.1109/inspire67328.2025.11300551",
+    "source": "IEEE",
+    "abstract": "Power prediction and optimization are critical in digital design, especially at the Register Transfer Level (RTL), since it is the initial phase where architectural choices have a significant influence on the eventual power consumption of a circuit. Power estimation early and accurately enables designers to make effective trade-offs among performance, area, and power. The proposed work aims to address the challenge of an accurate prediction of power and optimization at the Register Transfer Level(RTL) in digital design. The proposed work focuses on the identification of the power loss source in digital design using switching activity at RTL in a Microprocessor without Interlocked Pipeline Stages(MIPS) processor. The Value Change Dump(VCD) file generated using the Xilinx ISE Design Suite simulates various input conditions in circuit design to produce switching activities in the circuit that describes signal transitions.The proposed work uses an ensemble model of Gradient Boosting and Ridge Regression, towards improving the predictive power, and obtained Mean Squared Error(MSE) is 2.13%.",
+    "title_zh": "基于机器学习的RTL级MIPS处理器设计功耗预测",
+    "abstract_zh": "在数字设计中，尤其是在寄存器传输级（RTL），功耗预测和优化至关重要，因为这是架构选择对电路最终功耗产生重大影响的初始阶段。早期且准确的功耗估计使设计者能够在性能、面积和功耗之间进行有效的权衡。本文旨在解决数字设计中在寄存器传输级（RTL）进行准确功耗预测和优化的挑战。该研究重点在于通过在无流水线互锁阶段的微处理器（MIPS）中使用RTL的开关活动来识别数字设计中的功耗损失源。使用Xilinx ISE设计套件生成的值变化转储（VCD）文件模拟电路设计中的各种输入条件，以产生描述信号转换的电路开关活动。本文提出的工作使用梯度提升和岭回归的集成模型来提高预测能力，获得的均方误差（MSE）为2.13%。"
+  },
+  {
+    "date": "2025-12-29",
+    "title": "Agent2Tool: MCP-Enhanced Reliable Integration of LLM Agents and Legacy Optimization Solvers",
+    "authors": "Tong Qiu, Jingwei Ge, Wenhan Wu, Fei-Yue Wang",
+    "publish": "2025 IEEE 25th International Symposium on Computational Intelligence and Informatics (CINTI)",
+    "url": "https://doi.org/10.1109/cinti67731.2025.11311789",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) are increasingly applied as intelligent agents in scientific computing. However, their integration with optimization solvers remains hindered by semantic-syntactic mismatches and protocol-level interference. In this work, we propose Agent2Tool, a robust framework that extends the Model Context Protocol (MCP) to support reliable agent-to-solver communication. The framework introduces a non-invasive output suppression mechanism, semantic parsing modules, and multi-layered error handling to ensure structured control over solvers such as Gurobi. We test five optimization problems under simple and complex task conditions. The results show that Agent2Tool consistently improves task-solving accuracy by achieving up to $21.5 \\%$ average gain in complex scenarios and preserves solver generality and agent autonomy. These results demonstrate that protocol-aware encapsulation is essential for enabling a dependable, tool-augmented LLM agent in optimization applications.",
+    "title_zh": "Agent2Tool：通过MCP增强的LLM代理与传统优化求解器的可靠集成",
+    "abstract_zh": "大型语言模型（LLMs）在科学计算中作为智能代理的应用日益增多。然而，它们与优化求解器的集成仍然受到语义-句法不匹配和协议级干扰的阻碍。在这项工作中，我们提出了Agent2Tool，一个扩展模型上下文协议（MCP）的稳健框架，以支持可靠的代理到求解器通信。该框架引入了一种非侵入式输出抑制机制、语义解析模块和多层次错误处理，以确保对Gurobi等求解器的结构化控制。我们在简单和复杂任务条件下测试了五个优化问题。结果表明，Agent2Tool在复杂场景中通过实现高达21.5%的平均增益，持续提高了任务解决的准确性，并保持了求解器的通用性和代理的自主性。这些结果表明，协议感知的封装对于在优化应用中实现可靠的、工具增强的LLM代理至关重要。"
+  }
+]
