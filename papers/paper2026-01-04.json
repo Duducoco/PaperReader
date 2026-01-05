@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-01-02",
+    "title": "Geometry of Reason: Spectral Signatures of Valid Mathematical Reasoning",
+    "authors": "Valentin Noël",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00791v1",
+    "source": "arXiv",
+    "abstract": "We present a training-free method for detecting valid mathematical reasoning in large language models through spectral analysis of attention patterns. By treating attention matrices as adjacency matrices of dynamic graphs over tokens, we extract four interpretable spectral diagnostics, the Fiedler value (algebraic connectivity), high-frequency energy ratio (HFER), graph signal smoothness, and spectral entropy, that exhibit statistically significant differences between valid and invalid mathematical proofs. Experiments across seven transformer models from four independent architectural families (Meta Llama, Alibaba Qwen, Microsoft Phi, and Mistral AI) demonstrate that this spectral signature produces effect sizes up to Cohen's $d = 3.30$ ($p < 10^{-116}$), enabling 85.0--95.6\\% classification accuracy under rigorous evaluation, with calibrated thresholds reaching 93--95\\% on the full dataset. The method requires no training data, fine-tuning, or learned classifiers: a single threshold on a spectral metric suffices for high accuracy. Through systematic label correction, we discover that the spectral method detects logical coherence rather than compiler acceptance, identifying mathematically valid proofs that formal verifiers reject due to technical failures. We further identify an architectural dependency: Mistral-7B's Sliding Window Attention shifts the discriminative signal from HFER to late-layer Smoothness ($d = 2.09$, $p_{\\text{MW}} = 1.16 \\times 10^{-48}$), revealing that attention mechanism design affects which spectral features capture reasoning validity. These findings establish spectral graph analysis as a principled framework for reasoning verification with immediate applications to hallucination detection and AI safety monitoring."
+  },
+  {
+    "date": "2026-01-02",
+    "title": "Exploring the Performance of Large Language Models on Subjective Span Identification Tasks",
+    "authors": "Alphaeus Dmonte, Roland Oruche, Tharindu Ranasinghe, Marcos Zampieri, Prasad Calyam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00736v1",
+    "source": "arXiv",
+    "abstract": "Identifying relevant text spans is important for several downstream tasks in NLP, as it contributes to model explainability. While most span identification approaches rely on relatively smaller pre-trained language models like BERT, a few recent approaches have leveraged the latest generation of Large Language Models (LLMs) for the task. Current work has focused on explicit span identification like Named Entity Recognition (NER), while more subjective span identification with LLMs in tasks like Aspect-based Sentiment Analysis (ABSA) has been underexplored. In this paper, we fill this important gap by presenting an evaluation of the performance of various LLMs on text span identification in three popular tasks, namely sentiment analysis, offensive language identification, and claim verification. We explore several LLM strategies like instruction tuning, in-context learning, and chain of thought. Our results indicate underlying relationships within text aid LLMs in identifying precise text spans."
+  },
+  {
+    "date": "2026-01-02",
+    "title": "Stability Verification for Switched Systems using Neural Multiple Lyapunov Functions",
+    "authors": "Junyue Huang, Shaoyuan Li, Xiang Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00587v1",
+    "source": "arXiv",
+    "abstract": "Stability analysis of switched systems, characterized by multiple operational modes and switching signals, is challenging due to their nonlinear dynamics. While frameworks such as multiple Lyapunov functions (MLF) provide a foundation for analysis, their computational applicability is limited for systems without favorable structure. This paper investigates stability analysis for switched systems under state-dependent switching conditions. We propose neural multiple Lyapunov functions (NMLF), a unified framework that combines the theoretical guarantees of MLF with the computational efficiency of neural Lyapunov functions (NLF). Our approach leverages a set of tailored loss functions and a counter-example guided inductive synthesis (CEGIS) scheme to train neural networks that rigorously satisfy MLF conditions. Through comprehensive simulations and theoretical analysis, we demonstrate NMLF's effectiveness and its potential for practical deployment in complex switched systems."
+  },
+  {
+    "date": "2026-01-02",
+    "title": "Cyberscurity Threats and Defense Mechanisms in IoT network",
+    "authors": "Trung Dao, Minh Nguyen, Son Do, Hoang Tran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00556v1",
+    "source": "arXiv",
+    "abstract": "The rapid proliferation of Internet of Things (IoT) technologies, projected to exceed 30 billion interconnected devices by 2030, has significantly escalated the complexity of cybersecurity challenges. This survey aims to provide a comprehensive analysis of vulnerabilities, threats, and defense mechanisms, specifically focusing on the integration of network and application layers within real-time monitoring and decision-making systems. Employing an integrative review methodology, 59 scholarly articles published between 2009 and 2024 were selected from databases such as IEEE Xplore, ScienceDirect, and PubMed, utilizing keywords related to IoT vulnerabilities and security attacks. Key findings identify critical threat categories, including sensor vulnerabilities, Denial-of-Service (DoS) attacks, and public cloud insecurity. Conversely, the study highlights advanced defense approaches leveraging Artificial Intelligence (AI) for anomaly detection, Blockchain for decentralized trust, and Zero Trust Architecture (ZTA) for continuous verification. This paper contributes a novel five-layer IoT model and outlines future research directions involving quantum computing and 6G networks to bolster IoT ecosystem resilience."
+  },
+  {
+    "date": "2026-01-02",
+    "title": "Trajectory Guard -- A Lightweight, Sequence-Aware Model for Real-Time Anomaly Detection in Agentic AI",
+    "authors": "Laksh Advani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00516v1",
+    "source": "arXiv",
+    "abstract": "Autonomous LLM agents generate multi-step action plans that can fail due to contextual misalignment or structural incoherence. Existing anomaly detection methods are ill-suited for this challenge: mean-pooling embeddings dilutes anomalous steps, while contrastive-only approaches ignore sequential structure. Standard unsupervised methods on pre-trained embeddings achieve F1-scores no higher than 0.69. We introduce Trajectory Guard, a Siamese Recurrent Autoencoder with a hybrid loss function that jointly learns task-trajectory alignment via contrastive learning and sequential validity via reconstruction. This dual objective enables unified detection of both \"wrong plan for this task\" and \"malformed plan structure.\" On benchmarks spanning synthetic perturbations and real-world failures from security audits (RAS-Eval) and multi-agent systems (Who\\&When), we achieve F1-scores of 0.88-0.94 on balanced sets and recall of 0.86-0.92 on imbalanced external benchmarks. At 32 ms inference latency, our approach runs 17-27$\\times$ faster than LLM Judge baselines, enabling real-time safety verification in production deployments."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "When Small Models Are Right for Wrong Reasons: Process Verification for Trustworthy Agents",
+    "authors": "Laksh Advani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00513v1",
+    "source": "arXiv",
+    "abstract": "Deploying small language models (7-9B parameters) as autonomous agents requires trust in their reasoning, not just their outputs. We reveal a critical reliability crisis: 50-69\\% of correct answers from these models contain fundamentally flawed reasoning -- a ``Right-for-Wrong-Reasons'' phenomenon invisible to standard accuracy metrics. Through analysis of 10,734 reasoning traces across three models and diverse tasks, we introduce the Reasoning Integrity Score (RIS), a process-based metric validated with substantial inter-rater agreement ($κ=0.657$). Conventional practices are challenged by our findings: while retrieval-augmented generation (RAG) significantly improves reasoning integrity (Cohen's $d=0.23$--$0.93$), meta-cognitive interventions like self-critique often harm performance ($d=-0.14$ to $-0.33$) in small models on the evaluated tasks. Mechanistic analysis reveals RAG succeeds by grounding calculations in external evidence, reducing errors by 7.6\\%, while meta-cognition amplifies confusion without sufficient model capacity. To enable deployment, verification capabilities are distilled into a neural classifier achieving 0.86 F1-score with 100$\\times$ speedup. These results underscore the necessity of process-based verification for trustworthy agents: accuracy alone is dangerously insufficient when models can be right for entirely wrong reasons."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Safety for Weakly-Hard Control Systems via Graph-Based Barrier Functions",
+    "authors": "Marc Seidel, Mahathi Anand, Frank Allgöwer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00494v1",
+    "source": "arXiv",
+    "abstract": "Despite significant advancement in technology, communication and computational failures are still prevalent in safety-critical engineering applications. Often, networked control systems experience packet dropouts, leading to open-loop behavior that significantly affects the behavior of the system. Similarly, in real-time control applications, control tasks frequently experience computational overruns and thus occasionally no new actuator command is issued. This article addresses the safety verification and controller synthesis problem for a class of control systems subject to weakly-hard constraints, i.e., a set of window-based constraints where the number of failures are bounded within a given time horizon. The results are based on a new notion of graph-based barrier functions that are specifically tailored to the considered system class, offering a set of constraints whose satisfaction leads to safety guarantees despite communication failures. Subsequent reformulations of the safety constraints are proposed to alleviate conservatism and improve computational tractability, and the resulting trade-offs are discussed. Finally, several numerical case studies demonstrate the effectiveness of the proposed approach."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Effective geometric ergodicty for Markov chains in random environment",
+    "authors": "Yeor Hafouta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00467v1",
+    "source": "arXiv",
+    "abstract": "In this short note we prove ``effective\" geometric ergodicity (i.e a Perron-Frobenius theorem) for Markov chains in random mixing dynamical environment satisfying a random non-uniform version of the Doeblin condition. Effectivity here means that all the random variables involved in the random exponential rates are integrable with arbitrarily large order. This compliments \\cite[Theorem 2.1]{Kifer 1996}, where ``non-effective\" geometric ergodicity was obtained. From a different perspective, our result is also motivated by egrodic theory, as it can be seen as an effective version of the ``spectral\" gap in the top Oseledets space in the Oseledets multiplicative ergodic theorem for the random Markov operator cocycle (when it applies). We also present applications of the effective ergodicity to rates in the (quenched) almost sure invariance principle (ASIP), exponential decay of correlations for Markovian skew products and for exponential tails for random mixing times. As a byproduct of the proof of the ASIP rates we also provide easy to verify sufficient conditions for the verification of the assumptions of \\cite[Theorem 2.4]{Kifer 1998}."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Adaptive Causal Coordination Detection for Social Media: A Memory-Guided Framework with Semi-Supervised Learning",
+    "authors": "Weng Ding, Yi Han, Mu-Jiang-Shan Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00400v1",
+    "source": "arXiv",
+    "abstract": "Detecting coordinated inauthentic behavior on social media remains a critical and persistent challenge, as most existing approaches rely on superficial correlation analysis, employ static parameter settings, and demand extensive and labor-intensive manual annotation. To address these limitations systematically, we propose the Adaptive Causal Coordination Detection (ACCD) framework. ACCD adopts a three-stage, progressive architecture that leverages a memory-guided adaptive mechanism to dynamically learn and retain optimal detection configurations for diverse coordination scenarios. Specifically, in the first stage, ACCD introduces an adaptive Convergent Cross Mapping (CCM) technique to deeply identify genuine causal relationships between accounts. The second stage integrates active learning with uncertainty sampling within a semi-supervised classification scheme, significantly reducing the burden of manual labeling. The third stage deploys an automated validation module driven by historical detection experience, enabling self-verification and optimization of the detection outcomes. We conduct a comprehensive evaluation using real-world datasets, including the Twitter IRA dataset, Reddit coordination traces, and several widely-adopted bot detection benchmarks. Experimental results demonstrate that ACCD achieves an F1-score of 87.3\\% in coordinated attack detection, representing a 15.2\\% improvement over the strongest existing baseline. Furthermore, the system reduces manual annotation requirements by 68\\% and achieves a 2.8x speedup in processing through hierarchical clustering optimization. In summary, ACCD provides a more accurate, efficient, and highly automated end-to-end solution for identifying coordinated behavior on social platforms, offering substantial practical value and promising potential for broad application."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Diamond: Design and Implementation of Breach-Resilient Authenticated Encryption Framework For Internet of Things",
+    "authors": "Saif E. Nouma, Gokhan Mumcu, Attila A. Yavuz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00353v1",
+    "source": "arXiv",
+    "abstract": "Resource-constrained Internet of Things (IoT) devices, from medical implants to small drones, must transmit sensitive telemetry under adversarial wireless channels while operating under stringent computing and energy budgets. Authenticated Encryption (AE) is essential for ensuring confidentiality, integrity, and authenticity. However, existing lightweight AE standards lack forward-security guarantees, compact tag aggregation, and offline-online (OO) optimizations required for modern high-throughput IoT pipelines. We introduce Diamond, the first provable secure Forward-secure and Aggregate Authenticated Encryption (FAAE) framework that extends and generalizes prior FAAE constructions through a lightweight key evolution mechanism, an OO-optimized computation pipeline, and a set of performance-tiered instantiations tailored to heterogeneous IoT platforms. Diamond substantially reduces amortized offline preprocessing (up to 47%) and achieves up to an order-ofmagnitude reduction in end-to-end latency for large telemetry batches. Our comprehensive evaluation across 64-bit ARM Cortex-A72, 32-bit ARM Cortex-M4, and 8-bit AVR architectures confirms that Diamond consistently outperforms baseline FAAE variants and NIST lightweight AE candidates across authenticated encryption throughput and end-to-end verification latency while maintaining compact tag aggregation and strong breach resilience. We formally prove the security of Diamond and provide two concrete instantiations optimized for compliance and high efficiency. Our open-source release enables reproducibility and seamless integration into IoT platforms."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "The Generative AI Paradox: GenAI and the Erosion of Trust, the Corrosion of Information Verification, and the Demise of Truth",
+    "authors": "Emilio Ferrara",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00306v1",
+    "source": "arXiv",
+    "abstract": "Generative AI (GenAI) now produces text, images, audio, and video that can be perceptually convincing at scale and at negligible marginal cost. While public debate often frames the associated harms as \"deepfakes\" or incremental extensions of misinformation and fraud, this view misses a broader socio-technical shift: GenAI enables synthetic realities; coherent, interactive, and potentially personalized information environments in which content, identity, and social interaction are jointly manufactured and mutually reinforcing. We argue that the most consequential risk is not merely the production of isolated synthetic artifacts, but the progressive erosion of shared epistemic ground and institutional verification practices as synthetic content, synthetic identity, and synthetic interaction become easy to generate and hard to audit. This paper (i) formalizes synthetic reality as a layered stack (content, identity, interaction, institutions), (ii) expands a taxonomy of GenAI harms spanning personal, economic, informational, and socio-technical risks, (iii) articulates the qualitative shifts introduced by GenAI (cost collapse, throughput, customization, micro-segmentation, provenance gaps, and trust erosion), and (iv) synthesizes recent risk realizations (2023-2025) into a compact case bank illustrating how these mechanisms manifest in fraud, elections, harassment, documentation, and supply-chain compromise. We then propose a mitigation stack that treats provenance infrastructure, platform governance, institutional workflow redesign, and public resilience as complementary rather than substitutable, and outline a research agenda focused on measuring epistemic security. We conclude with the Generative AI Paradox: as synthetic media becomes ubiquitous, societies may rationally discount digital evidence altogether."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "From Consensus to Chaos: A Vulnerability Assessment of the RAFT Algorithm",
+    "authors": "Tamer Afifi, Abdelfatah Hegazy, Ehab Abousaif",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00273v1",
+    "source": "arXiv",
+    "abstract": "In recent decades, the RAFT distributed consensus algorithm has become a main pillar of the distributed systems ecosystem, ensuring data consistency and fault tolerance across multiple nodes. Although the fact that RAFT is well known for its simplicity, reliability, and efficiency, its security properties are not fully recognized, leaving implementations vulnerable to different kinds of attacks and threats, which can transform the RAFT harmony of consensus into a chaos of data inconsistency. This paper presents a systematic security analysis of the RAFT protocol, with a specific focus on its susceptibility to security threats such as message replay attacks and message forgery attacks. Examined how a malicious actor can exploit the protocol's message-passing mechanism to reintroduce old messages, disrupting the consensus process and leading to data inconsistency. The practical feasibility of these attacks is examined through simulated scenarios, and the key weaknesses in RAFT's design that enable them are identified. To address these vulnerabilities, a novel approach based on cryptography, authenticated message verification, and freshness check is proposed. This proposed solution provides a framework for enhancing the security of the RAFT implementations and guiding the development of more resilient distributed systems."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "FaithSCAN: Model-Driven Single-Pass Hallucination Detection for Faithful Visual Question Answering",
+    "authors": "Chaodong Tong, Qi Zhang, Chen Li, Lei Jiang, Yanbing Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00269v1",
+    "source": "arXiv",
+    "abstract": "Faithfulness hallucinations in VQA occur when vision-language models produce fluent yet visually ungrounded answers, severely undermining their reliability in safety-critical applications. Existing detection methods mainly fall into two categories: external verification approaches relying on auxiliary models or knowledge bases, and uncertainty-driven approaches using repeated sampling or uncertainty estimates. The former suffer from high computational overhead and are limited by external resource quality, while the latter capture only limited facets of model uncertainty and fail to sufficiently explore the rich internal signals associated with the diverse failure modes. Both paradigms thus have inherent limitations in efficiency, robustness, and detection performance. To address these challenges, we propose FaithSCAN: a lightweight network that detects hallucinations by exploiting rich internal signals of VLMs, including token-level decoding uncertainty, intermediate visual representations, and cross-modal alignment features. These signals are fused via branch-wise evidence encoding and uncertainty-aware attention. We also extend the LLM-as-a-Judge paradigm to VQA hallucination and propose a low-cost strategy to automatically generate model-dependent supervision signals, enabling supervised training without costly human labels while maintaining high detection accuracy. Experiments on multiple VQA benchmarks show that FaithSCAN significantly outperforms existing methods in both effectiveness and efficiency. In-depth analysis shows hallucinations arise from systematic internal state variations in visual perception, cross-modal reasoning, and language decoding. Different internal signals provide complementary diagnostic cues, and hallucination patterns vary across VLM architectures, offering new insights into the underlying causes of multimodal hallucinations."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Direct imaging of stress tensor around single dislocation in diamond",
+    "authors": "Takeyuki Tsuji, Shunta Harada, Tokuyuki Teraji",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00261v1",
+    "source": "arXiv",
+    "abstract": "Dislocations are fundamental crystal defects whose stress fields govern a wide range of material properties. The analytical form of the stress tensor around single dislocation was established by elasticity theory more than 80 years ago and has provided a theoretical basis for evaluating essential characteristics of dislocations. However, direct experimental verification has long remained out of reach because it has been difficult to measure the components of the stress tensor with conventional methods. Here, we present the experimental visualization of the stress tensor around single dislocation in diamond. Using quantum sensors based on nitrogen-vacancy (NV) centers, we mapped the shear components ($σ_{xy}$, $σ_{yz}$, $σ_{zx}$) together with the trace of the stress tensor ($σ_{xx}+σ_{yy}+σ_{zz}$) around single 45° dislocation. The observed distributions exhibited good agreement with predictions from elasticity theory, thus providing experimental validation of this theoretical framework."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Talk Less, Verify More: Improving LLM Assistants with Semantic Checks and Execution Feedback",
+    "authors": "Yan Sun, Ming Cai, Stanley Kok",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00224v1",
+    "source": "arXiv",
+    "abstract": "As large language model (LLM) assistants become increasingly integrated into enterprise workflows, their ability to generate accurate, semantically aligned, and executable outputs is critical. However, current conversational business analytics (CBA) systems often lack built-in verification mechanisms, leaving users to manually validate potentially flawed results. This paper introduces two complementary verification techniques: Q*, which performs reverse translation and semantic matching between code and user intent, and Feedback+, which incorporates execution feedback to guide code refinement. Embedded within a generator-discriminator framework, these mechanisms shift validation responsibilities from users to the system. Evaluations on three benchmark datasets, Spider, Bird, and GSM8K, demonstrate that both Q* and Feedback+ reduce error rates and task completion time. The study also identifies reverse translation as a key bottleneck, highlighting opportunities for future improvement. Overall, this work contributes a design-oriented framework for building more reliable, enterprise-grade GenAI systems capable of trustworthy decision support."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "μACP: A Formal Calculus for Expressive, Resource-Constrained Agent Communication",
+    "authors": "Arnab Mallick, Indraveni Chebolu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00219v1",
+    "source": "arXiv",
+    "abstract": "Agent communication remains a foundational problem in multi-agent systems: protocols such as FIPA-ACL guarantee semantic richness but are intractable for constrained environments, while lightweight IoT protocols achieve efficiency at the expense of expressiveness. This paper presents $μ$ACP, a formal calculus for expressive agent communication under explicit resource bounds. We formalize the Resource-Constrained Agent Communication (RCAC) model, prove that a minimal four-verb basis \\textit{\\{PING, TELL, ASK, OBSERVE\\}} is suffices to encode finite-state FIPA protocols, and establish tight information-theoretic bounds on message complexity. We further show that $μ$ACP can implement standard consensus under partial synchrony and crash faults, yielding a constructive coordination framework for edge-native agents. Formal verification in TLA$^{+}$ (model checking) and Coq (mechanized invariants) establishes safety and boundedness, and supports liveness under modeled assumptions. Large-scale system simulations confirm ACP achieves a median end-to-end message latency of 34 ms (95th percentile 104 ms) at scale, outperforming prior agent and IoT protocols under severe resource constraints. The main contribution is a unified calculus that reconciles semantic expressiveness with provable efficiency, providing a rigorous foundation for the next generation of resource-constrained multi-agent systems."
+  },
+  {
+    "date": "2026-01-01",
+    "title": "Stratosphere Model Verification with Manufactured Geometry",
+    "authors": "Johannes Lawen, George Salman, Akshita Bhardwaj",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.00206v1",
+    "source": "arXiv",
+    "abstract": "We propose an exact solution for a stratosphere dynamical core formulated in geopotential/pressure coordinates with a time-evolving lower boundary supplied by the troposphere. Rather than constraining the stratospheric circulation via specified dynamics (``nudging'') to a reanalysis, we treat the tropopause as a moving geometric boundary. The stratospheric domain thus expands, contracts, and undulates in response to tropospheric variability while preserving familiar hybrid $σ$--$p$ structure and pressure-gradient calculations. The approach integrates naturally with arbitrary Lagrangian--Eulerian (ALE) updates and conservative remap to maintain positive layer thickness and tracer monotonicity. We outline the formulation, highlight analytical properties (well-posedness, energetics, wave propagation), and sketch a verification/validation path based on modified standard test cases and reanalysis-driven experiments."
+  },
+  {
+    "date": "2025-12-31",
+    "title": "Arithmetic with spatiotemporal optical vortex of integer and fractional topological charges",
+    "authors": "Hsiao-Chih Huang, Chen-Ting Liao, Hui Min Leung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.25049v1",
+    "source": "arXiv",
+    "abstract": "Spatiotemporal optical vortices carry transverse orbital angular momentum (t-OAM), which give rise to spatiotemporal topological charge (ST-TC). To unleash the full potential of t-OAM in expanding the capacity of communication and computing, we demonstrate the first optical information-processing pipeline capable of performing addition and subtraction on ST-TC values, regardless of whether they are integer or fractional. Additionally, we established a readout method for those mathematical operations through imaging spectral analysis, providing a robust optical basis toward arithmetic operations and verification. These new capabilities mark crucial advancements toward full arithmetic operations on the ST-TC of light for bosonic state computation and information processing."
+  },
+  {
+    "date": "2025-12-31",
+    "title": "Thin Tree Verification is coNP-Complete",
+    "authors": "Alice Moayyedi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.25043v1",
+    "source": "arXiv",
+    "abstract": "An $α$-thin tree $T$ of a graph $G$ is a spanning tree such that every cut of $G$ has at most an $α$ proportion of its edges in $T$. The Thin Tree Conjecture proposes that there exists a function $f$ such that for any $α> 0$, every $f(α)$-edge-connected graph has an $α$-thin tree. Aside from its independent interest, an algorithm which could efficiently construct an $O(1)/k$-thin tree for a given $k$-edge-connected graph would directly lead to an $O(1)$-approximation algorithm for the asymmetric travelling salesman problem (ATSP)(arXiv:0909.2849). However, it was not even known whether it is possible to efficiently verify that a given tree is $α$-thin. We prove that determining the thinness of a tree is coNP-hard."
+  },
+  {
+    "date": "2025-12-31",
+    "title": "SoK: Web3 RegTech for Cryptocurrency VASP AML/CFT Compliance",
+    "authors": "Qian'ang Mao, Jiaxin Wang, Ya Liu, Li Zhu, Jiaman Chen, Jiaqi Yan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2512.24888v1",
+    "source": "arXiv",
+    "abstract": "The decentralized architecture of Web3 technologies creates fundamental challenges for Anti-Money Laundering and Counter-Financing of Terrorism compliance. Traditional regulatory technology solutions designed for centralized financial systems prove inadequate for blockchain's transparent yet pseudonymous networks. This systematization examines how blockchain-native RegTech solutions leverage distributed ledger properties to enable novel compliance capabilities. We develop three taxonomies organizing the Web3 RegTech domain: a regulatory paradigm evolution framework across ten dimensions, a compliance protocol taxonomy encompassing five verification layers, and a RegTech lifecycle framework spanning preventive, real-time, and investigative phases. Through analysis of 41 operational commercial platforms and 28 academic prototypes selected from systematic literature review (2015-2025), we demonstrate that Web3 RegTech enables transaction graph analysis, real-time risk assessment, cross-chain analytics, and privacy-preserving verification approaches that are difficult to achieve or less commonly deployed in traditional centralized systems. Our analysis reveals critical gaps between academic innovation and industry deployment, alongside persistent challenges in cross-chain tracking, DeFi interaction analysis, privacy protocol monitoring, and scalability. We synthesize architectural best practices and identify research directions addressing these gaps while respecting Web3's core principles of decentralization, transparency, and user sovereignty."
+  }
+]
