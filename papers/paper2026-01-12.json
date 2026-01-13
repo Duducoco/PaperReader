@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-01-12",
+    "title": "Towards Automating Blockchain Consensus Verification with IsabeLLM",
+    "authors": "Elliot Jones, William Knottenbelt",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07654v1",
+    "source": "arXiv",
+    "abstract": "Consensus protocols are crucial for a blockchain system as they are what allow agreement between the system's nodes in a potentially adversarial environment. For this reason, it is paramount to ensure their correct design and implementation to prevent such adversaries from carrying out malicious behaviour. Formal verification allows us to ensure the correctness of such protocols, but requires high levels of effort and expertise to carry out and thus is often omitted in the development process. In this paper, we present IsabeLLM, a tool that integrates the proof assistant Isabelle with a Large Language Model to assist and automate proofs. We demonstrate the effectiveness of IsabeLLM by using it to develop a novel model of Bitcoin's Proof of Work consensus protocol and verify its correctness. We use the DeepSeek R1 API for this demonstration and found that we were able to generate correct proofs for each of the non-trivial lemmas present in the verification."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "GRPO with State Mutations: Improving LLM-Based Hardware Test Plan Generation",
+    "authors": "Dimple Vijay Kochar, Nathaniel Pinckney, Guan-Ting Liu, Chia-Tung Ho, Chenhui Deng, Haoxing Ren, Brucek Khailany",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07593v1",
+    "source": "arXiv",
+    "abstract": "RTL design often relies heavily on ad-hoc testbench creation early in the design cycle. While large language models (LLMs) show promise for RTL code generation, their ability to reason about hardware specifications and generate targeted test plans remains largely unexplored. We present the first systematic study of LLM reasoning capabilities for RTL verification stimuli generation, establishing a two-stage framework that decomposes test plan generation from testbench execution. Our benchmark reveals that state-of-the-art models, including DeepSeek-R1 and Claude-4.0-Sonnet, achieve only 15.7-21.7% success rates on generating stimuli that pass golden RTL designs. To improve LLM generated stimuli, we develop a comprehensive training methodology combining supervised fine-tuning with a novel reinforcement learning approach, GRPO with State Mutation (GRPO-SMu), which enhances exploration by varying input mutations. Our approach leverages a tree-based branching mutation strategy to construct training data comprising equivalent and mutated trees, moving beyond linear mutation approaches to provide rich learning signals. Training on this curated dataset, our 7B parameter model achieves a 33.3% golden test pass rate and a 13.9% mutation detection rate, representing a 17.6% absolute improvement over baseline and outperforming much larger general-purpose models. These results demonstrate that specialized training methodologies can significantly enhance LLM reasoning capabilities for hardware verification tasks, establishing a foundation for automated sub-unit testing in semiconductor design workflows."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Machine Learning Model Trading with Verification under Information Asymmetry",
+    "authors": "Xiang Li, Jianwei Huang, Kai Yang, Chenyou Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07510v1",
+    "source": "arXiv",
+    "abstract": "Machine learning (ML) model trading, known for its role in protecting data privacy, faces a major challenge: information asymmetry. This issue can lead to model deception, a problem that current literature has not fully solved, where the seller misrepresents model performance to earn more. We propose a game-theoretic approach, adding a verification step in the ML model market that lets buyers check model quality before buying. However, this method can be expensive and offers imperfect information, making it harder for buyers to decide. Our analysis reveals that a seller might probabilistically conduct model deception considering the chance of model verification. This deception probability decreases with the verification accuracy and increases with the verification cost. To maximize seller payoff, we further design optimal pricing schemes accounting for heterogeneous buyers' strategic behaviors. Interestingly, we find that reducing information asymmetry benefits both the seller and buyer. Meanwhile, protecting buyer order information doesn't improve the payoff for the buyer or the seller. These findings highlight the importance of reducing information asymmetry in ML model trading and open new directions for future research."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "FROAV: A Framework for RAG Observation and Agent Verification - Lowering the Barrier to LLM Agent Research",
+    "authors": "Tzu-Hsuan Lin, Chih-Hsuan Kao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07504v1",
+    "source": "arXiv",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) and their integration into autonomous agent systems has created unprecedented opportunities for document analysis, decision support, and knowledge retrieval. However, the complexity of developing, evaluating, and iterating on LLM-based agent workflows presents significant barriers to researchers, particularly those without extensive software engineering expertise. We present FROAV (Framework for RAG Observation and Agent Verification), an open-source research platform that democratizes LLM agent research by providing a plug-and-play architecture combining visual workflow orchestration, a comprehensive evaluation framework, and extensible Python integration. FROAV implements a multi-stage Retrieval-Augmented Generation (RAG) pipeline coupled with a rigorous \"LLM-as-a-Judge\" evaluation system, all accessible through intuitive graphical interfaces. Our framework integrates n8n for no-code workflow design, PostgreSQL for granular data management, FastAPI for flexible backend logic, and Streamlit for human-in-the-loop interaction. Through this integrated ecosystem, researchers can rapidly prototype RAG strategies, conduct prompt engineering experiments, validate agent performance against human judgments, and collect structured feedback-all without writing infrastructure code. We demonstrate the framework's utility through its application to financial document analysis, while emphasizing its material-agnostic architecture that adapts to any domain requiring semantic analysis. FROAV represents a significant step toward making LLM agent research accessible to a broader scientific community, enabling researchers to focus on hypothesis testing and algorithmic innovation rather than system integration challenges."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "RLPO: Residual Listwise Preference Optimization for Long-Context Review Ranking",
+    "authors": "Hao Jiang, Zhi Yang, Annan Wang, Yichi Zhang, Weisi Lin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07449v1",
+    "source": "arXiv",
+    "abstract": "Review ranking is pivotal in e-commerce for prioritizing diagnostic and authentic feedback from the deluge of user-generated content. While large language models have improved semantic assessment, existing ranking paradigms face a persistent trade-off in long-context settings. Pointwise scoring is efficient but often fails to account for list-level interactions, leading to miscalibrated top-$k$ rankings. Listwise approaches can leverage global context, yet they are computationally expensive and become unstable as candidate lists grow. To address this, we propose Residual Listwise Preference Optimization (RLPO), which formulates ranking as listwise representation-level residual correction over a strong pointwise LLM scorer. RLPO first produces calibrated pointwise scores and item representations, then applies a lightweight encoder over the representations to predict listwise score residuals, avoiding full token-level listwise processing. We also introduce a large-scale benchmark for long-context review ranking with human verification. Experiments show RLPO improves NDCG@k over strong pointwise and listwise baselines and remains robust as list length increases."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Peacock: UEFI Firmware Runtime Observability Layer for Detection and Response",
+    "authors": "Hadar Cochavi Gorelik, Orel Fadlon, Denis Klimov, Oleg Brodt, Asaf Shabtai, Yuval Elovici",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07402v1",
+    "source": "arXiv",
+    "abstract": "Modern computing platforms rely on the Unified Extensible Firmware Interface (UEFI) to initialize hardware and coordinate the transition to the operating system. Because this execution environment operates with high privileges and persists across reboots, it has increasingly become a target for advanced threats, including bootkits documented in real systems. Existing protections, including Secure Boot and static signature verification, are insufficient against adversaries who exploit runtime behavior or manipulate firmware components after signature checks have completed. In contrast to operating system (OS) environments, where mature tools provide dynamic inspection and incident response, the pre-OS stage lacks practical mechanisms for real-time visibility and threat detection. We present Peacock, a modular framework that introduces integrity-assured monitoring and remote verification for the UEFI boot process. Peacock consists of three components: (i) a UEFI-based agent that records Boot and Runtime Service activity with cryptographic protection against tampering; (ii) a cross-platform OS Agent that extracts the recorded measurements and produces a verifiable attestation bundle using hardware-backed guarantees from the platform's trusted module; and (iii) a Peacock Server that verifies attestation results and exports structured telemetry for enterprise detection. Our evaluation shows that Peacock reliably detects multiple real-world UEFI bootkits, including Glupteba, BlackLotus, LoJax, and MosaicRegressor. Taken together, these results indicate that Peacock provides practical visibility and verification capabilities within the firmware layer, addressing threats that bypass traditional OS-level security mechanisms."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "The Confidence Dichotomy: Analyzing and Mitigating Miscalibration in Tool-Use Agents",
+    "authors": "Weihao Xuan, Qingcheng Zeng, Heli Qi, Yunze Xiao, Junjue Wang, Naoto Yokoya",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07264v1",
+    "source": "arXiv",
+    "abstract": "Autonomous agents based on large language models (LLMs) are rapidly evolving to handle multi-turn tasks, but ensuring their trustworthiness remains a critical challenge. A fundamental pillar of this trustworthiness is calibration, which refers to an agent's ability to express confidence that reliably reflects its actual performance. While calibration is well-established for static models, its dynamics in tool-integrated agentic workflows remain underexplored. In this work, we systematically investigate verbalized calibration in tool-use agents, revealing a fundamental confidence dichotomy driven by tool type. Specifically, our pilot study identifies that evidence tools (e.g., web search) systematically induce severe overconfidence due to inherent noise in retrieved information, while verification tools (e.g., code interpreters) can ground reasoning through deterministic feedback and mitigate miscalibration. To robustly improve calibration across tool types, we propose a reinforcement learning (RL) fine-tuning framework that jointly optimizes task accuracy and calibration, supported by a holistic benchmark of reward designs. We demonstrate that our trained agents not only achieve superior calibration but also exhibit robust generalization from local training environments to noisy web settings and to distinct domains such as mathematical reasoning. Our results highlight the necessity of domain-specific calibration strategies for tool-use agents. More broadly, this work establishes a foundation for building self-aware agents that can reliably communicate uncertainty in high-stakes, real-world deployments."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Group Pattern Selection Optimization: Let LRMs Pick the Right Pattern for Reasoning",
+    "authors": "Hanbin Wang, Jingwei Song, Jinpeng Li, Fei Mi, Lifeng Shang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07238v1",
+    "source": "arXiv",
+    "abstract": "Large reasoning models (LRMs) exhibit diverse high-level reasoning patterns (e.g., direct solution, reflection-and-verification, and exploring multiple solutions), yet prevailing training recipes implicitly bias models toward a limited set of dominant patterns. Through a systematic analysis, we identify substantial accuracy variance across these patterns on mathematics and science benchmarks, revealing that a model's default reasoning pattern is often sub-optimal for a given problem. To address this, we introduce Group Pattern Selection Optimization (GPSO), a reinforcement learning framework that extends GRPO by incorporating multi-pattern rollouts, verifier-guided optimal pattern selection per problem, and attention masking during optimization to prevent the leakage of explicit pattern suffixes into the learned policy. By exploring a portfolio of diverse reasoning strategies and optimizing the policy on the most effective ones, GPSO enables the model to internalize the mapping from problem characteristics to optimal reasoning patterns. Extensive experiments demonstrate that GPSO delivers consistent and substantial performance gains across various model backbones and benchmarks, effectively mitigating pattern sub-optimality and fostering more robust, adaptable reasoning. All data and codes are available at https://github.com/wanghanbinpanda/GPSO."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Forward versus Backward: Comparing Reasoning Objectives in Direct Preference Optimization",
+    "authors": "Murtaza Nikzad, Raghuram Ramanujan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07199v1",
+    "source": "arXiv",
+    "abstract": "Large language models exhibit impressive reasoning capabilities yet frequently generate plausible but incorrect solutions, a phenomenon commonly termed hallucination. This paper investigates the effect of training objective composition on reasoning reliability through Direct Preference Optimization. Two complementary training signals are examined: forward chain-of-thought generation, which trains the model to produce correct reasoning traces, and backward verification, which trains the model to verify and acknowledge errors in candidate solutions. Experiments on GSM8K reveal a fundamental trade-off between these objectives. Forward-only DPO training achieves the highest accuracy improvement, increasing from 83.1% to 86.6% (+3.5 percentage points), while backward-only training yields minimal accuracy gains but substantially reduces the false positive rate from 13.4% to 4.3%. Notably, both training variants reduce acknowledgement rate compared to the baseline, suggesting that preference optimization increases model confidence in its outputs. These findings indicate that forward and backward reasoning objectives provide distinct and complementary learning signals: forward training improves problem-solving capability, while backward training improves verification calibration. The complete training and evaluation pipeline, implemented efficiently through Low-Rank Adaptation, is released to facilitate further research."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Standardization of Post-Publication Code Verification by Journals is Possible with the Support of the Community",
+    "authors": "Susana Lopez-Moreno, Eric Dolores-Cuenca, Sangil Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07189v1",
+    "source": "arXiv",
+    "abstract": "Reproducibility remains a challenge in machine learning research. While code and data availability requirements have become increasingly common, post-publication verification in journals is still limited and unformalized. This position paper argues that it is plausible for journals and conference proceedings to implement post-publication verification. We propose a modification to ACM pre-publication verification badges that allows independent researchers to submit post-publication code replications to the journal, leading to visible verification badges included in the article metadata. Each article may earn up to two badges, each linked to verified code in its corresponding public repository. We describe the motivation, related initiatives, a formal framework, the potential impact, possible limitations, and alternative views."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Structured Reasoning for Large Language Models",
+    "authors": "Jinyi Han, Zixiang Di, Zishang Jiang, Ying Liao, Jiaqing Liang, Yongqi Wang, Yanghua Xiao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07180v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) achieve strong performance by generating long chains of thought, but longer traces always introduce redundant or ineffective reasoning steps. One typical behavior is that they often perform unnecessary verification and revisions even if they have reached the correct answers. This limitation stems from the unstructured nature of reasoning trajectories and the lack of targeted supervision for critical reasoning abilities. To address this, we propose Structured Reasoning (SCR), a framework that decouples reasoning trajectories into explicit, evaluable, and trainable components. We mainly implement SCR using a Generate-Verify-Revise paradigm. Specifically, we construct structured training data and apply Dynamic Termination Supervision to guide the model in deciding when to terminate reasoning. To avoid interference between learning signals for different reasoning abilities, we adopt a progressive two-stage reinforcement learning strategy: the first stage targets initial generation and self-verification, and the second stage focuses on revision. Extensive experiments on three backbone models show that SCR substantially improves reasoning efficiency and self-verification. Besides, compared with existing reasoning paradigms, it reduces output token length by up to 50%."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "DIVER: Dynamic Iterative Visual Evidence Reasoning for Multimodal Fake News Detection",
+    "authors": "Weilin Zhou, Zonghao Ying, Chunlei Meng, Jiahui Liu, Hengyang Zhou, Quanchen Zou, Deyue Zhang, Dongdong Yang, Xiangzheng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07178v1",
+    "source": "arXiv",
+    "abstract": "Multimodal fake news detection is crucial for mitigating adversarial misinformation. Existing methods, relying on static fusion or LLMs, face computational redundancy and hallucination risks due to weak visual foundations. To address this, we propose DIVER (Dynamic Iterative Visual Evidence Reasoning), a framework grounded in a progressive, evidence-driven reasoning paradigm. DIVER first establishes a strong text-based baseline through language analysis, leveraging intra-modal consistency to filter unreliable or hallucinated claims. Only when textual evidence is insufficient does the framework introduce visual information, where inter-modal alignment verification adaptively determines whether deeper visual inspection is necessary. For samples exhibiting significant cross-modal semantic discrepancies, DIVER selectively invokes fine-grained visual tools (e.g., OCR and dense captioning) to extract task-relevant evidence, which is iteratively aggregated via uncertainty-aware fusion to refine multimodal reasoning. Experiments on Weibo, Weibo21, and GossipCop demonstrate that DIVER outperforms state-of-the-art baselines by an average of 2.72\\%, while optimizing inference efficiency with a reduced latency of 4.12 s."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "ENTRA: Entropy-Based Redundancy Avoidance in Large Language Model Reasoning",
+    "authors": "Ruichu Cai, Haopeng Du, Qingwen Lin, Yutong Chen, Zijian Li, Boyan Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07123v1",
+    "source": "arXiv",
+    "abstract": "Large Reasoning Models (LRMs) often suffer from overthinking, generating unnecessarily long reasoning chains even for simple tasks. This leads to substantial computational overhead with limited performance gain, primarily due to redundant verification and repetitive generation. While prior work typically constrains output length or optimizes correctness, such coarse supervision fails to guide models toward concise yet accurate inference. In this paper, we propose ENTRA, an entropy-based training framework that suppresses redundant reasoning while preserving performance. ENTRA first estimates the token-level importance using a lightweight Bidirectional Importance Estimation (BIE) method, which accounts for both prediction confidence and forward influence. It then computes a redundancy reward based on the entropy of low-importance tokens, normalized by its theoretical upper bound, and optimizes this reward via reinforcement learning. Experiments on mathematical reasoning benchmarks demonstrate that ENTRA reduces output length by 37% to 53% with no loss-and in some cases, gains-in accuracy. Our approach offers a principled and efficient solution to reduce overthinking in LRMs, and provides a generalizable path toward redundancy-aware reasoning optimization."
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Composable Verification in the Circuit-Model via Magic-Blindness",
+    "authors": "Sami Abdul Sater, Harold Ollivier",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07111v1",
+    "source": "arXiv",
+    "abstract": "As quantum computing machines move towards the utility regime, it is essential that users are able to verify their delegated quantum computations with security guarantees that are (i) robust to noise, (ii) composable with other secure protocols, and (iii) exponentially stronger as the number of resources dedicated to security increases. Previous works that achieve these guarantees and provide modularity necessary to optimization of protocols to real-world hardware are most often expressed in the Measurement-Based Quantum Computation (MBQC) model. This leaves architectures based on the circuit model -- in particular those using the Magic State Injection (MSI) -- with fewer options to verify their computations or with the need to compile their circuits in MBQC leading to overheads. This paper introduces a family of noise robust, composable and efficient verification protocols for Clifford + MSI circuits that are secure against arbitrary malicious behavior. This family contains the verification protocol of Broadbent (ToC, 2018), extends its security guarantees while also bridging the modularity gap between MBQC and circuit-based protocols, and reducing quantum communication costs. As a result, it opens the prospect of rapid implementation for near-term quantum devices. Our technique is based on a refined notion of blindness, called magic-blindness, which hides only the injected magic states -- the sole source of non-Clifford computational power. This enables verification by randomly interleaving computation rounds with classically simulable, magic-free test rounds, leading to a trap-based framework for verification. As a result, circuit-based quantum verification attains the same level of security and robustness previously known only in MBQC. It also optimizes the quantum communication cost as transmitted qubits are required only at the locations of state injection."
+  },
+  {
+    "date": "2026-01-11",
+    "title": "Next-Generation Grid Codes: Toward a New Paradigm for Dynamic Ancillary Services",
+    "authors": "Verena Häberle, Kehao Zhuang, Xiuqiang He, Linbin Huang, Florian Dörfler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07090v1",
+    "source": "arXiv",
+    "abstract": "This paper presents preliminary results toward a conceptual foundation for Next Generation Grid Codes (NGGCs) based on decentralized stability and performance certification for dynamic ancillary services. The proposed NGGC framework targets two core outcomes: (i) guaranteed closed-loop stability and (ii) explicit performance assurances for power-system frequency and voltage dynamics. Stability is addressed using loop-shifting and passivity-based methods that yield local frequency-domain certificates for individual devices, enabling fully decentralized verification of the interconnected system. Performance is characterized by deriving quantitative bounds on key time-domain metrics (e.g., nadirs, rate-of-change-of-frequency (RoCoF), steady-state deviations, and oscillation damping) through frequency-domain constraints on local device behavior. The framework is non-parametric and model-agnostic, accommodating a broad class of device dynamics under mild assumptions, and provides an initial unified approach to stability and performance certification without explicit device-model parameterization. As such, these results offer a principled starting point for the development of future grid codes and control design methodologies in modern power systems."
+  },
+  {
+    "date": "2026-01-11",
+    "title": "LINEture: novel signature cryptosystem",
+    "authors": "Gennady Khalimov, Yevgen Kotukh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07071v1",
+    "source": "arXiv",
+    "abstract": "We propose a novel digital signature cryptosystem that exploits the concept of the brute-force problem. To ensure the security of the cryptosystem, we employed several mechanisms: sharing a common secret for factorable permutations, associating permutations with the message being signed, and confirming knowledge of the shared secret using a zero-knowledge proof. We developed a secret-sharing theory based on homomorphic matrix transformations for factorized permutations. The inverse matrix transformation for computing the shared secret is determined by secret parameters, which results in incompletely defined functionality and gives rise to a brute-force cryptanalysis problem. Randomization of session keys using a message hash and random parameters guarantees the uniqueness of each signature, even for identical messages. We employed a zero-knowledge authentication protocol to confirm knowledge of the shared secret, thereby protecting the verifier against unauthorized signature imposition. The LINEture cryptosystem is built on linear matrix algebra and does not rely on a computationally hard problem. High security is achieved through the appropriate selection of matrix transformation dimensions. Matrix computations potentially offer low operational costs for signature generation and verification."
+  },
+  {
+    "date": "2026-01-11",
+    "title": "Watching, Reasoning, and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning",
+    "authors": "Chengwen Liu, Xiaomin Yu, Zhuoyue Chang, Zhe Huang, Shuo Zhang, Heng Lian, Kunyi Wang, Rui Xu, Sen Hu, Jianheng Hou, Hao Peng, Chengwei Qin, Xiaobin Hu, Hong Peng, Ronghao Chen, Huacan Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.06943v1",
+    "source": "arXiv",
+    "abstract": "In real-world video question answering scenarios, videos often provide only localized visual cues, while verifiable answers are distributed across the open web; models therefore need to jointly perform cross-frame clue extraction, iterative retrieval, and multi-hop reasoning-based verification. To bridge this gap, we construct the first video deep research benchmark, VideoDR. VideoDR centers on video-conditioned open-domain video question answering, requiring cross-frame visual anchor extraction, interactive web retrieval, and multi-hop reasoning over joint video-web evidence; through rigorous human annotation and quality control, we obtain high-quality video deep research samples spanning six semantic domains. We evaluate multiple closed-source and open-source multimodal large language models under both the Workflow and Agentic paradigms, and the results show that Agentic is not consistently superior to Workflow: its gains depend on a model's ability to maintain the initial video anchors over long retrieval chains. Further analysis indicates that goal drift and long-horizon consistency are the core bottlenecks. In sum, VideoDR provides a systematic benchmark for studying video agents in open-web settings and reveals the key challenges for next-generation video deep research agents."
+  },
+  {
+    "date": "2026-01-11",
+    "title": "MedGround: Bridging the Evidence Gap in Medical Vision-Language Models with Verified Grounding Data",
+    "authors": "Mengmeng Zhang, Xiaoping Wu, Hao Luo, Fan Wang, Yisheng Lv",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.06847v1",
+    "source": "arXiv",
+    "abstract": "Vision-Language Models (VLMs) can generate convincing clinical narratives, yet frequently struggle to visually ground their statements. We posit this limitation arises from the scarcity of high-quality, large-scale clinical referring-localization pairs. To address this, we introduce MedGround, an automated pipeline that transforms segmentation resources into high-quality medical referring grounding data. Leveraging expert masks as spatial anchors, MedGround precisely derives localization targets, extracts shape and spatial cues, and guides VLMs to synthesize natural, clinically grounded queries that reflect morphology and location. To ensure data rigor, a multi-stage verification system integrates strict formatting checks, geometry- and medical-prior rules, and image-based visual judging to filter out ambiguous or visually unsupported samples. Finally, we present MedGround-35K, a novel multimodal medical dataset. Extensive experiments demonstrate that VLMs trained with MedGround-35K consistently achieve improved referring grounding performance, enhance multi-object semantic disambiguation, and exhibit strong generalization to unseen grounding settings. This work highlights MedGround as a scalable, data-driven approach to anchor medical language to verifiable visual evidence. Dataset and code will be released publicly upon acceptance."
+  },
+  {
+    "date": "2026-01-11",
+    "title": "Logic-Driven Semantic Communication for Resilient Multi-Agent Systems",
+    "authors": "Tamara Alshammari, Mehdi Bennis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.06733v1",
+    "source": "arXiv",
+    "abstract": "The advent of 6G networks is accelerating autonomy and intelligence in large-scale, decentralized multi-agent systems (MAS). While this evolution enables adaptive behavior, it also heightens vulnerability to stressors such as environmental changes and adversarial behavior. Existing literature on resilience in decentralized MAS largely focuses on isolated aspects, such as fault tolerance, without offering a principled unified definition of multi-agent resilience. This gap limits the ability to design systems that can continuously sense, adapt, and recover under dynamic conditions. This article proposes a formal definition of MAS resilience grounded in two complementary dimensions: epistemic resilience, wherein agents recover and sustain accurate knowledge of the environment, and action resilience, wherein agents leverage that knowledge to coordinate and sustain goals under disruptions. We formalize resilience via temporal epistemic logic and quantify it using recoverability time (how quickly desired properties are re-established after a disturbance) and durability time (how long accurate beliefs and goal-directed behavior are sustained after recovery). We design an agent architecture and develop decentralized algorithms to achieve both epistemic and action resilience. We provide formal verification guarantees, showing that our specifications are sound with respect to the metric bounds and admit finite-horizon verification, enabling design-time certification and lightweight runtime monitoring. Through a case study on distributed multi-agent decision-making under stressors, we show that our approach outperforms baseline methods. Our formal verification analysis and simulation results highlight that the proposed framework enables resilient, knowledge-driven decision-making and sustained operation, laying the groundwork for resilient decentralized MAS in next-generation communication systems."
+  },
+  {
+    "date": "2026-01-11",
+    "title": "Robust Evacuation for Multi-Drone Failure in Drone Light Shows",
+    "authors": "Minhyuk Park, Aloysius K. Mok, Tsz-Chiu Au",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.06728v1",
+    "source": "arXiv",
+    "abstract": "Drone light shows have emerged as a popular form of entertainment in recent years. However, several high-profile incidents involving large-scale drone failures -- where multiple drones simultaneously fall from the sky -- have raised safety and reliability concerns. To ensure robustness, we propose a drone parking algorithm designed specifically for multiple drone failures in drone light shows, aimed at mitigating the risk of cascading collisions by drone evacuation and enabling rapid recovery from failures by leveraging strategically placed hidden drones. Our algorithm integrates a Social LSTM model with attention mechanisms to predict the trajectories of failing drones and compute near-optimal evacuation paths that minimize the likelihood of surviving drones being hit by fallen drones. In the recovery node, our system deploys hidden drones (operating with their LED lights turned off) to replace failed drones so that the drone light show can continue. Our experiments showed that our approach can greatly increase the robustness of a multi-drone system by leveraging deep learning to predict the trajectories of fallen drones."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Research on Key Technologies of EDA Software Based on RTL Code and AI Guidance",
+    "authors": "Dan Liu, Zhe Zhang, Junhao Wang, Junhao Li",
+    "publish": "2025 37th International Conference on Microelectronics (ICM)",
+    "url": "https://doi.org/10.1109/icm66518.2025.11322440",
+    "source": "IEEE",
+    "abstract": "Large-scale System-on-Chip (SoC) verification relies on multi-FPGA prototype systems, but traditional “synthesis-before-partitioning” workflows are slow and inefficient. This paper proposes LF-net, an AI-driven framework that combines RTL-level resource estimation and adaptive partitioning for FPGA prototype verification. The framework includes two core parts: 1) A deep neural network (DNN)-based LF-net model with self-attention and Alternate Fully Connected (AFC) layers, which predicts LUT/FF resources directly from RTL code without synthesis; 2) An adaptive partitioning algorithm constrained by resource thresholds for RTL-level logical partitioning. Experimental results show LF-net has a maximum Relative Absolute Error (RAE) of 0.179 (LUT) and 0.175 (FF), and is <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$37 \\times$</tex> faster than traditional synthesis tools. As the first integration of RTL-level resource estimation and partitioning into an AI-driven EDA toolchain, it provides an efficient solution for ultra-large-scale SoC prototype verification and advances independent EDA toolchain intellectualization."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Staged LLM-Based Original Entry Point Identification Using Disassembled Code",
+    "authors": "Kohei Arai, Ryotaro Kobayashi",
+    "publish": "2025 Thirteenth International Symposium on Computing and Networking (CANDAR)",
+    "url": "https://doi.org/10.1109/candar68384.2025.00010",
+    "source": "IEEE",
+    "abstract": "Many malicious software programs (malware) employ a variety of packers. When a packed program runs, an unpacking routine decrypts the original binary. After the compressed program is written into memory, control is passed to the Original Entry Point (OEP), the instruction address that marks where the original code begins, and execution continues from there. Because recognizing the OEP enables analysis of the unpacked original binary, locating the OEP is indispensable during manual unpacking. However, automatically and accurately detecting the OEP is difficult, and most conventional techniques rely on dynamic analysis, which depends on the runtime environment. Large language models (LLMs) have recently driven significant advances in the field of reverse engineering. In this study we propose an OEP identification method that leverages an LLM. Specifically, disassembly code is fed to the LLM and the model is fine-tuned, enabling a staged implementation for OEP identification. The first stage estimates code segments that transfer control to the OEP from disassembly fragments; the second stage selects a single OEP based on the estimated candidates. Experiments show that the method achieves high accuracy even on packer versions different from those used in training, confirming the usefulness of the staged LLM implementation. Nonetheless, challenges remain, including insufficient accuracy for packers not seen during training and instability in the output format."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Investigating Leakage of Sensitive Information in LLM-Powered Chatbots",
+    "authors": "Ayesha Shakeel, Sumaiya Thaseen",
+    "publish": "2025 International Conference on Computational Intelligence and Knowledge Economy (ICCIKE)",
+    "url": "https://doi.org/10.1109/iccike67021.2025.11318231",
+    "source": "IEEE",
+    "abstract": "The rapid adoption of LLM-based chatbots, such as ChatGPT, overshadows the privacy risks associated with them due to their ability to memorize and regurgitate sensitive information. This study investigates the conditions under which such chatbots disclose sensitive information, including personally identifiable information (PII), in response to various prompts. We designed a comprehensive prompt set of 325 queries covering multiple prompting strategies, including chain-of-thought prompting, system prompt extraction, masked queries, session context leakage, and more. This prompt set was used on ChatGPT and Meta AI, and the responses were evaluated for leakage and risk severity. Our findings reveal that ChatGPT leaked sensitive information in 25.23 % of tested prompts and Meta AI in 17.02 %, with high and very high-risk leaks occurring primarily in session context and multi-turn interactions. Web search integration was found to significantly increase leakage risk. Based on these results, we propose our prompt set as an exploratory privacy evaluation benchmark for assessing LLM-based chatbots. The reliability of the benchmark was demonstrated by its consistent elicitation of privacy leakage across two independent chatbot systems. This work highlights the need for enhanced privacy safeguards and user awareness and provides a foundation for future research on systematic privacy evaluation and leakage mitigation in conversational AI."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Prompt Engineering for Fpga Design: Llm-Driven Workflows Beyond Hls",
+    "authors": "Richard C. Yarnell, Paul Amoruso, Ronald F. DeMara",
+    "publish": "2025 37th International Conference on Microelectronics (ICM)",
+    "url": "https://doi.org/10.1109/icm66518.2025.11321323",
+    "source": "IEEE",
+    "abstract": "The relentless growth of hardware complexity, fueled by advances in semiconductor technology, is pushing traditional design methodologies to their limits. To meet these escalating demands, engineers are beginning to leverage the rapid advancements in artificial intelligence, particularly large language models (LLMs), to accelerate and optimize workflows. Within this work, we reveal proactive approaches to improve how widely used LLMs, namely ChatGPT, DeepSeek, Google Gemini, and Meta AI, generate Verilog Hardware Description Language code. Using these models, we create synthesizable implementations of select circuits from the MachSuite benchmark set: a molecular dynamics calculator, a sparse matrix multiplier, a sorting engine, and a Viterbi decoder. Furthermore, we utilize the LLMs to drive functional verification of the generated designs and characterize the code defects introduced by each model. We then invoke an iterative LLM prompting strategy to identify and correct these problems. Our AI-based code repair strategy achieves high success rates, up to 100 % with DeepSeek, 93 % with Meta AI, and 88 % with Gemini for the selected use cases. Finally, we synthesize our generated circuits for a Xilinx Virtex UltraScale+ FPGA and obtain hardware implementations that consistently require fewer logic resources, and frequently feature higher operating frequencies, than functionally equivalent circuits generated by standard runs of Xilinx Vitis High-Level Synthesis."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "FireNarrator: Multimodal LLM-Based Fire Incident Reporting with Decision Logic",
+    "authors": "Palash Yuvraj Ingle, Young Gab-Kim",
+    "publish": "2025 IEEE Conference on Dependable, Autonomic and Secure Computing (DASC)",
+    "url": "https://doi.org/10.1109/dasc68382.2025.00016",
+    "source": "IEEE",
+    "abstract": "This paper presents FireNarrator, a multimodal fire incident reporting framework that combines computer vision, sensor data processing, and natural language generation. The system integrates a convolutional neural network (CNN) for fire-type classification and a transformer-based model for severity estimation from environmental sensor readings. A decision logic module fuses these outputs to recommend context-aware actions such as evacuation, suppression, or monitoring. A fine-tuned large language model (LLMs) then generates structured, human-readable incident reports. Evaluated on a synthetic benchmark dataset comprising labeled fire images and aligned multi-sensor readings, FireNarrator achieves high BLEU scores up to 99.8% and consistent F1 scores 85% across various fire scenarios, including forest, vehicle, and indoor fires. The proposed framework offers a scalable solution for real-time, explainable fire reporting in smart cities and industrial safety systems."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "LLM-Augmented Multimodal Fusion for Accurate and Real-Time Wearable Event Prediction",
+    "authors": "Tanmay Shukla, Ansh Gupta",
+    "publish": "2025 9th SLAAI International Conference on Artificial Intelligence (SLAAI-ICAI)",
+    "url": "https://doi.org/10.1109/slaai-icai68534.2025.11318520",
+    "source": "IEEE",
+    "abstract": "The advancement in current wearable technology continuously produces physiological and environmental data flows with massive potential for real time event prediction. We propose a method that fuses wearable sensor streams with deep learning and Large Language Models (LLMs) to generate dynamic event predictions by using the contextual embeddings that help disambiguate similar physiological patterns, such as distinguishing stress from physical exertion, and guiding the downstream prediction module. Through temporal modeling of multi sensor time series together with LLM based context, the system accurately predicts relevant healthcare events such as stress episodes and falls. This novel method was evaluated on a synthetic dataset that was generated for controlled rare event testing and on the Wearable Stress and Affect Detection (WESAD) dataset, a widely used benchmark for stress and affect recognition. On a hold-out test set, the model obtained an F1 score of 91 percent and an AUC of 0.92, with superior performance to the Long Short-Term Memory Network (LSTM) and transformer-based models. The model’s performance in the presence of injected noise shows a slight reduction, indicating highly reliable operation under practical conditions. In summary, we demonstrate that combining deep learning with LLM driven contextualization enhances state-of-the-art wearable data processing by being accurate, interpretable and resilient to noisy signals. With further validation, our proposed approach could support future studies to explore more efficient, adaptive and reliable systems in real time health monitoring, such as more comprehensive multimodal fusion with user reports and environment descriptions."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "GrammLLM: Grammar-Guided LLM Test Generation for Compiler Validation",
+    "authors": "Mohamed Gamal Talaat, Mostafa Hassan, Mohamed Sayed, Mohanad Mohamed, Islam Ahmed",
+    "publish": "2025 37th International Conference on Microelectronics (ICM)",
+    "url": "https://doi.org/10.1109/icm66518.2025.11322450",
+    "source": "IEEE",
+    "abstract": "We present a method for generating comprehensive test cases of a specific language-construct by leveraging grammar rules defined in a Language Reference Manual (LRM). The approach begins by analyzing Backus-Naur Form (BNF) grammar representation, then constructing a graphical traversal that captures all relevant paths for the targeted feature. This graph-based model illustrates every node and transitional path governed by the feature's grammar rules, enabling a clear visualization of feature behaviour and potential edge cases. We then employ a Large Language Model (LLM) to automatically propose scenarios that exhaustively cover these paths. Finally, these scenarios are passed through another Large Language Model (LLM) to implement these scenarios. Our method ensures thorough coverage and highlights corner cases that can be overlooked by traditional testing approaches. The resulting flow not only streamlines the testing and validation process for programming language features but also provides a flexible framework for verifying new or evolving functionalities."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "LLM-enhanced Air Quality Monitoring Interface via Model Context Protocol",
+    "authors": "Yu-Erh Pan, Ayesha Siddika Nipu",
+    "publish": "2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)",
+    "url": "https://doi.org/10.1109/isaect68904.2025.11318775",
+    "source": "IEEE",
+    "abstract": "Air quality monitoring is central to environmental sustainability and public health, yet traditional systems remain difficult for non-expert users to interpret due to complex visualizations, limited interactivity, and high deployment costs. Recent advances in Large Language Models (LLMs) offer new opportunities to make sensor data more accessible, but their tendency to produce hallucinations limits reliability in safety-critical domains. To address these challenges, we present an LLM-enhanced Air Monitoring Interface (AMI) that integrates real-time sensor data with a conversational interface via the Model Context Protocol (MCP). Our system grounds LLM outputs in live environmental data, enabling accurate, context-aware responses while reducing hallucination risk. The architecture combines a Django-based backend, a responsive user dashboard, and a secure MCP server that exposes system functions as discoverable tools, allowing the LLM to act as an active operator rather than a passive responder. Expert evaluation demonstrated high factual accuracy (4.78), completeness (4.82), and minimal hallucinations (4.84), on a scale of 5, supported by inter-rater reliability analysis. These results highlight the potential of combining LLMs with standardized tool protocols to create reliable, secure, and user-friendly interfaces for real-time environmental monitoring."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Neural Bandit Based Optimal LLM Selection for Pipeline of Tasks",
+    "authors": "Baran Atalar",
+    "publish": "ACM SIGMETRICS Performance Evaluation Review",
+    "url": "https://doi.org/10.1145/3788882.3788889",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-1-12",
+    "title": "LLM and Knowledge Graph Based Framework for Dynamic Prerequisite Knowledge Identification in Foundational Mathematics",
+    "authors": "K.M.G.M.B. Alahakoon, D.D.M. Ranasinghe",
+    "publish": "2025 9th SLAAI International Conference on Artificial Intelligence (SLAAI-ICAI)",
+    "url": "https://doi.org/10.1109/slaai-icai68534.2025.11318529",
+    "source": "IEEE",
+    "abstract": "Undergraduate students from non-mathematical backgrounds often struggle with foundational subjects like calculus, especially in environments lacking personalized guidance to navigate complex prerequisite dependencies. To address this, a systematic literature review was first conducted, which revealed a significant gap: a lack of systems designed for the hierarchical nature of university-level mathematics. This paper presents the design and implementation of a novel software system that addresses this gap. The system integrates a curriculum-specific Knowledge Graph (KG) with a Large Language Model (LLM) through a hybrid Retrieval-Augmented Generation (RAG) architecture. This architecture uses the KG for structural validation and a Vector Database for semantic context, grounding the LLM to prevent hallucinations. The system dynamically identifies prerequisite knowledge concepts from student queries and generates accurate, visual learning road maps. Technical validation of the functional prototype confirms the RAG pipeline’s ability to produce pedagogically sound paths and handle unknown concepts via a human-in-the-loop workflow. This work offers a validated blueprint for building reliable and effective LLMpowered educational platforms for personalized learning."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Automated Grading Approach for Open-Ended STEM Answers using LLM",
+    "authors": "Piyanat Satcharattanachot, Sasiporn Usanavasin",
+    "publish": "2025 20th International Joint Symposium on Artificial Intelligence and Natural Language Processing (iSAI-NLP)",
+    "url": "https://doi.org/10.1109/isai-nlp66160.2025.11320498",
+    "source": "IEEE",
+    "abstract": "Artificial intelligence is becoming more popular in educational settings in many countries, especially in helping teachers ease the burden of grading. Grading tasks are not only time-consuming but also likely to be inconsistent, depending on individual judgment and experience. This can lead to unfair evaluations. This study explores how to leverage multiple worldclass AIs like OpenAI, Gemini, Claude, and Typhoon to support more consistent and efficient grading by evaluating performance indicators such as accuracy, recall, precision, F1 score, RMSE, and adjacent agreement rate. Among the tested models, one rule-based approach stood out by achieving perfect recall (100%) and a 49.93% adjacent agreement rate, showing its potential to avoid missing correct answers, which is a key concern in fair assessment. The accuracy of 74.72% also closely mirrors typical human grading. However, there are still areas for improvement. AI systems need to improve in assigning partial credit, understanding student reasoning, and being adapted to non-English, multi-subject educational environments like Thailand's. Scalability of these AI solutions is another important aspect for future development."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Mutual Recommendation of Sake and Dishes using Contrastive Learning-based Embeddings on LLM-generated Descriptive Texts",
+    "authors": "Souta Matsuda, Tomonobu Ozaki",
+    "publish": "2025 Thirteenth International Symposium on Computing and Networking (CANDAR)",
+    "url": "https://doi.org/10.1109/candar68384.2025.00027",
+    "source": "IEEE",
+    "abstract": "Japanese sake’s diverse flavors and aromas, which vary significantly by region and brewing method, make it difficult for consumers to judge its compatibility with dishes. In this study, for the mutual recommendation of sake and dishes, we propose an embedding framework of sake and dishes using contrastive learning on LLM-generated descriptive texts. In concrete, using a suite of designed prompts for extracting diverse features, we first use an LLM to generate descriptive texts for both sake and dishes which served to augment information and aid in pairing suggestions. We then feed the generated texts into a Sentence-BERT model to obtain numerical representations of each sake and dish. Furthermore, we build fine-tuned and optimized embedding models using contrastive learning on the numerical representations that capture not only the sake-dish relationship, but also the sake-sake and dish-dish relationships. The proposed framework, which utilized approximately 1000 kinds of sake and 600 kinds of dishes, was evaluated both quantitatively and qualitatively via computational experiments and a questionnaire survey, respectively. In the computational evaluation, our model that simultaneously learned all three relationships of sake-dish, sake-sake, and dish-dish achieved the highest scores across multiple metrics among four different variants. Furthermore, the qualitative evaluation confirmed that the top-ranked sake-dish pairings suggested by our model were generally acceptable to the subjects. These results indicate that the model’s recommendations are practically acceptable."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "LLM-Driven Smart City Management: Deploying Agentic AI Models with Autogen and CrewAI",
+    "authors": "Manish Yerram, Karthik Panicker, Mahendra Koneru, Jatin Chopra",
+    "publish": "2025 International Conference on Digital Innovations for Sustainable Solutions (ICDISS)",
+    "url": "https://doi.org/10.1109/icdiss68238.2025.11320766",
+    "source": "IEEE",
+    "abstract": "Smart city governance requires real-time, scalable, and adaptive solutions to respond to issues of transportation, energy, public safety, and environmental monitoring. Conventional IoT and rule-based approaches do not possess the intelligence required for dynamic cities. To fill this gap, the research suggests an LLM-based Agentic AI architecture that incorporates Autogen and CrewAI for multi-agent orchestration with support from TensorFlow and PyTorch for predictive analytics. The architecture has Databricks pipelines for processing data, while FastAPI and SQLite provide lightweight deployment. Task decomposition is handled by Autogen, and CrewAI has the role of coordinating specialized agents for traffic, energy, emergency, and citizen services. A smart city dashboard illustrates real-time monitoring of important indicators like traffic flow, energy consumption, air quality, and waste management."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Detect, Explain, Escalate: Sustainable Dialogue Breakdown Management for LLM Agents",
+    "authors": "Abdellah Ghassel, Xianzhi Li, Xiaodan Zhu",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3653123",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have demonstrated substantial capabilities in conversational AI applications, yet their susceptibility to dialogue breakdowns poses significant challenges to deployment reliability and user trust. This paper introduces a “Detect, Explain, Escalate” framework to manage dialogue breakdowns in LLM-powered agents, emphasizing resource efficient operation. Our approach integrates two key strategies: (1) We fine-tune a compact 8B-parameter model, augmented with teacher-generated reasoning traces, which serves as an efficient real-time breakdown detector and explainer. This model demonstrates robust classification and calibration on English and Japanese dialogues, and generalizes to the BETOLD dataset, improving accuracy by 7% over its baseline. (2) We systematically evaluate frontier LLMs using advanced prompting (few-shot, chain-of-thought, analogical reasoning) for high-fidelity break down assessment. These are integrated into an “escalation” architecture where our efficient detector defers to larger models only when necessary, substantially reducing operational costs and computational overhead. Our fine-tuned model and prompting strategies achieve state-of-the-art performance on DBDC5 and strong results on BETOLD, outperforming specialized classifiers on DBDC5 and narrowing the performance gap to larger proprietary models. The proposed monitor–escalate pipeline reduces inference costs by 54%, providing a cost-effective and interpretable solution for robust conversational AI in high-impact domains. Code and models will be publicly released."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Integrating Big Data Analytics and Devsecops: Adaptive LLM-Based Workflow for Resilient Multi-Cloud Environments",
+    "authors": "Ramesh Somayajula",
+    "publish": "2025 20th International Joint Symposium on Artificial Intelligence and Natural Language Processing (iSAI-NLP)",
+    "url": "https://doi.org/10.1109/isai-nlp66160.2025.11320786",
+    "source": "IEEE",
+    "abstract": "The convergence of Big Data analytics and DevSecOps practices is reshaping the way enterprises design, secure, and scale cloud-native systems. Multi-cloud deployments, while offering flexibility and redundancy, introduce new challenges in resilience, security, and compliance. Traditional DevSecOps pipelines are limited in their ability to adapt to dynamic threats and complex cross-cloud environments. To address this gap, we propose an adaptive workflow that integrates Large Language Models (LLMs) into DevSecOps pipelines, enabling real-time analysis of logs, anomaly detection, automated policy enforcement, and resilience-driven orchestration. Our framework leverages Big Data analytics to process high-velocity telemetry streams while LLM-based agents provide contextual recommendations, automated remediation, and compliance-aware adaptations across AWS, Azure, and GCP. Experimental evaluation demonstrates that the proposed system improves threat detection accuracy by 18%, reduces remediation latency by 27%, and enhances cross-cloud resilience under failure scenarios. This work establishes a foundation for resilient, AI-driven DevSecOps pipelines capable of sustaining security and compliance in complex multi-cloud ecosystems."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Efficient Pruning and Acceleration of Encoder-Based LLM Transformers on eFPGAs",
+    "authors": "Omar Elayat, Vincent Gaudet, Mohamed Elmasry",
+    "publish": "2025 37th International Conference on Microelectronics (ICM)",
+    "url": "https://doi.org/10.1109/icm66518.2025.11322486",
+    "source": "IEEE",
+    "abstract": "Transformer encoders such as Bidirectional Encoder Representations from Transformers (BERT) are widely adopted for Natural Language Processing (NLP) tasks, yet their computational and memory requirements hinder deployment on edge devices. While pruning reduces model size, most hardware friendly methods rely on structured, semi-structured, or pattern pruning at the expense of accuracy. Recent unstructured pruning methods have shown promising accuracy-efficiency tradeoffs but have only been demonstrated on decoder models and lack clear hardware deployment pathways. To address this problem, this work applies the state-of-the-art WANDA [17] pruning algorithm to BERT encoders and evaluates the accuracy of both unstructured and semi-structured sparsity regimes. To complement pruning and maximize inference efficiency, we propose a hardware architecture featuring a double-buffered systolic matrix-matrix multiplier with skip-zero support. This approach minimizes bitmask memory storage overhead and hides memory latency through fully overlapping compute and stream operations. Our approach is evaluated using the linear layers of the encoder as a representative workload and is implemented on the Digilent PYNQ-Z1 board, a resource-constrained Field-Programmable Gate Array (FPGA). Compared to dense baselines, our design achieves up to <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$1.67 \\times$</tex> latency improvement with negligible accuracy degradation on the GLUE [28] benchmark."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Emotion-Aware LLM Systems for Adaptive Human-Robot Interaction",
+    "authors": "Yinwen Wang, Yi Huang, Jianhua Xia, Le-bing Zhang, Haoyu Lei, Yuxiang Zhang",
+    "publish": "2025 2nd International Symposium on IoT and Intelligent Robotics (IoTIR)",
+    "url": "https://doi.org/10.1109/iotir66925.2025.00020",
+    "source": "IEEE",
+    "abstract": "The fluency and contextual adaptability of human-robot interaction (HRI) are critical for enhancing collaborative efficiency and user experience in dynamic environments. To address the limitations of traditional systems — such as rigid command syntax, restricted vocabulary, and poor generalization—this study proposes a novel multimodal interaction framework that integrates a pre-trained large language model (LLM) with robotic automation. By leveraging the ChatGLM3-6B model fine-tuned for task decomposition and physical-world interaction, the system bridges the gap between natural language commands and low-level robotic actions through a hybrid architecture. Key innovations include a ReAct-based prompting framework for context-aware reasoning, a BERT encoder for mapping LLM outputs to ROS-compatible control primitives, and a real-time emotion analysis module to enhance conversational adaptability. Extensive simulations in Gazebo/ROS environments demonstrate the system’ s capability to achieve 93.4% grasp success rates, 1.2s command-to-action latency, and 83.6% task completion under ambiguous instructions. The proposed approach significantly improves the flexibility of HRI, enabling intuitive collaboration in complex scenarios such as laboratory automation and industrial sorting."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "A Vision for Debiasing Confirmation Bias in Software Testing via LLM",
+    "authors": "Iflaah Salman, Muhammad Waseem, Vladimir Mandić, Rasanjana Dhanushkha De Alwis",
+    "publish": "2025 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)",
+    "url": "https://doi.org/10.1109/esem64174.2025.00050",
+    "source": "IEEE",
+    "abstract": "Background: Large language models (LLM) suffer from various forms of biases due to the biased datasets used to train the models. At the same time, human cognitive biases have an equal propensity to express themselves when using LLMs for software engineering tasks. Software testing is a critical phase of the software development life cycle. Confirmation bias is reported to have deteriorated software testing by designing more specification-consistent test cases compared to specificationinconsistent test cases. However, there is a lack of debiasing (mitigation) strategies in this regard. Aims: In this paper, first, we investigate whether the LLM model suffers from confirmation bias while performing software testing tasks. Second, we propose a vision of debasing confirmation bias in software testing via LLM. Method: We conducted an empirical study to detect confirmation bias by an LLM (ChatGPT4.0) in the design of functional test cases. Based on empirical findings, we used the analytical paradigm to design a multi-agent system. Results: We present a vision for debiasing confirmation bias in functional software testing by leveraging LLMs via a multi-agent approach. Conclusions: The proposed vision may improve the performance of LLMs in terms of reduced confirmation bias and serve as a debiasing technique for functional software testing."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "InstructMPC: A Human-LLM-in-the-Loop Framework for Context-Aware Control",
+    "authors": "Ruixiang Wu, Jiahao Ai, Tongxin Li",
+    "publish": "2025 IEEE 64th Conference on Decision and Control (CDC)",
+    "url": "https://doi.org/10.1109/cdc57313.2025.11312156",
+    "source": "IEEE",
+    "abstract": "Model Predictive Control (MPC) is a powerful control strategy widely utilized in domains like energy management, building control, and autonomous systems. However, its effectiveness in real-world settings is challenged by the need to incorporate context-specific predictions and expert instructions, which traditional MPC often neglects. We propose INSTRUCTMPC, a novel framework that addresses this gap by integrating real-time human instructions through a Large Language Model (LLM) to produce context-aware predictions for MPC. Our method employs a Language-to-Distribution (L2D) module to translate contextual information into predictive disturbance trajectories, which are then incorporated into the MPC optimization. Unlike existing context-aware and language-based MPC models, INSTRUCTMPC enables dynamic human-LLM interaction and fine-tunes the L2D module in a closed loop with theoretical performance guarantees, achieving a regret bound of $O\\sqrt {T\\log \\,T} $ for linear dynamics when optimized via advanced fine-tuning methods such as Direct Preference Optimization (DPO) using a tailored loss function."
+  },
+  {
+    "date": "2026-1-12",
+    "title": "A Scalable Drug Discovery Pipeline: Automating Target Identification to Enable LLM-Based Reasoning",
+    "authors": "Devanshi Goswami, Ankita Krishnia, Satwinder Singh, Dharmveer Singh Rajpoot",
+    "publish": "2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)",
+    "url": "https://doi.org/10.1109/isaect68904.2025.11318789",
+    "source": "IEEE",
+    "abstract": "Drug-disease target prediction plays an important role in computational drug discovery but is often limited by manual curation, fragmented data sources, and a lack of reproducibility. This work presents an integrated workflow that unifies target retrieval, dataset intersection, protein–protein interaction (PPI) network analysis, and pathway enrichment into a single automated process. As a case study, doxorubicin has been evaluated against cancer to identify shared therapeutic targets. Drug targets have been retrieved from a locally stored ChemBL database and UniProt API, while disease-associated genes have been collected from UniProt, KEGG, OMIM, and GeneCards using their respective APIs. All identifiers have been standardized to UniProt accessions and intersected to extract candidate proteins common to both drug and disease profiles (AR', 'PPARG', 'BRCA1', 'PDGFRB', 'TP53', 'EGFR', 'PIK3CA', 'ERBB2', 'TERT', 'AKT1'). To rank these targets, maximal clique centrality has been used instead of third-party applications like Cytoscape or ShinyGO. GSEApy's. KEGG enrichment has been used for functional interpretation and multi-disease pathway analysis. A scalable basis for the future integration of machine learning and large language models (LLMs) to improve automated reasoning in drug discovery pipelines is provided by the suggested methodology, which minimizes manual involvement, speeds up analysis, and guarantees consistent results. Drug discovery and target identification have traditionally relied on labor-intensive experimental screening and validation."
+  }
+]

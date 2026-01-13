@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2026-01-12",
+    "title": "GRPO with State Mutations: Improving LLM-Based Hardware Test Plan Generation",
+    "authors": "Dimple Vijay Kochar, Nathaniel Pinckney, Guan-Ting Liu, Chia-Tung Ho, Chenhui Deng, Haoxing Ren, Brucek Khailany",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.07593v1",
+    "source": "arXiv",
+    "abstract": "RTL design often relies heavily on ad-hoc testbench creation early in the design cycle. While large language models (LLMs) show promise for RTL code generation, their ability to reason about hardware specifications and generate targeted test plans remains largely unexplored. We present the first systematic study of LLM reasoning capabilities for RTL verification stimuli generation, establishing a two-stage framework that decomposes test plan generation from testbench execution. Our benchmark reveals that state-of-the-art models, including DeepSeek-R1 and Claude-4.0-Sonnet, achieve only 15.7-21.7% success rates on generating stimuli that pass golden RTL designs. To improve LLM generated stimuli, we develop a comprehensive training methodology combining supervised fine-tuning with a novel reinforcement learning approach, GRPO with State Mutation (GRPO-SMu), which enhances exploration by varying input mutations. Our approach leverages a tree-based branching mutation strategy to construct training data comprising equivalent and mutated trees, moving beyond linear mutation approaches to provide rich learning signals. Training on this curated dataset, our 7B parameter model achieves a 33.3% golden test pass rate and a 13.9% mutation detection rate, representing a 17.6% absolute improvement over baseline and outperforming much larger general-purpose models. These results demonstrate that specialized training methodologies can significantly enhance LLM reasoning capabilities for hardware verification tasks, establishing a foundation for automated sub-unit testing in semiconductor design workflows.",
+    "title_zh": "具有状态变异的GRPO：改进基于LLM的硬件测试计划生成",
+    "abstract_zh": "RTL设计在设计周期的早期通常严重依赖于临时测试平台的创建。虽然大型语言模型（LLM）在RTL代码生成方面显示出潜力，但其推理硬件规格和生成有针对性的测试计划的能力仍然很少被探索。我们提出了第一个系统研究LLM在RTL验证刺激生成中的推理能力的研究，建立了一个将测试计划生成与测试平台执行分解的两阶段框架。我们的基准测试显示，最先进的模型，包括DeepSeek-R1和Claude-4.0-Sonnet，在生成通过黄金RTL设计的刺激方面的成功率仅为15.7-21.7%。为了改进LLM生成的刺激，我们开发了一种综合训练方法，将监督微调与一种新颖的强化学习方法GRPO与状态变异（GRPO-SMu）相结合，通过改变输入变异来增强探索。我们的方法利用基于树的分支变异策略来构建包含等效和变异树的训练数据，超越线性变异方法，提供丰富的学习信号。在这个精心策划的数据集上训练，我们的7B参数模型实现了33.3%的黄金测试通过率和13.9%的变异检测率，相比基线提高了17.6%的绝对值，并且优于更大的一般用途模型。这些结果表明，专门的训练方法可以显著增强LLM在硬件验证任务中的推理能力，为半导体设计工作流程中的自动化子单元测试奠定了基础。"
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Research on Key Technologies of EDA Software Based on RTL Code and AI Guidance",
+    "authors": "Dan Liu, Zhe Zhang, Junhao Wang, Junhao Li",
+    "publish": "2025 37th International Conference on Microelectronics (ICM)",
+    "url": "https://doi.org/10.1109/icm66518.2025.11322440",
+    "source": "IEEE",
+    "abstract": "Large-scale System-on-Chip (SoC) verification relies on multi-FPGA prototype systems, but traditional “synthesis-before-partitioning” workflows are slow and inefficient. This paper proposes LF-net, an AI-driven framework that combines RTL-level resource estimation and adaptive partitioning for FPGA prototype verification. The framework includes two core parts: 1) A deep neural network (DNN)-based LF-net model with self-attention and Alternate Fully Connected (AFC) layers, which predicts LUT/FF resources directly from RTL code without synthesis; 2) An adaptive partitioning algorithm constrained by resource thresholds for RTL-level logical partitioning. Experimental results show LF-net has a maximum Relative Absolute Error (RAE) of 0.179 (LUT) and 0.175 (FF), and is <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$37 \\times$</tex> faster than traditional synthesis tools. As the first integration of RTL-level resource estimation and partitioning into an AI-driven EDA toolchain, it provides an efficient solution for ultra-large-scale SoC prototype verification and advances independent EDA toolchain intellectualization.",
+    "title_zh": "基于RTL代码和AI指导的EDA软件关键技术研究",
+    "abstract_zh": "大规模片上系统（SoC）验证依赖于多FPGA原型系统，但传统的“合成前分割”工作流程速度慢且效率低下。本文提出了LF-net，一种结合RTL级资源估算和自适应分割的AI驱动框架，用于FPGA原型验证。该框架包括两个核心部分：1）基于深度神经网络（DNN）的LF-net模型，具有自注意力和交替全连接（AFC）层，能够直接从RTL代码预测LUT/FF资源而无需合成；2）受资源阈值约束的自适应分割算法，用于RTL级逻辑分割。实验结果表明，LF-net的最大相对绝对误差（RAE）为0.179（LUT）和0.175（FF），并且比传统合成工具快<tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$37 \\times$</tex>。作为首次将RTL级资源估算和分割集成到AI驱动的EDA工具链中，它为超大规模SoC原型验证提供了高效解决方案，并推动了独立EDA工具链的智能化发展。"
+  },
+  {
+    "date": "2026-1-12",
+    "title": "Prompt Engineering for Fpga Design: Llm-Driven Workflows Beyond Hls",
+    "authors": "Richard C. Yarnell, Paul Amoruso, Ronald F. DeMara",
+    "publish": "2025 37th International Conference on Microelectronics (ICM)",
+    "url": "https://doi.org/10.1109/icm66518.2025.11321323",
+    "source": "IEEE",
+    "abstract": "The relentless growth of hardware complexity, fueled by advances in semiconductor technology, is pushing traditional design methodologies to their limits. To meet these escalating demands, engineers are beginning to leverage the rapid advancements in artificial intelligence, particularly large language models (LLMs), to accelerate and optimize workflows. Within this work, we reveal proactive approaches to improve how widely used LLMs, namely ChatGPT, DeepSeek, Google Gemini, and Meta AI, generate Verilog Hardware Description Language code. Using these models, we create synthesizable implementations of select circuits from the MachSuite benchmark set: a molecular dynamics calculator, a sparse matrix multiplier, a sorting engine, and a Viterbi decoder. Furthermore, we utilize the LLMs to drive functional verification of the generated designs and characterize the code defects introduced by each model. We then invoke an iterative LLM prompting strategy to identify and correct these problems. Our AI-based code repair strategy achieves high success rates, up to 100 % with DeepSeek, 93 % with Meta AI, and 88 % with Gemini for the selected use cases. Finally, we synthesize our generated circuits for a Xilinx Virtex UltraScale+ FPGA and obtain hardware implementations that consistently require fewer logic resources, and frequently feature higher operating frequencies, than functionally equivalent circuits generated by standard runs of Xilinx Vitis High-Level Synthesis.",
+    "title_zh": "用于FPGA设计的提示工程：超越HLS的LLM驱动工作流程",
+    "abstract_zh": "半导体技术的进步推动了硬件复杂性的不断增长，这使得传统的设计方法学达到了极限。为了满足这些不断增长的需求，工程师们开始利用人工智能的快速进步，特别是大型语言模型（LLMs），来加速和优化工作流程。在这项工作中，我们揭示了如何通过主动的方法来改进广泛使用的LLMs（如ChatGPT、DeepSeek、Google Gemini和Meta AI）生成Verilog硬件描述语言代码。利用这些模型，我们为MachSuite基准集中的选定电路创建了可综合的实现：分子动力学计算器、稀疏矩阵乘法器、排序引擎和维特比解码器。此外，我们利用LLMs来推动生成设计的功能验证，并对每个模型引入的代码缺陷进行特征化。然后，我们采用迭代的LLM提示策略来识别和纠正这些问题。我们的基于AI的代码修复策略在选定的用例中取得了高成功率，DeepSeek达到100%，Meta AI达到93%，Gemini达到88%。最后，我们为Xilinx Virtex UltraScale+ FPGA综合生成的电路，获得的硬件实现通常需要更少的逻辑资源，并且频繁地具有比标准Xilinx Vitis高层次综合生成的功能等效电路更高的工作频率。"
+  }
+]
