@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-01-20",
+    "title": "HALT: Hallucination Assessment via Latent Testing",
+    "authors": "Rohan Bhatnagar, Youran Sun, Chi Andrew Zhang, Yixin Wen, Haizhao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14210v1",
+    "source": "arXiv",
+    "abstract": "Hallucination in large language models (LLMs) can be understood as a failure of faithful readout: although internal representations may encode uncertainty about a query, decoding pressures still yield a fluent answer. We propose lightweight residual probes that read hallucination risk directly from intermediate hidden states of question tokens, motivated by the hypothesis that these layers retain epistemic signals that are attenuated in the final decoding stage. The probe is a small auxiliary network whose computation is orders of magnitude cheaper than token generation and can be evaluated fully in parallel with inference, enabling near-instantaneous hallucination risk estimation with effectively zero added latency in low-risk cases. We deploy the probe as an agentic critic for fast selective generation and routing, allowing LLMs to immediately answer confident queries while delegating uncertain ones to stronger verification pipelines. Across four QA benchmarks and multiple LLM families, the method achieves strong AUROC and AURAC, generalizes under dataset shift, and reveals interpretable structure in intermediate representations, positioning fast internal uncertainty readout as a principled foundation for reliable agentic AI."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Verifying Floating-Point Programs in Stainless",
+    "authors": "Andrea Gilot, Axel Bergström, Eva Darulova",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14059v1",
+    "source": "arXiv",
+    "abstract": "We extend the Stainless deductive verifier with floating-point support, providing the first automated verification support for floating-point numbers for a subset of Scala that includes polymorphism, recursion and higher-order functions. We follow the recent approach in the KeY verifier to axiomatise reasoning about mathematical functions, but go further by supporting all functions from Scala's math API, and by verifying the correctness of the axioms against the actual implementation in Stainless itself. We validate Stainless' floating-point support on a new set of benchmarks sampled from real-world code from GitHub, showing that it can verify specifications about, e.g., ranges of output or absence of special values for most supported functions, or produce counter-examples when the specifications do not hold."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Universal Coarsening and Giant-Cluster Formation in Growing Interfaces",
+    "authors": "Renan A. L. Almeida, Tiago J. Oliveira, Jeferson J. Arenzon, Leticia F. Cugliandolo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14025v1",
+    "source": "arXiv",
+    "abstract": "Clusters formed by fluctuations of two-dimensional (2D) directed interfaces around a threshold level have been extensively studied at equilibrium and in nonequilibrium steady states, but their coarsening dynamics remain poorly understood. Here, we numerically investigate this unexplored coarsening of clusters in 2D growing interfaces believed to belong to the Kardar-Parisi-Zhang universality class. Using a two-point spatial correlator, we demonstrate statistical time invariance of the evolving configurations and identify scaling forms shared across distinct models. We reveal a pronounced asymmetry in the growth of the largest clusters: one cluster emerges as a giant structure whose characteristic length exceeds the correlation length. Population-dependent scaling forms for the number densities of cluster areas are uncovered. These findings highlight new universal aspects of growing interfaces and suggest avenues for experimental verification."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "A Security Framework for Chemical Functions",
+    "authors": "Frederik Walter, Hrishi Narayanan, Jessica Bariffi, Anne Lüscher, Rawad Bitar, Robert Grass, Antonia Wachter-Zeh, Zohar Yakhini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14019v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we introduce chemical functions, a unified framework that models chemical systems as noisy challenge--response primitives, and formalize the associated chemical function infrastructure. Building on the theory of physical functions, we rigorously define robustness, unclonability, and unpredictability for chemical functions in both finite and asymptotic regimes, and specify security games that capture the adversary's power and the security goals. We instantiate the framework with two existing DNA-based constructions (operable random DNA and Genomic Sequence Encryption) and derive quantitative bounds for robustness, unclonability, and unpredictability. Our analysis develops maximum-likelihood verification rules under sequencing noise and partial-edit models, and provides high-precision estimates based on binomial distributions to guide parameter selection. The framework, definitions, and analyses yield a reproducible methodology for designing chemically unclonable authentication mechanisms. We demonstrate applications to in-product authentication and to shared key generation using standard extraction techniques."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "DAME: Duration-Aware Matryoshka Embedding for Duration-Robust Speaker Verification",
+    "authors": "Youngmoon Jung, Joon-Young Yang, Ju-ho Kim, Jaeyoung Roh, Chang Woo Han, Hoon-Young Cho",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13999v1",
+    "source": "arXiv",
+    "abstract": "Short-utterance speaker verification remains challenging due to limited speaker-discriminative cues in short speech segments. While existing methods focus on enhancing speaker encoders, the embedding learning strategy still forces a single fixed-dimensional representation reused for utterances of any length, leaving capacity misaligned with the information available at different durations. We propose Duration-Aware Matryoshka Embedding (DAME), a model-agnostic framework that builds a nested hierarchy of sub-embeddings aligned to utterance durations: lower-dimensional representations capture compact speaker traits from short utterances, while higher dimensions encode richer details from longer speech. DAME supports both training from scratch and fine-tuning, and serves as a direct alternative to conventional large-margin fine-tuning, consistently improving performance across durations. On the VoxCeleb1-O/E/H and VOiCES evaluation sets, DAME consistently reduces the equal error rate on 1-s and other short-duration trials, while maintaining full-length performance with no additional inference cost. These gains generalize across various speaker encoder architectures under both general training and fine-tuning setups."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Achieving Full Multipath Diversity by Random Constellation Rotation: a Theoretical Perspective",
+    "authors": "Xuehan Wang, Jinhong Yuan, Jintao Wang, Kehan Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13997v1",
+    "source": "arXiv",
+    "abstract": "Diversity is an essential concept associated with communication reliability in multipath channels since it determines the slope of bit error rate performance in the medium to high signal-to-noise ratio regions. However, most of the existing analytical frameworks were developed for specific modulation schemes while the efficient validation of full multipath diversity for general modulation schemes remains an open problem. To fill this research gap, we propose to utilize random constellation rotation to ease the conditions for full-diversity modulation designs. For linearly precoded cyclic-prefix orthogonal frequency division multiplexing (OFDM) systems, we prove that maximum multipath diversity can be attained as long as the spread matrix does not have zero entries, which is a sufficient but easily satisfied condition. Furthermore, we derive the sufficient and necessary condition for general modulation schemes, whose verification can be divided into validation tasks for each column of the modulation matrix. Based on the proposed conditions, maximum diversity order can be attained with the probability of 1 by enabling a randomly generated rotation pattern for both time and doubly dispersive channels. The theoretical analysis in this paper also demonstrates that the diversity evaluation can be concentrated on the pairwise error probability when the number of error symbols is one, which reduces the complexity of diversity-driven design and performance analysis for novel modulation schemes significantly in both time and doubly dispersive channels. Finally, numerical results for various modulation schemes confirm that the theoretical analysis holds in both time and doubly dispersive channels. Furthermore, when employing practical detectors, the random constellation rotation technique consistently enhance the transmission reliability for both coded and uncoded systems."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "HardSecBench: Benchmarking the Security Awareness of LLMs for Hardware Code Generation",
+    "authors": "Qirui Chen, Jingxian Shuai, Shuangwu Chen, Shenghao Ye, Zijian Wen, Xufei Su, Jie Jin, Jiangming Li, Jun Chen, Xiaobin Tan, Jian Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13864v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are being increasingly integrated into practical hardware and firmware development pipelines for code generation. Existing studies have primarily focused on evaluating the functional correctness of LLM-generated code, yet paid limited attention to its security issues. However, LLM-generated code that appears functionally sound may embed security flaws which could induce catastrophic damages after deployment. This critical research gap motivates us to design a benchmark for assessing security awareness under realistic specifications. In this work, we introduce HardSecBench, a benchmark with 924 tasks spanning Verilog Register Transfer Level (RTL) and firmware-level C, covering 76 hardware-relevant Common Weakness Enumeration (CWE) entries. Each task includes a structured specification, a secure reference implementation, and executable tests. To automate artifact synthesis, we propose a multi-agent pipeline that decouples synthesis from verification and grounds evaluation in execution evidence, enabling reliable evaluation. Using HardSecBench, we evaluate a range of LLMs on hardware and firmware code generation and find that models often satisfy functional requirements while still leaving security risks. We also find that security results vary with prompting. These findings highlight pressing challenges and offer actionable insights for future advancements in LLM-assisted hardware design. Our data and code will be released soon."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "From RTL to Prompt Coding: Empowering the Next Generation of Chip Designers through LLMs",
+    "authors": "Lukas Krupp, Matthew Venn, Norbert Wehn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13815v1",
+    "source": "arXiv",
+    "abstract": "This paper presents an LLM-based learning platform for chip design education, aiming to make chip design accessible to beginners without overwhelming them with technical complexity. It represents the first educational platform that assists learners holistically across both frontend and backend design. The proposed approach integrates an LLM-based chat agent into a browser-based workflow built upon the Tiny Tapeout ecosystem. The workflow guides users from an initial design idea through RTL code generation to a tapeout-ready chip. To evaluate the concept, a case study was conducted with 18 high-school students. Within a 90-minute session they developed eight functional VGA chip designs in a 130 nm technology. Despite having no prior experience in chip design, all groups successfully implemented tapeout-ready projects. The results demonstrate the feasibility and educational impact of LLM-assisted chip design, highlighting its potential to attract and inspire early learners and significantly broaden the target audience for the field."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "A Blockchain-Oriented Software Engineering Architecture for Carbon Credit Certification Systems",
+    "authors": "Matteo Vaccargiu, Azmat Ullah, Pierluigi Gallo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13772v1",
+    "source": "arXiv",
+    "abstract": "Carbon credit systems have emerged as a policy tool to incentivize emission reductions and support the transition to clean energy. Reliable carbon-credit certification depends on mechanisms that connect actual, measured renewable-energy production to verifiable emission-reduction records. Although blockchain and IoT technologies have been applied to emission monitoring and trading, existing work offers limited support for certification processes, particularly for small and medium-scale renewable installations. This paper introduces a blockchain-based carbon-credit certification architecture, demonstrated through a 100 kWp photovoltaic case study, that integrates real-time IoT data collection, edge-level aggregation, and secure on-chain storage on a permissioned blockchain with smart contracts. Unlike approaches focused on trading mechanisms, the proposed system aligns with European legislation and voluntary carbon-market standards, clarifying the practical requirements and constraints that apply to photovoltaic operators. The resulting architecture provides a structured pathway for generating verifiable carbon-credit records and supporting third-party verification."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Research on Adaptive Inertial Control in Synchronization Systems: Based on Variational Optimization Methods and Their Applications in the Stability of Complex Networks",
+    "authors": "Yiwei Zhou, Zhongcheng Lei, Xiaoran Dai, Wenshan Hu, Hong Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13753v1",
+    "source": "arXiv",
+    "abstract": "Aiming at the core problem that it is difficult for a fixed inertia coefficient to balance transient disturbance suppression and long-term stability in complex network synchronization systems, an adaptive inertia control strategy based on variational optimization is proposed. Taking the Kuramoto model with inertia as the research carrier, the analytical expression of the time-varying inertia coefficient M(t) is strictly derived by the functional variational method, and a hierarchical control structure of \"benchmark inertia + disturbance feedback\" is constructed to achieve the organic unity of minimizing the vulnerability performance function H(T) and stability constraints. A multimodal decoupling control strategy based on Laplacian eigenvector projection is designed to enhance the feedback strength of the dominant mode by eigenvalue weighting, improving the control accuracy and dynamic response speed. Simulation verification is carried out in complex network systems, and the control performance of regular networks (RG), random networks (ER), small-world networks (SW), scale-free networks (SF) and spider webs (SP) under three typical disturbances of pulses, monotonic decays and oscillatory decays is systematically analyzed. The results show that the proposed strategy reduces H(T) of the five networks by 19%-25%, shortens the relaxation time by 15%-24%, and the real parts of all system eigenvalues are less than -0.25s^-1 , meeting the asymptotic stability criterion. This study provides a new theoretical framework and engineering implementation scheme for the stability control of complex network synchronization systems, which can be widely applied to fields such as power grids, communication networks, and neural networks."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Breaking the Data Barrier in Learning Symbolic Computation: A Case Study on Variable Ordering Suggestion for Cylindrical Algebraic Decomposition",
+    "authors": "Rui-Juan Jing, Yuegang Zhao, Changbo Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13731v1",
+    "source": "arXiv",
+    "abstract": "Symbolic computation, powered by modern computer algebra systems, has important applications in mathematical reasoning through exact deep computations. The efficiency of symbolic computation is largely constrained by such deep computations in high dimension. This creates a fundamental barrier on labelled data acquisition if leveraging supervised deep learning to accelerate symbolic computation. Cylindrical algebraic decomposition (CAD) is a pillar symbolic computation method for reasoning with first-order logic formulas over reals with many applications in formal verification and automatic theorem proving. Variable orderings have a huge impact on its efficiency. Impeded by the difficulty to acquire abundant labelled data, existing learning-based approaches are only competitive with the best expert-based heuristics. In this work, we address this problem by designing a series of intimately connected tasks for which a large amount of annotated data can be easily obtained. We pre-train a Transformer model with these data and then fine-tune it on the datasets for CAD ordering. Experiments on publicly available CAD ordering datasets show that on average the orderings predicted by the new model are significantly better than those suggested by the best heuristic methods."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Foundational VeriFast: Pragmatic Certification of Verification Tool Results through Hinted Mirroring",
+    "authors": "Bart Jacobs",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13727v1",
+    "source": "arXiv",
+    "abstract": "VeriFast is a leading tool for the modular formal verification of correctness properties of single-threaded and multi-threaded C and Rust programs. It verifies a program by symbolically executing each function in isolation, exploiting user-annotated preconditions, postconditions, and loop invariants written in a form of separation logic, and using a separation logic-based symbolic representation of memory. However, the tool itself, written in roughly 30K lines of OCaml code, has not been formally verified. Therefore, bugs in the tool could cause it to falsely report the correctness of the input program. We here report on an early result extending VeriFast to emit, upon successful verification of a Rust program, a Rocq proof script that proves correctness of the program with respect to a Rocq-encoded axiomatic semantics of Rust. This significantly enhances VeriFast's applicability in safety-critical domains. We apply hinted mirroring: we record key information from VeriFast's symbolic execution run, and use it to direct a replay of the run in Rocq."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "GerAV: Towards New Heights in German Authorship Verification using Fine-Tuned LLMs on a New Benchmark",
+    "authors": "Lotta Kiefer, Christoph Leiter, Sotaro Takeshita, Elena Schmidt, Steffen Eger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13711v1",
+    "source": "arXiv",
+    "abstract": "Authorship verification (AV) is the task of determining whether two texts were written by the same author and has been studied extensively, predominantly for English data. In contrast, large-scale benchmarks and systematic evaluations for other languages remain scarce. We address this gap by introducing GerAV, a comprehensive benchmark for German AV comprising over 600k labeled text pairs. GerAV is built from Twitter and Reddit data, with the Reddit part further divided into in-domain and cross-domain message-based subsets, as well as a profile-based subset. This design enables controlled analysis of the effects of data source, topical domain, and text length. Using the provided training splits, we conduct a systematic evaluation of strong baselines and state-of-the-art models and find that our best approach, a fine-tuned large language model, outperforms recent baselines by up to 0.09 absolute F1 score and surpasses GPT-5 in a zero-shot setting by 0.08. We further observe a trade-off between specialization and generalization: models trained on specific data types perform best under matching conditions but generalize less well across data regimes, a limitation that can be mitigated by combining training sources. Overall, GerAV provides a challenging and versatile benchmark for advancing research on German and cross-domain AV."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "CodeContests-O: Powering LLMs via Feedback-Driven Iterative Test Case Generation",
+    "authors": "Jianfeng Cai, Jinhua Zhu, Ruopei Sun, Kangwen Zhao, Dongyun Xue, Mingxiao Feng, Wengang Zhou, Houqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13682v1",
+    "source": "arXiv",
+    "abstract": "The rise of reasoning models necessitates large-scale verifiable data, for which programming tasks serve as an ideal source. However, while competitive programming platforms provide abundant problems and solutions, high-quality test cases for verification remain scarce. Existing approaches attempt to synthesize test cases using Large Language Models (LLMs), but rely solely on the model's intrinsic generation capabilities without external feedback, frequently resulting in insufficiently diverse cases. To address this limitation, we propose a $\\textbf{Feedback-Driven Iterative Framework}$ for comprehensive test case construction. Specifically, our method leverages the LLM to generate initial test cases, executes them against known correct and incorrect solutions, and utilizes the failed results as feedback to guide the LLM in refining the test cases toward high fidelity and discriminability. We then apply this method to the CodeContests dataset to construct an optimized high-quality derivative, $\\textbf{CodeContests-O}$. Evaluating against the entire pool of solutions ($1.1 \\times 10^7$ in total), our dataset achieves an average True Positive Rate (TPR) of $89.37\\%$ and True Negative Rate (TNR) of $90.89\\%$, significantly outperforming the CodeContests and CodeContests+ by margins of $4.32\\%$ and $9.37\\%$, respectively. Furthermore, fine-tuning the Qwen2.5-7B model on CodeContests-O results in a $9.52\\%$ improvement on LiveCodeBench (Pass@1). Experiments demonstrate the effectiveness of our framework and the quality of CodeContests-O. To support reproducibility and facilitate future research, we release the $\\href{https://github.com/cai-jianfeng/CodeContests-O}{code}$ and $\\href{https://huggingface.co/datasets/caijanfeng/CodeContests-O}{dataset}$."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "ChartVerse: Scaling Chart Reasoning via Reliable Programmatic Synthesis from Scratch",
+    "authors": "Zheng Liu, Honglin Lin, Chonghan Qin, Xiaoyang Wang, Xin Gao, Yu Li, Mengzhang Cai, Yun Zhu, Zhanping Zhong, Qizhi Pei, Zhuoshi Pan, Xiaoran Shang, Bin Cui, Conghui He, Wentao Zhang, Lijun Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13606v1",
+    "source": "arXiv",
+    "abstract": "Chart reasoning is a critical capability for Vision Language Models (VLMs). However, the development of open-source models is severely hindered by the lack of high-quality training data. Existing datasets suffer from a dual challenge: synthetic charts are often simplistic and repetitive, while the associated QA pairs are prone to hallucinations and lack the reasoning depth required for complex tasks. To bridge this gap, we propose ChartVerse, a scalable framework designed to synthesize complex charts and reliable reasoning data from scratch. (1) To address the bottleneck of simple patterns, we first introduce Rollout Posterior Entropy (RPE), a novel metric that quantifies chart complexity. Guided by RPE, we develop complexity-aware chart coder to autonomously synthesize diverse, high-complexity charts via executable programs. (2) To guarantee reasoning rigor, we develop truth-anchored inverse QA synthesis. Diverging from standard generation, we adopt an answer-first paradigm: we extract deterministic answers directly from the source code, generate questions conditional on these anchors, and enforce strict consistency verification. To further elevate difficulty and reasoning depth, we filter samples based on model fail-rate and distill high-quality Chain-of-Thought (CoT) reasoning. We curate ChartVerse-SFT-600K and ChartVerse-RL-40K using Qwen3-VL-30B-A3B-Thinking as the teacher. Experimental results demonstrate that ChartVerse-8B achieves state-of-the-art performance, notably surpassing its teacher and rivaling the stronger Qwen3-VL-32B-Thinking."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Foundations of Global Consistency Checking with Noisy LLM Oracles",
+    "authors": "Paul He, Elke Kirschbaum, Shiva Kasiviswanathan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13600v1",
+    "source": "arXiv",
+    "abstract": "Ensuring that collections of natural-language facts are globally consistent is essential for tasks such as fact-checking, summarization, and knowledge base construction. While Large Language Models (LLMs) can assess the consistency of small subsets of facts, their judgments are noisy, and pairwise checks are insufficient to guarantee global coherence. We formalize this problem and show that verifying global consistency requires exponentially many oracle queries in the worst case. To make the task practical, we propose an adaptive divide-and-conquer algorithm that identifies minimal inconsistent subsets (MUSes) of facts and optionally computes minimal repairs through hitting-sets. Our approach has low-degree polynomial query complexity. Experiments with both synthetic and real LLM oracles show that our method efficiently detects and localizes inconsistencies, offering a scalable framework for linguistic consistency verification with LLM-based evaluators."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Motion-to-Response Content Generation via Multi-Agent AI System with Real-Time Safety Verification",
+    "authors": "HyeYoung Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13589v1",
+    "source": "arXiv",
+    "abstract": "This paper proposes a multi-agent artificial intelligence system that generates response-oriented media content in real time based on audio-derived emotional signals. Unlike conventional speech emotion recognition studies that focus primarily on classification accuracy, our approach emphasizes the transformation of inferred emotional states into safe, age-appropriate, and controllable response content through a structured pipeline of specialized AI agents. The proposed system comprises four cooperative agents: (1) an Emotion Recognition Agent with CNN-based acoustic feature extraction, (2) a Response Policy Decision Agent for mapping emotions to response modes, (3) a Content Parameter Generation Agent for producing media control parameters, and (4) a Safety Verification Agent enforcing age-appropriateness and stimulation constraints. We introduce an explicit safety verification loop that filters generated content before output, ensuring compliance with predefined rules. Experimental results on public datasets demonstrate that the system achieves 73.2% emotion recognition accuracy, 89.4% response mode consistency, and 100% safety compliance while maintaining sub-100ms inference latency suitable for on-device deployment. The modular architecture enables interpretability and extensibility, making it applicable to child-adjacent media, therapeutic applications, and emotionally responsive smart devices."
+  },
+  {
+    "date": "2026-01-19",
+    "title": "PhysicsSolutionAgent: Towards Multimodal Explanations for Numerical Physics Problem Solving",
+    "authors": "Aditya Thole, Anmol Agrawal, Arnav Ramamoorthy, Dhruv Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13453v1",
+    "source": "arXiv",
+    "abstract": "Explaining numerical physics problems often requires more than text-based solutions; clear visual reasoning can substantially improve conceptual understanding. While large language models (LLMs) demonstrate strong performance on many physics questions in textual form, their ability to generate long, high-quality visual explanations remains insufficiently explored. In this work, we introduce PhysicsSolutionAgent (PSA), an autonomous agent that generates physics-problem explanation videos of up to six minutes using Manim animations. To evaluate the generated videos, we design an assessment pipeline that performs automated checks across 15 quantitative parameters and incorporates feedback from a vision-language model (VLM) to iteratively improve video quality. We evaluate PSA on 32 videos spanning numerical and theoretical physics problems. Our results reveal systematic differences in video quality depending on problem difficulty and whether the task is numerical or theoretical. Using GPT-5-mini, PSA achieves a 100% video-completion rate with an average automated score of 3.8/5. However, qualitative analysis and human inspection uncover both minor and major issues, including visual layout inconsistencies and errors in how visual content is interpreted during feedback. These findings expose key limitations in reliable Manim code generation and highlight broader challenges in multimodal reasoning and evaluation for visual explanations of numerical physics problems. Our work underscores the need for improved visual understanding, verification, and evaluation frameworks in future multimodal educational systems"
+  },
+  {
+    "date": "2026-01-19",
+    "title": "From Completion to Editing: Unlocking Context-Aware Code Infilling via Search-and-Replace Instruction Tuning",
+    "authors": "Jiajun Zhang, Zeyu Cui, Jiaxi Yang, Lei Zhang, Yuheng Jing, Zeyao Ma, Tianyi Bai, Zilei Wang, Qiang Liu, Liang Wang, Binyuan Hui, Junyang Lin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13384v1",
+    "source": "arXiv",
+    "abstract": "The dominant Fill-in-the-Middle (FIM) paradigm for code completion is constrained by its rigid inability to correct contextual errors and reliance on unaligned, insecure Base models. While Chat LLMs offer safety and Agentic workflows provide flexibility, they suffer from performance degradation and prohibitive latency, respectively. To resolve this dilemma, we propose Search-and-Replace Infilling (SRI), a framework that internalizes the agentic verification-and-editing mechanism into a unified, single-pass inference process. By structurally grounding edits via an explicit search phase, SRI harmonizes completion tasks with the instruction-following priors of Chat LLMs, extending the paradigm from static infilling to dynamic context-aware editing. We synthesize a high-quality dataset, SRI-200K, and fine-tune the SRI-Coder series. Extensive evaluations demonstrate that with minimal data (20k samples), SRI-Coder enables Chat models to surpass the completion performance of their Base counterparts. Crucially, unlike FIM-style tuning, SRI preserves general coding competencies and maintains inference latency comparable to standard FIM. We empower the entire Qwen3-Coder series with SRI, encouraging the developer community to leverage this framework for advanced auto-completion and assisted development."
+  },
+  {
+    "date": "2026-01-19",
+    "title": "Reduction for Structured Concurrent Programs",
+    "authors": "Namratha Gangamreddypalli, Constantin Enea, Shaz Qadeer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.13341v1",
+    "source": "arXiv",
+    "abstract": "Commutativity reasoning based on Lipton's movers is a powerful technique for verification of concurrent programs. The idea is to define a program transformation that preserves a subset of the initial set of interleavings, which is sound modulo reorderings of commutative actions. Scaling commutativity reasoning to routinely-used features in software systems, such as procedures and parallel composition, remains a significant challenge. In this work, we introduce a novel reduction technique for structured concurrent programs that unifies two key advances. First, we present a reduction strategy that soundly replaces parallel composition with sequential composition. Second, we generalize Lipton's reduction to support atomic sections containing (potentially recursive) procedure calls. Crucially, these two foundational strategies can be composed arbitrarily, greatly expanding the scope and flexibility of reduction-based reasoning. We implemented this technique in Civl and demonstrated its effectiveness on a number of challenging case studies, including a snapshot object, a fault-tolerant and linearizable register, the FLASH cache coherence protocol, and a non-trivial variant of Two-Phase Commit."
+  }
+]
