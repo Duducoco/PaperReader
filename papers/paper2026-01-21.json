@@ -1,0 +1,191 @@
+[
+  {
+    "date": "2026-01-21",
+    "title": "MolecularIQ: Characterizing Chemical Reasoning Capabilities Through Symbolic Verification on Molecular Graphs",
+    "authors": "Christoph Bartmann, Johannes Schimunek, Mykyta Ielanskyi, Philipp Seidl, Günter Klambauer, Sohvi Luukkonen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15279v1",
+    "source": "arXiv",
+    "abstract": "A molecule's properties are fundamentally determined by its composition and structure encoded in its molecular graph. Thus, reasoning about molecular properties requires the ability to parse and understand the molecular graph. Large Language Models (LLMs) are increasingly applied to chemistry, tackling tasks such as molecular name conversion, captioning, text-guided generation, and property or reaction prediction. Most existing benchmarks emphasize general chemical knowledge, rely on literature or surrogate labels that risk leakage or bias, or reduce evaluation to multiple-choice questions. We introduce MolecularIQ, a molecular structure reasoning benchmark focused exclusively on symbolically verifiable tasks. MolecularIQ enables fine-grained evaluation of reasoning over molecular graphs and reveals capability patterns that localize model failures to specific tasks and molecular structures. This provides actionable insights into the strengths and limitations of current chemistry LLMs and guides the development of models that reason faithfully over molecular structure."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Automating Idealness Proofs for Binary Programs with Application to Rectangle Packing",
+    "authors": "Jamie Fravel, Robert Hildebrand",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15252v1",
+    "source": "arXiv",
+    "abstract": "An integer program is called ideal if its continuous relaxation coincides with its convex hull allowing the problem to be solved as a continuous program and offering substantial computational advantages. Proving idealness analytically can be extraordinarily tedious -- even for small formulations -- such proofs often span many pages of intricate case analysis which motivates the development of automated verification methods. We develop a general-purpose framework for certifying idealness in Mixed Binary Linear Programs (MBLPs), formulating the verification problem as a linear program when the data is fixed and as a nonconvex quadratic program when the data is parametric. We apply this framework to study several formulations of the rectangle packing problem that are conjectured to be pairwise-ideal, obtaining computational proofs where analytic proofs were previously unknown or impractical. As our second contribution, we introduce and model a novel generalization of the rectangle packing problem that enforces edge clearances between selected rectangles. We present both existing and novel MBLP formulations which arise from different encodings of the underlying disjunctive constraints. We perform some computational experiments on these formulations under a strip-packing objective to determine the importance of pairwise-idealness in practice."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "How to Verify a Turing Machine with Dafny",
+    "authors": "Edgar F. A. Lederer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15230v1",
+    "source": "arXiv",
+    "abstract": "This paper describes the formal verification of two Turing machines using the program verifier Dafny. Both machines are deciders, so we prove total correctness. They are typical first examples of Turing machines used in any course of Theoretical Computer Science; in fact, the second machine is literally taken from a relevant textbook. Usually, the correctness of such machines is made plausible by some informal explanations of their basic ideas, augmented with a few sample executions, but neither by rigorous mathematical nor mechanized formal proof. No wonder: The invariants (and variants) required for such proofs are big artifacts, peppered with overpowering technical details. Finding and checking these artifacts without mechanical support is practically impossible, and such support is only available since recent times. But nowadays, just because of these technicalities, with such subjects under proof a program verifier can really show off and demonstrate its capabilities."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "V-CAGE: Context-Aware Generation and Verification for Scalable Long-Horizon Embodied Tasks",
+    "authors": "Yaru Liu, Ao-bo Wang, Nanyang Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15164v1",
+    "source": "arXiv",
+    "abstract": "Learning long-horizon embodied behaviors from synthetic data remains challenging because generated scenes are often physically implausible, language-driven programs frequently \"succeed\" without satisfying task semantics, and high-level instructions require grounding into executable action sequences. To address these limitations, we introduce V-CAGE, a closed-loop framework for generating robust, semantically aligned manipulation datasets at scale. First, we propose a context-aware instantiation mechanism that enforces geometric consistency during scene synthesis. By dynamically maintaining a map of prohibited spatial areas as objects are placed, our system prevents interpenetration and ensures reachable, conflict-free configurations in cluttered environments. Second, to bridge the gap between abstract intent and low-level control, we employ a hierarchical instruction decomposition module. This decomposes high-level goals (e.g., \"get ready for work\") into compositional action primitives, facilitating coherent long-horizon planning. Crucially, we enforce semantic correctness through a VLM-based verification loop. Acting as a visual critic, the VLM performs rigorous rejection sampling after each subtask, filtering out \"silent failures\" where code executes but fails to achieve the visual goal. Experiments demonstrate that V-CAGE yields datasets with superior physical and semantic fidelity, significantly boosting the success rate and generalization of downstream policies compared to non-verified baselines."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "The Plausibility Trap: Using Probabilistic Engines for Deterministic Tasks",
+    "authors": "Ivan Carrera, Daniel Maldonado-Ruiz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15130v1",
+    "source": "arXiv",
+    "abstract": "The ubiquity of Large Language Models (LLMs) is driving a paradigm shift where user convenience supersedes computational efficiency. This article defines the \"Plausibility Trap\": a phenomenon where individuals with access to Artificial Intelligence (AI) models deploy expensive probabilistic engines for simple deterministic tasks-such as Optical Character Recognition (OCR) or basic verification-resulting in significant resource waste. Through micro-benchmarks and case studies on OCR and fact-checking, we quantify the \"efficiency tax\"-demonstrating a ~6.5x latency penalty-and the risks of algorithmic sycophancy. To counter this, we introduce Tool Selection Engineering and the Deterministic-Probabilistic Decision Matrix, a framework to help developers determine when to use Generative AI and, crucially, when to avoid it. We argue for a curriculum shift, emphasizing that true digital literacy relies not only in knowing how to use Generative AI, but also on knowing when not to use it."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "The Responsibility Vacuum: Organizational Failure in Scaled Agent Systems",
+    "authors": "Oleg Romanchuk, Roman Bondar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15059v1",
+    "source": "arXiv",
+    "abstract": "Modern CI/CD pipelines integrating agent-generated code exhibit a structural failure in responsibility attribution. Decisions are executed through formally correct approval processes, yet no entity possesses both the authority to approve those decisions and the epistemic capacity to meaningfully understand their basis. We define this condition as responsibility vacuum: a state in which decisions occur, but responsibility cannot be attributed because authority and verification capacity do not coincide. We show that this is not a process deviation or technical defect, but a structural property of deployments where decision generation throughput exceeds bounded human verification capacity. We identify a scaling limit under standard deployment assumptions, including parallel agent generation, CI-based validation, and individualized human approval gates. Beyond a throughput threshold, verification ceases to function as a decision criterion and is replaced by ritualized approval based on proxy signals. Personalized responsibility becomes structurally unattainable in this regime. We further characterize a CI amplification dynamic, whereby increasing automated validation coverage raises proxy signal density without restoring human capacity. Under fixed time and attention constraints, this accelerates cognitive offloading in the broad sense and widens the gap between formal approval and epistemic understanding. Additional automation therefore amplifies, rather than mitigates, the responsibility vacuum. We conclude that unless organizations explicitly redesign decision boundaries or reassign responsibility away from individual decisions toward batch- or system-level ownership, responsibility vacuum remains an invisible but persistent failure mode in scaled agent deployments."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "\\textsc{LogicScore}: Fine-grained Logic Evaluation of Conciseness, Completeness, and Determinateness in Attributed Question Answering",
+    "authors": "Zhichao Yan, Yunxiao Zhao, Jiapu Wang, Jiaoyan Chen, Shaoru Guo, Xiaoli Li, Ru Li, Jeff Z. Pan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.15050v1",
+    "source": "arXiv",
+    "abstract": "Current evaluation methods for Attributed Question Answering (AQA) suffer from \\textit{attribution myopia}: they emphasize verification of isolated statements and their attributions but overlook the global logical integrity of long-form answers. Consequently, Large Language Models (LLMs) often produce factually grounded yet logically incoherent responses with elusive deductive gaps. To mitigate this limitation, we present \\textsc{LogicScore}, a unified evaluation framework that shifts the paradigm from local assessment to global reasoning scrutiny. Grounded in Horn Rules, our approach integrates a backward verification mechanism to systematically evaluate three key reasoning dimensions: \\textit{Completeness} (logically sound deduction), \\textit{Conciseness} (non-redundancy), and \\textit{Determinateness} (consistent answer entailment). Extensive experiments across three multi-hop QA datasets (HotpotQA, MusiQue, and 2WikiMultiHopQA) and over 20 LLMs (including GPT-5, Gemini-3-Pro, LLaMA3, and task-specific tuned models) reveal a critical capability gap: leading models often achieve high attribution scores (e.g., 92.85\\% precision for Gemini-3 Pro) but struggle with global reasoning quality (e.g., 35.11\\% Conciseness for Gemini-3 Pro). Our work establishes a robust standard for logical evaluation, highlighting the need to prioritize reasoning coherence alongside factual grounding in LLM development. Codes are available at: https://github.com/zhichaoyan11/LogicScore."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Interoperable Architecture for Digital Identity Delegation for AI Agents with Blockchain Integration",
+    "authors": "David Ricardo Saavedra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14982v1",
+    "source": "arXiv",
+    "abstract": "Verifiable delegation in digital identity systems remains unresolved across centralized, federated, and self-sovereign identity (SSI) environments, particularly where both human users and autonomous AI agents must exercise and transfer authority without exposing primary credentials or private keys. We introduce a unified framework that enables bounded, auditable, and least-privilege delegation across heterogeneous identity ecosystems. The framework includes four key elements: Delegation Grants (DGs), first-class authorization artefacts that encode revocable transfers of authority with enforced scope reduction; a Canonical Verification Context (CVC) that normalizes verification requests into a single structured representation independent of protocols or credential formats; a layered reference architecture that separates trust anchoring, credential and proof validation, policy evaluation, and protocol mediation via a Trust Gateway; and an explicit treatment of blockchain anchoring as an optional integrity layer rather than a structural dependency. Together, these elements advance interoperable delegation and auditability and provide a foundation for future standardization, implementation, and integration of autonomous agents into trusted digital identity infrastructures."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "$H$ dibaryon and its cousins from SU(6)-constrained baryon-baryon interaction",
+    "authors": "Tao-Ran Hu, Feng-Kun Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14922v1",
+    "source": "arXiv",
+    "abstract": "We constrain the $S$-wave baryon-baryon interaction using SU(6) symmetry within a nonrelativistic effective field theory. The most general leading-order Lagrangian contains two independent parameters, which we determine using physical $NN$ and lattice QCD $ΩΩ$ scattering lengths. This framework allows for parameter-free predictions in the strangeness $S=-2$ sector relevant to the $H$ dibaryon. Solving the coupled-channel scattering problem, we identify two bound states below the $ΛΛ$ threshold, one deeply bound and one shallow, along with resonances near the $ΣΣ$ and $Σ^*Σ^*$ thresholds. We demonstrate that these poles result in distinct enhancements in $ΛΛ$ invariant mass distributions, suggesting that the $H$ dibaryon exists as a multichannel bound state and providing clear signatures for experimental verification."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "A Category-Theoretic Framework for Dependent Effect Systems",
+    "authors": "Satoshi Kura, Marco Gaboardi, Taro Sekiyama, Hiroshi Unno",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14846v1",
+    "source": "arXiv",
+    "abstract": "Graded monads refine traditional monads using effect annotations in order to describe quantitatively the computational effects that a program can generate. They have been successfully applied to a variety of formal systems for reasoning about effectful computations. However, existing categorical frameworks for graded monads do not support effects that may depend on program values, which we call dependent effects, thereby limiting their expressiveness. We address this limitation by introducing indexed graded monads, a categorical generalization of graded monads inspired by the fibrational \"indexed\" view and by classical categorical semantics of dependent type theories. We show how indexed graded monads provide semantics for a refinement type system with dependent effects. We also show how this type system can be instantiated with specific choices of parameters to obtain several formal systems for reasoning about specific program properties. These instances include, in particular, cost analysis, probability-bound reasoning, expectation-bound reasoning, and temporal safety verification."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Using Multi-Instance Learning to Identify Unique Polyps in Colon Capsule Endoscopy Images",
+    "authors": "Puneet Sharma, Kristian Dalsbø Hindberg, Eibe Frank, Benedicte Schelde-Olesen, Ulrik Deding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14771v1",
+    "source": "arXiv",
+    "abstract": "Identifying unique polyps in colon capsule endoscopy (CCE) images is a critical yet challenging task for medical personnel due to the large volume of images, the cognitive load it creates for clinicians, and the ambiguity in labeling specific frames. This paper formulates this problem as a multi-instance learning (MIL) task, where a query polyp image is compared with a target bag of images to determine uniqueness. We employ a multi-instance verification (MIV) framework that incorporates attention mechanisms, such as variance-excited multi-head attention (VEMA) and distance-based attention (DBA), to enhance the model's ability to extract meaningful representations. Additionally, we investigate the impact of self-supervised learning using SimCLR to generate robust embeddings. Experimental results on a dataset of 1912 polyps from 754 patients demonstrate that attention mechanisms significantly improve performance, with DBA L1 achieving the highest test accuracy of 86.26\\% and a test AUC of 0.928 using a ConvNeXt backbone with SimCLR pretraining. This study underscores the potential of MIL and self-supervised learning in advancing automated analysis of Colon Capsule Endoscopy images, with implications for broader medical imaging applications."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "AQAScore: Evaluating Semantic Alignment in Text-to-Audio Generation via Audio Question Answering",
+    "authors": "Chun-Yi Kuan, Kai-Wei Chang, Hung-yi Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14728v1",
+    "source": "arXiv",
+    "abstract": "Although text-to-audio generation has made remarkable progress in realism and diversity, the development of evaluation metrics has not kept pace. Widely-adopted approaches, typically based on embedding similarity like CLAPScore, effectively measure general relevance but remain limited in fine-grained semantic alignment and compositional reasoning. To address this, we introduce AQAScore, a backbone-agnostic evaluation framework that leverages the reasoning capabilities of audio-aware large language models (ALLMs). AQAScore reformulates assessment as a probabilistic semantic verification task; rather than relying on open-ended text generation, it estimates alignment by computing the exact log-probability of a \"Yes\" answer to targeted semantic queries. We evaluate AQAScore across multiple benchmarks, including human-rated relevance, pairwise comparison, and compositional reasoning tasks. Experimental results show that AQAScore consistently achieves higher correlation with human judgments than similarity-based metrics and generative prompting baselines, showing its effectiveness in capturing subtle semantic inconsistencies and scaling with the capability of underlying ALLMs."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Hierarchical Optimization Based Multi-objective Dynamic Regulation Scheme for VANET Topology",
+    "authors": "Ruixing Ren, Minqi Tao, Junhui Zhao, Xiaoke Sun, Qiuping Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14704v1",
+    "source": "arXiv",
+    "abstract": "As a core technology of intelligent transportation systems, vehicular ad-hoc networks support latency-sensitive services such as safety warning and cooperative perception via vehicle-to-everything communications. However, their highly dynamic topology increases average path length, raises latency, and reduces throughput, severely limiting communication performance. Existing topology optimization methods lack capabilities in multi-objective coordination, dynamic adaptation, and global-local synergy. To address this, this paper proposes a two-layer dynamic topology regulation scheme combining local feature aggregation and global adjustment. The scheme constructs a dynamic multi-objective optimization model integrating average path length, end-to-end latency, and network throughput, and achieves multi-index coordination via link adaptability metrics and a dynamic normalization mechanism. it quickly responds to local link changes via feature fusion of local node feature extraction and dynamic neighborhood sensing, and balances optimization accuracy and real-time performance using a dual-mode adaptive solving strategy for global topology adjustment. It reduces network oscillation risks by introducing a performance improvement threshold and a topology validity verification mechanism. Simulation results on real urban road networks via the SUMO platform show that the proposed scheme outperforms traditional methods in average path length (stabilizing at ~4 hops), end-to-end latency (remaining ~0.01 s), and network throughput."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Triage knowledge distillation for speaker verification",
+    "authors": "Ju-ho Kim, Youngmoon Jung, Joon-Young Yang, Jaeyoung Roh, Chang Woo Han, Hoon-Young Cho",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14699v1",
+    "source": "arXiv",
+    "abstract": "Deploying speaker verification on resource-constrained devices remains challenging due to the computational cost of high-capacity models; knowledge distillation (KD) offers a remedy. Classical KD entangles target confidence with non-target structure in a Kullback-Leibler term, limiting the transfer of relational information. Decoupled KD separates these signals into target and non-target terms, yet treats non-targets uniformly and remains vulnerable to the long tail of low-probability classes in large-class settings. We introduce Triage KD (TRKD), a distillation scheme that operationalizes assess-prioritize-focus. TRKD introduces a cumulative-probability cutoff $τ$ to assess per-example difficulty and partition the teacher posterior into three groups: the target class, a high-probability non-target confusion-set, and a background-set. To prioritize informative signals, TRKD distills the confusion-set conditional distribution and discards the background. Concurrently, it transfers a three-mass (target/confusion/background) that capture sample difficulty and inter-class confusion. Finally, TRKD focuses learning via a curriculum on $τ$: training begins with a larger $τ$ to convey broad non-target context, then $τ$ is progressively decreased to shrink the confusion-set, concentrating supervision on the most confusable classes. In extensive experiments on VoxCeleb1 with both homogeneous and heterogeneous teacher-student pairs, TRKD was consistently superior to recent KD variants and attained the lowest EER across all protocols."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "ClaimDB: A Fact Verification Benchmark over Large Structured Data",
+    "authors": "Michael Theologitis, Preetam Prabhu Srikar Dammu, Chirag Shah, Dan Suciu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14698v1",
+    "source": "arXiv",
+    "abstract": "Despite substantial progress in fact-verification benchmarks, claims grounded in large-scale structured data remain underexplored. In this work, we introduce ClaimDB, the first fact-verification benchmark where the evidence for claims is derived from compositions of millions of records and multiple tables. ClaimDB consists of 80 unique real-life databases covering a wide range of domains, from governance and healthcare to media, education and the natural sciences. At this scale, verification approaches that rely on \"reading\" the evidence break down, forcing a timely shift toward reasoning in executable programs. We conduct extensive experiments with 30 state-of-the-art proprietary and open-source (below 70B) LLMs and find that none exceed 83% accuracy, with more than half below 55%. Our analysis also reveals that both closed- and open-source models struggle with abstention -- the ability to admit that there is no evidence to decide -- raising doubts about their reliability in high-stakes data analysis. We release the benchmark, code, and the LLM leaderboard at https://claimdb.github.io ."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Long-Lived Oscillons as Closed Domain Walls in the $\\mathbb Z_2$-Symmetric Two-Higgs-Doublet Model",
+    "authors": "Zhaoyu Meng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14676v1",
+    "source": "arXiv",
+    "abstract": "We identify an oscillatory solution that exists as a long-lived, bubble-like closed domain wall in the two-Higgs-doublet model (2HDM) under a $\\mathbb{Z}_2$ symmetry constraint, and these structures emerge naturally during the late stages of domain wall decay. \\\\ \\\\ The longevity of these structures is attributed to a potential landscape characterized by two distinct vacuum regions, the oscillating region lies in one vacuum, while the constant outer region lies in the other. The lifetime of the structure depends on the parameter in the Lagrangian, we identify a specific parameter space where radiation is suppressed, the solution exhibits a maximum lifetime that goes up to infinity. \\\\ \\\\ The simpler two-complex-field system is first used to introduce the mathematical requirements of the structure before extending it to the more physical but complex 2HDM. Further Numerical verification via Floquet analysis shows these structures are stable under perturbation."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "MAS-Orchestra: Understanding and Improving Multi-Agent Reasoning Through Holistic Orchestration and Controlled Benchmarks",
+    "authors": "Zixuan Ke, Yifei Ming, Austin Xu, Ryan Chin, Xuan-Phi Nguyen, Prathyusha Jwalapuram, Semih Yavuz, Caiming Xiong, Shafiq Joty",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14652v1",
+    "source": "arXiv",
+    "abstract": "While multi-agent systems (MAS) promise elevated intelligence through coordination of agents, current approaches to automatic MAS design under-deliver. Such shortcomings stem from two key factors: (1) methodological complexity - agent orchestration is performed using sequential, code-level execution that limits global system-level holistic reasoning and scales poorly with agent complexity - and (2) efficacy uncertainty - MAS are deployed without understanding if there are tangible benefits compared to single-agent systems (SAS). We propose MAS-Orchestra, a training-time framework that formulates MAS orchestration as a function-calling reinforcement learning problem with holistic orchestration, generating an entire MAS at once. In MAS-Orchestra, complex, goal-oriented sub-agents are abstracted as callable functions, enabling global reasoning over system structure while hiding internal execution details. To rigorously study when and why MAS are beneficial, we introduce MASBENCH, a controlled benchmark that characterizes tasks along five axes: Depth, Horizon, Breadth, Parallel, and Robustness. Our analysis reveals that MAS gains depend critically on task structure, verification protocols, and the capabilities of both orchestrator and sub-agents, rather than holding universally. Guided by these insights, MAS-Orchestra achieves consistent improvements on public benchmarks including mathematical reasoning, multi-hop QA, and search-based QA. Together, MAS-Orchestra and MASBENCH enable better training and understanding of MAS in the pursuit of multi-agent intelligence."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Seeing to Think? How Source Transparency Design Shapes Interactive Information Seeking and Evaluation in Conversational AI",
+    "authors": "Jiangen He, Jiqun Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14611v1",
+    "source": "arXiv",
+    "abstract": "Conversational AI systems increasingly function as primary interfaces for information seeking, yet how they present sources to support information evaluation remains under-explored. This paper investigates how source transparency design shapes interactive information seeking, trust, and critical engagement. We conducted a controlled between-subjects experiment (N=372) comparing four source presentation interfaces - Collapsible, Hover Card, Footer, and Aligned Sidebar - varying in visibility and accessibility. Using fine-grained behavioral analysis and automated critical thinking assessment, we found that interface design fundamentally alters exploration strategies and evidence integration. While the Hover Card interface facilitated seamless, on-demand verification during the task, the Aligned Sidebar uniquely mitigated the negative effects of information overload: as citation density increased, Sidebar users demonstrated significantly higher critical thinking and synthesis scores compared to other conditions. Our results highlight a trade-off between designs that support workflow fluency and those that enforce reflective verification, offering practical implications for designing adaptive and responsible conversational AI that fosters critical engagement with AI generated content."
+  },
+  {
+    "date": "2026-01-21",
+    "title": "Agent Identity URI Scheme: Topology-Independent Naming and Capability-Based Discovery for Multi-Agent Systems",
+    "authors": "Roland R. Rodriguez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14567v1",
+    "source": "arXiv",
+    "abstract": "Multi-agent systems face a fundamental architectural flaw: agent identity is bound to network location. When agents migrate between providers, scale across instances, or federate across organizations, URI-based identity schemes break references, fragment audit trails, and require centralized coordination. We propose the agent:// URI scheme, which decouples identity from topology through three orthogonal components: a trust root establishing organizational authority, a hierarchical capability path enabling semantic discovery, and a sortable unique identifier providing stable reference. The scheme enables capability-based discovery through DHT key derivation, where queries return agents by what they do rather than where they are. Trust-root scoping prevents cross-organization pollution while permitting federation when desired. Cryptographic attestation via PASETO tokens binds capability claims to agent identity, enabling verification without real-time contact with the issuing authority. We evaluate the scheme across four dimensions: capability expressiveness (100% coverage on 369 production tools with zero collision), discovery precision (F1=1.0 across 10,000 agents), identity stability (formal proofs of migration invariance), and performance (all operations under 5 microseconds). The agent:// URI scheme provides a formally-specified, practically-evaluated foundation for decentralized agent identity and capability-based discovery."
+  },
+  {
+    "date": "2026-01-20",
+    "title": "Report for NSF Workshop on AI for Electronic Design Automation",
+    "authors": "Deming Chen, Vijay Ganesh, Weikai Li, Yingyan, Lin, Yong Liu, Subhasish Mitra, David Z. Pan, Ruchir Puri, Jason Cong, Yizhou Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.14541v1",
+    "source": "arXiv",
+    "abstract": "This report distills the discussions and recommendations from the NSF Workshop on AI for Electronic Design Automation (EDA), held on December 10, 2024 in Vancouver alongside NeurIPS 2024. Bringing together experts across machine learning and EDA, the workshop examined how AI-spanning large language models (LLMs), graph neural networks (GNNs), reinforcement learning (RL), neurosymbolic methods, etc.-can facilitate EDA and shorten design turnaround. The workshop includes four themes: (1) AI for physical synthesis and design for manufacturing (DFM), discussing challenges in physical manufacturing process and potential AI applications; (2) AI for high-level and logic-level synthesis (HLS/LLS), covering pragma insertion, program transformation, RTL code generation, etc.; (3) AI toolbox for optimization and design, discussing frontier AI developments that could potentially be applied to EDA tasks; and (4) AI for test and verification, including LLM-assisted verification tools, ML-augmented SAT solving, security/reliability challenges, etc. The report recommends NSF to foster AI/EDA collaboration, invest in foundational AI for EDA, develop robust data infrastructures, promote scalable compute infrastructure, and invest in workforce development to democratize hardware design and enable next-generation hardware systems. The workshop information can be found on the website https://ai4eda-workshop.github.io/."
+  },
+  {
+    "date": "2026-1-21",
+    "title": "LACL: Overcoming Semantic Sparsity in Mashup Development via LLM-Enhanced Service Bundle Recommendation",
+    "authors": "Kaipu Sun, Wen Tang, Yechen Jin, Meng Xi, Jiacheng Pan, Ying Li, Jianwei Yin",
+    "publish": "IEEE Transactions on Services Computing",
+    "url": "https://doi.org/10.1109/tsc.2026.3656398",
+    "source": "IEEE",
+    "abstract": "The rapid proliferation of web services has brought substantial challenges to mashup development, where developers integrate multiple APIs to create new applications. As the number and complexity of services continue to grow, effective recommendation methods have become increasingly important. Service bundles, which group complementary services, provide a promising way to improve the efficiency and quality of mashup construction. Thus, recent approaches aim to better capture mashup preferences by jointly modeling interactions from both mashup and service bundle perspectives. However, those studies still face challenges such as scarcity of semantic data, discrepancy of multilevel descriptions and sparsity of historical interactions. In this work, we propose an LLM-enhanced Alignment Contrastive Learning model for service bundle recommendation model (LACL) to tackle the issues. Specifically, we design LLM-enhanced Semantic Imputation Block and Multi-Projection Autoencoder Block to generate enriched semantic representations. We further establish information propagation among mashups, services, and bundles based on their historical interaction relationships, and incorporate the proposed Dual-Attention Block to alleviate data sparsity by effectively capturing both global and local collaborative signals. Finally, we propose a contrastive learning strategy that aligns and integrates textual and structural features, thereby improving the model's ability to represent complex semantics. Extensive experiments on real-world dataset demonstrate that LACL notably outperforms state-of-the-art methods on all metrics, with average improvements of 10.31% in NDCG and 16.67% in Recall on real-world ProgrammableWeb dataset."
+  }
+]
