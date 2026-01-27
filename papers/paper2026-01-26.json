@@ -1,0 +1,191 @@
+[
+  {
+    "date": "2026-01-26",
+    "title": "From Access Control to Usage Control with User-Managed Access",
+    "authors": "Wout Slabbinck, Wouter Termont, Ruben Dedecker, Beatriz Esteves",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18761v1",
+    "source": "arXiv",
+    "abstract": "Recent data protection and data governance regulations have intensified the demand for interoperable, decentralized data ecosystems that can support not only access control but also legally-aligned governance over data use. Existing Web-based data storage platforms increasingly struggle to meet these regulatory and practical requirements, as their authorization mechanisms rely on tightly coupled, document-centric access control models that lack expressiveness for legal constraints and fail to separate data management from authorization concerns. In parallel, widely adopted authorization standards remain poorly aligned with decentralized, semantically rich usage-control scenarios. To bridge this gap, this work introduces an architecture that replaces Solid's native access control mechanisms with a UMA authorization flow, enabling the enforcement of usage control policies expressed with the W3C ODRL standard. This article details the conceptual background motivating this approach, presents the proposed UMA-based architecture, and describes a prototype implementation that integrates an ODRL-enabled Authorization Server with a Solid-compatible Resource Server. The prototype demonstrates that decoupling authorization from storage enables more flexible, interoperable, and legally expressive control over data use, while remaining compatible with existing Solid infrastructure. It also highlights practical design choices required to evaluate ODRL policies in the absence of a fully standardized evaluation semantics. Moreover, this work shows how usage control can be operationalized using existing Web standards, offering a concrete path beyond permission-based access control toward policy-aware, legally informed data governance. Future research will focus on policy management interfaces, richer claim verification mechanisms, and techniques for communicating and enforcing obligations over time."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Symmetric Proofs of Parameterized Programs",
+    "authors": "Ruotong Cheng, Azadeh Farzan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18745v1",
+    "source": "arXiv",
+    "abstract": "We investigate the problem of safety verification of infinite-state parameterized programs that are formed based on a rich class of topologies. We introduce a new proof system, called parametric proof spaces, which exploits the underlying symmetry in such programs. This is a local notion of symmetry which enables the proof system to reuse proof arguments for isomorphic neighbourhoods in program topologies. We prove a sophisticated relative completeness result for the proof system with respect to a class of universally quantified invariants. We also investigate the problem of algorithmic construction of these proofs. We present a construction, inspired by classic results in model theory, where an infinitary limit program can be soundly and completely verified in place of the parameterized family, under some conditions. Furthermore, we demonstrate how these proofs can be constructed and checked against these programs without the need for axiomatization of the underlying topology for proofs or the programs. Finally, we present conditions under which our algorithm becomes a decision procedure."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "From Classification to Ranking: Enhancing LLM Reasoning Capabilities for MBTI Personality Detection",
+    "authors": "Yuan Cao, Feixiang Liu, Xinyue Wang, Yihan Zhu, Hui Xu, Zheng Wang, Qiang Qiu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18582v1",
+    "source": "arXiv",
+    "abstract": "Personality detection aims to measure an individual's corresponding personality traits through their social media posts. The advancements in Large Language Models (LLMs) offer novel perspectives for personality detection tasks. Existing approaches enhance personality trait analysis by leveraging LLMs to extract semantic information from textual posts as prompts, followed by training classifiers for categorization. However, accurately classifying personality traits remains challenging due to the inherent complexity of human personality and subtle inter-trait distinctions. Moreover, prompt-based methods often exhibit excessive dependency on expert-crafted knowledge without autonomous pattern-learning capacity. To address these limitations, we view personality detection as a ranking task rather than a classification and propose a corresponding reinforcement learning training paradigm. First, we employ supervised fine-tuning (SFT) to establish personality trait ranking capabilities while enforcing standardized output formats, creating a robust initialization. Subsequently, we introduce Group Relative Policy Optimization (GRPO) with a specialized ranking-based reward function. Unlike verification tasks with definitive solutions, personality assessment involves subjective interpretations and blurred boundaries between trait categories. Our reward function explicitly addresses this challenge by training LLMs to learn optimal answer rankings. Comprehensive experiments have demonstrated that our method achieves state-of-the-art performance across multiple personality detection benchmarks."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "From Verifiable Dot to Reward Chain: Harnessing Verifiable Reference-based Rewards for Reinforcement Learning of Open-ended Generation",
+    "authors": "Yuxin Jiang, Yufei Wang, Qiyuan Zhang, Xingshan Zeng, Liangyou Li, Jierun Chen, Chaofan Tao, Haoli Bai, Lifeng Shang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18533v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) succeeds in reasoning tasks (e.g., math and code) by checking the final verifiable answer (i.e., a verifiable dot signal). However, extending this paradigm to open-ended generation is challenging because there is no unambiguous ground truth. Relying on single-dot supervision often leads to inefficiency and reward hacking. To address these issues, we propose reinforcement learning with verifiable reference-based rewards (RLVRR). Instead of checking the final answer, RLVRR extracts an ordered linguistic signal from high-quality references (i.e, reward chain). Specifically, RLVRR decomposes rewards into two dimensions: content, which preserves deterministic core concepts (e.g., keywords), and style, which evaluates adherence to stylistic properties through LLM-based verification. In this way, RLVRR combines the exploratory strength of RL with the efficiency and reliability of supervised fine-tuning (SFT). Extensive experiments on more than 10 benchmarks with Qwen and Llama models confirm the advantages of our approach. RLVRR (1) substantially outperforms SFT trained with ten times more data and advanced reward models, (2) unifies the training of structured reasoning and open-ended generation, and (3) generalizes more effectively while preserving output diversity. These results establish RLVRR as a principled and efficient path toward verifiable reinforcement learning for general-purpose LLM alignment. We release our code and data at https://github.com/YJiangcm/RLVRR."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "DV-VLN: Dual Verification for Reliable LLM-Based Vision-and-Language Navigation",
+    "authors": "Zijun Li, Shijie Li, Zhenxi Zhang, Bin Li, Shoujun Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18492v1",
+    "source": "arXiv",
+    "abstract": "Vision-and-Language Navigation (VLN) requires an embodied agent to navigate in a complex 3D environment according to natural language instructions. Recent progress in large language models (LLMs) has enabled language-driven navigation with improved interpretability. However, most LLM-based agents still rely on single-shot action decisions, where the model must choose one option from noisy, textualized multi-perspective observations. Due to local mismatches and imperfect intermediate reasoning, such decisions can easily deviate from the correct path, leading to error accumulation and reduced reliability in unseen environments. In this paper, we propose DV-VLN, a new VLN framework that follows a generate-then-verify paradigm. DV-VLN first performs parameter-efficient in-domain adaptation of an open-source LLaMA-2 backbone to produce a structured navigational chain-of-thought, and then verifies candidate actions with two complementary channels: True-False Verification (TFV) and Masked-Entity Verification (MEV). DV-VLN selects actions by aggregating verification successes across multiple samples, yielding interpretable scores for reranking. Experiments on R2R, RxR (English subset), and REVERIE show that DV-VLN consistently improves over direct prediction and sampling-only baselines, achieving competitive performance among language-only VLN agents and promising results compared with several cross-modal systems.Code is available at https://github.com/PlumJun/DV-VLN."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Quantum Error Correction on Error-mitigated Physical Qubits",
+    "authors": "Minjun Jeon, Zhenyu Cai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18384v1",
+    "source": "arXiv",
+    "abstract": "We present a general framework for applying linear quantum error mitigation (QEM) techniques directly to physical qubits within a logical qubit to suppress logical errors. By exploiting the linearity of quantum error correction (QEC), we demonstrate that any linear QEM method$\\unicode{x2014}$including probabilistic error cancellation (PEC), zero-noise extrapolation (ZNE), and symmetry verification$\\unicode{x2014}$can be integrated into the physical layer without requiring modifications to the subsequent QEC decoder. Applying this framework to memory experiments using PEC, we analytically prove and numerically verify that the leading-order contribution to the logical error can be removed, increasing the effective code distance by 2. Our simulations on repetition and rotated surface codes show that a distance-3 code with physical-level PEC achieves logical error rates lower than or similar to a distance-5 unmitigated code while using 40% and 64% fewer qubits, respectively. These results establish physical-level QEM as a widely compatible and resource-efficient strategy for enhancing logical performance in early fault-tolerant architectures."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Scaling of multicopy constructive interference of Gaussian states",
+    "authors": "Matthieu Arnhem, Radim Filip",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18347v1",
+    "source": "arXiv",
+    "abstract": "Quantum technology advances crucially depend on the scaling up of essential quantum resources. Their ideal multiplexing offers more significant gains in applications; however, the scaling of the nonidentical, fragile and varying resources is neither theoretically nor experimentally known. For bosonic systems, multimode interference is an essential tool already widely exploited to develop quantum technology. Here, we analyze, predict and compare essential scaling laws for a constructive interference of multiplexed nonclassical Gaussian states carrying information by displacement with weakly fluctuating squeezing in different multimode interference architectures. The signal-to-noise ratio quantifies the increase in displacement relative to the noise. We introduce the gain-to-instability ratio to numerically estimate the effect of unexplored resource instabilities in a large scale interference scheme. The use of the gain-to-instability ratio to quantify the scaling laws opens steps for extensive theoretical investigation of other bosonic resources and follow-up feasible experimental verification necessary for further development of these platforms."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Orchestrating Specialized Agents for Trustworthy Enterprise RAG",
+    "authors": "Xincheng You, Qi Sun, Neha Bora, Huayi Li, Shubham Goel, Kang Li, Sean Culatana",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18267v1",
+    "source": "arXiv",
+    "abstract": "Retrieval-Augmented Generation (RAG) shows promise for enterprise knowledge work, yet it often underperforms in high-stakes decision settings that require deep synthesis, strict traceability, and recovery from underspecified prompts. One-pass retrieval-and-write pipelines frequently yield shallow summaries, inconsistent grounding, and weak mechanisms for completeness verification. We introduce ADORE (Adaptive Deep Orchestration for Research in Enterprise), an agentic framework that replaces linear retrieval with iterative, user-steered investigation coordinated by a central orchestrator and a set of specialized agents. ADORE's key insight is that a structured Memory Bank (a curated evidence store with explicit claim-evidence linkage and section-level admissible evidence) enables traceable report generation and systematic checks for evidence completeness. Our contributions are threefold: (1) Memory-locked synthesis - report generation is constrained to a structured Memory Bank (Claim-Evidence Graph) with section-level admissible evidence, enabling traceable claims and grounded citations; (2) Evidence-coverage-guided execution - a retrieval-reflection loop audits section-level evidence coverage to trigger targeted follow-up retrieval and terminates via an evidence-driven stopping criterion; (3) Section-packed long-context grounding - section-level packing, pruning, and citation-preserving compression make long-form synthesis feasible under context limits. Across our evaluation suite, ADORE ranks first on DeepResearch Bench (52.65) and achieves the highest head-to-head preference win rate on DeepConsult (77.2%) against commercial systems."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "V-Loop: Visual Logical Loop Verification for Hallucination Detection in Medical Visual Question Answering",
+    "authors": "Mengyuan Jin, Zehui Liao, Yong Xia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18240v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) have shown remarkable capability in assisting disease diagnosis in medical visual question answering (VQA). However, their outputs remain vulnerable to hallucinations (i.e., responses that contradict visual facts), posing significant risks in high-stakes medical scenarios. Recent introspective detection methods, particularly uncertainty-based approaches, offer computational efficiency but are fundamentally indirect, as they estimate predictive uncertainty for an image-question pair rather than verifying the factual correctness of a specific answer. To address this limitation, we propose Visual Logical Loop Verification (V-Loop), a training-free and plug-and-play framework for hallucination detection in medical VQA. V-Loop introduces a bidirectional reasoning process that forms a visually grounded logical loop to verify factual correctness. Given an input, the MLLM produces an answer for the primary input pair. V-Loop extracts semantic units from the primary QA pair, generates a verification question by conditioning on the answer unit to re-query the question unit, and enforces visual attention consistency to ensure answering both primary question and verification question rely on the same image evidence. If the verification answer matches the expected semantic content, the logical loop closes, indicating factual grounding; otherwise, the primary answer is flagged as hallucinated. Extensive experiments on multiple medical VQA benchmarks and MLLMs show that V-Loop consistently outperforms existing introspective methods, remains highly efficient, and further boosts uncertainty-based approaches when used in combination."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Probing the Future of Meta-Analysis: Eliciting Design Principles via an Agentic Research IDE",
+    "authors": "Sizhe Cheng, Feng Liang, Yuhan Wen, Xipei Yu, Yong Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18239v1",
+    "source": "arXiv",
+    "abstract": "Meta-analyses and systematic reviews demand rigorous abductive reasoning to build, test, and refine hypotheses across vast, heterogeneous literature. While NLP advancements have automated parts of this pipeline, existing tools often detach researchers from the cognitive loop or function merely as retrieval engines, leading to loss of intellectual ownership and frequent context switching. We present Research IDE, a prototype reimagining authoring environments through the \"Research as Code\" metaphor. Research IDE embeds a multi-agent backend into the writing flow, enabling in-situ verification via \"hypothesis breakpoints.\" A one-week field deployment with 8 domain experts, followed by a reflective workshop, as a Research through Design (RtD) probe, reveals that users strongly preferred this verification workflow, actively leveraged prior knowledge for confirmation, and reported that breakpoints sparked insights. Drawing from participant feedback and suggestions, we derive design implications for future AI-assisted research tools that fully preserve researcher autonomy and intellectual ownership while harnessing computational scale."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR",
+    "authors": "James Burgess, Jan N. Hansen, Duo Peng, Yuhui Zhang, Alejandro Lozano, Min Woo Sun, Emma Lundberg, Serena Yeung-Levy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18207v1",
+    "source": "arXiv",
+    "abstract": "Search agents are language models (LMs) that reason and search knowledge bases (or the web) to answer questions; recent methods supervise only the final answer accuracy using reinforcement learning with verifiable rewards (RLVR). Most RLVR search agents tackle general-domain QA, which limits their relevance to technical AI systems in science, engineering, and medicine. In this work we propose training agents to search and reason over scientific papers -- this tests technical question-answering, it is directly relevant to real scientists, and the capabilities will be crucial to future AI Scientist systems. Concretely, we release a search corpus of 16 million biomedical paper abstracts and construct a challenging factoid QA dataset called PaperSearchQA with 60k samples answerable from the corpus, along with benchmarks. We train search agents in this environment to outperform non-RL retrieval baselines; we also perform further quantitative analysis and observe interesting agent behaviors like planning, reasoning, and self-verification. Our corpus, datasets, and benchmarks are usable with the popular Search-R1 codebase for RLVR training and released on https://huggingface.co/collections/jmhb/papersearchqa. Finally, our data creation methods are scalable and easily extendable to other scientific domains."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Exploring Customizable Interactive Tools for Therapeutic Homework Support in Mental Health Counseling",
+    "authors": "Yimeng Wang, Liabette Escamilla, Yinzhou Wang, Bianca R. Augustine, Yixuan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18179v1",
+    "source": "arXiv",
+    "abstract": "Therapeutic homework (i.e., tasks assigned by therapists for clients to complete between sessions) is essential for effective psychotherapy, yet therapists often interpret fragmented client logs, assessments, and reflections within limited preparation time. Our formative study with licensed therapists revealed three critical design requirements: support for interpreting unstructured client self-reports, customization aligned with clinical objectives, and seamless integration across multiple data sources. We then designed and developed TheraTrack, a customizable, therapist-facing tool that integrates multi-dimensional data and leverages large language models to generate traceable summaries and support natural-language queries, to streamline between-session homework tracking. Our pilot study with 14 therapists showed that TheraTrack reduced their cognitive load, enabled verification through direct navigation from AI summaries to original data entries, and was adapted differently for private analysis compared to in-session use, with dependence varying based on therapist experience and usage duration. We also discuss design implications for clinician-centered AI for mental health."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "EndoExtract: Co-Designing Structured Text Extraction from Endometriosis Ultrasound Reports",
+    "authors": "Haiyi Li, Yiyang Zhao, Yutong Li, Alison Deslandes, Jodie Avery, Mary Louise Hull, Hsiang-Ting Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18154v1",
+    "source": "arXiv",
+    "abstract": "Endometriosis ultrasound reports are often unstructured free-text documents that require manual abstraction for downstream tasks such as analytics, machine learning model training, and clinical auditing. We present \\textbf{EndoExtract}, an on-premise LLM-powered system that extracts structured data from these reports and surfaces interpretive fields for human review. Through contextual inquiry with research assistants, we identified key workflow pain points: asymmetric trust between numerical and interpretive fields, repetitive manual highlighting, fatigue from sustained comparison, and terminology inconsistency across radiologists. These findings informed an interface that surfaces only interpretive fields for mandatory review, automatically highlights source evidence within PDFs, and separates batch extraction from human-paced verification. A formative workshop revealed that \\textbf{EndoExtract} supports a shift from field-by-field data entry to supervisory validation, though participants noted risks of over-skimming and challenges in managing missing data."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation (Extended Version)",
+    "authors": "Yan Zhu, Boru Chen, Christopher W. Fletcher, Nandeeka Nayak",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18140v1",
+    "source": "arXiv",
+    "abstract": "RTL simulation on CPUs remains a persistent bottleneck in hardware design. State-of-the-art simulators embed the circuit directly into the simulation binary, resulting in long compilation times and execution that is fundamentally CPU frontend-bound, with severe instruction-cache pressure. This work proposes RTeAAL Sim, which reformulates RTL simulation as a sparse tensor algebra problem. By representing RTL circuits as tensors and simulation as a sparse tensor algebra kernel, RTeAAL Sim decouples simulation behavior from binary size and makes RTL simulation amenable to well-studied tensor algebra optimizations. We demonstrate that a prototype of our tensor-based simulator, even with a subset of these optimizations, already mitigates the compilation overhead and frontend pressure and achieves performance competitive with the highly optimized Verilator simulator across multiple CPUs and ISAs."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "Computational Framework for Estimating Relative Gaussian Blur Kernels between Image Pairs",
+    "authors": "Akbar Saadat",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18099v1",
+    "source": "arXiv",
+    "abstract": "Following the earlier verification for Gaussian model in \\cite{ASaa2026}, this paper introduces a zero training forward computational framework for the model to realize it in real time applications. The framework is based on discrete calculation of the analytic expression of the defocused image from the sharper one for the application range of the standard deviation of the Gaussian kernels and selecting the best matches. The analytic expression yields multiple solutions at certain image points, but is filtered down to a single solution using similarity measures over neighboring points.The framework is structured to handle cases where two given images are partial blurred versions of each other. Experimental evaluations on real images demonstrate that the proposed framework achieves a mean absolute error (MAE) below $1.7\\%$ in estimating synthetic blur values. Furthermore, the discrepancy between actual blurred image intensities and their corresponding estimates remains under $2\\%$, obtained by applying the extracted defocus filters to less blurred images."
+  },
+  {
+    "date": "2026-01-26",
+    "title": "EvolVE: Evolutionary Search for LLM-based Verilog Generation and Optimization",
+    "authors": "Wei-Po Hsin, Ren-Hao Deng, Yao-Ting Hsieh, En-Ming Huang, Shih-Hao Hung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18067v1",
+    "source": "arXiv",
+    "abstract": "Verilog's design cycle is inherently labor-intensive and necessitates extensive domain expertise. Although Large Language Models (LLMs) offer a promising pathway toward automation, their limited training data and intrinsic sequential reasoning fail to capture the strict formal logic and concurrency inherent in hardware systems. To overcome these barriers, we present EvolVE, the first framework to analyze multiple evolution strategies on chip design tasks, revealing that Monte Carlo Tree Search (MCTS) excels at maximizing functional correctness, while Idea-Guided Refinement (IGR) proves superior for optimization. We further leverage Structured Testbench Generation (STG) to accelerate the evolutionary process. To address the lack of complex optimization benchmarks, we introduce IC-RTL, targeting industry-scale problems derived from the National Integrated Circuit Contest. Evaluations establish EvolVE as the new state-of-the-art, achieving 98.1% on VerilogEval v2 and 92% on RTLLM v2. Furthermore, on the industry-scale IC-RTL suite, our framework surpasses reference implementations authored by contest participants, reducing the Power, Performance, Area (PPA) product by up to 66% in Huffman Coding and 17% in the geometric mean across all problems. The source code of the IC-RTL benchmark is available at https://github.com/weiber2002/ICRTL."
+  },
+  {
+    "date": "2026-01-25",
+    "title": "MultiChain Blockchain Data Provenance for Deterministic Stream Processing with Kafka Streams: A Weather Data Case Study",
+    "authors": "Niaz Mohammad Ramaki, Florian Schintke",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.18011v1",
+    "source": "arXiv",
+    "abstract": "Auditability and reproducibility still are critical challenges for real-time data streams pipelines. Streaming engines are highly dependent on runtime scheduling, window triggers, arrival orders, and uncertainties such as network jitters. These all derive the streaming pipeline platforms to throw non-determinist outputs. In this work, we introduce a blockchain-backed provenance architecture for streaming platform (e.g Kafka Streams) the publishes cryptographic data of a windowed data stream without publishing window payloads on-chain. We used real-time weather data from weather stations in Berlin. Weather records are canonicalized, deduplicated, and aggregated per window, then serialised deterministically. Furthermore, the Merkle root of the records within the window is computed and stored alongside with Kafka offsets boundaries to MultiChain blockchain streams as checkpoints. Our design can enable an independent auditor to verify: (1) the completeness of window payloads, (2) canonical serialization, and (3) correctness of derived analytics such as minimum/maximum/average temperatures. We evaluated our system using real data stream from two weather stations (Berlin-Brandenburg and Berlin-Tempelhof) and showed linear verification cost, deterministic reproducibility, and with a scalable off-chain storage with on-chain cryptographic anchoring. We also demonstrated that the blockchain can afford to be integrated with streaming platforms particularly with our system, and we get satisfactory transactions per second values."
+  },
+  {
+    "date": "2026-01-25",
+    "title": "Data-driven nonparametric Li-ion battery ageing model aiming at learning from real operation data -- Part B: Cycling operation",
+    "authors": "Lucu M., Martinez-Laserna E., Gandiaga I., Liu K., Camblong H., Widanage W. D., Marco J",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.17983v1",
+    "source": "arXiv",
+    "abstract": "Conventional Li-ion battery ageing models, such as electrochemical, semi-empirical and empirical models, require a significant amount of time and experimental resources to provide accurate predictions under realistic operating conditions. At the same time, there is significant interest from industry in the introduction of new data collection telemetry technology. This implies the forthcoming availability of a significant amount of real-world battery operation data. In this context, the development of ageing models able to learn from in-field battery operation data is an interesting solution to mitigate the need for exhaustive laboratory testing. In a series of two papers, a data-driven ageing model is developed for Li-ion batteries under the Gaussian Process framework. A special emphasis is placed on illustrating the ability of the Gaussian Process model to learn from new data observations, providing more accurate and confident predictions, and extending the operating window of the model. The first paper of the series focussed on the systematic modelling and experimental verification of cell degradation through calendar ageing. Conversantly, this second paper addresses the same research challenge when the cell is electrically cycled. A specific covariance function is composed, tailored for use in a battery ageing application. Over an extensive dataset involving 124 cells tested during more than three years, different training possibilities are contemplated in order to quantify the minimal number of laboratory tests required for the design of an accurate ageing model. A model trained with only 26 tested cells achieves an overall mean-absolute-error of 1.04% in the capacity curve prediction, after being validated under a broad window of both dynamic and static cycling temperatures, Depth-of-Discharge, middle-SOC, charging and discharging C-rates."
+  },
+  {
+    "date": "2026-01-25",
+    "title": "Data-driven nonparametric Li-ion battery ageing model aiming at learning from real operation data -- Part A: Storage operation",
+    "authors": "Lucu M., Martinez-Laserna E., Gandiaga I., Liu K., Camblong H., Widanage W. D., Marco J",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.17978v1",
+    "source": "arXiv",
+    "abstract": "Conventional Li-ion battery ageing models, such as electrochemical, semi-empirical and empirical models, require a significant amount of time and experimental resources to provide accurate predictions under realistic operating conditions. At the same time, there is significant interest from industry in the introduction of new data collection telemetry technology. This implies the forthcoming availability of a significant amount of real-world battery operation data. In this context, the development of ageing models able to learn from in-field battery operation data is an interesting solution to mitigate the need for exhaustive laboratory testing. In a series of two papers, a data-driven ageing model is developed for Li-ion batteries under the Gaussian Process framework. A special emphasis is placed on illustrating the ability of the Gaussian Process model to learn from new data observations, providing more accurate and confident predictions, and extending the operating window of the model. This first paper focusses on the systematic modelling and experimental verification of cell degradation through calendar ageing. A specific covariance function is composed, tailored for use in a battery ageing application. Over an extensive dataset involving 32 cells tested during more than three years, different training possibilities are contemplated in order to quantify the minimal number of laboratory tests required for the design of an accurate ageing model. A model trained with only 18 tested cells achieves an overall mean-absolute-error of 0.53% in the capacity curves prediction, after being validated under a broad window of both dynamic and static temperature and SOC storage conditions."
+  },
+  {
+    "date": "2026-01-25",
+    "title": "The Stateless Pattern: Ephemeral Coordination as the Third Pillar of Digital Sovereignty",
+    "authors": "Sean Carlin, Kevin Curran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.17875v1",
+    "source": "arXiv",
+    "abstract": "For the past three decades, the architecture of the internet has rested on two primary pillars - communication on the World Wide Web and Value such as Bitcoin/Distributed ledgers). However, a third critical pillar, Private Coordination has remained dependent on centralized intermediaries, effectively creating a surveillance architecture by default. This paper introduces the 'Stateless Pattern', a novel network topology that replaces the traditional 'Fortress' security model (database-centric) with a 'Mist' model (ephemeral relays). By utilizing client-side cryptography and self-destructing server instances, we demonstrate a protocol where the server acts as a blind medium rather than a custodian of state. We present empirical data from a live deployment (signingroom.io), analyzing over 1,900 requests and cache-hit ratios to validate the system's 'Zero-Knowledge' properties and institutional utility. The findings suggest that digital privacy can be commoditized as a utility, technically enforcing specific articles of the universal declaration of human rights not through policy, but through physics."
+  },
+  {
+    "date": "2026-1-26",
+    "title": "Building and Evolving a Multilingual LLM: From First Steps to Specialization",
+    "authors": "Javier Aula-Blasco, Julia Falcao",
+    "publish": "Proceedings of the Conference on ACM Europe Summer School on HPC Computer Architectures for AI and Dedicated Applications",
+    "url": "https://doi.org/10.1145/3789242.3789244",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
