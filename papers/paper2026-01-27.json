@@ -1,0 +1,317 @@
+[
+  {
+    "date": "2026-01-27",
+    "title": "VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction",
+    "authors": "Dominic Maggio, Luca Carlone",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19887v1",
+    "source": "arXiv",
+    "abstract": "We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT. Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics. Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures. Finally, we conduct a suite of experiments which includes showing VGGT-SLAM 2.0 can easily be adapted for open-set object detection and demonstrating real time performance while running online onboard a ground robot using a Jetson Thor. We also test in environments ranging from cluttered indoor apartments and office scenes to a 4,200 square foot barn, and we also demonstrate VGGT-SLAM 2.0 achieves the highest accuracy on the TUM dataset with about 23 percent less pose error than VGGT-SLAM. Code will be released upon publication."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Learn and Verify: A Framework for Rigorous Verification of Physics-Informed Neural Networks",
+    "authors": "Kazuaki Tanaka, Kohei Yatabe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19818v1",
+    "source": "arXiv",
+    "abstract": "The numerical solution of differential equations using neural networks has become a central topic in scientific computing, with Physics-Informed Neural Networks (PINNs) emerging as a powerful paradigm for both forward and inverse problems. However, unlike classical numerical methods that offer established convergence guarantees, neural network-based approximations typically lack rigorous error bounds. Furthermore, the non-deterministic nature of their optimization makes it difficult to mathematically certify their accuracy. To address these challenges, we propose a \"Learn and Verify\" framework that provides computable, mathematically rigorous error bounds for the solutions of differential equations. By combining a novel Doubly Smoothed Maximum (DSM) loss for training with interval arithmetic for verification, we compute rigorous a posteriori error bounds as machine-verifiable proofs. Numerical experiments on nonlinear Ordinary Differential Equations (ODEs), including problems with time-varying coefficients and finite-time blow-up, demonstrate that the proposed framework successfully constructs rigorous enclosures of the true solutions, establishing a foundation for trustworthy scientific machine learning."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Unimodular lattices of rank 29 and related even genera of small determinant",
+    "authors": "Gaëtan Chenevier, Olivier Taïbi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19780v1",
+    "source": "arXiv",
+    "abstract": "We classify the unimodular Euclidean integral lattices of rank 29 by developing an elementary, yet very efficient, inductive method. As an application, we determine the isometry classes of even lattices of rank at most 28 and prime (half-)determinant at most 7. We also provide new isometry invariants allowing for independent verification of the completeness of our lists, and we give conceptual explanations of some unique orbit phenomena discovered during our computations. Some of the genera classified here are orders of magnitude larger than any genus previously classified. In a forthcoming companion paper, we use these computations to study the cohomology of GL_n(Z)."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Reimagining Peer Review Process Through Multi-Agent Mechanism Design",
+    "authors": "Ahmad Farooq, Kamran Iqbal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19778v1",
+    "source": "arXiv",
+    "abstract": "The software engineering research community faces a systemic crisis: peer review is failing under growing submissions, misaligned incentives, and reviewer fatigue. Community surveys reveal that researchers perceive the process as \"broken.\" This position paper argues that these dysfunctions are mechanism design failures amenable to computational solutions. We propose modeling the research community as a stochastic multi-agent system and applying multi-agent reinforcement learning to design incentive-compatible protocols. We outline three interventions: a credit-based submission economy, MARL-optimized reviewer assignment, and hybrid verification of review consistency. We present threat models, equity considerations, and phased pilot metrics. This vision charts a research agenda toward sustainable peer review."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Strong Reasoning Isn't Enough: Evaluating Evidence Elicitation in Interactive Diagnosis",
+    "authors": "Zhuohan Long, Zhijie Bao, Zhongyu Wei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19773v1",
+    "source": "arXiv",
+    "abstract": "Interactive medical consultation requires an agent to proactively elicit missing clinical evidence under uncertainty. Yet existing evaluations largely remain static or outcome-centric, neglecting the evidence-gathering process. In this work, we propose an interactive evaluation framework that explicitly models the consultation process using a simulated patient and a \\rev{simulated reporter} grounded in atomic evidences. Based on this representation, we introduce Information Coverage Rate (ICR) to quantify how completely an agent uncovers necessary evidence during interaction. To support systematic study, we build EviMed, an evidence-based benchmark spanning diverse conditions from common complaints to rare diseases, and evaluate 10 models with varying reasoning abilities. We find that strong diagnostic reasoning does not guarantee effective information collection, and this insufficiency acts as a primary bottleneck limiting performance in interactive settings. To address this, we propose REFINE, a strategy that leverages diagnostic verification to guide the agent in proactively resolving uncertainties. Extensive experiments demonstrate that REFINE consistently outperforms baselines across diverse datasets and facilitates effective model collaboration, enabling smaller agents to achieve superior performance under strong reasoning supervision. Our code can be found at https://github.com/NanshineLoong/EID-Benchmark ."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "PaW-ViT: A Patch-based Warping Vision Transformer for Robust Ear Verification",
+    "authors": "Deeksha Arun, Kevin W. Bowyer, Patrick Flynn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19771v1",
+    "source": "arXiv",
+    "abstract": "The rectangular tokens common to vision transformer methods for visual recognition can strongly affect performance of these methods due to incorporation of information outside the objects to be recognized. This paper introduces PaW-ViT, Patch-based Warping Vision Transformer, a preprocessing approach rooted in anatomical knowledge that normalizes ear images to enhance the efficacy of ViT. By accurately aligning token boundaries to detected ear feature boundaries, PaW-ViT obtains greater robustness to shape, size, and pose variation. By aligning feature boundaries to natural ear curvature, it produces more consistent token representations for various morphologies. Experiments confirm the effectiveness of PaW-ViT on various ViT models (ViT-T, ViT-S, ViT-B, ViT-L) and yield reasonable alignment robustness to variation in shape, size, and pose. Our work aims to solve the disconnect between ear biometric morphological variation and transformer architecture positional sensitivity, presenting a possible avenue for authentication schemes."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Veri-Sure: A Contract-Aware Multi-Agent Framework with Temporal Tracing and Formal Verification for Correct RTL Code Generation",
+    "authors": "Jiale Liu, Taiyu Zhou, Tianqi Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19747v1",
+    "source": "arXiv",
+    "abstract": "In the rapidly evolving field of Electronic Design Automation (EDA), the deployment of Large Language Models (LLMs) for Register-Transfer Level (RTL) design has emerged as a promising direction. However, silicon-grade correctness remains bottlenecked by: (i) limited test coverage and reliability of simulation-centric evaluation, (ii) regressions and repair hallucinations introduced by iterative debugging, and (iii) semantic drift as intent is reinterpreted across agent handoffs. In this work, we propose Veri-Sure, a multi-agent framework that establishes a design contract to align agents' intent and uses a patching mechanism guided by static dependency slicing to perform precise, localized repairs. By integrating a multi-branch verification pipeline that combines trace-driven temporal analysis with formal verification consisting of assertion-based checking and boolean equivalence proofs, Veri-Sure enables functional correctness beyond pure simulations. We also introduce VerilogEval-v2-EXT, extending the original benchmark with 53 more industrial-grade design tasks and stratified difficulty levels, and show that Veri-Sure achieves state-of-the-art verified-correct RTL code generation performance, surpassing standalone LLMs and prior agentic systems."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Hyperbolic Additive Margin Softmax with Hierarchical Information for Speaker Verification",
+    "authors": "Zhihua Fang, Liang He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19709v1",
+    "source": "arXiv",
+    "abstract": "Speaker embedding learning based on Euclidean space has achieved significant progress, but it is still insufficient in modeling hierarchical information within speaker features. Hyperbolic space, with its negative curvature geometric properties, can efficiently represent hierarchical information within a finite volume, making it more suitable for the feature distribution of speaker embeddings. In this paper, we propose Hyperbolic Softmax (H-Softmax) and Hyperbolic Additive Margin Softmax (HAM-Softmax) based on hyperbolic space. H-Softmax incorporates hierarchical information into speaker embeddings by projecting embeddings and speaker centers into hyperbolic space and computing hyperbolic distances. HAM-Softmax further enhances inter-class separability by introducing margin constraint on this basis. Experimental results show that H-Softmax and HAM-Softmax achieve average relative EER reductions of 27.84% and 14.23% compared with standard Softmax and AM-Softmax, respectively, demonstrating that the proposed methods effectively improve speaker verification performance and at the same time preserve the capability of hierarchical structure modeling. The code will be released at https://github.com/PunkMale/HAM-Softmax."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Cross-Domain Offshore Wind Power Forecasting: Transfer Learning Through Meteorological Clusters",
+    "authors": "Dominic Weisser, Chloé Hashimoto-Cullen, Benjamin Guedj",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19674v1",
+    "source": "arXiv",
+    "abstract": "Ambitious decarbonisation targets are catalysing growth in orders of new offshore wind farms. For these newly commissioned plants to run, accurate power forecasts are needed from the onset. These allow grid stability, good reserve management and efficient energy trading. Despite machine learning models having strong performances, they tend to require large volumes of site-specific data that new farms do not yet have. To overcome this data scarcity, we propose a novel transfer learning framework that clusters power output according to covariate meteorological features. Rather than training a single, general-purpose model, we thus forecast with an ensemble of expert models, each trained on a cluster. As these pre-trained models each specialise in a distinct weather pattern, they adapt efficiently to new sites and capture transferable, climate-dependent dynamics. Through the expert models' built-in calibration to seasonal and meteorological variability, we remove the industry-standard requirement of local measurements over a year. Our contributions are two-fold - we propose this novel framework and comprehensively evaluate it on eight offshore wind farms, achieving accurate cross-domain forecasting with under five months of site-specific data. Our experiments achieve a MAE of 3.52\\%, providing empirical verification that reliable forecasts do not require a full annual cycle. Beyond power forecasting, this climate-aware transfer learning method opens new opportunities for offshore wind applications such as early-stage wind resource assessment, where reducing data requirements can significantly accelerate project development whilst effectively mitigating its inherent risks."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "ProToken: Token-Level Attribution for Federated Large Language Models",
+    "authors": "Waris Gill, Ahmad Humayun, Ali Anwar, Muhammad Ali Gulzar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19672v1",
+    "source": "arXiv",
+    "abstract": "Federated Learning (FL) enables collaborative training of Large Language Models (LLMs) across distributed data sources while preserving privacy. However, when federated LLMs are deployed in critical applications, it remains unclear which client(s) contributed to specific generated responses, hindering debugging, malicious client identification, fair reward allocation, and trust verification. We present ProToken, a novel Provenance methodology for Token-level attribution in federated LLMs that addresses client attribution during autoregressive text generation while maintaining FL privacy constraints. ProToken leverages two key insights to enable provenance at each token: (1) transformer architectures concentrate task-specific signals in later blocks, enabling strategic layer selection for computational tractability, and (2) gradient-based relevance weighting filters out irrelevant neural activations, focusing attribution on neurons that directly influence token generation. We evaluate ProToken across 16 configurations spanning four LLM architectures (Gemma, Llama, Qwen, SmolLM) and four domains (medical, financial, mathematical, coding). ProToken achieves 98% average attribution accuracy in correctly localizing responsible client(s), and maintains high accuracy when the number of clients are scaled, validating its practical viability for real-world deployment settings."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Single-Winner Voting on Matchings",
+    "authors": "Niclas Boehmer, Jessica Dierking",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19653v1",
+    "source": "arXiv",
+    "abstract": "We introduce a single-winner perspective on voting on matchings, in which voters have preferences over possible matchings in a graph, and the goal is to select a single collectively desirable matching. Unlike in classical matching problems, voters in our model are not part of the graph; instead, they have preferences over the entire matching. In the resulting election, the candidate space consists of all feasible matchings, whose exponential size renders standard algorithms for identifying socially desirable outcomes computationally infeasible. We study whether the computational tractability of finding such outcomes can be regained by exploiting the matching structure of the candidate space. Specifically, we provide a complete complexity landscape for questions concerning the maximization of social welfare, the construction and verification of Pareto optimal outcomes, and the existence and verification of Condorcet winners under one affine and two approval-based utility models. Our results consist of a mix of algorithmic and intractability results, revealing sharp boundaries between tractable and intractable cases, with complexity jumps arising from subtle changes in the utility model or solution concept."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "The Competence Crisis: A Design Fiction on AI-Assisted Research in Software Engineering",
+    "authors": "Mairieli Wessel, Daniel Feitosa, Sangeeth Kochanthara",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19628v1",
+    "source": "arXiv",
+    "abstract": "Rising publication pressure and the routine use of generative AI tools are reshaping how software engineering research is produced, assessed, and taught. While these developments promise efficiency, they also raise concerns about skill degradation, responsibility, and trust in scholarly outputs. This vision paper employs Design Fiction as a methodological lens to examine how such concerns might materialise if current practices persist. Drawing on themes reported in a recent community survey, we construct a speculative artifact situated in a near future research setting. The fiction is used as an analytical device rather than a forecast, enabling reflection on how automated assistance might impede domain knowledge competence, verification, and mentoring practices. By presenting an intentionally unsettling scenario, the paper invites discussion on how the software engineering research community in the future will define proficiency, allocate responsibility, and support learning."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "ComAgent: Multi-LLM based Agentic AI Empowered Intelligent Wireless Networks",
+    "authors": "Haoyun Li, Ming Xiao, Kezhi Wang, Robert Schober, Dong In Kim, Yong Liang Guan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19607v1",
+    "source": "arXiv",
+    "abstract": "Emerging 6G networks rely on complex cross-layer optimization, yet manually translating high-level intents into mathematical formulations remains a bottleneck. While Large Language Models (LLMs) offer promise, monolithic approaches often lack sufficient domain grounding, constraint awareness, and verification capabilities. To address this, we present ComAgent, a multi-LLM agentic AI framework. ComAgent employs a closed-loop Perception-Planning-Action-Reflection cycle, coordinating specialized agents for literature search, coding, and scoring to autonomously generate solver-ready formulations and reproducible simulations. By iteratively decomposing problems and self-correcting errors, the framework effectively bridges the gap between user intent and execution. Evaluations demonstrate that ComAgent achieves expert-comparable performance in complex beamforming optimization and outperforms monolithic LLMs across diverse wireless tasks, highlighting its potential for automating design in emerging wireless networks."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Decompose-and-Formalise: Recursively Verifiable Natural Language Inference",
+    "authors": "Xin Quan, Marco Valentino, Louise A. Dennis, André Freitas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19605v1",
+    "source": "arXiv",
+    "abstract": "Recent work has shown that integrating large language models (LLMs) with theorem provers (TPs) in neuro-symbolic pipelines helps with entailment verification and proof-guided refinement of explanations for natural language inference (NLI). However, scaling such refinement to naturalistic NLI remains difficult: long, syntactically rich inputs and deep multi-step arguments amplify autoformalisation errors, where a single local mismatch can invalidate the proof. Moreover, current methods often handle failures via costly global regeneration due to the difficulty of localising the responsible span or step from prover diagnostics. Aiming to address these problems, we propose a decompose-and-formalise framework that (i) decomposes premise-hypothesis pairs into an entailment tree of atomic steps, (ii) verifies the tree bottom-up to isolate failures to specific nodes, and (iii) performs local diagnostic-guided refinement instead of regenerating the whole explanation. Moreover, to improve faithfulness of autoformalisation, we introduce $θ$-substitution in an event-based logical form to enforce consistent argument-role bindings. Across a range of reasoning tasks using five LLM backbones, our method achieves the highest explanation verification rates, improving over the state-of-the-art by 26.2%, 21.7%, 21.6% and 48.9%, while reducing refinement iterations and runtime and preserving strong NLI accuracy."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "ClaimPT: A Portuguese Dataset of Annotated Claims in News Articles",
+    "authors": "Ricardo Campos, Raquel Sequeira, Sara Nerea, Inês Cantante, Diogo Folques, Luís Filipe Cunha, João Canavilhas, António Branco, Alípio Jorge, Sérgio Nunes, Nuno Guimarães, Purificação Silvano",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19490v1",
+    "source": "arXiv",
+    "abstract": "Fact-checking remains a demanding and time-consuming task, still largely dependent on manual verification and unable to match the rapid spread of misinformation online. This is particularly important because debunking false information typically takes longer to reach consumers than the misinformation itself; accelerating corrections through automation can therefore help counter it more effectively. Although many organizations perform manual fact-checking, this approach is difficult to scale given the growing volume of digital content. These limitations have motivated interest in automating fact-checking, where identifying claims is a crucial first step. However, progress has been uneven across languages, with English dominating due to abundant annotated data. Portuguese, like other languages, still lacks accessible, licensed datasets, limiting research, NLP developments and applications. In this paper, we introduce ClaimPT, a dataset of European Portuguese news articles annotated for factual claims, comprising 1,308 articles and 6,875 individual annotations. Unlike most existing resources based on social media or parliamentary transcripts, ClaimPT focuses on journalistic content, collected through a partnership with LUSA, the Portuguese News Agency. To ensure annotation quality, two trained annotators labeled each article, with a curator validating all annotations according to a newly proposed scheme. We also provide baseline models for claim detection, establishing initial benchmarks and enabling future NLP and IR applications. By releasing ClaimPT, we aim to advance research on low-resource fact-checking and enhance understanding of misinformation in news media."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "KG-CRAFT: Knowledge Graph-based Contrastive Reasoning with LLMs for Enhancing Automated Fact-checking",
+    "authors": "Vítor N. Lourenço, Aline Paes, Tillman Weyde, Audrey Depeige, Mohnish Dubey",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19447v1",
+    "source": "arXiv",
+    "abstract": "Claim verification is a core component of automated fact-checking systems, aimed at determining the truthfulness of a statement by assessing it against reliable evidence sources such as documents or knowledge bases. This work presents KG-CRAFT, a method that improves automatic claim verification by leveraging large language models (LLMs) augmented with contrastive questions grounded in a knowledge graph. KG-CRAFT first constructs a knowledge graph from claims and associated reports, then formulates contextually relevant contrastive questions based on the knowledge graph structure. These questions guide the distillation of evidence-based reports, which are synthesised into a concise summary that is used for veracity assessment by LLMs. Extensive evaluations on two real-world datasets (LIAR-RAW and RAWFC) demonstrate that our method achieves a new state-of-the-art in predictive performance. Comprehensive analyses validate in detail the effectiveness of our knowledge graph-based contrastive reasoning approach in improving LLMs' fact-checking capabilities."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Self-Supervised Path Planning in Unstructured Environments via Global-Guided Differentiable Hard Constraint Projection",
+    "authors": "Ziqian Wang, Chenxi Fang, Zhen Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19354v1",
+    "source": "arXiv",
+    "abstract": "Deploying deep learning agents for autonomous navigation in unstructured environments faces critical challenges regarding safety, data scarcity, and limited computational resources. Traditional solvers often suffer from high latency, while emerging learning-based approaches struggle to ensure deterministic feasibility. To bridge the gap from embodied to embedded intelligence, we propose a self-supervised framework incorporating a differentiable hard constraint projection layer for runtime assurance. To mitigate data scarcity, we construct a Global-Guided Artificial Potential Field (G-APF), which provides dense supervision signals without manual labeling. To enforce actuator limitations and geometric constraints efficiently, we employ an adaptive neural projection layer, which iteratively rectifies the coarse network output onto the feasible manifold. Extensive benchmarks on a test set of 20,000 scenarios demonstrate an 88.75\\% success rate, substantiating the enhanced operational safety. Closed-loop experiments in CARLA further validate the physical realizability of the planned paths under dynamic constraints. Furthermore, deployment verification on an NVIDIA Jetson Orin NX confirms an inference latency of 94 ms, showing real-time feasibility on resource-constrained embedded hardware. This framework offers a generalized paradigm for embedding physical laws into neural architectures, providing a viable direction for solving constrained optimization in mechatronics. Source code is available at: https://github.com/wzq-13/SSHC.git."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "A Unified Framework for Equilibrium Selection in DSGE Models",
+    "authors": "Mitsuhiro Okano",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19329v1",
+    "source": "arXiv",
+    "abstract": "This paper characterizes DSGE models as fixed-point selection devices for self-referential economic specifications. We formalize this structure as $(S, T, Π)$: specification, self-referential operator, and equilibrium selector. The framework applies to any DSGE model through compositional pipelines where specifications are transformed, fixed points computed, and equilibria selected. We provide formal results and computational implementation for linear rational-expectations systems, reinterpreting Blanchard-Kahn conditions as a specific selection operator and verifying that standard solution methods (such as QZ decomposition and OccBin) realize this operation. We show that alternative selectors (minimal-variance, fiscal anchoring) become available under indeterminacy, revealing selection as a policy choice rather than a mathematical necessity. Our framework reveals the formal structure underlying DSGE solution methods, enabling programmatic verification and systematic comparison of selection rules."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "iFAN Ecosystem: A Unified AI, Digital Twin, Cyber-Physical Security, and Robotics Environment for Advanced Nuclear Simulation and Operations",
+    "authors": "Youndo Do, Chad Meece, Marc Zebrowitz, Spencer Banks, Myeongjun Choi, Xiaoxu Diao, Kai Tan, Michael Doran, Jason Reed, Fan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19234v1",
+    "source": "arXiv",
+    "abstract": "As nuclear facilities experience digital transformation and advanced reactor development, AI integration, cyber-physical security, and other emerging technologies such as autonomous robot operations are increasingly developed. However, evaluation and deployment is challenged by the lack of dedicated virtual testbeds. The Immersive Framework for Advanced Nuclear (iFAN) ecosystem is developed, a comprehensive digital twin framework with a realistic 3D environment with physics-based simulations. The iFAN ecosystem serves as a high-fidelity virtual testbed for plant operation, cybersecurity, physical security, and robotic operation, as it provides real-time data exchange for pre-deployment verification. Core features include virtual reality, reinforcement learning, radiation simulation, and cyber-physical security. In addition, the paper investigates various applications through potential operational scenarios. The iFAN ecosystem provides a versatile and secure architecture for validating the next generation of autonomous and cyber-resilient nuclear operations."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Refactoring and Equivalence in Rust: Expanding the REM Toolchain with a Novel Approach to Automated Equivalence Proofs",
+    "authors": "Matthew Britton, Sasha Pak, Alex Potanin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19207v1",
+    "source": "arXiv",
+    "abstract": "Refactoring tools are central to modern development, with extract-function refactorings used heavily in day-to-day work. For Rust, however, ownership, borrowing, and advanced type features make automated extract-function refactoring challenging. Existing tools either rely on slow compiler-based analysis, support only restricted language fragments, or provide little assurance beyond \"it still compiles.\" This paper presents REM2.0, a new extract-function and verification toolchain for Rust. REM2.0 works atop rust-analyzer as a persistent daemon, providing low-latency refactorings with a VSCode front-end. It adds a repairer that automatically adjusts lifetimes and signatures when extraction exposes borrow-checker issues, and an optional verification pipeline connecting to CHARON and AENEAS to generate Coq equivalence proofs for a supported Rust subset. The architecture is evaluated on three benchmark suites. On the original REM artefact, REM2.0 achieves 100% compatibility while reducing latency from ~1000ms to single-digit milliseconds in the daemon. On 40 feature-focused extractions from 20 highly starred GitHub repositories, REM2.0 handles most examples involving async/await, const fn, non-local control flow, generics, and higher-ranked trait bounds. On twenty verification benchmarks, the CHARON/AENEAS pipeline constructs end-to-end equivalence proofs for cases within its current subset. Overall, results show that a rust-analyzer-based design can provide fast, feature-rich extract-function refactoring for real Rust programs, while opt-in verification delivers machine-checked behaviour preservation."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Automatic Cloud Formation Using LLM",
+    "authors": "Senthamarai N, Jeyaselvi M, Hemamalini V",
+    "publish": "2025 International Conference on Intelligent and Cloud Computing (ICoICC)",
+    "url": "https://doi.org/10.1109/icoicc64033.2025.11052114",
+    "source": "IEEE",
+    "abstract": "Introduces a groundbreaking IAC Code Generator for automated Terraform script creation. Empowers developers by treating infrastructure as a versioned, programmable artifact. Enhances efficiency, reduces time-to-market, ensures consistency, and promotes collaboration between development and operations teams. Features an intuitive interface, customizable templates, and integrates industry best practices for accessible and accelerated development cycles."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "LLM-Driven Synthetic Text Generation for Privacy-Preserving Federated Learning",
+    "authors": "Xinge Ma, Jin Wang, Xuejie Zhang",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3657644",
+    "source": "IEEE",
+    "abstract": "Federated learning (FL) enables collaborative fine tuning of pre-trained language models (PLMs) across user devices by aggregating locally trained model parameters rather than raw data, exhibiting great potential in privacy-sensitive natural language processing (NLP) applications. However, the inherent tendency of model parameters to memorize training data puts existing efforts at risk of disclosing raw data. Knowledge distillation (KD) offers a privacy-preserving alternative for knowledge transfer between the cloud server and user devices by exchanging lightweight model predictions associated with a public proxy dataset. Nevertheless, a desirable proxy dataset may not always be available in practice as its construction requires careful deliberation and even prior knowledge about the private domain to ensure satisfactory performance, which conflicts with the privacy-preserving principles of FL. To tackle this challenge, this paper proposes FedSTG, a privacy-preserving FL framework empowered by synthetic text generation of large language models (LLMs), which combines the exceptional generation capability of a pre-trained LLM deployed on the cloud server with the domain specific understanding capabilities of local PLMs distributed across user devices to generate high-quality synthetic text for knowledge transfer, facilitating the integration of KD and FL without the need for publicly available proxy data. Extensive experiments across a wide range of benchmark tasks demonstrate that FedSTG achieves superior performance without requiring any prior knowledge about the private domain, delivering a privacy-preserving FL solution for NLP."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "LLM-Powered Social Robots for an Indoor Navigation Assistant",
+    "authors": "Gonçalo Carnaz, Esmeralda Faria, Paulo Menezes",
+    "publish": "2025 7th Experiment@ International Conference (exp.at'25)",
+    "url": "https://doi.org/10.1109/exp.at2565440.2025.11348564",
+    "source": "IEEE",
+    "abstract": "Social robots are increasingly being deployed in indoor environments such as hospitals or malls, to assist with navigation and give information related to indoor spaces. Therefore, these social robots need to understand the human questions using a natural language understanding and generation, making them suitable for enhancing social robots' interaction capabilities, also, the need to understand the indoor environments that need to be mapped. Large language models can be useful for understanding the semantics associated with questions asked by users and the answers generated by the social robot. This paper explores the integration of LLMs into social robots for indoor location navigation. We describe the architecture of our LLM-powered social robot, its capabilities, and challenges related to real-time processing, user adaptation, and accuracy. A pilot study evaluates the robot's efficiency in guiding 20 users and responding to queries in a indoor environment."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "LLM-Enhanced Multi-Objective Fair Influence Maximization",
+    "authors": "Huanqi Wang, Li Wang, Feng Chang, Jian Zhu, Wenjing Hong, Zexuan Zhu",
+    "publish": "2025 International Conference on Machine Intelligence and Nature-Inspired Computing (MIND)",
+    "url": "https://doi.org/10.1109/mind67540.2025.11351866",
+    "source": "IEEE",
+    "abstract": "Influence maximization has been extensively studied in the context of social networks. In recent years, increasing attention has been paid to ensuring fairness in the diffusion process, aiming to prevent underrepresentation or systematic disadvantage of certain groups. However, existing approaches typically rely on hand-crafted heuristics or meta-heuristics, which often require substantial expert knowledge and computational resources. Meanwhile, Large Language Models (LLMs) have demonstrated impressive capabilities in reasoning, optimization, and knowledge generalization across various domains. Despite their success, there is still a lack of research leveraging LLMs to guide influence maximization, particularly under fairness constraints. In this paper, we propose a novel framework that integrates an LLM-informed surrogate model into a multi-objective evolutionary algorithm for Fair Influence Maximization (FIM). This approach jointly optimizes influence and group fairness while reducing computational burden with an LLM-assisted evolution process and a Kriging-based surrogate. Experimental studies on real-world datasets show the competitiveness of the proposed method in achieving a balanced trade-off between influence propagation and fairness."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "LLM-MTPSO: Large Language Model-Assisted Multi-Task Particle Swarm Optimization for Imbalanced Classification",
+    "authors": "Guanghua Lv, Jiahui Wang, Jiping Lin, Yu Zhou",
+    "publish": "2025 International Conference on Machine Intelligence and Nature-Inspired Computing (MIND)",
+    "url": "https://doi.org/10.1109/mind67540.2025.11351785",
+    "source": "IEEE",
+    "abstract": "Imbalanced data widely exists in security-prioritized domains, where minority classes often bring a disproportionately high risk. Especially in multi-class scenarios, challenges arise not only from the imbalance between majority and minority classes, but also from the difficulty in separating minority classes and their underrepresentation in the training data. To address these issues, this paper adopts a One-Versus-One decomposition strategy to transform the multi-class problem into multiple binary subtasks. This formulation naturally increases the visibility of minority classes. Furthermore, we propose a large language modelassisted multi-task particle swarm optimization (LLM-MTPSO) algorithm. Each subtask is independently optimized via PSO, while a LLM is leveraged to semantically fuse optimal solutions among similar subtasks. This mechanism facilitates knowledge transfer and refinement at the solution level, enhancing the model's capacity to recognize minority patterns. Experiments on nine imbalanced datasets show that the test results of our method in terms of imbalanced classification accuracy outperform four classical methods. The ablation experiments indicate that the introduction of LLM promotes information sharing among subtasks, thus improving the algorithm performance."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "LLM-Driven Evolutionary Algorithm Selection: Bidirectional Framework and Sampling Paradigm",
+    "authors": "Xingyu Wu, Yinglan Feng, Jibin Wu",
+    "publish": "2025 International Conference on Machine Intelligence and Nature-Inspired Computing (MIND)",
+    "url": "https://doi.org/10.1109/mind67540.2025.11351666",
+    "source": "IEEE",
+    "abstract": "Evolutionary algorithms (EAs) exhibit diverse performance across different optimization problems, making the automated selection of the most suitable EA an important yet challenging task. Traditional approaches typically rely on manually crafted problem features and build mappings from these features to algorithm performance. However, these methods often ignore the rich information embedded in the algorithms themselves. This paper proposes a novel approach that models the bidirectional semantic relationship between continuous optimization problems and evolutionary algorithms in a featurefree manner. Specifically, we extract problem representations by traversing the syntax tree of the objective function, and extract algorithm representations from the EA code using pre-trained large language models (lLMs). These representations are then jointly embedded and matched to guide the algorithm selection process. Furthermore, we theoretically derive a algorithm sampling strategy under distributionally robust optimization frameworks, to addresses the challenge of negative instance selection in the training paradigm. Experiments on optimization problem benchmark demonstrate the superiority of our method."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Erratum: Knowledge-Driven Reasoning for Compatible and Interpretable API Recommendation via Teacher LLM Distillation",
+    "authors": "Lianyong Qi, Jianye Xie, Chunhua Hu, Xiaolong Xu, Haolong Xiang, Haipeng Dai, Rong Gu, Xuyun Zhang, Wanchun Dou",
+    "publish": "ACM Transactions on Information Systems",
+    "url": "https://doi.org/10.1145/3787107",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-1-27",
+    "title": "When LLM Agents Disagree, Do Humans Mirror? Behavioral Comparisons on Moral Dilemmas",
+    "authors": "Haotian Deng, Sitian Wang, Ruxin Wang, Xuetao Wei, Chen Wei, Quanying Liu",
+    "publish": "2025 International Conference on Machine Intelligence and Nature-Inspired Computing (MIND)",
+    "url": "https://doi.org/10.1109/mind67540.2025.11351781",
+    "source": "IEEE",
+    "abstract": "Moral dilemmas are widely used to study ethical decision-making in humans and artificial agents. While recent studies have shown large language models (LLMs) can produce consistent human-like moral judgments, their ability to capture human inter-individual variability-especially in highdisagreement scenarios-remains unexplored. To explore this, we propose a variability-based assessment framework that evaluates human-AI moral alignment through inter-individual disagreement. We curated a diverse set of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{6 0 0}$</tex> moral dilemmas spanning domains such as harm, fairness, and loyalty. Using a unified experimental paradigm, we collected binary moral decisions and confidence ratings from over 100 LLM-based agents and 100 human participants. For each scenario, we quantified interagent disagreement (AI uncertainty) and inter-human response variability (Human uncertainty). Our results reveal a fundamental misalignment that AI uncertainty fails to predict human disagreement levels (<tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$r=0.01, p=0.73$</tex>). Paradoxically, agents exhibiting greater moral consistency diverge further from human variability patterns. This suggests current alignment strategies overlook key dimensions of moral ambiguity, risking brittle ethical AI systems."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Factorized VRFT: Proposal and Experimental Verification",
+    "authors": "Ryuto Miyoshi, Yusuke Fujimoto, Takeshi Nishida",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3657809",
+    "source": "IEEE",
+    "abstract": "This paper discusses the data-driven model matching problem with a one-shot preliminary experiment. Although many methods, such as Virtual Reference Feedback Tuning (VRFT), have been proposed as a solution for this problem, they are nonconvex in general, i.e., convex only under the assumption on the structure of the feedback controller. This paper introduces a new method, named Factorized-VRFT (F-VRFT), as a solution for the above problem, where the cost function is convex for any linear controller. In particular, the cost function of F-VRFT is quadratic; thus, the optimal parameter is available explicitly. Furthermore, by leveraging this property, we show that the method can be easily extended to adaptive model matching. The effectiveness of this method is demonstrated through experiments with a practical motor"
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Formal Verification of the Health Code System for Quarantine Management",
+    "authors": "Iram Tariq Bhatti, Shahid Ali Khan, Adnan Rashid, Aimal Tariq Rextin",
+    "publish": "2025 27th International Multitopic Conference (INMIC)",
+    "url": "https://doi.org/10.1109/inmic65900.2025.11348599",
+    "source": "IEEE",
+    "abstract": "The COVID-19 pandemic, emerging in late 2019 in Wuhan, China, prompted the rapid deployment of digital containment tools worldwide. China's Quarantine Management System (QMS) integrated health QR codes, contact tracing and facial recognition to assess infection risk and enforce quarantine measures. Given the potential reuse of such systems in future health crises, ensuring their correctness, reliability and fairness is crucial, especially when they govern mobility and access to essential services. Conventional testing often fails to detect subtle errors in these complex, data-driven applications. This work applies formal verification, using probabilistic model checking, to model QMS functionality and analyze its behavior under diverse infection rates and user behaviors. We verify properties such as deadlock freedom, reachability, fairness, and reliability with the PRISM model checker. Results highlight the value of formal methods in building trustworthy digital health technologies and guiding improvements in both system design and public policy."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Personalized Auto-Grading and Feedback System for Constructive Geometry Tasks Using Large Language Models on an Online Math Platform_supp1-3657726.pdf",
+    "authors": "SEJUN OH",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/access.2026.3657726/mm1",
+    "source": "IEEE",
+    "abstract": "As personalized learning gains increasing attention in mathematics education, there is a growing demand for intelligent systems that can assess complex student responses and provide individualized feedback in real time. In this study, we present a personalized auto-grading and feedback system for constructive geometry tasks, developed using large language models (LLMs) and deployed on the Algeomath platform, a Korean online tool designed for interactive geometric constructions. The proposed system evaluates student-submitted geometric constructions by analyzing their procedural accuracy and conceptual understanding. It employs a prompt-based grading mechanism using GPT-4, where student answers and model solutions are compared through a few-shot learning approach. Feedback is generated based on teacher-authored examples built from anticipated student responses, and it dynamically adapts to the student’s problem-solving history, allowing up to four iterative attempts per question. The system was piloted with 79 middle-school students, where LLM-generated grades and feedback were benchmarked against teacher judgments. Grading closely aligned with teachers, and feedback helped many students revise errors and complete multi-step geometry tasks. While short-term corrections were frequent, longer-term transfer effects were less clear. The study reports short-term corrective feedback patterns and attempt-level behaviors observed during classroom use, indicating the system’s role in supporting teacher-aligned formative assessment. The system achieved substantial agreement with teacher scoring, indicating its potential for reliable use in classroom formative assessment."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Traditional vs. Self-Supervised Audio Features for Speaker Verification in Urdu: A Comparative Study",
+    "authors": "Saqlain Ahmed, Farhan Mazhar, Isha Imaan, Muhammad Hamza, Junaid Mir",
+    "publish": "2025 27th International Multitopic Conference (INMIC)",
+    "url": "https://doi.org/10.1109/inmic65900.2025.11348262",
+    "source": "IEEE",
+    "abstract": "This study examines the performance of traditional handcrafted audio features alongside self-supervised learning (SSL) audio features for automatic speaker verification (ASV) in Urdu, which is categorized as a low-resource language. Given the rising concern over audio deepfakes, particularly in biometric authentication systems, developing robust ASV methods is increasingly critical. The research evaluates Mel-frequency cepstral coefficients (MFCCs), linear predictive cepstral coefficients (LPCCs), and Gammatone cepstral coefficients (GTCCs) against wav2vec2-based SSL features, utilizing a support vector machine (SVM) classifier. Experiments were conducted on a newly developed Urdu deepfake audio dataset that includes both authentic and spoofed samples generated using Tacotron and VITS text-to-speech models. Results reveal that while LPCCs and GTCCs perform competitively among handcrafted features, wav2vec2 embeddings significantly surpass all traditional methods, achieving an equal error rate as low as 0.01 when employing the radial basis function kernel. These findings emphasize the advantages of SSL-based representations in capturing speakerspecific traits and effectively resisting spoofing attacks in Urdu."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Veri-SFL: Privacy-Preserving Verification of Resource Allocation and Data Trustworthiness in Sustainable Federated Learning",
+    "authors": "Yu-Chi Chen, You-Siang Liao, Zong-Sian Lai",
+    "publish": "IEEE Transactions on Sustainable Computing",
+    "url": "https://doi.org/10.1109/tsusc.2026.3653218",
+    "source": "IEEE",
+    "abstract": "Federated Learning (FL) is currently referred to as one of the privacy-enhancing technologies because of its service architecture. However, recent advancements in FL have high-lighted its potential not only as a new framework of privacy but also as a key enabler of sustainable computing, which is expected to minimize the impact of an individual party to further improve the capacity of the machine learning model, energy efficiency, and reliability. For the above requirement of sustainability, resource allocation and trust management in FL are very infrastructural tasks of energy efficiency and reliability. In this paper, we present a framework, called Veri-SFL, to indicate verification for resource allocation and trust measurement in FL. We use trust scores to represent the credibility of each dataset without leaking any privacy, and utilize collaborative zk-SNARKs to verify the trust scores of each local dataset. Then, after verifying the correctness of trust levels, we present a solution to verify whether workers (model owners) are training according to the required distribution ratio by using collaborative zk-SNARKs."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "A Semantic—Visual—Physical Consistency Verification Method for the Digital Standard Human Based on Multimodal Large Models",
+    "authors": "Jiajun Sun, Jianwei Niu",
+    "publish": "2025 9th International Symposium on Computer Science and Intelligent Control (ISCSIC)",
+    "url": "https://doi.org/10.1109/iscsic67494.2025.11351989",
+    "source": "IEEE",
+    "abstract": "This paper presents a semantic-visual-physical consistency verification framework for the Digital Standard Human, powered by multimodal large models. The proposed approach integrates semantic parsing, visual recognition, and physical constraint validation to enable high-precision consistency analysis of human actions in digital twin applications. At the semantic layer, large language models (DeepSeek) parse natural language instructions and generate structured semantic vectors. The visual layer leverages Qwen2VL for frame-level action recognition and temporal feature modeling, while the physical layer incorporates standardized ergonomic databases and dynamic models to validate physical feasibility. Experiments on two representative tasks—object retrieval from the ground and overhead lifting—demonstrate that the integration of multimodal large models enhances semantic-visual and semantic-physical consistency, achieving overall consistency scores of 0.73 and 0.76, respectively. The results highlight the framework's effectiveness in reducing semantic ambiguity and improving alignment between task descriptions, motion recognition, and physical validation. Future work will focus on optimizing inference efficiency, integrating 3D reconstruction and physics simulation, and incorporating individualized ergonomic parameters to further improve accuracy and scalability."
+  },
+  {
+    "date": "2026-1-27",
+    "title": "Design, Equivalent Circuit Analysis, and Verification of A 400-Cell Broadband Dual-Polarized Reconfigurable Transmit-Array at Ka-Band",
+    "authors": "Guangyao Peng, Enhao Wang, Kunjing Zhong, Fan Wu, Zhi Hao Jiang, Ronan Sauleau, Wei Hong",
+    "publish": "IEEE Transactions on Antennas and Propagation",
+    "url": "https://doi.org/10.1109/tap.2026.3655554",
+    "source": "IEEE",
+    "abstract": "A broadband 1-bit reconfigurable transmit-array (TA) featuring independent dual-polarized beam-scanning capability is reported at Ka-band. Bandwidth enhanced transmissive elements based on the current reversed mechanism are developed, which are optimized based on an equivalent circuit model. The elements are further miniaturized and aligned orthogonally in an end-to-middle scheme for dual-polarized operation. A 20 × 20-cell dual-polarized reconfigurable TA is fabricated and measured. The prototype exhibits a peak gain of 24.8 dBi, a 3-dB gain bandwidth of 18%, as well as an aperture efficiency of 26%. Moreover, it supports sum beams scanning up to 60° and difference beams steering up to 50°. The demonstrated dual-polarized reconfigurable TA can be a promising candidate for millimeter-wave communication and radar systems."
+  }
+]
