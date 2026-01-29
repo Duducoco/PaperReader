@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-01-28",
+    "title": "FAIRT2V: Training-Free Debiasing for Text-to-Video Diffusion Models",
+    "authors": "Haonan Zhong, Wei Song, Tingxu Han, Maurice Pagnucco, Jingling Xue, Yang Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20791v1",
+    "source": "arXiv",
+    "abstract": "Text-to-video (T2V) diffusion models have achieved rapid progress, yet their demographic biases, particularly gender bias, remain largely unexplored. We present FairT2V, a training-free debiasing framework for text-to-video generation that mitigates encoder-induced bias without finetuning. We first analyze demographic bias in T2V models and show that it primarily originates from pretrained text encoders, which encode implicit gender associations even for neutral prompts. We quantify this effect with a gender-leaning score that correlates with bias in generated videos. Based on this insight, FairT2V mitigates demographic bias by neutralizing prompt embeddings via anchor-based spherical geodesic transformations while preserving semantics. To maintain temporal coherence, we apply debiasing only during early identity-forming steps through a dynamic denoising schedule. We further propose a video-level fairness evaluation protocol combining VideoLLM-based reasoning with human verification. Experiments on the modern T2V model Open-Sora show that FairT2V substantially reduces demographic bias across occupations with minimal impact on video quality."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "REASON: Accelerating Probabilistic Logical Reasoning for Scalable Neuro-Symbolic Intelligence",
+    "authors": "Zishen Wan, Che-Kai Liu, Jiayi Qian, Hanchen Yang, Arijit Raychowdhury, Tushar Krishna",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20784v1",
+    "source": "arXiv",
+    "abstract": "Neuro-symbolic AI systems integrate neural perception with symbolic reasoning to enable data-efficient, interpretable, and robust intelligence beyond purely neural models. Although this compositional paradigm has shown superior performance in domains such as reasoning, planning, and verification, its deployment remains challenging due to severe inefficiencies in symbolic and probabilistic inference. Through systematic analysis of representative neuro-symbolic workloads, we identify probabilistic logical reasoning as the inefficiency bottleneck, characterized by irregular control flow, low arithmetic intensity, uncoalesced memory accesses, and poor hardware utilization on CPUs and GPUs. This paper presents REASON, an integrated acceleration framework for probabilistic logical reasoning in neuro-symbolic AI. REASON introduces a unified directed acyclic graph representation that captures common structure across symbolic and probabilistic models, coupled with adaptive pruning and regularization. At the architecture level, REASON features a reconfigurable, tree-based processing fabric optimized for irregular traversal, symbolic deduction, and probabilistic aggregation. At the system level, REASON is tightly integrated with GPU streaming multiprocessors through a programmable interface and multi-level pipeline that efficiently orchestrates compositional execution. Evaluated across six neuro-symbolic workloads, REASON achieves 12-50x speedup and 310-681x energy efficiency over desktop and edge GPUs under TSMC 28 nm node. REASON enables real-time probabilistic logical reasoning, completing end-to-end tasks in 0.8 s with 6 mm2 area and 2.12 W power, demonstrating that targeted acceleration of probabilistic logical reasoning is critical for practical and scalable neuro-symbolic AI and positioning REASON as a foundational system architecture for next-generation cognitive intelligence."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Beyond GEMM-Centric NPUs: Enabling Efficient Diffusion LLM Sampling",
+    "authors": "Binglei Lou, Haoran Wu, Yao Lai, Jiayi Nie, Can Xiao, Xuan Guo, Rika Antonova, Robert Mullins, Aaron Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20706v1",
+    "source": "arXiv",
+    "abstract": "Diffusion Large Language Models (dLLMs) introduce iterative denoising to enable parallel token generation, but their sampling phase displays fundamentally different characteristics compared to GEMM-centric transformer layers. Profiling on modern GPUs reveals that sampling can account for up to 70% of total model inference latency-primarily due to substantial memory loads and writes from vocabulary-wide logits, reduction-based token selection, and iterative masked updates. These processes demand large on-chip SRAM and involve irregular memory accesses that conventional NPUs struggle to handle efficiently. To address this, we identify a set of critical instructions that an NPU architecture must specifically optimize for dLLM sampling. Our design employs lightweight non-GEMM vector primitives, in-place memory reuse strategies, and a decoupled mixed-precision memory hierarchy. Together, these optimizations deliver up to a 2.53x speedup over the NVIDIA RTX A6000 GPU under an equivalent nm technology node. We also open-source our cycle-accurate simulation and post-synthesis RTL verification code, confirming functional equivalence with current dLLM PyTorch implementations."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "AgentIF-OneDay: A Task-level Instruction-Following Benchmark for General AI Agents in Daily Scenarios",
+    "authors": "Kaiyuan Chen, Qimin Wu, Taiyu Hou, Tianhao Tang, Xueyu Hu, Yuchen Hou, Bikun Li, Chengming Qian, Guoyin Wang, Haolin Chen, Haotong Tian, Haoye Zhang, Haoyu Bian, Hongbing Pan, Hongkang Zhang, Hongyi Zhou, Jiaqi Cai, Jiewu Rao, Jiyuan Ren, Keduan Huang, Lucia Zhu Huang, Mingyu Yuan, Naixu Guo, Qicheng Tang, Qinyan Zhang, Shuai Chen, Siheng Chen, Ting Ting Li, Xiaoxing Guo, Yaocheng Zuo, Yaoqi Guo, Yinan Wang, Yinzhou Yu, Yize Wang, Yuan Jiang, Yuan Tian, Yuanshuo Zhang, Yuxuan Liu, Yvette Yan Zeng, Zenyu Shan, Zihan Yin, Xiaobo Hu, Yang Liu, Yixin Ren, Yuan Gong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20613v1",
+    "source": "arXiv",
+    "abstract": "The capacity of AI agents to effectively handle tasks of increasing duration and complexity continues to grow, demonstrating exceptional performance in coding, deep research, and complex problem-solving evaluations. However, in daily scenarios, the perception of these advanced AI capabilities among general users remains limited. We argue that current evaluations prioritize increasing task difficulty without sufficiently addressing the diversity of agentic tasks necessary to cover the daily work, life, and learning activities of a broad demographic. To address this, we propose AgentIF-OneDay, aimed at determining whether general users can utilize natural language instructions and AI agents to complete a diverse array of daily tasks. These tasks require not only solving problems through dialogue but also understanding various attachment types and delivering tangible file-based results. The benchmark is structured around three user-centric categories: Open Workflow Execution, which assesses adherence to explicit and complex workflows; Latent Instruction, which requires agents to infer implicit instructions from attachments; and Iterative Refinement, which involves modifying or expanding upon ongoing work. We employ instance-level rubrics and a refined evaluation pipeline that aligns LLM-based verification with human judgment, achieving an 80.1% agreement rate using Gemini-3-Pro. AgentIF-OneDay comprises 104 tasks covering 767 scoring points. We benchmarked four leading general AI agents and found that agent products built based on APIs and ChatGPT agents based on agent RL remain in the first tier simultaneously. Leading LLM APIs and open-source models have internalized agentic capabilities, enabling AI application teams to develop cutting-edge Agent products."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Dialogical Reasoning Across AI Architectures: A Multi-Model Framework for Testing AI Alignment Strategies",
+    "authors": "Gray Cox",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20604v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces a methodological framework for empirically testing AI alignment strategies through structured multi-model dialogue. Drawing on Peace Studies traditions - particularly interest-based negotiation, conflict transformation, and commons governance - we operationalize Viral Collaborative Wisdom (VCW), an approach that reframes alignment from a control problem to a relationship problem developed through dialogical reasoning. Our experimental design assigns four distinct roles (Proposer, Responder, Monitor, Translator) to different AI systems across six conditions, testing whether current large language models can engage substantively with complex alignment frameworks. Using Claude, Gemini, and GPT-4o, we conducted 72 dialogue turns totaling 576,822 characters of structured exchange. Results demonstrate that AI systems can engage meaningfully with Peace Studies concepts, surface complementary objections from different architectural perspectives, and generate emergent insights not present in initial framings - including the novel synthesis of \"VCW as transitional framework.\" Cross-architecture patterns reveal that different models foreground different concerns: Claude emphasized verification challenges, Gemini focused on bias and scalability, and GPT-4o highlighted implementation barriers. The framework provides researchers with replicable methods for stress-testing alignment proposals before implementation, while the findings offer preliminary evidence about AI capacity for the kind of dialogical reasoning VCW proposes. We discuss limitations, including the observation that dialogues engaged more with process elements than with foundational claims about AI nature, and outline directions for future research including human-AI hybrid protocols and extended dialogue studies."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Say Cheese! Detail-Preserving Portrait Collection Generation via Natural Language Edits",
+    "authors": "Zelong Sun, Jiahui Wu, Ying Ba, Dong Jing, Zhiwu Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20511v1",
+    "source": "arXiv",
+    "abstract": "As social media platforms proliferate, users increasingly demand intuitive ways to create diverse, high-quality portrait collections. In this work, we introduce Portrait Collection Generation (PCG), a novel task that generates coherent portrait collections by editing a reference portrait image through natural language instructions. This task poses two unique challenges to existing methods: (1) complex multi-attribute modifications such as pose, spatial layout, and camera viewpoint; and (2) high-fidelity detail preservation including identity, clothing, and accessories. To address these challenges, we propose CHEESE, the first large-scale PCG dataset containing 24K portrait collections and 573K samples with high-quality modification text annotations, constructed through an Large Vison-Language Model-based pipeline with inversion-based verification. We further propose SCheese, a framework that combines text-guided generation with hierarchical identity and detail preservation. SCheese employs adaptive feature fusion mechanism to maintain identity consistency, and ConsistencyNet to inject fine-grained features for detail consistency. Comprehensive experiments validate the effectiveness of CHEESE in advancing PCG, with SCheese achieving state-of-the-art performance."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Youtu-Parsing: Perception, Structuring and Recognition via High-Parallelism Decoding",
+    "authors": "Kun Yin, Yunfei Wu, Bing Liu, Zhongpeng Cai, Xiaotian Li, Huang Chen, Xin Li, Haoyu Cao, Yinsong Liu, Deqiang Jiang, Xing Sun, Yunsheng Wu, Qianyu Li, Antai Guo, Yanzhen Liao, Yanqiu Qu, Haodong Lin, Chengxu He, Shuangyin Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20430v1",
+    "source": "arXiv",
+    "abstract": "This paper presents Youtu-Parsing, an efficient and versatile document parsing model designed for high-performance content extraction. The architecture employs a native Vision Transformer (ViT) featuring a dynamic-resolution visual encoder to extract shared document features, coupled with a prompt-guided Youtu-LLM-2B language model for layout analysis and region-prompted decoding. Leveraging this decoupled and feature-reusable framework, we introduce a high-parallelism decoding strategy comprising two core components: token parallelism and query parallelism. The token parallelism strategy concurrently generates up to 64 candidate tokens per inference step, which are subsequently validated through a verification mechanism. This approach yields a 5--11x speedup over traditional autoregressive decoding and is particularly well-suited for highly structured scenarios, such as table recognition. To further exploit the advantages of region-prompted decoding, the query parallelism strategy enables simultaneous content prediction for multiple bounding boxes (up to five), providing an additional 2x acceleration while maintaining output quality equivalent to standard decoding. Youtu-Parsing encompasses a diverse range of document elements, including text, formulas, tables, charts, seals, and hierarchical structures. Furthermore, the model exhibits strong robustness when handling rare characters, multilingual text, and handwritten content. Extensive evaluations demonstrate that Youtu-Parsing achieves state-of-the-art (SOTA) performance on both the OmniDocBench and olmOCR-bench benchmarks. Overall, Youtu-Parsing demonstrates significant experimental value and practical utility for large-scale document intelligence applications."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "TABED: Test-Time Adaptive Ensemble Drafting for Robust Speculative Decoding in LVLMs",
+    "authors": "Minjae Lee, Wonjun Kang, Byeongkeun Ahn, Christian Classen, Kevin Galim, Seunghyuk Oh, Minghao Yan, Hyung Il Koo, Kangwook Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20357v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) has proven effective for accelerating LLM inference by quickly generating draft tokens and verifying them in parallel. However, SD remains largely unexplored for Large Vision-Language Models (LVLMs), which extend LLMs to process both image and text prompts. To address this gap, we benchmark existing inference methods with small draft models on 11 datasets across diverse input scenarios and observe scenario-specific performance fluctuations. Motivated by these findings, we propose Test-time Adaptive Batched Ensemble Drafting (TABED), which dynamically ensembles multiple drafts obtained via batch inference by leveraging deviations from past ground truths available in the SD setting. The dynamic ensemble method achieves an average robust walltime speedup of 1.74x over autoregressive decoding and a 5% improvement over single drafting methods, while remaining training-free and keeping ensembling costs negligible through parameter sharing. With its plug-and-play compatibility, we further enhance TABED by integrating advanced verification and alternative drafting methods. Code and custom-trained models are available at https://github.com/furiosa-ai/TABED."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "PalmBridge: A Plug-and-Play Feature Alignment Framework for Open-Set Palmprint Verification",
+    "authors": "Chenke Zhang, Ziyuan Yang, Licheng Yan, Shuyi Li, Andrew Beng Jin Teoh, Bob Zhang, Yi Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20351v1",
+    "source": "arXiv",
+    "abstract": "Palmprint recognition is widely used in biometric systems, yet real-world performance often degrades due to feature distribution shifts caused by heterogeneous deployment conditions. Most deep palmprint models assume a closed and stationary distribution, leading to overfitting to dataset-specific textures rather than learning domain-invariant representations. Although data augmentation is commonly used to mitigate this issue, it assumes augmented samples can approximate the target deployment distribution, an assumption that often fails under significant domain mismatch. To address this limitation, we propose PalmBridge, a plug-and-play feature-space alignment framework for open-set palmprint verification based on vector quantization. Rather than relying solely on data-level augmentation, PalmBridge learns a compact set of representative vectors directly from training features. During enrollment and verification, each feature vector is mapped to its nearest representative vector under a minimum-distance criterion, and the mapped vector is then blended with the original vector. This design suppresses nuisance variation induced by domain shifts while retaining discriminative identity cues. The representative vectors are jointly optimized with the backbone network using task supervision, a feature-consistency objective, and an orthogonality regularization term to form a stable and well-structured shared embedding space. Furthermore, we analyze feature-to-representative mappings via assignment consistency and collision rate to assess model's sensitivity to blending weights. Experiments on multiple palmprint datasets and backbone architectures show that PalmBridge consistently reduces EER in intra-dataset open-set evaluation and improves cross-dataset generalization with negligible to modest runtime overhead."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Neural Cooperative Reach-While-Avoid Certificates for Interconnected Systems",
+    "authors": "Jingyuan Zhou, Haoze Wu, Kaidi Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20324v1",
+    "source": "arXiv",
+    "abstract": "Providing formal guarantees for neural network-based controllers in large-scale interconnected systems remains a fundamental challenge. In particular, using neural certificates to capture cooperative interactions and verifying these certificates at scale is crucial for the safe deployment of such controllers. However, existing approaches fall short on both fronts. To address these limitations, we propose neural cooperative reach-while-avoid certificates with Dynamic-Localized Vector Control Lyapunov and Barrier Functions, which capture cooperative dynamics through state-dependent neighborhood structures and provide decentralized certificates for global exponential stability and safety. Based on the certificates, we further develop a scalable training and verification framework that jointly synthesizes controllers and neural certificates via a constrained optimization objective, and leverages a sufficient condition to ensure formal guarantees considering modeling error. To improve scalability, we introduce a structural reuse mechanism to transfer controllers and certificates between substructure-isomorphic systems. The proposed methodology is validated with extensive experiments on multi-robot coordination and vehicle platoons. Results demonstrate that our framework ensures certified cooperative reach-while-avoid while maintaining strong control performance."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Beyond the Needle's Illusion: Decoupled Evaluation of Evidence Access and Use under Semantic Interference at 326M-Token Scale",
+    "authors": "Tianwei Lin, Zuyi Zhou, Xinda Zhao, Chenke Wang, Xiaohong Li, Yu Chen, Chuanrui Hu, Jian Pei, Yafeng Deng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20276v1",
+    "source": "arXiv",
+    "abstract": "Long-context LLM agents must access the right evidence from large environments and use it faithfully. However, the popular Needle-in-a-Haystack (NIAH) evaluation mostly measures benign span localization. The needle is near-unique, and the haystack is largely irrelevant. We introduce EverMemBench-S (EMB-S), an adversarial NIAH-style benchmark built on a 326M-token MemoryBank. While the full MemoryBank spans 326M tokens for retrieval-based (RAG) evaluation, we evaluate native long-context models only at scales that fit within each model's context window (up to 1M tokens in this work) to ensure a fair comparison. EMB-S pairs queries with collision-tested near-miss hard negatives and gold evidence sets spanning one or more documents, validated via human screening and LLM verification. We also propose a decoupled diagnostic protocol that reports evidence access (document-ID localization) separately from end-to-end QA quality under full-context prompting. This enables consistent diagnosis for both native long-context prompting and retrieval pipelines. Across a reference-corpus ladder from domain-isolated 64K contexts to a globally shared 326M-token environment, we observe a clear reality gap. Systems that saturate benign NIAH degrade sharply in evidence access under semantic interference. These results indicate that semantic discrimination, not context length alone, is the dominant bottleneck for long-context memory at scale."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Adequately Tailoring Age Verification Regulations",
+    "authors": "Shuang Liu, Sarah Scheffler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20241v1",
+    "source": "arXiv",
+    "abstract": "The Supreme Court decision in Free Speech Coalition v. Paxton upheld the constitutionality of Texas H.B. 1181, one of the most constitutionally vulnerable of these age verification laws, holding that it was subject to and satisfied intermediate scrutiny and the requirement that age verification regulations be \"adequately tailored\". However, the decision leaves unresolved practical challenges. What is the current state of age verification legislation in the United States? How can \"adequate tailoring\" be interpreted in a way that is accessible to non-legal experts, particularly those in technical and engineering domains? What age verification approaches are used today, what infrastructures and standards support them, and what tradeoffs do they introduce? This paper addresses those questions by proposing an analytical model to interpret \"adequate tailoring\" from multiple perspectives with associated governmental goals and interests, and by applying that model to evaluate both current state laws and widely used verification methods. This paper's major contributions include: (1) we mapped the current U.S. age-verification legislative landscape; (2) we introduce an analytical model to analyze \"adequate tailoring\" for age verification and potential application to other online regulatory policies; and (3) we analyze the main technical approaches to age verification, highlighting the practical challenges and tradeoffs from a technical perspective. Further, while we focus on U.S. State laws, the principles underlying our framework are applicable to age-verification debates and methods worldwide."
+  },
+  {
+    "date": "2026-01-28",
+    "title": "Scaling Medical Reasoning Verification via Tool-Integrated Reinforcement Learning",
+    "authors": "Hang Zhang, Ruheng Wang, Yuelyu Ji, Mingu Kwak, Xizhi Wu, Chenyu Li, Li Zhang, Wenqi Shi, Yifan Peng, Yanshan Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20221v1",
+    "source": "arXiv",
+    "abstract": "Large language models have achieved strong performance on medical reasoning benchmarks, yet their deployment in clinical settings demands rigorous verification to ensure factual accuracy. While reward models offer a scalable approach for reasoning trace verification, existing methods face two limitations: they produce only scalar reward values without explicit justification, and they rely on single-pass retrieval that precludes adaptive knowledge access as verification unfolds. We introduce $\\method$, an agentic framework that addresses these limitations by training medical reasoning verifiers to iteratively query external medical corpora during evaluation. Our approach combines tool-augmented verification with an iterative reinforcement learning paradigm that requires only trace-level supervision, alongside an adaptive curriculum mechanism that dynamically adjusts training data distribution. Across four medical reasoning benchmarks, $\\method$ achieves substantial gains over existing methods, improving MedQA accuracy by 23.5% and MedXpertQA by 32.0% relative to the base generator in particular. Crucially, $\\method$ demonstrates an $\\mathbf{8\\times}$ reduction in sampling budget requirement compared to prior reward model baselines. These findings establish that grounding verification in dynamically retrieved evidence offers a principled path toward more reliable medical reasoning systems."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Are We All Using Agents the Same Way? An Empirical Study of Core and Peripheral Developers Use of Coding Agents",
+    "authors": "Shamse Tasnim Cynthia, Joy Krishan Das, Banani Roy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20106v1",
+    "source": "arXiv",
+    "abstract": "Autonomous AI agents are transforming software development and redefining how developers collaborate with AI. Prior research shows that the adoption and use of AI-powered tools differ between core and peripheral developers. However, it remains unclear how this dynamic unfolds in the emerging era of autonomous coding agents. In this paper, we present the first empirical study of 9,427 agentic PRs, examining how core and peripheral developers use, review, modify, and verify agent-generated contributions prior to acceptance. Through a mix of qualitative and quantitative analysis, we make four key contributions. First, a subset of peripheral developers use agents more often, delegating tasks evenly across bug fixing, feature addition, documentation, and testing. In contrast, core developers focus more on documentation and testing, yet their agentic PRs are frequently merged into the main/master branch. Second, core developers engage slightly more in review discussions than peripheral developers, and both groups focus on evolvability issues. Third, agentic PRs are less likely to be modified, but when they are, both groups commonly perform refactoring. Finally, peripheral developers are more likely to merge without running CI checks, whereas core developers more consistently require passing verification before acceptance. Our analysis offers a comprehensive view of how developer experience shapes integration offer insights for both peripheral and core developers on how to effectively collaborate with coding agents."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "VERGE: Formal Refinement and Guidance Engine for Verifiable LLM Reasoning",
+    "authors": "Vikash Singh, Darion Cassel, Nathaniel Weir, Nick Feng, Sam Bayless",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20055v1",
+    "source": "arXiv",
+    "abstract": "Despite the syntactic fluency of Large Language Models (LLMs), ensuring their logical correctness in high-stakes domains remains a fundamental challenge. We present a neurosymbolic framework that combines LLMs with SMT solvers to produce verification-guided answers through iterative refinement. Our approach decomposes LLM outputs into atomic claims, autoformalizes them into first-order logic, and verifies their logical consistency using automated theorem proving. We introduce three key innovations: (1) multi-model consensus via formal semantic equivalence checking to ensure logic-level alignment between candidates, eliminating the syntactic bias of surface-form metrics, (2) semantic routing that directs different claim types to appropriate verification strategies: symbolic solvers for logical claims and LLM ensembles for commonsense reasoning, and (3) precise logical error localization via Minimal Correction Subsets (MCS), which pinpoint the exact subset of claims to revise, transforming binary failure signals into actionable feedback. Our framework classifies claims by their logical status and aggregates multiple verification signals into a unified score with variance-based penalty. The system iteratively refines answers using structured feedback until acceptance criteria are met or convergence is achieved. This hybrid approach delivers formal guarantees where possible and consensus verification elsewhere, advancing trustworthy AI. With the GPT-OSS-120B model, VERGE demonstrates an average performance uplift of 18.7% at convergence across a set of reasoning benchmarks compared to single-pass approaches."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "TAIGR: Towards Modeling Influencer Content on Social Media via Structured, Pragmatic Inference",
+    "authors": "Nishanth Sridhar Nakshatri, Eylon Caplan, Rajkumar Pujari, Dan Goldwasser",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20032v1",
+    "source": "arXiv",
+    "abstract": "Health influencers play a growing role in shaping public beliefs, yet their content is often conveyed through conversational narratives and rhetorical strategies rather than explicit factual claims. As a result, claim-centric verification methods struggle to capture the pragmatic meaning of influencer discourse. In this paper, we propose TAIGR (Takeaway Argumentation Inference with Grounded References), a structured framework designed to analyze influencer discourse, which operates in three stages: (1) identifying the core influencer recommendation--takeaway; (2) constructing an argumentation graph that captures influencer justification for the takeaway; (3) performing factor graph-based probabilistic inference to validate the takeaway. We evaluate TAIGR on a content validation task over influencer video transcripts on health, showing that accurate validation requires modeling the discourse's pragmatic and argumentative structure rather than treating transcripts as flat collections of claims."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Fuzzy Categorical Planning: Autonomous Goal Satisfaction with Graded Semantic Constraints",
+    "authors": "Shuhui Qu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20021v1",
+    "source": "arXiv",
+    "abstract": "Natural-language planning often involves vague predicates (e.g., suitable substitute, stable enough) whose satisfaction is inherently graded. Existing category-theoretic planners provide compositional structure and pullback-based hard-constraint verification, but treat applicability as crisp, forcing thresholding that collapses meaningful distinctions and cannot track quality degradation across multi-step plans. We propose Fuzzy Category-theoretic Planning (FCP), which annotates each action (morphism) with a degree in [0,1], composes plan quality via a t-norm Lukasiewicz, and retains crisp executability checks via pullback verification. FCP grounds graded applicability from language using an LLM with k-sample median aggregation and supports meeting-in-the-middle search using residuum-based backward requirements. We evaluate on (i) public PDDL3 preference/oversubscription benchmarks and (ii) RecipeNLG-Subs, a missing-substitute recipe-planning benchmark built from RecipeNLG with substitution candidates from Recipe1MSubs and FoodKG. FCP improves success and reduces hard-constraint violations on RecipeNLG-Subs compared to LLM-only and ReAct-style baselines, while remaining competitive with classical PDDL3 planners."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "On the Effectiveness of LLM-Specific Fine-Tuning for Detecting AI-Generated Text",
+    "authors": "Michał Gromadzki, Anna Wróblewska, Agnieszka Kaliska",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.20006v1",
+    "source": "arXiv",
+    "abstract": "The rapid progress of large language models has enabled the generation of text that closely resembles human writing, creating challenges for authenticity verification in education, publishing, and digital security. Detecting AI-generated text has therefore become a crucial technical and ethical issue. This paper presents a comprehensive study of AI-generated text detection based on large-scale corpora and novel training strategies. We introduce a 1-billion-token corpus of human-authored texts spanning multiple genres and a 1.9-billion-token corpus of AI-generated texts produced by prompting a variety of LLMs across diverse domains. Using these resources, we develop and evaluate numerous detection models and propose two novel training paradigms: Per LLM and Per LLM family fine-tuning. Across a 100-million-token benchmark covering 21 large language models, our best fine-tuned detector achieves up to $99.6\\%$ token-level accuracy, substantially outperforming existing open-source baselines."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction",
+    "authors": "Dominic Maggio, Luca Carlone",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19887v1",
+    "source": "arXiv",
+    "abstract": "We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT. Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics. Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures. Finally, we conduct a suite of experiments which includes showing VGGT-SLAM 2.0 can easily be adapted for open-set object detection and demonstrating real time performance while running online onboard a ground robot using a Jetson Thor. We also test in environments ranging from cluttered indoor apartments and office scenes to a 4,200 square foot barn, and we also demonstrate VGGT-SLAM 2.0 achieves the highest accuracy on the TUM dataset with about 23 percent less pose error than VGGT-SLAM. Code will be released upon publication."
+  },
+  {
+    "date": "2026-01-27",
+    "title": "Learn and Verify: A Framework for Rigorous Verification of Physics-Informed Neural Networks",
+    "authors": "Kazuaki Tanaka, Kohei Yatabe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.19818v1",
+    "source": "arXiv",
+    "abstract": "The numerical solution of differential equations using neural networks has become a central topic in scientific computing, with Physics-Informed Neural Networks (PINNs) emerging as a powerful paradigm for both forward and inverse problems. However, unlike classical numerical methods that offer established convergence guarantees, neural network-based approximations typically lack rigorous error bounds. Furthermore, the non-deterministic nature of their optimization makes it difficult to mathematically certify their accuracy. To address these challenges, we propose a \"Learn and Verify\" framework that provides computable, mathematically rigorous error bounds for the solutions of differential equations. By combining a novel Doubly Smoothed Maximum (DSM) loss for training with interval arithmetic for verification, we compute rigorous a posteriori error bounds as machine-verifiable proofs. Numerical experiments on nonlinear Ordinary Differential Equations (ODEs), including problems with time-varying coefficients and finite-time blow-up, demonstrate that the proposed framework successfully constructs rigorous enclosures of the true solutions, establishing a foundation for trustworthy scientific machine learning."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "A Hierarchical Verification Framework for Power Engineering Design Based on LLM-Driven Rule and Knowledge Base Integration",
+    "authors": "Hongqin Yang, Jian Jiang, Qinghui Huang, Yao Li, Juanjuan Tian",
+    "publish": "2025 5th IEEE International Conference on Energy Engineering and Power Systems (EEPS)",
+    "url": "https://doi.org/10.1109/eeps68057.2025.11351591",
+    "source": "IEEE",
+    "abstract": "This paper presents a hierarchical design verification framework that integrates Large Language Models with structured engineering knowledge to automate power system design validation. The framework employs a three-layer architecture: rule-based compliance checking, technical consistency analysis, and completeness assessment. The system leverages formalized rules from IEEE/IEC standards and maintains citation-backed rationales linking verification decisions to authoritative sources. A case study on a real-world 220 kV substation design project demonstrates the framework's practical applicability, achieving expert-validated 92% accuracy in issue identification across 156 pages of design documentation. The system successfully detected all major compliance issues including protection coordination violations and equipment rating inconsistencies, while identifying additional optimization opportunities."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Advancing Binary Code Similarity Detection via Context-Content Fusion and LLM Verification",
+    "authors": "Chaopeng Dong, Jingdong Guo, Shouguo Yang, Yi Li, Dongliang Fang, Yang Xiao, Yongle Chen, Limin Sun",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00033",
+    "source": "IEEE",
+    "abstract": "Binary Code Similarity Detection (BCSD), essential for binary-code related tasks like vulnerability detection, has attracted increasing attention in recent years. However, existing methods frequently fall short of achieving both high precision and recall at scale, and their results often lack interpretability due to the neglect of function context and reliance on purely similarity-driven outputs. Our key insights are twofold: 1) Binary functions are not self-contained; they depend on other code and data beyond their content to fulfill their functionalities. 2) Large language models (LLMs) excel not only at analyzing code but also at generating reasonable explanations. Motivated by these insights, we propose a general BCSD framework, Co<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup>F uLL. We first systematically select stable and representative code and data features, along with their corresponding dependencies on the functions, to construct the function context. Then, by fusing function context with content similarities computed by the existing BCSD approach, we substantially narrow down the search space. Ultimately, we employ LLMs with a carefully designed prompt to verify the remaining candidates and produce clear, human-readable explanations. We conduct comprehensive experiments on a large function pool under varying compilation settings and after binary stripping. The results show that Co2F uLL based on HermesSim and DeepSeek-V3 achieves 80.5% precision and 94.4% recall, improving the baseline HermesSim by 142.5% and 42.2%, respectively, providing an accurate and interpretable solution for BCSD."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "An API Recommendation Method Based on LLM",
+    "authors": "Huibo Li",
+    "publish": "2025 IEEE 7th International Conference on Power, Intelligent Computing and Systems (ICPICS)",
+    "url": "https://doi.org/10.1109/icpics66386.2025.11347390",
+    "source": "IEEE",
+    "abstract": "APIs are essentially a set of tools provided by a company or individual that help developers create software and interact with outside services or libraries. The main common task that developers do with APIs is to accomplish something specific by invoking the implemented methods or services. The difficulty, however, arises in the choice of the most appropriate API for the job. API recommendation techniques were introduced to provide help in making such choices. The existence of very large, language model (LLM) that has excellent abilities in understanding and generating code has prompted the use of LLMs in improving development efficiency; that is, it is currently under study. The research involved trying different prompts for the design of API recommendation in code through several LLMs comprising GPT-4, GPT-3.5, and LLaMA2. The tests demonstrated that the most suitable APIs are recommended by GPT-4. We see also that giving LLMs better code setting, like nearby code and class data, can much improve their skill to make good suggestions. This shows the need for both picking the right model and setting the prompt well to use LLMs for smart API recommendation."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Fast and accurate Sentiment Analysis using a hybrid LLM model with OpenVINO optimization",
+    "authors": "Bonthu Chandra Praveen, K Sivasankaran",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3658411",
+    "source": "IEEE",
+    "abstract": "The rapid growth of social media and internet usage creates a vast amount of textual information, making sentiment analysis important for understanding the interpretation of people. Most sequence-based models capture long-range dependencies but have high latency, whereas transformer-based models are more accurate with higher computational complexity. To address these challenges, a hybrid RoBERTa-BiGRU model with an attention mechanism is proposed in this work. This hybrid model is a combination of the contextual learning capability of the transformer with the sequential modeling efficiency of Bi-GRU, with an attention mechanism to identify the relevant input to make predictions. This approach was evaluated on the IMDb dataset, the model has the accuracy of 96.02%, precision of 96.20%, recall of, 95.80% and F1-score of, 96.00% which is better than the conventional deep learning models. To provide efficient deployment, the trained model was converted to ONNX and optimized with OpenVINO in FP32 and FP16, and using the Neural Network Compression Framework (NNCF) further, we optimized it into INT8. The results showed that the optimized model demonstrated between 30 − 35% reduction in latency, significantly improved throughput, and inference can be 10 − 15x faster than the baseline PyTorch version, with no significant decrease in accuracy. These results highlight that the use of a hybrid combination with an optimization technique is an effective and practical approach for real-time sentiment analysis applications."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Quality Evaluation of LLM-based Generated Test Case: A Literature Review",
+    "authors": "Novi Setiani, Alifia",
+    "publish": "2025 IEEE International Conference on Data and Software Engineering (ICoDSE)",
+    "url": "https://doi.org/10.1109/icodse68111.2025.11351763",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) are increasingly applied in automated test case generation. Unlike traditional testing, quality evaluation of their outputs requires novel approaches due to the non-deterministic nature of LLMs and the risks of bias and hallucination. This study conducts a systematic literature review of 25 publications (2020–2025) to examine quality criteria, evaluation metrics, and heuristics in LLM -based test case generation. Findings show that correctness/accuracy and coverage metrics remain dominant, yet there is a growing focus on bias and hallucination detection. Effective heuristics include human-in-the-loop evaluation, gold standard comparison, and multi-agent frameworks. The review highlights emerging frameworks integrating ethical and safety criteria, underscoring the need for comprehensive evaluation to ensure reliability and fairness in automated test generation."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "HiCoS: Hierarchical Commit Summarizer and LLM Benchmarking",
+    "authors": "Thiago A. Falcão, Jordan S. Queiroz, Erick C. Bezerra",
+    "publish": "2025 IEEE International Conference on Data and Software Engineering (ICoDSE)",
+    "url": "https://doi.org/10.1109/icodse68111.2025.11351793",
+    "source": "IEEE",
+    "abstract": "Commit messages are essential for code comprehension and software maintenance, yet generating high-quality messages demands expertise. Existing automatic methods often produce messages lacking sufficient detail and readability. To address this, we present Hierarchical Commit Summarizer (HiCoS): A solution to frame commit message generation (CMG) as a stage-wise hierarchical summarization task, by systematically summarizing code changes rather than processing all changes at once. Leveraging modern Large Language Models (LLMs), we evaluated twelve models across four prompt templates using six metrics: BLEU, ROUGE-1/2/L, METEOR, and BERT score. Our results show the qwen3:8b model achieved the highest average BERT score of 66 %. Notably, we improved performance for smaller models (e.g., llama3.2:3b), demonstrating scalability with a score of 64 %. These findings offer actionable insights for optimizing CMG pipelines, reducing developer effort, and enhancing collaboration through clearer commit histories."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Empowering Audiobook Creation: An LLM-Powered Interactive System for Soundscape Design",
+    "authors": "Shan Xue, Hajime Nobuhara",
+    "publish": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+    "url": "https://doi.org/10.1109/smc58881.2025.11343551",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) offer efficient and accessible support for audio engineers. However, text-only assistance lacks intuitive interaction and often fails to meet the practical demands of digital design. This study explores how an LLM can provide more effective support for audiobook producers, especially novices. We present a GPT-4o-powered analysis tool that extracts soundscape elements from text and align sound effects with semantic cues. By fusing LLM-guided interpretation with interactive audio control, the system introduces a new paradigm for supporting creative design through both semantic and acoustic dimensions. We invited three experts to evaluate the system and conducted a design experiment with 26 participants. Compared to the traditional method, our approach significantly improved design accuracy and efficiency. This work highlights the implicit tension and synergy between LLM-assisted creation and conventional design thinking, offering practical insights into the development of more adaptive and intelligent support tools for future audiobook production."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Policy Over Tokens: Enforcing Declarative Governance Constraints in Cost-Aware LLM Deployments",
+    "authors": "Shivaranjani Sankara Krishnan, Danish Siddiquie",
+    "publish": "2025 IEEE International Conference on Agentic AI (ICA)",
+    "url": "https://doi.org/10.1109/ica67499.2025.00051",
+    "source": "IEEE",
+    "abstract": "Governance posed by Large Language Models (LLMs) for enterprise deployment is quite challenging. Governance concerns are paramount especially for compliance and safety concerns, while also trying to operate at low costs. Existing approaches like enforcing post-hoc moderation or using safety-tuned models are either not responsive in real-time process, or too rigid for changing policies. This study presents Policy Over Tokens; a declarative framework to enforce governance constraints on multi-levels of LLM execution, “before” tokenization, token-streaming “in-the-middle” and “after” completion phase using a domain-specific language based on policies and cost metering in real-time. The Policy Over Tokens methodology combines symbolic checks as well as predictive checks at the token-level, (which all occur adaptively during execution), budget adaptive allocation which forms the basis of governance constraint to the LLM deployment so governance can be applied “under” the model and provide related enforcement at aggregate levels without requiring the model to be trained. The study evaluated the framework against four leading Great Learning frameworks in terms of coverage of governance constraints (98.5% policy compliance), cost per token incurred (4.2% token overhead per session), latency incurred (35 milliseconds) and cost efficiency (0.052 USD/session). Policy Over Tokens breaks through existing guardrails where there is no capacity to govern or requires graph tuning of the underlying model, therefore creating very low routines cost that also resulted in value at scale."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "RustAssure: Differential Symbolic Testing for LLM-Transpiled C-to-Rust Code",
+    "authors": "Yubo Bai, Tapti Palit",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00051",
+    "source": "IEEE",
+    "abstract": "Rust is a memory-safe programming language that significantly improves software security. Existing codebases written in unsafe memory languages, such as C, must first be transpiled to Rust to take advantage of Rust’s improved safety guarantees. RustAssure presents a system that uses Large Language Models (LLMs) to automatically transpile existing C code-bases to Rust. RustAssure uses prompt engineering techniques to maximize the chances of the LLM generating idiomatic and safe Rust code. Moreover, because LLMs often generate code with subtle bugs that can be missed under traditional unit or fuzz testing, RustAssure performs differential symbolic testing to establish the semantic similarity between the original C and LLM-transpiled Rust code. We evaluated RustAssure with five real-world applications and libraries, and showed that our system is able to generate compilable Rust functions for 89.8% of all C functions, of which 72% produced equivalent symbolic return values for both the C and Rust functions."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Detecting and Repairing Incomplete Software Requirements with Multi-LLM Ensembles",
+    "authors": "Mohamad Kassab, Marwan AbdElhameed",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00328",
+    "source": "IEEE",
+    "abstract": "Ensuring complete software requirements specifications (SRS) is critical to preventing costly downstream errors. We present a tool that ensembles three complementary LLMs—DeepSeek Chat, GPT-4o Mini, and Claude Sonnet 4—to detect and suggest remedies for missing requirements. The tool generates a structured domain model and applies parallel external and internal completeness checks through tailored prompts. Users can select LLMs and aggregation methods (majority, weighted, or meta-fusion). Unlike prior single-model approaches, we systematically evaluate aggregation strategies across four diverse SRS domains. In experiments with seeded omissions, single models achieved only 0–52% recall, whereas our ensemble consistently exceeded 75%—reaching up to 100%—with 95–100% plausibility. These results demonstrate the feasibility of multi-LLM ensembles as practical aids—complementing rather than replacing human analysts—and supporting interactive refinement workflows."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Enhancing Generative Next POI Recommendation with LLM-Based user Profiles",
+    "authors": "Yu Jie",
+    "publish": "2025 22nd International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)",
+    "url": "https://doi.org/10.1109/iccwamtip68645.2025.11352652",
+    "source": "IEEE",
+    "abstract": "Traditional next POI recommendation methods are being outperformed by LLM-based work, which achieve superior performance through semantic reasoning. However, they often lack explicit modeling of user behavioral identity, leading to weak alignment with long-term preferences and limited personalization. To overcome this limitation, we propose enhancing generative next POI recommendation with LLM-based user profiles, which integrates learned user profiles directly into generative recommendation. Our work includes two key components: (1) a user profile generation module that extracts structured user profiles from semantic ID sequences, and (2) a generative next POI recommendation that fine-tuned with the natural-language user profiles. Experiments conducted on the Foursquare-NYC dataset demonstrate the effectiveness of our method."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "FinReasoner: A Lightweight LLM Framework for Financial Forecasting",
+    "authors": "Guo Wei, Xiang Yanping",
+    "publish": "2025 22nd International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)",
+    "url": "https://doi.org/10.1109/iccwamtip68645.2025.11352694",
+    "source": "IEEE",
+    "abstract": "This study addresses the specific research problem that current large language models (LLMs) possess significant limitations in financial forecasting., notably their ineffective fusion of multi-dimensional technical indicators and lack of interpretable decision-making processes. To overcome this., the study is designed with a clear step-by-step methodology: First., we propose FinReasoner., a lightweight LLM framework based on deep ensemble distillation and chain-of-thought fine-tuning. Its design involves (1) leveraging two complementary teacher models to generate high-quality reasoning samples through structured prompts., and (2) employing the DoRA technique for efficient fine-tuning of a compact student model., thereby guiding it through a complete reasoning process from indicator analysis to final decision. The major experimental findings on the SSE 50 index demonstrate a quantified and significant improvement., with an annualized return of 84.26% and a maximum drawdown of 6.29%., outperforming state-of-the-art benchmarks. However., the proposed solution has limitations., including restricted validation to the SSE 50 index., potential error propagation from teacher-generated data., and lack of optimization for real-time inference speed., which may affect generalizability and practical deployment in broader markets."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Quirx: A Mutation-Based Framework for Evaluating Prompt Robustness in LLM-based Software",
+    "authors": "Souhaila Serbout",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00383",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) increasingly power critical business processes, yet prompt robustness remains under-explored. Small variations—such as synonym changes or instruction reordering—can cause significant output shifts, undermining reliability in domains like customer service and finance. Existing evaluations rely on ad-hoc manual testing, limiting scalability in production environments.We present Quirx, a mutation-based fuzzing framework for systematically evaluating prompt robustness across LLM providers. Quirx applies tri-dimensional mutations (lexical, semantic, structural), executes them against target models, and measures response consistency via multi-level similarity analysis. It produces robustness scores, reveals failure patterns, and supports informed model selection.We evaluate Quirx on four models (GPT-3.5-turbo, GPT-4o-mini, Claude-3.5-Sonnet, Claude-Sonnet-4) across three tasks. Results show sentiment classification is uniformly robust (1.00), summarization is highly provider-sensitive (0.23–0.58) with Claude models 2.5× more robust than OpenAI, and SQL generation is consistently strong (0.80–1.00). Structural mutations cause 50–67% of summarization failures but have minimal effect on other tasks.Demo video: https://youtu.be/Sm3Gk2X2-vk"
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Hierarchical Knowledge Injection for Improving LLM-based Program Repair",
+    "authors": "Ramtin Ehsani, Esteban Parra, Sonia Haiduc, Preetha Chatterjee",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00122",
+    "source": "IEEE",
+    "abstract": "Prompting LLMs with bug-related context (e.g., error messages, stack traces) improves automated program repair, but many bugs still remain unresolved. In real-world projects, developers often rely on broader repository and project-level context beyond the local code to resolve such bugs. In this paper, we investigate how automatically extracting and providing such knowledge can improve LLM-based program repair. We propose a layered knowledge injection framework that incrementally augments LLMs with structured context. It starts with the Bug Knowledge Layer, which includes information such as the buggy function and failing tests; expands to the Repository Knowledge Layer, which adds structural dependencies, related files, and commit history; and finally injects the Project Knowledge Layer, which incorporates relevant details from documentation and previously fixed bugs. We evaluate this framework on a dataset of 314 bugs from BugsInPy using two LLMs (Llama 3.3 and GPT-4o-mini), and analyze fix rates across six bug types. By progressively injecting knowledge across layers, our approach achieves a fix rate of 79% (250/314) using Llama 3.3, a significant improvement of 23% over previous work. All bug types show improvement with the addition of repository-level context, while only a subset benefit further from project-level knowledge, highlighting that different bug types require different levels of contextual information for effective repair. We also analyze the remaining unresolved bugs and find that more complex and structurally isolated bugs, such as Program Anomaly and GUI bugs, remain difficult even after injecting all available information. Our results show that layered context injection improves program repair and suggest the need for interactive and adaptive APR systems."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "BuilDroid: A Self-Correcting LLM Agent for Automated Android Builds",
+    "authors": "Jaehyeon Kim, Rui Rua, Karim Ali",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00370",
+    "source": "IEEE",
+    "abstract": "The continuous evolution of the Android ecosystem has led to a highly dynamic and fragmented development environment. This constant churn makes building Android projects, especially from open-source repositories, a notoriously difficult task. Developers and researchers encounter a daunting build barrier due to the rapid configuration drift, which results in a cascade of errors. These errors include version incompatibilities, missing dependencies, and inconsistent project configurations, hindering reproducibility and maintainability.To address these issues, we present BuilDroid, an LLM-based agent that automates the build process of Android projects. Operating within a self-contained, isolated environment, BuilDroid runs an iterative, self-correcting loop. Through this operation, BuilDroid captures errors and autonomously resolves them, either through predefined heuristics or by leveraging the reasoning capabilities of its underlying LLM.Across 245 open-source Android projects, BuilDroid effectively resolves complex and evolving build errors, achieving a build success rate of 90.2%, surpassing existing solutions by a margin of over 30.2 percentage points. Consequently, BuilDroid reduces the barrier for researchers and developers, fostering greater software reproducibility and enabling more extensive and reliable empirical research within this rapidly evolving ecosystem.Video demo: https://youtu.be/YAFLu7NSl5E"
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Session Summary Podcast: Session 6: Ethics and Bias in LLM-driven Finance",
+    "authors": "AI Generated",
+    "publish": "Proceedings of the 6th ACM International Conference on AI in Finance",
+    "url": "https://doi.org/10.1145/3768292.3793395",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Improving Quality of LLM Code Generation in Low-Resource Programming Languages via Uncertainty Estimation",
+    "authors": "Georgii Andriushchenko",
+    "publish": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+    "url": "https://doi.org/10.1109/ase63991.2025.00399",
+    "source": "IEEE",
+    "abstract": "Large language models for source code (Code LLMs) demonstrate great performance on high-resource programming languages (HRPLs) but struggle with low-resource ones (LRPLs). Previous studies have improved LLM performance on LRPLs by continued training or tokenizer adaptation. However, they require costly data and can cause catastrophic forgetting. This paper proposes to address the poor performance of LLMs on LRPLs using uncertainty estimation (UE). UE methods have advanced LLM performance on natural language tasks, but are underexplored in source code settings. The research may provide three contributions: (1) a new code generation benchmark evaluating not only functional correctness but also readability, efficiency, and idiomatic style across Python, Java, Racket, and Elixir; (2) a new benchmark for evaluating uncertainty estimation when generating code; and (3) methods to improve LRPL code generation by leveraging UE. The methods utilizing UE include filtering synthetic training data by low uncertainty, an UE-driven curriculum learning strategy, uncertainty-aware decoding, and using uncertainty as an RL reward in alignment. The research may provide a comprehensive evaluation of uncertainty in code models, demonstrate that UE can improve LRPL generation, and open-source release of benchmarks and models as outcomes."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Optimizing LLM-Based POI Recommendation through Efficient Prompting and Data Augmentation",
+    "authors": "Qian Zhentao",
+    "publish": "2025 22nd International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)",
+    "url": "https://doi.org/10.1109/iccwamtip68645.2025.11352649",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have shown significant promise for Next Point-of-Interest (POI) recommendation. However, existing frameworks can be computationally intensive, and their robustness under varying data conditions remains an area for exploration. In this paper, we investigate a set of optimization strategies aimed at improving the efficiency and effectiveness of these models. We introduce LLM4POI-EP, which incorporates a simplified prompting method designed to reduce computational overhead, and LLM4POI-M, a fully optimized model that further integrates a data augmentation scheme with negative sampling and random masking. We conduct a comprehensive evaluation on the widely-used NYC and TKY datasets, including both standard and cross-dataset testing scenarios. Our findings indicate that the efficient prompt strategy alone can substantially reduce training time. The results from our models reveal interesting performance trade-offs across different datasets, offering insights into the interplay between prompt design, data characteristics, and model generalization. Our work provides a systematic analysis of practical strategies for deploying LLM -based recommendation systems under resource constraints."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Zero-Knowledge Proof-Enabled LLM-Driven Fusion of Privacy-Sensitive Heterogeneous Sensor Data in Edge Environments",
+    "authors": "Honghao Wu, Juan Sun",
+    "publish": "2025 2nd International Symposium on AI and Cybersecurity (ISAICS)",
+    "url": "https://doi.org/10.1109/isaics66888.2025.11350231",
+    "source": "IEEE",
+    "abstract": "In edge computing, fusing privacy-sensitive heterogeneous sensor data poses challenges in balancing utility, privacy, and efficiency. Existing approaches like zkFL and zkGPT fall short in end-to-end verifiable LLM-driven fusion for non-IID data. We propose a framework embedding ZKPs into adaptive LLM layers for secure multimodal fusion with provable privacy. Key contributions: (1) context-aware attention for LLM fusion; (2) custom zk-SNARK circuits for full verification; (3) dynamic edge optimizations reducing latency by $\\mathbf{2 5} \\boldsymbol{\\%}$. Theoretical analyses provide -DP bounds and convergence guarantees. Experiments on UCI HAR and CIFAR extensions show 91.8% accuracy, MI-AUC of 0.52, and $\\mathbf{4 5 ~ m s}$ latency on Jetson Nano, outperforming zkFL by 3.5% in accuracy and 25% in efficiency."
+  },
+  {
+    "date": "2026-1-28",
+    "title": "Leveraging Process Hints to Expand Capability Boundaries in LLM Reasoning",
+    "authors": "Li Qizhen, Gao Hui",
+    "publish": "2025 22nd International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)",
+    "url": "https://doi.org/10.1109/iccwamtip68645.2025.11352663",
+    "source": "IEEE",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) methods, such as GRPO-like algorithms, struggle with “zero-success” scenarios on complex queries due to high sampling failure rates. We identify generation length constraints and intrinsic knowledge deficits as key factors. To address this, we propose Process Hint Synthesis, a novel approach where a teacher model distills correct reasoning paths into concise “Process Hints” to guide exploration. We integrate this with a Two-Stage Difficulty Curriculum Learning strategy, prioritizing training on hard, hint-augmented samples. Process Hints significantly improve sample difficulty distribution and substantially reduce the “zero-success” cases. Our method achieves notable performance gains on challenging mathematical benchmarks over baselines, confirming the value of combining targeted guidance and dynamic curriculum learning for enhanced LLM reasoning."
+  }
+]
