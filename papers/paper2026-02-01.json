@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-01-30",
+    "title": "ShotFinder: Imagination-Driven Open-Domain Video Shot Retrieval via Web Search",
+    "authors": "Tao Yu, Haopeng Jin, Hao Wang, Shenghua Chai, Yujia Yang, Junhao Gong, Jiaming Guo, Minghui Zhang, Xinlong Chen, Zhenghao Zhang, Yuxuan Zhou, Yanpei Gong, YuanCheng Liu, Yiming Ding, Kangwei Zeng, Pengfei Yang, Zhongtian Luo, Yufei Xiong, Shanbin Zhang, Shaoxiong Cheng, Huang Ruilin, Li Shuo, Yuxi Niu, Xinyuan Zhang, Yueya Xu, Jie Mao, Ruixuan Ji, Yaru Zhao, Mingchen Zhang, Jiabing Yang, Jiaqi Liu, YiFan Zhang, Hongzhu Yi, Xinming Wang, Cheng Zhong, Xiao Ma, Zhang Zhang, Yan Huang, Liang Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.23232v1",
+    "source": "arXiv",
+    "abstract": "In recent years, large language models (LLMs) have made rapid progress in information retrieval, yet existing research has mainly focused on text or static multimodal settings. Open-domain video shot retrieval, which involves richer temporal structure and more complex semantics, still lacks systematic benchmarks and analysis. To fill this gap, we introduce ShotFinder, a benchmark that formalizes editing requirements as keyframe-oriented shot descriptions and introduces five types of controllable single-factor constraints: Temporal order, Color, Visual style, Audio, and Resolution. We curate 1,210 high-quality samples from YouTube across 20 thematic categories, using large models for generation with human verification. Based on the benchmark, we propose ShotFinder, a text-driven three-stage retrieval and localization pipeline: (1) query expansion via video imagination, (2) candidate video retrieval with a search engine, and (3) description-guided temporal localization. Experiments on multiple closed-source and open-source models reveal a significant gap to human performance, with clear imbalance across constraints: temporal localization is relatively tractable, while color and visual style remain major challenges. These results reveal that open-domain video shot retrieval is still a critical capability that multimodal large models have yet to overcome."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "TriSpec: Ternary Speculative Decoding via Lightweight Proxy Verification",
+    "authors": "Haoyun Jiang, Junqi He, Feng Hong, Xinlong Yang, Jianwei Zhang, Zheng Li, Zhengyang Zhuge, Zhiyong Chen, Bo Han, Junyang Lin, Jiangchao Yao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.23180v1",
+    "source": "arXiv",
+    "abstract": "Inference efficiency in Large Language Models (LLMs) is fundamentally limited by their serial, autoregressive generation, especially as reasoning becomes a key capability and response sequences grow longer. Speculative decoding (SD) offers a powerful solution, providing significant speed-ups through its lightweight drafting and parallel verification mechanism. While existing work has nearly saturated improvements in draft effectiveness and efficiency, this paper advances SD from a new yet critical perspective: the verification cost. We propose TriSpec, a novel ternary SD framework that, at its core, introduces a lightweight proxy to significantly reduce computational cost by approving easily verifiable draft sequences and engaging the full target model only when encountering uncertain tokens. TriSpec can be integrated with state-of-the-art SD methods like EAGLE-3 to further reduce verification costs, achieving greater acceleration. Extensive experiments on the Qwen3 and DeepSeek-R1-Distill-Qwen/LLaMA families show that TriSpec achieves up to 35\\% speedup over standard SD, with up to 50\\% fewer target model invocations while maintaining comparable accuracy."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "Secure Tool Manifest and Digital Signing Solution for Verifiable MCP and LLM Pipelines",
+    "authors": "Saeid Jamshidi, Kawser Wazed Nafi, Arghavan Moradi Dakhel, Foutse Khomh, Amin Nikanjam, Mohammad Adnan Hamdaqa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.23132v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) are increasingly adopted in sensitive domains such as healthcare and financial institutions' data analytics; however, their execution pipelines remain vulnerable to manipulation and unverifiable behavior. Existing control mechanisms, such as the Model Context Protocol (MCP), define compliance policies for tool invocation but lack verifiable enforcement and transparent validation of model actions. To address this gap, we propose a novel Secure Tool Manifest and Digital Signing Framework, a structured and security-aware extension of Model Context Protocols. The framework enforces cryptographically signed manifests, integrates transparent verification logs, and isolates model-internal execution metadata from user-visible components to ensure verifiable execution integrity. Furthermore, the evaluation demonstrates that the framework scales nearly linearly (R-squared = 0.998), achieves near-perfect acceptance of valid executions while consistently rejecting invalid ones, and maintains balanced model utilization across execution pipelines."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "Breaking the Stochasticity Barrier: An Adaptive Variance-Reduced Method for Variational Inequalities",
+    "authors": "Yungi Jeong, Takumi Otsuka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.23034v1",
+    "source": "arXiv",
+    "abstract": "Stochastic non-convex non-concave optimization, formally characterized as Stochastic Variational Inequalities (SVIs), presents unique challenges due to rotational dynamics and the absence of a global merit function. While adaptive step-size methods (like Armijo line-search) have revolutionized convex minimization, their application to this setting is hindered by the Stochasticity Barrier: the noise in gradient estimation masks the true operator curvature, triggering erroneously large steps that destabilize convergence. In this work, we propose VR-SDA-A (Variance-Reduced Stochastic Descent-Ascent with Armijo), a novel algorithm that integrates recursive momentum (STORM) with a rigorous Same-Batch Curvature Verification mechanism. We introduce a theoretical framework based on a Lyapunov potential tracking the Operator Norm, proving that VR- SDA-A achieves an oracle complexity of O(epsilon -3) for finding an epsilon-stationary point in general Lipschitz continuous operators. This matches the optimal rate for non-convex minimization while uniquely enabling automated step-size adaptation in the saddle-point setting. We validate our approach on canonical rotational benchmarks and non-convex robust regression tasks, demonstrating that our method effectively suppresses limit cycles and accelerates convergence with reduced dependence on manual learning rate scheduling."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "TriCEGAR: A Trace-Driven Abstraction Mechanism for Agentic AI",
+    "authors": "Roham Koohestani, Ateş Görpelioğlu, Egor Klimov, Burcu Kulahcioglu Ozkan, Maliheh Izadi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22997v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI systems act through tools and evolve their behavior over long, stochastic interaction traces. This setting complicates assurance, because behavior depends on nondeterministic environments and probabilistic model outputs. Prior work introduced runtime verification for agentic AI via Dynamic Probabilistic Assurance (DPA), learning an MDP online and model checking quantitative properties. A key limitation is that developers must manually define the state abstraction, which couples verification to application-specific heuristics and increases adoption friction. This paper proposes TriCEGAR, a trace-driven abstraction mechanism that automates state construction from execution logs and supports online construction of an agent behavioral MDP. TriCEGAR represents abstractions as predicate trees learned from traces and refined using counterexamples. We describe a framework-native implementation that (i) captures typed agent lifecycle events, (ii) builds abstractions from traces, (iii) constructs an MDP, and (iv) performs probabilistic model checking to compute bounds such as Pmax(success) and Pmin(failure). We also show how run likelihoods enable anomaly detection as a guardrailing signal."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software Engineering",
+    "authors": "Chuanzhe Guo, Jingjing Wu, Sijun He, Yang Chen, Zhaoqi Kuang, Shilong Fan, Bingjin Chen, Siqi Bao, Jing Liu, Hua Wu, Qingfu Zhu, Wanxiang Che, Haifeng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22859v1",
+    "source": "arXiv",
+    "abstract": "The evolution of Large Language Model (LLM) agents for software engineering (SWE) is constrained by the scarcity of verifiable datasets, a bottleneck stemming from the complexity of constructing executable environments across diverse languages. To address this, we introduce MEnvAgent, a Multi-language framework for automated Environment construction that facilitates scalable generation of verifiable task instances. MEnvAgent employs a multi-agent Planning-Execution-Verification architecture to autonomously resolve construction failures and integrates a novel Environment Reuse Mechanism that reduces computational overhead by incrementally patching historical environments. Evaluations on MEnvBench, a new benchmark comprising 1,000 tasks across 10 languages, demonstrate that MEnvAgent outperforms baselines, improving Fail-to-Pass (F2P) rates by 8.6% while reducing time costs by 43%. Additionally, we demonstrate the utility of MEnvAgent by constructing MEnvData-SWE, the largest open-source polyglot dataset of realistic verifiable Docker environments to date, alongside solution trajectories that enable consistent performance gains on SWE tasks across a wide range of models. Our code, benchmark, and dataset are available at https://github.com/ernie-research/MEnvAgent."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "FarmMind: Reasoning-Query-Driven Dynamic Segmentation for Farmland Remote Sensing Images",
+    "authors": "Haiyang Wu, Weiliang Mu, Jipeng Zhang, Zhong Dandan, Zhuofei Du, Haifeng Li, Tao Chao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22809v1",
+    "source": "arXiv",
+    "abstract": "Existing methods for farmland remote sensing image (FRSI) segmentation generally follow a static segmentation paradigm, where analysis relies solely on the limited information contained within a single input patch. Consequently, their reasoning capability is limited when dealing with complex scenes characterized by ambiguity and visual uncertainty. In contrast, human experts, when interpreting remote sensing images in such ambiguous cases, tend to actively query auxiliary images (such as higher-resolution, larger-scale, or temporally adjacent data) to conduct cross-verification and achieve more comprehensive reasoning. Inspired by this, we propose a reasoning-query-driven dynamic segmentation framework for FRSIs, named FarmMind. This framework breaks through the limitations of the static segmentation paradigm by introducing a reasoning-query mechanism, which dynamically and on-demand queries external auxiliary images to compensate for the insufficient information in a single input image. Unlike direct queries, this mechanism simulates the thinking process of human experts when faced with segmentation ambiguity: it first analyzes the root causes of segmentation ambiguities through reasoning, and then determines what type of auxiliary image needs to be queried based on this analysis. Extensive experiments demonstrate that FarmMind achieves superior segmentation performance and stronger generalization ability compared with existing methods. The source code and dataset used in this work are publicly available at: https://github.com/WithoutOcean/FarmMind."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "CVeDRL: An Efficient Code Verifier via Difficulty-aware Reinforcement Learning",
+    "authors": "Ji Shi, Peiming Guo, Meishan Zhang, Miao Zhang, Xuebo Liu, Min Zhang, Weili Guan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22803v1",
+    "source": "arXiv",
+    "abstract": "Code verifiers play a critical role in post-verification for LLM-based code generation, yet existing supervised fine-tuning methods suffer from data scarcity, high failure rates, and poor inference efficiency. While reinforcement learning (RL) offers a promising alternative by optimizing models through execution-driven rewards without labeled supervision, our preliminary results show that naive RL with only functionality rewards fails to generate effective unit tests for difficult branches and samples. We first theoretically analyze showing that branch coverage, sample difficulty, syntactic and functional correctness can be jointly modeled as RL rewards, where optimizing these signals can improve the reliability of unit-test-based verification. Guided by this analysis, we design syntax- and functionality-aware rewards and further propose branch- and sample-difficulty--aware RL using exponential reward shaping and static analysis metrics. With this formulation, CVeDRL achieves state-of-the-art performance with only 0.6B parameters, yielding up to 28.97% higher pass rate and 15.08% higher branch coverage than GPT-3.5, while delivering over $20\\times$ faster inference than competitive baselines. Code is available at https://github.com/LIGHTCHASER1/CVeDRL.git"
+  },
+  {
+    "date": "2026-01-30",
+    "title": "Okara: Detection and Attribution of TLS Man-in-the-Middle Vulnerabilities in Android Apps with Foundation Models",
+    "authors": "Haoyun Yang, Ronghong Huang, Yong Fang, Beizeng Zhang, Junpu Guo, Zhanyu Wu, Xianghang Mi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22770v1",
+    "source": "arXiv",
+    "abstract": "Transport Layer Security (TLS) is fundamental to secure online communication, yet vulnerabilities in certificate validation that enable Man-in-the-Middle (MitM) attacks remain a pervasive threat in Android apps. Existing detection tools are hampered by low-coverage UI interaction, costly instrumentation, and a lack of scalable root-cause analysis. We present Okara, a framework that leverages foundation models to automate the detection and deep attribution of TLS MitM Vulnerabilities (TMVs). Okara's detection component, TMV-Hunter, employs foundation model-driven GUI agents to achieve high-coverage app interaction, enabling efficient vulnerability discovery at scale. Deploying TMV-Hunter on 37,349 apps from Google Play and a third-party store revealed 8,374 (22.42%) vulnerable apps. Our measurement shows these vulnerabilities are widespread across all popularity levels, affect critical functionalities like authentication and code delivery, and are highly persistent with a median vulnerable lifespan of over 1,300 days. Okara's attribution component, TMV-ORCA, combines dynamic instrumentation with a novel LLM-based classifier to locate and categorize vulnerable code according to a comprehensive new taxonomy. This analysis attributes 41% of vulnerabilities to third-party libraries and identifies recurring insecure patterns, such as empty trust managers and flawed hostname verification. We have initiated a large-scale responsible disclosure effort and will release our tools and datasets to support further research and mitigation."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "FNF: Functional Network Fingerprint for Large Language Models",
+    "authors": "Yiheng Liu, Junhao Ning, Sichen Xia, Haiyang Sun, Yang Yang, Hanyang Chi, Xiaohui Gao, Ning Qiang, Bao Ge, Junwei Han, Xintao Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22692v1",
+    "source": "arXiv",
+    "abstract": "The development of large language models (LLMs) is costly and has significant commercial value. Consequently, preventing unauthorized appropriation of open-source LLMs and protecting developers' intellectual property rights have become critical challenges. In this work, we propose the Functional Network Fingerprint (FNF), a training-free, sample-efficient method for detecting whether a suspect LLM is derived from a victim model, based on the consistency between their functional network activity. We demonstrate that models that share a common origin, even with differences in scale or architecture, exhibit highly consistent patterns of neuronal activity within their functional networks across diverse input samples. In contrast, models trained independently on distinct data or with different objectives fail to preserve such activity alignment. Unlike conventional approaches, our method requires only a few samples for verification, preserves model utility, and remains robust to common model modifications (such as fine-tuning, pruning, and parameter permutation), as well as to comparisons across diverse architectures and dimensionalities. FNF thus provides model owners and third parties with a simple, non-invasive, and effective tool for protecting LLM intellectual property. The code is available at https://github.com/WhatAboutMyStar/LLM_ACTIVATION."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "Pushing the Boundaries of Natural Reasoning: Interleaved Bonus from Formal-Logic Verification",
+    "authors": "Chuxue Cao, Jinluan Yang, Haoran Li, Kunhao Pan, Zijian Zhao, Zhengyu Chen, Yuchen Tian, Lijun Wu, Conghui He, Sirui Han, Yike Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22642v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) show remarkable capabilities, yet their stochastic next-token prediction creates logical inconsistencies and reward hacking that formal symbolic systems avoid. To bridge this gap, we introduce a formal logic verification-guided framework that dynamically interleaves formal symbolic verification with the natural language generation process, providing real-time feedback to detect and rectify errors as they occur. Distinguished from previous neuro-symbolic methods limited by passive post-hoc validation, our approach actively penalizes intermediate fallacies during the reasoning chain. We operationalize this framework via a novel two-stage training pipeline that synergizes formal logic verification-guided supervised fine-tuning and policy optimization. Extensive evaluation on six benchmarks spanning mathematical, logical, and general reasoning demonstrates that our 7B and 14B models outperform state-of-the-art baselines by average margins of 10.4% and 14.2%, respectively. These results validate that formal verification can serve as a scalable mechanism to significantly push the performance boundaries of advanced LLM reasoning."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "ScholarPeer: A Context-Aware Multi-Agent Framework for Automated Peer Review",
+    "authors": "Palash Goyal, Mihir Parmar, Yiwen Song, Hamid Palangi, Tomas Pfister, Jinsung Yoon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22638v1",
+    "source": "arXiv",
+    "abstract": "Automated peer review has evolved from simple text classification to structured feedback generation. However, current state-of-the-art systems still struggle with \"surface-level\" critiques: they excel at summarizing content but often fail to accurately assess novelty and significance or identify deep methodological flaws because they evaluate papers in a vacuum, lacking the external context a human expert possesses. In this paper, we introduce ScholarPeer, a search-enabled multi-agent framework designed to emulate the cognitive processes of a senior researcher. ScholarPeer employs a dual-stream process of context acquisition and active verification. It dynamically constructs a domain narrative using a historian agent, identifies missing comparisons via a baseline scout, and verifies claims through a multi-aspect Q&A engine, grounding the critique in live web-scale literature. We evaluate ScholarPeer on DeepReview-13K and the results demonstrate that ScholarPeer achieves significant win-rates against state-of-the-art approaches in side-by-side evaluations and reduces the gap to human-level diversity."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "PhoStream: Benchmarking Real-World Streaming for Omnimodal Assistants in Mobile Scenarios",
+    "authors": "Xudong Lu, Huankang Guan, Yang Bo, Jinpeng Chen, Xintong Guo, Shuhan Li, Fang Liu, Peiwen Sun, Xueying Li, Wei Zhang, Xue Yang, Rui Liu, Hongsheng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22575v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models excel at offline audio-visual understanding, but their ability to serve as mobile assistants in continuous real-world streams remains underexplored. In daily phone use, mobile assistants must track streaming audio-visual inputs and respond at the right time, yet existing benchmarks are often restricted to multiple-choice questions or use shorter videos. In this paper, we introduce PhoStream, the first mobile-centric streaming benchmark that unifies on-screen and off-screen scenarios to evaluate video, audio, and temporal reasoning. PhoStream contains 5,572 open-ended QA pairs from 578 videos across 4 scenarios and 10 capabilities. We build it with an Automated Generative Pipeline backed by rigorous human verification, and evaluate models using a realistic Online Inference Pipeline and LLM-as-a-Judge evaluation for open-ended responses. Experiments reveal a temporal asymmetry in LLM-judged scores (0-100): models perform well on Instant and Backward tasks (Gemini 3 Pro exceeds 80), but drop sharply on Forward tasks (16.40), largely due to early responses before the required visual and audio cues appear. This highlights a fundamental limitation: current MLLMs struggle to decide when to speak, not just what to say. Code and datasets used in this work will be made publicly accessible at https://github.com/Lucky-Lance/PhoStream."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "Towards Sample Efficient Entanglement Classification for 3 and 4 Qubit Systems: A Tailored CNN-BiLSTM Approach",
+    "authors": "Qian Sun, Yuedong Sun, Yu Hu, Yihan Ma, Runqi Han, Nan Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22562v1",
+    "source": "arXiv",
+    "abstract": "Accurate classification of multipartite entanglement in high-dimensional quantum systems is crucial for advancing quantum communication and information processing. However, conventional methods are resource-intensive, and even many machine-learning-based approaches necessitate large training datasets, creating a significant experimental bottleneck for data acquisition. To address this challenge, we propose a hybrid neural network architecture integrating Convolutional and Bidirectional Long Short-Term Memory networks (CNN-BiLSTM). This design leverages CNNs for local feature extraction and BiLSTMs for sequential dependency modeling, enabling robust feature learning from minimal training data. We investigate two fusion paradigms: Architecture 1 (flattening-based) and Architecture 2 (dimensionality-transforming). When trained on only 100 samples, Architecture 2 maintains classification accuracies exceeding 90% for both 3-qubit and 4-qubit systems, demonstrating rapid loss convergence within tens of epochs. Under full-data conditions (400 000 samples), both architectures achieve accuracies above 99.97%. Comparative benchmarks reveal that our CNN-BiLSTM models, especially Architecture 2, consistently outperform standalone CNNs, BiLSTMs, and MLPs in low-data regimes, albeit with increased training time. These results demonstrates that the tailored CNN-BiLSTM fusion significantly alleviates experimental data acquisition burden, offering a practical pathway toward scalable entanglement verification in complex quantum systems."
+  },
+  {
+    "date": "2026-01-30",
+    "title": "Countering the Over-Reliance Trap: Mitigating Object Hallucination for LVLMs via a Self-Validation Framework",
+    "authors": "Shiyu Liu, Xinyi Wen, Zhibin Lan, Ante Wang, Jinsong Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22451v1",
+    "source": "arXiv",
+    "abstract": "Despite progress in Large Vision Language Models (LVLMs), object hallucination remains a critical issue in image captioning task, where models generate descriptions of non-existent objects, compromising their reliability. Previous work attributes this to LVLMs' over-reliance on language priors and attempts to mitigate it through logits calibration. However, they still lack a thorough analysis of the over-reliance. To gain a deeper understanding of over-reliance, we conduct a series of preliminary experiments, indicating that as the generation length increases, LVLMs' over-reliance on language priors leads to inflated probability of hallucinated object tokens, consequently exacerbating object hallucination. To circumvent this issue, we propose Language-Prior-Free Verification to enable LVLMs to faithfully verify the confidence of object existence. Based on this, we propose a novel training-free Self-Validation Framework to counter the over-reliance trap. It first validates objects' existence in sampled candidate captions and further mitigates object hallucination via caption selection or aggregation. Experiment results demonstrate that our framework mitigates object hallucination significantly in image captioning task (e.g., 65.6% improvement on CHAIRI metric with LLaVA-v1.5-7B), surpassing the previous SOTA methods. This result highlights a novel path towards mitigating hallucination by unlocking the inherent potential within LVLMs themselves."
+  },
+  {
+    "date": "2026-01-29",
+    "title": "Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the Erdős Problems",
+    "authors": "Tony Feng, Trieu Trinh, Garrett Bingham, Jiwon Kang, Shengtong Zhang, Sang-hyun Kim, Kevin Barreto, Carl Schildkraut, Junehyuk Jung, Jaehyeon Seo, Carlo Pagano, Yuri Chervonyi, Dawsen Hwang, Kaiying Hou, Sergei Gukov, Cheng-Chiang Tsai, Hyunwoo Choi, Youngbeom Jin, Wei-Yuan Li, Hao-An Wu, Ruey-An Shiu, Yu-Sheng Shih, Quoc V. Le, Thang Luong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22401v1",
+    "source": "arXiv",
+    "abstract": "We present a case study in semi-autonomous mathematics discovery, using Gemini to systematically evaluate 700 conjectures labeled 'Open' in Bloom's Erdős Problems database. We employ a hybrid methodology: AI-driven natural language verification to narrow the search space, followed by human expert evaluation to gauge correctness and novelty. We address 13 problems that were marked 'Open' in the database: 5 through seemingly novel autonomous solutions, and 8 through identification of previous solutions in the existing literature. Our findings suggest that the 'Open' status of the problems was through obscurity rather than difficulty. We also identify and discuss issues arising in applying AI to math conjectures at scale, highlighting the difficulty of literature identification and the risk of ''subconscious plagiarism'' by AI. We reflect on the takeaways from AI-assisted efforts on the Erdős Problems."
+  },
+  {
+    "date": "2026-01-29",
+    "title": "Unveiling BLR Structure in AGN with High Resolution X-Ray Spectra: An Analytic Approach to Wind Emission Line Profiles",
+    "authors": "Scott Hagen, Chris Done, Gabriele A. Matzeu, Hirofumi Noda",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22392v1",
+    "source": "arXiv",
+    "abstract": "XRISM has provided an unprecedented view of the emission and absorption lines in the X-ray. Notably, early results showed significant complexity to the Fe-K$α$ line profile in AGN, with clear contributions from at least three emitting structures: an inner disc, intermediary broad line region (BLR) scale material, and an outer torus. This poses a new challenge for the modelling of the emission lines, as while fast sophisticated models exist for disc line-profiles, large scale-height material is typically much more complex. In this paper we aim to address this gap, by building a fully analytic model for the emission line profiles from a wind, aimed towards BLR scale material, motivated on previous reverberation studies suggesting a wind on the inner edge of the BLR. Our approach gives a physically motivated, yet computationally fast, model for the intermediary component to the Fe-K$α$ complex seen in the XRISM data. We demonstrate our model on the XRISM observations of NGC 4151 from the performance verification phase, showing that it gives a good description of the data, with physically reasonable parameters for BLR scale material. We also show that our model naturally gives the smooth line profile seen in the data, due to the large spatial extent of a wind. Finally, we make our model code public to the community, and name it xwind."
+  },
+  {
+    "date": "2026-01-29",
+    "title": "An Effective Energy Mask-based Adversarial Evasion Attacks against Misclassification in Speaker Recognition Systems",
+    "authors": "Chanwoo Park, Chanwoo Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22390v1",
+    "source": "arXiv",
+    "abstract": "Evasion attacks pose significant threats to AI systems, exploiting vulnerabilities in machine learning models to bypass detection mechanisms. The widespread use of voice data, including deepfakes, in promising future industries is currently hindered by insufficient legal frameworks. Adversarial attack methods have emerged as the most effective countermeasure against the indiscriminate use of such data. This research introduces masked energy perturbation (MEP), a novel approach using power spectrum for energy masking of original voice data. MEP applies masking to small energy regions in the frequency domain before generating adversarial perturbations, targeting areas less noticeable to the human auditory model. The study primarily employs advanced speaker recognition models, including ECAPA-TDNN and ResNet34, which have shown remarkable performance in speaker verification tasks. The proposed MEP method demonstrated strong performance in both audio quality and evasion effectiveness. The energy masking approach effectively minimizes the perceptual evaluation of speech quality (PESQ) degradation, indicating that minimal perceptual distortion occurs to the human listener despite the adversarial perturbations. Specifically, in the PESQ evaluation, the relative performance of the MEP method was 26.68% when compared to the fast gradient sign method (FGSM) and iterative FGSM."
+  },
+  {
+    "date": "2026-01-29",
+    "title": "Manjushri: A Tool for Equivalence Checking of Quantum Circuits",
+    "authors": "Xuan Du Trinh, Meghana Sistla, Nengkun Yu, Thomas Reps",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22372v1",
+    "source": "arXiv",
+    "abstract": "Verifying whether two quantum circuits are equivalent is a central challenge in the compilation and optimization of quantum programs. We introduce \\textsc{Manjushri}, a new automated framework for scalable quantum-circuit equivalence checking. \\textsc{Manjushri} uses local projections as discriminative circuit fingerprints, implemented with weighted binary decision diagrams (WBDDs), yielding a compact and efficient symbolic representation of quantum behavior. We present an extensive experimental evaluation that, for random 1D Clifford+$T$ circuits, explores the trade-off between \\textsc{Manjushri} and \\textsc{ECMC}, a tool for equivalence checking based on a much different approach. \\textsc{Manjushri} is much faster up to depth 30 (with the crossover point varying from 39--49, depending on the number of qubits and whether the input circuits are equivalent or inequivalent): when inputs are equivalent, \\textsc{Manjushri} is about 10$\\times$ faster (or more); when inputs are inequivalent, \\textsc{Manjushri} is about 8$\\times$ faster (or more). For both kinds of equivalence-checking outcomes, \\textsc{ECMC}'s success rate out to depth 50 is impressive on 32- and 64-qubit circuits: on such circuits, \\textsc{ECMC} is almost uniformly successful. However, \\textsc{ECMC} struggled on 128-qubit circuits for some depths. \\textsc{Manjushri} is almost uniformly successful out to about depth 38, before tailing off to about 75\\% at depth 50 (falling to 0\\% at depth 48 for 128-qubit circuits that are equivalent). These results establish that \\textsc{Manjushri} is a practical and scalable solution for large-scale quantum-circuit verification, and would be the preferred choice unless clients need to check equivalence of circuits of depth $>$38."
+  },
+  {
+    "date": "2026-01-29",
+    "title": "Towards Solving the Gilbert-Pollak Conjecture via Large Language Models",
+    "authors": "Yisi Ke, Tianyu Huang, Yankai Shu, Di He, Jingchu Gai, Liwei Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2601.22365v1",
+    "source": "arXiv",
+    "abstract": "The Gilbert-Pollak Conjecture \\citep{gilbert1968steiner}, also known as the Steiner Ratio Conjecture, states that for any finite point set in the Euclidean plane, the Steiner minimum tree has length at least $\\sqrt{3}/2 \\approx 0.866$ times that of the Euclidean minimum spanning tree (the Steiner ratio). A sequence of improvements through the 1980s culminated in a lower bound of $0.824$, with no substantial progress reported over the past three decades. Recent advances in LLMs have demonstrated strong performance on contest-level mathematical problems, yet their potential for addressing open, research-level questions remains largely unexplored. In this work, we present a novel AI system for obtaining tighter lower bounds on the Steiner ratio. Rather than directly prompting LLMs to solve the conjecture, we task them with generating rule-constrained geometric lemmas implemented as executable code. These lemmas are then used to construct a collection of specialized functions, which we call verification functions, that yield theoretically certified lower bounds of the Steiner ratio. Through progressive lemma refinement driven by reflection, the system establishes a new certified lower bound of 0.8559 for the Steiner ratio. The entire research effort involves only thousands of LLM calls, demonstrating the strong potential of LLM-based systems for advanced mathematical research."
+  }
+]
