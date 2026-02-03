@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-02",
+    "title": "Certain Head, Uncertain Tail: Expert-Sample for Test-Time Scaling in Fine-Grained MoE",
+    "authors": "Yuanteng Chen, Peisong Wang, Nanxin Zeng, Yuantian Shao, Gang Li, Jing Liu, Jian Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02443v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling improves LLM performance by generating multiple candidate solutions, yet token-level sampling requires temperature tuning that trades off diversity against stability. Fine-grained MoE, featuring hundreds of well-trained experts per layer and multi-expert activation per token, offers an unexplored alternative through its rich routing space. We empirically characterize fine-grained MoE routing and uncover an informative pattern: router scores exhibit a certain head of high-confidence experts followed by an uncertain tail of low-confidence candidates. While single-run greedy accuracy remains stable when fewer experts are activated, multi-sample pass@n degrades significantly-suggesting that the certain head governs core reasoning capability while the uncertain tail correlates with reasoning diversity. Motivated by these findings, we propose Expert-Sample, a training-free method that preserves high-confidence selections while injecting controlled stochasticity into the uncertain tail, enabling diverse generation without destabilizing outputs. Evaluated on multiple fine-grained MoE models across math, knowledge reasoning, and code tasks, Expert-Sample consistently improves pass@n and verification-based accuracy. On Qwen3-30B-A3B-Instruct evaluated on GPQA-Diamond with 32 parallel samples, pass@32 rises from 85.4% to 91.9%, and accuracy improves from 59.1% to 62.6% with Best-of-N verification."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Structure Enables Effective Self-Localization of Errors in LLMs",
+    "authors": "Ankur Samanta, Akshayaa Magesh, Ayush Jain, Kavosh Asadi, Youliang Yu, Daniel Jiang, Boris Vidolov, Kaveh Hassani, Paul Sajda, Jalaj Bhandari, Yonathan Efroni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02416v1",
+    "source": "arXiv",
+    "abstract": "Self-correction in language models remains elusive. In this work, we explore whether language models can explicitly localize errors in incorrect reasoning, as a path toward building AI systems that can effectively correct themselves. We introduce a prompting method that structures reasoning as discrete, semantically coherent thought steps, and show that models are able to reliably localize errors within this structure, while failing to do so in conventional, unstructured chain-of-thought reasoning. Motivated by how the human brain monitors errors at discrete decision points and resamples alternatives, we introduce Iterative Correction Sampling of Thoughts (Thought-ICS), a self-correction framework. Thought-ICS iteratively prompts the model to generate reasoning one discrete and complete thought at a time--where each thought represents a deliberate decision by the model--creating natural boundaries for precise error localization. Upon verification, the model localizes the first erroneous step, and the system backtracks to generate alternative reasoning from the last correct point. When asked to correct reasoning verified as incorrect by an oracle, Thought-ICS achieves 20-40% self-correction lift. In a completely autonomous setting without external verification, it outperforms contemporary self-correction baselines."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Provenance Verification of AI-Generated Images via a Perceptual Hash Registry Anchored on Blockchain",
+    "authors": "Apoorv Mohit, Bhavya Aggarwal, Chinmay Gondhalekar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02412v1",
+    "source": "arXiv",
+    "abstract": "The rapid advancement of artificial intelligence has made the generation of synthetic images widely accessible, increasing concerns related to misinformation, digital forgery, and content authenticity on large-scale online platforms. This paper proposes a blockchain-backed framework for verifying AI-generated images through a registry-based provenance mechanism. Each AI-generated image is assigned a digital fingerprint that preserves similarity using perceptual hashing and is registered at creation time by participating generation platforms. The hashes are stored on a hybrid on-chain/off-chain public blockchain using a Merkle Patricia Trie for tamper-resistant storage (on-chain) and a Burkhard-Keller tree (off-chain) to enable efficient similarity search over large image registries. Verification is performed when images are re-uploaded to digital platforms such as social media services, enabling identification of previously registered AI-generated images even after benign transformations or partial modifications. The proposed system does not aim to universally detect all synthetic images, but instead focuses on verifying the provenance of AI-generated content that has been registered at creation time. By design, this approach complements existing watermarking and learning-based detection methods, providing a platform-agnostic, tamper-proof mechanism for scalable content provenance and authenticity verification at the point of large-scale online distribution."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "From Sycophancy to Sensemaking: Premise Governance for Human-AI Decision Making",
+    "authors": "Raunak Jain, Mudita Khurana, John Stephens, Srinivas Dharmasanam, Shankar Venkataraman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02378v1",
+    "source": "arXiv",
+    "abstract": "As LLMs expand from assistance to decision support, a dangerous pattern emerges: fluent agreement without calibrated judgment. Low-friction assistants can become sycophantic, baking in implicit assumptions and pushing verification costs onto experts, while outcomes arrive too late to serve as reward signals. In deep-uncertainty decisions (where objectives are contested and reversals are costly), scaling fluent agreement amplifies poor commitments faster than it builds expertise. We argue reliable human-AI partnership requires a shift from answer generation to collaborative premise governance over a knowledge substrate, negotiating only what is decision-critical. A discrepancy-driven control loop operates over this substrate: detecting conflicts, localizing misalignment via typed discrepancies (teleological, epistemic, procedural), and triggering bounded negotiation through decision slices. Commitment gating blocks action on uncommitted load-bearing premises unless overridden under logged risk; value-gated challenge allocates probing under interaction cost. Trust then attaches to auditable premises and evidence standards, not conversational fluency. We illustrate with tutoring and propose falsifiable evaluation criteria."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Proof-RM: A Scalable and Generalizable Reward Model for Math Proof",
+    "authors": "Haotong Yang, Zitong Wang, Shijia Kang, Siqi Yang, Wenkai Yu, Xu Niu, Yike Sun, Yi Hu, Zhouchen Lin, Muhan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02377v1",
+    "source": "arXiv",
+    "abstract": "While Large Language Models (LLMs) have demonstrated strong math reasoning abilities through Reinforcement Learning with *Verifiable Rewards* (RLVR), many advanced mathematical problems are proof-based, with no guaranteed way to determine the authenticity of a proof by simple answer matching. To enable automatic verification, a Reward Model (RM) capable of reliably evaluating full proof processes is required. In this work, we design a *scalable* data-construction pipeline that, with minimal human effort, leverages LLMs to generate a large quantity of high-quality \"**question-proof-check**\" triplet data. By systematically varying problem sources, generation methods, and model configurations, we create diverse problem-proof pairs spanning multiple difficulty levels, linguistic styles, and error types, subsequently filtered through hierarchical human review for label alignment. Utilizing these data, we train a proof-checking RM, incorporating additional process reward and token weight balance to stabilize the RL process. Our experiments validate the model's scalability and strong performance from multiple perspectives, including reward accuracy, generalization ability and test-time guidance, providing important practical recipes and tools for strengthening LLM mathematical capabilities."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "SWE-Universe: Scale Real-World Verifiable Environments to Millions",
+    "authors": "Mouxiang Chen, Lei Zhang, Yunlong Feng, Xuwu Wang, Wenting Zhao, Ruisheng Cao, Jiaxi Yang, Jiawei Chen, Mingze Li, Zeyao Ma, Hao Ge, Zongmeng Zhang, Zeyu Cui, Dayiheng Liu, Jingren Zhou, Jianling Sun, Junyang Lin, Binyuan Hui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02361v1",
+    "source": "arXiv",
+    "abstract": "We propose SWE-Universe, a scalable and efficient framework for automatically constructing real-world software engineering (SWE) verifiable environments from GitHub pull requests (PRs). To overcome the prevalent challenges of automatic building, such as low production yield, weak verifiers, and prohibitive cost, our framework utilizes a building agent powered by an efficient custom-trained model. This agent employs iterative self-verification and in-loop hacking detection to ensure the reliable generation of high-fidelity, verifiable tasks. Using this method, we scale the number of real-world multilingual SWE environments to a million scale (807,693). We demonstrate the profound value of our environments through large-scale agentic mid-training and reinforcement learning. Finally, we applied this technique to Qwen3-Max-Thinking and achieved a score of 75.3% on SWE-Bench Verified. Our work provides both a critical resource and a robust methodology to advance the next generation of coding agents."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "DFKI-Speech System for WildSpoof Challenge: A robust framework for SASV In-the-Wild",
+    "authors": "Arnab Das, Yassine El Kheir, Enes Erdem Erdogan, Feidi Kallel, Tim Polzehl, Sebastian Moeller",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02286v1",
+    "source": "arXiv",
+    "abstract": "This paper presents the DFKI-Speech system developed for the WildSpoof Challenge under the Spoofing aware Automatic Speaker Verification (SASV) track. We propose a robust SASV framework in which a spoofing detector and a speaker verification (SV) network operate in tandem. The spoofing detector employs a self-supervised speech embedding extractor as the frontend, combined with a state-of-the-art graph neural network backend. In addition, a top-3 layer based mixture-of-experts (MoE) is used to fuse high-level and low-level features for effective spoofed utterance detection. For speaker verification, we adapt a low-complexity convolutional neural network that fuses 2D and 1D features at multiple scales, trained with the SphereFace loss. Additionally, contrastive circle loss is applied to adaptively weight positive and negative pairs within each training batch, enabling the network to better distinguish between hard and easy sample pairs. Finally, fixed imposter cohort based AS Norm score normalization and model ensembling are used to further enhance the discriminative capability of the speaker verification system."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "SysFuSS: System-Level Firmware Fuzzing with Selective Symbolic Execution",
+    "authors": "Dakshina Tharindu, Aruna Jayasena, Prabhat Mishra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02243v1",
+    "source": "arXiv",
+    "abstract": "Firmware serves as the critical interface between hardware and software in computing systems, making any bugs or vulnerabilities particularly dangerous as they can cause catastrophic system failures. While fuzzing is a promising approach for identifying design flaws and security vulnerabilities, traditional fuzzers are ineffective at detecting firmware vulnerabilities. For example, existing fuzzers focus on user-level fuzzing, which is not suitable for detecting kernel-level vulnerabilities. Existing fuzzers also face a coverage plateau problem when dealing with complex interactions between firmware and hardware. In this paper, we present an efficient firmware verification framework, SysFuSS, that integrates system-level fuzzing with selective symbolic execution. Our approach leverages system-level emulation for initial fuzzing, and automatically transitions to symbolic execution when coverage reaches a plateau. This strategy enables us to generate targeted test cases that can trigger previously unexplored regions in firmware designs. We have evaluated SysFuSS on real-world embedded firmware, including OpenSSL, WolfBoot, WolfMQTT, HTSlib, MXML, and libIEC. Experimental evaluation demonstrates that SysFuSS significantly outperforms state-of-the-art fuzzers in terms of both branch coverage and detection of firmware vulnerabilities. Specifically, SysFuSS can detect 118 known vulnerabilities while state-of-the-art can cover only 13 of them. Moreover, SysFuSS takes significantly less time (up to 3.3X, 1.7X on average) to activate these vulnerabilities."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+    "authors": "Alexander Loth, Martin Kappes, Marc-Oliver Pahl",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02100v1",
+    "source": "arXiv",
+    "abstract": "The growth of Generative Artificial Intelligence (GenAI) has shifted disinformation production from manual fabrication to automated, large-scale manipulation. This article presents findings from the first wave of a longitudinal expert perception survey (N=21) involving AI researchers, policymakers, and disinformation specialists. It examines the perceived severity of multimodal threats -- text, image, audio, and video -- and evaluates current mitigation strategies. Results indicate that while deepfake video presents immediate \"shock\" value, large-scale text generation poses a systemic risk of \"epistemic fragmentation\" and \"synthetic consensus,\" particularly in the political domain. The survey reveals skepticism about technical detection tools, with experts favoring provenance standards and regulatory frameworks despite implementation barriers. GenAI disinformation research requires reproducible methods. The current challenge is measurement: without standardized benchmarks and reproducibility checklists, tracking or countering synthetic media remains difficult. We propose treating information integrity as an infrastructure with rigor in data provenance and methodological reproducibility."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "See2Refine: Vision-Language Feedback Improves LLM-Based eHMI Action Designers",
+    "authors": "Ding Xia, Xinyue Gui, Mark Colley, Fan Gao, Zhongyi Zhou, Dongyuan Li, Renhe Jiang, Takeo Igarashi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02063v1",
+    "source": "arXiv",
+    "abstract": "Automated vehicles lack natural communication channels with other road users, making external Human-Machine Interfaces (eHMIs) essential for conveying intent and maintaining trust in shared environments. However, most eHMI studies rely on developer-crafted message-action pairs, which are difficult to adapt to diverse and dynamic traffic contexts. A promising alternative is to use Large Language Models (LLMs) as action designers that generate context-conditioned eHMI actions, yet such designers lack perceptual verification and typically depend on fixed prompts or costly human-annotated feedback for improvement. We present See2Refine, a human-free, closed-loop framework that uses vision-language model (VLM) perceptual evaluation as automated visual feedback to improve an LLM-based eHMI action designer. Given a driving context and a candidate eHMI action, the VLM evaluates the perceived appropriateness of the action, and this feedback is used to iteratively revise the designer's outputs, enabling systematic refinement without human supervision. We evaluate our framework across three eHMI modalities (lightbar, eyes, and arm) and multiple LLM model sizes. Across settings, our framework consistently outperforms prompt-only LLM designers and manually specified baselines in both VLM-based metrics and human-subject evaluations. Results further indicate that the improvements generalize across modalities and that VLM evaluations are well aligned with human preferences, supporting the robustness and effectiveness of See2Refine for scalable action design."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Do I Really Know? Learning Factual Self-Verification for Hallucination Reduction",
+    "authors": "Enes Altinisik, Masoomali Fatehkia, Fatih Deniz, Nadir Durrani, Majd Hawasly, Mohammad Raza, Husrev Taha Sencar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.02018v1",
+    "source": "arXiv",
+    "abstract": "Factual hallucination remains a central challenge for large language models (LLMs). Existing mitigation approaches primarily rely on either external post-hoc verification or mapping uncertainty directly to abstention during fine-tuning, often resulting in overly conservative behavior. We propose VeriFY, a training-time framework that teaches LLMs to reason about factual uncertainty through consistency-based self-verification. VeriFY augments training with structured verification traces that guide the model to produce an initial answer, generate and answer a probing verification query, issue a consistency judgment, and then decide whether to answer or abstain. To address the risk of reinforcing hallucinated content when training on augmented traces, we introduce a stage-level loss masking approach that excludes hallucinated answer stages from the training objective while preserving supervision over verification behavior. Across multiple model families and scales, VeriFY reduces factual hallucination rates by 9.7 to 53.3 percent, with only modest reductions in recall (0.4 to 5.7 percent), and generalizes across datasets when trained on a single source. The source code, training data, and trained model checkpoints will be released upon acceptance."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "From Code-Centric to Concept-Centric: Teaching NLP with LLM-Assisted \"Vibe Coding\"",
+    "authors": "Hend Al-Khalifa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01919v1",
+    "source": "arXiv",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) presents both challenges and opportunities for Natural Language Processing (NLP) education. This paper introduces ``Vibe Coding,'' a pedagogical approach that leverages LLMs as coding assistants while maintaining focus on conceptual understanding and critical thinking. We describe the implementation of this approach in a senior-level undergraduate NLP course, where students completed seven labs using LLMs for code generation while being assessed primarily on conceptual understanding through critical reflection questions. Analysis of end-of-course feedback from 19 students reveals high satisfaction (mean scores 4.4-4.6/5.0) across engagement, conceptual learning, and assessment fairness. Students particularly valued the reduced cognitive load from debugging, enabling deeper focus on NLP concepts. However, challenges emerged around time constraints, LLM output verification, and the need for clearer task specifications. Our findings suggest that when properly structured with mandatory prompt logging and reflection-based assessment, LLM-assisted learning can shift focus from syntactic fluency to conceptual mastery, preparing students for an AI-augmented professional landscape."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Internal Flow Signatures for Self-Checking and Refinement in LLMs",
+    "authors": "Sungheon Jeong, Sanggeon Yun, Ryozo Masukawa, Wenjun Haung, Hanning Chen, Mohsen Imani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01897v1",
+    "source": "arXiv",
+    "abstract": "Large language models can generate fluent answers that are unfaithful to the provided context, while many safeguards rely on external verification or a separate judge after generation. We introduce \\emph{internal flow signatures} that audit decision formation from depthwise dynamics at a fixed inter-block monitoring boundary. The method stabilizes token-wise motion via bias-centered monitoring, then summarizes trajectories in compact \\emph{moving} readout-aligned subspaces constructed from the top token and its close competitors within each depth window. Neighboring window frames are aligned by an orthogonal transport, yielding depth-comparable transported step lengths, turning angles, and subspace drift summaries that are invariant to within-window basis choices. A lightweight GRU validator trained on these signatures performs self-checking without modifying the base model. Beyond detection, the validator localizes a culprit depth event and enables a targeted refinement: the model rolls back to the culprit token and clamps an abnormal transported step at the identified block while preserving the orthogonal residual. The resulting pipeline provides actionable localization and low-overhead self-checking from internal decision dynamics. \\emph{Code is available at} \\texttt{github.com/EavnJeong/Internal-Flow-Signatures-for-Self-Checking-and-Refinement-in-LLMs}."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "ProcMEM: Learning Reusable Procedural Memory from Experience via Non-Parametric PPO for LLM Agents",
+    "authors": "Qirui Mi, Zhijian Ma, Mengyue Yang, Haoxuan Li, Yisen Wang, Haifeng Zhang, Jun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01869v1",
+    "source": "arXiv",
+    "abstract": "LLM-driven agents demonstrate strong performance in sequential decision-making but often rely on on-the-fly reasoning, re-deriving solutions even in recurring scenarios. This insufficient experience reuse leads to computational redundancy and execution instability. To bridge this gap, we propose ProcMEM, a framework that enables agents to autonomously learn procedural memory from interaction experiences without parameter updates. By formalizing a Skill-MDP, ProcMEM transforms passive episodic narratives into executable Skills defined by activation, execution, and termination conditions to ensure executability. To achieve reliable reusability without capability degradation, we introduce Non-Parametric PPO, which leverages semantic gradients for high-quality candidate generation and a PPO Gate for robust Skill verification. Through score-based maintenance, ProcMEM sustains compact, high-quality procedural memory. Experimental results across in-domain, cross-task, and cross-agent scenarios demonstrate that ProcMEM achieves superior reuse rates and significant performance gains with extreme memory compression. Visualized evolutionary trajectories and Skill distributions further reveal how ProcMEM transparently accumulates, refines, and reuses procedural knowledge to facilitate long-term autonomy."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Fact or Fake? Assessing the Role of Deepfake Detectors in Multimodal Misinformation Detection",
+    "authors": "A S M Sharifuzzaman Sagar, Mohammed Bennamoun, Farid Boussaid, Naeha Sharif, Lian Xu, Shaaban Sahmoud, Ali Kishk",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01854v1",
+    "source": "arXiv",
+    "abstract": "In multimodal misinformation, deception usually arises not just from pixel-level manipulations in an image, but from the semantic and contextual claim jointly expressed by the image-text pair. Yet most deepfake detectors, engineered to detect pixel-level forgeries, do not account for claim-level meaning, despite their growing integration in automated fact-checking (AFC) pipelines. This raises a central scientific and practical question: Do pixel-level detectors contribute useful signal for verifying image-text claims, or do they instead introduce misleading authenticity priors that undermine evidence-based reasoning? We provide the first systematic analysis of deepfake detectors in the context of multimodal misinformation detection. Using two complementary benchmarks, MMFakeBench and DGM4, we evaluate: (1) state-of-the-art image-only deepfake detectors, (2) an evidence-driven fact-checking system that performs tool-guided retrieval via Monte Carlo Tree Search (MCTS) and engages in deliberative inference through Multi-Agent Debate (MAD), and (3) a hybrid fact-checking system that injects detector outputs as auxiliary evidence. Results across both benchmark datasets show that deepfake detectors offer limited standalone value, achieving F1 scores in the range of 0.26-0.53 on MMFakeBench and 0.33-0.49 on DGM4, and that incorporating their predictions into fact-checking pipelines consistently reduces performance by 0.04-0.08 F1 due to non-causal authenticity assumptions. In contrast, the evidence-centric fact-checking system achieves the highest performance, reaching F1 scores of approximately 0.81 on MMFakeBench and 0.55 on DGM4. Overall, our findings demonstrate that multimodal claim verification is driven primarily by semantic understanding and external evidence, and that pixel-level artifact signals do not reliably enhance reasoning over real-world image-text misinformation."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Prism: Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models",
+    "authors": "Jinbin Bai, Yixuan Li, Yuchen Zhu, Yi Xin, Qingyu Shi, Aosong Feng, Xiaohong Liu, Molei Tao, Jianru Xue, Xiangtai Li, Ming-Hsuan Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01842v1",
+    "source": "arXiv",
+    "abstract": "Inference-time compute has re-emerged as a practical way to improve LLM reasoning. Most test-time scaling (TTS) algorithms rely on autoregressive decoding, which is ill-suited to discrete diffusion language models (dLLMs) due to their parallel decoding over the entire sequence. As a result, developing effective and efficient TTS methods to unlock dLLMs' full generative potential remains an underexplored challenge. To address this, we propose Prism (Pruning, Remasking, and Integrated Self-verification Method), an efficient TTS framework for dLLMs that (i) performs Hierarchical Trajectory Search (HTS) which dynamically prunes and reallocates compute in an early-to-mid denoising window, (ii) introduces Local branching with partial remasking to explore diverse implementations while preserving high-confidence tokens, and (iii) replaces external verifiers with Self-Verified Feedback (SVF) obtained via self-evaluation prompts on intermediate completions. Across four mathematical reasoning and code generation benchmarks on three dLLMs, including LLaDA 8B Instruct, Dream 7B Instruct, and LLaDA 2.0-mini, our Prism achieves a favorable performance-efficiency trade-off, matching best-of-N performance with substantially fewer function evaluations (NFE). The code is released at https://github.com/viiika/Prism."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Relativistic Position Verification with Coherent States",
+    "authors": "Guan-Jie Fan-Yuan, Yang-Guang Shan, Cong Zhang, Yu-Long Wang, Yu-Xuan Fan, Wei-Xin Xie, De-Yong He, Shuang Wang, Zhen-Qiang Yin, Wei Chen, Song-Nian Fu, Guang-Can Guo, Zheng-Fu Han",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01787v1",
+    "source": "arXiv",
+    "abstract": "Determining the position of an entity is a fundamental prerequisite for nearly all activities. Classical means, however, have been proven incapable of providing secure position verification, meaning that a prover can mislead verifiers about its actual position. In this work, we propose and experimentally realize a secure position-verification protocol that leverages quantum optics and relativity within an information-theoretic framework. Using phase-randomized weak coherent states, two verifiers separated by 2 km securely verify the prover's position with an accuracy better than 75 meters. These results establish secure position-based authentication as a practical possibility, paving the way for applications in financial transactions, disaster response, and authenticated secure communications."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Degenerate Soft Modes and Selective Condensation in BaAl$_2$O$_4$ via Inelastic X-ray Scattering",
+    "authors": "Yui Ishii, Arisa Yamamoto, Alfred Q. R. Baron, Hiroshi Uchiyama, Naoki Sato",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01732v1",
+    "source": "arXiv",
+    "abstract": "BaAl$_2$O$_4$ is a ferroelectric material that exhibits structural quantum criticality through chemical composition tuning. Although theoretical calculations and several diffraction experiments have suggested the involvement of a soft mode in its ferroelectric structural phase transition, direct experimental verification is still lacking. In this study, we successfully observed two soft modes of BaAl$_2$O$_4$ using x-ray inelastic scattering, providing direct experimental evidence for their role in the structural phase transition. Furthermore, we reveal that the soft modes at the M and K points are nearly degenerate in energy, indicating a delicate balance in which either mode could potentially freeze. The K-point mode simultaneously softens toward the transition temperature ($T_{\\rm C}$) in a manner nearly identical to the M-point mode. However, the phase transition condenses only at the M point, with the M-point mode stabilizing as an acoustic mode in the low-temperature structure and the K-point mode hardening as temperature decreases."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Joint Optimization of ASV and CM tasks: BTUEF Team's Submission for WildSpoof Challenge",
+    "authors": "Oguzhan Kurnaz, Jagabandhu Mishra, Tomi Kinnunen, Cemal Hanilci",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01722v1",
+    "source": "arXiv",
+    "abstract": "Spoofing-aware speaker verification (SASV) jointly addresses automatic speaker verification and spoofing countermeasures to improve robustness against adversarial attacks. In this paper, we investigate our recently proposed modular SASV framework that enables effective reuse of publicly available ASV and CM systems through non-linear fusion, explicitly modeling their interaction, and optimization with an operating-condition-dependent trainable a-DCF loss. The framework is evaluated using ECAPA-TDNN and ReDimNet as ASV embedding extractors and SSL-AASIST as the CM model, with experiments conducted both with and without fine-tuning on the WildSpoof SASV training data. Results show that the best performance is achieved by combining ReDimNet-based ASV embeddings with fine-tuned SSL-AASIST representations, yielding an a-DCF of 0.0515 on the progress evaluation set and 0.2163 on the final evaluation set."
+  },
+  {
+    "date": "2026-02-02",
+    "title": "Witnessd: Proof-of-process via Adversarial Collapse",
+    "authors": "David Condrey",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.01663v1",
+    "source": "arXiv",
+    "abstract": "Digital signatures prove key possession, not authorship. An author who generates text with AI, constructs intermediate document states post-hoc, and signs each hash produces a signature chain indistinguishable from genuine composition. We address this gap between cryptographic integrity and process provenance. We introduce proof-of-process, a primitive category for evidence that a physical process, not merely a signing key, produced a digital artifact. Our construction, the jitter seal, injects imperceptible microsecond delays derived via HMAC from a session secret, keystroke ordinal, and cumulative document hash. Valid evidence requires that real keystrokes produced the document through those intermediate states. We propose the Adversarial Collapse Principle as an evaluation criterion: evidence systems should be judged by whether disputing them requires a conjunction of specific, testable allegations against components with independent trust assumptions. We present Witnessd, an architecture combining jitter seals with Verifiable Delay Functions, external timestamp anchors, dual-source keystroke validation, and optional hardware attestation. Each layer forces allegations at different capability levels; disputing authentic evidence requires coordinated claims across independent trust boundaries. The system does not prevent forgery: a kernel-level adversary can defeat it, and typing AI-generated content produces valid evidence. The contribution is converting vague doubt into falsifiable allegations. We evaluate across 31,000 verification trials with deterministic rejection of invalid proofs."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "Scaffolding Inquiry-Oriented Web Search using LLM-based Question Generation",
+    "authors": "Yusuke Yamamoto",
+    "publish": "2025 ACM/IEEE Joint Conference on Digital Libraries (JCDL)",
+    "url": "https://doi.org/10.1109/jcdl67857.2025.00021",
+    "source": "IEEE",
+    "abstract": "Herein, we propose a method that promotes inquiry-oriented information seeking using a search engine to critically evaluate and synthesize diverse information when deciding on topics for which no definitive answer exists. We introduce a context-aware scaffolding framework in which a virtual student and teacher - both instantiated as LLM agents - jointly generate and rank driving questions aligned to a web searcher’s in-session browsing context. Unlike prior search-as-learning interventions that rely on static adjunct or pre-specified “expected” questions, our method displays questions to a web searcher in real time to the pages the searcher actually reads and selects the most pedagogically valuable question prompt, thereby deepening their opinions and providing them with new perspectives and insights. We evaluated the approach through an online user study $(\\mathrm{N}=120)$ and a controlled laboratory study $(\\mathrm{N}=24)$. We found that displaying scaffolding questions significantly increased the participants’ dwell time on search engine result pages without inflating the overall task duration. In addition, the prompts were considered relevant, important, and helpful for organizing ideas. The intervention nudged the participants toward a question-driven search strategy that enhanced their comprehension of the inquiry topic."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "LLM-Based Active Learning for Identifying References to Archival Repositories",
+    "authors": "Tokinori Suzuki",
+    "publish": "2025 ACM/IEEE Joint Conference on Digital Libraries (JCDL)",
+    "url": "https://doi.org/10.1109/jcdl67857.2025.00057",
+    "source": "IEEE",
+    "abstract": "Information about the contents of archival repositories can sometimes be found in the footnotes or endnotes of scholarly papers. In the field of history, these footnotes and endnotes are not standardized, sometimes providing more or less detailed descriptions. Identifying which footnotes and endnotes refer to archival repositories provides a foundation for subsequent mining tasks, such as analyzing the context in which specific archives are referenced. Archival references are relatively rare, occurring in about 1% of footnotes and endnotes in History papers, books, and theses. This sparsity, combined with the variable writing styles, makes it difficult to train a robust identifier for archival references. To address this, we propose an efficient sampling method using active learning together with large language models. Experiments demonstrate that the proposed method outperforms existing approaches based on support vector machines."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "Learning from LLM Disagreement in Retrieval Evaluation",
+    "authors": "William A. Ingram, Bipasha Banerjee, Edward A. Fox",
+    "publish": "2025 ACM/IEEE Joint Conference on Digital Libraries (JCDL)",
+    "url": "https://doi.org/10.1109/jcdl67857.2025.00024",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) are being integrated into information retrieval pipelines within digital library systems for tasks such as re-ranking and filtering. However, a challenge arises from the observed disagreement between different LLMs in borderline classification cases, raising concerns about how this variability impacts downstream retrieval and the integrity of digital library collections. This study examines disagreement between two open-weight LLMs, LLaMA and Qwen, when tasked with evaluating a corpus of scholarly abstracts based on their contribution to Sustainable Development Goals (SDGs). We isolate subsets of documents where model disagreement occurs and examine their lexical properties, rank-order behavior, and classification predictability. Our results demonstrate that this model disagreement is not random: it concentrates in ambiguous cases, produces divergent top-k outputs under shared scoring functions, and is separable with AUCs above 0.74 using logistic regression. These findings suggest that LLM-based filtering introduces structured variability in document retrieval, even under controlled prompting and shared ranking logic. We propose using classification disagreement as an object of analysis in retrieval evaluation, particularly in subjective or thematic search tasks."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "LLM-Generated Description and Reasoning: Use-case for Library Recommendations",
+    "authors": "Arash Sal Moslehian, Eya Briki, Michalis Vlachos",
+    "publish": "2025 ACM/IEEE Joint Conference on Digital Libraries (JCDL)",
+    "url": "https://doi.org/10.1109/jcdl67857.2025.00015",
+    "source": "IEEE",
+    "abstract": "Recent advances in recommender systems have begun to explore how large language models can enhance user and item representations through natural language. However, the effectiveness of using LLM-generated descriptions and internal reasoning directly within collaborative filtering models remains underexplored. In this work, we evaluate various content-based embeddings, either by directly encoding metadata or by constructing richer user and item profiles using LLMs with internal reasoning. These embeddings are integrated into standard collaborative filtering models without modifying their architectures. Using a real-world library dataset enriched through external book databases, we show that on average, content-based embeddings improve recommendation performance by $40 \\%$ in recall and NDCG over baseline models, and LLM-generated profiles further improve performance and provide compact, interpretable representations. Our findings suggest that LLMgenerated profiles and reasoning not only enhance explainability, but also improve recommendation quality in sparse, real-world environments."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "Prompt Once, Manage All: A Unified LLM Framework for Multi-Task Optical Link Management",
+    "authors": "Khouloud Abdelli",
+    "publish": "Journal of Lightwave Technology",
+    "url": "https://doi.org/10.1109/jlt.2026.3660177",
+    "source": "IEEE",
+    "abstract": "We present a unified large language model (LLM) framework for multi-task optical link management, in which a single fine-tuned LLM jointly performs five optical link management tasks: quality-of-transmission (QoT) estimation, QoT forecasting, anomaly detection, anomaly classification, and launch-power optimization. Using structured natural-language prompts, the model ingests multimodal telemetry—including physical-layer measurements, state-of-polarization traces, historical QoT statistics, and configuration parameters—collected from a single looped-back connectivity service on a long-haul C+L-band experimental link. The LLM achieves a QoT prediction RMSE of ≈0.016 dB, near-perfect anomaly detection, and up to 96% anomaly-classification accuracy when guided by prompt-embedded semantic rules, while providing launch-power optimization with ≈0.2 dBm RMSE. By unifying multiple tasks within a single inference pipeline, the framework eliminates the need for task-specific ML models and reduces operational overhead. Although the evaluation focuses on single-channel, single-service link operation, the results highlight the potential of structured prompting and lightweight fine-tuning to support future extensions toward multi-channel and network-wide management."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "CyberSOIE-LLM: Cybersecurity Semi-Open Information Extraction with Large Language Models",
+    "authors": "Xinzheng Liu, Zhaoyun Ding",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00166",
+    "source": "IEEE",
+    "abstract": "Advanced Persistent Threats (APTs) are increasing in frequency and sophistication, rendering traditional defenses inadequate against the pronounced asymmetry inherent in contemporary cybersecurity. Cyber Threat Intelligence (CTI) is widely viewed as pivotal for transitioning from reactive to proactive defence; however, the exponential growth of unstructured CTI far exceeds the speed of manual analysis. We introduce CyberSOIE-LLM, the first cybersecurity-oriented Semi-Open Information Extraction framework that employs Large Language Models as domain experts to extract security knowledge from CTI efficiently, automatically and accurately. The framework unites three synergistic modules. Generator blends external knowledge enhancement with Chain-of-Thought (CoT) prompting to produce initial triples. Refiner enforces precision through multi-level rule- and semantics-based validation coupled with self-correction. Unifier externally aligns and internally normalises relation labels, yielding high-quality, low-redundancy cybersecurity triples. Extensive experiments on four Chinese–English CTI benchmarks show that CyberSOIE-LLM significantly surpasses state-of-the-art baselines, providing a scalable and trustworthy knowledge substrate for dynamic, proactive defence."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "DeepLancet: Effectively Detecting Deep Learning Library Bugs via LLM-assisted Testcase Generation",
+    "authors": "Zihao Luo, Baojian Hua",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00349",
+    "source": "IEEE",
+    "abstract": "Deep learning libraries such as PyTorch and TensorFlow are essential for building security-critical downstream deep learning applications. Bugs in these libraries compromise their correctness, robustness, and security, thereby undermining the reliability of downstream applications. Unfortunately, effectively detecting bugs in deep learning library remains challenging, as existing approaches often fail to generate effective test cases due to their inability to synthesize complex input constraints that govern deep learning library functions.In this paper, we present DeepLancet, the first approach for effectively detecting deep learning library bugs by leveraging large language models (LLMs) to systematically parse documentation and thereby assist in the generation of high-quality test cases. Our key observation is that mainstream deep learning libraries typically provide comprehensive and well-structured documentation, which contains detailed descriptions of input constraints that we can effectively synthesize and leverage to generate syntactically valid and semantically correct test cases. Specifically, we first synthesize function constraint descriptions from the documentation by leveraging LLMs. We then generate rigorous constraints which are leveraged to generate test cases through an attribution-based approach in Python. Finally, we employ a differential testing approach on CPU and GPU to detect bugs. We build a software prototype for DeepLancet, and our evaluation results demonstrate that DeepLancet is effective in uncovering previously unknown real-world bugs: it successfully uncovers 20 bugs in the latest release of PyTorch, including 7 previously unknown ones. Moreover, we compare DeepLancet with DocTer, a state-of-the-art technique that also leverages documentation for constraint extraction, and the results indicate that DeepLancet can extract more comprehensive constraints, thereby uncovering 3 more bugs that were missed by DocTer."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "LLM-Facilitated Persona-Based Delphi Method for Multi-Criteria Idea Evaluation",
+    "authors": "Riku Nagumo, Kouya Kitagawa, Hiroshi Maruyama, Hiroyuki Matsuyama, Hajime Sasaki",
+    "publish": "2025 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM)",
+    "url": "https://doi.org/10.1109/ieem63636.2025.11357620",
+    "source": "IEEE",
+    "abstract": "This study proposes a novel multi-perspective idea evaluation framework by combining the traditional Delphi method with AI-generated personas and Large Language Models (LLMs). Unlike conventional approaches that rely on predefined evaluation criteria, our method enables each persona to independently select and apply its own criteria based on unique attributes. Through iterative rounds facilitated by an LLM, evaluations converge while retaining diversity and minimizing bias. We demonstrate this approach through the assessment of multiple product ideas, highlighting how persona attributes such as age and gender influence evaluation perspectives. The results suggest this framework enhances both the efficiency and inclusivity of early-stage idea screening and consensus building."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "AutoPentester: An LLM Agent-based Framework for Automated Pentesting",
+    "authors": "Yasod Ginige, Akila Niroshan, Sajal Jain, Suranga Seneviratne",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00026",
+    "source": "IEEE",
+    "abstract": "Penetration testing and vulnerability assessment are essential industry practices for safeguarding computer systems. As cyber threats grow in scale and complexity, the demand for pentesting has surged, surpassing the capacity of human professionals to meet it effectively. With advances in AI, particularly Large Language Models (LLMs), there have been attempts to automate the pentesting process. However, existing tools such as PentestGPT are still semi-manual, requiring significant professional human interaction to conduct pentests. To this end, we propose a novel LLM agent-based framework, AutoPentester, which automates the pentesting process. Given a target IP, AutoPentester automatically conducts pentesting steps using common security tools in an iterative process. It can dynamically generate attack strategies based on the tool outputs from the previous iteration, mimicking the human pentester approach. We evaluate AutoPentester using Hack The Box and custom-made VMs, comparing the results with the state-of-the-art PentestGPT. Results show that AutoPentester achieves a 27.0% better subtask completion rate and 39.5% more vulnerability coverage with fewer steps. Most importantly, it requires significantly fewer human interactions and interventions compared to PentestGPT. Furthermore, we recruit a group of security industry professional volunteers for a user survey and perform a qualitative analysis to evaluate AutoPentester against industry practices and compare it with PentestGPT. On average, AutoPentester received a score of 3.93 out of 5 based on user reviews, which was 19.8% higher than PentestGPT."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "Fact-Stance: A Stance-Aware Dataset of Structured Scientific Claims with LLM Annotators",
+    "authors": "Xin Lin, Yang Zhao, Zhixiong Zhang, Yajiao Wang, Yang Li, Mengting Zhang",
+    "publish": "2025 ACM/IEEE Joint Conference on Digital Libraries (JCDL)",
+    "url": "https://doi.org/10.1109/jcdl67857.2025.00047",
+    "source": "IEEE",
+    "abstract": "Scientific literature is a rich source of domain knowledge-but how authors present their claims matters just as much as the claims themselves. Are they stating facts with confidence, hedging their assertions, or simply reporting others’ views? Such subjective stances, encoded through subtle linguistic markers, are pervasive in scholarly writing yet remain largely overlooked in computational approaches that reduce claims to objective facts. In this work, we present a stance-aware framework that models scientific claims as dual-layered structures comprising factual elements (entities, events, and relations) and stance markers (that express epistemic, evaluative, and interpersonal positioning). To scale annotation, we design an LLM-assisted pipeline combining model rationales with expert adjudication, yielding Fact-Stance-9K: 9,196 claims from 537 biomedical papers, annotated for fine-grained structure with 72% inter-LLM agreement. A claim reconstruction task confirms the framework’s fidelity (BERTScore-F1=0.90, ROUGE-L=0.74), validating its utility for stance-aware scientific mining. Dataset, Prompts, Lexicons are available at https://github.com/Lynnnx/factstance."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "KG-GNN Enhanced Reasoning for Autism LLM",
+    "authors": "Yu Gan, Rui Ma, Yaodan Yan, Yilin Wang, Qinxuan Cen, Tongxin Liu, Yichong Huang",
+    "publish": "Proceedings of the 2025 11th International Conference on Communication and Information Processing",
+    "url": "https://doi.org/10.1145/3784833.3784882",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-2",
+    "title": "LLM-Driven APT Analysis and Detection Based on Provenance Graph by Threat Pattern",
+    "authors": "Yibin Fu, Zhaoyun Ding, Sheng Zhang, Deqi Cao, Yi Wang",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00064",
+    "source": "IEEE",
+    "abstract": "We propose a threat detection framework that enhances provenance-based APT analysis by combining event clustering with LLM-driven threat pattern extraction refinement. Our method is designed to work in conjunction with existing systems like Kairos, which able to detect anomaly time windows. We first group fine-grained events into semantic clusters to preserve behavioral context, then apply structured threat patterns to identify suspicious sequences. To improve precision, we introduce a two-stage refinement: relaxing matching constraints for high recall, followed by LLM-driven filtering to assess semantic plausibility in framework of MITRE based on \"Part Chain of Pattern\" assumption. Evaluated on CADETS E3 and THEIA E3 using defender-observable ground truth, our approach outperforms Kairos in precision and F1-score. The results show that integrating structured pattern matching with contextual language models can effectively enhance existing detection pipelines, offering a practical path toward more accurate and interpretable threat hunting."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "Security of LLM Agents: A Case Study Approach",
+    "authors": "Casey Fan, Diyana Tial, Vladislav Dubrovenski, Mengtao Zhang, Yugyung Lee, Dianxiang Xu",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00226",
+    "source": "IEEE",
+    "abstract": "As large language models (LLMs) evolve into autonomous agents equipped with tools and communication capabilities, they are increasingly deployed in multi-agent systems (MASs) to perform complex tasks. While these systems offer new levels of functionality and efficiency, their security risks remain underexplored. In this paper, we present a focused security analysis of LLM agents by implementing six representative attacks on two real-world MASs. These attacks expose structural and behavioral vulnerabilities unique to agent-based systems. We also introduce and evaluate defensive mechanisms such as fine-tuned agent behaviors, access control via the NGAC (Next Generation Access Control) standard, and a novel \"sanity checker\" agent for validating agent outputs. Our findings highlight the urgent need for robust, standardized security frameworks for LLM-based MASs and suggest promising directions for future research in agent-level threat modeling and mitigation."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "DerandomPre: An LLM-based Stability Enhancement Method for Network Protocol Fuzzing",
+    "authors": "Yifan Zhang, Kailong Zhu, Qian Chen, Zixiong Li, Yuliang Lu, Yingchun Chen",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00372",
+    "source": "IEEE",
+    "abstract": "As essential components for communication, network protocol programs are highly security-critical, making it crucial to identify their vulnerabilities. Fuzzing is one of the most popular software vulnerability discovery techniques, being highly efficient and having low false-positive rates. However, current network protocol fuzzing is hindered by the randomness in programs. The current solutions primarily rely on the manual modification of programs, which is inefficient and prone to omissions. In this paper, we propose DerandomPre, a novel stability enhancement method for stateful network protocol programs, which leverages large language model’s code- and text-understanding capabilities to analyze derandomization knowledge and optimize the stability enhancing of programs for fuzzing. DerandomPre automatically eliminates randomness in programs to ensure higher stability and fuzzing effectiveness. We implement a prototype of DerandomPre. The evaluation demonstrates that DerandomPre significantly enhances fuzzing performance by eliminating program randomness. Specifically, compared to unmodified programs, DerandomPremodified versions achieved an average stability improvement of 64.88%; relative to ProFuzzBench-modified programs, DerandomPre yielded a further 13.08% stability gain. Moreover, DerandomPre demonstrates good scalability, thus is applicable to various network protocol programs."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "VarAgent: LLM-Enhanced Variable Name Recovery in Binaries via Reinforcement Learning and Semantic Fusion",
+    "authors": "Yuyao Huang, Hui Shu, Fei Kang, Cong Li",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00025",
+    "source": "IEEE",
+    "abstract": "Variable name recovery is a fundamental task in software reverse engineering, crucial for various cybersecurity applications including binary code understanding, protocol format recovery, and malware analysis. The core challenge lies in the semantic loss during compilation to binary code. Although intelligence-driven methods have shown progress, several issues persist: generated names remain vague, semantic inconsistency occurs across different contexts, and inference ordering lacks systematic planning. In this paper, we propose VarAgent, a variable naming agent driven by two domain-enhanced large language models: one focuses on inferring variable names within functions through reinforcement learning from reverse-engineering feedback, while the other propagates and fuses semantics across variables using graph neural networks embedded within the LLM. We also design a confusion-guided planner that mimics expert reverse engineers’ analysis strategies. Experimental results demonstrate that VarAgent achieves average precision and F1 scores of 34.9% and 34.7% on classic and novel datasets, outperforming state-of-the-art tools by 4.0%–15.4% (including ReSym, GenNm, DeGPT, and VarBERT). We further demonstrate its effectiveness in supporting downstream tasks, including protocol field inference, binary semantic search, and malware summarization."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "LLM-Guided Mutation Location Selection for Vulnerability-Aware JavaScript Engine Fuzzing",
+    "authors": "Jizhe Li, Yongjun Wang, Haoran Xu, Lin Peng, Muxin Xu, Tian Xia",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00355",
+    "source": "IEEE",
+    "abstract": "Modern JavaScript engines employ multi-tier JIT compilation for high performance, but these aggressive optimizations often introduce subtle and hard-to-detect security vulnerabilities. Existing fuzzers, whether syntax-aware or coverage-guided, lack mechanisms to focus mutations on vulnerability-relevant regions identified through semantic analysis. This paper presents LocFuzz, a JavaScript engine fuzzer that leverages Large Language Models (LLMs) to identify vulnerabilitysensitive mutation locations based on the semantic structure of historical bug samples. Unlike prior LLM-based fuzzers that primarily rely on models for input generation, LocFuzz introduces a novel mutation location guidance mechanism to direct semantic-aware mutations. It employs a temperature-controlled sampling strategy to balance exploration and precision when selecting mutation sites, and measures execution feature similarity via function address sequences to evaluate semantic consistency between original and mutated runs. Evaluations on V8 and SpiderMonkey show that LocFuzz significantly outperforms baseline fuzzers in test validity, behavioral similarity, and vulnerability activation, uncovering four new SpiderMonkey bugs. These results demonstrate the potential of LLM-guided semantic analysis to enhance both precision and efficiency in JavaScript engine fuzzing."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "ReviewGuard: Enhancing Deficient Peer Review Detection via LLM-Driven Data Augmentation",
+    "authors": "Haoxuan Zhang, Ruochi Li, Sarthak Shrestha, Shree Harshini Mamidala, Revanth Putta, Arka Krishan Aggarwal, Ting Xiao, Junhua Ding, Haihua Chen",
+    "publish": "2025 ACM/IEEE Joint Conference on Digital Libraries (JCDL)",
+    "url": "https://doi.org/10.1109/jcdl67857.2025.00032",
+    "source": "IEEE",
+    "abstract": "Peer review serves as the gatekeeper of science, yet the surge in submissions and widespread adoption of large language models (LLMs) in scholarly evaluation present unprecedented challenges. While recent work has focused on using LLMs to improve review efficiency, unchecked deficient reviews from both human experts and AI systems threaten to systematically undermine academic integrity. To address this issue, we introduce ReviewGuard, an automated system for detecting and categorizing deficient reviews through a four-stage LLM-driven framework: data collection from ICLR and NeurIPS on OpenReview, GPT-4.1 annotation with human validation, synthetic data augmentation yielding $\\mathbf{6, 6 3 4}$ papers with 24,657 real and 46,438 synthetic reviews, and fine-tuning of encoderbased models and open-source LLMs. Feature analysis reveals that deficient reviews exhibit lower rating scores, higher self-reported confidence, reduced structural complexity, and more negative sentiment than sufficient reviews. AI-generated text detection shows dramatic increases in AI-authored reviews since ChatGPT’s emergence. Mixed training with synthetic and real data substantially improves detection performance-for example, Qwen 3-8B achieves recall of 0.6653 and F1 of 0.7073, up from 0.5499 and 0.5606 respectively. This study presents the first LLMdriven system for detecting deficient peer reviews, providing evidence to inform AI governance in peer review. Code, prompts, and data are available at GitHub Repository."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "HiFi-XAI: A Fidelity-Aware, LLM-Powered Framework for Trustworthy Intrusion Detection",
+    "authors": "Avinash Awasthi, Pritam Vediya, Hemant Miranka, Ramesh Babu Battula, Priyadarsi Nanda",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00379",
+    "source": "IEEE",
+    "abstract": "The increasing deployment of complex \"black box\" AI models in anomaly-based Intrusion Detection Systems (IDS) for future networks has opened up a trust gap that requires human-interpretable explanations in order for analysts to feel confident in acting on alerts. Current approaches to Explainable AI (XAI), such as SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations), do not properly address the challenges inherent in the problem domain. These techniques fundamentally fail from a fidelity standpoint due to their incorrect assumption of independence between features that results in untrustworthy explanations, which are fundamentally based on correlated network data. We address these shortcomings by proposing HiFi-XAI, which leverages a new, novel framework to provide faithful and semantically rich explanations. HiFi-XAI introduces a model-agnostic Conditional Value Attribution Explanation (CVAE), a method based on probabilistic Shapley values that models feature dependencies to ensure explanations are derived from plausible data distributions. These high-fidelity attributions are then translated into actionable, natural-language narratives by a fine-tuned Large Language Model (LLM). We validate our framework through allaware scenario feature ablation studies on the CICIDS2017 and CICIOT2023 datasets. This demonstrates that CVAE consistently identifies more impactful features than SHAP and LIME across five anomaly-based IDS models. Furthermore, we deploy the HiFi-XAI to prove its practical feasibility and test it on a resource-constrained Raspberry Pi 4. Our work presents a complete, end-to-end solution for building trust in AI-driven IDS."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "Enhancing Medication Recommendation with LLM Text Representation",
+    "authors": "Shih-Wen Ke, Yu-Tzu Lee, Ling-Chien Hung",
+    "publish": "2025 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM)",
+    "url": "https://doi.org/10.1109/ieem63636.2025.11357786",
+    "source": "IEEE",
+    "abstract": "Most existing medication recommendation models rely heavily on structured data such as diagnosis and procedure codes, often overlooking the wealth of clinical information embedded in unstructured text. To better exploit this data, we propose enhancing medication recommendation using text representations derived from Large Language Models (LLMs). These representations capture semantic and contextual information from clinical notes and doctors’ narratives, enabling deeper integration of free-text and coded EMR data. We incorporate LLM-derived embeddings into several baseline models and evaluate performance on two datasets: the public MIMIC-III and a real-world inpatient dataset from Ditmanson Medical Foundation Chia-Yi Christian Hospital in Taiwan. Experimental results show consistent performance gains across models when LLM-based text representations are used, with some models achieving results comparable to or better than using medical codes alone. Our findings demonstrate that LLM-enhanced representations offer a scalable and model-agnostic approach for leveraging unstructured data in clinical decision support."
+  },
+  {
+    "date": "2026-2-2",
+    "title": "PrivRAG: A Privacy-Preserving Retrieval-Augmented Generation Protocol for LLM-Driven Voice Assistants",
+    "authors": "Yuan Chang, Siran Wang, Tom H. Luan, Yuntao Wang, Zhou Su",
+    "publish": "2025 IEEE 24th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "url": "https://doi.org/10.1109/trustcom66490.2025.00122",
+    "source": "IEEE",
+    "abstract": "Retrieval-based augmentation enhances the capabilities of large language models (LLMs) by incorporating external knowledge into the response generation process. However, existing retrieval-augmented frameworks often lack fine-grained access control and risk exposing sensitive content, particularly in voice-based interactive systems where queries are open-ended and personalized. This risk becomes especially pronounced when the retrieved information includes proprietary or user-specific data. To mitigate these challenges, we propose PrivRAG, a privacy-preserving retrieval protocol that integrates access control and response-level privacy protection throughout the generation pipeline. Specifically, each document in the knowledge base is assigned an attribute-based access policy represented as a logical tree, ensuring that only authorized users can retrieve relevant content. The interactions between user and LLM-driven assistant is modeled as a multi-turn process, where user attributes are inferred through probabilistic reasoning over observed responses. Based on these inferred attributes, the system selectively accesses permitted knowledge segments and generates responses accordingly. To further protect sensitive content, the response is transformed using a formal privacy-preserving mechanism that combines calibrated noise injection for numerical fields with semantic generalization for textual entities. Empirical evaluations on synthetic interactions demonstrate that PrivRAG effectively enforces access control while preserving user privacy, with minimal degradation in response quality across voice-based use cases."
+  }
+]
