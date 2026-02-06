@@ -1,0 +1,209 @@
+[
+  {
+    "date": "2026-02-05",
+    "title": "GUARDIAN: Safety Filtering for Systems with Perception Models Subject to Adversarial Attacks",
+    "authors": "Nicholas Rober, Alex Rose, Jonathan P. How",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06026v1",
+    "source": "arXiv",
+    "abstract": "Safety filtering is an effective method for enforcing constraints in safety-critical systems, but existing methods typically assume perfect state information. This limitation is especially problematic for systems that rely on neural network (NN)-based state estimators, which can be highly sensitive to noise and adversarial input perturbations. We address these problems by introducing GUARDIAN: Guaranteed Uncertainty-Aware Reachability Defense against Adversarial INterference, a safety filtering framework that provides formal safety guarantees for systems with NN-based state estimators. At runtime, GUARDIAN uses neural network verification tools to provide guaranteed bounds on the system's state estimate given possible perturbations to its observation. It then uses a modified Hamilton-Jacobi reachability formulation to construct a safety filter that adjusts the nominal control input based on the verified state bounds and safety constraints. The result is an uncertainty-aware filter that ensures safety despite the system's reliance on an NN estimator with noisy, possibly adversarial, input observations. Theoretical analysis and numerical experiments demonstrate that GUARDIAN effectively defends systems against adversarial attacks that would otherwise lead to a violation of safety constraints."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Compound Deception in Elite Peer Review: A Failure Mode Taxonomy of 100 Fabricated Citations at NeurIPS 2025",
+    "authors": "Samar Ansari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05930v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly used in academic writing workflows, yet they frequently hallucinate by generating citations to sources that do not exist. This study analyzes 100 AI-generated hallucinated citations that appeared in papers accepted by the 2025 Conference on Neural Information Processing Systems (NeurIPS), one of the world's most prestigious AI conferences. Despite review by 3-5 expert researchers per paper, these fabricated citations evaded detection, appearing in 53 published papers (approx. 1% of all accepted papers). We develop a five-category taxonomy that classifies hallucinations by their failure mode: Total Fabrication (66%), Partial Attribute Corruption (27%), Identifier Hijacking (4%), Placeholder Hallucination (2%), and Semantic Hallucination (1%). Our analysis reveals a critical finding: every hallucination (100%) exhibited compound failure modes. The distribution of secondary characteristics was dominated by Semantic Hallucination (63%) and Identifier Hijacking (29%), which often appeared alongside Total Fabrication to create a veneer of plausibility and false verifiability. These compound structures exploit multiple verification heuristics simultaneously, explaining why peer review fails to detect them. The distribution exhibits a bimodal pattern: 92% of contaminated papers contain 1-2 hallucinations (minimal AI use) while 8% contain 4-13 hallucinations (heavy reliance). These findings demonstrate that current peer review processes do not include effective citation verification and that the problem extends beyond NeurIPS to other major conferences, government reports, and professional consulting. We propose mandatory automated citation verification at submission as an implementable solution to prevent fabricated citations from becoming normalized in scientific literature."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Verification of the Implicit World Model in a Generative Model via Adversarial Sequences",
+    "authors": "András Balogh, Márk Jelasity",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05903v1",
+    "source": "arXiv",
+    "abstract": "Generative sequence models are typically trained on sample sequences from natural or formal languages. It is a crucial question whether -- or to what extent -- sample-based training is able to capture the true structure of these languages, often referred to as the ``world model''. Theoretical results indicate that we can hope for soundness at best, that is, generating valid sequences, but not necessarily all of them. However, it is still important to have practical tools that are able to verify whether a given sequence model is sound. In this study, we focus on chess, as it is a domain that provides enough complexity while having a simple rule-based world model. We propose adversarial sequence generation for verifying the soundness of the sequence model. Our adversaries generate valid sequences so as to force the sequence model to generate an invalid next move prediction. Apart from the falsification of soundness, this method is also suitable for a more fine-grained analysis of the failure modes and the effects of different choices during training. To demonstrate this, we propose a number of methods for adversarial sequence generation and evaluate the approach on a large set of chess models. We train models on random as well as high-quality chess games, using several training recipes. We find that none of the models are sound, but some training techniques and dataset choices are able to improve soundness remarkably. We also investigate the potential application of board state probes in both our training and attack methods. Our findings indicate that the extracted board states have no causal role in next token prediction in most of the models."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "The Case of the Mysterious Citations",
+    "authors": "Amanda Bienz, Carl Pearson, Simon Garcia de Gonzalo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05867v1",
+    "source": "arXiv",
+    "abstract": "Mysterious citations are routinely appearing in peer-reviewed publications throughout the scientific community. In this paper, we developed an automated pipeline and examine the proceedings of four major high-performance computing conferences, comparing the accuracy of citations between the 2021 and 2025 proceedings. While none of the 2021 papers contained mysterious citations, every 2025 proceeding did, impacting 2-6\\% of published papers. In addition, we observe a sharp rise in paper title and authorship errors, motivating the need for stronger citation-verification practice. No author within our dataset acknowledged using AI to generate citations even though all four conference policies required it, indicating current policies are insufficient."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "RocqSmith: Can Automatic Optimization Forge Better Proof Agents?",
+    "authors": "Andrei Kozyrev, Nikita Khramov, Denis Lochmelis, Valerio Morelli, Gleb Solovev, Anton Podkopaev",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05762v1",
+    "source": "arXiv",
+    "abstract": "This work studies the applicability of automatic AI agent optimization methods to real-world agents in formal verification settings, focusing on automated theorem proving in Rocq as a representative and challenging domain. We evaluate how different automatic agent optimizers perform when applied to the task of optimizing a Rocq proof-generation agent, and assess whether parts of the fine-grained tuning of agentic systems, such as prompt design, contextual knowledge, and control strategies, can be automated. Our results show that while several optimizers yield measurable improvements, simple few-shot bootstrapping is the most consistently effective; however, none of the studied methods matches the performance of a carefully engineered state-of-the-art proof agent."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Toward Quantum-Safe Software Engineering: A Vision for Post-Quantum Cryptography Migration",
+    "authors": "Lei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05759v1",
+    "source": "arXiv",
+    "abstract": "The quantum threat to cybersecurity has accelerated the standardization of Post-Quantum Cryptography (PQC). Migrating legacy software to these quantum-safe algorithms is not a simple library swap, but a new software engineering challenge: existing vulnerability detection, refactoring, and testing tools are not designed for PQC's probabilistic behavior, side-channel sensitivity, and complex performance trade-offs. To address these challenges, this paper outlines a vision for a new class of tools and introduces the Automated Quantum-safe Adaptation (AQuA) framework, with a three-pillar agenda for PQC-aware detection, semantic refactoring, and hybrid verification, thereby motivating Quantum-Safe Software Engineering (QSSE) as a distinct research direction."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Mitigating Hallucination in Financial Retrieval-Augmented Generation via Fine-Grained Knowledge Verification",
+    "authors": "Taoye Yin, Haoyuan Hu, Yaxin Fan, Xinhao Chen, Xinya Wu, Kai Deng, Kezun Zhang, Feng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05723v1",
+    "source": "arXiv",
+    "abstract": "In financial Retrieval-Augmented Generation (RAG) systems, models frequently rely on retrieved documents to generate accurate responses due to the time-sensitive nature of the financial domain. While retrieved documents help address knowledge gaps, model-generated responses still suffer from hallucinations that contradict the retrieved information. To mitigate this inconsistency, we propose a Reinforcement Learning framework enhanced with Fine-grained Knowledge Verification (RLFKV). Our method decomposes financial responses into atomic knowledge units and assesses the correctness of each unit to compute the fine-grained faithful reward. This reward offers more precise optimization signals, thereby improving alignment with the retrieved documents. Additionally, to prevent reward hacking (e.g., overly concise replies), we incorporate an informativeness reward that encourages the policy model to retain at least as many knowledge units as the base model. Experiments conducted on the public Financial Data Description (FDD) task and our newly proposed FDD-ANT dataset demonstrate consistent improvements, confirming the effectiveness of our approach."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "A Dual-Loop Agent Framework for Automated Vulnerability Reproduction",
+    "authors": "Bin Liu, Yanjie Zhao, Zhenpeng Chen, Guoai Xu, Haoyu Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05721v1",
+    "source": "arXiv",
+    "abstract": "Automated vulnerability reproduction from CVE descriptions requires generating executable Proof-of-Concept (PoC) exploits and validating them in target environments. This process is critical in software security research and practice, yet remains time-consuming and demands specialized expertise when performed manually. While LLM agents show promise for automating this task, existing approaches often conflate exploring attack directions with fixing implementation details, which leads to unproductive debugging loops when reproduction fails. To address this, we propose Cve2PoC, an LLM-based dual-loop agent framework following a plan-execute-evaluate paradigm. The Strategic Planner analyzes vulnerability semantics and target code to produce structured attack plans. The Tactical Executor generates PoC code and validates it through progressive verification. The Adaptive Refiner evaluates execution results and routes failures to different loops: the \\textit{Tactical Loop} for code-level refinement, while the \\textit{Strategic Loop} for attack strategy replanning. This dual-loop design enables the framework to escape ineffective debugging by matching remediation to failure type. Evaluation on two benchmarks covering 617 real-world vulnerabilities demonstrates that Cve2PoC achieves 82.9\\% and 54.3\\% reproduction success rates on SecBench.js and PatchEval, respectively, outperforming the best baseline by 11.3\\% and 20.4\\%. Human evaluation confirms that generated PoCs achieve comparable code quality to human-written exploits in readability and reusability."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "SEAL: Symbolic Execution with Separation Logic (Competition Contribution)",
+    "authors": "Tomáš Brablec, Tomáš Dacík, Tomáš Vojnar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05703v1",
+    "source": "arXiv",
+    "abstract": "SEAL is a static analyser for the verification of programs that manipulate unbounded linked data structures. It is based on separation logic to represent abstract memory states and, unlike other separation-logic-based approaches, it employs a general-purpose separation logic solver Astral for satisfiability and entailment checking, which itself is based on translation to SMT. This design results in a modular architecture intended to be easier to extend and to combine with reasoning in other theories. Although still a prototype, SEAL achieved competitive results in the LinkedLists base category and was one of only four analysers capable of verifying programs with unbounded lists. We believe that the tool's extensibility, combined with further development, can lead to significant improvements in future competitions."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Time-Complexity Characterization of NIST Lightweight Cryptography Finalists",
+    "authors": "Najmul Hasan, Prashanth BusiReddyGari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05641v1",
+    "source": "arXiv",
+    "abstract": "Lightweight cryptography is becoming essential as emerging technologies in digital identity systems and Internet of Things verification continue to demand strong cryptographic assurance on devices with limited processing power, memory, and energy resources. As these technologies move into routine use, they demand cryptographic primitives that maintain strong security and deliver predictable performance through clear theoretical models of time complexity. Although NIST's lightweight cryptography project provides empirical evaluations of the ten finalist algorithms, a unified theoretical understanding of their time-complexity behavior remains absent. This work introduces a symbolic model that decomposes each scheme into initialization, data-processing, and finalization phases, enabling formal time-complexity derivation for all ten finalists. The results clarify how design parameters shape computational scaling on constrained mobile and embedded environments. The framework provides a foundation needed to distinguish algorithmic efficiency and guides the choice of primitives capable of supporting security systems in constrained environments."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Three-Dimensional Spiral Beam Injection:Design Principles and Experimental Verification",
+    "authors": "Hiromi Iinuma, Ryota Matsushita, Muhammad Abdul Rehman, Hisayoshi Nakayama, Satoshi Ohsawa, Kazuro Furukawa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05518v1",
+    "source": "arXiv",
+    "abstract": "A proof of principle experiment of Three-dimensional spiral beam injection scheme has been carried out. This injection scheme requires a strongly x-y coupled beam to meet magnetic field distribution through solenoid magnet fringe field. In this paper, we introduce outline of experimental setup, results of x-y coupling adjustment with DC electron beam of 80 keV. The results of this experiment will be evaluated and improvements for actual operation will be discussed."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Statistical Verification of Medium-Access Parameterization for Power-Grid Edge Ad Hoc Sensor Networks",
+    "authors": "Haitian Wang, Yiren Wang, Xinyu Wang, Zichen Geng, Xian Zhang, Yihao Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05510v1",
+    "source": "arXiv",
+    "abstract": "The widespread deployment of power grid ad hoc sensor networks based on IEEE 802.15.4 raises reliability challenges when nodes selfishly adapt CSMA/CA parameters to maximize individual performance. Such behavior degrades reliability, energy efficiency, and compliance with strict grid constraints. Existing analytical and simulation approaches often fail to rigorously evaluate configurations under asynchronous, event-driven, and resource-limited conditions. We develop a verification framework that integrates stochastic timed hybrid automata with statistical model checking (SMC) with confidence bounds to formally assess CSMA/CA parameterizations under grid workloads. By encoding node- and system-level objectives in temporal logic and automating protocol screening via large-scale statistical evaluation, the method certifies Nash equilibrium strategies that remain robust to unilateral deviations. In a substation-scale scenario, the certified equilibrium improves utility from 0.862 to 0.914 and raises the delivery ratio from 89.5% to 93.2% when compared with an aggressive tuning baseline. Against a delivery-oriented baseline, it reduces mean per-cycle energy from 152.8 mJ to 149.2 mJ while maintaining comparable delivery performance. Certified configurations satisfy latency, reliability, and energy constraints with robustness coefficients above 0.97 and utility above 0.91."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "SDFP: Speculative Decoding with FIT-Pruned Models for Training-Free and Plug-and-Play LLM Acceleration",
+    "authors": "Hanyu Wei, Zunhai Su, Peng Lu, Chao Li, Spandan Tiwari, Ashish Sirasao, Yuhan Dong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05499v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) underpin interactive multimedia applications such as captioning, retrieval, recommendation, and creative content generation, yet their autoregressive decoding incurs substantial latency. Speculative decoding reduces latency using a lightweight draft model, but deployment is often limited by the cost and complexity of acquiring, tuning, and maintaining an effective draft model. Recent approaches usually require auxiliary training or specialization, and even training-free methods incur costly search or optimization. We propose SDFP, a fully training-free and plug-and-play framework that builds the draft model via Fisher Information Trace (FIT)-based layer pruning of a given LLM. Using layer sensitivity as a proxy for output perturbation, SDFP removes low-impact layers to obtain a compact draft while preserving compatibility with the original model for standard speculative verification. SDFP needs no additional training, hyperparameter tuning, or separately maintained drafts, enabling rapid, deployment-friendly draft construction. Across benchmarks, SDFP delivers 1.32x-1.5x decoding speedup without altering the target model's output distribution, supporting low-latency multimedia applications."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "IESR:Efficient MCTS-Based Modular Reasoning for Text-to-SQL with Large Language Models",
+    "authors": "Tao Liu, Jiafan Lu, Bohan Yu, Pengcheng Wu, Liu Haixin, Guoyu Xu, Li Xiangheng, Lixiao Li, Jiaming Hou, Zhao Shijun, Xinglin Lyu, Kunli Zhang, Yuxiang Jia, Hongyin Zan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05385v1",
+    "source": "arXiv",
+    "abstract": "Text-to-SQL is a key natural language processing task that maps natural language questions to SQL queries, enabling intuitive interaction with web-based databases. Although current methods perform well on benchmarks like BIRD and Spider, they struggle with complex reasoning, domain knowledge, and hypothetical queries, and remain costly in enterprise deployment. To address these issues, we propose a framework named IESR(Information Enhanced Structured Reasoning) for lightweight large language models: (i) leverages LLMs for key information understanding and schema linking, and decoupling mathematical computation and SQL generation, (ii) integrates a multi-path reasoning mechanism based on Monte Carlo Tree Search (MCTS) with majority voting, and (iii) introduces a trajectory consistency verification module with a discriminator model to ensure accuracy and consistency. Experimental results demonstrate that IESR achieves state-of-the-art performance on the complex reasoning benchmark LogicCat (24.28 EX) and the Archer dataset (37.28 EX) using only compact lightweight models without fine-tuning. Furthermore, our analysis reveals that current coder models exhibit notable biases and deficiencies in physical knowledge, mathematical computation, and common-sense reasoning, highlighting important directions for future research. We released code at https://github.com/Ffunkytao/IESR-SLM."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Copyright Detective: A Forensic System to Evidence LLMs Flickering Copyright Leakage Risks",
+    "authors": "Guangwei Zhang, Jianing Zhu, Cheng Qian, Neil Gong, Rada Mihalcea, Zhaozhuo Xu, Jingrui He, Jiaqi Ma, Yun Huang, Chaowei Xiao, Bo Li, Ahmed Abbasi, Dongwon Lee, Heng Ji, Denghui Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05252v1",
+    "source": "arXiv",
+    "abstract": "We present Copyright Detective, the first interactive forensic system for detecting, analyzing, and visualizing potential copyright risks in LLM outputs. The system treats copyright infringement versus compliance as an evidence discovery process rather than a static classification task due to the complex nature of copyright law. It integrates multiple detection paradigms, including content recall testing, paraphrase-level similarity analysis, persuasive jailbreak probing, and unlearning verification, within a unified and extensible framework. Through interactive prompting, response collection, and iterative workflows, our system enables systematic auditing of verbatim memorization and paraphrase-level leakage, supporting responsible deployment and transparent evaluation of LLM copyright risks even with black-box access."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Automatic Cognitive Task Generation for In-Situ Evaluation of Embodied Agents",
+    "authors": "Xinyi He, Ying Yang, Chuanjian Fu, Sihan Guo, Songchun Zhu, Lifeng Fan, Zhenliang Zhang, Yujia Peng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05249v1",
+    "source": "arXiv",
+    "abstract": "As general intelligent agents are poised for widespread deployment in diverse households, evaluation tailored to each unique unseen 3D environment has become a critical prerequisite. However, existing benchmarks suffer from severe data contamination and a lack of scene specificity, inadequate for assessing agent capabilities in unseen settings. To address this, we propose a dynamic in-situ task generation method for unseen environments inspired by human cognition. We define tasks through a structured graph representation and construct a two-stage interaction-evolution task generation system for embodied agents (TEA). In the interaction stage, the agent actively interacts with the environment, creating a loop between task execution and generation that allows for continuous task generation. In the evolution stage, task graph modeling allows us to recombine and reuse existing tasks to generate new ones without external data. Experiments across 10 unseen scenes demonstrate that TEA automatically generated 87,876 tasks in two cycles, which human verification confirmed to be physically reasonable and encompassing essential daily cognitive capabilities. Benchmarking SOTA models against humans on our in-situ tasks reveals that models, despite excelling on public benchmarks, perform surprisingly poorly on basic perception tasks, severely lack 3D interaction awareness and show high sensitivity to task types in reasoning. These sobering findings highlight the necessity of in-situ evaluation before deploying agents into real-world human environments."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "MobileManiBench: Simplifying Model Verification for Mobile Manipulation",
+    "authors": "Wenbo Wang, Fangyun Wei, QiXiu Li, Xi Chen, Yaobo Liang, Chang Xu, Jiaolong Yang, Baining Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05233v1",
+    "source": "arXiv",
+    "abstract": "Vision-language-action models have advanced robotic manipulation but remain constrained by reliance on the large, teleoperation-collected datasets dominated by the static, tabletop scenes. We propose a simulation-first framework to verify VLA architectures before real-world deployment and introduce MobileManiBench, a large-scale benchmark for mobile-based robotic manipulation. Built on NVIDIA Isaac Sim and powered by reinforcement learning, our pipeline autonomously generates diverse manipulation trajectories with rich annotations (language instructions, multi-view RGB-depth-segmentation images, synchronized object/robot states and actions). MobileManiBench features 2 mobile platforms (parallel-gripper and dexterous-hand robots), 2 synchronized cameras (head and right wrist), 630 objects in 20 categories, 5 skills (open, close, pull, push, pick) with over 100 tasks performed in 100 realistic scenes, yielding 300K trajectories. This design enables controlled, scalable studies of robot embodiments, sensing modalities, and policy architectures, accelerating research on data efficiency and generalization. We benchmark representative VLA models and report insights into perception, reasoning, and control in complex simulated environments."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Traceable Cross-Source RAG for Chinese Tibetan Medicine Question Answering",
+    "authors": "Fengxian Chen, Zhilong Tao, Jiaxuan Li, Yunlong Li, Qingguo Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05195v1",
+    "source": "arXiv",
+    "abstract": "Retrieval-augmented generation (RAG) promises grounded question answering, yet domain settings with multiple heterogeneous knowledge bases (KBs) remain challenging. In Chinese Tibetan medicine, encyclopedia entries are often dense and easy to match, which can dominate retrieval even when classics or clinical papers provide more authoritative evidence. We study a practical setting with three KBs (encyclopedia, classics, and clinical papers) and a 500-query benchmark (cutoff $K{=}5$) covering both single-KB and cross-KB questions. We propose two complementary methods to improve traceability, reduce hallucinations, and enable cross-KB verification. First, DAKS performs KB routing and budgeted retrieval to mitigate density-driven bias and to prioritize authoritative sources when appropriate. Second, we use an alignment graph to guide evidence fusion and coverage-aware packing, improving cross-KB evidence coverage without relying on naive concatenation. All answers are generated by a lightweight generator, \\textsc{openPangu-Embedded-7B}. Experiments show consistent gains in routing quality and cross-KB evidence coverage, with the full system achieving the best CrossEv@5 while maintaining strong faithfulness and citation correctness."
+  },
+  {
+    "date": "2026-02-04",
+    "title": "Rule-Based Spatial Mixture-of-Experts U-Net for Explainable Edge Detection",
+    "authors": "Bharadwaj Dogga, Kaaustaaub Shankar, Gibin Raju, Wilhelm Louw, Kelly Cohen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05100v1",
+    "source": "arXiv",
+    "abstract": "Deep learning models like U-Net and its variants, have established state-of-the-art performance in edge detection tasks and are used by Generative AI services world-wide for their image generation models. However, their decision-making processes remain opaque, operating as \"black boxes\" that obscure the rationale behind specific boundary predictions. This lack of transparency is a critical barrier in safety-critical applications where verification is mandatory. To bridge the gap between high-performance deep learning and interpretable logic, we propose the Rule-Based Spatial Mixture-of-Experts U-Net (sMoE U-Net). Our architecture introduces two key innovations: (1) Spatially-Adaptive Mixture-of-Experts (sMoE) blocks integrated into the decoder skip connections, which dynamically gate between \"Context\" (smooth) and \"Boundary\" (sharp) experts based on local feature statistics; and (2) a Takagi-Sugeno-Kang (TSK) Fuzzy Head that replaces the standard classification layer. This fuzzy head fuses deep semantic features with heuristic edge signals using explicit IF-THEN rules. We evaluate our method on the BSDS500 benchmark, achieving an Optimal Dataset Scale (ODS) F-score of 0.7628, effectively matching purely deep baselines like HED (0.7688) while outperforming the standard U-Net (0.7437). Crucially, our model provides pixel-level explainability through \"Rule Firing Maps\" and \"Strategy Maps,\" allowing users to visualize whether an edge was detected due to strong gradients, high semantic confidence, or specific logical rule combinations."
+  },
+  {
+    "date": "2026-02-04",
+    "title": "E-Globe: Scalable $ε$-Global Verification of Neural Networks via Tight Upper Bounds and Pattern-Aware Branching",
+    "authors": "Wenting Li, Saif R. Kazi, Russell Bent, Duo Zhou, Huan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.05068v1",
+    "source": "arXiv",
+    "abstract": "Neural networks achieve strong empirical performance, but robustness concerns still hinder deployment in safety-critical applications. Formal verification provides robustness guarantees, but current methods face a scalability-completeness trade-off. We propose a hybrid verifier in a branch-and-bound (BaB) framework that efficiently tightens both upper and lower bounds until an $ε-$global optimum is reached or early stop is triggered. The key is an exact nonlinear program with complementarity constraints (NLP-CC) for upper bounding that preserves the ReLU input-output graph, so any feasible solution yields a valid counterexample and enables rapid pruning of unsafe subproblems. We further accelerate verification with (i) warm-started NLP solves requiring minimal constraint-matrix updates and (ii) pattern-aligned strong branching that prioritizes splits most effective at tightening relaxations. We also provide conditions under which NLP-CC upper bounds are tight. Experiments on MNIST and CIFAR-10 show markedly tighter upper bounds than PGD across perturbation radii spanning up to three orders of magnitude, fast per-node solves in practice, and substantial end-to-end speedups over MIP-based verification, amplified by warm-starting, GPU batching, and pattern-aligned branching."
+  },
+  {
+    "date": "2026-2-5",
+    "title": "Clean Code, Better Models: Enhancing LLM Performance with Smell-Cleaned Dataset",
+    "authors": "Zhipeng Xue, Xiaoting Zhang, Zhipeng Gao, Xing Hu, Shan Gao, Xin Xia, Shanping Li",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3793252",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-5",
+    "title": "Assessing Student Acceptance of an LLM-Integrated VR Public Speaking Simulation via Extended UTAUT",
+    "authors": "Dixuan Cui, Anya Hommadova Lu, Shengjie Yao, Minsoo Choi, Christos Mousas",
+    "publish": "Proceedings of the 2025 20th ACM SIGGRAPH International Conference on Virtual-Reality Continuum and its Applications in Industry",
+    "url": "https://doi.org/10.1145/3779232.3779265",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-5",
+    "title": "Embedded MPC with CNN Verification for Defect-Preventive Control in FDM 3D Printing",
+    "authors": "Suliman Badour, Martin Novák",
+    "publish": "2025 13th International Conference on Control, Mechatronics and Automation (ICCMA)",
+    "url": "https://doi.org/10.1109/iccma67641.2025.11369538",
+    "source": "IEEE",
+    "abstract": "We present an embedded, closed-loop controller that prevents defects in fused-deposition modeling (FDM) by combining a probabilistic defect estimator with a vision verifier and a constraint-handling model predictive controller (MPC). A 10-D multi-sensor feature vector drives a logistic Defect-Probability Estimator (DPE) refreshed every 200ms; when the probability exceeds a threshold, a lightweight YOLOv4-tiny Vision Anomaly Verifier (VAV) refines high-risk events, and an OSQP-based MPC computes bounded adjustments to nozzle/bed temperatures, speed, flow, and fan duty.We model thermo–extrusion dynamics as a disturbed linear system and enforce tightened constraints to guarantee recursive feasibility under bounded disturbances. On a Raspberry Pi 5, the full loop meets a 200ms budget with mean latency 132ms (6ms CI), 99th percentile 160ms, and worst case 183ms. When evaluated on 1000 PLA prints on a Prusa i3 MK3S, defects dropped from 200 to 80 jobs (20% to 8%), and flawless completions rose from 650 to 880 (65% to 88%). The predictive accuracy reached 91.2% with monthly adaptive retraining. The material savings are about 1kg per 100 jobs (up to 2kg; approximately 1–2 spools), which can recoup the $120–$150 sensor cost within 3–12 months depending on failure rates. The results indicate that multi-sensor prediction with risk-gated, CNN-assisted robust MPC enables reliable, low-cost quality control for FDM."
+  }
+]
