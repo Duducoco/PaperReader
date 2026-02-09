@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-02-06",
+    "title": "ScaleEnv: Scaling Environment Synthesis from Scratch for Generalist Interactive Tool-Use Agent Training",
+    "authors": "Dunwei Tu, Hongyan Hao, Hansi Yang, Yihao Chen, Yi-Kai Zhang, Zhikang Xia, Yu Yang, Yueqing Sun, Xingchen Liu, Furao Shen, Qi Gu, Hui Su, Xunliang Cai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06820v1",
+    "source": "arXiv",
+    "abstract": "Training generalist agents capable of adapting to diverse scenarios requires interactive environments for self-exploration. However, interactive environments remain critically scarce, and existing synthesis methods suffer from significant limitations regarding environmental diversity and scalability. To address these challenges, we introduce ScaleEnv, a framework that constructs fully interactive environments and verifiable tasks entirely from scratch. Specifically, ScaleEnv ensures environment reliability through procedural testing, and guarantees task completeness and solvability via tool dependency graph expansion and executable action verification. By enabling agents to learn through exploration within ScaleEnv, we demonstrate significant performance improvements on unseen, multi-turn tool-use benchmarks such as $τ^2$-Bench and VitaBench, highlighting strong generalization capabilities. Furthermore, we investigate the relationship between increasing number of domains and model generalization performance, providing empirical evidence that scaling environmental diversity is critical for robust agent learning."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Bridging 6G IoT and AI: LLM-Based Efficient Approach for Physical Layer's Optimization Tasks",
+    "authors": "Ahsan Mehmood, Naveed Ul Hassan, Ghassan M. Kraidy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06819v1",
+    "source": "arXiv",
+    "abstract": "This paper investigates the role of large language models (LLMs) in sixth-generation (6G) Internet of Things (IoT) networks and proposes a prompt-engineering-based real-time feedback and verification (PE-RTFV) framework that perform physical-layer's optimization tasks through an iteratively process. By leveraging the naturally available closed-loop feedback inherent in wireless communication systems, PE-RTFV enables real-time physical-layer optimization without requiring model retraining. The proposed framework employs an optimization LLM (O-LLM) to generate task-specific structured prompts, which are provided to an agent LLM (A-LLM) to produce task-specific solutions. Utilizing real-time system feedback, the O-LLM iteratively refines the prompts to guide the A-LLM toward improved solutions in a gradient-descent-like optimization process. We test PE-RTFV approach on wireless-powered IoT testbed case study on user-goal-driven constellation design through semantically solving rate-energy (RE)-region optimization problem which demonstrates that PE-RTFV achieves near-genetic-algorithm performance within only a few iterations, validating its effectiveness for complex physical-layer optimization tasks in resource-constrained IoT networks."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Generating Data-Driven Reasoning Rubrics for Domain-Adaptive Reward Modeling",
+    "authors": "Kate Sanders, Nathaniel Weir, Sapana Chaudhary, Kaj Bostrom, Huzefa Rangwala",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06795v1",
+    "source": "arXiv",
+    "abstract": "An impediment to using Large Language Models (LLMs) for reasoning output verification is that LLMs struggle to reliably identify errors in thinking traces, particularly in long outputs, domains requiring expert knowledge, and problems without verifiable rewards. We propose a data-driven approach to automatically construct highly granular reasoning error taxonomies to enhance LLM-driven error detection on unseen reasoning traces. Our findings indicate that classification approaches that leverage these error taxonomies, or \"rubrics\", demonstrate strong error identification compared to baseline methods in technical domains like coding, math, and chemical engineering. These rubrics can be used to build stronger LLM-as-judge reward functions for reasoning model training via reinforcement learning. Experimental results show that these rewards have the potential to improve models' task accuracy on difficult domains over models trained by general LLMs-as-judges by +45%, and approach performance of models trained by verifiable rewards while using as little as 20% as many gold labels. Through our approach, we extend the usage of reward rubrics from assessing qualitative model behavior to assessing quantitative model correctness on tasks typically learned via RLVR rewards. This extension opens the door for teaching models to solve complex technical problems without a full dataset of gold labels, which are often highly costly to procure."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Optimal Abstractions for Verifying Properties of Kolmogorov-Arnold Networks (KANs)",
+    "authors": "Noah Schwartz, Chandra Kanth Nagesh, Sriram Sankaranarayanan, Ramneet Kaur, Tuhin Sahai, Susmit Jha",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06737v1",
+    "source": "arXiv",
+    "abstract": "We present a novel approach for verifying properties of Kolmogorov-Arnold Networks (KANs), a class of neural networks characterized by nonlinear, univariate activation functions typically implemented as piecewise polynomial splines or Gaussian processes. Our method creates mathematical ``abstractions'' by replacing each KAN unit with a piecewise affine (PWA) function, providing both local and global error estimates between the original network and its approximation. These abstractions enable property verification by encoding the problem as a Mixed Integer Linear Program (MILP), determining whether outputs satisfy specified properties when inputs belong to a given set. A critical challenge lies in balancing the number of pieces in the PWA approximation: too many pieces add binary variables that make verification computationally intractable, while too few pieces create excessive error margins that yield uninformative bounds. Our key contribution is a systematic framework that exploits KAN structure to find optimal abstractions. By combining dynamic programming at the unit level with a knapsack optimization across the network, we minimize the total number of pieces while guaranteeing specified error bounds. This approach determines the optimal approximation strategy for each unit while maintaining overall accuracy requirements. Empirical evaluation across multiple KAN benchmarks demonstrates that the upfront analysis costs of our method are justified by superior verification results."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "GhostCite: A Large-Scale Analysis of Citation Validity in the Age of Large Language Models",
+    "authors": "Zuyao Xu, Yuqi Qiu, Lu Sun, FaSheng Miao, Fubin Wu, Xinyi Wang, Xiang Li, Haozhe Lu, ZhengZe Zhang, Yuxin Hu, Jialu Li, Jin Luo, Feng Zhang, Rui Luo, Xinran Liu, Yingxian Li, Jiaji Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06718v1",
+    "source": "arXiv",
+    "abstract": "Citations provide the basis for trusting scientific claims; when they are invalid or fabricated, this trust collapses. With the advent of Large Language Models (LLMs), this risk has intensified: LLMs are increasingly used for academic writing, yet their tendency to fabricate citations (``ghost citations'') poses a systemic threat to citation validity. To quantify this threat and inform mitigation, we develop CiteVerifier, an open-source framework for large-scale citation verification, and conduct the first comprehensive study of citation validity in the LLM era through three experiments built on it. We benchmark 13 state-of-the-art LLMs on citation generation across 40 research domains, finding that all models hallucinate citations at rates from 14.23\\% to 94.93\\%, with significant variation across research domains. Moreover, we analyze 2.2 million citations from 56,381 papers published at top-tier AI/ML and Security venues (2020--2025), confirming that 1.07\\% of papers contain invalid or fabricated citations (604 papers), with an 80.9\\% increase in 2025 alone. Furthermore, we survey 97 researchers and analyze 94 valid responses after removing 3 conflicting samples, revealing a critical ``verification gap'': 41.5\\% of researchers copy-paste BibTeX without checking and 44.4\\% choose no-action responses when encountering suspicious references; meanwhile, 76.7\\% of reviewers do not thoroughly check references and 80.0\\% never suspect fake citations. Our findings reveal an accelerating crisis where unreliable AI tools, combined with inadequate human verification by researchers and insufficient peer review scrutiny, enable fabricated citations to contaminate the scientific record. We propose interventions for researchers, venues, and tool developers to protect citation integrity."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "The Law of Task-Achieving Body Motion: Axiomatizing Success of Robot Manipulation Actions",
+    "authors": "Malte Huerkamp, Jonas Dech, Michael Beetz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06572v1",
+    "source": "arXiv",
+    "abstract": "Autonomous agents that perform everyday manipulation actions need to ensure that their body motions are semantically correct with respect to a task request, causally effective within their environment, and feasible for their embodiment. In order to enable robots to verify these properties, we introduce the Law of Task-Achieving Body Motion as an axiomatic correctness specification for body motions. To that end we introduce scoped Task-Environment-Embodiment (TEE) classes that represent world states as Semantic Digital Twins (SDTs) and define applicable physics models to decompose task achievement into three predicates: SatisfiesRequest for semantic request satisfaction over SDT state evolution; Causes for causal sufficiency under the scoped physics model; and CanPerform for safety and feasibility verification at the embodiment level. This decomposition yields a reusable, implementation-independent interface that supports motion synthesis and the verification of given body motions. It also supports typed failure diagnosis (semantic, causal, embodiment and out-of-scope), feasibility across robots and environments, and counterfactual reasoning about robot body motions. We demonstrate the usability of the law in practice by instantiating it for articulated container manipulation in kitchen environments on three contrasting mobile manipulation platforms"
+  },
+  {
+    "date": "2026-02-06",
+    "title": "The Window Dilemma: Why Concept Drift Detection is Ill-Posed",
+    "authors": "Brandon Gower-Winter, Misja Groen, Georg Krempl",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06456v1",
+    "source": "arXiv",
+    "abstract": "Non-stationarity of an underlying data generating process that leads to distributional changes over time is a key characteristic of Data Streams. This phenomenon, commonly referred to as Concept Drift, has been intensively studied, and Concept Drift Detectors have been established as a class of methods for detecting such changes (drifts). For the most part, Drift Detectors compare regions (windows) of the data stream and detect drift if those windows are sufficiently dissimilar. In this work, we introduce the Window Dilemma, an observation that perceived drift is a product of windowing and not necessarily the underlying data generating process. Additionally, we highlight that drift detection is ill-posed, primarily because verification of drift events are implausible in practice. We demonstrate these contributions first by an illustrative example, followed by empirical comparisons of drift detectors against a variety of alternative adaptation strategies. Our main finding is that traditional batch learning techniques often perform better than their drift-aware counterparts further bringing into question the purpose of detectors in Stream Classification."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Uniqueness is Separation",
+    "authors": "Liam O'Connor, Pilar Selene Linares Arevalo, Christine Rizkallah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06386v1",
+    "source": "arXiv",
+    "abstract": "Value independence is enormously beneficial for reasoning about software systems at scale. These benefits carry over into the world of formal verification. Reasoning about programs algebraically is a simple affair in a proof assistant, whereas programs with unconstrained mutation necessitate much more complex techniques, such as Separation Logic, where invariants about memory safety, aliasing, and state changes must be established by manual proof. Uniqueness type systems allow programs to be compiled to code that uses mutation for efficiency, while retaining a semantics that enjoys value independence for reasoning. The restrictions of these type systems, however, are often too onerous for realistic software. Thus, most uniqueness type systems include some \"escape hatch\" where the benefits of value independence for reasoning are lost, but the restrictions of uniqueness types are lifted. To formally verify a system with such mixed guarantees, the value independence guarantees from uniqueness types must be expressed in terms of imperative, mutable semantics. In other words, we ought to express value independence as an assertion in Separation Logic."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "ReBeCA: Unveiling Interpretable Behavior Hierarchy behind the Iterative Self-Reflection of Language Models with Causal Analysis",
+    "authors": "Tianqiang Yan, Sihan Shang, Yuheng Li, Song Qiu, Hao Peng, Wenjian Luo, Jue Xie, Lizhen Qu, Yuan Gao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06373v1",
+    "source": "arXiv",
+    "abstract": "While self-reflection can enhance language model reliability, its underlying mechanisms remain opaque, with existing analyses often yielding correlation-based insights that fail to generalize. To address this, we introduce \\textbf{\\texttt{ReBeCA}} (self-\\textbf{\\texttt{Re}}flection \\textbf{\\texttt{Be}}havior explained through \\textbf{\\texttt{C}}ausal \\textbf{\\texttt{A}}nalysis), a framework that unveils the interpretable behavioral hierarchy governing the self-reflection outcome. By modeling self-reflection trajectories as causal graphs, ReBeCA isolates genuine determinants of performance through a three-stage Invariant Causal Prediction (ICP) pipeline. We establish three critical findings: (1) \\textbf{Behavioral hierarchy:} Semantic behaviors of the model influence final self-reflection results hierarchically: directly or indirectly; (2) \\textbf{Causation matters:} Generalizability in self-reflection effects is limited to just a few semantic behaviors; (3) \\textbf{More $\\mathbf{\\neq}$ better:} The confluence of seemingly positive semantic behaviors, even among direct causal factors, can impair the efficacy of self-reflection. ICP-based verification identifies sparse causal parents achieving up to $49.6\\%$ structural likelihood gains, stable across tasks where correlation-based patterns fail. Intervention studies on novel datasets confirm these causal relationships hold out-of-distribution ($p = .013, η^2_\\mathrm{p} = .071$). ReBeCA thus provides a rigorous methodology for disentangling genuine causal mechanisms from spurious associations in self-reflection dynamics."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Towards Adaptive Environment Generation for Training Embodied Agents",
+    "authors": "Teresa Yeo, Dulaj Weerakoon, Dulanga Weerakoon, Archan Misra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06366v1",
+    "source": "arXiv",
+    "abstract": "Embodied agents struggle to generalize to new environments, even when those environments share similar underlying structures to their training settings. Most current approaches to generating these training environments follow an open-loop paradigm, without considering the agent's current performance. While procedural generation methods can produce diverse scenes, diversity without feedback from the agent is inefficient. The generated environments may be trivially easy, providing limited learning signal. To address this, we present a proof-of-concept for closed-loop environment generation that adapts difficulty to the agent's current capabilities. Our system employs a controllable environment representation, extracts fine-grained performance feedback beyond binary success or failure, and implements a closed-loop adaptation mechanism that translates this feedback into environment modifications. This feedback-driven approach generates training environments that more challenging in the ways the agent needs to improve, enabling more efficient learning and better generalization to novel settings."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Validation of a high-order finite difference compressible solver",
+    "authors": "Yujoo Kang, Sang Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06347v1",
+    "source": "arXiv",
+    "abstract": "The verification and validation of a high-order compressible in-house solver based on a compact finite difference scheme are presented. Validation is performed using five canonical cases: the one-dimensional Sod shock tube problem, two-dimensional shock-shear layer interaction, compressible channel flow, compressible turbulent boundary layer, and shock-turbulent boundary layer interaction. Comparisons against exact solutions and reference direct numerical simulation data demonstrate accurate shock capturing, resolution of vortical structures, and good agreement for first and second order statistics."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Zero-Trust Runtime Verification for Agentic Payment Protocols: Mitigating Replay and Context-Binding Failures in AP2",
+    "authors": "Qianlong Lan, Anuj Kaul, Shaun Jones, Stephanie Westrum",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06345v1",
+    "source": "arXiv",
+    "abstract": "The deployment of autonomous AI agents capable of executing commercial transactions has motivated the adoption of mandate-based payment authorization protocols, including the Universal Commerce Protocol (UCP) and the Agent Payments Protocol (AP2). These protocols replace interactive, session-based authorization with cryptographically issued mandates, enabling asynchronous and autonomous execution. While AP2 provides specification-level guarantees through signature verification, explicit binding, and expiration semantics, real-world agentic execution introduces runtime behaviors such as retries, concurrency, and orchestration that challenge implicit assumptions about mandate usage. In this work, we present a security analysis of the AP2 mandate lifecycle and identify enforcement gaps that arise during runtime in agent-based payment systems. We propose a zero-trust runtime verification framework that enforces explicit context binding and consume-once mandate semantics using dynamically generated, time-bound nonces, ensuring that authorization decisions are evaluated at execution time rather than assumed from static issuance properties. Through simulation-based evaluation under high concurrency, we show that context-aware binding and consume-once enforcement address distinct and complementary attack classes, and that both are required to prevent replay and context-redirect attacks. The proposed framework mitigates all evaluated attacks while maintaining stable verification latency of approximately 3.8~ms at throughput levels up to 10{,}000 transactions per second. We further demonstrate that the required runtime state is bounded by peak concurrency rather than cumulative transaction history, indicating that robust runtime security for agentic payment execution can be achieved with minimal and predictable overhead."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Exposing Weaknesses of Large Reasoning Models through Graph Algorithm Problems",
+    "authors": "Qifan Zhang, Jianhao Ruan, Aochuan Chen, Kang Zeng, Nuo Chen, Jing Tang, Jia Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06319v1",
+    "source": "arXiv",
+    "abstract": "Large Reasoning Models (LRMs) have advanced rapidly; however, existing benchmarks in mathematics, code, and common-sense reasoning remain limited. They lack long-context evaluation, offer insufficient challenge, and provide answers that are difficult to verify programmatically. We introduce GrAlgoBench, a benchmark designed to evaluate LRMs through graph algorithm problems. Such problems are particularly well suited for probing reasoning abilities: they demand long-context reasoning, allow fine-grained control of difficulty levels, and enable standardized, programmatic evaluation. Across nine tasks, our systematic experiments reveal two major weaknesses of current LRMs. First, accuracy deteriorates sharply as context length increases, falling below 50% once graphs exceed 120 nodes. This degradation is driven by frequent execution errors, weak memory, and redundant reasoning. Second, LRMs suffer from an over-thinking phenomenon, primarily caused by extensive yet largely ineffective self-verification, which inflates reasoning traces without improving correctness. By exposing these limitations, GrAlgoBench establishes graph algorithm problems as a rigorous, multidimensional, and practically relevant testbed for advancing the study of reasoning in LRMs. Code is available at https://github.com/Bklight999/GrAlgoBench."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Reimagining Legal Fact Verification with GenAI: Toward Effective Human-AI Collaboration",
+    "authors": "Sirui Han, Yuyao Zhang, Yidan Huang, Xueyan Li, Chengzhong Liu, Yike Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06305v1",
+    "source": "arXiv",
+    "abstract": "Fact verification is a critical yet underexplored component of non-litigation legal practice. While existing research has examined automation in legal workflow and human-AI collaboration in high-stakes domains, little is known about how GenAI can support fact verification, a task that demands prudent judgment and strict accountability. To address this, we conducted semi-structured interviews with 18 lawyers to understand their current verification practices, attitudes toward GenAI adoption, and expectations for future systems. We found that while lawyers use GenAI for low-risk tasks like drafting and language optimization, concerns over accuracy, confidentiality, and liability are currently limiting its adoption for fact verification. These concerns translate into core design requirements for AI systems that are trustworthy and accountable. Based on these, we contribute design insights for human-AI collaboration in legal fact verification, emphasizing the development of auditable systems that balance efficiency with professional judgment and uphold ethical and legal accountability in high-stakes practice."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "Judging What We Cannot Solve: A Consequence-Based Approach for Oracle-Free Evaluation of Research-Level Math",
+    "authors": "Guijin Son, Donghun Yang, Hitesh Laxmichand Patel, Hyunwoo Ko, Amit Agarwal, Sunghee Ahn, Kyong-Ha Lee, Youngjae Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06291v1",
+    "source": "arXiv",
+    "abstract": "Recent progress in reasoning models suggests that generating plausible attempts for research-level mathematics may be within reach, but verification remains a bottleneck, consuming scarce expert time. We hypothesize that a meaningful solution should contain enough method-level information that, when applied to a neighborhood of related questions, it should yield better downstream performance than incorrect solutions. Building on this idea, we propose \\textbf{Consequence-Based Utility}, an oracle-free evaluator that scores each candidate by testing its value as an in-context exemplar in solving related yet verifiable questions. Our approach is evaluated on an original set of research-level math problems, each paired with one expert-written solution and nine LLM-generated solutions. Notably, Consequence-Based Utility consistently outperforms reward models, generative reward models, and LLM judges on ranking quality. Specifically, for GPT-OSS-120B, it improves Acc@1 from 67.2 to 76.3 and AUC from 71.4 to 79.6, with similarly large AUC gains on GPT-OSS-20B (69.0 to 79.2). Furthermore, compared to LLM-Judges, it also exhibits a larger solver-evaluator gap, maintaining a stronger correct-wrong separation even on instances where the underlying solver often fails to solve."
+  },
+  {
+    "date": "2026-02-06",
+    "title": "B-GRPO: Unsupervised Speech Emotion Recognition based on Batched-Group Relative Policy Optimization",
+    "authors": "Yingying Gao, Shilei Zhang, Runyan Yang, Zihao Cui, Junlan Feng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06290v1",
+    "source": "arXiv",
+    "abstract": "Unsupervised speech emotion recognition (SER) focuses on addressing the problem of data sparsity and annotation bias of emotional speech. Reinforcement learning (RL) is a promising method which enhances the performance through rule-based or model-based verification functions rather than human annotations. We treat the sample selection during the learning process as a long-term procedure and whether to select a sample as the action to make policy, thus achieving the application of RL to measure sample quality in SER. We propose a modified Group Relative Policy Optimization (GRPO) to adapt it to classification problems, which takes the samples in a batch as a group and uses the average reward of these samples as the baseline to calculate the advantage. And rather than using a verifiable reward function as in GRPO, we put forward self-reward functions and teacher-reward functions to encourage the model to produce high-confidence outputs. Experiments indicate that the proposed method improves the performance of baseline without RL by 19.8%."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Know Your Scientist: KYC as Biosecurity Infrastructure",
+    "authors": "Jonathan Feldman, Tal Feldman, Annie I Anton",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06172v1",
+    "source": "arXiv",
+    "abstract": "Biological AI tools for protein design and structure prediction are advancing rapidly, creating dual-use risks that existing safeguards cannot adequately address. Current model-level restrictions, including keyword filtering, output screening, and content-based access denials, are fundamentally ill-suited to biology, where reliable function prediction remains beyond reach and novel threats evade detection by design. We propose a three-tier Know Your Customer (KYC) framework, inspired by anti-money laundering (AML) practices in the financial sector, that shifts governance from content inspection to user verification and monitoring. Tier I leverages research institutions as trust anchors to vouch for affiliated researchers and assume responsibility for vetting. Tier II applies output screening through sequence homology searches and functional annotation. Tier III monitors behavioral patterns to detect anomalies inconsistent with declared research purposes. This layered approach preserves access for legitimate researchers while raising the cost of misuse through institutional accountability and traceability. The framework can be implemented immediately using existing institutional infrastructure, requiring no new legislation or regulatory mandates."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Stop the Flip-Flop: Context-Preserving Verification for Fast Revocable Diffusion Decoding",
+    "authors": "Yanzheng Xiang, Lan Wei, Yizhen Yao, Qinglin Zhu, Hanqi Yan, Chen Jin, Philip Alexander Teare, Dandan Zhang, Lin Gui, Amrutha Saseendran, Yulan He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06161v1",
+    "source": "arXiv",
+    "abstract": "Parallel diffusion decoding can accelerate diffusion language model inference by unmasking multiple tokens per step, but aggressive parallelism often harms quality. Revocable decoding mitigates this by rechecking earlier tokens, yet we observe that existing verification schemes frequently trigger flip-flop oscillations, where tokens are remasked and later restored unchanged. This behaviour slows inference in two ways: remasking verified positions weakens the conditioning context for parallel drafting, and repeated remask cycles consume the revision budget with little net progress. We propose COVER (Cache Override Verification for Efficient Revision), which performs leave-one-out verification and stable drafting within a single forward pass. COVER constructs two attention views via KV cache override: selected seeds are masked for verification, while their cached key value states are injected for all other queries to preserve contextual information, with a closed form diagonal correction preventing self leakage at the seed positions. COVER further prioritises seeds using a stability aware score that balances uncertainty, downstream influence, and cache drift, and it adapts the number of verified seeds per step. Across benchmarks, COVER markedly reduces unnecessary revisions and yields faster decoding while preserving output quality."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "GUARDIAN: Safety Filtering for Systems with Perception Models Subject to Adversarial Attacks",
+    "authors": "Nicholas Rober, Alex Rose, Jonathan P. How",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06026v1",
+    "source": "arXiv",
+    "abstract": "Safety filtering is an effective method for enforcing constraints in safety-critical systems, but existing methods typically assume perfect state information. This limitation is especially problematic for systems that rely on neural network (NN)-based state estimators, which can be highly sensitive to noise and adversarial input perturbations. We address these problems by introducing GUARDIAN: Guaranteed Uncertainty-Aware Reachability Defense against Adversarial INterference, a safety filtering framework that provides formal safety guarantees for systems with NN-based state estimators. At runtime, GUARDIAN uses neural network verification tools to provide guaranteed bounds on the system's state estimate given possible perturbations to its observation. It then uses a modified Hamilton-Jacobi reachability formulation to construct a safety filter that adjusts the nominal control input based on the verified state bounds and safety constraints. The result is an uncertainty-aware filter that ensures safety despite the system's reliance on an NN estimator with noisy, possibly adversarial, input observations. Theoretical analysis and numerical experiments demonstrate that GUARDIAN effectively defends systems against adversarial attacks that would otherwise lead to a violation of safety constraints."
+  },
+  {
+    "date": "2026-02-05",
+    "title": "Algebraic Robustness Verification of Neural Networks",
+    "authors": "Yulia Alexandr, Hao Duan, Guido Montúfar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.06105v1",
+    "source": "arXiv",
+    "abstract": "We formulate formal robustness verification of neural networks as an algebraic optimization problem. We leverage the Euclidean Distance (ED) degree, which is the generic number of complex critical points of the distance minimization problem to a classifier's decision boundary, as an architecture-dependent measure of the intrinsic complexity of robustness verification. To make this notion operational, we define the associated ED discriminant, which characterizes input points at which the number of real critical points changes, distinguishing test instances that are easier or harder to verify. We provide an explicit algorithm for computing this discriminant. We further introduce the parameter discriminant of a neural network, identifying parameters where the ED degree drops and the decision boundary exhibits reduced algebraic complexity. We derive closed-form expressions for the ED degree for several classes of neural architectures, as well as formulas for the expected number of real critical points in the infinite-width limit. Finally, we present an exact robustness certification algorithm based on numerical homotopy continuation, establishing a concrete link between metric algebraic geometry and neural network verification."
+  }
+]
