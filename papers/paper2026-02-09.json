@@ -1,0 +1,191 @@
+[
+  {
+    "date": "2026-02-09",
+    "title": "InternAgent-1.5: A Unified Agentic Framework for Long-Horizon Autonomous Scientific Discovery",
+    "authors": "Shiyang Feng, Runmin Ma, Xiangchao Yan, Yue Fan, Yusong Hu, Songtao Huang, Shuaiyu Zhang, Zongsheng Cao, Tianshuo Peng, Jiakang Yuan, Zijie Guo, Zhijie Zhong, Shangheng Du, Weida Wang, Jinxin Shi, Yuhao Zhou, Xiaohan He, Zhiyin Yu, Fangchen Yu, Qihao Zheng, Jiamin Wu, Mianxin Liu, Chi Zhang, Shaowei Hou, Shuya Li, Yankai Jiang, Wenjie Lou, Lilong Wang, Zifu Wang, Jiong Wang, Wanghan Xu, Yue Deng, Dongrui Liu, Yiheng Wang, Wenlong Zhang, Fenghua Ling, Shufei Zhang, Xiaosong Wang, Shuangjia Zheng, Xun Huang, Siqi Sun, Shuyue Hu, Peng Ye, Chunfeng Song, Bin Wang, Conghui He, Yihao Liu, Xin Li, Qibin Hou, Tao Chen, Xiangyu Yue, Bin Wang, Liang He, Dahua Lin, Bowen Zhou, Bo Zhang, Lei Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08990v1",
+    "source": "arXiv",
+    "abstract": "We introduce InternAgent-1.5, a unified system designed for end-to-end scientific discovery across computational and empirical domains. The system is built on a structured architecture composed of three coordinated subsystems for generation, verification, and evolution. These subsystems are supported by foundational capabilities for deep research, solution optimization, and long horizon memory. The architecture allows InternAgent-1.5 to operate continuously across extended discovery cycles while maintaining coherent and improving behavior. It also enables the system to coordinate computational modeling and laboratory experimentation within a single unified system. We evaluate InternAgent-1.5 on scientific reasoning benchmarks such as GAIA, HLE, GPQA, and FrontierScience, and the system achieves leading performance that demonstrates strong foundational capabilities. Beyond these benchmarks, we further assess two categories of discovery tasks. In algorithm discovery tasks, InternAgent-1.5 autonomously designs competitive methods for core machine learning problems. In empirical discovery tasks, it executes complete computational or wet lab experiments and produces scientific findings in earth, life, biological, and physical domains. Overall, these results show that InternAgent-1.5 provides a general and scalable framework for autonomous scientific discovery."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "CoRefine: Confidence-Guided Self-Refinement for Adaptive Test-Time Compute",
+    "authors": "Chen Jin, Ryutaro Tanno, Tom Diethe, Philip Teare",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08948v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) often rely on test-time scaling via parallel decoding (for example, 512 samples) to boost reasoning accuracy, but this incurs substantial compute. We introduce CoRefine, a confidence-guided self-refinement method that achieves competitive accuracy using a fraction of the tokens via a lightweight 211k-parameter Conv1D controller atop a frozen LLM. The controller consumes full-trace confidence to decide whether to halt, re-examine, or try a different approach, enabling targeted self-correction with an average of 2.7 refinement steps per problem and roughly 190-fold token reduction relative to 512-sample baselines. Across diverse reasoning benchmarks and three open-source models, the controller achieves 92.6 percent precision when it confidently halts, indicating that confidence dynamics reliably signal correctness without ground-truth verification. We extend this to CoRefine-Tree, a hybrid sequential-parallel variant that adaptively balances exploration and exploitation, with easy serving integration and verifier compatibility. By treating confidence as a control signal rather than a correctness guarantee, CoRefine provides a modular primitive for scalable reasoning and agentic settings with imperfect verifiers."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "CausalT5K: Diagnosing and Informing Refusal for Trustworthy Causal Reasoning of Skepticism, Sycophancy, Detection-Correction, and Rung Collapse",
+    "authors": "Longling Geng, Andy Ouyang, Theodore Wu, Daphne Barretto, Matthew John Hayes, Rachael Cooper, Yuqiao Zeng, Sameer Vijay, Gia Ancone, Ankit Rai, Matthew Wolfman, Patrick Flanagan, Edward Y. Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08939v1",
+    "source": "arXiv",
+    "abstract": "LLM failures in causal reasoning, including sycophancy, rung collapse, and miscalibrated refusal, are well-documented, yet progress on remediation is slow because no benchmark enables systematic diagnosis. We introduce CausalT5K, a diagnostic benchmark of over 5,000 cases across 10 domains that tests three critical capabilities: (1) detecting rung collapse, where models answer interventional queries with associational evidence; (2) resisting sycophantic drift under adversarial pressure; and (3) generating Wise Refusals that specify missing information when evidence is underdetermined. Unlike synthetic benchmarks, CausalT5K embeds causal traps in realistic narratives and decomposes performance into Utility (sensitivity) and Safety (specificity), revealing failure modes invisible to aggregate accuracy. Developed through a rigorous human-machine collaborative pipeline involving 40 domain experts, iterative cross-validation cycles, and composite verification via rule-based, LLM, and human scoring, CausalT5K implements Pearl's Ladder of Causation as research infrastructure. Preliminary experiments reveal a Four-Quadrant Control Landscape where static audit policies universally fail, a finding that demonstrates CausalT5K's value for advancing trustworthy reasoning systems. Repository: https://github.com/genglongling/CausalT5kBench"
+  },
+  {
+    "date": "2026-02-09",
+    "title": "Verifying DNN-based Semantic Communication Against Generative Adversarial Noise",
+    "authors": "Thanh Le, Hai Duong, ThanhVu Nguyen, Takeshi Matsumura",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08801v1",
+    "source": "arXiv",
+    "abstract": "Safety-critical applications like autonomous vehicles and industrial IoT are adopting semantic communication (SemCom) systems using deep neural networks to reduce bandwidth and increase transmission speed by transmitting only task-relevant semantic features. However, adversarial attacks against these DNN-based SemCom systems can cause catastrophic failures by manipulating transmitted semantic features. Existing defense mechanisms rely on empirical approaches provide no formal guarantees against the full spectrum of adversarial perturbations. We present VSCAN, a neural network verification framework that provides mathematical robustness guarantees by formulating adversarial noise generation as mixed integer programming and verifying end-to-end properties across multiple interconnected networks (encoder, decoder, and task model). Our key insight is that realistic adversarial constraints (power limitations and statistical undetectability) can be encoded as logical formulae to enable efficient verification using state-of-the-art DNN verifiers. Our evaluation on 600 verification properties characterizing various attacker's capabilities shows VSCAN matches attack methods in finding vulnerabilities while providing formal robustness guarantees for 44% of properties -- a significant achievement given the complexity of multi-network verification. Moreover, we reveal a fundamental security-efficiency tradeoff: compact 16-dimensional latent spaces achieve 50% verified robustness compared to 64-dimensional spaces."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "Craig Interpolation in Program Verification",
+    "authors": "Philipp Rümmer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08532v1",
+    "source": "arXiv",
+    "abstract": "Craig interpolation is used in program verification for automating key tasks such as the inference of loop invariants and the computation of program abstractions. This chapter covers some of the most important techniques that have been developed in this context over the last years, focusing on two aspects: the derivation of Craig interpolants modulo the theories and data types used in verification and the basic design of verification algorithms applying interpolation."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "A Comparative Analysis of the CERN ATLAS ITk MOPS Readout: A Feasibility Study on Production and Development Setups",
+    "authors": "Lukas Flad, Felix Sebastian Nitz, Tobias Krawutschke",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08488v1",
+    "source": "arXiv",
+    "abstract": "The upcoming High-Luminosity upgrade of the Large Hadron Collider (LHC) necessitates a complete replacement of the ATLAS Inner Detector with the new Inner Tracker (ITk). This upgrade imposes stringent requirements on the associated Detector Control System (DCS), which is responsible for the monitoring, control, and safety of the detector. A critical component of the ITk DCS is the Monitoring of Pixel System (MOPS), which supervises the local voltages and temperatures of the new pixel detector modules. This paper introduces a dedicated testbed and verification methodology for the MOPS readout, defining a structured set of test cases for two DCS-readout architectures: a preliminary Raspberry Pi-based controller, the \"MOPS-Hub Mock-up\"(MH Mock-up), and the final production FPGA-based \"MOPS-Hub\" (MH). The methodology specifies the measurement chain for end-to-end latency, jitter, and data integrity across CAN and UART interfaces, including a unified time-stamping scheme, non-intrusive signal taps, and a consistent data-logging and analysis pipeline. This work details the load profiles and scalability scenarios (baseline operation, full-crate stress, and CAN Interface Card channel isolation), together with acceptance criteria and considerations for measurement uncertainty to ensure reproducibility. The objective is to provide a clear, repeatable procedure to qualify the MH architecture for production and deployment in the ATLAS ITk DCS. A companion paper will present the experimental results and the comparative analysis obtained using this testbed."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "Modeling Concurrent Multi-Agent Systems",
+    "authors": "Senthil Rajasekaran, Moshe Y. Vardi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08452v1",
+    "source": "arXiv",
+    "abstract": "Recent work in the field of multi-agent systems has sought to use techniques and concepts from the field of formal methods to provide rigorous theoretical analysis and guarantees on complex systems where multiple agents strategically interact, leading to the creation of the field of equilibrium analysis, which studies equilibria concepts from the field of game theory through a complexity-theoretic lens. Multi-agent systems, however, are complex mathematical objects, and, therefore, defining them in a precise mathematical manner is non-trivial. As a result, researchers often considered more restrictive models that are easier to model but lack expressive power or simply omit critical complexity-theoretic results in their analysis. This paper addresses this problem by carefully analyzing and contrasting complexity-theoretic results in the explicit model, a mathematically precise formulation of the models commonly used in the literature, and the circuit-based model, a novel model that addresses the problems found in the literature. The utility of the circuit-based model is demonstrated through a comprehensive analysis that considers upper and lower bounds for the realizability and verification problems, the two most important decision problems in equilibrium analysis, for both models. By conducting this analysis, we see that problematic issues that are endemic to the explicit model and the equilibrium analysis literature as a whole are adequately handled by the circuit-based model."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "LLMs + Security = Trouble",
+    "authors": "Benjamin Livshits",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08422v1",
+    "source": "arXiv",
+    "abstract": "We argue that when it comes to producing secure code with AI, the prevailing \"fighting fire with fire\" approach -- using probabilistic AI-based checkers or attackers to secure probabilistically generated code -- fails to address the long tail of security bugs. As a result, systems may remain exposed to zero-day vulnerabilities that can be discovered by better-resourced or more persistent adversaries. While neurosymbolic approaches that combine LLMs with formal methods are attractive in principle, we argue that they are difficult to reconcile with the \"vibe coding\" workflow common in LLM-assisted development: unless the end-to-end verification pipeline is fully automated, developers are repeatedly asked to validate specifications, resolve ambiguities, and adjudicate failures, making the human-in-the-loop a likely point of weakness, compromising secure-by-construction guarantees. In this paper we argue that stronger security guarantees can be obtained by enforcing security constraints during code generation (e.g., via constrained decoding), rather than relying solely on post-hoc detection and repair. This direction is particularly promising for diffusion-style code models, whose approach provides a natural elegant opportunity for modular, hierarchical security enforcement, allowing us to combine lower-latency generation techniques with generating secure-by-construction code."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "On Protecting Agentic Systems' Intellectual Property via Watermarking",
+    "authors": "Liwen Wang, Zongjie Li, Yuchong Xie, Shuai Wang, Dongdong She, Wei Wang, Juergen Rahmel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08401v1",
+    "source": "arXiv",
+    "abstract": "The evolution of Large Language Models (LLMs) into agentic systems that perform autonomous reasoning and tool use has created significant intellectual property (IP) value. We demonstrate that these systems are highly vulnerable to imitation attacks, where adversaries steal proprietary capabilities by training imitation models on victim outputs. Crucially, existing LLM watermarking techniques fail in this domain because real-world agentic systems often operate as grey boxes, concealing the internal reasoning traces required for verification. This paper presents AGENTWM, the first watermarking framework designed specifically for agentic models. AGENTWM exploits the semantic equivalence of action sequences, injecting watermarks by subtly biasing the distribution of functionally identical tool execution paths. This mechanism allows AGENTWM to embed verifiable signals directly into the visible action trajectory while remaining indistinguishable to users. We develop an automated pipeline to generate robust watermark schemes and a rigorous statistical hypothesis testing procedure for verification. Extensive evaluations across three complex domains demonstrate that AGENTWM achieves high detection accuracy with negligible impact on agent performance. Our results confirm that AGENTWM effectively protects agentic IP against adaptive adversaries, who cannot remove the watermarks without severely degrading the stolen model's utility."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "Towards Real-World Industrial-Scale Verification: LLM-Driven Theorem Proving on seL4",
+    "authors": "Jianyu Zhang, Fuyuan Zhang, Jiayi Lu, Jilin Hu, Xiaoyi Yin, Long Zhang, Feng Yang, Yongwang Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08384v1",
+    "source": "arXiv",
+    "abstract": "Formal methods (FM) are reliable but costly to apply, often requiring years of expert effort in industrial-scale projects such as seL4, especially for theorem proving. Recent advances in large language models (LLMs) have made automated theorem proving increasingly feasible. However, most prior work focuses on mathematics-oriented benchmarks such as miniF2F, with limited evaluation on real-world verification projects. The few studies that consider industrial-scale verification mostly rely on closed-source models with hundreds of billions of parameters, which cannot be locally deployed and incur substantial usage costs. In this paper, we propose AutoReal, an LLM-driven theorem proving method for real-world industrial-scale systems with support for lightweight local deployment. We evaluate AutoReal on the seL4-Isabelle verification project as a representative and challenging case study. AutoReal incorporates two key improvements: (1) chain-of-thought (CoT)-based proof training, which teaches the LLM the reasoning behind proof steps and enables step-wise explanations alongside proofs, and (2) context augmentation, which leverages proof context from the project to enhance LLM-driven proving. Based on the AutoReal methodology, we fine-tune a base model to obtain AutoReal-Prover, a compact 7B-scale prover for industrial-scale theorem proving. AutoReal-Prover achieves a 51.67% proof success rate on 660 theorems from seL4-designated Important Theories across all 10 seL4 proof categories, substantially outperforming prior attempts on seL4 (27.06%). To evaluate generalization, we further apply AutoReal-Prover to three security-related projects from the Archive of Formal Proofs (AFP), covering all 451 theorems and achieving a proof success rate of 53.88%. Overall, this work advances the application of LLM-driven theorem proving in real-world industrial-scale verification."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "Benchmarking Autonomous Vehicles: A Driver Foundation Model Framework",
+    "authors": "Yuxin Zhang, Cheng Wang, Hubert P. H. Shum",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08298v1",
+    "source": "arXiv",
+    "abstract": "Autonomous vehicles (AVs) are poised to revolutionize global transportation systems. However, its widespread acceptance and market penetration remain significantly below expectations. This gap is primarily driven by persistent challenges in safety, comfort, commuting efficiency and energy economy when compared to the performance of experienced human drivers. We hypothesize that these challenges can be addressed through the development of a driver foundation model (DFM). Accordingly, we propose a framework for establishing DFMs to comprehensively benchmark AVs. Specifically, we describe a large-scale dataset collection strategy for training a DFM, discuss the core functionalities such a model should possess, and explore potential technical solutions to realize these functionalities. We further present the utility of the DFM across the operational spectrum, from defining human-centric safety envelopes to establishing benchmarks for energy economy. Overall, We aim to formalize the DFM concept and introduce a new paradigm for the systematic specification, verification and validation of AVs."
+  },
+  {
+    "date": "2026-02-09",
+    "title": "InfiCoEvalChain: A Blockchain-Based Decentralized Framework for Collaborative LLM Evaluation",
+    "authors": "Yifan Yang, Jinjia Li, Kunxi Li, Puhao Zheng, Yuanyi Wang, Zheyan Qu, Yang Yu, Jianmin Wu, Ming Li, Hongxia Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08229v1",
+    "source": "arXiv",
+    "abstract": "The rapid advancement of large language models (LLMs) demands increasingly reliable evaluation, yet current centralized evaluation suffers from opacity, overfitting, and hardware-induced variance. Our empirical analysis reveals an alarming inconsistency in existing evaluations: the standard deviation across ten repeated runs of a single model on HumanEval (1.67) actually exceeds the performance gap among the top-10 models on the official leaderboard (0.91), rendering current rankings statistically precarious. To mitigate these instabilities, we propose a decentralized evaluation framework that enables hardware and parameter diversity through large-scale benchmarking across heterogeneous compute nodes. By leveraging the blockchain-based protocol, the framework incentivizes global contributors to act as independent validators, using a robust reward system to ensure evaluation integrity and discourage dishonest participation. This collective verification transforms evaluation from a \"centralized black box\" into a \"decentralized endorsement\" where multi-party consensus and diverse inference environments yield a more stable, representative metric. Experimental results demonstrate that the decentralized evaluation framework reduces the standard deviation across ten runs on the same model to 0.28. This significant improvement over conventional frameworks ensures higher statistical confidence in model rankings. We have completely implemented this platform and will soon release it to the community."
+  },
+  {
+    "date": "2026-02-08",
+    "title": "Chaos and Parrondo's paradox: An overview",
+    "authors": "Marcelo A. Pires, Erveton P. Pinto, Jose S. Cánovas, Silvio M. Duarte Queirós",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08135v1",
+    "source": "arXiv",
+    "abstract": "Parrondo's paradox (PP) is a fundamental principle in nonlinear science where the alternation of individually losing strategies leads to a winning outcome. In this topical review, we provide the first systematic panorama of the synergy between PP and chaos. We observe a bidirectional connection between the two areas. The first direction is the translation of PP into the interplay between Order and Chaos through either Chaos + Chaos $\\to$ Order (CCO) or Order + Order $\\to$ Chaos (OOC). In this vein, many quantifiers, such as Lyapunov Exponents, $λ$, and entropic measures, are used. Second, we note that chaos can be used to engineer switching protocols that can lead to nontrivial effects in diverse PP cases. Our review clarifies the universality of PP and highlights its robust theoretical and practical applications across several areas of science and technology. Finally, we delineate key open questions, emphasizing the unresolved theoretical limits, the role of high-dimensional maps and continuous flows, and the critical need for more experimental verification of the dynamic PP in chaotic systems. For completeness, we also provide a full Python code that allows the reader to observe the many facets of the PP."
+  },
+  {
+    "date": "2026-02-08",
+    "title": "Efficient $k$-Sign Consistency Verification of Hankel Matrices via Schur Polynomials",
+    "authors": "Christian Grussler, Tobias Damm",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08122v1",
+    "source": "arXiv",
+    "abstract": "We consider the problem of certifying (strict) $k$-sign consistency of a matrix, that is, whether all of its $k$-th order minors share the same (strict) sign. Although this problem is generally of combinatorial complexity, we show that for Hankel matrices it can be significantly simplified: our sufficient condition requires checking only the $k$-th order minors of a reshaped Hankel matrix with $k$ rows. Remarkably, when applied to the Hankel operator, this sufficient condition is also necessary. Comparable results were known only in the setting of (strictly) $k$-positive Hankel matrices and operators, in which all minors of order up to $k$ have the same (strict) sign. More concretely, we derive a formula expressing the $k$-th order minors of Hankel matrices as nonnegative integer linear combinations of $k$-th order minors with consecutive row indices. Our derivation uses Schur polynomial theory to show that the $k$-th order minors of any matrix are nonnegative integer linear combinations of row-consecutive $k$-th order minors, meaning minors formed from distinct columns whose consecutive row indices need not coincide across columns. For Hankel matrices, these minors coincide -- up to sign changes arising from column swaps -- with the usual $k$-th order minors with consecutive row indices. Our main result then follows by showing that the sum of certain signed nonnegative integer coefficients equals the corresponding Littlewood--Richardson coefficients. In our problem, the nonnegativity of these coefficients ensures that negatively signed column permutations are cancelled by positively signed ones. Our results also extend naturally to Toeplitz matrices and operators, and we present a partial analogue for circulant matrices."
+  },
+  {
+    "date": "2026-02-08",
+    "title": "V-ABFT: Variance-Based Adaptive Threshold for Fault-Tolerant Matrix Multiplication in Mixed-Precision Deep Learning",
+    "authors": "Yiheng Gao, Qin Hua, Zizhong Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08043v1",
+    "source": "arXiv",
+    "abstract": "Algorithm-Based Fault Tolerance (ABFT) is widely adopted to detect silent data corruptions (SDCs) in matrix multiplication, a cornerstone operation in deep learning systems. However, existing threshold determination methods face critical challenges: analytical bounds are overly conservative, while probabilistic approaches like A-ABFT yield thresholds $160$--$4200\\times$ larger than actual rounding errors. We present V-ABFT, a variance-based adaptive threshold algorithm that achieves tighter error bounds by directly modeling the verification difference. By leveraging statistical variance estimation, V-ABFT reduces the threshold-to-actual-error ratio to approximately $7$--$20\\times$ for FP32/FP64 and $48$--$158\\times$ for BF16, representing a \\textbf{6--48$\\times$ improvement} over A-ABFT while maintaining zero false positive rate across BF16, FP16, FP32, and FP64 precisions. Furthermore, we demonstrate that for fused-kernel ABFT implementations that verify before output quantization, low-precision GEMM can use FP32-level thresholds ($e_{\\max} \\approx 10^{-6}$), enabling \\textbf{$\\sim$1000$\\times$ finer detection granularity} compared to offline verification with low-precision output ($e_{\\max} \\approx 10^{-3}$). We reproduce A-ABFT's experimental setup and validate our implementation against the original paper's results. Our method requires only $O(n)$ complexity using max/min/mean statistics, compared to A-ABFT's $O(pn)$ for finding $p$ largest values. Extensive experiments on synthetic data and real model weights (LLaMA-7B, GPT-2, ViT) demonstrate V-ABFT's effectiveness across diverse distributions. V-ABFT is platform-agnostic and has been integrated into fault-tolerant GEMM implementations on both NPUs and GPUs."
+  },
+  {
+    "date": "2026-02-08",
+    "title": "Perfectly Fitting CDO Prices Across Tranches: A Theoretical Framework with Efficient Algorithms",
+    "authors": "Lan Bu, Ning Cai, Chenxi Xia, Jingping Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.08039v1",
+    "source": "arXiv",
+    "abstract": "This paper addresses a key challenge in CDO modeling: achieving a perfect fit to market prices across all tranches using a single, consistent model. The existence of such a perfect-fit model implies the absence of arbitrage among CDO tranches and is thus essential for unified risk management and the pricing of nonstandard credit derivatives. To address this central challenge, we face three primary difficulties: standard parametric models typically fail to achieve a perfect fit; the calibration of standard parametric models inherently relies on computationally intensive simulation-based optimization; and there is a lack of formal theory to determine when a perfect-fit model exists and, if it exists, how to construct it. We propose a theoretical framework to overcome these difficulties. We first introduce and define two compatibility levels of market prices: weak compatibility and strong compatibility. Specifically, market prices across all tranches are said to be weakly (resp. strongly) compatible if there exists a single model (resp. a single conditionally i.i.d. model) that perfectly fits these market prices. We then derive sufficient and necessary conditions for both levels of compatibility by establishing a relationship between compatibility and LP problems. Furthermore, under either condition, we construct a corresponding concrete copula model that achieves a perfect fit. Notably, our framework not only allows for efficient verification of weak compatibility and strong compatibility through LP problems but also facilitates the construction of the corresponding copula models that achieve a perfect fit, eliminating the need for simulation-based optimization. The practical applications of our framework are demonstrated in risk management and the pricing of nonstandard credit derivatives."
+  },
+  {
+    "date": "2026-02-08",
+    "title": "Out of the box age estimation through facial imagery: A Comprehensive Benchmark of Vision-Language Models vs. out-of-the-box Traditional Architectures",
+    "authors": "Simiao Ren",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.07815v1",
+    "source": "arXiv",
+    "abstract": "Facial age estimation is critical for content moderation, age verification, and deepfake detection, yet no prior benchmark has systematically compared modern vision-language models (VLMs) against specialized age estimation architectures. We present the first large-scale cross-paradigm benchmark, evaluating \\textbf{34 models} -- 22 specialized architectures with publicly available pretrained weights and 12 general-purpose VLMs -- across \\textbf{8 standard datasets} (UTKFace, IMDB-WIKI, MORPH, AFAD, CACD, FG-NET, APPA-REAL, AgeDB) totaling 1{,}100 test images per model. Our key finding is striking: \\emph{zero-shot VLMs significantly outperform most specialized models}, achieving an average MAE of 5.65 years compared to 9.88 for non-LLM models. The best VLM (Gemini~3 Flash Preview, MAE~4.32) outperforms the best non-LLM model (MiVOLO, MAE~5.10) by 15\\%. Only MiVOLO, which uniquely combines face and body features via Vision Transformers, competes with VLMs. We further analyze age verification at the 18-year threshold, revealing that non-LLM models exhibit 60--100\\% false adult rates on minors while VLMs achieve 13--25\\%, and demonstrate that coarse age binning (8--9 classes) consistently degrades MAE beyond 13 years. Our stratified analysis across 14 age groups reveals that all models struggle most at extreme ages ($<$5 and 65+). These findings challenge the assumption that task-specific architectures are necessary for age estimation and suggest that the field should redirect toward distilling VLM capabilities into efficient specialized models."
+  },
+  {
+    "date": "2026-02-07",
+    "title": "Expansive homeomorphisms on complexity quasi-metric spaces",
+    "authors": "Yaé U. Gaba",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.07685v1",
+    "source": "arXiv",
+    "abstract": "The complexity quasi-metric, introduced by Schellekens, provides a topological framework where the asymmetric nature of computational comparisons -- stating that one algorithm is faster than another carries different information than stating the second is slower than the first -- finds precise mathematical expression. In this paper we develop a comprehensive theory of expansive homeomorphisms on complexity quasi-metric spaces. Our central result establishes that the scaling transformation $ψ_α(f)(n)=αf(n)$ is expansive on the complexity space $(\\C,d_\\C)$ if and only if $α\\neq 1$. The $δ$-stable sets arising from this dynamics correspond exactly to asymptotic complexity classes, providing a dynamical characterisation of fundamental objects in complexity theory. We prove that the canonical coordinates associated with $ψ_α$ are hyperbolic with contraction rate $λ=1/α$ and establish a precise connection between orbit separation in the dynamical system and the classical time hierarchy theorem of Hartmanis and Stearns. We further investigate unstable sets, conjugate dynamics, and topological entropy estimates for the scaling map. Throughout, concrete algorithms and Python implementations accompany the proofs, making every result computationally reproducible. SageMath verification snippets are inlined alongside the examples, and the full code is available in the companion repository."
+  },
+  {
+    "date": "2026-02-07",
+    "title": "Debugging code world models",
+    "authors": "Babak Rahmani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.07672v1",
+    "source": "arXiv",
+    "abstract": "Code World Models (CWMs) are language models trained to simulate program execution by predicting explicit runtime state after every executed command. This execution-based world modeling enables internal verification within the model, offering an alternative to natural language chain-of-thought reasoning. However, the sources of errors and the nature of CWMs' limitations remain poorly understood. We study CWMs from two complementary perspectives: local semantic execution and long-horizon state tracking. On real-code benchmarks, we identify two dominant failure regimes. First, dense runtime state reveals produce token-intensive execution traces, leading to token-budget exhaustion on programs with long execution histories. Second, failures disproportionately concentrate in string-valued state, which we attribute to limitations of subword tokenization rather than program structure. To study long-horizon behavior, we use a controlled permutation-tracking benchmark that isolates state propagation under action execution. We show that long-horizon degradation is driven primarily by incorrect action generation: when actions are replaced with ground-truth commands, a Transformer-based CWM propagates state accurately over long horizons, despite known limitations of Transformers in long-horizon state tracking. These findings suggest directions for more efficient supervision and state representations in CWMs that are better aligned with program execution and data types."
+  },
+  {
+    "date": "2026-02-07",
+    "title": "SciClaimEval: Cross-modal Claim Verification in Scientific Papers",
+    "authors": "Xanh Ho, Yun-Ang Wu, Sunisth Kumar, Tian Cheng Xia, Florian Boudin, Andre Greiner-Petter, Akiko Aizawa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.07621v1",
+    "source": "arXiv",
+    "abstract": "We present SciClaimEval, a new scientific dataset for the claim verification task. Unlike existing resources, SciClaimEval features authentic claims, including refuted ones, directly extracted from published papers. To create refuted claims, we introduce a novel approach that modifies the supporting evidence (figures and tables), rather than altering the claims or relying on large language models (LLMs) to fabricate contradictions. The dataset provides cross-modal evidence with diverse representations: figures are available as images, while tables are provided in multiple formats, including images, LaTeX source, HTML, and JSON. SciClaimEval contains 1,664 annotated samples from 180 papers across three domains, machine learning, natural language processing, and medicine, validated through expert annotation. We benchmark 11 multimodal foundation models, both open-source and proprietary, across the dataset. Results show that figure-based verification remains particularly challenging for all models, as a substantial performance gap remains between the best system and human baseline."
+  },
+  {
+    "date": "2026-2-9",
+    "title": "MTF: an Open-Source Metamorphic Testing Framework for LLM-based systems",
+    "authors": "Theis Henry, Sian Savourat, Lydie du Bousquet, Masahide Nakamura",
+    "publish": "Proceedings of the 2025 5th International Conference on Artificial Intelligence and Application Technologies",
+    "url": "https://doi.org/10.1145/3787120.3787123",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
