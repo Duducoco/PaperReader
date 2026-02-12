@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-11",
+    "title": "FormalJudge: A Neuro-Symbolic Paradigm for Agentic Oversight",
+    "authors": "Jiayi Zhou, Yang Sheng, Hantao Lou, Yaodong Yang, Jie Fu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11136v1",
+    "source": "arXiv",
+    "abstract": "As LLM-based agents increasingly operate in high-stakes domains with real-world consequences, ensuring their behavioral safety becomes paramount. The dominant oversight paradigm, LLM-as-a-Judge, faces a fundamental dilemma: how can probabilistic systems reliably supervise other probabilistic systems without inheriting their failure modes? We argue that formal verification offers a principled escape from this dilemma, yet its adoption has been hindered by a critical bottleneck: the translation from natural language requirements to formal specifications. This paper bridges this gap by proposing , a neuro-symbolic framework that employs a bidirectional Formal-of-Thought architecture: LLMs serve as specification compilers that top-down decompose high-level human intent into atomic, verifiable constraints, then bottom-up prove compliance using Dafny specifications and Z3 Satisfiability modulo theories solving, which produces mathematical guarantees rather than probabilistic scores. We validate across three benchmarks spanning behavioral safety, multi-domain constraint adherence, and agentic upward deception detection. Experiments on 7 agent models demonstrate that achieves an average improvement of 16.6% over LLM-as-a-Judge baselines, enables weak-to-strong generalization where a 7B judge achieves over 90% accuracy detecting deception from 72B agents, and provides near-linear safety improvement through iterative refinement."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Learning to Compose for Cross-domain Agentic Workflow Generation",
+    "authors": "Jialiang Wang, Shengxiang Xu, Hanmo Liu, Jiachuan Wang, Yuyu Luo, Shimin Di, Min-Ling Zhang, Lei Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11114v1",
+    "source": "arXiv",
+    "abstract": "Automatically generating agentic workflows -- executable operator graphs or codes that orchestrate reasoning, verification, and repair -- has become a practical way to solve complex tasks beyond what single-pass LLM generation can reliably handle. Yet what constitutes a good workflow depends heavily on the task distribution and the available operators. Under domain shift, current systems typically rely on iterative workflow refinement to discover a feasible workflow from a large workflow space, incurring high iteration costs and yielding unstable, domain-specific behavior. In response, we internalize a decompose-recompose-decide mechanism into an open-source LLM for cross-domain workflow generation. To decompose, we learn a compact set of reusable workflow capabilities across diverse domains. To recompose, we map each input task to a sparse composition over these bases to generate a task-specific workflow in a single pass. To decide, we attribute the success or failure of workflow generation to counterfactual contributions from learned capabilities, thereby capturing which capabilities actually drive success by their marginal effects. Across stringent multi-domain, cross-domain, and unseen-domain evaluations, our 1-pass generator surpasses SOTA refinement baselines that consume 20 iterations, while substantially reducing generation latency and cost."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "First International StepUP Competition for Biometric Footstep Recognition: Methods, Results and Remaining Challenges",
+    "authors": "Robyn Larracy, Eve MacDonald, Angkoon Phinyomark, Saeid Rezaei, Mahdi Laghaei, Ali Hajighasem, Aaron Tabor, Erik Scheme",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11086v1",
+    "source": "arXiv",
+    "abstract": "Biometric footstep recognition, based on a person's unique pressure patterns under their feet during walking, is an emerging field with growing applications in security and safety. However, progress in this area has been limited by the lack of large, diverse datasets necessary to address critical challenges such as generalization to new users and robustness to shifts in factors like footwear or walking speed. The recent release of the UNB StepUP-P150 dataset, the largest and most comprehensive collection of high-resolution footstep pressure recordings to date, opens new opportunities for addressing these challenges through deep learning. To mark this milestone, the First International StepUP Competition for Biometric Footstep Recognition was launched. Competitors were tasked with developing robust recognition models using the StepUP-P150 dataset that were then evaluated on a separate, dedicated test set designed to assess verification performance under challenging variations, given limited and relatively homogeneous reference data. The competition attracted global participation, with 23 registered teams from academia and industry. The top-performing team, Saeid_UCC, achieved the best equal error rate (EER) of 10.77% using a generative reward machine (GRM) optimization strategy. Overall, the competition showcased strong solutions, but persistent challenges in generalizing to unfamiliar footwear highlight a critical area for future work."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Towards Term-based Verification of Diagrammatic Equivalence",
+    "authors": "Julie Cailler, Noé Delorme, Simon Perdrix, Sophie Tourret",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11035v1",
+    "source": "arXiv",
+    "abstract": "A string diagram is a two-dimensional graphical representation that can be described as a one-dimensional term generated from a set of primitives using sequential and parallel compositions. Since different syntactic terms may represent the same diagram, this syntax is quotiented by a collection of coherence equations expressing equivalence up to deformation. This work lays foundations for automated reasoning about diagrammatic equivalence, motivated primarily by the verification of quantum circuit equivalences. We consider two classes of diagrams, for which we introduce normalizing term rewriting systems that equate diagrammatically equivalent terms. In both cases, we prove termination and confluence with the help of the proof assistant Isabelle/HOL."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Implementation of Polynomial NP-Complete Algorithms Based on the NP Verifier Simulation Framework",
+    "authors": "Changryeol Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10991v1",
+    "source": "arXiv",
+    "abstract": "While prior work established a verifier-based polynomial time framework for NP, explicit deterministic machines for concrete NP-complete problems have remained elusive. In this paper, we construct fully specified deterministic Turing Machines (DTMs) for SAT and Subset-Sum within a polynomial-time NP verifier simulation framework. We show that both machines operate in polynomial time and, for satisfiable instances, deterministically generate valid witnesses, thereby extending the framework to deterministic FNP computation without increasing the degree of polynomial complexity. Furthermore, we provide a complete implementation of the framework, including the dynamic computation graph, feasible-graph construction, verification walks, and Turing-machine simulation via edge extensions. The implementation behaves in accordance with the predicted polynomial-time bounds. To ensure transparency and reproducibility, the complete Python implementation and source code are made available in a public online repository."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "DFIC: Towards a balanced facial image dataset for automatic ICAO compliance verification",
+    "authors": "Nuno Gonçalves, Diogo Nunes, Carla Guerra, João Marcos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10985v1",
+    "source": "arXiv",
+    "abstract": "Ensuring compliance with ISO/IEC and ICAO standards for facial images in machine-readable travel documents (MRTDs) is essential for reliable identity verification, but current manual inspection methods are inefficient in high-demand environments. This paper introduces the DFIC dataset, a novel comprehensive facial image dataset comprising around 58,000 annotated images and 2706 videos of more than 1000 subjects, that cover a broad range of non-compliant conditions, in addition to compliant portraits. Our dataset provides a more balanced demographic distribution than the existing public datasets, with one partition that is nearly uniformly distributed, facilitating the development of automated ICAO compliance verification methods. Using DFIC, we fine-tuned a novel method that heavily relies on spatial attention mechanisms for the automatic validation of ICAO compliance requirements, and we have compared it with the state-of-the-art aimed at ICAO compliance verification, demonstrating improved results. DFIC dataset is now made public (https://github.com/visteam-isr-uc/DFIC) for the training and validation of new models, offering an unprecedented diversity of faces, that will improve both robustness and adaptability to the intrinsically diverse combinations of faces and props that can be presented to the validation system. These results emphasize the potential of DFIC to enhance automated ICAO compliance methods but it can also be used in many other applications that aim to improve the security, privacy, and fairness of facial recognition systems."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "What do people want to fact-check?",
+    "authors": "Bijean Ghafouri, Dorsaf Sallami, Luca Luceri, Taylor Lynn Curtis, Jean-Francois Godbout, Emilio Ferrara, Reihaneh Rabbany",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10935v1",
+    "source": "arXiv",
+    "abstract": "Research on misinformation has focused almost exclusively on supply, asking what falsehoods circulate, who produces them, and whether corrections work. A basic demand-side question remains unanswered. When ordinary people can fact-check anything they want, what do they actually ask about? We provide the first large-scale evidence on this question by analyzing close to 2{,}500 statements submitted by 457 participants to an open-ended AI fact-checking system. Each claim is classified along five semantic dimensions (domain, epistemic form, verifiability, target entity, and temporal reference), producing a behavioral map of public verification demand. Three findings stand out. First, users range widely across topics but default to a narrow epistemic repertoire, overwhelmingly submitting simple descriptive claims about present-day observables. Second, roughly one in four requests concerns statements that cannot be empirically resolved, including moral judgments, speculative predictions, and subjective evaluations, revealing a systematic mismatch between what users seek from fact-checking tools and what such tools can deliver. Third, comparison with the FEVER benchmark dataset exposes sharp structural divergences across all five dimensions, indicating that standard evaluation corpora encode a synthetic claim environment that does not resemble real-world verification needs. These results reframe fact-checking as a demand-driven problem and identify where current AI systems and benchmarks are misaligned with the uncertainty people actually experience."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Biomimetic Mantaray robot toward the underwater autonomous -- Experimental verification of swimming and diving by flapping motion -",
+    "authors": "Kenta Tabata, Ryosuke Oku, Jun Ito, Renato Miyagusuku, Koichi Ozaki",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10904v1",
+    "source": "arXiv",
+    "abstract": "This study presents the development and experimental verification of a biomimetic manta ray robot for underwater autonomous exploration. Inspired by manta rays, the robot uses flapping motion for propulsion to minimize seabed disturbance and enhance efficiency compared to traditional screw propulsion. The robot features pectoral fins driven by servo motors and a streamlined control box to reduce fluid resistance. The control system, powered by a Raspberry Pi 3B, includes an IMU and pressure sensor for real-time monitoring and control. Experiments in a pool assessed the robot's swimming and diving capabilities. Results show stable swimming and diving motions with PD control. The robot is suitable for applications in environments like aquariums and fish nurseries, requiring minimal disturbance and efficient maneuverability. Our findings demonstrate the potential of bio-inspired robotic designs to improve ecological monitoring and underwater exploration."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "SimuScene: Training and Benchmarking Code Generation to Simulate Physical Scenarios",
+    "authors": "Yanan Wang, Renxi Wang, Yongxin Wang, Xuezhi Liang, Fajri Koto, Timothy Baldwin, Xiaodan Liang, Haonan Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10840v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have been extensively studied for tasks like math competitions, complex coding, and scientific reasoning, yet their ability to accurately represent and simulate physical scenarios via code remains underexplored. We propose SimuScene, the first systematic study that trains and evaluates LLMs on simulating physical scenarios across five physics domains and 52 physical concepts. We build an automatic pipeline to collect data, with human verification to ensure quality. The final dataset contains 7,659 physical scenarios with 334 human-verified examples as the test set. We evaluated 10 contemporary LLMs and found that even the strongest model achieves only a 21.5% pass rate, demonstrating the difficulty of the task. Finally, we introduce a reinforcement learning pipeline with visual rewards that uses a vision-language model as a judge to train textual models. Experiments show that training with our data improves physical simulation via code while substantially enhancing general code generation performance."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Towards Probabilistic Strategic Timed CTL",
+    "authors": "Wojciech Jamroga, Marta Kwiatkowska, Wojciech Penczek, Laure Petrucci, Teofil Sidoruk",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10824v1",
+    "source": "arXiv",
+    "abstract": "We define PSTCTL, a probabilistic variant of Strategic Timed CTL (STCTL), interpreted over stochastic multi-agent systems with continuous time and asynchronous execution semantics. STCTL extends TCTL with strategic operators in the style of ATL. Moreover, we demonstrate the feasibility of verification with irP-strategies."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories",
+    "authors": "Chenlong Deng, Mengjie Deng, Junjie Wu, Dun Zeng, Teng Wang, Qingsong Xie, Jiadeng Huang, Shengjie Ma, Changwang Zhang, Zhaoxiang Wang, Jun Wang, Yutao Zhu, Zhicheng Dou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10809v1",
+    "source": "arXiv",
+    "abstract": "Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-image relevance can be measured in isolation. This paradigm overlooks the rich dependencies inherent in realistic visual streams, where information is distributed across temporal sequences rather than confined to single snapshots. To bridge this gap, we introduce DeepImageSearch, a novel agentic paradigm that reformulates image retrieval as an autonomous exploration task. Models must plan and perform multi-step reasoning over raw visual histories to locate targets based on implicit contextual cues. We construct DISBench, a challenging benchmark built on interconnected visual data. To address the scalability challenge of creating context-dependent queries, we propose a human-model collaborative pipeline that employs vision-language models to mine latent spatiotemporal associations, effectively offloading intensive context discovery before human verification. Furthermore, we build a robust baseline using a modular agent framework equipped with fine-grained tools and a dual-memory system for long-horizon navigation. Extensive experiments demonstrate that DISBench poses significant challenges to state-of-the-art models, highlighting the necessity of incorporating agentic reasoning into next-generation retrieval systems."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Collaborative Threshold Watermarking",
+    "authors": "Tameem Bakr, Anish Ambreth, Nils Lukas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10765v1",
+    "source": "arXiv",
+    "abstract": "In federated learning (FL), $K$ clients jointly train a model without sharing raw data. Because each participant invests data and compute, clients need mechanisms to later prove the provenance of a jointly trained model. Model watermarking embeds a hidden signal in the weights, but naive approaches either do not scale with many clients as per-client watermarks dilute as $K$ grows, or give any individual client the ability to verify and potentially remove the watermark. We introduce $(t,K)$-threshold watermarking: clients collaboratively embed a shared watermark during training, while only coalitions of at least $t$ clients can reconstruct the watermark key and verify a suspect model. We secret-share the watermark key $τ$ so that coalitions of fewer than $t$ clients cannot reconstruct it, and verification can be performed without revealing $τ$ in the clear. We instantiate our protocol in the white-box setting and evaluate on image classification. Our watermark remains detectable at scale ($K=128$) with minimal accuracy loss and stays above the detection threshold ($z\\ge 4$) under attacks including adaptive fine-tuning using up to 20% of the training data."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Architecting Trust: A Framework for Secure IoT Systems Through Trusted Execution and Semantic Middleware",
+    "authors": "Muhammad Imran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10762v1",
+    "source": "arXiv",
+    "abstract": "The Internet of Things (IoT) security landscape requires the architectural solutions that can address the technical and operational challenges across the heterogeneous environments. The IoT systems operate in different conditions, and security issues continue to increase. This paper presents the comprehensive security framework for IoT that should integrate the Trusted Execution Environments (TEEs) with the semantic middleware and blockchain technologies. The work provides a systematic analysis of the architectural patterns based on more than twenty recent research works and the existing standards, and it proposes a layered security architecture. The architecture includes the hardware rooted trust at peripheral level, the zero trust principles at network level, and the semantic security mechanisms at application level. The framework focuses on practical implementation aspects such as the performance overhead, interoperability requirements, and the compliance with new regulations, which are very important for the real IoT deployments. The paper reports quantitative metrics which include the cryptographic performance on Cortex-M class microcontrollers with the detection accuracy rates and the energy consumption values. The proposed architecture shows that cross-layer security integration can provide defense in depth while it still satisfies the constraints of resource-limited IoT environments. The discussion highlights open challenges and the future research directions for the IoT security architectures that include the post-quantum migration, secure federated model exchange and the automated compliance verification."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "SecureScan: An AI-Driven Multi-Layer Framework for Malware and Phishing Detection Using Logistic Regression and Threat Intelligence Integration",
+    "authors": "Rumman Firdos, Aman Dangi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10750v1",
+    "source": "arXiv",
+    "abstract": "The growing sophistication of modern malware and phishing campaigns has diminished the effectiveness of traditional signature-based intrusion detection systems. This work presents SecureScan, an AI-driven, triple-layer detection framework that integrates logistic regression-based classification, heuristic analysis, and external threat intelligence via the VirusTotal API for comprehensive triage of URLs, file hashes, and binaries. The proposed architecture prioritizes efficiency by filtering known threats through heuristics, classifying uncertain samples using machine learning, and validating borderline cases with third-party intelligence. On benchmark datasets, SecureScan achieves 93.1 percent accuracy with balanced precision (0.87) and recall (0.92), demonstrating strong generalization and reduced overfitting through threshold-based decision calibration. A calibrated threshold and gray-zone logic (0.45-0.55) were introduced to minimize false positives and enhance real-world stability. Experimental results indicate that a lightweight statistical model, when augmented with calibrated verification and external intelligence, can achieve reliability and performance comparable to more complex deep learning systems."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Benchmarking Large Language Models for Knowledge Graph Validation",
+    "authors": "Farzad Shami, Stefano Marchesin, Gianmaria Silvello",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10748v1",
+    "source": "arXiv",
+    "abstract": "Knowledge Graphs (KGs) store structured factual knowledge by linking entities through relationships, crucial for many applications. These applications depend on the KG's factual accuracy, so verifying facts is essential, yet challenging. Expert manual verification is ideal but impractical on a large scale. Automated methods show promise but are not ready for real-world KGs. Large Language Models (LLMs) offer potential with their semantic understanding and knowledge access, yet their suitability and effectiveness for KG fact validation remain largely unexplored. In this paper, we introduce FactCheck, a benchmark designed to evaluate LLMs for KG fact validation across three key dimensions: (1) LLMs internal knowledge; (2) external evidence via Retrieval-Augmented Generation (RAG); and (3) aggregated knowledge employing a multi-model consensus strategy. We evaluated open-source and commercial LLMs on three diverse real-world KGs. FactCheck also includes a RAG dataset with 2+ million documents tailored for KG fact validation. Additionally, we offer an interactive exploration platform for analyzing verification decisions. The experimental analyses demonstrate that while LLMs yield promising results, they are still not sufficiently stable and reliable to be used in real-world KG validation scenarios. Integrating external evidence through RAG methods yields fluctuating performance, providing inconsistent improvements over more streamlined approaches -- at higher computational costs. Similarly, strategies based on multi-model consensus do not consistently outperform individual models, underscoring the lack of a one-fits-all solution. These findings further emphasize the need for a benchmark like FactCheck to systematically evaluate and drive progress on this difficult yet crucial task."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "A Weakest Precondition Calculus for Programs and Linear Temporal Specifications",
+    "authors": "Gidon Ernst",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10746v1",
+    "source": "arXiv",
+    "abstract": "Auto-active program verification rests on the ability to effectively the translation from annotated programs into verification conditions that are then discharged by automated theorem provers in the background. Characteristic such tools, e.g., Why3, Dafny, and Viper, is that this process does not involve user interaction, expecting all guiding hints like invariants to be given upfront. For sequential correctness, this paradigm is well established, thanks to approaches like weakest precondition generation and symbolic execution. However, to capture temporal properties, the specification language of choice for a broader system perspective, additional concerns and challenges are introduced into the translation and proof. Approaches based on symbolic model-checking can verify such properties on system models, e.g., using automata constructions. However, ascribing temporal properties to structured and data-intensive programs is more difficult. Several program calculi have been proposed in the literature, each of which on their own falls short in some regard of supporting an auto-active workflow. However, all essential ideas, while perhaps some are not widely acknowledged, are in fact found in the literature. In this paper, we demonstrate how to assemble these ideas into a weakest-precondition calculus for linear temporal properties and demonstrate it with examples."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "DRAMPyML: A Formal Description of DRAM Protocols with Timed Petri Nets",
+    "authors": "Derek Christ, Thomas Zimmermann, Philippe Barbie, Dmitri Saberi, Yao Yin, Matthias Jung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10654v1",
+    "source": "arXiv",
+    "abstract": "The JEDEC committee defines various domain-specific DRAM standards. These standards feature increasingly complex and evolving protocol specifications, which are detailed in timing diagrams and command tables. Understanding these protocols is becoming progressively challenging as new features and complex device hierarchies are difficult to comprehend without an expressive model. While each JEDEC standard features a simplified state machine, this state machine fails to reflect the parallel operation of memory banks. In this paper, we present an evolved modeling approach based on timed Petri nets and Python. This model provides a more accurate representation of DRAM protocols, making them easier to understand and directly executable, which enables the evaluation of interesting metrics and the verification of controller RTL models, DRAM logic and memory simulators."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "The Neurosymbolic Frontier of Nonuniform Ellipticity: Formalizing Sharp Schauder Theory via Topos-Theoretic Reasoning Models",
+    "authors": "Suyash Mishra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10632v1",
+    "source": "arXiv",
+    "abstract": "This white paper presents a critical synthesis of the recent breakthrough in nonuniformly elliptic regularity theory and the burgeoning field of neurosymbolic large reasoning models (LRMs). We explore the resolution of the long-standing sharp growth rate conjecture in Schauder theory, achieved by Cristiana De Filippis and Giuseppe Mingione, which identifies the exact threshold $q/p < 1 + α/n$ for gradient Hölder continuity. Central to this mathematical achievement is the ``ghost equation'' methodology, a sophisticated auxiliary derivation that bypasses the non-differentiability of classical Euler-Lagrange systems. We propose that the next era of mathematical discovery lies in the integration of these pure analytical constructs with LRMs grounded in topos theory and formal verification frameworks such as Safe and Typed Chain-of-Thought (PC-CoT). By modeling the reasoning process as a categorical colimit in a slice topos, we demonstrate how LRMs can autonomously navigate the ``Dark Side'' of the calculus of variations, providing machine-checkable proofs for regularity bounds in complex, multi-phase physical systems."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Consistency Meets Verification: Enhancing Test Generation Quality in Large Language Models Without Ground-Truth Solutions",
+    "authors": "Hamed Taherkhani, Alireza DaghighFarsoodeh, Mohammad Chowdhury, Hung Viet Pham, Hadi Hemmati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10522v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have significantly advanced automated test generation, yet existing methods often rely on ground-truth code for verification, risking bug propagation and limiting applicability in test-driven development. We present ConVerTest, a novel two-stage pipeline for synthesizing reliable tests without requiring prior code implementations. ConVerTest integrates three core strategies: (i) Self-Consistency(SC) to generate convergent test cases via majority voting; (ii) Chain-of-Verification (CoVe) for iterative, reasoning-guided code refinement; and (iii) a Dual Execution Agreement to crossvalidate code and tests through consensus. Experiments on BIGCODEBENCH and LESS BASIC PYTHON PROBLEMS (LBPP) benchmarks demonstrate that ConVerTest improves test validity, line coverage, and mutation scores by up to 39%, 28%, and 18% respectively over baselines. Our findings highlight ConVerTest as a robust solution for mitigating hallucinations and enhancing the reliability of autonomous software testing agents."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Protecting Context and Prompts: Deterministic Security for Non-Deterministic AI",
+    "authors": "Mohan Rajagopalan, Vinay Rao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.10481v1",
+    "source": "arXiv",
+    "abstract": "Large Language Model (LLM) applications are vulnerable to prompt injection and context manipulation attacks that traditional security models cannot prevent. We introduce two novel primitives--authenticated prompts and authenticated context--that provide cryptographically verifiable provenance across LLM workflows. Authenticated prompts enable self-contained lineage verification, while authenticated context uses tamper-evident hash chains to ensure integrity of dynamic inputs. Building on these primitives, we formalize a policy algebra with four proven theorems providing protocol-level Byzantine resistance--even adversarial agents cannot violate organizational policies. Five complementary defenses--from lightweight resource controls to LLM-based semantic validation--deliver layered, preventative security with formal guarantees. Evaluation against representative attacks spanning 6 exhaustive categories achieves 100% detection with zero false positives and nominal overhead. We demonstrate the first approach combining cryptographically enforced prompt lineage, tamper-evident context, and provable policy reasoning--shifting LLM security from reactive detection to preventative guarantees."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Fixbench-RTL: A Comprehensive Benchmark for Evaluating LLMs on RTL Debugging",
+    "authors": "Shijie Li, Weimin Fu, Yifang Zhao, Xiaolong Guo, Yier Jin",
+    "publish": "2025 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)",
+    "url": "https://doi.org/10.1109/asianhost68425.2025.11370376",
+    "source": "IEEE",
+    "abstract": "The rapid advancement of large language models (LLMs) has presented new avenues for automating complex tasks in hardware design and verification. Due to the time-consuming and labor-intensive nature of hardware code debugging, there has been a growing interest in leveraging LLMs for automating this process. However, benchmarks used in existing studies tend to be simplistic, limited in bug type, and proposed by the authors themselves. In this paper, we introduce a novel benchmark named Fixbench-RTL and its construction framework, specifically designed to assess the ability of LLMs to identify and correct bugs in HDL-based hardware designs. The benchmark covers a broad spectrum of error types, including syntactic errors, functional bugs, and security vulnerabilities. Experimental evaluations show that current popular LLMs still fall short of meeting the practical requirements for hardware debugging. The benchmark aims to provide a foundation for future research in LLM-assisted hardware debugging."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "LLM-Based Analysis of the AI Incident Database: Insights for AI Governance",
+    "authors": "Hamid Nach",
+    "publish": "2025 IEEE International Conference on Technology Management, Operations and Decisions (ICTMOD)",
+    "url": "https://doi.org/10.1109/ictmod66732.2025.11372004",
+    "source": "IEEE",
+    "abstract": "Artificial Intelligence (AI) is increasingly adopted in critical sectors such as healthcare, finance, and public administration, where it promises significant gains in efficiency, automation, and decision support. At the same time, these systems expose societies to serious risks, including bias, discrimination, safety failures, and privacy infringements. To document and learn from such failures, the Artificial Intelligence Incident Database (AIID) was created as a community-driven repository and collective memory of AI harms, designed to support research, best practices, and governance. As of 2025, the AIID contains more than 1,100 incidents, yet its unstructured, narrative reports make systematic analysis difficult and limit their policy value. This paper addresses that challenge by applying a Large Language Model (LLM) pipeline, guided by the OECD AI Incident Reporting Framework, to transform AIID reports into structured data and enable systematic analysis of recurring patterns in AI incidents. The analysis reveals a sharp rise in frequency and severity since 2020, with human and economic harms dominating, transparency and fairness most frequently violated, and ICT, finance, and public administration accounting for most cases. In terms of implications, the study provides insights to better inform AI governance. It also demonstrates how to use LLMs to transform unstructured dataset into structured data for analysis."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Why Braking? Scenario Extraction and Reasoning Utilizing LLM",
+    "authors": "Yin Wu, Daniel Slieter, Vivek Subramanian, Ahmed Abouelazm, Robin Bohn, J. Marius Zöllner",
+    "publish": "2025 IEEE International Conference on Vehicular Electronics and Safety (ICVES)",
+    "url": "https://doi.org/10.1109/icves65691.2025.11376535",
+    "source": "IEEE",
+    "abstract": "The growing number of ADAS-equipped vehicles has led to a dramatic increase in driving data, yet most of them capture routine driving behavior. Identifying and understanding safety-critical corner cases within this vast dataset remains a significant challenge. Braking events are particularly indicative of potentially hazardous situations, motivating the central question of our research: Why does a vehicle brake? Existing approaches primarily rely on rule-based heuristics to retrieve target scenarios using predefined condition filters. While effective in simple environments such as highways, these methods lack generalization in complex urban settings. In this paper, we propose a novel framework that leverages Large Language Model (LLM) for scenario understanding and reasoning. Our method bridges the gap between low-level numerical signals and natural language descriptions, enabling LLM to interpret and classify driving scenarios. We propose a dual-path scenario retrieval that supports both category-based search for known scenarios and embedding-based retrieval for unknown Out-of-Distribution (OOD) scenarios. To facilitate evaluation, we curate scenario annotations on the Argoverse 2 Sensor Dataset. Experimental results show that our method outperforms rule-based baselines and generalizes well to OOD scenarios."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Integrating LLM-based AI Agents into Technology Roadmapping: Design Considerations and Opportunities",
+    "authors": "Kerem Nazlıel, Kerem Kayabay, Altan Koçyiğit",
+    "publish": "2025 IEEE International Conference on Technology Management, Operations and Decisions (ICTMOD)",
+    "url": "https://doi.org/10.1109/ictmod66732.2025.11371870",
+    "source": "IEEE",
+    "abstract": "The growing capabilities of LLMs and AI agents offer new opportunities for enhancing Technology Roadmapping, a core method in strategic planning. While current applications of LLMs in roadmapping have largely focused on trend identification and content generation, the broader potential of agentic systems across all phases of roadmapping remains underexplored. This paper examines how LLM-based AI agents can support and augment roadmapping activities, and proposes a set of design considerations to guide their effective integration. Drawing on agentic design patterns, technology management principles, and recent empirical studies, we introduce a framework that outlines six core requirements for building usable, adaptable, and explainable roadmapping systems. We also highlight specific opportunities where these agents can be implemented and add value. The findings aim to inform the future development of AI-augmented roadmapping tools and contribute to the advancement of strategic foresight capabilities."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Rethinking LLM Safety on Edge Devices: Unearthing Hidden Vulnerabilities through Power Stress",
+    "authors": "Weimin Fu, Zelin Lu, Gang Qu, Xiaolong Guo",
+    "publish": "2025 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)",
+    "url": "https://doi.org/10.1109/asianhost68425.2025.11370374",
+    "source": "IEEE",
+    "abstract": "The safety of large language models (LLMs) under hardware-induced perturbations remains an underexplored dimension of model reliability. Although LLMs are often treated as stable and deterministic during inference, transient voltage fluctuations, resulting from battery degradation and computational stress on edge devices, can induce faulty behavior, including hallucinations, truncation, and inference failure, even in non-adversarial settings. This study examines the extent to which such power stress reveals model-specific vulnerabilities. Controlled undervolting experiments were conducted on a Raspberry Pi 5 using two instruction-tuned LLMs: google/gemma-3-1b-it and meta-llama/Llama-3.2-1B. Despite operating under identical hardware and load conditions, the models exhibited significantly different responses to voltage degradation. The observed discrepancies suggest that robustness to physical faults is not an inherent characteristic of LLMs, but rather a learned property influenced by training methodology and model design. These findings underscore the need to treat hardware-induced fault tolerance as a core aspect of LLM safety. Evaluating and improving such safety properties is essential for deploying LLMs in energy-constrained and long-lived edge environments."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "A Global Hierarchical LLM Framework for Precise Responses through Subscriptions to Country LLMs",
+    "authors": "Anthony Jairam, Tamika Ramkissoon, Kevin Baboolal, Patrick Hosein",
+    "publish": "2025 IEEE International Conference on Technology Management, Operations and Decisions (ICTMOD)",
+    "url": "https://doi.org/10.1109/ictmod66732.2025.11371986",
+    "source": "IEEE",
+    "abstract": "The increasing adoption of Large Language Models (LLM) and Retrieval-Augmented Generation (RAG) pipelines is transforming information access, yet their efficacy is significantly hampered in developing regions by a scarcity of relevant, localized data and compute. Furthermore, reliance on centralized RAG architectures raises critical data governance concerns, as organizations and governments are reluctant to forfeit control of sensitive data, thereby centralizing economic benefits and exacerbating regional digital divides. To address these challenges, this paper introduces a novel framework that leverages a distributed network of specialized LLMs rooted in the principles of Distributed Retrieval-Augmented Generation (DRAG). Our proposed architecture eliminates the need for a centralized knowledge base, allowing data owners to retain full control over their assets. We detail an intelligent query-routing mechanism for efficient knowledge discovery within the network and, critically, propose a comprehensive incentive model to encourage the active participation of regional entities. By fostering a collaborative, yet decentralized, ecosystem, this framework facilitates equitable data governance and paves the way for a sustainable, regional data economy, empowering local communities and enhancing the accuracy of LLMs."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "ArchTune: A Predictive Energy Estimation Framework for LLM Inference on Edge Accelerators",
+    "authors": "Arghyajoy Mondal, Rajdeep Samanta, Ashwin Krishnan, Sparsh Mittal, Manoj Nambiar, Rekha Singhal",
+    "publish": "2025 5th International Conference on AI-ML-Systems (AIMLSystems)",
+    "url": "https://doi.org/10.1109/aimlsystems67835.2025.11373945",
+    "source": "IEEE",
+    "abstract": "Transformer-based Large Language Models (LLMs) power applications from virtual assistants and code generation to scientific discovery. As their capabilities grow, they are used for emerging use cases such as offline AI copilots, on-device personalization, and edge inference. This demands efficient deployment of fine-tuned LLMs or compact Small Language Models (SLMs) on resource-constrained edge devices. However, deploying LLMs on the edge presents a significant hardware design challenge. The diversity in model architectures, input/output token lengths, and batch sizes leads to widely varying compute and memory demands. Moreover, design parameters like systolic array sizes, vector lengths, data widths, and operating frequencies drastically affect energy consumption and latency. While hardware-aware quantization is often adopted for power-performance gains, determining the optimal hardware configuration that meets tight power and performance budgets remains a non-trivial task, especially when the design space spans millions of possible configurations. Exhaustive exploration is computationally prohibitive and delays time to market. We introduce Architecture-Tuner (ArchTune), a lightweight analytical framework that predicts power, latency and energy consumption for RISC-V-based accelerators featuring systolic arrays and vector processing units (VPUs). Given an LLM workload, ArchTune rapidly estimates energy across millions of configurations using calibrated analytical models, eliminating the need for exhaustive simulations. ArchTune achieves <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$R^{2}=99.42 \\%$</tex> with <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{1 0. 4 1 \\%}$</tex> MAPE for systolic arrays and 8.2% MAPE for VPUs. By combining these models with systematic latency and memory analysis, ArchTune empowers early-stage design-space exploration, enabling designers to select energy-efficient hardware tailored for specific LLM workloads on edge platforms."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Towards Refining Developer Questions using LLM-Based Named Entity Recognition for Developer Chatroom Conversations",
+    "authors": "Pouya Fathollahzadeh, Mariam El Mezouar, Hao Li, Ying Zou, Ahmed E. Hassan",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3663599",
+    "source": "IEEE",
+    "abstract": "In software engineering chatrooms, communication is often hindered by imprecise questions that cannot be answered. Recognizing key entities (e.g., programming languages and libraries) and user intent (e.g., learning or requesting a review) can be essential for improving question clarity and facilitating better exchange. However, existing research using natural language processing techniques often overlooks these softwarespecific nuances. In this paper, we introduce <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">S</u>oftwar<underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">E</u>-specific <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">N</u>amed entity recognition, <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">I</u>ntent detection, and <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">R</u>esolution classification (SENIR), a labelling approach that leverages a Large Language Model to annotate entities, intents, and resolution status in developer chatroom conversations. To offer quantitative guidance for improving question clarity and resolvability, we build a resolution prediction model that leverages SENIR’s entity and intent labels along with additional predictive features. We evaluate SENIR on the DISCO dataset using a subset of annotated chatroom dialogues. SENIR achieves an 86% F-score for entity recognition, a 71% F-score for intent detection, and an 89% F-score for resolution status classification. Furthermore, our resolution prediction model, tested with various sampling strategies (random undersampling and oversampling with SMOTE) and evaluation methods (5-fold cross-validation, 10-fold cross-validation, and bootstrapping), demonstrates AUC values ranging from 0.7 to 0.8. Key factors influencing resolution include positive sentiment and entities such as <monospace xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Programming Language</monospace> and <monospace xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">User Variable</monospace> across multiple intents, while diagnostic entities (e.g., <monospace xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Error Name</monospace>) are more relevant in error-related questions. Moreover, resolution rates vary significantly by intent: questions about <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">API Usage</i> and <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">API Change</i> achieve higher resolution rates, whereas <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Discrepancy</i> and <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Review</i> have lower resolution rates. A Chi-Square analysis confirms the statistical significance of these differences."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "DeepRS: LLM-Driven Deep Reasoning for Multi-Granularity Remote Sensing Scene Interpretation",
+    "authors": "Cheng Yang, Jia Zhang, Qiujun Li, Wang Guo, Haifeng Li",
+    "publish": "IEEE Geoscience and Remote Sensing Letters",
+    "url": "https://doi.org/10.1109/lgrs.2026.3663856",
+    "source": "IEEE",
+    "abstract": "Vision-Language Models (VLMs) have achieved remarkable results in remote sensing scene interpretation. However, existing models primarily rely on a single-step reasoning paradigm, which suffers from <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Incomplete Perception</i> and <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Granularity Limitation</i> when confronting complex tasks requiring comprehensive, multi-granularity visual contexts. To overcome these bottlenecks, we propose DeepRS, a training-free, LLM-driven Deep Reasoning Framework. This framework leverages the logical planning capabilities of Large Language Models (LLMs) to restructure the reasoning process into a hierarchical, iterative Reason-Observe-Re-reason cycle. Specifically, we construct a dynamic reasoning tree where the LLM recursively decomposes the problem into fine-grained queries, actively guiding the perception module to mine visual clues. Subsequently, a multistage reflection mechanism consolidates these multi-level contexts to derive the final conclusion. Extensive experiments demonstrate that DeepRS significantly outperforms both single-VLM baselines and collaborative baselines in accuracy and robustness. Furthermore, our framework generates clear, traceable reasoning paths, substantially enhancing interpretability in complex remote sensing scenarios."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Game Plot Design With an LLM-Powered Assistant: An Empirical Study With Game Designers",
+    "authors": "Seyed Hossein Alavi, Weijia Xu, Nebojsa Jojic, Daniel Kennett, Raymond T. Ng, Sudha Rao, Haiyan Zhang, Bill Dolan, Vered Shwartz",
+    "publish": "IEEE Transactions on Games",
+    "url": "https://doi.org/10.1109/tg.2026.3663566",
+    "source": "IEEE",
+    "abstract": "We introduce GamePlot, an LLM-powered assistant that supports game designers in crafting immersive narratives for turn-based games, and allows them to test these games through a collaborative game play and refine the plot throughout the process. Our user study with 14 game designers shows high levels of both satisfaction with the generated game plots and sense of ownership over the narratives, but also reconfirms that LLM are limited in their ability to generate complex and truly innovative content. We also show that diverse user populations have different expectations from AI assistants, and encourage researchers to study how tailoring assistants to diverse user groups could potentially lead to increased job satisfaction and greater creativity and innovation over time."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "SmartLLM: Multi-Dimensional Dataset Generation via LLM Simulation in Smart Home",
+    "authors": "Huanke Zheng, Rui Wang, Qin Yang, Salman A. AlQahtan, Min Chen, Mohsen Guizani, Giancarlo Fortino",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3663651",
+    "source": "IEEE",
+    "abstract": "Human activity prediction is crucial for enabling intelligent smart home services, yet it is often hindered by the scarcity of high-quality, multi-dimensional datasets. Existing datasets are typically fragmented, capturing either long-term activity sequences or short-term device interactions, but rarely both in a unified manner. Traditional data collection methods are costly and time-consuming, while conventional simulation techniques struggle to generate diverse and logically coherent behavior sequences. To address these limitations, we propose SmartLLM, a novel Large Language Model (LLM)-based simulation framework for automated generation of multi-dimensional smart home datasets. SmartLLM simulates simulated agents with distinct profiles (e.g., old man, remote worker, holiday maker) performing daily activities within configurable home environments, generating temporally aligned sequences across Activity-Device-Sensor dimensions. We generate two months of simulated data for three user profiles and validated their plausibility through activity distribution visualization, statistical perplexity analysis, and case studies. Multi-dimensional feature validation experiments further demonstrate that our multi-dimensional data significantly enhances the accuracy of activity prediction models compared to using single-dimensional features. This work successfully addresses key bottlenecks in smart home data acquisition and provides a scalable, high-quality data foundation for advancing smart home algorithm research. The code is available at https://github.com/HuankeZheng/SmartLLM."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Multimodal Data Differential Privacy Algorithm and AI Security Verification",
+    "authors": "Shuguang Li, Jingchao Zheng, Ang Gao",
+    "publish": "2025 5th International Conference on Conference on Robotics, Automation and Intelligent Control (ICRAIC)",
+    "url": "https://doi.org/10.1109/icraic67376.2025.11376501",
+    "source": "IEEE",
+    "abstract": "The widespread application of multimodal data in artificial intelligence systems brings serious privacy leakage risks and security threats. Differential privacy technology can provide mathematically provable privacy protection mechanisms for multimodal data protection. This research proposes a multimodal data differential privacy algorithm based on multi-step error minimization. Through adaptive noise addition and text trigger optimization, it achieves joint protection of image-text pairs, constructs a complete AI security verification framework, establishes threat models, and designs robustness testing mechanisms. In common benchmarks such as Flickr 30K and MS-COCO, the method demonstrates remarkable excellence: It reduces the effectiveness of malicious models to a near-random level (only 17.2% on large datasets, a far cry from the 97.5% standard), reduces the use of privacy budgets by 23.6% compared to traditional monomodal methods, while ensuring that the accuracy of the protected model is only 8.8 percentage points lower than the original unprotected model, effectively balancing the needs of privacy protection and data usability."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Efficient Regression-Based Verification Methodology for Hardware-in-the-Loop Simulation Models",
+    "authors": "David Schlatzer, Nick Schade, Jürgen Pannek",
+    "publish": "2025 IEEE International Conference on Vehicular Electronics and Safety (ICVES)",
+    "url": "https://doi.org/10.1109/icves65691.2025.11375963",
+    "source": "IEEE",
+    "abstract": "Hardware-in-the-Loop (HiL) simulation is a well-established technique for system validation in automotive development. As autonomous vehicles become more prevalent, the ability to demonstrate the credibility of these HiL systems becomes increasingly important. A key factor influencing this credibility is the verification of the simulation models used as a subsystem within the HiL environment. The increasing complexity of vehicle software leads to more complex simulation models, which in turn significantly raises the effort required for their verification. At the same time, with the shift towards software-defined vehicles, the demand for faster and more frequent incremental software updates is growing. This trend presents a substantial challenge for providers of HiL simulation models, who must keep pace without impairing the ability to demonstrate and document the credibility of the simulation models for every release. In this context, regression testing plays a crucial role in incremental development processes of simulation models, as it ensures that newly introduced changes do not negatively impact existing system behavior. To address this, this paper introduces a regression-based test case selection method to increase the efficiency of the verification of HiL simulation models. The approach performs graph-based signal flow analysis, identifies differences between consecutive simulation model releases, and selects reusable vehicle-level test cases for regression testing of a new simulation model increment."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Impact of an LLM-based Review Assistant in Practice: A Mixed Open-/Closed-source Case Study",
+    "authors": "Doriane Olewicki, Leuson Da Silva, Oussama Ben Sghaier, Suhaib Mujahid, Arezou Amini, Benjamin Mah, Marco Castelluccio, Sarra Habchi, Foutse Khomh, Bram Adams",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3663093",
+    "source": "IEEE",
+    "abstract": "Code review is a standard practice in modern software development, aiming to improve code quality.As providing constructive reviews on a submitted patch is a challenging and error-prone task, the advances of Large Language Models (LLMs) in performing natural language processing (NLP) tasks in a human-like fashion have prompted researchers to evaluate the LLMs’ ability to automate the code review process. However, outside lab settings, it is still unclear how prone reviewers are to accept comments generated by LLMs in a real development workflow. To fill this gap, we conduct a large-scale empirical case study in a live setup to evaluate the acceptance of LLM-generated comments and their impact on the review process. This case study was performed in two organizations, Mozilla (which has its codebase available as open-source) and Ubisoft (fully closedsource). Inside their usual review environment, participants were given access to RevMate, an LLM-based assistive tool that suggests generated review comments using an off-the-shelf LLM with Retrieval-Augmented Generation to provide extra code and review context, combined with LLM-as-a-Judge, to autoevaluate the generated comments and discard irrelevant cases. Based on more than 587 patch reviews, we observed that 8.1%, of LLM-generated comments were accepted by reviewers in each organization respectively, while 14.6% and 20.5% other comments were still marked as valuable as review or development tips. Refactoring-related comments are more likely to be accepted than Functional comments (18.2% and 18.6% compared to 4.8% and 5.2%). The extra time spent by reviewers to inspect generated comments or edit accepted ones (36/119), yielding an overall median of 43s per patch, is reasonable. The accepted generated comments are as likely to yield future revisions of the revised patch as human-written comments (74% vs 73% at chunk-level)."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "An Approach to Formal Verification of Autonomous Vehicle Systems using Threat Analysis",
+    "authors": "Sheraz Mazhar, Abdur Rakib, Robin Doss, Adnan Anwar",
+    "publish": "2025 IEEE International Conference on Vehicular Electronics and Safety (ICVES)",
+    "url": "https://doi.org/10.1109/icves65691.2025.11376182",
+    "source": "IEEE",
+    "abstract": "The rapid advancement and deployment of connected and autonomous vehicles (CAVs) present transformative opportunities to enhance safety, efficiency, and convenience within the transportation industry. However, these innovations introduce significant cybersecurity risks due to the complex electronics and continuous connectivity that CAVs depend on. Traditional testing methods, while critical, often fall short in detecting vulnerabilities across the vast range of scenarios these vehicles may encounter. Formal verification, a mathematical approach to system validation, offers a more rigorous and comprehensive solution by ensuring that systems operate as expected to search through all possible execution paths. However, defining appropriate system properties for verification remains a challenge, as a system designer may write properties that fail to address real-world threats effectively. This research addresses this gap by integrating threat analysis into the process of defining security properties, ensuring that the verification process is aligned with actual cybersecurity risks. We leverage Natural Language Processing (NLP) to extract key security details from threat analysis result texts, automating the generation of system properties. This approach simplifies the verification process, with its usability demonstrated through a high-level 5G-V2X design use case scenario."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Restricted Receptive Fields for Face Verification",
+    "authors": "Kagan Ozturk, Aman Bhatta, Haiyu Wu, Patrick Flynn, Kevin W. Bowyer",
+    "publish": "IEEE Transactions on Biometrics, Behavior, and Identity Science",
+    "url": "https://doi.org/10.1109/tbiom.2026.3663919",
+    "source": "IEEE",
+    "abstract": "Understanding how deep neural networks make decisions is crucial for analyzing their behavior and diagnosing failure cases. In computer vision, a common approach to improve interpretability is to assign importance to individual pixels using post-hoc methods. Although they are widely used to explain black-box models, their fidelity to the model’s actual reasoning is uncertain due to the lack of reliable evaluation metrics. This limitation motivates an alternative approach, which is to design models whose decision processes are inherently interpretable. To this end, we propose a face similarity metric that breaks down global similarity into contributions from restricted receptive fields. Our method defines the similarity between two face images as the sum of patch-level similarity scores, providing a locally additive explanation without relying on post-hoc analysis. We show that the proposed approach achieves competitive verification performance even with patches as small as 28×28 within 112×112 face images, and surpasses state-of-the-art methods when using 56 × 56 patches."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Probabilistic Safety Verification for an Autonomous Ground Vehicle: A Situation Coverage Grid Approach",
+    "authors": "Nawshin Mannan Proma, Gricel Vázquez, Sepeedeh Shahbeigi, Arjun Badyal, Victoria Hodge",
+    "publish": "2025 IEEE International Conference on Vehicular Electronics and Safety (ICVES)",
+    "url": "https://doi.org/10.1109/icves65691.2025.11376577",
+    "source": "IEEE",
+    "abstract": "As industrial autonomous ground vehicles are increasingly deployed in safety-critical environments, ensuring their safe operation under diverse conditions is paramount. This paper presents a novel approach for their safety verification based on systematic situation extraction, probabilistic modelling and verification. We build upon the concept of a situation coverage grid, which exhaustively enumerates environmental configurations relevant to the vehicle’s operation. This grid is augmented with quantitative probabilistic data collected from situation-based system testing, capturing probabilistic transitions between situations. We then generate a probabilistic model that encodes the dynamics of both normal and unsafe system behaviour. Safety properties extracted from hazard analysis and formalised in temporal logic are verified through probabilistic model checking against this model. The results demonstrate that our approach effectively identifies high-risk situations, provides quantitative safety guarantees, and supports compliance with regulatory standards, thereby contributing to the robust deployment of autonomous systems."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Leveraging Large Language Models for Secure Hardware Verification and Analysis",
+    "authors": "Yifang Zhao, Weimin Fu, Yi-Xiang Hu, Shijie Li, Xiaolong Guo, Yier Jin",
+    "publish": "2025 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)",
+    "url": "https://doi.org/10.1109/asianhost68425.2025.11370389",
+    "source": "IEEE",
+    "abstract": "The increasing complexity of modern system-on-chip development and its distributed design workflows introduces significant security challenges. However, traditional verification techniques face limitations in scalability and automation. Recent advancements in Large Language Models (LLMs) offer promising opportunities for automating hardware security verification. This paper presents a comprehensive survey of emerging research that applies LLMs to secure hardware design analysis. Through objective evaluation, we find that current LLM-driven approaches are often developed under overly simplified scenarios and demonstrate unstable performance across diverse hardware designs. To address these issues, we outline three key directions for future research: developing standardized security-oriented benchmarks, advancing domain-specific semantic reasoning capabilities, and facilitating tighter integration with verification tools. This study provides essential insights for building scalable and fully automated LLM-driven hardware security verification."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "A Portable and Hybrid Verification Framework Using C and UVM for Secure RISC-V SoCs",
+    "authors": "Muhammad Yasir Farooq, Haroon Waris, Chenghua Wang, Muhammad Usman Akram, Jiatong Tian, Jiang Li, Weiqiang Liu",
+    "publish": "2025 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)",
+    "url": "https://doi.org/10.1109/asianhost68425.2025.11370371",
+    "source": "IEEE",
+    "abstract": "Comprehensive functional verification at the System-on-Chip (SoC) level is a critical and time-consuming task. The growing adoption of open source RISC-V based cores with safety and security features has introduced new verification challenges that require scalable and reusable solutions. This paper presents a portable and hybrid verification framework using C and UVM for secure RISC-V SoCs. The proposed UVM based verification framework is designed to support both C/assembly level test cases and SystemVerilog based verification components, enabling a dual test strategy that enhances coverage and debugging capabilities. The VE includes verification components for core, cache and peripheral interfaces such as agents, predictors and scoreboards, making it applicable to a wide range of RISC-V standard extension cores. It also supports third-party VIP integration, regression analysis and functional coverage tracking for integer, multiplication, compressed and floating-point instruction sets of RISC-V core. As a case study, the framework is applied to a customized open source RISCV SoC enhanced with AES security features. The experimental results demonstrate that the framework achieves 90% functional coverage, 85% code coverage and 91% instruction coverage. The indigenously developed hybrid C/UVM test suites for UART, SPI and AES are easily configurable and reusable. In general, the proposed framework provides an automated, portable and extensible solution to verify secure RISC-V SoCs with reduced engineering effort and faster coverage closure. This work emphasizes practical integration of hybrid C/UVM testing across RISCV cores and peripherals and includes a comparative evaluation with existing platforms to highlight portability and reuse."
+  },
+  {
+    "date": "2026-2-11",
+    "title": "Intelligent Verification of Refueling Control System Logic Programs Based on Digital Twin and Large Language Models",
+    "authors": "Yuan Zhang, Shengguo Dong, Yankun Li, Chao Si, Ning Lv",
+    "publish": "2025 5th International Conference on Conference on Robotics, Automation and Intelligent Control (ICRAIC)",
+    "url": "https://doi.org/10.1109/icraic67376.2025.11376459",
+    "source": "IEEE",
+    "abstract": "Nuclear power plant refueling control systems, as critical components for nuclear safety operations, face dual challenges of low efficiency and high safety risks in their verification processes. Addressing this current situation, this paper innovatively proposes a method that deeply integrates the five-dimensional digital twin model with Large Language Models (LLMs) to intelligently verify control system logic programs. This method constructs a comprehensive digital twin architecture encompassing physical entities, virtual models, connection mechanisms, twin data, and service layers, achieving intelligent monitoring and analysis of the refueling control system throughout its entire lifecycle through advanced multimodal data fusion technology. The system employs specially optimized large language models to perform deep semantic analysis of Programmable Logic Controller (PLC) programs, establishing an intelligent fault diagnosis model that integrates sensor data, program code, and historical logs, thereby achieving automatic identification and prediction of abnormal patterns. Compared to traditional static analysis methods, this approach significantly improves the accuracy of code logic error detection, providing a revolutionary technical solution for the safety and reliability of nuclear power plant refueling operations and promoting innovative applications of digital twin and artificial intelligence technologies in nuclear safety-critical domains."
+  }
+]
