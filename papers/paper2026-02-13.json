@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-12",
+    "title": "Scaling Verification Can Be More Effective than Scaling Policy Learning for Vision-Language-Action Alignment",
+    "authors": "Jacky Kwok, Xilun Zhang, Mengdi Xu, Yuejiang Liu, Azalia Mirhoseini, Chelsea Finn, Marco Pavone",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.12281v1",
+    "source": "arXiv",
+    "abstract": "The long-standing vision of general-purpose robots hinges on their ability to understand and act upon natural language instructions. Vision-Language-Action (VLA) models have made remarkable progress toward this goal, yet their generated actions can still misalign with the given instructions. In this paper, we investigate test-time verification as a means to shrink the \"intention-action gap.'' We first characterize the test-time scaling law for embodied instruction following and demonstrate that jointly scaling the number of rephrased instructions and generated actions greatly increases test-time sample diversity, often recovering correct actions more efficiently than scaling each dimension independently. To capitalize on these scaling laws, we present CoVer, a contrastive verifier for vision-language-action alignment, and show that our architecture scales gracefully with additional computational resources and data. We then introduce \"boot-time compute\" and a hierarchical verification inference pipeline for VLAs. At deployment, our framework precomputes a diverse set of rephrased instructions from a Vision-Language-Model (VLM), repeatedly generates action candidates for each instruction, and then uses a verifier to select the optimal high-level prompt and low-level action chunks. Compared to scaling policy pre-training on the same data, our verification approach yields 22% gains in-distribution and 13% out-of-distribution on the SIMPLER benchmark, with a further 45% improvement in real-world experiments. On the PolaRiS benchmark, CoVer achieves 14% gains in task progress and 9% in success rate."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "UniT: Unified Multimodal Chain-of-Thought Test-time Scaling",
+    "authors": "Leon Liangyu Chen, Haoyu Ma, Zhipeng Fan, Ziqi Huang, Animesh Sinha, Xiaoliang Dai, Jialiang Wang, Zecheng He, Jianwei Yang, Chunyuan Li, Junzhe Sun, Chu Wang, Serena Yeung-Levy, Felix Juefei-Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.12279v1",
+    "source": "arXiv",
+    "abstract": "Unified models can handle both multimodal understanding and generation within a single architecture, yet they typically operate in a single pass without iteratively refining their outputs. Many multimodal tasks, especially those involving complex spatial compositions, multiple interacting objects, or evolving instructions, require decomposing instructions, verifying intermediate results, and making iterative corrections. While test-time scaling (TTS) has demonstrated that allocating additional inference compute for iterative reasoning substantially improves language model performance, extending this paradigm to unified multimodal models remains an open challenge. We introduce UniT, a framework for multimodal chain-of-thought test-time scaling that enables a single unified model to reason, verify, and refine across multiple rounds. UniT combines agentic data synthesis, unified model training, and flexible test-time inference to elicit cognitive behaviors including verification, subgoal decomposition, and content memory. Our key findings are: (1) unified models trained on short reasoning trajectories generalize to longer inference chains at test time; (2) sequential chain-of-thought reasoning provides a more scalable and compute-efficient TTS strategy than parallel sampling; (3) training on generation and editing trajectories improves out-of-distribution visual reasoning. These results establish multimodal test-time scaling as an effective paradigm for advancing both generation and understanding in unified models."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Sci-CoE: Co-evolving Scientific Reasoning LLMs via Geometric Consensus with Sparse Supervision",
+    "authors": "Xiaohan He, Shiyang Feng, Songtao Huang, Lei Bai, Bin Wang, Bo Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.12164v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have demonstrated exceptional reasoning capabilities, and co-evolving paradigms have shown promising results in domains such as code and math. However, in scientific reasoning tasks, these models remain fragile due to unreliable solution evaluation and limited diversity in verification strategies. In this work, we propose Sci-CoE, a two-stage scientific co-evolving framework that enables models to self-evolve as both solver and verifier through a transition from sparse supervision to unsupervised learning. In the first stage, the model uses a small set of annotated data to establish fundamental correctness judgment anchors for the Verifier. In the second stage, we introduce a geometric reward mechanism that jointly considers consensus, reliability, and diversity, driving large-scale self-iteration on unlabeled data. Experiments on several general scientific benchmarks demonstrate that Sci-CoE enhances complex reasoning capabilities and exhibits strong scalability, facilitating the construction of more robust and diverse evaluation systems. Codes are available at https://github.com/InternScience/Sci-CoE."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "3DGSNav: Enhancing Vision-Language Model Reasoning for Object Navigation via Active 3D Gaussian Splatting",
+    "authors": "Wancai Zheng, Hao Chen, Xianlong Lu, Linlin Ou, Xinyi Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.12159v1",
+    "source": "arXiv",
+    "abstract": "Object navigation is a core capability of embodied intelligence, enabling an agent to locate target objects in unknown environments. Recent advances in vision-language models (VLMs) have facilitated zero-shot object navigation (ZSON). However, existing methods often rely on scene abstractions that convert environments into semantic maps or textual representations, causing high-level decision making to be constrained by the accuracy of low-level perception. In this work, we present 3DGSNav, a novel ZSON framework that embeds 3D Gaussian Splatting (3DGS) as persistent memory for VLMs to enhance spatial reasoning. Through active perception, 3DGSNav incrementally constructs a 3DGS representation of the environment, enabling trajectory-guided free-viewpoint rendering of frontier-aware first-person views. Moreover, we design structured visual prompts and integrate them with Chain-of-Thought (CoT) prompting to further improve VLM reasoning. During navigation, a real-time object detector filters potential targets, while VLM-driven active viewpoint switching performs target re-verification, ensuring efficient and reliable recognition. Extensive evaluations across multiple benchmarks and real-world experiments on a quadruped robot demonstrate that our method achieves robust and competitive performance against state-of-the-art approaches.The Project Page:https://aczheng-cai.github.io/3dgsnav.github.io/"
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Affordance-Graphed Task Worlds: Self-Evolving Task Generation for Scalable Embodied Learning",
+    "authors": "Xiang Liu, Sen Cui, Guocai Yao, Zhong Cao, Jingheng Ma, Min Zhang, Changshui Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.12065v1",
+    "source": "arXiv",
+    "abstract": "Training robotic policies directly in the real world is expensive and unscalable. Although generative simulation enables large-scale data synthesis, current approaches often fail to generate logically coherent long-horizon tasks and struggle with dynamic physical uncertainties due to open-loop execution. To address these challenges, we propose Affordance-Graphed Task Worlds (AGT-World), a unified framework that autonomously constructs interactive simulated environments and corresponding robot task policies based on real-world observations. Unlike methods relying on random proposals or static replication, AGT-World formalizes the task space as a structured graph, enabling the precise, hierarchical decomposition of complex goals into theoretically grounded atomic primitives. Furthermore, we introduce a Self-Evolution mechanism with hybrid feedback to autonomously refine policies, combining Vision-Language Model reasoning and geometric verification. Extensive experiments demonstrate that our method significantly outperforms in success rates and generalization, achieving a self-improving cycle of proposal, execution, and correction for scalable robot learning."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "LawThinker: A Deep Research Legal Agent in Dynamic Environments",
+    "authors": "Xinyu Yang, Chenlong Deng, Tongyu Wen, Binyu Xie, Zhicheng Dou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.12056v1",
+    "source": "arXiv",
+    "abstract": "Legal reasoning requires not only correct outcomes but also procedurally compliant reasoning processes. However, existing methods lack mechanisms to verify intermediate reasoning steps, allowing errors such as inapplicable statute citations to propagate undetected through the reasoning chain. To address this, we propose LawThinker, an autonomous legal research agent that adopts an Explore-Verify-Memorize strategy for dynamic judicial environments. The core idea is to enforce verification as an atomic operation after every knowledge exploration step. A DeepVerifier module examines each retrieval result along three dimensions of knowledge accuracy, fact-law relevance, and procedural compliance, with a memory module for cross-round knowledge reuse in long-horizon tasks. Experiments on the dynamic benchmark J1-EVAL show that LawThinker achieves a 24% improvement over direct reasoning and an 11% gain over workflow-based methods, with particularly strong improvements on process-oriented metrics. Evaluations on three static benchmarks further confirm its generalization capability. The code is available at https://github.com/yxy-919/LawThinker-agent ."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "The Cylinder Simplicial DG Ring",
+    "authors": "Amnon Yekutieli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11943v1",
+    "source": "arXiv",
+    "abstract": "Given a DG ring $B$ and an integer $q \\geq 0$, we construct the $q$-th cylinder DG ring $Cyl_q(B)$. For $q = 1$ this is just Keller's cylinder DG ring, sometimes called the path object of $B$, which encodes homotopies between DG ring homomorphisms $A \\to B$. As $q$ changes the cylinder DG rings form a simplicial DG ring $Cyl(B)$. Hence, given another DG ring $A$, the DG ring homomorphisms $A \\to Cyl(B)$ form a simplicial set $Hom(A,Cyl(B))$. Our main theorem states that when $A$ is a semi-free DG ring, the simplicial set $Hom(A,Cyl(B))$ is a Kan complex. For the verification of the Kan condition we introduce a new construction, which may be of independent interest. Given a horn $Y$, we define the DG ring $N(Y,B)$, and we prove that $N(Y,B)$ represents this horn in the simplicial set $Hom(A,Cyl(B))$. In this way the Kan condition is implemented intrinsically in the category of DG rings, thus facilitating calculations. Presumably all the above can be extended, with little change, from DG rings to (small) DG categories. That would enable easy constructions and explicit calculations of some simplicial aspects of DG categories."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "LLM-based Triplet Extraction from Financial Reports",
+    "authors": "Dante Wesslund, Ville Stenström, Pontus Linde, Alexander Holmberg",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11886v1",
+    "source": "arXiv",
+    "abstract": "Corporate financial reports are a valuable source of structured knowledge for Knowledge Graph construction, but the lack of annotated ground truth in this domain makes evaluation difficult. We present a semi-automated pipeline for Subject-Predicate-Object triplet extraction that uses ontology-driven proxy metrics, specifically Ontology Conformance and Faithfulness, instead of ground-truth-based evaluation. We compare a static, manually engineered ontology against a fully automated, document-specific ontology induction approach across different LLMs and two corporate annual reports. The automatically induced ontology achieves 100% schema conformance in all configurations, eliminating the ontology drift observed with the manual approach. We also propose a hybrid verification strategy that combines regex matching with an LLM-as-a-judge check, reducing apparent subject hallucination rates from 65.2% to 1.6% by filtering false positives caused by coreference resolution. Finally, we identify a systematic asymmetry between subject and object hallucinations, which we attribute to passive constructions and omitted agents in financial prose."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Thinking with Drafting: Optical Decompression via Logical Reconstruction",
+    "authors": "Jingxuan Wei, Honghao He, Caijun Jia, Siyuan Li, Zheng Sun, Yuhang Xu, Yuanyuan Lin, Linzhuang Sun, Yuchen Wu, Bihui Yu, Xiangxiang Zhang, Cheng Tan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11731v1",
+    "source": "arXiv",
+    "abstract": "Existing multimodal large language models have achieved high-fidelity visual perception and exploratory visual generation. However, a precision paradox persists in complex reasoning tasks: optical perception systems transcribe symbols without capturing logical topology, while pixel-based generative models produce visual artifacts lacking mathematical exactness. To bridge this gap, we propose that reasoning over visual inputs be reconceptualized as optical decompression-the process of reconstructing latent logical structures from compressed visual tokens. Guided by the axiom that Parsing is Reasoning, we introduce Thinking with Drafting (TwD), which utilizes a minimalist Domain-Specific Language (DSL) as a grounding intermediate representation. Unlike standard approaches that hallucinate answers directly, TwD forces the model to draft its mental model into executable code, rendering deterministic visual proofs for self-verification. To validate this, we present VisAlg, a visual algebra benchmark. Experiments demonstrate that TwD serve as a superior cognitive scaffold. Our work establishes a closed-loop system where visual generation acts not as a creative output but as a logical verifier, offering a generalizable path for visual reasoning."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "LLM-Driven 3D Scene Generation of Agricultural Simulation Environments",
+    "authors": "Arafa Yoncalik, Wouter Jansen, Nico Huebel, Mohammad Hasan Rahmani, Jan Steckel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11706v1",
+    "source": "arXiv",
+    "abstract": "Procedural generation techniques in 3D rendering engines have revolutionized the creation of complex environments, reducing reliance on manual design. Recent approaches using Large Language Models (LLMs) for 3D scene generation show promise but often lack domain-specific reasoning, verification mechanisms, and modular design. These limitations lead to reduced control and poor scalability. This paper investigates the use of LLMs to generate agricultural synthetic simulation environments from natural language prompts, specifically to address the limitations of lacking domain-specific reasoning, verification mechanisms, and modular design. A modular multi-LLM pipeline was developed, integrating 3D asset retrieval, domain knowledge injection, and code generation for the Unreal rendering engine using its API. This results in a 3D environment with realistic planting layouts and environmental context, all based on the input prompt and the domain knowledge. To enhance accuracy and scalability, the system employs a hybrid strategy combining LLM optimization techniques such as few-shot prompting, Retrieval-Augmented Generation (RAG), finetuning, and validation. Unlike monolithic models, the modular architecture enables structured data handling, intermediate verification, and flexible expansion. The system was evaluated using structured prompts and semantic accuracy metrics. A user study assessed realism and familiarity against real-world images, while an expert comparison demonstrated significant time savings over manual scene design. The results confirm the effectiveness of multi-LLM pipelines in automating domain-specific 3D scene generation with improved reliability and precision. Future work will explore expanding the asset hierarchy, incorporating real-time generation, and adapting the pipeline to other simulation domains beyond agriculture."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "ANML: Attribution-Native Machine Learning with Guaranteed Robustness",
+    "authors": "Oliver Zahn, Matt Beton, Simran Chana",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11690v1",
+    "source": "arXiv",
+    "abstract": "Frontier AI systems increasingly train on specialized expert data, from clinical records to proprietary research to curated datasets, yet current training pipelines treat all samples identically. A Nobel laureate's contribution receives the same weight as an unverified submission. We introduce ANML (Attribution-Native Machine Learning), a framework that weights training samples by four quality factors: gradient-based consistency (q), verification status (v), contributor reputation (r), and temporal relevance (T). By combining what the model observes (gradient signals) with what the system knows about data provenance (external signals), ANML produces per-contributor quality weights that simultaneously improve model performance and enable downstream attribution. Across 5 datasets (178-32,561 samples), ANML achieves 33-72% error reduction over gradient-only baselines. Quality-weighted training is data-efficient: 20% high-quality data outperforms 100% uniformly weighted data by 47%. A Two-Stage Adaptive gating mechanism guarantees that ANML never underperforms the best available baseline, including under strategic joint attacks combining credential faking with gradient alignment. When per-sample detection fails against subtle corruption, contributor-level attribution provides 1.3-5.3x greater improvement than sample-level methods, with the advantage growing as corruption becomes harder to detect."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "DMind-3: A Sovereign Edge--Local--Cloud AI System with Controlled Deliberation and Correction-Based Tuning for Safe, Low-Latency Transaction Execution",
+    "authors": "Enhao Huang, Frank Li, Tony Lin, Lowes Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11651v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces DMind-3, a sovereign Edge-Local-Cloud intelligence stack designed to secure irreversible financial execution in Web3 environments against adversarial risks and strict latency constraints. While existing cloud-centric assistants compromise privacy and fail under network congestion, and purely local solutions lack global ecosystem context, DMind-3 resolves these tensions by decomposing capability into three cooperating layers: a deterministic signing-time intent firewall at the edge, a private high-fidelity reasoning engine on user hardware, and a policy-governed global context synthesizer in the cloud. We propose policy-driven selective offloading to route computation based on privacy sensitivity and uncertainty, supported by two novel training objectives: Hierarchical Predictive Synthesis (HPS) for fusing time-varying macro signals, and Contrastive Chain-of-Correction Supervised Fine-Tuning (C$^3$-SFT) to enhance local verification reliability. Extensive evaluations demonstrate that DMind-3 achieves a 93.7% multi-turn success rate in protocol-constrained tasks and superior domain reasoning compared to general-purpose baselines, providing a scalable framework where safety is bound to the edge execution primitive while maintaining sovereignty over sensitive user intent."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Analytical Search",
+    "authors": "Yiteng Tu, Shuo Miao, Weihang Su, Yiqun Liu, Qingyao Ai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11581v1",
+    "source": "arXiv",
+    "abstract": "Analytical information needs, such as trend analysis and causal impact assessment, are prevalent across various domains including law, finance, science, and much more. However, existing information retrieval paradigms, whether based on relevance-oriented document ranking or retrieval-augmented generation (RAG) with large language models (LLMs), often struggle to meet the end-to-end requirements of such tasks at the corpus scale. They either emphasize information finding rather than end-to-end problem solving, or simply treat everything as naive question answering, offering limited control over reasoning, evidence usage, and verifiability. As a result, they struggle to support analytical queries that have diverse utility concepts and high accountability requirements. In this paper, we propose analytical search as a distinct and emerging search paradigm designed to fulfill these analytical information needs. Analytical search reframes search as an evidence-governed, process-oriented analytical workflow that explicitly models analytical intent, retrieves evidence for fusion, and produces verifiable conclusions through structured, multi-step inference. We position analytical search in contrast to existing paradigms, and present a unified system framework that integrates query understanding, recall-oriented retrieval, reasoning-aware fusion, and adaptive verification. We also discuss potential research directions for the construction of analytical search engines. In this way, we highlight the conceptual significance and practical importance of analytical search and call on efforts toward the next generation of search engines that support analytical information needs."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Benchmarking for Single Feature Attribution with Microarchitecture Cliffs",
+    "authors": "Hao Zhen, Qingxuan Kang, Yungang Bao, Trevor E. Carlson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11580v1",
+    "source": "arXiv",
+    "abstract": "Architectural simulators play a critical role in early microarchitectural exploration due to their flexibility and high productivity. However, their effectiveness is often constrained by fidelity: simulators may deviate from the behavior of the final RTL, leading to unreliable performance estimates. Consequently, model calibration, which aligns simulator behavior with the RTL as the ground-truth microarchitecture, becomes essential for achieving accurate performance modeling. To facilitate model calibration accuracy, we propose Microarchitecture Cliffs, a benchmark generation methodology designed to expose mismatches in microarchitectural behavior between the simulator and RTL. After identifying the key architectural components that require calibration, the Cliff methodology enables precise attribution of microarchitectural differences to a single microarchitectural feature through a set of benchmarks. In addition, we develop a set of automated tools to improve the efficiency of the Cliff workflow. We apply the Cliff methodology to calibrate the XiangShan version of gem5 (XS-GEM5) against the XiangShan open-source CPU (XS-RTL). We reduce the performance error of XS-GEM5 from 59.2% to just 1.4% on the Cliff benchmarks. Meanwhile, the calibration guided by Cliffs effectively reduces the relative error of a representative tightly coupled microarchitectural feature by 48.03%. It also substantially lowers the absolute performance error, with reductions of 15.1% and 21.0% on SPECint2017 and SPECfp2017, respectively."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "PRIME: A Process-Outcome Alignment Benchmark for Verifiable Reasoning in Mathematics and Engineering",
+    "authors": "Xiangfeng Wang, Hangyu Guo, Yanlin Lai, Mitt Huang, Liang Zhao, Chengyuan Yao, Yinmin Zhang, Qi Han, Xiaoxiao Ren, Chun Yuan, Tong Xu, Zheng Ge, Xiangyu Zhang, Daxin Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11570v1",
+    "source": "arXiv",
+    "abstract": "While model-based verifiers are essential for scaling Reinforcement Learning with Verifiable Rewards (RLVR), current outcome-centric verification paradigms primarily focus on the consistency between the final result and the ground truth, often neglecting potential errors in the derivation process. This leads to assigning positive rewards to correct answers produced from incorrect derivations. To bridge this gap, we introduce PRIME, a benchmark for evaluating verifiers on Process-Outcome Alignment verification in Mathematics and Engineering. Curated from a comprehensive collection of college-level STEM problems, PRIME comprises 2,530 high-difficulty samples through a consistency-based filtering pipeline. Through extensive evaluation, we find that current verifiers frequently fail to detect derivation flaws. Furthermore, we propose a process-aware RLVR training paradigm utilizing verifiers selected via PRIME. This approach substantially outperforms the outcome-only verification baseline, achieving absolute performance gains of 8.29%, 9.12%, and 7.31% on AIME24, AIME25, and Beyond-AIME, respectively, for the Qwen3-14B-Base model. Finally, we demonstrate a strong linear correlation ($R^2 > 0.92$) between verifier accuracy on PRIME and RLVR training effectiveness, validating PRIME as a reliable predictor for verifier selection."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Human-Inspired Continuous Learning of Internal Reasoning Processes: Learning How to Think for Adaptive AI Systems",
+    "authors": "Hong Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11516v1",
+    "source": "arXiv",
+    "abstract": "Learning internal reasoning processes is crucial for developing AI systems capable of sustained adaptation in dynamic real-world environments. However, most existing approaches primarily emphasize learning task-specific outputs or static knowledge representations, while overlooking the continuous refinement of internal reasoning structures, action scheduling policies, and learning mechanisms themselves. In this paper, we propose a human-inspired continuous learning framework that unifies reasoning, action, reflection, and verification within a sequential reasoning model enhanced by parallel learning. The framework explicitly treats internal thinking processes as primary learning objects. It systematically records internal reasoning trajectories and environmental interactions as structured learning material, enabling the system to optimize not only task-level content but also the organization, scheduling, and evolution of reasoning activities. This design realizes learning alongside processing, allowing cognitive structures to improve during execution. Furthermore, the framework supports controlled replacement of predefined logic with learned procedures and introduces a hierarchical learning-to-learn mechanism that jointly adapts task-level parameters and learning strategies. As a result, the system progressively evolves its internal cognitive architecture while preserving operational stability. Experimental results on a temperature sensor abnormality detection task show that incorporating internal-process learning reduces average runtime by 23.9%."
+  },
+  {
+    "date": "2026-02-12",
+    "title": "Data-driven modelling of low-dimensional dynamical structures underlying complex full-body human movement",
+    "authors": "Ryota Takamido, Chiharu Suzuki, Hiroki Nakamoto",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11492v1",
+    "source": "arXiv",
+    "abstract": "One of the central challenges in the study of human motor control and learning is the degrees-of-freedom problem. Although the dynamical systems approach (DSA) has provided valuable insights into addressing this issue, its application has largely been confined to cyclic or simplified motor movements. To overcome this limitation, the present study employs neural ordinary differential equations (NODEs) to model the time evolution of non-cyclic full-body movements as a low-dimensional latent dynamical system. Given the temporal complexity full-body kinematic chains, baseball pitching was selected as a representative target movement to examine whether DSA could be extended to more complex, ecologically valid human movements. Results of the verification experiment demonstrated that the time evolution of a complex pitching motion could be accurately predicted (R^2 > 0.45) using the NODE-based dynamical model. Notably, approximately 50% of the variance in the latter half of the pitching motion was explained using only the initial ~8% of the temporal sequence, underscoring how subsequent movement evolves from initial conditions according to ODE-defined dynamics in latent space. These findings indicate the potential to extend the DSA to more complex and ecologically valid forms of human movement."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Surface impedance inference via neural fields and sparse acoustic data obtained by a compact array",
+    "authors": "Yuanxin Xia, Xinyan Li, Matteo Calafà, Allan P. Engsig-Karup, Cheol-Ho Jeong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11425v1",
+    "source": "arXiv",
+    "abstract": "Standardized laboratory characterizations for absorbing materials rely on idealized sound field assumptions, which deviate largely from real-life conditions. Consequently, \\emph{in-situ} acoustic characterization has become essential for accurate diagnosis and virtual prototyping. We propose a physics-informed neural field that reconstructs local, near-surface broadband sound fields from sparse pressure samples to directly infer complex surface impedance. A parallel, multi-frequency architecture enables a broadband impedance retrieval within runtimes on the order of seconds to minutes. To validate the method, we developed a compact microphone array with low hardware complexity. Numerical verifications and laboratory experiments demonstrate accurate impedance retrieval with a small number of sensors under realistic conditions. We further showcase the approach in a vehicle cabin to provide practical guidance on measurement locations that avoid strong interference. Here, we show that this approach offers a robust means of characterizing \\emph{in-situ} boundary conditions for architectural and automotive acoustics."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "When Visibility Outpaces Verification: Delayed Verification and Narrative Lock-in in Agentic AI Discourse",
+    "authors": "Hanjing Shi, Dominic DiFranzo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11412v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI systems-autonomous entities capable of independent planning and execution-reshape the landscape of human-AI trust. Long before direct system exposure, user expectations are mediated through high-stakes public discourse on social platforms. However, platform-mediated engagement signals (e.g., upvotes) may inadvertently function as a ``credibility proxy,'' potentially stifling critical evaluation. This paper investigates the interplay between social proof and verification timing in online discussions of agentic AI. Analyzing a longitudinal dataset from two distinct Reddit communities with contrasting interaction cultures-r/OpenClaw and r/Moltbook-we operationalize verification cues via reproducible lexical rules and model the ``time-to-first-verification'' using a right-censored survival analysis framework. Our findings reveal a systemic ``Popularity Paradox'': high-visibility discussions in both subreddits experience significantly delayed or entirely absent verification cues compared to low-visibility threads. This temporal lag creates a critical window for ``Narrative Lock-in,'' where early, unverified claims crystallize into collective cognitive biases before evidence-seeking behaviors emerge. We discuss the implications of this ``credibility-by-visibility'' effect for AI safety and propose ``epistemic friction'' as a design intervention to rebalance engagement-driven platforms."
+  },
+  {
+    "date": "2026-02-11",
+    "title": "Modelling Trust and Trusted Systems: A Category Theoretic Approach",
+    "authors": "Ian Oliver, Pekka Kuure",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.11376v1",
+    "source": "arXiv",
+    "abstract": "We introduces a category-theoretic framework for modelling trust as applied to trusted computation systems and remote attestation. By formalizing elements, claims, results, and decisions as objects within a category, and the processes of attestation, verification, and decision-making as morphisms, the framework provides a rigorous approach to understanding trust establishment and provides a well-defined semantics for terms such as `trustworthiness' and 'justification'/forensics. The trust decision space is formalized using a Heyting Algebra, allowing nuanced trust levels that extend beyond binary trusted/untrusted states. We then present additional structures and in particular utilise exponentiation in a category theoretic sense to define compositions of attestation operations and provide the basis of a measurement for the expressibility of an attestation environment. We present a number of worked examples including boot-run-shutdown sequences, Evil Maid attacks and the specification of an attestation environment based upon this model. We then address challenges in modelling dynamic and larger systems made of multiple compositions."
+  },
+  {
+    "date": "2026-2-13",
+    "title": "An Open-Source RTL Toolchain for Efficient Design and Verification: A Case Study using XTEA",
+    "authors": "Risikesvar G, Jeba Johannah J, Roshan G",
+    "publish": "2025 9th International Conference on Electronics, Communication and Aerospace Technology (ICECA)",
+    "url": "https://doi.org/10.1109/iceca66444.2025.11382562",
+    "source": "IEEE",
+    "abstract": "This work presents a modern, fully open-source RTL toolchain to support fast, efficient and synthesizable hardware design and verification. The proposed flow integrates Verible for real-time linting and formatting, Verilator for high-performance simulation, and Cocotb for Python-based testbench development, thereby providing a modern workflow that is accessible for beginners and academia while remaining scalable for advanced use cases. In addition, this paper highlights potential of often overlooked components of RTL development—such as editor integration and continuous integration frameworks—and their role in reproducibility, maintainability, and long-term usability. The testbench created with the proposed RTL toolchain, evaluated through an XTEA module case study, achieves a 93.76% reduction in compile-and-run time compared to conventional Verilog-based testbenches."
+  },
+  {
+    "date": "2026-2-13",
+    "title": "A Verification-First, Self-Healing Framework for LLM-Enabled Generation of CS1 Exercises",
+    "authors": "Aneesh Durai, Anirudh Chaudhary, Naveen Nathan, Gireeja Ranade, Narges Norouzi",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777364",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "LLM-Based Explainable Detection of LLM-Generated Code in Python Programming Courses",
+    "authors": "Jeonghun Baek, Tetsuro Yamazaki, Akimasa Morihata, Junichiro Mori, Yoko Yamakata, Kenjiro Taura, Shigeru Chiba",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1",
+    "url": "https://doi.org/10.1145/3770762.3772605",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "LLM-Driven Adversarial Example Synthesis for Emerging Topic Rumor Detection on Social Media_supp1-3650830.pdf",
+    "authors": "Zhen Huang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tkde.2026.3650830/mm1",
+    "source": "IEEE",
+    "abstract": "Rumor detection is essential for building a responsible web and internet ecosystem, which has attracted significant attention from the research community. However, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">emerging topic rumor detection</i>, i.e., identify rumors at the early stages of a topic's emergence where only limited discussions can be observed, still remains a challenge. Technically, this scenario is accompanied by the issues of <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">data scarcity</i> on emerging topics and the <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">data distribution discrepancy</i> between old topics and emerging new topic. In this paper, we propose a new framework termed <bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">L</b>LM-driven <bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">AD</b>versarial <bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">E</b>xample <bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">S</b>ynthesis (<bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LADES</b>) for emerging topic rumor detection. LADES utilizes Large Language Models (LLMs) for generating readable and contextually coherent adversarial examples. The generated adversarial examples not only expand the training set to tackle the data scarcity issue, but also act as a bridge to connect the data distribution of old and new topics. To overcome training instability in adversarial example generation, LADES introduces a gradient-free Markov Chain Monte Carlo (MCMC) sampling method. This method ensures adversarial examples are readable and contextually coherent by harnessing LLMs, while promoting effective attacks through entropy-based sampling that targets model uncertainty. To mitigate the impact of potential mislabeling in synthetic data, LADES implements a meta-mixed-learning mechanism. This mechanism dynamically adjusts the weights of synthetic adversarial examples, guided by limited labeled data from emerging topics, thereby alleviating the data noise."
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Local LLM Chatbot",
+    "authors": "Jason Madar",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777011",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "From Raw to Synthetic: Evaluating LLM-Based Data Augmentation for Sentiment Analysis",
+    "authors": "Busra Tekinay, Mansur Alp Tocoglu",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3664756",
+    "source": "IEEE",
+    "abstract": "This study examines the impact of large language model-based data augmentation on Turkish sentiment analysis, focusing on how synthetic data influences model performance across different dataset configurations. A balanced corpus of hotel and movie reviews labeled with positive and negative sentiments was used to construct six dataset variants: Raw, Raw+GPT, Raw+Claude, Raw+GPT+Claude, GPT-only, and Claude-only. Synthetic samples were generated through zero-shot prompting using GPT-4o and Claude-models and incorporated exclusively into the training portion. Multiple classifiers—including Naive Bayes, SVM, Logistic Regression, CNN, LSTM, and BERT—were trained and evaluated using accuracy, precision, recall, and F1-score metrics. Experimental results reveal that while synthetic-only datasets considerably reduce performance, hybrid datasets (Raw + Synthetic) achieve results statistically comparable to the Raw dataset, demonstrating that synthetic reviews can effectively complement real data. These findings highlight that Large Language Model-generated synthetic data, when combined with authentic samples, preserves model robustness while expanding training diversity, offering a practical solution for low-resource language datasets."
+  },
+  {
+    "date": "2026-2-13",
+    "title": "TrafficGPT: An LLM Approach for Open-Set Encrypted Traffic Classification",
+    "authors": "Yasod Ginige, Thilini Dahanayaka, Suranga Seneviratne",
+    "publish": "Proceedings of the 19th Asian Internet Engineering Conference",
+    "url": "https://doi.org/10.1145/3674213.3674217",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "CodeFlow: LLM-Generated Flowchart Feedback for Programming Students",
+    "authors": "Kehao Zheng, Yang Shi",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777175",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "LLM-Powered Deep Reinforcement Learning for Predictive Cyber Threat Mitigation",
+    "authors": "Varsha M P, Samyuktha S, Manochithra S, Sudha K",
+    "publish": "2025 5th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS)",
+    "url": "https://doi.org/10.1109/icuis67429.2025.11380737",
+    "source": "IEEE",
+    "abstract": "Current cyber defense systems are mostly reactive. They only address threats after an initial compromise occurs. This creates a critical vulnerability window that advanced attackers can exploit. We propose a new proactive defense framework that combines Large Language Models (LLMs) with Deep Reinforcement Learning (DRL) to help predict and prevent threats. Our hybrid system uses LLMs for strategic threat analysis and DRL for real-time tactical adjustments. We validated the system through competitive red-blue team simulations based on the MITRE ATT&CK framework, running 1,000 engagement rounds across five trials with 200 rounds each against adaptive LLM-guided attackers. The results show an 80% defensive win rate, a 55.7% attack detection rate, and a 34.2% average maximum system compromise, which is significantly below critical limits. The complete setup achieves an 80% win rate, representing a 21.6% improvement over isolated parts. Our semantic caching optimization shows a 62.8% hit rate with response times under 0.5 seconds, proving it is practical for Security Operations Center (SOC) deployment. These findings demonstrate that merging semantic reasoning with adaptive learning allows defenders to better anticipate and neutralize complex attacks than traditional reactive or rule-based methods."
+  },
+  {
+    "date": "2026-2-13",
+    "title": "A Two-Stage LLM Pipeline for Handwritten Mathematics Autograding",
+    "authors": "Jacob Levine, Matt West, Mariana Silva",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777208",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "LLM and DRL Collaborative Optimization for Flexible Resource Scheduling in Integrated Energy Systems",
+    "authors": "Guangzheng Xing, Xinyue Zhao, Tianying Yu, Haiyun Wang",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3664490",
+    "source": "IEEE",
+    "abstract": "Increasing renewable energy penetration imposes stringent requirements on flexible resource scheduling in Integrated Energy Systems (IES), yet conventional methods face significant challenges in computational efficiency and modeling complexity under multi-energy coupling, high-dimensional uncertainties, and multi-constraint operations. Here we propose a novel scheduling strategy that synergistically integrates Large Language Models (LLM) and Deep Reinforcement Learning (DRL) to address these challenges. Specifically, LLM leverages few-shot learning for intelligent reasoning of Battery Energy Storage System decisions with a three-layer Safety-Guard ensuring constraint satisfaction, while DRL optimizes Combined Heat and Power units and Gas Boilers through enhanced state space incorporating executed battery actions. This hierarchical collaboration effectively reduces action dimensionality while maintaining responsiveness to dynamic disturbances. Comprehensive simulations demonstrate substantial improvements in battery responsiveness to time-of-use tariffs and renewable fluctuations, achieving significant reductions in operating costs and cycling intensity. Multi-scenario tests validate robust performance under high-intensity perturbations and fault injections with zero constraint violations. This approach provides a promising pathway for intelligent multi-energy coordinated scheduling in IES."
+  },
+  {
+    "date": "2026-2-13",
+    "title": "CS Teaching Assistant Perceptions on LLM-Generated Faded Worked Examples for Feedback Training",
+    "authors": "Justin T. Gonzaga, Alexandra Vassar, Yuchao Jiang",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1",
+    "url": "https://doi.org/10.1145/3770762.3772582",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Bringing Interactive Learning to Industrial IDEs: Kotlin Notebook and LLM-Generated Exercises",
+    "authors": "Daniil Karol, Ksenia Shneyveys, Roman Belov, Anastasiia Birillo",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777024",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Teach2Learn: Assessing the Learning among CS1 Students on How Well They Can Teach LLM-Simulated Students",
+    "authors": "Aizen Baidya, Ayush Pandey",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777348",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Pacing for Mastery: Optimizing LLM Interactions for Learning",
+    "authors": "Karena Tran, Ge Gao, Angela Lombard, Tyler Yu, Haoning Jiang, Thomas Y. Yeh",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1",
+    "url": "https://doi.org/10.1145/3770762.3772501",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Instructors' Perspectives on LLM-Generated Programming Formative Feedback",
+    "authors": "Rose Niosuha, Samantha Boatright Smith, Abigail O'Neill, J.D. Zamfirescu-Pereira, John DeNero, Narges Norouzi",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777293",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Personalized Exam Prep (PEP): Scaling No-Stakes, No-LLM Dialogue-Based Assessments in a Large CS Course",
+    "authors": "Kelly Cochran, Chris Piech",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1",
+    "url": "https://doi.org/10.1145/3770762.3772663",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Fighting Fire with Fire: LLM-Assisted Grading of Handwritten CS Assessments",
+    "authors": "Jared Apillanes, Jason Weber, Sergio Gago-Masague, Jennifer Wong-Ma, Thomas Y. Yeh",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1",
+    "url": "https://doi.org/10.1145/3770762.3772615",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Assessing the Role of Diversity in LLM Explanations for Enhancing Student Understanding",
+    "authors": "Kush Patel, Seth Bernstein, Rayhana Nasimova, Paul Denny, Juho Leinonen, Stephen MacNeil",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777320",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-13",
+    "title": "Scaffolding Students While Writing Code Using LLM-Based Personalized Parsons Puzzles",
+    "authors": "Xinying Hou, Barbara Jane Ericson",
+    "publish": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.2",
+    "url": "https://doi.org/10.1145/3770761.3777044",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
