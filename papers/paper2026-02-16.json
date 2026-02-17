@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-16",
+    "title": "Kalman Filtering Based Flight Management System Modeling for AAM Aircraft",
+    "authors": "Balram Kandoria, Aryaman Singh Samyal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14948v1",
+    "source": "arXiv",
+    "abstract": "Advanced Aerial Mobility (AAM) operations require strategic flight planning services that predict both spatial and temporal uncertainties to safely validate flight plans against hazards such as weather cells, restricted airspaces, and CNS disruption areas. Current uncertainty estimation methods for AAM vehicles rely on conservative linear models due to limited real-world performance data. This paper presents a novel Kalman Filter-based uncertainty propagation method that models AAM Flight Management System (FMS) architectures through sigmoid-blended measurement noise covariance. Unlike existing approaches with fixed uncertainty thresholds, our method continuously adapts the filter's measurement trust based on progress toward waypoints, enabling FMS correction behavior to emerge naturally. The approach scales proportionally with control inputs and is tunable to match specific aircraft characteristics or route conditions. We validate the method using real ADS-B data from general aviation aircraft divided into training and verification sets. Uncertainty propagation parameters were tuned on the training set, achieving 76% accuracy in predicting arrival times when compared against the verification dataset, demonstrating the method's effectiveness for strategic flight plan validation in AAM operations."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Adjoint-based Shape Optimization, Machine Learning based Surrogate Models, Conditional Variational Autoencoder (CVAE), Voith Schneider propulsion (VSP), Self-propelled Ship, Propulsion Model, Hull Optimization",
+    "authors": "Moloud Arian Maram, Georgios Bletsos, Thanh Tung Nguyen, Ahmed Hassan, Michael Palm, Thomas Rung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14907v1",
+    "source": "arXiv",
+    "abstract": "Adjoint-based shape optimization of ship hulls is a powerful tool for addressing high-dimensional design problems in naval architecture, particularly in minimizing the ship resistance. However, its application to vessels that employ complex propulsion systems introduces significant challenges. They arise from the need for transient simulations extending over long periods of time with small time steps and from the reverse temporal propagation of the primal and adjoint solutions. These challenges place considerable demands on the required storage and computing power, which significantly hamper the use of adjoint methods in the industry. To address this issue, we propose a machine learning-assisted optimization framework that employs a Conditional Variational Autoencoder-based surrogate model of the propulsion system. The surrogate model replicates the time-averaged flow field induced by a Voith Schneider Propeller and replaces the geometrically and time-resolved propeller with a data-driven approximation. Primal flow verification examples demonstrate that the surrogate model achieves significant computational savings while maintaining the necessary accuracy of the resolved propeller. Optimization studies show that ignoring the propulsion system can yield designs that perform worse than the initial shape. In contrast, the proposed method produces shapes that achieve more than an 8\\% reduction in resistance."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Colimit-Based Composition of High-Level Computing Devices",
+    "authors": "Damian Arellanes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14904v1",
+    "source": "arXiv",
+    "abstract": "Models of High-level Computation (MHCs) provide effective means to describe complex real-world computing systems because they offer formal foundations for the specification of interacting computing devices, as opposed to describing individual ones, which has been the focus of classical models such as Turing machines or the lambda calculus. Despite numerous proposals over the past half century, there is still no canonical MHC akin to Turing machines for (compositionally) reasoning about computation in the large. One of the major drawbacks of current MHCs is that they extensively neglect control flow, a well-know semantic property that defines computation order. Only a few MHCs treat control explicitly at the expense of assuming that data follows control. Mixing such dimensions within the same framework leads to inefficient methods for formal analysis and verification. To address this, the computon model has recently emerged as a category-theoretic MHC that separates data and control and makes control explicit by supporting composition operators characterised as finite colimit constructions. Such constructions allow the formation of sequential, parallel, branching and iterative computing devices. Unfortunately, the computon model is still a generic reference rather than a concrete realisation. In this paper, we provide a variation of it to enable functional computing devices, introduce a new branching operator, discuss how to define synchronous parallelising out of sequencing and asynchronous parallelising, describe concrete operational semantics for computon execution and provide the first implementation of the model. The implementation yields an open-source programming environment that realises the underlying categorical semantics. This tool is publicly available and ready to build complex computing devices that are structurally correct by construction."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "interID -- An Ecosystem-agnostic Verifier-as-a-Service with OpenID Connect Bridge",
+    "authors": "Hakan Yildiz, Axel Küpper",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14871v1",
+    "source": "arXiv",
+    "abstract": "Self-Sovereign Identity (SSI) enables user-controlled, cryptographically verifiable credentials. As EU regulations mandate EUDI Wallet acceptance by 2027, SSI adoption becomes a compliance necessity. However, each SSI Verifier exposes different APIs with distinct request parameters, response formats, and claim structures, requiring custom wrappers and dedicated infrastructure, contrasting with OpenID Connect (OIDC) where standardized protocols enable seamless integration. interID is an ecosystem-agnostic platform unifying credential verification across Hyperledger Aries/Indy, EBSI, and EUDI ecosystems. We extend interID with an OIDC bridge providing Verifier-as-a-Service, enabling SSI verification through standard OIDC flows. Organizations receive ID Tokens with verified credential attributes without implementing Verifier-specific logic or deploying infrastructure. The multi-tenant architecture leverages Keycloak with strict tenant isolation. Key innovations include PKCE support, scope-to-proof-template mappings translating OIDC scopes into ecosystem-specific verification requests, and a security analysis identifying novel attack surfaces at the intersection of OIDC, SSI, and multi-tenant architectures, threats covered by neither RFC 6819 nor existing SSI analyses alone. Our evaluation demonstrates security equivalence to production identity providers through threat modeling identifying 11 attack vectors, including seven beyond RFC 6819's scope. Integration analysis shows organizations can adopt SSI authentication with comparable effort to adding traditional federated providers. By combining familiar OIDC patterns with SaaS deployment, our work lowers integration and operational barriers, enabling regulatory compliance through configuration rather than custom development."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Disentangling Pitch and Creak for Speaker Identity Preservation in Speech Synthesis",
+    "authors": "Frederik Rautenberg, Jana Wiechmann, Petra Wagner, Reinhold Haeb-Umbach",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14686v1",
+    "source": "arXiv",
+    "abstract": "We introduce a system capable of faithfully modifying the perceptual voice quality of creak while preserving the speaker's perceived identity. While it is well known that high creak probability is typically correlated with low pitch, it is important to note that this is a property observed on a population of speakers but does not necessarily hold across all situations. Disentanglement of pitch from creak is achieved by augmentation of the training dataset of a speech synthesis system with a speaker manipulation block based on conditional continuous normalizing flow. The experiments show greatly improved speaker verification performance over a range of creak manipulation strengths."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Polar: An Algebraic Analyzer for (Probabilistic) Loops",
+    "authors": "Marcel Moosbrugger, Julian Müllner, Ezio Bartocci, Laura Kovács",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14573v1",
+    "source": "arXiv",
+    "abstract": "We present the Polar framework for fully automating the analysis of classical and probabilistic loops using algebraic reasoning. The central theme in Polar comes with handling algebraic recurrences that precisely capture the loop semantics. To this end, our work implements a variety of techniques to compute exact closed-forms of recurrences over higher-order moments of variables, infer invariants, and derive loop sensitivities with respect to unknown parameters. Polar can analyze probabilistic loops containing if-statements, polynomial arithmetic, and common probability distributions. By translating loop analysis into linear recurrence solving, Polar uses the derived closed-forms of recurrences to compute the strongest polynomial invariant or to infer parameter sensitivity. Polar is both sound and complete within well-defined programming model restrictions. Lifting any of these restrictions results in significant hardness limits of computation. To overcome computational burdens for the sake of efficiency, Polar also provides incomplete but sound techniques to compute moments of combinations of variables."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Governing AI Forgetting: Auditing for Machine Unlearning Compliance",
+    "authors": "Qinqi Lin, Ningning Ding, Lingjie Duan, Jianwei Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14553v1",
+    "source": "arXiv",
+    "abstract": "Despite legal mandates for the right to be forgotten, AI operators routinely fail to comply with data deletion requests. While machine unlearning (MU) provides a technical solution to remove personal data's influence from trained models, ensuring compliance remains challenging due to the fundamental gap between MU's technical feasibility and regulatory implementation. In this paper, we introduce the first economic framework for auditing MU compliance, by integrating certified unlearning theory with regulatory enforcement. We first characterize MU's inherent verification uncertainty using a hypothesis-testing interpretation of certified unlearning to derive the auditor's detection capability, and then propose a game-theoretic model to capture the strategic interactions between the auditor and the operator. A key technical challenge arises from MU-specific nonlinearities inherent in the model utility and the detection probability, which create complex strategic couplings that traditional auditing frameworks do not address and that also preclude closed-form solutions. We address this by transforming the complex bivariate nonlinear fixed-point problem into a tractable univariate auxiliary problem, enabling us to decouple the system and establish the equilibrium existence, uniqueness, and structural properties without relying on explicit solutions. Counterintuitively, our analysis reveals that the auditor can optimally reduce the inspection intensity as deletion requests increase, since the operator's weakened unlearning makes non-compliance easier to detect. This is consistent with recent auditing reductions in China despite growing deletion requests. Moreover, we prove that although undisclosed auditing offers informational advantages for the auditor, it paradoxically reduces the regulatory cost-effectiveness relative to disclosed auditing."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Formally Verifying and Explaining Sepsis Treatment Policies with COOL-MC",
+    "authors": "Dennis Gross",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14505v1",
+    "source": "arXiv",
+    "abstract": "Safe and interpretable sequential decision-making is critical in healthcare, yet reinforcement learning (RL) policies for sepsis treatment optimization remain opaque and difficult to verify. Standard probabilistic model checkers operate on the full state space, which becomes infeasible for larger MDPs, and cannot explain why a learned policy makes particular decisions. COOL-MC wraps the model checker Storm but adds three key capabilities: it constructs only the reachable state space induced by a trained policy, yielding a smaller discrete-time Markov chain amenable to verification even when full-MDP analysis is intractable; it automatically labels states with clinically meaningful atomic propositions; and it integrates explainability methods with probabilistic computation tree logic (PCTL) queries to reveal which features drive decisions across treatment trajectories. We demonstrate COOL-MC's capabilities on the ICU-Sepsis MDP, a benchmark derived from approximately 17,000 sepsis patient records, which serves as a case study for applying COOL-MC to the formal analysis of sepsis treatment policies. Our analysis establishes hard bounds via full MDP verification, trains a safe RL policy that achieves optimal survival probability, and analyzes its behavior via PCTL verification and explainability on the induced DTMC. This reveals, for instance, that our trained policy relies predominantly on prior dosing history rather than the patient's evolving condition, a weakness that is invisible to standard evaluation but is exposed by COOL-MC's integration of formal verification and explainability. Our results illustrate how COOL-MC could serve as a tool for clinicians to investigate and debug sepsis treatment policies before deployment."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Divine Benevolence is an $x^2$: GLUs scale asymptotically faster than MLPs",
+    "authors": "Alejandro Francisco Queiruga",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14495v1",
+    "source": "arXiv",
+    "abstract": "Scaling laws can be understood from ground-up numerical analysis, where traditional function approximation theory can explain shifts in model architecture choices. GLU variants now dominate frontier LLMs and similar outer-product architectures are prevalent in ranking models. The success of these architectures has mostly been left as an empirical discovery. In this paper, we apply the tools of numerical analysis to expose a key factor: these models have an $x^2$ which enables \\emph{asymptotically} faster scaling than MLPs. GLUs have piecewise quadratic functional forms that are sufficient to exhibit quadratic order of approximation. Our key contribution is to demonstrate that the $L(P)$ scaling slope is $L(P)\\propto P^{-3}$ for GLUs but only $L(P)=P^{-2}$ for MLPs on function reconstruction problems. We provide a parameter construction and empirical verification of these slopes for 1D function approximation. From the first principles we discover, we make one stride and propose the ``Gated Quadratic Unit'' which has an even steeper $L(P)$ slope than the GLU and MLP. This opens the possibility of architecture design from first principles numerical theory to unlock superior scaling in large models. Replication code is available at https://github.com/afqueiruga/divine_scaling."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "D-SECURE: Dual-Source Evidence Combination for Unified Reasoning in Misinformation Detection",
+    "authors": "Gagandeep Singh, Samudi Amarasinghe, Priyanka Singh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14441v1",
+    "source": "arXiv",
+    "abstract": "Multimodal misinformation increasingly mixes realistic im-age edits with fluent but misleading text, producing persuasive posts that are difficult to verify. Existing systems usually rely on a single evidence source. Content-based detectors identify local inconsistencies within an image and its caption but cannot determine global factual truth. Retrieval-based fact-checkers reason over external evidence but treat inputs as coarse claims and often miss subtle visual or textual manipulations. This separation creates failure cases where internally consistent fabrications bypass manipulation detectors and fact-checkers verify claims that contain pixel-level or token-level corruption. We present D-SECURE, a framework that combines internal manipulation detection with external evidence-based reasoning for news-style posts. D-SECURE integrates the HAMMER manipulation detector with the DEFAME retrieval pipeline. DEFAME performs broad verification, and HAMMER analyses residual or uncertain cases that may contain fine-grained edits. Experiments on DGM4 and ClaimReview samples highlight the complementary strengths of both systems and motivate their fusion. We provide a unified, explainable report that incorporates manipulation cues and external evidence."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Anonymous quantum sensing robust against state preparation errors",
+    "authors": "Hiroto Kasai, Seiichiro Tani, Yasuhiro Tokura, Yuki Takeuchi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14396v1",
+    "source": "arXiv",
+    "abstract": "Networked quantum sensors have several applications such as the mapping of magnetic fields. When the magnetic fields are biomagnetic ones, i.e., they contain some private information, the information of from who non-zero magnetic fields occur has to be protected from eavesdroppers. Anonymous quantum sensing keeps it secret by estimating amplitudes of the magnetic fields without disclosing the positions of non-zero magnetic fields. In this paper, we propose an anonymous quantum sensing protocol that is robust against any independent noise in state preparations. To this end, we devise a quantum state verification protocol for a superposition of Greenberger-Horne-Zeilinger and Dicke states and combine it with the original protocol of anonymous quantum sensing. Our verification protocol can decide whether the fidelity between the ideal and actual states is high or low more efficiently than the direct fidelity estimation. Since the original protocol of anonymous quantum sensing cannot correctly estimate the amplitudes of the magnetic fields under state preparation errors, our results would improve the performance of anonymous quantum sensing in realistic situations."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "A Generative AI Approach for Reducing Skin Tone Bias in Skin Cancer Classification",
+    "authors": "Areez Muhammed Shabu, Mohammad Samar Ansari, Asra Aslam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14356v1",
+    "source": "arXiv",
+    "abstract": "Skin cancer is one of the most common cancers worldwide and early detection is critical for effective treatment. However, current AI diagnostic tools are often trained on datasets dominated by lighter skin tones, leading to reduced accuracy and fairness for people with darker skin. The International Skin Imaging Collaboration (ISIC) dataset, one of the most widely used benchmarks, contains over 70% light skin images while dark skins fewer than 8%. This imbalance poses a significant barrier to equitable healthcare delivery and highlights the urgent need for methods that address demographic diversity in medical imaging. This paper addresses this challenge of skin tone imbalance in automated skin cancer detection using dermoscopic images. To overcome this, we present a generative augmentation pipeline that fine-tunes a pre-trained Stable Diffusion model using Low-Rank Adaptation (LoRA) on the image dark-skin subset of the ISIC dataset and generates synthetic dermoscopic images conditioned on lesion type and skin tone. In this study, we investigated the utility of these images on two downstream tasks: lesion segmentation and binary classification. For segmentation, models trained on the augmented dataset and evaluated on held-out real images show consistent improvements in IoU, Dice coefficient, and boundary accuracy. These evalutions provides the verification of Generated dataset. For classification, an EfficientNet-B0 model trained on the augmented dataset achieved 92.14% accuracy. This paper demonstrates that synthetic data augmentation with Generative AI integration can substantially reduce bias with increase fairness in conventional dermatological diagnostics and open challenges for future directions."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "AutoWebWorld: Synthesizing Infinite Verifiable Web Environments via Finite State Machines",
+    "authors": "Yifan Wu, Yiran Peng, Yiyu Chen, Jianhao Ruan, Zijie Zhuang, Cheng Yang, Jiayi Zhang, Man Chen, Yenchi Tseng, Zhaoyang Yu, Liang Chen, Yuyao Zhai, Bang Liu, Chenglin Wu, Yuyu Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14296v1",
+    "source": "arXiv",
+    "abstract": "The performance of autonomous Web GUI agents heavily relies on the quality and quantity of their training data. However, a fundamental bottleneck persists: collecting interaction trajectories from real-world websites is expensive and difficult to verify. The underlying state transitions are hidden, leading to reliance on inconsistent and costly external verifiers to evaluate step-level correctness. To address this, we propose AutoWebWorld, a novel framework for synthesizing controllable and verifiable web environments by modeling them as Finite State Machines (FSMs) and use coding agents to translate FSMs into interactive websites. Unlike real websites, where state transitions are implicit, AutoWebWorld explicitly defines all states, actions, and transition rules. This enables programmatic verification: action correctness is checked against predefined rules, and task success is confirmed by reaching a goal state in the FSM graph. AutoWebWorld enables a fully automated search-and-verify pipeline, generating over 11,663 verified trajectories from 29 diverse web environments at only $0.04 per trajectory. Training on this synthetic data significantly boosts real-world performance. Our 7B Web GUI agent outperforms all baselines within 15 steps on WebVoyager. Furthermore, we observe a clear scaling law: as the synthetic data volume increases, performance on WebVoyager and Online-Mind2Web consistently improves."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "KernelBlaster: Continual Cross-Task CUDA Optimization via Memory-Augmented In-Context Reinforcement Learning",
+    "authors": "Kris Shengjun Dong, Sahil Modi, Dima Nikiforov, Sana Damani, Edward Lin, Siva Kumar Sastry Hari, Christos Kozyrakis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14293v1",
+    "source": "arXiv",
+    "abstract": "Optimizing CUDA code across multiple generations of GPU architectures is challenging, as achieving peak performance requires an extensive exploration of an increasingly complex, hardware-specific optimization space. Traditional compilers are constrained by fixed heuristics, whereas finetuning Large Language Models (LLMs) can be expensive. However, agentic workflows for CUDA code optimization have limited ability to aggregate knowledge from prior exploration, leading to biased sampling and suboptimal solutions. We propose KernelBlaster, a Memory-Augmented In-context Reinforcement Learning (MAIC-RL) framework designed to improve CUDA optimization search capabilities of LLM-based GPU coding agents. KernelBlaster enables agents to learn from experience and make systematically informed decisions on future tasks by accumulating knowledge into a retrievable Persistent CUDA Knowledge Base. We propose a novel profile-guided, textual-gradient-based agentic flow for CUDA generation and optimization to achieve high performance across generations of GPU architectures. KernelBlaster guides LLM agents to systematically explore high-potential optimization strategies beyond naive rewrites. Compared to the PyTorch baseline, our method achieves geometric mean speedups of 1.43x, 2.50x, and 1.50x on KernelBench Levels 1, 2, and 3, respectively. We release KernelBlaster as an open-source agentic framework, accompanied by a test harness, verification components, and a reproducible evaluation pipeline."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "Bengali-Loop: Community Benchmarks for Long-Form Bangla ASR and Speaker Diarization",
+    "authors": "H. M. Shadman Tabib, Istiak Ahmmed Rifti, Abdullah Muhammed Amimul Ehsan, Somik Dasgupta, Md Zim Mim Siddiqee Sowdha, Abrar Jahin Sarker, Md. Rafiul Islam Nijamy, Tanvir Hossain, Mst. Metaly Khatun, Munzer Mahmood, Rakesh Debnath, Gourab Biswas, Asif Karim, Wahid Al Azad Navid, Masnoon Muztahid, Fuad Ahmed Udoy, Shahad Shahriar Rahman, Md. Tashdiqur Rahman Shifat, Most. Sonia Khatun, Mushfiqur Rahman, Md. Miraj Hasan, Anik Saha, Mohammad Ninad Mahmud Nobo, Soumik Bhattacharjee, Tusher Bhomik, Ahmmad Nur Swapnil, Shahriar Kabir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14291v1",
+    "source": "arXiv",
+    "abstract": "Bengali (Bangla) remains under-resourced in long-form speech technology despite its wide use. We present Bengali-Loop, two community benchmarks to address this gap: (1) a long-form ASR corpus of 191 recordings (158.6 hours, 792k words) from 11 YouTube channels, collected via a reproducible subtitle-extraction pipeline and human-in-the-loop transcript verification; and (2) a speaker diarization corpus of 24 recordings (22 hours, 5,744 annotated segments) with fully manual speaker-turn labels in CSV format. Both benchmarks target realistic multi-speaker, long-duration content (e.g., Bangla drama/natok). We establish baselines (Tugstugi: 34.07% WER; pyannote.audio: 40.08% DER) and provide standardized evaluation protocols (WER/CER, DER), annotation rules, and data formats to support reproducible benchmarking and future model development for Bangla long-form ASR and diarization."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "Benchmarking AI Performance on End-to-End Data Science Projects",
+    "authors": "Evelyn Hughes, Rohan Alexander",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14284v1",
+    "source": "arXiv",
+    "abstract": "Data science is an integrated workflow of technical, analytical, communication, and ethical skills, but current AI benchmarks focus mostly on constituent parts. We test whether AI models can generate end-to-end data science projects. To do this we create a benchmark of 40 end-to-end data science projects with associated rubric evaluations. We use these to build an automated grading pipeline that systematically evaluates the data science projects produced by generative AI models. We find the extent to which generative AI models can complete end-to-end data science projects varies considerably by model. Most recent models did well on structured tasks, but there were considerable differences on tasks that needed judgment. These findings suggest that while AI models could approximate entry-level data scientists on routine tasks, they require verification."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "Introduction to Digital Twins for the Smart Grid",
+    "authors": "Xiaoran Liu, Istvan David",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14256v1",
+    "source": "arXiv",
+    "abstract": "This chapter provides an introduction to the foundations of digital twins and makes the case for employing them in smart grids. As engineered systems become more complex and autonomous, digital twin technology gains importance as the unified technological platform for design, testing, operation, and maintenance. Smart grids are prime examples of such complex systems, in which unique design and operation challenges arise from the combination of physical and software components. As high-fidelity in-silico replicas of physical components, digital twins provide safe and cost-efficient experimentation facilities in the design and verification phase of smart grids. In the operation phase of smart grids, digital twins enable automated load balancing of grids through real-time simulation and decision-making. These, and an array of similar benefits, position digital twins as crucial technological components in smart grids."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "Pareto and Bowley Reinsurance Games in Peer-to-Peer Insurance",
+    "authors": "Tim J. Boonen, Kenneth Tsz Hin Ng, Tak Wa Ng, Thai Nguyen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14223v1",
+    "source": "arXiv",
+    "abstract": "We propose a peer-to-peer (P2P) insurance scheme comprising a risk-sharing pool and a reinsurer. A plan manager determines how risks are allocated among members and ceded to the reinsurer, while the reinsurer sets the reinsurance loading. Our work focuses on the strategic interaction between the plan manager and the reinsurer, and this focus leads to two game-theoretic contract designs: a Pareto design and a Bowley design, for which we derive closed-form optimal contracts. In the Pareto design, cooperation between the reinsurer and the plan manager leads to multiple Pareto-optimal contracts, which are further refined by introducing the notion of coalitional stability. In contrast, the Bowley design yields a unique optimal contract through a leader-follower framework, and we provide a rigorous verification of the individual rationality constraints via pointwise comparisons of payoff vectors. Comparing the two designs, we prove that the Bowley-optimal contract is never Pareto optimal and typically yields lower total welfare. In our numerical examples, the presence of reinsurance improves welfare, especially with Pareto designs and a less risk-averse reinsurer. We further analyze the impact of the single-loading restriction, which disproportionately favors members with riskier losses."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "Knowing When Not to Answer: Abstention-Aware Scientific Reasoning",
+    "authors": "Samir Abdaljalil, Erchin Serpedin, Hasan Kurban",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14189v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly used to answer and verify scientific claims, yet existing evaluations typically assume that a model must always produce a definitive answer. In scientific settings, however, unsupported or uncertain conclusions can be more harmful than abstaining. We study this problem through an abstention-aware verification framework that decomposes scientific claims into minimal conditions, audits each condition against available evidence using natural language inference (NLI), and selectively decides whether to support, refute, or abstain. We evaluate this framework across two complementary scientific benchmarks: SciFact and PubMedQA, covering both closed-book and open-domain evidence settings. Experiments are conducted with six diverse language models, including encoder-decoder, open-weight chat models, and proprietary APIs. Across all benchmarks and models, we observe that raw accuracy varies only modestly across architectures, while abstention plays a critical role in controlling error. In particular, confidence-based abstention substantially reduces risk at moderate coverage levels, even when absolute accuracy improvements are limited. Our results suggest that in scientific reasoning tasks, the primary challenge is not selecting a single best model, but rather determining when available evidence is sufficient to justify an answer. This work highlights abstention-aware evaluation as a practical and model-agnostic lens for assessing scientific reliability, and provides a unified experimental basis for future work on selective reasoning in scientific domains. Code is available at https://github.com/sabdaljalil2000/ai4science ."
+  },
+  {
+    "date": "2026-02-15",
+    "title": "In-orbit Demonstration of X-ray Pulsar Navigation with NinjaSat",
+    "authors": "Naoyuki Ota, Takuya Takahashi, Toru Tamagawa, Tomoshi Takeda, Teruaki Enoto, Takao Kitaguchi, Wataru Iwakiri, Yo Kato, Masaki Numazawa, Tatehiro Mihara, Hiromitsu Takahashi, Chin-Ping Hu, Yuanhui Zhou, Keisuke Uchiyama, Yuto Yoshida, Syoki Hayashi, Arata Jujo, Sota Watanabe, Amira Aoyama, Satoko Iwata, Kaede Yamasaki, Soma Tsuchiya, Yosuke Nakano, Takayuki Kita, Mayu Ichibakase, Hiroki Sato, Hirokazu Odaka, Tsubasa Tamba, Kentaro Taniguchi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14166v1",
+    "source": "arXiv",
+    "abstract": "This study demonstrated the pulsar navigation capability of the CubeSat X-ray observatory NinjaSat, which is equipped with two Gas Multiplier Counters (GMCs). The GMCs are sensitive to the 2-50 keV energy band and have an effective area of 16 cm^2 per module at 6 keV. We verified the timing accuracy by observing the Crab Pulsar and confirmed stable timing performance within 100 microseconds. To demonstrate pulsar navigation, we applied a method that optimizes orbital parameters to maximize the significance of the pulsar X-ray pulse profile, known as the Significance Enhancement of Pulse-profile with Orbit-dynamics (SEPO) method. We observed the Crab Pulsar with a total exposure of approximately 100 ks at different epochs and analyzed the data transmitted to the ground. By comparing the optimized orbit with the satellite position derived from Global Positioning System data, we quantitatively evaluated the navigation performance. The results show that the position component along the Crab line of sight was consistently constrained within approximately 40 km, and the three-dimensional position error ranged from 27 to 370 km depending on the observation epoch. These results demonstrate the feasibility of applying a CubeSat-class X-ray observatory to pulsar navigation and provide the first experimental verification that the accuracy of the SEPO method depends on the seasonal geometry between the orbital plane and the pulsar direction."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "AeroNav: A Fine-tuned LLM Framework to Enhance LLM-UAV’s Aerial Navigation Task Performance",
+    "authors": "Karthisri Meghana Guntupalli, Ashok Raja, Vidhyashree Nagaraju",
+    "publish": "2025 IEEE 16th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
+    "url": "https://doi.org/10.1109/iemcon67450.2025.11381168",
+    "source": "IEEE",
+    "abstract": "Advancements in Large Language Models (LLMs) have enabled the integration of LLMs into robotic platforms, including unmanned aerial vehicles (UAVs), and revolutionized the control and decision-making capabilities. Recent studies have demonstrated that prompt-engineered pretrained LLM models provide reliable LLM-UAV decision control. However, when given domain-specific aerial navigation tasks, there are concerns and challenges in the execution and completion of the task. In this paper, we propose an iterative supervised fine-tuning framework that enables reliable execution and completion of domain-specific aerial navigation tasks. We obtain our AeroNav model using this iterative fine-tuning framework. We demonstrate the effectiveness of our AeroNav model by evaluating the task completion success rate, prompt processing time, and token consumption for a set of predefined tasks with varied task complexities against the state-of-the-art prompt framework. Our experiment results demonstrate that our AeroNav model has an increased task completion success rate, reduced token consumption, and reduced prompt processing time compared to the state-of-the-art prompt framework. Our framework also exhibits improved model behavior in reasoning, problem solving, few-shot & zero-shot performance, and factuality."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "DetectLLM: A Multimodal Fusion Approach for Detecting LLM-Generated Text",
+    "authors": "Rajat Soni, Rajiv Misra, Supratik Mukopadhyay",
+    "publish": "2025 5th International Conference on AI-ML-Systems (AIMLSystems)",
+    "url": "https://doi.org/10.1109/aimlsystems67835.2025.11387030",
+    "source": "IEEE",
+    "abstract": "Large language models (LLM) are increasingly being able to generate human-like text. Delineating between AI-generated and human-authored content is essential for academic integrity, journalism, cybersecurity, and digital forensics. State-of-the-art detectors often rely on superficial linguistic patterns or watermarking approaches. Not only such detectors ae unreliable, one can easily evade such detectors by paraphrasing, fine-tuning, or using model ensemble techniques. This paper presents DetectLLM, a novel multi-modal detection framework leveraging a combination of fine-grained linguistic analysis and deep contextual embeddings to identify LLM-generated text across various domains and model types.DetectLLM presents a hybrid setup that merges a transformer-based discriminator trained on a varied dataset of human and LLM-authored texts. It also includes a metadata-aware classifier that picks up on temporal, stylistic, and structural signals. We also include a contrastive learning module to distinguish LLM textual fingerprints from human writing styles, even in adversarial or obfuscated environments.Our method outperforms state-of-the-art LLM output detectors across multiple benchmarks, for content generated by GPT, Claude, LLaMA, and open-source fine-tuned models. Our approach achieves an F1-score of 88.9%, outperforming state-of-the-art AI generated detectors such as DetectGPT (86.2%) and the OpenAI Text Classifier (82.1%), while maintaining robustness and generalizability across languages and domains."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "LLM-Enhanced Space-Air-Ground-Sea Integrated Networks",
+    "authors": "Halvin Yang, Sangarapillai Lambotharan, Mahsa Derakhshani, Lajos Hanzo",
+    "publish": "IEEE Communications Magazine",
+    "url": "https://doi.org/10.1109/mcom.001.2500470",
+    "source": "IEEE",
+    "abstract": "The space-air-ground-sea integrated networking (SAGSIN) concept promises seamless global multimedia connectivity, yet two obstacles still limit its practical deployment. Firstly, high-velocity satellites, aerial relays and sea-surface platforms suffer from obsolete channel state information (CSI), undermining feedback-based adaptation. Secondly, data-rate disparity across the protocol-stack is extreme: terabit optical links in space coexist with kilobit acoustic under-water links. This article shows that a single large language model (LLM) backbone - trained jointly on radio, optical and acoustic traces - can provide a unified, data-driven adaptation layer that addresses both rapid CSI ageing and severe bandwidth disparity across the SAGSIN protocol- stack. Explicitly, an LLM-based long-range channel predictor forecasts the strongest delay-Doppler components several coherence intervals ahead, facilitating near-capacity reception, despite violent channel fluctuations. Furthermore, our LLM-based semantic encoder turns raw sensor payloads into task-oriented tokens. This substantially reduces the SNR required for high-fidelity image delivery in a coastal underwater link, circumventing the data rate limitation by semantic communications. Inclusion of these tools creates a medium-agnostic adaptation layer that spans radio, optical and acoustic channels. We conclude with promising open research directions in on-device model compression, multimodal fidelity control, cross-layer resource orchestration and trustworthy operation, charting a path from laboratory prototypes to field deployment."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "LLM-ABBA: Understanding time series via symbolic approximation",
+    "authors": "Xinye Chen, Erin Carson, Cheng Kang",
+    "publish": "IEEE Transactions on Signal Processing",
+    "url": "https://doi.org/10.1109/tsp.2026.3662011",
+    "source": "IEEE",
+    "abstract": "The success of large language models (LLMs) for time series has been demonstrated in previous work. Utilizing a symbolic time series representation, one can efficiently bridge the gap between LLMs and time series. However, the remaining challenge is to exploit the semantic information hidden in time series by using symbols or existing tokens of LLMs, while aligning the embedding space of LLMs according to the hidden information of time series. The symbolic time series approximation (STSA) method called adaptive Brownian bridge-based symbolic aggregation (ABBA) shows outstanding efficacy in preserving salient time series features by modeling time series patterns in terms of amplitude and period while using existing tokens of LLMs. <p xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">In this paper, we introduce a method, called LLM-ABBA, that integrates ABBA into large language models for various downstream time series tasks. By symbolizing time series, LLM-ABBA compares favorably to the recent state-of-the-art (SOTA) in UCR and three medical time series classification tasks. Meanwhile, a fixed-polygonal chain trick in ABBA is introduced to avoid obvious drifting during forecasting tasks by significantly mitigating the effects of cumulative error arising from misused symbols during the transition from symbols to numerical values. In time series regression tasks, LLM-ABBA achieves the new SOTA on Time Series Extrinsic Regression (TSER) benchmarks. LLM-ABBA also shows competitive forecasting capability compared to recent SOTA time series forecasting results. We believe this framework can also seamlessly extend to other time series tasks. Our simulation code is publicly available at: <uri>https://github.com/inEXASCALE/llm-abba</uri>.</p>"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Improving General-Purpose LLM Models for Power Cable Tasks Using Structured Context Engineering",
+    "authors": "Tong Wu",
+    "publish": "2025 7th International Conference on Smart Power &amp;amp; Internet Energy Systems (SPIES)",
+    "url": "https://doi.org/10.1109/spies67451.2025.11381468",
+    "source": "IEEE",
+    "abstract": "With the rapid development of large language models (LLMs), their performance on general tasks has approached human-level capabilities. However, challenges remain in applying these models to specific professional domains, such as insufficient domain knowledge and limited problem comprehension. This paper proposes a knowledge enhancement method based on context engineering. Using DeepSeek-R1-Distill-Qwen-32B as the experimental subject, the method embeds fault cases, textbook knowledge, and real-world problem descriptions from the field of power cables into the context in a structured manner. This significantly improves the model’s performance in the domain. Experimental results show that, compared with AI systems that do not employ context engineering, the proposed method achieves a notable increase in accuracy across multiple professional question sets. The study demonstrates that combining context engineering with high-quality data can rapidly and effectively enhance a general-purpose language model's domain knowledge and problem-solving capabilities without fine-tuning of the model."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "LLM-Guided Beam Search for Decision Graph Optimization with Dynamic Prompting",
+    "authors": "Qihao Huang",
+    "publish": "Proceedings of the Nineteenth ACM International Conference on Web Search and Data Mining",
+    "url": "https://doi.org/10.1145/3773966.3778003",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "MedInsight Pro: An Explainable Hybrid NLP and LLM Fusion Framework for Radiology Report Interpretation",
+    "authors": "Dr. Somesh Nandi, Keerti Patil, Kota Vishnu Datta, Jaswanth Reddy M",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3665268",
+    "source": "IEEE",
+    "abstract": "Radiology reports are often unstructured, containing ambiguous phrases and negations that make automated interpretation difficult. This paper introduces <bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">MedInsight Pro</b>, a hybrid clinical NLP (Natural Language Processing) framework that fuses deterministic parsing with LLM (Large Language Model) augmentation to extract meaningful insights from chest X-ray impressions. The system combines rule-based negation detection, dependency parsing, and lexicon-driven keyword matching with contextual expansion powered by Groq’s LLM. On an expanded CheXpert-derived cohort of 2 020 reports (1 020 real and 1 000 augmented samples), MedInsight Pro achieved an average macro F1-score of 89.7%, with overall precision of 91.8%, recall of 89.4%, and negation detection accuracy of 95.1%. These results surpass keyword-only, LLM-only, and CheXpert labeler baselines. Deployed via a Streamlit interface, the system also offers explainability through clause heatmaps, radar charts, robustness visualizations under synthetic domain shift, and a clinical Q&A interface. The findings highlight the practicality of hybrid NLP–LLM pipelines as scalable, transparent decision-support tools for radiologists in real-world clinical settings. The system demonstrates strong performance in structured label extraction and offers interpretability through visualization modules and an LLM-assisted reasoning laye."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Credibility Drift Attacks: LLM Crafted Adversarial Manipulations That Flip News Believability",
+    "authors": "Mostofa Najmus Sakib, Francesca Spezzano",
+    "publish": "Proceedings of the Nineteenth ACM International Conference on Web Search and Data Mining",
+    "url": "https://doi.org/10.1145/3773966.3779403",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "TRUE: A Reproducible Framework for LLM-Driven Relevance Judgment in Information Retrieval",
+    "authors": "Mouly Dewan, Jiqun Liu, Chirag Shah",
+    "publish": "Proceedings of the Nineteenth ACM International Conference on Web Search and Data Mining",
+    "url": "https://doi.org/10.1145/3773966.3779397",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "LLM-GC: Advancing Granger Causal Discovery from Time Series with Multimodel Language Modeling",
+    "authors": "Bo Liu, Hongyan Li, Shenda Hong",
+    "publish": "Proceedings of the Nineteenth ACM International Conference on Web Search and Data Mining",
+    "url": "https://doi.org/10.1145/3773966.3777994",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Privacy-preserved LLM Cascade via CoT-enhanced Policy Learning",
+    "authors": "Kai Zhang, Conchao Wang, Liqian Peng, Alec Go, Xiaozhong Liu",
+    "publish": "Proceedings of the Nineteenth ACM International Conference on Web Search and Data Mining",
+    "url": "https://doi.org/10.1145/3773966.3777920",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Separate Bombs from Firecrackers: Intention-guided Vulnerability Assessment via LLM",
+    "authors": "Hao Shen, Ming Hu, Xiaofei Xie, Jiaye Li, Mingsong Chen",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3797896",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-16",
+    "title": "DAWN: Efficient Distribution of Attention Workload in PIM-Enabled Systems for LLM Inference",
+    "authors": "Jaehoon Chung, Jinho Han, Young-Ho Gong, Sung Woo Chung",
+    "publish": "IEEE Computer Architecture Letters",
+    "url": "https://doi.org/10.1109/lca.2026.3665202",
+    "source": "IEEE",
+    "abstract": "Recently, processing-in-memory (PIM) units have been deployed to accelerate matrix-vector multiplications in large language models (LLMs). However, due to the limited flexibility of PIMs, PIMs require a strict data layout for storing matrices in memory. As LLM inference operates autoregressively, new elements are appended to the stored matrices during inference, necessitating costly data layout reorganization. Nevertheless, since the conventional workload allocation method assigns entire matrices solely to PIMs, it causes data layout reorganization overhead (i.e., excessive memory writes). Furthermore, the significant variance in matrix sizes exacerbates PIM load imbalance. In this letter, we propose DAWN, a novel workload allocation method. DAWN divides matrices into equally sized chunks and employs a single chunk as the allocation unit. DAWN assigns a portion of chunks to traditional accelerators (e.g., neural processing units), which have no constraints on data layout for computation, to mitigate reorganization overhead. DAWN evenly distributes the remaining chunks across PIMs using a greedy approach to achieve PIM load balancing. Our simulation results show that DAWN improves throughput by up to 44.2% (34.8% on average) over the conventional workload allocation method."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Advancing Grounded Multimodal Named Entity Recognition via LLM-Based Reformulation and Box-Based Segmentation",
+    "authors": "Jinyuan Li, Ziyan Li, Han Li, Jianfei Yu, Rui Xia, Di Sun, Gang Pan",
+    "publish": "IEEE Transactions on Multimedia",
+    "url": "https://doi.org/10.1109/tmm.2026.3664998",
+    "source": "IEEE",
+    "abstract": "Grounded Multimodal Named Entity Recognition (GMNER) task aims to identify named entities, entity types and their corresponding visual regions. GMNER task exhibits two challenging attributes: 1) The tenuous correlation between images and text on social media contributes to a notable proportion of named entities being ungroundable. 2) There exists a distinction between coarse-grained noun phrases used in similar tasks (<italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">e.g.</i>, phrase localization) and fine-grained named entities. In this paper, we propose RiVEG, a unified framework that reformulates GMNE<underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">R</u> <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">i</u>nto a joint modeling paradigm spanning MNER, <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">VE</u>, and V<underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">G</u> perspectives by leveraging large language models (LLMs) as connecting bridges. This reformulation brings two benefits: 1) It enables us to optimize the MNER module for optimal MNER performance and eliminates the need to pre-extract region features using object detection methods, thus naturally addressing the two major limitations of existing GMNER methods. 2) The introduction of Entity Expansion Expression module and Visual Entailment (VE) module unifies Visual Grounding (VG) and Entity Grounding (EG). This endows the proposed framework with unlimited data and model scalability. Furthermore, to address the potential ambiguity stemming from the coarse-grained bounding box output in GMNER, we further construct the new Segmented Multimodal Named Entity Recognition (SMNER) task and corresponding Twitter-SMNER dataset aimed at generating fine-grained segmentation masks, and experimentally demonstrate the feasibility and effectiveness of using box prompt-based Segment Anything Model (SAM) to empower any GMNER model with the ability to accomplish the SMNER task. Extensive experiments demonstrate that RiVEG significantly outperforms SoTA methods on four datasets across the MNER, GMNER, and SMNER tasks. Datasets and Code will be released at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://github.com/JinYuanLi0012/RiVEG</uri>."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "FlexLLM: Flexible and Cost-Efficient LLM Serving with Heterogeneous GPUs",
+    "authors": "Kihyun Kim, Jinwoo Kim, James J. Kim, Dong Li, Youngjae Kim",
+    "publish": "2025 33rd International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS)",
+    "url": "https://doi.org/10.1109/mascots67699.2025.11283352",
+    "source": "IEEE",
+    "abstract": "The autoregressive nature of LLMs causes memory bottlenecks, requiring multi-GPU parallelization. Prior work has mainly optimized strategies for homogeneous setups, overlooking heterogeneous configurations and service-level objectives (SLOs) despite growing GPU cost-performance gaps. This paper introduces FlexLLM, a framework that predicts execution times and selects cost-efficient strategies in heterogeneous GPU environments while satisfying latency-per-token (LPT) SLO constraints. The proposed system (i) bridges theoretical predictions and actual performance through a Linear Correction Function (LCF) and (ii) performs SLO-aware cost-efficiency optimization based on human reading speeds ($\\leq 150 \\mathrm{~ms}$ per token). Our evaluation demonstrates that FlexLLM identifies costefficient configurations meeting SLO requirements, achieving significant cost reductions compared to performance-oriented approaches. Heterogeneous GPU analysis reveals that SLO-aware parallelization strategy selection yields up to $2.28 \\times$ cost-efficiency differences, demonstrating that architecture selection under SLO constraints is as critical as hardware investment."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Investigating Learners' AI Interaction Strategies in AIGC-Empowered Online Learning: An LLM-Based Automated Assessment Approach",
+    "authors": "Yi Tong, Jing Fang, Suizi Fu, Xiuling He",
+    "publish": "2025 5th International Conference on Educational Technology (ICET)",
+    "url": "https://doi.org/10.1109/icet67421.2025.11380703",
+    "source": "IEEE",
+    "abstract": "Student-generated questioning (SGQ) is an important instructional strategy in online learning. By evaluating students' questioning performance, instructors can understand learners' performance. Artificial Intelligence Generated Content (AIGC) technology provides a dialogic learning environment with adaptive feedback for SGQ in e-learning, and at the same time provides a large language model (LLM) that excels in text categorization tasks. This motivates the exploration of performance and evaluation methods for AIGC-enabled online learning in which learners ask questions to AI tools. In this study, we constructed a question-answer evaluation framework for SGQ teaching with theoretical support, and explored an automated labeling method based on LLM. At the same time, 497 question-answer pairs were collected from learners asking questions to the AI tool in real learning situations. The participants were first-year undergraduate students majoring in Data Science and Big Data Technology. Combining the LLM-based automated question text tagging method and the cluster analysis method, the study identifies four recognizable interaction strategies of learners in AIGC-enabled online learning. This study provides new ideas for the implementation and evaluation of SGQ in AIGC-enabled online learning."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Federated TrustChain: Blockchain-Enhanced LLM Training and Unlearning",
+    "authors": "Xuhan Zuo, Minghao Wang, Tianqing Zhu, Lefeng Zhang, Dayong Ye, Shui Yu, Wanlei Zhou",
+    "publish": "IEEE Transactions on Dependable and Secure Computing",
+    "url": "https://doi.org/10.1109/tdsc.2026.3665277",
+    "source": "IEEE",
+    "abstract": "The development of Large Language Models (LLMs) faces a significant challenge: the exhaustion of publicly available fresh data. This is because training an LLM requires a large demand for new data. Federated learning emerges as a promising solution, enabling collaborative model to contribute their private data to LLM global model. However, integrating federated learning with LLMs introduces new challenges, including the lack of transparency and the need for effective unlearning mechanisms. Transparency is essential to ensuring trust and fairness among participants, while accountability is crucial for deterring malicious behaviour and enabling corrective actions when necessary. To address these challenges, we propose a novel blockchain-based federated learning framework for LLMs that enhances transparency, accountability, and unlearning capabilities. Our framework leverages blockchain technology to create a tamper- proof record of each model's contributions and introduces an innovative unlearning function that seamlessly integrates with the federated learning mechanism. We investigate the impact of Low-Rank Adaptation (LoRA) hyperparameters on unlearning performance and integrate Hyperledger Fabric to ensure the security, transparency, and verifiability of the unlearning process. Through comprehensive experiments and analysis, we showcase the effectiveness of our proposed framework in achieving highly effective unlearning in LLMs trained using federated learning. Our findings highlight the feasibility of integrating blockchain technology into federated learning frameworks for LLM."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Cost-Effective Adversarial Attacks Against Code LLM with Model Attention",
+    "authors": "Weifeng Sun, Naiqi Huang, Meng Yan, Li Huang, Zhongxin Liu, Xiao Liu, David Lo",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3663143",
+    "source": "IEEE",
+    "abstract": "Code LLMs (CLLMs) are vulnerable to adversarial attacks, where semantically identical code mutations mislead models into incorrect predictions. To address this, adversarial training has been proposed, retraining models with adversarial examples generated by attack methods. Among various attack approaches, black-box methods have attracted increasing attention due to their flexibility and applicability. However, existing black-box attack methods face two key challenges: 1) vast mutation spaces limit attack efficiency and effectiveness, and 2) resource-intensive model queries constrain scalability. These challenges hinder the practicality of black-box attacks, especially under resource constraints, prompting the critical question: <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Can we enhance the efficiency of existing attack methods without compromising their effectiveness?</i> To answer this, we conduct an empirical study using Explainable AI (XAI) techniques to investigate differences between adversarial and non-adversarial (failure) examples. After analyzing state-of-the-art attack methods against two CLLMs, we introduce the concept of <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">model attention deviation</i>, which quantifies differences in the model’s focus between unmutated (original) and mutated code. Our findings reveal that adversarial examples exhibit significant attention deviations, with the direction of deviation critically affecting attack success. Building on these insights, we propose ADVSEL, an efficient adversarial attack framework comprising two proxy components: the Attention Proxy Model (APM), which quickly estimates attention deviations to filter unpromising mutations, and the Deviation Direction Proxy Model (DDPM), which assesses whether attention shifts lead toward incorrect predictions. By integrating these proxy models with existing attack methods, A<sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">DV</small>S<sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">EL</small> effectively prioritizes promising mutations, significantly improving attack efficiency. Experimental evaluations across five CLLMs, four downstream tasks, and three attack methods demonstrate that ADVSEL maintains comparable attack success rates (a slight ASR reduction of 0.62%–0.70%) while significantly reducing model queries (by 34.98%–42.91%) and runtime (by 20.84%–21.45%). Under resource constraints, ADVSEL consistently outperforms baselines, highlighting its practical advantage in cost-effective adversarial evaluation."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "Floe: Federated Specialization for Real-Time LLM–SLM Inference",
+    "authors": "Chunlin Tian, Kahou Tam, Yebo Wu, Shuaihang Zhong, Li Li, Nicholas D. Lane, ChengZhong Xu",
+    "publish": "IEEE Transactions on Parallel and Distributed Systems",
+    "url": "https://doi.org/10.1109/tpds.2026.3665358",
+    "source": "IEEE",
+    "abstract": "Deploying large language models (LLMs) in realtime systems is challenging due to their high resource demands and privacy concerns. We propose Floe a hybrid federated learning framework designed for latency-sensitive, resourceconstrained environments. Floeombines a cloud-based blackbox LLM with lightweight small language models (SLMs) on edge devices to enable low-latency, privacy-preserving inference. Personal data and fine-tuning remain on-device, while the cloud LLM contributes general knowledge without exposing proprietary weights. A heterogeneity-aware LoRA adaptation strategy ensures efficient edge deployment across diverse hardware, and a logit-level fusion mechanism enables real-time coordination between edge and cloud models. Experiments demonstrate that Floenhances user privacy and personalization, while significantly improving model performance and reducing inference latency on edge devices under real-time constraints, compared to baseline approaches."
+  },
+  {
+    "date": "2026-2-16",
+    "title": "SRDrone: LLM-Driven Self-Refinement for Embodied Drone Task Planning",
+    "authors": "Deyu Zhang, Xicheng Zhang, Jinrui Zhang, Jiahao Li, Tingting Long, Xunhua Dai, Yongjian Fu, Ju Ren, Yaoxue Zhang",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3664806",
+    "source": "IEEE",
+    "abstract": "We introduce <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">SRDrone</i>, a novel system designed for self-refinement task planning in industrial-grade embodied drones. <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">SRDrone</i> incorporates two key technical contributions: First, it employs a continuous state evaluation methodology to robustly and accurately determine task outcomes and provide explanatory feedback. This approach supersedes conventional reliance on single-frame final-state assessment for continuous, dynamic drone operations. Second, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">SRDrone</i> implements a hierarchical Behavior Tree (BT) modification model. This model integrates multi-level BT plan analysis with a constrained strategy space to enable structured reflective learning from experience. Experimental results demonstrate that <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">SRDrone</i> achieves a 44.87% improvement in Success Rate (SR) over baseline methods. Furthermore, real-world deployment utilizing an experience base optimized through iterative self-refinement attains a 96.25% SR. By embedding adaptive task refinement capabilities within an industrial-grade BT planning framework, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">SRDrone</i> effectively integrates the general reasoning intelligence of Large Language Models (LLMs) with the stringent physical execution constraints inherent to embodied drones. Code is available at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://github.com/ZXiiiC/SRDrone</uri>."
+  }
+]
