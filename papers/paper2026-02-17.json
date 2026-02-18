@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-17",
+    "title": "ChartEditBench: Evaluating Grounded Multi-Turn Chart Editing in Multimodal Language Models",
+    "authors": "Manav Nitin Kapadnis, Lawanya Baghel, Atharva Naik, Carolyn Rosé",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15758v1",
+    "source": "arXiv",
+    "abstract": "While Multimodal Large Language Models (MLLMs) perform strongly on single-turn chart generation, their ability to support real-world exploratory data analysis remains underexplored. In practice, users iteratively refine visualizations through multi-turn interactions that require maintaining common ground, tracking prior edits, and adapting to evolving preferences. We introduce ChartEditBench, a benchmark for incremental, visually grounded chart editing via code, comprising 5,000 difficulty-controlled modification chains and a rigorously human-verified subset. Unlike prior one-shot benchmarks, ChartEditBench evaluates sustained, context-aware editing. We further propose a robust evaluation framework that mitigates limitations of LLM-as-a-Judge metrics by integrating execution-based fidelity checks, pixel-level visual similarity, and logical code verification. Experiments with state-of-the-art MLLMs reveal substantial degradation in multi-turn settings due to error accumulation and breakdowns in shared context, with strong performance on stylistic edits but frequent execution failures on data-centric transformations. ChartEditBench, establishes a challenging testbed for grounded, intent-aware multimodal programming."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "A Note on Non-Composability of Layerwise Approximate Verification for Neural Inference",
+    "authors": "Or Zamir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15756v1",
+    "source": "arXiv",
+    "abstract": "A natural and informal approach to verifiable (or zero-knowledge) ML inference over floating-point data is: ``prove that each layer was computed correctly up to tolerance $δ$; therefore the final output is a reasonable inference result''. This short note gives a simple counterexample showing that this inference is false in general: for any neural network, we can construct a functionally equivalent network for which adversarially chosen approximation-magnitude errors in individual layer computations suffice to steer the final output arbitrarily (within a prescribed bounded range)."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Privacy-Preserving and Secure Spectrum Sharing for Database-Driven Cognitive Radio Networks",
+    "authors": "Saleh Darzia, Gökcan Cantalib, Attila Altay Yavuza, Gürkan Gür",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15705v1",
+    "source": "arXiv",
+    "abstract": "Database-driven cognitive radio networks (DB-CRNs) enable dynamic spectrum sharing through geolocation databases but introduce critical security and privacy challenges, including mandatory location disclosure, susceptibility to location spoofing, and denial-of-service (DoS) attacks on centralized services. Existing approaches address these issues in isolation and lack a unified, regulation-compliant solution under realistic adversarial conditions. In this work, we present a unified security framework for DB-CRNs that simultaneously provides location privacy, user anonymity, verifiable location, and DoS resilience. Our framework, denoted as SLAPX, enables privacy-preserving spectrum queries using delegatable anonymous credentials, supports adaptive location verification without revealing precise user location, and mitigates DoS attacks through verifiable delay functions (VDFs) combined with RLRS-based rate limiting. Extensive cryptographic benchmarking and network simulations demonstrate that SLAPX achieves significantly lower latency and communication overhead than existing solutions while effectively resisting location spoofing and DoS attacks. These results show that SLAPX is practical and well-suited for secure next-generation DB-CRN deployments."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "LLM-to-Speech: A Synthetic Data Pipeline for Training Dialectal Text-to-Speech Models",
+    "authors": "Ahmed Khaled Khamis, Hesham Ali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15675v1",
+    "source": "arXiv",
+    "abstract": "Despite the advances in neural text to speech (TTS), many Arabic dialectal varieties remain marginally addressed, with most resources concentrated on Modern Spoken Arabic (MSA) and Gulf dialects, leaving Egyptian Arabic -- the most widely understood Arabic dialect -- severely under-resourced. We address this gap by introducing NileTTS: 38 hours of transcribed speech from two speakers across diverse domains including medical, sales, and general conversations. We construct this dataset using a novel synthetic pipeline: large language models (LLM) generate Egyptian Arabic content, which is then converted to natural speech using audio synthesis tools, followed by automatic transcription and speaker diarization with manual quality verification. We fine-tune XTTS v2, a state-of-the-art multilingual TTS model, on our dataset and evaluate against the baseline model trained on other Arabic dialects. Our contributions include: (1) the first publicly available Egyptian Arabic TTS dataset, (2) a reproducible synthetic data generation pipeline for dialectal TTS, and (3) an open-source fine-tuned model. All resources are released to advance Egyptian Arabic speech synthesis research."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "SecCodeBench-V2 Technical Report",
+    "authors": "Longfei Chen, Ji Zhao, Lanxiao Cui, Tong Su, Xingbo Pan, Ziyang Li, Yongxing Wu, Qijiang Cao, Qiyao Cai, Jing Zhang, Yuandong Ni, Junyao He, Zeyu Zhang, Chao Ge, Xuhuai Lu, Zeyu Gao, Yuxin Cui, Weisen Chen, Yuxuan Peng, Shengping Wang, Qi Li, Yukai Huang, Yukun Liu, Tuo Zhou, Terry Yue Zhuo, Junyang Lin, Chao Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15485v1",
+    "source": "arXiv",
+    "abstract": "We introduce SecCodeBench-V2, a publicly released benchmark for evaluating Large Language Model (LLM) copilots' capabilities of generating secure code. SecCodeBench-V2 comprises 98 generation and fix scenarios derived from Alibaba Group's industrial productions, where the underlying security issues span 22 common CWE (Common Weakness Enumeration) categories across five programming languages: Java, C, Python, Go, and Node.js. SecCodeBench-V2 adopts a function-level task formulation: each scenario provides a complete project scaffold and requires the model to implement or patch a designated target function under fixed interfaces and dependencies. For each scenario, SecCodeBench-V2 provides executable proof-of-concept (PoC) test cases for both functional validation and security verification. All test cases are authored and double-reviewed by security experts, ensuring high fidelity, broad coverage, and reliable ground truth. Beyond the benchmark itself, we build a unified evaluation pipeline that assesses models primarily via dynamic execution. For most scenarios, we compile and run model-generated artifacts in isolated environments and execute PoC test cases to validate both functional correctness and security properties. For scenarios where security issues cannot be adjudicated with deterministic test cases, we additionally employ an LLM-as-a-judge oracle. To summarize performance across heterogeneous scenarios and difficulty levels, we design a Pass@K-based scoring protocol with principled aggregation over scenarios and severity, enabling holistic and comparable evaluation across models. Overall, SecCodeBench-V2 provides a rigorous and reproducible foundation for assessing the security posture of AI coding assistants, with results and artifacts released at https://alibaba.github.io/sec-code-bench. The benchmark is publicly available at https://github.com/alibaba/sec-code-bench."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Emergent Morphing Attack Detection in Open Multi-modal Large Language Models",
+    "authors": "Marija Ivanovska, Vitomir Štruc",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15461v1",
+    "source": "arXiv",
+    "abstract": "Face morphing attacks threaten biometric verification, yet most morphing attack detection (MAD) systems require task-specific training and generalize poorly to unseen attack types. Meanwhile, open-source multimodal large language models (MLLMs) have demonstrated strong visual-linguistic reasoning, but their potential in biometric forensics remains underexplored. In this paper, we present the first systematic zero-shot evaluation of open-source MLLMs for single-image MAD, using publicly available weights and a standardized, reproducible protocol. Across diverse morphing techniques, many MLLMs show non-trivial discriminative ability without any fine-tuning or domain adaptation, and LLaVA1.6-Mistral-7B achieves state-of-the-art performance, surpassing highly competitive task-specific MAD baselines by at least 23% in terms of equal error rate (EER). The results indicate that multimodal pretraining can implicitly encode fine-grained facial inconsistencies indicative of morphing artifacts, enabling zero-shot forensic sensitivity. Our findings position open-source MLLMs as reproducible, interpretable, and competitive foundations for biometric security and forensic image analysis. This emergent capability also highlights new opportunities to develop state-of-the-art MAD systems through targeted fine-tuning or lightweight adaptation, further improving accuracy and efficiency while preserving interpretability. To support future research, all code and evaluation protocols will be released upon publication."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "TARZAN: A Region-Based Library for Forward and Backward Reachability of Timed Automata (Extended Version)",
+    "authors": "Andrea Manini, Matteo Rossi, Pierluigi San Pietro",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15435v1",
+    "source": "arXiv",
+    "abstract": "The zone abstraction, widely adopted for its notable practical efficiency, is the de facto standard in the verification of Timed Automata (TA). Nonetheless, region-based abstractions have been shown to outperform zones in specific subclasses of TA. To complement and support mature zone-based tools, we introduce TARZAN, a C++ region-based verification library for TA. The algorithms implemented in TARZAN use a novel region abstraction that tracks the order in which clocks become unbounded. This additional ordering induces a finer partitioning of the state space, enabling backward algorithms to avoid the combinatorial explosion associated with enumerating all ordered partitions of unbounded clocks, when computing immediate delay predecessor regions. We validate TARZAN by comparing forward reachability results against the state-of-the-art tools Uppaal and TChecker. The experiments confirm that zones excel when TA have large constants and strict guards. In contrast, TARZAN exhibits superior performance on closed TA and TA with punctual guards. Finally, we demonstrate the efficacy of our backward algorithms, establishing a foundation for region-based analysis in domains like Timed Games, where backward exploration is essential."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Iterative LLM-Based Assertion Generation Using Syntax-Semantic Representations for Functional Coverage-Guided Verification",
+    "authors": "Yonghao Wang, Jiaxin Zhou, Yang Yin, Hongqin Lyu, Zhiteng Chao, Wenchao Ding, Jing Ye, Tiancheng Wang, Huawei Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15388v1",
+    "source": "arXiv",
+    "abstract": "While leveraging LLMs to automatically generate SystemVerilog assertions (SVAs) from natural language specifications holds great potential, existing techniques face a key challenge: LLMs often lack sufficient understanding of IC design, leading to poor assertion quality in a single pass. Therefore, verifying whether the generated assertions effectively cover the functional specifications and designing feedback mechanisms based on this coverage remain significant hurdles. To address these limitations, this paper introduces CoverAssert, a novel iterative framework for optimizing SVA generation with LLMs. The core contribution is a lightweight mechanism for matching generated assertions with specific functional descriptions in the specifications. CoverAssert achieves this by clustering the joint representations of semantic features of LLM-generated assertions and structural features extracted from abstract syntax trees (ASTs) about signals related to assertions, and then mapping them back to the specifications to analyze functional coverage quality. Leveraging this capability, CoverAssert constructs a feedback loop based on functional coverage to guide LLMs in prioritizing uncovered functional points, thereby iteratively improving assertion quality. Experimental evaluations on four open-source designs demonstrate that integrating CoverAssert with state-of-the-art generators, AssertLLM and Spec2Assertion, achieves average improvements of 9.57 % in branch coverage, 9.64 % in statement coverage, and 15.69 % in toggle coverage."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "A Unified Evaluation of Learning-Based Similarity Techniques for Malware Detection",
+    "authors": "Udbhav Prasad, Aniesh Chawla",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15376v1",
+    "source": "arXiv",
+    "abstract": "Cryptographic digests (e.g., MD5, SHA-256) are designed to provide exact identity. Any single-bit change in the input produces a completely different hash, which is ideal for integrity verification but limits their usefulness in many real-world tasks like threat hunting, malware analysis and digital forensics, where adversaries routinely introduce minor transformations. Similarity-based techniques address this limitation by enabling approximate matching, allowing related byte sequences to produce measurably similar fingerprints. Modern enterprises manage tens of thousands of endpoints with billions of files, making the effectiveness and scalability of the proposed techniques more important than ever in security applications. Security researchers have proposed a range of approaches, including similarity digests and locality-sensitive hashes (e.g., ssdeep, sdhash, TLSH), as well as more recent machine-learning-based methods that generate embeddings from file features. However, these techniques have largely been evaluated in isolation, using disparate datasets and evaluation criteria. This paper presents a systematic comparison of learning-based classification and similarity methods using large, publicly available datasets. We evaluate each method under a unified experimental framework with industry-accepted metrics. To our knowledge, this is the first reproducible study to benchmark these diverse learning-based similarity techniques side by side for real-world security workloads. Our results show that no single approach performs well across all dimensions; instead, each exhibits distinct trade-offs, indicating that effective malware analysis and threat-hunting platforms must combine complementary classification and similarity techniques rather than rely on a single method."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Human-AI Interaction: Evaluating LLM Reasoning on Digital Logic Circuit included Graph Problems, in terms of creativity in design and analysis",
+    "authors": "Yogeswar Reddy Thota, Setareh Rafatirad, Homayoun Houman, Tooraj Nikoubin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15336v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) are increasingly used by undergraduate students as on-demand tutors, yet their reliability on circuit- and diagram-based digital logic problems remains unclear. We present a human- AI study evaluating three widely used LLMs (GPT, Gemini, and Claude) on 10 undergraduate-level digital logic questions spanning non-standard counters, JK-based state transitions, timing diagrams, frequency division, and finite-state machines. Twenty-four students performed pairwise model comparisons, providing per-question judgments on (i) preferred model, (ii) perceived correctness, (iii) consistency, (iv) verbosity, and (v) confidence, along with global ratings of overall model quality, satisfaction across multiple dimensions (e.g., accuracy and clarity), and perceived mental effort required to verify answers. To benchmark technical validity, we applied an independent judge-based evaluation against official solutions for all ten questions, using strict correctness criteria. Results reveal a consistent gap between perceived helpfulness and formal correctness: for the most sequentially demanding problems (Q1- Q7), none of the evaluated LLMs matched the official answers, despite producing confident, well-structured explanations that students often rated favorably. Error analysis indicates that models frequently default to canonical textbook templates (e.g., standard ripple counters) and struggle to translate circuit structure into exact state evolution and timing behavior. These findings suggest that, without verification scaffolds, LLMs may be unreliable for core digital logic topics and can inadvertently reinforce misconceptions in undergraduate instruction."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Unforgeable Watermarks for Language Models via Robust Signatures",
+    "authors": "Huijia Lin, Kameron Shahabi, Min Jae Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15323v1",
+    "source": "arXiv",
+    "abstract": "Language models now routinely produce text that is difficult to distinguish from human writing, raising the need for robust tools to verify content provenance. Watermarking has emerged as a promising countermeasure, with existing work largely focused on model quality preservation and robust detection. However, current schemes provide limited protection against false attribution. We strengthen the notion of soundness by introducing two novel guarantees: unforgeability and recoverability. Unforgeability prevents adversaries from crafting false positives, texts that are far from any output from the watermarked model but are nonetheless flagged as watermarked. Recoverability provides an additional layer of protection: whenever a watermark is detected, the detector identifies the source text from which the flagged content was derived. Together, these properties strengthen content ownership by linking content exclusively to its generating model, enabling secure attribution and fine-grained traceability. We construct the first undetectable watermarking scheme that is robust, unforgeable, and recoverable with respect to substitutions (i.e., perturbations in Hamming metric). The key technical ingredient is a new cryptographic primitive called robust (or recoverable) digital signatures, which allow verification of messages that are close to signed ones, while preventing forgery of messages that are far from all previously signed messages. We show that any standard digital signature scheme can be boosted to a robust one using property-preserving hash functions (Boyle, LaVigne, and Vaikuntanathan, ITCS 2019)."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "GenAI for Systems: Recurring Challenges and Design Principles from Software to Silicon",
+    "authors": "Arya Tschand, Chenyu Wang, Zishen Wan, Andrew Cheng, Ioana Cristescu, Kevin He, Howard Huang, Alexander Ingare, Akseli Kangaslahti, Sara Kangaslahti, Theo Lebryk, Hongjin Lin, Jeffrey Jian Ma, Alexandru Meterez, Clara Mohri, Depen Morwani, Sunny Qin, Roy Rinberg, Paula Rodriguez-Diaz, Alyssa Mia Taliotis, Pernille Undrum Fathi, Rosie Zhao, Todd Zhou, Vijay Janapa Reddi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15241v1",
+    "source": "arXiv",
+    "abstract": "Generative AI is reshaping how computing systems are designed, optimized, and built, yet research remains fragmented across software, architecture, and chip design communities. This paper takes a cross-stack perspective, examining how generative models are being applied from code generation and distributed runtimes through hardware design space exploration to RTL synthesis, physical layout, and verification. Rather than reviewing each layer in isolation, we analyze how the same structural difficulties and effective responses recur across the stack. Our central finding is one of convergence. Despite the diversity of domains and tools, the field keeps encountering five recurring challenges (the feedback loop crisis, the tacit knowledge problem, trust and validation, co-design across boundaries, and the shift from determinism to dynamism) and keeps arriving at five design principles that independently emerge as effective responses (embracing hybrid approaches, designing for continuous feedback, separating concerns by role, matching methods to problem structure, and building on decades of systems knowledge). We organize these into a challenge--principle map that serves as a diagnostic and design aid, showing which principles have proven effective for which challenges across layers. Through concrete cross-stack examples, we show how systems navigate this map as they mature, and argue that the field needs shared engineering methodology, including common vocabularies, cross-layer benchmarks, and systematic design practices, so that progress compounds across communities rather than being rediscovered in each one. Our analysis covers more than 275 papers spanning eleven application areas across three layers of the computing stack, and distills open research questions that become visible only from a cross-layer vantage point."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "DexEvolve: Evolutionary Optimization for Robust and Diverse Dexterous Grasp Synthesis",
+    "authors": "René Zurbrügg, Andrei Cramariuc, Marco Hutter",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15201v1",
+    "source": "arXiv",
+    "abstract": "Dexterous grasping is fundamental to robotics, yet data-driven grasp prediction heavily relies on large, diverse datasets that are costly to generate and typically limited to a narrow set of gripper morphologies. Analytical grasp synthesis can be used to scale data collection, but necessary simplifying assumptions often yield physically infeasible grasps that need to be filtered in high-fidelity simulators, significantly reducing the total number of grasps and their diversity. We propose a scalable generate-and-refine pipeline for synthesizing large-scale, diverse, and physically feasible grasps. Instead of using high-fidelity simulators solely for verification and filtering, we leverage them as an optimization stage that continuously improves grasp quality without discarding precomputed candidates. More specifically, we initialize an evolutionary search with a seed set of analytically generated, potentially suboptimal grasps. We then refine these proposals directly in a high-fidelity simulator (Isaac Sim) using an asynchronous, gradient-free evolutionary algorithm, improving stability while maintaining diversity. In addition, this refinement stage can be guided toward human preferences and/or domain-specific quality metrics without requiring a differentiable objective. We further distill the refined grasp distribution into a diffusion model for robust real-world deployment, and highlight the role of diversity for both effective training and during deployment. Experiments on a newly introduced Handles dataset and a DexGraspNet subset demonstrate that our approach achieves over 120 distinct stable grasps per object (a 1.7-6x improvement over unrefined analytical methods) while outperforming diffusion-based alternatives by 46-60\\% in unique grasp coverage."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Synthesizing Trajectory Queries from Examples",
+    "authors": "Stephen Mell, Favyen Bastani, Steve Zdancewic, Osbert Bastani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15164v1",
+    "source": "arXiv",
+    "abstract": "Data scientists often need to write programs to process predictions of machine learning models, such as object detections and trajectories in video data. However, writing such queries can be challenging due to the fuzzy nature of real-world data; in particular, they often include real-valued parameters that must be tuned by hand. We propose a novel framework called Quivr that synthesizes trajectory queries matching a given set of examples. To efficiently synthesize parameters, we introduce a novel technique for pruning the parameter space and a novel quantitative semantics that makes this more efficient. We evaluate Quivr on a benchmark of 17 tasks, including several from prior work, and show both that it can synthesize accurate queries for each task and that our optimizations substantially reduce synthesis time."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Code-Verification Techniques for Particle-in-Cell Simulations with Direct Simulation Monte Carlo Collisions",
+    "authors": "Brian A. Freno, William J. McDoniel, Christopher H. Moore, Neil R. Matula",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15130v1",
+    "source": "arXiv",
+    "abstract": "Particle-in-cell methods with stochastic collision models are commonly used to simulate collisional plasma dynamics, with applications ranging from hypersonic flight to semiconductor manufacturing. Code verification of such methods is challenging due to the interaction between the spatial- and temporal-discretization errors, the statistical sampling noise, and the stochastic nature of the collision algorithm. In this paper, we introduce our code-verification approaches to apply the method of manufactured solutions to plasma dynamics, and we derive expected convergence rates for the different sources of discretization and statistical error. For the particles, we incorporate the method of manufactured solutions into the equations of motion. We manufacture the particle distribution function and inversely query the cumulative distribution function to obtain known particle positions and velocities at each time step. In doing so, we avoid modifying the particle weights, eliminating risks from potentially negative weights or modifications to weight-dependent collision algorithms. For the collision algorithm, we average independent outcomes at each time step and we derive a corresponding manufactured source term for the velocity change for each particle. By having known solutions for the particle positions and velocities, we are able to compute the error in these quantities directly instead of attempting to compute differences in distribution functions. These approaches are equally valid for particle-in-cell simulations with Monte Carlo collisions and direct simulation Monte Carlo simulations of neutral gas flows. We demonstrate the effectiveness of our approaches in three dimensions for different couplings between the particles and field, with and without binary elastic collisions, and with and without coding errors."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Kalman Filtering Based Flight Management System Modeling for AAM Aircraft",
+    "authors": "Balram Kandoria, Aryaman Singh Samyal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14948v1",
+    "source": "arXiv",
+    "abstract": "Advanced Aerial Mobility (AAM) operations require strategic flight planning services that predict both spatial and temporal uncertainties to safely validate flight plans against hazards such as weather cells, restricted airspaces, and CNS disruption areas. Current uncertainty estimation methods for AAM vehicles rely on conservative linear models due to limited real-world performance data. This paper presents a novel Kalman Filter-based uncertainty propagation method that models AAM Flight Management System (FMS) architectures through sigmoid-blended measurement noise covariance. Unlike existing approaches with fixed uncertainty thresholds, our method continuously adapts the filter's measurement trust based on progress toward waypoints, enabling FMS correction behavior to emerge naturally. The approach scales proportionally with control inputs and is tunable to match specific aircraft characteristics or route conditions. We validate the method using real ADS-B data from general aviation aircraft divided into training and verification sets. Uncertainty propagation parameters were tuned on the training set, achieving 76% accuracy in predicting arrival times when compared against the verification dataset, demonstrating the method's effectiveness for strategic flight plan validation in AAM operations."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Adjoint-based shape optimization of a ship hull using a Conditional Variational Autoencoder (CVAE) assisted propulsion surrogate model",
+    "authors": "Moloud Arian Maram, Georgios Bletsos, Thanh Tung Nguyen, Ahmed Hassan, Michael Palm, Thomas Rung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14907v2",
+    "source": "arXiv",
+    "abstract": "Adjoint-based shape optimization of ship hulls is a powerful tool for addressing high-dimensional design problems in naval architecture, particularly in minimizing the ship resistance. However, its application to vessels that employ complex propulsion systems introduces significant challenges. They arise from the need for transient simulations extending over long periods of time with small time steps and from the reverse temporal propagation of the primal and adjoint solutions. These challenges place considerable demands on the required storage and computing power, which significantly hamper the use of adjoint methods in the industry. To address this issue, we propose a machine learning-assisted optimization framework that employs a Conditional Variational Autoencoder-based surrogate model of the propulsion system. The surrogate model replicates the time-averaged flow field induced by a Voith Schneider Propeller and replaces the geometrically and time-resolved propeller with a data-driven approximation. Primal flow verification examples demonstrate that the surrogate model achieves significant computational savings while maintaining the necessary accuracy of the resolved propeller. Optimization studies show that ignoring the propulsion system can yield designs that perform worse than the initial shape. In contrast, the proposed method produces shapes that achieve more than an 8\\% reduction in resistance."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Colimit-Based Composition of High-Level Computing Devices",
+    "authors": "Damian Arellanes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14904v1",
+    "source": "arXiv",
+    "abstract": "Models of High-level Computation (MHCs) provide effective means to describe complex real-world computing systems because they offer formal foundations for the specification of interacting computing devices, as opposed to describing individual ones, which has been the focus of classical models such as Turing machines or the lambda calculus. Despite numerous proposals over the past half century, there is still no canonical MHC akin to Turing machines for (compositionally) reasoning about computation in the large. One of the major drawbacks of current MHCs is that they extensively neglect control flow, a well-know semantic property that defines computation order. Only a few MHCs treat control explicitly at the expense of assuming that data follows control. Mixing such dimensions within the same framework leads to inefficient methods for formal analysis and verification. To address this, the computon model has recently emerged as a category-theoretic MHC that separates data and control and makes control explicit by supporting composition operators characterised as finite colimit constructions. Such constructions allow the formation of sequential, parallel, branching and iterative computing devices. Unfortunately, the computon model is still a generic reference rather than a concrete realisation. In this paper, we provide a variation of it to enable functional computing devices, introduce a new branching operator, discuss how to define synchronous parallelising out of sequencing and asynchronous parallelising, describe concrete operational semantics for computon execution and provide the first implementation of the model. The implementation yields an open-source programming environment that realises the underlying categorical semantics. This tool is publicly available and ready to build complex computing devices that are structurally correct by construction."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "interID -- An Ecosystem-agnostic Verifier-as-a-Service with OpenID Connect Bridge",
+    "authors": "Hakan Yildiz, Axel Küpper",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14871v1",
+    "source": "arXiv",
+    "abstract": "Self-Sovereign Identity (SSI) enables user-controlled, cryptographically verifiable credentials. As EU regulations mandate EUDI Wallet acceptance by 2027, SSI adoption becomes a compliance necessity. However, each SSI Verifier exposes different APIs with distinct request parameters, response formats, and claim structures, requiring custom wrappers and dedicated infrastructure, contrasting with OpenID Connect (OIDC) where standardized protocols enable seamless integration. interID is an ecosystem-agnostic platform unifying credential verification across Hyperledger Aries/Indy, EBSI, and EUDI ecosystems. We extend interID with an OIDC bridge providing Verifier-as-a-Service, enabling SSI verification through standard OIDC flows. Organizations receive ID Tokens with verified credential attributes without implementing Verifier-specific logic or deploying infrastructure. The multi-tenant architecture leverages Keycloak with strict tenant isolation. Key innovations include PKCE support, scope-to-proof-template mappings translating OIDC scopes into ecosystem-specific verification requests, and a security analysis identifying novel attack surfaces at the intersection of OIDC, SSI, and multi-tenant architectures, threats covered by neither RFC 6819 nor existing SSI analyses alone. Our evaluation demonstrates security equivalence to production identity providers through threat modeling identifying 11 attack vectors, including seven beyond RFC 6819's scope. Integration analysis shows organizations can adopt SSI authentication with comparable effort to adding traditional federated providers. By combining familiar OIDC patterns with SaaS deployment, our work lowers integration and operational barriers, enabling regulatory compliance through configuration rather than custom development."
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Disentangling Pitch and Creak for Speaker Identity Preservation in Speech Synthesis",
+    "authors": "Frederik Rautenberg, Jana Wiechmann, Petra Wagner, Reinhold Haeb-Umbach",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.14686v1",
+    "source": "arXiv",
+    "abstract": "We introduce a system capable of faithfully modifying the perceptual voice quality of creak while preserving the speaker's perceived identity. While it is well known that high creak probability is typically correlated with low pitch, it is important to note that this is a property observed on a population of speakers but does not necessarily hold across all situations. Disentanglement of pitch from creak is achieved by augmentation of the training dataset of a speech synthesis system with a speaker manipulation block based on conditional continuous normalizing flow. The experiments show greatly improved speaker verification performance over a range of creak manipulation strengths."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Disentangling LLM Predictions: A Framework for Transparent Decision-Making in NLP",
+    "authors": "Ramendra Mishra, Dharmendra Kumar",
+    "publish": "2025 IEEE Pune Section International Conference (PuneCon)",
+    "url": "https://doi.org/10.1109/punecon67554.2025.11373924",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) excel in Natural Language Processing (NLP) but face challenges in trust and transparency, limiting their use in critical domains like healthcare and law. We present a new framework, Disentangled LLM Analysis (DLA), that can be used to increase the interpretability of LLMs without compromising accuracy. DLA combines at-tention mechanism analysis and SHAP-based feature attribution to break down its predictions into clear, token-level decision paths that display how input features impact outputs. Compared to benchmark datasets (sentiment analysis, question answering, text classification, and natural language inference), DLA obtains scores on interpretability (e.g., 0.78 average) that are 20–25% higher and an 81% overlap in attribution with human judgments, and has predictive performance that is comparable to state-of-the-art LLMs (e.g., 88.3% accuracy on IMDb). In contrast to baselines such as LIME and SHAP, DLA includes a balance of granularity and efficiency and provides clear actionable insights to practitioners. A DLA can be implemented to result in trust and accountability by clarifying model reasoning, making it possible to deploy it responsibly for high-stakes applications, such as medical diagnostics and legal document analysis."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Enhancing High School Programming Education Through LLM-Based Hint Generation",
+    "authors": "Marios Chrysopoulos, Lefteris Moussiades",
+    "publish": "2025 International Workshop on Artificial Intelligence and Education (WAIE)",
+    "url": "https://doi.org/10.1109/waie67422.2025.11381301",
+    "source": "IEEE",
+    "abstract": "The integration of Large Language Models (LLMs) into education offers new opportunities for enhancing programming instruction, especially at the high school level. This paper introduces PythonTutor, an intelligent tutoring system that supports novice learners through scaffolded, AI-generated feedback. Powered by ChatGPT 4.0 Mini, PythonTutor provides step-by-step hints tailored to student submissions, promoting independent problem-solving and limiting overreliance on AI. The platform unifies instructional content, personalized tutoring, and teacher oversight in a web-based environment. A pilot study with 18 students and three teachers compared PythonTutor-supported instruction to traditional methods. Results showed significantly greater learning gains with PythonTutor, supported by high accuracy and precision in AI feedback. Student and teacher feedback confirmed the system’s usability, educational value, and classroom potential. PythonTutor emerges as a scalable, cost-effective solution for personalized programming education aligned with best practices"
+  },
+  {
+    "date": "2026-2-17",
+    "title": "LLM and Blockchain Based Digital Evidence Integrity System",
+    "authors": "Aakash T, Kethsy Prabavathy",
+    "publish": "2025 IEEE International Conference on Blockchain and Distributed Systems Security (ICBDS)",
+    "url": "https://doi.org/10.1109/icbds67396.2025.11376947",
+    "source": "IEEE",
+    "abstract": "Ensuring the integrity of digital forensic evidence remains a critical challenge due to risks such as tampering, loss, and unauthorized modifications. Traditional storage methods are often susceptible to these issues, making it essential to adopt robust solutions for securing forensic evidence [1][2]. Blockchain technology, with its immutability, decentralization, and cryptographic security, provides an effective mechanism for recording and verifying forensic data [3]. A blockchain-based system enables the secure logging of evidence metadata, including file hash, timestamps, investigator identity, and geolocation [4]. Smart contracts on a private blockchain can automate verification processes, ensuring that any modifications to the evidence are traceable [5]. The decentralized nature of blockchain mitigates the risks associated with centralized storage, while cryptographic hashing guarantees data integrity [6]. Implementation on a simulated blockchain environment, such as the Ganache test network, demonstrates the feasibility of preserving and verifying digital evidence. The approach enhances trust, accountability, and scalability in forensic investigations, contributing to more reliable legal and corporate forensic procedures [7]."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "LLM-Driven Multi-Agent Architecture for Automated Physical Education Instruction",
+    "authors": "Shengfeng Li, Jirui Dong",
+    "publish": "2025 6th International Conference on Artificial Intelligence and Computer Engineering (ICAICE)",
+    "url": "https://doi.org/10.1109/icaice68195.2025.11382371",
+    "source": "IEEE",
+    "abstract": "This study proposes an LLM-based architectural framework tailored for physical education, enabling a fully automated computational workflow through a multi-agent system design. The framework integrates four specialized processing components: a Retriever module that performs adaptive knowledge extraction using dynamic weighting strategies, a Reflector module conducting multidimensional confidence assessment to ensure contextual accuracy, parallel Answerers employing structured reasoning techniques to preserve logical coherence in generated outputs, and an Improver module responsible for multi-constraint optimization to verify output quality. Experimental results demonstrate improved processing efficiency and higher-quality outputs attributable to the integrated pipeline architecture. The framework achieves greater content relevance and sustains robust performance under dynamic educational conditions. By integrating retrieval-augmented generation with iterative refinement processes, the system establishes a self-correcting mechanism that significantly enhances the reliability and operational effectiveness of AI-supported platforms for psychomotor skill development."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "ACM TechBrief: Buy versus Build an LLM",
+    "authors": "Jiahao Lu, Ziwei Xu, William Tjhi, Junnan Li, Antoine Bosselut, Pang Wei Koh, Mohan Kankanhalli",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1145/3797946",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Genetic Ancestry and Cancer Genomics: An LLM-Based Framework for Equitable Precision Oncology",
+    "authors": "Jai Satrawada, Baby Anusha Satravada",
+    "publish": "2025 IEEE Pune Section International Conference (PuneCon)",
+    "url": "https://doi.org/10.1109/punecon67554.2025.11378509",
+    "source": "IEEE",
+    "abstract": "The incidence of cancer, its genetic mutations, and treatment effectiveness depend heavily on genetic ancestry. Yet existing cancer genomics datasets underrepresent non-European populations, which restricts the application of precision oncology results to diverse patient groups. In this study, a retrieval-augmented generation (RAG) framework used large language models (LLMs) to analyze 30 PubMed-indexed cancer genomics studies that contained ancestry-related underrepresented groups in genomic research. The system used document chunking, embeddings, and semantic retrieval to find connections between ancestry, mutations, and treatment effects. Our system achieved 92% retrieval precision and 0.87 F1-score in mutation-ancestry mapping, validated against The Cancer Genome Atlas (TCGA) datasets. The platform successfully detected how different ancestry groups relate to cancer mutations and drug responses through its analysis of TP53 mutations in African breast cancer patients and better EGFR-inhibitor effectiveness in East Asian lung cancer patients. The study revealed two important findings, which showed that people of African ancestry have a higher risk of clear-cell renal carcinoma when they carry VHL variants, and survival rates differ based on ancestry. The research proves that AI-based literature analysis can merge scattered ancestry-cancer data to discover fresh connections between genetic background and cancer. The implementation of ancestry-based frameworks in precision oncology practice will help achieve fair cancer treatment for all patients."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Advancing Pediatric Speech Disorder Treatments using LLM",
+    "authors": "Srishti Vashishtha, Deepika Varshney, Kirti Sharma, Vedika Gupta, Manya Gupta",
+    "publish": "2025 2nd International Conference on Intelligent Systems for Cybersecurity (ISCS)",
+    "url": "https://doi.org/10.1109/iscs69371.2025.11386455",
+    "source": "IEEE",
+    "abstract": "Children with specific language impairment (SLI) experience persistent communication challenges that affect their development. Early detection is vital for effective intervention. This study applies large language model (LLM) architectures to automatically classify speech from children with and without SLI using the Speech Database of Typical and SLI Children (1,574 samples). Audio features were extracted via Hugging Face’s AutoFeatureExtractor with Whisper and Wav2Vec2 as backbone models, then fine-tuned using AutoModelForAudioClassification. was conducted using accuracy, precision, recall, and F1-score, which showed that Whisper achieved perfect classification (1.0 across all metrics), outperforming Wav2Vec2 (accuracy = 0.9556). The findings highlight Whisper’s strong capability to capture fine-grained acoustic and linguistic patterns associated with SLI, demonstrating its potential for early screening and clinical deployment."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Operational DFIR: ML-Based Detection and LLM-Assisted Fileless Malware Analysis",
+    "authors": "Subodh Kant Tiwari, Neeti Kashyap, Prachi",
+    "publish": "2025 2nd International Conference on Intelligent Systems for Cybersecurity (ISCS)",
+    "url": "https://doi.org/10.1109/iscs69371.2025.11386023",
+    "source": "IEEE",
+    "abstract": "Fileless malware has emerged as a persistent challenge for digital forensics and incident response (DFIR), as it operates almost entirely in volatile memory and abuses legitimate system utilities, leaving minimal artefacts on disk. Traditional detection techniques based on file-based signature or static analysis do not cope with such threats. This paper introduces a two-step model that combines memory forensics with machine learning and large language model (LLM) support in solving detection and investigation issues. Features derived in the Volatility3 plugins are then narrowed down in the detection layer, through Pearson Correlation Coefficient (PCC) and then categorized as per the lightweight machine learning models, with XGBoost demonstrating the best balance between accuracy and runtime efficiency. Explainability is guaranteed by SHAP analysis, where artefacts injected code, anomalous services, and kernel callbacks are all noted as important indicators of forensic importance. Structured Volatility outputs are normalised into JSON artefacts and fed through Gemini with well-designed prompts in the investigation layer to create summaries, timelines, ATT&CK mappings, and indicators of compromise. The study of Case studies involving Kovter and Poweliks demonstrates that the framework decreases manual triage load at the expense of forensic soundness via analyst-in-the-loop validation. Through validating ML-based detection and scalable LLM-aided discovery, the framework provides a realistic and deployable solution to fileless malware response in contemporary DFIR procedures."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "LLM Enhanced Human-Robot Interaction for Intelligent Masonry System",
+    "authors": "Yuancheng Zhu, Yuanhan Li, Jinghao Xu, Yuhang Jiang, Jingyi Zhong",
+    "publish": "2025 8th International Conference on Robotic Systems and Applications (ICRSA)",
+    "url": "https://doi.org/10.1109/icrsa66467.2025.11382184",
+    "source": "IEEE",
+    "abstract": "The integration of robotic masonry technology holds considerable potential to enhance construction efficiency and reduce costs. However, it is important to acknowledge the challenges associated with the technology's current state. Specifically, the current limitations of autonomy and adaptability in dynamic construction environments need to be addressed. Existing systems are challenging to utilize in unstructured scenarios, and the human-robot interaction model is rigid, which limits the further development of this technology. The present paper puts forward a novel proposal for the resolution of the aforementioned issue. This proposal entails the integration of a large-scale language model (LLM) into a robotic masonry system. The implementation of this integration would facilitate the real-time conversion of natural language commands into robot actions through the utilization of an API interface. Initially, the robot masonry system is constructed, and this is accomplished by the uArm Swift Pro robotic arm and image sensor. Secondly, the LLM-based semantic parsing module is constructed to map linguistic instructions into robot action sequences. Finally, the design of the human-robot interaction interface is employed to enhance the interaction flexibility. The experiments demonstrate that the large-scale language model plays a pivotal role in human-robot collaboration and provides essential technical support for intelligent transformation."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "A Multi-bit Robust LLM Watermark based on Window Average Space Value",
+    "authors": "Wanying Xu, Weihai Li, Zikai Xu",
+    "publish": "2025 6th International Conference on Artificial Intelligence and Computer Engineering (ICAICE)",
+    "url": "https://doi.org/10.1109/icaice68195.2025.11382408",
+    "source": "IEEE",
+    "abstract": "The development of Large Language Models (LLMs) has achieved remarkable progress, with their language understanding capabilities increasingly approaching human-like performance and being widely applied. However, with the enhancement of model capabilities, issues such as the misuse of LLMs and copyright infringement have become more pronounced, leading to multiple challenges in social, legal, and technical domains. As a result, attention has been focused on model watermarking techniques, which embed imperceptible yet machine-detectable digital watermarks in model outputs, enabling content traceability. In this paper, we propose a water-marking method specifically designed for LLM-generated text, embedding watermark information through the adjustment of the Window Average Space Value (WASV) within the text. This method allows for multi-bit watermark embedding, ensuring the watermark’s invisibility by fine-tuning word replacement while maintaining low perplexity. Additionally, a lightweight watermark detection method is achieved using a sliding window and dynamic programming matching technique for watermark extraction. Our experiments on various LLMs demonstrate that our approach achieves perplexity comparable to single-bit watermark schemes. Moreover, the watermark-generated text exhibits strong robustness while remaining easily detectable."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "LLM-Augmented Explainable Credit Card Fraud Detection using XGBoost",
+    "authors": "Sunantha S, Swetha S, J T Anita Rose",
+    "publish": "2025 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)",
+    "url": "https://doi.org/10.1109/icecmsn68058.2025.11383394",
+    "source": "IEEE",
+    "abstract": "Credit-card fraud is evolving rapidly, making it difficult for banks and payment providers to identify fraudulent transactions without disturbing genuine users. Although traditional machine-learning models such as XGBoost can accurately detect unusual patterns, they often function like black boxes, offering little clarity on how decisions are made. This study presents an explainable AI framework that combines the accuracy of XGBoost with the reasoning ability of a Large Language Model (LLM). Using feature-importance techniques such as SHAP and LIME, the system converts complex numerical outputs into simple, meaningful explanations that anyone can understand. The key innovation lies in merging structured data analysis with natural-language reasoning, allowing every fraud alert to be both precise and transparent. This approach not only improves fraud detection performance but also strengthens user trust and supports regulatory compliance in modern financial systems."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Natural Language to SQL Queries Using LLM Models",
+    "authors": "G.R. Abijith, Darwin Raja Kumar R, Derwin Anto A",
+    "publish": "2025 2nd International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering (ICECONF)",
+    "url": "https://doi.org/10.1109/iceconf65644.2025.11379599",
+    "source": "IEEE",
+    "abstract": "The increasing reliance on data-driven decision making has made database interaction a critical component in many domains. However, writing Structured Query Language (SQL) queries requires specific technical knowledge, which creates an accessibility barrier for non-technical users. This project proposes a Natural Language to SQL (NL2SQL) system that utilizes Large Language Models (LLMs) to convert user queries expressed in everyday language into valid SQL statements. The system enables users to retrieve information from a database without requiring prior SQL expertise, improving usability and broadening access to data insights."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "AI Fiesta - A Platform that Compares LLM Models",
+    "authors": "Elizabeth Rani G, Mannam Ganesh Babu, Dhusinthan V, Ruban Srijith A",
+    "publish": "2025 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)",
+    "url": "https://doi.org/10.1109/icecmsn68058.2025.11382834",
+    "source": "IEEE",
+    "abstract": "The fast development of Artificial Intelligence (AI) has resulted in the creation of many different models with different levels of performance, complexity, and the scope of application. The choice of the most appropriate model also continues to be a problem because of the unintegrated evaluation techniques and a scarcity of comparison tools. To overcome this, we offer AI Fiesta, a model comparison platform, which aims to offer an interactive dashboard that facilitates a systematic analysis. The platform encompasses the combination of various AI models through a single interface with the visualization of performance, ranking based on metrics, and comparative insights. To guarantee the consistency of data processing, deep learning (DL) algorithm was used to provide data persistence, which would make the storage, retrieval, and dynamic update of experimental outcomes effective. The integration helps in a smooth interaction and durability of the platform. Through both transparent benchmarking and continuous data management, AI Fiesta will enable researchers and practitioners to make faster and better-informed model choice, which will eventually lead to the better deployment strategies in the real world."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "From Voice to Action: A Secure Biometric and LLM-Powered Architecture for Intuitive Vehicle Control",
+    "authors": "Rachid Djerbi, Mohamed Tahar Bennai, Fatima Gherbi",
+    "publish": "2025 International Conference on Artificial Intelligence and Innovative Applications (AIIA)",
+    "url": "https://doi.org/10.1109/aiia68273.2025.11383663",
+    "source": "IEEE",
+    "abstract": "Modern vehicle control systems are caught between the need for robust security and the demand for intuitive, natural user interaction. While voice commands offer convenience, they often lack a fundamental security layer, leaving vehicles vulnerable to unauthorized control. This paper introduces a novel, holistic architecture that directly addresses this challenge by synergistically integrating three key technologies: robust speaker verification for biometric security, Large Language Models (LLMs) for flexible natural language understanding, and a real-time embedded controller for physical actuation. We designed and implemented a proof-of-concept prototype where voice commands are only executed after the speaker’s identity is biometrically confirmed. Authenticated commands are then interpreted by an LLM, translated into actionable instructions, and executed on an ESP32-controlled vehicle model. Our experiments demonstrate the system’s high feasibility and security, achieving an Equal Error Rate (EER) of 1.75% for speaker verification and successfully performing real-time, intuitive command and control. This work presents a complete, end-to-end blueprint for developing the next generation of secure and user-centric human-vehicle interfaces."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "LLM-based Security Audit Assistant for Configuration File Analysis",
+    "authors": "Sivakumar Depuru, Nagooru Chandana, P. Alekhya, S. Madhu, Seela Venkata Chandana Devi",
+    "publish": "2025 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)",
+    "url": "https://doi.org/10.1109/icecmsn68058.2025.11383204",
+    "source": "IEEE",
+    "abstract": "The increasing adoption of Large Language Models (LLMs) in cybersecurity opens up promising avenues for automating the detection of misconfigurations in system and application configuration files. In this work, we present an LLM-Based Security Audit Assistant that integrates conventional rule-based validation with the contextual reasoning capability of LLMs. The system supports multiple configuration formats, performs early secret detection and redaction, and leverages retrieval-augmented prompts to deliver targeted remediation steps. To test the methodology, we created a collection of 4,200 configuration artifacts from open-source projects, enterprise applications, and emulated cloud environments, spanning YAML, JSON, XML, INI, and Docker Compose formats. Experimental results demonstrate that our suggested hybrid model attains 97.1% precision and 95.6% recall with 3.1% false positives, which outperforms rule-only and LLM-only baselines. The solution could be deployed in real time within CI/CD pipelines because the average processing latency was less than 150 ms per file. These results show that a practical path to precise and scalable configuration file security auditing is to combine deterministic tests with LLM-driven reasoning."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Hybrid Transformer–LLM Framework with Factual Reliability Features for Fake News Detection",
+    "authors": "Ahlem Drif, Mohamed Anes Abdeldjalil Ouahab, Zaki Houssem Eddine Meddour, Silvia Giordano",
+    "publish": "2025 International Conference on Artificial Intelligence and Innovative Applications (AIIA)",
+    "url": "https://doi.org/10.1109/aiia68273.2025.11383581",
+    "source": "IEEE",
+    "abstract": "The proliferation of fake news undermines public trust, destabilizes societies, and erodes democratic processes. In this work, we propose a hybrid transformer-LLM framework that integrates transformer-based architectures with credibility-aware features generated by a state-of-the-art Large Language Model (LLM). Our approach employs two complementary processing streams: (1) a fine-tuned BERT model trained on the original dataset, and (2) a second BERT model applied to features derived from LLM via a carefully engineered zero-shot prompting template. This template is designed to elicit semantic and authenticity-related descriptors that capture nuanced cues of misinformation. The outputs from both BERT models are fused to produce the final prediction, enabling the system to leverage both raw linguistic patterns and enriched LLM-generated context. Experimental results on real-world datasets demonstrate that our framework achieves a 2% improvement in accuracy and a 4% improvement in precision over state-of-the-art baselines, validating the effectiveness of integrating LLM prompting with transformer-based detection pipelines."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Prompt-Based Jailbreaking of Leading LLM Chatbots: A Survey of Attacks and Defenses",
+    "authors": "Brynn Knowlton, Jovani Campa, David Solis Gallo, Khalil Dajani, Nabeel Alzahrani",
+    "publish": "IEEE Transactions on Artificial Intelligence",
+    "url": "https://doi.org/10.1109/tai.2026.3665656",
+    "source": "IEEE",
+    "abstract": "Generative AI systems—particularly large language models (LLMs)—remain vulnerable to jailbreak attacks: adversarial prompts that bypass safeguards and elicit unsafe or restricted outputs. This survey synthesizes jailbreak research from 2023–2025, covering attack methods, defense strategies, and evaluation frameworks. Jailbreak techniques are grouped into five main categories: prompt-based injections, role-play conditioning, multi-turn dialogue, multilingual or multimodal exploits, and optimization-driven pipelines. We also examine discovery methods such as human red teaming and automated attacker systems (e.g., AutoJailbreak, LLMStinger), and review defense mechanisms including supervised fine-tuning (SFT), reinforcement learning from human feedback (RLHF), adversarial fine-tuning, and output or pipeline filtering. Standardized benchmarks—such as PromptBench, JailbreakBench, and multimodal evaluation suites—are analyzed in terms of reproducibility, coverage, and robustness testing. Persistent issues of generalization, reproducibility, and scalability are discussed, along with tradeoffs between safety alignment and model utility. This paper provides an up-to-date reference clarifying the evolving landscape of jailbreak attacks and defenses in LLMs."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "Context-Aware Text Generation for Interactive Dashboards via Multimodal LLM Orchestration",
+    "authors": "Hao He, Shaolei Wang, Hongwei Wu, Xinchen Wang, Yuxiao Zhao, Liujian Diao",
+    "publish": "2025 6th International Conference on Artificial Intelligence and Computer Engineering (ICAICE)",
+    "url": "https://doi.org/10.1109/icaice68195.2025.11382347",
+    "source": "IEEE",
+    "abstract": "Interactive dashboards often suffer from static textual components that fail to adapt to real-time data updates and user interactions, thereby undermining narrative coherence and analytical reliability. To address this challenge, we propose a context-aware text generation system built on the Dynamic Responsive Design Framework (DRDF). The system integrates a multimodal input pipeline, hierarchical generation strategies, and feedback optimization mechanisms to ensure semantic precision, readability, and alignment with user intent. To evaluate its effectiveness, we first constructed and analyzed a corpus of 50 dashboards, then conducted a within-subjects experiment (N = 12) involving two representative tasks: static dashboard authoring and dynamic interactive analysis. The proposed system was compared against two baselines—Tableau with manual authoring and GPT-4 zero-shot question answering. Results demonstrated that the proposed system significantly outperformed both baselines in all core dimensions. It achieved the highest text accuracy (96.2% vs. 91.5% / 84.1%; ANOVA ηp<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup> = .73), enabled the fastest task completion (8.2 vs. 9.8 / 14.3 min; ηp<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup> = .83), and imposed the lowest cognitive load (NASA-TLX = 31.2 vs. 41.6 / 59.4; ηp<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup> = .78). Paired comparisons revealed large effect sizes, with the proposed system reducing completion time relative to manual authoring by 6.1 minutes (d = 2.77, 95% CI [4.7, 7.5]) and lowering workload by 28.2 points (d = 3.13, 95% CI [22.5, 33.9]).These findings validate the effectiveness of multimodal context buffering and hierarchical text generation in enhancing narrative coherence, reducing cognitive demands, and improving interactive responsiveness. The study establishes a robust foundation for advancing AI-assisted text generation in data visualization and decision-support environments."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "GARNETT: Graph-based Fast yet Accurate Post-Placement Toggle Rate Prediction Model from RTL without Technology-dependent Logic Synthesis and Placement",
+    "authors": "M B Rakesh, Anant Terkar, Pabitra Das, Amit Acharyya",
+    "publish": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+    "url": "https://doi.org/10.1109/tcad.2026.3665686",
+    "source": "IEEE",
+    "abstract": "We propose a novel high-speed yet accurate GrAph-assisted post-placement prediction model that predicts the average Toggle rate of ASIC Design from RTL, skipping placEmenT, logic syNthesis and gate-level simulation. We present an efficient graph representation learning solution by sufficiently training the proposed GARNETT using a custom features-assisted graph neural network (GNN) architecture on the unbiased distribution of logic cells in translated technology-independent (TTI) netlist, achieved by bypassing technology-dependent logic synthesis and placement. This unbiased training ensures GARNETT’s efficient learning to propagate the toggle rates with our GNN by effectively embedding the feature values as vectors on each logic cell, unlike the biased training with post-synthesized netlist files in state-of-the-art (SoA) architectures, GRANNITE, Method, and GRIPT. The proposed GARNETT achieves a mean improvement in accuracy of 23.31%, 4.47%, 2.1% and 2.74% higher than the commercial RTL toggle rate estimation tool, GRANNITE, SoA Method, and GRIPT in predicting the average toggle rate, respectively. The proposed GARNETT is faster than the commercial placement-level toggle rate estimation tool, GRANNITE, SoA Method, and GRIPT, in inference latency, with a mean improvement of 6.08X, 4.05X, 4.09X, and 4.03X, respectively."
+  },
+  {
+    "date": "2026-2-17",
+    "title": "A Clinical Informatics Framework for Myeloid Oncology: Scalable AI and LLM Integration for Adaptive Trial Management and Automated FDA Compliance",
+    "authors": "Senthilkumar Vijayakumar, Shaunak Pai Kane, Selvavaani Senthilkumar, Parameshwari Vaiayapuri, Filious Louis",
+    "publish": "2025 IEEE Pune Section International Conference (PuneCon)",
+    "url": "https://doi.org/10.1109/punecon67554.2025.11378528",
+    "source": "IEEE",
+    "abstract": "Recent advances in the treatment of myeloid malignancies increasingly depend on bringing together precision oncology, clinical informatics, and regulatory innovation. Disorders such as acute myeloid leukemia involve diverse genetic, cytogenetic, and hematologic variations that make each patient's condition unique. As a result, modern clinical trials must adopt adaptive and personalized designs while maintaining strict regulatory oversight. Balancing molecularly driven eligibility criteria, predictive monitoring, and accelerated approval timelines has become a major challenge for clinical researchers [1], [2]. To address these needs, this study proposes an Artificial Intelligence enabled clinical trial framework for precision hematology. The system connects platforms such as Medidata Rave and Patient Cloud with real-time clinical rule interpretation, machine-learning-based risk modeling, and automated regulatory document generation. Key parameters such as performance status, bone marrow blast percentage, blood counts, and biomarkers including FLT3, IDH1, and NPM1—re continuously analyzed to predict adverse events and ensure protocol compliance. A Large Language Model (LLM) driven regulatory engine automatically prepares FDA-aligned summaries and SDTM datasets. Simulation results show improved compliance, higher predictive accuracy, and faster preparation of trial documentation. Together, these components create a scalable, intelligent framework that supports faster, more precise, and regulatory-ready clinical trials in myeloid cancers. [3], [4]."
+  }
+]
