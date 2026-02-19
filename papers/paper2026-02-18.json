@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-18",
+    "title": "AREG: Adversarial Resource Extraction Game for Evaluating Persuasion and Resistance in Large Language Models",
+    "authors": "Adib Sakhawat, Fardeen Sadab",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16639v1",
+    "source": "arXiv",
+    "abstract": "Evaluating the social intelligence of Large Language Models (LLMs) increasingly requires moving beyond static text generation toward dynamic, adversarial interaction. We introduce the Adversarial Resource Extraction Game (AREG), a benchmark that operationalizes persuasion and resistance as a multi-turn, zero-sum negotiation over financial resources. Using a round-robin tournament across frontier models, AREG enables joint evaluation of offensive (persuasion) and defensive (resistance) capabilities within a single interactional framework. Our analysis provides evidence that these capabilities are weakly correlated ($ρ= 0.33$) and empirically dissociated: strong persuasive performance does not reliably predict strong resistance, and vice versa. Across all evaluated models, resistance scores exceed persuasion scores, indicating a systematic defensive advantage in adversarial dialogue settings. Further linguistic analysis suggests that interaction structure plays a central role in these outcomes. Incremental commitment-seeking strategies are associated with higher extraction success, while verification-seeking responses are more prevalent in successful defenses than explicit refusal. Together, these findings indicate that social influence in LLMs is not a monolithic capability and that evaluation frameworks focusing on persuasion alone may overlook asymmetric behavioral vulnerabilities."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "MerLean: An Agentic Framework for Autoformalization in Quantum Computation",
+    "authors": "Yuanjie Ren, Jinzheng Li, Yidi Qi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16554v1",
+    "source": "arXiv",
+    "abstract": "We introduce MerLean, a fully automated agentic framework for autoformalization in quantum computation. MerLean extracts mathematical statements from \\LaTeX{} source files, formalizes them into verified Lean~4 code built on Mathlib, and translates the result back into human-readable \\LaTeX{} for semantic review. We evaluate MerLean on three theoretical quantum computing papers producing 2,050 Lean declarations from 114 statements in total. MerLean achieves end-to-end formalization on all three papers, reducing the verification burden to only the newly introduced definitions and axioms. Our results demonstrate that agentic autoformalization can scale to frontier research, offering both a practical tool for machine-verified peer review and a scalable engine for mining high-quality synthetic data to train future reasoning models. Our approach can also be generalized to any other rigorous research in mathematics and theoretical physics."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Synthesis and Verification of Transformer Programs",
+    "authors": "Hongjian Jiang, Matthew Hague, Philipp Rümmer, Anthony Widjaja Lin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16473v1",
+    "source": "arXiv",
+    "abstract": "C-RASP is a simple programming language that was recently shown to capture concepts expressible by transformers. In this paper, we develop new algorithmic techniques for automatically verifying C-RASPs. To this end, we establish a connection to the verification of synchronous dataflow programs in Lustre, which enables us to exploit state-of-the-art model checkers utilizing highly optimized SMT-solvers. Our second contribution addresses learning a C-RASP program in the first place. To this end, we provide a new algorithm for learning a C-RASP from examples using local search. We demonstrate efficacy of our implementation for benchmarks of C-RASPs in the literature, in particular in connection to the following applications: (1) transformer program optimization, and (2) constrained learning of transformer programs (based on a partial specification)."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Cohomological support varieties of certain monomial ideals",
+    "authors": "Michael Gintz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16431v1",
+    "source": "arXiv",
+    "abstract": "Building on work of Briggs, Grifo and Pollitz arXiv:2506.10827, we give an example of two cohomological support varieties of monomial ideals which are not unions of linear subspaces. We provide a procedure for the computation of the cohomological support varieties of certain other monomial ideals - including those with homogeneous generators - with improved computational efficiency, leading to a computer-assisted verification of the existence of a third support variety of a monomial ideal which is not a union of linear subspaces and a computer-assisted proof of a classification of cohomological support varieties of homogeneous monomial ideals over $\\mathbb{Q}$ with 6 generators."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "TabAgent: A Framework for Replacing Agentic Generative Components with Tabular-Textual Classifiers",
+    "authors": "Ido Levy, Eilam Shapira, Yinon Goldshtein, Avi Yaeli, Nir Mashkif, Segev Shlomov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16429v1",
+    "source": "arXiv",
+    "abstract": "Agentic systems, AI architectures that autonomously execute multi-step workflows to achieve complex goals, are often built using repeated large language model (LLM) calls for closed-set decision tasks such as routing, shortlisting, gating, and verification. While convenient, this design makes deployments slow and expensive due to cumulative latency and token usage. We propose TabAgent, a framework for replacing generative decision components in closed-set selection tasks with a compact textual-tabular classifier trained on execution traces. TabAgent (i) extracts structured schema, state, and dependency features from trajectories (TabSchema), (ii) augments coverage with schema-aligned synthetic supervision (TabSynth), and (iii) scores candidates with a lightweight classifier (TabHead). On the long-horizon AppWorld benchmark, TabAgent maintains task-level success while eliminating shortlist-time LLM calls, reducing latency by approximately 95% and inference cost by 85-91%. Beyond tool shortlisting, TabAgent generalizes to other agentic decision heads, establishing a paradigm for learned discriminative replacements of generative bottlenecks in production agent architectures."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Automated Histopathology Report Generation via Pyramidal Feature Extraction and the UNI Foundation Model",
+    "authors": "Ahmet Halici, Ece Tugba Cebeci, Musa Balci, Mustafa Cini, Serkan Sokmen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16422v1",
+    "source": "arXiv",
+    "abstract": "Generating diagnostic text from histopathology whole slide images (WSIs) is challenging due to the gigapixel scale of the input and the requirement for precise, domain specific language. We propose a hierarchical vision language framework that combines a frozen pathology foundation model with a Transformer decoder for report generation. To make WSI processing tractable, we perform multi resolution pyramidal patch selection (downsampling factors 2^3 to 2^6) and remove background and artifacts using Laplacian variance and HSV based criteria. Patch features are extracted with the UNI Vision Transformer and projected to a 6 layer Transformer decoder that generates diagnostic text via cross attention. To better represent biomedical terminology, we tokenize the output using BioGPT. Finally, we add a retrieval based verification step that compares generated reports with a reference corpus using Sentence BERT embeddings; if a high similarity match is found, the generated report is replaced with the retrieved ground truth reference to improve reliability."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Multi-Channel Replay Speech Detection using Acoustic Maps",
+    "authors": "Michael Neri, Tuomas Virtanen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16399v1",
+    "source": "arXiv",
+    "abstract": "Replay attacks remain a critical vulnerability for automatic speaker verification systems, particularly in real-time voice assistant applications. In this work, we propose acoustic maps as a novel spatial feature representation for replay speech detection from multi-channel recordings. Derived from classical beamforming over discrete azimuth and elevation grids, acoustic maps encode directional energy distributions that reflect physical differences between human speech radiation and loudspeaker-based replay. A lightweight convolutional neural network is designed to operate on this representation, achieving competitive performance on the ReMASC dataset with approximately 6k trainable parameters. Experimental results show that acoustic maps provide a compact and physically interpretable feature space for replay attack detection across different devices and acoustic environments."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Partially observed controlled Markov chains and optimal control of the Wonham filter",
+    "authors": "Fulvia Confortola, Marco Fuhrman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16392v1",
+    "source": "arXiv",
+    "abstract": "We consider a class of optimal control problems, with finite or infinite horizon, for a continuous-time Markov chain with finite state space. In this case, the control process affects the transition rates. We suppose that the controlled process can not be observed, and at any time the control actions are chosen based on the observation of a related stochastic process perturbed by an exogenous Brownian motion. We describe a construction of the controlled Markov chain, having stochastic transition rates adapted to the observation filtration. By a change of probability measure of Girsanov type, we introduce the so-called separated optimal control problem, where the state is the conditional (unnormalized) distribution of the controlled Markov chain and the observation process becomes a driving Brownian motion, and we prove the equivalence with the original control problem. The controlled equations for the separated problem are an instance of the Wonham filtering equations. Next we present an analysis of the separated problem: we characterize the value function as the unique viscosity solution to the dynamic programming equations (both in the parabolic and the elliptic case) we prove verifications theorems and a version of the stochastic maximum principle in the form of a necessary conditions for optimality."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Label-Consistent Data Generation for Aspect-Based Sentiment Analysis Using LLM Agents",
+    "authors": "Mohammad H. A. Monfared, Lucie Flek, Akbar Karimi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16379v1",
+    "source": "arXiv",
+    "abstract": "We propose an agentic data augmentation method for Aspect-Based Sentiment Analysis (ABSA) that uses iterative generation and verification to produce high quality synthetic training examples. To isolate the effect of agentic structure, we also develop a closely matched prompting-based baseline using the same model and instructions. Both methods are evaluated across three ABSA subtasks (Aspect Term Extraction (ATE), Aspect Sentiment Classification (ATSC), and Aspect Sentiment Pair Extraction (ASPE)), four SemEval datasets, and two encoder-decoder models: T5-Base and Tk-Instruct. Our results show that the agentic augmentation outperforms raw prompting in label preservation of the augmented data, especially when the tasks require aspect term generation. In addition, when combined with real data, agentic augmentation provides higher gains, consistently outperforming prompting-based generation. These benefits are most pronounced for T5-Base, while the more heavily pretrained Tk-Instruct exhibits smaller improvements. As a result, augmented data helps T5-Base achieve comparable performance with its counterpart."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "Managing Credible Anonymous Identities in Web 3.0 Services: A Scalable On-Chain Admission Framework with Recursive Proof Aggregation",
+    "authors": "Zibin Lin, Taotao Wang, Shengli Zhang, Long Shi, Shui Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16130v1",
+    "source": "arXiv",
+    "abstract": "Open Web 3.0 platforms increasingly operate as \\emph{service ecosystems} (e.g., DeFi, DAOs, and decentralized social applications) where \\emph{admission control} and \\emph{account provisioning} must be delivered as an always-on service under bursty demand. Service operators face a fundamental tension: enforcing Sybil resistance (one-person-one-account) while preserving user privacy, yet keeping on-chain verification cost and admission latency predictable at scale. Existing credential-based ZK admission approaches typically require per-request on-chain verification, making the provisioning cost grow with the number of concurrent joiners. We present \\textbf{ZK-AMS}, a scalable admission and provisioning layer that bridges real-world \\emph{Personhood Credentials} to anonymous on-chain service accounts. ZK-AMS combines (i) zero-knowledge credential validation, (ii) a \\emph{permissionless} batch submitter model, and (iii) a decentralized, privacy-preserving folding pipeline that uses Nova-style recursive aggregation together with multi-key homomorphic encryption, enabling batch settlement with \\emph{constant} on-chain verification per batch. We implement ZK-AMS end-to-end on an Ethereum testbed and evaluate admission throughput, end-to-end latency, and gas consumption. Results show stable verification cost across batch sizes and substantially improved admission efficiency over non-recursive baselines, providing a practical and cost-predictable admission service for large-scale Web 3.0 communities."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "An Explicit Skew-Hadamard Matrix of Order 1252 via Cyclotomic Unions",
+    "authors": "Amira Karoui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16089v1",
+    "source": "arXiv",
+    "abstract": "We construct a skew-Hadamard matrix of order 1252 = 2(5^4 + 1) using a bordered skew-Hadamard difference family over GF(5^4), with blocks given as unions of cyclotomic classes of order N = 16. This order has been reported as missing in some widely used open-source computational tables; we provide an explicit instance together with verification artifacts. We prove the structural prerequisites for the bordered construction (skew-symmetry of one block and the constant autocorrelation-sum condition), and we compute algebraic invariants to facilitate classification: the associated tournament adjacency matrix has full rank over GF(2), and the matrix has full rank over GF(3) and GF(5). We also exhibit an explicit affine subgroup of the automorphism group of size 24 375. All claims are supported by a reproducible artifact bundle including the explicit matrix and verification logs."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "MoE-Spec: Expert Budgeting for Efficient Speculative Decoding",
+    "authors": "Bradley McDanel, Steven Li, Sruthikesh Surineni, Harshit Khaitan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16052v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates Large Language Model (LLM) inference by verifying multiple drafted tokens in parallel. However, for Mixture-of-Experts (MoE) models, this parallelism introduces a severe bottleneck: large draft trees activate many unique experts, significantly increasing memory pressure and diminishing speedups from speculative decoding relative to autoregressive decoding. Prior methods reduce speculation depth when MoE verification becomes expensive. We propose MoE-Spec, a training-free verification-time expert budgeting method that decouples speculation depth from memory cost by enforcing a fixed expert capacity limit at each layer, loading only the experts that contribute most to verification and dropping the long tail of rarely used experts that drive bandwidth overhead. Experiments across multiple model scales and datasets show that this method yields 10--30\\% higher throughput than state-of-the-art speculative decoding baselines (EAGLE-3) at comparable quality, with flexibility to trade accuracy for further latency reductions through tighter budgets."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Evidence-Grounded Subspecialty Reasoning: Evaluating a Curated Clinical Intelligence Layer on the 2025 Endocrinology Board-Style Examination",
+    "authors": "Amir Hosseinian, MohammadReza Zare Shahneh, Umer Mansoor, Gilbert Szeto, Kirill Karlin, Nima Aghaeepour",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.16050v1",
+    "source": "arXiv",
+    "abstract": "Background: Large language models have demonstrated strong performance on general medical examinations, but subspecialty clinical reasoning remains challenging due to rapidly evolving guidelines and nuanced evidence hierarchies. Methods: We evaluated January Mirror, an evidence-grounded clinical reasoning system, against frontier LLMs (GPT-5, GPT-5.2, Gemini-3-Pro) on a 120-question endocrinology board-style examination. Mirror integrates a curated endocrinology and cardiometabolic evidence corpus with a structured reasoning architecture to generate evidence-linked outputs. Mirror operated under a closed-evidence constraint without external retrieval. Comparator LLMs had real-time web access to guidelines and primary literature. Results: Mirror achieved 87.5% accuracy (105/120; 95% CI: 80.4-92.3%), exceeding a human reference of 62.3% and frontier LLMs including GPT-5.2 (74.6%), GPT-5 (74.0%), and Gemini-3-Pro (69.8%). On the 30 most difficult questions (human accuracy less than 50%), Mirror achieved 76.7% accuracy. Top-2 accuracy was 92.5% for Mirror versus 85.25% for GPT-5.2. Conclusions: Mirror provided evidence traceability: 74.2% of outputs cited at least one guideline-tier source, with 100% citation accuracy on manual verification. Curated evidence with explicit provenance can outperform unconstrained web retrieval for subspecialty clinical reasoning and supports auditability for clinical deployment."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "ReLoop: Structured Modeling and Behavioral Verification for Reliable LLM-Based Optimization",
+    "authors": "Junbo Jacob Lian, Yujun Sun, Huiling Chen, Chaoyu Zhang, Chung-Piaw Teo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15983v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) can translate natural language into optimization code, but silent failures pose a critical risk: code that executes and returns solver-feasible solutions may encode semantically incorrect formulations, creating a feasibility-correctness gap of up to 90 percentage points on compositional problems. We introduce ReLoop, addressing silent failures from two complementary directions. Structured generation decomposes code production into a four-stage reasoning chain (understand, formalize, synthesize, verify) that mirrors expert modeling practice, with explicit variable-type reasoning and self-verification to prevent formulation errors at their source. Behavioral verification detects errors that survive generation by testing whether the formulation responds correctly to solver-based parameter perturbation, without requiring ground truth -- an external semantic signal that bypasses the self-consistency problem inherent in LLM-based code review. The two mechanisms are complementary: structured generation dominates on complex compositional problems, while behavioral verification becomes the largest single contributor on problems with localized formulation defects. Together with execution recovery via IIS-enhanced diagnostics, ReLoop raises correctness from 22.6% to 31.1% and execution from 72.1% to 100.0% on the strongest model, with consistent gains across five models spanning three paradigms (foundation, SFT, RL) and three benchmarks. We additionally release RetailOpt-190, 190 compositional retail optimization scenarios targeting the multi-constraint interactions where LLMs most frequently fail."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "FLoPS: Semantics, Operations, and Properties of P3109 Floating-Point Representations in Lean",
+    "authors": "Tung-Che Chang, Sehyeok Park, Jay P Lim, Santosh Nagarakatte",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15965v1",
+    "source": "arXiv",
+    "abstract": "The upcoming IEEE-P3109 standard for low-precision floating-point arithmetic can become the foundation of future machine learning hardware and software. Unlike the fixed types of IEEE-754, P3109 introduces a parametric framework defined by bitwidth, precision, signedness, and domain. This flexibility results in a vast combinatorial space of formats -- some with as little as one bit of precision -- alongside novel features such as stochastic rounding and saturation arithmetic. These deviations create a unique verification gap that this paper intends to address. This paper presents FLoPS, Formalization in Lean of the P3109 Standard, which is a comprehensive formal model of P3109 in Lean. Our work serves as a rigorous, machine-checked specification that facilitates deep analysis of the standard. We demonstrate the model's utility by verifying foundational properties and analyzing key algorithms within the P3109 context. Specifically, we reveal that FastTwoSum exhibits a novel property of computing exact \"overflow error\" under saturation using any rounding mode, whereas previously established properties of the ExtractScalar algorithm fail for formats with one bit of precision. This work provides a verified foundation for reasoning about P3109 and enables formal verification of future numerical software. Our Lean development is open source and publicly available."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "ChartEditBench: Evaluating Grounded Multi-Turn Chart Editing in Multimodal Language Models",
+    "authors": "Manav Nitin Kapadnis, Lawanya Baghel, Atharva Naik, Carolyn Rosé",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15758v1",
+    "source": "arXiv",
+    "abstract": "While Multimodal Large Language Models (MLLMs) perform strongly on single-turn chart generation, their ability to support real-world exploratory data analysis remains underexplored. In practice, users iteratively refine visualizations through multi-turn interactions that require maintaining common ground, tracking prior edits, and adapting to evolving preferences. We introduce ChartEditBench, a benchmark for incremental, visually grounded chart editing via code, comprising 5,000 difficulty-controlled modification chains and a rigorously human-verified subset. Unlike prior one-shot benchmarks, ChartEditBench evaluates sustained, context-aware editing. We further propose a robust evaluation framework that mitigates limitations of LLM-as-a-Judge metrics by integrating execution-based fidelity checks, pixel-level visual similarity, and logical code verification. Experiments with state-of-the-art MLLMs reveal substantial degradation in multi-turn settings due to error accumulation and breakdowns in shared context, with strong performance on stylistic edits but frequent execution failures on data-centric transformations. ChartEditBench, establishes a challenging testbed for grounded, intent-aware multimodal programming."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "A Note on Non-Composability of Layerwise Approximate Verification for Neural Inference",
+    "authors": "Or Zamir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15756v1",
+    "source": "arXiv",
+    "abstract": "A natural and informal approach to verifiable (or zero-knowledge) ML inference over floating-point data is: ``prove that each layer was computed correctly up to tolerance $δ$; therefore the final output is a reasonable inference result''. This short note gives a simple counterexample showing that this inference is false in general: for any neural network, we can construct a functionally equivalent network for which adversarially chosen approximation-magnitude errors in individual layer computations suffice to steer the final output arbitrarily (within a prescribed bounded range)."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "Privacy-Preserving and Secure Spectrum Sharing for Database-Driven Cognitive Radio Networks",
+    "authors": "Saleh Darzia, Gökcan Cantalib, Attila Altay Yavuza, Gürkan Gür",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15705v1",
+    "source": "arXiv",
+    "abstract": "Database-driven cognitive radio networks (DB-CRNs) enable dynamic spectrum sharing through geolocation databases but introduce critical security and privacy challenges, including mandatory location disclosure, susceptibility to location spoofing, and denial-of-service (DoS) attacks on centralized services. Existing approaches address these issues in isolation and lack a unified, regulation-compliant solution under realistic adversarial conditions. In this work, we present a unified security framework for DB-CRNs that simultaneously provides location privacy, user anonymity, verifiable location, and DoS resilience. Our framework, denoted as SLAPX, enables privacy-preserving spectrum queries using delegatable anonymous credentials, supports adaptive location verification without revealing precise user location, and mitigates DoS attacks through verifiable delay functions (VDFs) combined with RLRS-based rate limiting. Extensive cryptographic benchmarking and network simulations demonstrate that SLAPX achieves significantly lower latency and communication overhead than existing solutions while effectively resisting location spoofing and DoS attacks. These results show that SLAPX is practical and well-suited for secure next-generation DB-CRN deployments."
+  },
+  {
+    "date": "2026-02-17",
+    "title": "LLM-to-Speech: A Synthetic Data Pipeline for Training Dialectal Text-to-Speech Models",
+    "authors": "Ahmed Khaled Khamis, Hesham Ali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15675v1",
+    "source": "arXiv",
+    "abstract": "Despite the advances in neural text to speech (TTS), many Arabic dialectal varieties remain marginally addressed, with most resources concentrated on Modern Spoken Arabic (MSA) and Gulf dialects, leaving Egyptian Arabic -- the most widely understood Arabic dialect -- severely under-resourced. We address this gap by introducing NileTTS: 38 hours of transcribed speech from two speakers across diverse domains including medical, sales, and general conversations. We construct this dataset using a novel synthetic pipeline: large language models (LLM) generate Egyptian Arabic content, which is then converted to natural speech using audio synthesis tools, followed by automatic transcription and speaker diarization with manual quality verification. We fine-tune XTTS v2, a state-of-the-art multilingual TTS model, on our dataset and evaluate against the baseline model trained on other Arabic dialects. Our contributions include: (1) the first publicly available Egyptian Arabic TTS dataset, (2) a reproducible synthetic data generation pipeline for dialectal TTS, and (3) an open-source fine-tuned model. All resources are released to advance Egyptian Arabic speech synthesis research."
+  },
+  {
+    "date": "2026-02-18",
+    "title": "SecCodeBench-V2 Technical Report",
+    "authors": "Longfei Chen, Ji Zhao, Lanxiao Cui, Tong Su, Xingbo Pan, Ziyang Li, Yongxing Wu, Qijiang Cao, Qiyao Cai, Jing Zhang, Yuandong Ni, Junyao He, Zeyu Zhang, Chao Ge, Xuhuai Lu, Zeyu Gao, Yuxin Cui, Weisen Chen, Yuxuan Peng, Shengping Wang, Qi Li, Yukai Huang, Yukun Liu, Tuo Zhou, Terry Yue Zhuo, Junyang Lin, Chao Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.15485v2",
+    "source": "arXiv",
+    "abstract": "We introduce SecCodeBench-V2, a publicly released benchmark for evaluating Large Language Model (LLM) copilots' capabilities of generating secure code. SecCodeBench-V2 comprises 98 generation and fix scenarios derived from Alibaba Group's industrial productions, where the underlying security issues span 22 common CWE (Common Weakness Enumeration) categories across five programming languages: Java, C, Python, Go, and JavaScript. SecCodeBench-V2 adopts a function-level task formulation: each scenario provides a complete project scaffold and requires the model to implement or patch a designated target function under fixed interfaces and dependencies. For each scenario, SecCodeBench-V2 provides executable proof-of-concept (PoC) test cases for both functional validation and security verification. All test cases are authored and double-reviewed by security experts, ensuring high fidelity, broad coverage, and reliable ground truth. Beyond the benchmark itself, we build a unified evaluation pipeline that assesses models primarily via dynamic execution. For most scenarios, we compile and run model-generated artifacts in isolated environments and execute PoC test cases to validate both functional correctness and security properties. For scenarios where security issues cannot be adjudicated with deterministic test cases, we additionally employ an LLM-as-a-judge oracle. To summarize performance across heterogeneous scenarios and difficulty levels, we design a Pass@K-based scoring protocol with principled aggregation over scenarios and severity, enabling holistic and comparable evaluation across models. Overall, SecCodeBench-V2 provides a rigorous and reproducible foundation for assessing the security posture of AI coding assistants, with results and artifacts released at https://alibaba.github.io/sec-code-bench. The benchmark is publicly available at https://github.com/alibaba/sec-code-bench."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "A Critical Review and Evaluation of LLMs for RTL Generation",
+    "authors": "Arun Ravindran, Aditya Patra, Vahid Babaey, Suresh Purini",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3665894",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) are emerging as powerful tools for hardware design, with recent work exploring their ability to generate register-transfer level (RTL) code directly from natural-language specifications. This paper presents a critical review and empirical evaluation of LLM-based RTL generation. We examine thirty-one published efforts, classifying their use of techniques such as fine-tuning, reinforcement learning, retrieval-augmented prompting, and multi-agent orchestration across eight methodological dimensions including debugging support, post-RTL metrics, and benchmark development. Building on this synthesis, we experimentally evaluate frontier commercial and open-weight models—GPT-4.1, GPT-4.1-mini, Claude Sonnet 4, and Llama 4 Maverick —on the VerilogEvalV2 and RTLLMv2.0 benchmarks under both single-shot generation and a lightweight ReAct-style reflection loop, with compilation and simulation performed through Icarus Verilog interfaced via the Model Context Protocol (MCP). Results show that these models achieve up to 89.74% on VerilogEval and 96.08% on RTLLM, matching or exceeding prior domain-specific pipelines without specialized fine-tuning. Detailed failure analysis reveals systematic error modes, including FSM mis-sequencing, handshake drift, blocking vs. non-blocking misuse, and state-space oversimplification. Finally, we outline a forward-looking research roadmap toward natural-language-to-System-on-Chip (SoC) design, emphasizing realistic benchmarks and open flows, richer specification formalisms, AI–human collaborative design environments, and system-level feedback that spans physical design, firmware, and design space exploration. Together, this work provides both a synthesis of recent advances and a baseline evaluation of frontier LLMs, highlighting opportunities and challenges in moving toward AI-native electronic design automation."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "ACM TechBrief: Buy versus Build an LLM",
+    "authors": "Jiahao Lu, Ziwei Xu, William Tjhi, Junnan Li, Antoine Bosselut, Pang Wei Koh, Mohan Kankanhalli",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1145/3797946",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-2-18",
+    "title": "An Efficient Knowledge Graph Construction using LLM-Based Retrieval Augmented Generation for Agricultural Data",
+    "authors": "Rohini Naik, Sunil Mane",
+    "publish": "TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)",
+    "url": "https://doi.org/10.1109/tencon66050.2025.11375209",
+    "source": "IEEE",
+    "abstract": "The agricultural industry produces a large volume of unstructured data from various sources, including research papers, field reports, weather data, and satellite images. Extracting valuable insights from unstructured data is crucial for improving decision-making, boosting productivity, and driving innovation. Knowledge graphs (KGs) provide a structured method to represent and link information, yet constructing them from unstructured agricultural data poses a significant challenge due to diversity of data and complexity of the domain. In this study, we introduce a methodology for creating agricultural knowledge graph using the Large Language Model (LLM)-based Retrieval-Augmented Generation (RAG) technique. This approach combines 1) the generative capabilities of LLM with the automated extraction and organization of entities-relationships, and 2) the RAG framework, which enhances the precision of information retrieval pertinent to the agricultural field. We describe the design, implementation, and evaluation of our method, showcasing its effectiveness in generating accurate and comprehensive knowledge graph. Our experimental evaluation, demonstrated that proposed framework achieves average ROUGE performance of 29% higher with respect to RAG retrieval and 53 % more compared to vector retrieval. Also, average BLEU metric achieves 20 % and 68 % higher respectively. This work establishes a foundation for scalable, intelligent knowledge system that can support various agricultural applications, such as advisory services, research, and policy development."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "A Novel Framework for Efficient Transformation to Domain-Oriented LLM Agents",
+    "authors": "Rumesh Weerakoon, Paik Incheon",
+    "publish": "2026 International Conference on Electronics, Information, and Communication (ICEIC)",
+    "url": "https://doi.org/10.1109/iceic69189.2026.11386150",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in general question-answering tasks but face significant limitations in domain-specific applications requiring complex contextual understanding and specialized knowledge. This paper proposes a novel framework for efficient transformation of LLMs into domain-oriented agents through meta-ontology-based approaches integrated with Retrieval-Augmented Generation (RAG). Our framework consists of four stages: metaontology definition, domain ontology generation, RAG integration with natural language conversion, and performance optimization. Experimental validation using university management domains (meeting management and student administration) with LLaMA-2-7B demonstrates consistent improvements: 76.8% task accuracy (vs. $\\mathbf{5 4. 3 \\%}$ zero-shot baseline, $\\mathbf{+ 2 2. 5} \\mathbf{p p}$), $\\mathbf{2 3. 9 \\%}$ enhancement in contextual relevance, and 74.2% ontological consistency, while maintaining 90.7% of general knowledge capabilities. The framework particularly excels in complex reasoning tasks with 35.1 pp improvement over baseline. Results demonstrate that ontology-based knowledge augmentation provides meaningful enhancements for domain-specific deployment while preserving general capabilities and avoiding catastrophic forgetting."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "gptPromptFuzz: LLM Prompt Engineering Based Seed Generation for Effective Fuzzing",
+    "authors": "Darshan Lohiya, Vivek Yelleti, Sangharatna Godboley, P. Radha Krishna",
+    "publish": "TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)",
+    "url": "https://doi.org/10.1109/tencon66050.2025.11375417",
+    "source": "IEEE",
+    "abstract": "Fuzz testing is one of the popular techniques for evaluating software reliability. Its effectiveness largely depends on the quality and diversity of the initial seed inputs. Traditionally, these seeds are generated randomly, which may limit the effectiveness of the fuzzing process. However, generating seeds based on an analysis of the target code can significantly improve the performance of these tools. To address this, we proposed a Large Language Model (LLM)-based seed generation approach for effective fuzzing and named it gptPromptFuzz. In our approach, initially, one meta-prompt is designed in accordance with the objective of diverse seed generation. To further enhance diversity, we construct ten additional prompts that are semantically equivalent to the meta-prompt. Each of these prompts is independently processed by LLM to produce unique seeds. The experimental results demonstrated that the proposed gptPromptFuzz outperformed random AFL in generating seeds effectively, with reduced execution time, in all 45 benchmark C programs. Further, a larger number of paths are obtained in 41 out of 45 programs."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "Comparison of Graph-Based Filtering Mechanisms for LLM Data Leak Prevention",
+    "authors": "Alan Barnett, Seán Ahearne, Paul Barry, Merry Globin, Colin Duggan",
+    "publish": "2025 Cyber Research Conference - Ireland (Cyber-RCI)",
+    "url": "https://doi.org/10.1109/cyber-rci68134.2025.11385238",
+    "source": "IEEE",
+    "abstract": "Large-language models are increasingly being used for a variety of applications, including chatbots and media content generation. LLMs are normally used with decision machines like neural networks. Among the myriad of security issues faced by LLMs are model extraction attacks, training data copyright, and the emphasis of this work: prompt engineered training data leaks. The authors propose a filtering system for identifying and preventing disclosure of training data leaks prior to sending to end users. This system modifies a prior semantic-graph solution by the authors and makes comparative experimentation between this work and its predecessor, with the key difference being the use of a property graph. The implementation of a filtering system based on a property graph database was used for a repository of training data against which LLM outputs were compared to identify leaks. Three distinct training data repository applications were devised; hash-code format, plain-text format, and plain-text format incorporating natural language processing (NLP). Experimental results include accuracy, overhead, and acceleration. Multiple anomalies were observed in the LLMs output during experimentation, and these are examined in this work as plausible training data leaks, observing new anomaly types and producing deeper insights compared to those discovered in the prior solution."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "RANQ: Region-Adaptive Non-uniform Quantization for Efficient LLM Compression",
+    "authors": "Sangbeom Jeong, Hyun Kim",
+    "publish": "2026 International Conference on Electronics, Information, and Communication (ICEIC)",
+    "url": "https://doi.org/10.1109/iceic69189.2026.11386208",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) have demonstrated remarkable performance across a wide range of domains. However, their deployment in real-world environments remains challenging due to the substantial model sizes and limited hardware resources. Quantization has been widely adopted to alleviate these issues, but the presence of outliers in the weight distribution of LLMs significantly degrades quantization performance, particularly in low-bit settings. To address this challenge, we propose a region-adaptive non-uniform quantization (RANQ) method that takes into account the intrinsic characteristics of LLM weight distributions. RANQ divides the entire weight space into central and outlier regions, applying distinct scale factors to each region to minimize performance degradation caused by quantization. Furthermore, we introduce a layer-wise reconstruction-based threshold optimization algorithm, which adaptively determines the optimal region boundaries according to the distributional properties of each layer, enabling more precise low-bit quantization. Experimental results on the LLaMA family using the WikiText2 and C4 datasets demonstrate that the proposed method consistently outperforms existing post training quantization (PTQ) techniques, such as round-to-nearest (RTN) and GPTQ."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "The AI Data Analyst: A Framework for Autonomous Data Analytics, Highlighting LLM and AI Agents",
+    "authors": "Vichayada Laosubinprasert, Proadpran Punyabukkana, Atiwong Suchato",
+    "publish": "TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)",
+    "url": "https://doi.org/10.1109/tencon66050.2025.11374943",
+    "source": "IEEE",
+    "abstract": "This work presents an automated data analytics framework that integrates large language model (LLM) and artificial intelligence (AI) agents to perform end-to-end analysis based on Google's six-step methodology: Ask, Prepare, Process, Analyze, Share, and Act without human involvement throughout the analytics process. The system requires only user input containing the objective, data, context, and prior hypotheses. Then, the system autonomously generates prompts and executes tasks through specialized AI agents. AI agents perform the roles of planning tasks and directing the actions of agents, leveraging LLM for generation of ideas and reasoning to inform their plans and actions. Experiments on two datasets across domains, including education and business, show strong performance. Average analytics scores range from 8.6 to 9.4 out of 10, with average execution times varying between 1.9 and 6.6 min, and error rate varying between 0.2 and 1.2 occurrences per run. Additionally, the system can perform complex tasks such as coding, statistical analysis, machine learning modeling, and visualization generation. The results demonstrate the potential of LLM to function as a virtual data analyst, enabling fully automated, domain-independent analytics."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "AdvAttack-LLM: Exploiting Elasticity in Large Language Models for Efficient Adversarial Attacks",
+    "authors": "Lijia Yu, Yan Cao",
+    "publish": "2025 IEEE 6th International Conference on Computer, Big Data, Artificial Intelligence (ICCBD+AI)",
+    "url": "https://doi.org/10.1109/iccbdai66607.2025.11389048",
+    "source": "IEEE",
+    "abstract": "Despite significant advancements in safety alignment, Large Language Models (LLMs) remain vulnerable to adversarial attacks that manipulate their behavior through carefully crafted inputs. This paper investigates the inherent elasticity of LLMs—their tendency to revert to pre-training distributions when subjected to adversarial fine-tuning. We propose a novel adversarial attack framework, AdvAttack-LLM, that systematically exploits this elasticity to efficiently compromise model alignment. Through comprehensive experiments on LLaMA-3 models using the AdvBench dataset, we demonstrate that elasticity-based adversarial attacks achieve significantly higher success rates (54.8%) with substantially fewer queries (25.2 average queries) compared to state-of-the-art methods. Our theoretical analysis, grounded in compression theory with detailed physical interpretations, reveals that the effectiveness of adversarial attacks is inversely proportional to the KL divergence between pre-training and alignment distributions, explaining why minimal adversarial perturbations can subvert extensively aligned models. These findings highlight critical security vulnerabilities in current alignment approaches and underscore the need for elasticity-aware defense mechanisms."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "ClassiED: Improving Zero-Shot Event Detection by Reducing LLM Hallucination",
+    "authors": "Yan Yu, Shiyu Fang, Jibing Wu, Mao Wang, Ningchao Ge, Jiaxuan Liu",
+    "publish": "2025 11th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia68682.2025.11383081",
+    "source": "IEEE",
+    "abstract": "Event detection (ED) is defined as the process of identifying events through the extraction and annotation of specific trigger words. The hallucination problem of large language models (LLMs) has been shown to lead to suboptimal performance in event detection tasks. To address the issues LLMs encounter when processing specialized domains, this paper proposes an event detection framework called ClassiED, which achieves this by synergistically integrating BERT-based text classification with LLMs reasoning capabilities. The method adopts a two-stage architecture: first, a BERT-based event discriminator filters out non-event sentences to prevent LLMs from producing false positives due to domain knowledge limitations; subsequently, an event detector optimizes prompt engineering to extract text inputs that generate results consistent with the event ontology, enabling zero-shot event type and trigger factor identification using LLMs without domain-specific fine-tuning. Comprehensive evaluations on the MNEE dataset, characterized by a large number of non-event sentences in the military domain, demonstrate that ClassiED achieves an event distinction accuracy (Acc) of 81.83%, an event identification F1 score (EI) of 93.33%, and significant improvements in trigger detection metrics."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "ALERA: An Entropy-Based LLM Multi-Agent Framework for Dynamic Risk Quantification in Quantitative Investing",
+    "authors": "Senmiao Wang, Zhenyu Li, Guanlin Wu",
+    "publish": "2025 11th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia68682.2025.11382737",
+    "source": "IEEE",
+    "abstract": "The financial services industry increasingly relies on data-driven quantitative investing, with large language models (LLMs) advancing decision-making through improved financial semantic understanding, news-driven forecasting, and trading signal generation. However, traditional risk metrics like volatility, Value-at-Risk, and Maximum Drawdown often fail to capture the dynamic complexity of markets, leading to undetected risks or excessive trading. We propose ALERA, an LLM-based multi-agent framework that uses entropy to quantify decision-making uncertainty and assess risk across four dimensions: expert disagreements, historical experience, market volatility, and stock correlations. ALERA mitigates long-term information forgetting with a memory pool and incorporates stock interactions for robust risk assessment. Our contributions include pioneering entropy-based risk quantification, a unified framework for dynamic trading strategies, and extensive empirical validation showing superior performance in return and Sharpe ratio compared to baseline methods. Specifically, ALERA achieves an annualized return of 26.32% and a Sharpe Ratio of 1.71 for AAPL, with a cumulative return of 6.31% and a maximum drawdown of 3.63% over a three-month period from August to November 2024, outperforming baselines like MACD, KDJ+RSI, ZMR, and SMA."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "Advanced 3D Path Planning for Robotic Calligraphy Based on LLM-Driven Text Prompts",
+    "authors": "Cheuk Tung Shadow Yiu, Dick Ho Cheung, Haolun Huang, Kam Tim Woo",
+    "publish": "TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)",
+    "url": "https://doi.org/10.1109/tencon66050.2025.11374953",
+    "source": "IEEE",
+    "abstract": "Chinese calligraphy is a complicated art form that requires precise control of movement and brush dynamics, making it a challenging task for robotic systems. This paper presents a novel approach to enabling robotic manipulators to perform Chinese calligraphy using 3D path planning algorithms and a large language model (LLM) as input generators. The proposed framework integrates an LLM to generate textual content prompts, which are then transformed into detailed 3D Bézier curve trajectories which represent the strokes of Chinese characters. These trajectories are optimized to ensure smooth and accurate motion of the robotic manipulator, taking into account the brush's pressure, orientation, and speed to emulate traditional calligraphy techniques. Experimental results demonstrate the effectiveness of the approach in producing visually authentic Chinese calligraphy with high precision and artistic quality. This work highlights the potential of combining LLM with advanced robotic path planning to bridge the gap between traditional art and robot world."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "An Application of LLM for Vehicle Carbon Footprint Estimation: A Prototype Using Google Gemini Flash",
+    "authors": "Chacharin Lertyosbordin, Pakorn Piyapan, Teerasith Vorarutapibal, Krittinut Rungsithum",
+    "publish": "2025 5th International Conference on Educational Communications and Technology (ICTAECT)",
+    "url": "https://doi.org/10.1109/ictaect67351.2025.11391316",
+    "source": "IEEE",
+    "abstract": "This research presents an application of a Large Language Model (LLM) for vehicle carbon-footprint estimation through a web-application prototype using Google Gemini 2.5 Flash. The system allows users to input natural-language descriptions of vehicles, such as \"Toyota Camry 2.5, 2021, 70 km trip,\" which Gemini interprets to infer missing technical parameters, including fuel efficiency and emission factors. Thirty synthetic vehicle records were analyzed by comparing LLM-derived CO₂ estimates with reference values calculated using the IPCC (2006) Tier 1 methodology. After excluding the top 10% of outliers, the model achieved a Mean Absolute Percentage Error (MAPE) of 16.39% and a Pearson correlation coefficient (r) of 0.955, indicating strong agreement with conventional computations. The results confirm the feasibility of using LLMs for contextual, data-driven carbon estimation, demonstrating their potential for scalable and transparent sustainability applications leveraging multimodal reasoning capabilities."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "Focus, Attend, Extract: LLM-Guided Prompt Refinement for Event Argument Extraction",
+    "authors": "Zhenyu Song, Shiyu Fang, Ningchao Ge, Xuan Li, Lihua Liu, Jiaxuan Liu",
+    "publish": "2025 11th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia68682.2025.11383212",
+    "source": "IEEE",
+    "abstract": "Event Argument Extraction (EAE) is a fundamental information extraction task, focuses on pinpointing event participants and categorizing their specific roles. While prompt-based methods leveraging Pre-trained Language Models (PLMs) have set high performance standards, their reliance on static, predefined prompts limits their effectiveness in complex scenarios involving long-distance dependencies or semantic ambiguity. To address this, we propose LLM-Enhanced Focus for Prompts (LEFP), a novel framework that enhances prompts with dynamic, contextual focus. LEFP employs the Large Language Model (LLM) to analyze the input document and distill the most salient textual evidence for each argument role, which we term a \"focus snippet\". This snippet is then encoded and fused with the original role representation at the feature level, creating a context-aware prompt. Extensive evaluation on three challenging datasets indicates that LEFP consistently improves performance. Further ablation studies validate our design, confirming that feature-level fusion is significantly more effective than simple textual concatenation. Our work demonstrates that leveraging LLMs to generate auxiliary focus information is a promising direction for enhancing smaller, specialized models, effectively combining the reasoning power of LLMs with the efficiency of fine-tuned PLMs."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "An Intelligent System for Automated Interview Question Generation: A Comparative Analysis of LLM Adaptation Techniques",
+    "authors": "S. Shanthini, Jebin P, Dhanush Adhitiya S",
+    "publish": "2025 Tenth International Conference on Science Technology Engineering and Mathematics (ICONSTEM)",
+    "url": "https://doi.org/10.1109/iconstem65670.2025.11374807",
+    "source": "IEEE",
+    "abstract": "To address the need for personalized and insightful candidate assessments, we propose an intelligent system for generating interview questions directly from resumes. The core of this work is a comparative analysis to identify the most effective Large Language Model (LLM) adaptation technique for this nuanced task. We evaluate fThe distinct methods: Retrieval-Augmented Generation (RAG), Direct FineTuning, Mixture of Experts (MoE), and a novel hybrid approach combining model weight freezing with LowRank Adaptation (Freeze + LoRA). Each method was tasked with generating questions from the extracted experience, projects, and skills sections of resumes. The models were evaluated using objective ROUGE metrics and subjective human assessments on question relevance and practicality. Experimental results consistently show that while all methods improve upon base models, the proposed Freeze + LoRA hybrid model achieves a superior balance, demonstrating the highest performance in question quality and contextual relevance while maintaining computational efficiency. This study validates the hybrid approach as a highly effective solution for creating specialized, high-quality generative AI tools for the recruitment domain."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "SolarPanel Dust Detection Using Yolo (You Only Look Once) and LLM (Large Language Model)",
+    "authors": "Santhanakrishnan C, Aditya S, Varad Vasantrao Shinde, Ramya M",
+    "publish": "2025 Tenth International Conference on Science Technology Engineering and Mathematics (ICONSTEM)",
+    "url": "https://doi.org/10.1109/iconstem65670.2025.11374461",
+    "source": "IEEE",
+    "abstract": "The increase in usage of solar energy as a sustainable source requires keeping solar panels free of dirt for maintaining their peak performance [1]. The buildup of dust on the surface of solar panels can significantly reduce energy generation [2]. This research proposes an advanced Deep Learning method for automatically detecting dust on solar panels using Artificial Intelligence. Stable Diffusion is a powerful generative artificial intelligence technique that generates realistic, synthetic images of solar panels with varying dust levels. These images act as a diverse training dataset for training. YOLO is the core of our system. It is a high-performance object detection algorithm which istrained with a combination of synthetic solar panel image of varying dust levels from the stable diffusion and actual pictures captured from drones or cameras. This proposed model can effectively distinguish between clean and dust-covered solar panels. When dust detection is done early enough, it allows for timely cleaning, preventing performance losses and maximizing the generation of energy. The results are presented in the form of snapshots at the end."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "From Text to Diagnosis: Exploring LLM-Assisted Prompt Strategies for Multimodal Few-Shot Medical Image Learning",
+    "authors": "Hong N. Dao, Yasuhiro Hashimoto, Incheon Paik, Truong Cong Thang",
+    "publish": "2026 International Conference on Electronics, Information, and Communication (ICEIC)",
+    "url": "https://doi.org/10.1109/iceic69189.2026.11386349",
+    "source": "IEEE",
+    "abstract": "In medical image analysis, the availability of diverse and comprehensive datasets is crucial for achieving optimal performance in deep learning-based classification. However, data scarcity, domain variability, and the limited transferability of models pre-trained on natural image datasets remain major challenges. In this study, we propose a multimodal few-shot learning framework that leverages CLIP, a contrastive vision-language model, to bridge the gap between natural and medical image domains. Our approach integrates LLM-assisted prompt design with a multimodal vision-language model for medical image classification. Specifically, ChatGPT is employed to generate diverse and semantically rich prompt texts that enhance the adaptability of CLIP to medical imaging tasks under limited-data conditions. We further evaluate three multimodal fusion techniques to effectively combine textual and visual feature representations. Experiments are conducted across five medical imaging datasets, covering multiple modalities including pathology, chest X-ray, ultrasound, blood, and organ MRI. The experimental results highlight the potential of integrating large language models into multimodal frameworks to enhance medical image classification under limited-data conditions."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "An LLM-Powered Virtual Assistant for Authoring Competency-Based Learning Objectives in Basic Education: A Proof-of-Concept Study",
+    "authors": "Chacharin Lertyosbordin, Puvasit Aphisinrungrot, Poramate Boonyuen, Vitsanu Nittayathammakul",
+    "publish": "2025 5th International Conference on Educational Communications and Technology (ICTAECT)",
+    "url": "https://doi.org/10.1109/ictaect67351.2025.11391288",
+    "source": "IEEE",
+    "abstract": "Thailand’s ongoing shift toward Competency-Based Education (CBE) has emphasized the need for practical tools that help teachers translate national policy into classroom practice. However, many educators still face difficulties in developing curriculum-aligned, competency-based learning objectives (CBLOs) due to limited time, training, and pedagogical support. This study addresses that gap by designing and evaluating a proof-of-concept virtual authoring assistant powered by a large language model (LLM). The system was developed using a Rapid Application Development (RAD) framework and fine-tuned using curriculum-derived custom knowledge to align with Thailand’s Basic Education Core Curriculum B.E. 2551 (A.D. 2008) across cognitive, affective, and psychomotor domains. A Design and Development Research (DDR) Type I approach guided three phases: system prototyping, expert quality evaluation, and usability testing with in-service teachers. Results revealed a Very Good quality rating from experts (M = 4.85/5.00) and a Good usability score (SUS = 81.2), confirming both pedagogical soundness and practical feasibility. The study demonstrates that an LLM-powered virtual assistant can effectively support teachers in creating high-quality CBLOs while reducing cognitive and temporal workload. This work contributes a model with strong potential for scaling AI-supported competency-based curriculum design, bridging the gap between educational policy and classroom implementation."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "POI-LLM: Leveraging POI Enhanced Large Language Models for Spatial-Temporal Modeling",
+    "authors": "Xinyu Shi, Wenwu Gong, Xuanzhe Xu, Lili Yang",
+    "publish": "2025 IEEE 6th International Conference on Computer, Big Data, Artificial Intelligence (ICCBD+AI)",
+    "url": "https://doi.org/10.1109/iccbdai66607.2025.11388271",
+    "source": "IEEE",
+    "abstract": "Spatial-temporal modeling is foundational to urban mobility analysis, yet many graph- and attention-based architectures rely on fixed graphs or encode spatial structure only implicitly. Meanwhile, LLM-based models seldom incorporate explicit spatial semantics. We propose POI-LLM, which augments a partially frozen LLM with spatial knowledge for spatial-temporal modeling. We partition urban space into network-consistent parcels and enriches them with point-of-interest (POI) embeddings. A lightweight cross-attention module aligns parcel spatial embedding with temporal embedding to form inputs to LLM, which captures long-range spatiotemporal dependencies. Experiments on real Origin-destination(OD) flow datasets offer evidence that POI-LLM is a powerful spatial-temporal learner that outpeforms state-of-the-art models. This show that explicitly encoding spatial semantics and selectively adapting LLMs offers an efficient and effective route to spatial-temporal modeling."
+  },
+  {
+    "date": "2026-2-18",
+    "title": "Improving Gas Efficiency in Smart Contracts: Data-Driven Insights and LLM-Assisted Remediation",
+    "authors": "Yijie Ruan, Zhipeng Gao, Jiachi Chen, Lingfeng Bao, Xiaohu Yang",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3658163",
+    "source": "IEEE",
+    "abstract": "Smart contracts, primarily written in Solidity, are Turing-complete programs on platforms like Ethereum, requiring gas fees for deployment and execution. Gas quantifies computational costs, and inefficient contracts result in unnecessary expenses for developers and users. Gas optimization at the source code level has been studied in various related works; however, existing methods for summarizing gas-inefficient patterns primarily rely on author-defined rules or heuristic approaches, and their evaluations lack a labeled dataset. <p xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">In this paper, we conduct a comprehensive empirical study on the issue of gas optimization in smart contracts. We begin by gathering audit reports from Code4rena, a well-known smart contract audit platform. These reports include both expert evaluations, conducted by professionals known as Wardens, and automated analyses generated by the platform’s static analysis tool, 4naly3er. After filtering out false-positive gas optimization instances from the automated reports, we identify 2,095 instances of gas-inefficient patterns across 54 projects. We categorize these inefficiencies into 24 types using thematic analysis and find that static analysis tools often produce false positives and negatives. To address this, we propose a hybrid method combining static analysis and large language models (LLMs) to detect and repair gas inefficiencies. The static analysis tool identifies potential optimization opportunities, while the LLM refines these findings and suggests effective repairs. Our evaluation shows that our approach achieves a precision rate of 82.28% and a recall rate of 88.46%, and can save 919 units of gas per function on average during execution.</p>"
+  }
+]
