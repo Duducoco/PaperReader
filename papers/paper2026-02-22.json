@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-02-20",
+    "title": "VeriSoftBench: Repository-Scale Formal Verification Benchmarks for Lean",
+    "authors": "Yutong Xin, Qiaochu Chen, Greg Durrett, Işil Dillig",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18307v1",
+    "source": "arXiv",
+    "abstract": "Large language models have achieved striking results in interactive theorem proving, particularly in Lean. However, most benchmarks for LLM-based proof automation are drawn from mathematics in the Mathlib ecosystem, whereas proofs in software verification are developed inside definition-rich codebases with substantial project-specific libraries. We introduce VeriSoftBench, a benchmark of 500 Lean 4 proof obligations drawn from open-source formal-methods developments and packaged to preserve realistic repository context and cross-file dependencies. Our evaluation of frontier LLMs and specialized provers yields three observations. First, provers tuned for Mathlib-style mathematics transfer poorly to this repository-centric setting. Second, success is strongly correlated with transitive repository dependence: tasks whose proofs draw on large, multi-hop dependency closures are less likely to be solved. Third, providing curated context restricted to a proof's dependency closure improves performance relative to exposing the full repository, but nevertheless leaves substantial room for improvement. Our benchmark and evaluation suite are released at https://github.com/utopia-group/VeriSoftBench."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Mathematical derivation and verification of the amplitude of LISA's interferometric signals on an ultra-stable interferometer testbed",
+    "authors": "Alvise Pizzella, Lennart Wissel, Miguel Dovale-Alvarez, Pablo Martinez Cano, Rodrigo Garcia Alvarez, Christoph Bode, Juan Jose Esteban Delgado, Gerhard Heinzel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18239v1",
+    "source": "arXiv",
+    "abstract": "The Laser Interferometer Space Antenna (LISA) mission aims to detect gravitational waves by interferometrically measuring the change of separation between free-falling test masses (TMs). LISA's interferometers must deliver pm/rtHz sensitivity while accommodating beam tilts up to 1 mrad at the photodiodes, which degrade the interferometric amplitude and increase the induced readout noise coupling. This paper uses an analytical framework developed by the authors in a previous work, based on minimal and justified approximations, that relates beam tilt to the resulting heterodyne signal amplitude in a generic two-beam interferometer with circular-area photodiodes (PDs). A set of interferometric topologies is analyzed, all of high relevance for LISA. We derive the exact amplitude response for an infinite detector and a closed-form approximation for finite detectors, and we validate both against numerical simulations and experimental measurements on an ultra-stable LISA-representative testbed. We then use this model to quantify the phase-noise amplification arising from reduced signal-to-noise ratio (SNR) under tilt, showing that curvature mismatches between the interfering beams substantially enhance this effect. Finally, we introduce a compact function that captures the angular dependence of correlated and uncorrelated phase noises in quadrant photodiode (QPD)-based readouts. Here, a new noise feature, caused by wavefront curvature mismatch, is predicted and measured for the first time. These results indicate that controlling wavefront curvature mismatch in the test mass interferometer (TMI) is essential to limit excess phase noise. The models and results derived in this paper, although originating in the context of LISA, are general and can be applied to any interferometric topology undergoing tilts with pivot on the detector plane."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Detecting Contextual Hallucinations in LLMs with Frequency-Aware Attention",
+    "authors": "Siya Qi, Yudong Chen, Runcong Zhao, Qinglin Zhu, Zhanghao Hu, Wei Liu, Yulan He, Zheng Yuan, Lin Gui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18145v1",
+    "source": "arXiv",
+    "abstract": "Hallucination detection is critical for ensuring the reliability of large language models (LLMs) in context-based generation. Prior work has explored intrinsic signals available during generation, among which attention offers a direct view of grounding behavior. However, existing approaches typically rely on coarse summaries that fail to capture fine-grained instabilities in attention. Inspired by signal processing, we introduce a frequency-aware perspective on attention by analyzing its variation during generation. We model attention distributions as discrete signals and extract high-frequency components that reflect rapid local changes in attention. Our analysis reveals that hallucinated tokens are associated with high-frequency attention energy, reflecting fragmented and unstable grounding behavior. Based on this insight, we develop a lightweight hallucination detector using high-frequency attention features. Experiments on the RAGTruth and HalluRAG benchmarks show that our approach achieves performance gains over verification-based, internal-representation-based, and attention-based methods across models and tasks."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "History-Constrained Systems",
+    "authors": "Louwe B. Kuijer, David Purser, Henry Sinclair-Banks, Patrick Totzke",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18143v1",
+    "source": "arXiv",
+    "abstract": "We study verification problems for history-constrained systems (HCS), a model of guarded computation that uses nested systems. An outer system describes the process architecture in which a sequence of actions represents the communication between sub-systems through a global bus. Actions are either permitted or blocked locally by guards; these guards read and decide based on the sequence of actions so far in the global bus. When HCS have both the outer systems and the local guard controllers modelled by finite automata, we show they have the same expressive power as regular languages and finite automata, but they are exponentially more succinct. We also analyse games on this model, representing the interaction between environment and controller, and show that solving such games is EXPTIME-complete, where the lower bound already holds for reachability/safety games and the upper bound holds for any $ω$-regular winning condition. Finally, we consider HCS with guards of greater expressive power, Vector Addition Systems with States (VASS). We show that with deterministic coverability-VASS guards the reachability problem is EXPSPACE-complete, while with reachability-VASS the problem is undecidable."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Flexi-NeurA: A Configurable Neuromorphic Accelerator with Adaptive Bit-Precision Exploration for Edge SNNs",
+    "authors": "Mohammad Farahani, Mohammad Rasoul Roshanshah, Saeed Safari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18140v1",
+    "source": "arXiv",
+    "abstract": "Neuromorphic accelerators promise unparalleled energy efficiency and computational density for spiking neural networks (SNNs), especially in edge intelligence applications. However, most existing platforms exhibit rigid architectures with limited configurability, restricting their adaptability to heterogeneous workloads and diverse design objectives. To address these limitations, we present Flexi-NeurA -- a parameterizable neuromorphic accelerator (core) that unifies configurability, flexibility, and efficiency. Flexi-NeurA allows users to customize neuron models, network structures, and precision settings at design time. By pairing these design-time configurability and flexibility features with a time-multiplexed and event-driven processing approach, Flexi-NeurA substantially reduces the required hardware resources and total power while preserving high efficiency and low inference latency. Complementing this, we introduce Flex-plorer, a heuristic-guided design-space exploration (DSE) tool that determines cost-effective fixed-point precisions for critical parameters -- such as decay factors, synaptic weights, and membrane potentials -- based on user-defined trade-offs between accuracy and resource usage. Based on the configuration selected through the Flex-plorer process, RTL code is configured to match the specified design. Comprehensive evaluations across MNIST, SHD, and DVS benchmarks demonstrate that the Flexi-NeurA and Flex-plorer co-framework achieves substantial improvements in accuracy, latency, and energy efficiency. A three-layer 256--128--10 fully connected network with LIF neurons mapped onto two processing cores achieves 97.23% accuracy on MNIST with 1.1~ms inference latency, utilizing only 1,623 logic cells, 7 BRAMs, and 111~mW of total power -- establishing Flexi-NeurA as a scalable, edge-ready neuromorphic platform."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "3D radiative transfer modeling of scattering polarization with partial frequency redistribution I. Verification and disk-center results for the solar Ca I 4227 Å line",
+    "authors": "Pietro Benedusi, Simone Riva, Tanausú del Pino Alemán, Gioele Janett, Fabio Riva, Jirí Štepán, Rolf Krause, Javier Trujillo Bueno, Luca Belluzzi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18100v1",
+    "source": "arXiv",
+    "abstract": "Several strong solar resonance lines show observable linear scattering polarization signals, holding a great potential for investigating the magnetism of the outer solar atmosphere. Accurately modeling these signals requires solving the radiative transfer (RT) problem for polarized radiation in comprehensive 3D models of the solar atmosphere, in non-local thermodynamic equilibrium, accounting for partial frequency redistribution (PRD) effects. This problem has so far been computationally inaccessible. We present the first scientific application of TRIP, a novel software for the massively parallel solution of the 3D non-LTE RT problem for polarized radiation, including scattering polarization and PRD. We aim to verify the code and explore the combined action of PRD and the 3D structure of the solar atmosphere on scattering polarization. We run TRIP to synthesize the Stokes profiles of the Ca I line at 4227 Å in a 3D model of the solar atmosphere extracted from a radiation magneto-hydrodynamic simulation. We efficiently solve the resulting large-scale problem, with up to $4 \\times 10^{10}$ degrees of freedom, with a state-of-the-art preconditioned Krylov method, using up to 20 thousand parallel CPUs. After including verification tests, we find that the joint impact of PRD effects and the detailed 3D structure of the atmospheric model produce disk-center scattering polarization signals in the line wings. These signals are sensitive to the magnetic field, via magneto-optical effects, and to bulk velocity gradients. We also show that the CRD approximation underestimates the amplitude of disk-center line-core signals. This achievement represents a crucial step forward for diagnosing the magnetism of the solar chromosphere and transition region through the quantitative comparisons of synthetic and observational data."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "OODBench: Out-of-Distribution Benchmark for Large Vision-Language Models",
+    "authors": "Ling Lin, Yang Bai, Heng Su, Congcong Zhu, Yaoxing Wang, Yang Zhou, Huazhu Fu, Jingrun Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18094v1",
+    "source": "arXiv",
+    "abstract": "Existing Visual-Language Models (VLMs) have achieved significant progress by being trained on massive-scale datasets, typically under the assumption that data are independent and identically distributed (IID). However, in real-world scenarios, it is often impractical to expect that all data processed by an AI system satisfy this assumption. Furthermore, failure to appropriately handle out-of-distribution (OOD) objects may introduce safety risks in real-world applications (e.g., autonomous driving or medical assistance). Unfortunately, current research has not yet provided valid benchmarks that can comprehensively assess the performance of VLMs in response to OOD data. Therefore, we propose OODBench, a predominantly automated method with minimal human verification, for constructing new benchmarks and evaluating the ability of VLMs to process OOD data. OODBench contains 40K instance-level OOD instance-category pairs, and we show that current VLMs still exhibit notable performance degradation on OODBench, even when the underlying image categories are common. In addition, we propose a reliable automated assessment metric that employs a Basic-to-Advanced Progression of prompted questions to assess the impact of OOD data on questions of varying difficulty more fully. Lastly, we summarize substantial findings and insights to facilitate future research in the acquisition and evaluation of OOD data."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Separating Non-Interactive Classical Verification of Quantum Computation from Falsifiable Assumptions",
+    "authors": "Mohammed Barhoush, Tomoyuki Morimae, Ryo Nishimaki, Takashi Yamakawa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18034v1",
+    "source": "arXiv",
+    "abstract": "Mahadev [SIAM J. Comput. 2022] introduced the first protocol for classical verification of quantum computation based on the Learning-with-Errors (LWE) assumption, achieving a 4-message interactive scheme. This breakthrough naturally raised the question of whether fewer messages are possible in the plain model. Despite its importance, this question has remained unresolved. In this work, we prove that there is no quantum black-box reduction of non-interactive classical verification of quantum computation of $\\textsf{QMA}$ to any falsifiable assumption. Here, \"non-interactive\" means that after an instance-independent setup, the protocol consists of a single message. This constitutes a strong negative result given that falsifiable assumptions cover almost all standard assumptions used in cryptography, including LWE. Our separation holds under the existence of a $\\textsf{QMA} \\text{-} \\textsf{QCMA}$ gap problem. Essentially, these problems require a slightly stronger assumption than $\\textsf{QMA}\\neq \\textsf{QCMA}$. To support the existence of such problems, we present a construction relative to a quantum unitary oracle."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Observer-robust energy condition verification for warp drive spacetimes",
+    "authors": "An T. Le",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.18023v1",
+    "source": "arXiv",
+    "abstract": "We present \\textbf{warpax}, an open-source, GPU-accelerated Python toolkit for observer-robust energy condition analysis of warp drive spacetimes. Existing tools evaluate energy conditions for a finite sample of observer directions; \\textbf{warpax} replaces discrete sampling with continuous, gradient-based optimization over the timelike observer manifold (rapidity and boost direction), backed by Hawking--Ellis algebraic classification. At Type~I stress-energy points, which comprise ${>}\\,96$\\% of all grid points across the tested metrics, an algebraic eigenvalue check determines energy-condition satisfaction \\emph{exactly}, independent of any observer search or rapidity cap. At non-Type~I points the optimizer provides rapidity-capped diagnostics. Stress-energy tensors are computed from the ADM metric via forward-mode automatic differentiation, eliminating finite-difference truncation error. Geodesic integration with tidal-force and blueshift analysis is also included. We analyze five warp drive metrics (Alcubierre, Lentz, Van~Den~Broeck, Natário, Rodal) and one warp shell metric (used primarily as a numerical stress test). For the Rodal metric, the standard Eulerian-frame analysis misses violations at over $28\\%$ of grid points (dominant energy condition) and over $15\\%$ (weak energy condition). Even where the Eulerian frame identifies the correct violation set, observer optimization reveals that violation severity can be orders of magnitude larger (e.g.\\ Alcubierre weak energy condition: ${\\sim}\\,90{,}000\\times$ at rapidity cap $ζ_{\\max} = 5$, scaling as $e^{2ζ_{\\max}}$). These results demonstrate that single-frame evaluation can systematically underestimate both the spatial extent and the magnitude of energy condition violations in warp drive spacetimes. \\textbf{warpax} is freely available at https://github.com/anindex/warpax."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Generating adversarial inputs for a graph neural network model of AC power flow",
+    "authors": "Robert Parker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17975v1",
+    "source": "arXiv",
+    "abstract": "This work formulates and solves optimization problems to generate input points that yield high errors between a neural network's predicted AC power flow solution and solutions to the AC power flow equations. We demonstrate this capability on an instance of the CANOS-PF graph neural network model, as implemented by the PF$Δ$ benchmark library, operating on a 14-bus test grid. Generated adversarial points yield errors as large as 3.4 per-unit in reactive power and 0.08 per-unit in voltage magnitude. When minimizing the perturbation from a training point necessary to satisfy adversarial constraints, we find that the constraints can be met with as little as an 0.04 per-unit perturbation in voltage magnitude on a single bus. This work motivates the development of rigorous verification and robust training methods for neural network surrogate models of AC power flow."
+  },
+  {
+    "date": "2026-02-20",
+    "title": "Analyzing LLM Instruction Optimization for Tabular Fact Verification",
+    "authors": "Xiaotang Du, Giwon Hong, Wai-Chung Kwan, Rohit Saxena, Ivan Titov, Pasquale Minervini, Emily Allaway",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17937v1",
+    "source": "arXiv",
+    "abstract": "Instruction optimization provides a lightweight, model-agnostic approach to enhancing the reasoning performance of large language models (LLMs). This paper presents the first systematic comparison of instruction optimization, based on the DSPy optimization framework, for tabular fact verification. We evaluate four out-of-the-box prompting techniques that cover both text-only prompting and code use: direct prediction, Chain-of-Thought (CoT), ReAct with SQL tools, and CodeAct with Python execution. We study three optimizers from the DSPy framework -- COPRO, MiPROv2, and SIMBA -- across four benchmarks and three model families. We find that instruction optimization consistently improves verification accuracy, with MiPROv2 yielding the most stable gains for CoT, and SIMBA providing the largest benefits for ReAct agents, particularly at larger model scales. Behavioral analyses reveal that SIMBA encourages more direct reasoning paths by applying heuristics, thereby improving numerical comparison abilities in CoT reasoning and helping avoid unnecessary tool calls in ReAct agents. Across different prompting techniques, CoT remains effective for tabular fact checking, especially with smaller models. Although ReAct agents built with larger models can achieve competitive performance, they require careful instruction optimization."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "Symfrog-512: High-Capacity Sponge-Based AEAD Cipher (1024-bit State)",
+    "authors": "Victor Duarte Melo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17900v1",
+    "source": "arXiv",
+    "abstract": "This submission includes a complete reference implementation together with deterministic test vectors and a reproducible benchmark suite. All source code, build instructions, and regression artifacts are publicly available in the project repository, enabling independent verification and reimplementation of the scheme. The AEAD construction is fully specified, including domain separation, rate and capacity choices, tag generation, and the exact file format used by the reference CLI. Reported performance numbers are produced by the built in benchmark tool under documented hardware and compiler settings. All security claims are made strictly within the ideal permutation model following standard sponge and duplex bounds, and no stronger guarantees are asserted for the concrete permutation beyond the documented analysis and empirical behavior. The implementation aims for constant time behavior with respect to secret dependent operations, although no formal side channel proof is provided. The project is released under the MIT license, and external cryptanalysis, feedback, and reproducibility checks are explicitly encouraged."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "The mean-field control problem for heterogeneous forward-backward systems",
+    "authors": "Andreas Sojmark, Zeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17879v1",
+    "source": "arXiv",
+    "abstract": "We study the problem of mean-field control when the state dynamics are given by general systems of forward-backward stochastic differential equations (FBSDEs) with heterogeneous mean-field interactions. Firstly, we introduce a novel methodology for reducing the well-posedness of such systems to that of a single randomized mean-field FBSDE. As a consequence, we show that, in the fully coupled case, smallness conditions yield existence and uniqueness for both the system itself and the associated variational and adjoint systems. Secondly, we derive a stochastic maximum principle and a verification for the mean-field control problem. This provides necessary and sufficient conditions for optimality."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "StableAML: Machine Learning for Behavioral Wallet Detection in Stablecoin Anti-Money Laundering on Ethereum",
+    "authors": "Luciano Juvinski, Haochen Li, Alessio Brini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17842v1",
+    "source": "arXiv",
+    "abstract": "Global illicit fund flows exceed an estimated $3.1 trillion annually, with stablecoins emerging as a preferred laundering medium due to their liquidity. While decentralized protocols increasingly adopt zero-knowledge proofs to obfuscate transaction graphs, centralized stablecoins remain critical \"transparent choke points\" for compliance. Leveraging this persistent visibility, this study analyzes an Ethereum dataset and uses behavioral features to develop a robust AML framework. Our findings demonstrate that domain-informed tree ensemble models achieve higher Macro-F1 score, significantly outperforming graph neural networks, which struggle with the increasing fragmentation of transaction networks. The model's interpretability goes beyond binary detection, successfully dissecting distinct typologies: it differentiates the complex, high-velocity dispersion of cybercrime syndicates from the constrained, static footprints left by sanctioned entities. This framework aligns with the industry shift toward deterministic verification, satisfying the auditability and compliance expectations under regulations such as the EU's MiCA and the U.S. GENIUS Act while minimizing unjustified asset freezes. By automating high-precision detection, we propose an approach that effectively raises the economic cost of financial misconduct without stifling innovation."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "Exact quantum decision diagrams with scaling guarantees for Clifford+$T$ circuits and beyond",
+    "authors": "Arend-Jan Quist, Tim Coopmans, Alfons Laarman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17775v1",
+    "source": "arXiv",
+    "abstract": "A decision diagram (DD) is a graph-like data structure for homomorphic compression of Boolean and pseudo-Boolean functions. Over the past decades, decision diagrams have been successfully applied to verification, linear algebra, stochastic reasoning, and quantum circuit analysis. Floating-point errors have, however, significantly slowed down practical implementations of real- and complex-valued decision diagrams. In the context of quantum computing, attempts to mitigate this numerical instability have thus far lacked theoretical scaling guarantees and have had only limited success in practice. Here, we focus on the analysis of quantum circuits consisting of Clifford gates and $T$ gates (a common universal gate set). We first hand-craft an algebraic representation for complex numbers, which replace the floating point coefficients in a decision diagram. Then, we prove that the sizes of these algebraic representations are linearly bounded in the number of $T$ gates and qubits, and constant in the number of Clifford gates. Furthermore, we prove that both the runtime and the number of nodes of decision diagrams are upper bounded as $2^t \\cdot poly(g, n)$, where $t$ ($g$) is the number of $t$ gates (Clifford gates) and $n$ the number of qubits. Our proofs are based on a $T$-count dependent characterization of the density matrix entries of quantum states produced by circuits with Clifford+$T$ gates, and uncover a connection between a quantum state's stabilizer nullity and its decision diagram width. With an open source implementation, we demonstrate that our exact method resolves the inaccuracies occurring in floating-point-based counterparts and can outperform them due to lower node counts. Our contributions are, to the best of our knowledge, the first scaling guarantees on the runtime of (exact) quantum decision diagram simulation for a universal gate set."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "When to Trust the Cheap Check: Weak and Strong Verification for Reasoning",
+    "authors": "Shayan Kiyani, Sima Noorani, George Pappas, Hamed Hassani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17633v1",
+    "source": "arXiv",
+    "abstract": "Reasoning with LLMs increasingly unfolds inside a broader verification loop. Internally, systems use cheap checks, such as self-consistency or proxy rewards, which we call weak verification. Externally, users inspect outputs and steer the model through feedback until results are trustworthy, which we call strong verification. These signals differ sharply in cost and reliability: strong verification can establish trust but is resource-intensive, while weak verification is fast and scalable but noisy and imperfect. We formalize this tension through weak--strong verification policies, which decide when to accept or reject based on weak verification and when to defer to strong verification. We introduce metrics capturing incorrect acceptance, incorrect rejection, and strong-verification frequency. Over population, we show that optimal policies admit a two-threshold structure and that calibration and sharpness govern the value of weak verifiers. Building on this, we develop an online algorithm that provably controls acceptance and rejection errors without assumptions on the query stream, the language model, or the weak verifier."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "Unmasking the Factual-Conceptual Gap in Persian Language Models",
+    "authors": "Alireza Sakhaeirad, Ali Ma'manpoosh, Arshia Hemmat",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17623v1",
+    "source": "arXiv",
+    "abstract": "While emerging Persian NLP benchmarks have expanded into pragmatics and politeness, they rarely distinguish between memorized cultural facts and the ability to reason about implicit social norms. We introduce DivanBench, a diagnostic benchmark focused on superstitions and customs, arbitrary, context-dependent rules that resist simple logical deduction. Through 315 questions across three task types (factual retrieval, paired scenario verification, and situational reasoning), we evaluate seven Persian LLMs and reveal three critical failures: most models exhibit severe acquiescence bias, correctly identifying appropriate behaviors but failing to reject clear violations; continuous Persian pretraining amplifies this bias rather than improving reasoning, often degrading the model's ability to discern contradictions; and all models show a 21\\% performance gap between retrieving factual knowledge and applying it in scenarios. These findings demonstrate that cultural competence requires more than scaling monolingual data, as current models learn to mimic cultural patterns without internalizing the underlying schemas."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "AutoNumerics: An Autonomous, PDE-Agnostic Multi-Agent Pipeline for Scientific Computing",
+    "authors": "Jianda Du, Youran Sun, Haizhao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17607v1",
+    "source": "arXiv",
+    "abstract": "PDEs are central to scientific and engineering modeling, yet designing accurate numerical solvers typically requires substantial mathematical expertise and manual tuning. Recent neural network-based approaches improve flexibility but often demand high computational cost and suffer from limited interpretability. We introduce \\texttt{AutoNumerics}, a multi-agent framework that autonomously designs, implements, debugs, and verifies numerical solvers for general PDEs directly from natural language descriptions. Unlike black-box neural solvers, our framework generates transparent solvers grounded in classical numerical analysis. We introduce a coarse-to-fine execution strategy and a residual-based self-verification mechanism. Experiments on 24 canonical and real-world PDE problems demonstrate that \\texttt{AutoNumerics} achieves competitive or superior accuracy compared to existing neural and LLM-based baselines, and correctly selects numerical schemes based on PDE structural properties, suggesting its viability as an accessible paradigm for automated PDE solving."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "BMC4TimeSec: Verification Of Timed Security Protocols",
+    "authors": "Agnieszka M. Zbrzezny",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17590v1",
+    "source": "arXiv",
+    "abstract": "We present BMC4TimeSec, an end-to-end tool for verifying Timed Security Protocols (TSP) based on SMT-based bounded model checking and multi-agent modelling in the form of Timed Interpreted Systems (TIS) and Timed Interleaved Interpreted Systems (TIIS). In BMC4TimeSec, TSP executions implement the TIS/TIIS environment (join actions, interleaving, delays, lifetimes), and knowledge automata implement the agents (evolution of participant knowledge, including the intruder). The code is publicly available on \\href{https://github.com/agazbrzezny/BMC4TimeSec}{GitHub}, as is a \\href{https://youtu.be/aNybKz6HwdA}{video} demonstration."
+  },
+  {
+    "date": "2026-02-19",
+    "title": "Optimal control of stochastic Volterra integral equations with completely monotone kernels and stochastic differential equations on Hilbert spaces with unbounded control and diffusion operators",
+    "authors": "Gabriele Bolli, Filippo de Feo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.17578v1",
+    "source": "arXiv",
+    "abstract": "The dynamic programming approach is one of the most powerful ones in optimal control. However, when dealing with optimal control problems of stochastic Volterra integral equations (SVIEs) with completely monotone kernels, deep mathematical difficulties arise and it is still not understood. These very classical problems have applications in most fields and have now become even more popular due to their applications in mathematical finance under rough volatility. In this article, we consider a class of optimal control problems of SVIEs with completely monotone kernels. Via a recent Markovian lift \\cite{FGW2024}, the problem can be reformulated as an optimal control problem of stochastic differential equations (SDEs) on suitable Hilbert spaces, which due to the roughness of the kernel, presents a generator of an analytic semigroup and unbounded control and diffusion operators. This analysis leads us to study a general class of optimal control problems of abstract SDEs on Hilbert spaces with unbounded control and diffusion operators. This class includes optimal control problems of SVIEs with completely monotone kernels, but it is also motivated by other models. We analyze the regularity of the associated Ornstein-Uhlenbeck transition semigroup. We prove that the semigroup exhibits a new smoothing property in control directions through a general observation operator $Γ$, which we call $Γ$-smoothing. This allows us to establish existence and uniqueness of mild solutions of the Hamilton-Jacobi-Bellman equation, establish a verification theorem, and construct optimal feedback controls. We apply these results to optimal control problems of SVIEs with completely monotone kernels. To the best of our knowledge these are the first results of this kind for this abstract class of infinite dimensional problems and for the optimal control of SVIEs with completely monotone kernels."
+  }
+]
