@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-02-24",
+    "title": "\"Are You Sure?\": An Empirical Study of Human Perception Vulnerability in LLM-Driven Agentic Systems",
+    "authors": "Xinfeng Li, Shenyu Dai, Kelong Zheng, Yue Xiao, Gelei Deng, Wei Dong, Xiaofeng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.21127v1",
+    "source": "arXiv",
+    "abstract": "Large language model (LLM) agents are rapidly becoming trusted copilots in high-stakes domains like software development and healthcare. However, this deepening trust introduces a novel attack surface: Agent-Mediated Deception (AMD), where compromised agents are weaponized against their human users. While extensive research focuses on agent-centric threats, human susceptibility to deception by a compromised agent remains unexplored. We present the first large-scale empirical study with 303 participants to measure human susceptibility to AMD. This is based on HAT-Lab (Human-Agent Trust Laboratory), a high-fidelity research platform we develop, featuring nine carefully crafted scenarios spanning everyday and professional domains (e.g., healthcare, software development, human resources). Our 10 key findings reveal significant vulnerabilities and provide future defense perspectives. Specifically, only 8.6% of participants perceive AMD attacks, while domain experts show increased susceptibility in certain scenarios. We identify six cognitive failure modes in users and find that their risk awareness often fails to translate to protective behavior. The defense analysis reveals that effective warnings should interrupt workflows with low verification costs. With experiential learning based on HAT-Lab, over 90% of users who perceive risks report increased caution against AMD. This work provides empirical evidence and a platform for human-centric agent security research."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Prompt-Level Distillation: A Non-Parametric Alternative to Model Fine-Tuning for Efficient Reasoning",
+    "authors": "Sanket Badhe, Deep Shah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.21103v1",
+    "source": "arXiv",
+    "abstract": "Advanced reasoning typically requires Chain-of-Thought prompting, which is accurate but incurs prohibitive latency and substantial test-time inference costs. The standard alternative, fine-tuning smaller models, often sacrifices interpretability while introducing significant resource and operational overhead. To address these limitations, we introduce Prompt-Level Distillation (PLD). We extract explicit reasoning patterns from a Teacher model and organize them into a structured list of expressive instructions for the Student model's System Prompt. Evaluated on the StereoSet and Contract-NLI datasets using Gemma-3 4B, PLD improved Macro F1 scores from 57\\% to 90.0\\% and 67\\% to 83\\% respectively, enabling this compact model to match frontier performance with negligible latency overhead. These expressive instructions render the decision-making process transparent, allowing for full human verification of logic, making this approach ideal for regulated industries such as law, finance, and content moderation, as well as high-volume use cases and edge devices."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Elementary local representation densities at all primes via lifting recursions",
+    "authors": "Samuel Griffiths",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.21070v1",
+    "source": "arXiv",
+    "abstract": "Let $p$ be a prime and let $L$ be a quadratic $\\mathbb{Z}_p$-lattice with quadratic form $Q$. For $t\\neq 0$ the local representation density $α_p(t;L)$ is the stable normalised growth of the congruence counts of solutions to $Q(v)\\equiv t\\pmod{p^m}$. We compute these counts and densities explicitly for the hyperbolic plane $H_0$ over $\\mathbb{Z}p$, uniformly in $p$, and at $p=2$ for the basic dyadic blocks (rank-$1$ Type I blocks and the even binary planes $2^aH\\varepsilon$), together with the anisotropic ternary lattice $L_3=\\langle 2\\rangle^{\\oplus 3}$. At the dyadic prime the usual Jacobian/Hensel lifting mechanism breaks down in the bilinear-lattice convention $Q(v)=\\langle v,v\\rangle$. The main new input is an explicit half-lift involution for diagonal sums of squares, which yields a stable lifting recursion with factor $2^{d-1}$ under the primitivity hypothesis $4\\nmid a$. As applications we obtain closed forms for the three-squares congruence counts (hence $α_2(t;L_3)$) and a prime-uniform formula for the densities of the scaled hyperbolic planes $p^eH_0$ in the standard normalisation $q=\\langle\\cdot,\\cdot\\rangle/2$."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-based Scholarly Q&A",
+    "authors": "Anna Martin-Boyle, Cara A. C. Leckey, Martha C. Brown, Harmanpreet Kaur",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.21045v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly used in scholarly question-answering (QA) systems to help researchers synthesize vast amounts of literature. However, these systems often produce subtle errors (e.g., unsupported claims, errors of omission), and current provenance mechanisms like source citations are not granular enough for the rigorous verification that scholarly domain requires. To address this, we introduce PaperTrail, a novel interface that decomposes both LLM answers and source documents into discrete claims and evidence, mapping them to reveal supported assertions, unsupported claims, and information omitted from the source texts. We evaluated PaperTrail in a within-subjects study with 26 researchers who performed two scholarly editing tasks using PaperTrail and a baseline interface. Our results show that PaperTrail significantly lowered participants' trust compared to the baseline. However, this increased caution did not translate to behavioral changes, as people continued to rely on LLM-generated scholarly edits to avoid a cognitively burdensome task. We discuss the value of claim-evidence matching for understanding LLM trustworthiness in scholarly settings, and present design implications for cognition-friendly communication of provenance information."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "LogicGraph : Benchmarking Multi-Path Logical Reasoning via Neuro-Symbolic Generation and Verification",
+    "authors": "Yanrui Wu, Lingling Zhang, Xinyu Zhang, Jiayu Chang, Pengyu Li, Xu Jiang, Jingtao Hu, Jun Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.21044v1",
+    "source": "arXiv",
+    "abstract": "Evaluations of large language models (LLMs) primarily emphasize convergent logical reasoning, where success is defined by producing a single correct proof. However, many real-world reasoning problems admit multiple valid derivations, requiring models to explore diverse logical paths rather than committing to one route. To address this limitation, we introduce LogicGraph, the first benchmark aimed to systematically evaluate multi-path logical reasoning, constructed via a neuro-symbolic framework that leverages backward logic generation and semantic instantiation. This pipeline yields solver-verified reasoning problems formalized by high-depth multi-path reasoning and inherent logical distractions, where each instance is associated with an exhaustive set of minimal proofs. We further propose a reference-free evaluation framework to rigorously assess model performance in both convergent and divergent regimes. Experiments on state-of-the-art language models reveal a common limitation: models tend to commit early to a single route and fail to explore alternatives, and the coverage gap grows substantially with reasoning depth. LogicGraph exposes this divergence gap and provides actionable insights to motivate future improvements. Our code and data will be released at https://github.com/kkkkarry/LogicGraph."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Some Simple Economics of AGI",
+    "authors": "Christian Catalini, Xiang Hui, Jane Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20946v1",
+    "source": "arXiv",
+    "abstract": "For millennia, human cognition was the primary engine of progress on Earth. As AI decouples cognition from biology, the marginal cost of measurable execution falls to zero, absorbing any labor capturable by metrics--including creative, analytical, and innovative work. The binding constraint on growth is no longer intelligence but human verification bandwidth: the capacity to validate, audit, and underwrite responsibility when execution is abundant. We model the AGI transition as the collision of two racing cost curves: an exponentially decaying Cost to Automate and a biologically bottlenecked Cost to Verify. This structural asymmetry widens a Measurability Gap between what agents can execute and what humans can afford to verify. It also drives a shift from skill-biased to measurability-biased technical change. Rents migrate to verification-grade ground truth, cryptographic provenance, and liability underwriting--the ability to insure outcomes rather than merely generate them. The current human-in-the-loop equilibrium is unstable: eroded from below as apprenticeship collapses (Missing Junior Loop) and from within as experts codify their obsolescence (Codifier's Curse). Unverified deployment becomes privately rational--a Trojan Horse externality. Unmanaged, these forces pull toward a Hollow Economy. Yet by scaling verification alongside agentic capabilities, the forces that threaten collapse become the catalyst for unbounded discovery and experimentation--an Augmented Economy. We derive a practical playbook for individuals, companies, investors, and policymakers. Today's defining challenge is not the race to deploy the most autonomous systems; it is the race to secure the foundations of their oversight. Only by scaling our bandwidth for verification alongside our capacity for execution can we ensure that the intelligence we have summoned preserves the humanity that initiated it."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Airavat: An Agentic Framework for Internet Measurement",
+    "authors": "Alagappan Ramanathan, Eunju Kang, Dongsu Han, Sangeetha Abdu Jyothi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20924v1",
+    "source": "arXiv",
+    "abstract": "Internet measurement faces twin challenges: complex analyses require expert-level orchestration of tools, yet even syntactically correct implementations can have methodological flaws and can be difficult to verify. Democratizing measurement capabilities thus demands automating both workflow generation and verification against methodological standards established through decades of research. We present Airavat, the first agentic framework for Internet measurement workflow generation with systematic verification and validation. Airavat coordinates a set of agents mirroring expert reasoning: three agents handle problem decomposition, solution design, and code implementation, with assistance from a registry of existing tools. Two specialized engines ensure methodological correctness: a Verification Engine evaluates workflows against a knowledge graph encoding five decades of measurement research, while a Validation Engine identifies appropriate validation techniques grounded in established methodologies. Through four Internet measurement case studies, we demonstrate that Airavat (i) generates workflows matching expert-level solutions, (ii) makes sound architectural decisions, (iii) addresses novel problems without ground truth, and (iv) identifies methodological flaws missed by standard execution-based testing."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "InterPilot: Exploring the Design Space of AI-assisted Job Interview Support for HR Professionals",
+    "authors": "Zhengtao Xu, Zimo Xia, Zicheng Zhu, Nattapat Boonprakong, Yu-An Chen, Rabih Zbib, Casimiro Pio Carrino, Yi-Chieh Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20891v1",
+    "source": "arXiv",
+    "abstract": "Recruitment interviews are cognitively demanding interactions in which interviewers must simultaneously listen, evaluate candidates, take notes, and formulate follow-up questions. To better understand these challenges, we conducted a formative study with eight HR professionals, from which we derived key design goals for real-time AI support. Guided by these insights, we developed InterPilot, a prototype system that augments interviews through intelligent note-taking and post-interview summary, adaptive question generation, and real-time skill-evidence mapping. We evaluated the system with another seven HR professionals in mock interviews using a within-subjects design. Results show that InterPilot reduced documentation burden without increasing overall workload, but introduced usability trade-offs related to visual attention and interaction complexity. Qualitative findings further reveal tensions around trust and verification when AI suggests highly specific technical questions. We discuss implications for designing future real-time human-AI collaboration in professional settings, highlighting the need to balance assistance granularity, attentional demands, and human agency."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Rethinking Clause Management for CDCL SAT Solvers",
+    "authors": "Yalun Cai, Xindi Zhang, Zhengyuan Shi, Mengxia Tao, Qiang Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20829v1",
+    "source": "arXiv",
+    "abstract": "Boolean Satisfiability (SAT) solving underpins a wide range of applications in Electronic Design Automation (EDA), particularly formal verification. However, this paper observes that the mainstream clause reduction heuristic in modern SAT solvers becomes ineffective in the critical domain of complex arithmetic circuit verification, such as multipliers. On these instances, the dominant Literal Block Distance (LBD) metric for measuring clause quality degrades into a simple value of clause length, without any perception of dynamic clause usage during solving.To address this issue, a novel clause reduction mechanism is proposed, which is entirely independent of LBD. Its core idea is to decouple and handle separately the two most fundamental characteristics of learnt clauses--inherent lineage and dynamic usage patterns--thereby avoiding the efficiency degradation caused by inappropriately mixing these properties. Experiments show that our method consistently improves mainstream solvers and achieves speedups of up to 5.74x on complex arithmetic circuit problems, while maintaining comparable performance on general-purpose benchmarks. These results challenge the prevailing LBD-centric clause quality metric for clause management."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Pipeline for Verifying LLM-Generated Mathematical Solutions",
+    "authors": "Varvara Sazonova, Dmitri Shmelkin, Stanislav Kikot, Vasily Motolygin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20770v1",
+    "source": "arXiv",
+    "abstract": "With the growing popularity of Large Reasoning Models and their results in solving mathematical problems, it becomes crucial to measure their capabilities. We introduce a pipeline for both automatic and interactive verification as a more accurate alternative to only checking the answer which is currently the most popular approach for benchmarks. The pipeline can also be used as a generator of correct solutions both in formal and informal languages. 3 AI agents, which can be chosen for the benchmark accordingly, are included in the structure. The key idea is the use of prompts to obtain the solution in the specific form which allows for easier verification using proof assistants and possible use of small models ($\\le 8B$). Experiments on several datasets suggest low probability of False Positives. The open-source implementation with instructions on setting up a server is available at https://github.com/LogicEnj/lean4_verification_pipeline."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Agile V: A Compliance-Ready Framework for AI-Augmented Engineering -- From Concept to Audit-Ready Delivery",
+    "authors": "Christopher Koch, Joshua Andreas Wellbrock",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20684v1",
+    "source": "arXiv",
+    "abstract": "Current AI-assisted engineering workflows lack a built-in mechanism to maintain task-level verification and regulatory traceability at machine-speed delivery. Agile V addresses this gap by embedding independent verification and audit artifact generation into each task cycle. The framework merges Agile iteration with V-Model verification into a continuous Infinity Loop, deploying specialized AI agents for requirements, design, build, test, and compliance, governed by mandatory human approval gates. We evaluate three hypotheses: (H1) audit-ready artifacts emerge as a by-product of development, (H2) 100% requirement-level verification is achievable with independent test generation, and (H3) verified increments can be delivered with single-digit human interactions per cycle. A feasibility case study on a Hardware-in-the-Loop system (about 500 LOC, 8 requirements, 54 tests) supports all three hypotheses: audit-ready documentation was generated automatically (H1), 100% requirement-level pass rate was achieved (H2), and only 6 prompts per cycle were required (H3), yielding an estimated 10-50x cost reduction versus a COCOMO II baseline (sensitivity range from pessimistic to optimistic assumptions). We invite independent replication to validate generalizability."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Autonomous Laboratory Agent via Customized Domain-Specific Language Model and Modular AI Interface",
+    "authors": "Zhuo Diao, Kouma Matsumoto, Linfeng Hou, Hayato Yamashita, Masayuki Abe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20669v1",
+    "source": "arXiv",
+    "abstract": "We introduce a system architecture that addresses a fundamental challenge in deploying language-model agents for autonomous control of scientific instrumentation: ensuring reliability in safety-critical environments. The framework integrates probabilistic reasoning by domain-specialized language models with deterministic execution layers that enforce constraints through structured validation and modular orchestration. By separating intent interpretation, experimental planning, and command verification, the architecture translates high-level scientific goals into verifiable experimental actions. We demonstrate this approach in real-time atomic-resolution scanning probe microscopy experiments operated at room temperature, where the system autonomously generates control strategies, invokes corrective modules, and maintains stable operation under experimentally challenging conditions. Quantitative evaluations show that domain-adapted small language models achieve high routing robustness and command accuracy while operating on consumer-grade hardware. Beyond a specific instrument, the framework establishes a general computational principle for deploying language-model agents in safety-critical experimental workflows, providing a pathway toward scalable autonomous laboratories."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "RecoverMark: Robust Watermarking for Localization and Recovery of Manipulated Faces",
+    "authors": "Haonan An, Xiaohui Ye, Guang Hua, Yihang Tao, Hangcheng Cao, Xiangyu Yu, Yuguang Fang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20618v1",
+    "source": "arXiv",
+    "abstract": "The proliferation of AI-generated content has facilitated sophisticated face manipulation, severely undermining visual integrity and posing unprecedented challenges to intellectual property. In response, a common proactive defense leverages fragile watermarks to detect, localize, or even recover manipulated regions. However, these methods always assume an adversary unaware of the embedded watermark, overlooking their inherent vulnerability to watermark removal attacks. Furthermore, this fragility is exacerbated in the commonly used dual-watermark strategy that adds a robust watermark for image ownership verification, where mutual interference and limited embedding capacity reduce the fragile watermark's effectiveness. To address the gap, we propose RecoverMark, a watermarking framework that achieves robust manipulation localization, content recovery, and ownership verification simultaneously. Our key insight is twofold. First, we exploit a critical real-world constraint: an adversary must preserve the background's semantic consistency to avoid visual detection, even if they apply global, imperceptible watermark removal attacks. Second, using the image's own content (face, in this paper) as the watermark enhances extraction robustness. Based on these insights, RecoverMark treats the protected face content itself as the watermark and embeds it into the surrounding background. By designing a robust two-stage training paradigm with carefully crafted distortion layers that simulate comprehensive potential attacks and a progressive training strategy, RecoverMark achieves a robust watermark embedding in no fragile manner for image manipulation localization, recovery, and image IP protection simultaneously. Extensive experiments demonstrate the proposed RecoverMark's robustness against both seen and unseen attacks and its generalizability to in-distribution and out-of-distribution data."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Correlator-Level Verification of Mass and Current Maps in Abelian Chern-Simons Dualities",
+    "authors": "Vaibhav Wasnik",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20604v1",
+    "source": "arXiv",
+    "abstract": "We construct an explicit local operator realization that reproduces Dirac fermion correlation functions in three spacetime dimensions within an Abelian Chern-Simons framework and use it to examine the conjectured operator and deformation maps of fermion-boson duality directly at the level of correlation functions. We show that the predicted relation between bosonic and fermionic mass deformations, including the relative sign, is realized quantitatively, and that the fermionic U(1) current coincides with the topological gauge current inside correlation functions at the infrared fixed point. These results provide a direct correlator-level verification of key features of Abelian Chern-Simons dualities, going beyond arguments based solely on phase structure, anomaly matching, or large-N considerations."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "A Case Study on Runtime Verification of a Continuous Deployment Process",
+    "authors": "Shoma Ansai, Masaki Waga",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20598v1",
+    "source": "arXiv",
+    "abstract": "We report our experience in applying runtime monitoring to a FluxCD-based continuous deployment (CD) process. Our target system consists of GitHub Actions, GitHub Container Registry (GHCR), FluxCD, and an application running on Kubernetes. We monitored its logs using SyMon. In our setting, we regard a deployment update as detected when FluxCD's polling log resolves the latest image tag. Through the case study, we found that FluxCD did not always detect a new image within five minutes after it was pushed to GHCR, whereas it always did so within ten minutes in the collected logs. Moreover, our results show that SyMon is fast enough for near-real-time monitoring in our setting."
+  },
+  {
+    "date": "2026-02-24",
+    "title": "Beyond Human Performance: A Vision-Language Multi-Agent Approach for Quality Control in Pharmaceutical Manufacturing",
+    "authors": "Subhra Jyoti Mandal, Lara Rachidi, Puneet Jain, Matthieu Duvinage, Sander W. Timmer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20543v1",
+    "source": "arXiv",
+    "abstract": "Colony-forming unit (CFU) detection is critical in pharmaceutical manufacturing, serving as a key component of Environmental Monitoring programs and ensuring compliance with stringent quality standards. Manual counting is labor-intensive and error-prone, while deep learning (DL) approaches, though accurate, remain vulnerable to sample quality variations and artifacts. Building on our earlier CNN-based framework (Beznik et al., 2020), we evaluated YOLOv5, YOLOv7, and YOLOv8 for CFU detection; however, these achieved only 97.08 percent accuracy, insufficient for pharmaceutical-grade requirements. A custom Detectron2 model trained on GSK's dataset of over 50,000 Petri dish images achieved 99 percent detection rate with 2 percent false positives and 0.6 percent false negatives. Despite high validation accuracy, Detectron2 performance degrades on outlier cases including contaminated plates, plastic artifacts, or poor optical clarity. To address this, we developed a multi-agent framework combining DL with vision-language models (VLMs). The VLM agent first classifies plates as valid or invalid. For valid samples, both DL and VLM agents independently estimate colony counts. When predictions align within 5 percent, results are automatically recorded in Postgres and SAP; otherwise, samples are routed for expert review. Expert feedback enables continuous retraining and self-improvement. Initial DL-based automation reduced human verification by 50 percent across vaccine manufacturing sites. With VLM integration, this increased to 85 percent, delivering significant operational savings. The proposed system provides a scalable, auditable, and regulation-ready solution for microbiological quality control, advancing automation in biopharmaceutical production."
+  },
+  {
+    "date": "2026-02-23",
+    "title": "CREDIT: Certified Ownership Verification of Deep Neural Networks Against Model Extraction Attacks",
+    "authors": "Bolin Shen, Zhan Cheng, Neil Zhenqiang Gong, Fan Yao, Yushun Dong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20419v1",
+    "source": "arXiv",
+    "abstract": "Machine Learning as a Service (MLaaS) has emerged as a widely adopted paradigm for providing access to deep neural network (DNN) models, enabling users to conveniently leverage these models through standardized APIs. However, such services are highly vulnerable to Model Extraction Attacks (MEAs), where an adversary repeatedly queries a target model to collect input-output pairs and uses them to train a surrogate model that closely replicates its functionality. While numerous defense strategies have been proposed, verifying the ownership of a suspicious model with strict theoretical guarantees remains a challenging task. To address this gap, we introduce CREDIT, a certified ownership verification against MEAs. Specifically, we employ mutual information to quantify the similarity between DNN models, propose a practical verification threshold, and provide rigorous theoretical guarantees for ownership verification based on this threshold. We extensively evaluate our approach on several mainstream datasets across different domains and tasks, achieving state-of-the-art performance. Our implementation is publicly available at: https://github.com/LabRAI/CREDIT."
+  },
+  {
+    "date": "2026-02-23",
+    "title": "CITED: A Decision Boundary-Aware Signature for GNNs Towards Model Extraction Defense",
+    "authors": "Bolin Shen, Md Shamim Seraj, Zhan Cheng, Shayok Chakraborty, Yushun Dong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20418v1",
+    "source": "arXiv",
+    "abstract": "Graph neural networks (GNNs) have demonstrated superior performance in various applications, such as recommendation systems and financial risk management. However, deploying large-scale GNN models locally is particularly challenging for users, as it requires significant computational resources and extensive property data. Consequently, Machine Learning as a Service (MLaaS) has become increasingly popular, offering a convenient way to deploy and access various models, including GNNs. However, an emerging threat known as Model Extraction Attacks (MEAs) presents significant risks, as adversaries can readily obtain surrogate GNN models exhibiting similar functionality. Specifically, attackers repeatedly query the target model using subgraph inputs to collect corresponding responses. These input-output pairs are subsequently utilized to train their own surrogate models at minimal cost. Many techniques have been proposed to defend against MEAs, but most are limited to specific output levels (e.g., embedding or label) and suffer from inherent technical drawbacks. To address these limitations, we propose a novel ownership verification framework CITED which is a first-of-its-kind method to achieve ownership verification on both embedding and label levels. Moreover, CITED is a novel signature-based method that neither harms downstream performance nor introduces auxiliary models that reduce efficiency, while still outperforming all watermarking and fingerprinting approaches. Extensive experiments demonstrate the effectiveness and robustness of our CITED framework. Code is available at: https://github.com/LabRAI/CITED."
+  },
+  {
+    "date": "2026-02-23",
+    "title": "StochasticBarrier.jl: A Toolbox for Stochastic Barrier Function Synthesis",
+    "authors": "Rayan Mazouz, Frederik Baymler Mathiesen, Luca Laurenti, Morteza Lahijanian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20359v1",
+    "source": "arXiv",
+    "abstract": "We present StochasticBarrier.jl, an open-source Julia-based toolbox for generating Stochastic Barrier Functions (SBFs) for safety verification of discrete-time stochastic systems with additive Gaussian noise. StochasticBarrier.jl certifies linear, polynomial, and piecewise affine (PWA) systems. The latter enables verification for a wide range of system dynamics, including general nonlinear types. The toolbox implements a Sum-of-Squares (SOS) optimization approach, as well as methods based on piecewise constant (PWC) functions. For SOS-based SBFs, StochasticBarrier.jl leverages semi-definite programming solvers, while for PWC SBFs, it offers three engines: two using linear programming (LP) and one based on gradient descent (GD). Benchmarking StochasticBarrier.jl against the state-of-the-art shows that the tool outperforms existing tools in computation time, safety probability bounds, and scalability across over 30 case studies. Compared to its closest competitor, StochasticBarrier.jl is up to four orders of magnitude faster, achieves significant safety probability improvements, and supports higher-dimensional systems."
+  },
+  {
+    "date": "2026-02-23",
+    "title": "DMCD: Semantic-Statistical Framework for Causal Discovery",
+    "authors": "Samarth KaPatel, Sofia Nikiforova, Giacinto Paolo Saggese, Paul Smith",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20333v1",
+    "source": "arXiv",
+    "abstract": "We present DMCD (DataMap Causal Discovery), a two-phase causal discovery framework that integrates LLM-based semantic drafting from variable metadata with statistical validation on observational data. In Phase I, a large language model proposes a sparse draft DAG, serving as a semantically informed prior over the space of possible causal structures. In Phase II, this draft is audited and refined via conditional independence testing, with detected discrepancies guiding targeted edge revisions. We evaluate our approach on three metadata-rich real-world benchmarks spanning industrial engineering, environmental monitoring, and IT systems analysis. Across these datasets, DMCD achieves competitive or leading performance against diverse causal discovery baselines, with particularly large gains in recall and F1 score. Probing and ablation experiments suggest that these improvements arise from semantic reasoning over metadata rather than memorization of benchmark graphs. Overall, our results demonstrate that combining semantic priors with principled statistical verification yields a high-performing and practically effective approach to causal structure learning."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "SVPrompt-MR: An LLM-Based Metamorphic Relation Identification Method with Self-Verification Mechanism",
+    "authors": "Jun Huang, Meng Li, Xiaohua Yang, Jie Liu, Shiyu Yan",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00055",
+    "source": "IEEE",
+    "abstract": "Metamorphic testing is an effective technique to alleviate the oracle problem in software testing, with metamorphic relations (MRs) as its core. Currently, the identification of MRs relies mainly on domain experts, which leads to low efficiency and considerable subjectivity in MR formulation. Large Language Models (LLMs) show great potential for identifying MRs automatically. In this paper, we propose a self-verificationbased prompt construction strategy for MR identification, which consists of two stages: MR identification and MR verification. Our method is applied to the thermal-hydraulic safety design program for pebble-bed high-temperature gas-cooled reactors, with deepseek-R1 as the underlying model. Experimental results demonstrate that our approach not only covers all 44 MRs identified by experts, but also discovers 24 new MRs. It significantly outperforms existing methods in terms of coverage rate, accuracy rate, and innovation rate, thereby exhibiting superior identification capability. The research results not only advance the study of MR identification, but also provide a valuable reference and inspiration for researchers."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "Learned, Lagged, LLM-Splained: LLM Responses to End User Security Questions",
+    "authors": "Vijay Prakash, Kevin Lee, Arkaprabha Bhattacharya, Danny Yuxing Huang, Jessica Staddon",
+    "publish": "2025 IEEE Annual Computer Security Applications Conference (ACSAC)",
+    "url": "https://doi.org/10.1109/acsac67867.2025.00092",
+    "source": "IEEE",
+    "abstract": "Answering end user security questions is challenging. While large language models (LLMs) like GPT, Llama, and Gemini are far from error-free, they have shown promise in answering a variety of questions outside of security. We qualitatively evaluated responses from three popular LLMs to 900 systematically collected security questions in the first such evaluation in the area of end user security. While LLMs demonstrate broad generalist “knowledge” of end user security information, there are patterns of errors and limitations across LLMs-including stale, inaccurate, and incomplete answers, as well as indirect or unresponsive communication styles-which negatively impact the user experience. Based on these patterns, we suggest directions for improved model development and recommend user strategies for interacting with LLMs when seeking assistance with security."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "QEC-LLM: Training Query-focused Extractive Compression Model with LLM-guiding for Open Domain QA",
+    "authors": "Sijia Wang, Jy Duan, Xin Li, Haoguang Wen, Yizhuo Zhang, Chunming Liu, Zibo Yi",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00099",
+    "source": "IEEE",
+    "abstract": "The current Retrieval-Augmented Generation(RAG) pipeline incorporates retrieved contexts as external knowledge to reduce hallucinations, but the large and redundant context makes it difficult for the model to identify key information. In Question-Answering (QA) tasks, large language models (LLMs) can identify query-focused information through extractive compression, simplify redundant long texts and improve the accuracy, but they are resource-intensive and less efficient. To ensure the accuracy of extractive compression and improve its efficiency, we propose a framework for query-focused extractive compression (QEC-LLM) that leverages the LLM’s knowledge and a queryguided mechanism to construct sample sets, effectively training a smaller student model. The student model sorts and scales paragraph sentences based on similarity scores for compression and performance optimization. In addition, since LLM may generate some information that is missing from the student model during the extraction process, our framework will add this supplementary information to the QA prompt and combine it with the extracted information to achieve generative augmentation. We conduct extensive experiments on QA datasets with different compression ratios. The results demonstrate that QECLLM significantly improves end-to-end QA performance and inference efficiency, while demonstrating strong generalization across different retrieval strategies."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "LIVA: A Multi-Agent LLM-Assisted System for IoT Vulnerability Analysis_supp1-3665343.pdf",
+    "authors": "Hao Peng",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tdsc.2026.3665343/mm1",
+    "source": "IEEE",
+    "abstract": "IoT devices have become deeply integrated into our daily lives, making comprehensive security research on critical infrastructure devices increasingly important. Static analysis techniques, particularly those leveraging taint propagation, have demonstrated promise in identifying security vulnerabilities within these devices, effectively detecting critical vulnerabilities. However, current solutions often struggle with limitations in both detection efficiency and accuracy. To address these challenges, this paper introduces Liva, a novel static taint analysis tool designed for detecting web vulnerabilities in IoT devices. Liva employs a large language model (LLM) multi-agent approach for static binary taint analysis, primarily leveraging fine-tuned open-source models and commercial LLMs to improve source/sink identification and taint data analysis—areas where traditional methods often fall short—thereby enhancing overall analysis efficiency. LIVA's core analysis engine leverages a Qwen3-32B open-source model that has been fine-tuned using a dataset of 3,000 real-world device samples. This fine-tuned model achieves a 3 percentage point improvement in accuracy for identifying taint data propagation relationships compared to commercial LLMs, while also increasing average analysis efficiency by 5.5%. A comprehensive evaluation of Liva, conducted on a dataset of 64 devices from 11 vendors, revealed that it detected 309 and 349 more known vulnerabilities than the state-of-the-art solutions SaTC and Karonte, respectively, while simultaneously reducing false positive rates by 59.4% and 67.6%. Liva achieves a recall of 98.1% and a precision of 74.6%, with a 6.7× reduction in analysis time compared to the best-performing baseline. Furthermore, in the realm of zero-day vulnerability detection, Liva discovered 64 previously unknown vulnerabilities, 39 of which have since been assigned official CVE/CNVD identifiers."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "EpidemIQs: Prompt-to-Paper LLM Agents for Epidemic Modeling and Analysis_supp1-3666830.pdf",
+    "authors": "Mohammad Hossein Samaei",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tai.2026.3666830/mm1",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) offer new opportunities to accelerate complex interdisciplinary research domains through AI assistant tools. Epidemic modeling, characterized by its complexity and reliance on network science, dynamical systems, epidemiology, and stochastic simulations, represents a prime candidate for leveraging LLM-driven automation. We introduce EpidemIQs, a novel multi-agent LLM framework that integrates user inputs and autonomously conducts literature review, analytical derivation, network modeling, mechanistic modeling, stochastic simulations, data visualization and analysis, and finally documentation of findings in a structured manuscript, through five predefined research phases. We introduce two types of agents: a scientist agent for planning, coordination, reflection, and generation of final results, and a task-expert agent to focus exclusively on one specific duty serving as a tool to the scientist agent. The framework consistently generated complete reports in scientific article format. Specifically, using GPT 4.1 and GPT 4.1 Mini as backbone LLMs for scientist and task-expert agents, respectively, the autonomous process completes with average total token usage 870K at a cost of about $1.57 per study, successfully executing all phases and final report. We evaluate EpidemIQs across several different epidemic scenarios, measuring computational cost, workflow reliability, task success rate, and LLM-as-Judge and human expert reviews to estimate the overall quality and technical correctness of the generated results. Through our experiments, the framework consistently addresses evaluation scenarios with an average task success rate of 79%. We compare EpidemIQs to an iterative single-agent LLM, benefiting from the same system prompts and tools, iteratively planning, invoking tools, and revising outputs until task completion. The qualitative and quantitative comparisons suggest a consistently higher performance of the proposed framework across the tested scenarios. We discuss the benefits that EpidemIQs can offer, its limitations, and ethical concerns of such AI research assistant tools."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "LLM Guided Automated Security Analysis for 5G UE Control Plane Protocols",
+    "authors": "Qi Shan, Jian Cui",
+    "publish": "2025 IEEE 25th International Conference on Communication Technology (ICCT)",
+    "url": "https://doi.org/10.1109/icct67417.2025.11374120",
+    "source": "IEEE",
+    "abstract": "As a critical hub connecting users and 5G networks, 5G UE control plane protocols undertake core functions such as network connection establishment, mobility management, and security authentication. Therefore, studying the security requirements of 5G UE control-plane protocols and constructing corresponding security testing methods are important components of improving the 5G network security protection system, and safeguarding user data security. In this paper, we first use LLM and RAG technologies to parse 3GPP specifications, extract security requirements of 5G UE control-plane protocols, and generate formal LTL assertions. We then adopt a passive-active collaborative state machine learning method to construct state machines for multiple 5G UEs. By selecting a reference state machine for model checking and performing differential testing between other state machines and the reference state machine, we obtain all violation cases of the UEs. The proposed security testing method has extracted 55 security requirements, including 10 new ones, and discovered 5 new violations."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "Beyond Translation: Exploring LLM-based Multilingual Cognitive Behavioral Therapy",
+    "authors": "Hyeonbeen Lee, Jangho Lee",
+    "publish": "2026 IEEE International Conference on Big Data and Smart Computing (BigComp)",
+    "url": "https://doi.org/10.1109/bigcomp68355.2026.00020",
+    "source": "IEEE",
+    "abstract": "As the utilization of Large Language Models (LLMs) in counseling expands, there is active research on enhancing their specialization by applying specific therapeutic techniques such as Cognitive Behavioral Therapy (CBT). However, there has been a lack of comparative research on how the implementation of core CBT elements, such as micro-skills and procedural fidelity, varies depending on the type, scale, and language of the LLM. In this study, we employed two prominent open-source LLMs, Gemma 3 and Qwen 3, to generate CBT-based counseling sessions across four languages: English, French, Japanese, and Korean, thereby addressing a critical gap in the literature. We then quantified each transcript for micro-skill frequency and structural fidelity to the session agenda. Performance increased with model size, and several models exhibited meaningful cross-lingual variance. LLM counselors were competent in relational skills such as empathic responding, yet underperformed on professional competencies including goal setting and global integration. To the best of our knowledge, this study is the first to present a quantitative comparison of cross-lingual performance in LLM-based CBT counseling, highlighting the need for methodologies that account for LLMs’ strengths and limitations in building multilingual counseling systems."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "XRepair - Unifying Retrieval, Repair, and Evaluation for Explainable LLM-Based Vulnerability Fixes",
+    "authors": "Alfred Amoah, Yan Liu",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00116",
+    "source": "IEEE",
+    "abstract": "This paper presents XRepair, a web-based tool for automated and explainable software vulnerability repair. XRepair integrates retrieval, generation, and evaluation into a single interactive framework. It augments large language models (LLMs) with knowledge retrieved from CWE/CVE datasets through both embedding-based and graph-based strategies. XRepair enables repairs that are contextualized with vulnerability metadata and related examples. The tool provides end-to-end functionalities, including users inputting a CWE/CVE identifier and vulnerable code snippet, configuring the retrieval strategy and LLM, and receiving repair recommendations. Unlike patch-only systems, the recommendations consist of an issue description, explicit repair guidance, and concrete code diffs. To assess repair quality, XRepair incorporates an LLM-as-a-Judge evaluation framework that scores outputs across five criteria, namely relevance, completeness, correctness, identification of vulnerable code, and guidance. This design supports reproducible comparison of retrieval strategies and produces transparent recommendations. Built using both the strategy and factory design patterns, XRepair allows new retrieval algorithms and data sources to be added. The tool and documentation are publicly available with a tool for comparative evaluation and practical application of explainable vulnerability repairs. The demo for XRepair can be accessed at https://youtu.be/5IcGzNJXAY."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "LLM-IMCR: Enhancing Next POI Recommendation with Interest Memory and Contextual Retrieval",
+    "authors": "Ruofei He",
+    "publish": "2026 6th International Conference on Consumer Electronics and Computer Engineering (ICCECE)",
+    "url": "https://doi.org/10.1109/iccece69169.2026.11399781",
+    "source": "IEEE",
+    "abstract": "Next Point-of-Interest (POI) recommendation faces critical challenges in leveraging fine-grained contextual information and mining historical behavior patterns, especially in sparse data scenarios. Existing methods lack structured retrieval mechanisms that can effectively extract task-relevant historical data, limiting their ability to capture personalized user preferences. To address this issue, we propose LLM-IMCR, a novel recommendation framework that integrates a large language model (LLM) with an interest memory. LLM-IMCR constructs multi-dimensional indexes to retrieve similar historical trajectories from the obtained data. The retrieved task-relevant information is used to augment prompts for LLM, significantly enhancing the model’s recommendation accuracy.Experiments demonstrate that LLM-IMCR outperforms baseline models by 0.29 percentage points (2.14% relative improvement) in Acc@1, and maintains stable performance for severe cold-start users (Acc@1=0.1241) and extremely short trajectories (Acc@1=0.1188), effectively alleviating sparse data limitations."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "Analyzing LLM Safety Circumvention via Multilingual Euphemistic Coating",
+    "authors": "SangHyeon Gil, JaeSeong Kim, Suan Lee",
+    "publish": "2026 IEEE International Conference on Big Data and Smart Computing (BigComp)",
+    "url": "https://doi.org/10.1109/bigcomp68355.2026.00047",
+    "source": "IEEE",
+    "abstract": "In this paper, we systematically analyze how euphemistic coating in multilingual settings can enable jailbreaks that bypass the safety mechanisms of large language models (LLMs). To this end, we translate AdvBench, a benchmark designed to assess compliance with harmful requests, into seven high-internet-usage non-English languages using GPT-4o. We then apply an embedding-based cosine similarity filter (≥ 0.8) to improve translation fidelity and retain only high-quality pairs, from which we construct two prompt variants: a Non-Coating version that is a direct translation of the original, and a Coating version expressed euphemistically. This process leaves 372 out of the original 512 AdvBench items as a balanced subset and provides a quantitative signal regarding translation directionality and quality.We evaluate six open models (including Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct, and OpenR1-Qwen-7B) across eight languages, including English, and use Attack Success Rate (ASR) as our primary metric. Judgments follow the JailbreakBench framework, with GPT-4 serving as the judging model, and the decoding temperature is fixed to 0 for reproducibility.Empirically, when averaging over all model-language combinations, ASR in the Non-Coating condition is higher than in the Coating condition, indicating that euphemistic phrasing tends to lower attack success rates on average. However, for certain model-language pairs such as Korean with Llama-3.1-8B-Instruct and Japanese with Qwen2.5-7B-Instruct, we observe a \"rebound\" effect in which ASR increases after coating, suggesting that English-centric keyword and heuristic filtering can be vulnerable to euphemistic expressions. At the language level, English exhibits the highest ASR (85.5% Non-Coating, 50.9% Coating), while Japanese shows the lowest (38.8% Non-Coating, 19.5% Coating). At the model level, OpenR1-Qwen-7B is the most robust (39.7% Non-Coating, 11.9% Coating), whereas Llama-3.1-8B-Instruct records the highest ASR in both conditions (79.3%).The proposed benchmark enables realistic quantification of the defensive limits of LLMs in multilingual euphemistic contexts and highlights the need for semantic-centric multilingual safety tuning and evaluation frameworks."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "A Hybrid GNN-LLM Framework for Correlating Cybersecurity Incidents",
+    "authors": "Lina Baha, Amine Mammasse, Oualid Saci",
+    "publish": "2025 Fourth International Conference on Theoretical and Applicative Aspects of Computer Science (ICTAACS)",
+    "url": "https://doi.org/10.1109/ictaacs69003.2025.11399321",
+    "source": "IEEE",
+    "abstract": "High volumes of alerts from Intrusion Detection Systems (IDS) cause significant \"alert fatigue\" among security analysts, hindering the identification of genuine incidents. Existing automated correlation methods often lack the semantic context and explainability needed for effective response. This paper presents a hybrid framework that integrates Graph Neural Networks (GNNs) and Large Language Models (LLMs) to correlate and explain security alerts. The approach constructs an alert graph using hybrid node features that fuse structured data with semantic embeddings. A GraphSAGE model is trained for link prediction to identify correlated alerts. Crucially, the framework implements a feedback loop where the GNN’s predictions serve as factual grounding for a Retrieval-Augmented Generation (RAG) module, producing human-readable justifications and actionable recommendations. Evaluated on the CIC-IDS 2017 dataset, the model achieves an Area Under the Curve (AUC) of 0.9731 and an accuracy of 90.02%. We demonstrate its ability to group alerts into coherent incidents, bridging the gap between automated detection and human-centric incident response."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "An Empirical Analysis of ESLint Information Components and Their Interactions in LLM-based Program Repair",
+    "authors": "ShinHyuck Kang, Jinseok Heo, Eunseok Lee",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00084",
+    "source": "IEEE",
+    "abstract": "Static analysis tools like ESLint are widely used for code quality assurance, yet optimizing their integration with LLM-based Automated Program Repair remains underexplored. While existing approaches typically use complete static analysis reports, the impact of individual information components and their interactions has received limited attention. This paper presents an empirical analysis of 12 ESLint information components’ impact on GPT-4 Turbo’s repair performance. Through experiments on the complete TFix test dataset (10,504 cases), we find: (1) Concise components (e.g., linter messages) show high performance per token, while verbose components show diminishing returns in combination. (2) Components exhibit interaction effects; some components with low individual performance show high importance in combinations. (3) Strategic component selection based on interaction analysis can achieve comparable performance to using all components while reducing token usage. Our findings suggest that prompt optimization for LLM-based APR can benefit from analyzing both individual component contributions and their interactions."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "Natural Language Explanation in Code Clone Detection using LLM-based Post Hoc Explainer",
+    "authors": "Teeradaj Racharak, Chaiyong Ragkhitwetsagul, Chayanee Junplong, Akara Supratak",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00093",
+    "source": "IEEE",
+    "abstract": "Recent studies highlight various machine learning (ML)-based techniques for code clone detection, which can be integrated into developer tools such as static code analysis. With the advancements brought by ML in code understanding, MLbased code clone detectors could accurately identify and classify cloned pairs, especially semantic clones, but often operate as black boxes, providing little insight into the decision-making process. Post hoc explainers, on the other hand, aim to interpret and explain the predictions of these ML models after they are made, offering a way to understand the underlying mechanisms driving the model’s decisions. However, current post hoc techniques require white-box access to the ML model or are computationally expensive, indicating a need for advanced post hoc explainers. In this paper, we propose a novel framework that leverages the in-context learning capabilities of large language models to elucidate the predictions made by the ML-based code clone detectors. We perform a study using ChatGPT-4 to explain the code clone results inferred by GraphCodeBERT. We found that our approach is promising as a post hoc explainer by giving the correct explanations up to 98% and offering good explanations 95% of the time. Yet, the explanations and the code line examples given by the LLM are useful in some cases. We also found that lowering the temperature to zero helps increase the accuracy of the explanation. Lastly, we list the insights that can lead to further improvements in future work. This study paves the way for future studies in utilizing LLMs as a post hoc explainer for various software engineering tasks."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "A Comparative Study Towards Designing a Hybrid Architecture of Microservices and LLM-based Multi-Agent Systems",
+    "authors": "Peyman Yazdanian, Yan Liu, Zheng Li",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00077",
+    "source": "IEEE",
+    "abstract": "LLM-based Multi-Agent Systems (LLM-MAS) present an emerging paradigm for constructing intelligent and adaptive applications that enable autonomous reasoning and collaborative problem-solving. Empirical studies show that current LLM-MAS still suffers from overlapping agent roles, unclear capabilities, and goal misalignment. In contrast, Microservice Systems (MS) are designed with modularity, and each service encapsulates a well-defined context and interface with structured and deterministic execution. From the system architecture principles, these paradigms demonstrate parallel attributes and complementary strengths that lead to a synthesized hybrid architecture. In this paper, we analyze the design factors of hybrid MS and LLM-MAS, as well as the main challenges, through a comparative study across eight architectural dimensions, including function encapsulation, orchestration, API design, auto-correction, data communication, operations, quality attributes, and environment awareness. The analysis reveals critical mismatches, design synergies, and transferable best practices. To motivate future work, we define four research questions to categorize the challenges. The goal is to create a converging design space for exploring architecture design towards intelligent, autonomous, modular, and adaptive systems."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "Safety Guardrails for LLM-Enabled Robots",
+    "authors": "Zachary Ravichandran, Alexander Robey, Vijay Kumar, George J. Pappas, Hamed Hassani",
+    "publish": "IEEE Robotics and Automation Letters",
+    "url": "https://doi.org/10.1109/lra.2026.3667488",
+    "source": "IEEE",
+    "abstract": "Although the integration of large language models (LLMs) into robotics has unlocked transformative capabilities, it has also introduced significant safety concerns, ranging from average-case LLM errors (<italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">e.g.,</i> hallucinations) to adversarial jailbreaking attacks, which can produce harmful robot behavior in real-world settings. Traditional robot safety approaches do not address the contextual vulnerabilities of LLMs, and current LLM safety approaches overlook the physical risks posed by robots operating in real-world environments. To ensure the safety of LLM-enabled robots, we propose <sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">RoboGuard</small>, a two-stage guardrail architecture. <sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">RoboGuard</small> first contextualizes pre-defined safety rules by grounding them in the robot's environment using a root-of-trust LLM. This LLM is shielded from malicious prompts and employs chain-of-thought (CoT) reasoning to generate context-dependent safety specifications, such as temporal logic constraints. <sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">RoboGuard</small> then resolves conflicts between these contextual safety specifications and potentially unsafe plans using temporal logic control synthesis, ensuring compliance while minimally violating user preferences. In simulation and real-world experiments that consider worst-case jailbreaking attacks, <sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">RoboGuard</small> reduces the execution of unsafe plans from over 92% to below 3% without compromising performance on safe plans. We also demonstrate that <sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">RoboGuard</small> is resource-efficient, robust against adaptive attacks, and enhanced by its root-of-trust LLM's CoT reasoning. These results demonstrate the potential of <sc xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">RoboGuard</small> to mitigate the safety risks and enhance the reliability of LLM-enabled robots."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "AndroByte: LLM-Driven Privacy Analysis through Bytecode Summarization and Dynamic Dataflow Call Graph Generation",
+    "authors": "Mst Eshita Khatun, Lamine Noureddine, Zhiyong Sui, Aisha Ali-Gombe",
+    "publish": "2025 IEEE Annual Computer Security Applications Conference (ACSAC)",
+    "url": "https://doi.org/10.1109/acsac67867.2025.00021",
+    "source": "IEEE",
+    "abstract": "With the exponential growth in mobile applications, protecting user privacy has become even more crucial. Android applications are often known for collecting, storing, and sharing sensitive user information such as contacts, location, camera, and microphone data, often without the user's clear consent or awareness, raising significant privacy risks and exposure. In the context of privacy assessment, dataflow analysis is particularly valuable for identifying data usage and potential leaks. Traditionally, this type of analysis has relied on formal methods, heuristics, and rule-based matching. However, these techniques are often complex to implement and prone to errors, such as taint explosion for large programs. Moreover, most existing Android dataflow analysis methods depend heavily on predefined list of sinks, limiting their flexibility and scalability. To address the limitations of these existing techniques, we propose AndroByte, an AI-driven privacy analysis tool that leverages the reasoning of a large language model (LLM) on bytecode summarization to dynamically generate accurate and explainable dataflow call graphs from static code analysis. AndroByte achieves a significant Fß-Score of 89% in generating dynamic dataflow call graphs on the fly, outperforming the effectiveness of traditional tools like FlowDroid and Amandroid in leak detection without relying on predefined propagation rules or sink lists. Moreover, AndroByte's iterative bytecode summarization provides comprehensive and explainable insights into dataflow and leak detection, achieving high, quantifiable scores based on the G-Eval metric."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "AILinkPreviewer: Enhancing Code Reviews with LLM-Powered Link Previews",
+    "authors": "Panya Trakoolgerntong, Tao Xiao, Masanari Kondo, Chaiyong Ragkhitwetsagul, Morakot Choetkiertikul, Pattaraporn Sangaroonsilp, Yasutaka Kamei",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00121",
+    "source": "IEEE",
+    "abstract": "Code review is a key practice in software engineering, where developers evaluate code changes to ensure quality and maintainability. Links to issues and external resources are often included in Pull Requests (PRs) to provide additional context, yet they are typically discarded in automated tasks such as PR summarization and code review comment generation. This limits the richness of information available to reviewers and increases cognitive load by forcing context-switching. To address this gap, we present AILinkPreviewer, a tool that leverages Large Language Models (LLMs) to generate previews of links in PRs using PR metadata, including titles, descriptions, comments, and link body content. We analyzed 50 engineered GitHub repositories and compared three approaches: Contextual LLM summaries, Non-Contextual LLM summaries, and Metadata-based previews. The results in metrics such as BLEU, BERTScore, and compression ratio show that contextual summaries consistently outperform other methods. However, in a user study with seven participants, most preferred non-contextual summaries, suggesting a trade-off between metric performance and perceived usability. These findings demonstrate the potential of LLM-powered link previews to enhance code review efficiency and to provide richer context for developers and automation in software engineering. The video demo is available at https://www.youtube.com/ watch?v $=h 2 q \\mathrm{H} 4 \\mathrm{R} t r B 3 \\mathrm{E}$, and the tool and its source code can be found at https://github.com/c4rtune/AILinkPreviewer."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "ESG-LLM: An Instruction-Finetuned Large Language Model for Corporate ESG Scoring",
+    "authors": "Yawen Li, Weitao Wang, Mengyu Zhuang, Taikang Tian",
+    "publish": "2026 IEEE International Conference on Big Data and Smart Computing (BigComp)",
+    "url": "https://doi.org/10.1109/bigcomp68355.2026.00063",
+    "source": "IEEE",
+    "abstract": "Despite the broad consensus on the importance of corporate sustainability, substantial disagreement remains regarding the effectiveness of environmental, social, and governance (ESG) ratings. Inconsistencies across rating agencies lead to unreliable, contradictory, and poorly reproducible results, limiting their usefulness for investors. To address this issue, this study proposes a novel ESG scoring approach based on large language models (LLMs). Using corporate social responsibility reports of listed firms from 2009 to 2024 as the data source, a sentence-level corpus is constructed through text extraction and cleaning, and a quantitative evaluation framework comprising 54 ESG indicators is developed based on established rating scales. The LLM is fine-tuned via instruction tuning and prompt design to automatically generate ESG scores. Validation using a manually annotated dataset demonstrates high scoring accuracy. Furthermore, comparative experiments, ablation studies, and backtesting analyses confirm that the proposed model outperforms existing methods in both accuracy and efficiency, with fine-tuning playing a critical role in performance improvement."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "Towards Lightweight LLM Software Solutions for InsurTech: A Framework for Scalable Question Answering Systems",
+    "authors": "Hi Kuen Yu, Jacky Keung, Yicheng Sun, Yihan Liao, Richard Suen",
+    "publish": "2025 32nd Asia-Pacific Software Engineering Conference (APSEC)",
+    "url": "https://doi.org/10.1109/apsec66846.2025.00079",
+    "source": "IEEE",
+    "abstract": "The integration of Large Language Models (LLMs) into software systems is transforming regulated sectors like insurance, where precision, compliance, and efficiency are essential. While proprietary LLMs like GPT-4 offer state-of-the-art performance, their closed-source nature and high computational demands constrain adoption in privacy-sensitive and cost-restricted InsurTech environments. In response, this paper investigates how lightweight, open-source LLMs can be effectively deployed for domain-specific question answering in insurance, emphasizing software engineering considerations such as modularity, inference stability, and prompt orchestration. We propose a software-engineered evaluation framework tailored to insurance-related tasks, featuring modular prompt management, automated rubricbased evaluation, and backend support for reproducibility and compliance tracking. A curated benchmark dataset derived from the Hong Kong Insurance Intermediaries Qualifying Examination (IIQE) is constructed to reflect real-world regulatory and operational challenges. Ten open-source models are systematically evaluated across four question types using both standard and Chain-of-Thought (CoT) prompting strategies. Our findings show that compact models such as DeepSeek-R1-1.5B achieve strong accuracy with minimal resource consumption, making them suitable for practical deployment. CoT prompting further enhances reasoning performance, particularly for models with 3B parameters or more. With proper prompt design and modular deployment, lightweight LLMs can support secure, efficient, and interpretable InsurTech applications, enabling trustworthy AI-driven software systems in regulated domains."
+  },
+  {
+    "date": "2026-2-24",
+    "title": "LLM-Driven Trajectory Prediction at Intersections with Chain-of-Thought Reasoning",
+    "authors": "Yanbin Liu, Guangyu Tian, Wei Zhong, Xiaojing Qi, Yiran Wang",
+    "publish": "2025 9th IEEE International Conference on Network Intelligence and Digital Content (IC-NIDC)",
+    "url": "https://doi.org/10.1109/ic-nidc67200.2025.11390125",
+    "source": "IEEE",
+    "abstract": "Accurate vehicle trajectory prediction at signalized inter-sections is critical for autonomous driving safety, yet remains challenging due to complex vehicle-signal interactions and stringent real-time requirements. This paper proposes chain-of-thought (CoT)-intersection vehicle trajectory predict, a novel framework that integrates CoT prompting with lightweight knowledge distillation to achieve high-precision, explainable trajectory forecasting. We use structured CoT prompts to explicitly encode traffic rules and right-of-way logic into GPT-4 Turbo's reasoning process, mitigating rule agnosticism, and we employ dynamic knowledge distillation to transfer LLM capabilities into a compact Qwen-1.5 model. The framework employs a causal spatio-temporal fusion network that integrates distilled semantic features with kinematic data while preventing future information leakage. Evaluated on our newly released SIGNAL, CoT-intersection vehicle trajectory predict achieves: i). 0.93 m Average Displacement Error (ADE) and 1.86 m Final Displacement Error (FDE), outperforming state-of-the-art baselines like V2X-TrajNet by 23.1% and 13.5%, respectively; ii). 1.7% Signal Violation Rate (SVR) and 0.12 Conflict Severity Index (CSI), demonstrating 97.3% regulatory compliance and 72.1% collision risk reduction; iii). 28 ms inference latency on NVIDIA Jetson Orin, enabling real-time edge deployment. These advancements demonstrate the viability of lightweight, explainable LLM surrogates for safety-critical autonomous driving systems."
+  }
+]

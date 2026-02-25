@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-02-24",
+    "title": "Rethinking Clause Management for CDCL SAT Solvers",
+    "authors": "Yalun Cai, Xindi Zhang, Zhengyuan Shi, Mengxia Tao, Qiang Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.20829v1",
+    "source": "arXiv",
+    "abstract": "Boolean Satisfiability (SAT) solving underpins a wide range of applications in Electronic Design Automation (EDA), particularly formal verification. However, this paper observes that the mainstream clause reduction heuristic in modern SAT solvers becomes ineffective in the critical domain of complex arithmetic circuit verification, such as multipliers. On these instances, the dominant Literal Block Distance (LBD) metric for measuring clause quality degrades into a simple value of clause length, without any perception of dynamic clause usage during solving.To address this issue, a novel clause reduction mechanism is proposed, which is entirely independent of LBD. Its core idea is to decouple and handle separately the two most fundamental characteristics of learnt clauses--inherent lineage and dynamic usage patterns--thereby avoiding the efficiency degradation caused by inappropriately mixing these properties. Experiments show that our method consistently improves mainstream solvers and achieves speedups of up to 5.74x on complex arithmetic circuit problems, while maintaining comparable performance on general-purpose benchmarks. These results challenge the prevailing LBD-centric clause quality metric for clause management.",
+    "title_zh": "重新思考CDCL SAT求解器的子句管理",
+    "abstract_zh": "布尔可满足性（SAT）求解是电子设计自动化（EDA）中广泛应用的基础，尤其是在形式验证领域。然而，本论文观察到现代SAT求解器中的主流子句缩减启发式在复杂算术电路验证的关键领域（如乘法器）中变得无效。在这些实例中，主导的子句质量度量——字面块距离（LBD）退化为简单的子句长度值，而没有考虑求解过程中动态子句使用情况。为了解决这一问题，提出了一种全新的子句缩减机制，该机制完全独立于LBD。其核心思想是将学习子句的两个最基本特性——固有谱系和动态使用模式——分离并分别处理，从而避免因不当混合这些属性而导致的效率下降。实验表明，我们的方法在复杂算术电路问题上持续改进主流求解器，并实现了高达5.74倍的加速，同时在通用基准测试上保持了可比的性能。这些结果挑战了当前以LBD为中心的子句质量度量在子句管理中的主导地位。"
+  }
+]
