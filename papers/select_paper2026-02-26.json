@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-02-26",
+    "title": "EvolveGen: Algorithmic Level Hardware Model Checking Benchmark Generation through Reinforcement Learning",
+    "authors": "Guangyu Hu, Xiaofeng Zhou, Wei Zhang, Hongce Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.22609v1",
+    "source": "arXiv",
+    "abstract": "Progress in hardware model checking depends critically on high-quality benchmarks. However, the community faces a significant benchmark gap: existing suites are limited in number, often distributed only in representations such as BTOR2 without access to the originating register-transfer-level (RTL) designs, and biased toward extreme difficulty where instances are either trivial or intractable. These limitations hinder rigorous evaluation of new verification techniques and encourage overfitting of solver heuristics to a narrow set of problems. To address this, we introduce EvolveGen, a framework for generating hardware model checking benchmarks by combining reinforcement learning (RL) with high-level synthesis (HLS). Our approach operates at an algorithmic level of abstraction in which an RL agent learns to construct computation graphs. By compiling these graphs under different synthesis directives, we produce pairs of functionally equivalent but structurally distinct hardware designs, inducing challenging model checking instances. Solver runtime is used as the reward signal, enabling the agent to autonomously discover and generate small-but-hard instances that expose solver-specific weaknesses. Experiments show that EvolveGen efficiently creates a diverse benchmark set in standard formats (e.g., AIGER and BTOR2) and effectively reveals performance bottlenecks in state-of-the-art model checkers.",
+    "title_zh": "EvolveGen：通过强化学习生成算法级硬件模型检查基准",
+    "abstract_zh": "硬件模型检查的进展在很大程度上依赖于高质量的基准。然而，社区面临着显著的基准缺口：现有的套件数量有限，通常仅以BTOR2等表示形式分发，而无法访问原始寄存器传输级（RTL）设计，并且偏向于极端难度，其中实例要么是简单的，要么是难以处理的。这些限制阻碍了对新验证技术的严格评估，并促使求解器启发式方法过度拟合于一小部分问题。为了解决这一问题，我们引入了EvolveGen，一个通过结合强化学习（RL）与高级综合（HLS）生成硬件模型检查基准的框架。我们的方法在算法级抽象中运行，其中一个RL代理学习构建计算图。通过在不同的综合指令下编译这些图，我们生成功能上等效但结构上不同的硬件设计对，从而引发具有挑战性的模型检查实例。求解器运行时间被用作奖励信号，使代理能够自主发现并生成暴露求解器特定弱点的小而难的实例。实验表明，EvolveGen能够有效地创建标准格式（例如，AIGER和BTOR2）中的多样化基准集，并有效揭示最先进模型检查器的性能瓶颈。"
+  },
+  {
+    "date": "2026-2-26",
+    "title": "EDA-in-the-Loop: Automated HDL Code Generation and Verification Using Multi-Agent LLMs",
+    "authors": "Xuan Wang, Kunyue Hu, Zecheng Xuan, Xiupeng Shi, Yanan Liu",
+    "publish": "2025 4th International Conference on Artificial Intelligence, Human-Computer Interaction and Robotics (AIHCIR)",
+    "url": "https://doi.org/10.1109/aihcir67580.2025.11404766",
+    "source": "IEEE",
+    "abstract": "Traditional digital IC flows suffer from brittle specto-RTL translation, verification that must iterate inside EDA tools, and weak support for role specialization at scale. We integrate an AutoGen-based multi-agent system with Vivado in the loop: a requirement-analysis agent produces machine-readable specs; a fine-tuned Verilog model generates synthesizable RTL; a general-purpose LLM writes the testbench; a Python/TCL runner executes Vivado; a log-guided debug agent localizes errors and applies minimal patches until tests pass. Across four user cases (4-bit counter, VGA controller, AES core, JPEG-LS encoder), the system automates RTL + testbench generation and verification, achieving 3 exchanges to finalize specs, 65% first-attempt RTL pass, 94% first-attempt testbench pass, 2.4× execution speed-up via TCL automation, and 91.5% log-guided correction rate, with few repair iterations to convergence. By placing the EDA tool at the center of the loop and coordinating multi-agent, hybrid-model roles, the framework reduces development time and manual effort while improving reliability, offering a practical path to scalable, production-oriented RTL automation.",
+    "title_zh": "EDA-in-the-Loop：使用多代理LLM进行自动化HDL代码生成和验证",
+    "abstract_zh": "传统的数字集成电路流程存在脆弱的规格到RTL翻译、需要在EDA工具内迭代的验证过程，以及在大规模下对角色专业化支持不足的问题。我们将基于AutoGen的多代理系统与Vivado集成在循环中：需求分析代理生成机器可读的规格；经过精调的Verilog模型生成可合成的RTL；通用LLM编写测试平台；Python/TCL运行器执行Vivado；日志引导的调试代理定位错误并应用最小补丁直到测试通过。在四个用户案例（4位计数器、VGA控制器、AES核心、JPEG-LS编码器）中，该系统自动化了RTL和测试平台的生成和验证，实现了规格最终确定的3次交换，65%的RTL首次尝试通过率，94%的测试平台首次尝试通过率，通过TCL自动化实现2.4倍的执行速度提升，以及91.5%的日志引导修正率，修复迭代次数少以达到收敛。通过将EDA工具置于循环的中心并协调多代理、混合模型角色，该框架减少了开发时间和人工努力，同时提高了可靠性，提供了一条实用的路径以实现可扩展、面向生产的RTL自动化。"
+  }
+]
