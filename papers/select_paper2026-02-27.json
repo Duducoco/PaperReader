@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-02-26",
+    "title": "EvolveGen: Algorithmic Level Hardware Model Checking Benchmark Generation through Reinforcement Learning",
+    "authors": "Guangyu Hu, Xiaofeng Zhou, Wei Zhang, Hongce Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.22609v1",
+    "source": "arXiv",
+    "abstract": "Progress in hardware model checking depends critically on high-quality benchmarks. However, the community faces a significant benchmark gap: existing suites are limited in number, often distributed only in representations such as BTOR2 without access to the originating register-transfer-level (RTL) designs, and biased toward extreme difficulty where instances are either trivial or intractable. These limitations hinder rigorous evaluation of new verification techniques and encourage overfitting of solver heuristics to a narrow set of problems. To address this, we introduce EvolveGen, a framework for generating hardware model checking benchmarks by combining reinforcement learning (RL) with high-level synthesis (HLS). Our approach operates at an algorithmic level of abstraction in which an RL agent learns to construct computation graphs. By compiling these graphs under different synthesis directives, we produce pairs of functionally equivalent but structurally distinct hardware designs, inducing challenging model checking instances. Solver runtime is used as the reward signal, enabling the agent to autonomously discover and generate small-but-hard instances that expose solver-specific weaknesses. Experiments show that EvolveGen efficiently creates a diverse benchmark set in standard formats (e.g., AIGER and BTOR2) and effectively reveals performance bottlenecks in state-of-the-art model checkers.",
+    "title_zh": "EvolveGen：通过强化学习生成算法级硬件模型检查基准",
+    "abstract_zh": "硬件模型检查的进展在很大程度上依赖于高质量的基准。然而，社区面临着显著的基准差距：现有的套件数量有限，通常仅以BTOR2等表示形式分发，无法访问原始寄存器传输级（RTL）设计，并且偏向于极端难度，其中实例要么是微不足道的，要么是难以处理的。这些限制阻碍了对新验证技术的严格评估，并促使求解器启发式方法过度拟合于一组狭窄的问题。为了解决这一问题，我们引入了EvolveGen，一个通过结合强化学习（RL）与高级综合（HLS）生成硬件模型检查基准的框架。我们的方法在算法级抽象中运行，其中一个RL代理学习构建计算图。通过在不同的综合指令下编译这些图，我们生成功能上等效但结构上不同的硬件设计对，从而引发具有挑战性的模型检查实例。求解器运行时间被用作奖励信号，使代理能够自主发现和生成暴露求解器特定弱点的小而难的实例。实验表明，EvolveGen能够有效地创建标准格式（例如，AIGER和BTOR2）中的多样化基准集，并有效揭示最先进模型检查器的性能瓶颈。"
+  }
+]
