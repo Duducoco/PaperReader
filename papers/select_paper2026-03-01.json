@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-02-27",
+    "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+    "authors": "Weinan Dai, Hanlin Wu, Qiying Yu, Huan-ang Gao, Jiahao Li, Chengquan Jiang, Weiqiang Lou, Yufan Song, Hongli Yu, Jiaze Chen, Wei-Ying Ma, Ya-Qin Zhang, Jingjing Liu, Mingxuan Wang, Xin Liu, Hao Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.24286v1",
+    "source": "arXiv",
+    "abstract": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
+    "title_zh": "CUDA Agent：用于高性能CUDA内核生成的大规模智能强化学习",
+    "abstract_zh": "GPU内核优化是现代深度学习的基础，但仍然是一项需要深厚硬件专业知识的高度专业化任务。尽管在通用编程中表现出色，大型语言模型（LLMs）在CUDA内核生成方面仍无法与基于编译器的系统（如torch.compile）竞争。现有的CUDA代码生成方法要么依赖于无训练的改进，要么在固定的多轮执行反馈循环中微调模型，但这两种范式都未能从根本上提高模型的内在CUDA优化能力，导致性能提升有限。我们提出了CUDA Agent，这是一种大规模智能强化学习系统，通过三个组件发展CUDA内核专业知识：一个可扩展的数据合成管道、一个技能增强的CUDA开发环境，具有自动验证和分析功能以提供可靠的奖励信号，以及支持稳定训练的强化学习算法技术。CUDA Agent在KernelBench上实现了最先进的结果，在KernelBench Level-1、Level-2和Level-3分割上分别比torch.compile快100%、100%和92%，在最困难的Level-3设置中，比最强的专有模型如Claude Opus 4.5和Gemini 3 Pro高出约40%。"
+  },
+  {
+    "date": "2026-02-27",
+    "title": "LeGend: A Data-Driven Framework for Lemma Generation in Hardware Model Checking",
+    "authors": "Mingkai Miao, Guangyu Hu, Wei Zhang, Hongce Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2602.24010v1",
+    "source": "arXiv",
+    "abstract": "Property checking of RTL designs is a central task in formal verification. Among available engines, IC3/PDR is a widely used backbone whose performance critically depends on inductive generalization, the step that generalizes a concrete counterexample-to-induction (CTI) cube into a lemma. Prior work has explored machine learning to guide this step and achieved encouraging results, yet most methods adopt a per-clause graph analysis paradigm: for each clause they repeatedly build and analyze graphs, incurring heavy overhead and creating a scalability bottleneck. We introduce LeGend, which replaces this paradigm with one-time global representation learning. LeGend pre-trains a domain-adapted self-supervised model to produce latch embeddings that capture global circuit properties. These precomputed embeddings allow a lightweight model to predict high-quality lemmas with negligible overhead, effectively decoupling expensive learning from fast inference. Experiments show LeGend accelerates two state-of-the-art IC3/PDR engines across a diverse set of benchmarks, presenting a promising path to scale up formal verification.",
+    "title_zh": "LeGend：一种用于硬件模型检查中引理生成的数据驱动框架",
+    "abstract_zh": "RTL设计的性质检查是形式验证中的核心任务。在现有的引擎中，IC3/PDR是一种广泛使用的骨干，其性能在很大程度上依赖于归纳泛化，即将具体的反例到归纳（CTI）立方体泛化为引理的步骤。先前的研究探索了使用机器学习来指导这一步骤，并取得了令人鼓舞的结果，但大多数方法采用逐子句图分析范式：对于每个子句，它们反复构建和分析图，导致高昂的开销并形成可扩展性的瓶颈。我们引入了LeGend，它用一次性的全局表示学习取代了这一范式。LeGend预训练了一个领域适应的自监督模型，以生成捕捉全局电路特性的锁存器嵌入。这些预计算的嵌入允许一个轻量级模型以可忽略的开销预测高质量的引理，有效地将昂贵的学习与快速推理分离开来。实验表明，LeGend在一组多样化的基准测试中加速了两种最先进的IC3/PDR引擎，展示了扩大形式验证规模的有前景的路径。"
+  }
+]
