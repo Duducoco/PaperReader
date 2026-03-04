@@ -1,0 +1,46 @@
+[
+  {
+    "date": "2026-03-03",
+    "title": "Saarthi for AGI: Towards Domain-Specific General Intelligence for Formal Verification",
+    "authors": "Aman Kumar, Deepak Narayan Gadde, Luu Danh Minh, Vaisakh Naduvodi Viswambharan, Keerthan Kopparam Radhakrishna, Sivaram Pothireddypalli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03175v1",
+    "source": "arXiv",
+    "abstract": "Saarthi is an agentic AI framework that uses multi-agent collaboration to perform end-to-end formal verification. Even though the framework provides a complete flow from specification to coverage closure, with around 40% efficacy, there are several challenges that need to be addressed to make it more robust and reliable. Artificial General Intelligence (AGI) is still a distant goal, and current Large Language Model (LLM)-based agents are prone to hallucinations and making mistakes, especially when dealing with complex tasks such as formal verification. However, with the right enhancements and improvements, we believe that Saarthi can be a significant step towards achieving domain-specific general intelligence for formal verification. Especially for problems that require Short Term, Short Context (STSC) capabilities, such as formal verification, Saarthi can be a powerful tool to assist verification engineers in their work. In this paper, we present two key enhancements to the Saarthi framework: (1) a structured rulebook and specification grammar to improve the accuracy and controllability of SystemVerilog Assertion (SVA) generation, and (2) integration of advanced Retrieval Augmented Generation (RAG) techniques, such as GraphRAG, to provide agents with access to technical knowledge and best practices for iterative refinement and improvement of outputs. We also benchmark these enhancements for the overall Saarthi framework using challenging test cases from NVIDIA's CVDP benchmark targeting formal verification. Our benchmark results stand out with a 70% improvement in the accuracy of generated assertions, and a 50% reduction in the number of iterations required to achieve coverage closure.",
+    "title_zh": "Saarthi for AGI：面向形式验证的领域特定通用智能",
+    "abstract_zh": "Saarthi 是一个代理型人工智能框架，利用多代理协作来执行端到端的形式验证。尽管该框架提供了从规范到覆盖闭合的完整流程，且有效性约为40%，但仍有许多挑战需要解决，以使其更加稳健和可靠。人工通用智能（AGI）仍是一个遥远的目标，目前基于大型语言模型（LLM）的代理在处理复杂任务时，如形式验证，容易出现幻觉和错误。然而，通过适当的增强和改进，我们相信 Saarthi 可以成为实现形式验证领域特定通用智能的重要一步。尤其是对于需要短期、短上下文（STSC）能力的问题，如形式验证，Saarthi 可以成为协助验证工程师工作的强大工具。在本文中，我们提出了对 Saarthi 框架的两个关键增强：(1) 结构化规则手册和规范语法，以提高 SystemVerilog 断言（SVA）生成的准确性和可控性；(2) 集成先进的检索增强生成（RAG）技术，如 GraphRAG，为代理提供技术知识和最佳实践，以迭代优化和改进输出。我们还使用 NVIDIA 的 CVDP 基准测试中的具有挑战性的测试案例对整体 Saarthi 框架的这些增强进行了基准测试，目标是形式验证。我们的基准测试结果显示，生成断言的准确性提高了70%，实现覆盖闭合所需的迭代次数减少了50%。"
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Agentic AI-based Coverage Closure for Formal Verification",
+    "authors": "Sivaram Pothireddypalli, Ashish Raman, Deepak Narayan Gadde, Aman Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03147v1",
+    "source": "arXiv",
+    "abstract": "Coverage closure is a critical requirement in Integrated Chip (IC) development process and key metric for verification sign-off. However, traditional exhaustive approaches often fail to achieve full coverage within project timelines. This study presents an agentic AI-driven workflow that utilizes Large Language Model (LLM)-enabled Generative AI (GenAI) to automate coverage analysis for formal verification, identify coverage gaps, and generate the required formal properties. The framework accelerates verification efficiency by systematically addressing coverage holes. Benchmarking open-source and internal designs reveals a measurable increase in coverage metrics, with improvements correlated to the complexity of the design. Comparative analysis validates the effectiveness of this approach. These results highlight the potential of agentic AI-based techniques to improve formal verification productivity and support comprehensive coverage closure.",
+    "title_zh": "基于代理AI的覆盖闭合用于形式验证",
+    "abstract_zh": "覆盖闭合是集成芯片（IC）开发过程中的关键要求，也是验证签核的重要指标。然而，传统的穷尽方法常常无法在项目时间内实现全面覆盖。本研究提出了一种基于代理AI的工作流程，该流程利用大型语言模型（LLM）支持的生成式AI（GenAI）来自动化形式验证的覆盖分析，识别覆盖缺口，并生成所需的形式属性。该框架通过系统地解决覆盖漏洞来加速验证效率。对开源和内部设计的基准测试显示覆盖指标的显著提高，且改进与设计的复杂性相关。比较分析验证了这种方法的有效性。这些结果突显了基于代理AI的技术在提高形式验证生产力和支持全面覆盖闭合方面的潜力。"
+  },
+  {
+    "date": "2026-03-03",
+    "title": "SpecLoop: An Agentic RTL-to-Specification Framework with Formal Verification Feedback Loop",
+    "authors": "Fu-Chieh Chang, Yu-Hsin Yang, Hung-Ming Huang, Yun-Chia Hsu, Yin-Yu Lin, Ming-Fang Tsai, Chun-Chih Yang, Pei-Yuan Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02895v1",
+    "source": "arXiv",
+    "abstract": "RTL implementations frequently lack up-to-date or consistent specifications, making comprehension, maintenance, and verification costly and error-prone. While prior work has explored generating specifications from RTL using large language models (LLMs), ensuring that the generated documents faithfully capture design intent remains a major challenge. We present SpecLoop, an agentic framework for RTL-to-specification generation with a formal-verification-driven iterative feedback loop. SpecLoop first generates candidate specifications and then reconstructs RTL from these specifications; it uses formal equivalence checking tools between the reconstructed RTL and the original design to validate functional consistency. When mismatches are detected, counterexamples are fed back to iteratively refine the specifications until equivalence is proven or no further progress can be made. Experiments across multiple LLMs and RTL benchmarks show that incorporating formal verification feedback substantially improves specification correctness and robustness over LLM-only baselines, demonstrating the effectiveness of verification-guided specification generation.",
+    "title_zh": "SpecLoop：一种具有形式验证反馈循环的自主RTL到规范框架",
+    "abstract_zh": "RTL实现通常缺乏最新或一致的规范，这使得理解、维护和验证变得昂贵且容易出错。尽管先前的研究已经探索了使用大型语言模型（LLMs）从RTL生成规范，但确保生成的文档忠实地反映设计意图仍然是一个重大挑战。我们提出了SpecLoop，这是一种用于RTL到规范生成的自主框架，具有形式验证驱动的迭代反馈循环。SpecLoop首先生成候选规范，然后从这些规范重建RTL；它使用形式等价检查工具在重建的RTL和原始设计之间验证功能一致性。当检测到不匹配时，反例会被反馈以迭代地完善规范，直到证明等价或无法取得进一步进展。跨多个LLMs和RTL基准的实验表明，结合形式验证反馈显著提高了规范的正确性和稳健性，相较于仅使用LLM的基线，验证引导的规范生成的有效性得到了证明。"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Bridging RTL and Assertion Generation with Large Language Models",
+    "authors": "Jayanth Thangellamudi, Sai Manoj Pudukotai Dinakarrao",
+    "publish": "IEEE Design &amp; Test",
+    "url": "https://doi.org/10.1109/mdat.2026.3670060",
+    "source": "IEEE",
+    "abstract": "The rapid increase in hardware design complexity has made manual verification processes inefficient, error-prone, and unscalable, underscoring the need for robust automated validation. Emerging large language models (LLMs) excel at code generation, however their general training often lacks the domain-specific expertise required for hardware description languages (HDLs) like Verilog, which is essential for reliable automation. To address these challenges, we propose a dual-stage framework that fine-tunes LLaMA2-7B for automated hardware validation, specifically targeting Verilog code and SystemVerilog assertion (SVA) generation. Unlike existing approaches that address these tasks separately, our framework unifies them to significantly reduce manual intervention and enhance verification robustness. Through domain-specific training, our method achieves high syntactic correctness 92% and functional accuracy 93% in code generation, while assertion generation reaches 88% correctness on the RTLLM benchmarks, outperforming state-of-the-art models such as GPT-4 and StarCoder. This comprehensive approach marks a transformative advancement in AI-driven digital circuit design and verification.",
+    "title_zh": "利用大型语言模型连接RTL与断言生成",
+    "abstract_zh": "硬件设计复杂性的迅速增加使得人工验证过程变得低效、容易出错且难以扩展，这凸显了对强大自动化验证的需求。新兴的大型语言模型（LLMs）在代码生成方面表现出色，但其一般训练通常缺乏硬件描述语言（HDLs）如Verilog所需的领域专门知识，这对于可靠的自动化至关重要。为了解决这些挑战，我们提出了一个双阶段框架，专门针对Verilog代码和SystemVerilog断言（SVA）生成，对LLaMA2-7B进行微调以实现自动化硬件验证。与现有的分别处理这些任务的方法不同，我们的框架将它们统一起来，以显著减少人工干预并增强验证的鲁棒性。通过领域专门训练，我们的方法在代码生成中实现了92%的高语法正确性和93%的功能准确性，而断言生成在RTLLM基准测试中达到了88%的正确性，优于最先进的模型如GPT-4和StarCoder。这种全面的方法标志着AI驱动的数字电路设计和验证的变革性进步。"
+  }
+]

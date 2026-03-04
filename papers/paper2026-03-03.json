@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-03",
+    "title": "Speculative Speculative Decoding",
+    "authors": "Tanishq Kumar, Tri Dao, Avner May",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03251v1",
+    "source": "arXiv",
+    "abstract": "Autoregressive decoding is bottlenecked by its sequential nature. Speculative decoding has become a standard way to accelerate inference by using a fast draft model to predict upcoming tokens from a slower target model, and then verifying them in parallel with a single target model forward pass. However, speculative decoding itself relies on a sequential dependence between speculation and verification. We introduce speculative speculative decoding (SSD) to parallelize these operations. While a verification is ongoing, the draft model predicts likely verification outcomes and prepares speculations pre-emptively for them. If the actual verification outcome is then in the predicted set, a speculation can be returned immediately, eliminating drafting overhead entirely. We identify three key challenges presented by speculative speculative decoding, and suggest principled methods to solve each. The result is Saguaro, an optimized SSD algorithm. Our implementation is up to 2x faster than optimized speculative decoding baselines and up to 5x faster than autoregressive decoding with open source inference engines."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Saarthi for AGI: Towards Domain-Specific General Intelligence for Formal Verification",
+    "authors": "Aman Kumar, Deepak Narayan Gadde, Luu Danh Minh, Vaisakh Naduvodi Viswambharan, Keerthan Kopparam Radhakrishna, Sivaram Pothireddypalli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03175v1",
+    "source": "arXiv",
+    "abstract": "Saarthi is an agentic AI framework that uses multi-agent collaboration to perform end-to-end formal verification. Even though the framework provides a complete flow from specification to coverage closure, with around 40% efficacy, there are several challenges that need to be addressed to make it more robust and reliable. Artificial General Intelligence (AGI) is still a distant goal, and current Large Language Model (LLM)-based agents are prone to hallucinations and making mistakes, especially when dealing with complex tasks such as formal verification. However, with the right enhancements and improvements, we believe that Saarthi can be a significant step towards achieving domain-specific general intelligence for formal verification. Especially for problems that require Short Term, Short Context (STSC) capabilities, such as formal verification, Saarthi can be a powerful tool to assist verification engineers in their work. In this paper, we present two key enhancements to the Saarthi framework: (1) a structured rulebook and specification grammar to improve the accuracy and controllability of SystemVerilog Assertion (SVA) generation, and (2) integration of advanced Retrieval Augmented Generation (RAG) techniques, such as GraphRAG, to provide agents with access to technical knowledge and best practices for iterative refinement and improvement of outputs. We also benchmark these enhancements for the overall Saarthi framework using challenging test cases from NVIDIA's CVDP benchmark targeting formal verification. Our benchmark results stand out with a 70% improvement in the accuracy of generated assertions, and a 50% reduction in the number of iterations required to achieve coverage closure."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Agentic AI-based Coverage Closure for Formal Verification",
+    "authors": "Sivaram Pothireddypalli, Ashish Raman, Deepak Narayan Gadde, Aman Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03147v1",
+    "source": "arXiv",
+    "abstract": "Coverage closure is a critical requirement in Integrated Chip (IC) development process and key metric for verification sign-off. However, traditional exhaustive approaches often fail to achieve full coverage within project timelines. This study presents an agentic AI-driven workflow that utilizes Large Language Model (LLM)-enabled Generative AI (GenAI) to automate coverage analysis for formal verification, identify coverage gaps, and generate the required formal properties. The framework accelerates verification efficiency by systematically addressing coverage holes. Benchmarking open-source and internal designs reveals a measurable increase in coverage metrics, with improvements correlated to the complexity of the design. Comparative analysis validates the effectiveness of this approach. These results highlight the potential of agentic AI-based techniques to improve formal verification productivity and support comprehensive coverage closure."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "RAIN: Secure and Robust Aggregation under Shuffle Model of Differential Privacy",
+    "authors": "Yuhang Li, Yajie Wang, Xiangyun Tang, Peng Jiang, Yu-an Tan, Liehuang Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03108v1",
+    "source": "arXiv",
+    "abstract": "Secure aggregation is a foundational building block of privacy-preserving learning, yet achieving robustness under adversarial behavior remains challenging. Modern systems increasingly adopt the shuffle model of differential privacy (Shuffle-DP) to locally perturb client updates and globally anonymize them via shuffling for enhanced privacy protection. However, these perturbations and anonymization distort gradient geometry and remove identity linkage, leaving systems vulnerable to adversarial poisoning attacks. Moreover, the shuffler, typically a third party, can be compromised, undermining security against malicious adversaries. To address these challenges, we present Robust Aggregation in Noise (RAIN), a unified framework that reconciles privacy, robustness, and verifiability under Shuffle-DP. At its core, RAIN adopts sign-space aggregation to robustly measure update consistency and limit malicious influence under noise and anonymization. Specifically, we design two novel secret-shared protocols for shuffling and aggregation that operate directly on additive shares and preserve Shuffle-DP's tight privacy guarantee. In each round, the aggregated result is verified to ensure correct aggregation and detect any selective dropping, achieving malicious security with minimal overhead. Extensive experiments across comprehensive benchmarks show that RAIN maintains strong privacy guarantees under Shuffle-DP and remains robust to poisoning attacks with negligible degradation in accuracy and convergence. It further provides real-time integrity verification with complete tampering detection, while achieving up to 90x lower communication cost and 10x faster aggregation compared with prior work."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Area minimising hypersurfaces mod $p$ do not admit immersed branch points",
+    "authors": "Paul Minter, Sidney Stanbury",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03100v1",
+    "source": "arXiv",
+    "abstract": "We show that area minimising hypersurfaces mod $p$ do not admit immersed branch points, namely branch points about which all classical singularities are immersed. Furthermore, we show that if an $n$-dimensional area minimising hypersurface mod $p$ is smoothly immersed outside a $\\mathcal{H}^{n-1}$-null set, then it is in fact smoothly immersed outside a closed set of Hausdorff dimension at most $n-3$. These results are consequences of a more general analysis of immersed stable minimal hypersurfaces with a certain `alternating' orientation. Indeed, our proof does not rely on the minimising property other than through stationarity, stability, and the verification of simple structural properties of the hypersurface."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Safe and Robust Domains of Attraction for Discrete-Time Systems: A Set-Based Characterization and Certifiable Neural Network Estimation",
+    "authors": "Mohamed Serry, Maxwell Fitzsimmons, Jun Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03082v1",
+    "source": "arXiv",
+    "abstract": "Analyzing nonlinear systems with attracting robust invariant sets (RISs) requires estimating their domains of attraction (DOAs). Despite extensive research, accurately characterizing DOAs for general nonlinear systems remains challenging due to both theoretical and computational limitations, particularly in the presence of uncertainties and state constraints. In this paper, we propose a novel framework for the accurate estimation of safe (state-constrained) and robust DOAs for discrete-time nonlinear uncertain systems with continuous dynamics, open safe sets, compact disturbance sets, and uniformly locally $\\ell_p$-stable compact RISs. The notion of uniform $\\ell_p$ stability is quite general and encompasses, as special cases, uniform exponential and polynomial stability. The DOAs are characterized via newly introduced value functions defined on metric spaces of compact sets. We establish their fundamental mathematical properties and derive the associated Bellman-type (Zubov-type) functional equations. Building on this characterization, we develop a physics-informed neural network (NN) framework to learn the corresponding value functions by embedding the derived Bellman-type equations directly into the training process. To obtain certifiable estimates of the safe robust DOAs from the learned neural approximations, we further introduce a verification procedure that leverages existing formal verification tools. The effectiveness and applicability of the proposed methodology are demonstrated through four numerical examples involving nonlinear uncertain systems subject to state constraints, and its performance is compared with existing methods from the literature."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "V3DB: Audit-on-Demand Zero-Knowledge Proofs for Verifiable Vector Search over Committed Snapshots",
+    "authors": "Zipeng Qiu, Wenjie Qu, Jiaheng Zhang, Binhang Yuan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03065v1",
+    "source": "arXiv",
+    "abstract": "Dense retrieval services increasingly underpin semantic search, recommendation, and retrieval-augmented generation, yet clients typically receive only a top-$k$ list with no auditable evidence of how it was produced. We present V3DB, a verifiable, versioned vector-search service that enables audit-on-demand correctness checks for approximate nearest-neighbour (ANN) retrieval executed by a potentially untrusted service provider. V3DB commits to each corpus snapshot and standardises an IVF-PQ search pipeline into a fixed-shape, five-step query semantics. Given a public snapshot commitment and a query embedding, the service returns the top-$k$ payloads and, when challenged, produces a succinct zero-knowledge proof that the output is exactly the result of executing the published semantics on the committed snapshot -- without revealing the embedding corpus or private index contents. To make proving practical, V3DB avoids costly in-circuit sorting and random access by combining multiset equality/inclusion checks with lightweight boundary conditions. Our prototype implementation based on Plonky2 achieves up to $22\\times$ faster proving and up to $40\\%$ lower peak memory consumption than the circuit-only baseline, with millisecond-level verification time. Github Repo at https://github.com/TabibitoQZP/zk-IVF-PQ."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "IoUCert: Robustness Verification for Anchor-based Object Detectors",
+    "authors": "Benedikt Brückner, Alejandro Mercado, Yanghao Zhang, Panagiotis Kouvaros, Alessio Lomuscio",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03043v1",
+    "source": "arXiv",
+    "abstract": "While formal robustness verification has seen significant success in image classification, scaling these guarantees to object detection remains notoriously difficult due to complex non-linear coordinate transformations and Intersection-over-Union (IoU) metrics. We introduce {\\sc \\sf IoUCert}, a novel formal verification framework designed specifically to overcome these bottlenecks in foundational anchor-based object detection architectures. Focusing on the object localisation component in single-object settings, we propose a coordinate transformation that enables our algorithm to circumvent precision-degrading relaxations of non-linear box prediction functions. This allows us to optimise bounds directly with respect to the anchor box offsets which enables a novel Interval Bound Propagation method that derives optimal IoU bounds. We demonstrate that our method enables, for the first time, the robustness verification of realistic, anchor-based models including SSD, YOLOv2, and YOLOv3 variants against various input perturbations."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Step-Level Sparse Autoencoder for Reasoning Process Interpretation",
+    "authors": "Xuan Yang, Jiayu Liu, Yuhang Lai, Hao Xu, Zhenya Huang, Ning Miao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03031v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have achieved strong complex reasoning capabilities through Chain-of-Thought (CoT) reasoning. However, their reasoning patterns remain too complicated to analyze. While Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpretability, existing approaches predominantly operate at the token level, creating a granularity mismatch when capturing more critical step-level information, such as reasoning direction and semantic transitions. In this work, we propose step-level sparse autoencoder (SSAE), which serves as an analytical tool to disentangle different aspects of LLMs' reasoning steps into sparse features. Specifically, by precisely controlling the sparsity of a step feature conditioned on its context, we form an information bottleneck in step reconstruction, which splits incremental information from background information and disentangles it into several sparsely activated dimensions. Experiments on multiple base models and reasoning tasks show the effectiveness of the extracted features. By linear probing, we can easily predict surface-level information, such as generation length and first token distribution, as well as more complicated properties, such as the correctness and logicality of the step. These observations indicate that LLMs should already at least partly know about these properties during generation, which provides the foundation for the self-verification ability of LLMs. The code is available at https://github.com/Miaow-Lab/SSAE"
+  },
+  {
+    "date": "2026-03-03",
+    "title": "MA-CoNav: A Master-Slave Multi-Agent Framework with Hierarchical Collaboration and Dual-Level Reflection for Long-Horizon Embodied VLN",
+    "authors": "Ling Luo, Qianqian Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03024v1",
+    "source": "arXiv",
+    "abstract": "Vision-Language Navigation (VLN) aims to empower robots with the ability to perform long-horizon navigation in unfamiliar environments based on complex linguistic instructions. Its success critically hinges on establishing an efficient ``language-understanding -- visual-perception -- embodied-execution'' closed loop. Existing methods often suffer from perceptual distortion and decision drift in complex, long-distance tasks due to the cognitive overload of a single agent. Inspired by distributed cognition theory, this paper proposes MA-CoNav, a Multi-Agent Collaborative Navigation framework. This framework adopts a ``Master-Slave'' hierarchical agent collaboration architecture, decoupling and distributing the perception, planning, execution, and memory functions required for navigation tasks to specialized agents. Specifically, the Master Agent is responsible for global orchestration, while the Subordinate Agent group collaborates through a clear division of labor: an Observation Agent generates environment descriptions, a Planning Agent performs task decomposition and dynamic verification, an Execution Agent handles simultaneous mapping and action, and a Memory Agent manages structured experiences. Furthermore, the framework introduces a ``Local-Global'' dual-stage reflection mechanism to dynamically optimize the entire navigation pipeline. Empirical experiments were conducted using a real-world indoor dataset collected by a Limo Pro robot, with no scene-specific fine-tuning performed on the models throughout the process. The results demonstrate that MA-CoNav comprehensively outperforms existing mainstream VLN methods across multiple metrics."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Dynamic Contract Analysis for Parallel Programming Models",
+    "authors": "Yussur Mustafa Oraji, Alexander Hück, Christian Bischof",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03023v1",
+    "source": "arXiv",
+    "abstract": "Parallel programming in high-performance computing depends on low-level APIs such as MPI, requiring users to manage synchronization and resources manually. Several correctness checking tools exist to help bug-free code development, though most target a single programming model, limiting their applicability. Our previous work, the static analysis tool CoVer, leverages a contract-based approach enabling users to specify custom error-checking rules and support emerging or unconventional programming models without requiring extensive new tooling. However, static analysis cannot fully reason about runtime-dependent behavior such as pointer aliasing or indirect control flow. To address this, we present CoVer-Dynamic, a dynamic analysis extension that reuses CoVer's contract language to provide a unified static-dynamic verification framework. By enforcing the same contracts at runtime, CoVer-Dynamic improves classification accuracy and eliminates false positives on standardized MPI and OpenSHMEM benchmarks, while detecting errors beyond static analysis only. Our evaluation shows that CoVer-Dynamic consistently outperforms the state-of-the-art correctness checker MUST, averaging a 2x speedup. Finally, our results show limitations in the expressiveness of the contract language, motivating future work to support more error classes."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Delegation and Verification Under AI",
+    "authors": "Lingxiao Huang, Wenyang Xiao, Nisheeth K. Vishnoi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02961v1",
+    "source": "arXiv",
+    "abstract": "As AI systems enter institutional workflows, workers must decide whether to delegate task execution to AI and how much effort to invest in verifying AI outputs, while institutions evaluate workers using outcome-based standards that may misalign with workers' private costs. We model delegation and verification as the solution to a rational worker's optimization problem, and define worker quality by evaluating an institution-centered utility (distinct from the worker's objective) at the resulting optimal action. We formally characterize optimal worker workflows and show that AI induces *phase transitions*, where arbitrarily small differences in verification ability lead to sharply different behaviors. As a result, AI can amplify workers with strong verification reliability while degrading institutional worker quality for others who rationally over-delegate and reduce oversight, even when baseline task success improves and no behavioral biases are present. These results identify a structural mechanism by which AI reshapes institutional worker quality and amplifies quality disparities between workers with different verification reliability."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Changing Pedagogical Paradigms: Integrating Generative AI in Mathematics to Enhance Digital Literacy through 'Mathematical Battles with AI'",
+    "authors": "Maria Moskalenko, Alexander Trifanov, Roman Popkov, Arina Tabieva, Maria Smirnova, Konstantin Pravdin, Daniil Bakalin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02955v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces `Math Battles with AI', an innovative competitive format designed at ITMO University to redefine the role of generative AI in mathematics education. Moving away from a purely defensive stance, the authors propose an AI agent with intentionally increased hallucination likelihood in specific modes to train verification skills. We describe the three-stage tournament structure and a specialized assessment system that rewards critical verification over blind reliance. Initial results indicate a significant shift in student mindsets, fostering essential skills in digital hygiene and prompt engineering. This work serves as a practical guide for academic institutions aiming to leverage AI for enhancing, rather than undermining, intellectual development."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "SpecLoop: An Agentic RTL-to-Specification Framework with Formal Verification Feedback Loop",
+    "authors": "Fu-Chieh Chang, Yu-Hsin Yang, Hung-Ming Huang, Yun-Chia Hsu, Yin-Yu Lin, Ming-Fang Tsai, Chun-Chih Yang, Pei-Yuan Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02895v1",
+    "source": "arXiv",
+    "abstract": "RTL implementations frequently lack up-to-date or consistent specifications, making comprehension, maintenance, and verification costly and error-prone. While prior work has explored generating specifications from RTL using large language models (LLMs), ensuring that the generated documents faithfully capture design intent remains a major challenge. We present SpecLoop, an agentic framework for RTL-to-specification generation with a formal-verification-driven iterative feedback loop. SpecLoop first generates candidate specifications and then reconstructs RTL from these specifications; it uses formal equivalence checking tools between the reconstructed RTL and the original design to validate functional consistency. When mismatches are detected, counterexamples are fed back to iteratively refine the specifications until equivalence is proven or no further progress can be made. Experiments across multiple LLMs and RTL benchmarks show that incorporating formal verification feedback substantially improves specification correctness and robustness over LLM-only baselines, demonstrating the effectiveness of verification-guided specification generation."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Eval4Sim: An Evaluation Framework for Persona Simulation",
+    "authors": "Eliseo Bao, Anxo Perez, Xi Wang, Javier Parapar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02876v1",
+    "source": "arXiv",
+    "abstract": "Large Language Model (LLM) personas with explicit specifications of attributes, background, and behavioural tendencies are increasingly used to simulate human conversations for tasks such as user modeling, social reasoning, and behavioural analysis. Ensuring that persona-grounded simulations faithfully reflect human conversational behaviour is therefore critical. However, current evaluation practices largely rely on LLM-as-a-judge approaches, offering limited grounding in observable human behavior and producing opaque scalar scores. We address this gap by proposing Eval4Sim, an evaluation framework that measures how closely simulated conversations align with human conversational patterns across three complementary dimensions. Adherence captures how effectively persona backgrounds are implicitly encoded in generated utterances, assessed via dense retrieval with speaker-aware representations. Consistency evaluates whether a persona maintains a distinguishable identity across conversations, computed through authorship verification. Naturalness reflects whether conversations exhibit human-like flow rather than overly rigid or optimized structure, quantified through distributions derived from dialogue-focused Natural Language Inference. Unlike absolute or optimization-oriented metrics, Eval4Sim uses a human conversational corpus (i.e., PersonaChat) as a reference baseline and penalizes deviations in both directions, distinguishing insufficient persona encoding from over-optimized, unnatural behaviour. Although demonstrated on PersonaChat, the applicability of Eval4Sim extends to any conversational corpus containing speaker-level annotations."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Floating-point consistent cross-verification methodology for reproducible and interoperable DDA solvers with fair benchmarking",
+    "authors": "Clément Argentin, Patrick C. Chaumet, Michel Gross, Maxim A. Yurkin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02871v1",
+    "source": "arXiv",
+    "abstract": "The discrete dipole approximation (DDA) is a widely used and versatile numerical method for solving electromagnetic scattering by arbitrarily shaped objects. Despite its popularity, quantitative comparisons between independent implementations remain challenging due to differences in linear-system conventions, solver settings, and default numerical parameters. In this work, we introduce a unified software-assisted methodology for cross-verification and benchmarking of three major open-source DDA solvers: DDSCAT, ADDA, and IFDDA. We demonstrate how machine-precision agreement can be achieved across implementations by aligning all free parameters and provide practical equivalence tables enabling reproducible and interoperable simulations. Using this methodology, we perform systematic CPU and GPU performance comparisons covering OpenMP, MPI, and CUDA/OpenCL parallelization. Beyond benchmarking, our approach serves as a practical guide for configuring consistent DDA simulations and for understanding how precision, solver choice, and hardware architecture affect runtime, scalability, and accuracy in computational light-scattering studies. The software package also supports regression testing and bitwise reproducibility verification for future code releases."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "A Browser-based Open Source Assistant for Multimodal Content Verification",
+    "authors": "Rosanna Milner, Michael Foster, Olesya Razuvayevskaya, Ian Roberts, Valentin Porcellini, Denis Teyssou, Kalina Bontcheva",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02842v1",
+    "source": "arXiv",
+    "abstract": "Disinformation and false content produced by generative AI pose a significant challenge for journalists and fact-checkers who must rapidly verify digital media information. While there is an abundance of NLP models for detecting credibility signals such as persuasion techniques, subjectivity, or machine-generated text, such methods often remain inaccessible to non-expert users and are not integrated into their daily workflows as a unified framework. This paper demonstrates the VERIFICATION ASSISTANT, a browser-based tool designed to bridge this gap. The VERIFICATION ASSISTANT, a core component of the widely adopted VERIFICATION PLUGIN (140,000+ users), allows users to submit URLs or media files to a unified interface. It automatically extracts content and routes it to a suite of backend NLP classifiers, delivering actionable credibility signals, estimating AI-generated content, and providing other verification guidance in a clear, easy-to-digest format. This paper showcases the tool architecture, its integration of multiple NLP services, and its real-world application to detecting disinformation."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Charging power enhancement at the phase transition of a non-integrable quantum battery",
+    "authors": "D. Farina, M. Sassetti, V. Cataudella, D. Ferraro, N. Traverso Ziani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02819v1",
+    "source": "arXiv",
+    "abstract": "Exploiting many-body interaction and critical phenomena to improve the performance of quantum batteries is an emerging and promising line of research. A central question in this direction is whether quantum phase transitions can enhance the charging energy or the power. While preliminary works have addressed this problem in fine-tuned integrable models, its characterization in non-integrable systems remains limited due to the demanding numerical requirements. Here, we investigate a one-dimensional Axial Next-Nearest-Neighbor Ising model as an example of non-integrable quantum battery charged via a quantum-quench protocol. In contrast to integrable cases, we find that criticality in this setting can lead to a pronounced enhancement of the charging power. Our findings inform quantum-battery design of many-qubit systems and are amenable to experimental verification on current quantum-simulation platforms, including neutral-atom arrays."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Guideline-Grounded Evidence Accumulation for High-Stakes Agent Verification",
+    "authors": "Yichi Zhang, Nabeel Seedat, Yinpeng Dong, Peng Cui, Jun Zhu, Mihaela van de Schaar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02798v1",
+    "source": "arXiv",
+    "abstract": "As LLM-powered agents have been used for high-stakes decision-making, such as clinical diagnosis, it becomes critical to develop reliable verification of their decisions to facilitate trustworthy deployment. Yet, existing verifiers usually underperform owing to a lack of domain knowledge and limited calibration. To address this, we establish GLEAN, an agent verification framework with Guideline-grounded Evidence Accumulation that compiles expert-curated protocols into trajectory-informed, well-calibrated correctness signals. GLEAN evaluates the step-wise alignment with domain guidelines and aggregates multi-guideline ratings into surrogate features, which are accumulated along the trajectory and calibrated into correctness probabilities using Bayesian logistic regression. Moreover, the estimated uncertainty triggers active verification, which selectively collects additional evidence for uncertain cases via expanding guideline coverage and performing differential checks. We empirically validate GLEAN with agentic clinical diagnosis across three diseases from the MIMIC-IV dataset, surpassing the best baseline by 12% in AUROC and 50% in Brier score reduction, which confirms the effectiveness in both discrimination and calibration. In addition, the expert study with clinicians recognizes GLEAN's utility in practice."
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Decoupling Intrinsic Molecular Efficacy from Platform Effects: An Interpretable Machine Learning Framework for Unbiased Perovskite Passivator Discovery",
+    "authors": "Jing Zhang, Ziyuan Li, Shan Gao, Zhen Zhu, Jing Wang, Xiangmei Duan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.02717v1",
+    "source": "arXiv",
+    "abstract": "Rational design of interface passivators for perovskite solar cells is hindered by the entanglement of intrinsic molecular efficacy with extrinsic platform-dependent performance - a confounding factor that obscures true chemical advances. Here, we present a generalizable, interpretable machine learning framework that decouples these effects via an asymptotic saturation model, enabling unbiased discovery of molecules with genuine intrinsic gains. Trained on a curated dataset of 240 experimental entries, our model identifies hydrogen bond acceptor strength and electrostatic potential difference as key descriptors. Guided by these insights, we screened >121 million PubChem compounds using a hierarchical strategy integrating diversity clustering and uncertainty quantification. Five dual-functional candidates (e.g., TDZ-S, TZC-F) are identified, exhibiting superior predicted efficacy (surpassing experimental benchmarks) and high confidence. First-principles calculations confirm strong chemisorption (Eads<-1.7 eV), net electron donation, and optimized interfacial energetics. Crucially, our closed-loop \"data-interpretation-screening-verification\" pipeline establishes a transferable paradigm for rational materials design, extendable to other optoelectronic interfaces beyond perovskites."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces",
+    "authors": "Runtao Zhou, Giang Nguyen, Nikita Kharya, Anh Nguyen, Chirag Agarwal",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789134",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Trustworthy LLM-Mediated Communication: Evaluating Information Fidelity in LLM as a Communicator (LAAC) Framework in Multiple Application Domains",
+    "authors": "Mohammed Musthafa Rafi, Adarsh Krishnamurthy, Aditya Balu",
+    "publish": "2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)",
+    "url": "https://doi.org/10.1109/tps-isa67132.2025.00078",
+    "source": "IEEE",
+    "abstract": "The proliferation of AI-generated content has created an absurd communication theater where senders use LLMs to inflate simple ideas into verbose content, recipients use LLMs to compress them back into summaries, and as a consequence neither party engage with authentic content. LAAC (LLM as a Communicator) proposes a paradigm shift—positioning LLMs as intelligent communication intermediaries that capture the sender's intent through structured dialogue and facilitate genuine knowledge exchange with recipients. Rather than perpetuating cycles of AI-generated inflation and compression, LAAC enables authentic communication across diverse contexts including academic papers, proposals, professional emails, and cross-platform content generation. However, deploying LLMs as trusted communication intermediaries raises critical questions about information fidelity, consistency, and reliability. This position paper systematically evaluates the trustworthiness requirements for LAAC's deployment across multiple communication domains. We investigate three fundamental dimensions: (1) Information Capture Fidelity—accuracy of intent extraction during sender interviews across different communication types, (2) Reproducibility-consistency of structured knowledge across multiple interaction instances, and (3) Query Response Integrity—reliability of recipient-facing responses without hallucination, source conflation, or fabrication. Through controlled experiments spanning multiple LAAC use cases, we assess these trust dimensions using LAAC's multi-agent architecture. Preliminary findings reveal measurable trust gaps that must be addressed before LAAC can be reliably deployed in high-stakes communication scenarios."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Bridging RTL and Assertion Generation with Large Language Models",
+    "authors": "Jayanth Thangellamudi, Sai Manoj Pudukotai Dinakarrao",
+    "publish": "IEEE Design &amp; Test",
+    "url": "https://doi.org/10.1109/mdat.2026.3670060",
+    "source": "IEEE",
+    "abstract": "The rapid increase in hardware design complexity has made manual verification processes inefficient, error-prone, and unscalable, underscoring the need for robust automated validation. Emerging large language models (LLMs) excel at code generation, however their general training often lacks the domain-specific expertise required for hardware description languages (HDLs) like Verilog, which is essential for reliable automation. To address these challenges, we propose a dual-stage framework that fine-tunes LLaMA2-7B for automated hardware validation, specifically targeting Verilog code and SystemVerilog assertion (SVA) generation. Unlike existing approaches that address these tasks separately, our framework unifies them to significantly reduce manual intervention and enhance verification robustness. Through domain-specific training, our method achieves high syntactic correctness 92% and functional accuracy 93% in code generation, while assertion generation reaches 88% correctness on the RTLLM benchmarks, outperforming state-of-the-art models such as GPT-4 and StarCoder. This comprehensive approach marks a transformative advancement in AI-driven digital circuit design and verification."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "LLM-Assisted Cheating Detection in Korean Language via Keystrokes",
+    "authors": "Dong Hyun Roh, Rajesh Kumar, An Ngo",
+    "publish": "2025 IEEE International Joint Conference on Biometrics (IJCB)",
+    "url": "https://doi.org/10.1109/ijcb65343.2025.11411145",
+    "source": "IEEE",
+    "abstract": "This paper presents a keystroke-based framework for detecting LLM-assisted cheating in Korean, addressing key gaps in prior research regarding language coverage, cognitive context, and the granularity of LLM involvement. Our proposed dataset includes 69 participants who completed writing tasks under three conditions: Bona fide writing, paraphrasing ChatGPT responses, and transcribing Chat-GPT responses. Each task spans six cognitive processes defined in Bloom’s Taxonomy (remember, understand, apply, analyze, evaluate, and create). We extract interpretable temporal and rhythmic features and evaluate multiple classifiers under both Cognition-Aware and Cognition-Unaware settings. Temporal features perform well under Cognition-Aware evaluation scenarios, while rhythmic features generalize better under cross-cognition scenarios. Moreover, detecting bona fide and transcribed responses was easier than paraphrased ones for both the proposed models and human evaluators, with the models significantly outperforming the humans. Our findings affirm that keystroke dynamics facilitate reliable detection of LLM-assisted writing across varying cognitive demands and writing strategies, including paraphrasing and transcribing LLM-generated responses."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Assessment of Integrating Llm in Websites Localisation Service",
+    "authors": "Evgeniya Svintsova, Sahar Al-Sudani, Mohamed Chahine Ghanem",
+    "publish": "2025 8th Conference on Cloud and Internet of Things (CIoT)",
+    "url": "https://doi.org/10.1109/ciot67574.2025.11410137",
+    "source": "IEEE",
+    "abstract": "This paper introduces a novel integration of Large Language Models (LLMs) into website localisation services through a prompt-engineering-first approach. Traditional localisation methodologies have established trade-offs between quality, cost, and efficiency. The research explores how focusing on prompt engineering rather than post-translation editing can fundamentally transform localisation workflows while maintaining highquality outputs. A practical case study involving the localisation of a cross-platform application demonstrates superior quality compared to specialised translation services while offering significant advantages in maintaining marketing tone and reducing implementation complexity. The findings indicate that for projects with marketing-focused content and moderate translation volume, the LLM approach with focused prompt engineering represents a superior solution compared to traditional translation services."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Vulnerability of LLM Outputs to Heuristics-Inducing Prompt Structures",
+    "authors": "Toshiki Kuramoto, Ryohei Kamei, Jun Suzuki",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789108",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Athena: Intermediate Representations for Iterative Scaffolded App Generation with an LLM",
+    "authors": "Jon-Tait Beason, Ruijia Cheng, Eldon Schoop, Jeffrey Nichols",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789133",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Topic Modeling Analysis of Ethical Framework Separability in LLM-Generated Moral Justifications",
+    "authors": "Bishal Thapa, Heena Rathore",
+    "publish": "2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)",
+    "url": "https://doi.org/10.1109/tps-isa67132.2025.00079",
+    "source": "IEEE",
+    "abstract": "As AI systems increasingly engage in ethical decision-making in sensitive applications like healthcare, autonomous systems, and legal matters, understanding and validating their moral reasoning has become critical for trustworthy deployment. While philosophical literature distinguishes between major ethical frameworks such as Deontology, Utilitarianism, Justice, Virtue Ethics, and Commonsense Morality, it remains unclear whether large language models (LLMs) generate meaningfully distinct reasoning patterns when prompted under different theoretical perspectives. We investigate this question by introducing a controlled, same-scenario, multi-framework corpus of more than 38K GPT-oss and LLaMA-4-Scout generated ethical justifications responding to identical moral dilemmas from the ETHICS dataset. We employ shared BERTopic modeling across all theories to assess cross-theory separability, and per-theory BERTopic modeling to characterize framework-specific thematic structures. Topics were evaluated using purity (majority-theory share), embedding-based coherence (semantic consistency), and alignment to canonical philosophical keywords. Our findings demonstrate that ethical theories produce identifiable linguistic signatures, validating transformer-based topic modeling as an interpretability tool to analyze AI moral reasoning and providing computational evidence for philosophical ethical framework separability."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Integrating LLM in Privacy-Sensitive Age Estimation: A Tongue-Based Biometric Framework",
+    "authors": "Jian Hwee Ang, Aotong Li, Jintao Wang, Bob Zhang",
+    "publish": "2025 IEEE International Joint Conference on Biometrics (IJCB)",
+    "url": "https://doi.org/10.1109/ijcb65343.2025.11410665",
+    "source": "IEEE",
+    "abstract": "Facial age estimation has been widely adopted in the last decade, yet it presents critical privacy issues, such as susceptibility to unauthorized exposure. In contrast, tongue imagery has emerged as a promising alternative to traditional facial age estimation methods, offering improved privacy through reduced identifiability compared to facial imagery. This paper introduces a novel framework for age estimation using tongue imagery, addressing privacy concerns associated with facial recognition technologies. Our method takes advantage of a three-module approach: segmentation, quality control, and prediction, to estimate the age from tongue images. The segmentation module employs a zero-shot inference technique using the Large Language Instructed Segmentation Assistant (LISA) to accurately segment the tongue from its oral cavity images. Subsequent quality assessment of these segmentations is performed in the quality control module, ensuring only high-quality images proceed to the prediction stage. The age prediction module then employs an ensemble of EfficientNet B2 models, fine-tuned and optimized for age prediction from tongue imagery. Our experimental results derived from a newly collected dataset consisting of 9,767 tongue and facial images spanning diverse age groups demonstrate that the proposed method achieves an accuracy comparable to traditional facial age estimation techniques. This study not only provides an alternative approach to facial biometrics for age estimation but also enhances user privacy, making it particularly suitable for privacy-sensitive applications in healthcare and biometric monitoring."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "FUSION: Financial Unstructured and Structured Information Optimization Using LLM Navigation",
+    "authors": "Aditya S. Chandra, Anisha S. Chandra, Varish Gahlot",
+    "publish": "2025 IEEE First International Conference on Innovations in Engineering and Next-Generation Technologies for Sustainability (ICINVENTS)",
+    "url": "https://doi.org/10.1109/icinvents64613.2025.11401395",
+    "source": "IEEE",
+    "abstract": "Forecasting of equity markets is done using structured data like historical stocks prices, company's financials, and economic trends. However, this forecast can be further improved by adding unstructured sources like analyst opinions, transcripts from earnings calls, and financial news stories. These attributes can add important context that numbers alone might miss. This paper introduces FUSION, a system designed to integrate these unstructured insights into market forecasting. It follows a multi-stage pipeline that includes tailored data ingestion, financial-specific text chunking, and a dual-indexing setup that combines both keyword-based and vector-based search to enable more nuanced information retrieval. We test four retrieval strategies-classic keyword search, pure vector retrieval, hybrid methods, and vector retrieval with re-ranking-on a curated dataset of 315 financial documents and 20 benchmark questions, cross-validated with the FinQA dataset. Using ROUGE scores and expert feedback, our results show that vectorization combined with re-ranking significantly boosts both the relevance and clarity of LLMgenerated outputs. The study highlights how FUSION helps bridge the gap between narrative financial analysis and structured data, offering a scalable solution for deeper market understanding. We also discuss practical challenges, such as integrating real-time feeds and adapting LLMs to financial language, as key areas for future work."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "CoAutoML: User Interface Framework for Machine Learning Novices using LLM-based AutoML and Test-Driven Machine Teaching",
+    "authors": "Valeria Starkova, Iris Howley",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789153",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "JPPO++: Joint Power and Denoising-Inspired Prompt Optimization for Mobile LLM Services",
+    "authors": "Feiran You, Hongyang Du, Kaibin Huang, Abbas Jamalipour",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3669711",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) are increasingly integrated into mobile services over wireless networks to support complex user requests. This trend has led to longer prompts, which improve LLMs' performance but increase data transmission costs and require more processing time, thereby reducing overall system efficiency and negatively impacting user experience. To address these challenges, we propose Joint Prompt and Power Optimization (JPPO), a framework that jointly optimizes prompt compression and wireless transmission power for mobile LLM services. JPPO leverages a Small Language Model (SLM) deployed at edge devices to perform lightweight prompt compression, reducing communication load before transmission to the cloud-based LLM. A Deep Reinforcement Learning (DRL) agent dynamically adjusts both the compression ratio and transmission power based on network conditions and service constraints, aiming to minimize service time while preserving response fidelity. We further extend the framework to JPPO++, which introduces a denoising-inspired compression scheme. This design performs iterative prompt refinement by progressively removing less informative tokens, allowing for more aggressive yet controlled compression. Experimental results show that JPPO++ reduces service time by 17% compared to the no-compression baseline while maintaining output quality. Under compression-prioritized settings, a reduction of up to <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$16\\times$</tex-math></inline-formula> in prompt length can be achieved with an acceptable loss in accuracy. Specifically, JPPO with a <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$16\\times$</tex-math></inline-formula> ratio reduces total service time by approximately 42.3%, and JPPO++ further improves this reduction to 46.5%."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Smarter Together: Enhancing Human-AI Collaborative Grading With Teacher-Cognition Multi-Agent LLM Framework",
+    "authors": "Sanskriti Uma, Surjya Ghosh, Dio Dzaky Achmad Mustaqim",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789130",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Key Considerations for Domain Expert Involvement in LLM Design and Evaluation: An Ethnographic Study",
+    "authors": "Annalisa Szymanski, Oghenemaro Anuyah, Toby Jia-Jun Li, Ronald Metoyer",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789105",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "User Compliance and Awareness towards Persuasive XAI: Investigating the Rhetorical Layer of LLM-generated Explanations",
+    "authors": "Dacia Braca, Ambika Shahu, Dinara Talypova, Philipp Wintersberger, Nina Hubig",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789102",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "\"Un-default\" Behavior Tuning: Specifying Model Behavior outside the Norm with LLM Self-Playing and Self-Improving",
+    "authors": "Soya Park, J.D. Zamfirescu-Pereira, Chinmay Kulkarni",
+    "publish": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742413.3789119",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-3",
+    "title": "DOPD: A Dynamic PD-Disaggregation Architecture for Maximizing Goodput in LLM Inference Serving",
+    "authors": "Junhan Liao, Minxian Xu, Wanyi Zheng, Yan Wang, Kejiang Ye, Rajkumar Buyya, Chengzhong Xu",
+    "publish": "IEEE Transactions on Services Computing",
+    "url": "https://doi.org/10.1109/tsc.2026.3670011",
+    "source": "IEEE",
+    "abstract": "To meet strict Service-Level Objectives (SLO), contemporary Large Language Models (LLMs) decouple the prefill and decoding stages and place them on separate GPUs to mitigate the distinct bottlenecks inherent to each stage. However, the heterogeneity of LLM workloads causes producer-consumer imbalance between the two instance types in such disaggregated architecture. To address this problem, we propose DOPD (Dynamic Optimal Prefill/Decoding), a dynamic LLM inference system that adjusts instance allocations to achieve an optimal prefill-to-decoding (P/D) ratio based on real-time load monitoring. Combined with an appropriate request-scheduling policy, DOPD effectively resolves imbalances between prefill and decoding instances and mitigates resource allocation mismatches due to mixed-length requests under high concurrency. Experimental evaluations show that, compared with vLLM and DistServe (representative aggregation-based and disaggregation-based approaches), DOPD improves overall system goodput by up to <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$1.5\\times$</tex-math></inline-formula>, decreases P90 time-to-first-token (TTFT) by up to 67.5%, and decreases P90 time-per-output-token (TPOT) by up to 22.8%. Furthermore, our dynamic P/D adjustment technique performs proactive reconfiguration based on historical load, achieving over 99% SLO attainment while using fewer additional resources."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Learning from Literature: A Retraining-Free Framework for LLM Jailbreak Defense via NLP-Based Adversarial Literature Analysis",
+    "authors": "Sheikh Samit Muhaimin, Spyridon Mastorakis",
+    "publish": "2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)",
+    "url": "https://doi.org/10.1109/tps-isa67132.2025.00036",
+    "source": "IEEE",
+    "abstract": "Recent surge in adoption of Large Language Models (LLMs) have made them vulnerable to sophisticated adversarial attacks, manipulative prompts, and encoded malicious inputs. Existing countermeasures often require retraining models, a process that is computationally expensive and impractical for deployment. This paper introduces a novel defense framework that enables LLMs to autonomously detect, filter, and fend off malicious or adversarial inputs without requiring retraining or fine-tuning. The proposed framework consists of two core components: (1) A summarization module that processes and summarizes adversarial research literature to provide the LLM with context-aware defense knowledge and (2) A prompt filtering module that detects, decodes, and classifies harmful inputs through advanced Natural Language Processing (NLP) techniques, such as zero-shot classification, keyword analysis, and encoded content detection. By combining text extraction, summarization, and malicious prompt analysis, this approach enhances the robustness of LLMs against adversarial misuse. Experimental results demonstrate that this integrated approach successfully identifies encoded prompts, malicious patterns, and manipulative language structures with a success rate of 98.7%. The framework also enables the model to respond appropriately to malicious prompts with a higher percentage of jailbreak resistance and refusal rate, using minimal quantity of adversarial research literature as context. The framework significantly reduces LLM Attack Success Rate (ASR) as a lightweight, efficient alternative to retraining-based time and resource-consuming defenses, while upholding LLM response quality."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "KG-LLM: A Framework for Intrusion Detection in 6G Industrial Internet of Things",
+    "authors": "Gaofeng Wang, Xinyu Hong, Xiaoming He, Yinqiu Liu, Yan Hong, Mingkai Chen, Yunzhe Jiang, Hadeel Alsolai, Shahid Mumtaz",
+    "publish": "IEEE Network",
+    "url": "https://doi.org/10.1109/mnet.2026.3659223",
+    "source": "IEEE",
+    "abstract": "With the deep integration of Sixth-generation (6G) networks and the Industrial Internet of Things (IIoT), security threats are becoming increasingly sophisticated. Recently, Large language models (LLMs) have demonstrated unique potential in handling massive heterogeneous data and unknown attack patterns within 6G-enabled IIoT environments. However, challenges remain in terms of addressing fragmented information and complicated and high-dimensional spatio-temporal correlation in industrial contexts. To this end, this article proposes an intrusion detection framework that integrates Knowledge Graphs (KGs) with LLMs. We first systematically review the key technologies of 6G IIoT and LLMs, and analyze in depth the application of LLMs to intrusion detection in 6G IIoT as well as the associated challenges. The framework encodes domain knowledge into structured KGs and fuses them with LLMs, thereby enhancing the model’s capability to understand and reason about attack behaviors in complex industrial scenarios. Extensive experiments demonstrate that the proposed KG-LLM achieves superior performance in intrusion detection, outperforming traditional machine learning models such as XGBoost, Random Forest, and Logistic Regression in accuracy, precision, recall, and F1-score. The model particularly excels in detecting attacks, showing robust performance even under noisy conditions. Finally, we discuss promising future research directions."
+  },
+  {
+    "date": "2026-3-3",
+    "title": "Clone What You Can't Steal: Black-Box LLM Replication via Logit Leakage and Distillation",
+    "authors": "Kanchon Gharami, Hansaka Aluvihare, Shafika Showkat Moni, Berker Peköz",
+    "publish": "2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)",
+    "url": "https://doi.org/10.1109/tps-isa67132.2025.00024",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) are increasingly deployed in mission-critical systems, facilitating tasks such as satellite operations, command-and-control, military decision support, and cyber defense. Many of these systems are accessed through application programming interfaces (APIs). When such APIs lack robust access controls, they can expose full or top <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$k$</tex> logits, creating a significant and often overlooked attack surface. Prior art has mainly focused on reconstructing the output projection layer or distilling surface-level behaviors. However, regenerating a black-box model under tight query constraints remains underexplored. We address that gap by introducing a constrained replication pipeline that transforms partial logit leakage into a functional deployable substitute model clone. Our two-stage approach (i) reconstructs the output projection matrix by collecting top-<tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$k$</tex> logits from under 10k black-box queries via singular value decomposition (SVD) over the logits, then (ii) distills the remaining architecture into compact student models with varying transformer depths, trained on an open source dataset. A 6-layer student recreates 97.6% of the 6layer teacher model's hidden-state geometry, with only a 7.31 % perplexity increase, and a 7.58 Negative Log-Likelihood (NLL). A 4-layer variant achieves 17.1% faster inference and 18.1% parameter reduction with comparable performance. The entire attack completes in under 24 graphics processing unit (GPU) hours and avoids triggering API rate-limit defenses. These results demonstrate how quickly a cost-limited adversary can clone an LLM, underscoring the urgent need for hardened inference APIs and secure on-premise defense deployments."
+  }
+]
