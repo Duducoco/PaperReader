@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-03-05",
+    "title": "NL2GDS: LLM-aided interface for Open Source Chip Design",
+    "authors": "Max Eland, Jeyan Thiyagalingam, Dinesh Pamunuwa, Roshan Weerasekera",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05489v1",
+    "source": "arXiv",
+    "abstract": "The growing complexity of hardware design and the widening gap between high-level specifications and register-transfer level (RTL) implementation hinder rapid prototyping and system design. We introduce NL2GDS (Natural Language to Layout), a novel framework that leverages large language models (LLMs) to translate natural language hardware descriptions into synthesizable RTL and complete GDSII layouts via the open-source OpenLane ASIC flow. NL2GDS employs a modular pipeline that captures informal design intent, generates HDL using multiple LLM engines and verifies them, and orchestrates automated synthesis and layout. Evaluations on ISCAS'85 and ISCAS'89 benchmark designs demonstrate up to 36% area reduction, 35% delay reduction, and 70% power savings compared to baseline designs, highlighting its potential to democratize ASIC design and accelerate hardware innovation.",
+    "title_zh": "NL2GDS：基于大型语言模型的开源芯片设计界面",
+    "abstract_zh": "硬件设计的复杂性不断增加，高级规格与寄存器传输级（RTL）实现之间的差距日益扩大，阻碍了快速原型设计和系统设计。我们介绍了NL2GDS（自然语言到布局），这是一种新颖的框架，利用大型语言模型（LLMs）将自然语言硬件描述翻译为可合成的RTL，并通过开源OpenLane ASIC流程完成GDSII布局。NL2GDS采用模块化管道，捕捉非正式设计意图，使用多个LLM引擎生成并验证HDL，并协调自动合成和布局。在ISCAS'85和ISCAS'89基准设计上的评估显示，与基线设计相比，面积减少高达36%，延迟减少35%，功耗节省70%，突显了其在普及ASIC设计和加速硬件创新方面的潜力。"
+  },
+  {
+    "date": "2026-03-04",
+    "title": "iScript: A Domain-Adapted Large Language Model and Benchmark for Physical Design Tcl Script Generation",
+    "authors": "Ning Xu, Zhaoyang Zhang, Senlin Shu, Lei Qi, Jiaqi Lv, Wensuo Wang, Tianhao Zhao, Chao Zhang, Zhaoliang Yang, Xiangyu Li, Zhaorui Su, Jingshan Li, Xin Geng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04476v1",
+    "source": "arXiv",
+    "abstract": "Modern EDA flows rely heavily on Tcl scripting, yet general LLMs perform poorly in this domain due to extreme data scarcity, domain-specific semantics, and the high reliability required in physical design. We present iScript, a domain-adapted Qwen3-8B model for Innovus Tcl script generation, and iScript-Bench, a comprehensive benchmark covering five task categories and three difficulty levels. To overcome the lack of training data, we introduce a multi-stage data synthesis pipeline that integrates command extraction, static linting, requirement back-inference, and Chain-of-Thought generation, producing a 10K-tuple (requirement, CoT, script) dataset. iScript is trained through a two-stage strategy combining domain-adaptive pretraining and supervised fine-tuning. To evaluate script correctness efficiently, we further propose a two-step verification framework consisting of static syntax verification and LLM-based functional evaluation. On our benchmark, iScript shows higher pass@k scores than currently state-of-the-art LLMs on average. These results demonstrate the effectiveness of domain adaptation and data synthesis for EDA scripting tasks.",
+    "title_zh": "iScript：用于物理设计Tcl脚本生成的领域适应大语言模型和基准",
+    "abstract_zh": "现代EDA流程严重依赖于Tcl脚本，但由于数据极度稀缺、领域特定语义以及物理设计中对高可靠性的要求，一般的大语言模型在该领域表现不佳。我们提出了iScript，这是一种针对Innovus Tcl脚本生成的领域适应Qwen3-8B模型，以及iScript-Bench，一个涵盖五个任务类别和三个难度级别的综合基准。为了解决训练数据不足的问题，我们引入了一个多阶段数据合成管道，整合了命令提取、静态代码检查、需求反推和思维链生成，生成了一个包含10K元组（需求、思维链、脚本）的数据集。iScript通过结合领域适应预训练和监督微调的两阶段策略进行训练。为了高效评估脚本的正确性，我们进一步提出了一个由静态语法验证和基于LLM的功能评估组成的两步验证框架。在我们的基准测试中，iScript的平均pass@k得分高于当前最先进的大语言模型。这些结果证明了领域适应和数据合成在EDA脚本任务中的有效性。"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-03-05",
+    "title": "NL2GDS: LLM-aided interface for Open Source Chip Design",
+    "authors": "Max Eland, Jeyan Thiyagalingam, Dinesh Pamunuwa, Roshan Weerasekera",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05489v1",
+    "source": "arXiv",
+    "abstract": "The growing complexity of hardware design and the widening gap between high-level specifications and register-transfer level (RTL) implementation hinder rapid prototyping and system design. We introduce NL2GDS (Natural Language to Layout), a novel framework that leverages large language models (LLMs) to translate natural language hardware descriptions into synthesizable RTL and complete GDSII layouts via the open-source OpenLane ASIC flow. NL2GDS employs a modular pipeline that captures informal design intent, generates HDL using multiple LLM engines and verifies them, and orchestrates automated synthesis and layout. Evaluations on ISCAS'85 and ISCAS'89 benchmark designs demonstrate up to 36% area reduction, 35% delay reduction, and 70% power savings compared to baseline designs, highlighting its potential to democratize ASIC design and accelerate hardware innovation."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Leveraging LLM Parametric Knowledge for Fact Checking without Retrieval",
+    "authors": "Artem Vazhentsev, Maria Marina, Daniil Moskovskiy, Sergey Pletenev, Mikhail Seleznyov, Mikhail Salnikov, Elena Tutubalina, Vasily Konovalov, Irina Nikishina, Alexander Panchenko, Viktor Moskvoretskii",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05471v1",
+    "source": "arXiv",
+    "abstract": "Trustworthiness is a core research challenge for agentic AI systems built on Large Language Models (LLMs). To enhance trust, natural language claims from diverse sources, including human-written text, web content, and model outputs, are commonly checked for factuality by retrieving external knowledge and using an LLM to verify the faithfulness of claims to the retrieved evidence. As a result, such methods are constrained by retrieval errors and external data availability, while leaving the models intrinsic fact-verification capabilities largely unused. We propose the task of fact-checking without retrieval, focusing on the verification of arbitrary natural language claims, independent of their source. To study this setting, we introduce a comprehensive evaluation framework focused on generalization, testing robustness to (i) long-tail knowledge, (ii) variation in claim sources, (iii) multilinguality, and (iv) long-form generation. Across 9 datasets, 18 methods and 3 models, our experiments indicate that logit-based approaches often underperform compared to those that leverage internal model representations. Building on this finding, we introduce INTRA, a method that exploits interactions between internal representations and achieves state-of-the-art performance with strong generalization. More broadly, our work establishes fact-checking without retrieval as a promising research direction that can complement retrieval-based frameworks, improve scalability, and enable the use of such systems as reward signals during training or as components integrated into the generation process."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Loop Closure via Maximal Cliques in 3D LiDAR-Based SLAM",
+    "authors": "Javier Laserna, Saurabh Gupta, Oscar Martinez Mozos, Cyrill Stachniss, Pablo San Segundo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05397v1",
+    "source": "arXiv",
+    "abstract": "Reliable loop closure detection remains a critical challenge in 3D LiDAR-based SLAM, especially under sensor noise, environmental ambiguity, and viewpoint variation conditions. RANSAC is often used in the context of loop closures for geometric model fitting in the presence of outliers. However, this approach may fail, leading to map inconsistency. We introduce a novel deterministic algorithm, CliReg, for loop closure validation that replaces RANSAC verification with a maximal clique search over a compatibility graph of feature correspondences. This formulation avoids random sampling and increases robustness in the presence of noise and outliers. We integrated our approach into a real- time pipeline employing binary 3D descriptors and a Hamming distance embedding binary search tree-based matching. We evaluated it on multiple real-world datasets featuring diverse LiDAR sensors. The results demonstrate that our proposed technique consistently achieves a lower pose error and more reliable loop closures than RANSAC, especially in sparse or ambiguous conditions. Additional experiments on 2D projection-based maps confirm its generality across spatial domains, making our approach a robust and efficient alternative for loop closure detection."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Med-V1: Small Language Models for Zero-shot and Scalable Biomedical Evidence Attribution",
+    "authors": "Qiao Jin, Yin Fang, Lauren He, Yifan Yang, Guangzhi Xiong, Zhizheng Wang, Nicholas Wan, Joey Chan, Donald C. Comeau, Robert Leaman, Charalampos S. Floudas, Aidong Zhang, Michael F. Chiang, Yifan Peng, Zhiyong Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05308v1",
+    "source": "arXiv",
+    "abstract": "Assessing whether an article supports an assertion is essential for hallucination detection and claim verification. While large language models (LLMs) have the potential to automate this task, achieving strong performance requires frontier models such as GPT-5 that are prohibitively expensive to deploy at scale. To efficiently perform biomedical evidence attribution, we present Med-V1, a family of small language models with only three billion parameters. Trained on high-quality synthetic data newly developed in this study, Med-V1 substantially outperforms (+27.0% to +71.3%) its base models on five biomedical benchmarks unified into a verification format. Despite its smaller size, Med-V1 performs comparably to frontier LLMs such as GPT-5, along with high-quality explanations for its predictions. We use Med-V1 to conduct a first-of-its-kind use case study that quantifies hallucinations in LLM-generated answers under different citation instructions. Results show that the format instruction strongly affects citation validity and hallucination, with GPT-5 generating more claims but exhibiting hallucination rates similar to GPT-4o. Additionally, we present a second use case showing that Med-V1 can automatically identify high-stakes evidence misattributions in clinical practice guidelines, revealing potentially negative public health impacts that are otherwise challenging to identify at scale. Overall, Med-V1 provides an efficient and accurate lightweight alternative to frontier LLMs for practical and real-world applications in biomedical evidence attribution and verification tasks. Med-V1 is available at https://github.com/ncbi-nlp/Med-V1."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "X-RAY: Mapping LLM Reasoning Capability via Formalized and Calibrated Probes",
+    "authors": "Gao Tianxi, Cai Yufan, Yuan Yusi, Dong Jin Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05290v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) achieve promising performance, yet their ability to reason remains poorly understood. Existing evaluations largely emphasize task-level accuracy, often conflating pattern matching with reasoning capability. We present X-RAY, an explainable reasoning analysis system that maps the LLM reasoning capability using calibrated, formally verified probes. We model reasoning capability as a function of extractable \\textit{structure}, operationalized through formal properties such as constraint interaction, reasoning depth, and solution-space geometry. X-Ray generates probes via formal tools with controlled structural variations, enabling precise isolation of incremental structural information through formal calibration and verification. We evaluate state-of-the-art LLMs on problems ranging from junior-level to advanced in mathematics, physics, and chemistry. Our analysis reveals a systematic asymmetry in LLM reasoning: models are relatively robust to constraint refinement, where additional conditions shrink an existing solution space, but degrade sharply under solution-space restructuring, where modifications alter the underlying structural form of the solution manifold. Moreover, calibrated formal probes differentiate models that appear indistinguishable on standard benchmarks and reveal failure modes that are structurally interpretable rather than opaque. Beyond evaluation, our framework is contamination-free and supports the training and testing of reasoning models."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "ARC-TGI: Human-Validated Task Generators with Reasoning Chain Templates for ARC-AGI",
+    "authors": "Jens Lehmann, Syeda Khushbakht, Nikoo Salehfard, Nur A Zarin Nishat, Dhananjay Bhandiwad, Andrei Aioanei, Sahar Vahdati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05099v1",
+    "source": "arXiv",
+    "abstract": "The Abstraction and Reasoning Corpus (ARC-AGI) probes few-shot abstraction and rule induction on small visual grids, but progress is difficult to measure on static collections of hand-authored puzzles due to overfitting, dataset leakage, and memorisation. We introduce ARC-TGI (ARC Task Generators Inventory), an open-source framework for task-family generators: compact Python programs that sample diverse ARC-AGI tasks while preserving a latent rule. ARC-TGI is built around a solver-facing representation: each generated task is paired with natural-language input and transformation reasoning chains and partially evaluated Python code implementing sampling, transformation, and episode construction. Crucially, ARC-TGI supports task-level constraints so that training examples collectively expose the variations needed to infer the underlying rule, a requirement for human-solvable ARC tasks that independent per-example sampling often fails to guarantee. All generators undergo human refinement and local verification to keep both grids and reasoning traces natural and consistent under variation. We release 461 generators covering 180 ARC-Mini tasks, 215 ARC-AGI-1 tasks (200 train, 15 test), and 66 ARC-AGI-2 tasks (55 train, 11 test), enabling scalable dataset sampling and controlled benchmarking."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "TW-Sound580K: A Regional Audio-Text Dataset with Verification-Guided Curation for Localized Audio-Language Modeling",
+    "authors": "Hao-Hui Xie, Ho-Lam Chung, Yi-Cheng Lin, Ke-Han Lu, Wenze Ren, Xie Chen, Hung-yi Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.05094v1",
+    "source": "arXiv",
+    "abstract": "Large Audio-Language Models (LALMs) typically struggle with localized dialectal prosody due to the scarcity of specialized corpora. We present TW-Sound580K, a Taiwanese audio-text instruction dataset developed through a Verify-Generate-Critique (VGC) protocol. This pipeline leverages Dual-ASR validation to filter 522K raw clips, subsequently expanding them into 580,000 high-fidelity instruction pairs using a teacher model. The dataset's utility is demonstrated through Tai-LALM, which fine-tunes a DeSTA 2.5-Audio-initialized backbone and incorporates a dynamic Dual-ASR Arbitration strategy to optimize transcription selection during inference. On the TAU Benchmark, Tai-LALM reaches 49.1% accuracy, marking a 6.5% absolute improvement over the zero-shot baseline (42.6% with ASR text conditioning). This confirms that integrating regional corpora with rigorous curation and dynamic arbitration significantly enhances LALM performance on localized speech."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Think, Then Verify: A Hypothesis-Verification Multi-Agent Framework for Long Video Understanding",
+    "authors": "Zheng Wang, Haoran Chen, Haoxuan Qin, Zhipeng Wei, Tianwen Qian, Cong Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04977v1",
+    "source": "arXiv",
+    "abstract": "Long video understanding is challenging due to dense visual redundancy, long-range temporal dependencies, and the tendency of chain-of-thought and retrieval-based agents to accumulate semantic drift and correlation-driven errors. We argue that long-video reasoning should begin not with reactive retrieval, but with deliberate task formulation: the model must first articulate what must be true in the video for each candidate answer to hold. This thinking-before-finding principle motivates VideoHV-Agent, a framework that reformulates video question answering as a structured hypothesis-verification process. Based on video summaries, a Thinker rewrites answer candidates into testable hypotheses, a Judge derives a discriminative clue specifying what evidence must be checked, a Verifier grounds and tests the clue using localized, fine-grained video content, and an Answer agent integrates validated evidence to produce the final answer. Experiments on three long-video understanding benchmarks show that VideoHV-Agent achieves state-of-the-art accuracy while providing enhanced interpretability, improved logical soundness, and lower computational cost. We make our code publicly available at: https://github.com/Haorane/VideoHV-Agent."
+  },
+  {
+    "date": "2026-03-05",
+    "title": "Detection of GNSS Interference Using Reflected Signal Ob-servations from the LEO Satellite Constellation",
+    "authors": "Ji-Hyeon Shin, Pyo-Woong Son",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04813v1",
+    "source": "arXiv",
+    "abstract": "Radio Frequency Interference (RFI) is a growing concern for Global Navigation Satellite System (GNSS) reliability. The Cyclone GNSS (CYGNSS) constellation, designed for ocean wind retrieval via GNSS reflectometry (GNSS-R), provides Delay-Doppler Maps (DDMs) with noise floor metrics exploitable for spaceborne RFI detection. This study proposes a maximum-based DDM noise floor strategy that selects the highest noise floor value among four simultaneous GNSS reflections at each 0.5-second epoch, rather than their mean, preventing dilution of anomalous signals by unaffected channels. To suppress false alarms, a two-tier verification framework is introduced: (1) multi-satellite concurrent detection, confirming RFI when two or more CYGNSS satellites independently flag the same geographic region, and (2) temporal persistence verification, confirming a single-satellite detection only if threshold exceedance persists over a 10-second window. The physical basis for this criterion is established through slant-range geometry analysis between a ground-based jammer and the orbiting satellite. Performance is evaluated using CYGNSS Level 1 data from May 2025 in two regions: White Sands Missile Range, where NOTAM-announced GPS jamming tests were conducted, and the Middle East, where persistent RFI has been documented. The proposed method is compared against NASA's kurtosis-based RFI flags and a mean-based noise floor method. Results show that it detected RFI on three dates where the other methods produced negligible detections, and flagged 62% of total epochs in the Middle East compared to 46% (mean-based) and 33% (kurtosis-based). It also demonstrated capability to detect the early onset of gradually intensifying interference and atypical abnormal patterns not previously reported, highlighting the potential of maximum-based DDM noise floor analysis for sensitive and reliable spaceborne RFI detection."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Quantum foundations for quantum technologies in the International Year of Quantum (2025)",
+    "authors": "Angelo Bassi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04630v1",
+    "source": "arXiv",
+    "abstract": "From the very beginning, Quantum Mechanics has been accompanied by crucial foundational questions: the possibility of visualizing physical processes, the limits of measurement epitomized by the Heisenberg uncertainty principle, the existence of a deeper underlying reality with additional degrees of freedom, the role of measurements, and the status of locality. Long regarded as philosophical speculations, these issues were progressively reformulated into precise mathematical statements and ultimately subjected to experimental verification. The trajectory proved unpredictable: questions once dismissed as metaphysical gave rise to experimental platforms, which in turn matured into devices and technologies powering quantum computation, communication, and sensing. Yet this development is not unidirectional: advances in technology also feed back into foundations, enabling tests of principles that were previously out of reach, for example, whether quantum superposition persists at larger and larger scales and whether reality, gravity included, is fundamentally quantum. In this way, the dialogue between foundational inquiry and technological progress continues to shape both our theoretical understanding and the practical realization of quantum phenomena."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Token Taxes: mitigating AGI's economic risks",
+    "authors": "Lucas Irwin, Tung-Yu Wu, Fazl Barez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04555v1",
+    "source": "arXiv",
+    "abstract": "The development of AGI threatens to erode government tax bases, lower living standards, and disempower citizens -- risks that make the 40-year stagnation of wages during the first industrial revolution look mild in comparison. While AI safety research has focused primarily on capability risks, comparatively little work has studied how to mitigate the economic risks of AGI. In this paper, we argue that the economic risks posed by a post-AGI world can be effectively mitigated by token taxes: usage-based surcharges on model inference applied at the point of sale. We situate token taxes within previous proposals for robot taxes and identify two key advantages: they are enforceable through existing compute governance infrastructure, and they capture value where AI is used rather than where models are hosted. For enforcement, we outline a staged audit pipeline -- black-box token verification, norm-based tax rates, and white-box audits. For impact, we highlight the need for agent-based modeling of token taxes' economic effects. Finally, we discuss alternative approaches including FLOP taxes, and how to prevent AI superpowers vetoing such measures."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "HyQBench: A Benchmark Suite for Hybrid CV-DV Quantum Computing",
+    "authors": "Shubdeep Mohapatra, Yuan Liu, Eddy Z. Zhang, Huiyang Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04398v1",
+    "source": "arXiv",
+    "abstract": "Hybrid continuous-variable (CV)-discrete-variable (DV) quantum systems present a promising direction for quantum computing by combining the high dimensional encoding capabilities of qumodes with the control offered by DV qubits on the coupled qumodes. There have been exciting recent progresses on hybrid CV-DV quantum computing, including variational algorithms, error correction, compiler-level optimizations for Hamiltonian simulation, etc. However, there is a lack of a standardized CV-DV benchmark suite for assessing various emerging hardware platforms and evaluating software optimizations on hybrid CV-DV circuits. In this work, we introduce a simulation and benchmarking framework for hybrid CV-DV circuits, implemented using Bosonic Qiskit-a tool specifically designed to model CV-DV systems, along with QuTip for functional correctness verification. We construct and characterize representative CV-DV benchmarks, including cat state generation, GKP state generation, CV-DV state transfers, hybrid quantum Fourier transform, variational quantum algorithms, Hamiltonian simulation, and Shor's algorithm. To assess circuit complexity and scalability, we define a feature map organized into two categories: general features (e.g., qubit/qumode count, gate counts) and CV-DV-specific features (e.g., Wigner negativity, energy, truncation cost). These metrics enable evaluation of both classical simulability and hardware resource requirements. Our results, including one benchmark on real hardware, demonstrate that hybrid CV-DV architectures are not only viable but well-suited for a range of computational tasks, from optimization to Hamiltonian simulation. This framework lays the groundwork for systematic evaluation and future development of hybrid quantum systems."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "TaxonRL: Reinforcement Learning with Intermediate Rewards for Interpretable Fine-Grained Visual Reasoning",
+    "authors": "Maximilian von Klinski, Maximilian Schall",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04380v1",
+    "source": "arXiv",
+    "abstract": "Traditional vision-language models struggle with contrastive fine-grained taxonomic reasoning, particularly when distinguishing between visually similar species within the same genus or family. We introduce TaxonRL, a reinforcement learning approach using Group Relative Policy Optimization with intermediate rewards that decomposes the reasoning process into hierarchical taxonomic predictions. Our method incentivizes models to explicitly reason about species-level, genus-level, and family-level features before making final classifications. This structured approach is designed not only to boost accuracy but also to yield a transparent, verifiable decision-making process. On the challenging Birds-to-Words dataset, TaxonRL achieves 91.7\\% average accuracy, exceeding human performance (77.3\\%) while generating interpretable reasoning traces. We demonstrate strong cross-domain generalization, showing substantial gains in primate and marine species verification. Our results establish that enforcing structured, hierarchical reasoning provides a powerful and transferable framework for fine-grained visual discrimination."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "SpotIt+: Verification-based Text-to-SQL Evaluation with Database Constraints",
+    "authors": "Rocky Klopfenstein, Yang He, Andrew Tremante, Yuepeng Wang, Nina Narodytska, Haoze Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04334v1",
+    "source": "arXiv",
+    "abstract": "We present SpotIt+, an open-source tool for evaluating Text-to-SQL systems via bounded equivalence verification. Given a generated SQL query and the ground truth, SpotIt+ actively searches for database instances that differentiate the two queries. To ensure that the generated counterexamples reflect practically relevant discrepancies, we introduce a constraint-mining pipeline that combines rule-based specification mining over example databases with LLM-based validation. Experimental results on the BIRD dataset show that the mined constraints enable SpotIt+ to generate more realistic differentiating databases, while preserving its ability to efficiently uncover numerous discrepancies between generated and gold SQL queries that are missed by standard test-based evaluation."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners",
+    "authors": "Harman Singh, Xiuyu Li, Kusha Sareen, Monishwaran Maheswaran, Sijun Tan, Xiaoxia Wu, Junxiong Wang, Alpay Ariyak, Qingyang Wu, Samir Khaki, Rishabh Tiwari, Long Lian, Yucheng Lu, Boyi Li, Alane Suhr, Ben Athiwaratkun, Kurt Keutzer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04304v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling for complex reasoning tasks shows that leveraging inference-time compute, by methods such as independently sampling and aggregating multiple solutions, results in significantly better task outcomes. However, a critical bottleneck is verification: sampling is only effective if correct solutions can be reliably identified among candidates. While existing approaches typically evaluate candidates independently via scalar scoring, we demonstrate that models are substantially stronger at pairwise self-verification. Leveraging this insight, we introduce $V_1$, a framework that unifies generation and verification through efficient pairwise ranking. $V_1$ comprises two components: $V_1$-Infer, an uncertainty-guided algorithm using a tournament-based ranking that dynamically allocates self-verification compute to candidate pairs whose relative correctness is most uncertain; and $V_1$-PairRL, an RL framework that jointly trains a single model as both generator and pairwise self-verifier, ensuring the verifier adapts to the generator's evolving distribution. On code generation (LiveCodeBench, CodeContests, SWE-Bench) and math reasoning (AIME, HMMT) benchmarks, $V_1$-Infer improves Pass@1 by up to $10%$ over pointwise verification and outperforms recent test-time scaling methods while being significantly more efficient. Furthermore, $V_1$-PairRL achieves $7$--$9%$ test-time scaling gains over standard RL and pointwise joint training, and improves base Pass@1 by up to 8.7% over standard RL in a code-generation setting."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "iScript: A Domain-Adapted Large Language Model and Benchmark for Physical Design Tcl Script Generation",
+    "authors": "Ning Xu, Zhaoyang Zhang, Senlin Shu, Lei Qi, Jiaqi Lv, Wensuo Wang, Tianhao Zhao, Chao Zhang, Zhaoliang Yang, Xiangyu Li, Zhaorui Su, Jingshan Li, Xin Geng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.04476v1",
+    "source": "arXiv",
+    "abstract": "Modern EDA flows rely heavily on Tcl scripting, yet general LLMs perform poorly in this domain due to extreme data scarcity, domain-specific semantics, and the high reliability required in physical design. We present iScript, a domain-adapted Qwen3-8B model for Innovus Tcl script generation, and iScript-Bench, a comprehensive benchmark covering five task categories and three difficulty levels. To overcome the lack of training data, we introduce a multi-stage data synthesis pipeline that integrates command extraction, static linting, requirement back-inference, and Chain-of-Thought generation, producing a 10K-tuple (requirement, CoT, script) dataset. iScript is trained through a two-stage strategy combining domain-adaptive pretraining and supervised fine-tuning. To evaluate script correctness efficiently, we further propose a two-step verification framework consisting of static syntax verification and LLM-based functional evaluation. On our benchmark, iScript shows higher pass@k scores than currently state-of-the-art LLMs on average. These results demonstrate the effectiveness of domain adaptation and data synthesis for EDA scripting tasks."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Demonstration of robust chiral edge transport in Chern insulator MnBi2Te4 devices with engineered geometric defects",
+    "authors": "Pinyuan Wang, Jun Ge, Jiawei Luo, Xiaoqi Liu, Fucong Fei, Fengqi Song, Jian Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03927v1",
+    "source": "arXiv",
+    "abstract": "Chiral edge states in Chern insulators are theoretically predicted to propagate unidirectionally along the sample boundary with inherent robustness against local perturbations, which manifests as the immunity to impurity-induced backscattering, a key factor for the development of robust, high-performance quantum devices. However, the direct experimental verification of the robustness of chiral edge states remains scarce. Here, we experimentally validate the robustness of the chiral edge states in MnBi2Te4 devices featuring engineered geometric defects introduced via atomic force microscope (AFM) nanomachining. Specifically, under a moderate perpendicular magnetic field, the MnBi2Te4 devices exhibit the Chern insulator state, characterized by a quantized Hall plateau and simultaneously vanishing longitudinal resistance. To verify the robustness of this topological state, we modify the device geometry by cutting a slit using AFM nanomachining that severs the original edge channel. Remarkably, the quantization behavior survives this drastic modification. The robust nature of the chiral edge transport is further confirmed by two-terminal, three-terminal and non-local measurements, fully demonstrating that the edge currents can bypass the artificial cut without dissipation. Our results unambiguously demonstrate the robustness of chiral edge states against geometric disruption and establish AFM nanomachining as a promising technique for topological quantum devices engineering."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Fast proton transport and neutron production in proton therapy using Fourier neural operators",
+    "authors": "Francesco Blangiardi, Hunter N. Ratliff, Fabian Teichert, Kristian Smeland Ytre-Hauge, Jan Langer, Ilker Meric",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03912v1",
+    "source": "arXiv",
+    "abstract": "Objective: Real-time adaptive proton range verification systems based on produced neutrons require accurate information on their non-isotropic momentum distributions within short times, for which Monte Carlo (MC) methods are too computationally expensive. We present a surrogate model based on Fourier Neural Operators (FNO) for fast prediction of angle- and energy-resolved proton transport and neutron production within proton therapy. Approach: We treat the irradiated phantom and the proton beam's state as depth-evolving series, respectively of different materials, and of spatial, angular and energy phase space density distributions. The task is solved auto-regressively by learning changes in the distributions of protons and those of produced neutrons. For training and evaluation, two datasets of 47 MC simulations featuring different primary intensities were produced. Simulated geometries were extracted from a thoracic CT scan as series of laterally homogeneous materials. Main Results: An average relative $L^2$ discrepancy of 0.067 and 0.137 was achieved by the predicted proton and neutron distributions, respectively. This corresponded to an average gamma passing rate in the spatial distributions of 99.95$\\%$ and 99.40$\\%$. Training with higher primary intensities led to improvements between 12$\\%$ and 30$\\%$ in density metrics. Inference over depths of 40 cm at a resolution of 0.5 mm required on average 23.17 s per beam. Significance: The proposed proton beam surrogate generates accurate spatial and momentum distributions of neutrons at MC-level accuracy within seconds, while demonstrating robust generalization with respect to irradiated geometry and beam characteristics. This approach can be used for prototyping and operation of range verification systems, other tasks such as neutron dose estimation, and can be extended to include other kinds of secondary emissions."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Specification-Driven Generation and Evaluation of Discrete-Event World Models via the DEVS Formalism",
+    "authors": "Zheyu Chen, Zhuohuan Li, Chuanhao Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03784v1",
+    "source": "arXiv",
+    "abstract": "World models are essential for planning and evaluation in agentic systems, yet existing approaches lie at two extremes: hand-engineered simulators that offer consistency and reproducibility but are costly to adapt, and implicit neural models that are flexible but difficult to constrain, verify, and debug over long horizons. We seek a principled middle ground that combines the reliability of explicit simulators with the flexibility of learned models, allowing world models to be adapted during online execution. By targeting a broad class of environments whose dynamics are governed by the ordering, timing, and causality of discrete events, such as queueing and service operations, embodied task planning, and message-mediated multi-agent coordination, we advocate explicit, executable discrete-event world models synthesized directly from natural-language specifications. Our approach adopts the DEVS formalism and introduces a staged LLM-based generation pipeline that separates structural inference of component interactions from component-level event and timing logic. To evaluate generated models without a unique ground truth, simulators emit structured event traces that are validated against specification-derived temporal and semantic constraints, enabling reproducible verification and localized diagnostics. Together, these contributions produce world models that are consistent over long-horizon rollouts, verifiable from observable behavior, and efficient to synthesize on demand during online execution."
+  },
+  {
+    "date": "2026-03-04",
+    "title": "Seeing as Experts Do: A Knowledge-Augmented Agent for Open-Set Fine-Grained Visual Understanding",
+    "authors": "Junhan Chen, Zilu Zhou, Yujun Tong, Dongliang Chang, Yitao Luo, Zhanyu Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.03762v1",
+    "source": "arXiv",
+    "abstract": "Fine-grained visual understanding is shifting from static classification to knowledge-augmented reasoning, where models must justify as well as recognise. Existing approaches remain limited by closed-set taxonomies and single-label prediction, leading to significant degradation under open-set or context-dependent conditions. We present the Knowledge-Augmented Fine-Grained Reasoning Agent (KFRA), a unified framework that transforms fine-grained perception into evidence-driven reasoning. KFRA operates through a three-stage closed reasoning loop that emulates expert analysis. It first performs open-vocabulary detection and web-scale retrieval to generate category hypotheses. It then conducts discriminative regions localisation by aligning textual knowledge with visual evidence through a global-to-local focusing mechanism. Finally, it integrates all multimodal evidence within a large multimodal model to perform interpretable reasoning. Unlike existing agents that treat retrieval and reasoning as independent processes, KFRA establishes a retrieval-grounding coupling that converts retrieved knowledge into spatially grounded evidence for verification. This design enables factual, interpretable, and task-agnostic reasoning across diverse fine-grained scenarios. To evaluate this capability, we construct FGExpertBench, a benchmark designed to assess reasoning depth and cross-task generalisation across six knowledge dimensions. Extensive experiments demonstrate that KFRA consistently surpasses both standalone large multimodal models and current agent frameworks, achieving up to 19 percent improvement in reasoning accuracy and delivering evidence-grounded interpretability in open-set fine-grained visual understanding."
+  }
+]
