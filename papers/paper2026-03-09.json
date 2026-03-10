@@ -1,0 +1,254 @@
+[
+  {
+    "date": "2026-03-09",
+    "title": "How Far Can Unsupervised RLVR Scale LLM Training?",
+    "authors": "Bingxiang He, Yuxin Zuo, Zeyuan Liu, Shangziqi Zhao, Zixuan Fu, Junlin Yang, Cheng Qian, Kaiyan Zhang, Yuchen Fan, Ganqu Cui, Xiusi Chen, Youbang Sun, Xingtai Lv, Xuekai Zhu, Li Sheng, Ran Li, Huan-ang Gao, Yuchen Zhang, Bowen Zhou, Zhiyuan Liu, Ning Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08660v1",
+    "source": "arXiv",
+    "abstract": "Unsupervised reinforcement learning with verifiable rewards (URLVR) offers a pathway to scale LLM training beyond the supervision bottleneck by deriving rewards without ground truth labels. Recent works leverage model intrinsic signals, showing promising early gains, yet their potential and limitations remain unclear. In this work, we revisit URLVR and provide a comprehensive analysis spanning taxonomy, theory and extensive experiments. We first classify URLVR methods into intrinsic versus external based on reward sources, then establish a unified theoretical framework revealing that all intrinsic methods converge toward sharpening the model's initial distribution This sharpening mechanism succeeds when initial confidence aligns with correctness but fails catastrophically when misaligned. Through systematic experiments, we show intrinsic rewards consistently follow a rise-then-fall pattern across methods, with collapse timing determined by model prior rather than engineering choices. Despite these scaling limits, we find intrinsic rewards remain valuable in test-time training on small datasets, and propose Model Collapse Step to measure model prior, serving as a practical indicator for RL trainability. Finally, we explore external reward methods that ground verification in computational asymmetries, showing preliminary evidence they may escape the confidence-correctness ceiling. Our findings chart boundaries for intrinsic URLVR while motivating paths toward scalable alternatives."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Reachability-based Temporal Logic Verification for Reliable LLM-guided Human-Autonomy Teaming",
+    "authors": "Joonwon Choi, Kartik Anand Pant, Karthik Nune, Inseok Hwang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08633v1",
+    "source": "arXiv",
+    "abstract": "We propose a reachability-based framework for reliable LLM-guided human-autonomy teaming (HAT) using signal temporal logic (STL). In the proposed framework, LLM is leveraged as a translator that transfers natural language commands given by a human operator into corresponding STL specifications or vice versa. An STL feasibility filter (SFF) is proposed to check the feasibility of the generated STL. The SFF first decomposes the complex and nested LLM translation into a set of simpler subformulas for parallelization and informative feedback generation. The reachability analysis method is then applied to verify if each subformula is feasible for a target dynamical system: if feasible, perform mission planning, otherwise, reject it. The proposed SFF can identify infeasible subformulas, more than simply providing the boolean verification results for the whole STL, thereby facilitating the feedback generation of LLM to request modification of the command to the human. Consequently, the proposed framework can allow more reliable HAT by enabling safe and informative communication between the human operator and the autonomous agent. Our experiments demonstrate that the proposed framework can successfully filter out infeasible subformulas and generate informative feedback based on such information."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Query-Guided Analysis and Mitigation of Data Verification Errors (Extended Version)",
+    "authors": "Ran Schreiber, Yael Amsterdamer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08612v1",
+    "source": "arXiv",
+    "abstract": "Data verification, the process of labeling data items as correct or incorrect, is a preprocessing step that may critically affect the quality of results in data-driven pipelines. Despite recent advances, verification can still produce erroneous labels that propagate to downstream query results in complex ways. We present a framework that complements existing verification tools by assessing the impact of potential labeling errors on query outputs and guiding additional verification steps to improve result reliability. To this end, we introduce Maximal Error Score (MES), a worst-case uncertainty metric that quantifies the reliability of query output tuples independently of the underlying data distribution. As an auxiliary indicator, we identify risky tuples - input tuples for which reducing label uncertainty may counterintuitively increase the output uncertainty. We then develop efficient algorithms for computing MES and detecting risky tuples, as well as a generic algorithm, named MESReduce, that builds on both indicators and interacts with external verifiers to select effective additional verification steps. We implement our techniques in a prototype system and evaluate them on real and synthetic datasets, demonstrating that MESReduce can substantially and effectively reduce the MES and improve the accuracy of verification results."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Bilevel Planning with Learned Symbolic Abstractions from Interaction Data",
+    "authors": "Fatih Dogangun, Burcu Kilic, Serdar Bahar, Emre Ugur",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08599v1",
+    "source": "arXiv",
+    "abstract": "Intelligent agents must reason over both continuous dynamics and discrete representations to generate effective plans in complex environments. Previous studies have shown that symbolic abstractions can emerge from neural effect predictors trained with a robot's unsupervised exploration. However, these methods rely on deterministic symbolic domains, lack mechanisms to verify the generated symbolic plans, and operate only at the abstract level, often failing to capture the continuous dynamics of the environment. To overcome these limitations, we propose a bilevel neuro-symbolic framework in which learned probabilistic symbolic rules generate candidate plans rapidly at the high level, and learned continuous effect models verify these plans and perform forward search when necessary at the low level. Our experiments on multi-object manipulation tasks demonstrate that the proposed bilevel method outperforms symbolic-only approaches, reliably identifying failing plans through verification, and achieves planning performance statistically comparable to continuous forward search while resolving most problems via efficient symbolic reasoning."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Trust via Reputation of Conviction",
+    "authors": "Aravind R. Iyengar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08575v1",
+    "source": "arXiv",
+    "abstract": "The question of \\emph{knowledge}, \\emph{truth} and \\emph{trust} is explored via a mathematical formulation of claims and sources. We define truth as the reproducibly perceived subset of knowledge, formalize sources as having both generative and discriminative roles, and develop a framework for reputation grounded in the \\emph{conviction} -- the likelihood that a source's stance is vindicated by independent consensus. We argue that conviction, rather than correctness or faithfulness, is the principled basis for trust: it is regime-independent, rewards genuine contribution, and demands the transparent and self-sufficient perceptions that make external verification possible. We formalize reputation as the expected weighted signed conviction over a realm of claims, characterize its behavior across source-claim regimes, and identify continuous verification as both a theoretical necessity and a practical mechanism through which reputation accrues. The framework is applied to AI agents, which are identified as capable but error-prone sources for whom verifiable conviction and continuously accrued reputation constitute the only robust foundation for trust."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "SCAFFOLD-CEGIS: Preventing Latent Security Degradation in LLM-Driven Iterative Code Refinement",
+    "authors": "Yi Chen, Yun Bian, Haiquan Wang, Shihao Li, Zhe Cui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08520v1",
+    "source": "arXiv",
+    "abstract": "The application of large language models to code generation has evolved from one-shot generation to iterative refinement, yet the evolution of security throughout iteration remains insufficiently understood. Through comparative experiments on three mainstream LLMs, this paper reveals the iterative refinement paradox: specification drift during multi-objective optimization causes security to degrade gradually over successive iterations. Taking GPT-4o as an example, 43.7 % of iteration chains contain more vulnerabilities than the baseline after ten rounds, and cross-model experiments show that this phenomenon is prevalent. Further analysis shows that simply introducing static application security testing (SAST) gating cannot effectively suppress degradation; instead, it increases the latent security degradation rate from 12.5% under the unprotected baseline to 20.8 %. The root cause is that static-analysis rules cannot cover structural degradations such as the removal of defensive logic or the weakening of exception handling. To address this problem, we propose the SCAFFOLD-CEGIS framework. Drawing on the counterexample-guided inductive synthesis (CEGIS) paradigm, the framework adopts a multi-agent collaborative architecture that transforms security constraints from implicit prompts into explicit verifiable constraints. It automatically identifies and solidifies security-critical elements as hard constraints through semantic anchoring, enforces safety monotonicity through four-layer gated verification, and continuously assimilates experience from failures. Comparative experiments against six existing defense methods show that the full framework reduces the latent security degradation rate to 2.1% and achieves a safety monotonicity rate of 100%."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Fanar-Sadiq: A Multi-Agent Architecture for Grounded Islamic QA",
+    "authors": "Ummar Abbas, Mourad Ouzzani, Mohamed Y. Eltabakh, Omar Sinan, Gagan Bhatia, Hamdy Mubarak, Majd Hawasly, Mohammed Qusay Hashim, Kareem Darwish, Firoj Alam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08501v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) can answer religious knowledge queries fluently, yet they often hallucinate and misattribute sources, which is especially consequential in Islamic settings where users expect grounding in canonical texts (Qur'an and Hadith) and jurisprudential (fiqh) nuance. Retrieval-augmented generation (RAG) reduces some of these limitations by grounding generation in external evidence. However, a single ``retrieve-then-generate'' pipeline is limited to deal with the diversity of Islamic queries.Users may request verbatim scripture, fatwa-style guidance with citations or rule-constrained computations such as zakat and inheritance that require strict arithmetic and legal invariants. In this work, we present a bilingual (Arabic/English) multi-agent Islamic assistant, called Fanar-Sadiq, which is a core component of the Fanar AI platform. Fanar-Sadiq routes Islamic-related queries to specialized modules within an agentic, tool-using architecture. The system supports intent-aware routing, retrieval-grounded fiqh answers with deterministic citation normalization and verification traces, exact verse lookup with quotation validation, and deterministic calculators for Sunni zakat and inheritance with madhhab-sensitive branching. We evaluate the complete end-to-end system on public Islamic QA benchmarks and demonstrate effectiveness and efficiency. Our system is currently publicly and freely accessible through API and a Web application, and has been accessed $\\approx$1.9M times in less than a year."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "All Vehicles Can Lie: Efficient Adversarial Defense in Fully Untrusted-Vehicle Collaborative Perception via Pseudo-Random Bayesian Inference",
+    "authors": "Yi Yu, Libing Wu, Zhuangzhuang Zhang, Jing Qiu, Lijuan Huo, Jiaqi Feng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08498v1",
+    "source": "arXiv",
+    "abstract": "Collaborative perception (CP) enables multiple vehicles to augment their individual perception capacities through the exchange of feature-level sensory data. However, this fusion mechanism is inherently vulnerable to adversarial attacks, especially in fully untrusted-vehicle environments. Existing defense approaches often assume a trusted ego vehicle as a reference or incorporate additional binary classifiers. These assumptions limit their practicality in real-world deployments due to the questionable trustworthiness of ego vehicles, the requirement for real-time detection, and the need for generalizability across diverse scenarios. To address these challenges, we propose a novel Pseudo-Random Bayesian Inference (PRBI) framework, a first efficient defense method tailored for fully untrusted-vehicle CP. PRBI detects adversarial behavior by leveraging temporal perceptual discrepancies, using the reliable perception from the preceding frame as a dynamic reference. Additionally, it employs a pseudo-random grouping strategy that requires only two verifications per frame, while applying Bayesian inference to estimate both the number and identities of malicious vehicles. Theoretical analysis has proven the convergence and stability of the proposed PRBI framework. Extensive experiments show that PRBI requires only 2.5 verifications per frame on average, outperforming existing methods significantly, and restores detection precision to between 79.4% and 86.9% of pre-attack levels."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "R2F: Repurposing Ray Frontiers for LLM-free Object Navigation",
+    "authors": "Francesco Argenziano, John Mark Alexis Marcelo, Michele Brienza, Abdel Hakim Drid, Emanuele Musumeci, Daniele Nardi, Domenico D. Bloisi, Vincenzo Suriani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08475v1",
+    "source": "arXiv",
+    "abstract": "Zero-shot open-vocabulary object navigation has progressed rapidly with the emergence of large Vision-Language Models (VLMs) and Large Language Models (LLMs), now widely used as high-level decision-makers instead of end-to-end policies. Although effective, such systems often rely on iterative large-model queries at inference time, introducing latency and computational overhead that limit real-time deployment. To address this problem, we repurpose ray frontiers (R2F), a recently proposed frontier-based exploration paradigm, to develop an LLM-free framework for indoor open-vocabulary object navigation. While ray frontiers were originally used to bias exploration using semantic cues carried along rays, we reinterpret frontier regions as explicit, direction-conditioned semantic hypotheses that serve as navigation goals. Language-aligned features accumulated along out-of-range rays are stored sparsely at frontiers, where each region maintains multiple directional embeddings encoding plausible unseen content. In this way, navigation then reduces to embedding-based frontier scoring and goal tracking within a classical mapping and planning pipeline, eliminating iterative large-model reasoning. We further introduce R2F-VLN, a lightweight extension for free-form language instructions using syntactic parsing and relational verification without additional VLM or LLM components. Experiments in Habitat-sim and on a real robotic platform demonstrate competitive state-of-the-art zero-shot performance with real-time execution, achieving up to 6 times faster runtime than VLM-based alternatives."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Efficient Policy Learning with Hybrid Evaluation-Based Genetic Programming for Uncertain Agile Earth Observation Satellite Scheduling",
+    "authors": "Junhua Xue, Yuning Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08447v1",
+    "source": "arXiv",
+    "abstract": "The Uncertain Agile Earth Observation Satellite Scheduling Problem (UAEOSSP) is a novel combinatorial optimization problem and a practical engineering challenge that aligns with the current demands of space technology development. It incorporates uncertainties in profit, resource consumption, and visibility, which may render pre-planned schedules suboptimal or even infeasible. Genetic Programming Hyper-Heuristic (GPHH) shows promise for evolving interpretable scheduling policies; however, their simulation-based evaluation incurs high computational costs. Moreover, the design of the constructive method, denoted as Online Scheduling Algorithm (OSA), directly affects fitness assessment, resulting in evaluation-dependent local optima within the policy space. To address these issues, this paper proposes a Hybrid Evaluation-based Genetic Programming (HE-GP) for effectively solving UAEOSSP. A Hybrid Evaluation (HE) mechanism is integrated into the policy-driven OSA, combining exact and approximate filtering modes: exact mode ensures evaluation accuracy through elaborately designed constraint verification modules, while approximate mode reduces computational overhead via simplified logic. HE-GP dynamically switches between evaluation models based on real-time evolutionary state information. Experiments on 16 simulated instance sets demonstrate that HE-GP significantly outperforms handcrafted heuristics and single-evaluation based GPHH, achieving substantial reductions in computational cost while maintaining excellent scheduling performance across diverse scenarios. Specifically, the average training time of HE-GP was reduced by 17.77\\% compared to GP employing exclusively exact evaluation, while the optimal policy generated by HE-GP achieved the highest average ranks across all scenarios."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Agentic Neurosymbolic Collaboration for Mathematical Discovery: A Case Study in Combinatorial Design",
+    "authors": "Hai Xia, Carla P. Gomes, Bart Selman, Stefan Szeider",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08322v1",
+    "source": "arXiv",
+    "abstract": "We study mathematical discovery through the lens of neurosymbolic reasoning, where an AI agent powered by a large language model (LLM), coupled with symbolic computation tools, and human strategic direction, jointly produced a new result in combinatorial design theory. The main result of this human-AI collaboration is a tight lower bound on the imbalance of Latin squares for the notoriously difficult case $n \\equiv 1 \\pmod{3}$. We reconstruct the discovery process from detailed interaction logs spanning multiple sessions over several days and identify the distinct cognitive contributions of each component. The AI agent proved effective at uncovering hidden structure and generating hypotheses. The symbolic component consists of computer algebra, constraint solvers, and simulated annealing, which provides rigorous verification and exhaustive enumeration. Human steering supplied the critical research pivot that transformed a dead end into a productive inquiry. Our analysis reveals that multi-model deliberation among frontier LLMs proved reliable for criticism and error detection but unreliable for constructive claims. The resulting human-AI mathematical contribution, a tight lower bound of $4n(n{-}1)/9$, is achieved via a novel class of near-perfect permutations. The bound was formally verified in Lean 4. Our experiments show that neurosymbolic systems can indeed produce genuine discoveries in pure mathematics."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "CORE-Acu: Structured Reasoning Traces and Knowledge Graph Safety Verification for Acupuncture Clinical Decision Support",
+    "authors": "Liuyi Xu, Yun Guo, Ming Chen, Zihan Dun, Yining Qian, An-Yang Lu, Shuang Li, Lijun Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08321v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) show significant potential for clinical decision support (CDS), yet their black-box nature -- characterized by untraceable reasoning and probabilistic hallucinations -- poses severe challenges in acupuncture, a field demanding rigorous interpretability and safety. To address this, we propose CORE-Acu, a neuro-symbolic framework for acupuncture clinical decision support that integrates Structured Chain-of-Thought (S-CoT) with knowledge graph (KG) safety verification. First, we construct the first acupuncture Structured Reasoning Trace dataset and a schema-constrained fine-tuning framework. By enforcing an explicit causal chain from pattern identification to treatment principles, treatment plans, and acupoint selection, we transform implicit Traditional Chinese Medicine (TCM) reasoning into interpretable generation constraints, mitigating the opacity of LLM-based CDS. Furthermore, we construct a TCM safety knowledge graph and establish a ``Generate--Verify--Revise'' closed-loop inference system based on a Symbolic Veto Mechanism, employing deterministic rules to intercept hallucinations and enforce hard safety boundaries. Finally, we introduce the Lexicon-Matched Entity-Reweighted Loss (LMERL), which corrects terminology drift caused by the frequency--importance mismatch in general optimization by adaptively amplifying gradient contributions of high-risk entities during fine-tuning. Experiments on 1,000 held-out cases demonstrate CORE-Acu's superior entity fidelity and reasoning quality. Crucially, CORE-Acu achieved 0/1,000 observed safety violations (95\\% CI: 0--0.37\\%), whereas GPT-4o exhibited an 8.5\\% violation rate under identical rules. These results establish CORE-Acu as a robust neuro-symbolic framework for acupuncture clinical decision support, guaranteeing both reasoning auditability and strict safety compliance."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "A Blockchain-based Traceability System for AI-Driven Engine Blade Inspection",
+    "authors": "Mahmoud Hafez, Eman Ouda, Mohammed A. Mohammed Eltoum, Khaled Salah, Yusra Abdulrahman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08288v1",
+    "source": "arXiv",
+    "abstract": "Aircraft engine blade maintenance relies on inspection records shared across manufacturers, airlines, maintenance organizations, and regulators. Yet current systems are fragmented, difficult to audit, and vulnerable to tampering. This paper presents BladeChain, a blockchain-based system providing immutable traceability for blade inspections throughout the component life cycle. BladeChain is the first system to integrate multi-stakeholder endorsement, automated inspection scheduling, AI model provenance, and cryptographic evidence binding, delivering auditable maintenance traceability for aerospace deployments. Built on a four-stakeholder Hyperledger Fabric network (OEM, Airline, MRO, Regulator), BladeChain captures every life-cycle event in a tamper-evident ledger. A chaincode-enforced state machine governs blade status transitions and automatically triggers inspections when configurable flight hour, cycle, or calendar thresholds are exceeded, eliminating manual scheduling errors. Inspection artifacts are stored off-chain in IPFS and linked to on-chain records via SHA-256 hashes, with each inspection record capturing the AI model name and version used for defect detection. This enables regulators to audit both what defects were found and how they were found. The detection module is pluggable, allowing organizations to adopt or upgrade inspection models without modifying the ledger or workflows. We built a prototype and evaluated it on workloads of up to 100 blades, demonstrating 100% life cycle completion with consistent throughput of 26 operations per minute. A centralized SQL baseline quantifies the consensus overhead and highlights the security trade-off. Security validation confirms tamper detection within 17~ms through hash verification."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "LAMUS: A Large-Scale Corpus for Legal Argument Mining from U.S. Caselaw using LLMs",
+    "authors": "Serene Wang, Lavanya Pobbathi, Haihua Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08286v1",
+    "source": "arXiv",
+    "abstract": "Legal argument mining aims to identify and classify the functional components of judicial reasoning, such as facts, issues, rules, analysis, and conclusions. Progress in this area is limited by the lack of large-scale, high-quality annotated datasets for U.S. caselaw, particularly at the state level. This paper introduces LAMUS, a sentence-level legal argument mining corpus constructed from U.S. Supreme Court decisions and Texas criminal appellate opinions. The dataset is created using a data-centric pipeline that combines large-scale case collection, LLM-based automatic annotation, and targeted human-in-the-loop quality refinement. We formulate legal argument mining as a six-class sentence classification task and evaluate multiple general-purpose and legal-domain language models under zero-shot, few-shot, and chain-of-thought prompting strategies, with LegalBERT as a supervised baseline. Results show that chain-of-thought prompting substantially improves LLM performance, while domain-specific models exhibit more stable zero-shot behavior. LLM-assisted verification corrects nearly 20% of annotation errors, improving label consistency. Human verification achieves Cohen's Kappa of 0.85, confirming annotation quality. LAMUS provides a scalable resource and empirical insights for future legal NLP research. All code and datasets can be accessed for reproducibility on GitHub at: https://github.com/LavanyaPobbathi/LAMUS/tree/main"
+  },
+  {
+    "date": "2026-03-09",
+    "title": "AdaCultureSafe: Adaptive Cultural Safety Grounded by Cultural Knowledge in Large Language Models",
+    "authors": "Hankun Kang, Di Lin, Zhirong Liao, Pengfei Bai, Xinyi Zeng, Jiawei Jiang, Yuanyuan Zhu, Tieyun Qian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08275v1",
+    "source": "arXiv",
+    "abstract": "With the widespread adoption of Large Language Models (LLMs), respecting indigenous cultures becomes essential for models' culturally safety and responsible global applications. Existing studies separately consider cultural safety and cultural knowledge and neglect that the former should be grounded by the latter. This severely prevents LLMs from yielding culture-specific respectful responses. Consequently, adaptive cultural safety remains a formidable task. In this work, we propose to jointly model cultural safety and knowledge. First and foremost, cultural-safety and knowledge-paired data serve as the key prerequisite to conduct this research. However, the cultural diversity across regions and the subtlety of cultural differences pose significant challenges to the creation of such paired evaluation data. To address this issue, we propose a novel framework that integrates authoritative cultural knowledge descriptions curation, LLM-automated query generation, and heavy manual verification. Accordingly, we obtain a dataset named AdaCultureSafe containing 4.8K manually decomposed fine-grained cultural descriptions and the corresponding 48K manually verified safety- and knowledge-oriented queries. Upon the constructed dataset, we evaluate three families of popular LLMs on their cultural safety and knowledge proficiency, via which we make a critical discovery: no significant correlation exists between their cultural safety and knowledge proficiency. We then delve into the utility-related neuron activations within LLMs to investigate the potential cause of the absence of correlation, which can be attributed to the difference of the objectives of pre-training and post-alignment. We finally present a knowledge-grounded method, which significantly enhances cultural safety by enforcing the integration of knowledge into the LLM response generation process."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Seed2Scale: A Self-Evolving Data Engine for Embodied AI via Small to Large Model Synergy and Multimodal Evaluation",
+    "authors": "Cong Tai, Zhaoyu Zheng, Haixu Long, Hansheng Wu, Zhengbin Long, Haodong Xiang, Rong Shi, Zhuo Cui, Shizhuang Zhang, Gang Qiu, He Wang, Ruifeng Li, Biao Liu, Zhenzhe Sun, Tao Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08260v1",
+    "source": "arXiv",
+    "abstract": "Existing data generation methods suffer from exploration limits, embodiment gaps, and low signal-to-noise ratios, leading to performance degradation during self-iteration. To address these challenges, we propose Seed2Scale, a self-evolving data engine that overcomes the data bottleneck through a heterogeneous synergy of \"small-model collection, large-model evaluation, and target-model learning\". Starting with as few as four seed demonstrations, the engine employs the lightweight Vision-Language-Action model, SuperTiny, as a dedicated collector, leveraging its strong inductive bias for robust exploration in parallel environments. Concurrently, a pre-trained Vision-Language Model is integrated as a Verifer to autonomously perform success/failure judgment and quality scoring for the massive generated trajectories. Seed2Scale effectively mitigates model collapse, ensuring the stability of the self-evolution process. Experimental results demonstrate that Seed2Scale exhibits signifcant scaling potential: as iterations progress, the success rate of the target model shows a robust upward trend, achieving a performance improvement of 131.2%. Furthermore, Seed2Scale signifcantly outperforms existing data augmentation methods, providing a scalable and cost-effective pathway for the large-scale development of Generalist Embodied AI. Project page: https://terminators2025.github.io/Seed2Scale.github.io"
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Quantifying Cross-Lingual Transfer in Paralinguistic Speech Tasks",
+    "authors": "Pol Buitrago, Oriol Pareras, Federico Costa, Javier Hernando",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08231v1",
+    "source": "arXiv",
+    "abstract": "Paralinguistic speech tasks are often considered relatively language-agnostic, as they rely on extralinguistic acoustic cues rather than lexical content. However, prior studies report performance degradation under cross-lingual conditions, indicating non-negligible language dependence. Still, these studies typically focus on isolated language pairs or task-specific settings, limiting comparability and preventing a systematic assessment of task-level language dependence. We introduce the Cross-Lingual Transfer Matrix (CLTM), a systematic method to quantify cross-lingual interactions between pairs of languages within a given task. We apply the CLTM to two paralinguistic tasks, gender identification and speaker verification, using a multilingual HuBERT-based encoder, to analyze how donor-language data affects target-language performance during fine-tuning. Our results reveal distinct transfer patterns across tasks and languages, reflecting systematic, language-dependent effects."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "SplitAgent: A Privacy-Preserving Distributed Architecture for Enterprise-Cloud Agent Collaboration",
+    "authors": "Jianshu She",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08221v1",
+    "source": "arXiv",
+    "abstract": "Enterprise adoption of cloud-based AI agents faces a fundamental privacy dilemma: leveraging powerful cloud models requires sharing sensitive data, while local processing limits capability. Current agent frameworks like MCP and A2A assume complete data sharing, making them unsuitable for enterprise environments with confidential information. We present SplitAgent, a novel distributed architecture that enables privacy-preserving collaboration between enterprise-side privacy agents and cloud-side reasoning agents. Our key innovation is context-aware dynamic sanitization that adapts privacy protection based on task semantics -- contract review requires different sanitization than code review or financial analysis. SplitAgent extends existing agent protocols with differential privacy guarantees, zero-knowledge tool verification, and privacy budget management. Through comprehensive experiments on enterprise scenarios, we demonstrate that SplitAgent achieves 83.8\\% task accuracy while maintaining 90.1\\% privacy protection, significantly outperforming static approaches (73.2\\% accuracy, 79.7\\% privacy). Context-aware sanitization improves task utility by 24.1\\% over static methods while reducing privacy leakage by 67\\%. Our architecture provides a practical path for enterprise AI adoption without compromising sensitive data."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Evidence-Driven Reasoning for Industrial Maintenance Using Heterogeneous Data",
+    "authors": "Fearghal O'Donncha, Nianjun Zhou, Natalia Martinez, James T Rayfield, Fenno F. Heath, Abigail Langbridge, Roman Vaculin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08171v1",
+    "source": "arXiv",
+    "abstract": "Industrial maintenance platforms contain rich but fragmented evidence, including free-text work orders, heterogeneous operational sensors or indicators, and structured failure knowledge. These sources are often analyzed in isolation, producing alerts or forecasts that do not support conditional decision-making: given this asset history and behavior, what is happening and what action is warranted? We present Condition Insight Agent, a deployed decision-support framework that integrates maintenance language, behavioral abstractions of operational data, and engineering failure semantics to produce evidence-grounded explanations and advisory actions. The system constrains reasoning through deterministic evidence construction and structured failure knowledge, and applies a rule-based verification loop to suppress unsupported conclusions. Case studies from production CMMS deployments show that this verification-first design operates reliably under heterogeneous and incomplete data while preserving human oversight. Our results demonstrate how constrained LLM-based reasoning can function as a governed decision-support layer for industrial maintenance."
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Language-Invariant Multilingual Speaker Verification for the TidyVoice 2026 Challenge",
+    "authors": "Ze Li, Xiaoxiao Miao, Juan Liu, Ming Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.08092v1",
+    "source": "arXiv",
+    "abstract": "Multilingual speaker verification (SV) remains challenging due to limited cross-lingual data and language-dependent information in speaker embeddings. This paper presents a language-invariant multilingual SV system for the TidyVoice 2026 Challenge. We adopt the multilingual self-supervised w2v-BERT 2.0 model as the backbone, enhanced with Layer Adapters and Multi-scale Feature Aggregation to better exploit multi-layer representations. A language-adversarial training strategy with a Gradient Reversal Layer is applied to promote language-invariant speaker embeddings. Moreover, a multilingual zero-shot text-to-speech system is used to synthesize speech in multiple languages, improving language diversity. Experimental results demonstrate that fine-tuning the large-scale pretrained model yields competitive performance, while language-adversarial training further enhances robustness. In addition, synthetic speech augmentation provides additional gains under limited training data conditions. Source code is available at https://github.com/ZXHY-82/LI-MSV-TidyVoice2026."
+  },
+  {
+    "date": "2026-3-9",
+    "title": "From Verification Burden to Trusted Collaboration: Design Goals for LLM-Assisted Literature Reviews",
+    "authors": "Brenda Nogueira, Werner Geyer, Andrew A. Anderson, Toby Jia-Jun Li, Dongwhi Kim, Nuno Moniz, Nitesh V Chawla",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3794723",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "Modelling Prompting Behaviours in LLM-Mediated Task Solving",
+    "authors": "Ahmad El Cheikh Ammar",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3789230",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "Making AI Risk Decisions Visible: Evaluating LLM Reasoning in Insurance Risk Classification",
+    "authors": "Andrea Rosales Sanabria",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3794728",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "Beyond the Conversational Paradigm: Models, Design Principles, and Tools for Advancing the Spectrum of Human-LLM Interaction",
+    "authors": "Laura Colazzo",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3789234",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "Exploring the Entertainment Potential of Personalised LLM-Based Serious Games with Humanoid Robots",
+    "authors": "Giulio Canapa, Benedetta Catricalà, Marco Manca, Fabio Paternò, Carmen Santoro, Eleonora Zedda",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3795099",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "AI4Qual: A Comprehensive Field Guide to LLM-Supported Qualitative Research (Tutorial)",
+    "authors": "He Zhang, Jie Cai, Jingyi Xie, Chuhao Wu, ChanMin Kim, John M. Carroll",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3794947",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "MultEval: Collaboratively Creating Criteria for LLM-as-a-Judge Systems",
+    "authors": "Charles Chiang, Simret Araya Gebreegziabher, Annalisa Szymanski, Yukun Yang, Hyo Jin Do, Zahra Ashktorab, Werner Geyer, Toby Jia-Jun Li, Diego Gómez-Zará",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3795100",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-9",
+    "title": "How Many Kilometers Can I Drive Before Shisa-chan Gets Sick? Affective LLM-AR Gamification for Mobility Behavior Change in Okinawa",
+    "authors": "Yamada Yuta, Panote Siriaraya, Christophe Claramunt, Shoko Wakamiya, Teriitutea Quesnot, Eiji Aramaki, Attila Kertesz, Ismail Rakip Karas, Jonas K. H. Fischer, Wan Jou She",
+    "publish": "Companion Proceedings of the 31st International Conference on Intelligent User Interfaces",
+    "url": "https://doi.org/10.1145/3742414.3794734",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
