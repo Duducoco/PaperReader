@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-03-10",
+    "title": "Avoiding Big Integers: Parallel Multimodular Algebraic Verification of Arithmetic Circuits",
+    "authors": "Clemens Hofstadler, Daniela Kaufmann, Chen Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.09501v1",
+    "source": "arXiv",
+    "abstract": "Word-level verification of arithmetic circuits with large operands typically relies on arbitrary-precision arithmetic, which can lead to significant computational overhead as word sizes grow. In this paper, we present a hybrid algebraic verification technique based on polynomial reasoning that combines linear and nonlinear rewriting. Our approach relies on multimodular reasoning using homomorphic images, where computations are performed in parallel modulo different primes, thereby avoiding any large-integer arithmetic. We implement the proposed method in the verification tool TalisMan2.0 and evaluate it on a suite of multiplier benchmarks. Our results show that hybrid multimodular reasoning significantly improves upon existing approaches.",
+    "title_zh": "避免大整数：算术电路的并行多模代数验证",
+    "abstract_zh": "具有大操作数的算术电路的字级验证通常依赖于任意精度算术，这可能导致随着字大小的增加而显著的计算开销。在本文中，我们提出了一种基于多项式推理的混合代数验证技术，该技术结合了线性和非线性重写。我们的方法依赖于使用同态映像的多模推理，其中计算在不同素数的模下并行进行，从而避免了任何大整数算术。我们在验证工具TalisMan2.0中实现了所提出的方法，并在一组乘法器基准上进行了评估。我们的结果表明，混合多模推理显著改进了现有方法。"
+  },
+  {
+    "date": "2026-03-10",
+    "title": "Wrong Code, Right Structure: Learning Netlist Representations from Imperfect LLM-Generated RTL",
+    "authors": "Siyang Cai, Cangyuan Li, Yinhe Han, Ying Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.09161v1",
+    "source": "arXiv",
+    "abstract": "Learning effective netlist representations is fundamentally constrained by the scarcity of labeled datasets, as real designs are protected by Intellectual Property (IP) and costly to annotate. Existing work therefore focuses on small-scale circuits with clean labels, limiting scalability to realistic designs. Meanwhile, Large Language Models (LLMs) can generate Register-Transfer-Level (RTL) at scale, but their functional incorrectness has hindered their use in circuit analysis. In this work, we make a key observation: even when LLM-Generated RTL is functionally imperfect, the synthesized netlists still preserve structural patterns that are strongly indicative of the intended functionality. Building on this insight, we propose a cost-effective data augmentation and training framework that systematically exploits imperfect LLM-Generated RTL as training data for netlist representation learning, forming an end-to-end pipeline from automated code generation to downstream tasks. We conduct evaluations on circuit functional understanding tasks, including sub-circuit boundary identification and component classification, across benchmarks of increasing scales, extending the task scope from operator-level to IP-level. The evaluations demonstrate that models trained on our noisy synthetic corpus generalize well to real-world netlists, matching or even surpassing methods trained on scarce high-quality data and effectively breaking the data bottleneck in circuit representation learning.",
+    "title_zh": "错误代码，正确结构：从不完美的LLM生成RTL中学习网表表示",
+    "abstract_zh": "学习有效的网表表示在根本上受到标注数据集稀缺的限制，因为真实设计受知识产权（IP）保护且标注成本高昂。因此，现有工作集中于具有清晰标签的小规模电路，限制了向现实设计的可扩展性。同时，大型语言模型（LLMs）可以大规模生成寄存器传输级（RTL），但其功能不正确性阻碍了其在电路分析中的应用。在这项工作中，我们做出了一个关键观察：即使LLM生成的RTL在功能上不完美，合成的网表仍然保留了强烈指示预期功能的结构模式。基于这一见解，我们提出了一种具有成本效益的数据增强和训练框架，系统地利用不完美的LLM生成RTL作为网表表示学习的训练数据，形成从自动代码生成到下游任务的端到端管道。我们在电路功能理解任务上进行评估，包括子电路边界识别和组件分类，跨越规模不断扩大的基准，将任务范围从操作员级扩展到IP级。评估结果表明，在我们嘈杂的合成语料库上训练的模型能够很好地泛化到真实世界的网表，与在稀缺高质量数据上训练的方法相匹配甚至超越，有效打破了电路表示学习中的数据瓶颈。"
+  }
+]
