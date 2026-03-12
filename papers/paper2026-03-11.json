@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-03-11",
+    "title": "On Utility Maximization under Multivariate Fake Stationary Affine Volterra Models",
+    "authors": "Emmanuel Gnabeyeu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.11046v1",
+    "source": "arXiv",
+    "abstract": "This paper is concerned with Merton's portfolio optimization problem in a Volterra stochastic environment described by a multivariate fake stationary Volterra--Heston model. Due to the non-Markovianity and non-semimartingality of the underlying processes, the classical stochastic control approach cannot be directly applied in this setting. Instead, the problem is tackled using a stochastic factor solution to a Riccati backward stochastic differential equation (BSDE). Our approach is inspired by the martingale optimality principle combined with a suitable verification argument. The resulting optimal strategies for Merton's problems are derived in semi-closed form depending on the solutions to time-dependent multivariate Riccati-Volterra equations. Numerical results on a two dimensional fake stationary rough Heston model illustrate the impact of stationary rough volatilities on the optimal Merton strategies."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Task-Aware Delegation Cues for LLM Agents",
+    "authors": "Xingrui Gu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.11011v1",
+    "source": "arXiv",
+    "abstract": "LLM agents increasingly present as conversational collaborators, yet human--agent teamwork remains brittle due to information asymmetry: users lack task-specific reliability cues, and agents rarely surface calibrated uncertainty or rationale. We propose a task-aware collaboration signaling layer that turns offline preference evaluations into online, user-facing primitives for delegation. Using Chatbot Arena pairwise comparisons, we induce an interpretable task taxonomy via semantic clustering, then derive (i) Capability Profiles as task-conditioned win-rate maps and (ii) Coordination-Risk Cues as task-conditioned disagreement (tie-rate) priors. These signals drive a closed-loop delegation protocol that supports common-ground verification, adaptive routing (primary vs.\\ primary+auditor), explicit rationale disclosure, and privacy-preserving accountability logs. Two predictive probes validate that task typing carries actionable structure: cluster features improve winner prediction accuracy and reduce difficulty prediction error under stratified 5-fold cross-validation. Overall, our framework reframes delegation from an opaque system default into a visible, negotiable, and auditable collaborative decision, providing a principled design space for adaptive human--agent collaboration grounded in mutual awareness and shared accountability."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "A Hybrid Knowledge-Grounded Framework for Safety and Traceability in Prescription Verification",
+    "authors": "Yichi Zhu, Kan Ling, Xu Liu, Hengrun Zhang, Huiqun Yu, Guisheng Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10891v1",
+    "source": "arXiv",
+    "abstract": "Medication errors pose a significant threat to patient safety, making pharmacist verification (PV) a critical, yet heavily burdened, final safeguard. The direct application of Large Language Models (LLMs) to this zero-tolerance domain is untenable due to their inherent factual unreliability, lack of traceability, and weakness in complex reasoning. To address these challenges, we introduce PharmGraph-Auditor, a novel system designed for safe and evidence-grounded prescription auditing. The core of our system is a trustworthy Hybrid Pharmaceutical Knowledge Base (HPKB), implemented under the Virtual Knowledge Graph (VKG) paradigm. This architecture strategically unifies a relational component for set constraint satisfaction and a graph component for topological reasoning via a rigorous mapping layer. To construct this HPKB, we propose the Iterative Schema Refinement (ISR) algorithm, a framework that enables the co-evolution of both graph and relational schemas from medical texts. For auditing, we introduce the KB-grounded Chain of Verification (CoV), a new reasoning paradigm that transforms the LLM from an unreliable generator into a transparent reasoning engine. CoV decomposes the audit task into a sequence of verifiable queries against the HPKB, generating hybrid query plans to retrieve evidence from the most appropriate data store. Experimental results demonstrate robust knowledge extraction capabilities and show promises of using PharmGraph-Auditor to enable pharmacists to achieve safer and faster prescription verification."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Speaker Verification with Speech-Aware LLMs: Evaluation and Augmentation",
+    "authors": "Thomas Thebaud, Yuzhe Wang, Laureano Moro-Velazquez, Jesus Villalba-Lopez, Najim Dehak",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10827v1",
+    "source": "arXiv",
+    "abstract": "Speech-aware large language models (LLMs) can accept speech inputs, yet their training objectives largely emphasize linguistic content or specific fields such as emotions or the speaker's gender, leaving it unclear whether they encode speaker identity. First, we propose a model-agnostic scoring protocol that produces continuous verification scores for both API-only and open-weight models, using confidence scores or log-likelihood ratios from the Yes/No token probabilities. Using this protocol, we benchmark recent speech-aware LLMs and observe weak speaker discrimination (EERs above 20% on VoxCeleb1). Second, we introduce a lightweight augmentation that equips an LLM with ASV capability by injecting frozen ECAPA-TDNN speaker embeddings through a learned projection and training only LoRA adapters. On TinyLLaMA-1.1B, the resulting ECAPA-LLM achieves 1.03% EER on VoxCeleb1-E, approaching a dedicated speaker verification system while preserving a natural-language interface."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "LuxBorrow: From Pompier to Pompjee, Tracing Borrowing in Luxembourgish",
+    "authors": "Nina Hosseini-Kivanani, Fred Philippy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10789v1",
+    "source": "arXiv",
+    "abstract": "We present LuxBorrow, a borrowing-first analysis of Luxembourgish (LU) news spanning 27 years (1999-2025), covering 259,305 RTL articles and 43.7M tokens. Our pipeline combines sentence-level language identification (LU/DE/FR/EN) with a token-level borrowing resolver restricted to LU sentences, using lemmatization, a collected loanword registry, and compiled morphological and orthographic rules. Empirically, LU remains the matrix language across all documents, while multilingual practice is pervasive: 77.1% of articles include at least one donor language and 65.4% use three or four. Breadth does not imply intensity: median code-mixing index (CMI) increases from 3.90 (LU+1) to only 7.00 (LU+3), indicating localized insertions rather than balanced bilingual text. Domain and period summaries show moderate but persistent mixing, with CMI rising from 6.1 (1999-2007) to a peak of 8.4 in 2020. Token-level adaptations total 25,444 instances and exhibit a mixed profile: morphological 63.8%, orthographic 35.9%, lexical 0.3%. The most frequent individual rules are orthographic, such as on->oun and eur->er, while morphology is collectively dominant. Diachronically, code-switching intensifies, and morphologically adapted borrowings grow from a small base. French overwhelmingly supplies adapted items, with modest growth for German and negligible English. We advocate borrowing-centric evaluation, including borrowed token and type rates, donor entropy over borrowed items, and assimilation ratios, rather than relying only on document-level mixing indices."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Pairwise Negative Correlation for Uniform Spanning Subgraphs of the Complete Graph",
+    "authors": "Pengfei Tang, Zibo Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10738v1",
+    "source": "arXiv",
+    "abstract": "We investigate the pairwise negative correlation (p-NC) property for uniform probability measures on several families of spanning subgraphs of the complete graph $K_n$. Motivated by conjectured negative dependence properties of the random-cluster model with $q<1$, we focus on three natural families: the set of all connected spanning subgraphs, the set of forests with exactly $k$ components, and the set of connected spanning subgraphs with excess $k$, where $k$ is a fixed integer. We prove that for each of these families, the associated uniform measure satisfies the p-NC property provided $n$ is sufficiently large. Our results extend earlier work on uniform forests and provide the first verification of the p-NC property for uniform connected subgraphs and their truncations on complete graphs."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Probabilistic Verification of Voice Anti-Spoofing Models",
+    "authors": "Evgeny Kushnir, Alexandr Kozodaev, Dmitrii Korzh, Mikhail Pautov, Oleg Kiriukhin, Oleg Y. Rogov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10713v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in generative models have amplified the risk of malicious misuse of speech synthesis technologies, enabling adversaries to impersonate target speakers and access sensitive resources. Although speech deepfake detection has progressed rapidly, most existing countermeasures lack formal robustness guarantees or fail to generalize to unseen generation techniques. We propose PV-VASM, a probabilistic framework for verifying the robustness of voice anti-spoofing models (VASMs). PV-VASM estimates the probability of misclassification under text-to-speech (TTS), voice cloning (VC), and parametric signal transformations. The approach is model-agnostic and enables robustness verification against unseen speech synthesis techniques and input perturbations. We derive a theoretical upper bound on the error probability and validate the method across diverse experimental settings, demonstrating its effectiveness as a practical robustness verification tool."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "RandMark: On Random Watermarking of Visual Foundation Models",
+    "authors": "Anna Chistyakova, Mikhail Pautov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10695v1",
+    "source": "arXiv",
+    "abstract": "Being trained on large and diverse datasets, visual foundation models (VFMs) can be fine-tuned to achieve remarkable performance and efficiency in various downstream computer vision tasks. The high computational cost of data collection and training makes these models valuable assets, which motivates some VFM owners to distribute them alongside a license to protect their intellectual property rights. In this paper, we propose an approach to ownership verification of visual foundation models that leverages a small encoder-decoder network to embed digital watermarks into an internal representation of a hold-out set of input images. The method is based on random watermark embedding, which makes the watermark statistics detectable in functional copies of the watermarked model. Both theoretically and experimentally, we demonstrate that the proposed method yields a low probability of false detection for non-watermarked models and a low probability of false misdetection for watermarked models."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Repurposing Backdoors for Good: Ephemeral Intrinsic Proofs for Verifiable Aggregation in Cross-silo Federated Learning",
+    "authors": "Xian Qin, Xue Yang, Xiaohu Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10692v1",
+    "source": "arXiv",
+    "abstract": "While Secure Aggregation (SA) protects update confidentiality in Cross-silo Federated Learning, it fails to guarantee aggregation integrity, allowing malicious servers to silently omit or tamper with updates. Existing verifiable aggregation schemes rely on heavyweight cryptography (e.g., ZKPs, HE), incurring computational costs that scale poorly with model size. In this paper, we propose a lightweight architecture that shifts from extrinsic cryptographic proofs to \\textit{Intrinsic Proofs}. We repurpose backdoor injection to embed verification signals directly into model parameters. By harnessing Catastrophic Forgetting, these signals are robust for immediate verification yet ephemeral, naturally decaying to preserve final model utility. We design a randomized, single-verifier auditing framework compatible with SA, ensuring client anonymity and preventing signal collision without trusted third parties. Experiments on SVHN, CIFAR-10, and CIFAR-100 demonstrate high detection probabilities against malicious servers. Notably, our approach achieves over $1000\\times$ speedup on ResNet-18 compared to cryptographic baselines, effectively scaling to large models."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "A Platform-Agnostic Multimodal Digital Human Modelling Framework: Neurophysiological Sensing in Game-Based Interaction",
+    "authors": "Daniel J. Buxton, Mufti Mahmud, Jordan J. Bird, Thomas Hughes-Roberts, David J. Brown",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10680v1",
+    "source": "arXiv",
+    "abstract": "Digital Human Modelling (DHM) is increasingly shaped by advances in AI, wearable biosensing, and interactive digital environments, particularly in research addressing accessibility and inclusion. However, many AI-enabled DHM approaches remain tightly coupled to specific platforms, tasks, or interpretative pipelines, limiting reproducibility, scalability, and ethical reuse. This paper presents a platform-agnostic DHM framework designed to support AI-ready multimodal interaction research by explicitly separating sensing, interaction modelling, and inference readiness. The framework integrates the OpenBCI Galea headset as a unified multimodal sensing layer, providing concurrent EEG, EMG, EOG, PPG, and inertial data streams, alongside a reproducible, game-based interaction environment implemented using SuperTux. Rather than embedding AI models or behavioural inference, physiological signals are represented as structured, temporally aligned observables, enabling downstream AI methods to be applied under appropriate ethical approval. Interaction is modelled using computational task primitives and timestamped event markers, supporting consistent alignment across heterogeneous sensors and platforms. Technical verification via author self-instrumentation confirms data integrity, stream continuity, and synchronisation; no human-subjects evaluation or AI inference is reported. Scalability considerations are discussed with respect to data throughput, latency, and extension to additional sensors or interaction modalities. Illustrative use cases demonstrate how the framework can support AI-enabled DHM and HCI studies, including accessibility-oriented interaction design and adaptive systems research, without requiring architectural modifications. The proposed framework provides an emerging-technology-focused infrastructure for future ethics-approved, inclusive DHM research."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Flexible Multi-Target Angular Emulation for Over-the-Air Testing of Large-Scale ISAC Base Stations: Principle and Experimental Verification",
+    "authors": "Chunhui Li, Hao Sun, Wei Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10629v1",
+    "source": "arXiv",
+    "abstract": "Over-the-air (OTA) emulation of diverse sensing target characteristics in a controlled laboratory environment is pivotal for advancing integrated sensing and communication (ISAC) technology, as it facilitates the non-invasive performance evaluation of ISAC base stations (BSs) across complex scenarios. In this work, a flexible multi-target OTA emulation framework based on a wireless cable method is proposed to evaluate the sensing performance of large-scale ISAC BSs. The core concept leverages an amplitude and phase modulation (APM) network to simultaneously establish wireless cables and simulate target spatial characteristics without consuming additional resources on costly radar target emulators. For the wireless cable method, the condition number increases as the number of antennas scales up, which affects the performance of the wireless cable. Although the wireless cable concept has been established for devices-under-test (DUTs) with a limited number of antenna ports, establishing wireless cables for large-scale DUTs remains an open question in the community. We address this problem by optimizing the OTA probe array configuration based on the theoretical properties of strictly diagonally dominant matrices. Experimental results validate the proposed framework, demonstrating high-isolation wireless cables for a 32-element DUT and an extremely low condition number for a 128-element synthetic array. Furthermore, the OTA emulation of a dynamic dual-drone scenario confirms the method's effectiveness and practicality in reproducing complex sensing environments."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Reinforcement Learning with Conditional Expectation Reward",
+    "authors": "Changyi Xiao, Caijun Xu, Yixin Cao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10624v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has proven effective in enhancing the reasoning capabilities of large language models, particularly in domains such as mathematics where reliable rule-based verifiers can be constructed. However, the reliance on handcrafted, domain-specific verification rules substantially limits the applicability of RLVR to general reasoning domains with free-form answers, where valid answers often exhibit significant variability, making it difficult to establish complete and accurate rules. To address this limitation, we propose Conditional Expectation Reward (CER), which leverages the large language model itself as an implicit verifier, and is therefore applicable to general domains and eliminates the need for external verifiers or auxiliary models. CER is defined as the expected likelihood of generating the reference answer conditioned on the generated answer. In contrast to rule-based verifiers that yield binary feedback, CER provides a soft, graded reward signal that reflects varying degrees of correctness, making it better suited to tasks where answers vary in correctness. Experimental results demonstrate that CER is effective across a wide range of reasoning tasks, spanning both mathematical and general domains, indicating that CER serves as a flexible and general verification mechanism. The code is available at https://github.com/changyi7231/CER."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "TacLoc: Global Tactile Localization on Objects from a Registration Perspective",
+    "authors": "Zirui Zhang, Boyang Zhang, Fumin Zhang, Huan Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10565v1",
+    "source": "arXiv",
+    "abstract": "Pose estimation is essential for robotic manipulation, particularly when visual perception is occluded during gripper-object interactions. Existing tactile-based methods generally rely on tactile simulation or pre-trained models, which limits their generalizability and efficiency. In this study, we propose TacLoc, a novel tactile localization framework that formulates the problem as a one-shot point cloud registration task. TacLoc introduces a graph-theoretic partial-to-full registration method, leveraging dense point clouds and surface normals from tactile sensing for efficient and accurate pose estimation. Without requiring rendered data or pre-trained models, TacLoc achieves improved performance through normal-guided graph pruning and a hypothesis-and-verification pipeline. TacLoc is evaluated extensively on the YCB dataset. We further demonstrate TacLoc on real-world objects across two different visual-tactile sensors."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "VERI-DPO: Evidence-Aware Alignment for Clinical Summarization via Claim Verification and Direct Preference Optimization",
+    "authors": "Weixin Liu, Congning Ni, Qingyuan Song, Susannah L. Rose, Christopher Symons, Murat Kantarcioglu, Bradley A. Malin, Zhijun Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10494v1",
+    "source": "arXiv",
+    "abstract": "Brief Hospital Course (BHC) narratives must be clinically useful yet faithful to fragmented EHR evidence. LLM-based clinical summarizers still introduce unsupported statements, and alignment can encourage omissions (\"say-less\" degeneration). We introduce VERI-DPO, which uses claim verification to mine preferences and distill them into the summarizer with Direct Preference Optimization (DPO). On MIMIC-III-Ext-VeriFact-BHC (100 ICU patients; patient-level splits), we train a retrieval-augmented verifier to label claim-evidence pairs as Supported, Not Supported, or Not Addressed via a single-token format. The verifier scores sentence-level claims from sampled BHC candidates and aggregates margins into a coverage-aware utility to mine length-controlled, contradiction-anchored preference pairs. On held-out patients, verifier-mined preferences separate candidates by contradiction density, and VERI-DPO reduces Not Supported claim rates from 10.7% to 1.9% (local verifier judge) and from 11.6% to 6.4% (GPT-4o judge), while improving validity from 76.7% to 82.5% and maintaining informative length."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "From Verification to Herding: Exploiting Software's Sparsity of Influence",
+    "authors": "Tim Menzies, Kishan Kumar Ganguly",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10478v1",
+    "source": "arXiv",
+    "abstract": "Software verification is now costly, taking over half the project effort while failing on modern complex systems. We hence propose a shift from verification and modeling to herding: treating testing as a model-free search task that steers systems toward target goals. This exploits the \"Sparsity of Influence\" -the fact that, often, large software state spaces are ruled by just a few variables, We introduce EZR (Efficient Zero-knowledge Ranker), a stochastic learner that finds these controllers directly. Across dozens of tasks, EZR achieved 90% of peak results with only 32 samples, replacing heavy solvers with light sampling."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "On the Existence of Integers with at Most 3 Prime Factors Between Every Pair of Consecutive Squares",
+    "authors": "Peter Campbell",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10356v1",
+    "source": "arXiv",
+    "abstract": "We prove an explicit almost-prime analogue of Legendre's conjecture. Namely, for every integer $n \\geq 1$, the interval $(n^2,(n+1)^2)$ contains an integer having at most $3$ prime factors, counted with multiplicity. This improves the previous best result of Dudek and Johnston, who showed that every such interval contains an integer with at most $4$ prime factors. The proof combines a finite verification for $n^2 \\leq 10^{31}$, obtained from computations on primes in short intervals between consecutive squares together with explicit bounds on maximal prime gaps, with a fully explicit sieve-theoretic argument for the remaining range. For large $n$, we adapt Richert's logarithmic weights to intervals between consecutive squares and employ an explicit linear sieve of Bordignon, Johnston, and Starichkova."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Equilibrium under Time-Inconsistency: A New Existence Theory by Vanishing Entropy Regularization",
+    "authors": "Zhenhua Wang, Xiang Yu, Jingjie Zhang, Zhou Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10321v1",
+    "source": "arXiv",
+    "abstract": "This paper studies time-inconsistent stochastic control problems in a continuous-time setting. The time-inconsistency arises from the initial-time dependence such as the non-exponential discounting. The classical approach typically relates the existence of equilibrium to the classical solution of the equilibrium HJB equation (EHJB), whose existence is still an open problem under general model assumptions. We resolve this challenge by invoking the entropy regularization on relaxed policies. First, by employing some fixed point arguments, we establish the existence of classical solution of the exploratory equilibrium HJB equation (EEHJB) and obtain the Gibbs form characterization of the regularized equilibrium. Next, we develop some delicate PDE estimates for the solution of the EEHJB and its derivatives, facilitating the novel convergence analysis under suitable norms as the entropy regularization vanishes. It is shown that the solutions of EEHJB converges to a weak solution of a generalized EHJB, which is associated with the limit of the regularized equilibrium. This core convergence result allows us to conduct the verification to conclude that the limiting regularized equilibrium constitutes the equilibrium in the original problem. We thus contribute a new sufficient condition to the literature for the equilibrium in diffusion models under time-inconsistency without resorting to strong regularity assumptions of the EHJB."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Simulation-in-the-Reasoning (SiR): A Conceptual Framework for Empirically Grounded AI in Autonomous Transportation",
+    "authors": "Wuping Xin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10294v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have advanced reasoning through techniques like Chain-of-Thought (CoT). However, their reasoning largely re-mains textual and hypothetical, lacking empirical grounding in complex, dynamic domains like transportation. This paper introduces Simulation-in-the-Reasoning (SiR), a novel conceptual framework that embeds domain-specific simulators directly into the LLM reasoning loop. By treating intermediate reasoning steps as executable simulation experiments, SiR transforms LLM reasoning from narrative plausibility into a falsifiable, hypothesis-simulate-analyze workflow. We discuss applications, where LLM can formulate Intelligent Transport System (ITS) strategy hypotheses, invoke a traffic simulator via the Model Context Protocol (MCP), evaluate results under different demand patterns, and refine strategies through verification and aggregation. While implementing the framework is part of our ongoing work, this paper primarily establishes the conceptual foundation, discusses design considerations like API granularity, and outlines the vision of SiR as a cornerstone for interactive transportation digital twins. We argue that SiR represents a critical step towards trustworthy, empirically-validated AI for autonomous transportation systems."
+  },
+  {
+    "date": "2026-03-11",
+    "title": "Instant Runoff Voting on Graphs: Exclusion Zones and Distortion",
+    "authors": "Georgios Birmpas, Georgios Chionas, Efthyvoulos Drousiotis, Soodeh Habibi, Marios Mavronicolas, Paul Spirakis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10290v1",
+    "source": "arXiv",
+    "abstract": "We study instant-runoff voting (IRV) under metric preferences induced by an unweighted graph where each vertex hosts a voter, candidates occupy some vertices (with a single candidate allowed in such a vertex), and voters rank candidates by shortest-path distance with fixed deterministic tie-breaking. We focus on exclusion zones, vertex sets S such that whenever some candidate lies in S, the IRV winner must also lie in S. While testing whether a given set S is an exclusion zone is co-NP-Complete and finding the minimum exclusion zone is NP-hard in general graphs, we show here that both problems can be solved in polynomial time on trees. Our approach solves zone testing by designing a Kill membership test (can a designated candidate be forced to lose using opponents from a restricted set?) and shows that Kill can be decided in polynomial time on trees via a bottom-up dynamic program that certifies whether the designated candidate can be eliminated in round 1. A greedy shrinking process then recovers the minimum zone under a standard nesting assumption. To clarify the limits of tractability beyond trees, we also identify a rule level property (Strong Forced Elimination) that abstracts the key IRV behavior used in prior reductions, and show that both exclusion-zone verification and minimum- zone computation remain co-NP-complete and NP-hard, respectively, for any deterministic rank-based elimination rule satisfying this property. Finally, we relate IRV to utilitarian distortion in this discrete setting, and we present upper and lower bounds with regard to the distortion of IRV for several scenarios, including perfect binary trees and unweighted graphs."
+  },
+  {
+    "date": "2026-03-10",
+    "title": "Post-Quantum Entropy as a Service for Embedded Systems",
+    "authors": "Javier Blanco-Romero, Yuri Melissa Garcia-Niño, Florina Almenares Mendoza, Daniel Díaz-Sánchez, Carlos García-Rubio, Celeste Campo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.10274v1",
+    "source": "arXiv",
+    "abstract": "Embedded cryptography stands or falls on entropy quality, yet small devices have few trustworthy sources and little tolerance for heavyweight protocols. We build a Quantum Entropy as a Service (QEaaS) system that moves QRNG-derived entropy from a Quantis device to ESP32-class clients over post-quantum-secured channels. On the server side, the design exposes two paths: direct quantum entropy through a custom OpenSSL provider and mixed entropy through the Linux system pool. On the client side, we extend libcoap's Zephyr support, integrate wolfSSL-based DTLS 1.3 into the CoAP stack, and add a BLAKE2s entropy pool that preserves the standard Zephyr extraction interface while introducing an injection API for server-provided entropy. Benchmarks on ESP32 hardware, targeting 100 iterations per configuration, show that ML-KEM-512 completes a DTLS 1.3 handshake in 313 ms on average without certificate verification, 35% faster than ECDHE P-256. Pairing ML-KEM-512 with ML-DSA-44 lowers the mean to 225 ms. Certificate verification adds roughly 194 ms for ECDSA but only 17 ms for ML-DSA-44, so the fully post-quantum configuration remains 63% faster than classical ECDHE P-256 with ECDSA even under full verification. Local BLAKE2s pool operations stay below 0.1 ms combined. On this platform, post-quantum key exchange and authentication are not only feasible; they are faster than the classical baseline."
+  }
+]
