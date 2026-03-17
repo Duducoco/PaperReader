@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-16",
+    "title": "HorizonMath: Measuring AI Progress Toward Mathematical Discovery with Automatic Verification",
+    "authors": "Erik Y. Wang, Sumeet Motwani, James V. Roggeveen, Eliot Hodges, Dulhan Jayalath, Charles London, Kalyan Ramakrishnan, Flaviu Cipcigan, Philip Torr, Alessandro Abate",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15617v1",
+    "source": "arXiv",
+    "abstract": "Can AI make progress on important, unsolved mathematical problems? Large language models are now capable of sophisticated mathematical and scientific reasoning, but whether they can perform novel research is still widely debated and underexplored. We introduce HorizonMath, a benchmark of over 100 predominantly unsolved problems spanning 8 domains in computational and applied mathematics, paired with an open-source evaluation framework for automated verification. Our benchmark targets a class of problems where discovery is hard, requiring meaningful mathematical insight, but verification is computationally efficient and simple. Because these solutions are unknown, HorizonMath is immune to data contamination, and most state-of-the-art models score near 0%. Existing research-level benchmarks instead rely on formal proof verification or manual review, both of which are expensive to scale. Using this platform, we find two problems for which GPT 5.4 Pro proposes solutions that improve on the best-known published results, representing potential novel contributions (pending expert review). We release HorizonMath as an open challenge and a growing community resource, where correct solutions to problems in the unsolved problem classes could constitute novel results in the mathematical literature."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Lore: Repurposing Git Commit Messages as a Structured Knowledge Protocol for AI Coding Agents",
+    "authors": "Ivan Stetsenko",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15566v1",
+    "source": "arXiv",
+    "abstract": "As AI coding agents become both primary producers and consumers of source code, the software industry faces an accelerating loss of institutional knowledge. Each commit captures a code diff but discards the reasoning behind it - the constraints, rejected alternatives, and forward-looking context that shaped the decision. I term this discarded reasoning the Decision Shadow. This paper proposes Lore, a lightweight protocol that restructures commit messages - using native git trailers - into self-contained decision records carrying constraints, rejected alternatives, agent directives, and verification metadata. Lore requires no infrastructure beyond git, is queryable via a standalone CLI tool, and is discoverable by any agent capable of running shell commands. The paper formalizes the protocol, compares it against five competing approaches, stress-tests it against its strongest objections, and outlines an empirical validation path."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Are Dilemmas and Conflicts in LLM Alignment Solvable? A View from Priority Graph",
+    "authors": "Zhenheng Tang, Xiang Liu, Qian Wang, Eunsol Choi, Bo Li, Xiaowen Chu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15527v1",
+    "source": "arXiv",
+    "abstract": "As Large Language Models (LLMs) become more powerful and autonomous, they increasingly face conflicts and dilemmas in many scenarios. We first summarize and taxonomize these diverse conflicts. Then, we model the LLM's preferences to make different choices as a priority graph, where instructions and values are nodes, and the edges represent context-specific priorities determined by the model's output distribution. This graph reveals that a unified stable LLM alignment is very challenging, because the graph is neither static nor necessarily consistent in different contexts. Besides, it also reveals a potential vulnerability: priority hacking, where adversaries can craft deceptive contexts to manipulate the graph and bypass safety alignments. To counter this, we propose a runtime verification mechanism, enabling LLMs to query external sources to ground their context and resist manipulation. While this approach enhances robustness, we also acknowledge that many ethical and value dilemmas are philosophically irreducible, posing a long-term, open challenge for the future of AI alignment."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs",
+    "authors": "Ido Pinto, Yizhak Yisrael Elboher, Haoze Wu, Nina Narodytska, Guy Katz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15510v1",
+    "source": "arXiv",
+    "abstract": "The synthesis of inductive loop invariants is a critical bottleneck in automated program verification. While Large Language Models (LLMs) show promise in mitigating this issue, they often fail on hard instances, generating invariants that are invalid or computationally ineffective. While fine-tuning is a natural route to mitigate this limitation, obtaining high-quality training data for invariant generation remains an open challenge. We present a rigorous data curation pipeline designed to extract high-quality training signals from raw verifier-generated invariants. First, we formalize the properties required for a high-quality training invariant. Second, we propose Wonda, a pipeline that refines noisy data via AST-based normalization, followed by LLM-driven semantic rewriting and augmentation with provable quality guarantees. We demonstrate that fine-tuning Small Language Models (SLMs) on this curated dataset result in consistent and significant performance gain. In particular, a fine-tuned 4B parameter model matches the utility of a GPT-OSS-120B baseline and approaches the state-of-the-art GPT-5.2, without incurring reasoning-time overhead. On challenging instances from the recent InvBench evaluation suite, our approach doubles the invariant correctness and speedup rates of base models; and improves their Virtual Best Performance (VBP) rates on the verification task by up to 14.2%."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "SEA-Vision: A Multilingual Benchmark for Comprehensive Document and Scene Text Understanding in Southeast Asia",
+    "authors": "Pengfei Yue, Xingran Zhao, Juntao Chen, Peng Hou, Wang Longchao, Jianghang Lin, Shengchuan Zhang, Anxiang Zeng, Liujuan Cao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15409v1",
+    "source": "arXiv",
+    "abstract": "Multilingual document and scene text understanding plays an important role in applications such as search, finance, and public services. However, most existing benchmarks focus on high-resource languages and fail to evaluate models in realistic multilingual environments. In Southeast Asia, the diversity of languages, complex writing systems, and highly varied document types make this challenge even greater. We introduce SEA-Vision, a benchmark that jointly evaluates Document Parsing and Text-Centric Visual Question Answering (TEC-VQA) across 11 Southeast Asian languages. SEA-Vision contains 15,234 document parsing pages from nine representative document types, annotated with hierarchical page-, block-, and line-level labels. It also provides 7,496 TEC-VQA question-answer pairs that probe text recognition, numerical calculation, comparative analysis, logical reasoning, and spatial understanding. To make such multilingual, multi-task annotation feasible, we design a hybrid pipeline for Document Parsing and TEC-VQA. It combines automated filtering and scoring with MLLM-assisted labeling and lightweight native-speaker verification, greatly reducing manual labeling while maintaining high quality. We evaluate several leading multimodal models and observe pronounced performance degradation on low-resource Southeast Asian languages, highlighting substantial remaining gaps in multilingual document and scene text understanding. We believe SEA-Vision will help drive global progress in document and scene text understanding."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?",
+    "authors": "Tingxu Han, Yi Zhang, Wei Song, Chunrong Fang, Zhenyu Chen, Youcheng Sun, Lijie Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15401v1",
+    "source": "arXiv",
+    "abstract": "Agent skills, structured procedural knowledge packages injected at inference time, are increasingly used to augment LLM agents on software engineering tasks. However, their real utility in end-to-end development settings remains unclear. We present SWE-Skills-Bench, the first requirement-driven benchmark that isolates the marginal utility of agent skills in real-world software engineering (SWE). It pairs 49 public SWE skills with authentic GitHub repositories pinned at fixed commits and requirement documents with explicit acceptance criteria, yielding approximately 565 task instances across six SWE subdomains. We introduce a deterministic verification framework that maps each task's acceptance criteria to execution-based tests, enabling controlled paired evaluation with and without the skill. Our results show that skill injection benefits are far more limited than rapid adoption suggests: 39 of 49 skills yield zero pass-rate improvement, and the average gain is only +1.2%. Token overhead varies from modest savings to a 451% increase while pass rates remain unchanged. Only seven specialized skills produce meaningful gains (up to +30%), while three degrade performance (up to -10%) due to version-mismatched guidance conflicting with project context. These findings suggest that agent skills are a narrow intervention whose utility depends strongly on domain fit, abstraction level, and contextual compatibility. SWE-Skills-Bench provides a testbed for evaluating the design, selection, and deployment of skills in software engineering agents. SWE-Skills-Bench is available at https://github.com/GeniusHTX/SWE-Skills-Bench."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "SFCoT: Safer Chain-of-Thought via Active Safety Evaluation and Calibration",
+    "authors": "Yu Pan, Wenlong Yu, Tiejun Wu, Xiaohu Ye, Qiannan Si, Guangquan Xu, Bin Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15397v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities in complex reasoning tasks. However, they remain highly susceptible to jailbreak attacks that undermine their safety alignment. Existing defense mechanisms typically rely on post hoc filtering applied only to the final output, leaving intermediate reasoning steps unmonitored and vulnerable to adversarial manipulation. To address this gap, this paper proposes a SaFer Chain-of-Thought (SFCoT) framework, which proactively evaluates and calibrates potentially unsafe reasoning steps in real time. SFCoT incorporates a three-tier safety scoring system alongside a multi-perspective consistency verification mechanism, designed to detect potential risks throughout the reasoning process. A dynamic intervention module subsequently performs targeted calibration to redirect reasoning trajectories toward safe outcomes. Experimental results demonstrate that SFCoT reduces the attack success rate from $58.97\\%$ to $12.31\\%$, demonstrating it as an effective and efficient LLM safety enhancement method without a significant decline in general performance."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "SKILLS: Structured Knowledge Injection for LLM-Driven Telecommunications Operations",
+    "authors": "Ivo Brett",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15372v1",
+    "source": "arXiv",
+    "abstract": "As telecommunications operators accelerate adoption of AI-enabled automation, a practical question remains unresolved: can general-purpose large language model (LLM) agents reliably execute telecom operations workflows through real API interfaces, or do they require structured domain guidance? We introduce SKILLS (Structured Knowledge Injection for LLM-driven Service Lifecycle operations), a benchmark framework comprising 37 telecom operations scenarios spanning 8 TM Forum Open API domains (TMF620, TMF621, TMF622, TMF628, TMF629, TMF637, TMF639, TMF724). Each scenario is grounded in live mock API servers with seeded production-representative data, MCP tool interfaces, and deterministic evaluation rubrics combining response content checks, tool-call verification, and database state assertions. We evaluate open-weight models under two conditions: baseline (generic agent with tool access but no domain guidance) and with-skill (agent augmented with a portable SKILL.md document encoding workflow logic, API patterns, and business rules). Results across 5 open-weight model conditions and 185 scenario-runs show consistent skill lift across all models. MiniMax M2.5 leads (81.1% with-skill, +13.5pp), followed by Nemotron 120B (78.4%, +18.9pp), GLM-5 Turbo (78.4%, +5.4pp), and Seed 2.0 Lite (75.7%, +18.9pp)."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "ReLU Barrier Functions for Nonlinear Systems with Constrained Control: A Union of Invariant Sets Approach",
+    "authors": "Pouya Samanipour, Hasan A. Poonawala",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15286v1",
+    "source": "arXiv",
+    "abstract": "Certifying safety for nonlinear systems with polytopic input constraints is challenging because CBF synthesis must ensure control admissibility under saturation. We propose an approximation--verification pipeline that performs convex barrier synthesis on piecewise-affine (PWA) surrogates and certifies safety for the original nonlinear system via facet-wise verification. To reduce conservatism while preserving tractability, we use a two-slope Leaky ReLU surrogate for the extended class-$\\mathcal{K}$ function $α(\\cdot)$ and combine multiple certificates using a Union of Invariant Sets (UIS). Counterexamples are handled through local uncertainty updates. Simulations on pendulum and cart-pole systems with input saturation show larger certified invariant sets than linear-$α$ designs with tractable computation time."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Investigating How Neighbourhood Scores Reflect Forecast Error",
+    "authors": "Bobby Antonio",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15247v1",
+    "source": "arXiv",
+    "abstract": "Meaningful scores for forecast verification are essential for developing reliable forecasts, and there has been much effort to develop scores that align well with human perceptions of forecast quality. Whilst many of these scores have intuitive interpretations, relatively little is known about how these scores rank different forecasts, and how scores reflect forecast error. We theoretically explore the behaviour of two scores that fall within the `neighbourhood' paradigm of spatial verification; the Fractions Skill Score (FSS) and Brier Divergence Skill Score (BDnSS). We investigate how each score ranks forecasts with two types of error; errors in the mean frequency (corresponding to intensity or shape errors) and errors in the standard deviation (corresponding to errors in spatial structure, such as blurring or excess noise). We find that under many situations the FSS assigns higher scores to forecasts that over-predict mean frequency, thus theoretically confirming the need to use the FSS with percentile thresholds. Both scores assign higher scores to smoother forecasts in many situations, a reflection of the `double penalty' problem; however, we observe that size of this effect is larger for the BDnSS than the FSS, showing that the FSS under some situations is less susceptible to the double penalty problem than the BDnSS."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "The Good, the Better, and the Best: Improving the Discriminability of Face Embeddings through Attribute-aware Learning",
+    "authors": "Ana Dias, João Ribeiro Pinto, Hugo Proença, João C. Neves",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.15062v1",
+    "source": "arXiv",
+    "abstract": "Despite recent advances in face recognition, robust performance remains challenging under large variations in age, pose, and occlusion. A common strategy to address these issues is to guide representation learning with auxiliary supervision from facial attributes, encouraging the visual encoder to focus on identity-relevant regions. However, existing approaches typically rely on heterogeneous and fixed sets of attributes, implicitly assuming equal relevance across attributes. This assumption is suboptimal, as different attributes exhibit varying discriminative power for identity recognition, and some may even introduce harmful biases. In this paper, we propose an attribute-aware face recognition architecture that supervises the learning of facial embeddings using identity class labels, identity-relevant facial attributes, and non-identity-related attributes. Facial attributes are organized into interpretable groups, making it possible to decompose and analyze their individual contributions in a human-understandable manner. Experiments on standard face verification benchmarks demonstrate that joint learning of identity and facial attributes improves the discriminability of face embeddings with two major conclusions: (i) using identity-relevant subsets of facial attributes consistently outperforms supervision with a broader attribute set, and (ii) explicitly forcing embeddings to unlearn non-identity-related attributes yields further performance gains compared to leaving such attributes unsupervised. Additionally, our method serves as a diagnostic tool for assessing the trustworthiness of face recognition encoders by allowing for the measurement of accuracy gains with suppression of non-identity-relevant attributes, with such gains suggesting shortcut learning from redundant attributes associated with each identity."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Rethinking LLM Watermark Detection in Black-Box Settings: A Non-Intrusive Third-Party Framework",
+    "authors": "Zhuoshang Wang, Yubing Ren, Yanan Cao, Fang Fang, Xiaoxue Li, Li Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14968v1",
+    "source": "arXiv",
+    "abstract": "While watermarking serves as a critical mechanism for LLM provenance, existing secret-key schemes tightly couple detection with injection, requiring access to keys or provider-side scheme-specific detectors for verification. This dependency creates a fundamental barrier for real-world governance, as independent auditing becomes impossible without compromising model security or relying on the opaque claims of service providers. To resolve this dilemma, we introduce TTP-Detect, a pioneering black-box framework designed for non-intrusive, third-party watermark verification. By decoupling detection from injection, TTP-Detect reframes verification as a relative hypothesis testing problem. It employs a proxy model to amplify watermark-relevant signals and a suite of complementary relative measurements to assess the alignment of the query text with watermarked distributions. Extensive experiments across representative watermarking schemes, datasets and models demonstrate that TTP-Detect achieves superior detection performance and robustness against diverse attacks."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Integrated Channel Sounding and Communication: Requirements, Architecture, Challenges, and Key Technologies",
+    "authors": "Nanhao Zhou, Chao Zou, Yu Zhou, Yanqun Tang, Xiaoying Zhang, Haoran Yin, Xuefeng Yin, Yuxiang Zhang, Dan Fei, Fan Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14912v1",
+    "source": "arXiv",
+    "abstract": "Channel models are essential for the design, evaluation, and optimization of wireless communication systems. The emerging space-air-ground-sea integrated network (SAGSIN), characterized by diverse service applications and extended-spectrum operations, places even greater demands on highly accurate channel models. However, conventional channel sounding is limited by generalized measurement campaigns, inadequate cross-band consistency, and insufficient real-time adaptability, making it unable to meet the needs of SAGSIN for scenario-specific and high-precision channel modeling. To address this challenge, we propose a novel technological framework, termed integrated channel sounding and communication (ICSC). By deeply integrating sounding and communication, the ICSC enables efficient and real-time acquisition of dynamic channel characteristics during communication processes, supporting fine-grained site- and scenario-specific measurements. Furthermore, leveraging artificial intelligence techniques, ICSC can identify channel conditions and adapt waveform parameters in real-time according to scenario variations, which in turn enhances communication performance. This article first introduces the fundamental principles of the ICSC framework, elaborates on its core concepts and key advantages, and demonstrates its feasibility through the development of an integrated verification system (IVS). Subsequently, the potential applications and opportunities of the ICSC are analyzed in depth, followed by a discussion of its future development directions and remaining challenges."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Machine learning for sustainable geoenergy: uncertainty, physics and decision-ready inference",
+    "authors": "Hannah P. Menke, Ahmed H. Elsheikh, Lingli Wei, Nanzhe Wang, Andreas Busch",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14907v1",
+    "source": "arXiv",
+    "abstract": "Geoenergy projects (CO2 storage, geothermal, subsurface H2 generation/storage, critical minerals from subsurface fluids, or nuclear waste disposal) increasingly follow a petroleum-style funnel from screening and appraisal to operations, monitoring, and stewardship. Across this funnel, limited and heterogeneous observations must be turned into risk-bounded operational choices under strong physical and geological constraints - choices that control deployment rate, cost of capital, and the credibility of climate-mitigation claims. These choices are inherently multi-objective, balancing performance against containment, pressure footprint, induced seismicity, energy/water intensity, and long-term stewardship. We argue that progress is limited by four recurring bottlenecks: (i) scarce, biased labels and few field performance outcomes; (ii) uncertainty treated as an afterthought rather than the deliverable; (iii) weak scale-bridging from pore to basin (including coupled chemical-flow-geomechanics); and (iv) insufficient quality assurance (QA), auditability, and governance for regulator-facing deployment. We outline machine learning (ML) approaches that match these realities (hybrid physics-ML, probabilistic uncertainty quantification (UQ), structure-aware representations, and multi-fidelity/continual learning) and connect them to four anchor applications: imaging-to-process digital twins, multiphase flow and near-well conformance, monitoring and inverse problems (monitoring, measurement, and verification (MMV), including deformation and microseismicity), and basin-scale portfolio management. We close with a pragmatic agenda for benchmarks, validation, reporting standards, and policy support needed for reproducible and defensible ML in sustainable geoenergy."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "T-DAQ-P: a portable tablet-form multi-stream data acquisition and contextual telemetry platform based on COTS modules and a custom integration layer",
+    "authors": "D. Tagnani, M. Andreotti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14902v1",
+    "source": "arXiv",
+    "abstract": "We present T-DAQ-P, a compact and portable data acquisition and telemetry platform designed to support detector deployments in laboratory and field conditions by integrating event streaming, slow-control telemetry, and operator-oriented commissioning tools in a single unit. The system combines a Raspberry Pi 5 host for multi-stream ingestion, visualization, and storage with an Arduino UNO R4 WiFi microcontroller dedicated to sensor acquisition. The electronics integrate commercial off-the-shelf (COTS) modules through an engineered interface layer including protected power distribution, logic-level adaptation, and a DB-37 expansion connector exposing I2C-SPI-ADC lines for external instrumentation. On the telemetry side, the microcontroller firmware performs automatic I2C discovery, conditional sensor handling, and outputs framed NMEA-like messages with XOR checksum and explicit block delimiters, enabling robust parsing and synchronization on the host. A finite-state control (STOP-RUN-SIM-INIT) and watchdog-style recovery actions implement resilience under partial hardware availability and field failures. The host software adopts a multi-process architecture with independent readers for event, telemetry, and actuator streams, message queues for isolation, and coherent time-stamped logging across streams. A simulation mode and integrated command channel allow end-to-end pipeline verification and rapid commissioning without full sensor availability. The paper details architecture, electronics integration, firmware protocol, host software design, and functional/engineering validation procedures, providing a reproducible blueprint for portable instrumentation readout and contextual telemetry acquisition."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Demonstration of AI-Assisted Scientific Workflow on Canonical Benchmarks",
+    "authors": "Kin Hung Fung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14888v1",
+    "source": "arXiv",
+    "abstract": "We present a fully reproducible demonstration of an AI-assisted scientific workflow designed for a broad physics, mathematics, and computer-science readership. The initial project artifact stack was generated from one single user prompt and then reviewed and curated for submission by the human author. Rather than claiming a new scientific discovery, the manuscript uses canonical benchmark problems with exact, manufactured, or independently checkable answers. The analytical component starts from the one-dimensional quantum harmonic oscillator, derives its dimensionless form, and validates finite-difference eigenpairs against exact Hermite-function benchmarks. The numerical partial-differential-equation component solves a heat equation with a known modal solution and a Poisson problem verified by a manufactured solution, with explicit convergence studies. The inverse-modeling component fits synthetic damped-oscillation data by nonlinear least squares and quantifies parametric uncertainty by bootstrap resampling. The computational-science component compares dense and sparse eigensolvers and contrasts direct and iterative sparse linear solvers, with careful interpretation of machine-dependent timing data. Taken together, the results show that contemporary AI can already serve as a useful scientific copilot for derivation, implementation, validation, visualization, and manuscript preparation, provided that each stage is constrained by benchmark theory, explicit verification, and transparent artifacts. The demonstration is therefore relevant not because the underlying science is novel, but because it offers a concrete template for trustworthy AI use in technical research practice."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Improved Degree Bounds for Hyperbolicity of Surfaces and Curve Complements",
+    "authors": "Lei Hou, Dinh Tuan Huynh, Joël Merker, Song-Yan Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14881v1",
+    "source": "arXiv",
+    "abstract": "This paper establishes new degree bounds for Kobayashi hyperbolicity in dimension two. Our main results are: - A very generic surface in $\\mathbb{P}^3$ of degree at least $17$ is Kobayashi hyperbolic. - The complement of a generic curve in $\\mathbb{P}^2$ of degree at least $12$ is Kobayashi hyperbolic. These bounds improve the long-standing records in the field. For surfaces, the threshold is lowered from Păun's degree $18$ to degree $17$; for complements, it is lowered from Rousseau's degree $14$ to degree $12$. For complements, we prove a stronger, quantitative version of hyperbolicity via a Second Main Theorem in Nevanlinna theory. Specifically, for every generic smooth curve $\\mathcal{C} \\subset \\mathbb{P}^2$ of degree $d \\geqslant 12$ and any nonconstant entire holomorphic curve $f \\colon \\mathbb{C} \\to \\mathbb{P}^2$, we establish the following inequality: \\[ T_f(r) \\leqslant C_d \\, N_f^{[1]}(r, \\mathcal{C}) + o\\big(T_f(r)\\big) \\quad \\parallel, \\] where $T_f(r)$ is the Nevanlinna characteristic function, $N_f^{[1]}(r, \\mathcal{C})$ denotes the $1$-truncated counting function, and $C_d$ is an explicit constant depending only on $d$. The notation ``$\\parallel$'' indicates that the estimate holds for all $r>1$ outside a set of finite Lebesgue measure."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Counterexample Guided Branching via Directional Relaxation Analysis in Complete Neural Network Verification",
+    "authors": "Jingyang Li, Fu Song, Guoqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14823v1",
+    "source": "arXiv",
+    "abstract": "Deep Neural Networks demonstrate exceptional performance but remain vulnerable to adversarial perturbations, necessitating formal verification for safety-critical deployment. To address the computational complexity of this task, researchers often employ abstraction-refinement techniques that iteratively tighten an over-approximated model. While structural methods utilize Counterexample-Guided Abstraction Refine- ment, state-of-the-art dataflow verifiers typically rely on Branch-and-Bound to refine numerical convex relaxations. However, current dataflow approaches operate with blind refinement processes that rely on static heuristics and fail to leverage specific diagnostic information from verification failures. In this work, we argue that Branch-and-Bound should be reformulated as a Dataflow CEGAR loop where the spurious counterexample serves as a precise witness to local abstraction errors. We propose DRG-BaB, a framework that introduces the Directional Relaxation Gap heuristic to prioritize branching on neurons actively contributing to falsification in the abstract domain. By deriving a closed-form spurious counterexample directly from linear bounds, our method transforms generic search into targeted refinement. Experiments on high-dimensional benchmarks demonstrate that this approach significantly reduces search tree size and verification time compared to established baselines."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "SimCert: Probabilistic Certification for Behavioral Similarity in Deep Neural Network Compression",
+    "authors": "Jingyang Li, Fu Song, Guoqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14818v1",
+    "source": "arXiv",
+    "abstract": "Deploying Deep Neural Networks (DNNs) on resource-constrained embedded systems requires aggressive model compression techniques like quantization and pruning. However, ensuring that the compressed model preserves the behavioral fidelity of the original design is a critical challenge in the safety-critical system design flow. Existing verification methods often lack scalability or fail to handle the architectural heterogeneity introduced by pruning. In this work, we propose SimCert, a probabilistic certification framework for verifying the behavioral similarity of compressed neural networks. Unlike worst-case analysis, SimCert provides quantitative safety guarantees with adjustable confidence levels. Our framework features: (1) A dual-network symbolic propagation method supporting both quantization and pruning; (2) A variance-aware bounding technique using Bernstein's inequality to tighten safety certificates; and (3) An automated verification toolchain. Experimental results on ACAS Xu and computer vision benchmarks demonstrate that SimCert outperforms state-of-the-art baselines."
+  },
+  {
+    "date": "2026-03-16",
+    "title": "Face-to-Face: A Video Dataset for Multi-Person Interaction Modeling",
+    "authors": "Ernie Chu, Vishal M. Patel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.14794v1",
+    "source": "arXiv",
+    "abstract": "Modeling the reactive tempo of human conversation remains difficult because most audio-visual datasets portray isolated speakers delivering short monologues. We introduce \\textbf{Face-to-Face with Jimmy Fallon (F2F-JF)}, a 70-hour, 14k-clip dataset of two-person talk-show exchanges that preserves the sequential dependency between a guest turn and the host's response. A semi-automatic pipeline combines multi-person tracking, speech diarization, and lightweight human verification to extract temporally aligned host/guest tracks with tight crops and metadata that are ready for downstream modeling. We showcase the dataset with a reactive, speech-driven digital avatar task in which the host video during $[t_1,t_2]$ is generated from their audio plus the guest's preceding video during $[t_0,t_1]$. Conditioning a MultiTalk-style diffusion model on this cross-person visual context yields small but consistent Emotion-FID and FVD gains while preserving lip-sync quality relative to an audio-only baseline. The dataset, preprocessing recipe, and baseline together provide an end-to-end blueprint for studying dyadic, sequential behavior, which we expand upon throughout the paper. Dataset and code will be made publicly available."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "VTS-LLM: Domain-Adaptive LLM Agent for Enhancing Awareness in Vessel Traffic Services Through Natural Language",
+    "authors": "Sijin Sun, Liangbin Zhao, Ming Deng, Xiuju Fu",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423850",
+    "source": "IEEE",
+    "abstract": "Vessel Traffic Services (VTS) are essential for maritime safety and regulatory compliance through real-time traffic management. However, with increasing traffic complexity and the prevalence of heterogeneous, multimodal data, existing VTS systems face limitations in spatiotemporal reasoning and intuitive human interaction. In this work, we propose VTSLLM Agent, the first domain-adaptive large language model (LLM) agent tailored for interactive decision support in VTS operations. We formalize risk-prone vessel identification as a knowledge-augmented Text-to-Structured Query Language (Text-to-SQL) task, combining structured vessel databases with external maritime knowledge. To support this, we construct a curated benchmark dataset consisting of a custom schema, domain-specific corpus, and a query-SQL test set in multiple linguistic styles. Our framework incorporates Named Entity Recognition (NER)-based relational reasoning, agentbased domain knowledge injection, semantic algebra intermediate representation, and query rethink mechanisms to enhance domain grounding and context-aware understanding. Experimental results show that VTS-LLM outperforms both general-purpose and SQL-focused baselines under commandstyle, operational-style, and formal natural language queries, respectively. Moreover, our analysis provides the first empirical evidence that linguistic style variation introduces systematic performance challenges in Text-to-SQL modeling. This work lays the foundation for natural language interfaces in vessel traffic services and opens new opportunities for proactive, LLM-driven maritime real-time traffic management. Dataset<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup><sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup>https://huggingface.co/datasets/PassbyGrocer/vts-sql.and Code<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup><sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup>https://github.com/StanleySun233/maritime-vts are public."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "CTPGenius: Category Theoretic Prompt Graphs for Modular RTL Generation with Large Language Models",
+    "authors": "Anmol Bhasin",
+    "publish": "2025 IEEE 6th International Women in Technology Conference (WINTECHCON)",
+    "url": "https://doi.org/10.1109/wintechcon66724.2025.11429931",
+    "source": "IEEE",
+    "abstract": "The automatic generation of register-transfer level (RTL) code from natural language has advanced rapidly with large language models (LLMs). However, existing LLM-driven hardware design flows often produce monolithic and inconsistent implementations, lacking modularity and interface consistency. This paper introduces CTPGenius, a Category-Theoretic Prompt Graph (CTPGs) approach integrated with LLM-based code synthesis to enable systematic, hierarchical RTL generation. By modeling hardware modules as categorical objects and their connections as morphisms, our approach guides the LLM to generate consistent submodules and assemble them into a correct top-level design. Functorial prompting ensures parameter and port consistency, while iterative LLM-aided correction addresses residual errors. Experiments show that CTPGenius significantly improves modularity, correctness, and extensibility in LLM-generated RTL, advancing automated hardware synthesis from natural language."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "LLM-Assisted Contrastive Learning for Robust Fault Diagnosis in Nuclear Power Plants",
+    "authors": "Zongyu Xu, Hang Wang",
+    "publish": "2025 Global Reliability and Prognostics and Health Management Conference (PHM-Xian)",
+    "url": "https://doi.org/10.1109/phm-xian66756.2025.11427844",
+    "source": "IEEE",
+    "abstract": "This study proposes a Cross-Modal Contrastive Learning (CMCL) framework for robust fault diagnosis in Nuclear Power Plants (NPPs), aiming to identify faults under data-scarce and previously unseen conditions. CMCL adopts a dual-encoder architecture to align time series (TS) data with natural language descriptions, consisting of an LSTM-based TS encoder and a frozen text encoder derived from the large language model (LLM) DeepSeek-R1-Distill-Qwen-7B. By optimizing a bidirectional contrastive loss, the model learns a semantically aligned embedding space in which data from different modalities but similar meanings are mapped closely together. This enables cross-modal recognition and reasoning without requiring explicit labels or fault samples. The proposed framework is evaluated in simulated operational scenarios of a pressurized water reactor (PWR), encompassing six fault types and one normal condition. Experimental results demonstrate that CMCL consistently outperforms traditional supervised LSTM models in both clean and noisy environments, maintaining high accuracy even under strong Gauss, Uniform and Salt-and-Pepper (SP) noise. In addition, CMCL provides interpretable similarity trajectories and quantifies uncertainty in fault identification, thereby enhancing diagnostic transparency and reliability. Overall, CMCL exhibits strong potential for accurate and interpretable fault diagnosis in complex industrial environments, offering an effective solution with enhanced robustness against noise and unseen conditions."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Research Status and Analysis of LLM-based Methods for Code Audit",
+    "authors": "Hong Lu, Yinan Bao, Haojie Yuan",
+    "publish": "2025 5th International Conference on Information Communication and Software Engineering (ICICSE)",
+    "url": "https://doi.org/10.1109/icicse66971.2025.11429962",
+    "source": "IEEE",
+    "abstract": "Code audit aims to optimize code quality and reduce security risks through the careful analysis of source code. It is a crucial step in ensuring software security and plays a significant role in protecting user data. Code audit technology based on the large language model (LLM) has become a research hotspot due to its powerful semantic understanding and automated analysis capabilities. However, existing work has not systematically organized LLM-based methods and the workflow of LLMs for the main tasks of code audit. To this end, we systematically review the current research status of code audit technology based on LLM, analyze its application progress in four main areas, including vulnerability detection, code clone detection, code style analysis, and code comment generation, advancing the comprehension of LLM-based code audit. Then we discuss the key challenges and future research directions, including improving model interpretability, constructing high-quality datasets, combining program analysis techniques, and optimizing training and inference methods, offering insights for further research about LLM-based code audit methods."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Reflective LLM Prompt Optimisation for Interpreting GNN Predictions in Traffic Forecasting",
+    "authors": "Zetong Zhang, Jiwon Kim, Dan He, Mehmet Yildirimoglu",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423238",
+    "source": "IEEE",
+    "abstract": "Graph Neural Networks (GNNs) are effective for traffic forecasting, but their predictions are difficult to interpret. While post-hoc explanation tools like GNNExplainer generate useful importance scores across graph nodes and edges, the raw outputs are hard to interpret without additional context. Large Language Models (LLMs) offer a way to translate these scores into natural language, but often fluent yet unfaithful explanations-even when the input scores are invalid. We propose a two-phase, multi-agent reflective framework to address these limitations. Phase 1 optimises a prompt that enables LLMs to assess the validity of GNN importance scores using synthetic labelled data. Phase 2 incorporates this optimised prompt and focuses on refining the explanation component of the prompt to produce more faithful narratives grounded in multimodal traffic context. Experiments show that our framework improves the LLM's ability to validate input scores before generating explanations as well as the ability to generate more trustworthy, context-aware explanations grounded in multimodal evidence. The framework provides a structured path toward more adaptable and dependable LLM-based interpretation of complex machine learning models in critical traffic prediction applications."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "LLM-Driven Constrained MARL for Collaborative Multi-Vehicle Control in Autonomous Cooperative Transportation Systems",
+    "authors": "Hao Pang, Zhenpo Wang, Guoqiang Li",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423517",
+    "source": "IEEE",
+    "abstract": "Cooperative transportation systems (CTS) for heavy-duty payloads face significant challenges in multi-vehicle coordination due to complex coupling constraints. This paper proposes a novel Large Language Model (LLM)-Driven Constrained Multi-agent Reinforcement Learning (LDC-MARL) framework for collaborative control of CTS. To realize safe and stable multi-vehicle cooperative transportation, our approach integrates LLM guidance and fixed inter-vehicle distance constraints into the MARL policy optimization process and resolves the constrained MARL problem via Lagrangian duality theory. Extensive experiments show that LDC-MARL achieves superior performance, attaining a 100% success rate in task completion while significantly improving constraint satisfaction with up to 92.35% reduction in violations compared to state-of-the-art baselines. The results demonstrate the proposed framework's effectiveness in developing collision-free and motion-coordinated CTS, improving its practical applicability. The supplementary videos are available at https://bitmobility.github.io/LDC-MARL/"
+  },
+  {
+    "date": "2026-3-16",
+    "title": "FailSense: LLM-Augmented Semantic Framework for Automated Root Cause Analysis in SSD Firmware Validation",
+    "authors": "Aditi Kumari, S R Pradeep, Adnan Asad Vohra",
+    "publish": "2025 IEEE 6th International Women in Technology Conference (WINTECHCON)",
+    "url": "https://doi.org/10.1109/wintechcon66724.2025.11429997",
+    "source": "IEEE",
+    "abstract": "SSD firmware validation faces major challenges due to the complexity of logs spanning firmware, host systems, protocol layers, driver software, and other sources required for root cause analysis (RCA). Engineers must manually parse these logs, often taking days to gather context and expert judgment. Traditional rule-based RCA tools are not scalable and tend to break down when confronted with novel or compounded failure scenarios. This paper introduces FailSense, a unified semantic RCA framework that leverages Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs) to automate log analysis and diagnosis. FailSense integrates multi-source log ingestion, transformer-based embedding generation, diversified retrieval via Maximal Marginal Relevance (MMR), and promptdriven RCA generation using a local LLM. It significantly reduces debug time, improves accuracy, and scales across diverse log types and failure modes. Key contributions include semantic log analysis with LLMs to transform raw logs into structured insights; an adaptive MMR-based retrieval strategy for broad yet relevant context; an attention-based attribution mechanism for explainability; and the generation of human-readable RCA summaries that streamline validation workflows."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Autonomous Operation Trajectory Planning for Maglev Train: A Case Based on LLM-Agent",
+    "authors": "Shihua Li, Lei Zhang, Dongxiu Ou, Zheng Ning",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423120",
+    "source": "IEEE",
+    "abstract": "This paper proposes an agent-driven autonomous operation control architecture for maglev transportation system. To address the inherent contradiction between the uncertainty of intelligence and strict security of system, a hierarchical decisionmaking architecture is presented. It comprises three layers: organization, interface and action, where the decision-making domain of maglev agent is confined to the first two layers. Further, to validate both the architectures, a framework simulating agent decision-making process is constructed. It is implemented by the integration of three core components, including large language model (LLM), domain toolset and maglev train dynamics module. The results from testing autonomous operation planning task, demonstrate that maglev agent has established the cognition of operation task, and achieved appropriate decision-makings by leveraging domain-specific knowledge, tools and instructions, and information interaction. Ultimately, the proposed architectures transform the operation task expressed in natural language semantics into executable train operation strategy through multilayer decision conversion."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Towards Intelligent Microfluidics: An LLM-Based Droplets Controlling Framework",
+    "authors": "Fangdi Li, Zelin Wang, Dianhua Zhang, Yuke Pan, Jianguang Zhou",
+    "publish": "IEEE Robotics and Automation Letters",
+    "url": "https://doi.org/10.1109/lra.2026.3674635",
+    "source": "IEEE",
+    "abstract": "Digital microfluidics (DMF) is a versatile platform that enables parallel droplet operations and on-site programmable control, where droplet routing is a critical challenge for achieving automation. To enable automatic path generation from source to target electrodes and process-level feedback correction, this study proposes an adaptive intelligent control framework based on large language models (LLMs). The framework integrates language-guided topological map reconstruction, LLM-based path planning, and a dual closed-loop feedback mechanism to achieve high-precision droplet manipulation. To alleviate the spatial hallucination issues of LLMs in spatial reasoning such as discontinuous path planning and out-of-bound errors, a linguistic topological map reconstruction method is designed, improving path generation accuracy by 23.4% in complex obstacle environments compared to conventional spatial representations. In addition, a dual closed-loop feedback strategy is proposed, consisting of model self-correction feedback and camera-based image feedback, which enables real-time correction of routing deviations and enhances operational stability. Experimental results demonstrate that the proposed framework achieves 100% task success across various droplet distribution scenarios, significantly advancing the intelligence of microfluidic operations and providing a promising foundation for fully autonomous DMF systems."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Multi-Agent LLM for Reducing Unsheltered Homelessness",
+    "authors": "Shravya Kothapalli, Samhita Juloori, Vishvaas Vasudeva Rao, Joshna Medisetty, Ahmed Hambaba",
+    "publish": "Proceedings of the 2025 7th Asia Conference on Machine Learning and Computing",
+    "url": "https://doi.org/10.1145/3772673.3772682",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-16",
+    "title": "TokenSkipping: A Practical and Robust KV Cache Pruning Method for Long-Context LLM Inference",
+    "authors": "Narupol Hongthai, Ekapol Chuangsuwanich",
+    "publish": "Proceedings of the 13th International Conference on Information Technology: IoT and Smart City",
+    "url": "https://doi.org/10.1145/3787330.3787361",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Traffic Context-Augmented Vehicle Trajectory Prediction Framework Using Multimodal LLM",
+    "authors": "Jaegyun Im, Byeonghun Kim, Joobin Jin, Byeongjoon Noh",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423475",
+    "source": "IEEE",
+    "abstract": "We propose a novel multimodal framework for vehicle trajectory prediction that integrates drone imagery and user-defined textual prompts through a large language model (LLM). The framework comprises three key modules: (1) Trajectory Information Extraction (TIE), which detects and encodes vehicle movements; (2) Traffic Scene Understanding Extraction (TSUE), which combines visual and textual context; and (3) Multimodal Fusion Prediction (MFP), which produces context-aware predictions. Experiments conducted on a high-resolution drone-view dataset show that the proposed method outperforms existing approaches, while ablation studies highlight the importance of multimodal representation and parameter-efficient fine-tuning using LoRA in modeling complex traffic dynamics."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "MSD-LLM: Predicting Ship Detention in Port State Control Inspections with Large Language Model",
+    "authors": "Jiongchao Jin, Xiuju Fu, Xiaowei Gao, Tao Cheng, Ran Yan",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423542",
+    "source": "IEEE",
+    "abstract": "Maritime transportation is the backbone of global trade, making ship inspection essential for ensuring maritime safety and environmental protection. Port State Control (PSC), conducted by national ports, enforces compliance with safety regulations, with ship detention being the most severe consequence, impacting both ship schedules and company reputations. Traditional machine learning methods for ship detention prediction are limited by the capacity of representation learning and thus suffer from low accuracy. Meanwhile, autoencoder-based deep learning approaches face challenges due to the severe data imbalance in learning historical PSC detention records. To address these limitations, we propose Maritime Ship Detention with Large Language Models (MSD-LLM), integrating a dual robust subspace recovery (DSR) layer-based autoencoder with a progressive learning pipeline to handle imbalanced data and extract meaningful PSC representations. Then, a large language model groups and ranks features to identify likely detention cases, enabling dynamic thresholding for flexible detention predictions. Extensive evaluations on 31,707 PSC inspection records from the Asia-Pacific region show that MSD-LLM outperforms state-of-the-art methods more than <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$12 \\%$</tex> on Area Under the Curve (AUC) for Singapore ports. Additionally, it demonstrates robustness to real-world challenges, making it adaptable to diverse maritime risk assessment scenarios."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "MetaLLMetro: LLM-Centric Virtual Reality Navigation Platform for Metro Stations",
+    "authors": "Yongjie Fu, Bowen Fang, Mengxuan Liu, Xuan Di",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423216",
+    "source": "IEEE",
+    "abstract": "This paper introduces MetaLLMetro, a Virtual Reality (VR) subway station system that integrates Large Language Models (LLMs) to enhance user navigation and realtime traffic information acquisition. Navigating underground subway stations remains challenging, particularly when the stations are complex and difficult to locate the correct directions or platforms. To overcome these limitations, we propose a VR platform where a fine-tuned LLM interprets users' natural language requests, accurately infers their intended destinations, and dynamically generates navigation paths within a virtual 3D subway environment. By fine-tuning the LLM on transit-specific tasks and queries, MetaLLMetro delivers a more accurate and intuitive navigation experience, effectively bridging the gap between ambiguous user input and precise, actionable spatial directions. Furthermore, our system leverages LLMdriven queries to interface with the Google Maps API, offering users a routing assistant that provides real-time geographic context and step-by-step navigation guidance."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "LLM-TripPlanner: A Large-Language-Model-Based Agent for Personalized Trip Planning",
+    "authors": "Yiping Liu, Hyungchul Chung, Zixuan Xu, Kitae Jang, Sikai Chen, Tiantian Chen",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423528",
+    "source": "IEEE",
+    "abstract": "Personalized trip planning is crucial for improving travel experiences, as it provides tailored recommendations for destinations, modes of transport, and routes that align closely with individual preferences. In this context, Large Language Models (LLMs) have also been getting involved with their contextual understanding and reasoning abilities. Additionally, the availability of urban big data, including street-view imagery and real-time traffic information, offers opportunities for data-driven and context-aware trip planning. By integrating semantic segmentation techniques with interpretations derived from LLMs, we developed a city-scale urban database that enables fine-grained characterization of travel routes. This study proposes an agent framework for end-to-end personalized trip planning, integrating LLMs with domain knowledge and external tools to generate realistic and user-specific travel plans. A retrieval-augmented generation (RAG) approach incorporates route information, realtime traffic data, and user-specific preferences to enhance LLM performance in route planning. Real-world experiments show that our travel agent meets user-specific needs, completing the entire personalized trip planning pipeline-from preference interpretation to final route selection. This framework significantly advances existing methods by providing a more comprehensive and efficient solution for personalized travel planning."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "C-KASH: Custom Metric-based Kubernetes Autoscaler and Scheduler for Heterogeneous GPU-backed LLM Inference",
+    "authors": "Abhishek Muthukumar, Tanay Maheshwari, Deepak Nadig",
+    "publish": "2025 IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)",
+    "url": "https://doi.org/10.1109/ants66931.2025.11429804",
+    "source": "IEEE",
+    "abstract": "The proliferation of large language model (LLM) inference workloads has exposed significant challenges in efficiently managing GPU resources within standard Kubernetes environments. The default Kubernetes scheduler lacks intrinsic GPU awareness for intelligent pod placement, and the horizontal pod autoscaler (HPA) is limited to metrics like CPU, memory, and network utilization, which do not accurately reflect the demands of GPU-bound tasks. In this paper, we propose C-KASH, a unified autoscaling and GPU-aware scheduling framework comprising (i) a custom GPU-aware scheduling approach that employs a fractional GPU device plugin and GPU metrics to place pods on underutilized GPUs; and (ii) a metric-driven autoscaling pipeline that relies on application-level custom metrics. C-KASH delivers 64% higher average token throughput, 25% faster inference workload completions, improves LLM inference pod density by up to 11.5 times, and increases mean GPU utilization by up to 87.5% compared to default Kubernetes configurations. Furthermore, C-KASH demonstrates improvements in GPU efficiency, token throughput, and overall query completion time under load, indicating that coordinating demand-driven scaling with utilization-aware placement significantly enhances LLM inference on Kubernetes."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "From Words to Collisions: LLM-Guided Evaluation and Adversarial Generation of Safety-Critical Driving Scenarios",
+    "authors": "Yuan Gao, Mattia Piccinini, Korbinian Moller, Amr Alanwar, Johannes Betz",
+    "publish": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
+    "url": "https://doi.org/10.1109/itsc60802.2025.11423486",
+    "source": "IEEE",
+    "abstract": "Ensuring the safety of autonomous vehicles requires virtual scenario-based testing, which depends on the robust evaluation and generation of safety-critical scenarios. So far, researchers have used scenario-based testing frameworks that rely heavily on handcrafted scenarios as safety metrics. To reduce the effort of human interpretation and overcome the limited scalability of these approaches, we combine Large Language Models (LLMs) with structured scenario parsing and prompt engineering to automatically evaluate and generate safety-critical driving scenarios. We introduce Cartesian and Ego-centric prompt strategies for scenario evaluation, and an adversarial generation module that modifies trajectories of risk-inducing vehicles (ego-attackers) to create critical scenarios. We validate our approach using a 2D simulation framework and multiple pre-trained LLMs. The results show that the evaluation module effectively detects collision scenarios and infers scenario safety. Meanwhile, the new generation module identifies high-risk agents and synthesizes realistic, safety-critical scenarios. We conclude that an LLM equipped with domain-informed prompting techniques can effectively evaluate and generate safety-critical driving scenarios, reducing dependence on handcrafted metrics. We release our open-source code and scenarios at: https://github.com/TUM-AVS/From-Words-to-Collisions."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "DeepMU: Fine-Tuning LLM for Detecting Machine Unauditable Bugs in Smart Contracts",
+    "authors": "Yang Zhou, Yan Zheng, Yichen Wang, Ying Shang",
+    "publish": "2025 IEEE International Conference on Big Data (BigData)",
+    "url": "https://doi.org/10.1109/bigdata66926.2025.11433124",
+    "source": "IEEE",
+    "abstract": "Smart contracts serve as the core component of blockchain technology, and their security directly influences the stability of user assets and the overall on-chain ecosystem. However, a class of vulnerabilities known as machine unauditable bugs (MUBs)—which are challenging to detect precisely using automated tools due to intricate contract logic, concealed state interactions, or dynamic external dependencies—poses significant risks, including potential financial losses and ecosystem disruptions. These vulnerabilities deserve heightened attention because they often evade traditional detection methods, leading to high-impact exploits in complex, real-world scenarios. Existing research falls short in addressing these challenges effectively. To bridge this gap, this study introduces a fine-tuning framework based on Multi-Adapter Fusion (MAF). Utilizing a lightweight large language model, DeepSeek-R1-Distill-Qwen7B, we construct three specialized adapters via LoRA (LowRank Adaptation) technology: the Domain-Knowledge Adapter, Vulnerability-Scenario Adapter, and Vulnerability-Type Adapter. These adapters respectively emphasize domain knowledge modeling, vulnerability scenario perception, and vulnerability type discrimination. Experimental results show that, through an ondemand adapter loading mechanism, this framework preserves the model's lightweight characteristics while substantially improving recognition accuracy and coverage for various MUB types in intricate contract scenarios. Compared to GPTScan, our approach achieves an 18.56% improvement in f1-score; against ChatGPT, the f1-score increases by 34.36%. This provides more flexible and efficient AI-augmented solutions for smart contract auditing."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "Rotor Skidding Root-Cause Tracing and Regulation Based on Supervised Fine-Tuning of LLM",
+    "authors": "Jianhao Xiong, Leiming Ma, Zhi Xu, Kai Chen, Ningyun Lu",
+    "publish": "2025 Global Reliability and Prognostics and Health Management Conference (PHM-Xian)",
+    "url": "https://doi.org/10.1109/phm-xian66756.2025.11427757",
+    "source": "IEEE",
+    "abstract": "Rotor skidding behavior can exacerbate bearing wear and failure, leading to equipment instability, making research on root-cause tracing and regulation of rotor skidding essential. However, rotor skidding behavior is coupling influenced by multiple factors, posing significant challenges in precisely identifying the root causes and formulating effective regulation measures. To address these challenges, a rotor skidding root-cause tracing and regulation method based on supervised fine-tuning of large language models (LLMs) is proposed in this paper. Firstly, nearly 200,000 skidding text knowledge is constructed based on the established rotor skidding parameter classification rules and skidding-domain-specific prompt. Subsequently, the supervised fine-tuning of LLM is implemented using the constructed skidding knowledge combined with the QLoRA algorithm. Finally, the fine-tuned LLM is employed to achieve root-cause tracing and regulation under the coupling effects of multiple factors for rotor skidding. Specifically, the effectiveness of the proposed supervised fine-tuning strategy is further validated using the designed semantic knowledge similarity metrics."
+  },
+  {
+    "date": "2026-3-16",
+    "title": "LLM-Cave: A benchmark and light environment for large language models reasoning and decision-making system",
+    "authors": "Huanyu Li, Zongyuan Li, Wei Huang, Xian Guo",
+    "publish": "2025 13th International Conference on Information and Communication Networks (ICICN)",
+    "url": "https://doi.org/10.1109/icicn67355.2025.11430449",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) such as ChatGPT o1, ChatGPT o3, and DeepSeek R1 have shown great potential in solving difficult problems. However, current LLM evaluation benchmarks are limited to one-step interactions. Some of the existing sequence decision-making environments, such as TextStarCraftII and LLM-PySC2, are too complicated and require hours of interaction to complete a game. In this paper, we introduce LLM-Cave, a benchmark and light environment for LLM reasoning and decision-making systems. This environment is a classic instance in the era of Symbolism. Artificial intelligence enables the agent to explore the environment and avoid potential losses by reasoning about nearby dangers using partial observable state information. In the experiment, we evaluated the sequential reasoning ability, decision-making performance and computational efficiency of mainstream large language models (LLMs) such as GPT-4o-mini, o1-mini, and DeepSeek-R1. Experiments show that while Deepseek-R1 achieved the highest success rate on complex reasoning tasks, smaller models like 4o-mini significantly narrowed the performance gap on challenges by employing Chain of Speculation and Planner-Critic strategies, at the expense of reduced computational efficiency. This indicates that structured, multi-step reasoning combined with an LLM-based feedback mechanism can substantially enhance an LLM's decision-making capabilities, providing a promising direction for improving reasoning in weaker models and suggesting a new reasoning-centered benchmark for LLM assessment. Our code is open-sourced in https://github.com/puleya1277/CaveEnv."
+  }
+]
