@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-3-17",
+    "title": "Probabilistic Neural Network Models for RTL Designs",
+    "authors": "Hetang Patel, E Bhawani Eswar Reddy, Chandan Karfa, Samik Das",
+    "publish": "2026 39th International Conference on VLSI Design &amp;amp; 25th International Conference on Embedded Systems (VLSID)",
+    "url": "https://doi.org/10.1109/vlsid68508.2026.00083",
+    "source": "IEEE",
+    "abstract": "This work aims to create machine learning (ML) models for register transfer level (RTL) designs. We train an ML model on a small dataset generated from a set of test cases of RTL modules which can predict output of the RTL designs for a given input. One pitfall of traditional ML-based solutions is false-positive predictions. To address this issue, we propose probabilistic neural network (PNN) models for RTL designs based on confidence scores which help us to segregate the inputs for which the model fails to provide confident predictions. One of the use cases will be to expedite the time-consuming RTL simulation. If we use PNN model prediction during RTL simulation, test cases to be run on actual RTL simulation can be reduced by up to 98% and 89% on average.",
+    "title_zh": "用于RTL设计的概率神经网络模型",
+    "abstract_zh": "本研究旨在为寄存器传输级（RTL）设计创建机器学习（ML）模型。我们在从一组RTL模块测试用例生成的小型数据集上训练一个ML模型，该模型可以预测给定输入的RTL设计输出。传统基于ML的解决方案的一个缺陷是可能出现误报预测。为了解决这一问题，我们提出了一种基于置信度评分的概率神经网络（PNN）模型，用于RTL设计。这种方法可以帮助我们区分模型无法提供高置信度预测的输入。一个潜在的应用场景是加速耗时的RTL仿真。如果在RTL仿真过程中使用PNN模型的预测，实际需要运行RTL仿真的测试用例数量可以减少多达98%，平均减少89%。"
+  },
+  {
+    "date": "2026-3-17",
+    "title": "AAMLA: An Autonomous Agentic Framework for Memory-Aware LLM-Aided Hardware Generation",
+    "authors": "Rajat Bhattacharjya, Juhee Sung, Hangyeol Jung, Hyunwoo Oh, Arnab Sarkar, Mohsen Imani, Nikil Dutt",
+    "publish": "2026 39th International Conference on VLSI Design &amp;amp; 25th International Conference on Embedded Systems (VLSID)",
+    "url": "https://doi.org/10.1109/vlsid68508.2026.00044",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have recently emerged as powerful assistants for hardware design, translating naturallanguage specifications into Hardware Description Languages (HDLs), yet fine-tuning these models on domain-specific corpora routinely exceeds the memory capacity of commodity GPUs and triggers Out-ofMemory (OoM) errors. We present AAMLA, an autonomous agentic framework that converts this pain point into a push-button experience. AAMLA incorporates memory awareness by coupling (i) a predictive memory profiler-LLMem++-that significantly extends the original LLMem framework to support a diverse set of memory-efficient finetuning strategies, including adapter-based (LoRA, DoRA), gradientfree (MeZO), token-sparse (TokenTune), and optimizer-modified (APOLLO) methods, with (ii) a portfolio of complementary memoryefficient adaptation techniques-leading to a complete synthesis flow. The system allows for a two-step early design space exploration workflow: it first prunes any method whose predicted footprint would violate the user's GPU budget, then consults an offline accuracy-\\mono{latency} atlas to recommend the Pareto-optimal strategy that aligns with the designer's stated priority (accuracy or turnaround time). Guided by this workflow, an agentic controller configures and applies the chosen technique, guaranteeing OoM-free execution without manual trial-and-error. The framework is model- and dataset-agnostic, easily extensible with new tuning primitives, and exposes a simple interface that accepts natural-language prompts and emits synthesizable Verilog, thereby lowering the barrier to LLM-assisted hardware design for researchers and organizations with limited computational resources. We open-source AAMLA at https://github.com/rajatbh21/AAMLA.",
+    "title_zh": "AAMLA：一种面向内存感知的大型语言模型辅助硬件生成的自主代理框架",
+    "abstract_zh": "大型语言模型（LLMs）近年来作为硬件设计的强大助手崭露头角，能够将自然语言规范翻译为硬件描述语言（HDLs）。然而，将这些模型在特定领域语料库上进行微调时，常常超出普通GPU的内存容量，导致内存不足（Out-of-Memory, OoM）错误。我们提出了AAMLA，这是一种自主代理框架，将这一痛点转化为一键式的用户体验。AAMLA通过结合以下两方面实现内存感知：(i) 一个预测内存分析器LLMem++，显著扩展了原有的LLMem框架，支持多种内存高效的微调策略，包括基于适配器的方法（LoRA, DoRA）、无梯度方法（MeZO）、稀疏令牌方法（TokenTune）以及优化器修改方法（APOLLO）；(ii) 一系列互补的内存高效适配技术，从而形成一个完整的综合流程。该系统支持两步早期设计空间探索工作流：首先剔除任何预测内存占用超出用户GPU预算的方法，然后参考离线的准确性-延迟图谱，推荐与设计者优先级（准确性或周转时间）一致的帕累托最优策略。在这一工作流的指导下，一个代理控制器配置并应用所选技术，确保无内存不足的执行，无需手动反复试验。该框架对模型和数据集具有通用性，能够轻松扩展以支持新的微调方法，并提供一个简单的接口，接受自然语言提示并生成可综合的Verilog代码，从而降低了研究人员和资源有限的组织使用LLM辅助硬件设计的门槛。我们在https://github.com/rajatbh21/AAMLA开源了AAMLA。"
+  }
+]
