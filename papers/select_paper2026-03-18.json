@@ -1,0 +1,46 @@
+[
+  {
+    "date": "2026-03-18",
+    "title": "VeriAgent: A Tool-Integrated Multi-Agent System with Evolving Memory for PPA-Aware RTL Code Generation",
+    "authors": "Yaoxiang Wang, Qi Shi, ShangZhan Li, Qingguo Hu, Xinyu Yin, Bo Guo, Xu Han, Maosong Sun, Jinsong Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17613v1",
+    "source": "arXiv",
+    "abstract": "LLMs have recently demonstrated strong capabilities in automatic RTL code generation, achieving high syntactic and functional correctness. However, most methods focus on functional correctness while overlooking critical physical design objectives, including Power, Performance, and Area. In this work, we propose a PPA-aware, tool-integrated multi-agent framework for high-quality verilog code generation. Our framework explicitly incorporates EDA tools into a closed-loop workflow composed of a \\textit{Programmer Agent}, a \\textit{Correctness Agent}, and a \\textit{PPA Agent}, enabling joint optimization of functional correctness and physical metrics. To support continuous improvement without model retraining, we introduce an \\textit{Evolved Memory Mechanism} that externalizes optimization experience into structured memory nodes. A dedicated memory manager dynamically maintains the memory pool and allows the system to refine strategies based on historical execution trajectories. Extensive experiments demonstrate that our approach achieves strong functional correctness while delivering significant improvements in PPA metrics. By integrating tool-driven feedback with structured and evolvable memory, our framework transforms RTL generation from one-shot reasoning into a continual, feedback-driven optimization process, providing a scalable pathway for deploying LLMs in real-world hardware design flows.",
+    "title_zh": "VeriAgent：一种集成工具的多智能体系统，具备可进化记忆功能，用于关注PPA的RTL代码生成",
+    "abstract_zh": "近年来，大型语言模型（LLMs）在自动RTL代码生成方面展现了强大的能力，能够实现高语法和功能正确性。然而，大多数方法主要关注功能正确性，而忽视了包括功耗（Power）、性能（Performance）和面积（Area）在内的重要物理设计目标。在本研究中，我们提出了一种关注PPA的、集成EDA工具的多智能体框架，用于高质量的Verilog代码生成。我们的框架通过引入\\textit{程序员智能体}、\\textit{正确性智能体}和\\textit{PPA智能体}，将EDA工具集成到一个闭环工作流中，从而实现功能正确性与物理指标的联合优化。为了支持无需重新训练模型的持续改进，我们引入了一种\\textit{进化记忆机制}，将优化经验外化为结构化的记忆节点。一个专门的记忆管理器动态维护记忆池，并基于历史执行轨迹优化策略。大量实验表明，我们的方法在实现强功能正确性的同时，显著提升了PPA指标。通过将工具驱动的反馈与结构化且可进化的记忆相结合，我们的框架将RTL生成从一次性推理转变为一个持续的、基于反馈的优化过程，为在实际硬件设计流程中部署LLMs提供了一条可扩展的路径。"
+  },
+  {
+    "date": "2026-03-17",
+    "title": "SYMDIREC: A Neuro-Symbolic Divide-Retrieve-Conquer Framework for Enhanced RTL Synthesis and Summarization",
+    "authors": "Prashanth Vijayaraghavan, Apoorva Nitsure, Luyao Shi, Charles Mackin, Ashutosh Jadhav, David Beymer, Ehsan Degan, Vandana Mukherjee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17208v1",
+    "source": "arXiv",
+    "abstract": "Register-Transfer Level (RTL) synthesis and summarization are central to hardware design automation but remain challenging for Large Language Models (LLMs) due to rigid HDL syntax, limited supervision, and weak alignment with natural language. Existing prompting and retrieval-augmented generation (RAG) methods have not incorporated symbolic planning, limiting their structural precision. We introduce SYMDIREC, a neuro-symbolic framework that decomposes RTL tasks into symbolic subgoals, retrieves relevant code via a fine-tuned retriever, and assembles verified outputs through LLM reasoning. Supporting both Verilog and VHDL without LLM fine-tuning, SYMDIREC achieves ~20% higher Pass@1 rates for synthesis and 15-20% ROUGE-L improvements for summarization over prompting and RAG baselines, demonstrating the benefits of symbolic guidance in RTL tasks.",
+    "title_zh": "SYMDIREC：一种用于增强RTL综合与摘要的神经符号分解-检索-征服框架",
+    "abstract_zh": "寄存器传输级（RTL）综合与摘要是硬件设计自动化的核心任务，但由于硬件描述语言（HDL）语法的严格性、有限的监督以及与自然语言的弱对齐性，这些任务对大型语言模型（LLMs）来说仍然具有挑战性。现有的提示和检索增强生成（RAG）方法未能结合符号规划，限制了其结构精度。我们提出了SYMDIREC，这是一种神经符号框架，将RTL任务分解为符号子目标，通过微调的检索器检索相关代码，并通过LLM推理组装验证后的输出。SYMDIREC支持Verilog和VHDL，无需对LLM进行微调，在综合任务中实现了约20%的Pass@1率提升，在摘要任务中相比提示和RAG基线提高了15-20%的ROUGE-L分数，展示了符号指导在RTL任务中的优势。"
+  },
+  {
+    "date": "2026-03-17",
+    "title": "CODMAS: A Dialectic Multi-Agent Collaborative Framework for Structured RTL Optimization",
+    "authors": "Che-Ming Chang, Prashanth Vijayaraghavan, Ashutosh Jadhav, Charles Mackin, Vandana Mukherjee, Hsinyu Tsai, Ehsan Degan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17204v1",
+    "source": "arXiv",
+    "abstract": "Optimizing Register Transfer Level (RTL) code is a critical step in Electronic Design Automation (EDA) for improving power, performance, and area (PPA). We present CODMAS (Collaborative Optimization via a Dialectic Multi-Agent System), a framework that combines structured dialectic reasoning with domain-aware code generation and deterministic evaluation to automate RTL optimization. At the core of CODMAS are two dialectic agents: the Articulator, inspired by rubber-duck debugging, which articulates stepwise transformation plans and exposes latent assumptions; and the Hypothesis Partner, which predicts outcomes and reconciles deviations between expected and actual behavior to guide targeted refinements. These agents direct a Domain-Specific Coding Agent (DCA) to generate architecture-aware Verilog edits and a Code Evaluation Agent (CEA) to verify syntax, functionality, and PPA metrics. We introduce RTLOPT, a benchmark of 120 Verilog triples (unoptimized, optimized, testbench) for pipelining and clock-gating transformations. Across proprietary and open LLMs, CODMAS achieves ~25% reduction in critical path delay for pipelining and ~22% power reduction for clock gating, while reducing functional and compilation failures compared to strong prompting and agentic baselines. These results demonstrate that structured multi-agent reasoning can significantly enhance automated RTL optimization and scale to more complex designs and broader optimization tasks.",
+    "title_zh": "CODMAS：一种用于结构化RTL优化的辩证多智能体协作框架",
+    "abstract_zh": "优化寄存器传输级（RTL）代码是电子设计自动化（EDA）中提高功耗、性能和面积（PPA）的关键步骤。我们提出了CODMAS（通过辩证多智能体系统进行协作优化），一个结合结构化辩证推理、领域感知代码生成和确定性评估的框架，用于自动化RTL优化。CODMAS的核心是两个辩证智能体：一个是受橡皮鸭调试启发的“表达者”，负责阐述逐步的转换计划并揭示潜在假设；另一个是“假设伙伴”，预测结果并调和预期行为与实际行为之间的偏差，以指导针对性的改进。这些智能体引导领域特定编码智能体（DCA）生成架构感知的Verilog代码编辑，并指挥代码评估智能体（CEA）验证语法、功能性和PPA指标。我们引入了RTLOPT，一个包含120个Verilog三元组（未优化、已优化、测试平台）的基准数据集，用于流水线和时钟门控转换。在专有和开放的大型语言模型（LLM）上，CODMAS在流水线优化中实现了约25%的关键路径延迟减少，在时钟门控优化中实现了约22%的功耗减少，同时相比强提示和智能体基线方法减少了功能性和编译失败。这些结果表明，结构化的多智能体推理能够显著提升自动化RTL优化，并可扩展到更复杂的设计和更广泛的优化任务。"
+  },
+  {
+    "date": "2026-3-18",
+    "title": "UVLLM: An Automated Universal RTL Verification Framework using LLMs",
+    "authors": "Yuchen Hu, Junhao Ye, Ke Xu, Jialin Sun, Shiyue Zhang, Xinyao Jiao, Dingrong Pan, Jie Zhou, Ning Wang, Weiwei Shan, Xinwei Fang, Xi Wang, Nan Guan, Zhe Jiang",
+    "publish": "2025 62nd ACM/IEEE Design Automation Conference (DAC)",
+    "url": "https://doi.org/10.1109/dac63849.2025.11435108",
+    "source": "IEEE",
+    "abstract": "Verifying hardware designs in embedded systems is crucial but often labor-intensive and time-consuming. While existing solutions have improved automation, they frequently rely on unrealistic assumptions. To address these challenges, we introduce a novel framework, UVLLM, which combines Large Language Models (LLMs) with the Universal Verification Methodology (UVM) to relax these assumptions. UVLLM significantly enhances the automation of testing and repairing error-prone Register Transfer Level (RTL) codes, a critical aspect of verification development. Unlike existing methods, UVLLM ensures that all errors are triggered during verification, achieving a syntax error fix rate of 86.99% and a functional error fix rate of 71.92% on our proposed benchmark. These results demonstrate a substantial improvement in verification efficiency. Additionally, our study highlights the current limitations of LLM applications, particularly their reliance on extensive training data. We emphasize the transformative potential of LLMs in hardware design verification and suggest promising directions for future research in AI-driven hardware design methodologies. The Repo. of dataset and code: https://github.com/SEU-ACAL/reproduce-UVLLM-DAC-25/.",
+    "title_zh": "UVLLM：一种基于大型语言模型的通用RTL验证自动化框架",
+    "abstract_zh": "嵌入式系统中的硬件设计验证至关重要，但通常需要耗费大量人力和时间。尽管现有解决方案在自动化方面有所改进，但它们往往依赖于不切实际的假设。为了解决这些问题，我们提出了一种新颖的框架——UVLLM，该框架将大型语言模型（LLMs）与通用验证方法学（UVM）相结合，以放宽这些假设。UVLLM显著提升了测试和修复易出错的寄存器传输级（RTL）代码的自动化水平，这是验证开发中的关键环节。与现有方法不同，UVLLM确保所有错误在验证过程中被触发，并在我们提出的基准测试中实现了86.99%的语法错误修复率和71.92%的功能错误修复率。这些结果表明验证效率得到了显著提升。此外，我们的研究还揭示了LLM应用的当前局限性，特别是其对大量训练数据的依赖。我们强调了LLMs在硬件设计验证中的变革潜力，并提出了AI驱动硬件设计方法学未来研究的有前景方向。数据集和代码库链接：https://github.com/SEU-ACAL/reproduce-UVLLM-DAC-25/。"
+  }
+]

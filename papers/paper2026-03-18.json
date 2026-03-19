@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-18",
+    "title": "In Perfect Harmony: Orchestrating Causality in Actor-Based Systems",
+    "authors": "Vladyslav Mikytiv, Bernardo Toninho, Carla Ferreira",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17909v1",
+    "source": "arXiv",
+    "abstract": "Runtime verification has gained popularity as a lightweight approach for increasing assurance in systems under scrutiny. Performing runtime checks enables dynamic monitoring and alerts for unexpected behavior, thereby improving reliability and correctness. Actor-based systems present significant challenges for runtime verification. Properties frequently span multiple actors with complex causal dependencies, while nondeterministic message interleavings can obscure execution semantics. Moreover, most existing monitoring tools are designed for single-process behavior. This paper presents ACTORCHESTRA, a runtime verification framework for Erlang that automatically tracks causality across multi-actor interactions. The framework instruments Erlang systems that comply with OTP guidelines via targeted code injection. This method establishes the orchestration infrastructure required to track causal relationships between actors without requiring manual modifications to the target system. To ease the specification of multi-actor properties, the framework provides WALTZ, a specification language that automatically compiles properties into executable Erlang monitors that integrate with the instrumented system. Three case studies demonstrate ACTORCHESTRA's effectiveness in detecting complex behavioral violations in real-world actor systems. A performance evaluation quantifies the runtime overhead of the monitoring infrastructure and analyzes the trade-offs between added safety guarantees and execution costs."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "A Deterministic Ionization Algorithm for the OSIRIS Particle-in-Cell Framework",
+    "authors": "Stephen DiIorio, Ricardo Fonseca, Frank Tsung, Benjamin J. Winjum, Alec G. R. Thomas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17885v1",
+    "source": "arXiv",
+    "abstract": "Ionization is critical in the formation and evolution of plasma dynamics; collisional ionization, in particular, is an often overlooked source of electrons when dealing with laser-plasma interactions. Ionization plays a crucial role in understanding the complex plasma kinetics, ranging from cold and sparse astrophysical settings to hot and dense fusion systems. In this paper, we describe the underlying theory for and development, validation, and verification of an extension to the standard particle-in-cell method to include a deterministic algorithm for collisional ionization physics. This algorithm offers improved accuracy, achieving up to two orders of magnitude decrease in the error of the ionization rate calculations, scales linearly in execution time with the number of macro-particles per cell, has been tested for physical correctness and benchmarked against several codes."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "SoK: From Silicon to Netlist and Beyond $-$ Two Decades of Hardware Reverse Engineering Research",
+    "authors": "Zehra Karadağ, Simon Klix, René Walendy, Felix Hahn, Kolja Dorschel, Julian Speith, Christof Paar, Steffen Becker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17883v1",
+    "source": "arXiv",
+    "abstract": "As hardware serves as the root of trust in modern computing systems, Hardware Reverse Engineering (HRE) is foundational for security assurance. In practice, HRE enables critical security applications, including design verification, supply-chain assurance, and vulnerability discovery. Over the past two decades, academic research on Integrated Circuit (IC), Field-Programmable Gate Array (FPGA), and netlist reverse engineering has steadily grown. However, knowledge remains fragmented across domains and communities, which complicates assessing the state of the art and hampers identifying shared research challenges. In this paper, we present a systematization of knowledge based on an in-depth analysis of 187 peer-reviewed publications. Using this corpus, we characterize technical methods across the HRE workflow and identify technical and organizational challenges that impede research progress. We analyze all 30 artifacts from our corpus using established artifact evaluation practices. Key results could be reproduced for only seven publications (4%). Based on our findings, we derive stakeholder-centric recommendations for academia, industry, and government to enable more coordinated and reproducible HRE research. These recommendations target three cross-cutting opportunities: (i) improving reproducibility and reuse via artifact-centric practices, (ii) enabling rigorous comparability through standardized benchmarks and evaluation metrics, and (iii) improving legal clarity for public HRE research."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval",
+    "authors": "Md. Asraful Haque, Aasar Mehdi, Maaz Mahboob, Tamkeen Fatima",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17872v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have achieved unprecedented fluency but remain susceptible to \"hallucinations\" - the generation of factually incorrect or ungrounded content. This limitation is particularly critical in high-stakes domains where reliability is paramount. We propose a domain-grounded tiered retrieval and verification architecture designed to systematically intercept factual inaccuracies by shifting LLMs from stochastic pattern-matchers to verified truth-seekers. The proposed framework utilizes a four-phase, self-regulating pipeline implemented via LangGraph: (I) Intrinsic Verification with Early-Exit logic to optimize compute, (II) Adaptive Search Routing utilizing a Domain Detector to target subject-specific archives, (III) Corrective Document Grading (CRAG) to filter irrelevant context, and (IV) Extrinsic Regeneration followed by atomic claim-level verification. The system was evaluated across 650 queries from five diverse benchmarks: TimeQA v2, FreshQA v2, HaluEval General, MMLU Global Facts, and TruthfulQA. Empirical results demonstrate that the pipeline consistently outperforms zero-shot baselines across all environments. Win rates peaked at 83.7% in TimeQA v2 and 78.0% in MMLU Global Facts, confirming high efficacy in domains requiring granular temporal and numerical precision. Groundedness scores remained robustly stable between 78.8% and 86.4% across factual-answer rows. While the architecture provides a robust fail-safe for misinformation, a persistent failure mode of \"False-Premise Overclaiming\" was identified. These findings provide a detailed empirical characterization of multi-stage RAG behavior and suggest that future work should prioritize pre-retrieval \"answerability\" nodes to further bridge the reliability gap in conversational AI."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Uncertainty equality for SU(N) observables enabling the experimentally friendly detection of k-inseparability via purity measurements",
+    "authors": "G. Tartaglione, G. Zanfardino, F. Illuminati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17844v1",
+    "source": "arXiv",
+    "abstract": "We derive an exact uncertainty relation for arbitrary quantum states of finite-dimensional Hilbert spaces. For any given $k$-partition of a $d$-dimensional multipartite system, we introduce the total uncertainty as the sum of the uncertainties associated with all possible tensor products of local $\\mathrm{SU}(N)$ observables, where each observable acts on the corresponding subsystem. We show that the total uncertainty exactly equals the algebraic sum of the global state purity and the purities of all possible state reductions. For systems containing at least one single-qubit subsystem, this equality implies saturation of the Robertson-Schrödinger uncertainty inequality, with the missing term needed for saturation equal to the bipartite qubit-environment entanglement for a pure global state, or to the qubit two-Rényi entropy for a mixed global state. Leveraging on these results, we show how for any finite-dimensional multipartite system the Hilbert-Schmidt squared norm of the correlation matrix $t$ can be expressed exclusively in terms of the global and reduced state purities. We then derive a correlation matrix-based necessary condition for $k$-separability of arbitrary finite-dimensional quantum states and show, in the case of $n$ qubits, how it is related to a necessary criterion for Bell nonlocality in scenarios with two dichotomic measurements per party. For sufficiently large systems the purity-based formulation of the $k$-separability criterion always yields an exponential advantage over the direct evaluation of the $t$-matrix norm, allowing for a more efficient practical verification of multipartite entanglement and nonlocality via simple experimental schemes based on purity measurements. Our results shed some further light on the intimate and intricate relation between correlations, entropies, uncertainties, and the entanglement certification and detection problem."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Event-Centric Human Value Understanding in News-Domain Texts: An Actor-Conditioned, Multi-Granularity Benchmark",
+    "authors": "Yao Wang, Xin Liu, Zhuochen Liu, Jiankang Chen, Adam Jatowt, Kyoungsook Kim, Noriko Kando, Haitao Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17838v1",
+    "source": "arXiv",
+    "abstract": "Existing human value datasets do not directly support value understanding in factual news: many are actor-agnostic, rely on isolated utterances or synthetic scenarios, and lack explicit event structure or value direction. We present \\textbf{NEVU} (\\textbf{N}ews \\textbf{E}vent-centric \\textbf{V}alue \\textbf{U}nderstanding), a benchmark for \\emph{actor-conditioned}, \\emph{event-centric}, and \\emph{direction-aware} human value recognition in factual news. NEVU evaluates whether models can identify value cues, attribute them to the correct actor, and determine value direction from grounded evidence. Built from 2{,}865 English news articles, NEVU organizes annotations at four semantic unit levels (\\textbf{Subevent}, \\textbf{behavior-based composite event}, \\textbf{story-based composite event}, and \\textbf{Article}) and labels \\mbox{(unit, actor)} pairs for fine-grained evaluation across local and composite contexts. The annotations are produced through an LLM-assisted pipeline with staged verification and targeted human auditing. Using a hierarchical value space with \\textbf{54} fine-grained values and \\textbf{20} coarse-grained categories, NEVU covers 45{,}793 unit--actor pairs and 168{,}061 directed value instances. We provide unified baselines for proprietary and open-source LLMs, and find that lightweight adaptation (LoRA) consistently improves open-source models, showing that although NEVU is designed primarily as a benchmark, it also supports supervised adaptation beyond prompting-only evaluation. Data availability is described in Appendix~\\ref{app:data_code_availability}."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Verification and Validation of Physics-Informed Surrogate Component Models for Dynamic Power-System Simulation",
+    "authors": "Petros Ellinas, Indrajit Chaudhuri, Johanna Vorwerk, Spyros Chatzivasileiadis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17836v1",
+    "source": "arXiv",
+    "abstract": "Physics-informed machine learning surrogates are increasingly explored to accelerate dynamic simulation of generators, converters, and other power grid components. The key question, however, is not only whether a surrogate matches a stand-alone component model on average, but whether it remains accurate after insertion into a differential-algebraic simulator, where the surrogate outputs enter the algebraic equations coupling the component to the rest of the system. This paper formulates that in-simulator use as a verification and validation (V\\&V) problem. A finite-horizon bound is derived that links allowable component-output error to algebraic-coupling sensitivity, dynamic error amplification, and the simulation horizon. Two complementary settings are then studied: model-based verification against a reference component solver, and data-based validation through conformal calibration of the component-output variables exchanged with the simulator. The framework is general, but the case study focuses on physics-informed neural-network surrogates of second-, fourth-, and sixth-order synchronous-machine models. Results show that good stand-alone surrogate accuracy does not by itself guarantee accurate in-simulator behavior, that the largest discrepancies concentrate in stressed operating regions, and that small equation residuals do not necessarily imply small state-trajectory errors."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution",
+    "authors": "Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Gaiyang Han, Wanqi Zhang, Weiming Lu, Jun Xiao, Yongliang Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17775v1",
+    "source": "arXiv",
+    "abstract": "Label-free reinforcement learning enables large language models to improve reasoning capabilities without ground-truth supervision, typically by treating majority-voted answers as pseudo-labels. However, we identify a critical failure mode: as training maximizes self-consistency, output diversity collapses, causing the model to confidently reinforce systematic errors that evade detection. We term this the consensus trap. To escape it, we propose CoVerRL, a framework where a single model alternates between generator and verifier roles, with each capability bootstrapping the other. Majority voting provides noisy but informative supervision for training the verifier, while the improving verifier progressively filters self-consistent errors from pseudo-labels. This co-evolution creates a virtuous cycle that maintains high reward accuracy throughout training. Experiments across Qwen and Llama model families demonstrate that CoVerRL outperforms label-free baselines by 4.7-5.9\\% on mathematical reasoning benchmarks. Moreover, self-verification accuracy improves from around 55\\% to over 85\\%, confirming that both capabilities genuinely co-evolve."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Who's Sense is This? Possibility for Impacting Human Insights in AI-assisted Sensemaking",
+    "authors": "Zhuoyi Cheng, Steven Houben",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17643v1",
+    "source": "arXiv",
+    "abstract": "Sensemaking is an important preceding step for activities like consensus building and decision-making. When groups of people make sense of large amounts of information, their understanding gradually evolves from vague to clear. During this process when reaching a conclusion is still premature, if people are presented with others' insights, they may be directed to focus on that specific perspective without adequate verification. We argue that similar phenomena may also exist in AI-assisted sensemaking, in which AI will usually be the one that presents insight prematurely when users' understandings are still vague and ill-formed. In this paper, we raised three questions that are worth deliberation before exploiting AI to assist in collaborative sensemaking in practice, and discussed possible reasons that may lead users to opt for insights from AI."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "VeriAgent: A Tool-Integrated Multi-Agent System with Evolving Memory for PPA-Aware RTL Code Generation",
+    "authors": "Yaoxiang Wang, Qi Shi, ShangZhan Li, Qingguo Hu, Xinyu Yin, Bo Guo, Xu Han, Maosong Sun, Jinsong Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17613v1",
+    "source": "arXiv",
+    "abstract": "LLMs have recently demonstrated strong capabilities in automatic RTL code generation, achieving high syntactic and functional correctness. However, most methods focus on functional correctness while overlooking critical physical design objectives, including Power, Performance, and Area. In this work, we propose a PPA-aware, tool-integrated multi-agent framework for high-quality verilog code generation. Our framework explicitly incorporates EDA tools into a closed-loop workflow composed of a \\textit{Programmer Agent}, a \\textit{Correctness Agent}, and a \\textit{PPA Agent}, enabling joint optimization of functional correctness and physical metrics. To support continuous improvement without model retraining, we introduce an \\textit{Evolved Memory Mechanism} that externalizes optimization experience into structured memory nodes. A dedicated memory manager dynamically maintains the memory pool and allows the system to refine strategies based on historical execution trajectories. Extensive experiments demonstrate that our approach achieves strong functional correctness while delivering significant improvements in PPA metrics. By integrating tool-driven feedback with structured and evolvable memory, our framework transforms RTL generation from one-shot reasoning into a continual, feedback-driven optimization process, providing a scalable pathway for deploying LLMs in real-world hardware design flows."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "OmniVLN: Omnidirectional 3D Perception and Token-Efficient LLM Reasoning for Visual-Language Navigation across Air and Ground Platforms",
+    "authors": "Zhongyuang Liu, Min He, Shaonan Yu, Xinhang Xu, Muqing Cao, Jianping Li, Jianfei Yang, Lihua Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17351v1",
+    "source": "arXiv",
+    "abstract": "Language-guided embodied navigation requires an agent to interpret object-referential instructions, search across multiple rooms, localize the referenced target, and execute reliable motion toward it. Existing systems remain limited in real indoor environments because narrow field-of-view sensing exposes only a partial local scene at each step, often forcing repeated rotations, delaying target discovery, and producing fragmented spatial understanding; meanwhile, directly prompting LLMs with dense 3D maps or exhaustive object lists quickly exceeds the context budget. We present OmniVLN, a zero-shot visual-language navigation framework that couples omnidirectional 3D perception with token-efficient hierarchical reasoning for both aerial and ground robots. OmniVLN fuses a rotating LiDAR and panoramic vision into a hardware-agnostic mapping stack, incrementally constructs a five-layer Dynamic Scene Graph (DSG) from mesh geometry to room- and building-level structure, and stabilizes high-level topology through persistent-homology-based room partitioning and hybrid geometric/VLM relation verification. For navigation, the global DSG is transformed into an agent-centric 3D octant representation with multi-resolution spatial attention prompting, enabling the LLM to progressively filter candidate rooms, infer egocentric orientation, localize target objects, and emit executable navigation primitives while preserving fine local detail and compact long-range memory. Experiments show that the proposed hierarchical interface improves spatial referring accuracy from 77.27\\% to 93.18\\%, reduces cumulative prompt tokens by up to 61.7\\% in cluttered multi-room settings, and improves navigation success by up to 11.68\\% over a flat-list baseline. We will release the code and an omnidirectional multimodal dataset to support reproducible research."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "citecheck: An MCP Server for Automated Bibliographic Verification and Repair in Scholarly Manuscripts",
+    "authors": "Junhyeok Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17339v1",
+    "source": "arXiv",
+    "abstract": "Reference lists in scholarly manuscripts frequently contain errors, including incorrect identifiers, incomplete metadata, misattributed authors, and mismatches between preprint and published versions. These problems are tedious to repair manually and have become more visible in workflows that rely on large language models, which can fabricate or corrupt citations. We present citecheck, a TypeScript system and MCP server for automated bibliographic verification and repair in paper-like project folders. Given a manuscript file or workspace, citecheck selects the most likely paper artifact, extracts references from .bib, .tex, .md, .txt, or .docx, validates entries against PubMed, Crossref, arXiv, and Semantic Scholar, and returns structured correction proposals together with replacement-safety diagnostics. The current repository provides a working research prototype with multi-pass retrieval, manifestation-aware matching, policy-gated rewrite planning, and 47 passing tests covering repair behavior, malformed payload handling, transport failures, and MCP exposure. We position citecheck as infrastructure for agentic scholarly editing and as a practical guardrail against both traditional reference errors and LLM-induced citation hallucinations."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Federated Computing as Code (FCaC): Sovereignty-aware Systems by Design",
+    "authors": "Enzo Fenoglio, Philip Treleaven",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17331v1",
+    "source": "arXiv",
+    "abstract": "Federated computing (FC) enables collaborative computation such as machine learning, analytics, or data processing across distributed organizations keeping raw data local. Built on four architectural pillars, distributed data assets, federated services, standardized APIs, and decentralized services, FC supports sovereignty-preserving collaboration. However, federated systems spanning organizational and jurisdictional boundaries lack a portable mechanism for enforcing sovereignty-critical constraints. They often depend on runtime policy evaluation, shared trust infrastructure, or institutional agreements that introduce coordination overhead and provide limited cryptographic assurance. Federated Computing as Code (FCaC) is a declarative architecture that addresses this gap by compiling authority and delegation into cryptographically verifiable artifacts rather than relying on online policy interpretation. Boundary admission becomes a local verification step rather than a policy decision service. FCaC separates constitutional governance from procedural governance. Admission is validated locally at execution boundaries using proof-carrying capabilities, while stateful services may still implement post-admission controls such as ABAC, risk scoring, quotas, and workflow state. FCaC introduces Virtual Federated Platforms (VFPs), which combine Core, Business, and Governance contracts through a cryptographic trust chain: Key Your Organization (KYO), Envelope Capability Tokens (ECTs), and proof of possession (PoP). We demonstrate the approach in a proof-of-concept cross-silo federated learning workflow using MNIST as a surrogate workload to validate the admission mechanisms and release an open-source implementation showing envelope issuance, boundary verification, and envelope-triggered training."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "GUIDE: GenAI Units In Digital Design Education",
+    "authors": "Weihua Xiao, Jason Blocklove, Matthew DeLorenzo, Johann Knechtel, Ozgur Sinanoglu, Kanad Basu, Jeyavijayan Rajendran, Siddharth Garg, Ramesh Karri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17296v1",
+    "source": "arXiv",
+    "abstract": "GenAI Units In Digital Design Education (GUIDE) is an open courseware repository with runnable Google Colab labs and other materials. We describe the repository's architecture and educational approach based on standardized teaching units comprising slides, short videos, runnable labs, and related papers. This organization enables consistency for both the students' learning experience and the reuse and grading by instructors. We demonstrate GUIDE in practice with three representative units: VeriThoughts for reasoning and formal-verification-backed RTL generation, enhanced LLM-aided testbench generation, and LLMPirate for IP Piracy. We also provide details for four example course instances (GUIDE4ChipDesign, Build your ASIC, GUIDE4HardwareSecurity, and Hardware Design) that assemble GUIDE units into full semester offerings, learning outcomes, and capstone projects, all based on proven materials. For example, the GUIDE4HardwareSecurity course includes a project on LLM-aided hardware Trojan insertion that has been successfully deployed in the classroom and in Cybersecurity Games and Conference (CSAW), a student competition and academic conference for cybersecurity. We also organized an NYU Cognichip Hackathon, engaging students across 24 international teams in AI-assisted RTL design workflows. The GUIDE repository is open for contributions and available at: https://github.com/FCHXWH823/LLM4ChipDesign."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Field-angle dependence of magnetoresistance in UTe2",
+    "authors": "Jun Ishizuka, Youichi Yanase",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17235v1",
+    "source": "arXiv",
+    "abstract": "We theoretically study angle-resolved magnetoresistance under rotated magnetic field in the normal state of a spin-triplet superconductor UTe$_2$. The Wannier model derived from a GGA+$U$ calculation shows quasi-two-dimensional Fermi surfaces with warping in the $k_z$ direction, consistent with quantum oscillation measurements in the high magnetic field regime. Solving the semiclassical Boltzmann equation, we show that the Fermi surface geometry gives rise to oscillations in the magnetoresistance when the field is tilted from the $c$ axis toward the $a$ or $b$ axis. By assuming a band-dependent relaxation time, the calculated angle-resolved magnetoresistance is in good agreement with the recent transport experiment. This is direct evidence for the warped Fermi surface revealed by ordinary intraband transport. It suggests that the hole band with long relaxation time dominates electron transport. The field angle dependence of the Hall resistivity is calculated for further experimental verification."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Draft-and-Prune: Improving the Reliability of Auto-formalization for Logical Reasoning",
+    "authors": "Zhiyu Ni, Zheng Liang, Liangcheng Song, Chenrui Cao, Xian Zhang, Alberto Sangiovanni-Vincentelli, Pierluigi Nuzzo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17233v1",
+    "source": "arXiv",
+    "abstract": "Auto-formalization (AF) translates natural-language reasoning problems into solver-executable programs, enabling symbolic solvers to perform sound logical deduction. In practice, however, AF pipelines are currently brittle: programs may fail to execute, or execute but encode incorrect semantics. While prior work largely mitigates syntactic failures via repairs based on solver feedback, reducing semantics failures remains a major bottleneck. We propose Draft-and-Prune (D&P), an inference-time framework that improves AF-based logical reasoning via diversity and verification. D&P first drafts multiple natural-language plans and conditions program generation on them. It further prunes executable but contradictory or ambiguous formalizations, and aggregates predictions from surviving paths via majority voting. Across four representative benchmarks (AR-LSAT, ProofWriter, PrOntoQA, LogicalDeduction), D&P substantially strengthens AF-based reasoning without extra supervision. On AR-LSAT, in the AF-only setting, D&P achieves 78.43% accuracy with GPT-4 and 78.00% accuracy with GPT-4o, significantly outperforming the strongest AF baselines MAD-LOGIC and CLOVER. D&P then attains near-ceiling performance on the other benchmarks, including 100% on PrOntoQA and LogicalDeduction."
+  },
+  {
+    "date": "2026-03-17",
+    "title": "SYMDIREC: A Neuro-Symbolic Divide-Retrieve-Conquer Framework for Enhanced RTL Synthesis and Summarization",
+    "authors": "Prashanth Vijayaraghavan, Apoorva Nitsure, Luyao Shi, Charles Mackin, Ashutosh Jadhav, David Beymer, Ehsan Degan, Vandana Mukherjee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17208v1",
+    "source": "arXiv",
+    "abstract": "Register-Transfer Level (RTL) synthesis and summarization are central to hardware design automation but remain challenging for Large Language Models (LLMs) due to rigid HDL syntax, limited supervision, and weak alignment with natural language. Existing prompting and retrieval-augmented generation (RAG) methods have not incorporated symbolic planning, limiting their structural precision. We introduce SYMDIREC, a neuro-symbolic framework that decomposes RTL tasks into symbolic subgoals, retrieves relevant code via a fine-tuned retriever, and assembles verified outputs through LLM reasoning. Supporting both Verilog and VHDL without LLM fine-tuning, SYMDIREC achieves ~20% higher Pass@1 rates for synthesis and 15-20% ROUGE-L improvements for summarization over prompting and RAG baselines, demonstrating the benefits of symbolic guidance in RTL tasks."
+  },
+  {
+    "date": "2026-03-17",
+    "title": "CODMAS: A Dialectic Multi-Agent Collaborative Framework for Structured RTL Optimization",
+    "authors": "Che-Ming Chang, Prashanth Vijayaraghavan, Ashutosh Jadhav, Charles Mackin, Vandana Mukherjee, Hsinyu Tsai, Ehsan Degan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17204v1",
+    "source": "arXiv",
+    "abstract": "Optimizing Register Transfer Level (RTL) code is a critical step in Electronic Design Automation (EDA) for improving power, performance, and area (PPA). We present CODMAS (Collaborative Optimization via a Dialectic Multi-Agent System), a framework that combines structured dialectic reasoning with domain-aware code generation and deterministic evaluation to automate RTL optimization. At the core of CODMAS are two dialectic agents: the Articulator, inspired by rubber-duck debugging, which articulates stepwise transformation plans and exposes latent assumptions; and the Hypothesis Partner, which predicts outcomes and reconciles deviations between expected and actual behavior to guide targeted refinements. These agents direct a Domain-Specific Coding Agent (DCA) to generate architecture-aware Verilog edits and a Code Evaluation Agent (CEA) to verify syntax, functionality, and PPA metrics. We introduce RTLOPT, a benchmark of 120 Verilog triples (unoptimized, optimized, testbench) for pipelining and clock-gating transformations. Across proprietary and open LLMs, CODMAS achieves ~25% reduction in critical path delay for pipelining and ~22% power reduction for clock gating, while reducing functional and compilation failures compared to strong prompting and agentic baselines. These results demonstrate that structured multi-agent reasoning can significantly enhance automated RTL optimization and scale to more complex designs and broader optimization tasks."
+  },
+  {
+    "date": "2026-03-17",
+    "title": "Talk is Cheap, Logic is Hard: Benchmarking LLMs on Post-Condition Formalization",
+    "authors": "I. S. W. B. Prasetya, Fitsum Kifetew, Davide Prandi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17193v1",
+    "source": "arXiv",
+    "abstract": "Formal specifications, such as pre- and post-conditions provide a solid basis for performing thorough program verification. However, developers rarely provide such formal specifications, hence if AI could help in constructing them, it would make formal verification possible or at least make automated testing much more effective. This paper presents a study on the ability of LLMs in generating formal FULL pre- and post-conditions of a program, given its natural language description. 24 state-of-the-art LLMs were evaluated on a freshly prepared dataset of 40 tasks. The paper investigates specifications of varying difficulty and discusses a set of more refined performance metrics in addition the general accept@1 performance. It also investigates the impact of using automatically generated tests for validation of the solutions proposed by LLMs. The results of the experiment reveal that, in general LLMs can produce valid pre- and post-conditions based on natural language descriptions of programs. Incorrect solutions from proprietary models are also often near correct. A closer inspection shows that open-source models tend to result in a higher proportion of erroneous results while proprietary models tend to have slightly higher false negative rates. Interestingly, the results also show that augmenting the manually prepared dataset with automatically generated tests leads to the exposure of wrong solutions, which would have otherwise been accepted as correct. In general, LLMs perform better in formalizing pre-conditions than on post-conditions and proprietary models perform better than open ones. However, none of the LLMs were able to correctly formalize all the tasks in our benchmark. Overall, the effectiveness and reliability of LLMs in formalizing pre- and post-conditions could be greatly improved by using a good test suite that checks the correctness of the LLM generated formalizations."
+  },
+  {
+    "date": "2026-03-17",
+    "title": "Intent Formalization: A Grand Challenge for Reliable Coding in the Age of AI Agents",
+    "authors": "Shuvendu K. Lahiri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17150v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI systems can now generate code with remarkable fluency, but a fundamental question remains: \\emph{does the generated code actually do what the user intended?} The gap between informal natural language requirements and precise program behavior -- the \\emph{intent gap} -- has always plagued software engineering, but AI-generated code amplifies it to an unprecedented scale. This article argues that \\textbf{intent formalization} -- the translation of informal user intent into a set of checkable formal specifications -- is the key challenge that will determine whether AI makes software more reliable or merely more abundant. Intent formalization offers a tradeoff spectrum suitable to the reliability needs of different contexts: from lightweight tests that disambiguate likely misinterpretations, through full functional specifications for formal verification, to domain-specific languages from which correct code is synthesized automatically. The central bottleneck is \\emph{validating specifications}: since there is no oracle for specification correctness other than the user, we need semi-automated metrics that can assess specification quality with or without code, through lightweight user interaction and proxy artifacts such as tests. We survey early research that demonstrates the \\emph{potential} of this approach: interactive test-driven formalization that improves program correctness, AI-generated postconditions that catch real-world bugs missed by prior methods, and end-to-end verified pipelines that produce provably correct code from informal specifications. We outline the open research challenges -- scaling beyond benchmarks, achieving compositionality over changes, metrics for validating specifications, handling rich logics, designing human-AI specification interactions -- that define a research agenda spanning AI, programming languages, formal methods, and human-computer interaction."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "UVLLM: An Automated Universal RTL Verification Framework using LLMs",
+    "authors": "Yuchen Hu, Junhao Ye, Ke Xu, Jialin Sun, Shiyue Zhang, Xinyao Jiao, Dingrong Pan, Jie Zhou, Ning Wang, Weiwei Shan, Xinwei Fang, Xi Wang, Nan Guan, Zhe Jiang",
+    "publish": "2025 62nd ACM/IEEE Design Automation Conference (DAC)",
+    "url": "https://doi.org/10.1109/dac63849.2025.11435108",
+    "source": "IEEE",
+    "abstract": "Verifying hardware designs in embedded systems is crucial but often labor-intensive and time-consuming. While existing solutions have improved automation, they frequently rely on unrealistic assumptions. To address these challenges, we introduce a novel framework, UVLLM, which combines Large Language Models (LLMs) with the Universal Verification Methodology (UVM) to relax these assumptions. UVLLM significantly enhances the automation of testing and repairing error-prone Register Transfer Level (RTL) codes, a critical aspect of verification development. Unlike existing methods, UVLLM ensures that all errors are triggered during verification, achieving a syntax error fix rate of 86.99% and a functional error fix rate of 71.92% on our proposed benchmark. These results demonstrate a substantial improvement in verification efficiency. Additionally, our study highlights the current limitations of LLM applications, particularly their reliance on extensive training data. We emphasize the transformative potential of LLMs in hardware design verification and suggest promising directions for future research in AI-driven hardware design methodologies. The Repo. of dataset and code: https://github.com/SEU-ACAL/reproduce-UVLLM-DAC-25/."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Towards Intelligent Microfluidics: An LLM-Based Droplets Controlling Framework_supp1-3674635.mp4",
+    "authors": "Jianguang Zhou",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/lra.2026.3674635/mm1",
+    "source": "IEEE",
+    "abstract": "Digital microfluidics (DMF) is a versatile platform that enables parallel droplet operations and on-site programmable control, where droplet routing is a critical challenge for achieving automation. To enable automatic path generation from source to target electrodes and process-level feedback correction, this study proposes an adaptive intelligent control framework based on large language models (LLMs). The framework integrates language-guided topological map reconstruction, LLM-based path planning, and a dual closed-loop feedback mechanism to achieve high-precision droplet manipulation. To alleviate the spatial hallucination issues of LLMs in spatial reasoning such as discontinuous path planning and out-of-bound errors, a linguistic topological map reconstruction method is designed, improving path generation accuracy by 23.4% in complex obstacle environments compared to conventional spatial representations. In addition, a dual closed-loop feedback strategy is proposed, consisting of model self-correction feedback and camera-based image feedback, which enables real-time correction of routing deviations and enhances operational stability. Experimental results demonstrate that the proposed framework achieves 100% task success across various droplet distribution scenarios, significantly advancing the intelligence of microfluidic operations and providing a promising foundation for fully autonomous DMF systems."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Quantum-Ready ALU: Optimized Design Using Reversible Logic with RTL Design and FPGA Implementation",
+    "authors": "Agnik Maity, Sumedha Pal, Asmita Sarkar, Bhavishek Mishra, Debjit Roy, Mihir Lal Saha",
+    "publish": "2026 9th International Conference on Electronics, Materials Engineering &amp;amp; Nano-Technology (IEMENTech)",
+    "url": "https://doi.org/10.1109/iementech202669403.2026.11434363",
+    "source": "IEEE",
+    "abstract": "Reversible logic provides a foundation for nextgeneration computing systems, particularly in quantum and emerging nanotechnology-based architectures. Unlike conventional logic, reversible gates preserve information and support backward computation, making them crucial for designing quantum circuits. This paper introduces a reversible Arithmetic and Logic Unit (ALU) that performs eight fundamental operations-AND, OR, NOT, XOR, addition, subtraction, increment, and decrement-using Fredkin, Peres, TR, and modified Fredkin gates. A dedicated control unit manages operation selection, ensuring functional flexibility and circuit efficiency. The proposed design achieves significant improvements by minimizing ancilla inputs, quantum cost and garbage outputs, resulting in a total quantum cost of 71 and contains 16 reversible gates and 14 garbage outputs. The architecture was modeled and verified using Xilinx Vivado HLS and ISE 14.7, and implemented on the Nexys A7 (Artix-7) FPGA platform. Comparative analysis demonstrates better efficiency than existing reversible ALU designs, establishing the proposed circuit as a strong candidate for quantum computing and other advanced computing paradigms."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Breaking the Observability Tax: Dynamic Resolution Anomaly Detection via Topology-Aware Active LLM Agents",
+    "authors": "Rahul Kapoor, Miray Kas",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3675074",
+    "source": "IEEE",
+    "abstract": "The ‘‘observability tax’’—the escalating cost of telemetry in hyperscale data centers—forces a trade-off between expensive full-fidelity monitoring and low-cost sampling that misses critical ‘‘gray failures.’’ While traditional AIOps models act as passive post-hoc analyzers, the novelty of this work lies in reformulating observability as an active, hypothesis-driven process. To achieve this, we propose a Dynamic Resolution Architecture where a Topology-Aware LLM Agent dynamically controls the telemetry resolution of the underlying infrastructure. Our Topology-Aware Active LLM Agent employs ‘‘Sentinel Sampling,’’ monitoring 100% of nodes with low-cost essential metrics and only upgrading to high-resolution extended telemetry when semantically justified. Unlike rigid heuristics, the agent uses semantic reasoning to distinguish legitimate heavy workloads from pathological failures, even when root causes are hidden by layers of indirection in our physics-based simulation. Experimental results showthe Active Agent achieves an F1 score of 0.95, significantly outperforming a cost-matched heuristic baseline (F1 0.65). Using a ‘‘Skeptical Site Reliability Engineer (SRE)’’ protocol, the agent achieves 0.99 precision in distinguishing genuine failures from high-load noise. Our ‘‘Wake-on-Anomaly’’ cost model shows an 84% reduction in telemetry bandwidth and a 12.5% reduction in Total Cost of Ownership compared to standard ingestion. This work demonstrates that observability is primarily a data selection, not data volume, problem, solvable via semantic active reasoning."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Enhancing HR Support in a Thai Organization with LLM-Based Question Answering",
+    "authors": "Chinnatip Taemkaeo, Chanatip Saetia, Tawunrat Chalothorn, Taravichet Titijaroonroj",
+    "publish": "2026 18th International Conference on Knowledge and Smart Technology (KST)",
+    "url": "https://doi.org/10.1109/kst67832.2026.11431871",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) enhanced with retrieval-augmented generation (RAG) and multimodal inputs are increasingly used as interfaces to organizational knowledge. However, their effectiveness in specialized, non-English enterprise settings-such as Thai HR support-remains largely unclear. In many Thai organizations, employees frequently ask detailed HR-related questions, but the relevant information is scattered across internal webpages, PDF manuals, announcements, and images, making it difficult for generic LLMs to provide accurate, policy-consistent responses. To address this issue, we develop a multimodal RAG pipeline that combines hybrid dense-sparse retrieval over a vector database and evaluate six LLM models on a private Thai Visual Question Answering (VQA) HR dataset consisting of 226 questions and reference images across five HR topics. The results show that recent multimodal models, especially Qwen2.5-VL, achieve the best performance, with the highest averages in correctness (0.54), relevance (0.75), and helpfulness (0.64), clearly outperforming older vision-language systems and a text-only reasoning model. For large-scale answer evaluation, we apply an LLM-as-a-judge approach using GPT-4.1 and Gemini 2.5 Flash. We found that it serves as a generally reliable, though imperfect, substitute for human evaluation."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Spatial Visualization of Tourism and Daily Interest Structure for Regional Railways Using LLM",
+    "authors": "Yuki Fujimoto, Jun Sakurai, Satoshi Abiko, Masanori Ikebe",
+    "publish": "2026 18th International Conference on Knowledge and Smart Technology (KST)",
+    "url": "https://doi.org/10.1109/kst67832.2026.11431634",
+    "source": "IEEE",
+    "abstract": "This study analyzes the spatial characteristics of regional railway use in Japan by integrating large language model (LLM)-based classification of Instagram captions with geographic information. Posts mentioning 15 railway lines were categorized by an LLM (Gemma3-27B) into “tourism,” “daily,” and “other,” then linked to nearby stations and points of interest (POIs). Entropy and evenness were calculated to assess posting diversity and concentration. Results show that stable-demand lines exhibit balanced distributions of tourism and daily posts, latent-demand lines concentrate on specific tourist sites, and sparse-demand lines show dispersed but low posting activity. These differences reveal structural characteristics of regional communication and railway use. The findings demonstrate that combining LLM-based text understanding with spatial analysis can effectively visualize local interest structures and contribute to sustainable regional mobility planning."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Explainable Multimodal Earthquake Event Classification Using AIME Attribution and LLM-Based Narrative Reasoning",
+    "authors": "Phattaradanai Suwannahong, Piphatpong Wannapanon, Aphisara Klayburee, Takafumi Nakanishi, Ponlawat Chophuk",
+    "publish": "2026 18th International Conference on Knowledge and Smart Technology (KST)",
+    "url": "https://doi.org/10.1109/kst67832.2026.11431677",
+    "source": "IEEE",
+    "abstract": "Accurately distinguishing earthquake events from non-seismic environmental disturbances remains challenging, as similar patterns may arise from atmospheric radiation, soil-moisture variation, or strong wind fields. Traditional monitoring systems provide raw parameters without interpretability, limiting actionable insight. This study proposes an interpretable machine learning framework integrating seismic, geological, and environmental attributes with Approximate Inverse Model Explanations (AIME) and Large Language Model (LLM) based narrative generation. Using AIME driven feature selection and XGBoost classification, the proposed model achieved 0.9893 test accuracy, 0.9877 balanced accuracy, and 0.9885 mean cross-validation accuracy, outperforming prior earthquake classification studies by approximately 6.2% over the highest performing baseline model (92.7% Random Forest). AIME provided global and local attribution maps, while the LLM translated these attributions into human readable explanations, enhancing interpretability for both experts and non-specialists."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "An AI Education Framework Based on LLM-Knowledge Graph for Personalized Learning",
+    "authors": "Zihao Liang, Yiou Wang, Mingjie Zhao, Sen Feng, Yunfan Zhang, Yiqun Zhang",
+    "publish": "2025 21st International Conference on Computational Intelligence and Security (CIS)",
+    "url": "https://doi.org/10.1109/cis69366.2025.11433876",
+    "source": "IEEE",
+    "abstract": "Educational applications of Large Language Models (LLMs) face two key challenges: balancing their generative adaptability with factual reliability, and ensuring content accuracy within personalized learning paths. This paper presents LKPS (Large Language Model-Knowledge Graph for Personalized Learning System), an adaptive learning system that addresses these issues via two core innovations: (1) the SafeRAG framework, which uses structured prompting, multimodal cross-verification, and post-process verification to minimize hallucinations while maintaining content reliability; and (2) a hybrid path planner that integrates collaborative filtering with real-time knowledge tracing for personalized pathway optimization. In simulated multimodal machine learning scenarios, LKPS significantly outperforms traditional methods in both personalization and learning success, offering a viable pathway toward secure and deeply personalized educational AI."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "LLM-Integrated Digital Twins for Hierarchical Resource Allocation in 6G Networks",
+    "authors": "Majumder Haider, Imtiaz Ahmed, Md. Zoheb Hassan, Kamrul Hasan, H. Vincent Poor",
+    "publish": "IEEE Communications Standards Magazine",
+    "url": "https://doi.org/10.1109/mcomstd.2026.3670282",
+    "source": "IEEE",
+    "abstract": "Next-generation (NextG) wireless networks are expected to require intelligent, scalable, and context-aware radio resource management (RRM) to support ultra-dense deployments, diverse service requirements, and dynamic network conditions. Digital twins (DTs) offer a powerful tool for network management by creating high-fidelity virtual replicas that model real-time network behavior, while large language models (LLMs) enhance decision-making through their advanced generalization and contextual reasoning capabilities. This article proposes LLM-driven DTs for network optimization (LLM-DTNet), a hierarchical framework that integrates multi-layer DT architectures with LLM-based orchestration to enable adaptive, real-time RRM in heterogeneous NextG networks. We present the fundamentals and design considerations of LLM-DTNet while discussing its effectiveness in proactive and situation-aware network management across terrestrial and non-terrestrial applications. Furthermore, we illustrate an implementation of the proposed framework and highlight key challenges, including scalable DT modeling, secure LLM-DT integration, energy-efficient implementations, and multimodal data processing, shaping future advancements in NextG intelligent wireless networks."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "HPC-MentorFlow: Strengthening Institutional HPC Competencies through an LLM-Enhanced Tutoring System",
+    "authors": "Samir El-amrany, Viwan Jarerattanachat, Matthias R. Brust, Johnatan E. Pecero, Apivadee Piyatumrong, Pascal Bouvry",
+    "publish": "2026 18th International Conference on Knowledge and Smart Technology (KST)",
+    "url": "https://doi.org/10.1109/kst67832.2026.11431975",
+    "source": "IEEE",
+    "abstract": "The development of skilled professionals for diverse High-Performance Computing (HPC) environments is a substantial barrier to progress in both scientific and industrial areas. We present HPC-MentorFlow, an LLM-based tutoring system codesigned by the National Electronics and Computer Technology Center (NECTEC), Thailand, and the University of Luxembourg to deliver adaptive, accreditation-ready training tailored to local HPC setups. Unlike generic HPC courses, HPC-MentorFlow is an LLM tutor with Retrieval-Augmented Generation (RAG) that grounds explanations in institutional documentation with inline citations, ensuring verifiable, localised guidance. The curriculum is driven by capability profiles based on labour-market demands that yield role-based learning paths with mastery checks mapped to Bloom's taxonomy, enabling accreditation-ready, competencybased progression. This work is an educational system design and prototype, not a performance benchmarking or simulation study. Our contribution lies in a pedagogy-first architecture that embeds institutional documentation and competency-based progression. We outline an evaluation plan focused on learning outcomes and institutional deployability."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "A Survey on Knowledge Graph for Enhancing the Performance of LLM-Based Recommendation Systems",
+    "authors": "Nurul Arina, Indriana Hidayah, Noor Akhmad Setiawan",
+    "publish": "2026 18th International Conference on Knowledge and Smart Technology (KST)",
+    "url": "https://doi.org/10.1109/kst67832.2026.11432099",
+    "source": "IEEE",
+    "abstract": "Recommender systems are increasingly used in many fields to support personalised and adaptive decision-making. Large Language Models (LLMs) like GPT and Knowledge Graphs (KGs) have sparked interest in combining their strengths to improve recommendation quality, context, and explainability. Although recent reviews discuss the benefits of KGs for cloud-based LLMs, they rarely focus on their use in recommender systems. This literature review fills that gap by examining how KGs and LLMs work together to enhance recommendations. This study were guided by three research questions on application areas, integration methods, and evaluation method. Additionally, the study uses the PRISMA approach to select and analyse 20 relevant papers. The results compare different methods and performance metrics, including precision, recall, NDCG, and F1-score. This review offers a focused summary of current progress and points out important directions for future research on KG-LLM recommender systems."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "LLM4Load-Turbo: A Prompt-Driven LLM Framework with Knowledge Distillation for Efficient Multi-Scale Workload Prediction",
+    "authors": "Zeyuan Ding, Dian Ding, Jiannong Cao, Yiming Zhang, Guangtao Xue",
+    "publish": "IEEE Transactions on Services Computing",
+    "url": "https://doi.org/10.1109/tsc.2026.3675166",
+    "source": "IEEE",
+    "abstract": "Accurate workload prediction is essential to ensure application Quality of Service (QoS), cost efficiency, and compliance with Service Level Agreements (SLAs) during cloud-based deployment. However, existing methods struggle to achieve accurate forecasts across multiple temporal scales and often fail to generalize well with limited historical data. To tackle these problems, we propose LLM4Load-Turbo, a Prompt-Driven LLM Framework with Knowledge Distillation for Efficient Multi-Scale Workload Prediction. Firstly, we design a structured prompt with dataset introduction, task description, and workload features characterization to extract multi-scale features. Secondly, we introduce a cross-modality alignment mechanism combined with label embedding to further enhance predictive accuracy and generalization, effectively mitigating the container cold-start problem. Thirdly, we propose a two-level knowledge distillation strategy, enabling LLM4Load-Turbo to maintain high accuracy while substantially reducing inference latency, memory footprint, and computational cost. Specifically, our framework achieves up to an 89.27% improvement in inference speed and a 93.30% reduction in model parameter scale compared to state-of-the-art baselines. Extensive experiments on four real cloud workload datasets validate the effectiveness of our framework. For multi-scale workload prediction, LLM4Load-Turbo improves up to 50.44%. For container cold-start scenarios, LLM4Load-Turbo improves up to 93.54%. These results demonstrate the potential of LLM4Load-Turbo to enable dynamic and efficient resource management in modern cloud systems."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "A Privacy-First Sustainable HCD-LLM Framework for Mental Health Interaction: Integrating Multimodal Perception with Differential Privacy",
+    "authors": "Sai Wang, Nur Syazreen Ahmad",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3675247",
+    "source": "IEEE",
+    "abstract": "With the rapid development of artificial intelligence (AI) technology, the application of multimodal large language models (LLMs) in mental health support is becoming increasingly prominent. However, existing systems face challenges, including privacy breaches, insufficient sustainability, and fragmented personalization. This paper proposes a Sustainable Human-Centered Design (HCD) Framework (SHF) that emphasizes multimodal perception and privacy-first mental health interactions. Comparative experiments validated that the proposed model, under a fixed privacy protection (ϵ = 1.0), achieved recognition accuracies of 81.6% and 76.8% on different datasets, with F1 scores of 0.80 and 0.76, respectively. In terms of member inference attack protection, the model achieved an attack success rate of 55.8%. The performance changes under different privacy protections were also analyzed. Ablation experiments confirmed the importance of different components, demonstrating the effectiveness of the design. Statistical reliability was added to all experiments to ensure reproducibility. A good balance between effectiveness and privacy was achieved. The research results provide a practical reference for the mental health field within human-robot interaction (HRI)."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Explainable Affective Body Expression Recognition with Multi-Scale Spatiotemporal Encoding and LLM-Based Reasoning",
+    "authors": "Tao Wang, Haifeng Lu, Jiayi Duan, Tianyu Meng, Rui Mao, Shuang Liu, Dong Ming",
+    "publish": "IEEE Transactions on Affective Computing",
+    "url": "https://doi.org/10.1109/taffc.2026.3675425",
+    "source": "IEEE",
+    "abstract": "Automatic emotion recognition (AER) based on 3D body expressions is a pivotal component of human-centered affective computing. Despite significant progress, existing methods often struggle to jointly capture multi-scale spatiotemporal features and bidirectional long-term dependencies, while lacking explainable reasoning mechanisms. To address these challenges, we propose the Explainable Affective Body Expression Recognition (EABER) framework. Specifically, EABER introduces a Multi-Scale Convolutional Mamba Network (MSCMNet). It employs multi-receptive-field convolutional modeling to learn multi-scale spatiotemporal representation, while a bidirectional state-space architecture is used to capture global bidirectional dependencies. Furthermore, EABER incorporates an LLM-based Emotion-Action Interpreter (EAI-LLM) for final emotion recognition with explainable affective reasoning. The spatiotemporal Serialization with Unified Masking (STSUM) strategy is introduced into the MSCMNet and EAI-LLM models, facilitating cross-dataset joint training while preserving fine-grained spatiotemporal information. Experimental results across four diverse datasets demonstrate that through joint training, the proposed EABER effectively learns shared affective motion patterns, yielding accuracy improvements of up to 7.83%. Moreover, EABER achieves superior performance in emotion recognition compared to state-of-the-art methods, and outperforms general-purpose large models, such as GPT-4o and Gemini 1.5 Pro, in explainable affective reasoning."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Passing on Wisdom: LLM-driven Cascaded Knowledge Distillation for Sequential Recommendation",
+    "authors": "Xiang Ao, Yiran Qiao, Ningtao Wang, Xing Fu, Yang Liu, Thapana Boonchoo, Weiqiang Wang, Qing He, Xueqi Cheng",
+    "publish": "IEEE Transactions on Knowledge and Data Engineering",
+    "url": "https://doi.org/10.1109/tkde.2026.3675423",
+    "source": "IEEE",
+    "abstract": "A critical limitation of conventional sequential recommendation models (SRMs) is their reliance on observed user-item interaction sequences within a closed-world setting, which hinders their ability to generalize to unseen or infrequent items. Recently, Large Language Models (LLMs) have shown remarkable promise in recommendation systems due to their vast world knowledge and advanced reasoning capabilities. Current research has predominantly explored two approaches: using LLMs to directly generate recommendations and distilling knowledge from LLMs to enhance conventional SRMs. However, these approaches face two major challenges: (1) high inference costs, as they require LLM responses during inference, either for generating predictions or as supplementary input; (2) inadequate distillation of the reasoning process, as existing methods focus mainly on improving embeddings or aligning outputs, without fully integrating LLMs' inherent reasoning capabilities. To address these issues, we propose LCKD-SR, an <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">L</u>LM-driven <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">C</u>ascaded <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">K</u>nowledge <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">D</u>istillation framework for <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">S</u>equential <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">R</u>ecommendation. In this framework, an LLM, a Teacher SRM, and a Student SRM form a hierarchical distillation structure, enabling an LLM-free inference by using only the Student model. Beyond traditional embedding and ranking distillation, our framework abstracts the LLM's sequential reasoning abilities by identifying key interactions that subsequently guide the Teacher's attention using learnable markers. The Student model, which mirrors the architecture of the Teacher, achieves seamless knowledge alignment from the Teacher across all three aspects. Extensive experiments demonstrate the effectiveness and efficiency of the proposed LCKD-SR, showcasing its scalability to perform multi-level knowledge transfer while enabling LLM-independent inference, thereby overcoming the inference cost and reasoning limitations of existing methods."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Extracting Multi-Destination Tourism Flows Using LLM-Driven Process Mining: A Case Study of Structural Shifts in Thai Domestic Travel via Social Media Group Before-, During-, and After COVID-19",
+    "authors": "Sukanya Chinwicha, Worarat Krathu, Chakarida Nukoolkit, Nuttawut Atiratana",
+    "publish": "2026 18th International Conference on Knowledge and Smart Technology (KST)",
+    "url": "https://doi.org/10.1109/kst67832.2026.11432037",
+    "source": "IEEE",
+    "abstract": "Traditional tourism tracking methods, particularly those reliant on GPS, often face limitations regarding data intrusiveness and restricted spatial scope. Addressing this, this study introduces a novel data pipeline integrating Large Language Models with process mining to analyze unstructured social media data. The framework is validated through a case study of Thai domestic tourism, mapping trajectory shifts across pre-, during-, and post-pandemic phases. Analysis of 2,577 itineraries reveals a distinct structural evolution: from 2019's linear, mono-centric flows to 2021's rigid “safety loops” where hotels served as isolated sanctuaries. By 2023, a complex, hybrid mesh emerged, establishing hotels as permanent logistical hubs while religious tourism remained the sole consistent anchor. These findings demonstrate the pipeline's capability to uncover intricate behavioral transitions effectively. Consequently, this research contributes a scalable, nonintrusive methodology for monitoring nationwide multi-destination trajectories. To facilitate reproducibility, the complete dataset, pipeline code, and data flow graph results are published on GitHub <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1.</sup>https://github.com/mensudza/Travelyzer."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "3-D 1T-nC-1T Ferroelectric-Based KV Cache for Efficient Long-Context LLM Inference",
+    "authors": "Weikai Xu, Danyun Luo, Minyue Deng, Shengjie Cao, Shuzhang Zhong, Meng Li, Qianqian Huang, Ru Huang",
+    "publish": "IEEE Transactions on Electron Devices",
+    "url": "https://doi.org/10.1109/ted.2026.3670094",
+    "source": "IEEE",
+    "abstract": "The storage and computation of key-value (KV) cache have become the primary bottlenecks in long-context large language models (LLMs). In this work, anovel ferroelectric (FE)-based KV cache through algorithm-architecture-device co-optimization is proposed and experimentally demonstrated. By co-optimizing with a token-wise dynamic pruning algorithm, a hybrid analog- digital computing-in-memory (CIM) architecture is designed for dynamically sparse KV cache workloads. To support the architecture in hardware, a novel disturb-free 3-D vertical 1T-nC-1T FeRAM structure is proposed, featuring orthogonally aligned word-lines (WLs) and bit-lines (BLs), along with shared multiple FE capacitor (FeCap) strings. The 3-D 1T-nC-1T FeRAM array can be utilized as a 1T-nC-based analog CIM (ACIM) with small-signal nondestructive read (NDR) for efficient similarity evaluation, and nC-1 T-based digital CIM (DCIM) with robust destructive read (DR) for exact attention computation. Moreover, the nC string-based data mapping and computing is further optimized, which can enhance computational parallelism and eliminate disturbance issue. Based on the above design, a 3-D <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$3\\times 32\\times 32$</tex-math> </inline-formula> Hf<sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">0.5</sub>Zr<sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">0.5</sub>O<sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sub> FeCap array is experimentally fabricated, exhibiting excellent memory metrics and demonstrating efficient and accurate attention computation. The comprehensive system-level analysis demonstrates that the proposed design achieves comparable accuracy to full attention while delivering up to <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$6\\times $</tex-math> </inline-formula>/<inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$315\\times $</tex-math> </inline-formula> improved throughput and energy efficiency over NVIDIA A100, providing a promising solution for efficient long-context LLM inference on edge devices."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "A Test Method for Ground Proximity Warning System Functional Verification Based on Risk Assessment Models",
+    "authors": "Chunyong Han",
+    "publish": "2025 5th International Conference on Mechatronics Technology and Aerospace Engineering (ICMTAE)",
+    "url": "https://doi.org/10.1109/icmtae66890.2025.11428126",
+    "source": "IEEE",
+    "abstract": "The Ground Proximity Warning System (GPWS) is an essential safety system designed to mitigate the risk of Controlled Flight Into Terrain (CFIT) incidents. This study presents a systematic approach to the functional verification of GPWS through flight testing on transport aircraft, aimed at optimizing the system development cycle. The research methodology encompasses a comprehensive analysis of GPWS functionalities and system interconnections, followed by the identification of specific testing requirements for functional verification when the system is implemented on transport aircraft. A detailed test plan was subsequently developed, incorporating two distinct risk assessment models to evaluate and mitigate potential flight test hazards. Critical parameters for GPWS functional verification were identified and utilized to formulate a comprehensive flight test strategy. The proposed methodology was implemented on a specific transport aircraft model to complete the functional verification process. The experimental results validate the efficacy and practical applicability of the developed testing methods, risk assessment models, and procedural protocols. This research contributes a robust technical framework for GPWS functional verification, demonstrating significant potential for engineering applications in aviation safety systems."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "Improving AMS Verification Efficiency Through Test-Bench and Environment Optimization",
+    "authors": "Bikram Biswas, Barjeestahseen Mulla, Shrikant Pattar",
+    "publish": "2026 9th International Conference on Electronics, Materials Engineering &amp;amp; Nano-Technology (IEMENTech)",
+    "url": "https://doi.org/10.1109/iementech202669403.2026.11434033",
+    "source": "IEEE",
+    "abstract": "In present System on Chip design, Analog and mixed signal (AMS) circuits play an important role. Due to the complex behaviour of ICs, there are many challenges in verification of overall system. Simulation time for top level AMS verification is one of the biggest challenges in current time due to complex system. In this paper, some of the verification practices have been discussed to improve the simulation speed. Approximately 5 -time improvement of the speed has been observed during our experiment."
+  },
+  {
+    "date": "2026-3-18",
+    "title": "A Secure Cloud Rendering System for Multiple Game Engines Based on Pixel Streams and Identity Verification",
+    "authors": "Ting Zhang, Yujing Huang",
+    "publish": "2025 21st International Conference on Computational Intelligence and Security (CIS)",
+    "url": "https://doi.org/10.1109/cis69366.2025.11433904",
+    "source": "IEEE",
+    "abstract": "This paper designs and implements a secure cloud rendering system for multiple game engines, aiming to address the reliance on high - performance hardware and the high cost of local rendering, while emphasizing identity verification and information security. Suitable for mainstream engines like Unreal Engine and Unity3D, the system uses a modular architecture. It integrates key technologies such as single - port multi - instance, Token authorization, process management, and identity verification to ensure user legitimacy. Through optimization techniques like LOD and texture compression, the system improves rendering quality and network transmission efficiency. Comprehensive tests in diverse network and hardware environments show that the system can provide stable and efficient rendering services. It achieves high frame rates and low - latency interaction, significantly enhancing user experience. Its cross - platform nature allows users to access high - quality 3D content via various devices. The research confirms the feasibility and effectiveness of the system in integrating identity verification and information security into real - time cloud rendering, offering strong technical support for the gaming industry and beyond."
+  }
+]
