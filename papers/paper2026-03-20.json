@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-19",
+    "title": "Towards Verifiable AI with Lightweight Cryptographic Proofs of Inference",
+    "authors": "Pranay Anchuri, Matteo Campanelli, Paul Cesaretti, Rosario Gennaro, Tushar M. Jois, Hasan S. Kayman, Tugce Ozdemir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.19025v1",
+    "source": "arXiv",
+    "abstract": "When large AI models are deployed as cloud-based services, clients have no guarantee that responses are correct or were produced by the intended model. Rerunning inference locally is infeasible for large models, and existing cryptographic proof systems -- while providing strong correctness guarantees -- introduce prohibitive prover overhead (e.g., hundreds of seconds per query for billion-parameter models). We present a verification framework and protocol that replaces full cryptographic proofs with a lightweight, sampling-based approach grounded in statistical properties of neural networks. We formalize the conditions under which trace separation between functionally dissimilar models can be leveraged to argue the security of verifiable inference protocols. The prover commits to the execution trace of inference via Merkle-tree-based vector commitments and opens only a small number of entries along randomly sampled paths from output to input. This yields a protocol that trades soundness for efficiency, a tradeoff well-suited to auditing, large-scale deployment settings where repeated queries amplify detection probability, and scenarios with rationally incentivized provers who face penalties upon detection. Our approach reduces proving times by several orders of magnitude compared to state-of-the-art cryptographic proof systems, going from the order of minutes to the order of milliseconds, with moderately larger proofs. Experiments on ResNet-18 classifiers and Llama-2-7B confirm that common architectures exhibit the statistical properties our protocol requires, and that natural adversarial strategies (gradient-descent reconstruction, inverse transforms, logit swapping) fail to produce traces that evade detection. We additionally present a protocol in the refereed delegation model, where two competing servers enable correct output identification in a logarithmic number of rounds."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Unleashing the Power of Simplicity: A Minimalist Strategy for State-of-the-Art Fingerprint Enhancement",
+    "authors": "Raffaele Cappelli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.19004v1",
+    "source": "arXiv",
+    "abstract": "Fingerprint recognition systems, which rely on the unique characteristics of human fingerprints, are essential in modern security and verification applications. Accurate minutiae extraction, a critical step in these systems, depends on the quality of fingerprint images. Despite recent improvements in fingerprint enhancement techniques, state-of-the-art methods often struggle with low-quality fingerprints and can be computationally demanding. This paper presents a minimalist approach to fingerprint enhancement, prioritizing simplicity and effectiveness. Two novel methods are introduced: a contextual filtering method and a learning-based method. These techniques consistently outperform complex state-of-the-art methods, producing clearer, more accurate, and less noisy images. The effectiveness of these methods is validated using a challenging latent fingerprint database. The open-source implementation of these techniques not only fosters reproducibility but also encourages further advancements in the field. The findings underscore the importance of simplicity in achieving high-quality fingerprint enhancement and suggest that future research should balance complexity and practical benefits."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Controller Datapath Aware Verification of Masked Hardware Generated via High Level Synthesis",
+    "authors": "Nilotpola Sarma, Vaishali Ghanshyam Chaudhuri, Chandan Karfa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18939v1",
+    "source": "arXiv",
+    "abstract": "Masking is a countermeasure against Power Side Channel Attacks (PSCAs) in both software and hardware implementations of cryptographic algorithms. Compared to software masking, implementing masked hardware is time consuming and error prone. Recent approaches, therefore, rely on High Level Synthesis (HLS) tools to automatically generate masked Register Transfer Level (RTL) hardware from verified masked software, significantly reducing design effort. Since HLS was never developed for security, HLS optimizations may impact PSCA security of the generated RTL. As a result, verifying the PSCA security of HLS generated masked RTL is crucial. Existing hardware masking verification tools can verify masked hardware, but may produce false positives when applied to HLS generated designs with controller datapath architectures obtained due to resource-shared datapath obtained via HLS. This work proposes a hardware masking verification strategy for HLS generated masked hardware. Our toolflow MaskedHLSVerif, performs state-wise formal verification of controller datapath RTL obtained via HLS, thereby avoiding false positives caused by resource-shared datapaths. Our tool flow correctly verifies standard cryptographic benchmarks, consisting of cascaded masked gadgets and the PRESENT S-box masked with gadgets, where existing tools like REBECCA reports false positives. The proposed tool-flow is able to detect masking flaws induced by HLS-optimizations as well."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "BeamAgent: LLM-Aided MIMO Beamforming with Decoupled Intent Parsing and Alternating Optimization for Joint Site Selection and Precoding",
+    "authors": "Xiucheng Wang, Yue Zhang, Nan Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18855v1",
+    "source": "arXiv",
+    "abstract": "Integrating large language models (LLMs) into wireless communication optimization is a promising yet challenging direction. Existing approaches either use LLMs as black-box solvers or code generators, tightly coupling them with numerical computation. However, LLMs lack the precision required for physical-layer optimization, and the scarcity of wireless training data makes domain-specific fine-tuning impractical. We propose BeamAgent, an LLM-aided MIMO beamforming framework that explicitly decouples semantic intent parsing from numerical optimization. The LLM serves solely as a semantic translator that converts natural language descriptions into structured spatial constraints. A dedicated gradient-based optimizer then jointly solves the discrete base station site selection and continuous precoding design through an alternating optimization algorithm. A scene-aware prompt enables grounded spatial reasoning without fine-tuning, and a multi-round interaction mechanism with dual-layer intent classification ensures robust constraint verification. A penalty-based loss function enforces dark-zone power constraints while releasing optimization degrees of freedom for bright-zone gain maximization. Experiments on a ray-tracing-based urban MIMO scenario show that BeamAgent achieves a bright-zone power of 84.0\\,dB, outperforming exhaustive zero-forcing by 7.1 dB under the same dark-zone constraint. The end-to-end system reaches within 3.3 dB of the expert upper bound, with the full optimization completing in under 2 s on a laptop."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "The multi-objective portfolio model for oil and gas exploration drilling projects selection and its operator-enhanced NSGA-II based solution",
+    "authors": "Chao Min, Junyi Cui, Stanisław Migórski, Yonglan Xie, Qingxia Zhang, Jun Peng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18844v1",
+    "source": "arXiv",
+    "abstract": "Drilling investment is pivotal to operational planning in oil and gas (O\\&G) exploration. Conventional deployment relies heavily on fragmented expert assessments of geological and economic factors, with limited integration ability of information. As the tool of portfolio show strong potential for mitigating uncertainty and selecting superior drilling plans, this study develops a multi-objective mean-variance portfolio model that accounts for geological-parameter uncertainty, enabling an effective risk-return trade-off and optimal selection. First, the probabilistic distribution of geological-parameters for prospect-list projects is obtained through expert-elicited priors. And considering the selection of the drilling projects as a portfolio, an optimization model is formulated jointly to describe the return and risk of short-term plan, under different constraints. Second, an improved OE-NSGA-II algorithm is proposed specifically for this model, in which (1) a directional crossover operator is designed to embed improving directions in objective space-derived from dominance and objective differences-into recombination, and (2) a structure-aware mutation operator is designed to prioritize high-utility bit flips via probabilistic sampling with feasibility repair, thus improving the search ability for superior Pareto solutions. Finally, using the case of 2023 exploration drilling deployment for verification, and then apply the validated method to the 2024 deployment to support decision-making. The results indicate that the proposed approach offers a reusable solution for drilling portfolio optimization in O\\&G exploration."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Can LLM generate interesting mathematical research problems?",
+    "authors": "Xiaoyang Chen, Xiang Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18813v1",
+    "source": "arXiv",
+    "abstract": "This paper is the second one in a series of work on the mathematical creativity of LLM. In the first paper, the authors proposed three criteria for evaluating the mathematical creativity of LLM and constructed a benchmark dataset to measure it. This paper further explores the mathematical creativity of LLM, with a focus on investigating whether LLM can generate valuable and cutting-edge mathematical research problems. We develop an agent to generate unknown problems and produced 665 research problems in differential geometry. Through human verification, we find that many of these mathematical problems are unknown to experts and possess unique research value."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Reconstructions of Single Pixel X-Ray Transforms with Applications in Nuclear-Disarmament Verification",
+    "authors": "Christopher Fichtlscherer, R. Scott Kemp, Christina Brandt",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18728v1",
+    "source": "arXiv",
+    "abstract": "In nuclear arms control and disarmament processes, it is crucial to determine whether an object is a nuclear weapon or not without revealing sensitive information about it. At the MIT: Laboratory for Nuclear Security and Policy, such a nuclear verification method was developed, showcasing a transmission-based approach [1]. This method's essential part rests on a mathematical operation, the Single-Pixel X-Ray Transform: a cone of X-rays transmits an object and the remaining intensity is measured with a single-pixel detector. This transformation and the recovery of objects from dimensionless single-pixel measurements more generally has only been analyzed to a limited extent. In this work, we investigate some of the Single Pixel X-Ray Transform's mathematical properties. More specifically, we show that the Single Pixel X-ray transform is non-linear, continuous, Fréchet-differentiable and convex. We also introduce a method of reconstructing an object based only on a finite number of dimensionless, noisy Single Pixel X-Ray Transform measurement values. This method is based on Douglas-Rachford splitting and uses total variation denoising. We present an implementation for this method, focusing on rotational symmetric objects, as they allow the use of a one-dimensional direct total variation denoising algorithm [2]."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "SpecForge: A Flexible and Efficient Open-Source Training Framework for Speculative Decoding",
+    "authors": "Shenggui Li, Chao Wang, Yikai Zhu, Yubo Wang, Fan Yin, Shuai Shi, Yefei Chen, Xiaomin Dong, Qiaoling Chen, Jin Pan, Ji Li, Laixin Xie, Yineng Zhang, Lei Yu, Yonggang Wen, Ivor Tsang, Tianwei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18567v1",
+    "source": "arXiv",
+    "abstract": "Large language models incur high inference latency due to sequential autoregressive decoding. Speculative decoding alleviates this bottleneck by using a lightweight draft model to propose multiple tokens for batched verification. However, its adoption has been limited by the lack of high-quality draft models and scalable training infrastructure. We introduce SpecForge, an open-source, production-oriented framework for training speculative decoding models with full support for EAGLE-3. SpecForge incorporates target-draft decoupling, hybrid parallelism, optimized training kernels, and integration with production-grade inference engines, enabling up to 9.9x faster EAGLE-3 training for Qwen3-235B-A22B. In addition, we release SpecBundle, a suite of production-grade EAGLE-3 draft models trained with SpecForge for mainstream open-source LLMs. Through a systematic study of speculative decoding training recipes, SpecBundle addresses the scarcity of high-quality drafts in the community, and our draft models achieve up to 4.48x end-to-end inference speedup on SGLang, establishing SpecForge as a practical foundation for real-world speculative decoding deployment."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Leveraging Large Language Models for Generalizing Peephole Optimizations",
+    "authors": "Chunhao Liao, Hongxu Xu, Xintong Zhou, Zhenyang Xu, Chengnian Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18477v1",
+    "source": "arXiv",
+    "abstract": "Peephole optimizations are a core component of modern optimizing compilers. It rewrites specific instruction into semantically equivalent but more efficient forms. In practice, creating a new peephole optimization often starts from a concrete optimization instance and requires lifting it into a more general rewrite rule that matches a wider range of instruction patterns. This generalization step is critical to optimization effectiveness, but it is also difficult: producing rules that are both correct and sufficiently general typically demands substantial manual effort and domain expertise. Existing approaches such as Hydra attempt to automate this task with program synthesis, but their generalization capability is often limited by search-space explosion, under-generalization, and restricted support for diverse instruction domains. We present LPG, large language model aided peephole optimization generalization, a framework that uses large language models (LLMs) to generalize peephole optimizations. The design of LPG is motivated by the observation that LLMs are effective at semantic abstraction and exploratory reasoning, while formal analyses are necessary to ensure that generated rules are sound and profitable. Based on this observation, LPG adopts a closed-loop workflow that integrates LLM-driven symbolic constant generalization, structural generalization, constraint relaxation, and bitwidth/precision generalization with feedback from syntactic validation, semantic verification, and profitability checking. We evaluate LPG on real-world peephole optimization issues drawn from the LLVM ecosystem. Overall, LPG successfully generalizes 90 out of 102 optimizations. On the integer-focused subset that is directly comparable to Hydra, LPG generalizes 74 out of 81 optimizations, whereas Hydra generalizes 35."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Learning Consistent Temporal Grounding between Related Tasks in Sports Coaching",
+    "authors": "Arushi Rai, Adriana Kovashka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18453v1",
+    "source": "arXiv",
+    "abstract": "Video-LLMs often attend to irrelevant frames, which is especially detrimental for sports coaching tasks requiring precise temporal grounding. Yet obtaining frame-level supervision is challenging: expensive to collect from humans and unreliable from other models. We improve temporal grounding without additional annotations by exploiting the observation that related tasks, such as generation and verification, must attend to the same frames. We enforce this via a self-consistency objective over select visual attention maps of tightly-related tasks. Using VidDiffBench, which provides ground-truth keyframe annotations, we first validate that attention misallocation is a significant bottleneck. We then show that training with our objective yields gains of +3.0%, +14.1% accuracy and +0.9 BERTScore over supervised finetuning across three sports coaching tasks: Exact, FitnessQA, and ExpertAF, even surpassing closed-source models."
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Reflection in the Dark: Exposing and Escaping the Black Box in Reflective Prompt Optimization",
+    "authors": "Shiyan Liu, Qifeng Xia, Qiyun Xia, Yisheng Liu, Xinyu Yu, Rui Qu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18388v1",
+    "source": "arXiv",
+    "abstract": "Automatic prompt optimization (APO) has emerged as a powerful paradigm for improving LLM performance without manual prompt engineering. Reflective APO methods such as GEPA iteratively refine prompts by diagnosing failure cases, but the optimization process remains black-box and label-free, leading to uninterpretable trajectories and systematic failure. We identify and empirically demonstrate four limitations: on GSM8K with a defective seed, GEPA degrades accuracy from 23.81% to 13.50%. We propose VISTA, a multi-agent APO framework that decouples hypothesis generation from prompt rewriting, enabling semantically labeled hypotheses, parallel minibatch verification, and interpretable optimization trace. A two-layer explore-exploit mechanism combining random restart and epsilon-greedy sampling further escapes local optima. VISTA recovers accuracy to 87.57% on the same defective seed and consistently outperforms baselines across all conditions on GSM8K and AIME2025."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Can LLMs Reason Like Automated Theorem Provers for Rust Verification? VCoT-Bench: Evaluating via Verification Chain of Thought",
+    "authors": "Zichen Xie, Wenxi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.18334v1",
+    "source": "arXiv",
+    "abstract": "As Large Language Models (LLMs) increasingly assist secure software development, their ability to meet the rigorous demands of Rust program verification remains unclear. Existing evaluations treat Rust verification as a black box, assessing models only by binary pass or fail outcomes for proof hints. This obscures whether models truly understand the logical deductions required for verifying nontrivial Rust code. To bridge this gap, we introduce VCoT-Lift, a framework that lifts low-level solver reasoning into high-level, human-readable verification steps. By exposing solver-level reasoning as an explicit Verification Chain-of-Thought, VCoT-Lift provides a concrete ground truth for fine-grained evaluation. Leveraging VCoT-Lift, we introduce VCoT-Bench, a comprehensive benchmark of 1,988 VCoT completion tasks for rigorously evaluating LLMs' understanding of the entire verification process. VCoT-Bench measures performance along three orthogonal dimensions: robustness to varying degrees of missing proofs, competence across different proof types, and sensitivity to the proof locations. Evaluation of ten state-of-the-art models reveals severe fragility, indicating that current LLMs fall well short of the reasoning capabilities exhibited by automated theorem provers."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "In Perfect Harmony: Orchestrating Causality in Actor-Based Systems",
+    "authors": "Vladyslav Mikytiv, Bernardo Toninho, Carla Ferreira",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17909v1",
+    "source": "arXiv",
+    "abstract": "Runtime verification has gained popularity as a lightweight approach for increasing assurance in systems under scrutiny. Performing runtime checks enables dynamic monitoring and alerts for unexpected behavior, thereby improving reliability and correctness. Actor-based systems present significant challenges for runtime verification. Properties frequently span multiple actors with complex causal dependencies, while nondeterministic message interleavings can obscure execution semantics. Moreover, most existing monitoring tools are designed for single-process behavior. This paper presents ACTORCHESTRA, a runtime verification framework for Erlang that automatically tracks causality across multi-actor interactions. The framework instruments Erlang systems that comply with OTP guidelines via targeted code injection. This method establishes the orchestration infrastructure required to track causal relationships between actors without requiring manual modifications to the target system. To ease the specification of multi-actor properties, the framework provides WALTZ, a specification language that automatically compiles properties into executable Erlang monitors that integrate with the instrumented system. Three case studies demonstrate ACTORCHESTRA's effectiveness in detecting complex behavioral violations in real-world actor systems. A performance evaluation quantifies the runtime overhead of the monitoring infrastructure and analyzes the trade-offs between added safety guarantees and execution costs."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "A Deterministic Ionization Algorithm for the OSIRIS Particle-in-Cell Framework",
+    "authors": "Stephen DiIorio, Ricardo Fonseca, Frank Tsung, Benjamin J. Winjum, Alec G. R. Thomas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17885v1",
+    "source": "arXiv",
+    "abstract": "Ionization is critical in the formation and evolution of plasma dynamics; collisional ionization, in particular, is an often overlooked source of electrons when dealing with laser-plasma interactions. Ionization plays a crucial role in understanding the complex plasma kinetics, ranging from cold and sparse astrophysical settings to hot and dense fusion systems. In this paper, we describe the underlying theory for and development, validation, and verification of an extension to the standard particle-in-cell method to include a deterministic algorithm for collisional ionization physics. This algorithm offers improved accuracy, achieving up to two orders of magnitude decrease in the error of the ionization rate calculations, scales linearly in execution time with the number of macro-particles per cell, has been tested for physical correctness and benchmarked against several codes."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "SoK: From Silicon to Netlist and Beyond $-$ Two Decades of Hardware Reverse Engineering Research",
+    "authors": "Zehra Karadağ, Simon Klix, René Walendy, Felix Hahn, Kolja Dorschel, Julian Speith, Christof Paar, Steffen Becker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17883v1",
+    "source": "arXiv",
+    "abstract": "As hardware serves as the root of trust in modern computing systems, Hardware Reverse Engineering (HRE) is foundational for security assurance. In practice, HRE enables critical security applications, including design verification, supply-chain assurance, and vulnerability discovery. Over the past two decades, academic research on Integrated Circuit (IC), Field-Programmable Gate Array (FPGA), and netlist reverse engineering has steadily grown. However, knowledge remains fragmented across domains and communities, which complicates assessing the state of the art and hampers identifying shared research challenges. In this paper, we present a systematization of knowledge based on an in-depth analysis of 187 peer-reviewed publications. Using this corpus, we characterize technical methods across the HRE workflow and identify technical and organizational challenges that impede research progress. We analyze all 30 artifacts from our corpus using established artifact evaluation practices. Key results could be reproduced for only seven publications (4%). Based on our findings, we derive stakeholder-centric recommendations for academia, industry, and government to enable more coordinated and reproducible HRE research. These recommendations target three cross-cutting opportunities: (i) improving reproducibility and reuse via artifact-centric practices, (ii) enabling rigorous comparability through standardized benchmarks and evaluation metrics, and (iii) improving legal clarity for public HRE research."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Mitigating LLM Hallucinations through Domain-Grounded Tiered Retrieval",
+    "authors": "Md. Asraful Haque, Aasar Mehdi, Maaz Mahboob, Tamkeen Fatima",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17872v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have achieved unprecedented fluency but remain susceptible to \"hallucinations\" - the generation of factually incorrect or ungrounded content. This limitation is particularly critical in high-stakes domains where reliability is paramount. We propose a domain-grounded tiered retrieval and verification architecture designed to systematically intercept factual inaccuracies by shifting LLMs from stochastic pattern-matchers to verified truth-seekers. The proposed framework utilizes a four-phase, self-regulating pipeline implemented via LangGraph: (I) Intrinsic Verification with Early-Exit logic to optimize compute, (II) Adaptive Search Routing utilizing a Domain Detector to target subject-specific archives, (III) Corrective Document Grading (CRAG) to filter irrelevant context, and (IV) Extrinsic Regeneration followed by atomic claim-level verification. The system was evaluated across 650 queries from five diverse benchmarks: TimeQA v2, FreshQA v2, HaluEval General, MMLU Global Facts, and TruthfulQA. Empirical results demonstrate that the pipeline consistently outperforms zero-shot baselines across all environments. Win rates peaked at 83.7% in TimeQA v2 and 78.0% in MMLU Global Facts, confirming high efficacy in domains requiring granular temporal and numerical precision. Groundedness scores remained robustly stable between 78.8% and 86.4% across factual-answer rows. While the architecture provides a robust fail-safe for misinformation, a persistent failure mode of \"False-Premise Overclaiming\" was identified. These findings provide a detailed empirical characterization of multi-stage RAG behavior and suggest that future work should prioritize pre-retrieval \"answerability\" nodes to further bridge the reliability gap in conversational AI."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Uncertainty equality for SU(N) observables enabling the experimentally friendly detection of k-inseparability via purity measurements",
+    "authors": "G. Tartaglione, G. Zanfardino, F. Illuminati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17844v1",
+    "source": "arXiv",
+    "abstract": "We derive an exact uncertainty relation for arbitrary quantum states of finite-dimensional Hilbert spaces. For any given $k$-partition of a $d$-dimensional multipartite system, we introduce the total uncertainty as the sum of the uncertainties associated with all possible tensor products of local $\\mathrm{SU}(N)$ observables, where each observable acts on the corresponding subsystem. We show that the total uncertainty exactly equals the algebraic sum of the global state purity and the purities of all possible state reductions. For systems containing at least one single-qubit subsystem, this equality implies saturation of the Robertson-Schrödinger uncertainty inequality, with the missing term needed for saturation equal to the bipartite qubit-environment entanglement for a pure global state, or to the qubit two-Rényi entropy for a mixed global state. Leveraging on these results, we show how for any finite-dimensional multipartite system the Hilbert-Schmidt squared norm of the correlation matrix $t$ can be expressed exclusively in terms of the global and reduced state purities. We then derive a correlation matrix-based necessary condition for $k$-separability of arbitrary finite-dimensional quantum states and show, in the case of $n$ qubits, how it is related to a necessary criterion for Bell nonlocality in scenarios with two dichotomic measurements per party. For sufficiently large systems the purity-based formulation of the $k$-separability criterion always yields an exponential advantage over the direct evaluation of the $t$-matrix norm, allowing for a more efficient practical verification of multipartite entanglement and nonlocality via simple experimental schemes based on purity measurements. Our results shed some further light on the intimate and intricate relation between correlations, entropies, uncertainties, and the entanglement certification and detection problem."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Event-Centric Human Value Understanding in News-Domain Texts: An Actor-Conditioned, Multi-Granularity Benchmark",
+    "authors": "Yao Wang, Xin Liu, Zhuochen Liu, Jiankang Chen, Adam Jatowt, Kyoungsook Kim, Noriko Kando, Haitao Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17838v1",
+    "source": "arXiv",
+    "abstract": "Existing human value datasets do not directly support value understanding in factual news: many are actor-agnostic, rely on isolated utterances or synthetic scenarios, and lack explicit event structure or value direction. We present \\textbf{NEVU} (\\textbf{N}ews \\textbf{E}vent-centric \\textbf{V}alue \\textbf{U}nderstanding), a benchmark for \\emph{actor-conditioned}, \\emph{event-centric}, and \\emph{direction-aware} human value recognition in factual news. NEVU evaluates whether models can identify value cues, attribute them to the correct actor, and determine value direction from grounded evidence. Built from 2{,}865 English news articles, NEVU organizes annotations at four semantic unit levels (\\textbf{Subevent}, \\textbf{behavior-based composite event}, \\textbf{story-based composite event}, and \\textbf{Article}) and labels \\mbox{(unit, actor)} pairs for fine-grained evaluation across local and composite contexts. The annotations are produced through an LLM-assisted pipeline with staged verification and targeted human auditing. Using a hierarchical value space with \\textbf{54} fine-grained values and \\textbf{20} coarse-grained categories, NEVU covers 45{,}793 unit--actor pairs and 168{,}061 directed value instances. We provide unified baselines for proprietary and open-source LLMs, and find that lightweight adaptation (LoRA) consistently improves open-source models, showing that although NEVU is designed primarily as a benchmark, it also supports supervised adaptation beyond prompting-only evaluation. Data availability is described in Appendix~\\ref{app:data_code_availability}."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Verification and Validation of Physics-Informed Surrogate Component Models for Dynamic Power-System Simulation",
+    "authors": "Petros Ellinas, Indrajit Chaudhuri, Johanna Vorwerk, Spyros Chatzivasileiadis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17836v1",
+    "source": "arXiv",
+    "abstract": "Physics-informed machine learning surrogates are increasingly explored to accelerate dynamic simulation of generators, converters, and other power grid components. The key question, however, is not only whether a surrogate matches a stand-alone component model on average, but whether it remains accurate after insertion into a differential-algebraic simulator, where the surrogate outputs enter the algebraic equations coupling the component to the rest of the system. This paper formulates that in-simulator use as a verification and validation (V\\&V) problem. A finite-horizon bound is derived that links allowable component-output error to algebraic-coupling sensitivity, dynamic error amplification, and the simulation horizon. Two complementary settings are then studied: model-based verification against a reference component solver, and data-based validation through conformal calibration of the component-output variables exchanged with the simulator. The framework is general, but the case study focuses on physics-informed neural-network surrogates of second-, fourth-, and sixth-order synchronous-machine models. Results show that good stand-alone surrogate accuracy does not by itself guarantee accurate in-simulator behavior, that the largest discrepancies concentrate in stressed operating regions, and that small equation residuals do not necessarily imply small state-trajectory errors."
+  },
+  {
+    "date": "2026-03-18",
+    "title": "CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution",
+    "authors": "Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Gaiyang Han, Wanqi Zhang, Weiming Lu, Jun Xiao, Yongliang Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.17775v1",
+    "source": "arXiv",
+    "abstract": "Label-free reinforcement learning enables large language models to improve reasoning capabilities without ground-truth supervision, typically by treating majority-voted answers as pseudo-labels. However, we identify a critical failure mode: as training maximizes self-consistency, output diversity collapses, causing the model to confidently reinforce systematic errors that evade detection. We term this the consensus trap. To escape it, we propose CoVerRL, a framework where a single model alternates between generator and verifier roles, with each capability bootstrapping the other. Majority voting provides noisy but informative supervision for training the verifier, while the improving verifier progressively filters self-consistent errors from pseudo-labels. This co-evolution creates a virtuous cycle that maintains high reward accuracy throughout training. Experiments across Qwen and Llama model families demonstrate that CoVerRL outperforms label-free baselines by 4.7-5.9\\% on mathematical reasoning benchmarks. Moreover, self-verification accuracy improves from around 55\\% to over 85\\%, confirming that both capabilities genuinely co-evolve."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "LLM-Based Hate Speech Detection in Malayalam-English Code-Mixed Memes",
+    "authors": "Dhanya L K, Kannan Balakrishnan",
+    "publish": "2025 2nd Asian Conference on Intelligent Technologies (ACOIT)",
+    "url": "https://doi.org/10.1109/acoit66109.2025.11436140",
+    "source": "IEEE",
+    "abstract": "It’s becoming more important to find hate speech on social media as damaging content becomes more common. Detecting hate speech in code-mixed and low-resource languages like Malayalam-English is still hard, even if English and other resource-rich languages have made a lot of progress. When it comes to multimodal content like memes, the job gets increasingly harder because translation errors, spelling issues, or subtle insults might hide inappropriate sentiments. In this study, we introduce a training-free approach for identifying hate speech in Malayalam-English code-mixed memes by leveraging the zero-shot and few-shot capabilities of Large Language Models (LLMs). For memes, our method comprises a pretreatment pipeline that is aware of code mixing and uses optical character recognition (OCR), transliteration, and token-level language identification to get the text right. We test multimodal LLMs like CLIP, BLIP-2, and LLaVA by using descriptive, contextual, and instruction-tuned prompts in both zero-shot and few-shot scenarios. In Contextual Few-Shot prompting, LLaVA has the best accuracy at 83.0%, beating BLIP-2 (81.0%) and CLIP (79.0%). The lowest scores for Zero-Shot Descriptive prompting were CLIP (64.0%), BLIP2 (65.0%), and LLaVA (66.0%). These findings indicate that multimodal LLMs, when integrated with a robust preprocessing pipeline, may proficiently execute hate speech detection in multilingual, low-resource, and multimodal environments without the necessity of supervised training."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Context Aware LLM Optimization Using Domain-Specific Fine-Tuning",
+    "authors": "S Geetha, Divij P, Pranav K M, Abhishek Paul P",
+    "publish": "2025 2nd Asian Conference on Intelligent Technologies (ACOIT)",
+    "url": "https://doi.org/10.1109/acoit66109.2025.11436679",
+    "source": "IEEE",
+    "abstract": "This paper presents an efficient attitude to fine-tune any Large Language Model (LLM) using Quantized Low Rank Adaptation (QLoRA) technique. QLoRA provides a coherent approach that not only shrinks computational resources usage but also maintains complete or full 16 – bit fine-tuning task performance. QLoRA incorporates several advancements to minimize memory usage while maintaining performance: (a) 4-bit NormalFloat (NF4), an optimized data type designed for normally distributed weights, (b) Double Quantization, which lowers memory consumption by further compressing quantization constants, and (c) Paged Optimizers, which help control memory spikes efficiently. Various LLMs have been fine-tuned using this approach. The results show that QLoRA fine-tuning on these models using clean datasets yields better results than the base models."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Talk Structurally, Act Hierarchically: A Collaborative Refinement Framework for LLM Multi-Agent Systems",
+    "authors": "Zhao Wang, Sota Moriyama, Wei-Yao Wang, Briti Gangopadhyay, Shingo Takamatsu",
+    "publish": "IEEE Transactions on Artificial Intelligence",
+    "url": "https://doi.org/10.1109/tai.2026.3676025",
+    "source": "IEEE",
+    "abstract": "While recent advancements in Large Language Model-based Multi-Agent (LLM-MA) systems have shown promise, significant challenges remain in managing communication and refinement when agents collaborate on complex tasks. In this paper, we propose <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Talk Structurally</i>, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Act Hierarchically (TalkHier)</i>, a novel framework that introduces a structured communication protocol for context-rich exchanges and a hierarchical refinement system to address issues such as incorrect outputs, falsehoods, and biases. <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">TalkHier</i> surpasses various types of SoTA, including inference scaling model (OpenAI-o1), open-source multi-agent models (e.g., AgentVerse), and majority voting strategies on current LLM and single-agent baselines (e.g., ReAct, GPT4o), across diverse tasks, including open-domain question answering, domain-specific selective questioning, and practical advertisement text generation. These results highlight its potential to set a new standard for LLM-MA systems, paving the way for more effective, adaptable, and collaborative multi-agent frameworks. The source code is available at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://github.com/sony/talkhier</uri>."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "BlkMaC: A Blockchain-based Multi-Agents System with LLM Communication Framework",
+    "authors": "Ruolin Yang, Te Hou, Erfu Zhang, Minfeng Qi",
+    "publish": "Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence",
+    "url": "https://doi.org/10.1145/3788149.3788229",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-20",
+    "title": "IMBPS - Iterative MLP Blocks with Parameter Splits for Improving LLM Inference",
+    "authors": "Ganesh Prasad Nagaraja, Arun Coimbatore Ramachandran, Shubhendu Sharma, R. Govindarajan, Prakash Sathyanath Raghavendra",
+    "publish": "2025 IEEE 32nd International Conference on High Performance Computing, Data, and Analytics (HiPC)",
+    "url": "https://doi.org/10.1109/hipc66333.2025.00027",
+    "source": "IEEE",
+    "abstract": "The deployment of Large Language Models (LLMs) is increasingly challenged by their substantial computational and memory demands, straining the capabilities of current hardware. A significant, yet often less explored contributor to this inefficiency lies within the Multi-Layer Perceptron (MLP) blocks of transformer architectures, where sequences of tensor operations introduce considerable overhead. Although attention mechanisms have been the focus of extensive optimization, the MLP component has remained a comparatively underexplored frontier for performance enhancement. Our paper aims to address this critical gap in LLM inference by introducing Iterative MLP Blocks with Parameter Splits (IMBPS). IMBPS introduces a lossless blocking strategy designed to enhance LLM inference efficiency through two principal mechanisms. We present a concise analytical model that facilitates effective mitigation of memory-related overhead, specifically targeting data-packing and peak activation footprints in MLP computations. This approach leads to a significant reduction in cache misses. Our empirical evaluations provide compelling evidence of these benefits, with results indicating a <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\text{1. 5 - 1. 6 x}$</tex> speedup for standalone MLP blocks and end-to-end (E2E) performance improvements of up to 1.37 x."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "LLM-Enhanced Failure Localization in Microservices: Integrating Multi-Modal Data and Expert Interpretation",
+    "authors": "Zhenyu Zhong, Ruowei Fu, Minghua Ma, Shenglin Zhang, Yongqian Sun, Chetan Bansal, Dan Pei",
+    "publish": "IEEE Transactions on Services Computing",
+    "url": "https://doi.org/10.1109/tsc.2026.3676262",
+    "source": "IEEE",
+    "abstract": "Failure localization in microservice environments is increasingly challenging. While large language models (LLMs) have shown promise in software engineering tasks, existing approaches struggle to effectively integrate multi-modal telemetry data (e.g., log, metric and trace) and provide interpretable results. This paper presents LocaleXpert, a novel failure localization system that combines specialized LLM-based agents with traditional AIOps methods to diagnose issues in microservice environments. LocaleXpert introduces three key innovations: (1) a modular pipeline that transforms metrics, logs, and traces into natural language descriptions that LLMs can effectively process, (2) specialized expert agents that analyze each data type and collaborate to identify root causes, and (3) an interpretation mechanism that produces clear, actionable explanations of its reasoning process. Evaluation results show that LocaleXpert significantly outperforming baseline approaches in both accuracy and interpretability. The system has been successfully deployed in Microsoft's AIOpsLab benchmark, demonstrating its effectiveness."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "JBOC: Just a Bunch of CXL-enabled SSDs for Resource-Efficient LLM Checkpointing",
+    "authors": "Hakbeom Jang, Younghoon Min, Dongha Yoon, Hane Yie, Hoshik Kim, Jongryool Kim",
+    "publish": "IEEE Computer Architecture Letters",
+    "url": "https://doi.org/10.1109/lca.2026.3676331",
+    "source": "IEEE",
+    "abstract": "The rapid growth of Large Language Models (LLMs) has pushed training systems to rely on memory sharding and offloading, introducing substantial data movement overhead. This is further exacerbated by frequent checkpointing, where training states must traverse multiple software and hardware layers. Such a process creates a critical performance bottleneck, as traditional host-centric hierarchies struggle to handle the massive data movement required for high-frequency, faulttolerant checkpointing. In this paper, we introduce JBOC, an in-device processing architecture leveraging CXL-enabled SSDs that fuses optimizer updates and checkpointing into a single, unified operation. By offloading massive footprint optimizer updates and executing these fused tasks directly within internal computational units, JBOC achieves highly efficient checkpointing as persistence is handled during the update pipeline. This offloaded approach allows training states to remain within deviceside resources, bypassing the host-side resource hierarchy and effectively isolating the host from heavy storage traffic. We validate JBOC on commercial CXL platforms from Marvell and SK Hynix. Our evaluation achieves up to a <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$4.40\\times$</tex-math></inline-formula> speedup under per-iteration checkpointing. Compared to ZeRO-Offload, JBOC delivers comparable throughput while checkpointing <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$10\\times$</tex-math></inline-formula> more frequently. Furthermore, JBOC outperforms both ZeROOffload and ZeRO-Infinity in memory-constrained scenarios, demonstrating its robustness when host resources are limited."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Efficient Fine-Grained Gpu Performance Modeling for Distributed Deep Learning of Llm",
+    "authors": "Biyao Zhang, Mingkai Zheng, Debargha Ganguly, Xuecen Zhang, Vikash Singh, Vipin Chaudhary, Zhao Zhang",
+    "publish": "2025 IEEE 32nd International Conference on High Performance Computing, Data, and Analytics (HiPC)",
+    "url": "https://doi.org/10.1109/hipc66333.2025.00012",
+    "source": "IEEE",
+    "abstract": "Training Large Language Models(LLMs) is one of the most compute-intensive tasks in high-performance computing. Predicting end-to-end training time for multi-billion parameter models distributed across hundreds of GPUs remains challenging due to complex interactions between transformer components, parallelism strategies(data, model, pipeline, tensor), and multi-tier communication. Learned models require costly sampling, while analytical models often struggle with real-world network and hardware complexities. We address this by decomposing LLMs into core computational primitives and modeling them with: (1) operator-level decomposition for fine-grained analysis; (2) lightweight sampling based hardware-aware prediction models for key operations; (3) an end-to-end prediction system integrating these components across complex parallelization strategies. Crucially, our methodology has been validated on two large-scale HPC systems. Our framework achieves low average prediction errors-4.98% on Perlmutter(A100) and 9.38% on Vista(GH200)-for models up to 20B parameters across 128 GPUs. Importantly, it runs entirely on CPUs, enabling rapid iteration over hardware configurations and training strategies without costly on-cluster experimentation."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "DaV$^\\text{3}$is: Data Flow-Based Vulnerability Verification Through Visualization_supp2-3675682.pdf",
+    "authors": "Tobias Mertz",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tvcg.2026.3675682/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-3-20",
+    "title": "DaV$^\\text{3}$is: Data Flow-Based Vulnerability Verification Through Visualization_supp1-3675682.mp4",
+    "authors": "Tobias Mertz",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tvcg.2026.3675682/mm2",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Agentic LLM Pipelines for Reproducible Scientific Software: Opportunities and Challenges",
+    "authors": "Andrey Adashchik, Abu Huraira, Zamira Kholmatova, Andrei Mikriukov, Alessandro Ravveduto, Mariia Snigireva, Giancarlo Succi, Alexander Tormasov, Ekaterina Trofimova",
+    "publish": "Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence",
+    "url": "https://doi.org/10.1145/3788149.3788227",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-20",
+    "title": "LLM Query Complexity and Response Time in a Bilingual Setting: A Study Using a Science QA Dataset Translated from English to French",
+    "authors": "Louay Farah, Mohamed Aymen Daassi, Zamira Kholmatova",
+    "publish": "Proceedings of the 2025 18th International Conference on Computer Science and Information Technology",
+    "url": "https://doi.org/10.1145/3783862.3783903",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Improved Feature Extraction with Optimization for Offline Signature Verification Using Pretrained ResNet Ensemble and Dimensionality Reduction",
+    "authors": "Ritika, Dalip",
+    "publish": "2025 2nd Asian Conference on Intelligent Technologies (ACOIT)",
+    "url": "https://doi.org/10.1109/acoit66109.2025.11436746",
+    "source": "IEEE",
+    "abstract": "Offline handwritten signature verification is a difficult biometric task due to a significant degree of variation in authentic signatures. Success of any verification system rely on the quality of feature extraction. Feature extraction from static images of a person’s handwritten signature is a challenging problem, particularly due to character and style differences. Moreover, there is a possibility of sophisticated counterfeit signatures. In this work, an enhanced and optimized framework for feature extraction has been proposed. This approach combines pretrained ResNet 18 and ResNet 34 models in an ensemble setting. Further, dimensionality reduction and classification with SVM are done. Hyperparameter optimization is incorporated to enhance classifier performance. By utilizing deep pretrained networks for comprehensive representation learning and minimizing redundancy, the framework enhances both accuracy and robustness. Experiments conducted on multilingual datasets, including BHsig-260 (Hindi and Bengali) and CEDAR, show that the proposed work has outperformed the state-of-the-art models. The results highlight the effectiveness of integrating improved feature extraction, ensemble learning, and dimensionality reduction for reliable offline signature verification."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Theoretical Analysis of GOOSE Communication Security Enhancement Based on SM9 and Simulation Verification on SimuNPS",
+    "authors": "Bin Xiang, Jinpeng Song, Junpeng Chen, Shenglin Guo",
+    "publish": "2025 IEEE PES Innovative Smart Grid Technologies - Asia (ISGT Asia)",
+    "url": "https://doi.org/10.1109/isgtasia63446.2025.11431381",
+    "source": "IEEE",
+    "abstract": "The GOOSE network at the bay level of smart substations carries critical protection and control commands, and its communication security directly affects the stable operation of the grid. The international standard IEC 62351 recommends using digital signatures to ensure the integrity and authenticity of GOOSE messages; however, traditional PKI/CA-based certificate systems face challenges such as complex key management and difficult certificate updates when applied to a large number of IEDs in the process layer. To address this problem, this paper proposes a GOOSE security enhancement scheme based on the national cryptographic algorithm SM9, an identity-based cryptography technology. This scheme uses the logical identifier (e.g., GoCBReference) of IED devices as the public key, fundamentally eliminating the need for digital certificate management. First, the architecture of the scheme, the key management process, and the communication mechanism for GOOSE message signing and verification are elaborated. Then, the SimuNPS-FlexNet network simulation toolbox, integrated with a real SM9 algorithm library, is used to construct a functional verification environment that includes legitimate devices and malicious attackers. This study demonstrates that SM9 technology provides a feasible and efficient approach to solving the secure communication problem between the process layer and bay level of smart substations."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Design and Verification of Digital Driving System for Vibrating Tube Densimeter with Parallel Dual Straight-Tube",
+    "authors": "Shao Zhenyou, Tian Junzheng, Hou Lin, Wang Ping",
+    "publish": "2025 International Conference on Power Electronics and Control Engineering (ICPECE)",
+    "url": "https://doi.org/10.1109/icpece67187.2025.11435686",
+    "source": "IEEE",
+    "abstract": "To address the online density measurement demands under harsh conditions, a Vibrating Tube Densimeter (VTD) with a parallel dual straight-tube structure is proposed. The parallel dual straight-tube structure adopts a “splitter-parallel-combiner” flow channel design, which minimizes flow resistance to avoid solid deposition and bubble stagnation in cement slurry, while suppressing common-mode interference. The digital driving system integrates comprehensive signal processing algorithms including adaptive lattice notch filter for frequency extraction, zero-crossing detection combined with autocorrelation analysis for amplitude calculation, and Extended Kalman Filter for phase estimation, as well as a dual closed-loop control strategy consisting of adaptive PI amplitude control and phase difference compensation control. Experimental verification was conducted under ambient temperature and pressure with six test media. Results show that the system achieves stable phase difference control with steady-state fluctuation within <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\pm 0.1^{\\circ}$</tex>, and amplitude with steady-state error within <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\pm 0.01 ~\\mathrm{V}$</tex>. The calibrated densityfrequency model realizes density estimation with absolute error within <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\pm 0.002 ~\\mathrm{g} \\cdot ~\\text{cm}^{-3}$</tex>."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "An Pearson Verification Algorithm of User-Transformer Connectivity in a Low Voltage Distribution Network",
+    "authors": "Huiun Hong, Yiru Yang, Ying Chen, Xiangwen Zhao, Jiaying Hu, Huashi Wu",
+    "publish": "2025 IEEE PES Innovative Smart Grid Technologies - Asia (ISGT Asia)",
+    "url": "https://doi.org/10.1109/isgtasia63446.2025.11431406",
+    "source": "IEEE",
+    "abstract": "Current methods used to verify topological structures of low voltage distribution networks recorded in databases are expensive and do not deliver results in real time. To address this problem, this paper presents an online verification algorithm based on the Pearson correlation coefficient for user-transformer connectivity in a low-voltage distribution network. Firstly, the similarity of the voltage data of the low-voltage user is analyzed. Secondly, based on the voltage data from low-voltage user meters, the proposed Pearson Algorithm validates user-transformer connectivity within a neighborhood of users through an iterative process, identifying users incorrectly associated with a transformer in the database."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Analysis and Verification of Single-Point Grounding Faults in Tripping Circuit of Substation Circuit Breaker Considering Transition Resistance",
+    "authors": "Jianming Liu, Dahan Yan, Shaohong Zheng, Lin Cai, Zheyuan Xu, Luliang Zhang",
+    "publish": "2025 IEEE PES Innovative Smart Grid Technologies - Asia (ISGT Asia)",
+    "url": "https://doi.org/10.1109/isgtasia63446.2025.11431498",
+    "source": "IEEE",
+    "abstract": "Single-point grounding faults in the DC system trip circuits of substations easily lead to circuit breaker maloperation. Existing researches has not fully considered the influence of transition resistance between the ground fault point and the earth on fault current and maloperation risk, which makes it difficult to support field management. This paper takes the circuit breaker trip circuit of a 110 kV substation as the research object to examine the effect of transition resistance on fault characteristics. First, the critical components of the circuit and the causes of faults are identified. Then a second-order RLC equivalent circuit model incorporating transition resistance is established. Based on Kirchhoff's voltage law, the differential equation for the fault current is derived. The analysis further explores the evolution of fault current under underdamped, critically damped and overdamped states. A simulation model is built in MATLAB/Simulink to verify the theoretical analysis. The results show that the transition resistance governs the affects the damping ratio of the circuit, which thereby affects both the peak current magnitude and its attenuation characteristics. The value of this resistance ultimately determines whether a maloperation risk arises in the trip circuit. This study fills the gap in the analysis of the effects of transition resistance. It provides technical guidance for equipment selection, operating current setting, and maloperation prevention of grounding faults in substation trip circuits, which is significant for ensuring the safe and stable operation of power systems."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Enhancing Spoofing-Aware Speaker Verification with Frequency-Domain Features and Multi-Loss Optimization",
+    "authors": "Zhuoran Chen, Zhaojie Wang, Yong Wang, Fenghu Ma, Yueyu Zhang",
+    "publish": "Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence",
+    "url": "https://doi.org/10.1145/3788149.3788192",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-20",
+    "title": "Loss Optimization and Experimental Verification of MW-Level Medium-Frequency Transformer Using Grain-Oriented Silicon Steel",
+    "authors": "Jialiang Hu, Biao Zhao, Bin Cui, Yiqing Ma, Xueteng Tang, Zhe Yang",
+    "publish": "IEEE Transactions on Industry Applications",
+    "url": "https://doi.org/10.1109/tia.2026.3675095",
+    "source": "IEEE",
+    "abstract": "MW-level medium-frequency transformer (MFT) is crucial for the efficient transmission of large-scale renewable energy. But under the combined constraints of MW-level power, high current, and several-hundred Hz operation, traditional design approaches cause elevated losses, which restricts overall efficiency. To enhance the energy transfer efficiency of MFT, this study proposed a loss-optimized design methodology tailored for MW-level MFT. The approach combines material selection and structural optimization across three main subsystems: magnetic core, winding, and cooling system. A silicon steel core joint structure with a diagonally staggered lamination is designed to homogenize the magnetic density at the corner and reduce the local core loss. Copper foil windings are employed to handle the kA-level current, with the thickness and layer count optimized to suppress eddy current. Based on the leakage magnetic field distribution, the structural dimensions and layout positions of the cooling plate is optimized to reduce additional eddy current losses. Based on the proposed methodology, a 1.5 MVA / 600 Hz MFT prototype was developed using ultra-thin grain-oriented silicon steel and copper foil winding. Experimental results demonstrate a full-load efficiency of 99.57% and a hotspot temperature below 91 °C."
+  },
+  {
+    "date": "2026-3-20",
+    "title": "AUFlow: A Dynamic University-Wide Workflow System with Snapshot-Chain Verification for Document Approvals",
+    "authors": "Don Henessy Serrano David, Samantha Jane Frisco Ticsay, Carlex Miguel Alcantara Lazaga, Kevin Padaong Miranda, Adriane Brent Sicat Castro",
+    "publish": "Proceedings of the 2025 18th International Conference on Computer Science and Information Technology",
+    "url": "https://doi.org/10.1145/3783862.3783901",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
