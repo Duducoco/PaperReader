@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-23",
+    "title": "VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding",
+    "authors": "Ruoliu Yang, Chu Wu, Caifeng Shan, Ran He, Chaoyou Fu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.22285v1",
+    "source": "arXiv",
+    "abstract": "Long video understanding remains challenging for multimodal large language models (MLLMs) due to limited context windows, which necessitate identifying sparse query-relevant video segments. However, existing methods predominantly localize clues based solely on the query, overlooking the video's intrinsic structure and varying relevance across segments. To address this, we propose VideoDetective, a framework that integrates query-to-segment relevance and inter-segment affinity for effective clue hunting in long-video question answering. Specifically, we divide a video into various segments and represent them as a visual-temporal affinity graph built from visual similarity and temporal proximity. We then perform a Hypothesis-Verification-Refinement loop to estimate relevance scores of observed segments to the query and propagate them to unseen segments, yielding a global relevance distribution that guides the localization of the most critical segments for final answering with sparse observation. Experiments show our method consistently achieves substantial gains across a wide range of mainstream MLLMs on representative benchmarks, with accuracy improvements of up to 7.5% on VideoMME-long. Our code is available at https://videodetective.github.io/"
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Lemma Discovery in Agentic Program Verification",
+    "authors": "Huan Zhao, Haoxin Tu, Zhengyao Liu, Martin Rinard, Abhik Roychoudhury",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.22114v1",
+    "source": "arXiv",
+    "abstract": "Deductive verification provides strong correctness guarantees for code by extracting verification conditions (VCs) and writing formal proofs for them. The expertise-intensive task of VC proving is the main bottleneck in this process, and has been partly automated owing to recent advances in Large Language Model (LLM) agents. However, existing proof agents are not able to discover helper lemmas - auxiliary lemmas that aid in proving - and thus fall short as programs grow in size and complexity. In this paper, we argue that VC proving for program verification is more than a purely mathematical task, and benefits considerably from program comprehension. Our key insight is that human-proof engineers often discover and apply helper lemmas based on their understanding of the program semantics, which are not directly reflected in the VCs produced by VC generators. Inspired by this insight, we propose an LLM agent, LemmaNet, that discovers helper lemmas in two ways. Specifically, the agent first synthesizes lemmas offline by directly analyzing the source code and specifications, and then relating this semantic understanding to the mechanical, verbose encoding produced by VC generators. As the proof unfolds, LemmaNet then adapts existing helper lemmas online to accommodate evolving proof states, enabling the agent to effectively discharge complex VCs on-the-fly. We evaluate LemmaNet on SV-COMP and established real-world subjects, including modules of the Linux kernel, Contiki OS, standard C++ library, and X.509 parser. Our experimental results demonstrate that LemmaNet significantly outperforms state-of-the-art approaches, highlighting the importance of program comprehension-aided lemma discovery in agentic program verification."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Identical, independent quantum weak measurements violate objective realism",
+    "authors": "Tomasz Rybotycki, Tomasz Białecki, Josep Batle, Bartłomiej Zglinicki, Adam Szereszewski, Wolfgang Belzig, Adam Bednorz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.22020v1",
+    "source": "arXiv",
+    "abstract": "We demonstrate violation of objective realism in quantum world using unconstrained weak measurements. Instead of limited Leggett-Garg approach with artificial bounds on the observed values, we assume two identical and indepenent weak detectors and final conditioning. The experimental verification has been performed on public quantum computers, IBM and IonQ. Thanks to sufficiently large statistics, the violation is observed at the level of 10 standard deviations. The tests confirmed also high quality of parametric two-qubit gates offered by main quantum hardware providers."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "APEG: Adaptive Physical Layer Authentication with Channel Extrapolation and Generative AI",
+    "authors": "Xiqi Cheng, Rui Meng, Xiaodong Xu, Haixiao Gao, Ping Zhang, Dusit Niyato",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21923v1",
+    "source": "arXiv",
+    "abstract": "With the rapid advancement of 6G, identity authentication has become increasingly critical for ensuring wireless security. The lightweight and keyless Physical Layer Authentication (PLA) is regarded as an instrumental security measure in addition to traditional cryptography-based authentication methods. However, existing PLA schemes often struggle to adapt to dynamic radio environments. To overcome this limitation, we propose the Adaptive PLA with Channel Extrapolation and Generative AI (APEG), designed to enhance authentication robustness in dynamic scenarios. Leveraging Generative AI (GAI), the framework adaptively generates Channel State Information (CSI) fingerprints, thereby improving the precision of identity verification. To refine CSI fingerprint generation, we propose the Collaborator-Cleaned Masked Denoising Diffusion Probabilistic Model (CCMDM), which incorporates collaborator-provided fingerprints as conditional inputs for channel extrapolation. Additionally, we develop the Cross-Attention Denoising Diffusion Probabilistic Model (CADM), employing a cross-attention mechanism to align multi-scale channel fingerprint features, further enhancing generation accuracy. Simulation results demonstrate the superiority of the APEG framework over existing time-sequence-based PLA schemes in authentication performance. Notably, CCMDM exhibits a significant advantage in convergence speed, while CADM, compared with model-free, time-series, and VAE-based methods, achieves superior accuracy in CSI fingerprint generation. The code is available at https://github.com/xiqicheng192-del/APEG"
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Disentangling Speaker Traits for Deepfake Source Verification via Chebyshev Polynomial and Riemannian Metric Learning",
+    "authors": "Xi Xuan, Wenxin Zhang, Zhiyu Li, Jennifer Williams, Ville Hautamäki, Tomi H. Kinnunen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21875v1",
+    "source": "arXiv",
+    "abstract": "Speech deepfake source verification systems aims to determine whether two synthetic speech utterances originate from the same source generator, often assuming that the resulting source embeddings are independent of speaker traits. However, this assumption remains unverified. In this paper, we first investigate the impact of speaker factors on source verification. We propose a speaker-disentangled metric learning (SDML) framework incorporating two novel loss functions. The first leverages Chebyshev polynomial to mitigate gradient instability during disentanglement optimization. The second projects source and speaker embeddings into hyperbolic space, leveraging Riemannian metric distances to reduce speaker information and learn more discriminative source features. Experimental results on MLAAD benchmark, evaluated under four newly proposed protocols designed for source-speaker disentanglement scenarios, demonstrate the effectiveness of SDML framework. The code, evaluation protocols and demo website are available at https://github.com/xxuan-acoustics/RiemannSD-Net."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Publicly Understandable Electronic Voting: A Non-Cryptographic, End-to-End Verifiable Scheme",
+    "authors": "Alon Gat",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21833v1",
+    "source": "arXiv",
+    "abstract": "Modern democracies face an existential crisis of waning public trust in election results. While End-to-End Verifiable (E2E-V) voting systems promise mathematically secure elections, their reliance on complex cryptography creates a ``black box'' that forces blind trust in opaque software or external experts, ultimately failing to build genuine public confidence. To solve this, we introduce the concept of Software-Free Verification (SFV) -- a standard requiring that voters can independently verify election integrity without relying on any software. We propose a practical, non-cryptographic in-booth voting scheme that achieves SFV for national-scale elections. Our approach leverages a public bulletin board of randomized (Pseudonym, Candidate) pairs, where a mechanically generated pseudonym is hidden among real decoy votes on a physical receipt. Our scheme empowers citizens to audit the election using only basic arithmetic via a hierarchical Public Ledger, while anchoring the overall digital tally to physical evidence and Risk-Limiting Audits (RLAs) to guarantee systemic integrity. The result is a system that bridges the gap between mathematical security and public transparency, offering a viable blueprint for restoring trust in democratic infrastructure."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Why does it fail? Explanation of verification failures",
+    "authors": "Lars-Henrik Eriksson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21788v1",
+    "source": "arXiv",
+    "abstract": "Satisfiability solving is a common technique for formal verification forming the basis of many proof and model checking systems. Failure to show a proof obligation will produce a counterexample or failure trace with typically many thousands or even millions of boolean variables. Interpreting such a counterexample poses a challenge. Even if the individual variables are all understood, it is difficult to form a \"big picture\" of the situation causing the failure. We consider the case where verification conditions are expressed using concepts from a formal application domain model in a language based on predicate logic or a similar language. We introduce a method to explain verification failures in application domain terms. A measure of the relative relevance of predicates is used to extract the parts of a formula most likely to contribute meaningfully to the explanation. Dependencies between predicates are used to form a branching sequence of successive explanations. These explanations can help a practitioner find faults in the system being verified. The method is demonstrated on examples and compared to other methods."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Quantifying Uncertainty in FMEDA Safety Metrics: An Error Propagation Approach for Enhanced ASIC Verification",
+    "authors": "Antonino Armato, Christian Kehl, Sebastian Fischer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21770v1",
+    "source": "arXiv",
+    "abstract": "Accurate and reliable safety metrics are paramount for functional safety verification of ASICs in automotive systems. Traditional FMEDA (Failure Modes, Effects, and Diagnostic Analysis) metrics, such as SPFM (Single Point Fault Metric) and LFM (Latent Fault Metric), depend on the precision of failure mode distribution (FMD) and diagnostic coverage (DC) estimations. This reliance can often leads to significant, unquantified uncertainties and a dependency on expert judgment, compromising the quality of the safety analysis. This paper proposes a novel approach that introduces error propagation theory into the calculation of FMEDA safety metrics. By quantifying the maximum deviation and providing confidence intervals for SPFM and LFM, our method offers a direct measure of analysis quality. Furthermore, we introduce an Error Importance Identifier (EII) to pinpoint the primary sources of uncertainty, guiding targeted improvements. This approach significantly enhances the transparency and trustworthiness of FMEDA, enabling more robust ASIC safety verification for ISO 26262 compliance, addressing a longstanding open question in the functional safety community."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Comprehensive Dosimetric Verification and Positional Sensitivity Analysis in Brachytherapy: A Unified ESAPI Tool for HDR and LDR Treatments",
+    "authors": "J. A. Valgoma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21706v1",
+    "source": "arXiv",
+    "abstract": "This study presents the development and validation of an independent software tool based on the Varian Eclipse Scripting API (ESAPI) for multi-modal brachytherapy Quality Assurance (QA). The tool addresses GEC-ESTRO HDR protocols and LDR positional uncertainty analysis. Engineered in C#, the application interfaces with BrachyVision, Vitesse, and Variseed, enabling independent TG-43 dose calculations -- comparing point and line source models -- integrated with EQD2-based radiobiological summation. In HDR cervical cancer, the tool successfully automated EMBRACE II protocol reporting, streamlining clinical workflows by combining dosimetric QA with predictive and prospective planning. For LDR prostate treatments, a stochastic simulation module quantified the impact of systematic (rigid-body) versus random seed displacements on target coverage ($D_{90\\%}$) and Organs at Risk (OAR) safety ($D_{0.1cc}$). Sensitivity analysis in LDR prostate implants was benchmarked using two clinical cases (prostate volumes 31 cc and 71.3 cc). LDR simulations revealed that systematic displacements ($\\pm$ 2 mm) yielded significantly higher dosimetric deviations than stochastic movements. In the 31 cc case, systematic shifts resulted in a rectal ($D_{0.1cc}$) standard deviation (SD) of 24.3 Gy, whereas random displacements reduced this to 12.4 Gy. In the 71.3 cc case, random displacements resulted in a rectal $D_{0.1cc}$ SD of 7.6 Gy, confirming that smaller volumes exhibit heightened sensitivity to errors. Technical analysis demonstrated that the point source model overestimated bladder $D_{10\\%}$ by 8% relative to the line source model. Our findings confirm that systematic rigid-body shifts represent a greater clinical risk for OAR toxicity than stochastic migration. Integrating predictive sensitivity analysis into the clinical workflow significantly enhances patient safety through robust plan verification."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Stabilizing Iterative Self-Training with Verified Reasoning via Symbolic Recursive Self-Alignment",
+    "authors": "Xinyu Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21558v1",
+    "source": "arXiv",
+    "abstract": "Recursive self-improvement--where a model iteratively trains on its own outputs--promises sustained capability growth but faces a fundamental obstacle: recursive drift. As models train on self-generated data across multiple iterations, errors in intermediate reasoning compound, leading to mode collapse and performance degradation. We propose Neuro-Symbolic Recursive Self-Alignment (NSRSA), which stabilizes iterative self-training by embedding a symbolic verification subsystem that gates training data quality at the reasoning step level. Unlike outcome-only filtering (which admits \"lucky guesses\" with flawed reasoning), NSRSA verifies each arithmetic operation via sympy, checks logical flow consistency across reasoning steps, and enforces domain constraints. We evaluate NSRSA on GSM8K using Qwen3-4B-Thinking across 5 self-training iterations under five conditions: no verification, outcome verification, majority voting, full NSRSA symbolic verification, and NSRSA with DPO. Our filtering analysis shows that NSRSA rejects approximately 34% of correct-answer solutions that pass outcome verification, eliminating \"lucky guesses\" with flawed reasoning from the training set. We further demonstrate that constructing DPO preference pairs from NSRSA verification teaches the model to distinguish sound from flawed reasoning (reward accuracy 46% to 63%). NSRSA provides an extensible framework that demonstrates how external symbolic verification can make recursive self-improvement measurable and reliable within domains where automated verification is available."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "AI In Cybersecurity Education -- Scalable Agentic CTF Design Principles and Educational Outcomes",
+    "authors": "Haoran Xi, Minghao Shao, Kimberly Milner, Venkata Sai Charan Putrevu, Nanda Rani, Meet Udeshi, Prashanth Krishnamurthy, Brendan Dolan-Gavitt, Siddharth Garg, Sandeep Kumar Shukla, Farshad Khorrami, Alon Hillel-Tuch, Muhammad Shafique, Ramesh Karri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21551v1",
+    "source": "arXiv",
+    "abstract": "Large language models are rapidly changing how learners acquire and demonstrate cybersecurity skills. However, when human--AI collaboration is allowed, educators still lack validated competition designs and evaluation practices that remain fair and evidence-based. This paper presents a cross-regional study of LLM-centered Capture-the-Flag competitions built on the Cyber Security Awareness Week competition system. To understand how autonomy levels and participants' knowledge backgrounds influence problem-solving performance and learning-related behaviors, we formalize three autonomy levels: human-in-the-loop, autonomous agent frameworks, and hybrid. To enable verification, we require traceable submissions including conversation logs, agent trajectories, and agent code. We analyze multi-region competition data covering an in-class track, a standard track, and a year-long expert track, each targeting participants with different knowledge backgrounds. Using data from the 2025 competition, we compare solve performance across autonomy levels and challenge categories, and observe that autonomous agent frameworks and hybrid achieve higher completion rates on challenges requiring iterative testing and tool interactions. In the in-class track, we classify participants' agent designs and find a preference for lightweight, tool-augmented prompting and reflection-based retries over complex multi-agent architectures. Our results offer actionable guidance for designing LLM-assisted cybersecurity competitions as learning technologies, including autonomy-specific scoring criteria, evidence requirements that support solution verification, and track structures that improve accessibility while preserving reliable evaluation and engagement."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "SafePilot: A Framework for Assuring LLM-enabled Cyber-Physical Systems",
+    "authors": "Weizhe Xu, Mengyu Liu, Fanxin Kong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21523v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs), deep learning architectures with typically over 10 billion parameters, have recently begun to be integrated into various cyber-physical systems (CPS) such as robotics, industrial automation, and autopilot systems. The abstract knowledge and reasoning capabilities of LLMs are employed for tasks like planning and navigation. However, a significant challenge arises from the tendency of LLMs to produce \"hallucinations\" - outputs that are coherent yet factually incorrect or contextually unsuitable. This characteristic can lead to undesirable or unsafe actions in the CPS. Therefore, our research focuses on assuring the LLM-enabled CPS by enhancing their critical properties. We propose SafePilot, a novel hierarchical neuro-symbolic framework that provides end-to-end assurance for LLM-enabled CPS according to attribute-based and temporal specifications. Given a task and its specification, SafePilot first invokes a hierarchical planner with a discriminator that assesses task complexity. If the task is deemed manageable, it is passed directly to an LLM-based task planner with built-in verification. Otherwise, the hierarchical planner applies a divide-and-conquer strategy, decomposing the task into sub-tasks, each of which is individually planned and later merged into a final solution. The LLM-based task planner translates natural language constraints into formal specifications and verifies the LLM's output against them. If violations are detected, it identifies the flaw, adjusts the prompt accordingly, and re-invokes the LLM. This iterative process continues until a valid plan is produced or a predefined limit is reached. Our framework supports LLM-enabled CPS with both attribute-based and temporal constraints. Its effectiveness and adaptability are demonstrated through two illustrative case studies."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Rydberg Atomic Receivers for Net-Zero 6G Wireless Communication and Sensing: Progress, Experiments, and Sustainable Prospects",
+    "authors": "Yi Tao, Zhen Gao, Zhiao Zhu, De Mi, Zhonghuai Wu, Zijian Zhang, Fusang Zhang, Dezhi Zheng, Sheng Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21498v1",
+    "source": "arXiv",
+    "abstract": "Against the backdrop of the global drive to advance the green transformation of the information and communications technology (ICT) industry and leverage technological innovation to facilitate the achievement of Net-Zero carbon goals, research into Rydberg atomic receivers (RAREs) is gaining significant interest. RAREs leverage the electron transition phenomenon for signal reception, offering significant advantages over conventional radio frequency receivers in terms of miniaturized antenna design, high sensitivity, robust interference resistance, and compact form factors, which positions them as a competitive alternative for meeting zero-carbon communication demands. This article systematically elaborates on the basic principle, state-of-the-art progress, and novel experiments of RAREs in quantum wireless communication and sensing. In this first-of-its-kind work, we experimentally verify the RARE-based orthogonal frequency division multiplexing transmission and reveal the potential of deep learning design in optimizing quantum wireless systems. Finally, we delve into the prospect of integrating RARE with existing cutting-edge application scenarios, while mapping out critical pathways for developing Rydberg-based wireless systems."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Effective Strategies for Asynchronous Software Engineering Agents",
+    "authors": "Jiayi Geng, Graham Neubig",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21489v1",
+    "source": "arXiv",
+    "abstract": "AI agents have become increasingly capable at isolated software engineering (SWE) tasks such as resolving issues on Github. Yet long-horizon tasks involving multiple interdependent subtasks still pose challenges both with respect to accuracy, and with respect to timely completion. A natural approach to solving these long-horizon tasks in a timely manner is asynchronous multi-agent collaboration, where multiple agents work on different parts of the task at the same time. But effective application of multi-agent systems has proven surprisingly difficult: concurrent edits by multiple agents interfere with each other, dependencies are difficult to synchronize, and combining partial progress into a coherent whole is challenging. On the other hand, human developers have long relied on mature collaboration infrastructure to manage these challenges in large software projects. Inspired by these collaboration primitives, we introduce Centralized Asynchronous Isolated Delegation (CAID), a structured multi-agent coordination paradigm grounded in three core SWE primitives: centralized task delegation, asynchronous execution, and isolated workspaces. CAID constructs dependency-aware task plans through a central manager, executes subtasks concurrently in isolated workspaces, and consolidates progress via structured integration with executable test-based verification. In empirical evaluation, we find that CAID improves accuracy over single-agent baselines by 26.7% absolute on paper reproduction tasks (PaperBench) and 14.3% on Python library development tasks (Commit0). Through systematic analysis, we find that branch-and-merge is a central coordination mechanism for multi-agent collaboration, and that SWE primitives such as git worktree, git commit, and git merge enable it to be realized in a reliable and executable manner."
+  },
+  {
+    "date": "2026-03-23",
+    "title": "Cross-Context Verification: Hierarchical Detection of Benchmark Contamination through Session-Isolated Analysis",
+    "authors": "Tae-Eun Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21454v1",
+    "source": "arXiv",
+    "abstract": "LLM coding benchmarks face a credibility crisis: widespread solution leakage and test quality issues undermine SWE-bench Verified, while existing detection methods--paraphrase consistency, n-gram overlap, perplexity analysis--never directly observe whether a model reasons or recalls. Meanwhile, simply repeating verification degrades accuracy: multi-turn review generates false positives faster than it discovers true errors, suggesting that structural approaches are needed. We introduce Cross-Context Verification (CCV), a black-box method that solves the same benchmark problem in N independent sessions and measures solution diversity, combined with the Hierarchical Cross-Context Architecture (HCCA), a multi-agent analysis framework that prevents confirmation bias through intentional information restriction across specialized analytical roles. On 9 SWE-bench Verified problems (45 trials, Claude Opus 4.6, temperature 0), CCV achieves perfect separation between contaminated and genuine reasoning (Mann-Whitney U=0, p approx 0.012, r = 1.0). Key findings: (1) contamination is binary--models either recall perfectly or not at all; (2) reasoning absence is a perfect discriminator; (3) 33% of prior contamination labels are false positives; (4) HCCA's independent analysis structure discovers contamination-flaw composite cases that single-analyst approaches miss. A pilot experiment extending HCCA to multi-stage verification (Worker to Verifier to Director) yields a negative result--100% sycophantic confirmation--providing further evidence that information restriction, not structural complexity, is the key mechanism. We release all code and data."
+  },
+  {
+    "date": "2026-03-22",
+    "title": "Fingerprinting Deep Neural Networks for Ownership Protection: An Analytical Approach",
+    "authors": "Guang Yang, Ziye Geng, Yihang Chen, Changqing Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21411v1",
+    "source": "arXiv",
+    "abstract": "Adversarial-example-based fingerprinting approaches, which leverage the decision boundary characteristics of deep neural networks (DNNs) to craft fingerprints, have proven effective for model ownership protection. However, a fundamental challenge remains unresolved: how far a fingerprint should be placed from the decision boundary to simultaneously satisfy two essential properties, i.e., robustness and uniqueness, for effective and reliable ownership protection. Despite the importance of the fingerprint-to-boundary distance, existing works lack a theoretical solution and instead rely on empirical heuristics, which may violate either robustness or uniqueness properties. We propose AnaFP, an analytical fingerprinting scheme that constructs fingerprints under theoretical guidance. Specifically, we formulate fingerprint generation as controlling the fingerprint-to-boundary distance through a tunable stretch factor. To ensure both robustness and uniqueness, we mathematically formalize these properties that determine the lower and upper bounds of the stretch factor. These bounds jointly define an admissible interval within which the stretch factor must lie, thereby establishing a theoretical connection between the two constraints and the fingerprint-to-boundary distance. To enable practical fingerprint generation, we approximate the original (infinite) sets of pirated and independently trained models using two finite surrogate model pools and employ a quantile-based relaxation strategy to relax the derived bounds. Due to the circular dependency between the lower bound and the stretch factor, we apply grid search over the admissible interval to determine the most feasible stretch factor. Extensive experimental results show that AnaFP consistently outperforms prior methods, achieving effective ownership verification across diverse model architectures and model modification attacks."
+  },
+  {
+    "date": "2026-03-22",
+    "title": "A Constructive Approach to $q$-Gaussian Distributions: $α$-Divergence as Rate Function and Generalized de Moivre-Laplace Theorem",
+    "authors": "Hiroki Suyari, Antonio M. Scarfone",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21391v1",
+    "source": "arXiv",
+    "abstract": "The Large Deviation Principle (LDP) and the Central Limit Theorem (CLT) are concepts of information theory and probability. While their formulations are established under the i.i.d. assumption, the probabilistic foundation for power-law distributions has primarily evolved through descriptive models or variational principles, rather than a constructive derivation comparable to the classical binomial process. This paper establishes a constructive probabilistic framework for power-law distributions, proceeding from the nonlinear differential equation $dy/dx = y^q$ without assuming a specific distribution a priori. We build the algebraic and combinatorial foundations, which lead to a generalized binomial distribution based on finite counting. We prove the LDP for this generalized binomial distribution in the regime $0 < q < 1$, demonstrating that the $α$-divergence is identified as the rate function, and clarify the breakdown of this macroscopic scaling for heavier tails ($q > 1$). This result connects our constructive framework to the structures of information geometry. Furthermore, we prove a generalized de Moivre-Laplace theorem, showing that the generalized binomial distribution converges to a heavy-tailed limit distribution (the $q$-Gaussian distribution). We derive that the scaling law follows the order of $n^{q/2}$ as a consequence of the underlying nonlinearity. These analytical results are numerically verified for distinct values of $q \\in (0, 2)$. This framework provides a constructive basis that unifies the shift-invariant exponential family and the rescaling-invariant power-law family."
+  },
+  {
+    "date": "2026-03-22",
+    "title": "AgentHER: Hindsight Experience Replay for LLM Agent Trajectory Relabeling",
+    "authors": "Liang Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21357v1",
+    "source": "arXiv",
+    "abstract": "LLM agents fail on the majority of real-world tasks -- GPT-4o succeeds on fewer than 15% of WebArena navigation tasks and below 55% pass@1 on ToolBench (Zhou et al., 2024; Qin et al., 2024) -- yet every failed trajectory is routinely discarded, wasting the dominant source of collected experience. We introduce AgentHER, a framework that recovers this lost training signal by adapting the Hindsight Experience Replay (HER; Andrychowicz et al., 2017) principle to natural-language agent trajectories for offline data augmentation. The key insight is simple: a trajectory that fails goal A is often a correct demonstration for some achievable alternative goal B. AgentHER realises this idea through a four-stage pipeline -- failure classification, outcome extraction, LLM-guided prompt relabeling with confidence gating, and data packaging -- that converts discarded failures into high-quality SFT, DPO, and ShareGPT training data, with both zero-cost rule-based and LLM-judge implementations. On WebArena (Zhou et al., 2024) and ToolBench (Qin et al., 2024), AgentHER improves over success-only SFT by +7.1-11.7 pp across four model families (GPT-4o, Qwen2.5-72B/7B, LLaMA-3.1-8B), while achieving 2x data efficiency -- matching baseline performance with only 50% of successful demonstrations. Gains are consistent from 1.5B to 72B parameters (+5.8-9.2 pp) and compound under iterative redeployment (+2.1 pp over additional rounds). Human evaluation confirms 97.7% relabeling precision under multi-judge verification."
+  },
+  {
+    "date": "2026-03-22",
+    "title": "AutoKernel: Autonomous GPU Kernel Optimization via Iterative Agent-Driven Search",
+    "authors": "Jaber Jaber, Osama Jaber",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21331v1",
+    "source": "arXiv",
+    "abstract": "Writing high-performance GPU kernels is among the most labor-intensive tasks in machine learning systems engineering. We present AutoKernel, an open-source framework that applies an autonomous agent loop to GPU kernel optimization for arbitrary PyTorch models. Given a model, AutoKernel profiles it to identify computational bottlenecks, ranks them by Amdahl's law impact, and iteratively refines Triton or CUDA C++ kernel implementations through hundreds of experiments without human intervention. A five-stage correctness harness covering smoke tests, shape sweeps, numerical stability, determinism verification, and edge-case coverage ensures every candidate kernel is validated before any speedup is recorded. The system comprises over 9,000 lines of Python, 18 starter kernel implementations across two backends, a six-tier optimization playbook, and integration with the KernelBench benchmark suite. AutoKernel covers nine kernel types spanning the dominant operations in modern transformer architectures. On an NVIDIA H100, our Triton kernels outperform both PyTorch eager and torch.compile (max-autotune) on the majority of tested configurations: 5.29x over eager on RMSNorm, 2.82x on softmax, and 2.21x on cross-entropy, while beating torch.compile by 2.83x, 3.44x, and 2.94x respectively. In community deployment, an AutoKernel-optimized kernel achieved first place on the vectorsum_v2 B200 leaderboard. The full system is available at https://github.com/RightNow-AI/autokernel."
+  },
+  {
+    "date": "2026-03-22",
+    "title": "COINBench: Moving Beyond Individual Perspectives to Collective Intent Understanding",
+    "authors": "Xiaozhe Li, Tianyi Lyu, Siyi Yang, Yizhao Yang, Yuxi Gong, Jinxuan Huang, Ligao Zhang, Zhuoyi Huang, Qingwen Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.21329v1",
+    "source": "arXiv",
+    "abstract": "Understanding human intent is a high-level cognitive challenge for Large Language Models (LLMs), requiring sophisticated reasoning over noisy, conflicting, and non-linear discourse. While LLMs excel at following individual instructions, their ability to distill Collective Intent - the process of extracting consensus, resolving contradictions, and inferring latent trends from multi-source public discussions - remains largely unexplored. To bridge this gap, we introduce COIN-BENCH, a dynamic, real-world, live-updating benchmark specifically designed to evaluate LLMs on collective intent understanding within the consumer domain. Unlike traditional benchmarks that focus on transactional outcomes, COIN-BENCH operationalizes intent as a hierarchical cognitive structure, ranging from explicit scenarios to deep causal reasoning. We implement a robust evaluation pipeline that combines a rule-based method with an LLM-as-the-Judge approach. This framework incorporates COIN-TREE for hierarchical cognitive structuring and retrieval-augmented verification (COIN-RAG) to ensure expert-level precision in analyzing raw, collective human discussions. An extensive evaluation of 20 state-of-the-art LLMs across four dimensions - depth, breadth, informativeness, and correctness - reveals that while current models can handle surface-level aggregation, they still struggle with the analytical depth required for complex intent synthesis. COIN-BENCH establishes a new standard for advancing LLMs from passive instruction followers to expert-level analytical agents capable of deciphering the collective voice of the real world. See our project page on COIN-BENCH."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Towards Role-Based Multi-Agent LLM Systems for Software Requirements Analysis",
+    "authors": "Novica M. Trifković, Ilija D. Antović",
+    "publish": "2026 30th International Conference on Information Technology (IT)",
+    "url": "https://doi.org/10.1109/it67293.2026.11435673",
+    "source": "IEEE",
+    "abstract": "This paper presents a structured overview of recent research on the application of Large Language Models (LLMs) and multi-agent systems in software requirements analysis and introduces a conceptual, role-based multi-agent architecture for addressing identified limitations. The proposed approach emphasizes hierarchical supervision, collaboration between Large and Small Language Models, and structured cross-checking based on report comparison and uncertaintyaware arbitration to improve robustness and reliability. The contribution of this work is theoretical and exploratory, providing a foundation for future research on multi-agent LLM systems aimed at improving the software requirements analysis process."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Evaluating LLM-Generated Synthetic Data for Fine-Tuning RoBERTa-Base on SST-2 and MRPC",
+    "authors": "Ismar Kovacevic, Becir Isakovic",
+    "publish": "2026 30th International Conference on Information Technology (IT)",
+    "url": "https://doi.org/10.1109/it67293.2026.11435607",
+    "source": "IEEE",
+    "abstract": "This paper benchmarks LLM-generated synthetic data for fine-tuning RoBERTa-base on two GLUE tasks (SST2 sentiment classification and MRPC paraphrase detection) under a low-resource setting with 1,000 real training examples per task. Real-only, synthetic-only, and hybrid (1 k real + 1 k synthetic) regimes are compared using data from eleven contemporary LLMs. Results show that synthetic-only training remains below real-only baselines, but hybrid training consistently improves performance: on SST-2, the best hybrid configuration nearly matches doubling the real data, while on MRPC gains are smaller but positive. LLM-generated text is most effective as a supplement rather than a replacement for human-labeled data."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Schema-Agnostic Fraud Detection System Using LLM-Based Schema Alignment and Explainability",
+    "authors": "Varsha Bhole, Prashant Kudtarkar, Brijesh Maurya, Malhar Nikam",
+    "publish": "2026 6th Biennial International Conference on Nascent Technologies in Engineering (ICNTE)",
+    "url": "https://doi.org/10.1109/icnte66387.2026.11437500",
+    "source": "IEEE",
+    "abstract": "Detecting financial fraud is hard because it involves data from many different sources, which makes collecting and processing it complicated. Most current systems rely on manually built ETL pipelines that often break and are hard to expand. In this work, we introduce FraudGuard AI, a web-based platform that can handle data without needing a fixed structure. The system uses Google’s Gemini Large Language Model (LLM) to match columns from uploaded CSV files to a standard set of features, so there’s no need for strict ETL rules and the system becomes more flexible. After this, a hybrid rule-based engine spots suspicious transactions. For each case it flags, LLM writes a short explanation to make it easier for analysts to understand. Tests show that this step adds only about 0.85 seconds per schema alignment. This is a small delay compared to how much better the system handles different types of data. Overall, FraudGuard AI provides a practical and transparent way to monitor financial activity automatically."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Integrating LLM-based modeling assistants into Capella: experiments and architectural tradeoffs",
+    "authors": "Tiago Cruz, Margarida Dias-Amaro-Morato-Barata, Tomás Farinha-Nascimento, Iulian Ober, Mario Plagaro-Benito",
+    "publish": "2026 International Workshop on Systems Engineering Research",
+    "url": "https://doi.org/10.1109/ieeeconf67861.2026.11440781",
+    "source": "IEEE",
+    "abstract": "The rise of large language models (LLMs) opens new opportunities for supporting model-based systems engineering (MBSE). This is particularly true in phases that rely heavily on text, such as requirement capture, or on idea generation and conceptual analyses, such as Operational Analysis (OA) in Arcadia/Capella. In this work, we report on a set of experiments and prototypes exploring the feasibility of LLM-based assistance in MBSE. First, we defined evaluation criteria and tested a set of different LLMs for their suitability in OA tasks, highlighting strengths and limitations across models. Second, we prototyped four integration approaches with Capella: a lightweight assistant that generates tables of elements in a text format (CSV) to be imported in a Capella model, a direct code generation approach where the LLM produces Python scripts for model manipulation, a LangGraph-based assistant that implements the ReAct paradigm with structured tool calling and memory management to enable iterative reasoning over model elements, and an integration approach relying on the Model Context Protocol (MCP), in which we provide a set of MCP tools for editing the Capella model that any MCP-compatible LLM assistant can readily use. We discuss the trade-offs of these approaches in terms of usability, robustness, and extensibility. Our findings suggest that LLMs can meaningfully assist in MBSE tasks; in particular in OA, and potentially in other Arcadia phases, but that integration choices significantly shape the capabilities of the assistant. We conclude by outlining challenges and opportunities of embedding LLM-based assistants into MBSE workflows."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "LLM Based Software Test Scenario Generation System From Bug Descriptions",
+    "authors": "Merve Yilmazer Gundem, Mehmet Karakose",
+    "publish": "2026 30th International Conference on Information Technology (IT)",
+    "url": "https://doi.org/10.1109/it67293.2026.11435765",
+    "source": "IEEE",
+    "abstract": "Large, user-interactive software systems require extensive software testing for safe deployment. Manually generated test cases by software testers require extensive time and effort, and their scope remains limited. In this study, a system based on LLM is proposed for automatic test cases and test steps generation from bug descriptions. In the proposed system, bug descriptions were first collected from the Defects4J Dataset. Keywords relevant to the bug scope were extracted from the descriptions. Structured automatic prompts were generated from the extracted keywords. The generated prompts were fed into the LLM as input, and software test cases appropriate for the bugs were generated. The method was evaluated on actual bug descriptions by comparing it to a general (baseline) prompt. Experimental results show that the lengths of the generated scenarios are similar, but the proposed method increases the keyword match rate with error descriptions to an average of 89 %. The findings reveal that keyword-driven prompts are effective in generating more reliable and error-specific test scenarios without requiring additional data."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Game-based LLM Inference Task Offloading for Edge Computing System",
+    "authors": "Shoulu Hou, Min Gan, Wei Ni, Zhongyi Zhai, Xiulei Liu",
+    "publish": "IEEE Transactions on Green Communications and Networking",
+    "url": "https://doi.org/10.1109/tgcn.2026.3676823",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs), with their powerful capabilities, are fundamentally transforming society. Cloud-based LLM deployment has drawbacks, including latency, lack of offline functionality, and high long-term costs. Edge computing-based LLM solutions address these issues by offloading inference tasks to edge servers. This paper formulates and optimizes an LLM inference framework that jointly accounts for inference time and predictive quality. Specifically, to address the natural tendency of selfish users for personal utility maximization, we develop a Game-theoretic Offloading Algorithm (GOALIT) to optimize LLM inference offloading. The approach enables distributed users to iteratively adjust their strategies and converge to a Nash equilibrium. Compared to the optimal tree-based search (OT-GAH), the proposed approach yields a 27% increase in token throughput and shortens inference latency by 20%, while maintaining lower perplexity under dynamic system loads. These findings confirm the effectiveness of our approach in resource-constrained edge environments."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "AI-Orchestrated Travel Planner Using LLM and Agent Collaboration",
+    "authors": "Benazir Begum A, Shabarrish P, Suriya S, Gokula Siva V S, Ragul A P S",
+    "publish": "2025 International Conference on Signal Processing, Computation, Electronics, Power and Telecommunication (IConSCEPT)",
+    "url": "https://doi.org/10.1109/iconscept66142.2025.11436811",
+    "source": "IEEE",
+    "abstract": "Nowadays, planning a trip requires personalization, flexibility, and efficiency, yet every new or existing platform deals with only one task of either booking tickets or stays. We introduce an AI-powered Travel Planner that incorporates Large Language Models together with a multi-agent setup to provide day-by-day itineraries based on the budget, interests, and style of travel a user has. The system works on a full-stack architecture and employs a multi-agent framework with the Qwen2.5 model in order to coordinate specialized agents like a location expert, cultural guide, and itinerary planner. The platform suggests stays, transport, food, emergency help, and support for multiple languages and budget adaptability. Future features will include flight and hotel bookings, multi-modal input, eco-friendly travel ideas, and AR/VR previews of destinations. The system will evolve into a comprehensive AI-based travel ecosystem. Experimental results show that it is able to provide accurate and personalized itineraries and update them in real time according to the weather, events, and expenses for a smoother and more context-aware travel."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Enabling Computation and Communication Overlap in PIMs for on-device LLM Inference",
+    "authors": "Siu Jeong, Suhwan Kim, Changyong Eom, Jaehyuk Huh",
+    "publish": "IEEE Computer Architecture Letters",
+    "url": "https://doi.org/10.1109/lca.2026.3676795",
+    "source": "IEEE",
+    "abstract": "DRAM-based processing-in-memory (PIM) exploits all-bank execution to accelerate memory-bound workloads, but limited PIM capacity makes runtime data movement unavoid able and often performance-critical. Existing PIM architectures tightly couple computation and memory access across all banks, serializing computation and data transfer and limiting opportunities to hide communication latency. This paper proposes a bank-level computation–communication overlap mechanism that selectively assigns a subset of bank resources for communication, enabling concurrent data transfer without disrupting ongoing computation while preserving the unified control model of all bank PIM. Evaluations on mixture-of-experts (MoE) and multi small language model (multi-SLM) inference workloads using a simulated LPDDR5-based PIM system show execution time reductions of up to 19% and 16%, respectively, along with consistently improved channel bandwidth utilization compared to all-bank and channel-level overlap baselines."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Say It Better by Rewriting Harmful Prompts for Responsible LLM Use",
+    "authors": "V. Purushothama Raju, Smita Nirkhi, Priti Kulkarni, Vijay Kumar Joshi, Sabnam Kumari, Manish Motghare",
+    "publish": "2025 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA)",
+    "url": "https://doi.org/10.1109/icaiqsa67794.2025.11440411",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) are increasingly used in natural language processing and conversational applications. However, user inputs may sometimes contain harmful or biased language, leading to toxic or inappropriate model outputs. We propose LLM-ReFrame, an automated system that rewrites such inputs into neutral, non-offensive queries while preserving their original intent. LLM-ReFrame first detects potentially harmful content, then applies a sequence-to-sequence rewriting model to generate safe alternatives. We evaluate our approach on both synthetic and real-world datasets of toxic prompts. Results demonstrate that LLM-ReFrame significantly reduces output toxicity and bias, while maintaining semantic fidelity. This work represents a step toward safer and more responsible use of LLM- based systems."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "LLM-based Multivariable Missing Data Restoration for Photovoltaic-Storage Integrated Systems",
+    "authors": "Zhenghao Zhou, Yiyan Li, Zelin Guo, Runlong Liu, Zheng Yan, Mo-Yuen Chow",
+    "publish": "2026 IEEE PES International Meeting (PES IM)",
+    "url": "https://doi.org/10.1109/pesim67009.2026.11438661",
+    "source": "IEEE",
+    "abstract": "As one of the key renewable energy resources, photovoltaic (PV) has significant volatility and usually collaborates with energy storage system (ESS), formulating PV-ESSs. Collecting multivariable data from PV-ESSs, such as power output, weather condition and state of charge (SOC), is critical to understanding and optimizing the system operation. However, the occurrence of missing data impairs the corresponding data-driven studies. This paper introduces an approach using large language model (LLM) for multivariable missing data restoration of PV-ESSs. A method for constructing an instruction-based fine-tuning dataset that aligns different data modalities is proposed, which can be used for supervised fine-tuning. Evaluations on three LLMs with varying parameter sizes show that larger models and the use of instructional prompts can improve the performance in missing data restoration. It is also observed that larger models have higher computational costs, highlighting the need for a trade-off between model performance and efficiency."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "A Siamese Encoder-Decoder Model with Attention for LLM Prompt Reconstruction",
+    "authors": "M Kirankumar, S Kusuma, C Sai Prasanna, N Sai Bhargavi, K Sanjana, Parameswara Reddy Nangi",
+    "publish": "2025 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA)",
+    "url": "https://doi.org/10.1109/icaiqsa67794.2025.11440528",
+    "source": "IEEE",
+    "abstract": "Reconstructing prompts in text generation systems is a significant challenge in natural language processing (NLP). This study presents a novel Siamese encoder-decoder framework augmented with attention mechanisms to proficiently tackle this challenge. The model architecture includes bidirectional LSTM (BiLSTM) layers for processing paired text sequences, which makes sure that the context is captured in both directions. The decoder can selectively focus on important input elements during prompt reconstruction by using attention mechanisms.The model has been thoroughly tested in experiments, and it does very well on the BLEU and ROUGE metrics. This method is especially useful for a number of tasks, such as changing the style of text, summarizing content, and writing help systems. It is a big step forward in prompt reconstruction technology."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Hybrid LLM-Vision Pipeline for Detection of Malicious QR Codes in Social Engineering Attacks",
+    "authors": "Konda Hari Krishna, Patnam Ravi Kumar, V Herah, Ponnolu Vishnu Vardhan Reddy, Kopparthi Jwalapati Suhas Reddy",
+    "publish": "2026 6th International Conference on Image Processing and Capsule Networks (ICIPCN)",
+    "url": "https://doi.org/10.1109/icipcn67432.2026.11438814",
+    "source": "IEEE",
+    "abstract": "Quick Response (QR) codes work well as a convenient information sharing option but are being more commonly used in social engineering attacks to provide phishing links, malware, and other malicious payloads. Hybrid LLM Vision Pipeline This paper suggests a hybrid model that combines computer vision to detect structural anomalies and LLMs to detect semantic threats. The visualization module utilizes convolutional neural networks to detect the violation, absence and abnormalities in the QR code picture and the LLM checks the deciphered message about suspicious URL structure, domain names, and phrases denoting intent to action. A fusion layer network is a multimodal network that jointly infers the two modalities and improves accuracy and reliability. According to experiments, its accuracy in detecting objects with 98.4% wins over single-modality baselines and is also robust to adversarial distortion. The proposed framework offers a scalable and flexible defense against the attacks exploiting the QR codes, it is part of the expansive defense against the AI-motivated attack on societal engineering."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "GMDRA: Optimizing Edge-Cloud LLM Security and Efficiency via Game-Theoretic Detection Resource Allocation",
+    "authors": "Haiyang Huang, Jianxiong Guo, Tianhui Meng, Wenmian Yang, Tian Wang, Weijia Jia",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3676410",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) have made notable advancements across various dimensions of human experience, while prompt engineering has further refined their capability and efficiency in generating relevant, high-quality outputs. Nonetheless, the rise of prompt engineering has also led to an increase in prompt attacks, resulting in critical issues such as privacy breaches, increased latency, and inefficient resource utilization. Existing security mechanisms based on Reinforcement Learning from Human Feedback often fall short in addressing the complexities posed by these diverse prompt attacks, emphasizing the pressing need for effective prompt security mechanisms. The prompt detection model serves as an effective supplementary measure to ensure the safety of large model outputs. However, the current detection mechanism checks all prompts, which increases system resource consumption and user latency. In this paper, we present a holistic analysis of prompt security, service latency, and resource optimization within Edge-Cloud LLM (EC-LLM) systems confronted with various prompt attack scenarios. To strengthen prompt security, we introduce a novel, lightweight attack detection mechanism that uses vector databases. We conceptualize the intricate interplay between prompt detection, latency, and resource optimization within a 2-stage dynamic Bayesian game framework. A reproducible equilibrium strategy is derived by estimating the potential number of malicious tasks and updating beliefs iteratively at each stage using Bayesian methods. Our proposed solution has been rigorously evaluated in a practical EC-LLM system, yielding results that highlight significant enhancements in security, reductions in service latency for legitimate users, and decreased overall resource consumption compared to current leading algorithms."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Are They All Good? Evaluating the Quality of CoTs in LLM-based Code Generation",
+    "authors": "Binquan Zhang, Li Zhang, Zhiwen Luo, Yuxin Du, Fang Liu, Song Wang, Lin Shi",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3676295",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) have demonstrated impressive performance in code generation, particularly when augmented with chain-of-thought (CoT) prompting techniques. They break down requirements into intermediate reasoning steps, which act as design rationales to guide LLMs in writing code like human programmers. Thus, the quality of these steps is crucial for ensuring the correctness and reliability of the generated code. However, the specific factors influencing the quality of CoT generated by LLMs remain largely unexplored. To what extent can we trust the thoughts generated by LLMs? How good are they? This paper empirically explores the external and internal factors of why LLMs generate unsatisfactory CoTs by analyzing 1,023 failed code samples on two widely used code generation benchmarks. We also evaluate their impact on code generation performance by analyzing 210 CoT-code pairs and refining the unsatisfied CoTs by prompting LLMs. Our study yields the following findings: 1) Among the factors affecting CoT quality, external factors account for 53.60%, primarily including unclear requirements and lack of contextual information. Internal factors make up 40.10%, mainly due to inconsistencies between CoT and prompts caused by LLMs’ misunderstanding of the instructions. 2) Despite CoT being correct, 18.5% of the generated code still contains errors. This is primarily due to LLMs failing to follow instructions, leading to inconsistencies between CoT and the code. Additionally, we found that even when the code is correct, there is an 11.90% chance that the CoT contains errors. 3) Our further research on refining the low-quality CoTs reveals that LLMs can improve CoT, especially when providing detailed CoT problem information. Our findings shed light on the underlying issues that hinder the effectiveness of CoT in LLM-based code generation, offering valuable insights for enhancing both the reasoning process and the overall reliability of code generation."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Evaluating Retrieval-Augmented Generation for LLM-Based Vulnerability Detection: An Empirical Study on Real-World Java Vulnerabilities",
+    "authors": "Gábor Antal, Lóránt Értekes, Norbert Szolnoki, Péter Hegedűs",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3676577",
+    "source": "IEEE",
+    "abstract": "Software vulnerabilities are growing as fast as the digital platforms and applications that contain them. Thus, the timely and effective detection of software vulnerabilities is becoming increasingly important. Another emerging trend is the widespread use of large language models (LLMs) for software engineering tasks such as source and test code generation, refactoring, and debugging. Finding security-related issues is crucial, but it is a very resource-intensive task. This work offers an empirical benchmark of the impact of retrieval-augmented prompts on LLM-based vulnerability detection, rather than proposing a new detection method. In thiswork, we explore the source code vulnerability detection capabilities of large language models (LLMs) in a realistic, language-specific setting.We investigate to what extent retrieval-augmented generation (RAG) improves their performance when applied to real-world Java vulnerabilities.We evaluated seven widely used LLMs (GPT-5, GPT-4o, Claude Sonnet 4, Gemini 2.5, LLaMa 4, DeepSeek 3.1, and Grok Code Fast) on Java source code. We used the Vul4J dataset, a manually curated benchmark of real-world vulnerabilities, comparing a basic zero-shot approach against a RAG-enhanced approach that provides up to three vulnerable and three secure code examples based on their semantic similarity to the code under analysis. To mitigate the non-deterministic nature of LLMs, each experiment was repeated three times and the results were averaged. We empirically found that RAG helps LLMs reduce false positives without significantly affecting recall, leading to improved MCC scores under specific conditions. However, retrieval was often sparse, and false positives remained common, limiting practical impact. Our study serves as an empirical evaluation rather than a deployment-ready methodology."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "E $^{2}$ LLM: Structure-Guided Efficient Inference for LLMs in Distributed Edge-IoT Environments",
+    "authors": "Xingyu Feng, Huanqi Yang, Zhuangzhuang Chen, Chengwen Luo, Yuzhu Wang, Zhangbing Zhou, Weitao Xu, Victor C.M. Leung",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3676689",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) are increasingly deployed in edge computing environments to reduce latency and preserve privacy. However, their inference process presents fundamental challenges for resource-constrained IoT devices. LLM inference involves computationally asymmetric stages: parallelizable prompt processing and sequential token decoding. This asymmetry creates deployment bottlenecks where IoT devices lack capacity for prompt processing while edge nodes suffer from inefficient sequential decoding. This paper presents <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">E <inline-formula><tex-math notation=\"LaTeX\">$^{2}$</tex-math></inline-formula> LLM</i>, an efficient distributed inference framework for large language models in heterogeneous edge-IoT environments. <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">E <inline-formula><tex-math notation=\"LaTeX\">$^{2}$</tex-math></inline-formula> LLM</i> leverages high-capacity edge devices for structural planning and introduces auxiliary lightweight models to generate segment-specific key-value (KV) caches. These minimal inference artifacts enable collaborative parallel decoding across IoT devices without requiring full model instantiation. The framework employs static-dynamic KV cache separation to minimize communication overhead while maintaining semantic coherence through structure-guided coordination. Extensive evaluation on realistic edge testbeds demonstrates significant performance improvements. Under diverse deployment settings, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">E <inline-formula><tex-math notation=\"LaTeX\">$^{2}$</tex-math></inline-formula> LLM</i> achieves 74%–87.7% end-to-end latency reduction compared with several state-of-the-art baselines, while maintaining comparable generation quality; meanwhile, it also delivers a 34.6%–72.2% reduction in communication overhead, improves 9-12 × in energy efficiency. The framework exhibits strong scalability under bandwidth-limited conditions, enabling efficient LLM deployment across heterogeneous edge-IoT environments."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "A Siamese Network-based Approach for Robust Offline Signature Verification Under Data Security",
+    "authors": "Dalbir Singh, Tejinder Kaur",
+    "publish": "2026 6th International Conference on Image Processing and Capsule Networks (ICIPCN)",
+    "url": "https://doi.org/10.1109/icipcn67432.2026.11438306",
+    "source": "IEEE",
+    "abstract": "Traditional handcrafted feature-based approaches often fail to generalize well under such constraints. leveraging extensive preprocessing and data augmentation strategies. we created our own dataset having 1000 genuine and 1000 forged signatures by individuals. The findings indicate that Siamese-based metric learning is a promising solution for practical offline signature verification systems operating under constrained data conditions. However, the automatic verification of handwritten signatures, particularly in offline scenarios where only static images are available, still presents significant research challenges."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "Experimental Verification and Optimization Analysis of Energy Efficiency Improvement Strategies for Pumping Units Under Different Operating Conditions",
+    "authors": "Donghui Zhao",
+    "publish": "2025 2nd International Conference on Energy Technology and Electrical Power (ETEP)",
+    "url": "https://doi.org/10.1109/etep67941.2025.11440505",
+    "source": "IEEE",
+    "abstract": "As core equipment for oilfield exploitation, the energy efficiency of pumping units directly impacts mining costs and economic benefits. To address the significant energy consumption variations under diverse operating conditions, a multi-condition experimental platform was built to explore how stroke frequency, stroke length, load and other key parameters affect energy efficiency via orthogonal design with 15 typical condition tests. Results show that optimized parameter matching can increase system efficiency by 8%-15%, and counterweight optimization can cut peak power by 12%-18%. An energy efficiency prediction model and hierarchical optimization strategy were established based on experimental data, providing theoretical and technical support for pumping unit energy-saving retrofits."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "AI-Based Pollen Detection for Montenegrin Honey Authenticity Verification",
+    "authors": "Andrea Milačić, Elvis Taruh, Nadja Raičević, Stevan Čakić, Sanja Savković, Aleksandra Martinović, Tomo Popović",
+    "publish": "2026 30th International Conference on Information Technology (IT)",
+    "url": "https://doi.org/10.1109/it67293.2026.11435756",
+    "source": "IEEE",
+    "abstract": "Melissopalynology, the microscopic analysis of pollen in honey, remains the reference method for determining botanical origin, but it is highly time-consuming and strongly dependent on expert knowledge. The PollenTrace project addresses the need for faster, scalable analytical solutions by developing a large-scale pollen microscopy dataset and an AI-assisted detection pipeline. The project encompasses 1,100 biological samples (600 honey, 500 plant-source) collected over five years across Montenegro, from which a target dataset of over 33,000 high-resolution microscopy images is being constructed. Using standardized imaging protocols (Olympus BX43, <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\times 400$</tex> magnification) and the Roboflow annotation platform, over 150 images have been annotated to date, with 600 targeted by project completion. For proof-of-concept validation, the initial subset of annotated images (expanded three times via augmentation) was used to train a YOLOv11 detection model, achieving 84 % precision, 88 % recall, 97% mAP©50, and 84% mAP © 50-95 for chestnut pollen detection. These preliminary results demonstrate pipeline feasibility and establish a foundation for comprehensive model development as annotation coverage expands."
+  },
+  {
+    "date": "2026-3-23",
+    "title": "ModSolAgent: Automated Finite Element Code Generation for Abaqus via LLM-Based Agent",
+    "authors": "Zidi Li, Hongwei Ge, Guozhi Tang, Yuxuan Liu",
+    "publish": "IEEE Transactions on Industrial Informatics",
+    "url": "https://doi.org/10.1109/tii.2026.3669495",
+    "source": "IEEE",
+    "abstract": "Finite element simulation and solution process represents a critical component in engineering analysis. While large language models (LLMs) have demonstrated remarkable capabilities in general-purpose code generation from textual descriptions, their application to generating structured and specialized finite element simulation scripts presents unique challenges. A key challenge is AI-generated hallucination, as these tasks require precise intent analysis, complex planning and reasoning, and strict adherence to logical consistency during execution. This often results in outputs that seem convincing but are ultimately erroneous. To address this challenge, we propose ModSolAgent, an LLM-based agent that generates Python scripts for Abaqus software to perform finite element modeling and solving tasks. ModSolAgent ensures the accuracy and logical coherence of code generation by leveraging a structured reasoning instruction, dynamic retrieval guidance template, and iterative verification generation. Experimental results demonstrate that LLMs augmented by ModSolAgent achieve an 83.3% success rate on real-world finite element simulation tasks, effectively meeting most Abaqus scripting requirements while significantly outperforming baseline models. To further enhance accessibility, we construct the AbqInstruct dataset by distilling knowledge from ModSolAgent to fine-tune the lightweight open-source models. Experiments show that fine-tuning on AbqInstruct leads to substantial performance improvements, with the lightweight model achieving proficiency across most finite element modeling and solving tasks. This work establishes a paradigm for integrating LLMs with specialized engineering software and providing novel insights for other structured, domain-specific code generation scenarios in industrial applications."
+  }
+]
