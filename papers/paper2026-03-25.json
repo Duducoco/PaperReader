@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-25",
+    "title": "LensWalk: Agentic Video Understanding by Planning How You See in Videos",
+    "authors": "Keliang Li, Yansong Li, Hongze Shen, Mengdi Liu, Hong Chang, Shiguang Shan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24558v1",
+    "source": "arXiv",
+    "abstract": "The dense, temporal nature of video presents a profound challenge for automated analysis. Despite the use of powerful Vision-Language Models, prevailing methods for video understanding are limited by the inherent disconnect between reasoning and perception: they rely on static, pre-processed information and cannot actively seek raw evidence from video as their understanding evolves. To address this, we introduce LensWalk, a flexible agentic framework that empowers a Large Language Model reasoner to control its own visual observation actively. LensWalk establishes a tight reason-plan-observe loop where the agent dynamically specifies, at each step, the temporal scope and sampling density of the video it observes. Using a suite of versatile, Vision-Language Model based tools parameterized by these specifications, the agent can perform broad scans for cues, focus on specific segments for fact extraction, and stitch evidence from multiple moments for holistic verification. This design allows for progressive, on-demand evidence gathering that directly serves the agent's evolving chain of thought. Without requiring any model fine-tuning, LensWalk delivers substantial, plug-and-play performance gains on multiple model recipes, boosting their accuracy by over 5\\% on challenging long-video benchmarks like LVBench and Video-MME. Our analysis reveals that enabling an agent to control how it sees is key to unlocking more accurate, robust, and interpretable video reasoning."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Multi-Agent Reasoning with Consistency Verification Improves Uncertainty Calibration in Medical MCQA",
+    "authors": "John Ray B. Martinez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24481v1",
+    "source": "arXiv",
+    "abstract": "Miscalibrated confidence scores are a practical obstacle to deploying AI in clinical settings. A model that is always overconfident offers no useful signal for deferral. We present a multi-agent framework that combines domain-specific specialist agents with Two-Phase Verification and S-Score Weighted Fusion to improve both calibration and discrimination in medical multiple-choice question answering. Four specialist agents (respiratory, cardiology, neurology, gastroenterology) generate independent diagnoses using Qwen2.5-7B-Instruct. Each diagnosis is then subjected to a two-phase self-verification process that measures internal consistency and produces a Specialist Confidence Score (S-score). The S-scores drive a weighted fusion strategy that selects the final answer and calibrates the reported confidence. We evaluate across four experimental settings, covering 100-question and 250-question high-disagreement subsets of both MedQA-USMLE and MedMCQA. Calibration improvement is the central finding, with ECE reduced by 49-74% across all four settings, including the harder MedMCQA benchmark where these gains persist even when absolute accuracy is constrained by knowledge-intensive recall demands. On MedQA-250, the full system achieves ECE = 0.091 (74.4% reduction over the single-specialist baseline) and AUROC = 0.630 (+0.056) at 59.2% accuracy. Ablation analysis identifies Two-Phase Verification as the primary calibration driver and multi-agent reasoning as the primary accuracy driver. These results establish that consistency-based verification produces more reliable uncertainty estimates across diverse medical question types, providing a practical confidence signal for deferral in safety-critical clinical AI applications."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Study of Low-Frequency Core-Edge Coupling in a Tokamak: II. Spatial Channeling & Focusing In Antenna-Driven MHD",
+    "authors": "Andreas Bierwage, Wonjun Lee, Young-chul Ghim, Panith Adulsiriswad, Nobuyuki Aiba, Seungmin Bong, Gyungjin Choi, Matteo Falessi, Philipp W. Lauber, Masatoshi Yagi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24463v1",
+    "source": "arXiv",
+    "abstract": "Motivated by evidence for core-edge coupling in the form of double-peaked fishbone-like low-frequency modes ($\\lesssim 20\\,{\\rm kHz}$) in KSTAR, which exhibit synchronized Alfvénic activity both in the central core and near the plasma edge [1], we study the nonlocal response of a tokamak plasma in a visco-resistive full MHD simulation model using the code MEGA. The waves are driven by an internal \"antenna\" that is localized both radially and azimuthally in the poloidal $(R,z)$ plane and has a sinusoidal form $\\exp(inζ- iωt)$ with Fourier mode number $n=\\pm 1$ in the toroidal angle $ζ$ and fixed angular frequency $ω$ in time $t$. By flattening the safety factor profile $q(r)$ at suitable locations in the minor radius $r$, we created plateaus in the low-frequency Alfvén continua that act as wave \"receivers\". First, we confirm that such continuum plateaus respond with a coherent quasi-mode even when the driving antenna is located at a distant radius. Second, by varying the antenna location, we confirm the expectation of inward drive being more efficient than outward drive, which we attribute to volumetric focusing. Third, we find that the central core also responds well at frequencies below the central Alfvénic continuum plateau, which could facilitate chirping. Our results show that a core-localized low-frequency response does not necessarily require core-localized drive nor an exactly matching continuum, but may be driven from the edge and sub-resonantly. It remains to be seen to what extent the examined effects play a role in double-peaked fishbone-like activity. Other possible contributing mechanisms are discussed to motivate further study. Our analyses also elucidate the mode structure formation process, from transients to quasi- or eigenmodes, here in the realm of MHD, and to be followed by a verification study against kinetic models."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "What and When to Learn: CURriculum Ranking Loss for Large-Scale Speaker Verification",
+    "authors": "Massa Baali, Sarthak Bisht, Rita Singh, Bhiksha Raj",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24432v1",
+    "source": "arXiv",
+    "abstract": "Speaker verification at large scale remains an open challenge as fixed-margin losses treat all samples equally regardless of quality. We hypothesize that mislabeled or degraded samples introduce noisy gradients that disrupt compact speaker manifolds. We propose Curry (CURriculum Ranking), an adaptive loss that estimates sample difficulty online via Sub-center ArcFace: confidence scores from dominant sub-center cosine similarity rank samples into easy, medium, and hard tiers using running batch statistics, without auxiliary annotations. Learnable weights guide the model from stable identity foundations through manifold refinement to boundary sharpening. To our knowledge, this is the largest-scale speaker verification system trained to date. Evaluated on VoxCeleb1-O, and SITW, Curry reduces EER by 86.8\\% and 60.0\\% over the Sub-center ArcFace baseline, establishing a new paradigm for robust speaker verification on imperfect large-scale data."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Improving Lean4 Autoformalization via Cycle Consistency Fine-tuning",
+    "authors": "Arsen Shebzukhov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24372v1",
+    "source": "arXiv",
+    "abstract": "Autoformalization - automatically translating natural language mathematical texts into formal proof language such as Lean4 - can help accelerate AI-assisted mathematical research, be it via proof verification or proof search. I fine-tune Qwen3.5-2B with LoRA for natural language to Lean4 formalization on FineLeanCorpus and consider three training regimes: supervised fine-tuning (SFT) with curriculum learning (difficulty 1 to 10), SFT without curriculum ordering, and reinforcement learning using group relative policy optimization (GRPO) with a cycle consistency reward. Cycle consistency measures how well the meaning of a statement is preserved through a NL to Lean4 to NL' loop, computed as cosine similarity of off-the-shelf sentence embeddings. On an unseen subset of FineLeanCorpus (FLC) and on PutnamBench, RL substantially outperforms both SFT variants (mean cycle consistency 0.669 vs. 0.513 on FLC; 0.561 vs. 0.422 on PutnamBench), while increasing cross-entropy loss by only 0.011 nats, with minimal impact on formalization quality. Curriculum ordering provides no measurable benefit over shuffled training."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "VERIA: Verification-Centric Multimodal Instance Augmentation for Long-Tailed 3D Object Detection",
+    "authors": "Jumin Lee, Siyeong Lee, Namil Kim, Sung-Eui Yoon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24294v1",
+    "source": "arXiv",
+    "abstract": "Long-tail distributions in driving datasets pose a fundamental challenge for 3D perception, as rare classes exhibit substantial intra-class diversity yet available samples cover this variation space only sparsely. Existing instance augmentation methods based on copy-paste or asset libraries improve rare-class exposure but are often limited in fine-grained diversity and scene-context placement. We propose VERIA, an image-first multimodal augmentation framework that synthesizes synchronized RGB--LiDAR instances using off-the-shelf foundation models and curates them with sequential semantic and geometric verification. This verification-centric design tends to select instances that better match real LiDAR statistics while spanning a wider range of intra-class variation. Stage-wise yield decomposition provides a log-based diagnostic of pipeline reliability. On nuScenes and Lyft, VERIA improves rare-class 3D object detection in both LiDAR-only and multimodal settings. Our code is available at https://sgvr.kaist.ac.kr/VERIA/."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Walma: Learning to See Memory Corruption in WebAssembly",
+    "authors": "Oussama Draissi, Mark Günzel, Ahmad-Reza Sadeghi, Lucas Davi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24167v1",
+    "source": "arXiv",
+    "abstract": "WebAssembly's (Wasm) monolithic linear memory model facilitates memory corruption attacks that can escalate to cross-site scripting in browsers or go undetected when a malicious host tampers with a module's state. Existing defenses rely on invasive binary instrumentation or custom runtimes, and do not address runtime integrity verification under an adversarial host model. We present Walma, a framework for WebAssembly Linear Memory Attestation that leverages machine learning to detect memory corruption and external tampering by classifying memory snapshots. We evaluate Walma on six real-world CVE-affected applications across three verification backends (cpu-wasm, cpu-tch, gpu) and three instrumentation policies. Our results demonstrate that CNN-based classification can effectively detect memory corruption in applications with structured memory layouts, with coarse-grained boundary checks incurring as low as 1.07x overhead, while fine-grained monitoring introduces higher (1.5x--1.8x) but predictable costs. Our evaluation quantifies the accuracy and overhead trade-offs across deployment configurations, demonstrating the practical feasibility of ML-based memory attestation for WebAssembly."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Linking Global Science Funding to Research Publications",
+    "authors": "Jacob Aarup Dalsgaard, Filipi Nascimento Silva, Jin AI",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24147v1",
+    "source": "arXiv",
+    "abstract": "Funding acknowledgments in scholarly publications provide large-scale trace data on organizations that support scientific research. We present a dataset for linking global science funding organizations to research publications by systematically disambiguating unique funding acknowledgment strings extracted from publication metadata. Funder names are matched to standardized organizational identifiers using a multi-stage pipeline that combines lexical normalization, similarity-based clustering, rule-based matching, named entity recognition assistance, and manual validation. The resulting dataset links 1.9 million unique funder strings to canonical organization identifiers and records match types and unresolved cases to support transparency. Technical validation includes paper-level comparisons across bibliometric sources and manual verification against full-text acknowledgment sections, with reported recall and precision metrics. This dataset supports analyses of funding flows, institutional funding portfolios, regional representation, and concentration patterns in the global research system."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "UW-VOS: A Large-Scale Dataset for Underwater Video Object Segmentation",
+    "authors": "Hongshen Zhao, Jingkang Tai, Yuhang Wu, Wenkang Zhang, Xi Lan, Shangyan Wang, Tianyu Zhang, Wankou Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.24006v1",
+    "source": "arXiv",
+    "abstract": "Underwater Video Object Segmentation (VOS) is essential for marine exploration, yet open-air methods suffer significant degradation due to color distortion, low contrast, and prevalent camouflage. A primary hurdle is the lack of high-quality training data. To bridge this gap, we introduce $\\textbf{UW-VOS}$, the first large-scale underwater VOS benchmark comprising 1,431 video sequences across 409 categories with 309,295 mask annotations, constructed via a semi-automatic data engine with rigorous human verification. We further propose $\\textbf{SAM-U}$, a parameter-efficient framework that adapts SAM2 to the underwater domain. By inserting lightweight adapters into the image encoder, SAM-U achieves state-of-the-art performance with only $\\sim$2$\\%$ trainable parameters. Extensive experiments reveal that existing methods experience an average 13-point $\\mathcal{J}\\&\\mathcal{F}$ drop on UW-VOS, while SAM-U effectively bridges this domain gap. Detailed attribute-based analysis further identifies small targets, camouflage, and exit-re-entry as critical bottlenecks, providing a roadmap for future research in robust underwater perception."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "MonoSIM: An open source SIL framework for Ackermann Vehicular Systems with Monocular Vision",
+    "authors": "Shantanu Rahman, Nayeb Hasin, Mainul Islam, Md. Zubair Alom Rony, Golam Sarowar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23965v1",
+    "source": "arXiv",
+    "abstract": "This paper presents an open-source Software-in-the-Loop (SIL) simulation platform designed for autonomous Ackerman vehicle research and education. The proposed framework focuses on simplicity, while making it easy to work with small-scale experimental setups, such as the XTENTH-CAR platform. The system was designed using open source tools, creating an environment with a monocular camera vision system to capture stimuli from it with minimal computational overhead through a sliding window based lane detection method. The platform supports a flexible algorithm testing and validation environment, allowing researchers to implement and compare various control strategies within an easy-to-use virtual environment. To validate the working of the platform, Model Predictive Control (MPC) and Proportional-Integral-Derivative (PID) algorithms were implemented within the SIL framework. The results confirm that the platform provides a reliable environment for algorithm verification, making it an ideal tool for future multi-agent system research, educational purposes, and low-cost AGV development. Our code is available at https://github.com/shantanu404/monosim.git."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "An Empirical Analysis of Google Play Data Safety Disclosures: A Consistency Study of Privacy Indicators in Mobile Gaming Apps",
+    "authors": "Bakheet Aljedaani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23935v1",
+    "source": "arXiv",
+    "abstract": "The Google Play marketplace has introduced the Data Safety section to improve transparency regarding how mobile applications (apps) collect, share, and protect user data. This mechanism requires developers to disclose privacy and security-related practices. However, the reliability of these disclosures remains dependent on developer self-reporting, raising concerns about their accuracy. This study investigates the consistency between developer-reported Data Safety disclosures and observable privacy indicators extracted from Android Application Packages (APKs). An empirical analysis was conducted on a dataset of 41 mobile gaming apps. A static analysis approach was used to extract key privacy indicators from APK files, including device IDs, data sharing, personal information access, and location access. These indicators were systematically compared with the corresponding disclosures reported in the Google Play Data Safety labels using a structured consistency evaluation framework. The results revealed varying levels of agreement across privacy categories. Device ID disclosures demonstrated relatively high consistency (87.8%), whereas other indicators exhibited substantial mismatches. Location-related disclosures showed the highest inconsistency rate (56.1%), followed by personal information and data sharing. Comparative analysis between children-oriented and general-audience apps revealed similar mismatch patterns. Also, Chi-square statistical tests indicate that these differences are not statistically significant, suggesting that disclosure inconsistencies are not associated with app category but instead reflect broader ecosystem-level challenges. These findings highlight limitations in the reliability of current marketplace transparency mechanisms and emphasize the need for improved validation and verification approaches to ensure accurate privacy reporting in mobile app ecosystems."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "The Luna Bound Propagator for Formal Analysis of Neural Networks",
+    "authors": "Henry LeCates, Haoze Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23878v1",
+    "source": "arXiv",
+    "abstract": "The parameterized CROWN analysis, a.k.a., alpha-CROWN, has emerged as a practically successful bound propagation method for neural network verification. However, existing implementations of alpha-CROWN are limited to Python, which complicates integration into existing DNN verifiers and long-term production-level systems. We introduce Luna, a new bound propagator implemented in C++. Luna supports Interval Bound Propagation, the CROWN analysis, and the alpha-CROWN analysis over a general computational graph. We describe the architecture of Luna and show that it is competitive with the state-of-the-art alpha-CROWN implementation in terms of both bound tightness and computational efficiency on benchmarks from VNN-COMP 2025."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "Joint Source-Channel-Check Coding with HARQ for Reliable Semantic Communications",
+    "authors": "Boyuan Li, Shuoyao Wang, Suzhi Bi, Liping Qian, Yunlong Cai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23869v1",
+    "source": "arXiv",
+    "abstract": "Semantic communication has emerged as a promising paradigm for improving transmission efficiency and task-level reliability, yet most existing reliability-enhancement approaches rely on retransmission strategies driven by semantic fidelity checking that require additional check codewords solely for retransmission triggering, thereby incurring substantial communication overhead. In this paper, we propose S3CHARQ, a Joint Source-Channel-Check Coding framework with hybrid automatic repeat request that fundamentally rethinks the role of check codewords in semantic communications. By integrating the check codeword into the JSCC process, S3CHARQ enables JS3C, allowing the check codeword to simultaneously support semantic fidelity verification and reconstruction enhancement. At the transmitter, a semantic fidelity-aware check encoder embeds auxiliary reconstruction information into the check codeword. At the receiver, the JSCC and check codewords are jointly decoded by a JS3C decoder, while the check codeword is additionally exploited for perceptual quality estimation. Moreover, because retransmission decisions are necessarily based on imperfect semantic quality estimation in the absence of ground-truth reconstruction, estimation errors are unavoidable and fundamentally limit the effectiveness of rule-based decision schemes. To overcome this limitation, we develop a reinforcement learning-based retransmission decision module that enables adaptive, sample-level retransmission decisions, effectively balancing recovery and refinement information under dynamic channel conditions. Experimental results demonstrate that compared with existing HARQ-based semantic communication systems, the proposed S3CHARQ framework achieves a 2.36 dB improvement in the 97th percentile PSNR, as well as a 37.45% reduction in outage probability."
+  },
+  {
+    "date": "2026-03-25",
+    "title": "When AI output tips to bad but nobody notices: Legal implications of AI's mistakes",
+    "authors": "Dylan J. Restrepo, Nicholas J. Restrepo, Frank Y. Huo, Neil F. Johnson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23857v1",
+    "source": "arXiv",
+    "abstract": "The adoption of generative AI across commercial and legal professions offers dramatic efficiency gains -- yet for law in particular, it introduces a perilous failure mode in which the AI fabricates fictitious case law, statutes, and judicial holdings that appear entirely authentic. Attorneys who unknowingly file such fabrications face professional sanctions, malpractice exposure, and reputational harm, while courts confront a novel threat to the integrity of the adversarial process. This failure mode is commonly dismissed as random `hallucination', but recent physics-based analysis of the Transformer's core mechanism reveals a deterministic component: the AI's internal state can cross a calculable threshold, causing its output to flip from reliable legal reasoning to authoritative-sounding fabrication. Here we present this science in a legal-industry setting, walking through a simulated brief-drafting scenario. Our analysis suggests that fabrication risk is not an anomalous glitch but a foreseeable consequence of the technology's design, with direct implications for the evolving duty of technological competence. We propose that legal professionals, courts, and regulators replace the outdated `black box' mental model with verification protocols based on how these systems actually fail."
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Leveraging Large Language Models for Trustworthiness Assessment of Web Applications",
+    "authors": "Oleksandr Yarotskyi, José D'Abruzzo Pereira, João R. Campos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23781v1",
+    "source": "arXiv",
+    "abstract": "The widespread adoption of web applications has made their security a critical concern and has increased the need for systematic ways to assess whether they can be considered trustworthy. However, \"trust\" assessment remains an open problem as existing techniques primarily focus on detecting known vulnerabilities or depend on manual evaluation, which limits their scalability; therefore, evaluating adherence to secure coding practices offers a complementary, pragmatic perspective by focusing on observable development behaviors. In practice, the identification and verification of secure coding practices are predominantly performed manually, relying on expert knowledge and code reviews, which is time-consuming, subjective, and difficult to scale. This study presents an empirical methodology to automate the trustworthiness assessment of web applications by leveraging Large Language Models (LLMs) to verify adherence to secure coding practices. We conduct a comparative analysis of prompt engineering techniques across five state-of-the-art LLMs, ranging from baseline zero-shot classification to prompts enriched with semantic definitions, structural context derived from call graphs, and explicit instructional guidance. Furthermore, we propose an extension of a hierarchical Quality Model (QM) based on the Logic Score of Preference (LSP), in which LLM outputs are used to populate the model's quality attributes and compute a holistic trustworthiness score. Experimental results indicate that excessive structural context can introduce noise, whereas rule-based instructional prompting improves assessment reliability. The resulting trustworthiness score allows discriminating between secure and vulnerable implementations, supporting the feasibility of using LLMs for scalable and context-aware trust assessment."
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Semantics for 2D Rasterization",
+    "authors": "Bhargav Kulkarni, Henry Whiting, Pavel Panchekha",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23696v1",
+    "source": "arXiv",
+    "abstract": "Rasterization is the process of determining the color of every pixel drawn by an application. Powerful rasterization libraries like Skia, CoreGraphics, and Direct2D put exceptional effort into drawing, blending, and rendering efficiently. Yet applications are still hindered by the inefficient sequences of operations that they ask these libraries to perform. Even Google Chrome, a highly optimized program co-developed with the Skia rasterization library, still produces inefficient instruction sequences even on the top 100 most visited websites. The underlying reason for this inefficiency is that rasterization libraries have complex semantics and opaque and non-obvious execution models. To address this issue, we introduce $μ$Skia, a formal semantics for the Skia 2D graphics library, and mechanize this semantics in Lean. $μ$Skia covers language and graphics features like canvas state, the layer stack, blending, and color filters, and the semantics itself is split into three strata to separate concerns and enable extensibility. We then identify four patterns of sub-optimal Skia code produced by Google Chrome, and then write replacements for each pattern. $μ$Skia allows us to verify the replacements are correct, including identifying numerous tricky side conditions. We then develop a high-performance Skia optimizer that applies these patterns to speed up rasterization. On 99 Skia programs gathered from the top 100 websites, this optimizer yields a speedup of 18.7% over Skia's most modern GPU backend, while taking at most 32 $μ$s for optimization. The speedups persist across a variety of websites, Skia backends, and GPUs. To provide true, end-to-end verification, optimization traces produced by the optimizer are loaded back into the $μ$Skia semantics and translation validated in Lean."
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Detect--Repair--Verify for LLM-Generated Code: A Multi-Language, Multi-Granularity Empirical Study",
+    "authors": "Cheng Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23633v1",
+    "source": "arXiv",
+    "abstract": "Large language models can generate runnable software artifacts, but their security remains difficult to evaluate end to end. This study examines that problem through a Detect--Repair--Verify (DRV) workflow, in which vulnerabilities are detected, repaired, and then rechecked with security and functional tests. It addresses four gaps in current evidence: the lack of test-grounded benchmarks for LLM-generated artifacts, limited evidence on pipeline-level effectiveness, unclear reliability of detection reports as repair guidance, and uncertain repair trustworthiness under verification. To support this study, EduCollab is constructed as a multi-language, multi-granularity benchmark of runnable LLM-generated web applications in PHP, JavaScript, and Python. Each artifact is paired with executable functional and exploit test suites, and the benchmark spans project-, requirement-, and file-level settings. On this benchmark, the study compares unrepaired baselines, single-pass detect--repair, and bounded iterative DRV under comparable budget constraints. Outcomes are measured by secure-and-correct yield, and intermediate artifacts and iteration traces are analyzed to assess report actionability and repair failure modes. The results show that bounded iterative DRV can improve secure-and-correct yield over single-pass repair, but the gains are uneven at the project level and become clearer at narrower repair scopes. Detection reports are often useful for downstream repair, but their reliability is inconsistent. Repair trustworthiness also depends strongly on repair scope. These findings highlight the need for test-grounded, end-to-end evaluation of LLM-based vulnerability management workflows."
+  },
+  {
+    "date": "2026-03-24",
+    "title": "MedObvious: Exposing the Medical Moravec's Paradox in VLMs via Clinical Triage",
+    "authors": "Ufaq Khan, Umair Nawaz, L D M S S Teja, Numaan Saeed, Muhammad Bilal, Yutong Xie, Mohammad Yaqub, Muhammad Haris Khan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23501v1",
+    "source": "arXiv",
+    "abstract": "Vision Language Models (VLMs) are increasingly used for tasks like medical report generation and visual question answering. However, fluent diagnostic text does not guarantee safe visual understanding. In clinical practice, interpretation begins with pre-diagnostic sanity checks: verifying that the input is valid to read (correct modality and anatomy, plausible viewpoint and orientation, and no obvious integrity violations). Existing benchmarks largely assume this step is solved, and therefore miss a critical failure mode: a model can produce plausible narratives even when the input is inconsistent or invalid. We introduce MedObvious, a 1,880-task benchmark that isolates input validation as a set-level consistency capability over small multi-panel image sets: the model must identify whether any panel violates expected coherence. MedObvious spans five progressive tiers, from basic orientation/modality mismatches to clinically motivated anatomy/viewpoint verification and triage-style cues, and includes five evaluation formats to test robustness across interfaces. Evaluating 17 different VLMs, we find that sanity checking remains unreliable: several models hallucinate anomalies on normal (negative-control) inputs, performance degrades when scaling to larger image sets, and measured accuracy varies substantially between multiple-choice and open-ended settings. These results show that pre-diagnostic verification remains unsolved for medical VLMs and should be treated as a distinct, safety-critical capability before deployment."
+  },
+  {
+    "date": "2026-03-24",
+    "title": "SpecEyes: Accelerating Agentic Multimodal LLMs via Speculative Perception and Planning",
+    "authors": "Haoyu Huang, Jinfa Huang, Zhongwei Wan, Xiawu Zheng, Rongrong Ji, Jiebo Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23483v1",
+    "source": "arXiv",
+    "abstract": "Agentic multimodal large language models (MLLMs) (e.g., OpenAI o3 and Gemini Agentic Vision) achieve remarkable reasoning capabilities through iterative visual tool invocation. However, the cascaded perception, reasoning, and tool-calling loops introduce significant sequential overhead. This overhead, termed agentic depth, incurs prohibitive latency and seriously limits system-level concurrency. To this end, we propose SpecEyes, an agentic-level speculative acceleration framework that breaks this sequential bottleneck. Our key insight is that a lightweight, tool-free MLLM can serve as a speculative planner to predict the execution trajectory, enabling early termination of expensive tool chains without sacrificing accuracy. To regulate this speculative planning, we introduce a cognitive gating mechanism based on answer separability, which quantifies the model's confidence for self-verification without requiring oracle labels. Furthermore, we design a heterogeneous parallel funnel that exploits the stateless concurrency of the small model to mask the stateful serial execution of the large model, maximizing system throughput. Extensive experiments on V* Bench, HR-Bench, and POPE demonstrate that SpecEyes achieves 1.1-3.35x speedup over the agentic baseline while preserving or even improving accuracy (up to +6.7%), thereby boosting serving throughput under concurrent workloads."
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Piecewise M-Stationarity and Related Algorithms for Mathematical Programs with Complementarity Constraints",
+    "authors": "Kexin Wang, Lorenz T. Biegler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23389v1",
+    "source": "arXiv",
+    "abstract": "This study explores B-stationarity of mathematical programs with complementarity constraints (MPCCs) and convergence behavior of MPCC algorithms. Special attention is given to the cases with biactive complementarity constraints. First, we propose the concept of piecewise M-stationarity and prove its equivalence to B-stationarity under MPCC-ACQ. Then, we investigate convergence properties of the NCP-based bounding methods we proposed in [31], without requiring MPCC-LICQ; an interpretation of the algorithm's behavior together with the concept of piecewise M-stationarity leads to a cost reduction in B-stationarity verification. In addition, practical issues related to convergence to non-strongly stationary solutions are discussed, which shows that the NCP-based complementarity reformulations have an advantage in avoiding unbounded multipliers near these solutions."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Cross-Regional Fiber Optic Co-Trench Positioning LLM: Bypass Fusion Method and Verification",
+    "authors": "Yucong Liu, Wenxin Liu, Hui Yang, Dong Wang, Tiankuo Yu, Qiuyan Yao",
+    "publish": "2025 11th International Conference on Computer and Communications (ICCC)",
+    "url": "https://doi.org/10.1109/iccc68654.2025.11438105",
+    "source": "IEEE",
+    "abstract": "Due to the passive nature of optical fiber dark resources, it is difficult to obtain the status information of fiber optic physical layer resources, leading to the risk of primary and backup fibers being laid in co-trench. Researching integrated sensing and communication optical networks can provide accurate sensing capabilities for fiber optic network physical layer resources, helping to reduce the risk of fiber optic networks being laid in co-trench and significantly improving the intelligent operation and maintenance level of optical networks. Existing traditional co-trenching positioning technologies generally suffer from decreased positioning accuracy and insufficient versatility. To address these challenges, this paper proposes a cross-regional co-trench localization scheme based on bypass-fusion large language models (lLMs). Specifically, the proposed approach introduces LoRa (Low-Rank Adaptation) for parameter finetuning and designs an additional model bypass within the Transformer layers to optimize the model architecture. This optimization not only preserves the base model's efficient featurelearning capacity but also significantly enhances its ability for indepth analysis and precise evaluation of domain knowledge in cotrench localization. To verify the effectiveness of the proposed scheme, it was trained using a single regional dataset and tested in three regions with different geographical features. The final positioning accuracy of the model was 97.98%, 94.59%, and 92.61%, respectively. These experimental results demonstrate that the proposed bypass-fusion-based LLM can maintain consistently high localization performance across different geographical environments, indicating its strong potential for real-world applications."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Integrated LLM for Effective Messaging",
+    "authors": "Sony Rajput, Jeebananda Panda, Kapil Sharma",
+    "publish": "2025 7th International Conference on Artificial Intelligence and Speech Technology (AIST)",
+    "url": "https://doi.org/10.1109/aist68591.2025.11441370",
+    "source": "IEEE",
+    "abstract": "Artificial Intelligence is becoming increasingly integrated into everyday activities, with language models offering enhanced communication capabilities and measurable business benefits. This paper focuses on a hybrid conversational approach that combines an online large language model (Gemini API) with an offline module based on predefined conversation flows and keyword-based intent matching. The objective is to enable efficient communication while ensuring service continuity in the absence of internet connectivity. A requirements-driven process and a literature review on data presentation techniques were employed to guide system design. Findings reveal that preferences for presenting information vary significantly among users, making a universally optimal format difficult to define. Further research is needed to refine presentation methods and explore alternative strategies for hybrid conversational systems."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "LLM-Based Automatic Construction Method of Equipment Fault Knowledge Graph",
+    "authors": "Yang Yu, Xiaowen Zhang",
+    "publish": "2025 IEEE 3rd International Conference on Electrical, Automation and Computer Engineering (ICEACE)",
+    "url": "https://doi.org/10.1109/iceace67491.2025.11439251",
+    "source": "IEEE",
+    "abstract": "Fault operation and maintenance (FOM) constitutes a pivotal research area within industrial production. Tasks such as fault prediction, fault diagnosis, and intelligent question answering based on FOM knowledge graphs have experienced significant advancements and applications. However, the development of these methods is fundamentally hinged upon the availability of high-quality FOM knowledge graphs. Given that traditional knowledge graph construction techniques necessitate data preprocessing, entity recognition, relation extraction, and entity alignment from raw data, this paper aims to enhance the efficiency of knowledge graph construction by focusing on unsupervised knowledge extraction from FOM data using pre-trained large language models (llMs). Based on this, this paper introduces the design and implementation of an automated method for constructing large-scale FOM knowledge graphs leveraging LLMs. The proposed method primarily encompasses two components: (1) two types of zero-shot prompts tailored for FOM knowledge graph construction. These prompts utilize the LLMs to generate concepts and extract knowledge at the elemental level of the FOM knowledge graph, ultimately representing and outputting it in RDF syntax. (2) A framework for knowledge graph construction based on LLMs, which can be guided by zero-shot prompts to effectively extract knowledge from different types of operational data and iteratively complete the construction of extensive FOM knowledge graphs. Extensive experiments validate the effectiveness and scientific rigor of the proposed method."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Llm-Fuzz: Adaptive, Structure-Aware Fuzzing of Javascript Engines with Large Language Models",
+    "authors": "Kongyang Liu, Chengxiang Tan",
+    "publish": "2025 11th International Conference on Computer and Communications (ICCC)",
+    "url": "https://doi.org/10.1109/iccc68654.2025.11438113",
+    "source": "IEEE",
+    "abstract": "Fuzzing modern JavaScript (JS) engines remains challenging due to the semantic complexity required to explore deep program states and advanced components such as Just-InTime (JIT) compilers. Traditional mutation-based fuzzers often generate invalid inputs, while existing structure-aware techniques still face a semantic wall, producing syntactically valid but semantically flawed programs. This paper presents LLM-Fuzz, a coverage-guided fuzzing framework that leverages Large Language Models (LLMs) to perform AST-based, semantics-aware mutations. Unlike prior fuzzers with fixed operators, LLM-Fuzz introduces an adaptive feedback loop that fine-tunes the mutation strategy during fuzzing via Low-Rank Adaptation (LoRA). Experiments on V8 and ChakraCore show that LLM-Fuzz reduces runtime error rates and achieves higher edge coverage compared to state-of-the-art fuzzers. These results demonstrate that incampaign, LLM-driven adaptation can improve the effectiveness of fuzzing structured inputs."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Research on Resource Consumption Prediction for Local LLM Based on Time Series Forecasting",
+    "authors": "Zhong Jie, He Fang, FU Lijun, Ren Yahui",
+    "publish": "2025 11th International Conference on Computer and Communications (ICCC)",
+    "url": "https://doi.org/10.1109/iccc68654.2025.11437735",
+    "source": "IEEE",
+    "abstract": "With the widespread application of large language models (LLMs) across various industries, the competition for GPU, memory, and CPU resources among different requests has become extremely intense, often resulting in system overload or resource waste, which negatively affects user experience and task throughput. Proactively predicting resource consumption and optimizing scheduling strategies is a potential approach to significantly enhance system performance. However, accurate resource consumption prediction is a challenging problem, especially for specific scenarios. This paper focuses on locally deployed Deepseek70B LLM in a medical teaching platform, specifically in text generation tasks. To address fluctuations and concurrency challenges in GPU utilization, memory usage, and CPU consumption, we propose a precise resource demand forecasting method based on time-series prediction algorithms. We compare the classical ARIMA model and the deep-learning-driven LSTM model on real measured datasets under different concurrency levels. Experimental results show that, compared with ARIMAX, LSTM reduces the mean absolute error (MAE) by about 20 % in the current scenario. Furthermore, this study adopts a “request-level” resource consumption collection method, which records multiple system metrics before and after each model request and calculates differences, constructing a per-request dataset. The end-to-end request latency is used as the overall prediction target, effectively reflecting real workload conditions."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Transforming LLM Two-Stage Dialogue Summarization Techniques",
+    "authors": "Vijay Kumar Joshi, Manish Motghare, Basudeb Dey, Nilesh Shelke, Nilesh Ashtankar, Syamprasad Guda",
+    "publish": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+    "url": "https://doi.org/10.1109/gcwcn66157.2025.11448447",
+    "source": "IEEE",
+    "abstract": "Dialogue summarization is essential for distilling key insights from conversations in domains like customer service, education, and healthcare. This paper introduces the Dual Refinement Paradigm, a two-stage framework that enhances large language model performance through scene-aware context extraction, iterative text revision, and multi-task learning. Evaluated on a benchmark dataset, our approach achieves a ROUGE-L score of 48.2 and a novel composite M score of 0.84, outperforming established baselines. Key contributions include a scalable low-resource adaptation strategy, a new evaluation metric blending content fidelity and coherence, and an open-source implementation to foster further research in conversational AI."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Judicial Examination Preparation Strategies for Non-Law Undergraduates: Prompt Engineering Optimization Based on the Qwen-Max LLM",
+    "authors": "QiaoLing Qiu, Qiang Wan",
+    "publish": "2026 International Conference on Artificial Intelligence and Social Network Systems (AISNS)",
+    "url": "https://doi.org/10.1109/aisns67921.2026.11440369",
+    "source": "IEEE",
+    "abstract": "This study addresses the challenges faced by non-law undergraduates in preparing for the Chinese Judicial Examination and proposes a prompt engineering optimization approach based on the Qwen-Max large language model(LLM). Experiments are conducted on the JEC-QA(A Legal-Domain Question Answering Dataset). The results show that adopting the Option-level prompt role (law undergraduate perspective) improves overall accuracy by 3.49% compared to the Base role (non-law undergraduate perspective), while the Full role (professional lawyer perspective) yields only a marginal additional gain of 0.40% over the Option role. Further analysis shows that the performance gains mainly come from case analysis (CA) questions, while no significant differences are found across roles on knowledge-based decision (KD) questions. All role comparisons pass the Friedman test (p-value < 0.001) and the Wilcoxon paired comparison test (p < 0.05). Effect size analysis suggests that the performance gain from the Base to the Option role on CA questions is not solely driven by sample size. Given its limitations in complex legal reasoning, the Qwen-Max LLM should be used as an assistive tool, with non-law undergraduates focusing on its reasoning and legal justifications to improve case analysis through progressive prompt optimization."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Self-Evolving ML Infrastructure: LLM-Orchestrated Automation for Heterogeneous Cloud Data Pipelines",
+    "authors": "Satya Manesh Veerapaneni, Rahul Tewari, Shivaprasad Panasam, Kshitish Nath",
+    "publish": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+    "url": "https://doi.org/10.1109/gcwcn66157.2025.11448552",
+    "source": "IEEE",
+    "abstract": "Heterogeneous cloud ecosystems have increased the pace of large-scale data engineering, but cross-platform ML workflows automation remains extremely fragmented, manual, and configuration-dependent. Conventional MLOps systems provide fixed pipeline representation, which fails to flexibly scale with changing workloads, cloud cost changes or multivendor distributed execution. In this paper, I give a Self-Evolving Machine Learning Infrastructure, which is an infrastructure based on Large Language Models (LLMs) to coordinate, automate and continually optimize multi-cloud data pipelines. The developed framework can be applied to autonomously synthesize pipelines, deploy autonomously with IaC, integrate and deploy policies, reconfigure models, and learn with feedbacks across AWS, Azure, and GCP. The system enables a self-evolution of pipelines without human intervention by combining generative reasoning and streaming telemetry to enhance resilience, scalability, and cost-efficiency. As an experimental analysis shows, the orchestration of the LLM-based system dramatically decreases the time of deployment, eradicates configuration drift, improves accuracy of automation, and, more importantly, ensures the compliance of SLA in relation to a wide range of data modalities and operating conditions. This architecture introduces a paradigm of intelligent cross-cloud ML lifecycle Governance and it can be used to build future autonomic data engineering systems that learn, evolve and optimize themselves over time."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Neuromorphic LLM Pipelines for Adaptive Big Data Governance Across Distributed Cloud Providers",
+    "authors": "Nirmal Sajanraj, Sarvesh Peddi, Ashok Ghimire, Pankaj Kumar Tejraj Jain",
+    "publish": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+    "url": "https://doi.org/10.1109/gcwcn66157.2025.11447486",
+    "source": "IEEE",
+    "abstract": "The convergence of neuromorphic computing and Large Language Models (LLMs) opens a new frontier in adaptive big data governance across distributed cloud environments. Traditional data governance frameworks rely on static policy enforcement and centralized control, often leading to inefficiencies in compliance, latency, and cross-provider interoperability. This paper proposes a neuromorphic LLM pipeline capable of continuous context-aware adaptation by embedding biologically inspired neural dynamics into federated governance workflows. The framework integrates spike-based encoding, attention-driven control loops, and hybrid edge-to-cloud orchestration to optimize real-time decision flow and compliance validation. Through simulation and analytical evaluation, the proposed architecture demonstrates substantial improvements in adaptive policy alignment, throughput, and resilience when operating across heterogeneous cloud ecosystems."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Evaluating the Impact of Input Format on LLM Performance: JSON vs. YAML vs. Text",
+    "authors": "Aditya Narvekar, Trisha Mukherjee, Jason Tanuwijaya",
+    "publish": "2025 IEEE International Conference on Future Machine Learning and Data Science (FMLDS)",
+    "url": "https://doi.org/10.1109/fmlds67896.2025.00072",
+    "source": "IEEE",
+    "abstract": "The efficacy of language models is highly dependent on the quality and structure of the input data. While significant research has been devoted to enhancing model architecture and training paradigms, relatively less attention has been given to understanding how different input formats influence model performance. This research aims to reduce this gap by systematically evaluating the impact of three common input formats—JSON, text, and YAML—on the performance of both small and large language models. Specifically, we assessed the behavior of several prominent large models, including GPT-4, GPT-4o, Mistral Large, Jamba Large, and Llama 405B, alongside smaller models such as Llama 8B, Mistral Small, Jamba Mini, and GPT4o-Mini. Each model was provided with identical contextual information in JSON, text, and YAML formats. The quality of their responses was evaluated based on their alignment with human-generated responses. Our results indicate a clear preference for JSON format across both large and small models. Interestingly, while both large and small models demonstrated a preference for JSON, the performance disparity between formats was more pronounced in smaller models. This suggests that smaller models, which have limited capacity and context windows compared to their larger counterparts, benefit more significantly from structured input. The results are important for both the development and deployment of language models in real-world applications. For practitioners, providing context in a structured format like JSON can enhance the performance of models across a variety of tasks, including question-answering, summarization, and information extraction. In conclusion, this research highlights the critical role of input format in optimizing language model performance and highlights the need for further research to develop adaptive preprocessing techniques that can dynamically restructure unstructured data into a format that maximizes model efficacy."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Bridging Visual and Linguistic Intelligence for Chest X-rays: A Comprehensive Review of ViTs and LLM Synergies",
+    "authors": "Ismail Hossain, Mridul Banik",
+    "publish": "2025 IEEE International Conference on Future Machine Learning and Data Science (FMLDS)",
+    "url": "https://doi.org/10.1109/fmlds67896.2025.00106",
+    "source": "IEEE",
+    "abstract": "The integration of Vision Transformers (ViTs) and Large Language Models (LLMs) in chest X-ray analysis has emerged as a promising solution to address the growing challenges in radiology, including increasing diagnostic workloads and the need for timely, accurate interpretations. This systematic review examines the recent advancements in ViTs-LLM hybrid systems, exploring their architectural innovations, multimodal fusion strategies, and application in automated report generation. A comprehensive search of databases such as Google Scholar, PubMed, and IEEE Xplore was conducted to identify studies published between 2018 and 2025, focusing on ViTs-LLM integration, performance metrics, and clinical validation. Key findings highlight that ViTs-LLM models significantly improve diagnostic accuracy, with a 15% improvement in pneumonia detection compared to traditional CNN-based models. These systems also excel at producing clinically relevant reports, achieving a 93% alignment rate with clinician-generated reports. Research demonstrates that ViTs-LLM hybrid models reduce diagnostic errors, enhance radiology workflow efficiency, and support clinical decision-making by offering real-time assistance. However, challenges related to computational complexity, data biases, and regulatory approval remain, posing barriers to widespread clinical adoption. Future directions include optimizing these models for real-time deployment, addressing ethical concerns, and integrating them into clinical settings with minimal disruption to existing workflows. The review points out the opportunity for ViTs-LLM systems to enhance both diagnostic performance and patient care, offering a transformative tool for the future of radiology."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Web Attack Traffic Classification and Payload Extraction Via Lightweight LLM Fine-Tuning",
+    "authors": "Boren Deng, Bowen Hu, Wenyu Song, Yun Duan, Dongxin Liu, Ziming Huang",
+    "publish": "2025 11th International Conference on Computer and Communications (ICCC)",
+    "url": "https://doi.org/10.1109/iccc68654.2025.11437743",
+    "source": "IEEE",
+    "abstract": "Web attack detection remains a critical challenge in cybersecurity, as attack techniques are continuously evolving. Traditional rule-based approaches, relying on static and manually maintained rule sets, struggle to counter dynamic threats like obfuscation techniques and polymorphic attacks. While Large Language Model (LLM)-based approaches can realize more flexible and effective detection, their substantial computational overhead makes them impractical for deployment in resource-limited environments. To address these problems, we propose a lightweight LLM-based approach capable of performing two tasks: attack classification and payload extraction. By employing fine-tuning technique on a lightweight model (Qwen2.5-0.5B), our approach achieves relatively low computational overhead while ensures high detection accuracy. To support training and evaluation, we construct WAD-MCA v1.0 (Web Attack Dataset with Multi-Class Labels and Payload Annotations), a multi-source dataset provides the classification label of four major attack types and payload fragment extracted from network traffic. Experimental results demonstrate <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{8 4. 1 2 \\%}$</tex> F1 score for attack identification/classification and 89.94 % F1 score for payload extraction. Our proposed approach achieves <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$2.22 \\times$</tex> faster inference speed on GPU compared to a relatively larger model (Qwen2.5−7B), representing a significant latency reduction. Our work bridges the gap between model performance and deployment feasibility, offering a scalable solution for web attack detection in resourceconstrained environment."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Vision-LLM for Intelligent 6G Vehicular Networks",
+    "authors": "J. Akilandeswari, Anitha Saravana Kumar, A. Naveen Kumar, Madhan R, Manikandan S, Ramsurath R S",
+    "publish": "2026 5th International Conference on Communication, Computing and Electronics Systems (ICCCES)",
+    "url": "https://doi.org/10.1109/iccces62661.2026.11436734",
+    "source": "IEEE",
+    "abstract": "Combining 6G vehicular networks with Visionbased Large Language Models (VLMs) is an innovative solution to the navigation of autonomous vehicles. This paper suggests a new framework that utilizes the superior perception and the ability of Vision LLMs and the lower latency and high bandwidth communication, offered by 6G networks, to improve real-time decision making and navigation in autonomous vehicles. The system detects objects, understands scenes, and predicts intentions using Vision LLMs, and 6G networks facilitate the smooth operation of vehicles to everything (V2X) communication, which guarantees safe and efficient navigation despite the changes in the environment. It is experimentally demonstrated that the object detection accuracy is 96%, the decision-making latency is reduced by 40% and route optimization is enhanced by 30%. This study proves the opportunity of integrating Vision LLMs with 6G networks to have safer, more efficient and scalable autonomous vehicle systems, which will be the basis of the future smart transportation networks."
+  },
+  {
+    "date": "2026-3-26",
+    "title": "VeriFed: Cryptographic Accountability for Privacy-Preserving and Robust Federated LLM Fine-Tuning",
+    "authors": "Mir Tahmid Hossain, Mahsa Sanaei Nourani, Md Nawab Yousuf Ali",
+    "publish": "Proceedings of the 2026 Australasian Information Security Conference",
+    "url": "https://doi.org/10.1145/3793638.3793645",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-25",
+    "title": "A Dependency Parser LLM Prolog Pipeline for Story Understanding",
+    "authors": "Vikas Panchal, Raj Kumar, Manish Motghare, Nilesh Shelke, Gaurav Londhe, Darshan S Kagi",
+    "publish": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+    "url": "https://doi.org/10.1109/gcwcn66157.2025.11448316",
+    "source": "IEEE",
+    "abstract": "Neuro-symbolic approaches promise both the flexibility of language models and the rigor of formal logic. We introduce StoryLogic, an end-to-end pipeline that [1] extracts event graphs via graph-theoretic dependency parsing, [2] derives causal inferences with a fine-tuned GPT-4 LLM, [3] enforces temporal-causal constraints in a Prolog engine, and [4] measures discourse coherence and fluency through graph connectivity and Shannon entropy. Evaluated on ROCStories and NarrativeQA, StoryLogic yields a 15 pp. improvement in logical coherence and a 12 % gain in BLEU-1 over neural-only baselines. These results suggest that tightly coupling symbolic checks with neural inference leads to more reliable narrative understanding.The complete implementation and resources for this work are available in the official GitHub repository. GitHub."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Predictive GIS Modelling for Renewable Energy Site Suitability Using LLM Reasoning Pipelines",
+    "authors": "Dhruv Dawar, Shivya Khandpur, Sneha Roychowdhury, Arun Sharma, Deeptanshu Jha",
+    "publish": "2025 7th International Conference on Artificial Intelligence and Speech Technology (AIST)",
+    "url": "https://doi.org/10.1109/aist68591.2025.11441593",
+    "source": "IEEE",
+    "abstract": "India has shown a strong inclination towards renewable energy transformation, setting goals for 500 GW of renewable capacity by 2030 and net-zero carbon emissions by 2070. However, site planning for renewable energy faces significant challenges, requiring precise selection with regulatory and environmental constraints in a country where a large number of stakeholders lack technical domain expertise. In order to address these challenges, this study presents GeoSolarX: A geospatial intelligence framework with a conversational interface. Our key offering is a unique hybrid AI-GIS architecture with template-guided Chain-of-Thought (CoT) planner. This is powered by a large language model with fixed fusion weights and deterministic GIS operations. Current Geographic Information System (GIS) workflows are rigid and rely on the technical expertise of the user, often being complex and resource intensive. Our proposal seeks to improve interpretability and cross-modal alignment by offering weighted fusion modeling over five complementary modalities: Imagery, Tabular Attributes, Textual Context, Time-Series Data, and Graph Structure. Our framework integrates Large-Language Models with advanced geoprocessing tools in an effort to enable access to policymakers, planners, and rural stakeholders by employing a multilingual, voice-enabled interface to participate in decision making and spatial analysis without requiring GIS expertise."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "LLM-Based Requirement Traceability Matrix Generator from SRS Documents",
+    "authors": "Suresh Thangakrishnan M, Somasundaram K, M. Gomathy Nayagam, M. Amanullah, S. Erana Veerappa Dinesh",
+    "publish": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+    "url": "https://doi.org/10.1109/gcwcn66157.2025.11448459",
+    "source": "IEEE",
+    "abstract": "Requirement Traceability is a major prerequisite in the process of software quality assurance but the process of building Requirement Traceability Matrix (RTM) using Software Requirement Specification (SRS) documents is largely fraught with manual, error-prone, and tedious procedures. The paper introduces a new, modular framework by Large Language Model (LLM) that can generate a RTM based on a dynamically informed interpretation of the semantics of requirements via domain-specific prompting, block segmentation based on the semantic context, as well as a multi-agent LLM system. In contrast to other methods based on a rigid static similarity measure or fine-tuned models, the proposed approach uses a zero-shot, rule-injected LLM ensemble to define the strong traceability relationships across the classes of requirements. Analysis on a new curated synthetic benchmark of 15 SRS documents (150-500 requirements each) showed that trace-link accuracy was 92.4%, which is 21% higher than heuristic baselines and 13% better than generic LLM prompting. Also, the system saved manual checking by 47%, which is indicative of the scalable integration in SDLC pipelines. These findings affirm that it is possible to automate the generation of RTM, with great success and without using any legacy rule sets or retraining the models that we have at present."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Unified LLM-Orchestrated Data Engineering Pipelines: Cross-Cloud Automation with AWS, Azure, and GCP",
+    "authors": "Satya Manesh Veerapaneni, Gokul Narain Natarajan, Balakumar Ravindranath Kunthu, Varun Kotte",
+    "publish": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+    "url": "https://doi.org/10.1109/gcwcn66157.2025.11448510",
+    "source": "IEEE",
+    "abstract": "The fast rate of multi-cloud adoption has brought about a lot of complexity in the process of coordinating data engineering processes on heterogeneous platforms. Classical pipelines are characterized by discontinuous toolchains, manual processes, and silos, which constrain scalability, flexibility, and control. To overcome these issues, this paper presents a Unified LLM-Orchestrated Data Engineering Pipeline framework as an effort to allow smooth cross-cloud integration among AWS, Azure and GCP using the power of reasoning and automation of Large Language Models (LLM). The system automatically creates, optimizes, and executes data processes based on natural language instructions and integrates intelligent decision-making processes to provide resources, enforce security, evolve schemas, and manage DataOps lifecycle processes. Cloud-agnostic orchestration layer guarantees the same deployment and monitoring processes across a variety of environments with automated lineage tracking and compliance audits. Experimental verification has shown better operational efficiency, less configuration overhead, better interoperability, and faster development cycles compared to traditional approaches of using multi-cloud pipes. The suggested model will create a gradual road to the AI driven automation of enterprise data engineering, and will, thus, allow organizations to gain unified control and real-time knowledge of distributed data ecosystems."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "Research on the Mechanism of Personalized Learning Path Generation Based on the Collaboration of KG and LLM",
+    "authors": "Yahong Leng, Haoran Zhang, Feng Tan",
+    "publish": "2025 IEEE 3rd International Conference on Electrical, Automation and Computer Engineering (ICEACE)",
+    "url": "https://doi.org/10.1109/iceace67491.2025.11439508",
+    "source": "IEEE",
+    "abstract": "Aiming at the problems of cold start, rigid paths, and lack of interpretability in current learning path recommendation systems, this paper proposes a personalized learning path generation mechanism driven by the collaboration of Knowledge Graph (KG) and Large Language Model (LLM). A K-L collaborative architecture is constructed, which models knowledge entities and relationships through the knowledge layer, realizes collaborative reasoning between the two systems through the reasoning layer, and perceives learners' states through the interaction layer. A path generation and adaptive adjustment mechanism is designed: a static skeleton is generated based on topological sorting, which is fused with dynamic strategies generated by LLM to optimize the path in real time. Experiments show that the proposed model outperforms traditional methods in recommendation quality, cognitive alignment, and learning effectiveness. It can effectively generate learning paths that are more in line with cognitive laws and adapt to individual differences, providing a new solution for personalized education."
+  },
+  {
+    "date": "2026-3-25",
+    "title": "LLM-Driven Structural-Semantic Synthesis for XSS Attack Payload Generation",
+    "authors": "Huizi Song, Jiahao Mei, Yuanyi Ma, Dong Jin, Shuangwu Chen",
+    "publish": "2025 11th International Conference on Computer and Communications (ICCC)",
+    "url": "https://doi.org/10.1109/iccc68654.2025.11437876",
+    "source": "IEEE",
+    "abstract": "Cross-Site Scripting (XSS) is one of the most common and severe web security vulnerabilities. In modern web security, there is a growing focus on leveraging structured knowledge and generative models to explore the detection capabilities and potential weaknesses of Web Application Firewalls (WAFs). This paper proposes a novel XSS payload generation framework that decomposes malicious inputs into structural and semantic combinations, guiding adaptive generation using Large Language Models. Unlike static fuzzing tools, our method incorporates a feedback mechanism based on WAF detection results to dynamically adjust the generation strategy, thereby improving the generalization and evasion capability of the generated samples. Experimental evaluations across five mainstream WAF systems demonstrate that our approach not only achieves high payload validity but also significantly outperforms existing tools in bypassing complex defense mechanisms, offering a practical solution for automated XSS vulnerability discovery."
+  }
+]
