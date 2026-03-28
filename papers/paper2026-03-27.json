@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-03-26",
+    "title": "S2D2: Fast Decoding for Diffusion LLMs via Training-Free Self-Speculation",
+    "authors": "Ligong Han, Hao Wang, Han Gao, Kai Xu, Akash Srivastava",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25702v1",
+    "source": "arXiv",
+    "abstract": "Block-diffusion language models offer a promising path toward faster-than-autoregressive generation by combining block-wise autoregressive decoding with within-block parallel denoising. However, in the few-step regime needed for practical acceleration, standard confidence-thresholded decoding is often brittle: aggressive thresholds hurt quality, while conservative thresholds require unnecessary denoising steps. Existing approaches that address this issue either require additional training or incur extra test-time compute. We present S2D2, a training-free self-speculative decoding framework for block-diffusion language models. Our key observation is that a block-diffusion model becomes autoregressive when the block size is reduced to one, allowing the same pretrained model to act as both drafter and verifier. S2D2 inserts a speculative verification step into standard block-diffusion decoding and uses lightweight routing policies to decide when verification is worth its cost. This yields a hybrid decoding trajectory in which diffusion proposes tokens in parallel, while the autoregressive mode acts as a local sequence-level critic. Across three mainstream block-diffusion families, S2D2 consistently improves the accuracy-speed tradeoff over strong confidence-thresholding baselines. On SDAR, we observe up to $4.7\\times$ speedup over autoregressive decoding, and up to $1.57\\times$ over a tuned dynamic decoding baseline while improving accuracy by up to $4.5$ points. On LLaDA2.1-Mini, S2D2 remains complementary to built-in self-correction, including a conservative setting where it is $4.4\\times$ faster than the static baseline with slightly higher accuracy."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "The Kitchen Loop: User-Spec-Driven Development for a Self-Evolving Codebase",
+    "authors": "Yannick Roy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25697v1",
+    "source": "arXiv",
+    "abstract": "Code production is now a commodity; the bottleneck is knowing what to build and proving it works. We present the Kitchen Loop, a framework for autonomous, self-evolving software built on a unified trust model: (1) a specification surface enumerating what the product claims to support; (2) 'As a User x 1000', where an LLM agent exercises that surface as a synthetic power user at 1,000x human cadence; (3) Unbeatable Tests, ground-truth verification the code author cannot fake; and (4) Drift Control, continuous quality measurement with automated pause gates. We validate across two production systems over 285+ iterations, producing 1,094+ merged pull requests with zero regressions detected by the regression oracle (methodology in Section 6.1). We observe emergent properties at scale: multi-iteration self-correction chains, autonomous infrastructure healing, and monotonically improving quality gates. The primitives are not new; our contribution is their composition into a production-tested system with the operational discipline that makes long-running autonomous evolution safe."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Assessing Age Assurance Technologies: Effectiveness, Side-Effects, and Acceptance",
+    "authors": "Wouter Lueks, Stephan Dreyer, Hannes Federrath, Judith Simon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25695v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we provide an overview and evaluation of different types of age assurance technologies (AAT). We describe and analyse 1) different approaches to age assurance online (age verification, age estimation, age inference, and parental control and consent), as well as 2) different age assurance architectures (online, offline device-based, offline credential-based), and assess their various combinations with regards to their respective a) effectiveness, b) side effects, and c) acceptance. We then discuss general limitations of AAT's effectiveness stemming from the possibility of circumvention and outline the most important side effects, in particular regarding privacy and anonymity of all users; bias, discrimination, and exclusion; as well as censorship and related concerns. We conclude our analyses by offering some recommendations on which types of AAT are better or less suited to protect minors online. Guiding our assessment is a weighing of effectiveness against side effects, resulting in a graduated hierarchy of acceptable AAT mechanisms."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Demographic Fairness in Multimodal LLMs: A Benchmark of Gender and Ethnicity Bias in Face Verification",
+    "authors": "Ünsal Öztürk, Hatef Otroshi Shahreza, Sébastien Marcel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25613v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) have recently been explored as face verification systems that determine whether two face images are of the same person. Unlike dedicated face recognition systems, MLLMs approach this task through visual prompting and rely on general visual and reasoning abilities. However, the demographic fairness of these models remains largely unexplored. In this paper, we present a benchmarking study that evaluates nine open-source MLLMs from six model families, ranging from 2B to 8B parameters, on the IJB-C and RFW face verification protocols across four ethnicity groups and two gender groups. We measure verification accuracy with the Equal Error Rate and True Match Rate at multiple operating points per demographic group, and we quantify demographic disparity with four FMR-based fairness metrics. Our results show that FaceLLM-8B, the only face-specialised model in our study, substantially outperforms general-purpose MLLMs on both benchmarks. The bias patterns we observe differ from those commonly reported for traditional face recognition, with different groups being most affected depending on the benchmark and the model. We also note that the most accurate models are not necessarily the fairest and that models with poor overall accuracy can appear fair simply because they produce uniformly high error rates across all demographic groups."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Quantum Circuit Repair by Gate Prioritisation",
+    "authors": "Eñaut Mendiluze Usandizaga, Thomas Laurent, Paolo Arcaini, Shaukat Ali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25587v1",
+    "source": "arXiv",
+    "abstract": "Repairing faulty quantum circuits is challenging and requires automated solutions. We present QRep, an automated repair approach that iteratively identifies and repairs faults in a circuit. QRep uniformly applies patches across the circuit and assigns each gate a suspiciousness score, reflecting its likelihood of being faulty. It then narrows the search space by prioritising the most suspicious gates in subsequent iterations, increasing the repair efficiency. We evaluated QRep on 40 (real and synthetic) faulty circuits. QRep completely repaired 70% of them, and for the remaining circuits, the actual faulty gate was ranked within the top 44% most suspicious gates, demonstrating the effectiveness of QRep in fault localisation. Compared with two baseline approaches, QRep scales to larger and more complex circuits, up to 13 qubits."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Challenge-Response Authentication for LEO Satellite Channels: Exploiting Orbit-Specific Uniqueness",
+    "authors": "Jinyoung Lee, Stefano Tomasin, Dong-Hyun Jung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25576v1",
+    "source": "arXiv",
+    "abstract": "The number of low Earth orbit (LEO) satellite constellations has grown rapidly in recent years, bringing a major change to global wireless communications. As LEO satellite links take on a growing role in critical services such as emergency communications, navigation, wide-area data collection, and military operations, keeping these links secure has become an important concern. In particular, verifying the identity of a satellite transmitter is now a basic requirement for protecting the services that rely on satellite access. In this article, we propose an active challenge-response authentication framework in which the verifier checks the satellite at randomly chosen times that are not known in advance, removing the fixed measurement window that existing passive methods expose to adversaries. The proposed framework uses the deterministic yet unpredictably sampled nature of orbital observables to establish a physics based root of trust for satellite identity authentication. This approach transforms satellite authentication from static feature matching into a spatiotemporal consistency verification problem inherently constrained by orbital dynamics, providing robust protection even against trajectory-aware spoofing attacks."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Synchronous Signal Temporal Logic for Decidable Verification of Cyber-Physical Systems",
+    "authors": "Partha Roop, Sobhan Chatterjee, Avinash Malik, Nathan Allen, Logan Kenwright",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25531v1",
+    "source": "arXiv",
+    "abstract": "Many Cyber Physical System (CPS) work in a safety-critical environment, where correct execution, reliability and trustworthiness are essential. Signal Temporal Logic (STL) provides a formal framework for checking safety-critical CPS. However, static verification of STL is undecidable in general, except when we want to verify using run-time-based methods, which have limitations. We propose Synchronous Signal Temporal Logic (SSTL), a decidable fragment of STL, which admits static safety and liveness property verification. In SSTL, we assume that a signal is sampled at fixed discrete steps, called ticks, and then propose a hypothesis, called the Signal Invariance Hypothesis (SIH), which is inspired by a similar hypothesis for synchronous programs. We define the syntax and semantics of SSTL and show that SIH is a necessary and sufficient condition for equivalence between an STL formula and its SSTL counterpart. By translating SSTL to LTL_P (LTL defined over predicates), we enable decidable model checking using the SPIN model checker. We demonstrate the approach on a 33-node human heart model and other case studies."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Identifying the Threshold Chain Length for Stress Overshoot in Ring-Linear Polymer Blends under Uniaxial Elongation: The Role of Multiple Threading",
+    "authors": "Takahiro Murashima, Katsumi Hagita, Toshihiro Kawakatsu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25505v1",
+    "source": "arXiv",
+    "abstract": "The rheological behavior of ring-linear polymer blends under uniaxial elongational flow has remained a subject of intense debate, particularly regarding the emergence of stress overshoot. Herein, we employ coarse-grained molecular dynamics simulations to investigate the chain-length dependence of elongational viscosity in 1:1 ring-linear blends of flexible chains with the equal molecular weight. Our results reveal a distinct threshold in the degree of threading, quantified by the number of entanglements Z = N /Ne (where N is the number of beads per chain and Ne is the entanglement chain length), for the appearance of stress overshoot: while blends with shorter chains (Z $\\le$ 2) exhibit monotonic stress growth, a clear stress overshoot emerges when the chain length reaches a threshold value (Z $\\approx$ 4). Consistent with previous reports, this overshoot originates from a thread-to-unthread transition. At the threshold chain length, multiple linear chains penetrate a single ring, providing sufficient topological constraints to significantly stretch the ring under elongational flow. We predict that this transition can be experimentally validated via 2D small-angle neutron scattering patterns in the plane of the stretching and perpendicular directions, offering a direct structural signature of the ring recoil process for future experimental verification."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "CIAR: Interval-based Collaborative Decoding for Image Generation Acceleration",
+    "authors": "Keming Ye, Zhou Zhao, Fan Wu, Shengyu Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25463v1",
+    "source": "arXiv",
+    "abstract": "Auto-regressive (AR) models have recently made notable progress in image generation, achieving performance comparable to diffusion-based approaches. However, their computational intensity and sequential nature impede on-device deployment, causing disruptive latency. We address this via a cloud-device collaboration framework \\textbf{CIAR}, which utilizes on-device self-verification to handle two key properties of visual synthesis: \\textit{the vast token vocabulary} required for high-fidelity images and \\textit{inherent spatial redundancy} which leads to extreme predictability in homogeneous regions, while object boundaries exhibit high uncertainty. Uniform verification wastes resources on such redundant tokens. Our solution centers on an on-device token uncertainty quantifier, which adopts continuous probability intervals to accelerate processing and make it feasible for large visual vocabularies instead of conventional discrete solution sets. Additionally, we incorporate a Interval-enhanced decoding module to further speed up decoding while maintaining visual fidelity and semantic consistency via a distribution alignment training strategy. Extensive experiments demonstrate that CIAR achieves a 2.18x speed-up and reduces cloud requests by 70\\%, while preserving image quality compared to existing methods."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Decidable By Construction: Design-Time Verification for Trustworthy AI",
+    "authors": "Houston Haynes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25414v1",
+    "source": "arXiv",
+    "abstract": "A prevailing assumption in machine learning is that model correctness must be enforced after the fact. We observe that the properties determining whether an AI model is numerically stable, computationally correct, or consistent with a physical domain do not necessarily demand post hoc enforcement. They can be verified at design time, before training begins, at marginal computational cost, with particular relevance to models deployed in high-leverage decision support and scientifically constrained settings. These properties share a specific algebraic structure: they are expressible as constraints over finitely generated abelian groups $\\mathbb{Z}^n$, where inference is decidable in polynomial time and the principal type is unique. A framework built on this observation composes three prior results (arXiv:2603.16437, arXiv:2603.17627, arXiv:2603.18104): a dimensional type system carrying arbitrary annotations as persistent codata through model elaboration; a program hypergraph that infers Clifford algebra grade and derives geometric product sparsity from type signatures alone; and an adaptive domain model architecture preserving both invariants through training via forward-mode coeffect analysis and exact posit accumulation. We believe this composition yields a novel information-theoretic result: Hindley-Milner unification over abelian groups computes the maximum a posteriori hypothesis under a computable restriction of Solomonoff's universal prior, placing the framework's type inference on the same formal ground as universal induction. We compare four contemporary approaches to AI reliability and show that each imposes overhead that can compound across deployments, layers, and inference requests. This framework eliminates that overhead by construction."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Development of ProtoPol: a medium resolution echelle spectro-polarimeter for PRL telescopes, Mt Abu, India -- Part II : the data-reduction pipeline, on-sky characterization $\\&$ performance verification and first science results",
+    "authors": "Arijit Maiti, Mudit K. Srivastava, Vipin Kumar, Bhaveshkumar Mistry, Ankita Patel, Vaibhav Dixit, Ruchi Pandey, Jay Chitroda",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25355v1",
+    "source": "arXiv",
+    "abstract": "We present the development of ProtoPol - a medium resolution echelle spectro-polarimeter for the PRL 1.2m and 2.5m telescopes at Mt Abu observatory, India. In this second and final part of the paper series, we report on the development of a dedicated data reduction pipeline of ProtoPol along with several characterization, performance evaluation, and scientific observations to quantify the performance of the instrument. ProtoPol provides a spectral resolution in the range of $\\sim$0.4 - 0.75 angstrom across various orders in the visible wavelength range of 4000-9600 angstrom. On PRL 2.5m telescope, an SNR of 10 is achieved for $m_V\\sim13.2$ source in 1 hour of integration time, and its throughput is estimated to be $\\sim$6\\% including all the contributing factors such as atmospheric transmission, telescope reflectivity, instrument's optics, CCD efficiency etc. ProtoPol achieved a linear polarization accuracy $δP \\approx 0.1-0.2\\%$ in 2 hours of integration time for a source with $m_V\\approx8$. The instrumental polarization is determined to be around $0.1\\%$. We also present the first science results with ProtoPol to demonstrate the capabilities of the instrument. A sample of Herbig Ae/Be stars, classical Herbig stars, Symbiotic stars, and AGB/post-AGB stars were observed over the period of one and half years for their spectro-polarimetry measurements covering various physical mechanisms such as intrinsic line polarization in Herbig and classical Be stars, Raman scattered features in Symbiotic stars, as well as continuum polarization in AGB/post-AGB stars to verify the polarization performance of the instrument."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "From Intent to Evidence: A Categorical Approach for Structural Evaluation of Deep Research Agents",
+    "authors": "Shuoling Liu, Zhiquan Tan, Kun Yi, Hui Wu, Yihan Li, Jiangpeng Yan, Liyuan Chen, Kai Chen, Qiang Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25342v1",
+    "source": "arXiv",
+    "abstract": "Although deep research agents (DRAs) have emerged as a promising paradigm for complex information synthesis, their evaluation remains constrained by ad hoc empirical benchmarks. These heuristic approaches do not rigorously model agent behavior or adequately stress-test long-horizon synthesis and ambiguity resolution. To bridge this gap, we formalize DRA behavior through the lens of category theory, modeling deep research workflow as a composition of structure-preserving maps (functors). Grounded in this theoretical framework, we introduce a novel mechanism-aware benchmark with 296 questions designed to stress-test agents along four interpretable axes: traversing sequential connectivity chains, verifying intersections within V-structure pullbacks, imposing topological ordering on retrieved substructures, and performing ontological falsification via the Yoneda Probe. Our rigorous evaluation of 11 leading models establishes a persistently low baseline, with the state-of-the-art achieving only a 19.9\\% average accuracy, exposing the difficulty of formal structural stress-testing. Furthermore, our findings reveal a stark dichotomy in the current AI capabilities. While advanced deep research pipelines successfully redefine dynamic topological re-ordering and exhibit robust ontological verification -- matching pure reasoning models in falsifying hallucinated premises -- they almost universally collapse on multi-hop structural synthesis. Crucially, massive performance variance across tasks exposes a lingering reliance on brittle heuristics rather than a systemic understanding. Ultimately, this work demonstrates that while top-tier autonomous agents can now organically unify search and reasoning, achieving a generalized mastery over complex structural information remains a formidable open challenge.\\footnote{Our implementation will be available at https://github.com/tzq1999/CDR."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "An efficient compact splitting Fourier spectral methods for computing the dynamics of rotating spin-orbit coupled spin-2 Bose-Einstein condenstates",
+    "authors": "Xin Liu, Ziqing Xie, Yongjun Yuan, Yong Zhang, Xinyi Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25282v1",
+    "source": "arXiv",
+    "abstract": "This paper investigates the dynamics of spin-2 Bose-Einstein condensates (BECs) with rotation and spin-orbit coupling (SOC). In order to better simulate the dynamics, we present an efficient high-order compact splitting Fourier spectral method. This method splits the Hamiltonian into a linear part, which consists of the Laplace, rotation and SOC terms, and a nonlinear part that includes all the remaining terms. The wave function is well approximated by the Fourier spectral method and is numerically accessed with discrete Fast Fourier transform (FFT). For linear subproblem, the handling of rotation term and SOC term poses a major challenge. Using a function mapping based on rotation, we can integrate the linear subproblem exactly and explicitly. This mapping we propose not only helps eliminate the rotation term, but also prevents the SOC term from evolving into a time-dependent form. The nonlinear subproblem is integrated analytically in physical space. Such \"compact\" splitting involves only two operators and facilitates the design of high-order splitting schemes. Our method is spectrally accurate in space and high order in time. It is efficient, explicit, unconditionally stable and simple to implement. In addition, we derive some dynamical properties and carry out a systematic study, including accuracy and efficiency tests, dynamical property verification, the SOC effects and dynamics of vortex lattice."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Development of ProtoPol: a medium resolution echelle spectro-polarimeter for PRL telescopes, Mt Abu, India -- Part I : the design, development and laboratory characterization",
+    "authors": "Mudit K. Srivastava, Arijit Maiti, Vipin Kumar, Bhaveshkumar Mistry, Ankita Patel, Vaibhav Dixit, Kevikumar A. Lad",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25277v1",
+    "source": "arXiv",
+    "abstract": "ProtoPol is a medium-resolution echelle spectro-polarimeter developed for Physical Research Laboratory (PRL) 1.2m and 2.5m telescopes, Mt. Abu, India. Though initially conceived to evaluate the development methodology of the echelle spectro-polarimeter, it was subsequently elevated to the level of a full-fledged back-end instrument for PRL telescopes. ProtoPol is developed on the traditional concept of using a half-wave plate with Wollaston prism to achieve the separation of two mutually orthogonal polarized beams. These separated beams are modulated and directed into an echelle spectrometer which is employs an echelle grating and two plane reflection gratings as the cross-dispersers. Therefore, the cross-dispersed spectra for two orthogonal polarized beams are recorded in multiple orders on a CCD detector. ProtoPol is designed to operate in the visible and near IR spectral range, 4000 - 9600 angstrom, with a spectral resolution ($δ$$λ$) around 0.4-0.75 angstrom. The uniqueness of ProtoPol lies in its design which has entirely been developed with commercially available off-the-shelf optical and opto-mechanical components. This feature makes ProtoPol a noteworthy development as it offers a cost-effective way to develop spectro-polarimeters with such resolutions for small-aperture (2-3m) telescopes around the world, in a much shorter development period. ProtoPol has been successfully developed and commissioned on PRL 1.2m and 2.5m telescopes since December 2023, and a variety of observations have been carried out for instrument characterization, performance verification, and scientific purposes. This is the first of the two-part research articles series, wherein we present the design and development methodology of ProtoPol, along with its laboratory characterization and performance."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "zk-X509: Privacy-Preserving On-Chain Identity from Legacy PKI via Zero-Knowledge Proofs",
+    "authors": "Yeongju Bak",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25190v1",
+    "source": "arXiv",
+    "abstract": "Public blockchains impose an inherent tension between regulatory compliance and user privacy. Existing on-chain identity solutions require centralized KYC attestors, specialized hardware, or Decentralized Identifier (DID) frameworks needing entirely new credential infrastructure. Meanwhile, over four billion active X.509 certificates constitute a globally deployed, government-grade trust infrastructure largely unexploited for decentralized identity. This paper presents zk-X509, a privacy-preserving identity system bridging legacy Public Key Infrastructure (PKI) with public ledgers via a RISC-V zero-knowledge virtual machine (zkVM). Users prove ownership of standard X.509 certificates without revealing private keys or personal identifiers. Crucially, the private key never enters the ZK circuit; ownership is proven via OS keychain signature delegation (e.g., macOS Secure Enclave, Windows TPM). The circuit verifies certificate chain validity, temporal validity, key ownership, trustless CRL revocation, blockchain address binding, and Sybil-resistant nullifier generation. It commits 13 public values, including a Certificate Authority (CA) Merkle root hiding the issuing CA, and four selective disclosure hashes. We formalize eight security properties under a Dolev-Yao adversary with game-based definitions and reductions to sEUF-CMA, SHA-256 collision resistance, and ZK soundness. Evaluated on the SP1 zkVM, the system achieves 11.8M cycles for ECDSA P-256 (17.4M for RSA-2048), with on-chain Groth16 verification costing ~300K gas. By leveraging certificates deployed at scale across jurisdictions, zk-X509 enables adoption without new trust establishment, complementing emerging DID-based systems."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Verification of the Polarimetric Capability of the East Asia VLBI Network",
+    "authors": "Yunjeong Lee, Jongho Park, Do-Young Byun, Minchul Kam, Kazuhiro Hada, Juan Carlos Algaba, Sanghyun Kim, Zhiqiang Shen, Junghwan Oh, Sincheol Kang, Hyeon-Woo Jeong, Whee Yeon Cheong, Sang-Sung Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25185v1",
+    "source": "arXiv",
+    "abstract": "The East Asia VLBI Network (EAVN) has recently enabled dual-polarization observations at $22$ and $43\\,\\mathrm{GHz}$. We present the first systematic verification of its polarimetric performance using EAVN observations of M87, 3C 279, 3C 273, and OJ 287, calibrated with the GPCAL pipeline and evaluated against near-contemporaneous VLBA images at comparable frequencies. Most stations show stable polarimetric leakages with amplitudes of $5$-$10\\%$ over monthly timescales. While several VERA stations exhibit D-term phase variations between epochs, we attribute these to field-rotator (FR) offsets and demonstrate that phase stability is restored after applying the analytically derived FR corrections. The resulting linear-polarization morphologies and EVPAs broadly agree with the VLBA results within uncertainties; fractional polarization measured by the EAVN tends to be slightly higher near polarization peaks. Although exact one-to-one comparisons are limited by moderate frequency and epoch differences, the combined evidence indicates robust EAVN polarimetric calibration and imaging capabilities at $22$ and $43\\,\\mathrm{GHz}$. These results support the scientific capability of EAVN polarimetry and lay the groundwork for expanded, higher-fidelity polarimetric studies in East Asia."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Prompt Attack Detection with LLM-as-a-Judge and Mixture-of-Models",
+    "authors": "Hieu Xuan Le, Benjamin Goh, Quy Anh Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25176v1",
+    "source": "arXiv",
+    "abstract": "Prompt attacks, including jailbreaks and prompt injections, pose a critical security risk to Large Language Model (LLM) systems. In production, guardrails must mitigate these attacks under strict low-latency constraints, resulting in a deployment gap in which lightweight classifiers and rule-based systems struggle to generalize under distribution shift, while high-capacity LLM-based judges remain too slow or costly for live enforcement. In this work, we examine whether lightweight, general-purpose LLMs can reliably serve as security judges under real-world production constraints. Through careful prompt and output design, lightweight LLMs are guided through a structured reasoning process involving explicit intent decomposition, safety-signal verification, harm assessment, and self-reflection. We evaluate our method on a curated dataset combining benign queries from real-world chatbots with adversarial prompts generated via automated red teaming (ART), covering diverse and evolving patterns. Our results show that general-purpose LLMs, such as gemini-2.0-flash-lite-001, can serve as effective low-latency judges for live guardrails. This configuration is currently deployed in production as a centralized guardrail service for public service chatbots in Singapore. We additionally evaluate a Mixture-of-Models (MoM) setting to assess whether aggregating multiple LLM judges improves prompt-attack detection performance relative to single-model judges, with only modest gains observed."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "Monotonicity of the first nonzero Steklov eigenvalue of regular $N$-gon with fixed perimeter",
+    "authors": "Zhuo Cheng, Changfeng Gui, Yeyao Hu, Qinfeng Li, Ruofei Yao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25116v1",
+    "source": "arXiv",
+    "abstract": "We study the first nontrivial Steklov eigenvalue of perimeter-normalized regular \\(N\\)-gons and show that it is strictly increasing in \\(N\\). The proof mainly relies on an analytic framework that establishes a refined asymptotic expansion in three steps: first, identifying the Steklov eigenvalue as the maximal eigenvalue of a Toeplitz-type operator; second, deriving the eigenvalue and its associated eigenfunctions simultaneously via Schur reduction; and finally, obtaining the exact coefficients in the Schur moment expansion by evaluating Euler-type sums. The monotonicity is proved to be eventual, holding for \\(N\\ge 20\\). For the remaining cases \\(3\\le N\\le 20\\), we provide complementary computer-assisted verification, confirming monotonicity across the full range of \\(N\\)."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "SEVerA: Verified Synthesis of Self-Evolving Agents",
+    "authors": "Debangshu Banerjee, Changming Xu, Gagandeep Singh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25111v1",
+    "source": "arXiv",
+    "abstract": "Recent advances have shown the effectiveness of self-evolving LLM agents on tasks such as program repair and scientific discovery. In this paradigm, a planner LLM synthesizes an agent program that invokes parametric models, including LLMs, which are then tuned per task to improve performance. However, existing self-evolving agent frameworks provide no formal guarantees of safety or correctness. Because such programs are often executed autonomously on unseen inputs, this lack of guarantees raises reliability and security concerns. We formulate agentic code generation as a constrained learning problem, combining hard formal specifications with soft objectives capturing task utility. We introduce Formally Guarded Generative Models (FGGM), which allow the planner LLM to specify a formal output contract for each generative model call using first-order logic. Each FGGM call wraps the underlying model in a rejection sampler with a verified fallback, ensuring every returned output satisfies the contract for any input and parameter setting. Building on FGGM, we present SEVerA (Self-Evolving Verified Agents), a three-stage framework: Search synthesizes candidate parametric programs containing FGGM calls; Verification proves correctness with respect to hard constraints for all parameter values, reducing the problem to unconstrained learning; and Learning applies scalable gradient-based optimization, including GRPO-style fine-tuning, to improve the soft objective while preserving correctness. We evaluate SEVerA on Dafny program verification, symbolic math synthesis, and policy-compliant agentic tool use ($τ^2$-bench). Across tasks, SEVerA achieves zero constraint violations while improving performance over unconstrained and SOTA baselines, showing that formal behavioral constraints not only guarantee correctness but also steer synthesis toward higher-quality agents."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "ElephantBroker: A Knowledge-Grounded Cognitive Runtime for Trustworthy AI Agents",
+    "authors": "Cristian Lupascu, Alexandru Lupascu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25097v1",
+    "source": "arXiv",
+    "abstract": "Large Language Model based agents increasingly operate in high stakes, multi turn settings where factual grounding is critical, yet their memory systems typically rely on flat key value stores or plain vector retrieval with no mechanism to track the provenance or trustworthiness of stored knowledge. We present ElephantBroker, an open source cognitive runtime that unifies a Neo4j knowledge graph with a Qdrant vector store through the Cognee SDK to provide durable, verifiable agent memory. The system implements a complete cognitive loop (store, retrieve, score, compose, protect, learn) comprising a hybrid five source retrieval pipeline, an eleven dimension competitive scoring engine for budget constrained context assembly, a four state evidence verification model, a five stage context lifecycle with goal aware assembly and continuous compaction, a six layer cheap first guard pipeline for safety enforcement, an AI firewall providing enforceable tool call interception and multi tier safety scanning, a nine stage consolidation engine that strengthens useful patterns while decaying noise, and a numeric authority model governing multi organization identity with hierarchical access control. Architectural validation through a comprehensive test suite of over 2,200 tests spanning unit, integration, and end to end levels confirms subsystem correctness. The modular design supports three deployment tiers, five profile presets with inheritance, multi gateway isolation, and a management dashboard for human oversight, enabling configurations from lightweight memory only agents to full cognitive runtimes with enterprise grade safety and auditability."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "RTL to GDS II Implementation of 4-bit Information Processing Unit and FPGA Prototyping",
+    "authors": "Khushi, Syed Sadique Anwer Askari, Gufran Ahmad",
+    "publish": "2025 IEEE International Conference on Electrical, Electronics, Communication and Computers (ELEXCOM)",
+    "url": "https://doi.org/10.1109/elexcom67950.2025.11451466",
+    "source": "IEEE",
+    "abstract": "This work focuses on designing and verifying an Information Processing Unit (IPU) able to perform a wide range of computation and logical operations using the open-source VSD Qflow EDA toolchain, offering a cost-effective result for ASIC design, and the empower SoC tool was used to assess crucial power performance. The IPU was assessed in Xilinx Vivado to confirm its functionality and practicality. The design was further validated on the NEXYS 4 DDR FPGA board, bridging the gap between simulation and real-world implementation. Results showed that the IPU designed at the 180 nm technology node achieved a more advanced clock frequency (305 MHz) than its counterpart at the 350 nm technology node (199 MHz). Likewise, at 180 nm, the chip area consumption dropped. The power analysis demonstrated the performance and effectiveness advantages of lower technology nodes by showing that the standby power (78.15 new) and active power (2.56 mow) at 180 nm were significantly lower than those at 350 nm (standby power 121.5 now, active power 12.9 mW). Likewise, comparing the Power-Delay Product (PDP) stressed the 180 nm design's less energy effectiveness. Further illustrating the benefits of switching to advanced technologies, the PDP of the 180 nm node (8.39 pJ) was significantly lower than that of the 350 nm node (64.5 pJ). This study emphasizes the prospective of open-source design suits in futuristic ASIC Flow, highlighting their energy for cost-effective and educational purposes for exploration and development."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "LLM-Based Bitrate Selection Method for CMR-Supported Audio Codec",
+    "authors": "Bongsu Jeon, Minsuk Ko, Keyyoung Park, Minho Shin",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449791",
+    "source": "IEEE",
+    "abstract": "Recent advances in AI-driven network algorithms have aimed to enhance user experience under diverse network conditions. However, designing and validating optimal AI models tailored to specific network environments and objectives remains a challenge for developers. To address this, frameworks such as netLLM [1], which integrates pretrained large language models (LLMs) with multimodal encoders, network heads, and low-rank adaptation (LoRA) [2], have been proposed and shown to improve performance through offline fine-tuning. In this paper, we extend the concept of netLLM to the bitrate optimization problem of audio codecs supporting Codec Mode Request (CMR). Unlike conventional offline training approaches, we propose an online learning-based bitrate selection method that dynamically adapts to fluctuating real-time communication environments. Our method leverages pretrained LLMs to adjust audio stream bitrates according to network conditions, achieving significant improvements in speech quality, as measured by the E-MODEL R-factor [4], compared to conventional AI models [7]. This study demonstrates an effective approach to audio streaming optimization through online fine-tuning, offering a novel pathway for improving speech quality under variable network conditions."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "RecMind: LLM-Enhanced Graph Neural Networks for Personalized Consumer Recommendations",
+    "authors": "Chang Xue, Youwei Lu, Chen Yang, Jinming Xing",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449909",
+    "source": "IEEE",
+    "abstract": "Personalization is a core capability across consumer technologies, streaming, shopping, wearables, and voice, yet it remains challenged by sparse interactions, fast content churn, and heterogeneous textual signals. We present RecMind, an LLM-enhanced graph recommender that treats the language model as a preference prior rather than a monolithic ranker. A frozen LLM equipped with lightweight adapters produces text-conditioned user/item embeddings from titles, attributes, and reviews; a LightGCN backbone learns collaborative embeddings from the user-item graph. We align the two views with a symmetric contrastive objective and fuse them via intra-layer gating, allowing language to dominate in cold/long-tail regimes and graph structure to stabilize rankings elsewhere. On Yelp and Amazon-Electronics, RecMind attains the best results on all eight reported metrics, with relative improvements up to +4.53% (Recall@40) and +4.01% (NDCG@40) over strong baselines. Ablations confirm both the necessity of cross-view alignment and the advantage of gating over late fusion and LLM-only variants."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Intelligent Code Review and Vulnerability Localization Based on Large-Scale Pre-Trained Language Models (LLM)",
+    "authors": "Shuhao Cai",
+    "publish": "2026 2nd International Conference on Electrical Automation and Artificial Intelligence (ICEAAI)",
+    "url": "https://doi.org/10.1109/iceaai68945.2026.11442374",
+    "source": "IEEE",
+    "abstract": "Rules for dependent on existing code review methods focusing on detecting vulnerabilities are shallow in their ability to model features within complex systems therefore perverting the semantic characterization of deep relationships associated with these systems while at the same time creating limitations placed upon vulnerability identification and positioning accuracy due to the rules there exist. In order to address these deficiencies, this article outlines a novel approach to fine tuning large-scale pre-trained code language models by applying code structure constraints. A code language model provides a framework for driving semantic models, and therefore an integrated information structure is generated using a joint representation approach that encapsulates both the abstract syntax tree and control flow graph to provide a structure-aware information space. A structure-aware semantic alignment target is introduced as part of the instruction fine tuning task, thereby allowing the model to complete both vulnerability classifications and vulnerability location mappings while engaging in generative reasoning. Concurrently, a targeting structure constraint attention mechanism imposes structural constraints upon the information propagation paths and assists in focusing the processing of the information to the key control and data dependency nodes, which contribute to achieving the integrated vulnerability locations through the original semantic reasoning approach. The experimental results indicated that with the introduction of the combined structures of the control flow and the abstract syntax tree, there are improvements in both vulnerability identification precision (0.846) and recall (0.768), improvements of 0.065 and 0.074 respectively over the original models with no structural constraints. The study's findings show that, within a single framework of semantic comprehension and structural constraints, the suggested approach successfully enhances the intelligence of code review and the improvement of vulnerability localization."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "User-Centric Phishing Detection: A RAG and LLM-Based Approach",
+    "authors": "Abrar Hamed Al Barwani, Abdelaziz Amara Korba, Raja Waseem Anwar",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449651",
+    "source": "IEEE",
+    "abstract": "The escalating sophistication of phishing emails necessitates a shift beyond traditional rule-based and conventional machine-learning-based detectors. Although large language models (LLMs) offer strong natural language understanding, using them as standalone classifiers often yields elevated false-positive (FP) rates, which mislabel legitimate emails as phishing and create significant operational burden. This paper presents a personalized phishing detection framework that integrates LLMs with retrieval-augmented generation (RAG). For each message, the system constructs user-specific context by retrieving a compact set of the user’s historical legitimate emails and enriching it with real-time domain and URL reputation from a cyber-threat intelligence platform, then conditions the LLM’s decision on this evidence. We evaluate four open-source LLMs (Llama4-Scout, DeepSeek-R1, Mistral-Saba, and Gemma2) on an email dataset collected from public and institutional sources. Results show high performance; for example, Llama4-Scout attains an F1-score of 0.9703 and achieves a 66.7% reduction in FPs with RAG. These findings validate that a RAG-based, user-profiling approach is both feasible and effective for building high-precision, low-friction email security systems that adapt to individual communication patterns."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "On-Device-First Hybrid LLM Inference on AI-PCs: Closing the Enterprise GenAI Divide",
+    "authors": "Sultana Begum, Kris Fleming, Todd Lewellen",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449769",
+    "source": "IEEE",
+    "abstract": "AI-PCs and modern PCs equipped with capable CPUs, GPUs, and NPUs now make on-device inference for small language models (SLMs) practical across many enterprise workloads. This enables assistants that are low-latency, privacy-preserving, and resilient to network conditions, while frontier cloud models still offer higher accuracy, richer tool use, and stronger multimodality than is practical to run on every endpoint. This paper surveys and organizes the design space for an on-device-first hybrid architecture in which an SLM on the AI-PC handles most requests by default, and escalation to cloud models is reserved for difficult, tool-heavy, or long-context tasks. We synthesize advances in compact local on-device optimized model design including architectures that mix self-attention with state-space models (SSMs), parameter-efficient adaptation, multimodal and structure-aware retrieval-augmented generation (RAG), and long-horizon memory, and connect these to hardware and serving optimizations such as quantization, mixed precision, and KV-cache management. Building on this, we propose routing and reporting patterns that make latency, energy, cost, and privacy explicit design parameters, and outline a total-cost-of-ownership view that clarifies when AI-PC–centric deployments outperform all-cloud strategies. We argue that such edge-first hybrid designs offer a practical path to narrowing the \"GenAI Divide,\" in which impressive pilots fail to translate into durable, production-grade business impact."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "UbiMyTherapist: A Digital Twin MultiModal LLM-based System with Emotion Detection",
+    "authors": "Karim Alghoul, Raina Sharma, Hussein Al Osman, Abdulmotaleb El Saddik",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449896",
+    "source": "IEEE",
+    "abstract": "The integration of artificial intelligence (AI) in mental health therapy has led to the emergence of AI-powered therapeutic assistants. However, existing systems primarily function as reactive conversational agents, lacking real-time emotional context awareness. This paper presents UbiMyTherapist, a digital-twin, ubiquitous, multimodal framework that integrates a Retrieval-Augmented Large Language Model (RAG-LLM) with near-real-time emotion detection to provide both reactive and proactive support on consumer electronics such as smartwatches and smartphones. The framework builds a continuously updated digital-twin of the user’s emotional state and medical history, leveraging affect recognition models that can process bio-signals, speech intonation, or text sentiment. This integration enables a more responsive AI therapy assistant. In this paper, we describe the system architecture, its components, and our prototype. The reactive mode was evaluated in a user study with 24 participants, where UbiMyTherapist outperformed baseline LLM setups on therapist-likeness and conversation quality."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Double-Scale LLM Cooperation for Internet of Agents-Oriented Robot Scenarios",
+    "authors": "Longyu Zhou, Wenjiao Feng, Yijing Liu, Supeng Leng, Tony Quek",
+    "publish": "IEEE Communications Magazine",
+    "url": "https://doi.org/10.1109/mcom.001.2500674",
+    "source": "IEEE",
+    "abstract": "The evaluation from the Internet of Things (IoT) to the Internet of Everything (IoE) has achieved the intelligent connection among massive IoT devices. In this context, the emerging Internet of Agents (IoA) is emerging to perform a fundamental shift in the digital paradigm for intelligent cognition. The IoA is expected to enable autonomous cooperation for intelligent applications, such as robots-based intelligent logistics. The IoA can envision a cognition-centric ecosystem in which intelligent robots perform cooperative sensing and reasoning. To achieve this goal, this article designs a terminal-edge cooperative Large Language Model (LLM) framework. It can achieve accurate service provisions by integrating cross-layer computing resources for IoA scenarios. In addition, our framework can enable robots to perform autonomous decision-making instead of requesting from the cloud or the edge servers for real-time service provisions. Based on our framework, we provide several potential IoA scenarios with detailed analysis. A case study of robots-based parcel sorting and handling is selected to validate the feasibility and effectiveness of our framework. The experiment results show that our framework achieves a high parcel sorting accuracy of up to 95% with a low delivery latency of under 1 second compared to traditional centralized manners on average, respectively."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Invited: Infusing EDA Knowledge into LLM Systems: An Information-Source Perspective",
+    "authors": "Yuhan Qin, Yuan Pu, Tairu Qiu, Zhuolun He, Bei Yu",
+    "publish": "Proceedings of the 2026 International Symposium on Physical Design",
+    "url": "https://doi.org/10.1145/3764386.3779640",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-3-27",
+    "title": "LLM Powered Command Line Interface Agent: A Comparative Analysis",
+    "authors": "Madhisha S, Kabhinyasri S V, Aravinth Cheran K S, Pream S, Sudharsan S, Anisha C D",
+    "publish": "2026 Second International Conference on Intelligent Systems for Communication, IoT and Security (ICISCoIS)",
+    "url": "https://doi.org/10.1109/iciscois62701.2026.11447826",
+    "source": "IEEE",
+    "abstract": "The paper presents a local offline Command Line Interface (CLI) agent powered by Large Language Models (LLMs) which understands natural language given by the user and converts it into the required Bash command. By enabling the user to interact with the agent via the terminal in natural language, the proposed system overcomes the usability gap as developer surveys convey that 69 % of the developers use the terminal frequently while only 19 % of them consider themselves as experts and 70 % find it difficult to remember the commands. This shows the need for more user friendly and easily accessible tools. To address this, the paper introduces an LLM powered CLI agent that uses Retrieval Augmented Generation (RAG) which retrieves relevant commands from the local database using FAISS and provides this retrieved relevant commands to the LLM which helps to generate the Bash commands more accurately. Additionally, the system incorporates a safety filter to prevent the execution of dangerous commands and executes only after getting user confirmation. A comparative analysis of several LLMs was performed and among those Mistral 7B achieved the highest accuracy of 70.7 %, followed by Code Llama 7 B with 63.7 %, Qwen 2.5 (1.5B) and Gemma 2 (2B) performed similarly with 50.7 % and 52.7 % respectively and the lowest accuracy of 41.7 % given by Llama 2 (7B). The system's ability to generate more accurate bash commands for developers is evident from these results."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Off-line LLM-based decision tool to help advise Farmers in sub-Saharan Africa for Enhanced Decision Making in Goat Care",
+    "authors": "Jocelin Calas, Gerald Barry, Abraham G. Campbell",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449608",
+    "source": "IEEE",
+    "abstract": "The objective of this work is to assist goat farmers based in Sub-Saharan Africa in determining whether veterinary consultation is necessary when their animals are unwell, thereby helping to improve the farmers ability to care for their animals and also avoid unnecessary costs. The study presents a prototype offline mobile application that guides users through a process using a decision tree and user-provided responses. The work has investigated the potential of large language models (LLMs) for generating decision trees and diagnostic tools in data-scarce domains such as veterinary medicine. Retrieval-Augmented Generation (RAG) was employed to enhance result quality and accuracy. Decision trees were generated with the Gemma 32B-parameter model; due to complexity and size limitations, large trees were constructed incrementally with carefully designed prompts. Diagnostic generation used the DeepSeek 14B-parameter model, which consistently produced the most precise and reliable outputs. Key limitations included hardware performance—directly affecting computation time as a function of model size and machine specifications—and the models’ tendency toward overly cautious answers. To partially mitigate these constraints, techniques such as trigger words, verification prompts, and scoring methods were applied under specific conditions. Nevertheless, expert validation remains necessary, as these verification methods cannot be considered 100% reliable."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "LLM-based text-to-JQL Generation: an automated test using execution and structural indicators",
+    "authors": "Rayfran Rocha Lima, Irineu Evangelista Cruz de Brito, Jardel da Cunha Nascimento, Luiz Cordovil-Jr",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449644",
+    "source": "IEEE",
+    "abstract": "Evaluating natural language to query language (NL-to-QL) systems cannot rely on string matching alone, especially when queries involve dynamic data or complex query languages. We present APOLLO, an automated test framework that executes generated queries by Large Language Models (LLMs) against a live Jira instance, enabling execution-aware evaluation and detailed error diagnosis across syntax, unsupported features, and value inaccuracies. APOLLO introduces new metrics—field accuracy, value accuracy, and inference accuracy—that capture correctness beyond similarity. Using APOLLO, we evaluated two LLM-based conversion architectures: a retrieval-augmented generator and a specialized API-supported generation model that demonstrated both limitations and alternatives to address the drawbacks of generating dynamic non-pre-trained data. Future work will extend the framework to additional query languages, explore automated remediation strategies, and investigate richer semantic metrics for deeper diagnostic insight."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "An LLM-Based Generation and Visualization Method for Cross-Organizational Emergency Response Process Models in Coal–Power Joint Operation Enterprises",
+    "authors": "Jianling Zang, Suiling Wang, Weijun Zhang, Ning Li",
+    "publish": "2026 2nd International Conference on Electrical Automation and Artificial Intelligence (ICEAAI)",
+    "url": "https://doi.org/10.1109/iceaai68945.2026.11442400",
+    "source": "IEEE",
+    "abstract": "Emergency response in coal-power enterprises requires multi-organizational collaboration, yet existing emergency plans are typically documented in natural language with implicit process structures, hindering efficient cross-organizational coordination. To address the high cost and low automation in transforming textual plans into executable models, this paper proposes an automatic generation and visualization method based on large language models (LLMs) and the Flowable platform. The method extracts key process elements (activities, roles, conditions, temporal relationships) from emergency plan texts through structured preprocessing and LLM analysis, generates BPMN 2.0compliant cross-organizational process models, and deploys them to Flowable for visualization and execution. Validated through a whole-plant power outage case study, the method demonstrates significant modeling cost reduction, improved process clarity and standardization, offering a practical pathway for informatizing emergency management in coal-power enterprises."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "A Framework for Automated PCB Inspection through Gerber Files Comparison using Computer Vision and LLM",
+    "authors": "Elton Alencar, Janderson Lira, Pablo H. U. de Pinho, Jair de Almeida, Luziane L. S. Arouca, Daniel Lins Da Silva, Marcel Silva, Agemilson Pimentel",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449741",
+    "source": "IEEE",
+    "abstract": "Printed Circuit Boards (PCBs) play a critical role in the manufacturing of electronic devices, requiring accurate component placement and precise layer connections. Visual inspection ensures the correctness of PCB layouts, but manual comparison between design versions is time-consuming and prone to human error. In this paper, an AI-driven hybrid framework that integrates Computer Vision (CV) techniques with Large Language Model (LLM) is proposed to automate the detection and reporting of design changes across Gerber files. The system converts Gerber data into images, performs pixel-wise comparison using Digital Image Processing (DIP) methods, and classifies differences into additions, removals, or modifications. The extracted discrepancies are then described and summarized through technical text automatically generated by gemma3:4b, a pre-trained LLM. Experimental results with 186 comparisons demonstrated an average total processing time of 52.6 s per analysis, with report generation accounting for most of the execution time (37 s). The approach achieved consistent and accurate detection of geometric variations, reducing inspection time and reliance on multiple third-party tools. This framework provides a reliable and extensible foundation for automated PCB inspection, contributing to smarter, AI-assisted manufacturing workflows in consumer electronics, providing a centralized service that can be integrated into the company’s local infrastructure."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Intelligent and Connected Vehicle Queue Cooperative Lane Changing Control Strategy and Simulation Verification",
+    "authors": "Chunhui Liu",
+    "publish": "2026 2nd International Conference on Electrical Automation and Artificial Intelligence (ICEAAI)",
+    "url": "https://doi.org/10.1109/iceaai68945.2026.11442333",
+    "source": "IEEE",
+    "abstract": "Addressing the need for efficient passage of emergency vehicles in congested scenarios involving platoons of intelligent connected vehicles (CAVs) on straight three-lane urban road segments, this paper proposes a multi-vehicle cooperative lane-changing and yielding control strategy and conducts systematic research. Taking homogeneous CAV platoons as the research object, a decoupled mass-spring-damping (MSD) second-order vehicle controller model is constructed, and a formation mass point communication model is established based on a PF communication topology. The unidirectional information flow transmission rules are clarified, and a fixed spacing strategy that dynamically adjusts with vehicle speed is designed. The optimal disturbance rejection and recovery capability in the critical damping state is verified through a single degree of freedom MSD model. A hierarchical control architecture combining upper-level trajectory planning, lower-level longitudinal dual PID, and lateral model predictive control (MPC) is designed. A platoon simulation model consisting of one leading vehicle and seven following vehicles is built. The results show that the proposed strategy ensures that the platoon meets string stability requirements, disturbances are gradually attenuated, vehicles have no collision risk, and stability can be quickly restored. This research provides a feasible solution and theoretical support for CAV platoon cooperative control in emergency vehicle yielding scenarios."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Research on Modelica-Based Simulation and Hierarchical Verification Method for Aircraft Power Supply Quality",
+    "authors": "Jingwen Zhao, Yiwei Yang",
+    "publish": "2026 2nd International Conference on Electrical Automation and Artificial Intelligence (ICEAAI)",
+    "url": "https://doi.org/10.1109/iceaai68945.2026.11442597",
+    "source": "IEEE",
+    "abstract": "With the widespread application of more electric aircraft(MEA) technologies, the importance of aircraft power systems to flight safety and reliability has become increasingly prominent. To address the dynamic power quality evaluation challenges posed by the hybrid 230V/115V variable-frequency alternating current (VFAC) and 28 V direct current(DC) power supply architecture in modern large commercial aircraft, this paper proposes a multi-level, high-fidelity simulation architecture and validation method based on the Modelica language. The study first analyzed the definitions of power quality parameters in existing international standards. Based on this analysis, a modular and scalable Modelica simulation architecture was developed. Through a three-tier verification system of “component-subsystem-system,” closed-loop validation from standards to simulation was achieved. The results demonstrate that the architecture is accurate and reliable, effectively quantifying power quality characteristics of the power grid under different operating conditions while maintaining sufficient design margins. This research provides a dynamic and quantifiable assessment and risk identification tool for the design of large civil aircraft power systems, holding significant engineering application value."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Towards Accurate Inventory Verification in FTTP Networks: GNN-Based Framework for Physical-Logical Alignment",
+    "authors": "Tanzeela Altaf, Yan Liang, Raymond Owen, Mehran Abolhasan, Ren Ping Liu",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449911",
+    "source": "IEEE",
+    "abstract": "Accurate Physical Network Inventory (PNI), including fibre cables and passive components such as GPON splitters, is essential for efficient operation and fault management in Fibre-to-the-Premises (FTTP) networks. In practice, discrepancies between inventory records and deployed infrastructure frequently arise due to manual updates, delayed synchronization, and construction practices. This paper proposes a graph-based framework for detecting cable-level anomalies by integrating telemetry-derived optical distance measurements with PNI data. The network is modeled as a graph in which edges represent fibre segments annotated with physical and optical distances, and nodes represent passive network elements. A GNN model is trained for edge-level anomaly classification, enabling identification of physical–logical inconsistencies in the inventory. Experimental results demonstrate effective anomaly detection, highlighting the potential of the proposed approach as a scalable and extensible solution for automated inventory validation in GPON-based FTTP networks."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Memory Safety in Linux Device Drivers: Enhancing Security with Formal Verification",
+    "authors": "Janislley O. Sousa, David A. O. Ferreira, Eddie B. De Lima Filho, Lucas C. Cordeiro",
+    "publish": "2026 IEEE International Conference on Consumer Electronics (ICCE)",
+    "url": "https://doi.org/10.1109/icce67443.2026.11449875",
+    "source": "IEEE",
+    "abstract": "Memory safety remains one of the most critical challenges in embedded systems, particularly within the Linux kernel, where device drivers are a primary source of vulnerabilities due to their close interaction with hardware and complex execution contexts. Such behavior is even more pronounced on consumer electronics devices, where restricted resources amplify the existing vulnerabilities. Traditional testing approaches, while effective at uncovering shallow bugs, often fail to guarantee the absence of subtle or deeply nested memory-safety issues. In this paper, we propose a formal verification methodology based on Bounded Model Checking (BMC) to detect memory-safety violations in Linux device drivers. Using a methodology based on LSVerifier, we systematically analyzed newly integrated device drivers across multiple kernel versions. Our approach uncovered three vulnerabilities, including out-of-bounds writes, out-of-bounds reads, and null pointer dereferences. It demonstrates that formal methods can uncover critical flaws early in the development process, complementing dynamic tools and strengthening kernel security."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Experimental Verification of Congruency Property in Magnetic Material and Its Reproducibility Using B-input Play Model",
+    "authors": "Yoshiki Hane, Kengo Sugahara, Hiroto Morishita, Akira Ahagon",
+    "publish": "IEEE Transactions on Magnetics",
+    "url": "https://doi.org/10.1109/tmag.2026.3678209",
+    "source": "IEEE",
+    "abstract": "For electric machine designers to select an appropriate hysteresis model, it is necessary to present a unified view of the reproducibility of magnetic properties across methods in actual magnetic materials. Several previous studies have shown that hysteresis models that exhibit a congruency property of minor loops in the H-axis direction can accurately reproduce the measured magnetic hysteresis behavior. A congruency property means that the shapes of all minor loops are identical regardless of their operating points within the same input range. This paper experimentally demonstrates that there is a congruency property along the H-axis but not along the B-axis in non-oriented silicon steel, as measured by minor loops under several excitation conditions. In addition, comparing the computation results by the B-input and H-input play models with the measurement ones, this paper proves that the B-input congruency-based hysteresis models, including the Preisach and play models, can express the measured minor loops, which are congruent in the H-axis and even incongruent in the B-axis, with high accuracy both qualitatively and quantitatively. The outcomes of this paper should provide guidance in selecting an appropriate hysteresis model."
+  },
+  {
+    "date": "2026-3-27",
+    "title": "Selection and Simulation Verification of Transformer Dc Blocking Devices Based on Transient Fault Conditions",
+    "authors": "Wenxuan Zhao, Jingxuan Xu, Chunming Liu",
+    "publish": "2026 2nd International Conference on Electrical Automation and Artificial Intelligence (ICEAAI)",
+    "url": "https://doi.org/10.1109/iceaai68945.2026.11442476",
+    "source": "IEEE",
+    "abstract": "DC bias in transformers poses a serious threat to the safe and stable operation of power grids. To suppress DC bias, DC blocking devices are typically installed at the transformer neutral point. This paper proposes a selection and design method for capacitive DC blocking devices. First, typical operating conditions such as transient fault currents and DC disturbances that the device must address are clearly defined. The main topology, working principle, bypass system, and monitoring unit design are elaborated in detail, with quantitative calculations and verification of key parameters for major equipment. Subsequently, simulations are conducted in the PSCAD/EMTDC software environment. By comparing simulated waveforms with theoretical dynamic response processes, the effectiveness and feasibility of the device topology and selection are validated."
+  }
+]
