@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-03-27",
+    "title": "Autonomous Hamiltonian certification and changepoint detection",
+    "authors": "Steven T. Flammia, Dmitrii Khitrin, Muzhou Ma, Jamie Sikora, Yu Tong, Alice Zheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26655v1",
+    "source": "arXiv",
+    "abstract": "Modern quantum devices require high-precision Hamiltonian dynamics, but environmental noise can cause calibrated Hamiltonian parameters to drift over time, necessitating expensive recalibration. Detecting when recalibration is needed is challenging, especially since the very gates required for sophisticated verification protocols may themselves be miscalibrated. While cloud quantum computing services implement heuristic routines for triggering recalibration, the fundamental limits of optimal recalibration are not yet known. We develop efficient Hamiltonian certification and changepoint detection protocols in the autonomous setting, where we cannot rely on an external noiseless device and use only single-qubit gates and measurements, making the protocols robust to the calibration issues for multi-qubit operations they aim to detect. For unknown $n$-qubit Hamiltonians $H$ and $H_0$ with operator norm bounded by $M$, our certification protocol distinguishes whether $\\|H-H_0\\|_F\\geqε$ or $\\|H-H_0\\|_F\\leq O(ε/\\sqrt{n})$ with sample complexity $O(nM^2\\ln(1/δ)/ε^2)$ and total evolution time $O(nM\\ln(1/δ)/ε^2)$. We achieve this by evolving random stabilizer product states and performing adaptive single-qubit measurements based on a classically simulable hypothesis state. Extending this to continuous monitoring, we develop an online changepoint detection algorithm using the CUSUM procedure that achieves a detection delay time bound of $O(nM\\ln(M\\mathbb{E}_\\infty[T])/ε^2)$, matching the known asymptotically optimal scaling with respect to false alarm run time $\\mathbb{E}_\\infty[T]$. Our approach enables quantum devices to autonomously monitor their own calibration status without requiring ancillary systems, entangling operations, or a trusted reference device, offering a practical solution for robust quantum computing with contemporary noisy devices."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
+    "authors": "Zehai He, Wenyi Hong, Zhen Yang, Ziyang Pan, Mingdao Liu, Xiaotao Gu, Jie Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26648v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in large language models have improved the capabilities of coding agents, yet systematic evaluation of complex, end-to-end website development remains limited. To address this gap, we introduce Vision2Web, a hierarchical benchmark for visual website development, spanning from static UI-to-code generation, interactive multi-page frontend reproduction, to long-horizon full-stack website development. The benchmark is constructed from real-world websites and comprises a total of 193 tasks across 16 categories, with 918 prototype images and 1,255 test cases. To support flexible, thorough and reliable evaluation, we propose workflow-based agent verification paradigm based on two complementary components: a GUI agent verifier and a VLM-based judge. We evaluate multiple visual language models instantiated under different coding-agent frameworks, revealing substantial performance gaps at all task levels, with state-of-the-art models still struggling on full-stack development."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Who Checks the Checker? Enhancing Component-level Architectural SEU Fault Tolerance for End-to-End SoC Protection",
+    "authors": "Michael Rogenmoser, Philippe Sauter, Chen Wu, Angelo Garofalo, Luca Benini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26637v1",
+    "source": "arXiv",
+    "abstract": "Single-event upset (SEU) fault tolerance for systems-on-chip (SoCs) in radiation-heavy environments is often addressed by architectural fault-tolerance approaches protecting individual SoC components (e.g., cores, memories) in isolation. However, the protection of voting logic and interconnections among components is also critical, as these become single points of failure in the design. We investigate combining multiple fault-tolerance approaches targeting individual SoC components, including interconnect and voting logic to ensure end-to-end SoC-level architectural SEU fault tolerance, while minimizing implementation area overheads. Enforcing an overlap between the protection methods ensures hardening of the whole design without gaps, while curtailing overheads. We demonstrate our approach on a RISC-V microcontroller SoC. SEU fault-tolerance is assessed with simulation-based fault injection. Overheads are assessed with full physical implementation. Tolerance to over 99.9% of faults in both RTL and implemented netlist is demonstrated. Furthermore, the design exhibits 22% lower implementation overhead compared to a single global fault-tolerance method, such as fine-grained triplication."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "An Online Approach for Entanglement Verification Using Classical Shadows",
+    "authors": "Marwa Marso, Sabrina Herbst, Jadwiga Wilkens, Vincenzo De Maio, Ivona Brandic, Richard Kueng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26602v1",
+    "source": "arXiv",
+    "abstract": "Quantum measurements are slow, while classical processors are fast, yet existing hybrid protocols never exploit this asymmetry. In this work, we propose an alternative formulation of classical estimators as online algorithms that are updated incrementally upon obtaining a new sample. Classical shadows are the natural fit for this approach: designed around the principle of measuring first and asking questions later, each snapshot is a self-contained classical description that can be processed immediately and independently. As a first demonstration, we focus on mixed state entanglement verification via PT-moments, moments of the partially transposed density matrix that provide experimentally accessible sufficient conditions for entanglement. We construct two unbiased online estimators that together characterize the fundamental challenge between memory footprint and per-shot computational cost: one scales to large systems at low moment order, the other handles high moment orders at the expense of memory exponential in system size. The online estimator certifies entanglement reliably and, by exploiting all $\\binom{T}{m}$ combinations of snapshots, requires fewer samples than state-of-the-art baselines, turning entanglement detection from a purely offline diagnostic into a protocol that runs concurrently with the experiment."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Shaping Credibility Judgments in Human-GenAI Partnership via Weaker LLMs: A Transactive Memory Perspective on AI Literacy",
+    "authors": "Md Touhidul Islam, Mahir Akgun, Syed Billah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26522v1",
+    "source": "arXiv",
+    "abstract": "Generative AI (GenAI) is increasingly used as a knowledge partner in higher education, raising the need for instructional designs that emphasize AI literacy practices such as evaluating output credibility and maintaining human accountability. Existing AI literacy frameworks focus more on what learners should do than on how these practices are enacted in routine student-GenAI collaboration. We address this gap by framing student-GenAI interaction as a transactive memory partnership, where credibility regulates reliance and verification. To make this process visible during coursework, we used a weaker large language model (LLM): small enough to run on most students' computers during class, helpful enough to support learning, but not so capable that it removes the need for verification. In an undergraduate STEM course, students were randomly assigned to one of three conditions across repeated activities: reflection-first (think first, then consult AI), verification-required (use AI, then evaluate the output), or control (unrestricted use). Students completed a transactive memory survey at three time points (N = 42). Weighted credibility diverged by condition over time. ANCOVA controlling for baseline credibility showed a condition effect at mid-semester, F(2, 38) = 4.02, p = .026, partial eta squared = .175, and a stronger effect at post-intervention, F(2, 38) = 5.48, p = .008, partial eta squared = .224; adjusted means were lowest in reflection-first, intermediate in verification-required, and highest in control. Parallel analyses of specialization and coordination were not significant. These findings suggest that workflow sequencing, deliberate use of weaker LLMs, and accountability cues embedded in assignment instructions can recalibrate students' credibility judgments in GenAI use, with reflection-first producing the strongest downward shift in reliance."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+    "authors": "Jesse Barkley, Rumi Loghmani, Amir Barati Farimani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26512v1",
+    "source": "arXiv",
+    "abstract": "Existing methods for text-to-CAD generation either operate in a single pass with no geometric verification or rely on lossy visual feedback that cannot resolve dimensional errors. We present CADSmith, a multi-agent pipeline that generates CadQuery code from natural language. It then undergoes an iterative refinement process through two nested correction loops: an inner loop that resolves execution errors and an outer loop grounded in programmatic geometric validation. The outer loop combines exact measurements from the OpenCASCADE kernel (bounding box dimensions, volume, solid validity) with holistic visual assessment from an independent vision-language model Judge. This provides both the numerical precision and the high-level shape awareness needed to converge on the correct geometry. The system uses retrieval-augmented generation over API documentation rather than fine-tuning, maintaining a current database as the underlying CAD library evolves. We evaluate on a custom benchmark of 100 prompts in three difficulty tiers (T1 through T3) with three ablation configurations. Against a zero-shot baseline, CADSmith achieves a 100% execution rate (up from 95%), improves the median F1 score from 0.9707 to 0.9846, the median IoU from 0.8085 to 0.9629, and reduces the mean Chamfer Distance from 28.37 to 0.74, demonstrating that closed-loop refinement with programmatic geometric feedback substantially improves the quality and reliability of LLM-generated CAD models."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Hong-Ou-Mandel test to verify indistinguishability of the states emitted from a quantum key distribution transmitter implementing decoy Bennett-Brassard 1984 protocol",
+    "authors": "Toshiya Tajima, Akihisa Tomita, Atsushi Okamoto",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26488v1",
+    "source": "arXiv",
+    "abstract": "Quantum Key Distribution (QKD) systems require rigorous verification of device properties to ensure implementation security. A critical requirement is the indistinguishability of transmitted pulses encoded by different modulation patterns, as distinguishability through non-encoded degrees of freedom could enable undetected eavesdropping. We present a practical method for testing pulse indistinguishability in QKD transmitters based on Hong-Ou-Mandel (HOM) interference. We establish the theoretical equivalence between the SWAP test and HOM measurement for characterizing quantum state fidelity, demonstrating that HOM visibility directly relates to the trace of density matrix products for phase-randomized weak coherent pulses. We experimentally validated this approach using a high-speed QKD transmitter implementing the decoy BB84 protocol with time-bin encoding at 1.25 GHz. HOM interference was measured between adjacent pulses prepared in different Bennett-Brassard 1984 states (X0, X1, Y0, Y1) using superconducting nanowire single-photon detectors. The observed HOM visibility was approximately 0.3 across all state combinations, with no statistically significant differences detected. These results confirm that modulation does not compromise pulse indistinguishability in our transmitter. The HOM test provides a practical, quantum-optical method for security certification of QKD systems without requiring assumptions about specific degrees of freedom, using only standard fiber-optic components and single-photon detectors."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Beyond Banning AI: A First Look at GenAI Governance in Open Source Software Communities",
+    "authors": "Wenhao Yang, Runzhi He, Minghui Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26487v1",
+    "source": "arXiv",
+    "abstract": "Generative AI (GenAI) is playing an increasingly important role in open source software (OSS). Beyond completing code and documentation, GenAI is increasingly involved in issues, pull requests, code reviews, and security reports. Yet, cheaper generation does not mean cheaper review - and the resulting maintenance burden has pushed OSS projects to experiment with GenAI-specific rules in contribution guidelines, security policies, and repository instructions, even including a total ban on AI-assisted contributions. However, governing GenAI in OSS is far more than a ban-or-not question. The responses remain scattered, with neither a shared governance framework in practice nor a systematic understanding in research. Therefore, in this paper, we conduct a multi-stage analysis on various qualitative materials related to GenAI governance retrieved from 67 highly visible OSS projects. Our analysis identifies recurring concerns across contribution workflows, derives three governance orientations, and maps out 12 governance strategies and their implementation patterns. We show that governing GenAI in OSS extends well beyond banning - it requires coordinated responses across accountability, verification, review capacity, code provenance, and platform infrastructure. Overall, our work distills dispersed community practices into a structured overview, providing a conceptual baseline for researchers and a practical reference for maintainers and platform designers."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Maintaining Difficulty: A Margin Scheduler for Triplet Loss in Siamese Networks Training",
+    "authors": "Roberto Sprengel Minozzo Tomchak, Oge Marques, Lucas Garcia Pedroso, Luiz Eduardo Oliveira, Paulo Lisboa de Almeida",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26389v1",
+    "source": "arXiv",
+    "abstract": "The Triplet Margin Ranking Loss is one of the most widely used loss functions in Siamese Networks for solving Distance Metric Learning (DML) problems. This loss function depends on a margin parameter μ, which defines the minimum distance that should separate positive and negative pairs during training. In this work, we show that, during training, the effective margin of many triplets often exceeds the predefined value of μ, provided that a sufficient number of triplets violating this margin is observed. This behavior indicates that fixing the margin throughout training may limit the learning process. Based on this observation, we propose a margin scheduler that adjusts the value of μ according to the proportion of easy triplets observed at each epoch, with the goal of maintaining training difficulty over time. We show that the proposed strategy leads to improved performance when compared to both a constant margin and a monotonically increasing margin scheme. Experimental results on four different datasets show consistent gains in verification performance."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Restore, Assess, Repeat: A Unified Framework for Iterative Image Restoration",
+    "authors": "I-Hsiang Chen, Isma Hadji, Enrique Sanchez, Adrian Bulat, Sy-Yen Kuo, Radu Timofte, Georgios Tzimiropoulos, Brais Martinez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26385v1",
+    "source": "arXiv",
+    "abstract": "Image restoration aims to recover high quality images from inputs degraded by various factors, such as adverse weather, blur, or low light. While recent studies have shown remarkable progress across individual or unified restoration tasks, they still suffer from limited generalization and inefficiency when handling unknown or composite degradations. To address these limitations, we propose RAR, a Restore, Assess and Repeat process, that integrates Image Quality Assessment (IQA) and Image Restoration (IR) into a unified framework to iteratively and efficiently achieve high quality image restoration. Specifically, we introduce a restoration process that operates entirely in the latent domain to jointly perform degradation identification, image restoration, and quality verification. The resulting model is fully trainable end to end and allows for an all-in-one assess and restore approach that dynamically adapts the restoration process. Also, the tight integration of IQA and IR into a unified model minimizes the latency and information loss that typically arises from keeping the two modules disjoint, (e.g. during image and/or text decoding). Extensive experiments show that our approach consistent improvements under single, unknown and composite degradations, thereby establishing a new state-of-the-art."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Auditing Blockchain Innovations: Technical Challenges Beyond Traditional Finance",
+    "authors": "Shayan Eskandari, Leid Zejnilovic, Jeremy Clark",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26361v1",
+    "source": "arXiv",
+    "abstract": "Blockchain technology introduces asset types and custody mechanisms that fundamentally break traditional financial auditing paradigms. This paper presents an autoethnographic analysis of cryptoasset auditing challenges, build on top of prior research on a comprehensive framework addressing existence, ownership, valuation, and internal control verification. Drawing from lived experience implementing blockchain systems as an engineer, smart contract auditor, and CTO of a publicly traded cryptoasset firm, we demonstrate how autoethnographic methodology becomes necessary for understanding technical complexities that external analysis cannot capture. Through detailed examination of token airdrops, multi-signature smart contracts, and real-time on-chain reporting, we provide experimental approaches and common scenarios that auditing firms can analyze to address blockchain innovations currently considered technically insurmountable."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Reflect to Inform: Boosting Multimodal Reasoning via Information-Gain-Driven Verification",
+    "authors": "Shuai Lv, Chang Liu, Feng Tang, Yujie Yuan, Aojun Zhou, Kui Zhang, Xi Yang, Yangqiu Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26348v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) achieve strong multimodal reasoning performance, yet we identify a recurring failure mode in long-form generation: as outputs grow longer, models progressively drift away from image evidence and fall back on textual priors, resulting in ungrounded reasoning and hallucinations. Interestingly, Based on attention analysis, we find that MLLMs have a latent capability for late-stage visual verification that is present but not consistently activated. Motivated by this observation, we propose Visual Re-Examination (VRE), a self-evolving training framework that enables MLLMs to autonomously perform visual introspection during reasoning without additional visual inputs. Rather than distilling visual capabilities from a stronger teacher, VRE promotes iterative self-improvement by leveraging the model itself to generate reflection traces, making visual information actionable through information gain. Extensive experiments across diverse multimodal benchmarks demonstrate that VRE consistently improves reasoning accuracy and perceptual reliability, while substantially reducing hallucinations, especially in long-chain settings. Code is available at https://github.com/Xiaobu-USTC/VRE."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Hermes Seal: Zero-Knowledge Assurance for Autonomous Vehicle Communications",
+    "authors": "Munawar Hasan, Apostol Vassilev, Edward Griffor, Thoshitha Gamage",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26343v1",
+    "source": "arXiv",
+    "abstract": "The application of zero-knowledge proofs (ZKPs) in autonomous systems is an emerging area of research, motivated by the growing need for regulatory compliance, transparent auditing, and trustworthy operation in decentralized environments. zk-SNARK is a powerful cryptographic tool that allows a party (the prover) to prove to another party (the verifier) that a statement about its own internal state is true, without revealing sensitive or proprietary data about that state. This paper proposes Hermes Seal: a zk-SNARK-based ZKP framework for enabling privacy-preserving, verifiable communication in vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) networks. The framework allows autonomous systems to generate cryptographic proofs of perception and decision-related computations without revealing proprietary models, sensor data, or internal system states, thereby supporting interoperability across heterogeneous autonomous systems. We present two real-world case studies implemented and empirically evaluated within our framework, demonstrating a step toward verifiable autonomous system information exchanges. The first demonstrates real-time proof generation and verification, achieving 8 ms proof generation and 1 ms verification on a GPU, while the second evaluates the performance of an autonomous vehicle perception stack, enabling proof of computation without exposing proprietary or confidential data. Furthermore, the framework can be integrated into AV perception stacks to facilitate verifiable interoperability and privacy-preserving cooperative perception. The demonstration code for this project is open source, available on Github."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "A Benchmark for Evaluating Repository-Level Code Agents with Intermediate Reasoning on Feature Addition Task",
+    "authors": "Shuhan Liu, Zhiyi Zhao, Xing Hu, Kui Liu, Xiaohu Yang, Xin Xia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26337v1",
+    "source": "arXiv",
+    "abstract": "Repository-level code agents have shown strong promise in real-world feature addition tasks, making reliable evaluation of their capabilities increasingly important. However, existing benchmarks primarily evaluate these agents as black boxes based on final test correctness, providing limited insight into how they reason and where failures arise. To address this limitation, we introduce RACE-bench, a reasoning-augmented benchmark for evaluating code agents on repository-level feature addition tasks. RACE-bench contains 528 real-world feature addition instances from 12 open-source repositories. Each instance is paired with executable patch verification and structured intermediate reasoning ground truth covering issue understanding, file localization, implementation tasks, and step decomposition. Based on this design, we introduce a dual-track evaluation framework that jointly measures patch correctness and intermediate reasoning quality. We evaluate three representative repository-level code agents on RACE-bench. On the full benchmark, Resolved Rates range from 29% to 70% across different agents. Our reasoning-level analysis further shows that while current agents perform well at understanding high-level intent, their performance degrades substantially when translating intent into concrete implementation steps. We also find that apply-success but test-fail cases exhibit lower reasoning recall (35.7% decrease) and higher over-prediction (94.1% increase) compared to successful cases. These findings highlight the importance of evaluating repository-level code agents beyond final patch correctness by examining the quality of their reasoning processes."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Verify Claimed Text-to-Image Models via Boundary-Aware Prompt Optimization",
+    "authors": "Zidong Zhao, Yihao Huang, Qing Guo, Tianlin Li, Anran Li, Kailong Wang, Jin Song Dong, Geguang Pu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26328v1",
+    "source": "arXiv",
+    "abstract": "As Text-to-Image (T2I) generation becomes widespread, third-party platforms increasingly integrate multiple model APIs for convenient image creation. However, false claims of using official models can mislead users and harm model owners' reputations, making model verification essential to confirm whether an API's underlying model matches its claim. Existing methods address this by using verification prompts generated by official model owners, but the generation relies on multiple reference models for optimization, leading to high computational cost and sensitivity to model selection. To address this problem, we propose a reference-free T2I model verification method called Boundary-aware Prompt Optimization (BPO). It directly explores the intrinsic characteristics of the target model. The key insight is that although different T2I models produce similar outputs for normal prompts, their semantic boundaries in the embedding space (transition zones between two concepts such as \"corgi\" and \"bagel\") are distinct. Prompts near these boundaries generate unstable outputs (e.g., sometimes a corgi and sometimes a bagel) on the target model but remain stable on other models. By identifying such boundary-adjacent prompts, BPO captures model-specific behaviors that serve as reliable verification cues for distinguishing T2I models. Experiments on five T2I models and four baselines demonstrate that BPO achieves superior verification accuracy."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Proofdoors and Efficiency of CDCL Solvers",
+    "authors": "Sunidhi Singh, Vincent Liew, Marc Vinyals, Vijay Ganesh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26286v1",
+    "source": "arXiv",
+    "abstract": "We propose a new parameter called proofdoor in an attempt to explain the efficiency of CDCL SAT solvers over formulas derived from circuit (esp., arithmetic) verification applications. Informally, given an unsatisfiable CNF formula F over n variables, a proofdoor decomposition consists of a chunking of the clauses into A1, . . . , Ak together with a sequence of interpolants connecting these chunks. Intuitively, a proofdoor captures the idea that an unsatisfiable formula can be refuted by reasoning chunk by chunk, while maintaining only a summary of the information (i.e., interpolants) gained so far for subsequent reasoning steps. We prove several theorems in support of the proposition that proofdoors can explain the efficiency of CDCL solvers for some class of circuit verification problems. First, we show that formulas with small proofdoors (i.e., where each interpolant is O(n) sized, each chunk Ai has small pathwidth, and each interpolant clause has at most O(log(n)) backward dependency on the previous interpolant) have short resolution (Res) proofs. Second, we show that certain configurations of CDCL solvers can compute such proofs in time polynomial in n. Third, we show that commutativity (miter) formulas over floating-point addition have small proofdoors and hence short Res proofs, even though they have large pathwidth. Fourth, we characterize the limits of the proofdoor framework by connecting proofdoors to the partially ordered resolution proof system: we show that a poor decomposition of arithmetic miter instances can force exponentially large partially ordered resolution proofs, even when a different decomposition (i.e., small proofdoors) permits short proofs."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "SuperDP: Differential Privacy Refutation via Supermartingales",
+    "authors": "Krishnendu Chatterjee, Ehsan Kafshdar Goharshady, Đorđe Žikelić",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26215v1",
+    "source": "arXiv",
+    "abstract": "Differential privacy (DP) has established itself as one of the standards for ensuring privacy of individual data. However, reasoning about DP is a challenging and error-prone task, hence methods for formal verification and refutation of DP properties have received significant interest in recent years. In this work, we present a novel method for automated formal refutation of $ε$-DP. Our method refutes $ε$-DP by searching for a pair of inputs together with a non-negative function over outputs whose expected value on these two inputs differs by a significant amount. The two inputs and the non-negative function over outputs are computed simultaneously, by utilizing upper expectation supermartingales and lower expectation submartingales from probabilistic program analysis, which we leverage to introduce a sound and complete proof rule for $ε$-DP refutation. To the best of our knowledge, our method is the first method for $ε$-DP refutation to offer the following four desirable features: (1)~it is fully automated, (2)~it is applicable to stochastic mechanisms with sampling instructions from both discrete and continuous distributions, (3)~it provides soundness guarantees, and (4)~it provides semi-completeness guarantees. Our experiments show that our prototype tool SuperDP achieves superior performance compared to the state of the art and manages to refute $ε$-DP for a number of challenging examples collected from the literature, including ones that were out of the reach of prior methods."
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Gaussian Shannon: High-Precision Diffusion Model Watermarking Based on Communication",
+    "authors": "Yi Zhang, Hongbo Huang, Liang-Jie Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26167v1",
+    "source": "arXiv",
+    "abstract": "Diffusion models generate high-quality images but pose serious risks like copyright violation and disinformation. Watermarking is a key defense for tracing and authenticating AI-generated content. However, existing methods rely on threshold-based detection, which only supports fuzzy matching and cannot recover structured watermark data bit-exactly, making them unsuitable for offline verification or applications requiring lossless metadata (e.g., licensing instructions). To address this problem, in this paper, we propose Gaussian Shannon, a watermarking framework that treats the diffusion process as a noisy communication channel and enables both robust tracing and exact bit recovery. Our method embeds watermarks in the initial Gaussian noise without fine-tuning or quality loss. We identify two types of channel interference, namely local bit flips and global stochastic distortions, and design a cascaded defense combining error-correcting codes and majority voting. This ensures reliable end-to-end transmission of semantic payloads. Experiments across three Stable Diffusion variants and seven perturbation types show that Gaussian Shannon achieves state-of-the-art bit-level accuracy while maintaining a high true positive rate, enabling trustworthy rights attribution in real-world deployment. The source code have been made available at: https://github.com/Rambo-Yi/Gaussian-Shannon"
+  },
+  {
+    "date": "2026-03-27",
+    "title": "Bridging Pixels and Words: Mask-Aware Local Semantic Fusion for Multimodal Media Verification",
+    "authors": "Zizhao Chen, Ping Wei, Ziyang Ren, Huan Li, Xiangru Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.26052v1",
+    "source": "arXiv",
+    "abstract": "As multimodal misinformation becomes more sophisticated, its detection and grounding are crucial. However, current multimodal verification methods, relying on passive holistic fusion, struggle with sophisticated misinformation. Due to 'feature dilution,' global alignments tend to average out subtle local semantic inconsistencies, effectively masking the very conflicts they are designed to find. We introduce MaLSF (Mask-aware Local Semantic Fusion), a novel framework that shifts the paradigm to active, bidirectional verification, mimicking human cognitive cross-referencing. MaLSF utilizes mask-label pairs as semantic anchors to bridge pixels and words. Its core mechanism features two innovations: 1) a Bidirectional Cross-modal Verification (BCV) module that acts as an interrogator, using parallel query streams (Text-as-Query and Image-as-Query) to explicitly pinpoint conflicts; and 2) a Hierarchical Semantic Aggregation (HSA) module that intelligently aggregates these multi-granularity conflict signals for task-specific reasoning. In addition, to extract fine-grained mask-label pairs, we introduce a set of diverse mask-label pair extraction parsers. MaLSF achieves state-of-the-art performance on both the DGM4 and multimodal fake news detection tasks. Extensive ablation studies and visualization results further verify its effectiveness and interpretability."
+  },
+  {
+    "date": "2026-03-26",
+    "title": "FireBridge: Cycle-Accurate Hardware + Firmware Co-Verification for Modern Accelerators",
+    "authors": "G Abarajithan, Zhenghua Ma, Francesco Restuccia, Ryan Kastner",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2603.25969v1",
+    "source": "arXiv",
+    "abstract": "Hardware-firmware integration is becoming a productivity bottleneck due to the increasing complexity of accelerators, characterized by intricate memory hierarchies and firmware-intensive execution. While numerous verification techniques focus on early-stage, approximate modeling of such systems to speed up initial development, developers still rely heavily on FPGA emulation to integrate firmware with RTL/HLS hardware, resulting in significant delays in debug iterations and time-to-market. We present a fast, cycle-accurate co-verification framework that bridges production firmware and RTL/gate-level hardware. FIREBRIDGE enables firmware debugging, profiling, and verification in seconds using standard simulators such as VCS, Vivado Xsim, or Xcelium, by compiling the firmware for x86 and bridging it with simulated subsystems via randomized memory bridges. Our approach provides off-chip data movement profiling, memory congestion emulation, and register-level protocol testing, which are critical for modern accelerator verification. We demonstrate a speedup of up to 50x in debug iteration over the conventional FPGA-based flow for system integration between RTL/HLS and production firmware on various types of accelerators, such as systolic arrays and CGRAs, while ensuring functional equivalence. FIREBRIDGE accelerates system integration by supporting robust co-verification of hardware and firmware, and promotes a structured, parallel development workflow tailored for teams building heterogeneous computing platforms."
+  }
+]
