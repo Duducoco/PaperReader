@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-4-2",
+    "title": "Fewer Hallucinations, More Verification: A Three-Stage LLM-Based Framework for ASR Error Correction",
+    "authors": "Yangui Fang, Baixu Chen, Jing Peng, Xu Li, Yu Xi, Chengwei Zhang, Guohui Zhong",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434775",
+    "source": "IEEE",
+    "abstract": "Automatic Speech Recognition (ASR) error correction aims to correct recognition errors while preserving accurate text. Although traditional approaches demonstrate moderate effectiveness, LLMs offer a paradigm that eliminates the need for training and labeled data. However, directly using LLMs will encounter hallucinations problem, which may lead to the modification of the correct text. To address this problem, we propose the Reliable LLM Correction Framework (RLLMCF), which consists of three stages: (1) error pre-detection, (2) chain-of-thought sub-tasks iterative correction, and (3) reasoning process verification. The advantage of our method is that it does not require additional information or fine-tuning of the model, and ensures the correctness of the LLM correction under multipass programming. Experiments on AISHELL-1, AISHELL-2, and Librispeech show that the GPT-4o model enhanced by our framework achieves $21 \\%, 11 \\%, 9 \\%$, and $11.4 \\%$ relative reductions in CER/WER."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "RE-LLM: Refining Empathetic Speech-LLM Responses by Integrating Emotion Nuance",
+    "authors": "Jing-Han Chen, Bo-Hao Su, Ya-Tse Wu, Chi-Chun Lee",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434613",
+    "source": "IEEE",
+    "abstract": "With generative AI advancing, empathy in human-AI interaction is essential. While prior work focuses on emotional reflection, emotional exploration—key to deeper engagement—remains overlooked. Existing LLMs rely on text which captures limited emotion nuances. To address this, we propose RE-LLM, a speech-LLM integrating dimensional emotion embeddings and auxiliary learning. Experiments show statistically significant gains in empathy metrics almost across three datasets. RE-LLM relatively improves the Emotional Reaction score by 14.79% and $\\mathbf{6. 7 6} \\boldsymbol{\\%}$ compared to text-only and speech-LLM baselines on ESD. Notably, it raises the Exploration score by 35.42% and 3.91% on IEMOCAP, 139.28% and 9.83% on ESD and 60.95% and 22.64% on MSP-PODCAST relatively. It also boosts unweighted accuracy by 5.4% on IEMOCAP, 2.3% on ESD and $\\mathbf{6. 9 \\%}$ on MSP-PODCAST in speech emotion recognition. These results highlight the enriched emotional understanding and improved empathetic response generation of RE-LLM."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "PAR-LLM: Peak-Aware Residual LLM over Anchor for EV Charging Station Demand",
+    "authors": "Junhwa Hwang, Associate, Dongjun Suh",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3679962",
+    "source": "IEEE",
+    "abstract": "Urban electric vehicle (EV) charging data display strong station-level heterogeneity, nonstationary patterns, and sharp peaks with long-tail surges. These characteristics undermine conventional forecasting: zone-specific models face data scarcity and unstable scales; global models dilute cross-zone differences; and graph or sequence architectures handle abrupt surges and drift under distribution shifts poorly. Therefore, we propose Peak-Aware Residual LLM (PAR-LLM) framework decoupling dense numerical learning from context-conditioned adjustments. A global long short-term memory (LSTM) with zone embeddings provides a stable baseline by learning short-term dynamics from normalized station data. A risk localizer identifies critical periods including sudden surges or daily peaks by analyzing historical volatility. For flagged pairs, a selective large language model (LLM) adjusts residuals based on recent statistics and calendar cues. These adjustments are merged with the numeric anchor through a discrepancy-aware weighting scheme, while guardrails constrain temporal variation and apply a soft reversion toward hour-of-day baselines to maintain physical plausibility. Evaluated on the Urban EV hourly dataset (120 zones) across three forecast horizons, the hybrid method outperforms graph-, sequence-, and tree-based models while keeping interventions sparse and latency controlled. The design addresses scale mismatch, cross-zone heterogeneity, and peak sensitivity by limiting language-driven corrections to high-risk hours and relying on the numeric anchor for routine behavior."
+  },
+  {
+    "date": "2026-4-2",
+    "title": ": How Layout Quality and Prompting Influence LLM Understanding of Graph Drawings_supp1-3677884.pdf",
+    "authors": "Fabrizio Montecchiani",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tvcg.2026.3677884/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Efficient Scaling for LLM-based ASR",
+    "authors": "Bingshen Mu, Yiwen Shao, Kun Wei, Dong Yu, Lei Xie",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434774",
+    "source": "IEEE",
+    "abstract": "Large language model (LLM)-based automatic speech recognition (ASR) achieves strong performance but often incurs high computational costs. This work investigates how to obtain the best LLM-ASR performance efficiently. Through comprehensive and controlled experiments, we find that pretraining the speech encoder before integrating it with the LLM leads to significantly better scaling efficiency than the standard practice of joint post-training of LLM-ASR. Based on this insight, we propose a new multi-stage LLM-ASR training strategy, EFIN: Encoder First Integration. Among all training strategies evaluated, EFIN consistently delivers better performance (relative to 21.1 % CERR) with significantly lower computation budgets ($49.9 \\%$ FLOPs). Furthermore, we derive a scaling law that approximates ASR error rates as a computation function, providing practical guidance for LLM-ASR scaling."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "LLM-Based Dictation Detection from Doctor-Patient Conversations",
+    "authors": "Siyuan Chen, Mojtaba Kadkhodaie Elyaderani, Jing Su, Susanne Burger, Thomas Schaaf",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434612",
+    "source": "IEEE",
+    "abstract": "Clinical ambient documentation systems need to detect dictation from doctor-patient conversations to ensure critical statements are properly recorded. Existing methods struggle to detect dictation interleaved within conversational exchanges. We investigated LLM-based approaches: zero-shot, multi-shot, manual/auto prompt tuning, and supervised fine-tuning for medical dictation detection. A word alignment-based method is proposed to mitigate ASR errors and LLM hallucinations while performing utterance- and word-level evaluation. Supervised finetuning of a Qwen2-1.5B LLM achieves the best performance: $\\mathbf{9 0. 4 \\%}$ utterance-level and $\\mathbf{8 6. 8 \\%}$ word-level macro F1 on manual transcripts, with minimal loss on ASR. This surpasses Claude 3.5 Sonnet with auto-tuned prompts and multiple in-context learning examples, though the latter requires much less training data. We release model outputs on the ACI-Bench dataset, providing the first open resource for the evaluation of medical dictation detection."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Enhancing Dialogue Annotation with Speaker Characteristics Leveraging a Frozen LLM",
+    "authors": "Thomas Thebaud, Yen-Ju Lu, Matthew Wiesner, Peter Viechnicki, Najim Dehak",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434755",
+    "source": "IEEE",
+    "abstract": "In dialogue transcription pipelines, Large Language Models (LLMs) are frequently employed in post-processing to improve grammar, punctuation, and readability. We explore a complementary post-processing step: enriching transcribed dialogues by adding metadata tags for speaker characteristics such as age, gender, and emotion. Some of the tags are global to the entire dialogue, while some are time-variant. Our approach couples frozen audio foundation models, such as Whisper or WavLM, with a frozen LLAMA language model to infer these speaker attributes, without requiring task-specific fine-tuning of either model. Using lightweight, efficient connectors to bridge audio and language representations, we achieve competitive performance on speaker profiling tasks while preserving modularity and speed. Additionally, we demonstrate that a frozen LLAMA model can compare x-vectors directly, achieving an Equal Error Rate of 8.8% in some scenarios."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "The Dynamics of Bias Diffusion in Multi-Agent LLM Framework",
+    "authors": "Murugappan Venkatachalam, Vijaya Dhaarshini V, Chitra P",
+    "publish": "2025 IEEE 32nd International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW)",
+    "url": "https://doi.org/10.1109/hipcw66559.2025.00111",
+    "source": "IEEE",
+    "abstract": "The objective of this study is to examine and understand bias propagation mechanisms in multi-agent Large Language Model (LLM) systems. With LLM based agents increasingly deployed in areas such as recruitment, education, and healthcare, understanding how bias spreads through their interactions has become an important research concern."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "AsyncVoice Agent: Real-Time Explanation for LLM Planning and Reasoning",
+    "authors": "Yueqian Lin, Zhengmian Hu, Jayakumar Subramanian, Qinsi Wang, Nikos Vlassis, Hai “Helen” Li, Yiran Chen",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434747",
+    "source": "IEEE",
+    "abstract": "Effective human-AI collaboration on complex reasoning tasks requires that users understand and interact with the model’s process, not just receive an output. However, the monolithic text from methods like Chain-of-Thought (CoT) prevents this, as current interfaces lack real-time verbalization and robust user barge-in. We present AsyncVoice Agent, a system whose asynchronous architecture decouples a streaming LLM backend from a conversational voice frontend. This design allows narration and inference to run in parallel, empowering users to interrupt, query, and steer the model’s reasoning process at any time. Objective benchmarks show this approach reduces interaction latency by more than 600 $\\times$ compared to monolithic baselines while ensuring high fidelity and competitive task accuracy. By enabling a two-way dialogue with a model’s thought process, AsyncVoice Agent offers a new paradigm for building more effective, steerable, and trustworthy human-AI systems for high-stakes tasks.<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup>"
+  },
+  {
+    "date": "2026-4-2",
+    "title": "LLaS2S: LLM-based Speech-to-Speech Translation with Context-Aware Duration Prediction Units",
+    "authors": "Xi Chen, Songyang Zhang, Satoshi Nakamura",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3677650",
+    "source": "IEEE",
+    "abstract": "In an increasingly interconnected world, speech-to-speech translation (S2ST) has become essential for overcoming language barriers. While traditional S2ST systems rely on cascaded pipelines of Automatic Speech Recognition (ASR), Neural Machine Translation (NMT), and Text-to-Speech (TTS) modules, recent advancements in neural networks have begun to offer both potential and efficiency for direct S2ST frameworks. These approaches achieve the mapping from source speech to target speech at the semantic level but face challenges due to limited parallel S2ST training data. To address these limitations, this work explores the integration of large language models (LLMs) into direct S2ST systems. We propose LLaS2S, a novel architecture that combines semantic tokens and textual context to enhance discrete unit duration prediction, improving both semantic accuracy and translation fluency. We propose <bold xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LLaS2S</b>, a <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">L</u>arge <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">La</u>nguage Model-based <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">S</u>peech-to-<underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">S</u>peech translation system that leverages semantic tokens and textual context to improve discrete acoustic unit duration prediction. We present an S2ST pipeline built on a pre-trained LLM: Whisper with lightweight adapters supplies speech representations to the LLM, and a unit generator plus unit vocoder synthesize waveforms from its hidden states. To enable efficient adaptation, we employ parameter-efficient fine-tuning with Low-Rank Adaptation (LoRA) for optimization. Extensive experiments on the CVSS-C dataset demonstrate that LLaS2S outperforms existing baselines Extensive experiments on the CVSS-C dataset demonstrate that LLaS2S outperforms existing baselines demonstrating improvements in translated speech quality, with higher ASR-BLEU and BLASER scores indicating more accurate preservation of source meaning and fewer major semantic errors. More specifically, with the same amount of S2ST supervision data, the proposed models of similar size achieved better ASR-BLEU than the baseline, and the average ASR-BLEU2 across CVSS-C language pairs increased by 2 points to 26.5. Our findings highlight the potential of LLMs in S2ST, offering practical insights into architectural design, training strategies, and tokenization choices."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Omni-R1: Do You Really Need Audio to Fine-Tune Your Audio LLM?",
+    "authors": "Andrew Rouditchenko, Saurabhchand Bhati, Edson Araujo, Samuel Thomas, Hilde Kuehne, Rogerio Feris, James Glass",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434780",
+    "source": "IEEE",
+    "abstract": "We propose Omni-R1 which fine-tunes a recent multi-modal LLM, Qwen2.5-Omni, on an audio question answering dataset with the reinforcement learning method GRPO. This leads to new State-of-the-Art performance on the recent MMAU and MMAR benchmarks. On MMAU, Omni-R1 achieves the highest accuracies on the sounds, music, speech, and overall average categories, both on the Test-mini and Test-full splits. To understand the performance improvement, we tested models both with and without audio and found that much of the performance improvement from GRPO could be attributed to better text-based reasoning. We also made a surprising discovery that fine-tuning without audio on a text-only dataset was effective at improving the audio-based performance."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Bridging the Modality Gap: Softly Discretizing Audio Representation for LLM-based Automatic Speech Recognition",
+    "authors": "Mu Yang, Szu-Jui Chen, Jiamin Xie, H. L. John Hansen",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434631",
+    "source": "IEEE",
+    "abstract": "One challenge of integrating speech input with large language models (LLMs) stems from the discrepancy between the continuous nature of audio data and the discrete tokenbased paradigm of LLMs. To mitigate this gap, we propose a method for integrating vector quantization (VQ) into LLM-based automatic speech recognition (ASR). Using the LLM embedding table as the VQ codebook, the VQ module aligns the continuous representations from the audio encoder with the discrete LLM inputs, enabling the LLM to operate on a discretized audio representation that better reflects the linguistic structure. We further create a “soft discretization” of the audio representation by updating the codebook and performing a weighted sum over the codebook embeddings. Empirical results demonstrate that our proposed method significantly improves upon the LLMbased ASR baseline, particularly in out-of-domain conditions. This work highlights the potential of soft discretization as a modality bridge in LLM-based ASR."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Robot Confirmation Generation and Action Planning Using Long-context Q-Former Integrated with Multimodal LLM",
+    "authors": "Chiori Hori, Yoshiki Masuyama, Siddarth Jain, Radu Corcodel, Devesh Jha, Diego Romeres, Jonathan Le Roux",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434641",
+    "source": "IEEE",
+    "abstract": "Human-robot collaboration towards a shared goal requires robots to understand human action and interaction with the surrounding environment. This paper focuses on humanrobot interaction (HRI) based on human-robot dialogue that relies on the robot action confirmation and action step generation using multimodal scene understanding. The state-of-theart approach uses multimodal transformers to generate robot action steps aligned with robot action confirmation from a single clip showing a task composed of multiple micro steps. Although actions towards a long-horizon task depend on each other throughout an entire video, the current approaches mainly focus on clip-level processing and do not leverage long-context information. This paper proposes a long-context Q-former incorporating left and right context dependency in full videos. Furthermore, this paper proposes a text-conditioning approach to feed text embeddings directly into the LLM decoder to mitigate the high abstraction of the information in text by Q-former. Experiments with the YouCook2 corpus show that the accuracy of confirmation generation is a major factor in the performance of action planning. Furthermore, we demonstrate that the longcontext Q-former improves the confirmation and action planning by integrating VideoLLaMA3."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Leveraging LLM for Enhanced Incident Management in Wireless Networks",
+    "authors": "Md. Shamim Towhid, Nasik Sami Khan, Nashid Shahriar, Massimo Tornatore, Raouf Boutaba, Aladdin Saleh",
+    "publish": "IEEE Journal on Selected Areas in Communications",
+    "url": "https://doi.org/10.1109/jsac.2026.3680419",
+    "source": "IEEE",
+    "abstract": "Incident management in telecommunications networks generates large volumes of incident management tickets (IMTs), each containing heterogeneous and often unstructured text describing service outages, performance degradations, or security issues. Accurately categorizing these IMTs into multiple impact and cause labels is essential for rapid diagnosis and resolution. However, existing rule-based and standard language-model-based approaches struggle with noisy data, overlapping categories, and limited contextual understanding. To address these challenges, we propose two complementary solutions for automated multi-label classification of IMTs. To mitigate the effects of noisy data and overlapping categories, the first solution employs an encoder-based language model (i.e., Bidirectional Encoder Representations from Transformers (BERT)) with a relevance-guided feature selection strategy that focuses on semantically meaningful attributes. To improve contextual understanding and label consistency, the second solution leverages a decoder-based large language model (i.e., Phi-3.5) enhanced with retrieval-augmented generation (RAG) and a novel probabilistic re-ranking mechanism to refine label predictions. Experimental results show that our encoder-only model achieves an F1 score of 79.20%, while our RAG-enhanced decoder model achieves 94.98%, outperforming traditional machine learning models and BERT baselines by 23.59% and 29% on average, respectively. These findings demonstrate that combining fine-tuned language models with intelligent retrieval and re-ranking significantly improves classification accuracy in incident management systems."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Digital Twins Reimagined: Zero-Day LLM-Powered Moving Target Defense In-Depth for Real-Time CPS",
+    "authors": "Rajarshi Mukherjee, Mohamed Azab, Thidapat Chantem",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3679937",
+    "source": "IEEE",
+    "abstract": "The Internet of Things (IoT) revolution has profoundly transformed modern industries by embedding connected digital devices across critical sectors such as energy, pharmaceuticals, and manufacturing. Such interconnected devices together form Cyber-Physical Systems (CPS), complex structures that enable computation to directly control physical processes. These systems increasingly rely on automation and real-time control to enhance efficiency, productivity, and safety. However, this growing dependence on connectivity has significantly expanded the attack surface, exposing mission-critical infrastructure to sophisticated cyber threats. Among the most dangerous are zero-day vulnerabilities, which are unknown flaws in software or firmware, and zero-day design flaws, which are deeply embedded architectural weaknesses often undetectable by conventional verification methods. Traditional defense mechanisms, largely based on static rules or known threat signatures, are ill-equipped to detect these stealthy and evolving threats - especially in real-time systems, where even minor delays in detection or response can result in catastrophic outcomes. To overcome these limitations, this work presents a transformative security framework that leverages the reasoning and generative capabilities of Large Language Models (LLMs) to construct an intelligent, redundant digital twin of the operational system. Unlike traditional replicas, the LLM-driven digital twin is logically and architecturally isolated, making it inaccessible to attackers targeting the primary system. Crucially, the twin is not a static copy: it is dynamically synthesized and continuously restructured by the LLM to ensure a heterogeneous and evolving codebase. This ensures functional alignment with the physical system while introducing deliberate software diversity, thereby increasing attacker uncertainty and resilience to shared exploits. The central hypothesis of the framework is that semantic deviations between the decisions or behaviors of the digital twin and its physical counterpart can serve as reliable indicators of anomalous activity—whether stemming from external attacks or latent design flaws. By monitoring this divergence, the system facilitates the early detection of zero-day threats and supports real-time mitigation strategies, thereby significantly strengthening the resilience of critical infrastructure. Implementation results demonstrated the effectiveness and efficiency of the proposed approach."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Evaluating CXL Memory Pooling for Scalable LLM Inference",
+    "authors": "Sai Krishna Vemuri, Venkata Ravi Shankar Jonnalagadda, Ajay Joshi, Rohit Sindhu, Vijay Kumar Motagi, Amandeep Singh, Praveen Kumar Rukmangada, Sachin Shaw, Vishal Tanna",
+    "publish": "2025 IEEE 32nd International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW)",
+    "url": "https://doi.org/10.1109/hipcw66559.2025.00021",
+    "source": "IEEE",
+    "abstract": "Large-context LLM inference increasingly faces bottlenecks in Key-Value (KV) cache capacity and bandwidth rather than raw compute. While on-package HBM delivers exceptional bandwidth, its capacity is limited; when long prompts or multi-tenant workloads exceed the HBM KV cache budget, operators turn to re-computation or offloading to system memory or storage—both with significant performance costs. Compute Express Link (CXL) introduces a flexible, low-latency, load/store memory tier that can be pooled and shared across nodes using PCIe 6.0 PHY, multi-level switching, and fabric features in CXL 3.x. This paper examines when and why CXL memory pooling helps LLM serving: we explain the inference pipeline and KV cache growth dynamics, discuss architectural advantages and deployment considerations for CXL pooling, and present a compact analytical model of per-accelerator throughput vs. context length that compares HBM-only with re-computation, HBM + distributed DDR, and HBM + CXL pooled memory. With realistic parameters from contemporary GPUs, 800 GbE networks, and CXL fabrics, our model shows that CXL pooling sustains substantially higher throughput beyond the HBM-fit regime (e.g., ≥ 100 k tokens) by reducing per-segment residual stalls compared to distributed DDR, while avoiding the severe collapse of re-computation. We close with sensitivity analyses, limitations, and guidance for deploying CXL fabrics in long-context serving stacks."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "Wireless Human Activity Recognition: A Survey of Recent Advances and a Novel Zero-Shot LLM-Based Inference Framework",
+    "authors": "Zheng Xing, Xuhui Zhang, Wenchao Liu, Huijun Xing, Weibing Zhao, Guanghui Zhang, Shuqiang Wang, Yanyan Shen, Kim-Fung Tsang",
+    "publish": "IEEE Transactions on Consumer Electronics",
+    "url": "https://doi.org/10.1109/tce.2026.3680161",
+    "source": "IEEE",
+    "abstract": "With the rapid advancement of wireless sensing technologies, wireless human activity recognition (HAR) has emerged as a prominent, low-cost, and non-intrusive research area over the past decade. Despite these advances, wireless HAR remains fundamentally challenged by device heterogeneity, human body diversity, and environmental variability, factors that typically require large-scale labeled radio frequency data for model training. This paper first presents a systematic review of representative techniques and publicly available datasets, followed by a comprehensive analysis of recent progress and persistent limitations of HAR. Building on these insights, we propose a novel zero-shot inference framework based on large language models that directly infers human activities from channel state information sequences. By eliminating the need for activity labels from the target dataset, the framework enables faster adaptation to device heterogeneity, human body diversity, and environmental variability. Specifically, we integrate activity model knowledge, which captures the physical interactions between human motion and wireless signal propagation, and global temporal knowledge, which encodes coarse-grained temporal similarity patterns, into structured chain-of-thought prompts. This design empowers the framework to perform semantic and physical reasoning over raw wireless observations. Extensive experimental results demonstrate that the proposed approach achieves robust zero-shot performance, attaining an accuracy of 0.93 and an F1-score of 0.94. This performance significantly outperforms existing zero-shot state-of-the-arts."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "MACS: LLM-Enhanced Multi-AUV Collaborative Search Scheme via Multi-agent Reinforcement Learning",
+    "authors": "Peijun Dong, Hang Tao, Hanjiang Luo, Wei Shi, Jingjing Wang, Jiehan Zhou",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3680391",
+    "source": "IEEE",
+    "abstract": "Multiple autonomous underwater vehicles (AUVs) integrating multi-agent reinforcement learning (MARL) have made remarkable achievement and widely utilized for underwater search and rescue missions. However, to perform collaborative multi-AUV search efficiently in harsh and communication-constrained marine environments, challenging issues need to be addressed, such as cold-start problem and poor collaborative information fusion. To deal with these challenges, this paper proposes a MACS scheme which integrates the reasoning capabilities of large language models (LLMs) into the MARL framework to solve the cold-start problem and facilitate efficient collaborative information fusion. In MACS, to alleviate the cold-start problem of MARL caused by the lack of prior knowledge, we design a LEMACS algorithm, which leverages LLMs to infer the initial Target Probability Map (TPM) from search tasks and underwater terrain information to accelerate the search process. Furthermore, to address low efficient data exchange and fusion issue under unstable channel, we propose a LLM-enhanced link selection algorithm LESCL which integrates TPM information and AUV link metrics to optimize the link selection procedure to enhance multi-AUV cooperative search information fusion. To validate the effectiveness of the proposed algorithms, we conduct extensive numerical simulations using open-source regional underwater terrain data, such as coral reef map dataset of Arizona State University (ASU) and the terrain data of the Dongsha Islands, and the simulation results indicate that MACS achieves a search success rate of up to 95% in emergency multi-AUV cooperative search missions. The code is available at https://github.com/SDUST-smartocean/MACS."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "VERSA-v2: A Modular and Scalable Toolkit for Speech and Audio Evaluation with Expanded Metrics, Visualization, and LLM Integration",
+    "authors": "Jiatong Shi, Bo-Hao Su, Shikhar Bharadwaj, Yiwen Zhao, Shih-Heng Wang, Jionghao Hang, Haoran Wang, Wei Wang, Wenhao Feng, Yuxun Tang, Nezih Topaloğlu, Siddhant Arora, Jinchuan Tian, William Chen, Hye-jin Shim, Wangyou Zhang, Wen-Chin Huang, Shinji Watanabe",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434734",
+    "source": "IEEE",
+    "abstract": "We present VERSA-v2, a major upgrade of the Versatile Evaluation of Speech and Audio (VERSA) toolkit for standardized and scalable evaluation across speech, audio, and music tasks. It features a modular, object-oriented architecture that simplifies metric integration and now supports over 100 metrics, organized into curated task-specific packs. VERSA-v2 also introduces interactive visualizations, per-metric profiling, and prompt-based evaluation using both text- and audio-based large language models (LLMs). These advancements make VERSA-v2 a robust, extensible, and LLM-enabled platform for comprehensive and interpretable speech and audio evaluation."
+  },
+  {
+    "date": "2026-4-2",
+    "title": "SV-Mixer: Replacing the Transformer Encoder with Lightweight MLPs for Self-Supervised Model Compresison in Speaker Verification",
+    "authors": "Jungwoo Heo, Hyun-Seo Shin, Chan-Yeong Lim, Kyo-Won Koo, Seung-Bin Kim, Jisoo Son, Ha-Jin Yu",
+    "publish": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+    "url": "https://doi.org/10.1109/asru65441.2025.11434806",
+    "source": "IEEE",
+    "abstract": "Self-supervised learning (SSL) has pushed speaker verification accuracy close to state-of-the-art levels, but the Transformer backbones used in most SSL encoders hinder on-device and real-time deployment. Prior compression work trims layer depth or width yet still inherits the quadratic cost of self-attention. We propose SV-Mixer, the first fully MLPbased student encoder for SSL distillation. SV-Mixer replaces Transformer with three lightweight modules: Multi-Scale Mixing for multi-resolution temporal features, Local-Global Mixing for frame-to-utterance context, and Group Channel Mixing for spectral subspaces. Distilled from WavLM, SV-Mixer outperforms a Transformer student by $14.6 \\%$ while cutting parameters and GMACs by over half, and at $\\mathbf{7 5 \\%}$ compression, it closely matches the teacher’s performance. Our results show that attention-free SSL students can deliver teacher-level accuracy with hardwarefriendly footprints, opening the door to robust on-device speaker verification."
+  }
+]
