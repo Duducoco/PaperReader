@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-04-07",
+    "title": "Paper Circle: An Open-source Multi-agent Research Discovery and Analysis Framework",
+    "authors": "Komal Kumar, Aman Chadha, Salman Khan, Fahad Shahbaz Khan, Hisham Cholakkal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06170v1",
+    "source": "arXiv",
+    "abstract": "The rapid growth of scientific literature has made it increasingly difficult for researchers to efficiently discover, evaluate, and synthesize relevant work. Recent advances in multi-agent large language models (LLMs) have demonstrated strong potential for understanding user intent and are being trained to utilize various tools. In this paper, we introduce Paper Circle, a multi-agent research discovery and analysis system designed to reduce the effort required to find, assess, organize, and understand academic literature. The system comprises two complementary pipelines: (1) a Discovery Pipeline that integrates offline and online retrieval from multiple sources, multi-criteria scoring, diversity-aware ranking, and structured outputs; and (2) an Analysis Pipeline that transforms individual papers into structured knowledge graphs with typed nodes such as concepts, methods, experiments, and figures, enabling graph-aware question answering and coverage verification. Both pipelines are implemented within a coder LLM-based multi-agent orchestration framework and produce fully reproducible, synchronized outputs including JSON, CSV, BibTeX, Markdown, and HTML at each agent step. This paper describes the system architecture, agent roles, retrieval and scoring methods, knowledge graph schema, and evaluation interfaces that together form the Paper Circle research workflow. We benchmark Paper Circle on both paper retrieval and paper review generation, reporting hit rate, MRR, and Recall at K. Results show consistent improvements with stronger agent models. We have publicly released the website at https://papercircle.vercel.app/ and the code at https://github.com/MAXNORM8650/papercircle."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning",
+    "authors": "Juekai Lin, Yun Zhu, Honglin Lin, Sijing Li, Tianwei Lin, Zheng Liu, Xiaoyang Wang, Wenqiao Zhang, Lijun Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06079v1",
+    "source": "arXiv",
+    "abstract": "Graphics Program Synthesis is pivotal for interpreting and editing visual data, effectively facilitating the reverse-engineering of static visuals into editable TikZ code. While TikZ is the de facto standard for scientific schematics due to its programmatic flexibility, its requirement for rigorous spatial precision presents a significant challenge for Multimodal Large Language Models. Progress is currently stifled by two primary gaps: (1) Data Quality Gap: existing image-TikZ corpora often lack strict executability and reliable visual alignment; (2) Evaluation Gap: a lack of benchmarks for both structural and visual fidelity. To address these, we present a closed-loop framework featuring: SciTikZ-230K, a large-scale, high-quality dataset from our Execution-Centric Data Engine covering 11 diverse scientific disciplines; SciTikZ-Bench, a multifaceted benchmark spanning from basic geometric constructs to intricate hierarchical schematics to evaluate both visual fidelity and structural logic. To further broaden the scope of visual-code optimization methodology, we introduce a novel Dual Self-Consistency Reinforcement Learning optimization paradigm, which utilizes Round-Trip Verification to penalize degenerate code and boost overall self-consistency. Empowered by these, our trained model SciTikZer-8B achieves state-of-the-art performance, consistently outperforming proprietary giants like Gemini-2.5-Pro and massive models like Qwen3-VL-235B-A22B-Instruct."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "BiMind: A Dual-Head Reasoning Model with Attention-Geometry Adapter for Incorrect Information Detection",
+    "authors": "Zhongxing Zhang, Emily K. Vraga, Jisu Huh, Jaideep Srivastava",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06022v1",
+    "source": "arXiv",
+    "abstract": "Incorrect information poses significant challenges by disrupting content veracity and integrity, yet most detection approaches struggle to jointly balance textual content verification with external knowledge modification under collapsed attention geometries. To address this issue, we propose a dual-head reasoning framework, BiMind, which disentangles content-internal reasoning from knowledge-augmented reasoning. In BiMind, we introduce three core innovations: (i) an attention geometry adapter that reshapes attention logits via token-conditioned offsets and mitigates attention collapse; (ii) a self-retrieval knowledge mechanism, which constructs an in-domain semantic memory through kNN retrieval and injects retrieved neighbors via feature-wise linear modulation; (iii) the uncertainty-aware fusion strategies, including entropy-gated fusion and a trainable agreement head, stabilized by a symmetric Kullback-Leibler agreement regularizer. To quantify the knowledge contributions, we define a novel metric, Value-of-eXperience (VoX), to measure instance-wise logit gains from knowledge-augmented reasoning. Experiment results on public datasets demonstrate that our BiMind model outperforms advanced detection approaches and provides interpretable diagnostics on when and why knowledge matters."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "A Formal Security Framework for MCP-Based AI Agents: Threat Taxonomy, Verification Models, and Defense Mechanisms",
+    "authors": "Nirajan Acharya, Gaurav Kumar Gupta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05969v1",
+    "source": "arXiv",
+    "abstract": "The Model Context Protocol (MCP), introduced by Anthropic in November 2024 and now governed by the Linux Foundation's Agentic AI Foundation, has rapidly become the de facto standard for connecting large language model (LLM)-based agents to external tools and data sources, with over 97 million monthly SDK downloads and more than 177000 registered tools. However, this explosive adoption has exposed a critical gap: the absence of a unified, formal security framework capable of systematically characterizing, analyzing, and mitigating the diverse threats facing MCP-based agent ecosystems. Existing security research remains fragmented across individual attack papers, isolated benchmarks, and point defense mechanisms. This paper presents MCPSHIELD, a comprehensive formal security framework for MCP-based AI agents. We make four principal contributions: (1) a hierarchical threat taxonomy comprising 7 threat categories and 23 distinct attack vectors organized across four attack surfaces, grounded in the analysis of over 177000 MCP tools; (2) a formal verification model based on labeled transition systems with trust boundary annotations that enables static and runtime analysis of MCP tool interaction chains; (3) a systematic comparative evaluation of 12 existing defense mechanisms, identifying coverage gaps across our threat taxonomy; and (4) a defense in depth reference architecture integrating capability based access control, cryptographic tool attestation, information flow tracking, and runtime policy enforcement. Our analysis reveals that no existing single defense covers more than 34 percent of the identified threat landscape, whereas MCPSHIELD's integrated architecture achieves theoretical coverage of 91 percent. We further identify seven open research challenges that must be addressed to secure the next generation of agentic AI systems."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "FinReporting: An Agentic Workflow for Localized Reporting of Cross-Jurisdiction Financial Disclosures",
+    "authors": "Fan Zhang, Mingzi Song, Rania Elbadry, Yankai Chen, Shaobo Wang, Yixi Zhou, Xunwen Zheng, Yueru He, Yuyang Dai, Georgi Georgiev, Ayesha Gull, Muhammad Usman Safder, Fan Wu, Liyuan Meng, Fengxian Ji, Junning Zhao, Xueqing Peng, Jimin Huang, Yu Chen, Xue, Liu, Preslav Nakov, Zhuohan Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05966v1",
+    "source": "arXiv",
+    "abstract": "Financial reporting systems increasingly use large language models (LLMs) to extract and summarize corporate disclosures. However, most assume a single-market setting and do not address structural differences across jurisdictions. Variations in accounting taxonomies, tagging infrastructures (e.g., XBRL vs. PDF), and aggregation conventions make cross-jurisdiction reporting a semantic alignment and verification challenge. We present FinReporting, an agentic workflow for localized cross-jurisdiction financial reporting. The system builds a unified canonical ontology over Income Statement, Balance Sheet, and Cash Flow, and decomposes reporting into auditable stages including filing acquisition, extraction, canonical mapping, and anomaly logging. Rather than using LLMs as free-form generators, FinReporting deploys them as constrained verifiers under explicit decision rules and evidence grounding. Evaluated on annual filings from the US, Japan, and China, the system improves consistency and reliability under heterogeneous reporting regimes. We release an interactive demo supporting cross-market inspection and structured export of localized financial statements. Our demo is available at https://huggingface.co/spaces/BoomQ/FinReporting-Demo . The video describing our system is available at https://www.youtube.com/watch?v=f65jdEL31Kk"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Context-Value-Action Architecture for Value-Driven Large Language Model Agents",
+    "authors": "TianZe Zhang, Sirui Sun, Yuhang Xie, Xin Zhang, Zhiqiang Wu, Guojie Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05939v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have shown promise in simulating human behavior, yet existing agents often exhibit behavioral rigidity, a flaw frequently masked by the self-referential bias of current \"LLM-as-a-judge\" evaluations. By evaluating against empirical ground truth, we reveal a counter-intuitive phenomenon: increasing the intensity of prompt-driven reasoning does not enhance fidelity but rather exacerbates value polarization, collapsing population diversity. To address this, we propose the Context-Value-Action (CVA) architecture, grounded in the Stimulus-Organism-Response (S-O-R) model and Schwartz's Theory of Basic Human Values. Unlike methods relying on self-verification, CVA decouples action generation from cognitive reasoning via a novel Value Verifier trained on authentic human data to explicitly model dynamic value activation. Experiments on CVABench, which comprises over 1.1 million real-world interaction traces, demonstrate that CVA significantly outperforms baselines. Our approach effectively mitigates polarization while offering superior behavioral fidelity and interpretability."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Reinforcement Learning with Negative Tests as Completeness Signal for Formal Specification Synthesis",
+    "authors": "Zhechong Huang, Zhao Zhang, Zeyu Sun, Huifeng Sun, Yingfei Xiong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05820v1",
+    "source": "arXiv",
+    "abstract": "The specification synthesis task aims to automatically generate specifications, together with any necessary auxiliary verification annotations, for existing programs. This task is important because such specifications serve as behavioral contracts that support modular reasoning and reusable verification across a codebase. At the same time, it remains challenging because verifier-only feedback is fundamentally incomplete: passing verification establishes soundness, but cannot distinguish weak specifications from strong ones. What is missing is a fine-grained signal for specification completeness. We present SpecRL, a reinforcement learning framework for specification synthesis in Dafny. SpecRL introduces a self-contained pipeline that generates negative tests, i.e., input-output pairs that can never be produced by the program. We use the fraction of these negative tests rejected by a candidate specification as a signal of specification completeness, which is integrated into the reward for RL training. Experiments across four model sizes show that SpecRL improves both specification strength and verification success over SFT and RL with a binary specification-strength reward, generalizes to an out-of-distribution benchmark, and remains competitive on that unseen benchmark compared to much larger general-purpose LLMs."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "From Points to Sets: Set-Based Safety Verification in the Latent Space",
+    "authors": "Wenyuan Wu, Peng Xie, Zhen Zhang, Yanliang Huang, Karl H. Johansson, Amr Alanwar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05799v1",
+    "source": "arXiv",
+    "abstract": "We extend latent representation methods for safety control design to set-valued states. Recent work has shown that barrier functions designed in a learned latent space can transfer safety guarantees back to the original system, but these methods evaluate certificates at single state points, ignoring state uncertainty. A fixed safety margin can partially address this but cannot adapt to the anisotropic and time-varying nature of the uncertainty gap across different safety constraints. We instead represent the system state as a zonotope, propagate it through the encoder to obtain a latent zonotope, and evaluate certificates over the worst case of the entire set. On a 16-dimensional quadrotor suspended-load gate passage task, set-valued evaluation achieves 5/5 collision-free passages, compared to 1/5 for point-based evaluation and 2/5 for a fixed-margin baseline. Set evaluation reports safety in 44.4% of per-head evaluations versus 48.5% for point-based, and this greater conservatism detects 4.1% blind spots where point evaluation falsely certifies safety, enabling earlier corrective control. The safety gap between point and set evaluation varies up to $12\\times$ across certificate heads, explaining why no single fixed margin suffices and confirming the need for per-head, per-timestep adaptation, which set evaluation provides by construction."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Identifying Influential N-grams in Confidence Calibration via Regression Analysis",
+    "authors": "Shintaro Ozaki, Wataru Hashimoto, Hidetaka Kamigaito, Katsuhiko Hayashi, Taro Watanabe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05757v1",
+    "source": "arXiv",
+    "abstract": "While large language models (LLMs) improve performance by explicit reasoning, their responses are often overconfident, even though they include linguistic expressions demonstrating uncertainty. In this work, we identify what linguistic expressions are related to confidence by applying the regression method. Specifically, we predict confidence of those linguistic expressions in the reasoning parts of LLMs as the dependent variables and analyze the relationship between a specific $n$-gram and confidence. Across multiple models and QA benchmarks, we show that LLMs remain overconfident when reasoning is involved and attribute this behavior to specific linguistic information. Interestingly, several of the extracted expressions coincide with cue phrases intentionally inserted on test-time scaling to improve reasoning performance. Through our test on causality and verification that the extracted linguistic information truly affects confidence, we reveal that confidence calibration is possible by simply suppressing those overconfident expressions without drops in performance."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Proceedings 17th Workshop on Programming Language Approaches to Concurrency and Communication-cEntric Software",
+    "authors": "Kirstin Peters, Lorenzo Gheri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05737v1",
+    "source": "arXiv",
+    "abstract": "This volume contains the proceedings of PLACES 2026, the 17th edition of the Workshop on Programming Language Approaches to Concurrency and Communication-cEntric Software. The workshop is scheduled to take place in Turin, Italy, on April 11, 2026, as a satellite event of ETAPS, the European Joint Conferences on Theory and Practice of Software. PLACES offers a forum for exchanging new ideas on how to address the challenges of concurrent and distributed programming and how to improve the foundations of modern and future computer applications. PLACES welcomes researchers from various fields, and its topics include the design of new programming languages, models for concurrent and distributed systems, type systems, program verification, and applications in various areas (e.g., microservices, sensor networks, blockchains, event processing, business process management)."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Publish and Perish: How AI-Accelerated Writing Without Proportional Verification Investment Degrades Scientific Knowledge",
+    "authors": "Seok Joon Kwon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05714v1",
+    "source": "arXiv",
+    "abstract": "Artificial intelligence tools are accelerating manuscript production far faster than peer review capacity can expand. Applying the theory of constraints from manufacturing science, we formalize this asymmetry through a minimal two-variable ordinary differential equation model coupling review queue evolution and verification quality degradation via an endogenous, queue-pressure-driven review AI adoption mechanism. The causal chain is: writing AI adoption increases submissions, growing the review queue, which drives reviewer AI adoption under pressure, degrading verification quality and reducing net knowledge output. Under empirically informed parameters (writing acceleration γ = 2.0, review acceleration δ = 0.5), the model predicts a deceptive honeymoon where knowledge output peaks at 1.10K0 (circa 2026), followed by paradox onset at t = 6 years (2028) and long-term degradation to 0.68K0 (32% loss), approaching a steady state of 0.60K0 (40% loss). The critical condition for net benefit is δ > γ; the current operating point lies deep in the paradox regime. Empirical validation against NeurIPS, ICLR, arXiv, and bioRxiv submission data shows qualitative consistency with observed post-ChatGPT acceleration patterns. Policy analysis reveals that only combined interventions such as review infrastructure investment paired with institutional quality standards can restore positive knowledge production."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "SemLink: A Semantic-Aware Automated Test Oracle for Hyperlink Verification using Siamese Sentence-BERT",
+    "authors": "Guan-Yan Yang, Wei-Ling Wen, Shu-Yuan Ku, Farn Wang, Kuo-Hui Yeh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05711v1",
+    "source": "arXiv",
+    "abstract": "Web applications rely heavily on hyperlinks to connect disparate information resources. However, the dynamic nature of the web leads to link rot, where targets become unavailable, and more insidiously, semantic drift, where a valid HTTP 200 connection exists, but the target content no longer aligns with the source context. Traditional verification tools, which primarily function as crash oracles by checking HTTP status codes, often fail to detect semantic inconsistencies, thereby compromising web integrity and user experience. While Large Language Models (LLMs) offer semantic understanding, they suffer from high latency, privacy concerns, and prohibitive costs for large-scale regression testing. In this paper, we propose SemLink, a novel automated test oracle for semantic hyperlink verification. SemLink leverages a Siamese Neural Network architecture powered by a pre-trained Sentence-BERT (SBERT) backbone to compute the semantic coherence between a hyperlink's source context (anchor text, surrounding DOM elements, and visual features) and its target page content. To train and evaluate our model, we introduce the Hyperlink-Webpage Positive Pairs (HWPPs) dataset, a rigorously constructed corpus of over 60,000 semantic pairs. Our evaluation demonstrates that SemLink achieves a Recall of 96.00%, comparable to state-of-the-art LLMs (GPT-5.2), while operating approximately 47.5 times faster and requiring significantly fewer computational resources. This work bridges the gap between traditional syntactic checkers and expensive generative AI, offering a robust and efficient solution for automated web quality assurance."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Time-Domain Voice Identity Morphing (TD-VIM): A Signal-Level Approach to Morphing Attacks on Speaker Verification Systems",
+    "authors": "Aravinda Reddy PN, Raghavendra Ramachandra, K. Sreenivasa Rao, Pabitra Mitra, Kunal Singh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05683v1",
+    "source": "arXiv",
+    "abstract": "In biometric systems, it is a common practice to associate each sample or template with a specific individual. Nevertheless, recent studies have demonstrated the feasibility of generating \"morphed\" biometric samples capable of matching multiple identities. These morph attacks have been recognized as potential security risks for biometric systems. However, most research on morph attacks has focused on biometric modalities that operate within the image domain, such as the face, fingerprints, and iris. In this work, we introduce Time-domain Voice Identity Morphing (TD-VIM), a novel approach for voice-based biometric morphing. This method enables the blending of voice characteristics from two distinct identities at the signal level, creating morphed samples that present a high vulnerability for speaker verification systems. Leveraging the Multilingual Audio-Visual Smartphone database, our study created four distinct morphed signals based on morphing factors and evaluated their effectiveness using a comprehensive vulnerability analysis. To assess the security impact of TD-VIM, we benchmarked our approach using the Generalized Morphing Attack Potential (G-MAP) metric, measuring attack success across two deep-learning-based Speaker Verification Systems (SVS) and one commercial system, Verispeak. Our findings indicate that the morphed voice samples achieved a high attack success rate, with G-MAP values reaching 99.40% on iPhone-11 and 99.74% on Samsung S8 in text-dependent scenarios, at a false match rate of 0.1%."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Efficient Construction of Reachability Graphs for Petri Net Product Lines",
+    "authors": "Elena Gómez-Martínez, José Ignacio Requeno Jarabo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05657v1",
+    "source": "arXiv",
+    "abstract": "This paper presents a set of algorithms for computing the reachability graph of Petri Net Product Lines (PNPLs). These algorithms address the combined challenges of concurrency and variability that arise from product-line configurations. The proposed approach integrates symbolic state representations with family-based variability handling to generate a compact, parameterised reachability graph that captures behaviour across all products without exhaustive product enumeration. The main contributions are threefold. First, we introduce a symbolic state encoding adapted to PNPL semantics. Second, we define a family-preserving successor generation procedure that applies feature constraints during exploration. Third, we propose reduction techniques to mitigate state-space explosion, including on-the-fly merging of equivalent symbolic states and selective abstraction of irrelevant state details. We prove soundness and completeness of the construction with respect to standard per-product semantics and analyse computational complexity. An implementation integrated into our modelling tool demonstrates substantial savings in memory and time compared with naive product-based exploration, while preserving diagnostic and verification capabilities. The results indicate that the method enables practical reachability analysis for realistically sized product-line models, thereby facilitating verification and design-space exploration in configurable concurrent systems."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "See the Forest for the Trees: Loosely Speculative Decoding via Visual-Semantic Guidance for Efficient Inference of Video LLMs",
+    "authors": "Yicheng Ji, Jun Zhang, Jinpeng Chen, Cong Wang, Lidan Shou, Gang Chen, Huan Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05650v1",
+    "source": "arXiv",
+    "abstract": "Video Large Language Models (Video-LLMs) excel in video understanding but suffer from high inference latency during autoregressive generation. Speculative Decoding (SD) mitigates this by applying a draft-and-verify paradigm, yet existing methods are constrained by rigid exact-match rules, severely limiting the acceleration potential. To bridge this gap, we propose LVSpec, the first training-free loosely SD framework tailored for Video-LLMs. Grounded in the insight that generation is governed by sparse visual-relevant anchors (mandating strictness) amidst abundant visual-irrelevant fillers (permitting loose verification), LVSpec employs a lightweight visual-relevant token identification scheme to accurately pinpoint the former. To further maximize acceptance, we augment this with a position-shift tolerant mechanism that effectively salvages positionally mismatched but semantically equivalent tokens. Experiments demonstrate that LVSpec achieves high fidelity and speed: it preserves >99.8 of target performance while accelerating Qwen2.5-VL-32B by 2.70x and LLaVA-OneVision-72B by 2.94x. Notably, it boosts the mean accepted length and speedup ratio by 136% and 35% compared to SOTA training-free SD methods for Video-LLMs."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Thermodynamics, Phase Transitions, and Geodesic Structure of $F(R)-$Phantom BTZ Black Holes",
+    "authors": "Behzad Eslam Panah, Bilel Hamil, Manuel E. Rodrigues",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05646v1",
+    "source": "arXiv",
+    "abstract": "This paper investigates phantom BTZ black holes within the high-curvature gravity theory framework, specifically using a special case of power-Maxwell theory, which functions as a nonlinear electrodynamics source called $F(R)-$conformally invariant Maxwell gravity. We examine how the phantom or anti-Maxwell field affects the structure of these black holes and how the theory's parameters influence their horizon structure. Additionally, we derive the conserved and thermodynamic potentials associated with these black holes, thereby establishing their conformance to the foundational first law of thermodynamics. Next, the stability characteristics of BTZ black holes endowed with phantom and Maxwell fields are explored under canonical and grand canonical ensemble conditions by inspecting their heat capacity and Gibbs free energy profiles. This assessment reveals how the phantom field and scalar curvature affect these stability regions. We then perform a rigorous analytical verification of the Ehrenfest equations to determine whether the critical behavior of the phantom BTZ black hole corresponds to a second-order phase transition. Our results demonstrate adherence to both Ehrenfest relations, thereby confirming the occurrence of a second-order phase transition within the black hole system concurrent with the critical point. Furthermore, we explore the geodesic structure of the obtained solutions to analyze the motion of massive and massless test particles in the $F(R)$-phantom BTZ spacetime. The analysis demonstrates that stable timelike circular orbits exist only in the phantom regime for negative curvature backgrounds, while the phantom configuration also allows for stable circular photon orbits. These results underscore the significant influence of the phantom field and the $F(R)$ correction on the spacetime geometry and orbital dynamics."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Graph-Based Chain-of-Thought Pruning for Reducing Redundant Reflections in Reasoning LLMs",
+    "authors": "Hongyuan Yuan, Xinran He, Run Shao, Bolei He, Xianwei Xue, Mengke Chen, Qiutong Pan, Haiwei Wang, Haifeng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05643v1",
+    "source": "arXiv",
+    "abstract": "Extending CoT through RL has been widely used to enhance the reasoning capabilities of LLMs. However, due to the sparsity of reward signals, it can also induce undesirable thinking patterns such as overthinking, i.e., generating redundant intermediate reasoning content. In this work, we argue that a major source of such redundancy is inefficient reflection, which often manifests in two problematic patterns: Indiscriminate Reflection, where the model performs broad, low-impact checks throughout reasoning, and Repetitive Reflection, where it repeatedly re-verifies an already established conclusion. To address this, we introduce a graph-based CoT optimization framework. Specifically, we convert each linear CoT into a directed acyclic graph (DAG) with explicit dependency edges, and design a dual pruning strategy: branch-level pruning removes weakly contributing reflection branches, while depth-level pruning eliminates late-stage re-verification. We distill this behavior via a three-stage pipeline: (1) SFT to initialize the policy on pruned concise traces, (2) DPO to prefer correct but less redundant trajectories, and (3) GRPO with length penalty to jointly optimize answer correctness and efficiency. Experiments show that our approach reduces the average reasoning tokens by 42\\% while maintaining or improving accuracy."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Tunable superconductivity and spin density wave in La3Ni2O7/LaAlO3 thin films",
+    "authors": "Yu-Han Cao, Kai-Yue Jiang, Hong-Yan Lu, Da Wang, Qiang-Hua Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05590v1",
+    "source": "arXiv",
+    "abstract": "Recently, La3Ni2O7 thin film on the LaAlO3 substrate is shown to be superconducting, while the bulk La3Ni2O7 with the same in-plane lattice constant under pressure does not superconduct. This difference suggests the interlayer distance $d_{\\rm Ni-Ni}$ is crucial to control superconductivity, and its variation under pressure may tune the ground state sensitively. We investigate systematically the La3Ni2O7/LaAlO3 thin films in a reasonable range of $d_{\\rm Ni-Ni}$, by a combination of the first-principle calculations and the singular-mode functional renormalization group. For smaller (larger) $d_{\\rm Ni-Ni}$, the ground state is a C-type (G-type) spin density wave with spins coupled ferromagnetically (antiferromagnetically) across the two layers. Between the two phases, $s_\\pm$-wave superconductivity emerges with dominant pairings between nickel $3d_{3z^2-r^2}$ orbitals. The results explain the experimental superconductivity in the thin film under ambient pressure, and predict that the applied pressure will decrease the superconducting transition temperature, until the system enters the C-type spin density wave. Experimental verification would provide profound insights into the nature of electron correlations in this system, since the C-type spin density wave is achieved most naturally in the itinerant picture, while it would be hard in the local moment picture where spins are always coupled antiferromagnetically across the layers."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "ResearchEVO: An End-to-End Framework for Automated Scientific Discovery and Documentation",
+    "authors": "Zhe Zhao, Haibin Wen, Jiaming Ma, Jiachang Zhan, Tianyi Xu, Ye Wei, Qingfu Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05587v1",
+    "source": "arXiv",
+    "abstract": "An important recurring pattern in scientific breakthroughs is a two-stage process: an initial phase of undirected experimentation that yields an unexpected finding, followed by a retrospective phase that explains why the finding works and situates it within existing theory. We present ResearchEVO, an end-to-end framework that computationally instantiates this discover-then-explain paradigm. The Evolution Phase employs LLM-guided bi-dimensional co-evolution -- simultaneously optimizing both algorithmic logic and overall architecture -- to search the space of code implementations purely by fitness, without requiring any understanding of the solutions it produces. The Writing Phase then takes the best-performing algorithm and autonomously generates a complete, publication-ready research paper through sentence-level retrieval-augmented generation with explicit anti-hallucination verification and automated experiment design. To our knowledge, ResearchEVO is the first system to cover this full pipeline end to end: no prior work jointly performs principled algorithm evolution and literature-grounded scientific documentation. We validate the framework on two cross-disciplinary scientific problems -- Quantum Error Correction using real Google quantum hardware data, and Physics-Informed Neural Networks -- where the Evolution Phase discovered human-interpretable algorithmic mechanisms that had not been previously proposed in the respective domain literatures. In both cases, the Writing Phase autonomously produced compilable LaTeX manuscripts that correctly grounded these blind discoveries in existing theory via RAG, with zero fabricated citations."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Resource Implications of Different Encodings for Quantum Computational Fluid Dynamics",
+    "authors": "Hans A. Kösel, Roland Ewert, Jan W. Delfs",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.05577v1",
+    "source": "arXiv",
+    "abstract": "For quantum algorithms for problems in which the task is to compute an entire field of values, like e.g. computational fluid dynamics (CFD), it is often proposed amplitude encoding w.r.t. multiple qubits; however, the efforts implied by it for initialization and read-out are not addressed. This work is devoted specifically to this issue: It reviews different encoding schemes in quantum computing, discussing their computational costs for initialization and read-out as well as resulting aspects for their usage via minimal examples. The considerations in previous literature on the required computational resources for amplitude encoding w.r.t. multiple qubits are extended in the presented quantification by explicitly deducing the circuit depth that results for the decomposed initialization procedure of V. V. Shende et al. [1, 2] and deriving an upper bound for the necessary number of executions of a quantum algorithm to extract the encoded values with a specific accuracy. For these two results, an empirical verification via the means provided by IBM's quantum computing simulation framework $\\textit{Qiskit}$ [3] is given. In the framework of the study on the required number of runs to achieve a desired accuracy, it is however found that the derived upper bound, scaling like $ {\\tilde{n}^2} ~ {\\ln( {\\tilde{n}} )} $ with the number of encoded values $ {\\tilde{n}} $, is too conservative to be used for precise estimations. Therefore, a corresponding study of the required runs for the reference distribution of equal probabilities for all basis states is done in particular, which suggests $ {\\tilde{n}} ~ { \\ln( {\\tilde{n}} ) } $ as an empirical scaling law. Since the view regarding CFD applications is taken here, it is presented in particular that the insights from this work lead to a new encoding approach, which is proposed specifically for a quantum algorithm for the lattice Boltzmann method."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Design and Implementation of a 1x3 Router: From RTL to GDS II",
+    "authors": "B. Alekya Himabindu, K. Uday Sai",
+    "publish": "2025 6th International Conference on Smart Electronics and Communication (ICOSEC)",
+    "url": "https://doi.org/10.1109/icosec67334.2025.11459715",
+    "source": "IEEE",
+    "abstract": "This project focuses on the thorough physical design implementation of a 1x3 router, which is an essential part of communication systems and Network-on-Chip (NoC) architectures for effective data packet management. The main objective is to convert the router's logical representation (netlist) into a physical architecture that can be manufactured (GDSII). Starting with floorplanning to specify the chip area, power network, and positioning of crucial components like FIFO buffers and the Finite State Machine (FSM) controller, the physical design procedure consists of multiple steps. In order to minimize cable length and congestion while meeting time requirements and aiming for a balanced Power-Performance-Area (PPA) trade- off, placement optimization will be used.To create a strong clock distribution network with the least amount of clock skew and insertion delay possible, Clock Tree Synthesis (CTS) will be used. Then, using efficient routing algorithms, global and detailed routing will link all functional blocks and standard cells in accordance with the netlist. To guarantee manufacturability and functional equivalency, the final physical design will go through a rigorous physical verification process that includes Layout Versus Schematic (LVS) and Design Rule Checking (DRC). The creation of the GDSII file, which represents the final layout for manufacture, will be the project's climax. By fulfilling essential performance indicators and following design guidelines, this project seeks to provide a comprehensive and effective physical design implementation sequence for a 1x3 router."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Detection of LLM Hallucinations Using Late Internal Representations",
+    "authors": "Sakhawat Hossan, Jing Deng",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00214",
+    "source": "IEEE",
+    "abstract": "Despite the impressive capabilities of Large Language Models (LLMs), their tendency to generate hallucinations, i.e., factually incorrect or nonsensical content, remains a major challenge for reliable deployment, especially in high-stakes fields such as healthcare, law, and scientific research. Detecting and reducing these hallucinations is critical for building more trustworthy systems. In this work, we propose a hallucination detection framework using a custom-designed classifier architecture that leverages late internal representations from LLM. We explore three distinct approaches for classifier input: (i) features from the Multi-Layer Perceptron (MLP) blocks, (ii) features from the Attention blocks, and (iii) a combination of both. Experiments across eight different LLMs and different evaluator scores show that our classifier, termed LIR, consistently outperforms other state-of-the-art approaches in AUC, correlation with human annotations, and response generation time. Our results demonstrate the effectiveness of using late internal representations for hallucination detection and contribute to the development of standardized benchmarks to evaluate the reliability of generative models."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Active Authentication via Korean Keystrokes Under Varying LLM Assistance and Cognitive Contexts",
+    "authors": "Dong Hyun Roh, Rajesh Kumar",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00098",
+    "source": "IEEE",
+    "abstract": "Keystroke dynamics is a promising modality for active user authentication, but its effectiveness under varying LLM-assisted typing and cognitive conditions remains understudied. Using data from 50 users and cognitive labels from Bloom’s Taxonomy, we evaluate keystroke-based authentication in Korean across three realistic typing scenarios: bona fide composition, LLM content paraphrasing, and transcription. Our pipeline incorporates continuity-aware segmentation, feature extraction, and classification via SVM, MLP, and XGB. Results show that the system maintains reliable performance across varying LLM usages and cognitive contexts, with Equal Error Rates ranging from 5.1% to 10.4%. These findings demonstrate the feasibility of behavioral authentication under modern writing conditions and offer insights into designing more context-resilient models."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "DefectTwin: When LLM Meets Digital Twin for Railway Defect Inspection",
+    "authors": "Rahatara Ferdousi, M. Anwar Hossain, Chunsheng Yang, Abdulmotaleb El Saddik",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3681818",
+    "source": "IEEE",
+    "abstract": "A Digital Twin (DT) replicates objects, processes, or systems in real-time within cyberspace for various applications, such as railway defect inspection. Such an application can benefit from DTs when integrated with Artificial Intelligence (AI) by enabling advanced data analysis, predictive maintenance, and other capabilities. Defect inspection can integrate pre-trained Large Language Models (LLMs) into DT ecosystem as its AI component to simulate defects, thereby reducing the reliance on extensive real-world defect data. Mobile-friendly tools that leverage this AI integration can help railway operators identify and understand defects directly from video streams, images, or text. Motivated by this scope, we propose the DefectTwin ecosystem and its mobile application for railway defect inspection. DefectTwin employs a multimodal AI pipeline to analyze both seen and unseen visual defects. The multimodal processing integrates diverse input types to generate user-friendly responses, while an instant feedback mechanism (instaUF) reinforces this with real-time Quality-of-Experience (QoE) insights. We evaluated the proposed ecosystem on a mobile device and obtained better performance compared to traditional image generation tools with precision between 0.76 and 0.93 for text, image, and video inputs."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "LLM Chatbot for Autonomous User Support in High-Performance Computing (HPC)",
+    "authors": "Rajesh Pasupuleti, Ravi Vadapalli, Christopher Mader, Subhan Shakoor",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00226",
+    "source": "IEEE",
+    "abstract": "This manuscript represents a transformative approach to High-Performance Computing (HPC) operations and support through a Large Language Model (LLM)-based chatbot. The proposed system is designed to autonomously resolve up to 70% of commonly raised tickets, significantly reducing the operational workload and response times. By utilizing advanced fine-tuning methodologies on domain-specific HPC documentation, the chatbot ensures high accuracy, context relevance, and adaptability to complex user queries. The study emphasizes the pivotal role of prompt engineering in maximizing the chatbot's effectiveness, showcasing tailored strategies to craft precise, task-oriented prompts. We also highlight systematic evaluation methods, including accuracy metrics, usability testing, and real-world performance benchmarks, to assess and refine the chatbot's operational performance and impact. Furthermore, the framework underscores the scalability of LLM-based solutions for broader HPC challenges, such as resource allocation, job scheduling, and systems administration. This work not only enhances operational efficiency but also sets a foundation for integrating intelligent automation in HPC workflows, driving innovation and elevating the user experience in computational environments."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "SecureFixAgent: A Hybrid LLM Agent for Automated Python Static Vulnerability Repair",
+    "authors": "Jugal Gajjar, Kamalasankari Subramaniakuppusamy, Relsy Puthal, Kaustik Ranaware",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00212",
+    "source": "IEEE",
+    "abstract": "Modern software development pipelines face growing challenges in securing large codebases with extensive dependencies. Static analysis tools like Bandit are effective at vulnerability detection but suffer from high false positives and lack repair capabilities. Large Language Models (LLMs), in contrast, can suggest fixes but often hallucinate changes and lack self-validation. We present SecureFixAgent, a hybrid repair framework integrating Bandit with lightweight local LLMs (<8B parameters) in an iterative detect–repair–validate loop. To improve precision, we apply parameter-efficient LoRA-based fine-tuning on a diverse, curated dataset spanning multiple Python project domains, mitigating dataset bias and reducing unnecessary edits. SecureFixAgent uses Bandit for detection, the LLM for candidate fixes with explanations, and Bandit revalidation for verification, all executed locally to preserve privacy and reduce cloud reliance. Experiments show SecureFixAgent reduces false positives by 10.8% over static analysis, improves fix accuracy by 13.51%, and lowers false positives by 5.46% compared to pre-trained LLMs, typically converging within three iterations. Beyond metrics, developer studies rate explanation quality 4.5/5, highlighting its value for human trust and adoption. By combining verifiable security improvements with transparent rationale in a resource-efficient local framework, SecureFixAgent advances trustworthy, automated vulnerability remediation for modern pipelines."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Analyzing Code Injection Attacks on LLM-based Multi-Agent Systems in Software Development",
+    "authors": "Brian Bowers, Smita Khapre, Jugal Kalita",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00174",
+    "source": "IEEE",
+    "abstract": "Agentic AI and Multi-Agent Systems are poised to dominate industry and society imminently. Powered by goal-driven autonomy, they represent a powerful form of generative AI, marking a transition from reactive content generation into proactive multitasking capabilities. As an exemplar, we propose an architecture of a multi-agent system for the implementation phase of the software engineering process. We also present a comprehensive threat model for the proposed system. We demonstrate that while such systems can generate code quite accurately, they are vulnerable to attacks, including code injection. Due to their autonomous design and lack of humans in the loop, these systems cannot identify and respond to attacks by themselves. This paper analyzes the vulnerability of multi-agent systems and concludes that the coder-reviewer-tester architecture is more resilient than both the coder and coder-tester architectures, but is less efficient at writing code. We find that by adding a security analysis agent, we mitigate the loss in efficiency while achieving even better resiliency. We conclude by demonstrating that the security analysis agent is vulnerable to advanced code injection attacks, showing that embedding poisonous few-shot examples in the injected code can increase the attack success rate from 0% to 71.95%."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Graph Co-Pilot: Explicit API Dependency Modeling for Reliable Multi-Tool LLM Reasoning",
+    "authors": "Guoxin Liu, Xide Zou",
+    "publish": "2026 6th International Conference on Neural Networks, Information and Communication Engineering (NNICE)",
+    "url": "https://doi.org/10.1109/nnice68970.2026.11465471",
+    "source": "IEEE",
+    "abstract": "Tool-augmented Large Language Model (LLM) systems are undergoing a paradigm shift. Early research primarily focused on invoking a single tool for isolated subtasks from large-scale API pools, which can be essentially regarded as a \"one-from-many\" retrieval task. However, this scheduling paradigm exhibits a significant discrepancy from the problem-solving logic of complex real-world scenarios—where complex problems are not merely formed by the linear stacking of simple subtasks, but rather constituted by highly interwoven contextual semantics and tightly coupled data flows. To address this gap, we propose the Graph Co-Pilot approach, which constructs a plug-and-play API dependency graph to provide reliable data flow references for LLMs during the reasoning phase, thereby achieving effective reasoning offloading. Experiments conducted on the ComplexFuncBench dataset demonstrate that Graph Co-Pilot can efficiently tackle complex user queries in real-world scenarios and outperforms existing baseline methods."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Causal Autoencoder-like Generation of Feedback Fuzzy Cognitive Maps with an LLM Agent",
+    "authors": "Akash Kumar Panda, Olaoluwa Adigun, Bart Kosko",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00188",
+    "source": "IEEE",
+    "abstract": "A large language model (LLM) can map a feedback causal fuzzy cognitive map (FCM) into text and then reconstruct the FCM from the text. This explainable AI system approximates an identity map from the FCM to itself and resembles the operation of an autoencoder (AE). Both the encoder and the decoder explain their decisions in contrast to black-box AEs. Humans can read and interpret the encoded text in contrast to the hidden variables and synaptic webs in AEs. The LLM agent approximates the identity map through a sequence of system instructions that does not compare the output to the input. The reconstruction is lossy because it removes weak causal edges or rules while it preserves strong causal edges. The encoder preserves the strong causal edges even when it trades off some details about the FCM to make the text sound more natural."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "LLM-Assisted Design and Optimization of the Non-Restoring Remainder Divider for Embedded RISC-V Processors",
+    "authors": "Haoran Lu",
+    "publish": "2026 6th International Conference on Neural Networks, Information and Communication Engineering (NNICE)",
+    "url": "https://doi.org/10.1109/nnice68970.2026.11466241",
+    "source": "IEEE",
+    "abstract": "As the RISC-V architecture is increasingly adopted in embedded systems, stringent low-power requirements are imposed on on-chip hardware units. In this context, division, as a key component of the processor’s arithmetic logic unit, has a direct impact on overall system efficiency and hardware cost through its performance and resource utilization. However, conventional non-restoring dividers often suffer from high power consumption during design and implementation. This is mainly because the algorithm involves frequent comparisons and add/subtract operations, resulting in complex circuit logic and intensive signal switching, which increases dynamic power and limits overall energy efficiency. To address this problem, this paper builds on the non-restoring division algorithm and introduces large language models (LLMs) to assist in automatic code generation and logic optimization. Using this method, we develop a hardware divider oriented toward RV32M-style div/divu/rem/remu support, and validate its resource utilization and FPGA power behavior on an FPGA platform, thereby demonstrating a practical low-power divider prototype for embedded RISC-V-oriented design and showing reduced FPGA power estimates compared with the evaluated baselines. The proposed approach provides an effective implementation path for dividers on embedded RISC-V platforms, and at the same time demonstrates the feasibility and application potential of LLMs in the design of embedded domain-specific hardware."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "LLM-Boosted Graph Contrastive Learning for Cold-Start Cross-Domain Recommendation",
+    "authors": "Chandan Gautam, Bam Bahadur Sinha",
+    "publish": "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)",
+    "url": "https://doi.org/10.1109/iatmsi68868.2026.11465311",
+    "source": "IEEE",
+    "abstract": "In today's digital world, recommender systems are crucial for helping users navigate vast online content. They struggle with the cold-start problem for new users/items with little or no interaction data. Cross-domain recommendation (CDR) transfers knowledge from data-rich source domains to sparse target domains, but graph-based CDR models still face poor initialization for extremely cold-start entities. We propose LGCCDR, an LLM-boosted graph contrastive learning framework that (i.) generates dense semantic embeddings for users and items using a sentence transformer (LLM-based), (ii.) constructs a unified u ser-item g raph i nitialized w ith t hose e mbeddings, (iii.) refines e m beddings w i tha Graph Ne ural Ne twork, and aligns cross-domain user representations via contrastive learning. This pipeline is designed to address the cold-start problem by replacing random initialization with semantically meaningful representations and by enforcing cross-domain alignment. As a survey-driven conceptual framework, this work focuses on model design and analysis rather than experimental evaluation. Future work will explore scalability and multi-modal extensions."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "AQUA-LLM: Evaluating Accuracy, Quantization, and Adversarial Robustness Trade-offs in LLMs for Cybersecurity Question Answering",
+    "authors": "Onat Gungor, Roshan Sood, Harold Wang, Tajana Rosing",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00129",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have recently demonstrated strong potential for cybersecurity question answering (QA), supporting decision-making in real-time threat detection and response workflows. However, their substantial computational demands pose significant challenges for deployment on resource-constrained edge devices. Quantization, a widely adopted model compression technique, can alleviate these constraints. Nevertheless, quantization may degrade model accuracy and increase susceptibility to adversarial attacks. Fine-tuning offers a potential means to mitigate these limitations, but its effectiveness when combined with quantization remains insufficiently explored. Hence, it is essential to understand the trade-offs among accuracy, efficiency, and robustness. We propose AQUA-LLM, an evaluation framework designed to benchmark several state-of-the-art small LLMs under four distinct configurations: base, quantized-only, fine-tuned, and fine-tuned combined with quantization, specifically for cybersecurity QA. Our results demonstrate that quantization alone yields the lowest accuracy and robustness despite improving efficiency. In contrast, combining quantization with fine-tuning enhances both LLM robustness and predictive performance, achieving an optimal balance of accuracy, robustness, and efficiency. These findings highlight the critical need for quantization-aware, robustness-preserving fine-tuning methodologies to enable the robust and efficient deployment of LLMs for cybersecurity QA."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Feature Expansion with Semi-Dynamic Feature Sets (SDFS) and LLM-Powered Explainability: A Novel Approach to Discovering Missing Features",
+    "authors": "Elaheh Hosseini, Soodeh Nikan",
+    "publish": "IEEE Transactions on Artificial Intelligence",
+    "url": "https://doi.org/10.1109/tai.2026.3681539",
+    "source": "IEEE",
+    "abstract": "Traditional feature selection methods focus on reducing dimensionality, often at the cost of discarding valuable but hidden information. In contrast, this paper introduces a feature expansion method, a novel approach that automatically identifies and reconstructs missing features, meaning attributes overlooked or undiscovered during initial feature extraction, enhancing predictive performance without requiring additional data collection. We propose the Semi-Dynamic Feature Set (SDFS) Network, a unique machine learning framework that learns both feature values and model parameters, thereby improving robustness in complex datasets. To enhance interpretability, we integrate Large Language Models (LLMs) to assign meaningful labels to the newly discovered features, transforming them from blackbox variables into actionable insights. Our proposed feature expansion method consistently improved classification and regression performance across multiple datasets. In particular, the accuracy increased from 89% to 95% for Parkinson’s Disease Detection and from 82% to 85% forWine Quality Prediction, and reduced the mean squared error (MAE) in air quality prediction from 91.2 to 85.04, demonstrating its effectiveness in discovering missing features. By combining our feature expansion with LLMdriven explainability, this method not only enhances model’s performance, but also unveils hidden data patterns in critical domains such as healthcare, finance, and scientific research. The full implementation is available on GitHub [GitHub link], and the model can be installed via PyPI under the package ‘sdfs’ [PyPI link]."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Knowledge Integration for Multilingual Fake News Detection: LLM Rationales and Adapter-based Deep Fusion",
+    "authors": "Gyeongmin Kim, Yeongwook Yang",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3681698",
+    "source": "IEEE",
+    "abstract": "Detecting fake news in multilingual settings is especially challenging for low-resource languages, where pre-trained language models often struggle to incorporate external knowledge effectively. We propose a Knowledge Integration (KI) framework for Multilingual Fake News Detection (MFND) that leverages LLM-generated rationales through three integration routes: Dual Segmentation (DS), Knowledge Fusion (KF), and their combination (DSKF). KF employs a lightweight projection-residual adapter to inject rationale semantics into intermediate encoder representations. Experiments on the six-language TALLIP benchmark indicate that KF achieves state-of-the-art performance in five languages while maintaining minimal parameter overhead. Ablation results further underscore that the integration mechanism is as important as the knowledge itself: KF is the most stable strategy, DS exhibits higher variance, and DSKF reveals interaction-driven interference. Controlled perturbation experiments demonstrate that KF is more robust to corrupted rationales than DS or DSKF, whereas qualitative evidence suggests that rationale clarity remains an important limitation. Overall, these findings position representation-level deep fusion as a parameter-efficient and reliable approach for knowledge-enhanced MFND."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "A Blockchain-Assisted Hybrid AI and LLM Framework for Misbehavior Detection in Connected Autonomous Vehicles",
+    "authors": "Sameer Yadav, Mihir Bhatt, Ashutosh Kumar, Amrendra Singh Yadav",
+    "publish": "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)",
+    "url": "https://doi.org/10.1109/iatmsi68868.2026.11465791",
+    "source": "IEEE",
+    "abstract": "Connected Autonomous Vehicles (CAVs) are a key component of Intelligent Transportation Systems (ITS), enabling cooperative perception and automated decision-making through Vehicle-to-Everything (V2X) communication. Despite their benefits, CAVs introduce critical security vulnerabilities at the perception layer. In particular, Non-Data-Dependent (NDD) misbehaviour attacks manipulate physical-world objects, such as traffic signs, without altering transmitted messages, exploiting weaknesses in vision-based perception models and evading conventional detection mechanisms based on message plausibility or consistency. Existing approaches primarily rely on isolated machine learning or deep learning models under centralised trust assumptions, resulting in limited robustness against adversarial visual perturbations, insufficient semantic awareness, and poor explainability. This paper proposes a blockchain-enabled hybrid framework for detecting misbehaviour in image-based NDD attacks in CAV networks. The framework integrates classical machine learning, deep learning, and Large Language Model (LLM)- based reasoning to jointly capture perceptual and semantic anomalies. Convolutional neural networks perform visual feature extraction, while LLMs conduct high-level contextual reasoning over structured metadata. An entropy-based adaptive fusion mechanism produces robust and explainable detection decisions. Detected events are recorded as structured reports and anchored onto a permissioned blockchain, ensuring immutability, traceability, and secure information sharing. Experimental results on adversarial traffic sign datasets demonstrate that the proposed framework outperforms state-of-the-art methods, validating its effectiveness for safe and trustworthy intelligent transportation systems."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Hybrid Contextual PII Redaction: An LLM-Regex System for Diverse Digital Assets",
+    "authors": "Aryan Rai, Mohamed Layan Ali, Mohammad Armughan Ur Rahim, Mohammed Zaid, Pratimarani Jena, Rinisha Bagaria",
+    "publish": "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)",
+    "url": "https://doi.org/10.1109/iatmsi68868.2026.11466036",
+    "source": "IEEE",
+    "abstract": "The proliferation of digital data necessitates robust and automated solutions for Personally Identifiable Information (PII) protection, driven by regulatory mandates such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). Traditional, manual, or purely rule-based redaction methods are inherently prone to error and fail to scale effectively for large, diverse datasets. This paper presents the Hybrid PII Detection Engine (HPDE), an intelligent, automated tool designed to accurately redact PII from a wide range of file formats, including images, portable document formats (PDFs), Microsoft Word documents (.docx), comma-separated values (CSV), and JavaScript object notation (JSON) files. The HPDE integrates a multi-layered detection strategy: it leverages the advanced contextual understanding of the Google Gemini Pro Large Language Model (LLM) for high-accuracy identification of ambiguous entities, supplementing this with deterministic Regular Expressions (Regex) for structured PII (e.g., Aadhaar, PAN) and efficient 1 ocal <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$N$</tex> amed Entity R ecognition (NER) using the spaCy library (specifically the e n_core_web_sm model). The system's backend is implemented using the robust Python Django framework. Furthermore, the paper details file-specific redaction techniques, incorporating Optical Character Recognition (OCR) via PyTesseract for handling text in image-based files and crucial security features such as metadata wiping (utilizing PIL, PyMuPDF, and python-docx) and verifiable watermarking (implemented via OpenCV and PyMuPDF). Benchmarking results confirm that the HPDE a chieves s uperior a ccuracy and versatility compared to conventional single-method approaches."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "LoRaDoctor: LLM-Driven Diagnosis and Adaptive Policy Optimization for Reducing Packet Error Rate in LoRaWAN Networks",
+    "authors": "Dongyi Ma, Aitian Ma, Sirui Luo, Martin de Jode, Andrew Hudson-Smith, Mo Sha",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00181",
+    "source": "IEEE",
+    "abstract": "LoRaWAN is widely used for large-scale Internet of Things (IoT) deployments, but real-world reliability is often affected by high packet error rate. Existing optimization methods, such as heuristics or supervised learning, cannot fully capture the effects of environment, spatial layout, and network dynamics, which limits their adaptability. In this paper, we present LORADOCTOR, the first framework that leverages Large Language Models (LLMs) to optimize LoRaWAN. LORADOCTOR performs causal analysis, generates adaptive transmission policies, and predicts network performance in an interpretable way. We perform simulation-based evaluations using a year-long dataset collected from eight sensors deployed in East London. The results show that LORADOCTOR can significantly reduce packet error rates compared to both the default LoRaWAN settings and standard machine learning methods. Our evaluation also identifies distance-based path loss, temperature effects, and human activity as the main causes of packet error rate, showing its potential to support more reliable and adaptive LoRaWAN deployments in future urban environments."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "NLD-LLM: A systematic framework for evaluating small language transformer models on natural language description",
+    "authors": "Hamed Jelodar, Mohammad Meymani, Parisa Hamedi, Tochukwu Emmanuel Nwankwo, Samita Bai, Roozbeh Razavi-Far, Ali A. Ghorbani",
+    "publish": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+    "url": "https://doi.org/10.1109/icmla66185.2025.00227",
+    "source": "IEEE",
+    "abstract": "Natural Language Description (NLD) is a Natural Language Processing (NLP) task that requires models to generate structured and meaningful outputs from natural language inputs. In this work, we propose NLD-LLM, a systematic NLP framework to evaluate the performance of language models to generate accurate and concise source code descriptions. This framework incorporates a diverse set of transformer models, including Qwen, DeepSeek, Phi, LLaMA, and Mistral, spanning various sizes, architectures, and training approaches. Central to NLD-LLM is a comprehensive prompt design strategy that includes standardized formatting, clear task guidance, and NLD prompting, ensuring fair and consistent evaluation. Additionally, we apply an iterative refinement process to improve output’s quality and assess the model’s adaptability. Using semantic and structural metrics, our analysis demonstrates that prompt engineering significantly impacts the effectiveness of the model such that smaller models often performing competitively when supported by well-crafted prompts."
+  },
+  {
+    "date": "2026-4-7",
+    "title": "Who’s Who? LLM-assisted Software Traceability with Architecture Entity Recognition",
+    "authors": "Dominik Fuchss, Haoyu Liu, Sophie Corallo, Tobias Hey, Jan Keim, Johannes von Geisau, Anne Koziolek",
+    "publish": "ACM Transactions on Autonomous and Adaptive Systems",
+    "url": "https://doi.org/10.1145/3807453",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-7",
+    "title": "An Efficient Approach for Verification of Amba AHB2APB Bridge",
+    "authors": "Aritra Patra, Lalit Mohan Saini",
+    "publish": "2025 6th International Conference on Smart Electronics and Communication (ICOSEC)",
+    "url": "https://doi.org/10.1109/icosec67334.2025.11459753",
+    "source": "IEEE",
+    "abstract": "To enhance the portability, scalability and reusability of IP cores, the AMBA on-chip bus architecture which is developed by ARM is adopted across various SoC designs .The paper primarily aims on the analysis of various verification methodologies as well as an efficient implementation on AMBA based Advanced High-performance Bus(AHB) to Advanced Peripheral Bus (APB) bridge using Universal Verification Methodology (UVM), with System Verilog serving as the Hardware Description and Verification Language. This verification environment is constructed to validate the functionality of data transfer across AHB2APB bridge module ensuring proper communication and protocol compliance."
+  }
+]
