@@ -1,0 +1,344 @@
+[
+  {
+    "date": "2026-04-08",
+    "title": "Chatbot-Based Assessment of Code Understanding in Automated Programming Assessment Systems",
+    "authors": "Eduard Frankford, Erik Cikalleshi, Ruth Breu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07304v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) challenge conventional automated programming assessment because students can now produce functionally correct code without demonstrating corresponding understanding. This paper makes two contributions. First, it reports a saturation-based scoping review of conversational assessment approaches in programming education. The review identifies three dominant architectural families: rule-based or template-driven systems, LLM-based systems, and hybrid systems. Across the literature, conversational agents appear promising for scalable feedback and deeper probing of code understanding, but important limitations remain around hallucinations, over-reliance, privacy, integrity, and deployment constraints. Second, the paper synthesizes these findings into a Hybrid Socratic Framework for integrating conversational verification into Automated Programming Assessment Systems (APASs). The framework combines deterministic code analysis with a dual-agent conversational layer, knowledge tracking, scaffolded questioning, and guardrails that tie prompts to runtime facts. The paper also discusses practical safeguards against LLM-generated explanations, including proctored deployment modes, randomized trace questions, stepwise reasoning tied to concrete execution states, and local-model deployment options for privacy-sensitive settings. Rather than replacing conventional testing, the framework is intended as a complementary layer for verifying whether students understand the code they submit."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Are Face Embeddings Compatible Across Deep Neural Network Models?",
+    "authors": "Fizza Rubab, Yiying Tong, Arun Ross",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07282v1",
+    "source": "arXiv",
+    "abstract": "Automated face recognition has made rapid strides over the past decade due to the unprecedented rise of deep neural network (DNN) models that can be trained for domain-specific tasks. At the same time, foundation models that are pretrained on broad vision or vision-language tasks have shown impressive generalization across diverse domains, including biometrics. This raises an important question: Do different DNN models--both domain-specific and foundation models--encode facial identity in similar ways, despite being trained on different datasets, loss functions, and architectures? In this regard, we directly analyze the geometric structure of embedding spaces imputed by different DNN models. Treating embeddings of face images as point clouds, we study whether simple affine transformations can align face representations of one model with another. Our findings reveal surprising cross-model compatibility: low-capacity linear mappings substantially improve cross-model face recognition over unaligned baselines for both face identification and verification tasks. Alignment patterns generalize across datasets and vary systematically across model families, indicating representational convergence in facial identity encoding. These findings have implications for model interoperability, ensemble design, and biometric template security."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "HIVE: Query, Hypothesize, Verify An LLM Framework for Multimodal Reasoning-Intensive Retrieval",
+    "authors": "Mahmoud Abdalla, Mahmoud SalahEldin Kasem, Mohamed Mahmoud, Mostafa Farouk Senussi, Abdelrahman Abdallah, Hyun-Soo Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07220v1",
+    "source": "arXiv",
+    "abstract": "Multimodal retrieval models fail on reasoning-intensive queries where images (diagrams, charts, screenshots) must be deeply integrated with text to identify relevant documents -- the best multimodal model achieves only 27.6 nDCG@10 on MM-BRIGHT, underperforming even strong text-only retrievers (32.2). We introduce \\textbf{HIVE} (\\textbf{H}ypothesis-driven \\textbf{I}terative \\textbf{V}isual \\textbf{E}vidence Retrieval), a plug-and-play framework that injects explicit visual-text reasoning into a retriever via LLMs. HIVE operates in four stages: (1) initial retrieval over the corpus, (2) LLM-based compensatory query synthesis that explicitly articulates visual and logical gaps observed in top-$k$ candidates, (3) secondary retrieval with the refined query, and (4) LLM verification and reranking over the union of candidates. Evaluated on the multimodal-to-text track of MM-BRIGHT (2,803 real-world queries across 29 technical domains), HIVE achieves a new state-of-the-art aggregated nDCG@10 of \\textbf{41.7} -- a \\textbf{+9.5} point gain over the best text-only model (DiVeR: 32.2) and \\textbf{+14.1} over the best multimodal model (Nomic-Vision: 27.6), where our reasoning-enhanced base retriever contributes 33.2 and the HIVE framework adds a further \\textbf{+8.5} points -- with particularly strong results in visually demanding domains (Gaming: 68.2, Chemistry: 42.5, Sustainability: 49.4). Compatible with both standard and reasoning-enhanced retrievers, HIVE demonstrates that LLM-mediated visual hypothesis generation and verification can substantially close the multimodal reasoning gap in retrieval. https://github.com/mm-bright/multimodal-reasoning-retrieval"
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Data Leakage in Automotive Perception: Practitioners' Insights",
+    "authors": "Md Abu Ahammed Babu, Sushant Kumar Pandey, Darko Durisic, Andras Balint, Miroslaw Staron",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06899v1",
+    "source": "arXiv",
+    "abstract": "Data leakage is the inadvertent transfer of information between training and evaluation datasets that poses a subtle, yet critical, risk to the reliability of machine learning (ML) models in safety-critical systems such as automotive perception. While leakage is widely recognized in research, little is known about how industrial practitioners actually perceive and manage it in practice. This study investigates practitioners' knowledge, experiences, and mitigation strategies around data leakage through ten semi-structured interviews with system design, development, and verification engineers working on automotive perception functions development. Using reflexive thematic analysis, we identify that knowledge of data leakage is widespread and fragmented along role boundaries: ML engineers conceptualize it as a data-splitting or validation issue, whereas design and verification roles interpret it in terms of representativeness and scenario coverage. Detection commonly arises through generic considerations and observed performance anomalies rather than implying specific tools. However, data leakage prevention is more commonly practiced, which depends mostly on experience and knowledge sharing. These findings suggest that leakage control is a socio-technical coordination problem distributed across roles and workflows. We discuss implications for ML reliability engineering, highlighting the need for shared definitions, traceable data practices, and continuous cross-role communication to institutionalize data leakage awareness within automotive ML development."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Towards Multiparty Session Types for Highly-Concurrent and Fault-Tolerant Web Applications",
+    "authors": "Richard Casetta, Nils Gesbert, Pierre Genevès",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06878v1",
+    "source": "arXiv",
+    "abstract": "Modern web applications combine persistent state updates, concurrent interactions, and unreliable communication with external services. Failures such as timeouts can occur after partial state changes, producing temporary inconsistencies whose resolution depends on liveness properties that are often not verified in practice. Although formal methods offer rigorous guarantees for reasoning about complex software, they remain rarely adopted in enterprise settings due to their perceived complexity and lack of practical automation. Multiparty Session Types (MPST) offer strong guarantees for communication safety, yet they do not account for the interplay between state evolution, dynamic workflow structure, and failure behaviour that are essential for reasoning about the correctness of real web applications. This paper introduces a global-type framework that equips MPST with explicit failure semantics and dynamic participation. We define the syntax and operational semantics of these enriched global types and establish core properties, including coherence preservation. This foundation enables formal reasoning about communications in web applications where failures may occur, and lays the groundwork for future stateful extensions and automated verification of liveness properties."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Modelling Distributed Applications with Mixed-Choice Stateful Typestates",
+    "authors": "Francisco Parrinha, João Mota, António Ravara",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06874v1",
+    "source": "arXiv",
+    "abstract": "Distributed systems have become increasingly prevalent in the software industry. Due to their intrinsic complexity, much research has focused on the verification of their behaviour. An active research line is around behaviour models that capture these protocols - e.g., session types, or typestates - allowing their static verification. Correctly designing distributed protocols is not trivial. Their communication behaviour is typically implicitly defined via asynchronous message handlers, making errors harder to detect until execution. While typestates can ease the design process by explicitly defining correct sequences of operations, they struggle in two ways: they lack the expressiveness to define quantitative constraints that govern distributed protocols (i.e., number of acknowledgements for a quorum); and they assume strict sequencing of operations, failing to capture concurrent input/output actions in a state, typical of the distributed setting. Furthermore, runtime network failures cannot be statically verified. We present a probabilistic runtime solution extending typestates with: (i) an internal mutable state for the expression of quantitative constraints; (ii) mixed sessions to represent concurrent input and output actions; (iii) expected ratios for the number of actions in a state, with monitoring semantics to detect deviations from an expected behaviour at runtime. We demonstrate the suitability of our solution with two examples that motivated our approach: an acknowledgement protocol with a participant that sends several messages while waiting for a response, effectively modelling input and output operations in a state; and a voting protocol whose participants try to achieve consensus on a single bit using a quorum, thus, requiring an internal mutable state, while respecting a pre-defined distribution for the volume of exchanged messages."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Tractable Hyperproperties for MDPs",
+    "authors": "Lina Gerlach, Tobias Winkler, Erika Ábrahám, Borzoo Bonakdarpour, Sebastian Junges",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06859v1",
+    "source": "arXiv",
+    "abstract": "Probabilistic hyperproperties describe probabilistic relations between multiple sets of executions in a stochastic system. Prominent examples include information-theoretic characterizations of security and privacy policies. However, model checking for existing probabilistic hyperlogics, such as HyperPCTL and PHL, is undecidable in Markov decision processes (MDPs). In this paper, we study an underexplored problem: the verification of fragments of probabilistic hyperproperties that relate the probabilities of different events to each other, possibly across independent executions of an MDP. Representative verification questions include: Can two different target states be reached from the same initial state with the same probability? (different events), Can a given target state be reached from two different initial states with the same probability? (same event, independent executions), and natural combinations of these forms. Besides reachability, our relational probabilistic properties cover safety, Büchi, and coBüchi objectives. They can also be combined conjunctively, thereby generalizing standard multi-objective MDP properties. We provide efficient algorithms for relevant classes of relational properties, while proving computational hardness and completeness results for others. An implementation of our approach outperforms solvers for more general probabilistic hyperlogics by orders of magnitude on the subset of their benchmarks that lies within our fragment."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Generate, Analyze, and Refine: Training-Free Sound Source Localization via MLLM Meta-Reasoning",
+    "authors": "Subin Park, Jung Uk Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06824v1",
+    "source": "arXiv",
+    "abstract": "Sound source localization task aims to identify the locations of sound-emitting objects by leveraging correlations between audio and visual modalities. Most existing SSL methods rely on contrastive learning-based feature matching, but lack explicit reasoning and verification, limiting their effectiveness in complex acoustic scenes. Inspired by human meta-cognitive processes, we propose a training-free SSL framework that exploits the intrinsic reasoning capabilities of Multimodal Large Language Models (MLLMs). Our Generation-Analysis-Refinement (GAR) pipeline consists of three stages: Generation produces initial bounding boxes and audio classifications; Analysis quantifies Audio-Visual Consistency via open-set role tagging and anchor voting; and Refinement applies adaptive gating to prevent unnecessary adjustments. Extensive experiments on single-source and multi-source benchmarks demonstrate competitive performance. The source code is available at https://github.com/VisualAIKHU/GAR-SSL."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Cognitive Loop of Thought: Reversible Hierarchical Markov Chain for Efficient Mathematical Reasoning",
+    "authors": "Jia-Chen Zhang, Zheng Zhou, Yu-Jie Xiong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06805v1",
+    "source": "arXiv",
+    "abstract": "Multi-step Chain-of-Thought (CoT) has significantly advanced the mathematical reasoning capabilities of LLMs by leveraging explicit reasoning steps. However, the widespread adoption of Long CoT often results in sequence lengths that exceed manageable computational limits. While existing approaches attempt to alleviate this by reducing KV Cache redundancy via Markov chain-like structures, they introduce two critical limitations: inherent memorylessness (loss of context) and limited backward reasoning capability. To address these limitations, we propose a novel Chain-of-Thought framework based on Reversible Hierarchical Markov Chain, termed Cognitive Loop of Thought (CLoT), and a backward reasoning dataset CLoT-Instruct. In CLoT, problems are decomposed into sub-problems with hierarchical dependencies. Inspired by human cognitive processes, we introduce a backward verification mechanism at each hierarchical layer. Furthermore, we implement a pruning strategy: once higher-level sub-problems are verified, redundant lower-level sub-problems are pruned to maximize efficiency. This approach effectively mitigates error propagation and enhances reasoning robustness. Experiments on four mathematical benchmarks demonstrate the effectiveness of our method. Notably, on the AddSub dataset using GPT-4o-mini, CLoT achieves 99.0% accuracy, outperforming traditional CoT and CoT-SC by 4.1% and 2.9%, respectively."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Riemann-Bench: A Benchmark for Moonshot Mathematics",
+    "authors": "Suhaas Garre, Erik Knutsen, Sushant Mehta, Edwin Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06802v1",
+    "source": "arXiv",
+    "abstract": "Recent AI systems have achieved gold-medal-level performance on the International Mathematical Olympiad, demonstrating remarkable proficiency at competition-style problem solving. However, competition mathematics represents only a narrow slice of mathematical reasoning: problems are drawn from limited domains, require minimal advanced machinery, and can often reward insightful tricks over deep theoretical knowledge. We introduce \\bench{}, a private benchmark of 25 expert-curated problems designed to evaluate AI systems on research-level mathematics that goes far beyond the olympiad frontier. Problems are authored by Ivy League mathematics professors, graduate students, and PhD-holding IMO medalists, and routinely took their authors weeks to solve independently. Each problem undergoes double-blind verification by two independent domain experts who must solve the problem from scratch, and yields a unique, closed-form solution assessed by programmatic verifiers. We evaluate frontier models as unconstrained research agents, with full access to coding tools, search, and open-ended reasoning, using an unbiased statistical estimator computed over 100 independent runs per problem. Our results reveal that all frontier models currently score below 10\\%, exposing a substantial gap between olympiad-level problem solving and genuine research-level mathematical reasoning. By keeping the benchmark fully private, we ensure that measured performance reflects authentic mathematical capability rather than memorization of training data."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Beyond Accuracy: Diagnosing Algebraic Reasoning Failures in LLMs Across Nine Complexity Dimensions",
+    "authors": "Parth Patil, Dhruv Kumar, Yash Sinha, Murari Mandal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06799v1",
+    "source": "arXiv",
+    "abstract": "Algebraic reasoning remains one of the most informative stress tests for large language models, yet current benchmarks provide no mechanism for attributing failure to a specific cause. When a model fails an algebraic problem, a single accuracy score cannot reveal whether the expression was too deeply nested, the operator too uncommon, the intermediate state count too high, or the dependency chain too long. Prior work has studied individual failure modes in isolation, but no framework has varied each complexity factor independently under strict experimental control. No prior system has offered automatic generation and verification of problems of increasing complexity to track model progress over time. We introduce a nine-dimension algebraic complexity framework in which each factor is varied independently while all others are held fixed, with problem generation and verification handled by a parametric pipeline requiring no human annotation. Each dimension is grounded in a documented LLM failure mode and captures a structurally distinct aspect of algebraic difficulty, including expression nesting depth, simultaneous intermediate result count, sub-expression complexity, operator hardness, and dependent reasoning chain length. We evaluated seven instruction-tuned models spanning 8B to 235B parameters across all nine dimensions and find that working memory is the dominant scale-invariant bottleneck. Every model collapses between 20 and 30 parallel branches regardless of parameter count, pointing to a hard architectural constraint rather than a solvable capacity limitation. Our analysis further identifies a minimal yet diagnostically sufficient subset of five dimensions that together span the full space of documented algebraic failure modes, providing a complete complexity profile of a model's algebraic reasoning capacity."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Exploring 6D Object Pose Estimation with Deformation",
+    "authors": "Zhiqiang Liu, Rui Song, Duanmu Chuangqi, Jiaojiao Li, David Ferstl, Yinlin Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06720v1",
+    "source": "arXiv",
+    "abstract": "We present DeSOPE, a large-scale dataset for 6DoF deformed objects. Most 6D object pose methods assume rigid or articulated objects, an assumption that fails in practice as objects deviate from their canonical shapes due to wear, impact, or deformation. To model this, we introduce the DeSOPE dataset, which features high-fidelity 3D scans of 26 common object categories, each captured in one canonical state and three deformed configurations, with accurate 3D registration to the canonical mesh. Additionally, it features an RGB-D dataset with 133K frames across diverse scenarios and 665K pose annotations produced via a semi-automatic pipeline. We begin by annotating 2D masks for each instance, then compute initial poses using an object pose method, refine them through an object-level SLAM system, and finally perform manual verification to produce the final annotations. We evaluate several object pose methods and find that performance drops sharply with increasing deformation, suggesting that robust handling of such deformations is critical for practical applications. The project page and dataset are available at https://desope-6d.github.io/}{https://desope-6d.github.io/."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Steering the Verifiability of Multimodal AI Hallucinations",
+    "authors": "Jianhong Pang, Ruoxi Cheng, Ziyi Ye, Xingjun Ma, Zuxuan Wu, Xuanjing Huang, Yu-Gang Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06714v1",
+    "source": "arXiv",
+    "abstract": "AI applications driven by multimodal large language models (MLLMs) are prone to hallucinations and pose considerable risks to human users. Crucially, such hallucinations are not equally problematic: some hallucination contents could be detected by human users(i.e., obvious hallucinations), while others are often missed or require more verification effort(i.e., elusive hallucinations). This indicates that multimodal AI hallucinations vary significantly in their verifiability. Yet, little research has explored how to control this property for AI applications with diverse security and usability demands. To address this gap, we construct a dataset from 4,470 human responses to AI-generated hallucinations and categorize these hallucinations into obvious and elusive types based on their verifiability by human users. Further, we propose an activation-space intervention method that learns separate probes for obvious and elusive hallucinations. We reveal that obvious and elusive hallucinations elicit different intervention probes, allowing for fine-grained control over the model's verifiability. Empirical results demonstrate the efficacy of this approach and show that targeted interventions yield superior performance in regulating corresponding verifiability. Moreover, simply mixing these interventions enables flexible control over the verifiability required for different scenarios."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Broken Quantum: A Systematic Formal Verification Study of Security Vulnerabilities Across the Open-Source Quantum Computing Simulator Ecosystem",
+    "authors": "Dominik Blain",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06712v1",
+    "source": "arXiv",
+    "abstract": "Quantum computing simulators form the classical software foundation on which virtually all quantum algorithm research depends. We present Broken Quantum, the first comprehensive formal security audit of the open-source quantum computing simulator ecosystem. Applying COBALT QAI -- a four-module static analysis engine backed by the Z3 SMT solver -- we analyze 45 open-source quantum simulation frameworks from 22 organizations spanning 12 countries. We identify 547 security findings (40 CRITICAL, 492 HIGH, 15 MEDIUM) across four vulnerability classes: CWE-125/190 (C++ memory corruption), CWE-400 (Python resource exhaustion), CWE-502/94 (unsafe deserialization and code injection), and CWE-77/22 (QASM injection -- a novel, quantum-specific attack vector with no classical analog). All 13 vulnerability patterns are formally verified via Z3 satisfiability proofs (13/13 SAT). The 32-qubit boundary emerges as a consistent formal threshold in both C++ and Python vulnerability chains. Supply chain analysis identifies the first documented case of vulnerability transfer from a commercial quantum framework into US national laboratory infrastructure (IBM Qiskit Aer to XACC/Oak Ridge National Laboratory). Nine frameworks score 100/100 under all four scanners; Qiskit Aer,Cirq, tequila, PennyLane, and 5 others score 0/100."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "ATANT: An Evaluation Framework for AI Continuity",
+    "authors": "Samuel Sameer Tanguturi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06710v1",
+    "source": "arXiv",
+    "abstract": "We present ATANT (Automated Test for Acceptance of Narrative Truth), an open evaluation framework for measuring continuity in AI systems: the ability to persist, update, disambiguate, and reconstruct meaningful context across time. While the AI industry has produced memory components (RAG pipelines, vector databases, long context windows, profile layers), no published framework formally defines or measures whether these components produce genuine continuity. We define continuity as a system property with 7 required properties, introduce a 10-checkpoint evaluation methodology that operates without an LLM in the evaluation loop, and present a narrative test corpus of 250 stories comprising 1,835 verification questions across 6 life domains. We evaluate a reference implementation across 5 test suite iterations, progressing from 58% (legacy architecture) to 100% in isolated mode (250 stories) and 100% in 50-story cumulative mode, with 96% at 250-story cumulative scale. The cumulative result is the primary measure: when 250 distinct life narratives coexist in the same database, the system must retrieve the correct fact for the correct context without cross-contamination. ATANT is system-agnostic, model-independent, and designed as a sequenced methodology for building and validating continuity systems. The framework specification, example stories, and evaluation protocol are available at https://github.com/Kenotic-Labs/ATANT. The full 250-story corpus will be released incrementally."
+  },
+  {
+    "date": "2026-04-08",
+    "title": "PoC-Adapt: Semantic-Aware Automated Vulnerability Reproduction with LLM Multi-Agents and Reinforcement Learning-Driven Adaptive Policy",
+    "authors": "Phan The Duy, Nguyen Viet Duy, Khoa Ngo-Khanh, Nguyen Huu Quyen, Van-Hau Pham",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06618v1",
+    "source": "arXiv",
+    "abstract": "While recent approaches leverage large language models (LLMs) and multi-agent pipelines to automatically generate proof-of-concept (PoC) exploits from vulnerability reports, existing systems often suffer from two fundamental limitations: unreliable validation based on surface-level execution signals and high operational cost caused by extensive trial-and-error during exploit generation. In this paper, we present PoC-Adapt, an end-to-end framework for automated PoC generation and verification, architected upon a foundation semantic runtime validation and adaptive policy learning. At the core of PoC-Adapt is a Semantic Oracle that validates exploits by comparing structured pre- and post-execution system states, enabling reliable distinction between true vulnerability exploitation and incidental behavioral changes. To reduce exploration cost, we further introduce an Adaptive Policy Learning mechanism that learns an exploitation policy over semantic states and actions, guiding the exploit agent toward effective strategies with fewer failed attempts. PoC-Adapt is implemented as a multi-agent system comprising specialized agents for root cause analysis, environment building, exploit generation, and semantic validation, coordinated through structured feedback loops. Experimenting on the CWE-Bench-Java and PrimeVul benchmarks shows that PoC-Adapt significantly improves verification reliability by 25% and reduces exploit generation cost compared to prior LLM-based systems, highlighting the importance of semantic validation and learned action policies in automated vulnerability reproduction. Applied to the latest CVE corpus, PoC-Adapt confirmed 12 verified PoC out of 80 reproduce attempts at a cost of $0.42 per generated exploit"
+  },
+  {
+    "date": "2026-04-08",
+    "title": "Contextual Chain: Single-State Ledger Design for Mobile/IoT Networks with Frequent Partitions",
+    "authors": "Song-Ju Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06529v1",
+    "source": "arXiv",
+    "abstract": "We study a lightweight ledger protocol for intermittent and noisy networks, motivated by IoT and mobile settings in which partitions are common and full-history verification is impractical. Our design centers on an \\emph{operational} notion of \\textbf{contextual authentication}: each node decides whether a chain extension is acceptable in its current local context, using checkpoint-first fork choice, a local branch score derived from recent proposer behavior, and an inconsistency-driven \\emph{quarantine} signal. To improve recovery after partitions, we combine this acceptance rule with \\textbf{adaptive synchronization}, which increases gossip effort only when inconsistency becomes prevalent. We evaluate the protocol with a discrete-event simulator under controlled partitions and two network regimes (clean and noisy). Across 500 seeds at $N=20$, the main result is that quarantine alone does not materially improve agreement or recovery under noisy conditions, whereas increased synchronization (\\texttt{Gossip\\_only} and \\texttt{Both}) substantially improves both final agreement probability and recovery-time tails after partition rejoin. Longer-horizon experiments show that low-synchronization failures are not removed simply by waiting longer, and scaling experiments at $N=50$ and $N=100$ show that parameters that work at small scale do not automatically generalize. These results indicate that, under noisy partition/rejoin dynamics, recovery in the current design is limited primarily by information availability, making synchronization policy a first-class design problem."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Quantum Fragmentation",
+    "authors": "Yiqiu Han, Oliver Hart, Alexey Khudorozhkov, Rahul Nandkishore",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06461v1",
+    "source": "arXiv",
+    "abstract": "We introduce a systematic protocol for constructing quantum Hilbert-space-fragmented Hamiltonians, whose Krylov-sector structure, unlike in classically fragmented models, can be fully resolved only in an entangled basis. The protocol takes as input a classically fragmented model and uses a Rokhsar-Kivelson type construction to promote it to a quantum fragmented model. Notably, the procedure also works with non-fragmented inputs (such as Ising models). We explain how the Krylov sectors of the resulting quantum fragmented model may be labeled and counted in one dimension, and outline experimentally accessible verification of quantum fragmentation, assuming the ability to prepare specific initial states and perform tomography on reduced density matrices. We further analyze the entanglement structure of the entangled basis underlying quantum fragmentation, which sharply distinguishes it from both classical fragmentation and the trivial \"fragmentation\" of generic Hamiltonians in their eigenbasis. We also extend the construction to higher dimensions, with an explicit proof of principle example in two dimensions. We expect these results to open a new route to the systematic exploration of quantum fragmentation."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "State-of-the-Art Arabic Language Modeling with Sparse MoE Fine-Tuning and Chain-of-Thought Distillation",
+    "authors": "Navan Preet Singh, Anurag Garikipati, Ahmed Abulkhair, Jyani Akshay Jagdishbhai, Atul Yaduvanshi, Amarendra Chaudhary, Madalina Ciobanu, Qingqing Mao, Ritankar Das",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06421v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces Arabic-DeepSeek-R1, an application-driven open-source Arabic LLM that leverages a sparse MoE backbone to address the digital equity gap for under-represented languages, and establishes a new SOTA across the entire Open Arabic LLM Leaderboard (OALL). Our four-phase CoT distillation scheme integrates Arabic-specific linguistic verification and regional ethical norms into a 372M-token, contamination-controlled 80/20 Arabic-English training mixture. Arabic-DeepSeek-R1 achieves the highest average score across the seven-benchmark OALL suite while establishing SOTA or near-SOTA, including dominant results on grammar-focused MadinahQA (surpassing both GPT-5.1 and the OALL leader by substantial margins), safety-oriented AraTrust, multi-ability AlGhafa, and retrieval-augmented ALRAGE. Our results indicate that the combination of sparse MoE architecture, culturally-informed CoT distillation with explicit Arabic linguistic checks, and strategic bilingual data curation enables an open-source adapted model to systematically outperform the proprietary frontier system GPT-5.1 on the majority of benchmarks evaluating comprehensive language-specific tasks: the first such demonstration for Arabic LLMs. These findings indicate that much of Arabic's performance deficit in current LLM ecosystems stems from under-specialization rather than architectural limitations, and that parameter-efficient adaptation of open reasoning models can yield breakthrough SOTA performance without industrial-scale pretraining costs. Arabic-DeepSeek-R1 establishes a validated and replicable framework for sovereign and domain-specific language technologies, demonstrating that strategic, culturally-grounded adaptation of sparse MoE backbones offers a viable and cost-effective pathway to achieving record-breaking performance across standardized benchmarks for low-resource languages."
+  },
+  {
+    "date": "2026-04-07",
+    "title": "MTA-Agent: An Open Recipe for Multimodal Deep Search Agents",
+    "authors": "Xiangyu Peng, Can Qin, An Yan, Xinyi Yang, Zeyuan Chen, Ran Xu, Chien-Sheng Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.06376v1",
+    "source": "arXiv",
+    "abstract": "Multimodal large language models (MLLMs) have demonstrated strong capabilities in visual understanding, yet they remain limited in complex, multi-step reasoning that requires deep searching and integrating visual evidence with external knowledge. In this work, we address this challenge by constructing high-quality, verified multi-hop vision-language training data for multimodal deep-search agents. We propose a Multi-hop Tool-Augmented Agent for Evidence-based QA Synthesis (MTA-Agent), which automatically selects tools and their parameters to retrieve and validate evidence from both visual and textual sources and generates structured multi-hop question-answer trajectories. Starting from diverse VQA seed datasets, our pipeline produces a large-scale training dataset, MTA-Vision-DeepSearch, containing 21K high-quality multi-hop examples. The data is filtered through a multi-stage verification process to ensure factual consistency and answer uniqueness. Using MTA-Vision-DeepSearch, a 32B open-source multimodal search agent achieves state-of-the-art performance, reaching an average of 54.63\\% across six challenging benchmarks, outperforming GPT-5 (51.86\\%), Gemini-2.5-Pro (50.98\\%), and Gemini-3-Pro (54.46\\%) under the same tool settings. We further show that training on our data improves both reasoning depth and tool-use behavior, increasing the average number of steps from 2.27 to 4.28, and leading to more systematic and persistent search strategies. Additionally, we demonstrate that training can be performed without real-time tool calls by replaying cached interactions, significantly reducing training cost. Importantly, we present MTA-Agent as a fully open recipe for multimodal deep search: we release the entire dataset, training trajectories, and implementation details to enable reproducibility and future research on open multimodal search agents."
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Forensic Investigation of SDRSharp and RTL-SDR Dongle in Eavesdropping Radio Communications",
+    "authors": "Erasmus Mfodwo, Narasimha Shashidhar, Cihan Varol, Ahmet Furkan Aydogan",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11458928",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "LLM-Augmented Agentic Consensus Swarms for Autonomous Edge Security",
+    "authors": "Raju Dandigam, Ravi Teja Thutari, Tejaskumar Vaidya",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11459110",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Deterministic LLMs: a Practical Forensic Framework for Verifiable and Reproducible Local LLM Inference",
+    "authors": "Joel D. Molina",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11458980",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "An LLM-Powered API Testing Framework Based on Structural Similarity Analysis",
+    "authors": "Anıl Sezgin, Tuğberk Kocatekin, Mert Yağcıoğlu",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11459067",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Selective Memory Sharing in Multi-Agent LLM Teams via AgentGym-RL",
+    "authors": "Bhavuk Jain, Gunjan Jain, Hardeo K. Thakur",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11459086",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Fakespeech: LLM-Driven Semantic Manipulation and Voice Cloning for Realistic Deepfake Speech Benchmarking",
+    "authors": "Alaa Alsaeedi, Amal AlMansour, Amani Jamal",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11459048",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Decentralized LLM Deployment in Mobile Edge Computing Networks",
+    "authors": "Ding Xu, Lingjie Duan, Jiahao Zhu, Hongbo Zhu",
+    "publish": "IEEE Transactions on Vehicular Technology",
+    "url": "https://doi.org/10.1109/tvt.2026.3682257",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Event-Driven Agentic SOC (ED-ASOC): Supervisor-Based LLM Framework for Dynamic Incident Response and SOAR Orchestration",
+    "authors": "Enes Özgözler, Asaf Varol, İhsan Tanrıverdi",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11458922",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Pipelining Network and Compute for Real-Time LLM Serving",
+    "authors": "Aman Sahu, Abdechakour Mechri, Abdelhak Bentaleb",
+    "publish": "Proceedings of the 36th Workshop on Network and Operating System Support for Digital Audio and Video",
+    "url": "https://doi.org/10.1145/3798065.3798069",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Adaptive and explainable analysis of customer sentiments on social networks via optimized LLM models and meta-learning",
+    "authors": "Wiam Saidi, Boutaina Satouri, Abdellatif El Abderrahmani, Khalid Satori",
+    "publish": "2025 IEEE International Conference on Advanced Technologies in Supply Chain Management (ATSCM)",
+    "url": "https://doi.org/10.1109/atscm67505.2025.11473483",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Make a Video Call with LLM: A Measurement Campaign over Five Mainstream Apps",
+    "authors": "Jiayang Xu, Xiangjie Huang, Zijie Li, Zili Meng",
+    "publish": "Proceedings of the 36th Workshop on Network and Operating System Support for Digital Audio and Video",
+    "url": "https://doi.org/10.1145/3798065.3798087",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-8",
+    "title": "On-Wafer Golden Device and Layout Structures for Long-term Prober Chuck Temperature Verification and Monitoring",
+    "authors": "Wuxia Li, Kejun Xia, Lei Chao, Shimeng Zhang",
+    "publish": "2026 IEEE 38th International Conference on Microelectronic Test Structures (ICMTS)",
+    "url": "https://doi.org/10.1109/icmts69943.2026.11471711",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Version-Controlled Decentralized Firmware Integrity Verification With On-Chain Rollback Protection for Cyber-Physical Systems on Ethereum",
+    "authors": "Maruf Farhan, Usman Butt, Madhuki Rajapakshe, Rejwan Bin Sulaiman",
+    "publish": "2026 14th International Symposium on Digital Forensics and Security (ISDFS)",
+    "url": "https://doi.org/10.1109/isdfs69419.2026.11458959",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "DRLLMS: Network-Adaptive Reasoning Control for Interactive LLM Streaming",
+    "authors": "Tao Lyu, Cong Zhang, Haihan Duan, Xiaoyi Fan, Xiping Hu, Laizhong Cui",
+    "publish": "Proceedings of the 36th Workshop on Network and Operating System Support for Digital Audio and Video",
+    "url": "https://doi.org/10.1145/3798065.3798072",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Uncertainty-Aware Multi-Head Multi-Mode Knowledge Distillation for Self-Supervised Speaker Verification",
+    "authors": "Zezhong Jin, YouZhi Tu, Zhe Li, Man-Wai Mak, Kong-Aik Lee",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3682072",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Bayesian Neural Representation Augmentations for Domain Generalization in Speaker Verification and Anti-Spoofing",
+    "authors": "Jin Li, Man-Wai Mak, Johan Rohdin, Oldřich Plchot, Kong Aik Lee, Hynek Hermansky",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3682044",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Towards a Unified Perspective on Parameter-Efficient Fine Tuning for Speaker Verification",
+    "authors": "Zhe Li, Man-Wai Mak, Mert Pilanci, Hung-Yi Lee, Chong-Xin Gan, Jiabao Sheng, Helen Meng",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3682068",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-8",
+    "title": "Multiscale Reparameterized Deep Architecture for Efficient and Interpretable Livestock Verification",
+    "authors": "Manya Joshi, Chiranjit Pal, Sanjay Kumar Singh, Sameer Shrivastava",
+    "publish": "IEEE Transactions on AgriFood Electronics",
+    "url": "https://doi.org/10.1109/tafe.2026.3671987",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
