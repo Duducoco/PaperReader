@@ -1,0 +1,344 @@
+[
+  {
+    "date": "2026-04-09",
+    "title": "sciwrite-lint: Verification Infrastructure for the Age of Science Vibe-Writing",
+    "authors": "Sergey V Samsonau",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08501v1",
+    "source": "arXiv",
+    "abstract": "Science currently offers two options for quality assurance, both inadequate. Journal gatekeeping claims to verify both integrity and contribution, but actually measures prestige: peer review is slow, biased, and misses fabricated citations even at top venues. Open science provides no quality assurance at all: the only filter between AI-generated text and the public record is the author's integrity. AI-assisted writing makes both worse by producing more papers faster than either system can absorb. We propose a third option: measure the paper itself. sciwrite-lint (pip install sciwrite-lint) is an open-source linter for scientific manuscripts that runs entirely on the researcher's machine (free public databases, a single consumer GPU, and open-weights models) with no manuscripts sent to external services. The pipeline verifies that references exist, checks retraction status, compares metadata against canonical records, downloads and parses cited papers, verifies that they support the claims made about them, and follows one level further to check cited papers' own bibliographies. Each reference receives a per-reference reliability score aggregating all verification signals. We evaluate the pipeline on 30 unseen papers from arXiv and bioRxiv with error injection and LLM-adjudicated false positive analysis. As an experimental extension, we propose SciLint Score, combining integrity verification with a contribution component that operationalizes five frameworks from philosophy of science (Popper, Lakatos, Kitcher, Laudan, Mayo) into computable structural properties of scientific arguments. The integrity component is the core of the tool and is evaluated in this paper; the contribution component is released as experimental code for community development."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation",
+    "authors": "Tongbo Chen, Zhengxi Lu, Zhan Xu, Guocheng Shao, Shaohan Zhao, Fei Tang, Yong Du, Kaitao Song, Yizhou Liu, Yuchen Yan, Wenqi Zhang, Xu Tan, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08455v1",
+    "source": "arXiv",
+    "abstract": "Personalized mobile agents that infer user preferences and calibrate proactive assistance hold great promise as everyday digital assistants, yet existing benchmarks fail to capture what this requires. Prior work evaluates preference recovery from static histories or intent prediction from fixed contexts. Neither tests whether an agent can elicit missing preferences through interaction, nor whether it can decide when to intervene, seek consent, or remain silent in a live GUI environment. We introduce KnowU-Bench, an online benchmark for personalized mobile agents built on a reproducible Android emulation environment, covering 42 general GUI tasks, 86 personalized tasks, and 64 proactive tasks. Unlike prior work that treats user preferences as static context, KnowU-Bench hides the user profile from the agent and exposes only behavioral logs, forcing genuine preference inference rather than context lookup. To support multi-turn preference elicitation, it instantiates an LLM-driven user simulator grounded in structured profiles, enabling realistic clarification dialogues and proactive consent handling. Beyond personalization, KnowU-Bench provides comprehensive evaluation of the complete proactive decision chain, including grounded GUI execution, consent negotiation, and post-rejection restraint, evaluated through a hybrid protocol combining rule-based verification with LLM-as-a-Judge scoring. Our experiments reveal a striking degradation: agents that excel at explicit task execution fall below 50% under vague instructions requiring user preference inference or intervention calibration, even for frontier models like Claude Sonnet 4.6. The core bottlenecks are not GUI navigation but preference acquisition and intervention calibration, exposing a fundamental gap between competent interface operation and trustworthy personal assistance."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Selective Attention System (SAS): Device-Addressed Speech Detection for Real-Time On-Device Voice AI",
+    "authors": "David Joohun Kim, Daniyal Anjum, Bonny Banerjee, Omar Abbasi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08412v1",
+    "source": "arXiv",
+    "abstract": "We study device-addressed speech detection under pre-ASR edge deployment constraints, where systems must decide whether to forward audio before transcription under strict latency and compute limits. We show that, in multi-speaker environments with temporally ambiguous utterances, this task is more effectively modelled as a sequential routing problem over interaction history than as an utterance-local classification task. We formalize this as Sequential Device-Addressed Routing (SDAR) and present the Selective Attention System (SAS), an on-device implementation that instantiates this formulation. On a held-out 60-hour multi-speaker English test set, the primary audio-only configuration achieves F1=0.86 (precision=0.89, recall=0.83); with an optional camera, audio+video fusion raises F1 to 0.95 (precision=0.97, recall=0.93). Removing causal interaction history (Stage~3) reduced F1 from 0.95 to 0.57+/-0.03 in the audio+video configuration under our evaluation protocol. Among the tested components, this was the largest observed ablation effect, indicating that short-horizon interaction history carries substantial decision-relevant information in the evaluated setting. SAS runs fully on-device on ARM Cortex-A class hardware (<150 ms latency, <20 MB footprint). All results are from internal evaluation on a proprietary dataset evaluated primarily in English; a 5-hour evaluation subset may be shared for independent verification (Section 8.8)."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Verify Before You Commit: Towards Faithful Reasoning in LLM Agents via Self-Auditing",
+    "authors": "Wenhao Yuan, Chenchen Lin, Jian Chen, Jinfeng Xu, Xuehe Wang, Edith Cheuk Han Ngai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08401v1",
+    "source": "arXiv",
+    "abstract": "In large language model (LLM) agents, reasoning trajectories are treated as reliable internal beliefs for guiding actions and updating memory. However, coherent reasoning can still violate logical or evidential constraints, allowing unsupported beliefs repeatedly stored and propagated across decision steps, leading to systematic behavioral drift in long-horizon agentic systems. Most existing strategies rely on the consensus mechanism, conflating agreement with faithfulness. In this paper, inspired by the vulnerability of unfaithful intermediate reasoning trajectories, we propose \\textbf{S}elf-\\textbf{A}udited \\textbf{Ve}rified \\textbf{R}easoning (\\textsc{SAVeR}), a novel framework that enforces verification over internal belief states within the agent before action commitment, achieving faithful reasoning. Concretely, we structurally generate persona-based diverse candidate beliefs for selection under a faithfulness-relevant structure space. To achieve reasoning faithfulness, we perform adversarial auditing to localize violations and repair through constraint-guided minimal interventions under verifiable acceptance criteria. Extensive experiments on six benchmark datasets demonstrate that our approach consistently improves reasoning faithfulness while preserving competitive end-task performance."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "VCAO: Verifier-Centered Agentic Orchestration for Strategic OS Vulnerability Discovery",
+    "authors": "Suyash Mishra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08291v1",
+    "source": "arXiv",
+    "abstract": "We formulate operating-system vulnerability discovery as a \\emph{repeated Bayesian Stackelberg search game} in which a Large Reasoning Model (LRM) orchestrator allocates analysis budget across kernel files, functions, and attack paths while external verifiers -- static analyzers, fuzzers, and sanitizers -- provide evidence. At each round, the orchestrator selects a target component, an analysis method, and a time budget; observes tool outputs; updates Bayesian beliefs over latent vulnerability states; and re-solves the game to minimize the strategic attacker's expected payoff. We introduce \\textsc{VCAO} (\\textbf{V}erifier-\\textbf{C}entered \\textbf{A}gentic \\textbf{O}rchestration), a six-layer architecture comprising surface mapping, intra-kernel attack-graph construction, game-theoretic file/function ranking, parallel executor agents, cascaded verification, and a safety governor. Our DOBSS-derived MILP allocates budget optimally across heterogeneous analysis tools under resource constraints, with formal $\\tilde{O}(\\sqrt{T})$ regret bounds from online Stackelberg learning. Experiments on five Linux kernel subsystems -- replaying 847 historical CVEs and running live discovery on upstream snapshots -- show that \\textsc{VCAO} discovers $2.7\\times$ more validated vulnerabilities per unit budget than coverage-only fuzzing, $1.9\\times$ more than static-analysis-only baselines, and $1.4\\times$ more than non-game-theoretic multi-agent pipelines, while reducing false-positive rates reaching human reviewers by 68\\%. We release our simulation framework, synthetic attack-graph generator, and evaluation harness as open-source artifacts."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "FORSLICE: An Automated Formal Framework for Efficient PRB-Allocation towards Slicing Multiple Network Services",
+    "authors": "Debarpita Banerjee, Sumana Ghosh, Snigdha Das, Shilpa Budhkar, Rana Pratap Sircar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08244v1",
+    "source": "arXiv",
+    "abstract": "Network slicing is a modern 5G technology that provides efficient network experience for diverse use cases. It is a technique for partitioning a single physical network infrastructure into multiple virtual networks, called slices, each equipped for specific services and requirements. In this work, we particularly deal with radio access network (RAN) slicing and resource allocation to RAN slices. In 5G, physical resource blocks (PRBs) being the fundamental units of radio resources, our main focus is to allocate PRBs to the slices efficiently. While addressing a spectrum of needs for multiple services or the same services with multi-priorities, we need to ensure two vital system properties: i) fairness to every service type (i.e., providing the required resources and a desired range of throughput) even after prioritizing a particular service type, and ii) PRB-optimality or minimizing the unused PRBs in slices. These serve as the core performance evaluation metrics for PRB-allocation in our work. We adopt the 3-layered hierarchical PRB-partitioning technique for allocating PRBs to network slices. The case-specific, AI-based solution of the state-of-the-art method lacks sufficient correctness to ensure consistent system performance. To achieve guaranteed correctness and completeness, we leverage formal methods and propose the first approach for a fair and optimal PRB distribution to RAN slices. We formally model the PRB-allocation problem as a 3-layered framework, FORSLICE, specifically by employing satisfiability modulo theories. Next, we apply formal verification to ensure that the desired system properties: fairness and PRB-optimality, are satisfied by the model. The proposed method offers an efficient, versatile and automated approach compatible with all 3-layered hierarchical network structure configurations, yielding significant system property improvements compared to the baseline."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "A Statistical-AI Framework for Detecting Transient Flares in SDSS Stripe 82 Quasar Light Curves",
+    "authors": "Atal Agrawal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08196v1",
+    "source": "arXiv",
+    "abstract": "Quasars exhibit stochastic variability across wavelengths, typically well-described by a Damped Random Walk (DRW). However, extreme luminosity changes, known as quasar flares, represent significant departures from this baseline and offer crucial insights into accretion disc dynamics and the fundamental physics of supermassive black hole fueling. While transient surveys have spurred interest in flare detection, a systematic search within the legacy SDSS Stripe 82 dataset -- containing 9,258 confirmed quasars -- has not yet been performed. The primary statistical challenge lies in distinguishing these rare events from ever-present intrinsic noise. To address this, we present FLARE (Flare detection via physics-informed Learning, Anomaly scoring, and Recognition Engine), a generalized three-stage framework for detecting flares present in quasar data. FLARE operates by modeling baseline DRW behavior, applying anomaly scoring to flag potential flares, and utilizing a recognition engine to verify candidates. For Stripe 82, we implement this framework using a physics-informed probabilistic Gated Recurrent Unit (GRU) for baseline modeling, Extreme Value Theory (EVT) for anomaly detection, and benchmarking various open-weight and proprietary Vision Language Models as recognition engines for final verification. Detection is executed on r-band light curves, with candidates cross-checked against g-band data to definitively rule out instrumental artifacts. Applying this pipeline, we successfully identify 27 quasars exhibiting distinct flaring activity."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "AT-ADD: All-Type Audio Deepfake Detection Challenge Evaluation Plan",
+    "authors": "Yuankun Xie, Haonan Cheng, Jiayi Zhou, Xiaoxuan Guo, Tao Wang, Jian Liu, Weiqiang Wang, Ruibo Fu, Xiaopeng Wang, Hengyan Huang, Xiaoying Huang, Long Ye, Guangtao Zhai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08184v1",
+    "source": "arXiv",
+    "abstract": "The rapid advancement of Audio Large Language Models (ALLMs) has enabled cost-effective, high-fidelity generation and manipulation of both speech and non-speech audio, including sound effects, singing voices, and music. While these capabilities foster creativity and content production, they also introduce significant security and trust challenges, as realistic audio deepfakes can now be generated and disseminated at scale. Existing audio deepfake detection (ADD) countermeasures (CMs) and benchmarks, however, remain largely speech-centric, often relying on speech-specific artifacts and exhibiting limited robustness to real-world distortions, as well as restricted generalization to heterogeneous audio types and emerging spoofing techniques. To address these gaps, we propose the All-Type Audio Deepfake Detection (AT-ADD) Grand Challenge for ACM Multimedia 2026, designed to bridge controlled academic evaluation with practical multimedia forensics. AT-ADD comprises two tracks: (1) Robust Speech Deepfake Detection, which evaluates detectors under real-world scenarios and against unseen, state-of-the-art speech generation methods; and (2) All-Type Audio Deepfake Detection, which extends detection beyond speech to diverse, unknown audio types and promotes type-agnostic generalization across speech, sound, singing, and music. By providing standardized datasets, rigorous evaluation protocols, and reproducible baselines, AT-ADD aims to accelerate the development of robust and generalizable audio forensic technologies, supporting secure communication, reliable media verification, and responsible governance in an era of pervasive synthetic audio."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Object-Centric Stereo Ranging for Autonomous Driving: From Dense Disparity to Census-Based Template Matching",
+    "authors": "Qihao Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07980v1",
+    "source": "arXiv",
+    "abstract": "Accurate depth estimation is critical for autonomous driving perception systems, particularly for long range vehicle detection on highways. Traditional dense stereo matching methods such as Block Matching (BM) and Semi Global Matching (SGM) produce per pixel disparity maps but suffer from high computational cost, sensitivity to radiometric differences between stereo cameras, and poor accuracy at long range where disparity values are small. In this report, we present a comprehensive stereo ranging system that integrates three complementary depth estimation approaches: dense BM/SGM disparity, object centric Census based template matching, and monocular geometric priors, within a unified detection ranging tracking pipeline. Our key contribution is a novel object centric Census based template matching algorithm that performs GPU accelerated sparse stereo matching directly within detected bounding boxes, employing a far close divide and conquer strategy, forward backward verification, occlusion aware sampling, and robust multi block aggregation. We further describe an online calibration refinement framework that combines auto rectification offset search, radar stereo voting based disparity correction, and object level radar stereo association for continuous extrinsic drift compensation. The complete system achieves real time performance through asynchronous GPU pipeline design and delivers robust ranging across diverse driving conditions including nighttime, rain, and varying illumination."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "AtomEval: Atomic Evaluation of Adversarial Claims in Fact Verification",
+    "authors": "Hongyi Cen, Mingxin Wang, Yule Liu, Jingyi Zheng, Hanze Jia, Tan Tang, Yingcai Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07967v1",
+    "source": "arXiv",
+    "abstract": "Adversarial claim rewriting is widely used to test fact-checking systems, but standard metrics fail to capture truth-conditional consistency and often label semantically corrupted rewrites as successful. We introduce AtomEval, a validity-aware evaluation framework that decomposes claims into subject-relation-object-modifier (SROM) atoms and scores adversarial rewrites with Atomic Validity Scoring (AVS), enabling detection of factual corruption beyond surface similarity. Experiments on the FEVER dataset across representative attack strategies and LLM generators show that AtomEval provides more reliable evaluation signals in our experiments. Using AtomEval, we further analyze LLM-based adversarial generators and observe that stronger models do not necessarily produce more effective adversarial claims under validity-aware evaluation, highlighting previously overlooked limitations in current adversarial evaluation practices."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "MONETA: Multimodal Industry Classification through Geographic Information with Multi Agent Systems",
+    "authors": "Arda Yüksel, Gabriel Thiem, Susanne Walter, Patrick Felka, Gabriela Alves Werb, Ivan Habernal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07956v1",
+    "source": "arXiv",
+    "abstract": "Industry classification schemes are integral parts of public and corporate databases as they classify businesses based on economic activity. Due to the size of the company registers, manual annotation is costly, and fine-tuning models with every update in industry classification schemes requires significant data collection. We replicate the manual expert verification by using existing or easily retrievable multimodal resources for industry classification. We present MONETA, the first multimodal industry classification benchmark with text (Website, Wikipedia, Wikidata) and geospatial sources (OpenStreetMap and satellite imagery). Our dataset enlists 1,000 businesses in Europe with 20 economic activity labels according to EU guidelines (NACE). Our training-free baseline reaches 62.10% and 74.10% with open and closed-source Multimodal Large Language Models (MLLM). We observe an increase of up to 22.80% with the combination of multi-turn design, context enrichment, and classification explanations. We will release our dataset and the enhanced guidelines."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "HCRE: LLM-based Hierarchical Classification for Cross-Document Relation Extraction with a Prediction-then-Verification Strategy",
+    "authors": "Guoqi Ma, Liang Zhang, Hongyao Tu, Hao Fu, Hui Li, Yujie Lin, Longyue Wang, Weihua Luo, Jinsong Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07937v1",
+    "source": "arXiv",
+    "abstract": "Cross-document relation extraction (RE) aims to identify relations between the head and tail entities located in different documents. Existing approaches typically adopt the paradigm of ``\\textit{Small Language Model (SLM) + Classifier}''. However, the limited language understanding ability of SLMs hinders further improvement of their performance. In this paper, we conduct a preliminary study to explore the performance of Large Language Models (LLMs) in cross-document RE. Despite their extensive parameters, our findings indicate that LLMs do not consistently surpass existing SLMs. Further analysis suggests that the underperformance is largely attributed to the challenges posed by the numerous predefined relations. To overcome this issue, we propose an LLM-based \\underline{H}ierarchical \\underline{C}lassification model for cross-document \\underline{RE} (HCRE), which consists of two core components: 1) an LLM for relation prediction and 2) a \\textit{hierarchical relation tree} derived from the predefined relation set. This tree enables the LLM to perform hierarchical classification, where the target relation is inferred level by level. Since the number of child nodes is much smaller than the size of the entire predefined relation set, the hierarchical relation tree significantly reduces the number of relation options that LLM needs to consider during inference. However, hierarchical classification introduces the risk of error propagation across levels. To mitigate this, we propose a \\textit{prediction-then-verification} inference strategy that improves prediction reliability through multi-view verification at each level. Extensive experiments show that HCRE outperforms existing baselines, validating its effectiveness."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Capture-Quiet Decomposition: A Verification Theorem for Chess Endgame Tablebases",
+    "authors": "Alexander Pavlov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07907v1",
+    "source": "arXiv",
+    "abstract": "We present the Capture-Quiet Decomposition (CQD), a structural theorem for verifying Win-Draw-Loss (WDL) labelings of chess endgame tablebases. The theorem decomposes every legal position into exactly one of three categories -- terminal, capture, or quiet -- and shows that a WDL labeling is correct if and only if: (1) terminal positions are labeled correctly, (2) capture positions are consistent with verified sub-models of smaller piece count, and (3) quiet positions satisfy retrograde consistency within the same endgame. The key insight is that capture positions anchor the labeling to externally verified sub-models, breaking the circularity that allows trivial fixpoints (such as the all-draw labeling) to satisfy self-consistency alone. We validate CQD exhaustively on all 35 three- and four-piece endgames (42 million positions), all 110 five-piece endgames, and all 372 six-piece endgames -- 517 endgames in total -- with the decomposed verifier producing identical violation counts to a full retrograde baseline in every case."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Kuramoto Oscillatory Phase Encoding: Neuro-inspired Synchronization for Improved Learning Efficiency",
+    "authors": "Mingqing Xiao, Yansen Wang, Dongqi Han, Caihua Shan, Dongsheng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07904v1",
+    "source": "arXiv",
+    "abstract": "Spatiotemporal neural dynamics and oscillatory synchronization are widely implicated in biological information processing and have been hypothesized to support flexible coordination such as feature binding. By contrast, most deep learning architectures represent and propagate information through activation values, neglecting the joint dynamics of rate and phase. In this work, we introduce Kuramoto oscillatory Phase Encoding (KoPE) as an additional, evolving phase state to Vision Transformers, incorporating a neuro-inspired synchronization mechanism to advance learning efficiency. We show that KoPE can improve training, parameter, and data efficiency of vision models through synchronization-enhanced structure learning. Moreover, KoPE benefits tasks requiring structured understanding, including semantic and panoptic segmentation, representation alignment with language, and few-shot abstract visual reasoning (ARC-AGI). Theoretical analysis and empirical verification further suggest that KoPE can accelerate attention concentration for learning efficiency. These results indicate that synchronization can serve as a scalable, neuro-inspired mechanism for advancing state-of-the-art neural network models."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "On the Decompositionality of Neural Networks",
+    "authors": "Junyong Lee, Baek-Ryun Seong, Sang-Ki Ko, Andrew Ferraiuolo, Minwoo Kang, Hyuntae Jeon, Seungmin Lim, Jieung Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07868v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in deep neural networks have achieved state-of-the-art performance across vision and natural language processing tasks. In practice, however, most models are treated as monolithic black-box functions, limiting maintainability, component-wise optimization, and systematic testing and verification. Despite extensive work on pruning and empirical decomposition, the field still lacks a principled semantic notion of when a neural network can be meaningfully decomposed. We introduce neural decompositionality, a formal notion defined as a semantic-preserving abstraction over neural architectures. Our key insight is that decompositionality should be characterized by the preservation of semantic behavior along the model's decision boundary, which governs classification outcomes. This yields a semantic contract between the original model and its components, enabling a rigorous formulation of decomposition. Building on this foundation, we develop a boundary-aware framework, SAVED (Semantic-Aware Verification-Driven Decomposition), which operationalizes the proposed definition. SAVED combines counterexample mining over low logic-margin inputs, probabilistic coverage, and structure-aware pruning to construct decompositions that preserve decision-boundary semantics. We evaluate our approach on CNNs, language Transformers, and Vision Transformers. Results show clear architectural differences: language Transformers largely preserve boundary semantics under decomposition, whereas vision models frequently violate the decompositionality criterion, indicating intrinsic limits. Overall, our work establishes decompositionality as a formally definable and empirically testable property, providing a foundation for modular reasoning about neural networks."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Open-Ended Video Game Glitch Detection with Agentic Reasoning and Temporal Grounding",
+    "authors": "Muyang Zheng, Tong Zhou, Geyang Wu, Zihao Lin, Haibo Wang, Lifu Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07818v1",
+    "source": "arXiv",
+    "abstract": "Open-ended video game glitch detection aims to identify glitches in gameplay videos, describe them in natural language, and localize when they occur. Unlike conventional game glitch understanding tasks which have largely been framed as image-level recognition or closed-form question answering, this task requires reasoning about game-specific dynamics such as mechanics, physics, rendering, animation, and expected state transitions directly over continuous gameplay videos and distinguishing true glitches from unusual but valid in-game events. To support this task, we introduce VideoGlitchBench, the first benchmark for open-ended video game glitch detection with temporal localization. VideoGlitchBench contains 5,238 gameplay videos from 120 games, each annotated with detailed glitch descriptions and precise temporal spans, enabling unified evaluation of semantic understanding and temporal grounding. We further propose GliDe, an agentic framework with three key components: a game-aware contextual memory for informed reasoning, a debate-based reflector for multi-perspective glitch detection and verification, and an event-level grounding module that recovers complete glitch intervals from fragmented temporal evidence. We also design a task-specific evaluation protocol that jointly measures semantic fidelity and temporal accuracy. Experiments show that this task remains highly challenging for current multimodal models, while GliDe achieves substantially stronger performance than corresponding vanilla model baselines."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Agentivism: a learning theory for the age of artificial intelligence",
+    "authors": "Lixiang Yan, Dragan Gašević",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07813v1",
+    "source": "arXiv",
+    "abstract": "Learning theories have historically changed when the conditions of learning evolved. Generative and agentic AI create a new condition by allowing learners to delegate explanation, writing, problem solving, and other cognitive work to systems that can generate, recommend, and sometimes act on the learner's behalf. This creates a fundamental challenge for learning theory: successful performance can no longer be assumed to indicate learning. Learners may complete tasks effectively with AI support while developing less understanding, weaker judgment, and limited transferable capability. We argue that this problem is not fully captured by existing learning theories. Behaviourism, cognitivism, constructivism, and connectivism remain important, but they do not directly explain when AI-assisted performance becomes durable human capability. We propose Agentivism, a learning theory for human-AI interaction. Agentivism defines learning as durable growth in human capability through selective delegation to AI, epistemic monitoring and verification of AI contributions, reconstructive internalization of AI-assisted outputs, and transfer under reduced support. The importance of Agentivism lies in explaining how learning remains possible when intelligent delegation is easy and human-AI interaction is becoming a persistent and expanding part of human learning."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "PolicyLong: Towards On-Policy Context Extension",
+    "authors": "Junlong Jia, Ziyang Chen, Xing Wu, Chaochen Gao, TingHao Yu, Feng Zhang, Songlin Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07809v1",
+    "source": "arXiv",
+    "abstract": "Extending LLM context windows is hindered by scarce high-quality long-context data. Recent methods synthesize data with genuine long-range dependencies via information-theoretic verification, selecting contexts that reduce a base model's predictive entropy. However, their single-pass offline construction with a fixed model creates a fundamental off-policy gap: the static screening landscape misaligns with the model's evolving capabilities, causing the training distribution to drift. We propose PolicyLong, shifting data construction towards a dynamic on-policy paradigm. By iteratively re-executing data screening (entropy computation, retrieval, and verification) using the current model, PolicyLong ensures the training distribution tracks evolving capabilities, yielding an emergent self-curriculum. Crucially, both positive and hard negative contexts derive from the current model's entropy landscape, co-evolving what the model learns to exploit and resist. Experiments on RULER, HELMET, and LongBench-v2 (Qwen2.5-3B) show PolicyLong consistently outperforms EntropyLong and NExtLong, with gains growing at longer contexts (e.g., +2.54 at 128K on RULER), confirming the value of on-policy data evolution."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "AITH: A Post-Quantum Continuous Delegation Protocol for Human-AI Trust Establishment",
+    "authors": "Zhaoliang Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07695v1",
+    "source": "arXiv",
+    "abstract": "The rapid deployment of AI agents acting autonomously on behalf of human principals has outpaced the development of cryptographic protocols for establishing, bounding, and revoking human-AI trust relationships. Existing frameworks (TLS, OAuth 2.0, Macaroons) assume deterministic software and cannot address probabilistic AI agents operating continuously within variable trust boundaries. We present AITH (AI Trust Handshake), a post-quantum continuous delegation protocol. AITH introduces: (1) a Continuous Delegation Certificate signed once with ML-DSA-87 (FIPS 204, NIST Level 5), replacing per-operation signing with sub-microsecond boundary checks at 4.7M ops/sec; (2) a six-check Boundary Engine enforcing hard constraints, rate limits, and escalation triggers with zero cryptographic overhead on the critical path; (3) a push-based Revocation Protocol propagating invalidation within one second. A three-tier SHA-256 Responsibility Chain provides tamper-evident audit logging. All five security theorems are machine-verified via Tamarin Prover under the Dolev-Yao model. We validate AITH through five rounds of multi-model adversarial auditing, resolving 12 vulnerabilities across four severity layers. Simulation of 100,000 operations shows 79.5% autonomous execution, 6.1% human escalation, and 14.4% blocked."
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Bilattice-Catastrophe Isomorphism for Four-Valued Logic in Digital Systems",
+    "authors": "Jiu Hui Wu, Hua Tian, Mengqi Yuan, Kejiang Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.07690v1",
+    "source": "arXiv",
+    "abstract": "Belnap's four-valued logic, distinguished by its inherent bilattice structure, provides a natural algebraic bridge between discrete Four-valued logic (4VL) in circuit and continuous catastrophe theory (CT). Building on the rigorous verification of the bilattice-catastrophe isomorphism theorem, we establish a categorical correspondence spanning the catastrophe category, interlaced bilattice category, and 4VL category, with the cusp catastrophe emerging as the canonical CT counterpart to 4VL.This unification provides a foundational framework for explaining 4VL's robustness. Crucially, we demonstrate that the four-valued algebra FOUR is the minimal complete algebraic structure capable of describing continuous-discrete interfaces with involution symmetry. Unlike the empirical adoption of X and Z in engineering practice, our work reveals their mathematical necessity: X and Z are topological invariants of discretized continuous dynamical systems, encoding fundamental properties of catastrophe-induced discontinuities. The work enables cross-disciplinary extensions to uncertainty propagation, complex system modeling, and fault-tolerant design."
+  },
+  {
+    "date": "2026-4-10",
+    "title": "Decentralized LLM Deployment in Mobile Edge Computing Networks_supp1-3682257.pdf",
+    "authors": "Ding Xu",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tvt.2026.3682257/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-11",
+    "title": "From Scenario to Code: Structured Prompting for LLM-Based Unit Test Generation",
+    "authors": "Aminata Diop, Fadel Toure, Mourad Badri",
+    "publish": "Proceedings of the 2025 7th World Symposium on Software Engineering",
+    "url": "https://doi.org/10.1145/3779657.3779658",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-11",
+    "title": "PACGBI: A CI/CD Pipeline for LLM-assisted Code Generation of Web Front End",
+    "authors": "Mahja Sarschar, Gefei Zhang, Annika Nowak",
+    "publish": "Proceedings of the 2025 7th World Symposium on Software Engineering",
+    "url": "https://doi.org/10.1145/3779657.3779672",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-11",
+    "title": "LLM-based Formality Ranking of Candidate Translations",
+    "authors": "John S. Y. Lee, Qiong Wang",
+    "publish": "Proceedings of the 2025 7th World Symposium on Software Engineering",
+    "url": "https://doi.org/10.1145/3779657.3779669",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-10",
+    "title": "OBsmith: LLM-Powered JavaScript Obfuscator Testing",
+    "authors": "Shan Jiang, Chenguang Zhu, Sarfraz Khurshid",
+    "publish": "Proceedings of the ACM on Programming Languages",
+    "url": "https://doi.org/10.1145/3798204",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-10",
+    "title": "LLM-Powered Silent Bug Fuzzing in Deep Learning Libraries via Versatile and Controlled Bug Transfer",
+    "authors": "Kunpeng Zhang, Dongwei Xiao, Daoyuan Wu, Shuai Wang, Jiali Zhao, Yuanyi Lin, Tongtong Xu, Shaohua Wang",
+    "publish": "Proceedings of the ACM on Programming Languages",
+    "url": "https://doi.org/10.1145/3798258",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-10",
+    "title": "A Pen-Shaped Visual-Tactile Sensor System for Braille Recognition With Multimodal Fusion and LLM-Enhanced Feedback",
+    "authors": "Zirui Mo, Jie Zheng, Zhonghuizi Zhang, Ding Qi, Hongfei Yang",
+    "publish": "IEEE Sensors Journal",
+    "url": "https://doi.org/10.1109/jsen.2026.3681019",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "LLM-Guided Classification and Extension of the MISP Taxonomy for Dark Web Q&amp;A Forums",
+    "authors": "Luis De-Marcos, Mikel Ferrer-Oliva, Alejandro Ruiz-Zambrano, Adrián Domínguez-Díaz, José Fernández-López, José-Amelio Medina-Merodio",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3682868",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "Trustworthy Collaborative Inference in Edge LLM Servicing: the Credibility-Aware MoE Scheduling",
+    "authors": "Jinyang Zhang, Shengli Pan, Fan Feng, Chengbo Jiao",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3682665",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "Nash Equilibrium Verification of Inverse Linear-Quadratic Differential Games Over Networks",
+    "authors": "Zili Wang, Hao Yang, Bin Jiang",
+    "publish": "IEEE Transactions on Automatic Control",
+    "url": "https://doi.org/10.1109/tac.2026.3683006",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "LLM-Driven Stationarity-Aware Expert Demonstrations for Multi-Agent Reinforcement Learning in Mobile Systems",
+    "authors": "Tianyang Duan, Zongyuan Zhang, Zheng Lin, Songxiao Guo, Xiuxian Guan, Guangyu Wu, Zihan Fang, Haotian Meng, Xia Du, Ji-Zhe Zhou, Heming Cui, Jun Luo, Yue Gao",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3682994",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "InspectCoder: Dynamic Analysis-Driven Self Repair through Interactive LLM-Debugger Collaboration",
+    "authors": "Yunkun Wang, Yue Zhang, Guochang Li, Chen Zhi, Binhua Li, Fei Huang, Yongbin Li, Shuiguang Deng",
+    "publish": "Proceedings of the ACM on Programming Languages",
+    "url": "https://doi.org/10.1145/3798238",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-10",
+    "title": "PersonalAI: A Systematic Comparison of Knowledge Graph Storage and Retrieval Approaches for Personalized LLM agents",
+    "authors": "Mikhail Menschikov, Dmitry Evseev, Victoria Dochkina, Ruslan Kostoev, Ilia Perepechkin, Petr Anokhin, Nikita Semenov, Evgeny Burnaev",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3682941",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "A Reliability Modeling Method Based on Logical Verification Generative Adversarial Networks",
+    "authors": "Wanyi Liu, Yunwen Feng, Cheng Lu, Zhicen Song, Rui Wang, Junyu Chen",
+    "publish": "2025 IEEE 5th International Conference on Applied Mathematics, Modeling and Computer Simulation (AMMCS)",
+    "url": "https://doi.org/10.1109/ammcs65761.2025.11459885",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "3D-IRMM-Net: An Interpretable Radiologist-Mimicking 3D Multimodal Network for Lesion Detection in ABUS with LLM-Based Guidance and Uncertainty Quantification",
+    "authors": "Xin Qian, Wei Ke, Luoxi Zhu, Yue Sun, Jiajia Lu, Zhang Xiong, Lingyun Bao, Tao Tan",
+    "publish": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "url": "https://doi.org/10.1109/tcsvt.2026.3682663",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "An Efficient Runtime Verification Toolkit for Self-Adaptive Systems Addressing Runtime System Model Changes",
+    "authors": "Ryuichi Iida, Keiichiro Oishi, Hiroyuki Nakagawa",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3682704",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "Design and Verification of a Modular Four-Degree-of-Freedom Error Measurement System",
+    "authors": "Chien-Sheng Liu, Jui-Hsiang Hung",
+    "publish": "IEEE Transactions on Instrumentation and Measurement",
+    "url": "https://doi.org/10.1109/tim.2026.3682819",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-4-10",
+    "title": "SART: Sign-Absolute Reformulation Theory for Binary Variable Reduction in Neural Network Verification",
+    "authors": "Jin Xu, Miaomiao Zhang, Bowen Du",
+    "publish": "Proceedings of the ACM on Programming Languages",
+    "url": "https://doi.org/10.1145/3798237",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
