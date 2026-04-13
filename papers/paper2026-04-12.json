@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-04-10",
+    "title": "Case-Grounded Evidence Verification: A Framework for Constructing Evidence-Sensitive Supervision",
+    "authors": "Soroosh Tayebi Arasteh, Mehdi Joodaki, Mahshad Lotfinia, Sven Nebelung, Daniel Truhn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09537v1",
+    "source": "arXiv",
+    "abstract": "Evidence-grounded reasoning requires more than attaching retrieved text to a prediction: a model should make decisions that depend on whether the provided evidence supports the target claim. In practice, this often fails because supervision is weak, evidence is only loosely tied to the claim, and evaluation does not test evidence dependence directly. We introduce case-grounded evidence verification, a general framework in which a model receives a local case context, external evidence, and a structured claim, and must decide whether the evidence supports the claim for that case. Our key contribution is a supervision construction procedure that generates explicit support examples together with semantically controlled non-support examples, including counterfactual wrong-state and topic-related negatives, without manual evidence annotation. We instantiate the framework in radiology and train a standard verifier on the resulting support task. The learned verifier substantially outperforms both case-only and evidence-only baselines, remains strong under correct evidence, and collapses when evidence is removed or swapped, indicating genuine evidence dependence. This behavior transfers across unseen evidence articles and an external case distribution, though performance degrades under evidence-source shift and remains sensitive to backbone choice. Overall, the results suggest that a major bottleneck in evidence grounding is not only model capacity, but the lack of supervision that encodes the causal role of evidence."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Policy-Aware Edge LLM-RAG Framework for Internet of Battlefield Things Mission Orchestration",
+    "authors": "Om Solanki, Lopamudra Praharaj, Deepti Gupta, Maanak Gupta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09493v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) offer a promising interface for intent-driven control of autonomous cyber-physical systems, but their direct use in mission-critical Internet of Battlefield Things (IoBT) environments raises significant safety, reliability, and policy-compliance concerns. This paper presents a Policy-Aware Large Language Model Retrieval-Augmented Generation (referred as PA-LLM-RAG), an edge-deployed LLM orchestration framework for IoBT mission control that integrates retrieval-augmented reasoning and independent command verification. The proposed PA-LLM-RAG framework combines a lightweight retrieval module that grounds decisions in operational policies and telemetry with a locally hosted LLM for mission planning and a secondary JudgeLLM for validating user generated commands prior to execution. To evaluate PA-LLM-RAG, we implement a simulated IoBT environment using RoboDK and assess four open-source LLMs across controlled mission scenarios of increasing complexity, including baseline operations, threat detection, coverage recovery, multi-event coordination, and policy-violation requests. Experimental results demonstrate that the framework effectively detects policy-violating commands while maintaining low-latency response suitable for edge deployment. Gemma-2B achieving the highest overall reliability with 4.17 sec latency and 100% success rate. The findings highlight a clear tradeoff between reasoning capacity and responsiveness across models and show that combining deterministic safeguards with JudgeLLM verification significantly improves reliability in LLM-driven IoBT orchestration."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Yes, But Not Always. Generative AI Needs Nuanced Opt-in",
+    "authors": "Wiebke Hutiri, Morgan Scheuerman, Shruti Nagpal, Austin Hoag, Alice Xiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09413v1",
+    "source": "arXiv",
+    "abstract": "This paper argues that a one-size-fits-all approach to specifying consent for the use of creative works in generative AI is insufficient. Real-world ownership and rights holder structures, the imitation of artistic styles and likeness, and the limitless contexts of use of AI outputs make the status quo of binary consent with opt-in by default untenable. To move beyond the current impasse, we consider levers of control in generative AI workflows at training, inference, and dissemination. Based on these insights, we position inference-time opt-in as an overlooked opportunity for nuanced consent verification. We conceptualize nuanced consent conditions for opt-in and propose an agent-based inference-time opt-in architecture to verify if user intent requests meet conditional consent granted by rights holders. In a case study for music, we demonstrate that nuanced opt-in at inference can account for established rights and re-establish a balance of power between rights holders and AI developers."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning",
+    "authors": "Guiyao Tie, Jiawen Shi, Pan Zhou, Lichao Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09378v1",
+    "source": "arXiv",
+    "abstract": "Agent ecosystems increasingly rely on installable skills to extend functionality, and some skills bundle learned model artifacts as part of their execution logic. This creates a supply-chain risk that is not captured by prompt injection or ordinary plugin misuse: a third-party skill may appear benign while concealing malicious behavior inside its bundled model. We present BadSkill, a backdoor attack formulation that targets this model-in-skill threat surface. In BadSkill, an adversary publishes a seemingly benign skill whose embedded model is backdoor-fine-tuned to activate a hidden payload only when routine skill parameters satisfy attacker-chosen semantic trigger combinations. To realize this attack, we train the embedded classifier with a composite objective that combines classification loss, margin-based separation, and poison-focused optimization, and evaluate it in an OpenClaw-inspired simulation environment that preserves third-party skill installation and execution while enabling controlled multi-model study. Our benchmark spans 13 skills, including 8 triggered tasks and 5 non-trigger control skills, with a combined main evaluation set of 571 negative-class queries and 396 trigger-aligned queries. Across eight architectures (494M--7.1B parameters) from five model families, BadSkill achieves up to 99.5\\% average attack success rate (ASR) across the eight triggered skills while maintaining strong benign-side accuracy on negative-class queries. In poison-rate sweeps on the standard test split, a 3\\% poison rate already yields 91.7\\% ASR. The attack remains effective across the evaluated model scales and under five text perturbation types. These findings identify model-bearing skills as a distinct model supply-chain risk in agent ecosystems and motivate stronger provenance verification and behavioral vetting for third-party skill artifacts."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Experimental Verification of a Universal Operator Growth Hypothesis",
+    "authors": "M. Engelsberg, Wilson Barros",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09362v1",
+    "source": "arXiv",
+    "abstract": "F$^{19}$ nuclear magnetic resonance free induction decay (FID) data are used to verify the predictions of a universal growth hypothesis for the Lanczos coefficients proposed by Parker et al. Our results strongly support this hypothesis and permit to calculate values of the growth parameter $α$ for three crystal orientations. For the magnetic field parallel the [100] crystal axis, we found $α=3.161 \\times 10^{4} sec^{-1}$. The special experimental conditions required for the observability of a singularity in the analytic continuation of the FID, which from the experimental data was found to be of branch-point type, are discussed."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Drift-Aware Online Dynamic Learning for Nonstationary Multivariate Time Series: Application to Sintering Quality Prediction",
+    "authors": "Yumeng Zhao, Shengxiang Yang, Xianpeng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09358v1",
+    "source": "arXiv",
+    "abstract": "Accurate prediction of nonstationary multivariate time series remains a critical challenge in complex industrial systems such as iron ore sintering. In practice, pronounced concept drift compounded by significant label verification latency rapidly degrades the performance of offline-trained models. Existing methods based on static architectures or passive update strategies struggle to simultaneously extract multi-scale spatiotemporal features and overcome the stability-plasticity dilemma without immediate supervision. To address these limitations, a Drift-Aware Multi-Scale Dynamic Learning (DA-MSDL) framework is proposed to maintain robust multi-output predictive performance via online adaptive mechanisms on nonstationary data streams. The framework employs a multi-scale bi-branch convolutional network as its backbone to disentangle local fluctuations from long-term trends, thereby enhancing representational capacity for complex dynamic patterns. To circumvent the label latency bottleneck, DA-MSDL leverages Maximum Mean Discrepancy (MMD) for unsupervised drift detection. By quantifying online statistical deviations in feature distributions, DA-MSDL proactively triggers model adaptation prior to inference. Furthermore, a drift-severity-guided hierarchical fine-tuning strategy is developed. Supported by prioritized experience replay from a dynamic memory queue, this approach achieves rapid distribution alignment while effectively mitigating catastrophic forgetting. Long-horizon experiments on real-world industrial sintering data and a public benchmark dataset demonstrate that DA-MSDL consistently outperforms representative baselines under severe concept drift. Exhibiting strong cross-domain generalization and predictive stability, the proposed framework provides an effective online dynamic learning paradigm for quality monitoring in nonstationary environments."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "CIR+CVN: Bridging LLM Semantic Understanding and Petri-Net Verification for Concurrent Programs",
+    "authors": "Kaiwen Zhang, Guanjun Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09318v1",
+    "source": "arXiv",
+    "abstract": "Recovering concurrency structure directly from source code is difficult because shared-resource identity and protection relations are often obscured by aliasing, ownership, and API-specific idioms. We therefore study a specification-driven, model-first verification architecture for LLM-assisted concurrent program construction. Instead of verifying arbitrary source code, a large language model first synthesizes a verification-oriented concurrency artifact from a natural-language requirement or system specification. The first formalism, the Concurrency Intermediate Representation (Cir), is a statement-level, alias-free model in which shared resources are globally named, protection relations are explicit, and each statement carries a stable identifier. The second formalism, the Concurrency Verification Net (Cvn), is a weighted place/transition Petri net with a finite global store and three-valued guards for data-dependent branching. A validated Cir artifact is translated mechanically to Cvn, explored exhaustively, and any counterexample is mapped back to statement identifiers to guide targeted repair. To reduce the risk of bug-free but behavior-dropping repairs, acceptance additionally applies a lightweight goal-reachability check over designated critical outcomes. We formalize both representations, prove translation-correspondence results for deadlock and signal-loss analysis, define a two-layer checking architecture with 61 static rules and 5 analysis predicates, and evaluate the pipeline on 9 representative bounded-concurrency patterns. The results show that the method supports iterative bug detection and repair on Cir artifacts and that goal reachability helps filter semantically incomplete repairs. The trust boundary of the present work is the generated Cir artifact rather than arbitrary source code."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Iterative Identification Closure: Amplifying Causal Identifiability in Linear SEMs",
+    "authors": "Ziyi Ding, Xiao-Ping Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09309v1",
+    "source": "arXiv",
+    "abstract": "The Half-Trek Criterion (HTC) is the primary graphical tool for determining generic identifiability of causal effect coefficients in linear structural equation models (SEMs) with latent confounders. However, HTC is inherently node-wise: it simultaneously resolves all incoming edges of a node, leaving a gap of \"inconclusive\" causal effects (15-23% in moderate graphs). We introduce Iterative Identification Closure (IIC), a general framework that decouples causal identification into two phases: (1) a seed function S_0 that identifies an initial set of edges from any external source of information (instrumental variables, interventions, non-Gaussianity, prior knowledge, etc.); and (2) Reduced HTC propagation that iteratively substitutes known coefficients to reduce system dimension, enabling identification of edges that standard HTC cannot resolve. The core novelty is iterative identification propagation: newly identified edges feed back to unlock further identification -- a mechanism absent from all existing graphical criteria, which treat each edge (or node) in isolation. This propagation is non-trivial: coefficient substitution alters the covariance structure, and soundness requires proving that the modified Jacobian retains generic full rank -- a new theoretical result (Reduced HTC Theorem). We prove that IIC is sound, monotone, converges in O(|E|) iterations (empirically <=2), and strictly subsumes both HTC and ancestor decomposition. Exhaustive verification on all graphs with n<=5 (134,144 edges) confirms 100% precision (zero false positives); with combined seeds, IIC reduces the HTC gap by over 80%. The propagation gain is gamma~4x (2 seeds identifying ~3% of edges to 97.5% total identification), far exceeding gamma<=1.2x of prior methods that incorporate side information without iterative feedback."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "SAGE: A Service Agent Graph-guided Evaluation Benchmark",
+    "authors": "Ling Shi, Yuqin Dai, Ziyin Wang, Ning Gao, Wei Zhang, Chaozheng Wang, Yujie Wang, Wei He, Jinpeng Wang, Deiyi Xiong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09285v1",
+    "source": "arXiv",
+    "abstract": "The development of Large Language Models (LLMs) has catalyzed automation in customer service, yet benchmarking their performance remains challenging. Existing benchmarks predominantly rely on static paradigms and single-dimensional metrics, failing to account for diverse user behaviors or the strict adherence to structured Standard Operating Procedures (SOPs) required in real-world deployments. To bridge this gap, we propose SAGE (Service Agent Graph-guided Evaluation), a universal multi-agent benchmark for automated, dual-axis assessment. SAGE formalizes unstructured SOPs into Dynamic Dialogue Graphs, enabling precise verification of logical compliance and comprehensive path coverage. We introduce an Adversarial Intent Taxonomy and a modular Extension Mechanism, enabling low-cost deployment across domains and facilitating automated dialogue data synthesis. Evaluation is conducted via a framework where Judge Agents and a Rule Engine analyze interactions between User and Service Agents to generate deterministic ground truth. Extensive experiments on 27 LLMs across 6 industrial scenarios reveal a significant ``Execution Gap'' where models accurately classify intents but fail to derive correct subsequent actions. We also observe ``Empathy Resilience'', a phenomenon where models maintain polite conversational facades despite underlying logical failures under high adversarial intensity. Code and resources are available at https://anonymous.4open.science/r/SAGE-Bench-4CD3/."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "DRBENCHER: Can Your Agent Identify the Entity, Retrieve Its Properties and Do the Math?",
+    "authors": "Young-Suk Lee, Ramon Fernandez Astudillo, Radu Florian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09251v1",
+    "source": "arXiv",
+    "abstract": "Deep research agents increasingly interleave web browsing with multi-step computation, yet existing benchmarks evaluate these capabilities in isolation, creating a blind spot in assessing real-world performance. We introduce DRBENCHER, a synthetic benchmark generator for questions that require both browsing and computation. It enforces four criteria: verifiability (gold answers are computed by executing parameterized code over knowledge-graph values), complexity (multi-hop entity identification, property retrieval, and domain-specific computation), difficulty (a two-stage verification cascade filters out questions solvable by the generating model), and diversity (a greedy max-min embedding filter maximizes coverage). These criteria are realized via a unified answer-first pipeline spanning five domains: biochemistry, financial, geophysical, security, and history. Human evaluation shows 76% validity (84% excluding stale data), with 35% of errors due to outdated knowledge-graph entries, highlighting an inherent limitation of systems that reason over evolving data. Automatic evaluation shows that the strongest frontier model achieves only 20% answer accuracy. Compared to manually constructed benchmarks (BrowseComp+, MATH-500, GPQA), DRBENCHER achieves the highest semantic diversity."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "DiffHLS: Differential Learning for High-Level Synthesis QoR Prediction with GNNs and LLM Code Embeddings",
+    "authors": "Zedong Peng, Zeju Li, Qiang Xu, Jieru Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09240v1",
+    "source": "arXiv",
+    "abstract": "High-Level Synthesis (HLS) compiles C/C++ into RTL, but exploring pragma-driven optimization choices remains expensive because each design point requires time-consuming synthesis. We propose \\textbf{\\DiffHLS}, a differential learning framework for HLS Quality-of-Result (QoR) prediction that learns from kernel--design pairs: a kernel baseline and a pragma-inserted design variant. \\DiffHLS~encodes kernel and design intermediate-representation graphs with dedicated graph neural network (GNN) branches, and augments the delta pathway with code embeddings from a pretrained code large language model (LLM). Instead of regressing absolute targets directly, we jointly predict the kernel baseline and the design-induced delta, and compose them to obtain the design prediction. On PolyBench, \\DiffHLS~attains lower average MAPE than GNN baselines under four GNN backbones, and LLM code embeddings consistently improve over a GNN-only ablation. We further validate scalability on the ForgeHLS dataset."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "MAG-3D: Multi-Agent Grounded Reasoning for 3D Understanding",
+    "authors": "Henry Zheng, Chenyue Fang, Rui Huang, Siyuan Wei, Xiao Liu, Gao Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09167v1",
+    "source": "arXiv",
+    "abstract": "Vision-language models (VLMs) have achieved strong performance in multimodal understanding and reasoning, yet grounded reasoning in 3D scenes remains underexplored. Effective 3D reasoning hinges on accurate grounding: to answer open-ended queries, a model must first identify query-relevant objects and regions in a complex scene, and then reason about their spatial and geometric relationships. Recent approaches have demonstrated strong potential for grounded 3D reasoning. However, they often rely on in-domain tuning or hand-crafted reasoning pipelines, which limit their flexibility and zero-shot generalization to novel environments. In this work, we present MAG-3D, a training-free multi-agent framework for grounded 3D reasoning with off-the-shelf VLMs. Instead of relying on task-specific training or fixed reasoning procedures, MAG-3D dynamically coordinates expert agents to address the key challenges of 3D reasoning. Specifically, we propose a planning agent that decomposes the task and orchestrates the overall reasoning process, a grounding agent that performs free-form 3D grounding and relevant frame retrieval from extensive 3D scene observations, and a coding agent that conducts flexible geometric reasoning and explicit verification through executable programs. This multi-agent collaborative design enables flexible training-free 3D grounded reasoning across diverse scenes and achieves state-of-the-art performance on challenging benchmarks."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation",
+    "authors": "Yushi Feng, Junye Du, Qifan Wang, Zizhan Ma, Qian Niu, Yutaka Matsuo, Long Feng, Lequan Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09155v1",
+    "source": "arXiv",
+    "abstract": "Graphical user interface (GUI) agents powered by vision language models (VLMs) are rapidly moving from passive assistance to autonomous operation. However, this unrestricted action space exposes users to severe and irreversible financial, privacy or social harm. Existing safeguards rely on prompt engineering, brittle heuristics and VLM-as-critic lack formal verification and user-tunable guarantees. We propose CORA (COnformal Risk-controlled GUI Agent), a post-policy, pre-action safeguarding framework that provides statistical guarantees on harmful executed actions. CORA reformulates safety as selective action execution: we train a Guardian model to estimate action-conditional risk for each proposed step. Rather than thresholding raw scores, we leverage Conformal Risk Control to calibrate an execute/abstain boundary that satisfies a user-specified risk budget and route rejected actions to a trainable Diagnostician model, which performs multimodal reasoning over rejected actions to recommend interventions (e.g., confirm, reflect, or abort) to minimize user burden. A Goal-Lock mechanism anchors assessment to a clarified, frozen user intent to resist visual injection attacks. To rigorously evaluate this paradigm, we introduce Phone-Harm, a new benchmark of mobile safety violations with step-level harm labels under real-world settings. Experiments on Phone-Harm and public benchmarks against diverse baselines validate that CORA improves the safety--helpfulness--interruption Pareto frontier, offering a practical, statistically grounded safety paradigm for autonomous GUI execution. Code and benchmark are available at cora-agent.github.io."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Think Less, Know More: State-Aware Reasoning Compression with Knowledge Guidance for Efficient Reasoning",
+    "authors": "Yi Sui, Chaozhuo Li, Dawei Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09150v1",
+    "source": "arXiv",
+    "abstract": "Large Reasoning Models (LRMs) achieve strong performance on complex tasks by leveraging long Chain-of-Thought (CoT), but often suffer from overthinking, leading to excessive reasoning steps and high inference latency. Existing CoT compression methods struggle to balance accuracy and efficiency, and lack fine-grained, step-level adaptation to redundancy and reasoning bias. Therefore, we propose State-Aware Reasoning Compression with Knowledge Guidance (STACK), a framework that performs step-wise CoT compression by explicitly modeling stage-specific redundancy sources and integrating with a retrieval-augmented guidance. STACK constructs online long-short contrastive samples and dynamically switches between knowledge-guided compression for uncertain or biased reasoning state and self-prompted compression for overly long but confident state, complemented by an answer-convergence-based early stopping mechanism to suppress redundant verification. We further propose a reward-difference-driven training strategy by combining Proximal Policy Optimization (PPO) and Direct Preference Optimization (DPO), enabling models to learn state-conditioned compression strategies. Experiments on three mathematical reasoning benchmarks show that STACK achieves a superior accuracy-efficiency balance, reducing average response length by 59.9% while improving accuracy by 4.8 points over existing methods."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "CLIP-Inspector: Model-Level Backdoor Detection for Prompt-Tuned CLIP via OOD Trigger Inversion",
+    "authors": "Akshit Jindal, Saket Anand, Chetan Arora, Vikram Goyal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09101v1",
+    "source": "arXiv",
+    "abstract": "Organisations with limited data and computational resources increasingly outsource model training to Machine Learning as a Service (MLaaS) providers, who adapt vision-language models (VLMs) such as CLIP to downstream tasks via prompt tuning rather than training from scratch. This semi-honest setting creates a security risk where a malicious provider can follow the prompt-tuning protocol yet implant a backdoor, forcing triggered inputs to be classified into an attacker-chosen class, even for out-of-distribution (OOD) data. Such backdoors leave encoders untouched, making them undetectable to existing methods that focus on encoder corruption. Other data-level methods that sanitize data before training or during inference, also fail to answer the critical question, \"Is the delivered model backdoored or not?\" To address this model-level verification problem, we introduce CLIP-Inspector (CI), a backdoor detection method designed for prompt-tuned CLIP models. Assuming white-box access to the delivered model and a pool of unlabeled OOD images, CI reconstructs possible triggers for each class to determine if the model exhibits backdoor behaviour or not. Additionally, we demonstrate that using CI's reconstructed trigger for fine-tuning on correctly labeled triggered inputs enables us to re-align the model and reduce backdoor effectiveness. Through extensive experiments across ten datasets and four backdoor attacks, we demonstrate that CI can reconstruct effective triggers in a single epoch using only 1,000 OOD images, achieving a 94% detection accuracy (47/50 models). Compared to adapted trigger-inversion baselines, CI yields a markedly higher AUROC score (0.973 vs 0.495/0.687), thus enabling the vetting and post-hoc repair of prompt-tuned CLIP models to ensure safe deployment."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "NyayaMind- A Framework for Transparent Legal Reasoning and Judgment Prediction in the Indian Legal System",
+    "authors": "Parjanya Aditya Shukla, Shubham Kumar Nigam, Debtanu Datta, Balaramamahanthi Deepak Patnaik, Noel Shallum, Pradeep Reddy Vanga, Saptarshi Ghosh, Arnab Bhattacharya",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09069v1",
+    "source": "arXiv",
+    "abstract": "Court Judgment Prediction and Explanation (CJPE) aims to predict a judicial decision and provide a legally grounded explanation for a given case based on the facts, legal issues, arguments, cited statutes, and relevant precedents. For such systems to be practically useful in judicial or legal research settings, they must not only achieve high predictive performance but also generate transparent and structured legal reasoning that aligns with established judicial practices. In this work, we present NyayaMind, an open-source framework designed to enable transparent and scalable legal reasoning for the Indian judiciary. The proposed framework integrates retrieval, reasoning, and verification mechanisms to emulate the structured decision-making process typically followed in courts. Specifically, NyayaMind consists of two main components: a Retrieval Module and a Prediction Module. The Retrieval Module employs a RAG pipeline to identify legally relevant statutes and precedent cases from large-scale legal corpora, while the Prediction Module utilizes reasoning-oriented LLMs fine-tuned for the Indian legal domain to generate structured outputs including issues, arguments, rationale, and the final decision. Our extensive results and expert evaluation demonstrate that NyayaMind significantly improves the quality of explanation and evidence alignment compared to existing CJPE approaches, providing a promising step toward trustworthy AI-assisted legal decision support systems."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "V-CAGE: Vision-Closed-Loop Agentic Generation Engine for Robotic Manipulation",
+    "authors": "Yaru Liu, Ao-bo Wang, Nanyang Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09036v1",
+    "source": "arXiv",
+    "abstract": "Scaling Vision-Language-Action (VLA) models requires massive datasets that are both semantically coherent and physically feasible. However, existing scene generation methods often lack context-awareness, making it difficult to synthesize high-fidelity environments embedded with rich semantic information, frequently resulting in unreachable target positions that cause tasks to fail prematurely. We present V-CAGE (Vision-Closed-loop Agentic Generation Engine), an agentic framework for autonomous robotic data synthesis. Unlike traditional scripted pipelines, V-CAGE operates as an embodied agentic system, leveraging foundation models to bridge high-level semantic reasoning with low-level physical interaction. Specifically, we introduce Inpainting-Guided Scene Construction to systematically arrange context-aware layouts, ensuring that the generated scenes are both semantically structured and kinematically reachable. To ensure trajectory correctness, we integrate functional metadata with a Vision-Language Model based closed-loop verification mechanism, acting as a visual critic to rigorously filter out silent failures and sever the error propagation chain. Finally, to overcome the storage bottleneck of massive video datasets, we implement a perceptually-driven compression algorithm that achieves over 90\\% filesize reduction without compromising downstream VLA training efficacy. By centralizing semantic layout planning and visual self-verification, V-CAGE automates the end-to-end pipeline, enabling the highly scalable synthesis of diverse, high-quality robotic manipulation datasets."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "ASTRA: Adaptive Semantic Tree Reasoning Architecture for Complex Table Question Answering",
+    "authors": "Xiaoke Guo, Songze Li, Zhiqiang Liu, Zhaoyan Gong, Yuanxiang Liu, Huajun Chen, Wen Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08999v1",
+    "source": "arXiv",
+    "abstract": "Table serialization remains a critical bottleneck for Large Language Models (LLMs) in complex table question answering, hindered by challenges such as structural neglect, representation gaps, and reasoning opacity. Existing serialization methods fail to capture explicit hierarchies and lack schema flexibility, while current tree-based approaches suffer from limited semantic adaptability. To address these limitations, we propose ASTRA (Adaptive Semantic Tree Reasoning Architecture) including two main modules, AdaSTR and DuTR. First, we introduce AdaSTR, which leverages the global semantic awareness of LLMs to reconstruct tables into Logical Semantic Trees. This serialization explicitly models hierarchical dependencies and employs an adaptive mechanism to optimize construction strategies based on table scale. Second, building on this structure, we present DuTR, a dual-mode reasoning framework that integrates tree-search-based textual navigation for linguistic alignment and symbolic code execution for precise verification. Experiments on complex table benchmarks demonstrate that our method achieves state-of-the-art (SOTA) performance."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "PinpointQA: A Dataset and Benchmark for Small Object-Centric Spatial Understanding in Indoor Videos",
+    "authors": "Zhiyu Zhou, Peilin Liu, Ruoxuan Zhang, Luyang Zhang, Cheng Zhang, Hongxia Xie, Wen-Huang Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08991v1",
+    "source": "arXiv",
+    "abstract": "Small object-centric spatial understanding in indoor videos remains a significant challenge for multimodal large language models (MLLMs), despite its practical value for object search and assistive applications. Although existing benchmarks have advanced video spatial intelligence, embodied reasoning, and diagnostic perception, no existing benchmark directly evaluates whether a model can localize a target object in video and express its position with sufficient precision for downstream use. In this work, we introduce PinpointQA, the first dataset and benchmark for small object-centric spatial understanding in indoor videos. Built from ScanNet++ and ScanNet200, PinpointQA comprises 1,024 scenes and 10,094 QA pairs organized into four progressively challenging tasks: Target Presence Verification (TPV), Nearest Reference Identification (NRI), Fine-Grained Spatial Description (FSD), and Structured Spatial Prediction (SSP). The dataset is built from intermediate spatial representations, with QA pairs generated automatically and further refined through quality control. Experiments on representative MLLMs reveal a consistent capability gap along the progressive chain, with SSP remaining particularly difficult. Supervised fine-tuning on PinpointQA yields substantial gains, especially on the harder tasks, demonstrating that PinpointQA serves as both a diagnostic benchmark and an effective training dataset. The dataset and project page are available at https://rainchowz.github.io/PinpointQA."
+  },
+  {
+    "date": "2026-04-10",
+    "title": "From Indiscriminate to Targeted: Efficient RTL Verification via Functionally Key Signal-Driven LLM Assertion Generation",
+    "authors": "Yonghao Wang, Hongqin Lyu, Boling Chen, MinYang Bao, Wenchao Ding, Feng Gu, Zhiteng Chao, Jianan Mu, Kan Shi, Tiancheng Wang, Huawei Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08932v1",
+    "source": "arXiv",
+    "abstract": "Functional verification has become the most time-consuming phase in IC development, and Assertion-Based Verification (ABV) is key to reducing debugging time. However, existing LLM-based assertion generation methods typically pursue indiscriminate verification, aiming for maximal coverage without considering signal criticality, whereas industrial practice demands maximizing coverage with minimal verification cost. Consequently, identifying signals that have the greatest impact on design functionality and error propagation-enabling a shift from indiscriminate to targeted verification-remains a key challenge. To address this, we propose AgileAssert, a key signal-driven assertion generation framework that constructs RTL semantic graphs and identifies the top-K critical signals via a hybrid scoring and selection mechanism, followed by structure-aware RTL slicing to provide the LLM with precise targets and contextual information, thereby guiding LLMs to generate tightly constrained targeted assertions for efficient verification. Evaluated on block- and CPU-level designs, with an average 66.68% reduction in assertions, our approach outperforms three existing SOTA methods, and significantly improving coverage metrics while reducing input token consumption by 64%. In mutation testing, when our approach surpasses existing methods in error detection rate, the average number of assertions used decreases by 72.74%."
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Seeing the Reasoning: How LLM Rationales Influence User Trust and Decision-Making in Factual Verification Tasks",
+    "authors": "Xin Sun, Shu Wei, Jos A Bosch, Isao Echizen, Saku Sugawara, Abdallah El Ali",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3798613",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "\"To LLM, or Not to LLM?\": How Designers and Developers Navigate LLMs as Tools or Teammates",
+    "authors": "Varad Vishwarupe, Ivan Flechais, Nigel Shadbolt, Marina Denise Jirotka",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3798953",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Session Summary Podcast: Session 131: LLM Interactions and Generative AI Mechanics",
+    "authors": "AI Generated",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3809019",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Session Summary Podcast: Session 130: LLM Interaction &amp; Conversational Agents",
+    "authors": "AI Generated",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3809018",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Co-Disclosing the Computer: LLM-Mediated Computing through Reflective Conversation",
+    "authors": "Mattias Rost",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791769",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Session Summary Podcast: Session 126: Interactive Prompting, Chaining, and LLM Orchestration Tools",
+    "authors": "AI Generated",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3809014",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Evaluating Supportive LLM Behavior Over Multiple Turns across Demographics",
+    "authors": "Michelle Star",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3799175",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Data-Prompt Co-Evolution: Growing Test Sets to Refine LLM Behavior",
+    "authors": "Minjae Lee, Minsuk Kahng",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791222",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Characterizing User-Reported Risks across LLM Chatbots",
+    "authors": "Lingyao Li, Renkai Ma, Zhaoqian Xue, Junjie Xiong",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791505",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "User Autonomy in Human-LLM Interaction: A Scoping Review",
+    "authors": "Yumeng Wang, Ge Wang",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3798855",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Reporting and Reviewing LLM-Integrated Systems in HCI: Challenges and Considerations",
+    "authors": "Karla Felix Navarro, Eugene Syriani, Ian Arawjo",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3790439",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Orchid-Creator: An Authoring Tool Supporting LLM-Driven Interactive Narrative Creation",
+    "authors": "Zhen Wu, serkan kumyol, Zhengyang Ma, Tristan Braud",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791426",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Who Controls the Conversation? User Perspectives on Generative AI (LLM) System Prompts",
+    "authors": "Anna Neumann, Yulu Pi, Jatinder Singh",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791726",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Towards Usable, Privacy Respecting Long-Term Memory for LLM-based Conversational Agents",
+    "authors": "Lisa Mekioussa Malki",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3799198",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Hallucination or Adaptation?: A Context-Aware Evaluation Framework for LLM Confabulation",
+    "authors": "Jingrong Wang, Ziyuan Jiang",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3799103",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "From Needs to Design: Bridging Intimate Gaps with LLM-Augmented Nonviolent Communication",
+    "authors": "Xingyi Chen, Xuan Zhang",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3798539",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Procedural Parity, Outcome Mismatch: Evaluating Human vs LLM Deliberation",
+    "authors": "Maurice Flechtner",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3798499",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Supporting Effective Goal Setting with LLM-Based Chatbots",
+    "authors": "Michel Schimpf, Sebastian Maier, Anton Wyrowski, Lara Christoforakos, Stefan Feuerriegel, Thomas Bohné",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791064",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Exploring Creator-Centric Methods for LLM-Assisted Interactive Storytelling",
+    "authors": "Yuelu Li, Siyi Wu, Lujin Zhang, Zhihan Guo, Wenchuan Lu, David Yip",
+    "publish": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772318.3791362",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-13",
+    "title": "Lessons from API Usability Analyses Using an LLM",
+    "authors": "Bonnie E John, Varun N Patil, Stephen Augustus",
+    "publish": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "url": "https://doi.org/10.1145/3772363.3798454",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]

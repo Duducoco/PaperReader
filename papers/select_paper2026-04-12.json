@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-04-10",
+    "title": "DiffHLS: Differential Learning for High-Level Synthesis QoR Prediction with GNNs and LLM Code Embeddings",
+    "authors": "Zedong Peng, Zeju Li, Qiang Xu, Jieru Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.09240v1",
+    "source": "arXiv",
+    "abstract": "High-Level Synthesis (HLS) compiles C/C++ into RTL, but exploring pragma-driven optimization choices remains expensive because each design point requires time-consuming synthesis. We propose \\textbf{\\DiffHLS}, a differential learning framework for HLS Quality-of-Result (QoR) prediction that learns from kernel--design pairs: a kernel baseline and a pragma-inserted design variant. \\DiffHLS~encodes kernel and design intermediate-representation graphs with dedicated graph neural network (GNN) branches, and augments the delta pathway with code embeddings from a pretrained code large language model (LLM). Instead of regressing absolute targets directly, we jointly predict the kernel baseline and the design-induced delta, and compose them to obtain the design prediction. On PolyBench, \\DiffHLS~attains lower average MAPE than GNN baselines under four GNN backbones, and LLM code embeddings consistently improve over a GNN-only ablation. We further validate scalability on the ForgeHLS dataset.",
+    "title_zh": "DiffHLS：基于图神经网络和大型语言模型代码嵌入的高层次综合质量预测差分学习",
+    "abstract_zh": "高层次综合（HLS）将C/C++编译为RTL，但探索基于pragma的优化选择仍然代价高昂，因为每个设计点都需要耗时的综合过程。我们提出了\\textbf{\\DiffHLS}，一种用于HLS质量结果（QoR）预测的差分学习框架，该框架从内核与设计对中学习：包括一个内核基线和一个插入pragma的设计变体。\\DiffHLS~通过专用的图神经网络（GNN）分支对内核和设计的中间表示图进行编码，并通过预训练代码大型语言模型（LLM）的代码嵌入增强差分路径。与直接回归绝对目标不同，我们联合预测内核基线和设计引发的差分，并将其组合以获得设计预测。在PolyBench上，\\DiffHLS~在四种GNN骨干网络下比GNN基线实现了更低的平均绝对百分比误差（MAPE），且LLM代码嵌入始终优于仅使用GNN的消融实验。我们进一步在ForgeHLS数据集上验证了其可扩展性。"
+  },
+  {
+    "date": "2026-04-10",
+    "title": "From Indiscriminate to Targeted: Efficient RTL Verification via Functionally Key Signal-Driven LLM Assertion Generation",
+    "authors": "Yonghao Wang, Hongqin Lyu, Boling Chen, MinYang Bao, Wenchao Ding, Feng Gu, Zhiteng Chao, Jianan Mu, Kan Shi, Tiancheng Wang, Huawei Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.08932v1",
+    "source": "arXiv",
+    "abstract": "Functional verification has become the most time-consuming phase in IC development, and Assertion-Based Verification (ABV) is key to reducing debugging time. However, existing LLM-based assertion generation methods typically pursue indiscriminate verification, aiming for maximal coverage without considering signal criticality, whereas industrial practice demands maximizing coverage with minimal verification cost. Consequently, identifying signals that have the greatest impact on design functionality and error propagation-enabling a shift from indiscriminate to targeted verification-remains a key challenge. To address this, we propose AgileAssert, a key signal-driven assertion generation framework that constructs RTL semantic graphs and identifies the top-K critical signals via a hybrid scoring and selection mechanism, followed by structure-aware RTL slicing to provide the LLM with precise targets and contextual information, thereby guiding LLMs to generate tightly constrained targeted assertions for efficient verification. Evaluated on block- and CPU-level designs, with an average 66.68% reduction in assertions, our approach outperforms three existing SOTA methods, and significantly improving coverage metrics while reducing input token consumption by 64%. In mutation testing, when our approach surpasses existing methods in error detection rate, the average number of assertions used decreases by 72.74%.",
+    "title_zh": "从无差别到有针对性：通过功能关键信号驱动的LLM断言生成实现高效RTL验证",
+    "abstract_zh": "功能验证已成为集成电路开发中最耗时的阶段，而基于断言的验证（ABV）是减少调试时间的关键。然而，现有基于LLM的断言生成方法通常追求无差别的验证，旨在最大化覆盖率而不考虑信号的重要性，而工业实践则要求以最低的验证成本实现最大化覆盖率。因此，识别对设计功能和错误传播影响最大的信号，从而实现从无差别到有针对性的验证，仍然是一个关键挑战。为了解决这一问题，我们提出了AgileAssert，这是一种关键信号驱动的断言生成框架。该框架通过构建RTL语义图并通过混合评分和选择机制识别出前K个关键信号，随后进行结构感知的RTL切片，为LLM提供精确的目标和上下文信息，从而引导LLM生成高度约束的针对性断言以实现高效验证。在块级和CPU级设计上的评估表明，我们的方法在断言数量平均减少66.68%的情况下，优于三种现有的SOTA方法，并显著提高了覆盖率指标，同时减少了64%的输入token消耗。在变异测试中，当我们的方法在错误检测率上超越现有方法时，所使用的断言数量平均减少了72.74%。"
+  }
+]
