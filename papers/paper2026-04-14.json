@@ -1,0 +1,245 @@
+[
+  {
+    "date": "2026-04-14",
+    "title": "GlotOCR Bench: OCR Models Still Struggle Beyond a Handful of Unicode Scripts",
+    "authors": "Amir Hossein Kargaran, Nafiseh Nikeghbal, Jana Diesner, François Yvon, Hinrich Schütze",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12978v1",
+    "source": "arXiv",
+    "abstract": "Optical character recognition (OCR) has advanced rapidly with the rise of vision-language models, yet evaluation has remained concentrated on a small cluster of high- and mid-resource scripts. We introduce GlotOCR Bench, a comprehensive benchmark evaluating OCR generalization across 100+ Unicode scripts. Our benchmark comprises clean and degraded image variants rendered from real multilingual texts. Images are rendered using fonts from the Google Fonts repository, shaped with HarfBuzz and rasterized with FreeType, supporting both LTR and RTL scripts. Samples of rendered images were manually reviewed to verify correct rendering across all scripts. We evaluate a broad suite of open-weight and proprietary vision-language models and find that most perform well on fewer than ten scripts, and even the strongest frontier models fail to generalize beyond thirty scripts. Performance broadly tracks script-level pretraining coverage, suggesting that current OCR systems rely on language model pretraining as much as on visual recognition. Models confronted with unfamiliar scripts either produce random noise or hallucinate characters from similar scripts they already know. We release the benchmark and pipeline for reproducibility. Pipeline Code: https://github.com/cisnlp/glotocr-bench, Benchmark: https://hf.co/datasets/cis-lmu/glotocr-bench."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "The Verification Tax: Fundamental Limits of AI Auditing in the Rare-Error Regime",
+    "authors": "Jason Z Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12951v1",
+    "source": "arXiv",
+    "abstract": "The most cited calibration result in deep learning -- post-temperature-scaling ECE of 0.012 on CIFAR-100 (Guo et al., 2017) -- is below the statistical noise floor. We prove this is not a failure of the experiment but a law: the minimax rate for estimating calibration error with model error rate epsilon is Theta((Lepsilon/m)^{1/3}), and no estimator can beat it. This \"verification tax\" implies that as AI models improve, verifying their calibration becomes fundamentally harder -- with the same exponent in opposite directions. We establish four results that contradict standard evaluation practice: (1) self-evaluation without labels provides exactly zero information about calibration, bounded by a constant independent of compute; (2) a sharp phase transition at mepsilon approx 1 below which miscalibration is undetectable; (3) active querying eliminates the Lipschitz constant, collapsing estimation to detection; (4) verification cost grows exponentially with pipeline depth at rate L^K. We validate across five benchmarks (MMLU, TruthfulQA, ARC-Challenge, HellaSwag, WinoGrande; ~27,000 items) with 6 LLMs from 5 families (8B-405B parameters, 27 benchmark-model pairs with logprob-based confidence), 95% bootstrap CIs, and permutation tests. Self-evaluation non-significance holds in 80% of pairs. Across frontier models, 23% of pairwise comparisons are indistinguishable from noise, implying that credible calibration claims must report verification floors and prioritize active querying once gains approach benchmark resolution."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "CoDe-R: Refining Decompiler Output with LLMs via Rationale Guidance and Adaptive Inference",
+    "authors": "Qiang Zhang, Zhongnian Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12913v1",
+    "source": "arXiv",
+    "abstract": "Binary decompilation is a critical reverse engineering task aimed at reconstructing high-level source code from stripped executables. Although Large Language Models (LLMs) have recently shown promise, they often suffer from \"logical hallucinations\" and \"semantic misalignment\" due to the irreversible semantic loss during compilation, resulting in generated code that fails to re-execute. In this study, we propose Cognitive Decompiler Refinement with Robustness (CoDe-R), a lightweight two-stage code refinement framework. The first stage introduces Semantic Cognitive Enhancement (SCE), a Rationale-Guided Semantic Injection strategy that trains the model to recover high-level algorithmic intent alongside code. The second stage introduces a Dynamic Dual-Path Fallback (DDPF) mechanism during inference, which adaptively balances semantic recovery and syntactic stability via a hybrid verification strategy. Evaluation on the HumanEval-Decompile benchmark demonstrates that CoDe-R (using a 1.3B backbone) establishes a new State-of-the-Art (SOTA) in the lightweight regime. Notably, it is the first 1.3B model to exceed an Average Re-executability Rate of 50.00%, significantly outperforming the baseline and effectively bridging the gap between efficient models and expert-level performance. Our code is available at https://github.com/Theaoi/CoDe-R."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "QuarkMedSearch: A Long-Horizon Deep Search Agent for Exploring Medical Intelligence",
+    "authors": "Zhichao Lin, Zhichao Liang, Gaoqiang Liu, Meng Xu, Baoyu Xiang, Jian Xu, Guanjun Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12867v1",
+    "source": "arXiv",
+    "abstract": "As agentic foundation models continue to evolve, how to further improve their performance in vertical domains has become an important challenge. To this end, building upon Tongyi DeepResearch, a powerful agentic foundation model, we focus on the Chinese medical deep search scenario and propose QuarkMedSearch, systematically exploring a full-pipeline approach spanning medical multi-hop data construction, training strategies, and evaluation benchmarks to further push and assess its performance upper bound in vertical domains. Specifically, for data synthesis, to address the scarcity of deep search training data in the medical domain, we combine a large-scale medical knowledge graph with real-time online exploration to construct long-horizon medical deep search training data; for post-training, we adopt a two-stage SFT and RL training strategy that progressively enhances the model's planning, tool invocation, and reflection capabilities required for deep search, while maintaining search efficiency; for evaluation, we collaborate with medical experts to construct the QuarkMedSearch Benchmark through rigorous manual verification. Experimental results demonstrate that QuarkMedSearch achieves state-of-the-art performance among open-source models of comparable scale on the QuarkMedSearch Benchmark, while also maintaining strong competitiveness on general benchmarks."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Loop Corrections to the Training and Generalization Errors of Random Feature Models",
+    "authors": "Taeyoung Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12827v1",
+    "source": "arXiv",
+    "abstract": "We investigate random feature models in which neural networks sampled from a prescribed initialization ensemble are frozen and used as random features, with only the readout weights optimized. Adopting a statistical-physics viewpoint, we study the training, test, and generalization errors beyond the mean-kernel approximation. Since the predictor is a nonlinear functional of the induced random kernel, the ensemble-averaged errors depend not only on the mean kernel but also on higher-order fluctuation statistics. Within an effective field-theoretic framework, these finite-width contributions naturally appear as loop corrections. We derive the loop corrections to the training, test, and generalization errors, obtain their scaling laws, and support the theory with experimental verification."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Short Version of VERIFAI2026 Paper -- Learning Infused Formal Reasoning: Contract Synthesis, Artefact Reuse and Semantic Foundations",
+    "authors": "Arshad Beg, Diarmuid O'Donoghue, Rosemary Monahan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12747v1",
+    "source": "arXiv",
+    "abstract": "Artificial intelligence systems have achieved remarkable capability in natural language processing, perception and decision-making tasks. However, their behaviour often remains opaque and difficult to verify, limiting their applicability in safety-critical systems. Formal methods provide mathematically rigorous mechanisms for specifying and verifying system behaviour, yet the creation and maintenance of formal specifications remains labour intensive and difficult to scale. This paper outlines a research vision called Learning-Infused Formal Reasoning (LIFR), which integrates machine learning techniques with formal verification workflows. The framework focuses on three complementary research directions: automated contract synthesis from natural language requirements, semantic reuse of verification artifacts using graph matching and learning-based embeddings, and mathematically grounded semantic foundations based on the Unifying Theories of Programming (UTP) and the Theory of Institutions. Together these research threads aim to transform verification from isolated correctness proofs into a cumulative knowledge-driven process where specifications, contracts and proofs can be synthesised, aligned and reused across systems."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Modular Verification of Differential Privacy in Probabilistic Higher-Order Separation Logic (Extended Version)",
+    "authors": "Philipp G. Haselwarter, Alejandro Aguirre, Simon Oddershede Gregersen, Kwing Hei Li, Joseph Tassarotti, Lars Birkedal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12713v1",
+    "source": "arXiv",
+    "abstract": "Differential privacy is the standard method for privacy-preserving data analysis. The importance of having strong guarantees on the reliability of implementations of differentially private algorithms is widely recognized and has sparked fruitful research on formal methods. However, the design patterns and language features used in modern DP libraries as well as the classes of guarantees that the library designers wish to establish often fall outside of the scope of previous verification approaches. We introduce a program logic suitable for verifying differentially private implementations written in complex, general-purpose programming languages. Our logic has first-class support for reasoning about privacy budgets as a separation logic resource. The expressiveness of the logic and the target language allow our approach to handle common programming patterns used in the implementation of libraries for differential privacy, such as privacy filters and caching. While previous work has focused on developing guarantees for programs written in domain-specific languages or for privacy mechanisms in isolation, our logic can reason modularly about primitives, higher-order combinators, and interactive algorithms. We demonstrate the applicability of our approach by implementing a verified library of differential privacy mechanisms, including an online version of the Sparse Vector Technique, as well as a privacy filter inspired by the popular Python library OpenDP, which crucially relies on our ability to handle the combination of randomization, local state, and higher-order functions. We demonstrate that our specifications are general and reusable by instantiating them to verify clients of our library. All of our results have been foundationally verified in the Rocq Prover."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Surface-induced vortex core restructuring in a spin-triplet superfluid",
+    "authors": "Riku Rantanen, Mikael Huppunen, Erkki Thuneberg, Vladimir Eltsov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12682v1",
+    "source": "arXiv",
+    "abstract": "Observing the structure of quantized vortices can provide evidence for the pairing nature of a superfluid or superconductor and pinpoint its order parameter. Spin-triplet superfluid $^3$He supports a variety of vortices, calculated and identified so far in bulk fluid. We show numerically that the vortex core in $^3$He is strongly altered near a surface, resulting in a structure inhomogeneous along the vortex line. The effect is asymmetric with respect to the relative orientation of the core order parameter anisotropy axis and the surface normal. In a wide range of external conditions, the vortex structure at the surface is found to be completely different from that in bulk. The effect originates from the combination of spin-orbit interaction in triplet pairing with the symmetry breaking by the surface. As an implication, surface-limited vortex core observations in a triplet-candidate system may not reflect the bulk structure. We propose an experimental verification of the effect by measuring a transition in the vortex structure in thin slabs of superfluid $^3$He-B."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Phlegethon: a fully compressible magnetohydrodynamic code for simulations in stellar astrophysics",
+    "authors": "G. Leidi, A. Holas, K. Vitovsky, F. Rizzuti, A. Roy, J. Reichert, K. Bayer, D. Gagnier, R. Andrassy, P. Christians, P. V. F. Edelmann, V. Varma, R. Hirschi, F. K. Röpke",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12672v1",
+    "source": "arXiv",
+    "abstract": "We present PHLEGETHON, a fully compressible, Eulerian magnetohydrodynamic (MHD) code designed for multidimensional simulations in stellar astrophysics. The code uses a time-explicit, second-order, finite-volume method optimized to model a wide range of dynamical processes in stars, from very low-Mach-number turbulent convection in the cores of massive stars to supersonic flows in subsurface convection zones. PHLEGETHON employs low-dissipation Riemann solvers and a well-balanced method to accurately capture slow flows arising from strongly stratified media. The induction equation is solved using a staggered constrained-transport method to ensure divergence-free evolution of the magnetic field. The MHD equations are coupled to arbitrary nuclear reaction networks solved in a time-implicit approach, together with super-time-stepping for efficient treatment of thermal diffusion. Equations of state appropriate for stellar plasmas are available, accounting for partial ionization, electron degeneracy, and electron-positron pair production. The code is implemented in a compact and user-friendly manner, and it scales to tens of thousands of CPU cores using MPI-based domain decomposition. We perform several verification tests to demonstrate the accuracy and versatility of the code, and present simulations of magnetoconvection in a core-collapse supernova progenitor star. The rich variety of physical effects and numerical methods implemented in PHLEGETHON enables the code to model diverse multidimensional processes that play a crucial role in stellar-interior dynamics, such as reactive convection, convective boundary mixing, internal-wave excitation, and magnetic-field amplification mechanisms. Within a single framework, these phenomena can be investigated across a wide range of stellar evolutionary stages, from main-sequence stars to supernova progenitors. PHLEGETHON is publicly accessible online."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "From Imitation to Discrimination: Progressive Curriculum Learning for Robust Web Navigation",
+    "authors": "Chuang Peng, Wei Zhang, Renshuai Tao, Xinhao Zhang, Jian Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12666v1",
+    "source": "arXiv",
+    "abstract": "Text-based web agents offer computational efficiency for autonomous web navigation, yet developing robust agents remains challenging due to the noisy and heterogeneous nature of real-world HTML. Standard Supervised Fine-Tuning (SFT) approaches fail in two critical dimensions: they lack discrimination capabilities to reject plausible but incorrect elements in densely populated pages, and exhibit limited generalization to unseen website layouts. To address these challenges, we introduce the Triton dataset (590k instances) and a progressive training curriculum. Triton is constructed via Structural-Semantic Hard Negative Mining, which explicitly mines topologically similar distractors, and a Dual-Agent Consensus pipeline that synthesizes diverse cross-domain tasks with strict verification. Building upon this foundation, our progressive curriculum produces three models: Triton-SFT-32B for basic imitation, Triton-ORPO-32B for robust discrimination via Odds Ratio Preference Optimization, and Triton-GRPO-32B for long-horizon consistency through Group Relative Policy Optimization. Empirical evaluation on Mind2Web demonstrates that Triton-GRPO-32B achieves state-of-the-art performance among open-source models with 58.7% Step Success Rate, surpassing GPT-4.5 (42.4%) and Claude-4.5 (41.4%) by over 16%, validating that specialized data curriculum outweighs raw parameter scale for web navigation."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "A Two-Stage LLM Framework for Accessible and Verified XAI Explanations",
+    "authors": "Georgios Mermigkis, Dimitris Metaxakis, Marios Tyrovolas, Argiris Sofotasios, Nikolaos Avgeris, Panagiotis Hadjidoukas, Chrysostomos Stylios",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12543v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) are increasingly used to translate the technical outputs of eXplainable Artificial Intelligence (XAI) methods into accessible natural-language explanations. However, existing approaches often lack guarantees of accuracy, faithfulness, and completeness. At the same time, current efforts to evaluate such narratives remain largely subjective or confined to post-hoc scoring, offering no safeguards to prevent flawed explanations from reaching end-users. To address these limitations, this paper proposes a Two-Stage LLM Meta-Verification Framework that consists of (i) an Explainer LLM that converts raw XAI outputs into natural-language narratives, (ii) a Verifier LLM that assesses them in terms of faithfulness, coherence, completeness, and hallucination risk, and (iii) an iterative refeed mechanism that uses the Verifier's feedback to refine and improve them. Experiments across five XAI techniques and datasets, using three families of open-weight LLMs, show that verification is crucial for filtering unreliable explanations while improving linguistic accessibility compared with raw XAI outputs. In addition, the analysis of the Entropy Production Rate (EPR) during the refinement process indicates that the Verifier's feedback progressively guides the Explainer toward more stable and coherent reasoning. Overall, the proposed framework provides an efficient pathway toward more trustworthy and democratized XAI systems."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Data-driven Learning of LPV Surrogate Models of Fuel Sloshing",
+    "authors": "E. Javier Olucha, Valentin Preda, Amritam Das, Roland Tóth",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12505v1",
+    "source": "arXiv",
+    "abstract": "This paper aims to enhance the efficiency of validation and verification campaigns involving fuel sloshing phenomena. Our first contribution is the development of an open-source, high-fidelity and computationally efficient two-dimensional smoothed-particle hydrodynamics-based fuel sloshing simulator that reproduces the dynamics of a spacecraft with a partially filled tank with liquid propellant. Implemented in Python using Jax, the simulator leverages GPU parallelization and supports automatic differentiation, enabling rapid generation of simulation data and system linearizations for general surrogate modelling purposes. Our second contribution is the demonstration of a practical methodology for constructing surrogate models of fuel sloshing from input--output data generated by the simulator, targeting rapid simulation and model-based control applications. The surrogate model employs a Linear Parameter-Varying (LPV) state-space structure with affine dependence on the scheduling variables, providing an accurate yet computationally efficient approximation of the sloshing dynamics. The capabilities of the proposed approach are demonstrated through closed-loop simulations of a rigid spacecraft with a partially filled fuel tank for two manoeuvre profiles under zero-gravity conditions. The identified surrogate enables simulations that are two orders of magnitude faster than the high-fidelity model."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Adaptive Budget Allocation in LLM-Augmented Surveys",
+    "authors": "Zikun Ye, Jiameng Lyu, Rui Tao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12497v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) can generate survey responses at low cost, but their reliability varies substantially across questions and is unknown before data collection. Deploying LLMs in surveys still requires costly human responses for verification and correction. How should a limited human-labeling budget be allocated across questions in real time? We propose an adaptive allocation algorithm that learns which questions are hardest for the LLM while simultaneously collecting human responses. Each human label serves a dual role: it improves the estimate for that question and reveals how well the LLM predicts human responses on it. The algorithm directs more budget to questions where the LLM is least reliable, without requiring any prior knowledge of question-level LLM accuracy. We prove that the allocation gap relative to the best possible allocation vanishes as the budget grows, and validate the approach on both synthetic data and a real survey dataset with 68 questions and over 2000 respondents. On real survey data, the standard practice of allocating human labels uniformly across questions wastes 10--12% of the budget relative to the optimal; our algorithm reduces this waste to 2--6%, and the advantage grows as questions become more heterogeneous in LLM prediction quality. The algorithm achieves the same estimation quality as traditional uniform sampling with fewer human samples, requires no pilot study, and is backed by formal performance guarantees validated on real survey data. More broadly, the framework applies whenever scarce human oversight must be allocated across tasks where LLM reliability is unknown."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "VeriX-Anon: A Multi-Layered Framework for Mathematically Verifiable Outsourced Target-Driven Data Anonymization",
+    "authors": "Miit Daga, Swarna Priya Ramu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12431v1",
+    "source": "arXiv",
+    "abstract": "Organisations increasingly outsource privacy-sensitive data transformations to cloud providers, yet no practical mechanism lets the data owner verify that the contracted algorithm was faithfully executed. VeriX-Anon is a multi-layered verification framework for outsourced Target-Driven k-anonymization combining three orthogonal mechanisms: deterministic verification via Merkle-style hashing of an Authenticated Decision Tree, probabilistic verification via Boundary Sentinels near the Random Forest decision boundary and exact-duplicate Twins with cryptographic identifiers, and utility-based verification via Explainable AI fingerprinting that compares SHAP value distributions before and after anonymization using the Wasserstein distance. Evaluated on three cross-domain datasets against Lazy (drops 5 percent of records), Dumb (random splitting, fake hash), and Approximate (random splitting, valid hash) adversaries, VeriX-Anon correctly detected deviations in 11 of 12 scenarios. No single layer achieved this alone. The XAI layer was the only mechanism that caught the Approximate adversary, succeeding on Adult and Bank but failing on the severely imbalanced Diabetes dataset where class imbalance suppresses the SHAP signal, confirming the need for adaptive thresholding. An 11-point k-sweep showed Target-Driven anonymization preserves significantly more utility than Blind anonymization (Wilcoxon $p = 0.000977$, Cohen's $d = 1.96$, mean F1 gap $+0.1574$). Client-side verification completes under one second at one million rows. The threat model covers three empirically evaluated profiles and one theoretical profile (Informed Attacker) aware of trap embedding but unable to defeat the cryptographic salt. Sentinel evasion probability ranges from near-zero for balanced datasets to 0.52 for imbalanced ones, a limitation the twin layer compensates for in every tested scenario."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "HARP: Hadamard-Domain Write-and-Verify for Noise-Robust RRAM Programming",
+    "authors": "Ilhuan Choi, Jiwon Yoo, Yoona Lee, Yewon Jeong, Jason Jaesung Lee, Woo-Seok Choi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12420v1",
+    "source": "arXiv",
+    "abstract": "Write-and-verify (WV) is essential for programming multi-level RRAM weights, yet under scaled-voltage and low-SNR conditions the verify read increasingly limits mapping accuracy, convergence speed and energy. We propose a Hadamard-domain WV framework that improves verify reliability without adding analog hardware. % without introducing additional analog blocks % while leveraging the existing analog front-end \\emph{HD-PV} (Hadamard-Encoded Parallel-Verify) replaces conventional one-hot verify reads with $N$ orthogonal Hadamard patterns for an $N$-cell column. Changing the read basis without increasing the column-level read count, inverse Hadamard decoding reduces uncorrelated read-noise variance by a factor of $N$ and cancels common-mode disturbances. \\emph{HARP} (Hadamard-based ADC-Energy-Reduced Parallel-Verify) further exploits the fact that WV needs only ternary update decisions, not full digital codes, and replaces SAR conversions with lightweight compare-only operations. Across CIFAR-10, CIFAR-100, and keyword spotting under severe read noise, conventional WV loses over 20\\,\\% accuracy on CIFAR-10, while HD-PV and HARP limit the loss to 0.6\\,\\% and 1\\,\\% under the same memory footprint. Compared to conventional multi-read averaging for noise reduction, HD-PV and HARP achieve comparable accuracy with up to $6.1\\times$ and $3.5\\times$ lower latency and $6.2\\times$ and $9.5\\times$ better energy efficiency, respectively. To the best of our knowledge, this is the first application of Hadamard-encoded verification to RRAM WV."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Beyond Output Correctness: Benchmarking and Evaluating Large Language Model Reasoning in Coding Tasks",
+    "authors": "Yuangang Li, Justin Tian Jin Chen, Ethan Yu, David Hong, Iftekhar Ahmed",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12379v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) increasingly rely on explicit reasoning to solve coding tasks, yet evaluating the quality of this reasoning remains challenging. Existing reasoning evaluators are not designed for coding, and current benchmarks focus primarily on code generation, leaving other coding tasks largely unexplored. We introduce CodeRQ-Bench, the first benchmark for evaluating LLM reasoning quality across three coding task categories: generation, summarization, and classification. Using this benchmark, we analyze 1,069 mismatch cases from existing evaluators, identify five recurring limitations, and derive four design insights for reasoning evaluation in coding tasks. Guided by these insights, we propose VERA, a two-stage evaluator that combines evidence-grounded verification with ambiguity-aware score correction. Experiments on CodeRQ-Bench show that VERA consistently outperforms strong baselines across four datasets, improving AUCROC by up to 0.26 and AUPRC by up to 0.21. We release CodeRQ-Bench at https://github.com/MrLYG/CodeRQ-Bench, supporting future investigations."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "PrivEraserVerify: Efficient, Private, and Verifiable Federated Unlearning",
+    "authors": "Parthaw Goswami, Md Khairul Islam, Ashfak Yeafi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12348v1",
+    "source": "arXiv",
+    "abstract": "Federated learning (FL) enables collaborative model training without sharing raw data, offering a promising path toward privacy preserving artificial intelligence. However, FL models may still memorize sensitive information from participants, conflicting with the right to be forgotten (RTBF). To meet these requirements, federated unlearning has emerged as a mechanism to remove the contribution of departing clients. Existing solutions only partially address this challenge: FedEraser improves efficiency but lacks privacy protection, FedRecovery ensures differential privacy (DP) but degrades accuracy, and VeriFi enables verifiability but introduces overhead without efficiency or privacy guarantees. We present PrivEraserVerify (PEV), a unified framework that integrates efficiency, privacy, and verifiability into federated unlearning. PEV employs (i) adaptive checkpointing to retain critical historical updates for fast reconstruction, (ii) layer adaptive differentially private calibration to selectively remove client influence while minimizing accuracy loss, and (iii) fingerprint based verification, enabling participants to confirm unlearning in a decentralized and noninvasive manner. Experiments on image, handwritten character, and medical datasets show that PEV achieves up to 2 to 3 times faster unlearning than retraining, provides formal indistinguishability guarantees with reduced performance degradation, and supports scalable verification. To the best of our knowledge, PEV is the first framework to simultaneously deliver efficiency, privacy, and verifiability for federated unlearning, moving FL closer to practical and regulation compliant deployment."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Towards Robust Real-World Spreadsheet Understanding with Multi-Agent Multi-Format Reasoning",
+    "authors": "Houxing Ren, Mingjie Zhan, Zimu Lu, Ke Wang, Yunqiao Yang, Haotian Hou, Hongsheng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12282v1",
+    "source": "arXiv",
+    "abstract": "Spreadsheets are central to real-world applications such as enterprise reporting, auditing, and scientific data management. Despite their ubiquity, existing large language model based approaches typically treat tables as plain text, overlooking critical layout cues and visual semantics. Moreover, real-world spreadsheets are often massive in scale, exceeding the input length that LLMs can efficiently process. To address these challenges, we propose SpreadsheetAgent, a two-stage multi-agent framework for spreadsheet understanding that adopts a step-by-step reading and reasoning paradigm. Instead of loading the entire spreadsheet at once, SpreadsheetAgent incrementally interprets localized regions through multiple modalities, including code execution results, images, and LaTeX tables. The method first constructs a structural sketch and row/column summaries, and then performs task-driven reasoning over this intermediate representation in the Solving Stage. To further enhance reliability, we design a verification module that validates extracted structures via targeted inspections, reducing error propagation and ensuring trustworthy inputs for downstream reasoning. Extensive experiments on two spreadsheet datasets demonstrate the effectiveness of our approach. With GPT-OSS-120B, SpreadsheetAgent achieves 38.16% on Spreadsheet Bench, outperforming the ChatGPT Agent baseline (35.27%) by 2.89 absolute points. These results highlight the potential of SpreadsheetAgent to advance robust and scalable spreadsheet understanding in real-world applications. Code is available at https://github.com/renhouxing/SpreadsheetAgent.git."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "TRUST Agents: A Collaborative Multi-Agent Framework for Fake News Detection, Explainable Verification, and Logic-Aware Claim Reasoning",
+    "authors": "Gautama Shastry Bulusu Venkata, Santhosh Kakarla, Maheedhar Omtri Mohan, Aishwarya Gaddam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12184v1",
+    "source": "arXiv",
+    "abstract": "TRUST Agents is a collaborative multi-agent framework for explainable fact verification and fake news detection. Rather than treating verification as a simple true-or-false classification task, the system identifies verifiable claims, retrieves relevant evidence, compares claims against that evidence, reasons under uncertainty, and generates explanations that humans can inspect. The baseline pipeline consists of four specialized agents. A claim extractor uses named entity recognition, dependency parsing, and LLM-based extraction to identify factual claims. A retrieval agent performs hybrid sparse and dense search using BM25 and FAISS. A verifier agent compares claims with retrieved evidence and produces verdicts with calibrated confidence. An explainer agent then generates a human-readable report with explicit evidence citations. To handle complex claims more effectively, we introduce a research-oriented extension with three additional components: a decomposer agent inspired by LoCal-style claim decomposition, a Delphi-inspired multi-agent jury with specialized verifier personas, and a logic aggregator that combines atomic verdicts using conjunction, disjunction, negation, and implication. We evaluate both pipelines on the LIAR benchmark against fine-tuned BERT, fine-tuned RoBERTa, and a zero-shot LLM baseline. Although supervised encoders remain stronger on raw metrics, TRUST Agents improves interpretability, evidence transparency, and reasoning over compound claims. Results also show that retrieval quality and uncertainty calibration remain the main bottlenecks in trustworthy automated fact verification."
+  },
+  {
+    "date": "2026-04-14",
+    "title": "COBALT-TLA: A Neuro-Symbolic Verification Loop for Cross-Chain Bridge Vulnerability Discovery",
+    "authors": "Dominik Blain",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.12172v1",
+    "source": "arXiv",
+    "abstract": "We present COBALT-TLA, a neuro-symbolic verification loop that pairs an LLM with TLC, the TLA+ model checker, in an automated REPL. The LLM generates bounded TLA+ specifications; TLC acts as a semantic oracle; structured error traces are parsed and injected back into the model's context to drive convergence. We evaluate the system against three cross-chain bridge targets, including a faithful model of the Nomad $190M exploit. COBALT-TLA reaches a verified BUG_FOUND state in at most 2 iterations on all targets, with TLC execution consistently below 0.30 seconds. Notably, the system autonomously discovers an unprompted vulnerability class -- the Optimistic Relay Attack -- not present in the human-written baseline specification. We argue that deterministic prover feedback is sufficient to neutralize LLM hallucination in formal methods, transforming zero-shot code generation into a convergent proof-finding strategy."
+  },
+  {
+    "date": "2026-4-14",
+    "title": "Text-Only Virtual Currency LLM for Consumer Electronics: Social Sentiment Anomaly Detection and Trading Guidance",
+    "authors": "Xiaotong Jiang, Zhiyu Zhang, Jun Wu",
+    "publish": "IEEE Transactions on Consumer Electronics",
+    "url": "https://doi.org/10.1109/tce.2026.3683776",
+    "source": "IEEE",
+    "abstract": "Consumer participation in the virtual currency market is increasingly mediated through personal electronics. Social media sentiment plays an important role in this market, where collective sentiment can trigger significant price volatility. Conventional financial models often struggle to capture these dynamics, exposing consumers to potential trading risks. To address this issue, we propose VirInsight. The framework integrates fine-grained sentiment classification, transaction anomaly detection, and trading recommendation. The key novelty lies in the design of an anomaly detection mechanism that is aware of sentiment dynamics and links social media sentiment to consumer trading guidance. For the Vir-Llama model, we develop a five-class sentiment classification scheme. We also construct a new dataset, VirSent, which contains over 12,000 annotated tweets related to major virtual currencies, including Bitcoin, Ethereum, and Binance Coin. Experimental results show that the proposed sentiment-aware approach improves the accuracy of anomaly detection and enables the generation of practical trading recommendations. This research contributes a robust method for modeling sentiment in the virtual currency market and offers a new perspective on consumer behavior. It ultimately paves the way for intelligent financial applications designed to empower and protect the everyday consumer."
+  },
+  {
+    "date": "2026-4-14",
+    "title": "CEDAR: Carbon Efficient Dynamic Allocation and Routing for Agentic LLM Inference",
+    "authors": "Amit More, Tarique Anwar, Poonam Yadav",
+    "publish": "Proceedings of the 2nd International Workshop on Systems and Methods for Sustainable Large-Scale AI (GreenSys)",
+    "url": "https://doi.org/10.1145/3802973.3804457",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-14",
+    "title": "Analysis and Verification of Thermal Reliability of Bonding Interface between Stacked Chips",
+    "authors": "Ziyang Zhang, Fang Duan",
+    "publish": "Proceedings of the 2025 5th International Conference on Computational Modeling, Simulation and Data Analysis",
+    "url": "https://doi.org/10.1145/3796731.3796897",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-14",
+    "title": "ConfigSpec: Profiling-Based Configuration Selection for Distributed Edge-Cloud Speculative LLM Serving",
+    "authors": "Xiangchen Li, Saeid Ghafouri, Jiakun Fan, Babar Ali, Hans Vandierendonck, Dimitrios S. Nikolopoulos",
+    "publish": "Proceedings of the 4th International Workshop on Testing Distributed Internet of Things Systems",
+    "url": "https://doi.org/10.1145/3802513.3803483",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-14",
+    "title": "Research on the Architecture Design and Verification Method of Turboshaft Engines for Combat System Scenarios",
+    "authors": "Youwei Qiao, Zhimin Su, Yang Li, Gong Huang, Shuaihu Wang",
+    "publish": "Proceedings of the 2025 5th International Conference on Computational Modeling, Simulation and Data Analysis",
+    "url": "https://doi.org/10.1145/3796731.3796834",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-14",
+    "title": "Design and Simulation Verification of Cooperative Guidance Law for Flying Robots Based on Time Constraints and Yaw Angle Constraints",
+    "authors": "DeShuang Wang, YiJie Yin, Le Gong, Wen Yang, XinZhe Li",
+    "publish": "Proceedings of the 2025 5th International Conference on Computational Modeling, Simulation and Data Analysis",
+    "url": "https://doi.org/10.1145/3796731.3796829",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-14",
+    "title": "Thermal simulation analysis and experimental verification of space scanning drive mechanism",
+    "authors": "Yuefei Du, Haomiao Wang, Guichen Tang, Shuang Yu, Shengyong Gan, Yue Yang, Xiaole Luo, Yanfen Wang, Guiru Jing",
+    "publish": "Proceedings of the 2025 5th International Conference on Computational Modeling, Simulation and Data Analysis",
+    "url": "https://doi.org/10.1145/3796731.3796894",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
