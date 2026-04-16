@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-04-15",
+    "title": "Hardware-Efficient Neuro-Symbolic Networks with the Exp-Minus-Log Operator",
+    "authors": "Eymen Ipek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13871v1",
+    "source": "arXiv",
+    "abstract": "Deep neural networks (DNNs) deliver state-of-the-art accuracy on regression and classification tasks, yet two structural deficits persistently obstruct their deployment in safety-critical, resource-constrained settings: (i) opacity of the learned function, which precludes formal verification, and (ii) reliance on heterogeneous, library-bound activation functions that inflate latency and silicon area on edge hardware. The recently introduced Exp-Minus-Log (EML) Sheffer operator, eml(x, y) = exp(x) - ln(y), was shown by Odrzywolek (2026) to be sufficient - together with the constant 1 - to express every standard elementary function as a binary tree of identical nodes. We propose to embed EML primitives inside conventional DNN architectures, yielding a hybrid DNN-EML model in which the trunk learns distributed representations and the head is a depth-bounded, weight-sparse EML tree whose snapped weights collapse to closed-form symbolic sub-expressions. We derive the forward equations, prove computational-cost bounds, analyse inference and training acceleration relative to multilayer perceptrons (MLPs) and physics-informed neural networks (PINNs), and quantify the trade-offs for FPGA/analog deployment. We argue that the DNN-EML pairing closes a literature gap: prior neuro-symbolic and equation-learner approaches (EQL, KAN, AI-Feynman) work with heterogeneous primitive sets and do not exploit a single hardware-realisable Sheffer element. A balanced assessment shows that EML is unlikely to accelerate training, and on commodity CPU/GPU it is also unlikely to accelerate inference; however, on a custom EML cell (FPGA logic block or analog circuit) the asymptotic latency advantage can reach an order of magnitude with simultaneous gain in interpretability and formal-verification tractability.",
+    "title_zh": "硬件高效的神经符号网络与Exp-Minus-Log算子",
+    "abstract_zh": "深度神经网络（DNN）在回归和分类任务中提供了最先进的准确性，但两个结构性缺陷持续阻碍其在安全关键、资源受限环境中的部署：(i) 学习函数的不透明性，阻碍了形式化验证；(ii) 依赖异构的、基于库的激活函数，这增加了边缘硬件上的延迟和硅面积。最近引入的Exp-Minus-Log（EML）Sheffer算子，eml(x, y) = exp(x) - ln(y)，由Odrzywolek（2026年）证明，与常数1一起足以通过相同节点的二叉树表达所有标准初等函数。我们提出将EML原语嵌入传统DNN架构中，生成一种混合DNN-EML模型，其中主干学习分布式表示，头部是一个深度受限、权重稀疏的EML树，其固定权重可简化为封闭形式的符号子表达式。我们推导了前向计算方程，证明了计算成本界限，分析了相对于多层感知机（MLPs）和物理驱动神经网络（PINNs）的推理和训练加速，并量化了FPGA/模拟部署的权衡。我们认为DNN-EML的结合填补了文献中的空白：之前的神经符号和方程学习方法（EQL、KAN、AI-Feynman）使用异构的原语集合，未能利用单一硬件可实现的Sheffer元素。综合评估表明，EML不太可能加速训练，在普通CPU/GPU上也不太可能加速推理；然而，在定制的EML单元（FPGA逻辑块或模拟电路）上，其渐近延迟优势可达到一个数量级，同时在可解释性和形式验证可行性方面获得显著提升。"
+  }
+]

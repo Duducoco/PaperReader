@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-04-15",
+    "title": "KindHML: formal verification of smart contracts based on Hennessy-Milner logic",
+    "authors": "Massimo Bartoletti, Angelo Ferrando, Enrico Lipparini, Vadim Malvone",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14038v1",
+    "source": "arXiv",
+    "abstract": "Smart contracts deployed on blockchains such as Ethereum routinely manage large amounts of assets, making their security critical. Empirical studies show that real-world attacks often exploit flaws in the business logic of contracts that unfold across multiple transactions, such as liquidity or front-running attacks. Detecting these attacks requires reasoning about expressive temporal properties beyond the capabilities of existing analysis tools. In this paper, we present an automated approach to the formal verification of smart contracts, enabling the specification and verification of complex temporal properties. Our approach provides a fully automated encoding into Lustre -- the specification language supported by the Kind 2 model checker -- of an expressive subset of Solidity contracts and temporal specifications based on first-order Hennessy-Milner Logic. This encoding allows us to leverage Kind 2 to determine whether the contract respects the specification or not. We implement our approach in a toolchain that integrates the translation and verification steps, and we evaluate its effectiveness and performance on a benchmark of smart contracts and temporal properties capturing complex attack scenarios. Our results show that the proposed approach can effectively verify non-trivial temporal properties of smart contracts and detect violations that are beyond the reach of existing analysis tools."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Analysis of Commit Signing on Github",
+    "authors": "Abubakar Sadiq Shittu, John Sadik, Farzin Gholamrezae, Scott Ruoti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14014v1",
+    "source": "arXiv",
+    "abstract": "Commit signing is widely promoted as a foundation of software supply-chain security, yet prior work has studied it through the lens of individual repositories or curated project samples, missing the broader picture of how developers behave across an entire platform. Grounded in replicability theory, we vary the sampling unit from repositories to individual developers, following 71,694 active GitHub users, defined as accounts that have authored at least one commit, across all their repositories and their entire commit history, spanning 16 million commits and 874,198 repositories. This platform-wide, user-centric view reveals a fundamental gap that repository sampling cannot detect. The ecosystem's apparent high signing adoption rate is an illusion. Once platform-generated signatures are excluded, fewer than 6% of developers have ever signed a commit themselves, and the vast majority of apparent signers have never signed outside a web browser. Among the minority who do sign locally, signing rarely persists over time or across repositories, and roughly one in eight developer-managed signatures fails verification because signing keys are never uploaded to GitHub. Examining the key registry, we find that expired keys are almost never revoked and more than a quarter of users carry at least one dead key. Together, these findings reveal that commit signing as practiced today cannot serve as a dependable provenance signal at ecosystem scale, and we offer concrete recommendations for closing that gap."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Weighted NetKAT: A Programming Language For Quantitative Network Verification",
+    "authors": "Emmanuel Suárez Acevedo, Tiago Ferreira, Kevin Batz, Oliver Bøving, Nate Foster, Alexandra Silva",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13987v1",
+    "source": "arXiv",
+    "abstract": "We introduce weighted NetKAT, a domain-specific language for modeling and verifying quantitative network properties. The language is parametric on a semiring, enabling the treatment of a wide range of quantities in a uniform way. We provide a denotational semantics and an equivalent operational semantics, the latter based on a novel model of weighted NetKAT automata (WNKA) capturing the stateful behavior of our language. With WNKA, we obtain a class of generic decision procedures for reasoning about quantitative safety and reachability in a fully automatic way, even in the presence of possibly unbounded iteration. We demonstrate the applicability of our framework in a case study using Internet2's Abilene network as the underlying topology."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Goal2Skill: Long-Horizon Manipulation with Adaptive Planning and Reflection",
+    "authors": "Zhen Liu, Xinyu Ning, Zhe Hu, Xinxin Xie, Weize Li, Zhipeng Tang, Chongyu Wang, Zejun Yang, Hanlin Wang, Yitong Liu, Zhongzhu Pu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13942v1",
+    "source": "arXiv",
+    "abstract": "Recent vision-language-action (VLA) systems have demonstrated strong capabilities in embodied manipulation. However, most existing VLA policies rely on limited observation windows and end-to-end action prediction, which makes them brittle in long-horizon, memory-dependent tasks with partial observability, occlusions, and multi-stage dependencies. Such tasks require not only precise visuomotor control, but also persistent memory, adaptive task decomposition, and explicit recovery from execution failures. To address these limitations, we propose a dual-system framework for long-horizon embodied manipulation. Our framework explicitly separates high-level semantic reasoning from low-level motor execution. A high-level planner, implemented as a VLM-based agentic module, maintains structured task memory and performs goal decomposition, outcome verification, and error-driven correction. A low-level executor, instantiated as a VLA-based visuomotor controller, carries out each sub-task through diffusion-based action generation conditioned on geometry-preserving filtered observations. Together, the two systems form a closed loop between planning and execution, enabling memory-aware reasoning, adaptive replanning, and robust online recovery. Experiments on representative RMBench tasks show that the proposed framework substantially outperforms representative baselines, achieving a 32.4% average success rate compared with 9.8% for the strongest baseline. Ablation studies further confirm the importance of structured memory and closed-loop recovery for long-horizon manipulation."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off",
+    "authors": "Xiaofan Li, Ming Yang, Zhiyuan Ma, Shichao Ma, Jintao Du, Yu Cheng, Weiqiang Wang, Zhizhong Zhang, Xin Tan, Yanyun Qu, Lizhuang Ma, Yuan Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13902v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has catalyzed significant advances in the reasoning capabilities of Large Language Models (LLMs). However, effectively managing the exploration and exploitation trade-off remains a critical challenge. In this paper, we fully analyze the exploration and exploitation dilemma of extremely hard and easy samples during the training and propose a new fine-grained trade-off mechanism. Concretely, we introduce a perplexity space disentangling strategy that divides the sample space into distinct exploration (high perplexity) and exploitation (low perplexity) subspaces, thereby mining fine-grained samples requiring exploration-exploitation trade-off. Subsequently, we propose a bidirectional reward allocation mechanism with a minimum impact on verification rewards to implement perplexity-guided exploration and exploitation, enabling more stable policy optimization. Finally, we have evaluated our method on two mainstream tasks: mathematical reasoning and function calling, and experimental results demonstrate the superiority of the proposed method, confirming its effectiveness in enhancing LLM performance by fine-grained exploration-exploitation trade-off."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "GeoAgentBench: A Dynamic Execution Benchmark for Tool-Augmented Agents in Spatial Analysis",
+    "authors": "Bo Yu, Cheng Yang, Dongyang Hou, Chengfu Liu, Jiayao Liu, Chi Wang, Zhiming Zhang, Haifeng Li, Wentao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13888v1",
+    "source": "arXiv",
+    "abstract": "The integration of Large Language Models (LLMs) into Geographic Information Systems (GIS) marks a paradigm shift toward autonomous spatial analysis. However, evaluating these LLM-based agents remains challenging due to the complex, multi-step nature of geospatial workflows. Existing benchmarks primarily rely on static text or code matching, neglecting dynamic runtime feedback and the multimodal nature of spatial outputs. To address this gap, we introduce GeoAgentBench (GABench), a dynamic and interactive evaluation benchmark tailored for tool-augmented GIS agents. GABench provides a realistic execution sandbox integrating 117 atomic GIS tools, encompassing 53 typical spatial analysis tasks across 6 core GIS domains. Recognizing that precise parameter configuration is the primary determinant of execution success in dynamic GIS environments, we designed the Parameter Execution Accuracy (PEA) metric, which utilizes a \"Last-Attempt Alignment\" strategy to quantify the fidelity of implicit parameter inference. Complementing this, a Vision-Language Model (VLM) based verification is proposed to assess data-spatial accuracy and cartographic style adherence. Furthermore, to address the frequent task failures caused by parameter misalignments and runtime anomalies, we developed a novel agent architecture, Plan-and-React, that mimics expert cognitive workflows by decoupling global orchestration from step-wise reactive execution. Extensive experiments with seven representative LLMs demonstrate that the Plan-and-React paradigm significantly outperforms traditional frameworks, achieving the optimal balance between logical rigor and execution robustness, particularly in multi-step reasoning and error recovery. Our findings highlight current capability boundaries and establish a robust standard for assessing and advancing the next generation of autonomous GeoAI."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Hardware-Efficient Neuro-Symbolic Networks with the Exp-Minus-Log Operator",
+    "authors": "Eymen Ipek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13871v1",
+    "source": "arXiv",
+    "abstract": "Deep neural networks (DNNs) deliver state-of-the-art accuracy on regression and classification tasks, yet two structural deficits persistently obstruct their deployment in safety-critical, resource-constrained settings: (i) opacity of the learned function, which precludes formal verification, and (ii) reliance on heterogeneous, library-bound activation functions that inflate latency and silicon area on edge hardware. The recently introduced Exp-Minus-Log (EML) Sheffer operator, eml(x, y) = exp(x) - ln(y), was shown by Odrzywolek (2026) to be sufficient - together with the constant 1 - to express every standard elementary function as a binary tree of identical nodes. We propose to embed EML primitives inside conventional DNN architectures, yielding a hybrid DNN-EML model in which the trunk learns distributed representations and the head is a depth-bounded, weight-sparse EML tree whose snapped weights collapse to closed-form symbolic sub-expressions. We derive the forward equations, prove computational-cost bounds, analyse inference and training acceleration relative to multilayer perceptrons (MLPs) and physics-informed neural networks (PINNs), and quantify the trade-offs for FPGA/analog deployment. We argue that the DNN-EML pairing closes a literature gap: prior neuro-symbolic and equation-learner approaches (EQL, KAN, AI-Feynman) work with heterogeneous primitive sets and do not exploit a single hardware-realisable Sheffer element. A balanced assessment shows that EML is unlikely to accelerate training, and on commodity CPU/GPU it is also unlikely to accelerate inference; however, on a custom EML cell (FPGA logic block or analog circuit) the asymptotic latency advantage can reach an order of magnitude with simultaneous gain in interpretability and formal-verification tractability."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Mosaic: An Extensible Framework for Composing Rule-Based and Learned Motion Planners",
+    "authors": "Nick Le Large, Marlon Steiner, Lingguang Wang, Willi Poh, Jan-Hendrik Pauls, Ömer Şahin Taş, Christoph Stiller",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13853v1",
+    "source": "arXiv",
+    "abstract": "Safe and explainable motion planning remains a central challenge in autonomous driving. While rule-based planners offer predictable and explainable behavior, they often fail to grasp the complexity and uncertainty of real-world traffic. Conversely, learned planners exhibit strong adaptability but suffer from reduced transparency and occasional safety violations. We introduce Mosaic, an extensible framework for structured decision-making that integrates both paradigms through arbitration graphs. By decoupling trajectory verification and scoring from the generation of trajectories by individual planners, every decision becomes transparent and traceable. Trajectory verification at a higher level introduces redundancy between the planners, limiting emergency braking to the rare case where all planners fail to produce a valid trajectory. Through unified scoring and optimal trajectory selection, rule-based and learned planners with complementary strengths and weaknesses can be combined to yield the best of both worlds. In experimental evaluation on nuPlan, Mosaic achieves 95.48 CLS-NR and 93.98 CLS-R on the Val14 closed-loop benchmark, setting a new state of the art, while reducing at-fault collisions by 30% compared to either planner in isolation. On the interPlan benchmark, focused on highly interactive and difficult scenarios, Mosaic scores 54.30 CLS-R, outperforming its best constituent planner by 23.3% - all without retraining or requiring additional data. The code is available at github.com/KIT-MRT/mosaic."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Orthogonal Transformations for Efficient Data-Driven Reachability Analysis",
+    "authors": "Peng Xie, Amr Alanwar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13792v1",
+    "source": "arXiv",
+    "abstract": "Data-driven reachability analysis using matrix zonotopes faces a fundamental challenge: the number of generators in the reachable set grows exponentially during propagation, while current order reduction yields overly conservative approximations in data-driven settings. This paper introduces an orthogonal matrix-based framework that appropriately transfers the coordinate system before reducing the generators of the reachable set, dramatically reducing reachable set volumes. By exploiting the factorized structure of data-driven matrix zonotope generators, we develop several efficient algorithms to solve the problem. Numerical experiments demonstrate order-of-magnitude volume reductions compared to traditional methods, while maintaining comparable generator numbers. Our method provides a practical solution to improve precision in data-driven safety verification."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "QuantileMark: A Message-Symmetric Multi-bit Watermark for LLMs",
+    "authors": "Junlin Zhu, Baizhou Huang, Xiaojun Wan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13786v1",
+    "source": "arXiv",
+    "abstract": "As large language models become standard backends for content generation, practical provenance increasingly requires multi-bit watermarking. In provider-internal deployments, a key requirement is message symmetry: the message itself should not systematically affect either text quality or verification outcomes. Vocabulary-partition watermarks can break message symmetry in low-entropy decoding: some messages are assigned most of the probability mass, while others are forced to use tail tokens. This makes embedding quality and message decoding accuracy message-dependent. We propose QuantileMark, a white-box multi-bit watermark that embeds messages within the continuous cumulative probability interval $[0, 1)$. At each step, QuantileMark partitions this interval into $M$ equal-mass bins and samples strictly from the bin assigned to the target symbol, ensuring a fixed $1/M$ probability budget regardless of context entropy. For detection, the verifier reconstructs the same partition under teacher forcing, computes posteriors over latent bins, and aggregates evidence for verification. We prove message-unbiasedness, a property ensuring that the base distribution is recovered when averaging over messages. This provides a theoretical foundation for generation-side symmetry, while the equal-mass design additionally promotes uniform evidence strength across messages on the detection side. Empirical results on C4 continuation and LFQA show improved multi-bit recovery and detection robustness over strong baselines, with negligible impact on generation quality. Our code is available at GitHub (https://github.com/zzzjunlin/QuantileMark)."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Who Gets Flagged? The Pluralistic Evaluation Gap in AI Content Watermarking",
+    "authors": "Alexander Nemecek, Osama Zafar, Yuqiao Xu, Wenbiao Li, Erman Ayday",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13776v1",
+    "source": "arXiv",
+    "abstract": "Watermarking is becoming the default mechanism for AI content authentication, with governance policies and frameworks referencing it as infrastructure for content provenance. Yet across text, image, and audio modalities, watermark signal strength, detectability, and robustness depend on statistical properties of the content itself, properties that vary systematically across languages, cultural visual traditions, and demographic groups. We examine how this content dependence creates modality-specific pathways to bias. Reviewing the major watermarking benchmarks across modalities, we find that, with one exception, none report performance across languages, cultural content types, or population groups. To address this, we propose three concrete evaluation dimensions for pluralistic watermark benchmarking: cross-lingual detection parity, culturally diverse content coverage, and demographic disaggregation of detection metrics. We connect these to the governance frameworks currently mandating watermarking deployment and show that watermarking is held to a lower fairness standard than the generative systems it is meant to govern. Our position is that evaluation must precede deployment, and that the same bias auditing requirements applied to AI models should extend to the verification layer."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Sum-of-Squares Stability Verification on Manifolds with Applications in Spacecraft Attitude Control",
+    "authors": "Fabian Geyer, Friedrich Tuttas, Walter Fichter, Torbjørn Cunis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13727v1",
+    "source": "arXiv",
+    "abstract": "In the context of spacecraft attitude control, parametrizations such as direction vectors or quaternions are often used to avoid singularities in the attitude representation. This, however, complicates the stability analysis of the system since, given the additional unit constraints, the resulting dynamics evolve on non-contractible manifolds. In this paper, we present a framework to verify almost global asymptotic stability of such systems using LaSalle's invariance principle and sum-of-squares programming, simplifying the search for Lyapunov functions. The framework is then applied to two examples: two-axis attitude acquisition utilizing aerodynamics in very low Earth orbits, and three-axis attitude acquisition for a satellite subject to gravity gradient torques in a circular orbit."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Co-FactChecker: A Framework for Human-AI Collaborative Claim Verification Using Large Reasoning Models",
+    "authors": "Dhruv Sahnan, Subhabrata Dutta, Tanmoy Chakraborty, Preslav Nakov, Iryna Gurevych",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13706v1",
+    "source": "arXiv",
+    "abstract": "Professional fact-checkers rely on domain knowledge and deep contextual understanding to verify claims. Large language models (LLMs) and large reasoning models (LRMs) lack such grounding and primarily reason from available evidence alone, creating a mismatch between expert-led and fully automated claim verification. To mitigate this gap, we posit human-AI collaboration as a more promising path forward, where expert feedback, grounded in real-world knowledge and domain expertise, guides the model's reasoning. However, existing LRMs are hard to calibrate to natural language feedback, particularly in a multi-turn interaction setup. We propose Co-FactChecker, a framework for human-AI collaborative claim verification. We introduce a new interaction paradigm that treats the model's thinking trace as a shared scratchpad. Co-FactChecker translates expert feedback into trace-edits that introduce targeted modifications to the trace, sidestepping the shortcomings of dialogue-based interaction. We provide theoretical results showing that trace-editing offers advantages over multi-turn dialogue, and our automatic evaluations demonstrate that Co-FactChecker outperforms existing autonomous and human-AI collaboration approaches. Human evaluations further show that Co-FactChecker is preferred over multi-turn dialogue, producing higher quality reasoning and verdicts along with relatively easier to interpret and more useful thinking traces."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "MIND: AI Co-Scientist for Material Research",
+    "authors": "Geonhee Ahn, Donghyun Lee, Hayoung Doo, Jonggeol Na, Hyunsoo Cho, Sookyung Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13699v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have enabled agentic AI systems for scientific discovery, but most approaches remain limited to textbased reasoning without automated experimental verification. We propose MIND, an LLM-driven framework for automated hypothesis validation in materials research. MIND organizes the scientific discovery process into hypothesis refinement, experimentation, and debate-based validation within a multi-agent pipeline. For experimental verification, the system integrates Machine Learning Interatomic Potentials, particularly SevenNet-Omni, enabling scalable in-silico experiments. We also provide a web-based user interface for automated hypothesis testing. The modular design allows additional experimental modules to be integrated, making the framework adaptable to broader scientific workflows. The code is available at: https://github.com/IMMS-Ewha/MIND, and a demonstration video at: https://youtu.be/lqiFe1OQzN4."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "On the Decidability of Verification under Release/Acquire",
+    "authors": "Giovanna Kobus Conrado, Andreas Pavlogiannis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13683v1",
+    "source": "arXiv",
+    "abstract": "The verification of concurrent programs under weak-memory models is a burgeoning effort, owing to the increasing adoption of weak memory in concurrent software and hardware. Release/Acquire has become the standard model for high-performance concurrent programming, adopted by common mainstream languages and computer architectures. In a surprising result, Abdulla et al. (PLDI'19) proved that reachability in this model is undecidable when programs have access to atomic Read-Modify-Write (RMW) operations. Moreover, undecidability holds even for executions with just 4 contexts, and is thus immune to underapproximations based on bounded context switching. The canonical, RMW-free case was left as a challenging question, proving a non-primitive recursive lower bound as a first step, and has remained open for the past seven years. In this paper, we settle the above open question by proving that reachability is undecidable even in the RMW-free fragment of Release/Acquire, thereby characterizing the simplest set of communication primitives that gives rise to undecidability. Moreover, we prove that bounding both the number of context switches and the number of RMWs recovers decidability, thus fully characterizing the boundary of decidability along the dimensions of RMW-bounding and context-bounding."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Cerisier: A Program Logic for Attestation in a Capability Machine",
+    "authors": "June Rousseau, Denis Carnier, Thomas Van Strydonck, Steven Keuchel, Dominique Devriese, Lars Birkedal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13638v1",
+    "source": "arXiv",
+    "abstract": "A key feature in trusted computing is attestation, which allows encapsulated components (enclaves) to prove their identity to (local or remote) distrusting components.Reasoning about software that uses the technique requires tracking how trust evolves after successful attestation.This process is security-critical and non-trivial, but no existing formal verification technique supports modular reasoning about attestation of enclaves and their clients, or proving end-to-end properties for systems combining trusted, untrusted and attested code. We contribute Cerisier, the first program logic for modular reasoning about trusted, untrusted and attested code, fully mechanized in the Iris separation logic and the Rocq Prover.We formalize a recent proposal, CHERI-TrEE, to extend capability machines with enclave primitives, as an extension to the Cerise capability machine and program logic.Our program logic comes with a universal contract for untrusted code, which captures both capability safety and local enclave attestation.Like Cerise, this universal contract is phrased in terms of a logical relation defining capabilities' authority.We demonstrate Cerisier by proving end-to-end properties for three representative applications of trusted computing: secure outsourced computation, mutual attestation and a modeled trusted sensor component."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Calibrated Speculative Decoding: Frequency-Guided Candidate Selection for Efficient Inference",
+    "authors": "Xuwen Zhou, Fangxin Liu, Chao Wang, Xiao Zheng, Hao Zheng, Min He, Li Jiang, Haibing Guan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13634v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates autoregressive generation by letting draft tokens bypass full verification, but conventional frameworks suffer from frequent false rejections, particularly when draft models produce semantically correct but lexically divergent outputs. In this paper, we present Calibrated Speculative Decoding (CSD), a training-free framework that recovers valid tokens discarded by standard verification. Guided by the principle of \"Frequency-Guided Candidate Selection and Probability-Guarded Acceptance,\" CSD incorporates two lightweight modules: Online Correction Memory, which aggregates historical rejections to propose recurring divergence patterns as rescue candidates, and Semantic Consistency Gating, which verifies candidate admissibility using probability ratios instead of exact token matching. Our evaluation across diverse large language models demonstrates that CSD outperforms existing methods, achieving a peak throughput speedup of 2.33x. CSD preserves model accuracy across all tasks while further boosting performance on complex reasoning datasets. These results establish CSD as a highly effective, lightweight solution for practical LLM deployments."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "SafeHarness: Lifecycle-Integrated Security Architecture for LLM-based Agent Deployment",
+    "authors": "Xixun Lin, Yang Liu, Yancheng Chen, Yongxuan Wu, Yucheng Ning, Yilong Liu, Nan Sun, Shun Zhang, Bin Chong, Chuan Zhou, Yanan Cao, Li Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13630v1",
+    "source": "arXiv",
+    "abstract": "The performance of large language model (LLM) agents depends critically on the execution harness, the system layer that orchestrates tool use, context management, and state persistence. Yet this same architectural centrality makes the harness a high-value attack surface: a single compromise at the harness level can cascade through the entire execution pipeline. We observe that existing security approaches suffer from structural mismatch, leaving them blind to harness-internal state and unable to coordinate across the different phases of agent operation. In this paper, we introduce \\safeharness{}, a security architecture in which four proposed defense layers are woven directly into the agent lifecycle to address above significant limitations: adversarial context filtering at input processing, tiered causal verification at decision making, privilege-separated tool control at action execution, and safe rollback with adaptive degradation at state update. The proposed cross-layer mechanisms tie these layers together, escalating verification rigor, triggering rollbacks, and tightening tool privileges whenever sustained anomalies are detected. We evaluate \\safeharness{} on benchmark datasets across diverse harness configurations, comparing against four security baselines under five attack scenarios spanning six threat categories. Compared to the unprotected baseline, \\safeharness{} achieves an average reduction of approximately 38\\% in UBR and 42\\% in ASR, substantially lowering both the unsafe behavior rate and the attack success rate while preserving core task utility."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences",
+    "authors": "Akira Kawabata, Saku Sugawara",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13618v1",
+    "source": "arXiv",
+    "abstract": "Rubric-augmented verification guides reward models with explicit evaluation criteria, yielding more reliable judgments than single-model verification. However, most existing methods require costly rubric annotations, limiting scalability. Moreover, we find that rubric generation is vulnerable to a failure of cooperation; low-quality rubrics actively mislead reward models rather than help. Inspired by the principle of cooperative communication, we propose Cooperative yet Critical reward modeling (C2), a framework that significantly improves reward model judgments by having the reward model critically collaborate with a rubric generator trained solely from binary preferences. In C2, we synthesize helpful and misleading rubric pairs by measuring how each rubric shifts the reward model toward or away from the correct preference. Using these contrastive pairs, we train a cooperative rubric generator to propose helpful rubrics, and a critical verifier to assess rubric validity before making its judgment, following only rubrics it deems helpful at inference time. C2 outperforms reasoning reward models trained on the same binary preferences, with gains of up to 6.5 points on RM-Bench and 6.0 points length-controlled win rate on AlpacaEval 2.0. Without external rubric annotations, C2 enables an 8B reward model to match performance achieved with rubrics from a 4$\\times$ larger model. Overall, our work demonstrates that eliciting deliberate cooperation in rubric-augmented verification makes reward models more trustworthy in a scalable way."
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Debate to Align: Reliable Entity Alignment through Two-Stage Multi-Agent Debate",
+    "authors": "Cunda Wang, Ziying Ma, Po Hu, Weihua Wang, Feilong Bao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.13551v1",
+    "source": "arXiv",
+    "abstract": "Entity alignment (EA) aims to identify entities referring to the same real-world object across different knowledge graphs (KGs). Recent approaches based on large language models (LLMs) typically obtain entity embeddings through knowledge representation learning and use embedding similarity to identify an alignment-uncertain entity set. For each uncertain entity, a candidate entity set (CES) is then retrieved based on embedding similarity to support subsequent alignment reasoning and decision making. However, the reliability of the CES and the reasoning capability of LLMs critically affect the effectiveness of subsequent alignment decisions. To address this issue, we propose AgentEA, a reliable EA framework based on multi-agent debate. AgentEA first improves embedding quality through entity representation preference optimization, and then introduces a two-stage multi-role debate mechanism consisting of lightweight debate verification and deep debate alignment to progressively enhance the reliability of alignment decisions while enabling more efficient debate-based reasoning. Extensive experiments on public benchmarks under cross-lingual, sparse, large-scale, and heterogeneous settings demonstrate the effectiveness of AgentEA."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "LLM-RLNav: Grounding Natural Language Instructions for Robots via LLM Decomposition and Reinforcement Learning",
+    "authors": "Tong Zou, Can Lv, Yuan Zhuang, Xiansheng Yang",
+    "publish": "2025 International Ubiquitous Positioning, Indoor Navigation and Location-Based Services Conference (UPINLBS)",
+    "url": "https://doi.org/10.1109/upinlbs68186.2025.11468430",
+    "source": "IEEE",
+    "abstract": "Enabling robots to comprehend and execute natural language instructions is fundamental for humanrobot interaction. However, traditional navigation systems face two limitations: one is a deficit in semantic reasoning capability for instruction interpretation and long-horizon planning, and the other is an inability to generate adaptive control for robust execution. To overcome these limitations, we introduce a novel hierarchical framework that harnesses the respective strengths of Large Language Models (LLMs) and Reinforcement Learning (RL). Our approach structures the problem into three dedicated layers. First, an LLM serves as a high-level task planner, interpreting natural language instruction into a sequence of sub-tasks. Second, a semantic-geometric mapping module converts landmark into coordinates. Finally, a PPO-based RL navigation policy executes each sub-task. This design establishes a cohesive link between high-level language understanding and low-level robot control. We validate the proposed framework in the Habitat simulation environment, where experimental results demonstrate its reliable execution of multi-step navigation tasks from natural language commands, thereby advancing robotic autonomy and applicability."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Human-in-the-Loop Evaluation Pipelines for Production LLM Systems",
+    "authors": "Vincent Koc",
+    "publish": "2025 International Conference on Computational Intelligence, Security, and Artificial Intelligence (IntelliSecAI)",
+    "url": "https://doi.org/10.1109/intellisecai66368.2025.11473113",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have become essential tools in a wide variety of domains; however, inherent limitations such as hallucinations, ambiguities, domain-specific errors, and others often create significant problems when used in the context of productions. We present a Human-in-the-Loop (HITL) assessment pipeline in this work that is an integration of human feedback, LLM-based adjudication system, and observability tools and expect to increase the reliability, safety and alignment of the results produced by the LLM with the business needs. It implements the use of human raters to create evaluation rubrics, review model outputs and provide feedback, and an adjudicator of the LLM automates the scoring process to ensure scalability. Empirical case studies on the customer support and document quality assurance have shown that the hybrid approach brings improvements to the accuracy of task completion, customer satisfaction, and policy compliance. Moreover, the manuscript outlines the best practices regarding the scaling of the HITL workflows, handling high-risk cases, and continuously refining the system performance through the continuous feedback processes. In this way, the suggested solution will provide a scalabilitybased, low-cost paradigm to enrich the usage of LLM applications and, at the same time, maintain the alignment with the business requirements and safety level."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "A Hybrid Framework for Personalized Scientific Articles Recommendation with LLM-Driven Explanations",
+    "authors": "Khawla Elayadi, Nacim Yanes",
+    "publish": "2025 IEEE Afro-Mediterranean Conference on Artificial Intelligence (AMCAI)",
+    "url": "https://doi.org/10.1109/amcai66110.2025.11474352",
+    "source": "IEEE",
+    "abstract": "The exponential growth of scientific publications has created a major challenge for researchers and academic institutions seeking relevant and highquality content. Navigating vast and interdisciplinary digital libraries requires recommendation systems that can deliver precise, personalized, and transparent suggestions. However, most existing systems depend heavily on detailed user activity logs or continuous interaction histories, which are not always available or practical in academic contexts. To overcome this limitation, we propose a hybrid recommendation framework that utilizes user profiles with predefined preferences. The approach integrates content-based filtering, collaborative filtering, and sequential modeling in a hierarchical manner. Scientific articles are represented using compact, semantically rich embeddings from a lightweight transformerbased encoder, while user interest evolution is captured through a recurrent neural network. Additionally, the system includes a generative language model fine-tuned for explanation tasks, enabling it to produce intuitive natural language justifications for each recommendation. Evaluated on a synthetic dataset simulating 1,000 users and 10,000 scientific articles across 43 domains, the framework outperforms standard baselines in precision, recall, and F1-score. The resulting solution is scalable, interpretable, and tailored to meet the demands of academic digital libraries and scholarly search platforms."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "LLM-Based Human-Robot Collaboration Task Sequence Optimization Method Fusing Scene Semantics and Object Attributes",
+    "authors": "Zhenyu Pan",
+    "publish": "2025 9th International Conference on Electrical, Mechanical and Computer Engineering (ICEMCE)",
+    "url": "https://doi.org/10.1109/icemce68156.2025.11467024",
+    "source": "IEEE",
+    "abstract": "In human-robot collaboration (HRC) scenarios within shared workspaces, achieving efficient and safe task execution remains a critical challenge. Traditional HRC planning methods are mostly tailored to collaborative scenarios where the initial positions of objects are fixed, resulting in static task sequences. Meanwhile, these methods require large-scale modeling of both the scene and task objects, exhibiting poor generalization when adapting to new scenarios. To address these issues, this paper proposes a large language model (LLM)-based HRC task sequence optimization method that fuses scene semantics and object attributes. Leveraging a modular multi-agent design, it enables collaborative planning of HRC tasks, taking desktop organization tasks as input and outputting efficient and safe human-robot task allocation sequences. Specifically, relying on the cross-modal understanding capability of LLMs, deep semantic parsing is performed on collaborative task descriptions and scene images, and task-level evaluation of object attributes is conducted. Second, a multi-dimensional task evaluation system is constructed to assess operational objects from dimensions including collaboration efficiency, collaboration difficulty, and collaboration safety. Based on the parsing results of LLMs, uncertainty reasoning is implemented via a Bayesian network. Finally, using the Bayesian reasoning results as decision-making basis, a genetic algorithm is adopted for task sequence optimization. Experimental validation in HRC desktop organization tasks demonstrates that the proposed method outperforms traditional methods in terms of time efficiency, safety, and success rate, significantly enhancing the efficiency and dynamic adaptability of HRC tasks."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Evaluating Multi-Level LLM Integration for Interpretable Medication Recommendation via Graph-Based Clinical Modeling",
+    "authors": "Mayssa Kilani, Sarra Laaouar, Nacim Yanes",
+    "publish": "2025 IEEE Afro-Mediterranean Conference on Artificial Intelligence (AMCAI)",
+    "url": "https://doi.org/10.1109/amcai66110.2025.11474349",
+    "source": "IEEE",
+    "abstract": "This study investigates the impact of Large Language Models (LLMs) on improving the accuracy and interpretability of medication recommendation systems within a unified graph-based framework, using the MIMIC-III dataset. We compare three scenarios of LLM integration: (1) full integration, which extracts features from clinical notes, generates semantic patient embeddings, and produces patient-specific explanations; (2) partial integration, where LLMs select relevant structured features without processing narrative data; and (3) a baseline that relies solely on graph attention networks (GAT) and long-short-term memory (LSTM) without LLM involvement. Results show that full LLM integration achieves the highest performance (F1-score: <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\text{9 1. 4} \\%$</tex>, precision: <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\text{9 5. 2 \\%}$</tex>), followed by partial integration (F1: 77.0 %) and the baseline (F1: 68.3 %). Ablation studies and qualitative analyzes confirm that LLM significantly improve predictive precision and clinical interpretability by leveraging narrative context. These findings offer actionable insights for designing effective, interpretable and efficient clinical decision support systems"
+  },
+  {
+    "date": "2026-4-15",
+    "title": "LLM-Driven Cognitive Honeypots for Adaptive Threat Intelligence in Self-Securing Systems*",
+    "authors": "Ayesha Eman, Qasim Ali, Faheem Khuhawar, Arbab Nighat Kalhoro",
+    "publish": "2026 1st International Conference on Innovations in Information and Communication Technologies (IICT)",
+    "url": "https://doi.org/10.1109/iict68374.2026.11468752",
+    "source": "IEEE",
+    "abstract": "The increasing complexity of cyber threats requires security systems that can interpret attacker behavior and respond autonomously. This paper presents a cognitive honeypot framework that integrates a large language model into a medium-interaction honeypot to enable real-time semantic threat classification and mitigation. The system captures SSH and HTTP session data, converts interaction logs into structured prompts, and uses a pre-trained model to analyze intent using natural language understanding. Based on the model's output, the framework assigns risk scores and automatically enforces firewall rules to block malicious IP addresses without relying on manual supervision or static rules. In a two-week deployment on a publicly accessible cloud instance, the system recorded 357 sessions, identified 126 as malicious, and achieved 97.75% mitigation accuracy with a median response time of 0.95 seconds. These results demonstrate the feasibility of integrating language models into honeypot systems to enable adaptive, autonomous defense capabilities in live environments. Evaluation was limited to 357 live SSH and HTTP sessions over two weeks; ongoing work aims to extend validation to encrypted traffic (TLS/HTTPS), multi-node deployments, and larger cross-domain datasets to assess statistical generalization"
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Structured Prompting and Heterogeneous LLM Multi-Agent Framework for Financial Sentiment Analysis",
+    "authors": "Adnan Sami Pavel, Sraboni Akhter, Asha Mony, Ataullha, Muhammad Aminur Rahaman",
+    "publish": "2025 International Conference on Sustainable Technology and Engineering (i-COSTE)",
+    "url": "https://doi.org/10.1109/i-coste68047.2025.11467509",
+    "source": "IEEE",
+    "abstract": "Financial sentiment analysis (FSA) is a critical but complex task due to the nuanced language and domain-specific jargon used in financial statements. Although the multi-agent framework shows promise, those frameworks heavily rely on proprietary large language models(LLM) like the GPT-4 model, mostly evaluated on potentially contaminated public datasets, and suffer unreliable synthesis methods. To eliminate these limitations, we proposed a novel and more accessible framework built entirely using open-source LLM models. The primary contributions are (i) the Declarative Agent Schema (DAS), a structured prompting methodology to orchestrate agent collaboration; (ii) a novel comparative agent engineered to understand comparative logic stated in the financial statements; and (iii) a custom challenging dataset of manually annotated sentiment labels for uncontaminated performance evaluation. The framework applies these contributions within an optimized architecture that utilizes an open-source tiered LLM strategy combining llama-3.1 8b for specialized tasks and llama-3 70b for the final synthesizing task. This design choice aligned with the emerging paradigm that the future of agentic AI lies in efficient, collaborative crews of small models. When evaluated in the potential contaminated public dataset, the proposed system achieved an accuracy of 90.93%, in the custom challenging dataset, we achieved an accuracy of 63.33%, outperforming single LLM model baseline frameworks. This work provides the blueprint for an accurate, scalable, and interpretable FAS system capable of providing state-of-the-art performance within the open-source ecosystem."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "PromptShield: LoRA-Based Parameter-Efficient Refusal Alignment for Election-Targeted Adversarial LLM Attacks",
+    "authors": "Nishmitha M R, Tejakshi N S, Anshu Sharma, Kiran, Abhishek Gowda R M, Karan",
+    "publish": "2026 International Conference on Computing, Sciences and Communications (ICCSC)",
+    "url": "https://doi.org/10.1109/iccsc67078.2026.11468767",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) are increasingly deployed in public-facing information systems, where their misuse poses serious risks in high-stakes domains such as democratic elections. Despite extensive safety alignment, contemporary LLMs remain vulnerable to adversarial “jailbreak” prompting, enabling the generation of election-related misinformation, voter suppression narratives, and procedural manipulation. Recent election cycles have documented hundreds of verified instances of LLM-assisted disinformation campaigns, highlighting the urgent need for targeted, domain-specific defenses [1]–[3].We introduce PromptShield, a domain-specific, parameter-efficient refusal alignment approach based on Low-Rank Adaptation (LoRA) that strengthens LLM robustness against election-targeted jailbreak attacks. To support systematic training and evaluation, we present ElectionJailBench, a benchmark of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{1 0, 0 0 0}$</tex> synthetic adversarial prompts that combine election harm templates with diverse, state-of-the-art jailbreak strategies, including roleplaying, obfuscation, and optimization-based attacks [4]–[6]. PromptShield is trained via supervised fine-tuning on a 4-bit quantized Llama-3.1-8B-Instruct model and can be deployed in under one hour on commodity GPU hardware. Experimental results show a reduction in Attack Success Rate from <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{7 2. 0 \\%}$</tex> to <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{1 8. 0 \\%}$</tex> (<tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{7 5 \\%}$</tex> relative improvement) on ElectionJailBench, while preserving general-purpose reasoning performance on the MMLU benchmark. Ablation studies further highlight the impact of dataset scale and LoRA rank on refusal robustness. Our findings demonstrate that lightweight, LoRAbased alignment can deliver effective, election-specific jailbreak resistance without incurring a measurable safety tax."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Beyond Data Integrity: A Survey on the Cognitive and Structural Risks of LLM Poisoning",
+    "authors": "Haiyang Yu, Yaodan Zhang, Mingying Zhang, Fangzhen Li, Donglin Zhou, Jianyao Zhang, Xiaohu Shan",
+    "publish": "2025 International Conference on Mechatronics, Automation and Intelligent Control (MAIC)",
+    "url": "https://doi.org/10.1109/maic67965.2025.11468860",
+    "source": "IEEE",
+    "abstract": "With the widespread deployment of Large Language Models (LLMs) in critical decision-making pipelines, code generation, and multimodal interaction, concerns regarding their security vulnerabilities have escalated. A particularly insidious threat is the LLM poisoning attack, where an adversary manipulates the training data or fine-tuning process to embed malicious behaviors that persist through deployment. This paper proposes a novel threat taxonomy designed to systematically deconstruct the evolutionary trajectory of poisoning attacks against LLMs. We synthesize existing literature into four core dimensions: 1) Semantic and Cognitive Manipulation, elucidating how attacks escalate from the syntactic level to conceptual and logical levels; 2) Attack Robustness and Transferability, analyzing the persistence of poisons throughout the model lifecycle; 3) Imperceptibility and Evasion Mechanisms, exploring how adversaries bypass detection through statistical sparsity and semantic consistency; and 4) Domain-Specific Vulnerabilities, highlighting unique attack surfaces in contexts such as code generation, multimodality, and RLHF. Furthermore, this paper explores the potential for benign applications of poisoning techniques, such as privacy preservation and machine unlearning."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "GMFR-Coder: An LLM-Driven Approach to Code Generation for GNN-Based Machining Feature Recognition of Aircraft Structural Parts",
+    "authors": "Wenhao Xu, Mingyu Zhang, Yafei Jia, Ruiqiang Lyu, You Song",
+    "publish": "2025 9th International Conference on Electrical, Mechanical and Computer Engineering (ICEMCE)",
+    "url": "https://doi.org/10.1109/icemce68156.2025.11467062",
+    "source": "IEEE",
+    "abstract": "In the context of increasingly intricate aviation manufacturing processes, Machining Feature Recognition (MFR) is pivotal for process planning and machining programming. While the Graph Neural Network (GNN)-based MFR approach exhibits promise in handling topological data like B-rep, it encounters challenges such as high development complexity, limited task migration flexibility, and extended iteration cycles in practical industrial settings, thereby constraining widespread engineering application. To address these issues, we propose a self-reflective multi-agent framework, GMFR-Coder, impelled by a large language model (LLM), aiming to achieve seamless conversion from the task requirements to executable GNN model code. The framework comprises SpecifyAgent, CodeAgent, ExecuteAgent, and RepairAgent components. By iteratively collaborating on task interpretation, code synthesis, execution validation, and error rectification, the framework effectively enhances the code quality and task adaptability of GNN models. Experimental results demonstrate that GMFR-Coder proficiently generates accurate codes, diminishes manual development expenses, and abbreviates model construction timelines. The ablation study additionally underscores the indispensability and collaborative efficacy of the agents."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Verification and Validation Platform for UGV Autonomous Systems",
+    "authors": "Tianze Zhao, Xingxing Guang, Xijun Zhao",
+    "publish": "2025 2nd International Conference on Intelligent Driving and Smart Transportation (IDST)",
+    "url": "https://doi.org/10.1109/idst67888.2025.11469996",
+    "source": "IEEE",
+    "abstract": "Simulation-based verification and validation serve as critical technologies in the development of autonomous systems for Unmanned Ground Vehicles, aimed at reducing testing costs, addressing the long-tail problem of testing scenarios, and enhancing operational safety. Benefiting from advances in scene reconstruction and stochastic scene generation technologies, virtual environments now serve as an effective supplement to realworld testing scenarios. However, idealized environmental interactions and algorithm operating conditions in simulations lead to discrepancies between simulation and physical tests. To address this, we propose a simulation platform for UGV autonomous systems. Built upon highly realistic virtual environments and incorporating controller-in-the-loop simulation, real-time dynamic model computation, and a high-degree-offreedom perception system editor, this platform improves the performance of simulation-based verification and validation. It enables comprehensive evaluation of the autonomous system, including perception, decision-making, planning, and control."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Intelligent Algorithm Transplant and Verification System",
+    "authors": "Zhening Dong, Qing Luo, Dongyue Yang, Yang Liu",
+    "publish": "2025 9th International Conference on Electrical, Mechanical and Computer Engineering (ICEMCE)",
+    "url": "https://doi.org/10.1109/icemce68156.2025.11466827",
+    "source": "IEEE",
+    "abstract": "With the continuous emergence of unmanned platform equipment types and exponential growth in number, the demand for intelligent upgrading of unmanned aerial vehicles, rapid iterative development of intelligent unmanned platforms, tactical combat simulation deduction, etc. is increasing day by day. However, traditional waterfall development system process is lengthy and lacks integrated rapid verification means. Therefore, there is an urgent need to build a new “design-simulation-implementation-test-verification” integrated unmanned platform development system to effectively improve the development iteration speed of unmanned platforms. The intelligent algorithm transplantation and verification systemimplemented in this paper constructsalgorithm analysis component (algorithm interface tool), algorithm function development component, algorithm basic operation tool, algorithm interface conversion development support tool, intelligent algorithm data excitation equipment, intelligent algorithm transplantation running result analysis equipment, and realizes the transplantation of intelligent algorithms in airborne embedded intelligent computing environment."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Intelligent Logistics Multi-Objective Path Scheduling Algorithm and Performance Verification for High Concurrency Order Scenarios",
+    "authors": "Xunxun Shao",
+    "publish": "2025 3rd International Conference on Logistics Engineering, Supply Chain and Digital Transformation (LESCDT)",
+    "url": "https://doi.org/10.1109/lescdt66758.2025.00033",
+    "source": "IEEE",
+    "abstract": "With the deep integration of artificial intelligence (AI) and the Internet of Things (IoT) technology in warehousing and logistics, the widespread application of automated warehousing equipment such as mobile robot fulfillment systems (RMFS) and automated guided vehicles (AGV) has significantly improved the efficiency of warehouse operations. However, in high concurrency order scenarios, traditional path planning methods still face severe challenges. This article proposes a multi-objective path intelligent scheduling framework for smart logistics that integrates reinforcement learning (RL). This framework adopts a hierarchical collaborative decision-making mechanism: for the picking process of orders in the warehouse, a joint optimization problem of order allocation and AGV scheduling (IOARSP) is proposed, aiming to minimize the overall completion time of a batch of orders and improve the system's operational efficiency. A multi-agent RL based delivery path scheduling (MRLRS) strategy was designed for the logistics distribution process after outbound shipment. This strategy models delivery path scheduling as a path generation process, iteratively generates paths using an encoder decoder framework with attention mechanism, and designs a multiagent RL training method that integrates unsupervised auxiliary networks. Simulation experiments show that the proposed algorithm can effectively cope with high concurrency dynamic requirements."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Hybrid Identity-Preserving Image Cartoonization Using Iterative Deep Learning Verification and Region-Aware Processing",
+    "authors": "Ayush Garg, Tanay Chaplot, Supriya Agrawal",
+    "publish": "2025 International Conference on Electrical, Communication, and Computing Technologies (iCONECCT)",
+    "url": "https://doi.org/10.1109/iconecct67014.2025.11470297",
+    "source": "IEEE",
+    "abstract": "All social media digital media have a cartoonizer filter of an image. Young or old, be it Instagram or Snapchat, everybody prefers to see themselves in cartoons. However, there is a mandatory issue: the filter changes the real human faces that you have, making you unrecognizable. The regular algorithms usually save 70-80% of your recognizable facial features, which leads to distortion of facial features. Thus, we constructed a system to combine the conventional picture processing with the current AI. There are three steps to our method. We take FaceNet-512 embeddings first, and run them in a continuous feedback loop-it keeps on checking itself to see whether you still have a recognizable face and increasing or decreasing the cartoon strength. Second, we do not treat your face in its entirety. With MediaPipe's state-of-the-art facial landmark detection (468 points) we are soft on the eyes (only 30% cartoon effect, the place of identity) and hard on backgrounds (100%). Third, we identify the emotion by recognizing the color pixel intensities and matching them with the values of the emotions defined. We ran 200 high-quality celebrity images on CelebA-HQ giving us nearly real results: 88 percent face recognition, which is double the norm of 80%. We preserved emotional expressions (100% preservation). We also dealt in 6 varieties of art. This study opens the way of individual avatars, instructions resources, career photographs, and accessibility where the humour of the photograph balances with the veracity of the appearance."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Trust Without Originals: Region-Aware Image Integrity Verification in Clinical Images",
+    "authors": "Akepati Sai Sannidhi, Mamidi Prajana, R Nithya Sree, Kavitha C.R.",
+    "publish": "2025 International Conference on Electrical, Communication, and Computing Technologies (iCONECCT)",
+    "url": "https://doi.org/10.1109/iconecct67014.2025.11470055",
+    "source": "IEEE",
+    "abstract": "The rise in manipulation and unauthorised reuse without permissions poses a risk to secure data, especially in areas like healthcare, law, and digital media. Many existing works, including watermarking and cryptographic hashing, often struggle with benign edits or can't detect the type and location of tampering. To address these issues, our work introduces a region-aware image integrity verification system. It combines perceptual hashing with elliptic-curve digital signing (ECDSA, NIST P-384). By hashing localised areas of the image and securing their combined fingerprint, the system gives both perceptual integrity and cryptographic trust without storing the original image. We tested on 3,000 tampered samples and achieved 99.93 % accuracy, with no false positives while processing each image under (<tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\leq 0.1 ~\\mathrm{s}$</tex> /image) across six tamper types. Its lightweight implementation using Python, Flask, and SQLite supports batch verification, audit logging, and REST API integration. This makes it practical for real-time use in forensic, clinical, and content-authentication workflows."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Post-hoc Verification of LLMs with Knowledge Graphs for Medical Question Answering",
+    "authors": "Intissar Boutra, Hamda Slimi, Mohamed Yassine Haouam, Issam Bendib",
+    "publish": "2025 International Conference on Recent Advances in Mathematics and Informatics (ICRAMI)",
+    "url": "https://doi.org/10.1109/icrami64946.2025.11472693",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable progress in natural language processing and show strong potential for medical question answering (QA). Their ability to process biomedical literature and generate coherent responses makes them attractive for clinical and research applications. However, their deployment in high-stakes domains is limited due to critical issues such as hallucinations, outdated knowledge, and lack of verifiability. These shortcomings undermine reliability and highlight the need for mechanisms that can ensure factual grounding. We propose a lightweight post-hoc verification framework that integrates LLMs with biomedical Knowledge Graphs (KGs). Using the Gene Ontology (GO) as a domain-specific resource, our framework extracts factual statements from LLM-generated responses, reformulates them as KG queries, and validates them against curated biomedical knowledge. Unsupported claims are flagged or corrected through an optional refinement loop, improving factual consistency without requiring retraining or fine-tuning of the base LLM. We evaluate the framework on two datasets with different characteristics: PubMedQA, a benchmark of general biomedical questions derived from PubMed abstracts, and GO-QA, a domain-specific dataset constructed from Gene Ontology concepts. Results show consistent improvements in factual accuracy, with BERT-F1 increasing from 0.4110 to 0.4245 on PubMedQA and from 0.8242 to 0.8405 on GO-QA. These findings demonstrate that posthoc KG verification is a practical and generalizable strategy for enhancing the reliability and trustworthiness of LLM-based medical QA systems."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "A Verification Platform for Mixed-HDLs SoC Design",
+    "authors": "Shaozhen Zhang, Yufeng Wang, Meng Lian, Xianyang Liu, Kun Liu, Zijun Wang",
+    "publish": "2025 4th International Conference on Advanced Electronics, Electrical and Green Energy (AEEGE)",
+    "url": "https://doi.org/10.1109/aeege68222.2025.11473187",
+    "source": "IEEE",
+    "abstract": "The growing complexity of integrated circuit (IC) design has made the use of different hardware description languages (HDLs), such as Verilog, System Verilog and VHDL, standard practice during the design process. System Verilog, as an extended version of Verilog, maintains full syntactic and semantic compatibility with its predecessor, enabling seamless compilation and simulation. However, comparing to Verilog, VHDL exhibits fundamental differences in syntax, semantics, and simulation mechanisms, making concurrent compilation and simulation inherently challenging. This divergence introduces significant problems in mixed-HDLs integrated circuit design workflows. This paper proposes a unified verification platform for mixedHDLs designs involving both Verilog and VHDL, which addresses compatibility issues during compilation and verification processes, thereby enhancing verification efficiency. The platform has been successfully applied to the functional verification of SoC chips, demonstrating its feasibility and practical advantages in engineering applications."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Data-Augmented L2-Regularized CNN Framework for Robust Handwritten Signature Verification",
+    "authors": "Jyotirupa Basumatary, Monjul Saikia",
+    "publish": "2025 IEEE 4th International Conference on Technology, Engineering, Management for Societal impact using Marketing, Entrepreneurship and Talent (TEMSMET)",
+    "url": "https://doi.org/10.1109/temsmet65536.2025.11467189",
+    "source": "IEEE",
+    "abstract": "In the field of Biometric authentication, signature verification has been one of the most widely used biometric verification out there. Signature verification is a verification technique that examines the physical act of signing and employs the dynamics of a person's handwritten signature. This paper presents an investigation on offline handwritten signature verification using the deep-learning method i.e., CNN. This report aims to evaluate the model performance on very limited number of signatures samples, utilizing a variety of pre-processing methods carried out in the images in addition to Data-augmentation and L2 regularization in the CNN model. The system is evaluated on two different datasets of signatures - Kaggle dataset and the other is a custom-collected dataset. Augmentation techniques including scaling, shear, rotation, width-shift, height-shift, zoom, and horizontal-flip were applied to enhance data diversity and encourage real-world variations, while L2 regularization was incorporated to control model complexity and reduce overfitting. The system, when the Kaggle [9] dataset was applied, showed False Rejection Rate (FRR) as 0.0363 and False Acceptance Rate (FAR) as 0.0000 and the Total Acceptance Rate (TAR) as 0.9637 and the system showed an overall accuracy of 0.982. On the other hand when the manually created custom dataset was applied to the system, it showed FRR as 0.1611 and FAR as 0.2400 and the TAR as 0.8389 and while the overall accuracy of the system is 0.80."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Framework Design and Simulation Verification System of Intelligent Computing System Based on AI Chip",
+    "authors": "Qing Luo, Zhening Dong, Guoyi Wang, Wenlong Jiang",
+    "publish": "2025 9th International Conference on Electrical, Mechanical and Computer Engineering (ICEMCE)",
+    "url": "https://doi.org/10.1109/icemce68156.2025.11467008",
+    "source": "IEEE",
+    "abstract": "Unmanned aerial vehicles and other unmanned systems update iteration speed is getting faster and faster, new technologies continue to emerge. At present, the basic hardware and embedded software still adopt the traditional architecture of strong coupling, which is strongly challenged by the universality and compatibility requirements of mass unmanned equipment new technologies. For the development of a single military unmanned system, unmanned systems such as unmanned aerial vehicles urgently need to provide a systematic development platform for unmanned platforms. The software framework can be separated from the underlying hardware, the computing resources can be separated from the external equipment, the binding relationship between computing resources and sensing/execution equipment can be broken, and a standardized, independent and loosely coupled relationship between the underlying hardware and the upper application can be formed to construct the unmanned platform computing system base. Finally, a software-defined intelligent equipment production form of “fixed version” will be formed, which will significantly reduce the development cycle and development cost of unmanned systems. The main function of the intelligent computing system framework design and simulation verification system based on AI chip implemented in this paper is to provide the development and verification of embedded intelligent algorithm computing framework and embedded intelligent computing system with constraints of airborne environment for efficient operation of intelligent algorithms in airborne embedded environment."
+  },
+  {
+    "date": "2026-4-15",
+    "title": "Bridging Gaps in Agentic AI: Verification, Coordination, and Evaluation",
+    "authors": "Abhay Gangawr, Prateek Agarwal, Anshika Agarwal, Rahul Rastogi, Anshika Mittal, Aditya Kumar, Ashish Yadav, Ayush Yadav",
+    "publish": "2026 International Conference on Computing, Sciences and Communications (ICCSC)",
+    "url": "https://doi.org/10.1109/iccsc67078.2026.11468761",
+    "source": "IEEE",
+    "abstract": "Agentic AI is a paradigm changeover in artificial intelligence that utilizes Large Language Models and reasoning systems to create systems that act independently to achieve goals. The current form of Agentic AI has some major issues that this paper aims to address: there is currently no formal method of verifying whether systems are running as expected, systems struggle to have more than one agent, systems struggle with memory management, there are natural abilities and limitations to models of language, and there is no method to measure performance. We studied various systems that have attempted to address this, namely AgentGuard, MemoryOS, and UProp, and we concluded that systems are generally able to produce likely solutions to problems and not guaranteed solutions. The pa- per proposes new areas of investigation, such as the use of bounded model checking for finding potential actions, devel- oping game-theoretic models for enhancing cooperation among agents, optimizing memory systems with control policies, and implementing uncertainty management methods for avoiding faults. Moreover, this paper proposes a new method for system evaluation based on a set of benchmarks and complex metrics focusing on scientific objectives. By theoretical projection, our model shows a 40-60% reduction in state space exploration using bounded verification and an improvement of up to 90% in consistency compared with traditional Nash equilibrium models for multi-agent coordination. Based on a 6 5. 1% success rate in standard instrumental testing, it has been identified that agentic systems are working satisfactorily well; nonetheless, more reliable mathematical models are needed for ensuring the security of these systems and making them ready for practical implementation."
+  }
+]
