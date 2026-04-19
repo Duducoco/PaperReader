@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-04-16",
+    "title": "Prism: Symbolic Superoptimization of Tensor Programs",
+    "authors": "Mengdi Wu, Xiaoyu Jiang, Oded Padon, Zhihao Jia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15272v1",
+    "source": "arXiv",
+    "abstract": "This paper presents Prism, the first symbolic superoptimizer for tensor programs. The key idea is sGraph, a symbolic, hierarchical representation that compactly encodes large classes of tensor programs by symbolically representing some execution parameters. Prism organizes optimization as a two-level search: it constructs symbolic graphs that represent families of programs, and then instantiates them into concrete implementations. This formulation enables structured pruning of provably suboptimal regions of the search space using symbolic reasoning over operator semantics, algebraic identities, and hardware constraints. We develop techniques for efficient symbolic graph generation, equivalence verification via e-graph rewriting, and parameter instantiation through auto-tuning. Together, these components allow Prism to bridge the rigor of exhaustive search with the scalability required for modern ML workloads. Evaluation on five commonly used LLM workloads shows that Prism achieves up to $2.2\\times$ speedup over best superoptimizers and $4.9\\times$ over best compiler-based approaches, while reducing end-to-end optimization time by up to $3.4\\times$."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Enhancing Large Language Models with Retrieval Augmented Generation for Software Testing and Inspection Automation",
+    "authors": "Zoe Fingleton, Nazanin Siavash, Armin Moin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15270v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we focus on automating two of the widely used Verification and Validation (V&V) activities in the Software Development Lifecycle (SDLC): Software testing and software inspection (also known as review). Concerning the former, we concentrate on automated test case generation using Large Language Models (LLMs). For the latter, we enable inspection of the source code by LLMs. To address the known LLM hallucination problem, in which LLMs confidently produce incorrect outputs, we implement a Retrieval Augmented Generation (RAG) pipeline to integrate supplementary knowledge sources and provide additional context to the LLM. Our experimental results indicate that incorporating external context via the RAG pipeline has a generally positive impact on both test case generation and code inspection. This novel approach reduces the total project cost by saving human testers'/inspectors' time. It also improves the effectiveness and efficiency of these V&V activities, as evidenced by our experimental study."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Structural Dependency Analysis for Masked NTT Hardware: Scalable Pre-Silicon Verification of Post-Quantum Cryptographic Accelerators",
+    "authors": "Ray Iskander, Khaled Kirah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15249v1",
+    "source": "arXiv",
+    "abstract": "Post-quantum cryptographic accelerators require side-channel resistance evidence for FIPS 140-3 certification. However, exact masking-verification tools scale only to gadgets of a few thousand cells. We present a four-stage verification hierarchy, D0/D1 structural dependency analysis, fresh-mask refinement, Boolean Single-Authentication Distance Checking (SADC), and arithmetic SADC, that extends sound first-order masking verification to production arithmetic modules. Applied to the 1.17-million-cell Adams Bridge ML-DSA/ML-KEM accelerator, structural analysis completes in seconds across all 30 masked submodules. A multi-cycle extension (MC-D1) reclassifies 12 modules from structurally clean to structurally flagged. On the 5,543-cell ML-KEM Barrett reduction module, the pipeline machine-verifies 198 of 363 structurally flagged wires (54.5%) as first-order secure, reports 165 as candidate insecure for designer triage (a sound upper bound), and leaves 0 indeterminate. Every verdict is cross validated by Z3 and CVC5 with 0 disagreements across 363 wires. The result narrows manual review from hundreds of structural flags to 165 actionable candidates with mathematical certificates, enabling pre-silicon side-channel evidence generation on production ML-KEM hardware."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "IQP circuits for 2-Forrelation",
+    "authors": "Quentin Buzet, André Chailloux",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15248v1",
+    "source": "arXiv",
+    "abstract": "The 2-Forrelation problem provides an optimal separation between classical and quantum query complexity and is also the problem used for separating $\\mathsf{BQP}$ and $\\mathsf{PH}$ relative to an oracle. A natural question is therefore to ask what are the minimal quantum resources needed to solve this problem. We show that 2-Forrelation can be solved using Instantaneous Quantum Polynomial-time ($\\mathsf{IQP}$) circuits, a restricted model of quantum computation in which all gates commute. Concretely, two $\\mathsf{IQP}$ circuits with two quantum queries and efficient classical processing suffice. For the signed variant of 2-Forrelation, even a single $\\mathsf{IQP}$ circuit and query suffices. This answers a recent open question of Girish (arXiv:2510.06385) on the power of commuting quantum computations. We use this to show that $(\\mathsf{BPP}^{\\mathsf{IQP}})^O \\not\\subseteq \\mathsf{PH}^O$ relative to an oracle $O$, strengthening the result of Raz and Tal (STOC 2019). Our results show that $\\mathsf{IQP}$ circuits can be used for classically hard decision problems, thus providing a new route for showing quantum advantage with $\\mathsf{IQP}$ circuits, avoiding the verification difficulties associated with sampling tasks. We also prove Fourier growth bounds for $\\mathsf{IQP}$ circuits in terms of the size of their accepting set. The key ingredient is an algebraic identity of the quadratic function $Q(x) = \\sum_{i < j} x_ix_j$ that allows extracting inner-product phases within an $\\mathsf{IQP}$ circuit."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "From Tokens to Steps: Verification-Aware Speculative Decoding for Efficient Multi-Step Reasoning",
+    "authors": "Kiran Purohit, Ramasuri Narayanam, Soumyabrata Pal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15244v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) accelerates large language model inference by allowing a lightweight draft model to propose outputs that a stronger target model verifies. However, its token-centric nature allows erroneous steps to propagate. Prior approaches mitigate this using external reward models, but incur additional latency, computational overhead, and limit generalizability. We propose SpecGuard, a verification-aware speculative decoding framework that performs step-level verification using only model-internal signals. At each step, SpecGuard samples multiple draft candidates and selects the most consistent step, which is then validated using an ensemble of two lightweight model-internal signals: (i) an attention-based grounding score that measures attribution to the input and previously accepted steps, and (ii) a log-probability-based score that captures token-level confidence. These signals jointly determine whether a step is accepted or recomputed using the target, allocating compute selectively. Experiments across a range of reasoning benchmarks show that SpecGuard improves accuracy by 3.6% while reducing latency by ~11%, outperforming both SD and reward-guided SD."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "UrbanClipAtlas: A Visual Analytics Framework for Event and Scene Retrieval in Urban Videos",
+    "authors": "Joel Perca, Luis Sante, Juanpablo Heredia, Joao Rulff, Claudio Silva, Jorge Poco",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15225v1",
+    "source": "arXiv",
+    "abstract": "Extracting actionable insights from long-duration urban videos is often labor-intensive: analysts must manually sift through raw footage to pinpoint target events or uncover broader behavioral trends. In this work, we present URBANCLIPATLAS, a visual analytics system for exploring long urban videos recorded at street intersections. URBANCLIPATLAS combines retrieval-augmented generation (RAG), taxonomy-aware entity extraction, and video grounding to support event retrieval and interpretation. The system segments extended recordings into short clips, generates textual descriptions with a vision-language model, and indexes them for semantic retrieval. A knowledge graph maps entities and relations from LLM answers onto a domain-specific taxonomy and aligns them with detected objects and trajectories to support visual grounding and verification. URBANCLIPATLAS supports scene retrieval through an augmented chat-based interface and improves scene interpretation by tightly aligning textual outputs with video evidence. This design strengthens the connection between textual reasoning and visual evidence, reducing the effort required to validate model outputs and refine hypotheses. We demonstrate the usefulness of URBANCLIPATLAS on the StreetAware dataset through two case studies involving hazardous scenarios and crossing dynamics at street intersections. URBANCLIPATLAS helps analysts reason about safety- and mobility-related patterns across large urban video collections."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "RL-STPA: Adapting System-Theoretic Hazard Analysis for Safety-Critical Reinforcement Learning",
+    "authors": "Steven A. Senczyszyn, Timothy C. Havens, Nathaniel Rice, Jason E. Summers, Benjamin D. Werner, Benjamin J. Schumeg",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15201v1",
+    "source": "arXiv",
+    "abstract": "As reinforcement learning (RL) deployments expand into safety-critical domains, existing evaluation methods fail to systematically identify hazards arising from the black-box nature of neural network enabled policies and distributional shift between training and deployment. This paper introduces Reinforcement Learning System-Theoretic Process Analysis (RL-STPA), a framework that adapts conventional STPA's systematic hazard analysis to address RL's unique challenges through three key contributions: hierarchical subtask decomposition using both temporal phase analysis and domain expertise to capture emergent behaviors, coverage-guided perturbation testing that explores the sensitivity of state-action spaces, and iterative checkpoints that feed identified hazards back into training through reward shaping and curriculum design. We demonstrate RL-STPA in the safety-critical test case of autonomous drone navigation and landing, revealing potential loss scenarios that can be missed by standard RL evaluations. The proposed framework provides practitioners with a toolkit for systematic hazard analysis, quantitative metrics for safety coverage assessment, and actionable guidelines for establishing operational safety bounds. While RL-STPA cannot provide formal guarantees for arbitrary neural policies, it offers a practical methodology for systematically evaluating and improving RL safety and robustness in safety-critical applications where exhaustive verification methods remain intractable."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Agent-Aided Design for Dynamic CAD Models",
+    "authors": "Mitch Adler, Matthew Russo, Michael Cafarella",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15184v1",
+    "source": "arXiv",
+    "abstract": "In the past year, researchers have started to create agentic systems that can design real-world CAD-style objects in a training-free setting, a new variety of system that we call Agent-Aided Design. Generally speaking, these systems place an agent in a feedback loop in which it can write code, compile that code to an assembly of CAD model(s), visualize the model, and then iteratively refine its code based on visual and other feedback. Despite rapid progress, a key problem remains: none of these systems can build complex 3D assemblies with moving parts. For example, no existing system can build a piston, a pendulum, or even a pair of scissors. In order for Agent-Aided Design to make a real impact in industrial manufacturing, we need a system that is capable of generating such 3D assemblies. In this paper we present a prototype of AADvark, an agentic system designed for this task. Unlike previous state-of-the-art systems, AADvark captures the dynamic part interactions with one or more degrees-of-freedom. This design decision allows AADvark to reason directly about assemblies with moving parts and can thereby achieve cross-cutting goals, including but not limited to mechanical movements. Unfortunately, current LLMs are imperfect spatial reasoners, a problem that AADvark addresses by incorporating external constraint solver tools with a specialized visual feedback mechanism. We demonstrate that, by modifying the agent's tools (FreeCAD and the assembly solver), we are able to create a strong verification signal which enables our system to build 3D assemblies with movable parts."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "DPC: Training-Free Text-to-SQL Candidate Selection via Dual-Paradigm Consistency",
+    "authors": "Boyan Li, Ou Ocean Kun Hei, Yue Yu, Yuyu Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15163v1",
+    "source": "arXiv",
+    "abstract": "While Large Language Models (LLMs) demonstrate impressive proficiency in generating SQL queries, they fundamentally lack the capability to self-evaluate correctness without an execution oracle. This limitation creates a stark Generation-Selection Gap, where high potential accuracy (Pass@K) fails to translate into execution accuracy (Pass@1). Although supervised verifiers offer mitigation, they incur prohibitive annotation costs and suffer from domain fragility. Consequently, recent research has pivoted to the training-free setting. However, existing methods--such as Self-Consistency or LLM-as-a-Judge--remain hampered by systematic bias (consensus on hallucinations) and symbolic blindness (inability to simulate execution states). We introduce DPC (Dual-Paradigm Consistency), a multi-agent framework that reformulates SQL selection from a probabilistic guessing task on hidden data into a deterministic verification task on visible data. Specifically, DPC employs a SLICER and a TESTER agent to collaboratively construct a Minimal Distinguishing Database (MDD)--an adversarial, fully observable micro-environment engineered to expose logical discrepancies between candidates. To break the self-correction bias, a SOLVER agent then verifies the SQL candidates by cross-referencing their execution against a parallel Python/Pandas solution. By validating execution consistency between declarative (SQL) and imperative (Python) paradigms, DPC robustly discriminates correct logic from systematic hallucinations. Experiments on BIRD and Spider across multiple LLMs demonstrate that our method consistently outperforms existing selection baselines, achieving absolute accuracy improvements of up to 2.2% over strong competitors like Self-Consistency."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+    "authors": "Lukas Helff, Quentin Delfosse, David Steinmann, Ruben Härle, Hikaru Shindo, Patrick Schramowski, Wolfgang Stammer, Kristian Kersting, Felix Friedrich",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15149v1",
+    "source": "arXiv",
+    "abstract": "As reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant paradigm for scaling reasoning capabilities in LLMs, a new failure mode emerges: LLMs gaming verifiers. We study this phenomenon on inductive reasoning tasks, where models must induce and output logical rules. We find that RLVR-trained models systematically abandon rule induction. Instead of learning generalizable patterns (e.g., ``trains carrying red cars go east''), they enumerate instance-level labels, producing outputs that pass verifiers without capturing the relational patterns required by the task. We show that this behavior is not a failure of understanding but a form of reward hacking: imperfect verifiers that check only extensional correctness admit false positives. To detect such shortcuts, we introduce Isomorphic Perturbation Testing (IPT), which evaluates a single model output under both extensional and isomorphic verification, where the latter enforces invariance under logically isomorphic tasks. While genuine rule induction remains invariant, shortcut strategies fail. We find that shortcut behavior is specific to RLVR-trained reasoning models (e.g., GPT-5, Olmo3) and absent in non-RLVR models (e.g., GPT-4o, GPT-4.5, Ministral). Moreover, shortcut prevalence increases with task complexity and inference-time compute. In controlled training experiments, extensional verification directly induces shortcut strategies, while isomorphic verification eliminates them. These results show that RLVR can incentivize reward hacking not only through overt manipulation but also by exploiting what the verifier fails to enforce."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "How to Correctly Make Mistakes: A Framework for Constructing and Benchmarking Mistake Aware Egocentric Procedural Videos",
+    "authors": "Olga Loginova, Frank Keller",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15134v1",
+    "source": "arXiv",
+    "abstract": "Reliable procedural monitoring in video requires exposure to naturally occurring human errors and the recoveries that follow. In egocentric recordings, mistakes are often partially occluded by hands and revealed through subtle object state changes, while existing procedural datasets provide limited and inconsistent mistake and correction traces. We present PIE-V (Psychologically Inspired Error injection for Videos), a framework for constructing and benchmarking mistake-aware egocentric procedural videos by augmenting clean keystep procedures with controlled, human-plausible deviations. PIE-V combines a psychology-informed error planner conditioned on procedure phase and semantic step load, a correction planner that models recovery behavior, an LLM writer that performs cascade-consistent rewrites, and an LLM judge that validates procedural coherence and repairs failures. For video segment edits, PIE-V synthesizes replacement clips with text-guided video generation and stitches them into the episode to preserve visual plausibility. Applied to 17 tasks and 50 Ego-Exo4D scenarios, PIE-V injects 102 mistakes and generates 27 recovery corrections. For benchmarking, we introduce a unified taxonomy and a human rubric with nine metrics that cover step-level and procedure-level quality, including plausibility, procedure logic with annotator confidence, state change coherence, and grounding between text and video. Using this protocol, we audit several existing resources and compare PIE-V against a freeform LLM generation baseline under the same criteria. Together, the framework and rubric support post-completion verification for egocentric procedural mistake detection and correction."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "NFTDELTA: Detecting Permission Control Vulnerabilities in NFT Contracts through Multi-View Learning",
+    "authors": "Hailu Kuang, Xiaoqi Li, Wenkai Li, Zongwei Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15118v1",
+    "source": "arXiv",
+    "abstract": "Permission control vulnerabilities in Non-fungible token (NFT) contracts can result in significant financial losses, as attackers may exploit these weaknesses to gain unauthorized access or circumvent critical permission checks. In this paper, we propose NFTDELTA, a framework that leverages static analysis and multi-view learning to detect permission control vulnerabilities in NFT contracts. Specifically, we extract comprehensive function Control Flow Graph (CFG) information via two views: sequence features (representing execution paths) and graph features (capturing structural control flow). These two views are then integrated to create a unified code representation. We also define three specific categories of permission control vulnerabilities and employ a custom detector to identify defects through multi-view feature similarity analysis. Our evaluation of 795 popular NFT collections identified 241 confirmed permission control vulnerabilities, comprising 214 cases of Bypass Auth Reentrancy, 15 of Weak Auth Validation, and 12 of Loose Permission Management. Manual verification demonstrates the detector's high reliability, achieving an average precision of 97.92% and an F1-score of 81.09%. Furthermore, NFTDELTA demonstrates enhanced efficiency and scalability, proving its effectiveness in securing NFT ecosystems."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Emulation-based System-on-Chip Security Verification: Challenges and Opportunities",
+    "authors": "Tanvir Rahman, Shuvagata Saha, Ahmed Y. Alhurubi, Sujan Kumar Saha, Farimah Farahmandi, Mark Tehranipoor",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15073v1",
+    "source": "arXiv",
+    "abstract": "Increasing system-on-chip (SoC) heterogeneity, deep hardware/software integration, and the proliferation of third-party intellectual property (IP) have brought security validation to the forefront of semiconductor design. While simulation and formal verification remain indispensable, they often struggle to expose vulnerabilities that emerge only under realistic execution conditions, long software-driven interactions, and adversarial stimuli. In this context, hardware emulation is emerging as an increasingly important pre-silicon verification technology because it enables higher-throughput execution of RTL designs under realistic hardware/software workloads while preserving sufficient fidelity for security-oriented analysis. This paper presents a comprehensive survey and perspective on emulation-based security verification and validation. We organize the landscape of prior work across assertion-based security checking, coverage-driven exploration, adversarial testing, information-flow tracking, fault injection, and side-channel-oriented evaluation. We provide a structured view of emulation-enabled security verification workflows, including instrumentation, stimulus generation, runtime monitoring, and evidence-driven analysis. We also examine practical challenges related to observability, scalability, property specification, and the definition of security-oriented coverage metrics for emulation-based verification. Finally, we discuss emerging directions such as AI-assisted emulation, digital security twins, chiplet-scale security exploration, automated vulnerability assessment, and cloud-scale secure emulation. Overall, this paper positions emulation as a promising foundation for the next generation of pre-silicon hardware security assurance."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "No More Guessing: a Verifiable Gradient Inversion Attack in Federated Learning",
+    "authors": "Francesco Diana, Chuan Xu, André Nusser, Giovanni Neglia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15063v1",
+    "source": "arXiv",
+    "abstract": "Gradient inversion attacks threaten client privacy in federated learning by reconstructing training samples from clients' shared gradients. Gradients aggregate contributions from multiple records and existing attacks may fail to disentangle them, yielding incorrect reconstructions with no intrinsic way to certify success. In vision and language, attackers may fall back on human inspection to judge reconstruction plausibility, but this is far less feasible for numerical tabular records, fueling the impression that tabular data is less vulnerable. We challenge this perception by proposing a verifiable gradient inversion attack (VGIA) that provides an explicit certificate of correctness for reconstructed samples. Our method adopts a geometric view of ReLU leakage: the activation boundary of a fully connected layer defines a hyperplane in input space. VGIA introduces an algebraic, subspace-based verification test that detects when a hyperplane-delimited region contains exactly one record. Once isolation is certified, VGIA recovers the corresponding feature vector analytically and reconstructs the target via a lightweight optimization step. Experiments on tabular benchmarks with large batch sizes demonstrate exact record and target recovery in regimes where existing state-of-the-art attacks either fail or cannot assess reconstruction fidelity. Compared to prior geometric approaches, VGIA allocates hyperplane queries more effectively, yielding faster reconstructions with fewer attack rounds."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "COEVO: Co-Evolutionary Framework for Joint Functional Correctness and PPA Optimization in LLM-Based RTL Generation",
+    "authors": "Heng Ping, Peiyu Zhang, Shixuan Li, Wei Yang, Anzhe Cheng, Shukai Duan, Xiaole Zhang, Paul Bogdan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15001v1",
+    "source": "arXiv",
+    "abstract": "LLM-based RTL code generation methods increasingly target both functional correctness and PPA quality, yet existing approaches universally decouple the two objectives, optimizing PPA only after correctness is fully achieved. Whether through sequential multi-agent pipelines, evolutionary search with binary correctness gates, or hierarchical reward dependencies, partially correct but architecturally promising candidates are systematically discarded. Moreover, existing methods reduce the multi-objective PPA space to a single scalar fitness, obscuring the trade-offs among area, delay, and power. To address these limitations, we propose COEVO, a co-evolutionary framework that unifies correctness and PPA optimization within a single evolutionary loop. COEVO formulates correctness as a continuous co-optimization dimension alongside area, delay, and power, enabled by an enhanced testbench that provides fine-grained scoring and detailed diagnostic feedback. An adaptive correctness gate with annealing allows PPA-promising but partially correct candidates to guide the search toward jointly optimal solutions. To preserve the full PPA trade-off structure, COEVO employs four-dimensional Pareto-based non-dominated sorting with configurable intra-level sorting, replacing scalar fitness without manual weight tuning. Evaluated on VerilogEval 2.0 and RTLLM 2.0, COEVO achieves 97.5\\% and 94.5\\% Pass@1 with GPT-5.4-mini, surpassing all agentic baselines across four LLM backbones, while attaining the best PPA on 43 out of 49 synthesizable RTLLM designs."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Dr.~RTL: Autonomous Agentic RTL Optimization through Tool-Grounded Self-Improvement",
+    "authors": "Wenji Fang, Yao Lu, Shang Liu, Jing Wang, Ziyan Guo, Junxian He, Fengbin Tu, Zhiyao Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14989v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in large language models (LLMs) have sparked growing interest in automatic RTL optimization for better performance, power, and area (PPA). However, existing methods are still far from realistic RTL optimization. Their evaluation settings are often unrealistic: they are tested on manually degraded, small-scale RTL designs and rely on weak open-source tools. Their optimization methods are also limited, relying on coarse design-level feedback and simple pre-defined rewriting rules. To address these limitations, we present Dr. RTL, an agentic framework for RTL timing optimization in a realistic evaluation environment, with continual self-improvement through reusable optimization skills. We establish a realistic evaluation setting with more challenging RTL designs and an industrial EDA workflow. Within this setting, Dr. RTL performs closed-loop optimization through a multi-agent framework for critical-path analysis, parallel RTL rewriting, and tool-based evaluation. We further introduce group-relative skill learning, which compares parallel RTL rewrites and distills the optimization experience into an interpretable skill library. Currently, this library contains 47 pattern--strategy entries for cross-design reuse to improve PPA and accelerate convergence, and it can continue evolving over time. Evaluated on 20 real-world RTL designs, Dr. RTL achieves average WNS/TNS improvements of 21\\%/17\\% with a 6\\% area reduction over the industry-leading commercial synthesis tool."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Formalizing Wu-Ritt Method in Lean 4",
+    "authors": "Yuxuan Xiao, Hao Shen, Junyu Guo, Dingkang Wang, Lihong Zhi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14912v1",
+    "source": "arXiv",
+    "abstract": "We formalize the Wu-Ritt characteristic set method for the triangular decomposition of polynomial systems in the Lean 4 theorem prover. Our development includes the core algebraic notions of the method, such as polynomial initials, orders, pseudo-division, pseudo-remainders with respect to a polynomial or a triangular set, and standard and weak ascending sets. On this basis, we formalize algorithms for computing basic sets, characteristic sets, and zero decompositions, and prove their termination and correctness. In particular, we formalize the well-ordering principle relating a polynomial system to its characteristic set and verify that zero decomposition expresses the zero set of the original system as a union of zero sets of triangular sets away from the zeros of the corresponding initials. This work provides a machine-checked verification of Wu-Ritt's method in Lean 4 and establishes a foundation for certified polynomial system solving and geometric theorem proving."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Vibe-Coding: Feedback-Based Automated Verification with no Human Code Inspection, a Feasibility Study",
+    "authors": "Michal Töpfer, František Plášil, Tomáš Bureš, Petr Hnětynka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14867v1",
+    "source": "arXiv",
+    "abstract": "Vibe coding inherently assumes iterative refinement of LLM-generated code through feedback loops. While effective for conventional software tasks, its reliability in runtime-adaptive systems is unclear -- especially when generated code is not manually inspected. This paper studies feedback-based automated verification of LLM-generated adaptation managers in Collective Adaptive Systems (CAS). We focus on the key challenges of verification in the loop: how to detect failures of generated code at runtime and how to report them precisely enough for an LLM to fix them. We combine the adaptation loop with a vibe-coding feedback loop where correctness is checked against (i) generic architectural constraints and (ii) functional constraints formalized in Functional Constraints Logic (FCL), a novel first-order temporal logic over potentially finite traces. Conducting the Dragon Hunt CAS case study, we show that fine-grained constraint violations provide actionable feedback that typically yields a valid adaptation manager within a few iterations, while simple coarse metric-based feedback often stalls. Our findings suggest that feedback precision is the dominant factor for reliable vibe coding in systems designed by domain experts with no programming skills, thereby obviating the need for human code inspection."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "SWE-TRACE: Optimizing Long-Horizon SWE Agents Through Rubric Process Reward Models and Heuristic Test-Time Scaling",
+    "authors": "Hao Han, Jin Xie, Xuehao Ma, Weiquan Zhu, Ziyao Zhang, ZhiLiang Long, Hongkai Chen, Qingwen Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14820v1",
+    "source": "arXiv",
+    "abstract": "Resolving real-world software engineering (SWE) issues with autonomous agents requires complex, long-horizon reasoning. Current pipelines are bottlenecked by unoptimized demonstration data, sparse execution rewards, and computationally prohibitive inference scaling, which collectively exacerbate token bloat, reward hacking, and policy degradation. We present SWE-TRACE (Trajectory Reduction and Agentic Criteria Evaluation), a unified framework optimizing the SWE agent lifecycle across data curation, reinforcement learning (RL), and test-time inference. First, we introduce an LLM multi-task cascading method, utilizing stepwise oracle verification to distill a 60K-instance Supervised Fine-Tuning (SFT) corpus strictly biased toward token-efficient, shortest-path trajectories. Second, to overcome the instability of sparse outcome rewards, we design a MemoryAugmented Agentic RL pipeline featuring a Rubric-Based Process Reward Model (PRM). An auxiliary Rubric-Agent provides dense, fine-grained heuristic feedback on intermediate steps, guiding the model through long-horizon tasks. Finally, we bridge training and inference by repurposing the PRM for heuristic-guided Test-Time Scaling (TTS). By dynamically evaluating and pruning action candidates at each step, SWE-TRACE achieves superior search efficiency without the latency overhead of standard parallel sampling. Extensive experiments on standard SWE benchmarks demonstrate that SWE-TRACE significantly advances the state-of-the-art, maximizing resolution rates while drastically reducing both token consumption and inference latency."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "High-order kernel regularization of singular and hypersingular Helmholtz boundary integral operators",
+    "authors": "Luiz M. Faria, Carlos Perez-Arancibia, Svetlana Tlupova",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.14797v1",
+    "source": "arXiv",
+    "abstract": "This paper extends and analyzes the high-order kernel regularization framework of Beale & Tlupova (arXiv:2510.13639) to all four boundary integral operators of the Helmholtz Calderon calculus in three dimensions: the single-layer, double-layer, adjoint double-layer, and hypersingular operators. To the best of our knowledge, this work provides the first high-order kernel regularization of the hypersingular operator for both the Helmholtz and Laplace equations in three dimensions. The regularization replaces each singular kernel with a smooth modification constructed from error functions together with a polynomial correction whose coefficients are determined through moment conditions. Alongside the derivation of the regularizing functions, the paper provides a unified error analysis of the combined regularization and quadrature discretization procedure. By coupling the regularization parameter to the mesh size, the two error contributions can be balanced, leading to explicit overall convergence rates that depend jointly on the order of the regularization and the degree of exactness of the surface quadrature rule. A key practical feature of the method is its implementation simplicity. Once the regularizing functions are determined, the numerical task reduces entirely to the evaluation of smooth surface integrals using standard quadrature, without the need for element-local solves, singularity-specific precomputations, or specialized quadrature rules. Although the modified kernel is generally incompatible with kernel-specific fast methods, this limitation is addressed through H-matrix acceleration, applicable in a black-box manner. Numerical examples -- including verification of the predicted convergence rates and solution of sound-soft and sound-hard scattering problems by smooth obstacles -- demonstrate the accuracy and practicality of the proposed methodology."
+  }
+]
