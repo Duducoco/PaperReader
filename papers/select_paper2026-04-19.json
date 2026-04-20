@@ -1,0 +1,35 @@
+[
+  {
+    "date": "2026-04-17",
+    "title": "Understanding Inference-Time Token Allocation and Coverage Limits in Agentic Hardware Verification",
+    "authors": "Vihaan Patel, Vidya Chhabria, Aman Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15657v1",
+    "source": "arXiv",
+    "abstract": "Coverage closure is the most time-consuming phase of hardware verification, and recent large language model (LLM)-based coding agents offer a promising approach to automated stimulus generation. However, prior LLM-based flows do not systematically analyze which coverage holes remain difficult to close or how inference-time computation is allocated during agentic verification. As a result, the efficiency limits and failure modes of LLM-based coverage closure remain poorly understood, particularly for large designs. We present an empirical study using a two-tier agentic framework comprising a base Codex agent and an enhanced domain-specialized LangGraph system. Our framework enables a taxonomy of coverage holes: methodology-bound ceilings (integration tied-off hardware, infeasible boundaries, dead code) and reasoning frontiers (protocol sequencing, multi-module pipeline warm-up, narrow timing conditions), exposing fundamental limits of purely LLM-driven approaches. We further instrument the system to track token usage across six categories, including system prompt, design comprehension, stimulus generation, coverage feedback, error recovery, and agentic overhead. We show that domain specialization shifts token allocation toward coverage-directed reasoning and improves efficiency. Across designs, the enhanced system achieves comparable or higher coverage (95-99%) while using 4-13x fewer tokens and converging to coverage targets 2-4x faster than a general-purpose baseline. Our results characterize the limits of LLM-based coverage closure, inform benchmark design and human escalation strategies, and guide profile-driven agent design for hardware verification.",
+    "title_zh": "理解推理时的令牌分配与代理硬件验证中的覆盖限制",
+    "abstract_zh": "覆盖闭合是硬件验证中最耗时的阶段，而最近基于大型语言模型（LLM）的编码代理提供了一种自动生成刺激的有前景方法。然而，现有的基于LLM的流程并未系统性地分析哪些覆盖漏洞难以弥补，也未探讨推理时计算在代理验证中的分配情况。因此，LLM驱动的覆盖闭合的效率限制和失败模式仍然缺乏深入理解，尤其是在处理大型设计时。我们提出了一项实证研究，使用一个由基础Codex代理和增强的领域专用LangGraph系统组成的双层代理框架。我们的框架定义了覆盖漏洞的分类：方法学限制的上限（集成锁定硬件、不可行的边界、无效代码）和推理前沿（协议排序、多模块流水线预热、狭窄的时间条件），揭示了纯LLM驱动方法的基本限制。我们进一步对系统进行仪器化，跟踪六个类别中的令牌使用情况，包括系统提示、设计理解、刺激生成、覆盖反馈、错误恢复和代理开销。研究表明，领域专用化将令牌分配转向覆盖导向的推理，并提高了效率。在不同设计中，增强系统实现了相当或更高的覆盖率（95-99%），同时使用的令牌减少了4-13倍，达到覆盖目标的速度比通用基线快2-4倍。我们的研究结果表征了基于LLM的覆盖闭合的限制，为基准设计和人工升级策略提供了指导，并为硬件验证中的基于配置文件的代理设计提供了参考。"
+  },
+  {
+    "date": "2026-04-17",
+    "title": "HYPERHEURIST: A Simulated Annealing-Based Control Framework for LLM-Driven Code Generation in Optimized Hardware Design",
+    "authors": "Shiva Ahir, Prajna Bhat, Alex Doboli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15642v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have shown promising progress for generating Register Transfer Level (RTL) hardware designs, largely because they can rapidly propose alternative architectural realizations. However, single-shot LLM generation struggles to consistently produce designs that are both functionally correct and power-efficient. This paper proposes HYPERHEURIST, a simulated annealing-based control framework that treats LLM-generated RTL as intermediate candidates rather than final designs. The suggested system not only focuses on functionality correctness but also on Power-Performance-Area (PPA) optimization. In the first phase, RTL candidates are filtered through compilation, structural checks, and simulation to identify functionally valid designs. PPA optimization is restricted to RTL designs that have already passed compilation and simulation. Evaluated across eight RTL benchmarks, this staged approach yields more stable and repeatable optimization behavior than single-pass LLM-generated RTL.",
+    "title_zh": "HYPERHEURIST：一种基于模拟退火的控制框架，用于在优化硬件设计中驱动LLM生成代码",
+    "abstract_zh": "大型语言模型（LLMs）在生成寄存器传输级（RTL）硬件设计方面展现了令人瞩目的进展，主要因为它们能够快速提出替代的架构实现。然而，单次生成的LLM设计难以始终如一地同时满足功能正确性和功耗效率的要求。本文提出了HYPERHEURIST，这是一种基于模拟退火的控制框架，将LLM生成的RTL视为中间候选设计，而非最终设计。该系统不仅关注功能正确性，还注重功耗-性能-面积（PPA）的优化。在第一阶段，RTL候选设计通过编译、结构检查和仿真进行筛选，以识别功能有效的设计。PPA优化仅限于已通过编译和仿真的RTL设计。在八个RTL基准测试中的评估表明，与单次生成的LLM设计相比，这种分阶段的方法能够实现更稳定和可重复的优化行为。"
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Spec2Cov: An Agentic Framework for Code Coverage Closure of Digital Hardware Designs",
+    "authors": "Sean Lowe, Elias Hilaneh, Alma Babbit, Nakul Gopalan, Vidya Chhabria, Aman Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15606v1",
+    "source": "arXiv",
+    "abstract": "Hardware verification is one of the most challenging stages of the hardware design process, requiring significant time and resources to ensure a design is fully validated and production-ready. Verification teams aim to maximize design coverage while ensuring correct behavior and alignment with the specification. Coverage closure, which relies on iterative constrained-random and directed testing, is still largely manual and therefore slow and labor-intensive. Recent advances show that the code generation capabilities of Large Language Models (LLMs) can be integrated with external tools to build agentic workflows that autonomously perform hardware design and verification tasks. In this work, we introduce Spec2Cov, an agentic framework that automatically and iteratively generates test stimulus directly from design specifications to accelerate coverage closure. Spec2Cov coordinates interactions between an LLM and a hardware simulator, managing compilation and simulation errors, parsing coverage reports, and feeding results back to the model for refinement. We present features that improve Spec2Cov's effectiveness without additional fine-tuning and evaluate their impact. Across 26 designs of varying size and complexity, including problems from the CVDP benchmark suite, Spec2Cov demonstrates promising performance, achieving 100% coverage on simpler designs and up to 49% on more complex designs.",
+    "title_zh": "Spec2Cov：一种用于数字硬件设计代码覆盖闭合的智能框架",
+    "abstract_zh": "硬件验证是硬件设计过程中最具挑战性的阶段之一，需要投入大量时间和资源以确保设计经过全面验证并达到量产标准。验证团队的目标是在确保行为正确且符合规范的同时，最大化设计覆盖率。覆盖闭合依赖于迭代的约束随机测试和定向测试，目前仍主要依靠人工完成，因此速度较慢且劳动强度大。最近的研究表明，大型语言模型（LLMs）的代码生成能力可以与外部工具集成，构建能够自主执行硬件设计和验证任务的智能工作流。在本研究中，我们提出了Spec2Cov，这是一种智能框架，可直接从设计规范中自动迭代生成测试激励，以加速覆盖闭合过程。Spec2Cov协调了LLM与硬件模拟器之间的交互，管理编译和仿真错误，解析覆盖率报告，并将结果反馈给模型以进行改进。我们展示了无需额外微调即可提升Spec2Cov有效性的一些特性，并评估了其影响。在26个不同规模和复杂度的设计中（包括CVDP基准套件中的问题），Spec2Cov表现出令人鼓舞的性能，在较简单的设计中实现了100%的覆盖率，在更复杂的设计中达到了最高49%的覆盖率。"
+  }
+]

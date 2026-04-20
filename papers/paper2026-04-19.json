@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-04-17",
+    "title": "MARCH: Multi-Agent Radiology Clinical Hierarchy for CT Report Generation",
+    "authors": "Yi Lin, Yihao Ding, Yonghui Wu, Yifan Peng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.16175v1",
+    "source": "arXiv",
+    "abstract": "Automated 3D radiology report generation often suffers from clinical hallucinations and a lack of the iterative verification found in human practice. While recent Vision-Language Models (VLMs) have advanced the field, they typically operate as monolithic \"black-box\" systems without the collaborative oversight characteristic of clinical workflows. To address these challenges, we propose MARCH (Multi-Agent Radiology Clinical Hierarchy), a multi-agent framework that emulates the professional hierarchy of radiology departments and assigns specialized roles to distinct agents. MARCH utilizes a Resident Agent for initial drafting with multi-scale CT feature extraction, multiple Fellow Agents for retrieval-augmented revision, and an Attending Agent that orchestrates an iterative, stance-based consensus discourse to resolve diagnostic discrepancies. On the RadGenome-ChestCT dataset, MARCH significantly outperforms state-of-the-art baselines in both clinical fidelity and linguistic accuracy. Our work demonstrates that modeling human-like organizational structures enhances the reliability of AI in high-stakes medical domains."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Prompt Gamma Timing for range verification with carbon ion irradiation: first experimental measurements and comparison with Geant4 Monte Carlo simulations",
+    "authors": "Iram Barbaro Rivas Ortiz, Sahar Ranjbar, Piergiorgio Cerello, Emanuele Maria Data, Mohammad Fadavi Mazinani, Miguel David Fernandez Moreira, Veronica Ferrero, Simona Giordanengo, Felix Mas Milian, Diango Manuel Montalvan Olivares, Francesco Pennazio, Marco Pullia, Roberto Sacchi, Roberto Cirio, Simone Savazzi, Anna Vignati, Elisa Fiorina",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.16131v1",
+    "source": "arXiv",
+    "abstract": "Prompt Gamma Timing (PGT) is a promising technique for in vivo range verification in particle therapy, exploiting the time-of-flight between primary particles and prompt gamma rays emitted by nuclear interactions. PGT distribution is highly sensitive to beam energy and target density, which, under controlled detector positioning, enables real-time monitoring of particle range, detection of morphological changes, and support for adaptive treatment strategies. This study investigates for the first time the application of PGT in carbon ion therapy. Measurements were performed using a dedicated detection system composed of a silicon strip sensor for primary ion timing and a LaBr3(Ce) read out by a SiPM for secondary radiation. Carbon ion beams with energies of 166.41, 268.86, and 398.84 MeV/u irradiated a homogeneous 30.0 cm PMMA target at CNAO. The secondary radiation detector was positioned at four off-beam positions to assess the robustness of the PGT technique. Simulations based on Geant4 were conducted for all configurations to evaluate agreement and predictive capability. A bin-by-bin comparison of experimental and simulated PGT intensities demonstrated strong agreement within the 95% confidence interval, with no incompatible bins at 166.41 MeV/u, at most 1% at 268.86 MeV/u, and up to 8% at 398.84 MeV/u, depending on detector position. Photons were identified as the dominant contribution to the detected signals, particularly for detector positions upstream with respect to the primary particle beam, minimizing signal contamination from neutrons and charged fragments. The validated experimental-simulation framework confirms the capability of the proposed PGT system to resolve energy-dependent differences and highlights its potential for detecting clinically relevant changes in the particle beam range, supporting further development toward real-time monitoring in carbon ion therapy."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Compositional Design, Implementation, and Verification of Swarms (Technical Report)",
+    "authors": "Florian Furbach, Lucas Clorius, Roland Kuhn, Hernán Melgratti, Alceste Scalas, Emilio Tuosto",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.16097v1",
+    "source": "arXiv",
+    "abstract": "Swarm protocols are a recently introduced formalism for specifying, implementing, and verifying peer-to-peer systems called swarms. A swarm consists of distributed agents called machines that communicate by asynchronous event propagation. Following a local-first model, each machine can progress without requiring continuous connectivity to other machines. Existing models of swarms are not compositional, making the modular development of large and complex swarm applications as well as the reuse of code difficult. We address these issues by presenting novel theory and techniques for the compositional specification, verification, and implementation of swarms. These results enable the correct compositional reuse of pre-existing swarm protocols and machine implementations. We implement these contributions in a companion software artifact which enables the automatic integration of independently designed and verified swarm components."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Low-Stack HAETAE for Memory-Constrained Microcontrollers",
+    "authors": "Gustavo Banegas, Kim Youngbeom, Seo Seog Chung, Vredendaal Christine Van",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15868v1",
+    "source": "arXiv",
+    "abstract": "We present a low-stack implementation of the module-lattice signature scheme HAETAE, targeting microcontrollers with 8 kB-16 kB of available SRAM. On such devices, peak stack usage is often the binding constraint, and HAETAE's hyperball-based sampler, large transient polynomial vectors, and variable-length signature payloads (hint and high-bits arrays) pose a particular challenge. To address this we introduce (i) Rejection-aware pass decomposition, which isolates encoding to the post-acceptance path; (ii) Component-level early rejection, which short-circuits the response computation when a partial norm already exceeds the bound; and (iii) Reverse-order streaming entropy coding using range Asymmetric Numeral Systems (rANS), which eliminates full hint and high-bits staging buffers. Combined with streamed matrix generation, a two-pass hyperball sampler with streaming Gaussian backend, and row-streamed verification, these techniques bring Signing stack from 71 kB-141 kB in the reference implementation down to 5.8 kB-6.0 kB, key generation to 4.7 kB-5.7 kB, and verification to 4.7 kB-4.8 kB across all three security levels. Our pure C implementation covers all three security levels (HAETAE-2/3/5), whose optimization paths differ due to the public-key domain (d>0 vs. d=0) and rejection structure. We implement our optimization on a Nucleo-L4R5ZI and compare to the reference pqm4 (for HAETAE-2 and -3) and a recently published memory-optimized implementation (targeting HAETAE-5 only). We reduce HAETAE-2, -3, and -5 stack by respectively 75, 86 and 8 % for key generation, 92, 95 and 24 % for signature generation, and 85, 91 and 22 % for verification. Depending on the parameter set, this impacts performance by at most a factor 1.8 and 3.4 for key and signature generation respectively, while even offering a performance improvement up to 18 % for verification. Verification at all security levels fits within 8 kB of RAM (signature buffer + stack) and is 2.34-3.34x faster than ML-DSA m4fstack at each comparable security level. We additionally validate portability under RIOT-OS on ARM Cortex-M4 and RISC-V targets."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Module Lattice Security (Part I): Unconditional Verification of Weber's Conjecture for $k \\le 12$",
+    "authors": "Ming-Xing Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15858v1",
+    "source": "arXiv",
+    "abstract": "Weber's conjecture (1886) governs three aspects of lattice-based cryptography: the solvability of the Principal Ideal Problem, the freeness of modules over rings of integers, and the tightness of worst-case-to-average-case reductions in Ring-LWE (R-LWE) and Module-LWE (MLWE). Existing verifications for $k \\ge 9$ rely on Generalized Riemann Hypothesis (GRH). In this paper, we present the first unconditional proof for $k \\le 12$. Our method combines the Fukuda-Komatsu computational sieve, inductive structure of the cyclotomic $\\mathbb{Z}_2$-tower, and Herbrand's theorem."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "DPrivBench: Benchmarking LLMs' Reasoning for Differential Privacy",
+    "authors": "Erchi Wang, Pengrun Huang, Eli Chien, Om Thakkar, Kamalika Chaudhuri, Yu-Xiang Wang, Ruihan Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15851v1",
+    "source": "arXiv",
+    "abstract": "Differential privacy (DP) has a wide range of applications for protecting data privacy, but designing and verifying DP algorithms requires expert-level reasoning, creating a high barrier for non-expert practitioners. Prior works either rely on specialized verification languages that demand substantial domain expertise or remain semi-automated and require human-in-the-loop guidance. In this work, we investigate whether large language models (LLMs) can automate DP reasoning. We introduce DPrivBench, a benchmark in which each instance asks whether a function or algorithm satisfies a stated DP guarantee under specified assumptions. The benchmark is carefully designed to cover a broad range of DP topics, span diverse difficulty levels, and resist shortcut reasoning through trivial pattern matching. Experiments show that while the strongest models handle textbook mechanisms well, all models struggle with advanced algorithms, revealing substantial gaps in current DP reasoning capabilities. Through further analytic study and failure-mode analysis, we identify several promising directions for improving automated DP reasoning. Our benchmark provides a solid foundation for developing and evaluating such methods, and complements existing benchmarks for mathematical reasoning."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Structured Abductive-Deductive-Inductive Reasoning for LLMs via Algebraic Invariants",
+    "authors": "Sankalp Gilda, Shlok Gilda",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15727v1",
+    "source": "arXiv",
+    "abstract": "Large language models exhibit systematic limitations in structured logical reasoning: they conflate hypothesis generation with verification, cannot distinguish conjecture from validated knowledge, and allow weak reasoning steps to propagate unchecked through inference chains. We present a symbolic reasoning scaffold that operationalizes Peirce's tripartite inference -- abduction, deduction, and induction -- as an explicit protocol for LLM-assisted reasoning. The framework enforces logical consistency through five algebraic invariants (the Gamma Quintet), the strongest of which -- the Weakest Link bound -- ensures that no conclusion in a reasoning chain can exceed the reliability of its least-supported premise. This principle, independently grounded as weakest link resolution in possibilistic logic and empirically validated for chain-of-thought reasoning, prevents logical inconsistencies from accumulating across multi-step inference. We verify all invariants through a property-based testing suite of 100 properties and 16 fuzz tests over 10^5+ generated cases, providing a verified reference implementation of the invariants suitable as a foundation for future reasoning benchmarks."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Faster LLM Inference via Sequential Monte Carlo",
+    "authors": "Yahya Emara, Mauricio Barba da Costa, Chi-Chih Chang, Cameron Freer, Tim Vieira, Ryan Cotterell, Mohamed S. Abdelfattah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15672v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) accelerates language model inference by drafting tokens from a cheap proposal model and verifying them against an expensive target model via rejection sampling. Because rejection truncates the draft block at the first error, throughput degrades when draft and target diverge. Rather than rejecting draft tokens outright, we propose to reweight them. To this end, we introduce sequential Monte Carlo speculative decoding (SMC-SD), which replaces token-level rejection with importance-weighted resampling over a population of draft particles. SMC-SD is a principled approximate inference scheme that trades exactness for additional speed, while preserving theoretical bounds on its per-step approximation error. Because LLM inference is memory bandwidth-bound, the arithmetic needed to draft particles and to score them in parallel comes nearly for free -- SMC-SD uses idle compute to turn verification into a vectorized, fixed-size operation with no rollback. Empirically, SMC-SD achieves 2.36x speed-up over speculative decoding and a 5.2x speed-up over autoregressive decoding, while remaining within 3% of the target model's accuracy on reasoning, instruction-following, and coding benchmarks."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Verification of Autonomous Systems with Optimal Controllers",
+    "authors": "Dylan Le, Joel McCandless, Carlos Varela, Radoslav Ivanov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15659v1",
+    "source": "arXiv",
+    "abstract": "This paper considers the problem of reachability analysis of control systems with optimal controllers, as a first step towards verifying the safety and correctness of such systems. Despite their appeal in guaranteeing task satisfaction through cost minimization, optimal controllers are often challenging to assure. In particular, as system dynamics grow in complexity, solving the resulting optimization problem may be difficult, especially given time and computation constraints on real platforms. Thus, it is essential to verify that, even if the optimal solution is not always found, such controllers still accomplish the high-level control objective. In this paper, we focus on gradient descent algorithms and design a reachability algorithm by treating gradient descent as a separate (digital) dynamical system, embedded in the original (physical) dynamical system, with controls as part of the state. We evaluate the feasibility of the proposed method on two control systems, a two-dimensional quadrotor and a cartpole."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Understanding Inference-Time Token Allocation and Coverage Limits in Agentic Hardware Verification",
+    "authors": "Vihaan Patel, Vidya Chhabria, Aman Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15657v1",
+    "source": "arXiv",
+    "abstract": "Coverage closure is the most time-consuming phase of hardware verification, and recent large language model (LLM)-based coding agents offer a promising approach to automated stimulus generation. However, prior LLM-based flows do not systematically analyze which coverage holes remain difficult to close or how inference-time computation is allocated during agentic verification. As a result, the efficiency limits and failure modes of LLM-based coverage closure remain poorly understood, particularly for large designs. We present an empirical study using a two-tier agentic framework comprising a base Codex agent and an enhanced domain-specialized LangGraph system. Our framework enables a taxonomy of coverage holes: methodology-bound ceilings (integration tied-off hardware, infeasible boundaries, dead code) and reasoning frontiers (protocol sequencing, multi-module pipeline warm-up, narrow timing conditions), exposing fundamental limits of purely LLM-driven approaches. We further instrument the system to track token usage across six categories, including system prompt, design comprehension, stimulus generation, coverage feedback, error recovery, and agentic overhead. We show that domain specialization shifts token allocation toward coverage-directed reasoning and improves efficiency. Across designs, the enhanced system achieves comparable or higher coverage (95-99%) while using 4-13x fewer tokens and converging to coverage targets 2-4x faster than a general-purpose baseline. Our results characterize the limits of LLM-based coverage closure, inform benchmark design and human escalation strategies, and guide profile-driven agent design for hardware verification."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "HYPERHEURIST: A Simulated Annealing-Based Control Framework for LLM-Driven Code Generation in Optimized Hardware Design",
+    "authors": "Shiva Ahir, Prajna Bhat, Alex Doboli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15642v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have shown promising progress for generating Register Transfer Level (RTL) hardware designs, largely because they can rapidly propose alternative architectural realizations. However, single-shot LLM generation struggles to consistently produce designs that are both functionally correct and power-efficient. This paper proposes HYPERHEURIST, a simulated annealing-based control framework that treats LLM-generated RTL as intermediate candidates rather than final designs. The suggested system not only focuses on functionality correctness but also on Power-Performance-Area (PPA) optimization. In the first phase, RTL candidates are filtered through compilation, structural checks, and simulation to identify functionally valid designs. PPA optimization is restricted to RTL designs that have already passed compilation and simulation. Evaluated across eight RTL benchmarks, this staged approach yields more stable and repeatable optimization behavior than single-pass LLM-generated RTL."
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Spec2Cov: An Agentic Framework for Code Coverage Closure of Digital Hardware Designs",
+    "authors": "Sean Lowe, Elias Hilaneh, Alma Babbit, Nakul Gopalan, Vidya Chhabria, Aman Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15606v1",
+    "source": "arXiv",
+    "abstract": "Hardware verification is one of the most challenging stages of the hardware design process, requiring significant time and resources to ensure a design is fully validated and production-ready. Verification teams aim to maximize design coverage while ensuring correct behavior and alignment with the specification. Coverage closure, which relies on iterative constrained-random and directed testing, is still largely manual and therefore slow and labor-intensive. Recent advances show that the code generation capabilities of Large Language Models (LLMs) can be integrated with external tools to build agentic workflows that autonomously perform hardware design and verification tasks. In this work, we introduce Spec2Cov, an agentic framework that automatically and iteratively generates test stimulus directly from design specifications to accelerate coverage closure. Spec2Cov coordinates interactions between an LLM and a hardware simulator, managing compilation and simulation errors, parsing coverage reports, and feeding results back to the model for refinement. We present features that improve Spec2Cov's effectiveness without additional fine-tuning and evaluate their impact. Across 26 designs of varying size and complexity, including problems from the CVDP benchmark suite, Spec2Cov demonstrates promising performance, achieving 100% coverage on simpler designs and up to 49% on more complex designs."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Belyi map verification using certified path tracking",
+    "authors": "Alexandre Guillemot, John Voight",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15562v1",
+    "source": "arXiv",
+    "abstract": "We provide an end-to-end workflow to rigorously compute the monodromy of Belyi maps from exact equations over number fields using certified homotopy continuation. We then apply this method at scale to certify the monodromy triples of Belyi maps in the $L$-functions and Modular Forms Database (LMFDB)."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Verification Modulo Tested Library Contracts",
+    "authors": "Abhishek Uppar, Omar Muhammad, Sumanth Prabhu, Deepak D'Souza, Madhusudan P, Adithya Murali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15533v1",
+    "source": "arXiv",
+    "abstract": "We consider the problem of \\emph{verification modulo tested library contracts} as a step towards automating the verification of client programs that use complex libraries. We formulate this problem as the synthesis of modular contracts for the library methods used by the client that are adequate to prove the client correct, and that also pass the scrutiny of a testing engine that tests the library against these contracts. We also consider a new form of method contracts called \\emph{contextual contracts} that arise in this setting that hold in the context of the client program, and can often be simpler and easier to infer than classical modular contracts. We provide a counterexample-guided learning framework to solve this problem, in which the synthesizer interacts with a constraint solver as well as the testing engine in order to infer adequate modular/contextual method contracts and inductive invariants for the client. The main synthesis engines we use are generalizing CHC solvers that are realized using ICE learning algorithms. We realize this framework in a tool called \\vmtlc and show its efficacy on benchmarks where clients call large libraries."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Prism: Symbolic Superoptimization of Tensor Programs",
+    "authors": "Mengdi Wu, Xiaoyu Jiang, Oded Padon, Zhihao Jia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15272v1",
+    "source": "arXiv",
+    "abstract": "This paper presents Prism, the first symbolic superoptimizer for tensor programs. The key idea is sGraph, a symbolic, hierarchical representation that compactly encodes large classes of tensor programs by symbolically representing some execution parameters. Prism organizes optimization as a two-level search: it constructs symbolic graphs that represent families of programs, and then instantiates them into concrete implementations. This formulation enables structured pruning of provably suboptimal regions of the search space using symbolic reasoning over operator semantics, algebraic identities, and hardware constraints. We develop techniques for efficient symbolic graph generation, equivalence verification via e-graph rewriting, and parameter instantiation through auto-tuning. Together, these components allow Prism to bridge the rigor of exhaustive search with the scalability required for modern ML workloads. Evaluation on five commonly used LLM workloads shows that Prism achieves up to $2.2\\times$ speedup over best superoptimizers and $4.9\\times$ over best compiler-based approaches, while reducing end-to-end optimization time by up to $3.4\\times$."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Enhancing Large Language Models with Retrieval Augmented Generation for Software Testing and Inspection Automation",
+    "authors": "Zoe Fingleton, Nazanin Siavash, Armin Moin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15270v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we focus on automating two of the widely used Verification and Validation (V&V) activities in the Software Development Lifecycle (SDLC): Software testing and software inspection (also known as review). Concerning the former, we concentrate on automated test case generation using Large Language Models (LLMs). For the latter, we enable inspection of the source code by LLMs. To address the known LLM hallucination problem, in which LLMs confidently produce incorrect outputs, we implement a Retrieval Augmented Generation (RAG) pipeline to integrate supplementary knowledge sources and provide additional context to the LLM. Our experimental results indicate that incorporating external context via the RAG pipeline has a generally positive impact on both test case generation and code inspection. This novel approach reduces the total project cost by saving human testers'/inspectors' time. It also improves the effectiveness and efficiency of these V&V activities, as evidenced by our experimental study."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Structural Dependency Analysis for Masked NTT Hardware: Scalable Pre-Silicon Verification of Post-Quantum Cryptographic Accelerators",
+    "authors": "Ray Iskander, Khaled Kirah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15249v1",
+    "source": "arXiv",
+    "abstract": "Post-quantum cryptographic accelerators require side-channel resistance evidence for FIPS 140-3 certification. However, exact masking-verification tools scale only to gadgets of a few thousand cells. We present a four-stage verification hierarchy, D0/D1 structural dependency analysis, fresh-mask refinement, Boolean Single-Authentication Distance Checking (SADC), and arithmetic SADC, that extends sound first-order masking verification to production arithmetic modules. Applied to the 1.17-million-cell Adams Bridge ML-DSA/ML-KEM accelerator, structural analysis completes in seconds across all 30 masked submodules. A multi-cycle extension (MC-D1) reclassifies 12 modules from structurally clean to structurally flagged. On the 5,543-cell ML-KEM Barrett reduction module, the pipeline machine-verifies 198 of 363 structurally flagged wires (54.5%) as first-order secure, reports 165 as candidate insecure for designer triage (a sound upper bound), and leaves 0 indeterminate. Every verdict is cross validated by Z3 and CVC5 with 0 disagreements across 363 wires. The result narrows manual review from hundreds of structural flags to 165 actionable candidates with mathematical certificates, enabling pre-silicon side-channel evidence generation on production ML-KEM hardware."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "IQP circuits for 2-Forrelation",
+    "authors": "Quentin Buzet, André Chailloux",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15248v1",
+    "source": "arXiv",
+    "abstract": "The 2-Forrelation problem provides an optimal separation between classical and quantum query complexity and is also the problem used for separating $\\mathsf{BQP}$ and $\\mathsf{PH}$ relative to an oracle. A natural question is therefore to ask what are the minimal quantum resources needed to solve this problem. We show that 2-Forrelation can be solved using Instantaneous Quantum Polynomial-time ($\\mathsf{IQP}$) circuits, a restricted model of quantum computation in which all gates commute. Concretely, two $\\mathsf{IQP}$ circuits with two quantum queries and efficient classical processing suffice. For the signed variant of 2-Forrelation, even a single $\\mathsf{IQP}$ circuit and query suffices. This answers a recent open question of Girish (arXiv:2510.06385) on the power of commuting quantum computations. We use this to show that $(\\mathsf{BPP}^{\\mathsf{IQP}})^O \\not\\subseteq \\mathsf{PH}^O$ relative to an oracle $O$, strengthening the result of Raz and Tal (STOC 2019). Our results show that $\\mathsf{IQP}$ circuits can be used for classically hard decision problems, thus providing a new route for showing quantum advantage with $\\mathsf{IQP}$ circuits, avoiding the verification difficulties associated with sampling tasks. We also prove Fourier growth bounds for $\\mathsf{IQP}$ circuits in terms of the size of their accepting set. The key ingredient is an algebraic identity of the quadratic function $Q(x) = \\sum_{i < j} x_ix_j$ that allows extracting inner-product phases within an $\\mathsf{IQP}$ circuit."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "From Tokens to Steps: Verification-Aware Speculative Decoding for Efficient Multi-Step Reasoning",
+    "authors": "Kiran Purohit, Ramasuri Narayanam, Soumyabrata Pal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15244v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) accelerates large language model inference by allowing a lightweight draft model to propose outputs that a stronger target model verifies. However, its token-centric nature allows erroneous steps to propagate. Prior approaches mitigate this using external reward models, but incur additional latency, computational overhead, and limit generalizability. We propose SpecGuard, a verification-aware speculative decoding framework that performs step-level verification using only model-internal signals. At each step, SpecGuard samples multiple draft candidates and selects the most consistent step, which is then validated using an ensemble of two lightweight model-internal signals: (i) an attention-based grounding score that measures attribution to the input and previously accepted steps, and (ii) a log-probability-based score that captures token-level confidence. These signals jointly determine whether a step is accepted or recomputed using the target, allocating compute selectively. Experiments across a range of reasoning benchmarks show that SpecGuard improves accuracy by 3.6% while reducing latency by ~11%, outperforming both SD and reward-guided SD."
+  },
+  {
+    "date": "2026-04-16",
+    "title": "UrbanClipAtlas: A Visual Analytics Framework for Event and Scene Retrieval in Urban Videos",
+    "authors": "Joel Perca, Luis Sante, Juanpablo Heredia, Joao Rulff, Claudio Silva, Jorge Poco",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.15225v1",
+    "source": "arXiv",
+    "abstract": "Extracting actionable insights from long-duration urban videos is often labor-intensive: analysts must manually sift through raw footage to pinpoint target events or uncover broader behavioral trends. In this work, we present URBANCLIPATLAS, a visual analytics system for exploring long urban videos recorded at street intersections. URBANCLIPATLAS combines retrieval-augmented generation (RAG), taxonomy-aware entity extraction, and video grounding to support event retrieval and interpretation. The system segments extended recordings into short clips, generates textual descriptions with a vision-language model, and indexes them for semantic retrieval. A knowledge graph maps entities and relations from LLM answers onto a domain-specific taxonomy and aligns them with detected objects and trajectories to support visual grounding and verification. URBANCLIPATLAS supports scene retrieval through an augmented chat-based interface and improves scene interpretation by tightly aligning textual outputs with video evidence. This design strengthens the connection between textual reasoning and visual evidence, reducing the effort required to validate model outputs and refine hypotheses. We demonstrate the usefulness of URBANCLIPATLAS on the StreetAware dataset through two case studies involving hazardous scenarios and crossing dynamics at street intersections. URBANCLIPATLAS helps analysts reason about safety- and mobility-related patterns across large urban video collections."
+  }
+]
