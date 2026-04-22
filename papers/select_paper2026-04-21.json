@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-04-20",
+    "title": "Structural Verification for Reliable EDA Code Generation without Tool-in-the-Loop Debugging",
+    "authors": "Dinithi Jayasuriya, Aravind Saravanan, Nilesh Ahuja, Amanda Rios, Amit Trivedi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.18834v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have enabled natural-language-driven automation of electronic design automation (EDA) workflows, but reliable execution of generated scripts remains a fundamental challenge. In LLM-based EDA tasks, failures arise not from syntax errors but from violations of implicit structural dependencies over design objects, including invalid acquisition paths, missing prerequisites, and incompatible API usage. Existing approaches address these failures through tool-in-the-loop debugging, repeatedly executing and repairing programs using runtime feedback. While effective, this paradigm couples correctness to repeated tool invocation, leading to high latency and poor scalability in multi-step settings. We propose to eliminate tool-in-the-loop debugging by enforcing structural correctness prior to execution. Each task is represented as a structural dependency graph that serves as an explicit execution contract, and a verifier-guided synthesis framework enforces this contract through graph-conditioned retrieval, constrained generation, and staged pre-execution verification with diagnosis-driven repair. On single-step tasks, our method improves pass rate from 73.0% (LLM+RAG) and 76.0% (tool-in-loop) to 82.5%, while requiring exactly one tool call per task and reducing total tool calls by more than 2x. On multi-step tasks, pass rate improves from 30.0% to 70.0%, and further to 84.0% with trajectory-level reflection. Uncertainty-aware filtering further reduces verifier false positives from 20.0% to 6.7% and improves precision from 80.0% to 93.3%. These results show that enforcing structural consistency prior to execution decouples correctness from tool interaction, improving both reliability and efficiency in long-horizon EDA code generation.",
+    "title_zh": "结构验证：无需工具循环调试的可靠EDA代码生成",
+    "abstract_zh": "大型语言模型（LLMs）推动了电子设计自动化（EDA）工作流程的自然语言驱动自动化，但生成脚本的可靠执行仍然是一个根本性挑战。在基于LLM的EDA任务中，失败通常不是由于语法错误，而是由于设计对象的隐性结构依赖性被违反，包括无效的获取路径、缺失的前置条件以及不兼容的API使用。现有方法通过工具循环调试解决这些问题，即通过运行时反馈反复执行和修复程序。虽然这种方法有效，但它将正确性与工具的反复调用紧密耦合，在多步骤场景中导致高延迟和较差的可扩展性。我们提出通过在执行前强制结构正确性来消除工具循环调试。每个任务被表示为一个结构依赖图，作为明确的执行契约，并通过验证器引导的合成框架，通过图条件检索、约束生成以及分阶段的预执行验证与诊断驱动修复来强制执行这一契约。在单步骤任务中，我们的方法将通过率从73.0%（LLM+RAG）和76.0%（工具循环）提高到82.5%，同时每个任务仅需一次工具调用，总工具调用次数减少超过2倍。在多步骤任务中，通过率从30.0%提高到70.0%，并通过轨迹级反思进一步提高到84.0%。不确定性感知过滤进一步将验证器的误报率从20.0%降低到6.7%，并将精确度从80.0%提高到93.3%。这些结果表明，在执行前强制结构一致性能够将正确性与工具交互解耦，从而在长时间跨度的EDA代码生成中同时提高可靠性和效率。"
+  },
+  {
+    "date": "2026-4-21",
+    "title": "FocusFuzz: Towards Efficient and Directed Fuzzing for RTL Processor Designs",
+    "authors": "He Wang, Ruomin Fang, Jingqian Zhang, Xu Chen, Qizhen Xu, Ruiping Yin, Liwei Chen, Gang Shi",
+    "publish": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "url": "https://doi.org/10.1109/icassp55912.2026.11464709",
+    "source": "IEEE",
+    "abstract": "As processor architectures evolve with the integration of new functional units, verifying the entire hardware design after each modification becomes increasingly inefficient. Although a significant portion of the modules remains unmodified between iterations, traditional verification methodologies still require re-testing of the entire process, failing to leverage this inherent modularity in hardware development.To address this inefficiency, we propose FocusFuzz, a novel module-directed hardware fuzzing framework tailored for processor verification. FocusFuzz integrates two key components: a Static-Dynamic Module Distance Profiler(SDMD) that identifies modules functionally close to the target, and a Module Feature-Guided Mutation Engine (MFGM) enhanced by a lightweight LSTM model to adapt mutation strategies to module-specific functional characteristics. We evaluated FocusFuzz on open-source RISC-V cores, where at the module level it improves time-to-target- coverage (TTTC) by up to 89× and achieves an average 6.94× speedup over DifuzzRTL, the famous currently available fuzzer.",
+    "title_zh": "FocusFuzz：面向RTL处理器设计的高效定向模糊测试方法",
+    "abstract_zh": "随着处理器架构通过集成新功能单元不断演进，在每次修改后验证整个硬件设计变得越来越低效。尽管在迭代过程中，大部分模块保持不变，但传统的验证方法仍需对整个流程进行重新测试，未能充分利用硬件开发中固有的模块化特性。为了解决这一低效问题，我们提出了FocusFuzz，这是一种面向处理器验证的模块定向硬件模糊测试框架。FocusFuzz集成了两个关键组件：静态-动态模块距离分析器（SDMD），用于识别与目标功能上接近的模块；以及模块特征引导的变异引擎（MFGM），通过轻量级LSTM模型增强，以根据模块特定的功能特性调整变异策略。我们在开源RISC-V内核上对FocusFuzz进行了评估，结果表明，在模块级别上，其目标覆盖时间（TTTC）提高了最多89倍，并且相较于当前著名的模糊测试工具DifuzzRTL，平均加速了6.94倍。"
+  }
+]
