@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-04-23",
+    "title": "Guaranteed inf-sup bounds and existence verification for semilinear elliptic problems via nonconforming finite elements",
+    "authors": "Benedikt Gräßle",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21887v1",
+    "source": "arXiv",
+    "abstract": "A Newton--Kantorovich-type argument enables the a posteriori existence verification of a unique regular root near a computed approximation, purely from computable data. This framework allows for non-selfadjoint problems and extends the existing verification theory to nonconforming discretisations. A key ingredient is a guaranteed lower bound on the continuous inf-sup constant from a quasi-optimal nonconforming discretisation that enables a novel a priori error estimator. All quantities are obtained by post-processing a single discretisation; convergence rates are proved. The theory is applied to a fourth-order formulation of the stationary two-dimensional Navier--Stokes equations and illustrated by numerical experiments."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Bounding the Black Box: A Statistical Certification Framework for AI Risk Regulation",
+    "authors": "Natan Levy, Gadi Perl",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21854v1",
+    "source": "arXiv",
+    "abstract": "Artificial intelligence now decides who receives a loan, who is flagged for criminal investigation, and whether an autonomous vehicle brakes in time. Governments have responded: the EU AI Act, the NIST Risk Management Framework, and the Council of Europe Convention all demand that high-risk systems demonstrate safety before deployment. Yet beneath this regulatory consensus lies a critical vacuum: none specifies what ``acceptable risk'' means in quantitative terms, and none provides a technical method for verifying that a deployed system actually meets such a threshold. The regulatory architecture is in place; the verification instrument is not. This gap is not theoretical. As the EU AI Act moves into full enforcement, developers face mandatory conformity assessments without established methodologies for producing quantitative safety evidence - and the systems most in need of oversight are opaque statistical inference engines that resist white-box scrutiny. This paper provides the missing instrument. Drawing on the aviation certification paradigm, we propose a two-stage framework that transforms AI risk regulation into engineering practice. In Stage One, a competent authority formally fixes an acceptable failure probability $δ$ and an operational input domain $\\varepsilon$ - a normative act with direct civil liability implications. In Stage Two, the RoMA and gRoMA statistical verification tools compute a definitive, auditable upper bound on the system's true failure rate, requiring no access to model internals and scaling to arbitrary architectures. We demonstrate how this certificate satisfies existing regulatory obligations, shifts accountability upstream to developers, and integrates with the legal frameworks that exist today."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "NEST: Network Enforced Session Types (Technical Report)",
+    "authors": "Jens Kanstrup Larsen, Alceste Scalas, Guy Amir, Jules Jacobs, Jana Wagemaker, Nate Foster",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21795v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces NEST (Network-Enforced Session Types), a runtime verification framework that moves application-level protocol monitoring into the network fabric. Unlike prior work that instruments or wraps application code, we synthesize packet-level monitors that enforce protocols directly in the data plane. We develop algorithms to generate network-level monitors from session types and extend them to handle packet loss and reordering. We implement NEST in P4 and evaluate it on applications including microservice and network-function models, showing that network-level monitors can enforce realistic non-trivial protocols."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "StyleID: A Perception-Aware Dataset and Metric for Stylization-Agnostic Facial Identity Recognition",
+    "authors": "Kwan Yun, Changmin Lee, Ayeong Jeong, Youngseo Kim, Seungmi Lee, Junyong Noh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21689v1",
+    "source": "arXiv",
+    "abstract": "Creative face stylization aims to render portraits in diverse visual idioms such as cartoons, sketches, and paintings while retaining recognizable identity. However, current identity encoders, which are typically trained and calibrated on natural photographs, exhibit severe brittleness under stylization. They often mistake changes in texture or color palette for identity drift or fail to detect geometric exaggerations. This reveals the lack of a style-agnostic framework to evaluate and supervise identity consistency across varying styles and strengths. To address this gap, we introduce StyleID, a human perception-aware dataset and evaluation framework for facial identity under stylization. StyleID comprises two datasets: (i) StyleBench-H, a benchmark that captures human same-different verification judgments across diffusion- and flow-matching-based stylization at multiple style strengths, and (ii) StyleBench-S, a supervision set derived from psychometric recognition-strength curves obtained through controlled two-alternative forced-choice (2AFC) experiments. Leveraging StyleBench-S, we fine-tune existing semantic encoders to align their similarity orderings with human perception across styles and strengths. Experiments demonstrate that our calibrated models yield significantly higher correlation with human judgments and enhanced robustness for out-of-domain, artist drawn portraits. All of our datasets, code, and pretrained models are publicly available at https://kwanyun.github.io/StyleID_page/"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "A-IC3: Learning-Guided Adaptive Inductive Generalization for Hardware Model Checking",
+    "authors": "Xiaofeng Zhou, Guangyu Hu, Hongce Zhang, Wei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21688v1",
+    "source": "arXiv",
+    "abstract": "The IC3 algorithm represents the state-of-the-art (SOTA) hardware model checking technique, owing to its robust performance and scalability. A significant body of research has focused on enhancing the solving efficiency of the IC3 algorithm, with particular attention to the inductive generalization process: a critical phase wherein the algorithm seeks to generalize a counterexample to inductiveness (CTI), which typically is a state leading to a bad state, into a broader set of states. This inductive generalization is a primary source of clauses in IC3 and thus plays a pivotal role in determining the overall effectiveness of the algorithm. Despite its importance, existing approaches often rely on fixed inductive generalization strategies, overlooking the dynamic and context-sensitive nature of the verification environment in which spurious counterexamples arise. This rigidity can limit the quality of generated clauses and, consequently, the performance of IC3. To address this limitation, we propose a lightweight machine-learning-based framework that dynamically selects appropriate inductive generalization strategies in response to the evolving verification context. Specifically, we employ a multi-armed bandit (MAB) algorithm to adaptively choose inductive generalization strategies based on real-time feedback from the verification process. The agent is updated by evaluating the quality of generalization outcomes, thereby refining its strategy selection over time. Empirical evaluation on a benchmark suite comprising 914 instances, primarily drawn from the latest HWMCC collection, demonstrates the efficacy of our approach. When implemented on the state-of-the-art model checker rIC3, our method solves 26 to 50 more cases than the baselines and improves the PAR-2 score by 194.72 to 389.29."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "DCMorph: Face Morphing via Dual-Stream Cross-Attention Diffusion",
+    "authors": "Tahar Chettaoui, Eduarda Caldeira, Guray Ozgur, Raghavendra Ramachandra, Fadi Boutros, Naser Damer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21627v1",
+    "source": "arXiv",
+    "abstract": "Advancing face morphing attack techniques is crucial to anticipate evolving threats and develop robust defensive mechanisms for identity verification systems. This work introduces DCMorph, a dual-stream diffusion-based morphing framework that simultaneously operates at both identity conditioning and latent space levels. Unlike image-level methods suffering from blending artifacts or GAN-based approaches with limited reconstruction fidelity, DCMorph leverages identity-conditioned latent diffusion models through two mechanisms: (1) decoupled cross-attention interpolation that injects identity-specific features from both source faces into the denoising process, enabling explicit dual-identity conditioning absent in existing diffusion-based methods, and (2) DDIM inversion with spherical interpolation between inverted latent representations from both source faces, providing geometrically consistent initial latent representation that preserves structural attributes. Vulnerability analyses across four state-of-the-art face recognition systems demonstrate that DCMorph achieves the highest attack success rates compared to existing methods at both operational thresholds, while remaining challenging to detect by current morphing attack detection solutions."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Process-Mining of Hypertraces: Enabling Scalable Formal Security Verification of (Automotive) Network Architectures",
+    "authors": "Julius Figge, David Knuplesch, Andreas Maletti, Dragan Zuvic",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21606v1",
+    "source": "arXiv",
+    "abstract": "The automotive domain is transitioning: vehicles act as rolling servers, persistently connected to numerous external entities. This connectivity, combined with rising on-board computing power for advanced driver assistance systems and similar use cases, creates escalating challenges for securing automotive network architectures. This work advances the security analysis of internet-connected automotive network architectures and their protocols. We introduce a strong, active adversary model tailored to the automotive domain. We substantially extend security protocol verification possible based on Attack Resilience Hyperproperties (ARHs) by introducing a verification-orchestration algorithm. Furthermore, we provide methods for comparative attribution of security property invalidations to specific, ne-grained component compromises. We present a novel integration of formal verification and process mining. By utilizing ARH counterexample traces for process mining, we systematically identify and aggregate attacker behavior that causes security property invalidations. This pipeline enables in-depth understanding of root causes and attack paths leading to protocol-security invalidations. We demonstrate real-world applicability through a prototype and case study on the secure transmission of battery management system data within an automotive network architecture."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Verifying Machine Learning Interpretability Requirements through Provenance",
+    "authors": "Lynn Vonderhaar, Juan Couder, Daryela Cisneros, Omar Ochoa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21599v1",
+    "source": "arXiv",
+    "abstract": "Machine Learning (ML) Engineering is a growing field that necessitates an increase in the rigor of ML development. It draws many ideas from software engineering and more specifically, from requirements engineering. Existing literature on ML Engineering defines quality models and Non-Functional Requirements (NFRs) specific to ML, in particular interpretability being one such NFR. However, a major challenge occurs in verifying ML NFRs, including interpretability. Although existing literature defines interpretability in terms of ML, it remains an immeasurable requirement, making it impossible to definitively confirm whether a model meets its interpretability requirement. This paper shows how ML provenance can be used to verify ML interpretability requirements. This work provides an approach for how ML engineers can save various types of model and data provenance to make the model's behavior transparent and interpretable. Saving this data forms the basis of quantifiable Functional Requirements (FRs) whose verification in turn verifies the interpretability NFR. Ultimately, this paper contributes a method to verify interpretability NFRs for ML models."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "CoFEE: Reasoning Control for LLM-Based Feature Discovery",
+    "authors": "Maximilian Westermann, Ben Griffin, Aaron Ontoyin Yin, Zakari Salifu, Yagiz Ihlamur, Kelvin Amoaba, Joseph Ternasky, Fuat Alican, Yigit Ihlamur",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21584v1",
+    "source": "arXiv",
+    "abstract": "Feature discovery from complex unstructured data is fundamentally a reasoning problem: it requires identifying abstractions that are predictive of a target outcome while avoiding leakage, proxies, and post-outcome signals. With the introduction of ever-improving Large Language Models (LLMs), our method provides a structured method for addressing this challenge. LLMs are well suited for this task by being able to process large amounts of information, but unconstrained feature generation can lead to weak features. In this work, we study reasoning control in LLMs by inducing cognitive behaviors for improving feature discovery. We introduce CoFEE (Cognitive Feature Engineering Engine), a reasoning control framework that enforces cognitive behaviors in how the LLM reasons during feature discovery. From a machine learning perspective, these cognitive behaviors act as structured inductive biases over the space of candidate features generated by the model. These behaviors have been exploited with success in ML models, and include backward chaining from outcomes, subgoal decomposition, verification against observability and leakage criteria, and explicit backtracking of rejected reasoning paths. In a controlled comparison, we show that enforcing cognitive behaviors yields features with higher empirical predictability than those under unconstrained vanilla LLM prompts. CoFEE achieves an average Success Rate Score that is 15.2% higher than the vanilla approach, while generating 29% fewer features and reducing costs by 53.3%. Using held-out feature evaluation, we assess whether cognitively induced features generalize beyond the data used for discovery. Our results indicate that, in our evaluated setting, reasoning control is associated with improvements in quality and efficiency of LLM-based feature discovery."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Separable Expert Architecture: Toward Privacy-Preserving LLM Personalization via Composable Adapters and Deletable User Proxies",
+    "authors": "Chris Schneider, Philipp Schoenegger, Ben Bariach",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21571v1",
+    "source": "arXiv",
+    "abstract": "Current model training approaches incorporate user information directly into shared weights, making individual data removal computationally infeasible without retraining. This paper presents a three-layer architecture that decouples personal data from shared weights by combining a static base model, composable domain-expert LoRA adapters that shape behavior without imparting user data, and per-user proxy artefacts whose deletion constitutes deterministic unlearning. Evaluation on Phi-3.5-mini and Llama-3.1-8B confirms per-user differentiation in which personal data influences outputs while remaining isolated, verified by a return to baseline after proxy removal (KL divergence of approximately 0.21 nats, 82-89% verification pass rate) and near-zero cross-user contamination. Because user-specific information never enters shared weights, the architecture mitigates model inversion, membership inference, and training-data extraction against shared model components by construction. The approach converts machine unlearning from an intractable weight-editing problem into a deterministic deletion operation that preserves personalization alongside privacy-enhancing guarantees and is compatible with differentially private stochastic gradient descent (DP-SGD) for privacy-preserving shared model improvement."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "SpecSyn: LLM-based Synthesis and Refinement of Formal Specifications for Real-world Program Verification",
+    "authors": "Lezhi Ma, Shangqing Liu, Yi Li, Qiong Wu, Han Wang, Lei Bu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21570v1",
+    "source": "arXiv",
+    "abstract": "Program verification is a formal technique to rigorously ensure the correctness and fault-freeness of software systems. However, constructing comprehensive interprocedural specifications for full verification obligations is time-consuming and labor-intensive, giving rise to automated specification generation approaches. Despite the significant advancements in these approaches brought by Large Language Models (LLMs), existing LLM-empowered approaches still suffer from significant limitations: they lack effective strategies for handling sizable input programs, and are typically equipped with no mechanisms to evaluate and guarantee the strength of the generated specifications. The limitations impair their ability to extract precise specifications from real-world complicated programs to support the verification of target properties, thereby hindering the applicability of existing approaches in verification tasks on real-world programs. To remedy this gap, we propose SpecSyn, a novel LLM-based specification generation method. SpecSyn first decomposes the input program into individual segments, which are handled respectively by the subsequent iterative specification generation process. Innovatively, we incorporate into the process a specification refinement mechanism based on semantic-non-equivalent program mutations and variant discrimination, assessing and enhancing the semantic strength of the generated specifications. Extensive experiments show that SpecSyn maintains high precision over 90% and outstanding recall over 75%, significantly outperforming existing LLM-based approaches. In further evaluations, SpecSyn successfully handles 1071 out of 1365 target properties for open-source programs, proving its applicability on real-world program verification tasks."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "XRISM High-Resolution X-ray Spectroscopy of Cygnus X-1 -- Orbital and Short-Term Variability of Iron Absorption",
+    "authors": "Kaito Ninoyu, Shinya Yamada, Natalie Hell, Elisa Costantini, Oluwashina Adegoke, Paul Draghis, Ken Ebisawa, Javier A. Garcia, Edmund Hodges-Kluck, Shunji Kitamoto, Shogo Kobayashi, Takayoshi Kohmura, Aya Kubota, Jon M. Miller, Misaki Mizumoto, Tsunefumi Mizuno, Hiromitsu Takahashi, Yuusuke Uchida, Kazutaka Yamaoka, Sixuan Zhang, Ryota Tomaru, Seoru Ito",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21557v1",
+    "source": "arXiv",
+    "abstract": "We present the first high-resolution spectroscopy of the black hole high-mass X-ray binary Cygnus X-1 with XRISM, including orbital-phase-resolved analyses and tentative evidence of short-term variability in the Fe-K band on second timescales. Using data from the Performance Verification phase in April 2024, we analyzed spectral variability across orbital phases with the Resolve microcalorimeter and the Xtend CCD imager. The unprecedented resolution of Resolve reveals variability in highly ionized Fe absorption lines. The absorption features show orbital-phase-dependent variability in column density, ionization state, and blueshifted velocity, suggesting structural variations in the focused stellar wind along the line of sight. We also find indications of subtle broadening of the neutral Fe emission profile. In addition, intensity-sorted spectroscopy during dip phases suggests possible variability on timescales of a few seconds in the absorption features, consistent with cooler, denser and lower-ionized gas clumps. Although the statistical significance is limited, these results hint that the stellar wind and the X-rays from the accretion disk around the black hole may interact on timescales as short as a few seconds. These XRISM results constrain wind-fed accretion in Cyg X-1 and highlight Resolve's capability to probe plasma environments in high-mass X-ray binaries."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Probabilistic Verification of Neural Networks via Efficient Probabilistic Hull Generation",
+    "authors": "Jingyang Li, Xin Chen, Hongfei Fu, Guoqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21556v1",
+    "source": "arXiv",
+    "abstract": "The problem of probabilistic verification of a neural network investigates the probability of satisfying the safe constraints in the output space when the input is given by a probability distribution. It is significant to answer this problem when the input is affected by disturbances often modeled by probabilistic variables. In the paper, we propose a novel neural network probabilistic verification framework which computes a guaranteed range for the safe probability by efficiently finding safe and unsafe probabilistic hulls. Our approach consists of three main innovations: (1) a state space subdivision strategy using regression trees to produce probabilistic hulls, (2) a boundary-aware sampling method which identifies the safety boundary in the input space using samples that are later used for building regression trees, and (3) iterative refinement with probabilistic prioritization for computing a guaranteed range for the safe probability. The accuracy and efficiency of our approach are evaluated on various benchmarks including ACAS Xu and a rocket lander controller. The result shows an obvious advantage over the state of the art."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Engaged AI Governance: Addressing the Last Mile Challenge Through Internal Expert Collaboration",
+    "authors": "Simon Jarvers, Orestis Papakyriakopoulos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21554v1",
+    "source": "arXiv",
+    "abstract": "Under the EU AI Act, translating AI governance requirements into software development practice remains challenging. While AI governance frameworks exist at industry and organizational levels, empirical evidence of team-level implementation is scarce. We address this \"Last Mile\" Challenge through insider action research embedded within an AI startup. We present a legal-text-to-action pipeline that translates EU AI Act requirements into actionable strategies through internal expert collaboration by extracting requirements from legal text, engaging practitioners in assessment and ideation, and prioritizing implementation through collective evaluation. Our analysis reveals three patterns in how practitioners perceive regulatory requirements: convergence (compliance aligns with development priorities), existing practice (current work already satisfies requirements), and disconnection (requirements perceived as administrative overhead). Based on these patterns, we discuss when governance might be treated genuinely or performatively. Practitioners prioritize requirements that serve end-users or their own development needs, but view verification-oriented requirements as box-ticking exercises. This distinction suggests a translation challenge: regulatory requirements risk superficial treatment unless practitioners understand how compliance serves system quality and user protection. Expert collaboration offers a practical mechanism for transforming governance from external imposition to shared ownership and making previously invisible governance work visible and collective."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation",
+    "authors": "Qijun Han, Haoqin Tu, Zijun Wang, Haoyue Dai, Yiyang Zhou, Nancy Lau, Alvaro A. Cardenas, Yuhui Xu, Ran Xu, Caiming Xiong, Zeyu Zheng, Huaxiu Yao, Yuyin Zhou, Cihang Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21375v1",
+    "source": "arXiv",
+    "abstract": "Autonomous GUI agents face two fundamental challenges: early stopping, where agents prematurely declare success without verifiable evidence, and repetitive loops, where agents cycle through the same failing actions without recovery. We present VLAA-GUI, a modular GUI agentic framework built around three integrated components that guide the system on when to Stop, Recover, and Search. First, a mandatory Completeness Verifier enforces UI-observable success criteria and verification at every finish step -- with an agent-level verifier that cross-examines completion claims with decision rules, rejecting those lacking direct visual evidence. Second, a mandatory Loop Breaker provides multi-tier filtering: switching interaction mode after repeated failures, forcing strategy changes after persistent screen-state recurrence, and binding reflection signals to strategy shifts. Third, an on-demand Search Agent searches online for unfamiliar workflows by directly querying a capable LLM with search ability, returning results as plain text. We additionally integrate a Coding Agent for code-intensive actions and a Grounding Agent for precise action grounding, both invoked on demand when required. We evaluate VLAA-GUI across five top-tier backbones, including Opus 4.5, 4.6 and Gemini 3.1 Pro, on two benchmarks with Linux and Windows tasks, achieving top performance on both (77.5% on OSWorld and 61.0% on WindowsAgentArena). Notably, three of the five backbones surpass human performance (72.4%) on OSWorld in a single pass. Ablation studies show that all three proposed components consistently improve a strong backbone, while a weaker backbone benefits more from these tools when the step budget is sufficient. Further analysis also shows that the Loop Breaker nearly halves wasted steps for loop-prone models."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "StabilizerBench: A Benchmark for AI-Assisted Quantum Error Correction Circuit Synthesis",
+    "authors": "Andres Paz, Christian Tarta, Cordelia Yuqiao Li, Mayee Sun, Sarju Patel, Sylvie Lausier",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21287v1",
+    "source": "arXiv",
+    "abstract": "As quantum hardware scales toward fault tolerant operation, the demand for correct quantum error correction (QEC) circuits far outpaces manual design capacity. AI agents offer a promising path to automating this synthesis, yet no benchmark exists to measure their progress on the specialized task of generating QEC circuits. We introduce StabilizerBench, a benchmark suite of 192 stabilizer codes spanning 12 families, 4-196 qubits, and distances 2-21, organized into three tasks of increasing difficulty: state preparation circuit generation, circuit optimization under semantic constraints, and fault tolerant circuit synthesis. Although motivated by QEC, stabilizer circuits exercise core competencies required for general quantum programming, including gate decomposition, qubit routing, and semantic preserving transformations, while admitting efficient verification via the Gottesman Knill theorem, enabling the benchmark to scale to large codes without the exponential cost of full unitary comparison. We define a unified generator weighted scoring system with two tiers: a capability score measuring breadth of success and a quality score capturing circuit merit. We also introduce continuous fault tolerance and optimization metrics that grade error resilience and circuit improvements beyond binary pass or fail. Following the design of classical benchmarks such as SWE-bench, StabilizerBench specifies inputs, verification oracles, and scoring but leaves prompts and agent strategies open. We evaluate three frontier AI agents and find the benchmark discriminates across models and tasks with substantial headroom for improvement."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Strategic Heterogeneous Multi-Agent Architecture for Cost-Effective Code Vulnerability Detection",
+    "authors": "Zhaohui Geoffrey Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21282v1",
+    "source": "arXiv",
+    "abstract": "Automated code vulnerability detection is critical for software security, yet existing approaches face a fundamental trade-off between detection accuracy and computational cost. We propose a heterogeneous multi-agent architecture inspired by game-theoretic principles, combining cloud-based LLM experts with a local lightweight verifier. Our \"3+1\" architecture deploys three cloud-based expert agents (DeepSeek-V3) that analyze code from complementary perspectives - code structure, security patterns, and debugging logic - in parallel, while a local verifier (Qwen3-8B) performs adversarial validation at zero marginal cost. We formalize this design through a two-layer game framework: (1) a cooperative game among experts capturing super-additive value from diverse perspectives, and (2) an adversarial verification game modeling quality assurance incentives. Experiments on 262 real samples from the NIST Juliet Test Suite across 14 CWE types, with balanced vulnerable and benign classes, demonstrate that our approach achieves a 77.2% F1 score with 62.9% precision and 100% recall at $0.002 per sample - outperforming both a single-expert LLM baseline (F1 71.4%) and Cppcheck static analysis (MCC 0). The adversarial verifier significantly improves precision (+10.3 percentage points, p < 1e-6, McNemar's test) by filtering false positives, while parallel execution achieves a 3.0x speedup. Our work demonstrates that game-theoretic design principles can guide effective heterogeneous multi-agent architectures for cost-sensitive software engineering tasks."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "ECCFROG522PP: An Enhanced 522 bit Weierstrass Elliptic Curve",
+    "authors": "Victor Duarte Melo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21261v1",
+    "source": "arXiv",
+    "abstract": "This paper presents ECCFROG522PP, a 522-bit prime-field elliptic curve in short Weierstrass form, designed with a focus on deterministic generation and public reproducibility. The central design principle is that all critical parameters are derived from a fixed public seed through a transparent and verifiable procedure. While many deployed systems rely on NIST P-256 and secp256k1, which target approximately 128-bit classical security, higher security applications typically consider curves such as NIST P-521, Curve448, and Brainpool P512. ECCFROG522PP is intended for the same general classical security range as P-521, with emphasis on transparency, auditability, and reproducibility rather than performance optimization. The curve parameters are generated through a BLAKE3-based deterministic pipeline with publicly specified indices. The resulting construction has prime order, cofactor one, and a deterministically derived base point of full order. The quadratic twist has a large proven prime factor, and the construction includes a documented lower bound on the embedding degree together with standard sanity checks against low embedding degree reductions and basic CM discriminant anomalies. The full generation and validation procedure can be reproduced end to end from public artifacts and reference scripts, enabling independent verification of all parameters and checks."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Post-AGI Economies: Autonomy and the First Fundamental Theorem of Welfare Economics",
+    "authors": "Elija Perrier",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21216v1",
+    "source": "arXiv",
+    "abstract": "The First Fundamental Theorem of Welfare Economics assumes that welfare-bearing agents are autonomous and implicitly relies on a binary distinction between autonomy and instrumentality. Welfare subjects are those who have autonomy and therefore the capacity to choose and enter into utility comparisons, while everything else does not. In post-AGI economies this presupposition becomes nontrivial because artificial systems may exhibit varying degrees of autonomy, functioning as tools, delegates, strategic market actors, manipulators of choice environments, or possible welfare subjects. We argue that the theorem ought to be subject to an autonomy qualification where the impact of these changes in autonomy assumptions is incorporated. Using a minimal general-equilibrium model with autonomy-conditioned welfare, welfare-status assignment, delegation accounting, and verification institutions, we set out conditions for which autonomy-complete competitive equilibrium is autonomy-Pareto efficient. The classical theorem is recovered as the low-autonomy limit."
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Axisymmetric Navier--Stokes with Swirl:\\ Final Master Manuscript for the Unconditional Global Existence Program",
+    "authors": "Rishad Shahmurov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.21213v1",
+    "source": "arXiv",
+    "abstract": "This manuscript assembles the full axisymmetric-with-swirl large-data program in a single self-contained master file. The paper fixes the lifted five-dimensional formulation, the extraction score, the coherent-versus-noncoherent branch structure, the geometric elimination of fragmented, vertically thinned, displaced-only, and off-axis thin-ring channels, and the local packet-window architecture for the residual axis-centered regime. The final analytic task is reduced to a localized proximal diffuse estimate on a finite packet window. We record the complete theorem stack and the exact local operator identities needed for that final verification, in a form suitable for direct journal submission and final checking."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "Reconfigurable RTL Templates for Fixed Point Neural Network Arithmetic in Edge AI Systems",
+    "authors": "Uday Ashokbhai Korat, Mitesh Mahendrakumar Patel",
+    "publish": "2026 Innovations in Machine, Engineering, and Digital Conference (IMED)",
+    "url": "https://doi.org/10.1109/imed68921.2026.11484914",
+    "source": "IEEE",
+    "abstract": "Edge AI systems need low-energy and latency neural network inference that requires low hardware demands. Fixed-point arithmetic computation has proven to be a practical alternative to floating-point computation in the resource-constrained deployment; hard distributed hardware implementation is frequently incapable of scaling to any of a very broad range of neural architecture and precision requirements. The article proposes a novel architecture of reconfigurable Register-Transfer Level (RTL) templates that may be used with fixed-point neural network arithmetic in edge AI systems. The proposed solution has configurable bit-widths, scalable arithmetic units and configurable precision features without re-implementing hardware data paths. It has been demonstrated in the empirical tests that the hardware usage, power efficiency, and inference latency of convolutional and fully connected neural loads have significant improvements. The proposed templates have been shown to have up to 32 percent area, 27 percent power efficiency, and 1.4 times greater throughput, which implies the suggested templates are very applicable to dynamic and future-proof edge intelligent systems relative to traditional fixed RTL designs."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "EMBER: A Cycle-based Framework for Early-Stage Reliability Assessment in Parametric RTL Designs",
+    "authors": "Alessandro Veronesi, Leticia Maria Bolzani Pöhls, Michele Favalli, Milos Krstic, Davide Bertozzi",
+    "publish": "2025 IEEE 34th Asian Test Symposium (ATS)",
+    "url": "https://doi.org/10.1109/ats66998.2025.00029",
+    "source": "IEEE",
+    "abstract": "Modern trends towards higher architectural complexity and smaller technology nodes do not align with the requirement for reliability that many application domains expose. While system robustness remains one of the most critical aspects for missioncritical application domains, the currently available tools allow designers to accurately investigate the reliability only at the late design stages, limiting the effectiveness of their intervention in addressing architectural vulnerabilities.In this context, this paper presents a novel framework for early-stage reliability assessment that enables fast evaluations to guide the RTL design process, without compromising analysis quality or relying on imprecise high-level fault injection models. In the presented analysis, the paper shows how the proposed framework leads to a significant time saving when targeting highly parametric hardware designs, achieving up to 79 x compile time reduction, and up to $37.6 x$ simulation time reduction when compared to other state-of-the-art approaches."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "RideAgent: An LLM-Enhanced Optimization Framework for Automated Taxi Fleet Operations_supp1-3685621.pdf",
+    "authors": "Wei Qi",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tase.2026.3685621/mm1",
+    "source": "IEEE",
+    "abstract": "Efficient management of electric ride-hailing fleets, particularly pre-allocation and pricing during peak periods to balance spatio-temporal supply and demand, is crucial for urban traffic efficiency. However, practical challenges include unpredictable demand and translating diverse, qualitative managerial objectives from non-expert operators into tractable optimization models. This paper introduces RideAgent, a Large Language Model (LLM)-powered agent framework that automates and enhances electric ride-hailing fleet management. First, an LLM interprets natural language queries from fleet operators to formulate corresponding mathematical objective functions. These user-defined objectives are then optimized within a Mixed-Integer Programming (MIP) framework, subject to the constraint of maintaining high operational profit. The profit itself is a primary objective, estimated by an embedded Random Forest (RF) model leveraging exogenous features. To accelerate the solution of this MIP, a prompt-guided LLM analyzes a small sample of historical optimal decision data to guide a variable fixing strategy. Experiments on real-world data show that the LLM-generated objectives achieve an 86% text similarity to standard formulations in a zero-shot setting. Following this, the LLM-guided variable fixing strategy reduces computation time by 60.22% compared to solving the full MIP with only a 2.96% average optimality gap. Moreover, this variable fixing strategy outperforms five cutting plane methods by 42.3% time reduction with minimal compromise to solution quality. RideAgent offers a reliable and scalable automated framework for objective modeling and accelerated optimization. This framework empowers non-expert fleet operators to personalize operations and improve urban transportation system performance."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "LLM Conversion from Documents",
+    "authors": "Balaji Karthick S, Akash R, Chitra P",
+    "publish": "2025 IEEE International Conference on Communication Networks and Computing (CNC)",
+    "url": "https://doi.org/10.1109/cnc68716.2025.11484799",
+    "source": "IEEE",
+    "abstract": "The fast development of Large Language Models (LLMs) [1] has elevated the need of structured and high-quality datasets. Most of the data that is available is however in unstructured forms such as PDF files [5], Word files [20], and text files [4]. These formats render the data inappropriate to explicit training. The project presents a new system, which automatically transforms unstructured documents into standardized LLMreadable formats, such as Alpaca or JSONL [16]. The system is a combination of document parsing, noise removal, and text segmentation along with customizable instruction-response templates. It also supports an interoperability with popular LLMs like OpenAI, OpenRouter and Ollama. This solution connects raw document information to finetuning [8] requirements, which makes the preparation of LLM databases simple and quick."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "LLM-Driven Stationarity-Aware Expert Demonstrations for Multi-Agent Reinforcement Learning in Mobile Systems_supp1-3682994.pdf",
+    "authors": "Zongyuan Zhang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tmc.2026.3682994/mm1",
+    "source": "IEEE",
+    "abstract": "Multi-agent reinforcement learning (MARL) has been increasingly adopted in many real-world applications. While MARL enables decentralized deployment on resource-constrained edge devices, it suffers from severe non-stationarity due to the synchronous updates of agent policies. This non-stationarity results in unstable training and poor policy convergence, especially as the number of agents increases. In this paper, we propose Refinement-Enhanced LLM Expert Demonstrations (RELED), a scalable MARL framework that integrates large language model (LLM)-driven expert demonstrations with autonomous agent exploration. RELED incorporates a Stationarity-Aware Expert Demonstration module, which leverages theoretical non-stationarity bounds to enhance the quality of LLM-generated expert trajectories, thus providing high-reward and training-stable samples for each agent. Moreover, a Hybrid Expert-Agent Policy Optimization module adaptively balances each agent's learning from both expert-generated and agent-generated trajectories, accelerating policy convergence and improving generalization. Extensive experiments with real city networks based on OpenStreetMap demonstrate that RELED achieves superior performance compared to state-of-the-art MARL methods."
+  },
+  {
+    "date": "2026-4-24",
+    "title": "Hierarchical Sparse Plus Low Rank Compression of LLM",
+    "authors": "pawan kumar, Aditi Gupta",
+    "publish": "Proceedings of the 13th ACM IKDD International Conference on Data Science",
+    "url": "https://doi.org/10.1145/3799830.3799837",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-23",
+    "title": "RTL-Based Design and ASIC Front-End Realization of a High-Speed Multiply-Accumulate (MAC) Unit for DSP Applications Using 45 nm Technology",
+    "authors": "Anil Gowd E, Sai Kumar Reddy E, Pavan Kumar Reddy D, Jayaprakash S",
+    "publish": "2025 IEEE International Conference on Communication Networks and Computing (CNC)",
+    "url": "https://doi.org/10.1109/cnc68716.2025.11484894",
+    "source": "IEEE",
+    "abstract": "This paper presents an original method for developing a very fast Multiply-Accumulate (MAC) for digital signal processing by combining a contemporary Hybrid Han-Carlson adder structure with ancient Vedic mathematical concepts. For high-speed operations while maintaining area efficiency with resource utilization, the suggested architecture makes use of a 45 nm CMOS process with a 16x16 Vedic multiplier. With a focus on area, speed, and power trade-offs, the suggested design abstractions are first discussed at the RTL level before being simulated and synthesized using the ASIC design flow. For DSP and embedded emerging applications where time is measured in nanoseconds, the suggested design offers a route towards effective and adaptable MAC cores."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "A Comparative Analysis of BERT and LLM Models for Advanced Phishing Detection",
+    "authors": "Justin Wilson John, Mohankumar B",
+    "publish": "2025 IEEE International Conference on Communication Networks and Computing (CNC)",
+    "url": "https://doi.org/10.1109/cnc68716.2025.11484704",
+    "source": "IEEE",
+    "abstract": "Phishing attacks remain one of the most persistent and rapidly evolving threats in cybersecurity, increasingly fueled by AI-generated malicious content. This paper presents a focused comparative analysis of two advanced language model-based techniques for phishing email detection: a fine-tuned transformer model—RoBERTa, a variant of BERT— and a locally deployed Large Language Model (Llama 3.2 1B) utilizing prompt engineering. To ensure fairness and consistency, the study employs a curated, balanced subset of a comprehensive phishing email dataset comprising 1,000 emails (624 legitimate, 376 phishing). The transformer based approach fine-tunes a pre-trained RoBERTa model for binary classification, while the LLM operates in a zero-shot setting using structured prompts, requiring no additional training. Performance evaluation using standard classification metrics reveals that the RoBERTa-based model significantly outperforms the LLM, achieving 95.0% accuracy and a phishing F1-score of 92.9%. In contrast, the LLM attains only 67.3% accuracy and a 57.4% F1-score. RoBERTa also demonstrates stronger discrimination (ROC-AUC 0.9380 vs. 0.6594) and near-zero false positives, reinforcing its reliability for practical deployment."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "LLM-Design Platform for Thermal-Failure-Aware 3D Chiplet Layout via Iterative Parameter Analysis",
+    "authors": "Tai Song, Senling Wang, Xiaoqing Wen",
+    "publish": "2025 IEEE 34th Asian Test Symposium (ATS)",
+    "url": "https://doi.org/10.1109/ats66998.2025.00018",
+    "source": "IEEE",
+    "abstract": "Although advanced 3D chiplet packaging helps extend Moore’s-Law gains through vertical stacking of heterogeneous dies, it simultaneously introduces unprecedented thermal challenges. Shrinking 3D interconnects and rising current densities trap heat at through-silicon vias (TSVs) and micro-bumps, causing steep temperature gradients and thermo-mechanical stress that directly trigger early failures. Existing methods interact with finite-element analysis (FEA) tools mainly through manual, experience-based parameter tuning, inevitably making hot-spot detection time-consuming and error-prone. This paper establishes a text-interactive, thermal-failure-aware design framework for 3D chiplets that couples large language model (LLM)-accelerated thermal analysis with FEA simulation. A Python-driven Automatic Code Generation Model (ACGM) is invoked to automate geometry drawing, meshing, and boundary-condition assignment, enabling rapid analysis and prediction of hot-spot locations within densely stacked chiplets and TSVs. The proposed ACGM eliminates domain-expert dependence by abstracting cumbersome FEA parameter setting into natural-language commands, thereby lowering the entry barrier and cutting operation time. Deployment of the proposed ACGM streamlines intricate FEA operations and Python scripting into concise natural-language commands, enabling accurate layout-parameter tuning and shortened design cy-cles-establishing an AI-centric design-verification paradigm for advanced 3D chiplets."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "LLM-Powered Conversational Therapy System with Journaling and Cognitive Reframing Capabilities",
+    "authors": "Shaik Aabid Farhan, E Udhayadhanush, R Poonkuzhali",
+    "publish": "2026 6th International Conference on Expert Clouds and Applications (ICOECA)",
+    "url": "https://doi.org/10.1109/icoeca68095.2026.11485531",
+    "source": "IEEE",
+    "abstract": "Global mental health services continue to struggle with workforce limitations, barriers in access, and treatment delays. The current study introduces a domain-adapted Large Language Model platform that fuses conversational support, structured journaling with embedded cognitive pattern detection, and dynamic affirmations into a monitoring framework. Fine-tuning the LLaMA architecture with Unsloth on a synthetic dataset of roughly 88,000 conversation samples derived from publicly available mental health dialogue corpora provides state-of-the-art performance in context-sensitive emotional understanding for multiple dialogue sessions. A novelty contribution is found in the shared computational memory layer enabling cross-modal information exchange across its conversational and journaling components. Comparative in silico assessment against rule-based, retrieval-based, and hybrid transformer baselines returns 62.3%, 66.8%, and 71.4% for response coherence score, respectively, against 87.2%, with 84.6% emotional recognition accuracy. Longitudinal trajectory analysis using this data identifies repeated stressors and emerging risk indicators, visualized in an interpretable format by the monitoring dashboard. This system does not constitute diagnostic clinical work or treatment, representing only a research tool. Supported cold-start adaptation enables appropriate contextual responses from the very first interactions based on a very short onboarding assessment. This integrated approach delivers some of the building blocks to underpin scalable digital mental health support research."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "Context-Aware Adaptive OCR using Vision Transformers and LLM-Guided Recognition",
+    "authors": "Oormila L S, Dhanasekar S, Balachandran K",
+    "publish": "2026 6th International Conference on Expert Clouds and Applications (ICOECA)",
+    "url": "https://doi.org/10.1109/icoeca68095.2026.11485257",
+    "source": "IEEE",
+    "abstract": "This paper introduces the Semantically-Guided Adaptive Recognition Network (SG-ARNet), a robust end-to-end OCR architecture designed to address the challenges associated with modern camera-based document capture. The widespread use of mobile devices has shifted document digitization from controlled flatbed scanning environments to uncontrolled scenarios characterized by perspective distortion, non-uniform illumination, ISO noise, and rolling shutter artifacts. These degradations significantly compromise visual fidelity and cause traditional OCR systems—based on sequential, feed-forward visual-to-text inference—to fail due to limited contextual understanding and weak resilience to corrupted low-level features.To overcome these limitations, SG-ARNet integrates a high-fidelity Vision Transformer (ViT) backbone with a dynamic Semantic Feedback Loop (SFL), which employs a Large Language Model (LLM) as a Bayesian prior to re-query and re-weight ambiguous or low-confidence image regions based on domain-specific semantic expectations. Additionally, a Hybrid Loss Function incorporating a Geometric Consistency Penalty (L<inf xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">geo</inf>) is introduced to explicitly handle spatial misalignment and mitigate geometric distortions.Experimental evaluations on the CORD and SROIE datasets, supplemented with synthetic degradations, demonstrate that SG-ARNet achieves a Character Error Rate (CER) of 8.4%, outperforming leading commercial OCR systems such as Google Cloud Vision (14.2%) and Tesseract 5.0 (28.4%) in noisy conditions. The results establish SG-ARNet as a new paradigm for robust document understanding, framing OCR as a cyclic, context-aware recognition process rather than a static linear pipeline."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "A Schema-Driven Prompt Engineering Approach for Data-Centric LLM Tasks",
+    "authors": "Emanuele Cavalleri, Marco Mesiti",
+    "publish": "2026 International Conference on AI x Data and Knowledge Engineering (AIxDKE)",
+    "url": "https://doi.org/10.1109/aixdke67294.2026.00014",
+    "source": "IEEE",
+    "abstract": "General-purpose LLMs are increasingly employed in a variety of data-centric tasks, ranging from entity and relationship extraction from plain text to schema-aware data integration and analysis. Their large number of parameters and extensive training corpora enable strong generalization across application domains. However, LLMs lack access to up-to-date knowledge and are prone to hallucinations, limiting their reliability in data management scenarios. To address these issues, prompt engineering techniques have been proposed to specify the context in which a task should be performed. In this paper, we explore the use of conceptual schemas as a foundation for schema-driven prompt engineering, providing structured and reusable contexts for grounding LLM behavior in data-centric applications. We present SchemaLink, an intelligent web-based system for the graphical design and enhancement of conceptual schemas and their exploitation for LLM-based tasks. We demonstrate the applicability of our approach to knowledge extraction from plain text and to the discovery of joinable columns in data lakes, showing how schema-driven prompting improves grounding and consistency across heterogeneous data sources."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "LEGEND: An LLM-Driven Soft-Constraint Adaptive Heuristic Search Framework",
+    "authors": "Tian Zhen, Shen Yang",
+    "publish": "Proceedings of the 2025 4th International Conference on Artificial Intelligence and Education",
+    "url": "https://doi.org/10.1145/3797552.3797702",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-23",
+    "title": "Bespoke Ad Targeting via LLM-Generated User Profiles and RAG-Based Recommendations",
+    "authors": "Arpita Vasant Shah, Sargam Menghani, Shuxian Yu, Patrick Jordan",
+    "publish": "2026 International Conference on AI x Data and Knowledge Engineering (AIxDKE)",
+    "url": "https://doi.org/10.1109/aixdke67294.2026.00030",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have recently demonstrated strong capabilities in analyzing and summarizing user intent from large-scale behavioral data. Ad recommendation systems commonly rely on user interaction data but typically compress it into sparse embeddings, limiting their ability to capture nuanced preferences. We address this gap by leveraging LLMs to analyze user histories as rich, contextual narra-tives-enabling more accurate and explainable recommendations from the same underlying data. In this work, we present the Bespoke Algorithm, an initial experimental study that leverages this foundational capability of LLMs to deliver personalized ad recommendations. First, we summarize complex historical user interaction data into rich, verbose user profiles using LLMs. To ensure transparency, all features extracted for the user profiles are accompanied by supporting context grounded in the specific user interactions from which they were derived, as identified by the LLM through prompts. Next, for retrieval of personalized ad candidates, the model is prompted to produce relevant and complementary search engine optimization (SEO) keywords from past user interactions to promote diversity. These keywords are then used to retrieve ad candidates from our ad corpus via approximate nearest neighbor (ANN) search, effectively grounding the selection. Finally, we employ a Retrieval-Augmented Generation (RAG) module that uses the generated user profiles and retrieved ad candidates to classify them into three cate-gories-Recommended, Related, and Not Recommended. Each classification includes a rationale and a confidence score to support downstream decision-making. Experimental results show that the Bespoke Algorithm achieves a 68.6% relative improvement in View-through Click-Through Rate (ViewCTR) compared to a state-of-the-art (SOTA) user embedding model currently deployed in production. These findings highlight the practical value of LLMs in delivering highly personalized advertising solutions."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "An LLM-Driven SSM Architecture Visualization Method for Teaching",
+    "authors": "Weichao Xia",
+    "publish": "Proceedings of the 2025 4th International Conference on Artificial Intelligence and Education",
+    "url": "https://doi.org/10.1145/3797552.3797701",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-23",
+    "title": "A Cloud-based LLM-Powered RAG and SQL Agent Framework for Reliable Personal Finance Assistance",
+    "authors": "L Kartheesan, Syed Faheez Ahamad, Muvvala Sai Puneeth",
+    "publish": "2026 6th International Conference on Expert Clouds and Applications (ICOECA)",
+    "url": "https://doi.org/10.1109/icoeca68095.2026.11485630",
+    "source": "IEEE",
+    "abstract": "Accelerated advancements in Large Language Models (LLMs) has enable smarter financial assistant systems. This paper presents an in-depth development roadmap for a cloud-native personal finance chatbot that will be built upon Retrieval-Augmented Generation (RAG) in tandem with SQL agents to provide accurate and financially relevant guidance. The envisioned system aims to address the existing critical challenges of AI hallucination, data staleness, and the need for personalized financial advice, by incorporating external knowledge retrieval as well as structured database querying. It explore the theoretical underpinnings of RAG systems, analyze multi-agent SQL generation techniques and propose an architecture that unifies these technologies to build a robust personal finance assistant. Consequently, the system will be able to handle complex financial queries, while also ensuring production-grade scalability and reliability through a centralized cloud-based reasoning engine."
+  },
+  {
+    "date": "2026-4-24",
+    "title": "VayuChat: An LLM-Powered Conversational Interface for Air Quality Data Analytics",
+    "authors": "Vedant Acharya, Abhay Pisharodi, Rishabh Mondal, Mohammad Rafiuddin, Nipun Batra",
+    "publish": "Proceedings of the 13th ACM IKDD International Conference on Data Science",
+    "url": "https://doi.org/10.1145/3799830.3799862",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-23",
+    "title": "SEGA-Net: LLM-Guided Semantic-Enhanced GAN Augmentation Network for Low-Resolution Image Classification",
+    "authors": "Mohammad Shahedur Rahman, Mohammad Tahmid Bari, Md Delwar Hossain, Roya Choupani, Erdogan Dogdu",
+    "publish": "2026 International Conference on AI x Data and Knowledge Engineering (AIxDKE)",
+    "url": "https://doi.org/10.1109/aixdke67294.2026.00031",
+    "source": "IEEE",
+    "abstract": "Low-resolution image classification (e.g., CIFAR and Tiny-ImageNet at $32 \\times 32$) faces persistent challenges due to limited contextual diversity, overfitting, and vulnerability to adversarial perturbations. Conventional augmentations provide only superficial variability, while recent LLM-guided diffusion approaches, though semantically rich, suffer from computational inefficiency and resolution mismatch. To address these challenges, we present SEGA-Net, a novel semantic-enhanced augmentation framework that bridges this gap through two key innovations. First, SEGA-NET introduces a lightweight text-tolatent projector that maps LLM-derived prompts to the latent space of a frozen class-conditional GAN, enabling efficient and semantically controlled $32 \\times 32$ image synthesis. Second, it implements a security-aware filtering pipeline combining CLIP-based semantic alignment, SSIM de-duplication, and blur detection to ensure that only high-fidelity, label-consistent samples are used for training. Operating in three stages, (i) LLM-guided prompt generation, (ii) projector-steered GAN synthesis, and (iii) quality-filtered augmentation, SEGA-NET achieves substantial improvements across five benchmarks (CIFAR-10/100, SVHN, Tiny-ImageNet, and Fashion-MNIST) and four architectures (ResNet, MobileNetV2, VGG-16, and ViT). Compared to conventional augmentations, SEGA-Net delivers $\\boldsymbol{+} \\mathbf{8} \\boldsymbol{-} \\mathbf{1 0 \\%}$ gains in clean accuracy and adversarial robustness (FGSM, PGD, BIM, AutoAttack), while reducing generation cost by $6.7 \\times$ relative to diffusion-based methods. These results demonstrate that semantic-guided synthesis with explicit quality control significantly enhances robustness and efficiency for resourceconstrained vision tasks."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "LLM-Enhanced Knowledge Distillation for Sequence-Based Protein-Ligand Interaction Prediction",
+    "authors": "Wenyu Xi, Ruheng Wang, Xiucai Ye, Tetsuya Sakurai, Leyi Wei",
+    "publish": "IEEE Journal of Biomedical and Health Informatics",
+    "url": "https://doi.org/10.1109/jbhi.2026.3686853",
+    "source": "IEEE",
+    "abstract": "Accurate prediction of protein-ligand interactions is essential for drug discovery, supporting critical stages from lead optimization to therapeutic development. Many existing methods depend on high-resolution protein-ligand complex structures, which limits scalability and reduces robustness in structure-limited settings. To address these challenges, we introduce Multi-Combinatorial Knowledge Distillation (MCKD), a sequence-based framework that predicts protein-ligand interactions without requiring explicit three-dimensional structures at inference time. MCKD represents proteins and ligands as two-dimensional molecular graphs derived from their sequences and physicochemical properties, enabling effective learning from readily available inputs. To incorporate structural knowledge beyond sequence information, MCKD employs a hybrid distillation strategy that combines cross-modal distillation from a structure-based teacher with self-distillation to improve representation consistency across layers. To model protein-ligand interactions explicitly, MCKD integrates a bilinear attention network that captures residue-atom level associations and supports both binding affinity regression and binary interaction classification. Evaluations on multiple public benchmark datasets show that MCKD consistently outperforms existing sequence-based methods and achieves performance comparable to structure-based approaches. The model also generalizes well to unseen proteins and novel ligand scaffolds, while providing interpretable insights into key molecular interaction regions. These results suggest that MCKD offers a scalable and effective solution for protein-ligand interaction prediction, particularly for structure-free and data-limited drug discovery applications."
+  },
+  {
+    "date": "2026-4-23",
+    "title": "GATE: Graph and Text Exchange for Zero-Shot ECG Classification with LLM Prompts",
+    "authors": "Ying An, Shiyu Tang, Xianlai Chen, Lin Guo",
+    "publish": "IEEE Journal of Biomedical and Health Informatics",
+    "url": "https://doi.org/10.1109/jbhi.2026.3686890",
+    "source": "IEEE",
+    "abstract": "Electrocardiography (ECG) is a fundamental tool for diagnosing cardiovascular diseases, yet the scarcity of large-scale annotated data limits the applicability of supervised learning approaches. While self-supervised learning (SSL) has shown promise for ECG representation learning, existing methods often suffer from semantic distortion, insufficient spatial modeling, and a lack of integration with medical knowledge. To address these challenges, we propose GATE (Graph-And-Text Exchange), a novel multimodal SSL framework that enhances the quality of the representation of ECG through cross-modal exchange between graph-structured data and clinical ECG reports. GATE employs a spatiotemporal graph encoder to capture fine-grained intra- and inter-lead dependencies, and introduces a lexical knowledge-embedded codebook to enhance the semantic representation of clinical reports, facilitating effective graph-text alignment. During inference, GATE integrates a large language model with a domain-specific knowledge base to generate semantically enriched disease descriptions, enabling robust zero-shot classification. Extensive experiments on three real-world ECG datasets demonstrate that GATE outperforms state-of-the-art self-supervised and multimodal baselines under both low-resource and zero-shot settings. Notably, GATE achieves competitive performance even when trained on only 1% of labeled data, highlighting its strong generalization and clinical potential."
+  }
+]
