@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-04-24",
+    "title": "RFID-Based Non-Biometric Classroom Attendance System: Proxy Attendance Detection via Weight Sensor Integration",
+    "authors": "Furkan Ege, Muhsin Özdemir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22697v1",
+    "source": "arXiv",
+    "abstract": "Attendance tracking in educational institutions, when conducted through traditional methods, leads to structural problems that consume instruction time and threaten academic integrity. Attendance durations spanning several minutes in primary and secondary education and exceeding ten minutes in higher education, combined with the proxy attendance problem of signing on behalf of someone else, demonstrate the need for electronic systems. Most existing electronic solutions rely on biometric authentication, which raises legal and ethical risks under the European General Data Protection Regulation (GDPR), the Turkish Personal Data Protection Law (KVKK), and the United States Family Educational Rights and Privacy Act (FERPA). Systems using RFID alone provide no built-in safeguard against proxy attendance through card transfer. This study proposes a biometric-free IoT attendance system addressing both deficiencies. The prototype consists of an RFID module, RFID cards, weight sensors, a Bluetooth module, and an Arduino UNO microcontroller. After the student presents their RFID card, the weight sensor measurement is compared against a statistical reference range of 350 individuals (aged 18-22) compiled from three Kaggle datasets; no personal biometric data is recorded. A Python-based GUI performs student management, course tracking, and CSV-based reporting via Bluetooth. Qualitative tests in conditions close to a real classroom have shown that the RFID reading, weight verification, Bluetooth communication, and GUI modules operate in an integrated manner as expected. The proposed system offers a low-cost and reproducible solution that aims to reduce proxy attendance without storing biometric data."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Verifier Warnings Do Not Improve Comprehensibility Prediction",
+    "authors": "Nadeeshan De Silva, Martin Kellogg, Oscar Chaparro",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22653v1",
+    "source": "arXiv",
+    "abstract": "Proponents of software verification suggest that code simplicity is linked to the effort to verify code, hypothesizing that formal verifiers produce fewer false positive warnings and require less manual intervention when analyzing simpler code. A recent meta-analysis study found empirical support for this hypothesis: a small correlation between the sum of verifier warnings and human-derived code comprehensibility metrics. Based on this finding, we conjectured that using the sum of verifier tool (verifier) warnings to represent program semantic information as an input feature to machine learning (ML) models for code comprehensibility prediction can enhance their performance, when combined with traditional syntactic and developer features. To test this conjecture, we performed a control-treatment experiment incorporating the verifier warning sum feature into machine learning models from the literature, and conducted a comparative analysis of their performance against models trained only on syntactic and developer features. We found no significant difference in the prediction performance of models with and without the warnings feature. Our findings suggest that while a correlation exists, the verifier warning sum offers limited discriminative power: combining syntactic and developer features is just as effective for predicting human-judged code comprehensibility."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "An algebraic characterisation of Eve-positional languages",
+    "authors": "Thomas Colcombet, Olivier Idir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22648v1",
+    "source": "arXiv",
+    "abstract": "We present a new algebraic characterisation of Eve-positionality for $ω$-regular languages. It involves only a limited number of elementary local properties to be checked. An $ω$-regular language is Eve-positional if, in all games with this language as objective, the existential player (Eve) can play optimally without keeping any information concerning the history of the moves seen so far. This notion plays a crucial role in verification, automata theory and synthesis. Our proof heavily relies on a recent result of Casares and Ohlmann which states several characterisations of Eve-positionality for $ω$-regular languages. More precisely, it relies on their a 1-to-2 player lift result: for an $ω$-regular language, being Eve-positionally over all finite Eve-only arenas suffices for being Eve-positional over all two-player arenas."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "From Natural Language to Verified Code: Toward AI Assisted Problem-to-Code Generation with Dafny-Based Formal Verification",
+    "authors": "Md Erfan, Md Kamal Hossain Chowdhury, Ahmed Ryan, Md Rayhanur Rahman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22601v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) show promise in automated software engineering, yet their guarantee of correctness is frequently undermined by erroneous or hallucinated code. To enforce model honesty, formal verification requires LLMs to synthesize implementation logic alongside formal specifications that are subsequently proven correct by a mathematical verifier. However, the transition from informal natural language to precise formal specification remains an arduous task. Our work addresses this by providing the NaturalLanguage2VerifiedCode (NL2VC)-60 dataset: a collection of 60 complex algorithmic problems. We evaluate 11 randomly selected problem sets across seven open-weight LLMs using a tiered prompting strategy: contextless prompts, signature prompts providing structural anchors, and self-healing prompts utilizing iterative feedback from the Dafny verifier. To address vacuous verification, where models satisfy verifiers with trivial specifications, we integrate the uDebug platform to ensure functional validation. Our results show that while contextless prompting leads to near-universal failure, structural signatures and iterative self-healing facilitate a dramatic performance turnaround. Specifically, Gemma 4-31B achieved a 90.91\\% verification success rate, while GPT-OSS 120B rose from zero to 81.82\\% success with signature-guided feedback. These findings indicate that formal verification is now attainable for open-weight LLMs, which serve as effective apprentices for synthesizing complex annotations and facilitating high-assurance software development."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Rethinking Math Reasoning Evaluation: A Robust LLM-as-a-Judge Framework Beyond Symbolic Rigidity",
+    "authors": "Erez Yosef, Oron Anschel, Shunit Haviv Hakimi, Asaf Gendler, Adam Botach, Nimrod Berman, Igor Kviatkovsky",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22597v1",
+    "source": "arXiv",
+    "abstract": "Recent advancements in large language models have led to significant improvements across various tasks, including mathematical reasoning, which is used to assess models' intelligence in logical reasoning and problem-solving. Models are evaluated on mathematical reasoning benchmarks by verifying the correctness of the final answer against a ground truth answer. A common approach for this verification is based on symbolic mathematics comparison, which fails to generalize across diverse mathematical representations and solution formats. In this work, we offer a robust and flexible alternative to rule-based symbolic mathematics comparison. We propose an LLM-based evaluation framework for evaluating model-generated answers, enabling accurate evaluation across diverse mathematical representations and answer formats. We present failure cases of symbolic evaluation in two popular frameworks, Lighteval and SimpleRL, and compare them to our approach, demonstrating clear improvements over commonly used methods. Our framework enables more reliable evaluation and benchmarking, leading to more accurate performance monitoring, which is important for advancing mathematical problem-solving and intelligent systems."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "LARA: Validation-Driven Agentic Supercomputer Workflows for Atomistic Modeling",
+    "authors": "William Dawson, Louis Beal, Yoann Curé, Giuseppe Fisicaro, Dorian Rolland, Luigi Genovese",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22571v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) and agentic systems have recently demonstrated potential for automating scientific workflows, including atomistic simulations. However, their deployment in high-performance computing (HPC) environments remains limited by the lack of mechanisms ensuring correctness, reproducibility, and safe interaction with computational resources. Generated workflows suffer from inconsistencies, incorrect API usage, or invalid physical configurations - leading to failed or unreliable simulations. In this work, we introduce LARA-HPC, a validation-driven agentic framework to enable reliable workflow generation for atomistic modeling on HPC systems. Our approach is based on three key components: (i) a controlled execution layer that mediates all interactions with HPC resources; (ii) simulation-native validation through dry-run capabilities, enabling execution-level verification without incurring resource cost; and (iii) a multi-phase agentic pipeline combining retrieval-augmented generation and iterative refinement. We demonstrate the effectiveness of this approach performing an end-to-end atomistic simulation workflow on HPC by applying LARA-HPC to Density Functional Theory simulations. The results show that validation-driven generation significantly improves robustness and enables iterative correction of both syntactic and physical inconsistencies. More broadly, this work advocates for a shift from generation-first to validation-first paradigms in Artificial Intelligence (AI) assisted scientific computing. We argue that the future task of the computational physics community is to develop domain specific agentic systems based on structured tooling to realize an HPC enabled co-piloted research ecosystem."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "ArmSSL: Adversarial Robust Black-Box Watermarking for Self-Supervised Learning Pre-trained Encoders",
+    "authors": "Yongqi Jiang, Yansong Gao, Boyu Kuang, Chunyi Zhou, Anmin Fu, Liquan Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22550v1",
+    "source": "arXiv",
+    "abstract": "Self-supervised learning (SSL) encoders are invaluable intellectual property (IP). However, no existing SSL watermarking for IP protection can concurrently satisfy the following two practical requirements: (1) provide ownership verification capability under black-box suspect model access once the stolen encoders are used in downstream tasks; (2) be robust under adversarial watermark detection or removal, because the watermark samples form a distinguishable out-of-distribution (OOD) cluster. We propose ArmSSL, an SSL watermarking framework that assures black-box verifiability and adversarial robustness while preserving utility. For verification, we introduce paired discrepancy enlargement, enforcing feature-space orthogonality between the clean and its watermark counterpart to produce a reliable verification signal in black-box against the suspect model. For adversarial robustness, ArmSSL integrates latent representation entanglement and distribution alignment to suppress the OOD clustering. The former entangles watermark representations with clean representations (i.e., from non-source-class) to avoid forming a dense cluster of watermark samples, while the latter minimizes the distributional discrepancy between watermark and clean representations, thereby disguising watermark samples as natural in-distribution data. For utility, a reference-guided watermark tuning strategy is designed to allow the watermark to be learned as a small side task without affecting the main task by aligning the watermarked encoder's outputs with those of the original clean encoder on normal data. Extensive experiments across five mainstream SSL frameworks and nine benchmark datasets, along with end-to-end comparisons with SOTAs, demonstrate that ArmSSL achieves superior ownership verification, negligible utility degradation, and strong robustness against various adversarial detection and removal."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Different Strokes for Different Folks: Writer Identification for Historical Arabic Manuscripts",
+    "authors": "Hamza A. Abushahla, Ariel Justine N. Panopio, Layth Al-Khairulla, Mohamed I. AlHajri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22515v1",
+    "source": "arXiv",
+    "abstract": "Handwritten Arabic manuscripts preserve the Arab world's intellectual and cultural heritage, and writer identification supports provenance, authenticity verification, and historical analysis. Using the Muharaf dataset of historical Arabic manuscripts, we evaluate writer identification from individual line images and, to the best of our knowledge, provide the first baselines reported under both line-level and page-disjoint evaluation protocols. Since the dataset is only partially labeled for writer identification, we manually verified and expanded writer labels in the public portion from 6,858 (28.00%) to 21,249 lines (86.75%) out of 24,495 line images, correcting inconsistencies and removing non-handwritten text. After further filtering, we retained 18,987 lines (77.51%). We propose a Convolutional Neural Network (CNN)-based model with attention mechanisms for closed-set writer identification, including rare two-writer lines modeled as composite writer-pair classes. We benchmark fourteen configurations and conduct ablations across different feature extractors and training regimes. To assess generalization to unseen pages, the page-disjoint protocol assigns all lines from each page to a single split. Under the line-level protocol, a fine-tuned DenseNet201 with attention achieves 99.05% Top-1 accuracy, 99.73% Top-5 accuracy, and 97.44% F1-score. Under the more challenging page-disjoint protocol, the best observed results are 78.61% Top-1 accuracy, 87.79% Top-5 accuracy, and 66.55% F1-score, thus quantifying the impact of page-level cues. By expanding the Muharaf dataset's labeled subset and reporting both protocols, we provide a clearer benchmark and a practical resource for historians and linguists engaged with culturally and historically significant documents. The code and implementation details are available on GitHub."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Benchmarking LLM-Driven Network Configuration Repair",
+    "authors": "Ioannis Protogeros, Rufat Asadli, Benjamin Hoffman, Laurent Vanbever",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22513v1",
+    "source": "arXiv",
+    "abstract": "There is a rapidly growing interest in using Large Language Models (LLMs) to automate complex network operations, but their reliable adoption requires rigorous assessment of their effectiveness and safety. Existing benchmarks do not address whether LLMs can successfully resolve errors in large-scale, interdependent network configurations without introducing new disruptions. Developing such a benchmark is challenging: scenarios must be diverse and increasingly complex, yet their evaluation must be straightforward and meaningful. In this paper, we present Cornetto, the first benchmark to evaluate LLM-driven network configuration repair functionally and at scale. Cornetto features a generation pipeline that synthesizes representative and plausible misconfiguration scenarios, coupled with an evaluation framework that uses formal verification to assess functional correctness of proposed fixes against ground-truth specifications. Using this pipeline, we synthesize a dataset of 231 problems for fixing configurations across varying network topologies (20--754 nodes) and diverse protocols. We evaluate 9 state-of-the-art LLMs and find that while they show promise, they often introduce regressions and their performance degrades at scale. Our results indicate that reliable LLM-powered network automation requires integrating LLMs into iterative workflows guided by formal verification."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Information-Theoretic Authenticated PIR: From PIR-RV To APIR",
+    "authors": "Pengzhen Ke, Yuxuan Qin, Liang Feng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22505v1",
+    "source": "arXiv",
+    "abstract": "Private Information Retrieval (PIR) allows clients to retrieve database entries without leaking retrieval indices, yet malicious servers seriously compromise retrieval correctness. Existing Authenticated PIR (APIR) schemes resist selective-failure attacks but rely on computational hardness assumptions. In contrast, information-theoretic PIR with Result Verification (itPIR-RV) achieves integrity without computational assumptions, yet only provides relaxed query privacy with no defense against selective-failure attacks. This paper focuses on unconditionally secure information-theoretic APIR (itAPIR) constructions. We propose the rigorous information-theoretic security definition for itAPIR with statistical privacy against selective-failure attacks and integrity as core properties, formalize the hierarchical relation between itAPIR and itPIR-RV as a relaxed variant with identical integrity but basic query privacy, and prove a conversion theorem that valid itPIR-RV schemes can be directly upgraded to secure itAPIR with no extra overhead. Our work bridges the theoretical gap, simplifies itAPIR design, and enables quantum-resistant PIR in malicious server environments."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "R2Code: A Self-Reflective LLM Framework for Requirements-to-Code Traceability",
+    "authors": "Yifei Wang, Jacky Keung, Xiaoxue Ma, Zhenyu Mao, Kehui Chen, Yishu Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22432v1",
+    "source": "arXiv",
+    "abstract": "Accurate requirement-to-code traceability is crucial for software maintenance. However, existing IR- and embedding-based methods are heavily dependent on lexical similarity, often yielding incomplete or inconsistent links across projects and languages and incurring high cost from long-context retrieval and prompting. This paper presents R2Code, an LLM-based semantic traceability framework designed to improve trace link accuracy while reducing inference cost. R2Code integrates three components: 1) a decomposition-enhanced Bidirectional Alignment Network (BAN) that aligns four-layer requirement semantics with corresponding code structures to support cross-level semantic matching; 2) a Self-Reflective Consistency Verification (SRCV) module that conducts explanation-guided consistency checking to calibrate link reliability; and 3) a Dynamic Context-Adaptive Retrieval (DCAR) mechanism that adjusts retrieval granularity and filters contexts using semantic-overlap weighting for efficient context utilization. Experiments on five public datasets spanning multiple domains and two programming languages demonstrate that R2Code consistently outperforms the strongest baselines, achieving an average F1 gain of 7.4%, while reducing token consumption by up to 41.7% through adaptive context control."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Enhancing a gamified tool for UML modeling education",
+    "authors": "Giacomo Garaccione, Riccardo Coppola, Luca Ardito",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22400v1",
+    "source": "arXiv",
+    "abstract": "Unified Modeling Language (UML) Use Case and Class Diagrams are fundamental modeling notations in Software Engineering (SE) education due to their importance for requirements and model-based engineering, yet their relevance is underestimated by students, who tend to dismiss the topic as secondary. Gamification has been adopted to make modeling education more appealing, but existing tools focus almost exclusively on class diagrams, leaving support for use cases and other notations unexplored. In 2025, we designed UMLegend, a gamified tool for class diagrams that offered dynamic feedback to help students learn correct modeling practices and multiple long-term mechanics to increase engagement, and performed a study with the tool. With this paper, we describe how we enhanced UMLegend following the results of the experiment so that it can support more modeling languages, with use case diagrams being added to the type of available exercises in the tool. The revised version has been refactored to have a modular architecture, to make it easier to add other software engineering topics and additional modeling notations. We also describe the potential impact we expect the new version to have, and outline a longitudinal study we intend to perform in 2026 where we will assess whether long-term UML gamification leads to improved student performance."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Reelay: Online Temporal Logic Monitoring Framework",
+    "authors": "Dogan Ulus",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22384v1",
+    "source": "arXiv",
+    "abstract": "We present Reelay, a unified online temporal logic monitoring framework designed for the rigorous analysis and runtime verification of cyber-physical systems. Reelay addresses the fragmentation of existing logical formalisms and tools by providing a single computational model and interface that supports a broad class of temporal logics. These include Linear Temporal Logic (LTL), Metric Temporal Logic (MTL), and Signal Temporal Logic (STL), along with their extensions for robustness semantics and first-order quantification over unbounded categorical data domains. At its core, Reelay translates temporal logic specifications into executable computation graphs operating as synchronous dataflow systems. This architecture ensures an efficient execution mechanism, making the framework ideal for high-frequency data streams regardless of behavior length. Uniquely, the framework supports both discrete and dense-time semantics, as well as delta-encoded temporal behaviors to minimize bandwidth usage in bandwidth-constrained environments. Reelay is implemented as a header-only C++ library with a high-level Python interface, facilitating integration across a wide range of deployment contexts, from resource-constrained embedded systems to autonomous robotic platforms. We demonstrate the practical applicability of the framework through a representative case study and performance experiments, illustrating how Reelay bridges the gap between expressive formal specifications and efficient runtime verification."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Ownership Refinement Types for Pointer Arithmetic and Nested Arrays",
+    "authors": "Yusuke Fujiwara, Yusuke Matsushita, Kohei Suenaga, Atsushi Igarashi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22361v1",
+    "source": "arXiv",
+    "abstract": "Tanaka et al. proposed a type system for verifying functional correctness properties of programs that use arrays and pointer arithmetic. Their system extends ConSORT -- a type system combining fractional ownership and refinement types for imperative program verification -- with support for pointer arithmetic. Their idea was to extend fractional ownership so that it can depend on an array index. Their formulation, however, does not handle nested arrays, which are essential for representing practical data structures such as matrices. We extend Tanaka et al.'s type system to support nested arrays by generalizing the notion of ownership to be able to refer to the indices of the outer arrays and prove the soundness of the extended type system. We have implemented a verifier based on the proposed type system and demonstrated that it can verify the correctness of programs that manipulate nested arrays, which were beyond the reach of Tanaka et al."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "HGQ-LUT: Fast LUT-Aware Training and Efficient Architectures for DNN Inference",
+    "authors": "Chang Sun, Zhiqiang Que, Bakhtiar Zadeh, Qibin Liu, Kevin H. Alvarez, Wayne Luk, Maria Spiropulu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22293v1",
+    "source": "arXiv",
+    "abstract": "Lookup-table (LUT) based neural networks can deliver ultra-low latency and excellent hardware efficiency on FPGAs by mapping arithmetic operations directly onto the logic primitives. However, state-of-the-art LUT-aware training (LAT) approaches remain difficult to use in practice: they are often orders of magnitude slower to train than conventional networks, require non-trivial manual tuning for hardware efficiency, and lack an end-to-end workflow. This work presents HGQ-LUT, integrated in https://github.com/calad0i/HGQ2, a new LAT approach that achieves state-of-the-art hardware efficiency while accelerating training by over 100 times on modern GPUs. HGQ-LUT introduces LUT-Dense and LUT-Conv layers that are implemented with regular, accelerator-efficient tensor operations during training, which are then compiled into logic LUTs for hardware. By combining these layers with fine-grained, element-wise heterogeneous quantization (including zero-bit pruning) and a LUT-aware resource surrogate, HGQ-LUT enables the automatic exploration of accuracy-resource trade-offs without manual bit-width tuning. We further integrate HGQ-LUT into open-source toolchains, enabling unified design, compilation, and bit-exact verification of hybrid architectures that mix LUT-based with conventional arithmetic blocks. These features make LAT-based DNNs practical for real-world deployment, such as at the CERN Large Hadron Collider's experiments."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "AutoINV: Automated Invariant Generation Framework for Formal Verification on High-Level Synthesis Designs",
+    "authors": "Xiaofeng Zhou, Linfeng Du, Guangyu Hu, Sharad Sinha, Hongce Zhang, Wei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22285v1",
+    "source": "arXiv",
+    "abstract": "High-level synthesis (HLS) transforms an algorithmic description of hardware from a higher abstraction (e.g., C/C++) into a register-transfer level (RTL) design, offering reduced development time and greater flexibility in design space exploration. However, such machine-generated RTL designs may contain major functional bugs or security vulnerabilities due to limitations or errors in the HLS tools. One of the most reliable methods to identify these vulnerabilities is formal verification, particularly model checking. Nevertheless, the large size of the generated RTL often causes model checking to struggle to conclude within reasonable time or resource limits. In this study, we propose utilizing the high-level design features from the HLS flow to construct a set of helper assertions aimed at guiding the model checker and accelerating the verification process. To identify the most effective set of helpers to assist the model checker, we develop a proving mechanism that iteratively reuses proving information to select the potentially most useful set of helpers. We evaluate the proposed framework on a set of HLS design benchmarks. Experimental results demonstrate that, when compared to vanilla model checking, our approach achieves a speedup of up to 6.05x, and 2.23x on average."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "CAGE-SGG: Counterfactual Active Graph Evidence for Open-Vocabulary Scene Graph Generation",
+    "authors": "Suiyang Guang, Chenyu Liu, Ruohan Zhang, Siyuan Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22274v1",
+    "source": "arXiv",
+    "abstract": "Open-vocabulary scene graph generation (SGG) aims to describe visual scenes with flexible and fine-grained relation phrases beyond a fixed predicate vocabulary. While recent vision-language models greatly expand the semantic coverage of SGG, they also introduce a critical reliability issue: predicted relations may be driven by language priors or object co-occurrence rather than grounded visual evidence. In this paper, we propose an evidence-rounded open-vocabulary SGG framework based on counterfactual relation verification. Instead of directly accepting plausible relation proposals, our method verifies whether each candidate relation is supported by relation-pecific visual, geometric, and contextual evidence. Specifically, we first generate open-vocabulary relation candidates with a vision-language proposer, then decompose predicate phrases into soft evidence bases such as support, contact, containment, depth, motion, and state. A relation-conditioned evidence encoder extracts predicate-relevant cues, while a counterfactual verifier tests whether the relation score decreases when necessary vidence is removed and remains stable under irrelevant perturbations. We further introduce contradiction-aware predicate learning and graph-level preference optimization to improve fine-grained discrimination and global graph consistency. Experiments on conventional, open-vocabulary, and panoptic SGG benchmarks show that our method consistently improves standard recall-based metrics, unseen predicate generalization, and counterfactual grounding quality. These results demonstrate that moving from relation generation to relation verification leads to more reliable, interpretable, and evidence-grounded scene graphs."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "CharTide: Data-Centric Chart-to-Code Generation via Tri-Perspective Tuning and Inquiry-Driven Evolution",
+    "authors": "Xiangxi Zheng, Kuang He, Jiayi Hu, Ping Yu, Rui Yan, Yuan Yao, Peng Hou, Anxiang Zeng, Alex Jinpeng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22192v1",
+    "source": "arXiv",
+    "abstract": "Chart-to-code generation demands strict visual precision and syntactic correctness from Vision-Language Models (VLMs). However, existing approaches are fundamentally constrained by data-centric limitations: despite the availability of growing chart-to-code datasets, simply scaling homogeneous chart-code pairs conflates visual perception with program logic, preventing models from fully leveraging the richness of multimodal supervision. We present CharTide, a novel data-centric framework that systematically redesigns both training and alignment data for chart-to-code generation. First, we construct a 2M-sample dataset via a Tri-Perspective Tuning strategy, explicitly decoupling training into visual perception, pure-text code logic, and modality fusion streams, enabling a 7B model to surpass specialized baselines using only supervised data. Second, we reformulate alignment as a data verification problem rather than a heuristic scoring task. To this end, we introduce an Inquiry-Driven RL framework grounded in the principle of information invariance: a downstream model should yield consistent answers to identical visual queries across both original and generated charts. Moving beyond rigid rule matching or VLM scoring, we employ a frozen Inspector to objectively verify generated charts through atomic QA tasks, providing verifiable reward signals based on answer accuracy. Experiments on ChartMimic, Plot2Code, and ChartX show that CharTide-7B/8B significantly outperforms open-source baselines, surpasses GPT-4o, and is competitive with GPT-5."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Optimal Investment and Entropy-Regularized Learning Under Stochastic Volatility Models with Portfolio Constraints",
+    "authors": "Thai Nguyen, Pertiny Nkuize",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22188v1",
+    "source": "arXiv",
+    "abstract": "We study the problem of optimal portfolio selection under stochastic volatility within a continuous time reinforcement learning framework with portfolio constraints. Exploration is modeled through entropy-regularized relaxed controls, where the investor selects probability distributions over admissible portfolio allocations rather than deterministic strategies. Using dynamic programming arguments, we derive the associated entropy-regularized Hamilton-Jacobi-Bellman equation, whose Hamiltonian involves optimization over probability measures supported on a compact control set. We show that the optimal exploratory policy takes the form of a truncated Gaussian distribution characterized by spatial derivatives of the solution of the resulting nonlinear quasilinear parabolic partial differential equation. Under suitable structural conditions on the model coefficients, we prove the existence of classical solutions to this nonlinear HJB equation for the value function. We then establish a verification theorem and analyze the policy-improvement structure induced by the entropy-regularized Hamiltonian, showing how the resulting sequence of PDEs provides a continuous-time interpretation of actor-critic learning dynamics. Finally, our PDE analysis with a semi-closed form of optimal value and optimal policy enables the design of an implementable reinforcement learning algorithm by recasting the optimal problem in a martingale framework."
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Sum-of-Checks: Structured Reasoning for Surgical Safety with Large Vision-Language Models",
+    "authors": "Weiqiu You, Cassandra Goldberg, Amin Madani, Daniel A. Hashimoto, Eric Wong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22156v1",
+    "source": "arXiv",
+    "abstract": "Purpose: Accurate assessment of the Critical View of Safety (CVS) during laparoscopic cholecystectomy is essential to prevent bile duct injury, a complication associated with significant morbidity and mortality. While large vision-language models (LVLMs) offer flexible reasoning, their predictions remain difficult to audit and unreliable on safety-critical surgical tasks. Methods: We introduce Sum-of-Checks, a framework that decomposes each CVS criterion into expert-defined reasoning checks reflecting clinically relevant visual evidence. Given a laparoscopic frame, an LVLM evaluates each check, producing a binary judgment and justification. Criterion-level scores are computed via fixed, weighted aggregation of check outcomes. We evaluate on the Endoscapes2023 benchmark using three frontier LVLMs, comparing against direct prompting, chain-of-thought, and sub-question decomposition, each with and without few-shot examples. Results: Sum-of-Checks improves average frame-level mean average precision by 12--14% relative to the best baseline across all three models and criteria. Analysis of individual checks reveals that LVLMs are reliable on observational checks (e.g., visibility, tool obstruction) but show substantial variability on decision-critical anatomical evidence. Conclusion: Structuring surgical reasoning into expert-aligned verification checks improves both accuracy and transparency of LVLM-based CVS assessment, demonstrating that explicitly separating evidence elicitation from decision-making is critical for reliable and auditable surgical AI systems. Code is available at https://github.com/BrachioLab/SumOfChecks."
+  }
+]
