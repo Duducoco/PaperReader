@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-04-27",
+    "title": "NeuroClaw Technical Report",
+    "authors": "Cheng Wang, Zhibin He, Zhihao Peng, Shengyuan Liu, Yufan Hu, Lichao Sun, Xiang Li, Yixuan Yuan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24696v1",
+    "source": "arXiv",
+    "abstract": "Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks. To address this gap, we present NeuroClaw, a domain-specialized multi-agent research assistant for executable and reproducible neuroimaging research. NeuroClaw operates directly on raw neuroimaging data across formats and modalities, grounding decisions in dataset semantics and BIDS metadata so users need not prepare curated inputs or bespoke model code. The platform combines harness engineering with end-to-end environment management, including pinned Python environments, Docker support, automated installers for common neuroimaging tools, and GPU configuration. In practice, this layer emphasizes checkpointing, post-execution verification, structured audit traces, and controlled runtime setup, making toolchains more transparent while improving reproducibility and auditability. A three-tier skill/agent hierarchy separates user-facing interaction, high-level orchestration, and low-level tool skills to decompose complex workflows into safe, reusable units. Alongside the NeuroClaw framework, we introduce NeuroBench, a system-level benchmark for executability, artifact validity, and reproducibility readiness. Across multiple multimodal LLMs, NeuroClaw-enabled runs yield consistent and substantial score improvements compared with direct agent invocation. Project homepage: https://cuhk-aim-group.github.io/NeuroClaw/index.html"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Verification of Correlated Equilibria in Concurrent Reachability Games",
+    "authors": "Senthil Rajasekaran, Jean-François Raskin, Moshe Y. Vardi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24655v1",
+    "source": "arXiv",
+    "abstract": "As part of an effort to apply the rigorous guarantees of formal verification to multi-agent systems, the field of equilibrium analysis, also called rational verification, studies equilibria in multiplayer games to reason about system-level properties such as safety and scalability. While most prior work focuses on deterministic settings, recent probabilistic extensions enable the use of richer equilibrium concepts. In this paper, we study one such equilibrium concept -- correlated equilibria -- and introduce a natural refinement -- subgame-perfect correlated equilibria -- in the context of the verification problem. We characterize the computational complexity of verifying such equilibria and show a somewhat surprising separation (under standard complexity-theoretic assumptions): despite being more general, correlated equilibria yield a strictly harder P-complete verification problem than the subgame-perfect correlated equilibria verification problem, which can be solved in log-squared-space. We further analyze the setting where inputs are given succinctly via Bayesian networks, as the study of succinct representations is an important direction to connect static complexity-theoretic analysis to real-world program representations, and show that this complexity gap disappears under such representations."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Hybrid Path-Sums for Hybrid Quantum Programs",
+    "authors": "Christophe Chareton, Jad Issa, Mathieu Nguyen, Nicolas Blanco, Sébastien Bardin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24578v1",
+    "source": "arXiv",
+    "abstract": "As quantum computing becomes an emerging reality, designing efficient quantum programming capabilities is becoming more and more important. Particularly, the debugging and validation of quantum programs is of paramount importance, as these programs are by definition hard to test. Static analysis and formal verification methods for quantum programs started to emerge a few years now, yet they often miss hybrid quantum/classical reasoning facilities with, e.g., generic quantum control, classical control and classical computation instructions. In this paper, we lay out the foundations of a framework for the automated formal verification of (full) hybrid quantum programs featuring both classical and quantum control, measurement and hybrid data structures. In particular, we propose: (1) a novel symbolic representation for describing and manipulating sets of hybrid quantum/classical states called Hybrid Path-Sums (HPS); (2) a set of rewriting rules providing a rich mechanism for simplifying and reasoning on these symbolic hybrid states, and (3) a core assertion language to specify equivalence of hybrid quantum programs, the satisfaction of properties on (parts of) hybrid states, and the extraction of probabilistic statements about the program behavior. We prove the correctness of the novel symbolic representation, of its rewriting system and of the specification system. Finally, we propose a full implementation of this framework as a dedicated symbolic execution engine for hybrid programs. We present an evaluation of a set of representative hybrid case-studies from the literature, showcasing the advantage of our approach and its efficiency compared to state-of-the-art solutions."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Aligned Multi-View Scripts for Universal Chart-to-Code Generation",
+    "authors": "Zhihan Zhang, Lizi Liao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24559v1",
+    "source": "arXiv",
+    "abstract": "Chart-to-code generation converts a chart image into an executable plotting script, enabling faithful reproduction and editable visualizations. Existing methods are largely Python-centric, limiting practical use and overlooking a critical source of supervision: the same chart can be expressed by semantically equivalent scripts in different plotting languages. To fill this gap, we introduce Chart2NCode, a dataset of 176K charts paired with aligned scripts in Python, R, and LaTeX that render visually equivalent outputs, constructed via a metadata-to-template pipeline with rendering verification and human quality checks. Building on a LLaVA-style architecture, we further propose CharLuMA, a parameter-efficient adaptation module that augments the multimodal projector with a language-conditioned mixture of low-rank subspaces, allowing the model to share core chart understanding while specializing code generation to the target language through lightweight routing. Extensive experiments show consistent gains in executability and visual fidelity across all languages, outperforming strong open-source baselines and remaining competitive with proprietary systems. Further analyses reveal that balanced multi-language supervision benefits all languages and that the adapter allocates a compact shared core plus language-specific capacity. Codes and data are available at https://github.com/Zhihan72/CharLuMA."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Counterexample-Guided Interval Weakening",
+    "authors": "Ben M. Andrew, Louise A. Dennis, Michael Fisher, Marie Farrell",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24540v1",
+    "source": "arXiv",
+    "abstract": "Systems deployed for long periods of time in dynamic environments may experience performance degradation that affects timing guarantees, even when their functional behaviour remains unchanged. In the design and verification of critical systems, such timing guarantees are often expressed using Metric Temporal Logic (MTL). Under degradation, these specifications may no longer hold as stated, although weaker variants that relax timing bounds may still be satisfied and remain meaningful. For example, while an elevator may initially be required to arrive within 30 seconds of a request, degradation of its motor may only allow us to guarantee arrival within 60 seconds. Although weaker, this guarantee is still useful and allows the system to maintain a reasonable level of operation. In this paper we present CEGIW, an iterative, counterexample-guided algorithm for automatically weakening timing intervals in MTL specifications so that they hold for a given system model. The algorithm preserves the logical structure of the original specification and weakens only interval bounds. We prove the correctness and optimality of CEGIW, and conduct an empirical evaluation to demonstrate the practicality of interval weakening using formalised requirements from a number of real-world case-studies. Using a model checker to produce counterexamples, CEGIW either identifies the strongest interval weakening under which the specification holds, or determines that no such weakening exists."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "How Do Software Engineering Students Use Generative AI in Real-World Capstone Projects? An Empirical Baseline Study",
+    "authors": "Michael Mircea, Elisa Schmid, Jakob Droste, Kurt Schneider",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24521v1",
+    "source": "arXiv",
+    "abstract": "Real-world Capstone Projects (RWCPs) are a key component of software engineering education, enabling students to develop software for external clients under authentic conditions. Their high ecological validity, combined with substantial variation in domains, technologies, and stakeholders, typically requires flexible and minimally prescriptive teaching approaches. The rapid integration of generative AI (GenAI) into professional software development adds new challenges: students are expected to use AI tools that are common in practice, yet unguided use may affect learning, collaboration, and consistency in ways that are not yet well understood. To establish an empirical baseline for responsible GenAI integration, we conducted a large-scale study of self-determined GenAI use in an undergraduate RWCP course. The module involved 178 students working in 18 teams across 15 client projects over four months, with GenAI use explicitly permitted. We collected mixed-method survey data from 150 students on attitudes, usage prevalence, workflows, use cases, and perceived benefits and risks, and surveyed client stakeholders regarding expectations and concerns. Our findings provide (1) a characterization of GenAI practices across the software engineering lifecycle, including a distinction between emerging workflows; (2) student-recommended use cases and responsible-use directives emphasizing verification and maintaining independent understanding; (3) client perspectives highlighting strong support for GenAI use but clear expectations regarding understanding, quality, and data protection; and (4) implications for future course iterations, including the need for explicit responsible-use guidelines, targeted AI literacy resources, and team-level governance roles. This study offers a status quo baseline for evidence-based pedagogical interventions in the era of GenAI."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting",
+    "authors": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24504v1",
+    "source": "arXiv",
+    "abstract": "Equivalence checking of quantum circuits is a central verification task in quantum computing, ensuring the correctness of circuit optimizations, hardware mappings, and compilation pipelines. Among the primary symbolic methods for this purpose, the path-sum formalism provides a compact representation with powerful reduction rules that yield a canonical form for the classically simulable Clifford fragment, but confluence fails beyond the Clifford fragment. We introduce a new weighted model counting (WMC) encoding for path-sums and combine it with the existing path-sum reductions to obtain a verifier that is both complete and efficient. Our method applies reductions whenever possible and invokes the WMC-based decision procedure on the residual path-sum, yielding a complete semantic check up to a global phase. We implement the approach and evaluate it on standard benchmarks. Results show that the hybrid method outperforms either component in isolation and competes with state-of-the-art tools."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "DYMAPIA: A Multi-Domain Framework for Detecting AI-based Video Manipulation",
+    "authors": "Md Shohel Rana, Andrew H. Sung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24426v1",
+    "source": "arXiv",
+    "abstract": "AI-generated media are advancing rapidly, raising pressing concerns for content authenticity and digital trust. We introduce DYMAPIA, a multi-domain Deepfake detection framework that fuses spatial, spectral, and temporal cues to capture subtle traces of manipulation in visual data. The system builds dynamic anomaly masks by combining evidence from Fourier spectra, local texture descriptors, edge irregularities, and optical flow consistency, which highlight tampered regions with fine spatial accuracy. These masks guide DistXCNet, a lightweight classifier distilled from Xception and optimized with depthwise separable convolutions for fast, region-focused classification. This joint design achieves state-of-the-art results, with accuracy and F1-scores exceeding 99\\% on FF++, Celeb-DF, and VDFD benchmarks, while keeping the model compact enough for real-time use. Beyond outperforming existing full-frame and multidomain detectors, DYMAPIA demonstrates deployment readiness for time-critical forensic tasks, including media verification, misinformation defense, and secure content filtering."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "From Spoofing to Trust: Emergency Alerts Spoofing Testbed and Cross-Cell Verification",
+    "authors": "Abdallah Abou Hasna, Nada Chendeb, Ammar El Falou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24404v1",
+    "source": "arXiv",
+    "abstract": "Public warning systems (PWS) in cellular networks enable authorities to broadcast emergency alerts to all mobile phones in a geographic region in the event of threats such as earthquakes or severe weather. If an attacker can imitate these alerts and transmit a forged warning containing fake news or phishing links, the impact could range from public panic to user compromise. In this work, we present the first open-source 5G emergency alert spoofing attack, implemented by modifying the openairinterface (OAI) radio access network (RAN) code and executed using a software-defined radio, complemented by a custom network management system to automate network and warning configuration. We conduct a detailed analysis of how different smartphones behave under various conditions. Our findings show that while devices readily display spoofed alerts, the alerting mechanism enables multiple practical attack scenarios beyond simple warning display. Finally, to address this threat, we propose and implement a lightweight cross-cell verification mechanism in OAI, in which the device compares the received warning with neighboring cell broadcasts to flag single-source alerts as suspicious."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Aligning with Your Own Voice: Self-Corrected Preference Learning for Hallucination Mitigation in LVLMs",
+    "authors": "Byeonggeuk Lim, JungMin Yun, Junehyoung Kwon, Kyeonghyun Kim, YoungBin Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24395v1",
+    "source": "arXiv",
+    "abstract": "Large Vision-Language Models (LVLMs) frequently suffer from hallucinations. Existing preference learning-based approaches largely rely on proprietary models to construct preference datasets. We identify that this reliance introduces a distributional mismatch between the proprietary and target models that hinders efficient alignment. To address this, we propose Alignment via VErified Self-correction DPO (AVES-DPO), a framework that aligns LVLMs using in-distribution data derived from the model's intrinsic knowledge. Our approach employs a consensus-based verification mechanism to diagnose diverse hallucinations and guides the model to self-correct, thereby generating preference pairs strictly compatible with its internal distribution. Extensive experiments demonstrate that AVES-DPO surpasses existing baselines in hallucination mitigation while requiring only 5.2k samples."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Certified geometric robustness -- Super-DeepG",
+    "authors": "Noémie Cohen, Mélanie Ducoffe, Christophe Gabreau, Claire Pagetti, Xavier Pucel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24379v1",
+    "source": "arXiv",
+    "abstract": "Safety-critical applications are required to perform as expected in normal operations. Image processing functions are often required to be insensitive to small geometric perturbations such as rotation, scaling, shearing or translation. This paper addresses the formal verification of neural networks against geometric perturbations on their image dataset. Our method Super-DeepG improves the reasoning used in linear relaxation techniques and Lipschitz optimization, and provides an implementation that leverages GPU hardware. By doing so, Super-DeepG achieves both precision and computational efficiency of robustness certification, to an extent that outperforms prior work. Super-DeepG is shared as an open-source tool on GitHub."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Understanding and Improving Automated Proof Synthesis for Interactive Theorem Provers",
+    "authors": "Manqing Zhang, Yunwei Dong, Lingru Zhou, Bingxu Xiao, Yepang Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24354v1",
+    "source": "arXiv",
+    "abstract": "Formal verification using interactive theorem provers ensures high-quality software. However, writing proof scripts for interactive theorem provers is labor-intensive and requires deep expertise. Recent studies have leveraged deep learning to automate theorem proving by learning from manually written proof corpora. Nevertheless, these techniques still achieve limited success rates in proof synthesis. This paper investigates the theorems that current proof synthesis techniques are unable to prove and analyzes their characteristics. Through an in-depth analysis of the proven theorems, proof scripts, and the proof search process, we identify the limitations of existing tools and summarize the key factors influencing proof success rates. Our research provides valuable insights for the future optimization of automated proof tools. Based on our empirical study, we discover that tactic selections conforming to human expert proof patterns are more likely to lead to successful proofs. Inspired by this finding, we propose a pattern-guided tactic search (PGTS) method to heuristically enhance the search process of existing proof synthesis tools. Our evaluation experiments demonstrate that PGTS improves the number of theorems proved by existing proof synthesis tools by an average of 8.05\\%, while also achieving an average 20\\% increase in previously unproven theorems. Furthermore, PGTS enhances the capability of proof synthesis tools to prove complex theorems and generates more concise proof scripts."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "GoAT-X: A Graph of Auditing Thoughts for Securing Token Transactions in Cross-Chain Contracts",
+    "authors": "Zijun Feng, Yuming Feng, Yu Wang, Weizhe Zhang, Yuhong Nan, Yuang Liu, Zibin Zheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24341v1",
+    "source": "arXiv",
+    "abstract": "Cross-chain bridges, the critical infrastructure of the multi-chain ecosystem, have become a primary target for attackers, resulting in over $2.8 billion in losses due to subtle implementation flaws. Existing defenses, such as bytecode-level static analysis, are ill-equipped to handle the semantic complexity of cross-chain interactions, while LLM-based approaches, which can understand source code, struggle with hallucinatory reasoning over complex, multi-contract dependencies. In this paper, we propose GoAT-X, a framework that shifts automated cross-chain smart contract codebases auditing from heuristic pattern matching toward systematic first-principles verification. GoAT-X structures the audit process as a Graph of Auditing Thoughts, explicitly mirroring how human experts decompose, reason about, and validate security logic. By anchoring LLM reasoning in statically extracted data flows and explicitly linking abstract security properties to concrete code implementations, the framework constrains semantic reasoning within well-defined structural and state boundaries. Within this constrained space, GoAT-X treats missing constraints and adversarial bypass paths in cross-chain logic as first-class vulnerability targets and dynamically explores reasoning paths to identify exploitable semantic gaps. We evaluate GoAT-X on a comprehensive benchmark covering all known cross-chain token transaction attacks. GoAT-X achieves 92% recall on fine-grained audit points and 95% coverage of vulnerable projects, while identifying 117 confirmed risks in the wild with low operational cost, establishing a new standard for scalable, logic-driven cross-chain security."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "See Further, Think Deeper: Advancing VLM's Reasoning Ability with Low-level Visual Cues and Reflection",
+    "authors": "Zhiheng Wu, Tong Wang, Shuning Wang, Naiming Liu, Yumeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24339v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in Vision-Language Models (VLMs) have benefited from Reinforcement Learning (RL) for enhanced reasoning. However, existing methods still face critical limitations, including the lack of low-level visual information and effective visual feedback. To address these problems, this paper proposes a unified multimodal interleaved reasoning framework \\textbf{ForeSight}, which enables VLMs to \\textbf{See Further} with low-level visual cues and \\textbf{Think Deeper} with effective visual feedback. First, it introduces a set of low-level visual tools to integrate essential visual information into the reasoning chain, mitigating the neglect of fine-grained visual features. Second, a mask-based visual feedback mechanism is elaborated to incorporate visual reflection into the thinking process, enabling the model to dynamically re-examine and update its answers. Driven by RL, ForeSight learns to autonomously decide on tool invocation and answer verification, with the final answer accuracy as the reward signal. To evaluate the performance of the proposed framework, we construct a new dataset, Character and Grounding SalBench (CG-SalBench), based on the SalBench dataset. Experimental results demonstrate that the ForeSight-7B model significantly outperforms other models with the same parameter scale, and even surpasses the current SOTA closed-source models on certain metrics."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+    "authors": "Yiming Zhang, Jiacheng Chen, Jiaqi Tan, Yongsen Mao, Wenhu Chen, Angel X. Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24300v1",
+    "source": "arXiv",
+    "abstract": "Current evaluations of spatial intelligence can be systematically invalid under modern vision-language model (VLM) settings. First, many benchmarks derive question-answer (QA) pairs from point-cloud-based 3D annotations originally curated for traditional 3D perception. When such annotations are treated as ground truth for video-based evaluation, reconstruction and annotation artifacts can miss objects that are clearly visible in the video, mislabel object identities, or corrupt geometry-dependent answers (e.g., size), yielding incorrect or ambiguous QA pairs. Second, evaluations often assume full-scene access, while many VLMs operate on sparsely sampled frames (e.g., 16-64), making many questions effectively unanswerable under the actual model inputs. We improve evaluation validity by introducing ReVSI, a benchmark and protocol that ensures each QA pair is answerable and correct under the model's actual inputs. To this end, we re-annotate objects and geometry across 381 scenes from 5 datasets to improve data quality, and regenerate all QA pairs with rigorous bias mitigation and human verification using professional 3D annotation tools. We further enhance evaluation controllability by providing variants across multiple frame budgets (16/32/64/all) and fine-grained object visibility metadata, enabling controlled diagnostic analyses. Evaluations of general and domain-specific VLMs on ReVSI reveal systematic failure modes that are obscured by prior benchmarks, yielding a more reliable and diagnostic assessment of spatial intelligence."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "SVOM/VT: Flight Model Verification and Pre-launch Testing",
+    "authors": "Jian Zhang, Xue-Wu Fan, Gang-Yi Zou, Yu-Lei Qiu, Wei Gao, Wei Wang, Chen-Jie Wang, Ning Qi, Jin-Song Deng, Li-Jun Dan, Yue Pan, Chao Huang, Yun-Fei Du, Guo-Rui Ren, Zhong-Han Sun, Feng-Tao Wang, Wei Li, Bao-Peng Li, Chao Shen, Peng-Fei Chen, Kun Chen, Hui Zhao, Ming Chang, Tao Wang, Li-Pin Xin, Jian-Yan Wei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24268v1",
+    "source": "arXiv",
+    "abstract": "This paper presents pre-launch testing and calibration results for the SVOM/VT (Space-based Variable Objects Monitor, Visible Telescope) Flight Model (FM), validating its performance under simulated space conditions through thermal vacuum cycling, energy concentration analysis, stray light suppression, and CCD/electronics calibrations (gain, noise, quantum efficiency). The results confirm full compliance with design requirements: stray light suppression achieves point-source transmittance $<10^{-7}$ at $30^\\circ$ off-axis, thermal control maintains stable CCD temperatures ($-75^\\circ$C for the red channel, $-65^\\circ$C for the blue channel), and detection sensitivity meets the limiting magnitude of 22.50 (SNR $>$ 3 with 300 seconds exposure). Early in-orbit tests further validate performance, yielding limiting magnitudes of 22.70 (V-band, red) and 22.78 (blue), consistent with pre-launch specifications."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Graph-augmented Segmentation of Complex Shapes in Laser Powder bed Fusion for Enhanced In Situ Inspection",
+    "authors": "Stefano Raimondo, Matteo Bugatti, Marco Grasso",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24234v1",
+    "source": "arXiv",
+    "abstract": "The technological maturity of in situ inspection and monitoring methods in additive manufacturing is steadily increasing, enabling more efficient and practical qualification procedures. In this context, image segmentation of powder bed images in Laser Powder Bed Fusion (L-PBF) has been investigated by various authors, leveraging both edge detection and machine learning approaches to identify deviations from nominal geometry. Despite these developments, several challenges remain, including the sensitivity of segmentation performance to industrial illumination conditions and layer-to-layer variability in pixel intensity patterns. The study addresses these limitations by proposing a graph-augmented segmentation approach. The underlying principle consists of preserving the geometrical information at a global level rather than at pixel-wise level, modeling dependencies and relational information among spatial regions with a Graph Neural Network bottleneck embedded into a U-Net architecture. This allows enhancing the consistency and accuracy of the geometry reconstruction in the presence of spatial and layer-wise photometric variability systematically faced in real data. The method is evaluated against benchmark techniques for the in situ reconstruction of lattice structures produced by L-PBF, demonstrating its potential as a scalable solution for robust in situ inspection and geometric verification in industrial environments."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "RefEvo: Agentic Design with Co-Evolutionary Verification for Agile Reference Model Generation",
+    "authors": "Yifan Zhang, Jianmin Ye, Jiahao Yang, Xi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24218v1",
+    "source": "arXiv",
+    "abstract": "As the complexity of System-on-Chip (SoC) designs grows, the shift-left paradigm necessitates the rapid development of high-fidelity reference models (typically written in SystemC) for early architecture exploration and verification. While Large Language Models (LLMs) show promise in code generation, their application to hardware modeling faces unique challenges: (1) Rigid, static workflows fail to adapt to varying design complexity, causing inefficiency; (2) Context window overflow in multi-turn interactions leads to catastrophic forgetting of critical specifications; and (3) the Coupled Validation Failure problem--where generated Testbenches (TBs) incorrectly validate flawed models due to correlated hallucinations--severely undermines reliability. To address these limitations, we introduce RefEvo, a dynamic multi-agent framework designed for agile and reliable reference modeling. RefEvo features three key innovations: (1) A Dynamic Design Planner that autonomously decomposes design specifications and constructs tailored execution workflows based on semantic complexity; (2) A Co-Evolutionary Verification Mechanism, which employs a Dialectical Arbiter to simultaneously rectify the model and verification logic against the specification (Spec) oracle, effectively mitigating false positives; and (3) A Spec Anchoring Strategy for lossless context compression. Evaluated on a diverse benchmark of 20 hardware modules, RefEvo achieves a 95% pass rate, outperforming static baselines by a large margin. Furthermore, our context optimization reduces token consumption by an average of 71.04%, achieving absolute savings of over 70,000 tokens per session for complex designs while maintaining 100% specification recall."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Agentic Witnessing: Pragmatic and Scalable TEE-Enabled Privacy-Preserving Auditing",
+    "authors": "Antony Rowstron",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24203v1",
+    "source": "arXiv",
+    "abstract": "Auditing the semantic properties of proprietary data creates a fundamental tension: verification requires transparent access, while proprietary rights demand confidentiality. While Zero-Knowledge Proofs (ZKPs) ensure privacy, they are typically limited to precise algebraic constraints and are ill-suited for verifying qualitative, unstructured properties, such as the logic within a codebase. We propose {\\em Agentic Witnessing}, a framework that moves verification from attested execution to {\\em attested reasoning}. The system is composed of three agents: a Verifier (who wants to check properties of a dataset), a Prover (who owns the dataset) and an Auditor (that inspects the dataset). The Verifier is allowed to ask a limited number of simple binary true/false questions to the auditor. By isolating an LLM-based Auditor within a Trusted Execution Environment (TEE), the system enables the Verifier to query a Prover's private data via simple Boolean queries, without exposing the raw dataset. The Auditor uses the Model Context Protocol (MCP) to dynamically inspect the target dataset, producing a yes/no verdict accompanied by a cryptographic transcript: a signed hash chain binding the reasoning trace to both the original dataset and the TEE's hardware root of trust. We demonstrate this architecture by automating the artifact evaluation process for 21 peer-reviewed computer science papers with released codebases on GitHub (e.g. Does the codebase implement the system described in the paper?). We verified five high-level properties of these codebases described in the corresponding publications, treating the source code as private. Our results show that TEE-enabled agentic auditing provides a mechanism for privacy-preserving oversight, effectively decoupling qualitative verification from the need for data disclosure."
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Seeing Is No Longer Believing: Frontier Image Generation Models, Synthetic Visual Evidence, and Real-World Risk",
+    "authors": "Shuai Wu, Xue Li, Yanna Feng, Yufang Li, Zhijun Wang, Ran Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2604.24197v1",
+    "source": "arXiv",
+    "abstract": "Frontier image generation has moved from artistic synthesis toward synthetic visual evidence. Systems such as GPT Image 2, Nano Banana Pro, Nano Banana 2, Grok Imagine, Qwen Image 2.0 Pro, and Seedream 5.0 Lite combine photorealistic rendering, readable typography, reference consistency, editing control, and in several cases reasoning or search-grounded image construction. These capabilities create large benefits for design, education, accessibility, and communication, yet they also weaken one of society's most common trust shortcuts: the belief that a plausible picture is a reliable record. This paper provides a source-grounded technical and policy analysis of synthetic visual risk. We first summarize the public capabilities of recent image models, then analyze public incidents involving fake crisis images, celebrity and public-figure imagery, medical scans, forged-looking documents, synthetic screenshots, phishing assets, and market-moving rumors. We introduce a capability-weighted risk framework that links model affordances to real-world harm in finance, medicine, news, law, emergency response, identity verification, and civic discourse. Our findings show that risk is driven less by photorealism alone than by the convergence of realism, legible text, identity persistence, fast iteration, and distribution context. We argue for layered control: model-side restrictions, cryptographic provenance, visible labeling, platform friction, sector-grade verification, and incident response. The paper closes with practical recommendations for model providers, platforms, newsrooms, financial institutions, healthcare systems, legal organizations, regulators, and ordinary users."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "LLM in the Construction of Tonal Dictionaries",
+    "authors": "Dmitry Nerusskov, Andrey Philippovich",
+    "publish": "2026 International Russian Smart Industry Conference (SmartIndustryCon)",
+    "url": "https://doi.org/10.1109/smartindustrycon68821.2026.11493071",
+    "source": "IEEE",
+    "abstract": "Sentiment analysis (SA) of user opinions has long been a subject of research in the field of natural language science (NLP), moving beyond academic experiments to production applications. With the advent and widespread development of large language models (LLM), SA problems are gaining significant research potential, namely, how language models determine the sentiment of a statement. While new language models are emerging and existing ones are being modernized, the question of how different language models can cope with the task of assessing tonal resources and constructing their own remains unclear. The goal of this article is to conduct a comprehensive study of the capabilities of different LLMs in generating sentiment scores in Russian, as well as constructing sentiment dictionaries, and comparing their results with the already annotated RuSentiLex 2017 dictionary. We will compare the extraction of sentiment scores for the same list of words using the same query protocol (prompt). The results of the work will demonstrate systematic differences, possible instability and bias, as well as LLM-labeled tonal dictionaries."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Efficient LLM Workload Hosting at the Telco Edge",
+    "authors": "Paul Veitch, Arsham Farshad, Adam Morsman",
+    "publish": "2026 29th Conference on Innovation in Clouds, Internet and Networks (ICIN)",
+    "url": "https://doi.org/10.1109/icin69025.2026.11481832",
+    "source": "IEEE",
+    "abstract": "Network operators are gradually evolving “telco cloud” infrastructure to deeper edge locations to service a range of network-oriented workloads. To maximise the return-of-investment of such edge compute, additional workload and application types can be considered to run on such infrastructure. Large Language Model (LLM) inference is one such candidate application, however LLMs are potentially very compute resource intensive, and the way in which they consume resources must be subject to careful attention. Achieving a suitable balance of power and performance for such workloads within what may be a particularly constrained resource envelope at the edge, is a significant challenge. This challenge must also consider actual performance targets of the LLM workload itself: is “good enough” performance acceptable if it reduces costs? This may be achievable in cases where more standard CPU-based computing hardware is used in favour of expensive GPUs. Our experiments reveal that although GPU-based cases perform best, there were some very respectable CPU-based results when CPU pinning to the same processor socket was involved; 18 Tokens Per Second and sub-second Time-to-First Token values were observed. We outline the rationale not just for multi-tenant LLM instances to maximise edge server efficiency, but also the prospect of differentiated LLM performance based on allocated resources."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Token Cost Optimization in an LLM Agent for JSON-Based System Modeling from Dialogue History",
+    "authors": "Saveliy Lavrentiev, Alexey Dukhanov",
+    "publish": "2026 International Russian Smart Industry Conference (SmartIndustryCon)",
+    "url": "https://doi.org/10.1109/smartindustrycon68821.2026.11493004",
+    "source": "IEEE",
+    "abstract": "This paper considers an interactive LLM-based agent designed to construct a formal JSON model of a target system from a multi-turn dialogue with a user. For such an agent, we formulate a context management problem with an explicit separation between the textual dialogue history and the structured system state. We propose a cost-aware algorithm that automatically decides when to compress a part of the dialogue into an updated JSON state and then rely on this state instead of repeatedly sending a growing history fragment. The key idea is to compare the accumulated cost of transmitting the uncompressed dialogue segment with the estimated cost of a single state-update step, including both input and output tokens; an update is performed only when this ratio becomes economically favorable. The algorithm is implemented in a prototype agent based on the GigaChat model and evaluated on three modeling scenarios: client flows in an online school, financial flows in machine manufacturing, and a predator–prey population model. Across dialogues of length 20, 32, and 50 turns, the experiments demonstrate a reduction in total token consumption from 19.63 % to 59.54 % compared to a non-optimized baseline, while preserving the dialogue trajectory and perceived answer quality."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "An Uncertainty-Gated Neuro-Symbolic Framework for High-Coverage Topic Modeling and Trend Analysis in Scholarly Corpora with LLM Assistance",
+    "authors": "Onur Demir, Murat Saran",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3687277",
+    "source": "IEEE",
+    "abstract": "The rapid growth of scientific literature demands scalable methods that can track research evolution, yet density-based topic models such as BERTopic systematically exclude low-density documents as outliers, obscuring emerging and niche research areas.We propose a <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Neuro-Symbolic, Uncertainty-Gated Framework</i> that recovers these outliers through geometric centroid reassignment and an ontological entropy gate derived from the Computer Science Ontology (CSO), routing only genuinely ambiguous cases to a local Large Language Model (Qwen2.5-14B via Ollama, temperature=0.0). A controlled ablation study demonstrates that centroid reassignment provides the largest coverage gain (+22.9 percentage points (pp)), the CSO entropy gate preserves niche-topic integrity, and selective LLM routing adds an additional +5.9 pp. On 12,535 Turkish computer engineering theses (2001–2025), the full pipeline raises coverage from 74.6% to 95.4% while maintaining competitive coherence (NPMI=0.100) and stability (AMI=0.832), at ∼15×fewer LLM calls than a fully generative Pure-LLM baseline. Mann–Kendall trend tests on the high-coverage series identify 69 statistically significant trends (FDR <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">q</i> < 0.05), and cross-corpus validation on 200K arXiv CS abstracts confirms that the architecture generalizes beyond the primary dataset. The framework offers a reproducible, cost-effective solution for monitoring scientific developments in rapidly evolving fields."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Multi-Layer Algorithmic Framework with LLM Integration for Typosquatting and Phishing Domain Analysis",
+    "authors": "Doğukan Kurnaz, İlknur Köseoğlu Sarı, Engin Zeydan",
+    "publish": "2026 29th Conference on Innovation in Clouds, Internet and Networks (ICIN)",
+    "url": "https://doi.org/10.1109/icin69025.2026.11481803",
+    "source": "IEEE",
+    "abstract": "Typosquatting and phishing attacks are increasingly sophisticated cyber threats that exploit user typing errors and social engineering techniques. With the advent of Large Language Models (LLMs), attackers can now generate phishing content comparable to that produced by human experts, achieving click-through rates of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{5 4 - 5 6 \\%}$</tex>. This paper proposes a systematic evaluation framework for analyzing emerging AIpowered attack vectors and developing robust countermeasures. The proposed comprehensive detection framework, TypoGuard, addresses these challenges through automated variant generation, multi-dimensional threat analysis, and adaptive risk scoring. The system incorporates a modular generation engine implementing twelve variation algorithms, including bitsquatting, homoglyph substitution, internationalized domain names (IDN) manipulation, and character-level transformations, alongside a multi-dimensional analysis pipeline that integrates DNS resolution, WHOIS registration data analysis, MX record validation, geographic IP analysis, Trend Micro Locality Sensitive Hash (TLSH)-based HTML similarity computation, and GPT-4o-powered automated screenshot comparison. Empirical validation on 1,440 real domain variants across five major brands demonstrates 92% detection accuracy, a <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$30-40 \\%$</tex> reduction in false positives, and an 80% reduction in manual analysis time."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "UTAG: Leveraging LLM as a Unified Embedding Generator for Text-Attributed Graphs",
+    "authors": "Mingqian Ding, Jianjun Li, Zhiyuan Ma, Liwei Zhang, Wenqi Yang",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792186",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "C-Shield: LLM-Enhanced Cybersecurity Platform for Intrusion Detection in Kubernetes Clusters",
+    "authors": "Sarantis Kalafatidis, Antonis Villios, Antonis Garyfallou, Nikos Papageorgopoulos, Giannis Ledakis",
+    "publish": "2026 29th Conference on Innovation in Clouds, Internet and Networks (ICIN)",
+    "url": "https://doi.org/10.1109/icin69025.2026.11481833",
+    "source": "IEEE",
+    "abstract": "A holistic solution for intrusion detection in Kubernetes clusters is presented, combining multi-layer monitoring with selective LLM-based analysis. Statistical and rule-based detectors first identify suspicious activity and selectively trigger on-demand LLM reasoning to estimate threat probability and classify attack behavior, producing natural language explanations. The system is validated using realistic attack scenarios such as network flooding, port scanning, authentication abuse, and privilege escalation on vulnerable containerized services, demonstrating how cross-layer threat indicators and selective LLM reasoning support accurate security incident interpretation."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "An LLM-Driven Framework for Image-Based Mininet Topology Generation with Intelligent Security Response",
+    "authors": "Sheng-Xuan Lin, Cheng-Feng Hung, Chih-Heng Ke",
+    "publish": "2026 29th Conference on Innovation in Clouds, Internet and Networks (ICIN)",
+    "url": "https://doi.org/10.1109/icin69025.2026.11481799",
+    "source": "IEEE",
+    "abstract": "In response to the increasing use of automated network operations and intelligent cybersecurity management, this study presents an interactive network management system that integrates large language models with an agent-based architecture. The system combines simulation deployment, anomaly monitoring, and human-in-the-loop decision workflows in a unified framework. It accepts network topology diagrams in various formats, uses an LLM to interpret nodes and links, and converts them into a corresponding Mininet simulation environment. To support dynamic task execution, the system includes an intelligent agent that invokes MCP-based tools and connects to Telegram as a remote interactive interface for queries, control actions, and decision feedback. For the security evaluation, we simulate multiple attack scenarios and incorporate a traffic monitoring mechanism. When the system detects abnormal behavior, the agent immediately notifies the administrator and assists in selecting appropriate countermeasures, such as blocking or ignoring the threat. Experimental results show that the system provides an end-to-end workflow, from topology interpretation to environment deployment, and from event detection to interactive response. These results demonstrate the feasibility and extensibility of the proposed design for intelligent network maintenance and cyber threat mitigation."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Dynamic LLM Node Selection in AIoT Networks: A Compatibility-Driven Diffusion Reinforcement Learning Approach",
+    "authors": "Dan Wang, Chi Cao, Bin Song",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3687224",
+    "source": "IEEE",
+    "abstract": "The growing complexity of Artificial Internet of Things (AIoT) applications, driven by massive data generation and intricate interaction demands, necessitates intelligent decision-making that surpasses basic automation. While traditional machine learning is already integrated into edge devices, the evolving AIoT paradigm still faces severe challenges in complex tasks. Large language models (LLMs) emerge as a promising solution for diverse AIoT tasks, yet their deployment on resource-constrained edge networks faces two major challenges: heterogeneous resource limitations and the complexity of dynamic model selection. To address these issues, we propose an edge computing framework that leverages a compatibility evaluation mechanism and a diffusion-based deep reinforcement learning (DRL) algorithm for dynamic LLM service node selection. This approach enhances deployment efficiency and adaptability in heterogeneous environments. Our diffusion-based DRL algorithm continuously learns from environmental states to make robust, real-time selection decisions, assigning each task to the most suitable LLM instance to maximize long-term task completion quality (TCQ). Experimental results demonstrate that our algorithm significantly outperforms baseline methods in TCQ, convergence speed, and stability. Furthermore, sensitivity and robustness analyses demonstrate the effectiveness of the proposed method under resource fluctuations, varying node scales, and different reward preferences."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Pay for The Second-Best Service: A Game-Theoretic Approach against Dishonest LLM Providers",
+    "authors": "Yuhan Cao, Yu Wang, Sitong Liu, Miao Li, Yixin Tao, Tianxing He",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792446",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "HyMiRec: A Hybrid Multi-interest Learning Framework for LLM-based Sequential Recommendation",
+    "authors": "Jingyi Zhou, Cheng Chen, Kai Zuo, Manjie Xu, Zhendong Fu, Yibo Chen, Xu Tang, Yao Hu",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792217",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study",
+    "authors": "Amr Mohamed, Maram Assi, Mariam Guizani",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3809494",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Field Matters: A Lightweight LLM-enhanced Method for CTR Prediction",
+    "authors": "Yu Cui, Feng Liu, Jiawei Chen, Xingyu Lou, Changwang Zhang, Jun Wang, Yuegang Sun, Xiaohu Yang, Can Wang",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792387",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Disentangled Graph LLM for Molecule Graph Editing under Distribution Shifts",
+    "authors": "Yang Yao, Xin Wang, Yuan Meng, Zeyang Zhang, Hong Mei, Wenwu Zhu",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792464",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "EdgeGen: Efficient LLM-Empowered Model Generation with Quantization-Aware NAS",
+    "authors": "Yingqi Peng, Wenhao Zhou, Kaijie Gong, Yang Liu, Yi Gao, Wei Dong",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792394",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "HeteroSim: Towards High-Fidelity Heterogeneous LLM Training Simulation on GPUs",
+    "authors": "Xiaofei Yue, Fangming Zhao, Fulun Ye, Jiongchi Yu, Zhaoxuan Li, Tingting Li, Ziming Zhao, Jianwei Yin",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792254",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "TGNN: Enhancing Pixel Tracking Detection via LLM-driven Annotation and GAT-powered Structural Representation",
+    "authors": "Shenping Xiong, Xutong Wang, Ze Jin, Xinyu Liu, Haoqiang Wang, Zhen Chen, Ru Tan, Qixu Liu",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792149",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Unveiling the Resilience of LLM-Enhanced Search Engines against Black-Hat SEO Manipulation",
+    "authors": "Pei Chen, Geng Hong, Xinyi Wu, Mengying Wu, Zixuan Zhu, Mingxuan Liu, Baojun Liu, Mi Zhang, Min Yang",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792399",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-4-27",
+    "title": "SRC-TDNN: Split Residual Collaborative Time Delay Neural Network for Short-Speech Speaker Verification",
+    "authors": "Fei Deng, Lihong Deng, Peifan Jiang",
+    "publish": "IEEE Signal Processing Letters",
+    "url": "https://doi.org/10.1109/lsp.2026.3687789",
+    "source": "IEEE",
+    "abstract": "Systems based on Time Delay Neural Networks (TDNNs) have achieved remarkable success in speaker verification due to their favorable balance between accuracy and computational cost. However, under short-utterance conditions, two limitations arise: limited information hinders the extraction of discriminative speaker features, and the inherent one-dimensional (1D) convolutions lack translation equivariance to frequency shifts, restricting robustness and feature utilization. To address these issues, we propose SRC-TDNN (Split Residual Collaborative TDNN), a lightweight architecture that integrates a two-dimensional (2D) convolutional component with a TDNN component. The 2D convolutional component employs parallel split residual convolutional (SplitResConv) blocks to capture multi-scale time–frequency features, followed by a Fourier Fusion Module (FFM) to enhance feature discriminability. By sharing weights along the frequency axis, this component achieves translation equivariance, alleviating the impact of frequency shifts in short utterances. The TDNN component further aggregates the fused features along the temporal axis while inheriting the translation equivariance from the 2D component. It also adopts parallel 1D SplitResConv blocks to capture both short-term phonetic details and long-term speaker characteristics across multiple temporal scales. A multi-branch architecture is employed throughout, enabling both network-level ( macro) and block-level (micro) multi-scale modeling to better exploit limited information. Evaluations on four test sets with varying utterance lengths demonstrate that the proposed method achieves the best overall performance, particularly under short-utterance conditions. Compared with ECAPA-TDNN, SRC-TDNN reduces the number of parameters by only 0.4 M while achieving at least a 30% relative improvement."
+  },
+  {
+    "date": "2026-4-27",
+    "title": "Dynamic Routing-Based Adaptive Multi-LLM Collaboration: A Unified Recommendation Framework with Decision Knowledge Complementation",
+    "authors": "Jiale Huang, Yingyuan Xiao, Likang Wu, Xu Cheng, Wengguang Zheng, Qingbo Hao, Ming He, Hongke Zhao",
+    "publish": "Proceedings of the ACM Web Conference 2026",
+    "url": "https://doi.org/10.1145/3774904.3792261",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
