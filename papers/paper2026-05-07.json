@@ -1,0 +1,353 @@
+[
+  {
+    "date": "2026-05-07",
+    "title": "Beyond Negative Rollouts: Positive-Only Policy Optimization with Implicit Negative Gradients",
+    "authors": "Mingwei Xu, Hao Fang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06650v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR), due to the deterministic verification, becomes a dominant paradigm for enhancing the reasoning ability of large language models (LLMs). The community witnesses the rapid change from the Proximal Policy Optimization (PPO) to Group Relative Policy Optimization (GRPO), in which GRPO reduces the complicated advantage estimation with simple estimation over grouped positive and negative rollouts. However, we note that negative rollouts may admit no gradation of failure severity, and the combinatorial vastness makes penalizing a few sampled negatives unlikely to cover a meaningful reward signal under sparse binary rewards. In this work, we propose Positive-Only Policy Optimization (POPO), a novel RLVR framework in which learning can occur exclusively via online positive rollouts. Specifically, POPO utilizes bounded importance sampling over the positive rollout set. Thus, no disjoint negative rollouts are used for the gradient guidance. We show that implicit negative gradients can emerge naturally through reinforcing the positive probability via rollouts redistribution. Next, POPO stabilizes the policy optimization through two mechanisms. First, it applies a siamese policy network with a momentum-based adaptation law for stabilized policy evolution. Second, we replace the KL-divergence with a bounded similarity penalty term in the siamese representation space. We conduct extensive experiments using publicly available, well-established text-LLM models, e.g., the Qwen family, across all-level mathematical benchmarks. Our experiment demonstrates that POPO achieves performance comparable to, or even superior to GRPO. Notably, we show that POPO can achieve 36.67% in AIME 2025 with Qwen-Math-7B, outperforming GRPO 30.00%. Our ablation and sweep studies further illustrate the necessity and robustness of POPO components."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "AI CFD Scientist: Toward Open-Ended Computational Fluid Dynamics Discovery with Physics-Aware AI Agents",
+    "authors": "Nithin Somasekharan, Rabi Pathak, Manushri Dhanakoti, Tingwen Zhang, Ling Yue, Andy Zhu, Shaowu Pan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06607v1",
+    "source": "arXiv",
+    "abstract": "Recent LLM-based agents have closed substantial portions of the scientific discovery loop in software-only machine-learning research, in chemistry, and in biology. Extending the same loop to high-fidelity physical simulators is harder, because solver completion does not imply physical validity and many failure modes appear only in field-level imagery rather than in solver logs. We present AI CFD Scientist, an open-source AI scientist for computational fluid dynamics (CFD) that, to our knowledge, is the first to span literature-grounded ideation, validated execution, vision-based physics verification, source-code modification, and figure-grounded writing within a single inspectable workflow. Three coupled pathways cover parameter sweeps within a fixed solver, case-local C++ library compilation for new physical models, and open-ended hypothesis search against a reference comparator, all running on OpenFOAM through Foam-Agent. At the center of the framework is a vision-language physics-verification gate that inspects rendered flow fields before any result is accepted, rerun, or written into a manuscript. On five tasks under a shared GPT-5.5 backbone, AI CFD Scientist autonomously discovers a Spalart-Allmaras runtime correction that reduces lower-wall Cf RMSE against DNS by 7.89% on the periodic hill at Reh=5600; under matched LLM cost, two strong general AI-scientist baselines (ARIS, DeepScientist) execute partial CFD workflows but lack the domain-specific validity gates needed to convert runs into defensible scientific claims; and a controlled planted-failure ablation shows that the vision-language gate detects 14 of 16 silent failures missed by solver-level checks. Code, prompts, and run artifacts are released at https://github.com/csml-rpi/cfd-scientist."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Practical Log-Depth Quantum State Preparation and Circuit Verification via Tree Tensor Network Compilation",
+    "authors": "Angus Mingare, Peter V. Coveney",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06579v1",
+    "source": "arXiv",
+    "abstract": "Matrix product states provide efficient classical descriptions of quantum systems that may be useful as reference states for quantum algorithms such as quantum phase estimation and quantum-selected configuration interaction. Shallow circuit constructions for loading matrix product states onto quantum computers is necessary for this to be practical on near-term hardware. We present a decomposition of matrix product states to log-depth quantum circuits via a simple tree tensor network renormalisation procedure. Our method exposes an explicit parameter which can be used to trade a small amount of fidelity for large savings in circuit depth. We extend this decomposition to the case of matrix product operators allowing us to construct log-depth and ancilla-free circuits to calculate overlaps of the form $\\left |\\langleφ|U|ψ\\rangle\\right |^2$. In particular, we demonstrate an interpretation of these circuits as \\emph{verifier circuits} with application to circuit-level device calibration."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "John Equation Constraints for the 3D X-ray Transform under a Cylindrical-Spherical Mixed Parameterization: Theoretical Derivation, Experimental Validation, and Application Analysis",
+    "authors": "Shaojie Tang, Zhiwei Qiao, Xuanqin Mou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06558v1",
+    "source": "arXiv",
+    "abstract": "The John equation serves as the mathematical foundation of the X-ray transform, describing the intrinsic compatibility conditions that projection data must satisfy. In this paper, within three-dimensional (3D) Euclidean space, an innovative mixed parameterization scheme is adopted: the source point is represented using cylindrical coordinates a=(scosθ,ssinθ,z_0), and the ray direction is represented using spherical coordinates d=\\r{ho}(-cos\\b{eta}sinα,cos\\b{eta}cosα,sin\\b{eta}). The specific form of the John equation under this geometric parameterization is systematically derived. Through detailed partial differential operator transformations, application of -1 homogeneity, and algebraic simplification, a complete system of constraint equations is obtained. In particular, under the special configurations where the source point direction aligns with the detector direction (α = θ) and the ray has no tilt (\\b{eta} = 0), the constraint equations simplify to differential relations with clear physical meanings. This paper not only establishes a bridge between abstract mathematical theory and concrete imaging geometry, but also provides rigorous mathematical tools for data consistency verification, geometric parameter calibration, and incomplete-data reconstruction in 3D Computed Tomography (CT) systems. The research results are of great significance for advancing the mathematical theory and practical applications of CT imaging."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Agentic AIs Are the Missing Paradigm for Out-of-Distribution Generalization in Foundation Models",
+    "authors": "Xin Wang, Haibo Chen, Wenxuan Liu, Wenwu Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06522v1",
+    "source": "arXiv",
+    "abstract": "Foundation models (FMs) are increasingly deployed in open-world settings where distribution shift is the rule rather than the exception. The out-of-distribution (OOD) phenomena they face -- knowledge boundaries, capability ceilings, compositional shifts, and open-ended task variation -- differ in kind from the settings that have shaped prior OOD research, and are further complicated because the pretraining and post-training distributions of modern FMs are often only partially observed. Our position is that OOD for foundation models is a structurally distinct problem that cannot be solved within the prevailing model-centric paradigm, and that agentic systems constitute the missing paradigm required to address it. We defend this claim through four steps. First, we give a stage-aware formalization of OOD that accommodates partially observed multi-stage training distributions. Second, we prove a parameter coverage ceiling: there exist practically relevant inputs that no model-centric method (training-time or test-time) can handle within tolerance $\\varepsilon$, for reasons intrinsic to parameter-based representation. Third, we characterize agentic OOD systems by four structural properties -- perception, strategy selection, external action, and closed-loop verification -- and show that they strictly extend the reachable set beyond the ceiling. Fourth, we respond to seven counterarguments, conceding two, and outline a research agenda. We do not claim that agentic methods subsume model-centric ones; we argue that the two are complementary, and that progress on FM-OOD requires explicit recognition of the agentic paradigm as a first-class research direction."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Autonomous Adversary: Red-Teaming in the age of LLM",
+    "authors": "Mohammad Mamun, Mohamed Gaber, Scott Buffett, Sherif Saad",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06486v1",
+    "source": "arXiv",
+    "abstract": "Language Model Agents (LMAs) are emerging as a powerful primitive for augmenting red-team operations. They can support attack planning, adversary emulation, and the orchestration of multi-step activity such as lateral movement, a core enabling capability of advanced persistent threat (APT) campaigns. Using frameworks such as MITRE ATT&CK, we analyze where these agents intersect with core offensive functions and assess current strengths and limitations of LMAs with an emphasis on governance and realistic evaluation. We benchmark LMAs across two lateral-movement scenarios in a controlled adversary-emulation environment, where LMAs interact with instrumented cyber agents, observe execution artifacts, and iteratively adapt based on environmental feedback. Each scenario is formalized as an ordered task chain with explicit validation predicates, leveraging an LLM-as-a-Judge paradigm to ensure deterministic outcome verification. We compare three operational modalities: fully autonomous execution, self-scaffolded planning, and expert-defined action plans. Preliminary findings indicate that expert-defined action plans yield higher task-completion rates relative to other operational modes. However, failure remains frequent across all modalities, largely attributable to brittle command invocation, environmental and deployment instability, and recurring errors in credential management and state handling."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "ReasonSTL: Bridging Natural Language and Signal Temporal Logic via Tool-Augmented Process-Rewarded Learning",
+    "authors": "Bowen Ye, Zhijian Li, Junyue Huang, Junkai Ma, Xiang Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06483v1",
+    "source": "arXiv",
+    "abstract": "Signal Temporal Logic (STL) is an expressive formal language for specifying spatio-temporal requirements over real-valued, real-time signals. It has been widely used for the verification and synthesis of autonomous systems and cyber-physical systems. In practice, however, users often express their requirements in natural language rather than in structured STL formulas, making natural-language-to-STL translation a critical yet challenging task. Manual specification requires temporal-logic expertise and cannot scale, while prompting commercial LLM APIs incurs substantial token costs and may expose sensitive system requirements to third-party services, raising privacy concerns for industrial deployment. To address these challenges, we present \\textsc{ReasonSTL}, a tool-augmented framework that adapts local open-source language models for natural-language-to-STL generation. \\textsc{ReasonSTL} decomposes the translation process into explicit reasoning, deterministic tool calls, and structured formula construction. We further introduce process-rewarded training to supervise both tool-use trajectories and final formulas, together with \\textsc{STL-Bench}, a bilingual, computation-aware benchmark grounded in real-world signals. Experiments show that a 4B model trained with \\textsc{ReasonSTL} achieves state-of-the-art performance in both automatic metrics and human evaluations, demonstrating that \\textsc{ReasonSTL} provides a transparent, low-cost, and privacy-preserving alternative for formal specification drafting."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Knowledge Graphs, the Missing Link in Agentic AI-based Formal Verification",
+    "authors": "Vaisakh Naduvodi Viswambharan, Keerthan Kopparam Radhakrishna, Deepak Narayan Gadde, Aman Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06434v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in Large Language Models (LLMs) have enabled workflows that generate SystemVerilog Assertions (SVAs) from natural-language specifications, with the potential to accelerate Formal Verification (FV). However, high-quality assertion synthesis remains challenging because specifications are often ambiguous or incomplete and critical micro-architectural details reside in the Register Transfer Level (RTL). Many existing approaches treat the specification and RTL as loosely structured text, which weakens specification-to-RTL grounding and leads to semantic mismatches and frequent syntax failures during formal parsing and elaboration. This work addresses these limitations with a verification-centric Knowledge Graph (KG) constructed from structured Intermediate Representations (IRs) extracted from the specification, RTL, and formal-tool feedback, including syntax diagnostics, Counterexamples (CEXs), and coverage reports. The KG links requirements, design hierarchy, signals, assumptions, and properties to provide traceable, design-grounded context for generation. A multi-agent workflow queries and updates this KG to generate SVAs and to drive three refinement loops: syntax repair guided by tool diagnostics, CEX-guided correction using trace links, and coverage-directed property augmentation. Evaluation across seven benchmark designs indicates that KG-based context retrieval improves specification-to-RTL grounding and consistently produces compilable SVAs with low syntax-repair overhead. The approach achieves formal coverage ranging from 78.5% to 99.4%, though convergence exhibits design dependence with complex temporal and arithmetic reasoning remaining challenging for current LLM capabilities."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "From 124 Million Tokens to 1,021 Neologisms: A Large-Scale Pipeline for Automatic Neologism Detection",
+    "authors": "Diego Rossini, Lonneke van der Plas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06426v1",
+    "source": "arXiv",
+    "abstract": "We present a scalable, modular pipeline for automatic neologism detection that combines rule-based filtering with LLM classification. The pipeline is grounded in two complementary word-formation frameworks, grammatical and extra-grammatical morphology, which jointly define the scope of what counts as a neologism and inform a four-class classification scheme (neologism, entity, foreign, none). While designed to be modular and transferable at the architectural level, the pipeline is instantiated on 527 million English-language Reddit posts spanning 2005-2024. From this corpus, we extract 124.6 million unique tokens and reduce them by over 99.99% to yield 1,021 neologism candidates, a set small enough for manual expert verification. Multiple LLMs independently classify each candidate via majority vote, with a final verification step, revealing substantial cross-model disagreement and highlighting the challenge of operationalizing neologism detection at scale. Manual annotation of all 1,021 candidates confirms that 599 (58.7%) are genuine lexical innovations. The pipeline code, vocabulary compilation scripts, and the annotated candidate list are available at https://github.com/DiegoRossini/neologism-pipeline."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "PACE: Prune-And-Compress Ensemble Models",
+    "authors": "Fabian Akkerman, Julien Ferry, Théo Guyard, Thibaut Vidal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06278v1",
+    "source": "arXiv",
+    "abstract": "Ensemble models achieve state-of-the-art performance on prediction tasks, but usually require aggregating a large number of weak learners. This can hinder deployment, interpretability, and downstream tasks such as robustness verification. Remedies to this issue fall into two main camps: pruning, which discards redundant learners, and compression, which generates new ones from scratch. We introduce PACE, a framework that interleaves these paradigms in a two-phase strategy. First, new learners are actively generated via a theoretically grounded procedure to enhance the diversity of the initial ensemble. When no more relevant learners can be found, a second phase of pruning is performed on this enriched ensemble. During both operations, PACE allows fine control on the faithfulness to the original ensemble. Experiments show that our method outperforms prior pruning and compression methods while offering principled control of faithfulness guarantees."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "OBLIQ-Bench: Exposing Overlooked Bottlenecks in Modern Retrievers with Latent and Implicit Queries",
+    "authors": "Diane Tchuindjo, Devavrat Shah, Omar Khattab",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06235v1",
+    "source": "arXiv",
+    "abstract": "Retrieval benchmarks are increasingly saturating, but we argue that efficient search is far from a solved problem. We identify a class of queries we call oblique, which seek documents that instantiate a latent pattern, like finding all tweets that express an implicit stance, chat logs that demonstrate a particular failure mode, or transcripts that match an abstract scenario. We study three mechanisms through which obliqueness may arise and introduce OBLIQ-Bench, a suite of five oblique search problems over real long-tail corpora. OBLIQ-Bench exposes an overlooked asymmetry between retrieval and verification, where reasoning LLMs reliably recognize latent relevance whenever relevant documents are surfaced, but even sophisticated retrieval pipelines fail to surface most relevant documents in the first place. We hope that OBLIQ-Bench will drive research into retrieval architectures that efficiently capture latent patterns and implicit signals in large corpora."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models",
+    "authors": "Rui Wang, Yue Zhang, Jiehong Lin, Kuncheng Luo, Jianan Wang, Zhongrui Wang, Xiaojuan Qi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06222v1",
+    "source": "arXiv",
+    "abstract": "World Action Models (WAMs) have recently emerged as a promising paradigm for robotic manipulation by jointly predicting future visual observations and future actions. However, current WAMs typically execute a fixed number of predicted actions after each model inference, leaving the robot blind to whether the imagined future remains consistent with the actual physical rollout. In this work, we formulate adaptive WAM execution as a future-reality verification problem: the robot should execute longer when the WAM-predicted future remains reliable, and replan earlier when reality deviates from imagination. To this end, we propose Future Forward Dynamics Causal Attention (FFDC), a lightweight verifier that jointly reasons over predicted future actions, predicted visual dynamics, real observations, and language instructions to estimate whether the remaining action rollout can still be trusted. FFDC enables adaptive action chunk sizes as an emergent consequence of prediction-observation consistency, preserving the efficiency of long-horizon execution while restoring responsiveness in contact-rich or difficult phases. We further introduce Mixture-of-Horizon Training to improve long-horizon trajectory coverage for adaptive execution. Experiments on the RoboTwin benchmark and in the real world demonstrate that our method achieves a strong robustness-efficiency trade-off: on RoboTwin, it reduces WAM forward passes by 69.10% and execution time by 34.02%, while improving success rate by 2.54% over the short-chunk baseline; in real-world experiments, it improves success rate by 35%."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Teaching LLMs Program Semantics via Symbolic Execution Traces",
+    "authors": "Jonas Bayer, Stefan Zetzsche, Olivier Bouissou, Remi Delmas, Michael Tautschnig, Soonho Kong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06184v1",
+    "source": "arXiv",
+    "abstract": "We introduce an evaluation framework of 500 C verification tasks across five property types (memory safety, overflow, termination, reachability, data races) built on SV-COMP 2025, and evaluate 14 models across six families. We find that high overall accuracy masks a critical weakness: while most models reliably confirm properties hold, violation detection varies widely and degrades sharply with program length. To close this gap, we train on formal verification artifacts: running the Soteria symbolic execution engine on generic open-source C code and using the resulting traces for continued pretraining of Qwen3-8B. Just ${\\sim}$3,000 bug traces combined with chain-of-thought reasoning at inference time improve violation detection by over 17 percentage points, producing one of the most balanced accuracy profiles among evaluated models. On violation detection, the trained 8B model outperforms the 4$\\times$ larger Qwen3-32B without thinking and approaches it in overall accuracy. The interaction between trace training and chain-of-thought is superadditive: neither alone provides meaningful gains, but their combination does. Improvements transfer across all five property types, including ones the training traces do not target. Our 28 configurations confirm the gains stem from trace semantics, not code volume, and that trace curation and format matter."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "TACO: A Toolsuite for the Verification of Threshold Automata",
+    "authors": "Paul Eichler, Tom Baumeister, Mouhammad Sakr, Mahboubeh Kalateh Dowlati, Marcus Völp, Swen Jacobs",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06118v1",
+    "source": "arXiv",
+    "abstract": "We present TACO, a toolsuite for the development and automatic verification of fault-tolerant and threshold-based distributed algorithms. Our toolsuite implements three approaches for model checking threshold automata in different decidable fragments known from the literature and two semi-decision procedures going beyond these decidable fragments. Moreover, TACO is a modular, extensible, and well-documented framework for developing algorithms and tools for threshold automata. We present important features, give an overview of the implemented algorithms, and evaluate their performance experimentally."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Towards Self-Explainable Document Visual Question Answering with Chain-of-Explanation Predictions",
+    "authors": "Kjetil Indrehus, Adrian Duric, Changkyu Choi, Ali Ramezani-Kebrya",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06058v1",
+    "source": "arXiv",
+    "abstract": "Document Visual Question Answering (DocVQA) requires vision-language models to reason not only about what information in a document is relevant to a question, but also where the answer is grounded on the page. Existing DocVQA models entangle question-relevant evidence and answer localization and operate largely as black boxes, offering limited means to verify how predictions depend on visual evidence. We propose CoExVQA, a self-explainable DocVQA framework with a grounded reasoning process through a chain-of-explanation design. CoExVQA first identifies question-relevant evidence, then explicitly localizes the answer region, and finally decodes the answer exclusively from the grounded region. Prediction via CoExVQA's chain-of-explanation enables direct inspection and verification of the reasoning process across modalities. Empirical results show that restricting decoding to grounded evidence achieves SotA explainable DocVQA performance on PFL-DocVQA, improving ANLS by 12% over the current explainable baselines while providing transparent and verifiable predictions."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "From Articles to Premises: Building PrimeFacts, an Extraction Methodology and Resource for Fact-Checking Evidence",
+    "authors": "Premtim Sahitaj, Jawan Kolanowski, Ariana Sahitaj, Veronika Solopova, Max Upravitelev, Daniel Röder, Iffat Maab, Junichi Yamagishi, Sebastian Möller, Vera Schmitt",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06006v1",
+    "source": "arXiv",
+    "abstract": "Fact-checking articles encode rich supporting evidence and reasoning, yet this evidence remains largely inaccessible to automated verification systems due to unstructured presentation. We introduce PrimeFacts, a methodology and resource for extracting fine-grained evidence from full fact-checking articles. We compile 13,106 PolitiFact articles with claims, verdicts, and all referenced sources, and we identify 49,718 in-article hyperlinks as natural anchors to pinpoint key evidence. Our framework leverages large language models (LLMs) to rewrite these anchor sentences into stand-alone, context-independent premises and investigates the extraction of additional implicit evidence. In evaluations on cross-article evidence retrieval and claim verification, the extracted premises substantially improve performance. Decontextualized evidence yields higher retrievability, achieving up to a 30 percent relative gain in Mean Reciprocal Rank over verbatim sentences, and using the evidence for verdict prediction raises Macro-F1 by 10-20 points over the baseline. These gains are consistent across different verdict granularities (2-class vs. 5-class) and model architectures. A qualitative analysis indicates that the decontextualized premises remain faithful to the original sources. Our work highlights the promise of reusing fact-checkers' evidence for automation and provides a large-scale resource of structured evidence from real-world fact-checks."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "TheraAgent: Self-Improving Therapeutic Agent for Precise and Comprehensive Treatment Planning",
+    "authors": "Junkai Li, Yunghwei Lai, Tianyi Zhu, Zheng Long Lee, Weizhi Ma, Yang Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.05963v1",
+    "source": "arXiv",
+    "abstract": "Formulating a treatment plan is inherently a complex reasoning and refinement task rather than a simple generation problem. However, existing large language models (LLMs) mainly rely on one-shot output without explicit verification, which may result in rough, incomplete, and potentially unsafe treatment plans. To address these limitations, we propose TheraAgent, an agentic framework that replaces one-shot generation with an iterative generate-judge-refine pipeline. By mirroring the actual reasoning process of human experts who iteratively revise treatment plans, our framework progressively transforms coarse and incomplete drafts into precise, comprehensive, and safer therapeutic regimens. To facilitate the critical judge component, we introduce TheraJudge, a treatment-specific evaluation module integrated into the inference loop to enforce clinical standards. Experiments show TheraAgent achieves state-of-the-art results on HealthBench, leading in Accuracy and Completeness. In expert evaluations, it attains an 86% win rate against physicians, with superior Targeting and Harm Control. Moreover, the highly agreement between TheraJudge and HealthBench evaluations confirms the reliability of our framework."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Whole-body CT attenuation and volume charts from routine clinical scans via evidence-grounded LLM report filtering",
+    "authors": "Christian Wachinger, Bernhard Renger, Christopher Späth, Jan Kirschke, Marcus Makowski",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.05933v1",
+    "source": "arXiv",
+    "abstract": "Interpreting quantitative CT biomarkers, such as organ volume and tissue attenuation, requires large-scale healthy reference distributions. However, creating these is challenging because clinical datasets are often heavily enriched with pathology. Here, we develop an evidence-grounded, cross-verified large language model (LLM) ensemble to filter pathological findings from radiology reports, enabling the construction of pathology-reduced cohorts from over 350,000 CT examinations. Five LLMs, first, flag structure-level abnormality candidates grounded in verbatim report evidence and, second, resolve disagreements via cross-verification. Using distribution-aware generalized additive models for location, scale, and shape, we establish comprehensive whole-body reference charts for 106 anatomical structures (volumes and attenuation) across adulthood, accounting for age, sex, contrast enhancement, and acquisition parameters. Longitudinal analyses reveal structure- and contrast-dependent changes distinct from cross-sectional trends. These resources facilitate covariate-adjusted centile scoring from routine CT, supporting standardized quantitative phenotyping, multi-site imaging studies, and scalable opportunistic screening research."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Agentic, Context-Aware Risk Intelligence in the Internet of Value",
+    "authors": "Basel Magableh, OmniRisk Research",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.05878v1",
+    "source": "arXiv",
+    "abstract": "The Internet of Value (IoV) is a heterogeneous, partially-trusted network in which the dominant marginal risk is composite (route, sentiment, liquidity, and the policy a system is willing to commit to) rather than a property of any single chain. We argue that a risk primitive adequate for this regime is a composition of five engines: a prediction engine over price, liquidity, volatility, and route health; a Bittensor verification subnet that decentralises and economically scores prediction outputs; a sentiment-fusion engine over text, on-chain flow, and grey-literature feeds; an agentic engine under constitutional, role-bound action constraints; and an API-risk and scenario engine that converts forecasts into pre-committed action programs in the sense of Monte-Carlo scenario generation. We anchor the architecture in two empirical artefacts: a 27-hour policy-constrained liquidity stress-response experiment on Solana, and a 168-hour prediction-router calibration arc reported with explicit class-imbalance honesty. The case study supports deployability; the validator-loss decomposition is stated formally and is falsifiable."
+  },
+  {
+    "date": "2026-05-07",
+    "title": "LCC-LLM: Leveraging Code-Centric Large Language Models for Malware Attribution",
+    "authors": "Christopher G. Pedraza Pohlenz, Hassan Jalil Hadi, Ali Hassan, Ali Shoker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.05807v1",
+    "source": "arXiv",
+    "abstract": "LLMs are increasingly explored for malware analysis; however, current LLM-based malware attribution remains limited by unsupported indicators and insufficient code-level grounding for identifying malicious and vulnerable code segments. To address these limitations, this research introduces LCC-LLM, a code-centric benchmark dataset and evidence-grounded framework for malware attribution and multi-task static malware analysis. The proposed LCCD dataset contains approximately 34K PE samples processed through a large-scale reverse-engineering pipeline and represented using decompiled C code, assembly code, CFG/FCG artifacts, hexadecimal data, PE metadata, suspicious API evidence, and structural features. Beyond dataset construction, LCC-LLM integrates LangGraph-orchestrated static analysis with multi-source cybersecurity knowledge to support evidence-grounded malware reasoning. The framework employs a seven-layer retrieval-augmented generation pipeline, CoVe for IoC validation, and a multi-dimensional quality gate to improve factual reliability and analyst-oriented decision support. Curriculum-ordered instruction data is used to fine-tune DeepSeek-R1-Distill-Qwen-14B and Qwen3-Coder-30B-A3B using QLoRA. Evaluation across 43 malware-analysis task types achieves an average semantic similarity of 0.634, with the highest task-level performance in structured report generation, IoC extraction, vulnerability assessment, malware configuration extraction, and malware class detection. In a real-world case study using MalwareBazaar samples, the grounded pipeline achieves a 10/10 structured analysis pass rate, producing CFG/FCG evidence, MITRE ATT&CK mappings, detection guidance, and analyst-ready reports. These results show that code-centric representations, retrieval grounding, and verification-guided reasoning improve the reliability and operational usefulness of LLM-assisted malware attribution."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "From Classroom to Enterprise: Architectural Patterns for LLM Integration",
+    "authors": "Brian Moriarty",
+    "publish": "2026 IEEE International Systems Conference (SysCon)",
+    "url": "https://doi.org/10.1109/syscon66367.2026.11503623",
+    "source": "IEEE",
+    "abstract": "Large language models are rapidly diffusing into academic and enterprise knowledge work, yet most deployments lack explicit collaboration architectures, leading to inconsistent outcomes, unclear accountability, and unresolved risk exposure. Organizations respond with opposing approaches: academic institutions impose prohibitions or detection mechanisms to preserve the integrity of the author, while enterprises mandate usage to accelerate productivity. Both approaches fail because they regulate behavior without defining how humans and LLMs should collaborate within actual workflows.This paper proposes centaur and cyborg frameworks as distinct human-LLM interaction patterns that differ in authority allocation, control boundaries, and failure modes. Centaur architectures maintain explicit decision boundaries with human authority over validation and final decisions, while cyborg architectures enable continuous collaboration with distributed oversight and supervisory control. We ground these frameworks in parallel longitudinal observations from academic (graduate data visualization course, seven semesters 2022-2025) and enterprise (software engineering and business operations) contexts, documenting remarkably similar evolution across three phases: novelty-driven atomic usage, stark shift to delegated patterns, and eventual differentiation into stable collaboration architectures. Both environments show atomic usage as the dominant pattern, with substantial subsets exhibiting centaur-aligned and degradedcentaur patterns, and small minorities demonstrating emergent cyborg usage.The convergence of patterns across contexts with opposing governance mechanisms suggests that these architectures represent recurring patterns observed in contrasting contexts rather than context-specific adaptations. We translate these observations into practical deployment guidance that emphasizes maturity-gated adoption, selection of risk-tiered architecture, and lightweight embedded controls over enforcement-based policies. Contribution is an architectural framework for designing, evaluating, and governing LLM-enabled workflows grounded in observed collaboration behaviors."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Language-Agnostic Reverse Engineering of Software into SysML v2 via LLM Reasoner",
+    "authors": "Richard A. Qualis, Carlos Otero, Adrian Peter",
+    "publish": "2026 IEEE International Systems Conference (SysCon)",
+    "url": "https://doi.org/10.1109/syscon66367.2026.11503570",
+    "source": "IEEE",
+    "abstract": "We present a language-agnostic Model-Driven Reverse Engineering (MDRE) framework that uses large language models (LLMs) to transform heterogeneous software codebases into formal SysML v2 models. For each source file, the pipeline detects the language, parses to an Syntax Tree (AST), serializes to a normalized XML intermediary, and applies rule-structured prompting that maps programming constructs (e.g., classes, resources, variables) to SysML v2 elements (e.g., package, part def, attribute def). Unsupported or ambiguous constructs trigger iterative repair, and artifacts are validated using the official SysML v2 conformance tools, with detected issues injected into error-aware prompts to close the loop. To our knowledge, this is the first end-to-end, LLMdriven pipeline for code → SysML v2 with validator-in-the-loop conformance. We evaluate the framework across Java, C/C++, and Terraform using macro- and micro-precision, recall, and $F_{\\beta}$, along with a coverage metric capturing the proportion of source constructs represented. Results show that normalization and validator-in-the-loop checks consistently increase precision and improve macro $F_{1}$, while micro $F_{1}$ remains recall-limited, indicating effective structural cleanup but limited semantic completion at instance scale. We outline concrete paths to lift recall without sacrificing precision and note ongoing integration of a multilayered, knowledge-graph-enabled LLM reasoner to support targeted completions and closed-loop, agentic system-software co-engineering."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "MGAPep: LLM-Augmented Multimodal Graph Attention for Protein-Peptide Binding Site Prediction and Cross-Domain Transfer_supp1-3690953.pdf",
+    "authors": "Xiangzheng Fu",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/jbhi.2026.3690953/mm1",
+    "source": "IEEE",
+    "abstract": "Protein-peptide interactions drive peptide therapeutics, precision design, and biomarker discovery, yet most predictors underuse complementary sequence-structure information. LLM-augmented multimodal approaches offer a promising solution to these limitations. We introduce MGAPep, which fuses pre-trained large language model embeddings with protein sequence and structural descriptors via a residual graph attention backbone and a multi-head dual-attention module to capture fine-grained interface patterns. Leveraging large-scale corpora of protein fragment-peptide interaction data, MGAPep employs self-supervised pre-training, transfer learning, and task-specific fine-tuning to obtain rich, transferable representations. Extensive benchmarking shows consistent state-of-the-art accuracy for protein-peptide binding site prediction, with robust generalization to unseen proteins and peptides. The framework also transfers effectively across modalities, yielding superior performance to most baselines on protein-nucleic acid binding site prediction without architecture changes, underscoring broad applicability. Together with evidence that graph-enhanced LLMs improve biomolecular binding modeling, these results establish MGAPep as a general paradigm for protein-biomolecule interaction prediction."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Structured Reasoning Frameworks for LLM-Based Venture Capital Evaluation: Integrating Systems Engineering and Business Analysis",
+    "authors": "Dan Velarde, Stephen Gillespie",
+    "publish": "2026 IEEE International Systems Conference (SysCon)",
+    "url": "https://doi.org/10.1109/syscon66367.2026.11503481",
+    "source": "IEEE",
+    "abstract": "Venture capital decision-making for early-stage startups involves high uncertainty and relies heavily on qualitative reasoning from pitch decks. This study investigates whether large language models (LLMs) equipped with structured knowledge frameworks can improve predictive accuracy in startup evaluation. We designed four evaluation personas using Gemini 2.5 Pro Preview: a baseline model, a venture capital-informed model, a systems engineering-guided model using established standards from IEEE, INCOSE, NASA, and MITRE, and a combined model integrating both frameworks. Testing on 14 historical pitch decks from companies including LinkedIn, Theranos, and WeWork, the combined persona achieved $85.7 \\%$ accuracy in predicting startup outcomes, outperforming specialized and baseline configurations. The systems engineering rubric provided quantitative risk assessment while the venture capital knowledge stack enhanced market opportunity identification. Results demonstrate that LLMs can function as structured reasoning engines when constrained by domain-specific frameworks, offering transparent and auditable decision support for high-uncertainty investment environments."
+  },
+  {
+    "date": "2026-5-8",
+    "title": "LooQuestion: A Head Pointing-Based QA System for AR GlassesUsing LLM-Generated Candidates",
+    "authors": "Atsuya Tsuchikawa, Hiroyuki Manabe",
+    "publish": "Proceedings of the Augmented Humans International Conference 2026",
+    "url": "https://doi.org/10.1145/3795011.3797419",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Automated BPMN Model Generation from Textual Process Descriptions: A Multi-Stage LLM-Driven Approach",
+    "authors": "Ion Matei, Maksym Zhenirovskyy, Praveen Kumar Menaka Sekar, Hon Yung Wong",
+    "publish": "2026 IEEE International Systems Conference (SysCon)",
+    "url": "https://doi.org/10.1109/syscon66367.2026.11503535",
+    "source": "IEEE",
+    "abstract": "Automatically reconstructing BPMN models from unstructured natural-language descriptions remains challenging due to heterogeneous modeling conventions, multilingual sources, and the lack of reliable ground truth. We present a scalable, multi-stage LLM-driven pipeline that automates both groundtruth construction and model reconstruction. Multilingual BPMN XML files are translated into English, validated using executionoriented compliance checks in SpiffWorkflow, and iteratively repaired through targeted LLM-guided corrections to produce a consistent ground-truth corpus. From these validated models, process descriptions are generated and used to reconstruct executable BPMN 2.0 XML diagrams without manual curation. We introduce a multi-dimensional similarity framework combining structural metrics, type-distribution alignment, and embeddingbased semantic measures. In an empirical study of 750 public BPMN diagrams, the pipeline generated 387 validated groundtruth models and achieved average reconstruction similarity above 0.75, including approximately 50 near-perfect reconstructions differing only in minor naming variations. The results demonstrate that LLMs can generate structurally compliant and semantically meaningful BPMN diagrams at scale."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "LLM Online Spatial-temporal Signal Reconstruction Under Noise",
+    "authors": "Yi Yan, Dayu Qin, Ercan E. Kuruoglu",
+    "publish": "IEEE Journal of Selected Topics in Signal Processing",
+    "url": "https://doi.org/10.1109/jstsp.2026.3691294",
+    "source": "IEEE",
+    "abstract": "This work introduces the LLM Online Spatial temporal Reconstruction (LLM-OSR) framework, which integrates Graph Signal Processing (GSP) and Large Language Models (LLMs) for online spatial-temporal signal reconstruction. The LLM-OSR utilizes a GSP-based spatial-temporal signal handler to enhance graph signals and employs LLMs to predict missing values based on spatial-temporal patterns. The performance of LLM-OSR is evaluated on traffic and meteorological datasets under varying Gaussian noise levels. Experimental results demonstrate that utilizing GPT-4o mini within the LLM OSR is accurate and robust under Gaussian noise conditions. The limitations are discussed along with future research insights, emphasizing the potential of combining GSP techniques with LLMs for solving spatial-temporal prediction tasks."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Real-Time Visualization of Urban Soundscapes via an ESC-LLM-Diffusion Model Pipeline",
+    "authors": "Wasa Liu, Hongshu Wang",
+    "publish": "Proceedings of the 2nd International Conference on Digital Society, Information Science and Risk Management",
+    "url": "https://doi.org/10.1145/3804504.3804517",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Automatic Red Teaming LLM-based Agents with Model Context Protocol Tools",
+    "authors": "Ping He, Changjiang Li, Binbin Zhao, Tianyu Du, Shouling Ji",
+    "publish": "IEEE Transactions on Information Forensics and Security",
+    "url": "https://doi.org/10.1109/tifs.2026.3691201",
+    "source": "IEEE",
+    "abstract": "The remarkable capability of large language models (LLMs) has led to the wide application of LLM-based agents in various domains. To standardize interactions between LLM-based agents and external resources, model context protocol (MCP) tools have become the de facto standard and are now widely integrated into these agents. However, the incorporation of MCP tools introduces the risk of tool poisoning attacks, in which malicious MCP tools can steer the behavior of LLM-based agents toward unintended outcomes. Although previous studies have identified such vulnerabilities, their red teaming approaches have largely remained at the proof-of-concept stage, leaving the automatic red teaming of LLM-based agents under the MCP tool poisoning paradigm an open question. To bridge this gap, we propose AutoMalTool, an automated red teaming framework for LLM-based agents by generating malicious MCP tools. Our extensive evaluation shows that AutoMalTool effectively generates malicious MCP tools capable of manipulating the behavior of mainstream LLM-based agents while evading current detection mechanisms, thereby revealing new security risks in these agents."
+  },
+  {
+    "date": "2026-5-8",
+    "title": "Towards Multimodal Entity Linking for LLM-based Metamodel Generation",
+    "authors": "Bernhard Schenkenfelder, Manuel Wimmer",
+    "publish": "Proceedings of the 2026 2nd International Workshop on Low-Code Development and Software Architecture",
+    "url": "https://doi.org/10.1145/3786179.3788325",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Human-Readable Adversarial Prompts: An Investigation into LLM Vulnerabilities Using Situational Context",
+    "authors": "Nilanjana Das, Edward Raff, Aman Chadha, Manas Gaur",
+    "publish": "ACM Transactions on Intelligent Systems and Technology",
+    "url": "https://doi.org/10.1145/3815174",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-7",
+    "title": "A Speech-Driven, LLM-Powered Multidomain Assistant for Farmers",
+    "authors": "Atiqur Rahman, Md. Moniruzzaman Hemal, Nishat Tasnim Shishir, Md. Ashiqussalehin, Saurav Kundu, Saurav Chandra Das",
+    "publish": "2025 IEEE 4th International Conference on Robotics, Automation, Artificial-Intelligence and Internet-of-Things (RAAICON)",
+    "url": "https://doi.org/10.1109/raaicon69033.2025.11502184",
+    "source": "IEEE",
+    "abstract": "Farmers often must sort through fragmented, delayed or inscrutable guidance across soil management, irrigation and disease control and caring for animals. Existing tools are mostly text-focused, one-domain-centric and offer no guarantees to unsafe outputs, impeding on trust and usage particularly amongst low-literacy users. In this work, we introduce a speech-powered, search-augmented assistant assisted by LLMs for re-returning grounded, source-attributed advice in diverse agricultural domains. The system ingests farmer questions via automatic speech recognition (ASR), achieving an 18.5% Word Error Rate (WER) on domain-specific queries. It then retrieves relevant pas- sages from a curated set of agricultural corpora leveraging semantic embeddings and vector search with FAISS and queries an LLM to generate informative, concise, context-dependent responses. To mitigate hallucinations, the system enforces strict factual grounding by verifying all generated statements against the retrieved sources and provides explicit citations; output is rendered by natural TTS for hands-free interaction. We assess under realistic conditions on four axes: latency, relevance, concurrency and resilience. The assistant attains 3.5 s average latency, with a real- time cutoff at 10 s; about 3% of calls are killed to preserve responsiveness. Relevance average 0.85 which is high similarity. Under load mean latency grows from 4 s to 7 s; simulated delays of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$0-.5 ~\\mathrm{s}$</tex> slightly increase latency without reducing relevance. The contributions illustrate a working model for domain-curated, trustable knowledge integration and explicable outputs for operationally-ready decision-support in agriculture. We address deployment issues and how to extend to multilingual, locale- specific circumstances with a goal of supporting productivity enhancement while maintaining farmer welfare."
+  },
+  {
+    "date": "2026-5-8",
+    "title": "Seeing and Saying Movement: Combining Skeleton Visualization and LLM Feedback for Motor Skill Coaching",
+    "authors": "Sakina Watanabe, Chen-Chieh Liao, Erwin Wu, Hideki Koike",
+    "publish": "Proceedings of the Augmented Humans International Conference 2026",
+    "url": "https://doi.org/10.1145/3795011.3795054",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Reliability Verification of Trench MOSFETs in Blocking Mode",
+    "authors": "P. Salmen, G. Ziemys, M. Schaefer, T. Aichinger",
+    "publish": "2026 IEEE International Reliability Physics Symposium (IRPS)",
+    "url": "https://doi.org/10.1109/irps61424.2026.11499320",
+    "source": "IEEE",
+    "abstract": "In this paper we present a novel approach to verify application-near field failure rates of SiC MOSFETs in blocking mode with applied negative gate bias. Using our newly developed test bench, we can stress and monitor 15840 SiC MOSFETs in parallel (total active area ≈ 1200 cm<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup>) for thousands of hours, at elevated temperatures. This offers us the possibility to calculate the FIT rate limits in blocking state including defect-density induced failures."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Contracts over Clusters: From Mission Guarantees to System Verification",
+    "authors": "Loïc Lagadec, Ciprian Teodorov, Loïc Plassart, Jannik Laval, Charbel Geryes Aoun",
+    "publish": "2026 IEEE International Systems Conference (SysCon)",
+    "url": "https://doi.org/10.1109/syscon66367.2026.11503547",
+    "source": "IEEE",
+    "abstract": "We present a three-level framework for autonomous UAV management-architecture (nodes, clusters, fleets), process (mission coordination, data-to-knowledge), and business (mis-sion/KPIs/decisions)-implemented with an MBSE pipeline that derives metrics for verification bases on simulation. A key contribution is a two-tier assurance scheme: mission-level discrete-event simulation establishes local guarantees (continuous coverage, redundancy, bounded drift), which are lifted via assume-guarantee contracts to fleet-level geometric checks (inter-cluster hull disjointness), serialized by a simple lock/barrier protocol. We provide a tool environment for visualization, simulation, and dynamic reconfiguration (e.g., weight updates, cluster recomposition). A surface-coverage case study demonstrates feasibility and measurable properties; we discuss limitations and extensions."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "LLM-Based Intelligent Risk Identification for SMEs: A Comparative Study of Prompt Engineering Strategies",
+    "authors": "Haijia Zhong, Zhaosheng Wen, Zhenming Zhang, Wenyuan Lu, Qizhou Chen, Fucai Xie, Yanmei Su, Xianpeng Wang",
+    "publish": "Proceedings of the 2nd International Conference on Digital Society, Information Science and Risk Management",
+    "url": "https://doi.org/10.1145/3804504.3804520",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-7",
+    "title": "R2C-MGR2L: Enhancing Multi-granularity Relational Representation in Dual-temporal Optical Remote Sensing Images through LLM-based Scene Graph Generation",
+    "authors": "Lilu Zhu, Xiaolu Su, Jiaxuan Tang, Yang Wang",
+    "publish": "IEEE Transactions on Geoscience and Remote Sensing",
+    "url": "https://doi.org/10.1109/tgrs.2026.3691258",
+    "source": "IEEE",
+    "abstract": "Recent advances in Earth observations have enabled the acquisition of high-precision optical remote sensing imagery (ORSI) with sub-meter spatial resolution and hourly revisit periods. While early neural network-based methods have demonstrated notable limitations in visual perception, more recent multimodal fusion approaches still struggle to effectively recognize and reason over geospatial object relations. To fully promote the collaborative analysis of very-high-resolution (VHR) dual-temporal ORSIs, this paper presents a novel framework named R2C-MGR2L that is designed to enhance multi-granularity relational representation in dual-temporal optical remote sensing images through LLM-based scene graph generation (SGG). This framework presents a two-stage learning paradigm—knowledge alignment and cross-modal fusion—that incorporates structured knowledge representations and a hierarchical attention mechanism to improve the refinement and reasoning of fine-grained relational semantics. First, we investigate the types of geospatial object relations and assess the feasibility of enhancing relational semantic representation through multimodal knowledge extraction and embedding. We subsequently employ a pre-trained code large language model (Code-LLM) to transform multigranularity relation triplets from extracted optical remote sensing (ORS) scene graphs into semantically equivalent programs, thereby alleviating the scarcity of domain-specific ORSI knowledge. Moreover, a hybrid-structured asymmetric contrastive learning network is developed to further refine the semantic representations derived from complex scenes. By hierarchically fusing dual-temporal ORSIs and corresponding scene graphs, an integrated representation of visual targets and structural knowledge across multiple depths is achieved. We evaluate our proposed framework on three relation-aware ORS scene understanding tasks. The experimental results suggest that the R2C-MGR2L outperforms the state-of-the-art generic methods, resulting in consistent improvements in accuracy, completeness and timeliness for relational semantic recognition."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "A Formal Verification Approach for Measures of Effectiveness Based on Satisfiability Modulo Theories",
+    "authors": "Yongji Yuan, Guoxin Wang, Yihui Gong, Jinzhi Lu, Shouxuan Wu, Mengru Dong",
+    "publish": "2026 IEEE International Systems Conference (SysCon)",
+    "url": "https://doi.org/10.1109/syscon66367.2026.11503555",
+    "source": "IEEE",
+    "abstract": "Model-Based Systems Engineering (MBSE) provides a formal and integrated framework for managing multidisciplinary information throughout the system design lifecycle. Within this framework, Measures of Effectiveness (MOEs) serve as the key quantitative metrics for evaluating whether a system design meets mission requirements. Current approaches for verifying MOE constraints in MBSE typically rely on mathematical relationships established through SysML parametric diagrams, with metrics analysis performed using built-in computational plug-ins or external specialized software. However, these approaches face challenges in unified representation of multitheory hybrid constraints, automated exploration for feasible solutions, and tool-level data consistency. This limits the reliability and completeness of verification results. This paper proposes a formal verification approach for MOE by integrating the multi-architecture modeling language KARMA with Satisfiability Modulo Theories (SMT). The approach provides a unified firstorder logic (FOL) representation of MOE-related metrics. It also automates the evaluation of SysML parametric diagrams through SMT solver, enabling constraint satisfiability checking and reverse derivation of optimal design solutions. A satellite electric power system (EPS) case study demonstrates the feasibility and effectiveness of the proposed approach. The results show that the approach ensures the consistency between system metrics and requirements, and improves automation and completeness of MOE verification within the MBSE framework."
+  },
+  {
+    "date": "2026-5-7",
+    "title": "Navigating the Risks: A Survey of Security and Privacy Threats in LLM-Based Agents",
+    "authors": "Yuyou Gan, Yong Yang, Zhe Ma, Ping He, Rui Zeng, Yiming Wang, Qingming Li, Chunyi Zhou, Songze Li, Ting Wang, Yunjun Gao, Yingcai Wu, Shouling Ji",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3807666",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]

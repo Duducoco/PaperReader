@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-05-07",
+    "title": "Knowledge Graphs, the Missing Link in Agentic AI-based Formal Verification",
+    "authors": "Vaisakh Naduvodi Viswambharan, Keerthan Kopparam Radhakrishna, Deepak Narayan Gadde, Aman Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06434v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in Large Language Models (LLMs) have enabled workflows that generate SystemVerilog Assertions (SVAs) from natural-language specifications, with the potential to accelerate Formal Verification (FV). However, high-quality assertion synthesis remains challenging because specifications are often ambiguous or incomplete and critical micro-architectural details reside in the Register Transfer Level (RTL). Many existing approaches treat the specification and RTL as loosely structured text, which weakens specification-to-RTL grounding and leads to semantic mismatches and frequent syntax failures during formal parsing and elaboration. This work addresses these limitations with a verification-centric Knowledge Graph (KG) constructed from structured Intermediate Representations (IRs) extracted from the specification, RTL, and formal-tool feedback, including syntax diagnostics, Counterexamples (CEXs), and coverage reports. The KG links requirements, design hierarchy, signals, assumptions, and properties to provide traceable, design-grounded context for generation. A multi-agent workflow queries and updates this KG to generate SVAs and to drive three refinement loops: syntax repair guided by tool diagnostics, CEX-guided correction using trace links, and coverage-directed property augmentation. Evaluation across seven benchmark designs indicates that KG-based context retrieval improves specification-to-RTL grounding and consistently produces compilable SVAs with low syntax-repair overhead. The approach achieves formal coverage ranging from 78.5% to 99.4%, though convergence exhibits design dependence with complex temporal and arithmetic reasoning remaining challenging for current LLM capabilities.",
+    "title_zh": "知识图谱：基于代理的人工智能形式化验证中的缺失环节",
+    "abstract_zh": "近年来，大型语言模型（LLMs）的进步使得从自然语言规范生成SystemVerilog断言（SVAs）的工作流程成为可能，这有望加速形式化验证（FV）。然而，高质量的断言合成仍然具有挑战性，因为规范往往含糊不清或不完整，而关键的微架构细节则存在于寄存器传输级（RTL）。许多现有方法将规范和RTL视为松散结构化的文本，这削弱了规范与RTL之间的关联性，导致语义不匹配，并在形式化解析和展开过程中频繁出现语法错误。本文通过构建一个以验证为中心的知识图谱（KG）来解决这些局限性，该图谱由从规范、RTL以及形式化工具反馈（包括语法诊断、反例（CEXs）和覆盖率报告）中提取的结构化中间表示（IRs）构成。知识图谱将需求、设计层次结构、信号、假设和属性链接起来，为生成提供可追溯且基于设计的上下文。一个多代理工作流程查询并更新该知识图谱，以生成SVAs并驱动三个改进循环：基于工具诊断的语法修复、利用追踪链接的反例引导修正，以及基于覆盖率的属性增强。在七个基准设计上的评估表明，基于知识图谱的上下文检索改善了规范与RTL的关联性，并且能够一致地产生可编译的SVAs，同时语法修复的开销较低。该方法实现了78.5%到99.4%的形式化覆盖率，尽管收敛性依赖于设计复杂性，其中涉及复杂的时序和算术推理的问题仍然是当前LLM能力的挑战。"
+  }
+]
