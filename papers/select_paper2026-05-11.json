@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-05-11",
+    "title": "PhysEDA: Physics-Aware Learning Framework for Efficient EDA With Manhattan Distance Decay",
+    "authors": "Zetao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10547v1",
+    "source": "arXiv",
+    "abstract": "Electronic design automation (EDA) addresses placement, routing, timing analysis, and power-integrity verification for integrated circuits. Learning methods -- attention (Transformer) and reinforcement learning (RL) -- have recently emerged on EDA tasks, yet face two common bottlenecks: vanilla attention's quadratic complexity limits scaling, and data-scarce models overfit statistical noise and amplify weak long-range correlations against the underlying physics. We observe that EDA tasks share a physical prior -- pairwise electrical and routing interactions decay exponentially along Manhattan distance -- and integrate it as a unified inductive bias into both architecture and training. We propose PhysEDA, comprising two components Physics-Structured Linear Attention (PSLA) folds the separable Manhattan decay into the linear-attention kernel as a multiplicative bias, reducing complexity from quadratic to linear; Potential-Based Reward Shaping (PBRS) constructs a physical potential from the same kernel, providing dense reward signal under sparse RL while preserving the optimal policy via the policy-invariance theorem. Across three EDA scenarios -- decoupling-capacitor placement, macro placement, and IR-drop prediction -- PhysEDA improves zero-shot cross-scale transfer by 56.8% and achieves 14x inference speedup with 98.5% memory savings on 100x100 grids; PBRS adds another 10.8% in sparse-reward DPP.",
+    "title_zh": "PhysEDA：基于曼哈顿距离衰减的高效EDA物理感知学习框架",
+    "abstract_zh": "电子设计自动化（EDA）处理集成电路的布局、布线、时序分析和功率完整性验证。近年来，学习方法——注意力机制（Transformer）和强化学习（RL）——在EDA任务中逐渐兴起，但面临两个常见瓶颈：普通注意力机制的二次复杂度限制了其扩展性，而数据稀缺模型容易过拟合统计噪声，并在物理规律下放大弱的长距离相关性。我们观察到EDA任务共享一个物理先验——电气和布线的成对交互沿曼哈顿距离呈指数衰减——并将其作为统一的归纳偏置整合到架构和训练中。我们提出了PhysEDA，包括两个组件：物理结构化线性注意力（PSLA）将可分离的曼哈顿衰减嵌入线性注意力核中作为乘性偏置，将复杂度从二次降低到线性；基于势能的奖励塑造（PBRS）利用相同的核构建物理势能，在稀疏强化学习中提供密集奖励信号，同时通过策略不变性定理保持最优策略。在三个EDA场景——去耦电容布局、宏单元布局和IR压降预测——中，PhysEDA在零样本跨尺度迁移中提升了56.8%，在100x100网格上实现了14倍推理速度提升和98.5%的内存节省；PBRS在稀疏奖励的去耦电容布局任务中进一步提升了10.8%。"
+  },
+  {
+    "date": "2026-5-11",
+    "title": "LLM-Driven C-to-Verilog Translation via HLS with Automated Verification",
+    "authors": "Rundong Chen, Xiang Chen",
+    "publish": "2026 IEEE 8th International Conference on Communications, Information System and Computer Engineering (CISCE)",
+    "url": "https://doi.org/10.1109/cisce69494.2026.11504558",
+    "source": "IEEE",
+    "abstract": "This paper presents a multi-stage code transformation framework that leverages large language models (LLMs) to convert algorithmic C code into synthesizable Verilog/SystemVerilog through an intermediate High-Level Synthesis C (HLSC) representation. The framework accepts natural language specifications alongside C code and employs HLSC as a hardware-aware semantic bridge that makes bit-width constraints and hardware properties explicit before final RTL generation. Automated syntax verification via iverilog v12 and iterative error repair further improve synthesis quality. We evaluate on the VerilogEval-Human v2 benchmark (156 specification-toRTL problems). The proposed NL +C arrow HLSC arrow Verilog pipeline achieves 84.0% functional pass rate (131/156) with Qwen3-Next80B, substantially outperforming direct NL arrow Verilog (61.5%) and NL +C arrow Verilog (73.1%) baselines. The framework reaches up to 96.1% (MiniMax-M2.5) and 94.87% with GPT-4 Turbo, surpassing VerilogCoder's 9 4. 2%. Cross-model evaluation across six LLMs of varying scales demonstrates consistent effectiveness of the multi-stage approach.",
+    "title_zh": "基于LLM驱动的通过HLS进行C到Verilog转换及自动化验证",
+    "abstract_zh": "本文提出了一种多阶段代码转换框架，利用大型语言模型（LLMs）将算法C代码通过中间的高级综合C（HLSC）表示转换为可综合的Verilog/SystemVerilog代码。该框架接受自然语言规范和C代码，并使用HLSC作为硬件感知的语义桥梁，在最终生成RTL代码之前明确位宽约束和硬件属性。通过iverilog v12进行自动语法验证以及迭代错误修复进一步提高了综合质量。我们在VerilogEval-Human v2基准测试（156个从规范到RTL的问题）上进行了评估。所提出的“自然语言+ C → HLSC → Verilog”流程在使用Qwen3-Next80B时实现了84.0%的功能通过率（131/156），显著优于直接“自然语言 → Verilog”（61.5%）和“自然语言+ C → Verilog”（73.1%）的基线方法。该框架在MiniMax-M2.5上达到了96.1%，在GPT-4 Turbo上达到了94.87%，超越了VerilogCoder的94.2%。跨六种不同规模的LLM模型的评估表明，多阶段方法具有一致的有效性。"
+  }
+]

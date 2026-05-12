@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-05-11",
+    "title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+    "authors": "Shuangrui Ding, Xuanlang Dai, Long Xing, Shengyuan Ding, Ziyu Liu, Yang JingYi, Penghui Yang, Zhixiong Zhang, Xilin Wei, Xinyu Fang, Yubo Ma, Haodong Duan, Jing Shao, Jiaqi Wang, Dahua Lin, Kai Chen, Yuhang Zang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10912v1",
+    "source": "arXiv",
+    "abstract": "Large language and vision-language models increasingly power agents that act on a user's behalf through command-line interface (CLI) harnesses. However, most agent benchmarks still rely on synthetic sandboxes, short-horizon tasks, mock-service APIs, and final-answer checks, leaving open whether agents can complete realistic long-horizon work in the runtimes where they are deployed. This work presents WildClawBench, a native-runtime benchmark of 60 human-authored, bilingual, multimodal tasks spanning six thematic categories. Each task averages roughly 8 minutes of wall-clock time and over 20 tool calls, and runs inside a reproducible Docker container hosting an actual CLI agent harness (OpenClaw, Claude Code, Codex, or Hermes Agent) with access to real tools rather than mock services. Grading is hybrid, combining deterministic rule-based checks, environment-state auditing of side effects, and an LLM/VLM judge for semantic verification. Across 19 frontier models, the best, Claude Opus 4.7, reaches only 62.2% overall under OpenClaw, while every other model stays below 60%, and switching harness alone shifts a single model by up to 18 points. These results show that long-horizon, native-runtime agent evaluation remains a far-from-resolved task for current frontier models. We release the tasks, code, and containerized tooling to support reproducible evaluation."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Beyond Red-Teaming: Formal Guarantees of LLM Guardrail Classifiers",
+    "authors": "Nikita Kezins, Urbas Ekka, Pascal Berrang, Luca Arnaboldi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10901v1",
+    "source": "arXiv",
+    "abstract": "Guardrail Classifiers defend production language models against harmful behavior, but although results seem promising in testing, they provide no formal guarantees. Providing formal guarantees for such models is hard because \"harmful behavior\" has no natural specification in a discrete input space: and the standard epsilon-ball properties used in other domains do not carry semantic meaning. We close this gap by shifting verification from the discrete input space to the classifier's pre-activation space, where we define a harmful region as a convex shape enclosing the representations of known harmful prompts. Because the sigmoid classification head is monotonic, certifying the worst-case point is sufficient to certify the entire region, yielding a closed-form soundness proof without approximation in O(d) time. To formally evaluate these classifiers, we propose two constructions of such regions: SVD-aligned hyper-rectangles, which yield exact SAT/UNSAT certificates, and Gaussian Mixture Models, which yield probabilistic certificates over semantically coherent clusters. Applying this framework to three author-trained Guardrail Classifiers on the toxicity domain, every hyper-rectangle configuration returns SAT, exposing verifiable safety holes across all classifiers, despite seemingly high empirical metrics. Probabilistic GMM certificates also expose a divergent structural stability in how these models represent harm. While GPT-2 and Llama-3.1-8B maintain robust coverage of 90% and 80% across varying boundaries, BERT's safety guarantees prove uniquely volatile. This 'coverage collapse' to 55% at the optimal threshold reveals a sparsely populated safety margin in BERT, which only achieves full coverage by adopting an extremely conservative pessimistic threshold. These approaches combined, provide new insights on how effective Guardrail Classifiers really are, beyond traditional red-teaming."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Neural at ArchEHR-QA 2026: One Method Fits All: Unified Prompt Optimization for Clinical QA over EHRs",
+    "authors": "Abrar Majeedi, Viswanatha Reddy Gajjala, Sai Prasanna Teja Reddy Bogireddy, Siddhant Rai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10877v1",
+    "source": "arXiv",
+    "abstract": "Automated question answering (QA) over electronic health records (EHRs) demands precise evidence retrieval, faithful answer generation, and explicit grounding of answers in clinical notes. In this work, we present Neural1.5, our method for the ArchEHR-QA 2026 shared task at CL4Health@LREC 2026, which comprises four subtasks: question interpretation, evidence identification, answer generation, and evidence alignment. Our approach decouples the task into independent, modular stages and employs DSPy\"s MIPROv2 optimizer to automatically discover high-performing prompts, jointly tuning instructions and few-shot demonstrations for each stage. Within every stage, self-consistency voting over multiple stochastic inference runs suppresses spurious errors and improves reliability, while stage-specific verification mechanisms (e.g., self-reflection and chain-of-verification for alignment) further refine output quality. Among all teams that participated in all four subtasks, our method ranks second overall (mean rank 4.00), placing 4th, 1st, 4th, and 7th on Subtasks 1-4, respectively. These results demonstrate that systematic, per-stage prompt optimization combined with self-consistency mechanisms is a cost-effective alternative to model fine-tuning for multifaceted clinical QA."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Verification Mirage: Mapping the Reliability Boundary of Self-Verification in Medical VQA",
+    "authors": "Ruinan Jin, Beidi Zhao, Myeongkyun Kang, Qiong Zhang, Xiaoxiao Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10850v1",
+    "source": "arXiv",
+    "abstract": "Self-verification, re-invoking the same vision language model (VLM) in a fresh context to check its own generated answer, is increasingly used as a default safety layer for medical visual question answering (VQA). We argue that this practice is fundamentally unreliable. We introduce [METHOD NAME], a diagnostic framework for mapping the reliability boundary of medical VLM self-verification by decomposing verifier behavior into discrimination capability and agreement bias. Because the verifier and answer generator are capacity-coupled, the verifier can overly agree with the generator, creating a verification mirage: a regime with both high verifier error and high agreement bias, driven by false acceptance of incorrect answers. Evaluating six open-weight VLMs across five medical VQA datasets and seven medical tasks, we find that this boundary is strongly task-conditioned. Knowledge-intensive clinical tasks fall deepest into the mirage, simpler tasks are more resistant, and perceptual tasks lie in between. Verification also fails to provide an independent safety signal: logistic mixed-effects analysis shows that verifier error and agreement bias become more likely when the generator is wrong, while saliency analyses show that verifiers under-attend to image evidence relative to generators, a phenomenon we call the lazy verifier. Cross-verification reduces but does not eliminate the mirage. Moreover, when verification is reused in multi-turn actor-verifier loops, most initially wrong answers become locked in by false verification. Since our experiments use clean benchmarks, the observed reliability boundary likely underestimates failures in real clinical deployment."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "The Path-Extremal Conjecture for Zero Forcing: Distance-Hereditary Graphs and a Split-Decomposition Reduction",
+    "authors": "Samuel German",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10836v1",
+    "source": "arXiv",
+    "abstract": "For an $n$-vertex graph $G$, let $z(G;k)$ denote the number of zero forcing sets of size $k$. A conjecture of Boyer et al. asserts that the path $P_n$ maximizes these numbers coefficientwise among all $n$-vertex graphs; equivalently, the zero forcing polynomial of every $n$-vertex graph should be coefficientwise dominated by that of $P_n$. We prove this path-extremal conjecture for distance-hereditary graphs. This extends the previously known tree case to a much larger class that includes, in particular, all trees and all cographs. We then use canonical split decomposition to push the argument one step beyond the distance-hereditary setting. Specifically, we show that if a split-prime graph $H$ and all of its induced subgraphs are path-extremal, then every connected graph whose canonical split decomposition has a unique prime bag whose label graph is isomorphic to $H$ is also path-extremal. As a corollary, for each fixed $m$, if every induced subgraph of every split-prime graph on at most $m$ vertices is path-extremal, then so is every connected graph whose canonical split decomposition has a unique prime bag of size at most $m$. Thus, on these classes, the conjecture reduces to a finite verification problem on bounded-order prime cores. Our proofs combine two counting mechanisms for non-forcing sets -- fort obstructions arising from twin pairs and a leaf recurrence -- with the accessibility description of graph-labelled trees in the canonical split decomposition. This yields a new positive instance of the path-extremal conjecture and identifies a natural structural frontier for further progress."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "LLMs for Secure Hardware Design and Related Problems: Opportunities and Challenges",
+    "authors": "Johann Knechtel, Ozgur Sinanoglu, Ramesh Karri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10807v1",
+    "source": "arXiv",
+    "abstract": "The integration of Large Language Models (LLMs) into Electronic Design Automation (EDA) and hardware security is rapidly reshaping the semiconductor industry. While LLMs offer unprecedented capabilities in generating Register Transfer Level (RTL) code, automating testbenches, and bridging the semantic gap between high-level specifications and silicon, they simultaneously introduce severe vulnerabilities. This comprehensive review provides an in-depth analysis of the state-of-the-art in LLM-driven hardware design, organized around key advancements in EDA synthesis, hardware trust, design for security, and education. We systematically expand on the methodologies of recent breakthroughs -- from reasoning-driven synthesis and multi-agent vulnerability extraction to data contamination and adversarial machine learning (ML) evasion. We integrate general discussions on critical countermeasures, such as dynamic benchmarking to combat data memorization and aggressive red-teaming for robust security assessment. Finally, we synthesize cross-cutting lessons learned to guide future research toward secure, trustworthy, and autonomous design ecosystems."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Reasoning Is Not Free: Robust Adaptive Cost-Efficient Routing for LLM-as-a-Judge",
+    "authors": "Wenbo Zhang, Lijinghua Zhang, Liner Xiang, Hengrui Cai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10805v1",
+    "source": "arXiv",
+    "abstract": "Reasoning-capable large language models (LLMs) have recently been adopted as automated judges, but their benefits and costs in LLM-as-a-Judge settings remain unclear. Through controlled comparisons between reasoning and non-reasoning judges, we show that explicit reasoning substantially improves judgment accuracy on tasks requiring structured verification (e.g., math and coding), while offering limited or even negative gains on simpler evaluations and incurring significantly higher computational cost. These findings motivate that reasoning should be used selectively rather than universally, with awareness of possible distribution shift. We propose a Robust Adaptive Cost-Efficient Routing (RACER), which dynamically selects between reasoning and non-reasoning judges under a fixed budget by formulating routing as a constrained distributionally robust optimization problem. RACER explicitly accounts for distribution shift via a KL-divergence uncertainty set, admits an efficient primal--dual algorithm, and enjoys theoretical guarantees including uniqueness of the optimal policy and linear convergence. Extensive experiments show that RACER achieves superior accuracy--cost trade-offs under distribution shift."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox",
+    "authors": "Yuanyang Li, Xue Yang, Longyue Wang, Weihua Luo, Hongyang Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10787v1",
+    "source": "arXiv",
+    "abstract": "Current LLM agents are proficient at calling isolated APIs but struggle with the \"last mile\" of commercial software automation. In real-world scenarios, tools are not independent; they are atomic, interdependent, and prone to environmental noise. We introduce $\\textbf{ComplexMCP}$, a benchmark designed to evaluate agents in these rigorous conditions. Built on the Model Context Protocol (MCP), $\\textbf{ComplexMCP}$ provides over 300 meticulously tested tools derived from 7 stateful sandboxes, ranging from office suites to financial systems. Unlike existing datasets, our benchmark utilizes a seed-driven architecture to simulate dynamic environment states and unpredictable API failures, ensuring a deterministic yet diverse evaluation. We evaluate various LLMs across full-context and RAG paradigms, revealing a stark performance gap: even top-tier models fail to exceed a 60% success rate, far trailing human performance 90%. Granular trajectory analysis identifies three fundamental bottlenecks: (1) $\\textbf{tool retrieval saturation}$ as action spaces scale; (2) $\\textbf{over-confidence}$, where agents skip essential environment verifications; and (3) $\\textbf{strategic defeatism}$, a tendency to rationalize failure rather than pursuing recovery. These findings underscore the insufficiency of current agents for interdependent workflows, positioning $\\textbf{ComplexMCP}$ as a critical testbed for the next generation of resilient autonomous systems."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+    "authors": "Chiyu Zhang, Huiqin Yang, Bendong Jiang, Xiaolei Zhang, Yiran Zhao, Ruyi Chen, Lu Zhou, Xiaogang Xu, Jiafei Wu, Liming Fang, Zhe Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10779v1",
+    "source": "arXiv",
+    "abstract": "The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to execute dangerous OS-level operations with irreversible consequences. Existing benchmarks either evaluate safety at the semantic layer alone, missing physical-layer harms, or fail to isolate test cases, letting earlier runs contaminate later ones. We present LITMUS (LLM-agents In-OS Testing for Measuring Unsafe Subversion), a benchmark addressing both gaps via a semantic-physical dual verification mechanism and OS-level state rollback. LITMUS comprises 819 high-risk test cases organized into one harmful seed subset and six attack-extended subsets covering three adversarial paradigms (jailbreak speaking, skill injection, and entity wrapping), plus a fully automated multi-agent evaluation framework judging behavior at both conversational and OS-level physical layers. Evaluation across frontier agents reveals three findings: (1) current agents lack effective safety awareness, with strong models (e.g., Claude Sonnet 4.6) still executing 40.64% of high-risk operations; (2) agents exhibit pervasive Execution Hallucination (EH), verbally refusing a request while the dangerous operation has already completed at the system level, invisible to every prior semantic-only framework; and (3) skill injection and entity wrapping attacks achieve high success rates, exposing pronounced agent vulnerabilities. LITMUS provides the first standardized platform for reproducible, physically grounded behavioral safety evaluation of LLM agents in real OS environments."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Unitaria: Quantum Linear Algebra via Block Encodings",
+    "authors": "Matthias Deiml, Oliver Hüttenhofer, Ram Mosco, Jakob S. Kottmann, Daniel Peterseim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10768v1",
+    "source": "arXiv",
+    "abstract": "We introduce Unitaria, a Python library that brings the simplicity of classical linear algebra toolkits such as NumPy and SciPy to the implementation of quantum algorithms based on block encodings, a general-purpose abstraction in which a matrix is embedded as a sub-block of a larger unitary operator. Their implementation has so far required deep knowledge of low-level circuit construction, which Unitaria aims to eliminate. The library provides a composable, array-like interface through which users can define block encodings of matrices and vectors, combine them through standard operations such as addition, multiplication, tensor products, and the Quantum Singular Value Transformation, and extract the resulting quantum circuits automatically. A key feature is a matrix-arithmetic evaluation path in which every operation can be computed directly on encoded vectors and matrices without dependence on ancilla qubits or circuit simulation. This enables correctness verification and classical simulation that scale well beyond what state vector simulation permits and also allows resource estimation, including gate counts, qubit counts, and normalization constants, without executing any circuit. Together, these capabilities allow researchers to develop, verify, and analyze quantum linear algebra algorithms today, ahead of the availability of error-corrected hardware. Unitaria is open source and available at https://github.com/tequilahub/unitaria."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction",
+    "authors": "Zhihao Cao, Qi Shao, Shuhao Zhai, Jing Zhang, Anh Nguyen, Baoru Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10760v1",
+    "source": "arXiv",
+    "abstract": "Collaborative photorealistic 3D reconstruction from multiple agents enables rapid large-scale scene capture for virtual production and cooperative multi-robot exploration. While recent 3D Gaussian Splatting (3DGS) SLAM algorithms can generate high-fidelity real-time mapping, most of the existing multi-agent Gaussian SLAM methods still rely on RGB-D sensors to obtain metric depth and simplify cross-agent alignment, which limits the deployment on lightweight, low-cost, or power-constrained robotic platforms. To address this challenge, we propose MAGS-SLAM, the first RGB-only multi-agent 3DGS SLAM framework for collaborative scene reconstruction. Each agent independently builds local monocular Gaussian submaps and transmits compact submap summaries rather than raw observations or dense maps. To facilitate robust collaboration in the presence of monocular scale ambiguity, our framework integrates compact submap communication, geometry- and appearance-aware loop verification, and occupancy-aware Gaussian fusion, enabling coherent global reconstruction without active depth sensors. We further introduce ReplicaMultiagent Plus benchmark for evaluating collaborative Gaussian SLAM. Intensive experiments on synthetic and real-world datasets show that MAGS-SLAM achieves competitive tracking accuracy and comparable or superior rendering quality to state-of-the-art RGB-D collaborative Gaussian SLAM methods while relying only RGB images."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "AutoSOUP: Safety-Oriented Unit Proof Generation for Component-level Memory-Safety Verification",
+    "authors": "Paschal C. Amusuo, Ricardo Calvo, Dharun Anandayuvaraj, Taylor Le Lievre, Kevin Kolyakov, Elijah Jorgensen, Aravind Machiry, James C. Davis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10712v1",
+    "source": "arXiv",
+    "abstract": "Memory-safety errors remain a persistent source of zero-day vulnerabilities in low-level software. The problem is especially acute in embedded systems, where hardware protections are often limited and dynamic analysis is difficult to apply effectively. Memory-safety verification can provide stronger assurance by proving the absence of such errors or exposing violations when they exist. However, current verification workflows remain largely manual and require substantial specialized expertise, limiting their adoption in practice. We present AutoSOUP, a system for automating component-level memory-safety verification through Safety-Oriented Unit Proofs. We formalize these unit proofs as artifacts that encode verification choices (scope, loop bounds, and environment models) for verifying safety properties, and introduce three techniques for deriving them automatically. To overcome the limitations of existing automation approaches, we further introduce LLM-As-Function-Call, a hybrid architecture that combines deterministic program synthesis with LLMs to automate these techniques and produce justifiable unit proofs. We evaluate AutoSOUP by assessing its ability to automate memory-safety verification and expose vulnerabilities in verified components, and we characterize the assumptions and guarantees of the resulting proofs."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "When Should Teachers Control AI Generation for Mathematics Visuals?",
+    "authors": "Zhengxu Li, Junling Wang, April Yi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10672v1",
+    "source": "arXiv",
+    "abstract": "Generative AI has the potential to help teachers rapidly create classroom-ready visual materials, particularly in mathematics where diagrams and visual representations must be pedagogically meaningful and instructionally correct. However, current generative tools primarily support prompting and post-hoc editing, leaving open a key question for correctness-sensitive educational authoring: when in the generation pipeline should teachers exert control? In this paper, we investigate how the timing of human control in AI-assisted generation shapes teachers' visual authoring practices in correctness-sensitive tasks. We introduce a design space of three stages of control: pre-generation control, where users specify intent solely through natural language prompts before generation; mid-generation control, where users inspect and confirm an explicit layout structure before the system completes generation; and post-generation control, where users directly modify AI-generated visuals after generation through object-level edits. In a within-subject, mixed-methods study with 24 primary mathematics teachers, post-generation control received higher ratings on predictability and correctness, while other subjective measures showed no reliable differences. Qualitative findings explain these differences by revealing workflow trade-offs: highly automated, pre-generation control supports rapid ideation but reduces perceived agency and predictability; mid-generation control improves structural alignment at the cost of additional effort; and post-generation control preserves user agency through low-cost, direct verification and correction. Together, these results suggest that in correctness-sensitive educational tasks, effective generative tools should align system behavior with teacher intent and support stage-dependent workflows that combine automation with direct manipulation."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "On the Verification Problem of Remote Direct Memory Access programs (Extended Version with Appendix)",
+    "authors": "Parosh Aziz Abdulla, Mohamed Faouzi Atig, Govind Rajanbabu, Stephan Spengler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10631v1",
+    "source": "arXiv",
+    "abstract": "Remote Direct Memory Access (RDMA) is a technology that allows direct memory access from the memory of one computer into that of another without involving either one's operating system. This enables high-throughput, low-latency networking, which is especially useful in massively parallel computer clusters. In this paper, we study the reachability and robustness problems for RDMA programs. We show that reachability is undecidable in general, even for a restricted fragment of the model. We then focus on robustness, which asks whether a program exhibits the same behaviours under the RDMA and sequential consistency (SC) semantics, and prove that this problem is decidable. Our central technical result establishes a normal form for robustness violations, showing that any non-robust program admits a violating execution of a specific form. We then leverage this normal form to obtain a decision procedure that reduces robustness to reachability in finite-state programs with counters, yielding an EXPSPACE upper bound in the general case, and a PSPACE upper bound in the absence of poll operations. Finally, we also show that both of these bounds are optimal."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Hierarchical End-to-End Taylor Bounds for Complete Neural Network Verification",
+    "authors": "Taha Entesari, Mahyar Fazlyab",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10621v1",
+    "source": "arXiv",
+    "abstract": "Reachability analysis of neural networks, which seeks to compute or bound the set of outputs attainable over a given input domain, is central to certifying safety and robustness in learning-enabled physical systems. Since exact reachable set computation is generally intractable, existing methods typically rely on tractable overapproximations. Examining the state of the art for smooth, twice-differentiable networks, we observe that existing approaches exploit at most second-order information and do not systematically leverage higher-order information. In this work, we introduce \\textsc{HiTaB}, a novel verification framework that exploits second-order smoothness through both the Hessian, $\\nabla^2 f$, and its Lipschitz constant, $L_{\\nabla^2 f}$. We further develop a unified hierarchy of zeroth-, first-, and second-order bounds, together with precise conditions under which higher-order approximations yield provable improvements. Our main technical contribution is a compositional procedure for efficiently bounding $L_{\\nabla^2 f}$ in deep neural networks via layerwise propagation of curvature bounds. We extend the framework to both $\\ell_2$- and $\\ell_\\infty$-constrained input sets and show how it can be integrated into branch-and-bound verification pipelines. To our knowledge, this is the first practical reachability analysis framework for smooth neural networks that systematically exploits Lipschitz continuity of curvature, leading to tighter and more informative safety certificates."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "The Open-Box Fallacy: Why AI Deployment Needs a Calibrated Verification Regime",
+    "authors": "Phongsakon Mark Konrad, Tim Lukas Adam, Ane Cathrine Holst Merrild, Riccardo Terrenzi, Rebecca De Rosa, Toygar Tanyel, Serkan Ayvaz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10601v1",
+    "source": "arXiv",
+    "abstract": "AI deployment in sensitive domains such as health care, credit, employment, and criminal justice is often treated as unsafe to authorize until model internals can be explained. This often leads to an excessive reliance on mechanistic interpretability to address a deployment challenge beyond its intended scope. We argue that the gate should instead be calibrated verification: authorization should be domain-scoped, independently checkable, monitored after release, accountable, contestable, and revocable. The reason is twofold. First, model capability is uneven across nearby tasks, so authorization must attach to a specific use rather than to a model in general. Second, societies have long governed opaque expertise through credentials, monitoring, liability, appeal, and revocation rather than mechanism-level explanation. Recent evidence reinforces this distinction between mechanistic understanding and deployment authority: a 53-percentage-point gap between internal representations and output correction shows that understanding may not translate into action, while one scoping review found that only 9.0% of FDA-approved AI/ML device documents contained a prospective post-market surveillance study. We propose Verification Coverage, a six-component reportable standard with a minimum-composition rule, as the metric that should sit beside capability scores in model cards, leaderboards, and regulatory disclosures."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "An agentic framework for gravitational-wave counterpart association in the multi-messenger era",
+    "authors": "Yiming Dong, Yacheng Kang, Junjie Zhao, Xinyuan Zhu, Ziming Wang, Lijing Shao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10584v1",
+    "source": "arXiv",
+    "abstract": "With the detection of gravitational waves (GWs), multi-messenger astronomy has opened a new window for advancing our understanding of astrophysics, dense matter, gravitation, and cosmology. The GW sources detected to date are from mergers of compact object binaries, which possess the potential to generate detectable electromagnetic (EM) counterparts. Searching for associations between GW signals and their EM counterparts is an essential step toward enabling subsequent multi-messenger studies. In the era of next-generation GW and EM detectors, the rapid increase in the number of events brings not only unprecedented scientific opportunities, but also substantial challenges to the existing data analysis paradigm. To help address these challenges, we develop GW-Eyes, an agentic framework powered by large language models (LLMs). For the first time, GW-Eyes integrates domain-specific tools and autonomously performs counterpart association tasks between GW and candidate EM events. It supports natural language interaction to assist human experts with auxiliary tasks such as catalog management, skymap visualization, and rapid verification. Our framework leverages the complex decision-making capabilities of LLMs and their traceable reasoning processes, offering a new perspective to the multi-messenger astronomy."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "PhysEDA: Physics-Aware Learning Framework for Efficient EDA With Manhattan Distance Decay",
+    "authors": "Zetao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10547v1",
+    "source": "arXiv",
+    "abstract": "Electronic design automation (EDA) addresses placement, routing, timing analysis, and power-integrity verification for integrated circuits. Learning methods -- attention (Transformer) and reinforcement learning (RL) -- have recently emerged on EDA tasks, yet face two common bottlenecks: vanilla attention's quadratic complexity limits scaling, and data-scarce models overfit statistical noise and amplify weak long-range correlations against the underlying physics. We observe that EDA tasks share a physical prior -- pairwise electrical and routing interactions decay exponentially along Manhattan distance -- and integrate it as a unified inductive bias into both architecture and training. We propose PhysEDA, comprising two components Physics-Structured Linear Attention (PSLA) folds the separable Manhattan decay into the linear-attention kernel as a multiplicative bias, reducing complexity from quadratic to linear; Potential-Based Reward Shaping (PBRS) constructs a physical potential from the same kernel, providing dense reward signal under sparse RL while preserving the optimal policy via the policy-invariance theorem. Across three EDA scenarios -- decoupling-capacitor placement, macro placement, and IR-drop prediction -- PhysEDA improves zero-shot cross-scale transfer by 56.8% and achieves 14x inference speedup with 98.5% memory savings on 100x100 grids; PBRS adds another 10.8% in sparse-reward DPP."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Formally Verifying Analog Neural Networks Under Process Variations Using Polynomial Zonotopes",
+    "authors": "Yasmine Abu-Haeyeh, Tobias Ladner, Matthias Althoff, Lars Hedrich",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10474v1",
+    "source": "arXiv",
+    "abstract": "Analog neural networks are gaining attention due to their efficiency in terms of power consumption and processing speed. However, since analog neural networks are implemented as physical circuits, they are highly sensitive to manufacturing process variations, which can cause large deviations from the nominal model. We present a polynomial-based model that resembles the performance of the neuron circuit under process variations. Then, we formally verify the behavior of the circuit-level model using reachability analysis with polynomial zonotopes, thus, avoiding conventional, time-consuming Monte Carlo simulations. We evaluate our proposed verification approach on three different datasets, verifying both fully-connected and convolutional analog neural networks. Our experimental results confirm the effectiveness of our verification approach by reducing the verification time from days to seconds while enclosing 99% of the variation samples."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Coherency through formalisations of Structured Natural Language, A case study on FRETish",
+    "authors": "Joost J. Joosten, Marina López Chamosa, Sofía Santiago Fernández",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.10462v1",
+    "source": "arXiv",
+    "abstract": "Formalisation is the process of writing system requirements in a formal language. These requirements mostly originate in Natural Language. In the field of Formal Methods, formalisation is often identified as one of the most delicate and complicated steps in the verification process. Not seldomly, formalisation tools and environments choose various levels of requirement descriptions: Natural Language, Technical Language, Diagram Representations and Formal Language, to mention a few. In the literature, there are various maxims and principles of good practice to guide the process of requirement formalisation. In this paper we propose a new guideline: Coherency through Formalisations. The guideline states that the different levels of formalisation mentioned above should roughly follow the same logical structure. The principle seems particularly relevant in the setting where LLMs are prompted to perform reasoning tasks that can be checked by formal tools using Structured Natural Language to act as an intermediate layer bridging both paradigms. In the light of coherency, we analyze NASA's Formal Requirement Elicitation Tool FRET and propose an alternative automated translation of the Controlled Natural Language FRETish to the formal language of MTL. We compare our translation to the original translation and prove equivalence using model checking. Some statistics are performed which seem to favor the new translation. As expected, the translation process yielded interesting reflections and revealed inconsistencies which we present and discuss."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "LLM-Driven C-to-Verilog Translation via HLS with Automated Verification",
+    "authors": "Rundong Chen, Xiang Chen",
+    "publish": "2026 IEEE 8th International Conference on Communications, Information System and Computer Engineering (CISCE)",
+    "url": "https://doi.org/10.1109/cisce69494.2026.11504558",
+    "source": "IEEE",
+    "abstract": "This paper presents a multi-stage code transformation framework that leverages large language models (LLMs) to convert algorithmic C code into synthesizable Verilog/SystemVerilog through an intermediate High-Level Synthesis C (HLSC) representation. The framework accepts natural language specifications alongside C code and employs HLSC as a hardware-aware semantic bridge that makes bit-width constraints and hardware properties explicit before final RTL generation. Automated syntax verification via iverilog v12 and iterative error repair further improve synthesis quality. We evaluate on the VerilogEval-Human v2 benchmark (156 specification-toRTL problems). The proposed NL +C arrow HLSC arrow Verilog pipeline achieves 84.0% functional pass rate (131/156) with Qwen3-Next80B, substantially outperforming direct NL arrow Verilog (61.5%) and NL +C arrow Verilog (73.1%) baselines. The framework reaches up to 96.1% (MiniMax-M2.5) and 94.87% with GPT-4 Turbo, surpassing VerilogCoder's 9 4. 2%. Cross-model evaluation across six LLMs of varying scales demonstrates consistent effectiveness of the multi-stage approach."
+  },
+  {
+    "date": "2026-5-12",
+    "title": "Simulating Social Networks with LLM Agents",
+    "authors": "Nicolás Torres",
+    "publish": "Proceedings of the 2026 18th International Conference on Computer Research and Development",
+    "url": "https://doi.org/10.1145/3796263.3796296",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Defensive Architectures for LLM-Based Fraud Detection Against Data Poisoning and Prompt Injection",
+    "authors": "Divija Vijaya Ganiga",
+    "publish": "2026 IEEE International conference on Advanced Systems and Emergent Technologies (IC_ASET)",
+    "url": "https://doi.org/10.1109/ic_aset69920.2026.11502216",
+    "source": "IEEE",
+    "abstract": "The increasing adoption of Large Language Models (LLMs) in financial fraud detection has enhanced institutional capabilities for identifying sophisticated and dynamic fraudulent activities within large-scale transaction systems. However, the implementation of LLM-driven systems introduces critical security vulnerabilities, particularly data poisoning during training and prompt injection attacks during inference, which threaten the reliability and integrity of automated fraud detection. This paper proposes a Resilient Defensive Architecture for LLMbased Fraud Detection (RDA-LLM), a multi-layered framework designed to protect against adversarial manipulation while maintaining high detection accuracy. The proposed architecture integrates data sanitization, semantic prompt purification, auxiliary adversarial detection, ensemble-based validation, and uncertainty-aware decision gating into a unified defensive framework. Extensive experiments on the Kaggle Credit Card Fraud Detection dataset demonstrate that RDA-LLM outperforms state-of-the-art LLM-based fraud detection models, including LLM40FD and LLM-MalDetect, across several key performance measures such as accuracy, precision, recall, false positive rate, and resistance to adversarial attacks. The results confirm that RDA-LLM provides enhanced resilience without prohibitive inference latency overhead, making it suitable for realtime deployment. This work contributes to enhancing the stability, security, and technological advancement of U.S. financial systems by developing secure, reliable, and scalable solutions that mitigate critical security vulnerabilities in LLM-based systems."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Smart Crop Recommendation System using TabNet and LLM Integration",
+    "authors": "T. C. Sabareeswari, P. Pattunnarajan, S Vidhyashree",
+    "publish": "2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)",
+    "url": "https://doi.org/10.1109/icdsaai69492.2026.11505173",
+    "source": "IEEE",
+    "abstract": "A crop recommendation system that integrates LLM and uses the TabNet algorithm has been proposed. When applied to large, diverse tabular agricultural datasets, previous models using Random Forest, CatBoost, and XGBoost often suffered from performance and scalability issues. TabNet overcomes these limitations by offering feature selection, high predictive accuracy, and efficient management of raw tabular data. For this study, a dataset comprising essential soil and environmental parameters, including pH, temperature, humidity, rainfall, nitrogen, phosphorus, and potassium, was collected. Two subsets of the data are created, one for model training and the other for assessment. The provided dataset was used to train the TabNet model, and metrics were used to assess its performance. With $98.12 \\%$ accuracy, 0.9813 precision, 0.9812 recall, and 0.9812 F1 score, the results demonstrated strong predictive performance. The predictions were validated across a variety of crop types using visualisation tools such as ROC curves and confusion matrices. Additionally, the system’s extensive language model enables users to interact with it via queries that support decision-making."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Reliable LLM-Powered Decision Engines for Large-Scale Supply Chain Operations: Architecture, Safety, and Performance Guarantees",
+    "authors": "Nirmal Kumar Jingar",
+    "publish": "2026 IEEE International conference on Advanced Systems and Emergent Technologies (IC_ASET)",
+    "url": "https://doi.org/10.1109/ic_aset69920.2026.11502212",
+    "source": "IEEE",
+    "abstract": "Current large-scale supply chains are highly uncertain, dynamic, and disruption prone that are challenging to serve up timely and resilient decisions through traditional rulebased and optimization-only systems. The increasing supply of heterogeneous data sources, such as transactional demand signals and unstructured disruption report, presents a chance of intelligent systems, which could reason, adapt and optimize at the same time. A hybrid architecture that combines large language models (LLMs) with mathematical optimization, probabilistic forecasting, and safety-constrained decision filtering is proposed in this paper as a performance of a Decision Engine, which is called LLM-Powered Decision Engine (LLM-DE). In comparison to purely data-driven or heuristic solutions, LLM-DE integrates semantic reasoning with LLM with a set of performance and safety guarantees that allow safe decision-making in large-scale supply chain processes. The suggested framework enables the end-to-end decision making such as demand forecasting, inventory optimization, and transportation routing and disruption mitigation. The findings affirm that language-based reasoning combined with optimization and formal constraints can be used to come up with not only smarter but also safer and more scalable supply chain decisions. This research provides a new architecture, a complete pipeline of algorithm, and a formulation based on mathematical constructs of the operational decision systems incorporating LLM. The proposed model offers a pragmatic and theoretical basis of the next-generation intelligent supply chain infrastructures that can be implemented to work dependably in the face of uncertainty and massive complexity."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "AgentBRTA: An LLM and RAG-Based Conversational Agent for Bangladesh Road Transport Authority",
+    "authors": "Md Naimur Rahman Khan Sifat",
+    "publish": "2025 IEEE International Conference on Signal Processing, Information, Communication and Systems (SPICSCON)",
+    "url": "https://doi.org/10.1109/spicscon69221.2025.11503948",
+    "source": "IEEE",
+    "abstract": "Large Language Models (LLMs) have consistently shown unparalleled reading and writing capabilities of language, but their real-world application in special-purpose regulation situations must entail fusion of domain-specific knowledge to be relevant and precise. AgentBRTA, a Retrieval-Augmented Generation (RAG) oriented conversational agent, was designed to provide answers to Bangladesh Road Transport Authority (BRTA) policies and regulations. AgentBRTA draws on BRTA’s authoritative law documents, using semantic vector retrieval and reranking to pinpoint salient context and an instruction-specific LLM (GPT-4o-mini) to produce accurate, precise answers. BERTScore-based automated evaluation has AgentBRTA consistently scores 0.83, outperforming the benchmark GPT-4o (0.78) and GPT-4o-mini (0.69) baselines. Human evaluation testing also validated the system’s capability to produce coherent, informative, and factually accurate answers. AgentBRTA offers a real-world, scalable solution to facilitate increased citizen access to BRTA services and administrative ease"
+  },
+  {
+    "date": "2026-5-11",
+    "title": "The VBA-LLM Gateway: Cognitive Automation in Legacy Enterprise Environments",
+    "authors": "Manav Swargwani, Niyojita Mhaiskar, Amit Chavan, Deep Khivasara, Aditya Turankar",
+    "publish": "2026 IEEE International Conference for Convergence in Computing Technology (I3CTCON)",
+    "url": "https://doi.org/10.1109/i3ctcon68242.2026.11507653",
+    "source": "IEEE",
+    "abstract": "The current literature of information technology in business faces a deep-level crisis of integration, described by a conflict between ubiquitous and established legacy systems from decades ago and the onset of new generative artificial intelligence techniques. This paper provides an in-depth analysis of VBA-LLM Gateway, also known as \"Project Chimera, a hybrid prototype aimed at connecting a tenacious, thirty-year technology gap between Microsoft Visual Basic for Applications and new Large Language Models like Meta Llama 3.3-8B-Instruct. Using a cross-sectional analysis of project code design and structure in relation to a comparative review of literature in artificial intelligence development support studies and human-computer interaction analytics, we outline technology in this project in a deep-level analysis that represents severe engineering issues in this area. These data clearly suggest that, despite many workarounds available for software integration, severe software \"aging issues, UI responsiveness with synchronous I/O blocking, and serious security concerns with regards to data sovereignty are integral issues in this software prototype. These data are also matched with a parallel investigation for GitHub Copilot practices in healthcare literature for automation in value-based healthcare with economies of scale, proposing, in conjunction with this investigation, a multi-modal methodology design plan that retrieves models from a comprehensive analysis of literature in human-computer interaction to facilitate further investigation. This paper, in total, then represents a detailed retrospective of a prototype of a legacy software integration project, also further defining a design plan for a necessary platform switch in order to maintain long-term software development in secure, preferably non-asynchronous, conditions."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "X-ForensicNet: An Explainable Offline LLM Framework for Automated Windows Digital Forensics with Neuro-Symbolic Validation",
+    "authors": "Radharaman Tiwari, Manisha J. Nene",
+    "publish": "2026 IEEE International Conference for Convergence in Computing Technology (I3CTCON)",
+    "url": "https://doi.org/10.1109/i3ctcon68242.2026.11507245",
+    "source": "IEEE",
+    "abstract": "Digital forensics investigation of Windows systems is traditionally manual, time-consuming, and demands expert analysis of vast forensic artifacts. Recent advances in Large Language Models (LLMs) show significant promise in automating forensic interpretation but relying on cloud services threatens data privacy and lacks explainability required for legal admissibility. We propose X-ForensicNet, a fully offline forensic framework integrating local LLM inference, retrieval-augmented generation (RAG), and neuro-symbolic rule-based validation within a multi-agent architecture. The system automatically extracts Windows artifacts from forensic disk images, structures them into JSON datasets, semantically analyzes them with a local LLM enhanced by symbolic forensic rules, and generates transparent, explainable forensic reports. Our system accelerates forensic investigations by 2.8× while improving accuracy to 96.3%, supports complete offline operation for privacy-sensitive environments, and ensures legal defensibility through explainable reasoning trails. Experimental evaluation on real and synthetic forensic datasets demonstrates significant improvements over traditional manual analysis and cloud-based approaches."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Reddit Rule-Violation Classification Using LLM-Assisted Data Augmentation and Multi-Model Evaluation",
+    "authors": "S Krithikha Sanju, R Santhoshkumar, P Shyam Saran",
+    "publish": "2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)",
+    "url": "https://doi.org/10.1109/icdsaai69492.2026.11505180",
+    "source": "IEEE",
+    "abstract": "Reddit’s moderation of content is difficult because it has a lot of different rules; there is not a lot of labelled data, and there is a huge imbalance of instances in a classification. There is a proposed framework that combines LLM-based data augmentation with multi-model evaluation to classify rule violations. Synthetic data generated with structured prompts increases the diversity of the training data. Various models (traditional ML, ensemble methods, and transformers) were evaluated on the final real test data. The CatBoost stacking model achieved 0.985 accuracy, whereas the stacking and transformer models each achieved an AUC over 0.994. The results from this study indicate that LLM augmentation has an enormous positive impact on the performance of classical models, enabling a solution that can be scaled and replicated to automate moderation."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Spark-Based Optimized IPO Recommendation System Using LLM-Driven Data Extraction and Parallel Scoring",
+    "authors": "Amara Pranav, Joshika Somisetty, Koduri Lakshmi Vinugna, Manju Venugopalan",
+    "publish": "2026 IEEE International Conference for Convergence in Computing Technology (I3CTCON)",
+    "url": "https://doi.org/10.1109/i3ctcon68242.2026.11507740",
+    "source": "IEEE",
+    "abstract": "The decision of investing in the Initial Public Offering’s involves real time analysis of heterogeneous financial information of several sources. This paper introduces a full-pipe intelligent system that incorporates LLM driven web data mining, Apache Spark-based processing in parallel and optimizing portfolios of the retail investor. The system automatically retrieves the IPO information on large financial portals, normalizes it with the help of the Perplexity API, enriches the records with the help of distributed Spark processing, and works with multi-factor scoring algorithms. A Web-based interface is built on Streamlit that gives explainable investor recommendations, maximizing user-specified budgets and time horizons, based on Mixed Integer Linear Programming, or on smart greedy fallback policies. According to experimental results, a high accuracy of field extraction, 4 times faster with parallel processing, 96.7% efficiency of the budget used to explain investments, and explain investments decisions using factors, are obtained. The framework is concerned with key issues in the heterogeneity of data, the scalability of processing and explainability of investment decisions."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Beyond Answer Generation: Scaffolding Metacognitive Thinking via LLM-Driven Socratic Dialogue",
+    "authors": "Wasan Na Chai, Suwit Somsuphaprungyos, Chayanin Kummuang, Kittipong Roekkesi, Kreangsak Tamee, Taneth Ruangrajitpakorn",
+    "publish": "2026 IEEE International Conference on Cybernetics and Innovations (ICCI)",
+    "url": "https://doi.org/10.1109/icci68752.2026.11506456",
+    "source": "IEEE",
+    "abstract": "While Large Language Models have rapidly become powerful providers of knowledge in education, developing higher-order thinking skills such as metacognition remains among the most difficult educational challenges. Unlike knowledge acquisition, these skills require learners to actively monitor, evaluate, and regulate their own reasoning processes. This study presents a conversational learning framework that operationalizes Socratic-style inquiry through LLM-driven dialogue to cultivate learners into better thinkers by strengthening metacognitive and Computational Thinking practices. Instead of providing answers, the system analyzes learners' explanations derived from PISA science tasks and generates adaptive reflective questions that guide reasoning refinement. Deployment with <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{2 0}$</tex> university students across three weekly sessions showed increased thinking proficiency, reflected by reduced reliance on metacognitive scaffolding. The average number of system-generated reflective prompts required for task completion decreased from 19.45 to 16.35 turns across repeated system use, indicating improved independent reasoning during explanation construction. These findings suggest that LLMs can be repositioned from knowledge providers toward inquiry partners that support the development of thinking skills in AImediated learning environments."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "AMMHAS: An Adaptive Multimodal Framework for Mental Health Assessment with LLM-Based Interpretability",
+    "authors": "M. Sumithra Bhargavi, Btpr Nikhil, M. Chandralekha, M Rahul Raj",
+    "publish": "2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)",
+    "url": "https://doi.org/10.1109/icdsaai69492.2026.11505161",
+    "source": "IEEE",
+    "abstract": "Evaluations of mental health have become increasingly dependent on self-reported methods that are prone to subjective biases. Recent advancements in artificial intelligence and affective computing have created novel opportunities for objective and data-driven evaluations via behavioral indicators This study proposes a novel Adaptive Multimodal Mental Health Assessment System that assesses expressions across various modalities, specifically textual, acoustic, and visual. Modality-specific feature extractors and deep learning models are employed, followed by multimodal fusion using a multi-layer perceptron to generate normalized emotion score distributions rather than single-label predictions. These scores are subsequently summarized into structured psychometric reports designed for interpretability. To enhance explainability, a lightweight large language model is integrated as a post-processing component to translate structured emotion metrics into human-readable, non-diagnostic explanations. An experimental evaluation on the benchmark multimodal emotion recognition dataset shows that multimodal fusion generates more stable and consistent emotion representation compared to unimodal approaches, highlighting the potential of AMMHAS as an explainable application-oriented mental health assessment framework."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "LLM - Integrated Big Data Pipelines for Context - Aware Knowledge Extraction",
+    "authors": "Himanshu Shah, Sudharshan Reddy Kakumanu, Mallikarjun Gouru, Sreekanth Muktevi, Mihir Dhakan, Ranjith Goud Karvanga",
+    "publish": "2026 IEEE International Conference for Convergence in Computing Technology (I3CTCON)",
+    "url": "https://doi.org/10.1109/i3ctcon68242.2026.11507211",
+    "source": "IEEE",
+    "abstract": "The fast expansion of the heterogeneous and high-velocity big data has increased the demand of smart pipelines that can extract context-dependent and actionable knowledge, in real-time. Conventional big data processing models are mostly rule-based analytics and fixed machine learning models that do not always reflect semantic connections, dynamic situations and domain specificities that may exist within large volumes of unstructured and semi-structured data. To overcome these shortcomings, this paper suggests a big data pipeline implemented with LLM, which will intuitively introduce big language models (LLMs) into distributed processes of data processing to extract knowledge based on its context. The suggested architecture is scalable data ingestion, stream-batch hybrid processing, semantic representation learning, and prompt-driven reasoning layers which is capable of supporting deep contextual comprehension of wide-ranging data sources. LLMs are used to interpret dynamic schemas, semantically enrich, contextually summarize, and build knowledge graphs, as well as maintain compatibility with existing big data ecosystems. The framework also includes the adaptive orchestration, caching policies, and control mechanisms to handle the latency, cost, and privacy limitations when implementing LLM. Extensive experimental results performed on large-scale real-world datasets have shown that the suggested pipeline can be much more effective in terms of accuracy of knowledge extraction and contextual relevance and interpretability than typical big data analytics and transformer-based baselines. The findings suggest that the use of LLM-enabled pipelines can be used to promote intelligent decision-making in data-intensive areas, including enterprise analytics, cybersecurity, healthcare informatics, and smart supply chains. This paper builds a platform of scalable and extendable contextual-aware big data intelligence systems."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Uncertainty-Calibrated Trust Modelling for LLM-Generated Misinformation Detection",
+    "authors": "M Pio Godwin, Hemprasath Sankar, R Kavitha, M Kamalesh, S Raghunath, N Irfanullah Baig",
+    "publish": "2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)",
+    "url": "https://doi.org/10.1109/icdsaai69492.2026.11505140",
+    "source": "IEEE",
+    "abstract": "With the accelerated adoption of LLMs, highly cohesive and convincing AI-generated misinformation is being rapidly spread. Existing detection systems are built using deterministic binary classification and rarely leverage the uncertainty prediction or calibration. This paper presents VeriTrust-AI, an application framework designed to score a system’s trustworthiness for a misinformation detector using MC Dropout and a Natural Language Inference (NLI) consistency score. Instead of relying on heuristic system-confidence outputs, the system predicts epistemic uncertainty using predictive entropy, and a parallel NLI system checks cross-sentence entailment to measure whether the generated text contains hallucinated content by the LLM. Shapley Additive Explanations (SHAP) values are used for feature-level attribution and to increase the model interpretability. To the best of our knowledge, this work is the first attempt to combine MC Dropout-based epistemic uncertainty quantification with NLI semantic consistency evaluation to achieve discriminative LLM hallucination triage on the fine-tuned classifier. Evaluated on the HaluEval dataset, the proposed method achieved state-of-the-art multi-seed accuracy $(98.10 \\% \\pm 0.08)$ and F1-score $(0.981 \\pm 0.001)$ on the standard benchmark and maintained a low Expected Calibration Error (ECE) of 0.041. The selective prediction tests confirmed that thresholding the derived Trust score helps bound the system error and achieve $100 \\%$ operational accuracy with $80 \\%$ prediction coverage."
+  },
+  {
+    "date": "2026-5-12",
+    "title": "LLM-Powered Multi-Agent Systems: A Survey of Collaboration and Learning Strategies",
+    "authors": "Sahar Yarmohammadtoosky, Ying Xie",
+    "publish": "Proceedings of the 2nd International Conference on Artificial Intelligence, Digital Media Technology and Social Computing",
+    "url": "https://doi.org/10.1145/3806262.3806263",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Smart Retrieval of Industrial Standards with LLM and Elastic search",
+    "authors": "Poornima Jayaraman, Pachaivannan Partheeban, Kothalam Krishnan Nagarajan, N Koushik, G Nikil Manikandan, J.Jerauld Alwin",
+    "publish": "2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)",
+    "url": "https://doi.org/10.1109/icdsaai69492.2026.11505118",
+    "source": "IEEE",
+    "abstract": "Manufacturing, energy, and construction industries significantly use the services of ASME, API, and NFPA standards. But the retrieval of precise information from these large code libraries can be a slow process. For these reasons, a new AI-based hybrid document retrieval system is discussed in this paper. The new system will not only use keyword searches using Elasticsearch with traditional AI methods, but it will also use transformer-based large language models (LLMs) for providing precise information related to industrial standards. The system will use tokenaware preprocessing techniques, fall-back approaches for large queries, or a summary to ensure clarity. In contrast to conventional Retrieval-Augmentation-Generation (RAG) approaches, it will divide the two processes for faster execution. The system will demonstrate sub-two-second latency measurements with precise alignment of source documents."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Hybrid Big Data-LLM Framework for Intelligent Scientific Literature Mining",
+    "authors": "Md. Ishtiaque Alam, Ruhul Amin Md Rashed, Partha Chakraborty, Sraboni Clara Mohonta, Hasan Imam, Mohammad Muzahidur Rahman Bhuiyan",
+    "publish": "2026 IEEE International Conference for Convergence in Computing Technology (I3CTCON)",
+    "url": "https://doi.org/10.1109/i3ctcon68242.2026.11507315",
+    "source": "IEEE",
+    "abstract": "The rapid increase in scientific publications has posed a serious problem in the effective discovery, analysis and synthesis of pertinent knowledge under various fields of research. The conventional methods of literature mining usually find it difficult to handle large heterogeneous datasets preserving textual background and semantic precision. In order to overcome these shortcomings, this paper will present Hybrid Big Data-Large Language Model (LLM) Framework to Intelligent Scientific Literature Mining that combines scalable distributed data processing with state-of-the-art transformer-based language intelligence. The suggested framework uses big data technologies to ingest, store, and process scholarly repositories in high throughput, and has modules powered by LLMs to understand the semantic information in deep, and to summarize and analyse citations, topic modelling, and research trends. The multi-layer architecture that incorporates data orchestration, neural knowledge representation, and adaptive retrieval mechanisms is presented to improve the accuracy and minimize the information overload. Moreover, the framework supports embedding strategy and reinforcement driven filtering to enhance ranking of relevance and reduce redundancy in the extracted insights. The experimental analysis shows that the hybrid system has a much higher semantic accuracy, retrieval efficiency, scalability and rate of knowledge discovery compared to the traditional literature mining systems. Findings have shown enhanced contextual mapping of research subjects and easy discovery of new scientific pathways. The framework is also useful in facilitating interdisciplinary exploration in the sense that it allows automatic connectivity between knowledge spaces that used to be unconnected. The study will provide an intelligent and scalable scientific discovery paradigm of next-generation scientific discovery systems, which enable accelerated innovation processes and evidence-based research. The model is especially applicable when dealing with data-intensive environments, in which it is important that researchers, institutions and policy-makers quickly gain an understanding of the changing literature."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "Hybrid Transformer-Stylometric Detection of LLM-Related Phishing E-Mails: A Three-Class Classification Framework",
+    "authors": "Mg Ananya, Jayavarshini Srinivasan, R Mohandas, N Kandavel, M Vinodhini, P Karthikeyan",
+    "publish": "2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)",
+    "url": "https://doi.org/10.1109/icdsaai69492.2026.11505222",
+    "source": "IEEE",
+    "abstract": "Phishing messages in cyberspace have become more sophisticated due to the emergence of Large Language Models (LLMs), which generate content with extremely high contextualization and grammatical correctness. An evolved Transformer-based stylometric classifier is proposed to accurately distinguish between authentic email, human-authored phishing, and LLM-generated phishing. For this purpose, a DistilBERT encoder for pulling out deep contextual representations as well as ten stylometric measures, including: language regularities, unique-word ratio, character entropy, and digit ratio. When trained on curated, deduplicated data of human- and LLM-generated phishing emails and legitimate emails, the overall accuracy is $96.03 \\%$, and the weighted F1-score is 0.96 across all three classes. The performance for each type is $96 \\%$ for benign emails, $89 \\%$ for human-created phishing, and 99% for LLM-generated phishing. Precision was achieved at a level of 1.0, recall was 0.98, a the misclassification rate was $1 \\%$. Based on analysis, email has become the single most important vector in today’s world of cyberattacks. More than $90 \\%$ of successful data breaches involve email attacks, emphasising the importance of robust email protection. As organisations’ reliance on digital communication increases, the volume and complexity of phishing attacks grow, posing a challenge to the cybersecurity infrastructure. In terms of feature-importance, LLM-generated phishing is characterised by regularities in sentence structure, specific character entropy ranges, and uniformity in punctuation. For companies, this scalable three-class detection model offers an easy-to-install option within an email security gateway to defend against modern social engineering attacks."
+  },
+  {
+    "date": "2026-5-11",
+    "title": "LLM-Enabled Cognitive Search for Context-Aware Knowledge Retrieval from Heterogeneous Data Sources",
+    "authors": "Mallikarjun Gouru, Tanvi Mittal, Ashraf Syed, Subrat Kumar Prasad, Sreepal Reddy Bolla, Revanth Reddy Bandaru",
+    "publish": "2026 IEEE International Conference for Convergence in Computing Technology (I3CTCON)",
+    "url": "https://doi.org/10.1109/i3ctcon68242.2026.11507233",
+    "source": "IEEE",
+    "abstract": "The successive increase in the heterogeneous data in structured databases, semi-structured documents, and unstructured text repositories have rendered context-conscious knowledge retrieval a significant concern in the modern information systems. Sometimes, traditional methods of search such as keywords, rules, and other systems do not have the capability of reflecting the intent of the semantics, dependencies between contexts and cross-source relations leading to a common output of fragmented and low-precision retrieval. In an effort to overcome these shortcomings, the paper at hand suggests an LLM-based cognitive search model that would be used to achieve context-based knowledge retrieval in heterogeneous data sources. The suggested method consists of the combination of large language models (LLMs) and semantic embedding algorithms, contextual reasoning, and adaptive query orchestration to allow the deep interpretation of the user intent and data semantics. This structure integrates multi-modal and multi-source data with a semantic indexing layer and uses dynamically refined and ranked queries and synthesized knowledge with LLM-based reasoning. The proposed model in contrast to traditional retrieval systems enables contextual memory, conversational interaction, and domain-aware inference, which enable it to provide accurate, explainable and personalized search results. Experimental analysis on the variety of enterprise-scale datasets proves that the retrieval accuracy, contextual relevance, and response consistency are improved significantly in comparison with traditional and neural information retrieval benchmarks. The findings suggest that there is a next-generation of knowledge management, decision support system and enterprise information retrieval system which involves the LLM-enabled cognitive search as a scalable and intelligent solution."
+  },
+  {
+    "date": "2026-5-12",
+    "title": "Requirement Mapping for Complex Equipment: An LLM-Enhanced GQFD Method",
+    "authors": "Xuanming Feng, Gang Zhao, Long Zhang, Zhen Lei, Tong Wang",
+    "publish": "Proceedings of the 2nd International Conference on Artificial Intelligence, Digital Media Technology and Social Computing",
+    "url": "https://doi.org/10.1145/3806262.3806269",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
