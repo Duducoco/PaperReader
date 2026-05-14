@@ -1,0 +1,254 @@
+[
+  {
+    "date": "2026-05-13",
+    "title": "Quantitative Linear Logic for Neuro-Symbolic Learning and Verification",
+    "authors": "Thomas Flinkow, Ekaterina Komendantskaya, Matteo Capucci, Rosemary Monahan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13845v1",
+    "source": "arXiv",
+    "abstract": "Differentiable Logics are deployed in neuro-symbolic learning tasks as a way of embedding logical constraints in the training objective of neural networks. A differentiable logic consists of a syntax to write logical properties and a semantics to interpret them as real-valued functions to be folded in the loss function. A defining trade-off of the field is that between logical properties of the connectives, and analytic concerns for the semantics, with both aspects being relevant in applications. At one extreme we find fuzzy logics, that have well-established algebraic and proof-theoretic foundations, and at the other ad-hoc differentiable logics like Fischer's DL2, conceived for deep learning applications. However, no satisfactory foundation has emerged yet. We propose a resolution to this long-standing tension via a novel logic, Quantitative Linear Logic (QLL), with foundational ambitions. Our design is driven by naturality -- the idea that, since logical constraints are translated to losses, the semantics of the connectives should be pertinent operations used in ML practice (that is, sum and log-sum-exp) on additive quantities (like logits). We then judge the result on two aspects: logical adequacy -- that they satisfy most of the standard logical laws of Linear Logic; and empirical effectiveness -- test-time performance (as measured by adversarial attacks) is well-correlated to the actual verification of the logical constraints (as measured by off-the-shelf neural network verifiers), which makes QLL stand out among SoTA techniques."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach",
+    "authors": "S. Akshay, Chaitanya Garg, Ashutosh Gupta, Kuldeep S. Meel, Ajinkya Naik",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13830v1",
+    "source": "arXiv",
+    "abstract": "Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "On the Complexity of Checking Soundness of Natural Reductions (Extended Version)",
+    "authors": "Constantin Enea, Azadeh Farzan, Dominik Klumpp",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13780v1",
+    "source": "arXiv",
+    "abstract": "The verification of reductions, representative subsets of interleavings, simplifies correctness proofs of parameterized concurrent programs. We introduce an expressive class of syntactic reductions, which we call natural reductions. Natural reductions are specified by introducing atomic blocks and global rendezvous points in the parameterized program's thread template. We study the problem of deciding whether a given natural reduction is sound wrt. a given (semi-)commutativity relation. In the case that there is no synchronization between threads, we present a sound and complete polynomial-time algorithm. In the case where synchronization is considered, we provide a general lower bound for the problem (parametric in the synchronization mechanism), and show that the problem is coNP-hard already for a simple mechanism like locking."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Realtime-VLA FLASH: Speculative Inference Framework for Diffusion-based VLAs",
+    "authors": "Jiahui Niu, Kefan Gu, Yucheng Zhao, Shengwen Liang, Tiancai Wang, Xing Hu, Ying Wang, Huawei Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13778v1",
+    "source": "arXiv",
+    "abstract": "Diffusion-based vision-language-action models (dVLAs) are promising for embodied intelligence but are fundamentally limited in real-time deployment by the high latency of full inference. We propose Realtime-VLA FLASH, a speculative inference framework that eliminates most full inference calls during replanning by introducing a lightweight draft model with parallel verification via the main model's Action Expert and a phase-aware fallback mechanism that reverts to the full inference pipeline when needed. This design enables low-latency, high-frequency replanning without sacrificing reliability. Experiments show that on LIBERO, FLASH largely preserves task performance by replacing many 58.0 ms full-inference rounds with speculative rounds as fast as 7.8 ms, lowering task-level average inference latency to 19.1 ms (3.04x speedup). We additionally demonstrate effectiveness on real-world conveyor-belt sorting, highlighting its practical impact for latency-critical embodied tasks."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "VectorSmuggle: Steganographic Exfiltration in Embedding Stores and a Cryptographic Provenance Defense",
+    "authors": "Jascha Wanger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13764v1",
+    "source": "arXiv",
+    "abstract": "Modern retrieval-augmented generation (RAG) systems convert sensitive content into high-dimensional embeddings and store them in vector databases that treat the resulting numerical artifacts as opaque. Major vector-store products do not provide native controls for embedding integrity, ingestion-time distributional anomaly detection, or cryptographic provenance attestation. We show this opens a class of steganographic exfiltration attacks: an attacker with write access to the ingestion pipeline can hide payload data inside embeddings using simple post-embedding perturbations (noise injection, rotation, scaling, offset, fragmentation, and combinations thereof) while preserving the surface-level retrieval behavior the RAG system exposes to legitimate users. We evaluate these techniques across a synthetic-PII corpus on text-embedding-3-large, four locally hosted open embedding models, a cross-corpus replication on BEIR NFCorpus and a Quora subset (over 26,000 chunks combined), seven vector-store configurations, an adaptive-attacker variant of the detector evaluation, and a paraphrased-query retrieval benchmark. Distribution-shifting perturbations are often caught by simple anomaly detectors; small-angle orthogonal rotation defeats distribution-based detection across every (model, corpus) pair tested. A disjoint-Givens rotation encoder gives a closed-form per-vector capacity ceiling of floor(d/2) * b bits, but real embedding manifolds impose a capacity-detectability trade-off, and the retrieval-preserving operating point sits well below it. We propose VectorPin, a cryptographic provenance protocol that pins each embedding to its source content and producing model via an Ed25519 signature over a canonical byte representation. Any post-embedding modification breaks signature verification. Embedding-level integrity is a deployable, standardizable control that closes this attack class."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Multi-Property Temporal Logic Monitoring",
+    "authors": "Arınç Demir, Dogan Ulus",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13668v1",
+    "source": "arXiv",
+    "abstract": "Runtime verification enables checking temporal logic specifications over individual execution traces and offers a scalable alternative to exhaustive formal verification. In practice, systems must satisfy dozens to hundreds of temporal properties simultaneously; however, existing approaches monitor each property in isolation, resulting in redundant computation and limited scalability. In this work, we present an online multi-property monitoring framework that compiles past-time LTL and MTL specifications into a shared directed acyclic graph of subformulas with one output per property. Unlike prior approaches that construct monitors independently, our method extends compositional sequential network-based temporal logic monitor construction to a shared setting, enabling reuse of intermediate results across properties while preserving their individual structure. Central to our approach is a data-oriented execution model based on an arena-allocated, double-buffered layout that stores intermediate results for each subformula in compact, contiguous memory. This design favors spatial locality and enables incremental updates with minimal overhead. Experimental results demonstrate per-property throughput improvements of 2x to 4.5x and 6x to 12x in multi-property configurations compared to conventional single-property monitoring, enabling scalability to large specification sets and deployment in high-performance and resource-constrained systems."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Scalable Deductive Verification of Data-Level Parallel Programs",
+    "authors": "Lars B. van den Haak, Anton Wijs, Marieke Huisman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13616v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces several techniques that improve the scalability of the deductive verification of data-level programs working on arrays and matrices. First of all, we introduce a technique to rewrite expressions with (nested) quantifiers, so suitable triggers can be generated for these expressions. We have proven this rewrite technique correct in a theorem prover. Second, we make reasoning about potentially overlapping arrays easier, by providing specification constructs to indicate and verify that two arrays are not aliases, or that they are immutable, so they can be modelled as mathematical sequences. All our techniques are implemented in the VerCors program verifier. We illustrate how our techniques improve scalability through a large number of experiments. Using our techniques on a set of typical GPU kernels, we achieve a reduction of verification time by, on average, a factor of 9, with outliers being up to 150 times faster. Additionally, applying these techniques to earlier experiments and an earlier case study of a radio telescope pipeline permitted the verification of results which were previously unobtainable and significantly reduced the verification time."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "ARE Method: Orbital Decompositions and Dihedral Cancellations for Determinants",
+    "authors": "Ramon Moya",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13615v1",
+    "source": "arXiv",
+    "abstract": "We develop the ARE method (Action-Rectification-Expansion), a structural framework for the organization of Leibniz terms in determinants through cyclic group actions and orbital decompositions. The symmetric group S_n is partitioned into (n-1)! disjoint orbits of size n under right composition by the cyclic group C_n. Each orbit admits a canonical representative and generates a family of determinant terms related by cyclic rotation. We prove explicit sign laws for orbital rotations, establish a rectification theorem transforming orbital polylines into parallel-line configurations through a single block permutation, and characterize companion orbitals through dihedral symmetries. The framework yields an exact reorganization of the Leibniz expansion preserving all n! terms while exposing hidden geometric and combinatorial structure. We further prove an impossibility theorem showing that no fixed-width direct extension of the classical Sarrus rule can capture all determinant terms for n >= 4. The method provides three equivalent visualizations: polylines, parallel rectified lines, and total-line representations. Deterministic orbital generation algorithms and computational verification against standard determinant methods are also presented. Although the approach does not reduce factorial complexity, it provides a systematic geometric and algebraic interpretation of determinant structure extending the conceptual spirit of Sarrus to arbitrary dimension."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Position: Assistive Agents Need Accessibility Alignment",
+    "authors": "Jie Hu, Changyuan Yan, Yu Zheng, Ziqian Wang, Jiaming Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13579v1",
+    "source": "arXiv",
+    "abstract": "Assistive agents for Blind and Visually Impaired (BVI) users require accessibility alignment as a first-class design objective. Despite rapid progress in agentic AI, most systems are designed and evaluated under assumptions of sighted interaction, low-cost verification, and tolerable trial-and-error, leading to systematic failures in assistive scenarios that cannot be resolved by model scaling or post-hoc interface adaptations alone. Drawing on an analysis of 778 assistance task instances from prior work, we show that current agentic AI remain prone to failure in assistive scenarios due to mismatches between sighted-user design assumptions and the verification, risk, and interaction constraints faced by BVI users. We argue that accessibility should be treated as an alignment problem rather than a peripheral usability concern. To this end, we introduce accessibility alignment and propose a lifecycle-oriented design pipeline for accessibility-aligned assistive agents, spanning user research, system design, deployment and post-deployment iteration. We conclude that BVI-centered assistive tasks provide a critical stress test for agentic AI and motivate a broader shift toward inclusive agent design."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "An Effective Scaling Framework for Non-Adiabatic Mode Dynamics",
+    "authors": "A. M. Tishin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13376v1",
+    "source": "arXiv",
+    "abstract": "This study proposes an effective theoretical framework for non-adiabatic parametric excitation in structured media, incorporating a nonlinear frequency regulator U as a stabilizing mechanism. We introduce the non-adiabaticity parameter as a time-local diagnostic for driven non-stationary systems and analyze its competition with nonlinear spectral detuning through the scaling ratio. The principal physical result is that strongly nonlinear oscillatory systems can exhibit saturation of non-adiabatic parametric amplification: when the nonlinear regulator becomes sufficiently strong, exponential mode growth is dynamically suppressed and the excitation evolves toward a bounded low-occupancy regime. Using numerical verification in an expanded 100-level bosonic Fock basis, we demonstrate a crossover from hyperbolic amplification dynamics toward an effectively bounded response associated with spectral blockade and suppression of higher-order mode occupation. These results suggest that nonlinear spectral stabilization may represent a general mechanism for finite-amplitude non-adiabatic dynamics in driven structured media."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "AI Harness Engineering: A Runtime Substrate for Foundation-Model Software Agents",
+    "authors": "Hailin Zhong, Shengxin Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13357v1",
+    "source": "arXiv",
+    "abstract": "Foundation models have transformed automated code generation, yet autonomous software-engineering agents remain unreliable in realistic development settings. The dominant explanation locates this gap in model capability. We propose a different locus: software-engineering capability emerges from a model-harness-environment system, in which a runtime substrate -- the harness -- mediates how a foundation-model agent observes a project, acts on it, receives feedback, and establishes that a change is complete. We formalize this substrate as an AI Harness Engineering and identify eleven component responsibilities: task specification, context selection, tool access, project memory, task state, observability, failure attribution, verification, permissions, entropy auditing, and intervention recording. We operationalize the harness through a four-level ladder (H0-H3) that progressively exposes runtime support to the agent, and we propose a trace-based evaluation protocol that converts each agent run into an auditable episode package. Applied to a controlled validation task, the framework yields episode packages whose evidence structure varies systematically with harness level: lower levels produce only a final patch, higher levels produce reproduction logs, failure attributions, deterministic requirement checks, and structured verification reports. The framework reframes the central question of autonomous software engineering from whether a foundation model can produce a patch to whether the model-harness-environment system can produce a verifiably correct, attributed, and maintainable change. We outline a research program for the runtime systems that foundation-model software agents will require."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Quantitative Linear Logic",
+    "authors": "Matteo Capucci, Robert Atkey, Charles Grellois, Ekaterina Komendantskaya",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13348v1",
+    "source": "arXiv",
+    "abstract": "Real-valued logics have seen a renewed interest in verification for probabilistic and quantitative systems, in particular machine learning models, where they can be used to directly integrate specifications in the training objective. To do so effectively one has to strike a balance between the logical properties of the connectives and their semantics. A major hurdle in this sense is to give ``soft'' (i.e. differentiable) semantics to additive connectives -- in linear and fuzzy logics, additives are necessarily ``hard'' lattice operations. In this paper, we solve this problem by combining an accurate analysis of the properties of sum and product on the reals with a significant revision of sequent calculus. We introduce `quantitative sequent calculi', which simultaneously generalize hypersequent calculi of fuzzy logics and deep inference, and in which validity of a proof and provability of a sequent are real-valued quantities. We present a family of calculi, pQLL, indexed by a hardness degree $p$, prove cut-elimination theorem for them, and show completeness for enriched residuated `soft' lattices. For $p = \\infty$, pQLL reduces to MALL, with provability in pQLL converging to provability in MALL when $p \\to \\infty$."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "PipeSD: An Efficient Cloud-Edge Collaborative Pipeline Inference Framework with Speculative Decoding",
+    "authors": "Yunhe Han, Yunqi Gao, Bing Hu, Mahdi Boloursaz Mashhadi, Yitong Duan, Pei Xiao, Yanfeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13319v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding can significantly accelerate LLM inference, especially given that its cloud-edge collaborative deployment offers cloud workload offloading, offline robustness, and privacy enhancement. However, existing collaborative inference frameworks with speculative decoding are constrained by (i) sequential token generation and communication with low resource utilization, and (ii) inflexible cloud non-autoregressive verification (NAV) triggering that induces premature verification or costly rollbacks. In this paper, we propose PipeSD, an efficient cloud-edge collaborative pipeline inference framework with speculative decoding. PipeSD overlaps token generation and communication by a token-batch pipeline scheduling mechanism optimized by dynamic programming, and improves verification flexibility through a dual-threshold NAV triggering mechanism with a lightweight Bayesian optimization autotuner. We implement PipeSD using llama-cpp-python, PyTorch, and FastAPI, and evaluate it on a real-world cloud-edge testbed with two draft-target model pairs across four scenarios. Results show that PipeSD consistently outperforms state-of-the-art baselines, achieving 1.16x-2.16x speedup and reducing energy consumption by 14.3%-25.3%."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Automatic Detection of Reference Counting Bugs in Linux Kernel Drivers",
+    "authors": "Joe Hattori, Naoki Kobayashi, Ken Sakayori",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13246v1",
+    "source": "arXiv",
+    "abstract": "Reference counting bugs in Linux kernel drivers can lead to severe resource mismanagement and security vulnerabilities. We introduce DrvHorn, a novel automated tool to detect these bugs by reducing reference counting verification to an assertion checking problem leveraging the Linux driver interface. Through efficient modeling of the Linux kernel and aggressive program slicing, DrvHorn discovered 545 bugs, of which 424 were previously unknown, across all platform drivers in v6.6 Linux kernel, with a lower false positive rate of 29.9% compared to prior studies. To address the root causes of these newly discovered bugs, we submitted patches to the Linux kernel, and 45 of them were merged."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "ReTool-Video: Recursive Tool-Using Video Agents with Meta-Augmented Tool Grounding",
+    "authors": "Xiao Liu, Nayu Liu, Junnan Zhu, Ruirui Chen, Guohui Xiang, Changjian Wang, Kaiwen Wei, Rongzhen Li, Jiang Zhong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13228v1",
+    "source": "arXiv",
+    "abstract": "Video understanding requires active evidence seeking, motivating tool-augmented video agents for temporal reasoning, cross-modal understanding, and complex question answering. Existing video agents have improved video reasoning with retrieval, memory, frame inspection, and verifier tools, but they still face two limitations: (1) a coarse tool space that lacks fine-grained operations for compositional reasoning; and (2) a flat action space that forces high-level video intents into primitive executable tool calls. In this paper, we address these challenges with two complementary designs. First, we construct a MetaAug-Video Tool Library (MVTL), an extensible tool library with 134 registered tools, including 26 base tools for general multimodal signal processing and 108 meta tools for filtering, aggregation, reranking, formatting, and other intermediate-result operations. MVTL supports dual-level access to both structured video information and raw modal evidence, enabling diverse video reasoning scenarios. Second, we propose ReTool-Video, a recursive tool-using method that grounds high-level video intents into executable tool chains. In ReTool-Video, matched actions are executed directly, while unmatched intents are delegated to a resolver for parameter repair, tool substitution, or decomposition. This allows abstract actions such as temporal merging, cross-modal verification, or repeated-event aggregation to be progressively translated into concrete multimodal operations at runtime. Experiments on MVBench, MLVU, and Video-MME w/o sub. show that ReTool-Video consistently outperforms strong baselines. Further analysis demonstrates that recursive grounding and fine-grained meta tools improve the stability and effectiveness of complex video understanding."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "STOP: Structured On-Policy Pruning of Long-Form Reasoning in Low-Data Regimes",
+    "authors": "Chenjun Xu, Zhennan Zhou, Zhan Su, Bill Howe, Lucy Lu Wang, Bingbing Wen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13165v1",
+    "source": "arXiv",
+    "abstract": "Long chain-of-thought (Long CoT) reasoning improves performance on multi-step problems, but it also induces overthinking: models often generate low-yield reasoning that increases inference cost and latency. This inefficiency is especially problematic in low-data fine-tuning regimes, where real applications adapt reasoning models with limited supervision and cannot rely on large-scale teacher distillation or heavy test-time control. To address this, we propose STOP (Structured On-policy Pruning), an on-policy algorithm for analyzing and pruning long-form reasoning traces. STOP constructs self-distilled traces from the model. Then it maps each trace into a structured reasoning interface through node segmentation, taxonomy annotation, and reasoning-tree construction. On top of this interface, we introduce ECN (Earliest Correct Node), which retains the shortest prefix ending at the earliest node that both functions as an answering conclusion and yields the correct final answer, removing redundant post-solution reasoning while preserving semantic continuity. Experiments on DeepSeek-R1-Distill-Qwen-7B and DeepSeek-R1-Distill-LLaMA-3-8B across GSM8K, Math 500, and AIME 2024 show that STOP reduces generated tokens by 19.4-42.4% while largely preserving accuracy in low-data fine-tuning. Beyond efficiency, our analyses show that STOP induces much smaller distributional shift than teacher-guided pruning, improves the structural efficiency of generated reasoning, and reallocates reasoning effort away from redundant verification and backtracking toward more productive exploration."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle",
+    "authors": "Hao Guan, Lingyue Fu, Shao Zhang, Yaoming Zhu, Kangning Zhang, Lin Qiu, Xunliang Cai, Xuezhi Cao, Weiwen Liu, Weinan Zhang, Yong Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13139v1",
+    "source": "arXiv",
+    "abstract": "As autonomous code agents move toward end-to-end software development, evaluating their practical autonomy becomes critical. Current benchmarks hide friction by testing agents in pre-configured environments, and their static evaluation pipelines frequently fail when parsing fully autonomous trajectories. We address these limitations with SWE-Cycle, a benchmark of 489 rigorously filtered instances. SWE-Cycle evaluates agents across three isolated tasks, including environment reconstruction, code implementation, and verification test generation, as well as an end-to-end FullCycle task that integrates all three. The FullCycle task requires agents to work autonomously in a bare repository without human scaffolding. To reliably assess these complex execution paths, we developed SWE-Judge. By combining static code review with dynamic testing, this execution-capable evaluation agent accurately verifies functional correctness and eliminates the systematic measurement errors of traditional static parsers. We evaluate code agents powered by six state-of-the-art LLMs across these four tasks. The results reveal a sharp drop in solve rates when transitioning from isolated tasks to FullCycle execution, exposing critical bottlenecks in handling cross-phase dependencies and maintaining code quality. Together, SWE-Cycle and SWE-Judge provide a comprehensive framework for accurately measuring the end-to-end capabilities of autonomous software agents."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "QCIVET: A Quantum--Classical Pipeline Integrity Framework with Contract-Based Subtype Verification and Hash-Chained Audit Traces",
+    "authors": "Esra Yeniaras, Muhammad Amin Karimov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13109v1",
+    "source": "arXiv",
+    "abstract": "Hybrid quantum--classical pipelines increasingly support applications such as drug discovery, fraud detection, and cloud quantum processing unit (QPU) auditing, yet existing integrity-verification methods remain largely classical and fail to capture quantum-stage behaviour. We propose QCIVET, a contract-based integrity-verification framework that models a hybrid pipeline as a sequence of stages with explicit specifications and audits it at both syntactic and semantic levels. Syntactic integrity is enforced through a hash-chained audit trail with optional external anchoring, while semantic integrity at quantum stages is verified using a calibrated observable-deviation test grounded in the behavioural-subtyping discipline of Liskov and Wing. We prove soundness under the diamond-norm distance between quantum channels, conditional completeness for informationally complete observable families, and compositionality under inheritance chains. We further identify a class of Z-only-sneaky overrides that evade weak single-Pauli contracts but are exposed by multi-Pauli contracts. The framework is evaluated under calibration-derived noise models from IBM Quantum Eagle r3 and Heron r2 processors, and the subtype-separation protocol is validated end-to-end on a real ibm_fez (Heron r2) processor. QCIVET is instantiated on three representative applications: variational quantum eigensolver (VQE) for drug discovery, quantum-assisted fraud detection, and customer-side auditing of cloud QPU services. The reference implementation, including a real-time verification engine with sub-millisecond per-stage commit latency, is released as open source."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Guaranteed cost structured control in infinite-horizon linear-quadratic cooperative differential games",
+    "authors": "Aniruddha Roy, Pavankumar Tallapragada",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13103v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we consider infinite-horizon linear-quadratic cooperative differential games with output feedback information structure. We first demonstrate that, under output feedback information structure, computing Pareto optimal controls can be difficult even for simple low-dimensional differential games. To address this issue, this paper introduces the concept of feedback guaranteed cost structured control (GCSC). The feedback GCSC concept is inspired from suboptimal control. At a feedback GCSC, the total weighted team cost remains below a prescribed threshold while satisfying the structural constraints. We derive fundamental properties of the feedback GCSC and the admissible weight set, including their monotonicity properties. In particular, we show that if Pareto optimal controls exist, they belong to the class of feedback GCSCs. We also quantify the suboptimalty of Pareto optimal controls (if they exist) and the proposed GCSC with respect to output feedback optimal control. Furthermore, we provide the conditions for verification and the synthesis of a feedback GCSC. Finally, we illustrate the effectiveness of the proposed approach through numerical examples, including a case study on tracking synchronization in a microgrid."
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Counterfactual Reasoning for Causal Responsibility Attribution in Probabilistic Multi-Agent Systems",
+    "authors": "Chunyan Mu, Muhammad Najib",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.13077v1",
+    "source": "arXiv",
+    "abstract": "Responsibility allocation -- determining the extent to which agents are accountable for outcomes -- is a fundamental challenge in the design and analysis of multi-agent systems. In this work, we model such systems as concurrent stochastic multi-player games and introduce a notion of retrospective (backward) counterfactual responsibility, which quantifies an agent's accountability for outcomes resulting from a given strategy profile. To allocate responsibility among agents, we utilise the Shapley value and formally show that this method satisfies key desirable properties, including fairness and consistency. Building on this foundation, we propose a formal framework that supports both verification and strategic reasoning in responsibility-aware multi-agent systems. Furthermore, by adopting Nash equilibrium as the solution concept, we demonstrate how to compute stable strategy profiles in which agents trade off responsibility against expected reward."
+  },
+  {
+    "date": "2026-5-13",
+    "title": "LLM-EmBEditor: Universal Base Editing Efficiency Prediction via Large Language Model Embeddings",
+    "authors": "Lucas Schneider, Peter Minary",
+    "publish": "Proceedings of the 2025 9th International Conference on Computational Biology and Bioinformatics",
+    "url": "https://doi.org/10.1145/3789938.3789955",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "RETHiNK: Simulating Human Reasoning via Multi-LLM Debate for Cognitive Reframing of Negative Thoughts",
+    "authors": "Xiaomeng Wang, Dharmendra Sharma, Dinesh Kumar, Xunzhu Tang",
+    "publish": "ACM Transactions on Computing for Healthcare",
+    "url": "https://doi.org/10.1145/3815586",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "Separation of Concerns for Privacy-Preserving LLM Adoption: A Banking Architecture Framework",
+    "authors": "Yu Kong, Silvia Bartolucci, Fabio Caccioli, Giuseppe Destefanis",
+    "publish": "Proceedings of the 3rd IEEE/ACM Workshop on Software Engineering Challenges in Financial Firms",
+    "url": "https://doi.org/10.1145/3786170.3788387",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "Enhancing Compliance Training with LLM-Powered Conversational Agents: A Design Science Evaluation of FERPA Education",
+    "authors": "Raghvendra Singh, Pavankumar Mulgund, Yafang Li, Sai Dheeraj Vodela",
+    "publish": "Proceedings of the 63rd ACM Conference on Computers and People Research",
+    "url": "https://doi.org/10.1145/3768310.3807798",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "LLM-Assisted Retro-Documentation for Legacy COBOL Applications in Banking",
+    "authors": "Mahdi Latreche, Elouan Marsot, Emma Asma Daumas, Azzedine Idir Ait Said, Damien Droisy, Mariam Barry",
+    "publish": "Proceedings of the 3rd IEEE/ACM Workshop on Software Engineering Challenges in Financial Firms",
+    "url": "https://doi.org/10.1145/3786170.3788390",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-13",
+    "title": "CLSM: A Collaborative LLM-SM Framework for Road Network Congestion Prediction",
+    "authors": "Jing Liu, Lifeng Li, Baiming Chen, Yuxi Li",
+    "publish": "Proceedings of the 2026 3rd International Conference on Autonomous Driving and Intelligent Sensing Technology",
+    "url": "https://doi.org/10.1145/3807211.3807233",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-13",
+    "title": "DeepKEGG-Agent: A Dialogue-Driven LLM-based Framework for Automated Multi-Omics Modeling in Cancer Outcome Prediction",
+    "authors": "Li Zhang, ShengYang Zhou, AiJie Yang, MengJia Su, Han Wang, Zhe Liu",
+    "publish": "Proceedings of the 2025 9th International Conference on Computational Biology and Bioinformatics",
+    "url": "https://doi.org/10.1145/3789938.3789956",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "Advancing LLM-Based Issue Report Classification with Explained Few-Shot Learning, Intent Extraction, Ensemble, and Summarization",
+    "authors": "Gabriele De Vito, Luigi Libero Lucio Starace, Fabio Palomba, Sergio Di Martino, Filomena Ferrucci",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3815577",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
