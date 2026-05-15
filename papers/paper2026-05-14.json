@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-5-14",
+    "title": "AutoJML: Generation and Verification of JML Specifications Using LLM Agents",
+    "authors": "Ragib Shahariar Ayon, Shibbir Ahmed",
+    "publish": "IEEE Pulse",
+    "url": "https://doi.org/10.1109/mpuls.2026.3659250",
+    "source": "IEEE",
+    "abstract": "Formal specifications such as Java Modeling Language (JML) are essential for program verification, but are complex and error-prone to write manually. Although recent large language model (LLM) based approaches automate specification generation, they often struggle with complex control flow and semantic completeness. We present AutoJML, an LLM agent that generates and refines JML specifications using iterative verification and mutation-based feedback. Evaluated on Java programs with diverse control flow patterns, AutoJML verifies more programs than a state-of-the-art baseline, particularly for multipath and nested loop programs."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "LLM-Knowledge Graph Fusion for Trustworthy Compliance Verification in Heterogeneous Network Configurations",
+    "authors": "Hao Yan, Minyong Yin, Dewen Kong, Yubing Duan, Guoxin Zhong, Yulong Wang",
+    "publish": "2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "url": "https://doi.org/10.1109/icaace69793.2026.11508774",
+    "source": "IEEE",
+    "abstract": "The security policy for network devices serves as a guiding principle for managing and configuring network environments. As heterogeneous networks expand, enterprises encounter structural challenges between unstructured security policies and diverse device configurations. Security policies are often expressed in unstructured natural language with implicit logic and inconsistent paradigms, while configurations vary across brands and models in syntax and protocol implementation. This paper presents an LLM–Knowledge Graph (KG) fusion approach for trustworthy compliance verification in heterogeneous network configurations. We first employ an instructiontuned large language model to parse raw configuration snippets and extract fine-grained network-state triplets with normalized entities and relations. Next, we construct a network-state KG and perform lightweight relational reasoning to resolve crossblock dependencies (e.g., VLAN–interface bindings and service exposure) and to consolidate semantically equivalent concepts across vendors. Finally, we translate compliance requirements into executable graph-pattern constraints, enabling automated violation detection via graph queries with transparent evidence paths. Experiments on Huawei, Cisco, and Ruijie configuration datasets demonstrate that the proposed semantic parsing achieves 86.45% F1 for triplet extraction, and the graph-based compliance verifier reaches 94.37% average F1 with 91.07% recall across 12 representative security rules. The results indicate that fusing LLM-driven extraction with KG-based reasoning provides an interpretable and effective foundation for scalable compliance verification in multi-vendor network environments."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Guide-LLM: An Embodied LLM Agent and Text-Based Topological Map for Robotic Guidance of People with Visual Impairments",
+    "authors": "Sangmim Song, Sarath Kodagoda, Amal Gunatilake, Marc G. Carmichael, Karthick Thiyagarajan, Jodi Martin",
+    "publish": "2025 18th International Conference on Sensing Technology (ICST)",
+    "url": "https://doi.org/10.1109/icst66402.2025.11512562",
+    "source": "IEEE",
+    "abstract": "Navigation presents a significant challenge for persons with visual impairments (PVI). While traditional aids such as white canes and guide dogs are invaluable, they fall short in delivering detailed spatial information and precise guidance to desired locations. Recent developments in large language models (LLMs) and vision-language models (VLMs) offer new avenues for enhancing assistive navigation. In this paper, using vision sensing, we introduce Guide-LLM, an embodied LLM-based agent designed to assist PVI in navigating large indoor environments. Our approach features a novel text-based topological map that enables the LLM to plan global paths using a simplified environmental representation, focusing on straight paths and right-angle turns to facilitate navigation. Additionally, we utilize the LLM’s commonsense reasoning for hazard detection and personalized path planning based on user preferences. Simulated experiments demonstrate the system’s efficacy in navigating indoor environments based on user queries, underscoring its potential as a significant advancement in assistive technology. The results highlight Guide-LLM’s ability to offer efficient, adaptive, and personalized navigation assistance, pointing to promising advancements in this field.Code and replication details: https://github.com/awd1779/Guide-LLM"
+  },
+  {
+    "date": "2026-5-15",
+    "title": "LLM-Driven Cyber Threat Intelligence Extraction for Cloud Ecosystems",
+    "authors": "Sharathkumar Bandaru",
+    "publish": "2026 IEEE Madhya Pradesh Section Conference (MPCON)",
+    "url": "https://doi.org/10.1109/mpcon69668.2026.11508604",
+    "source": "IEEE",
+    "abstract": "Large-scale cloud ecosystems create diverse manifestations of logs, warnings and unstructured threat alerts that clog the mainstream cyber threat intelligence (CTI) platforms. Currently used correlation and rule-based systems cannot convert this disjointed evidence into real-time intelligence that can be acted upon. In this paper, a large language models (LLMs) based cyber threat intelligence extraction model is presented and customized to elastic cloud environments where semantic understanding of rapidly changing workloads and distributed attack surfaces must be constantly maintained. The architecture uses the large language models to understand the raw security telemetry data, standardize multi-source threat stories and generate high-quality intelligence products in the form of indicators of compromise, attack paths, and adversary profiles. The cloud-aware orchestration layer maps the extraction processes based on the dynamic resource states and services dependencies so that contextualized intelligent output can be generated in scale without property interrupting the operational workloads. In contrast to previous CTI automation systems, the proposed architecture focuses on semantic reasoning between logs, vulnerability feeds, and incident reports to uncover obscure relationships not accessible to signaturebased systems. The resulting intelligence can be used to proactively defend and triage incidents faster and refines security policies based on adaptive models across multi-cloud and hybrid systems, which can support resilient and autonomous cloud security evolution."
+  },
+  {
+    "date": "2026-5-14",
+    "title": "Temporal Dynamics of Memory Poisoning in Web3-Style LLM Agents",
+    "authors": "Abbas Yazdinejad, Hadis Karimipour",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3693560",
+    "source": "IEEE",
+    "abstract": "Memory-enabled large language model (LLM) agents, particularly those deployed in long-horizon, tool-using settings such as Web3-style autonomous workflows, introduce security risks that extend beyond single-prompt injection. By persisting and reusing information across interaction steps and sessions, these agents enable memory poisoning attacks in which adversarial inputs modify persistent agent state and influence future decisions after benign intermediate interactions. Recent work on context manipulation and “fake memories” demonstrates that adversarial content can be injected into an agent’s prompt-visible inputs or persistent memory; however, existing evaluations largely analyze such attacks at isolated interaction steps or static context snapshots, obscuring their temporal dynamics. In this paper, we present the first large-scale, trajectory-level measurement framework for analyzing temporal memory poisoning in memory-enabled LLM agents. We construct a schema-constrained dataset of 2,614 multi-step attack trajectories spanning four attack families, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">chain poisoning, policy rewriting, backdoor triggering</i>, and <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">slow drift</i>, executed over shared persistent memory. We define temporal risk metrics over multi-step interaction trajectories that capture delayed activation, non-monotonic escalation, and the earliest point at which attacks become distinguishable from benign behavior. Our empirical results show that a substantial fraction of attacks remain indistinguishable from benign behavior until late-stage activation, despite exhibiting low or medium risk at all earlier steps. Slow-drift and backdoor-trigger attacks, in particular, systematically evade step-local evaluation until terminal interactions, while chain poisoning and policy rewriting exhibit non-monotonic risk trajectories. These findings demonstrate that memory poisoning risk is inherently temporal and cannot be reliably assessed using prompt-level or step-isolated evaluation, motivating trajectory-aware benchmarks for agent security."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Software Defect Prediction: An LLM-Based Dynamic Fusion Method",
+    "authors": "Qiling Zhang",
+    "publish": "2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "url": "https://doi.org/10.1109/icaace69793.2026.11508872",
+    "source": "IEEE",
+    "abstract": "Software defect prediction is vital for improving software quality and cutting costs by detecting defects early. Traditional methods falter in handling complex code semantics and structures, limiting representation learning. This study introduces a novel CodeBERT-based dynamic graph attention fusion for SDP. It uses pre-trained CodeBERT to extract multi-level semantic features from code. A Graph Neural Network then generates structural embeddings from the abstract syntax tree. A dynamic fusion layer employs semantic features as queries to adjust structural attention weights, reducing static fusion losses. Joint learning via multi-head self-attention and feed-forward networks leads to binary classification. Training combines binary cross-entropy and focal loss for imbalance robustness. Evaluations on NASA datasets show superior accuracy, precision, recall, F1, and AUC over baselines like SVM, CodeBERT, and GraphCodeBERT. This approach boosts prediction in complex modules, advancing LLM integration in software engineering. Future efforts could scale to larger codebases and real-time environments."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Designing a Composite Metric of Salience and Quality for Brand Positioning in Llm Responses",
+    "authors": "Sahar Mirzayi",
+    "publish": "2026 12th International Conference on Web Research (ICWR)",
+    "url": "https://doi.org/10.1109/icwr69602.2026.11513319",
+    "source": "IEEE",
+    "abstract": "Large language models (LLMs) are increasingly used as answer engines that compress search, evaluation, and recommendation into a single generated response. In this setting, brands compete not only for mentions but for position within the answer and for the quality of their representation. This raises measurement challenges that are not addressed by traditional visibility metrics, such as share of voice or by simple mention counts. Drawing on brand salience and brand knowledge theory, this study adopts a design science research approach to design and evaluate a competition-oriented measurement artifact: the LLM Competitive Position Index (LCPI). LCPI combines a positionweighted share of entry into the consideration set and a multidimensional content-analytic assessment of brand mentions across truthfulness, relevance, actionability, fairness, distinctiveness, and brand alignment. The evaluation employs a scenario-based prompt suite spanning core user intents (recommendation, comparison, alternatives, and best-of lists), executed under controlled conditions (neutral vs. competitive framing), meaning-preserving paraphrases, and repeated runs. Results from a dataset consistent with the study design indicate that LCPI differentiates brands that achieve high salience through low-quality exposure from those that attain a competitive position through differentiated mentions. It also remains stable under reasonable prompt perturbations. The artifact provides a standard auditable framework for benchmarking brand competition in LLM outputs, especially longitudinal monitoring."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "LLM-Augmented Collaborative Filtering for Recommendation Systems",
+    "authors": "Qingqing Wang, Shikang Liu, Xiujun Lin, Qiuju Chen",
+    "publish": "2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "url": "https://doi.org/10.1109/icaace69793.2026.11508846",
+    "source": "IEEE",
+    "abstract": "Sparse interactions, noisy side information, and cold-start issues limit traditional collaborative filtering (CF) methods. To address these challenges, we propose an LLMaugmented collaborative filtering framework (LLM-CF), where a large language model enhances semantic consistency and interaction modeling. The framework first aligns heterogeneous user and item entities, then leverages the LLM to generate unified semantic representations that refine item attributes and reduce metadata noise. Soft interaction probabilities are estimated to densify the user-item matrix, followed by regularized matrix factorization to learn robust latent features for ranking. Experiments on a real-world dataset show that LLM-CF consistently outperforms strong baselines in HR, Precision, and MAP. A university library recommendation case further demonstrates that LLM-based semantic augmentation effectively mitigates sparsity and cold-start effects, improving recommendation accuracy and robustness."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Leveraging LLM-Based Few-Shot Learning for Clinical Decision Support in Alzheimer's Detection",
+    "authors": "Hany Hanafy Mahmoud Said",
+    "publish": "2025 26th International Arab Conference on Information Technology (ACIT)",
+    "url": "https://doi.org/10.1109/acit68900.2025.11510577",
+    "source": "IEEE",
+    "abstract": "An accurate Alzheimer's Disease (AD) diagnosis is needed for a large community of healthcare providers to allocate resources effectively, guide treatment strategies, and support early preventive care. The robustness of machine learning models in disease prediction is linked to the quality, diversity, and representativeness of the training data used to capture disease complexity. This study explores the use of few-shot learning within Large Language Models (LLMs) to predict patients with Alzheimer's disease. Four large language models, Llama 3.2, Llama 3.3, Qwen 2-Math, and Qwen 2.5, are evaluated. The results highlight the potential of using Llama 3.3 in predicting Alzheimer's disease using few-shot learning. Without applying any fine-tuning process to the large language models, their prediction performance improves when the training samples increase, in conjunction with relying on features that have a significant correlation with AD, represented in a low-dimensional space."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "LLM-Driven Precision Answering System for Fuzzy Questions in Computer Science Courses",
+    "authors": "Min Jiang, YiXuan Wu",
+    "publish": "2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "url": "https://doi.org/10.1109/icaace69793.2026.11508854",
+    "source": "IEEE",
+    "abstract": "Vague, incomplete, and open-ended questions are common in computer science classrooms but hard for tutoring systems to handle. This paper presents LLM-FPA, a four-stage system that breaks down such questions step by step. Stage one scores the question on three fronts: fuzzy wording, missing details, and multiple possible answers. Stage two blends two fuzzy methods-Mamdani for picking strategies and TSK for setting how many questions to ask. Stage three uses a dialogue engine verified with CTL to keep conversations on track. Stage four pulls in course documents and checks answers against a knowledge graph. Compared to regular LLMs, LLM-FPA boosts accuracy by 35.8% and needs 42% fewer back-and-forth rounds. The system offers a tested way to build teaching tools that are both smart and trustworthy."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "EmbdC: Error-Bounded Lossy Video Embedding Compression for On-Device LLM Inference",
+    "authors": "Bo Jiang, Taolue Yang, Youyuan Liu, Sheng Di, Sian Jin",
+    "publish": "2026 Data Compression Conference (DCC)",
+    "url": "https://doi.org/10.1109/dcc66757.2026.00068",
+    "source": "IEEE",
+    "abstract": "Deploying resource-intensive Video LLMs often relies on Split DNNs, yet this introduces a severe transmission bottleneck-intermediate embeddings 1 can be <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$26 \\times$</tex> larger than original videos. Lossy compression is an effective solution to the I/O bottleneck in machine learning [1]. However, no compression solution exists to address the high dimensionality and unique layout of these embeddings."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "From Pixels to Plans: A High-Fidelity Knowledge Graph Grounding Framework for LLM-Based Robotic Action",
+    "authors": "Fatemeh Hora Haghighatkhah, Mehrnoush Shamsfard",
+    "publish": "2026 12th International Conference on Web Research (ICWR)",
+    "url": "https://doi.org/10.1109/icwr69602.2026.11513364",
+    "source": "IEEE",
+    "abstract": "Autonomous robots operating in unstructured human environments must transform raw perceptual input into semantically meaningful representations to reason and act effectively. This paper presents a complete end-to-end “pixels-to-plans” framework that bridges visual perception and knowledgebased action planning through the integration of a vision model, a large-scale knowledge graph (DBpedia), and a large language model (LLM). The core contribution is a hybrid heuristic-semantic disambiguation algorithm that addresses the fidelity crisis in Perceived-Entity Linking (PEL) by combining embedding-based similarity with pragmatic rule-based filtering. The framework, evaluated on <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{8 0}$</tex> MS COCO object classes and 23 action scenarios, achieved 94% entity-linking accuracy and 91% accuracy in context-aware planning. These results demonstrate that augmenting semantic models with targeted heuristics yields reliable symbol grounding, advancing contextually aware, knowledge-driven autonomy."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Tool-Use Failure Analysis and Recovery Framework for LLM Agents",
+    "authors": "Jiayi Jiang, Chuan Li, Junjie Ma, Kun Chen",
+    "publish": "2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "url": "https://doi.org/10.1109/icaace69793.2026.11508644",
+    "source": "IEEE",
+    "abstract": "As large language models (LLMs) become increasingly common in handling complex tasks that require external tools and services, the various issues that arise when calling tools have become a major factor affecting system stability and usability. This article addresses the situation where LLMs fail to learn or botch the use of tools, and proposes a practical solution for identifying and resolving such issues. The key actions taken include: First, we established a framework to categorize all cases of tool learning failures and developed a tester capable of intentionally inducing faults; Then, we proposed a runtime recovery framework called Monitor-Classifier-Recovery (MCR), which includes simple rules, a fault classifier capable of learning, and a strategy library that considers costs; Then, we introduced the MAGRPO method, which involves multiple agents optimizing strategies through a process similar to a multi-player rock-paperscissors game. During training, agents collaborate and can compensate for each other's shortcomings. We tested this approach through a combination of writing and programming tasks, such as format errors, timeouts, returning garbled characters, and sequential errors in planning. Using MCR alone significantly accelerated problem resolution and reduced human intervention. Combining MCR and MAGRPO boosted the success rate for complex tasks from 42 % to 86.7 %, with a problem resolution rate of 92.6 %, while also optimizing API costs and speed. The article also discusses whether recovery strategies can be combined like building blocks, how to balance costs and benefits, how to model API behavior in the real world, and ethical reviewthese are engineering and research challenges. This approach provides a clear path for LLM systems to become more reliable, easier to understand, and efficient when using tools in practice."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Nginx-Narrator: LLM-Based Automated Nginx Log Analysis for UX Friction Detection in Web Applications",
+    "authors": "Mohammad Kazem Harandi, Behrouz Shahgholi Ghahfarokhi",
+    "publish": "2026 12th International Conference on Web Research (ICWR)",
+    "url": "https://doi.org/10.1109/icwr69602.2026.11513306",
+    "source": "IEEE",
+    "abstract": "Web server access logs contain detailed traces of user interactions, yet their potential for user experience (UX) analysis is often underutilized. Most existing log analysis approaches focus on system-level objectives such as reliability monitoring and anomaly detection. As a result, they provide limited insight into behavioral aspects of user interaction, including patterns that may indicate confusion, hesitation, or difficulty navigating. This paper introduces Nginx-Narrator, an automated framework designed to transform raw Nginx access logs into structured UX-based narratives. Rather than relying solely on statistical aggregation, the framework combines rule-based processing with large language models (LLMs) capable of handling large interaction contexts. This enables the system to interpret long and complex user sessions that are typically difficult to analyze using conventional techniques. The proposed approach follows a four-step pipeline: (1) regex-based log parsing aligned with Elastic Common Schema (ECS), (2) rule-based session reconstruction, (3) a UX friction scoring module that ranks sessions based on behavioral signals, and (4) semantic narrative generation. The framework was evaluated on a real dataset of 10 million log entries from a large-scale e-commerce platform. In total, 321,997 user sessions were reconstructed, among which 8,104 friction-related events and 606 server-side errors were identified. By filtering out low-relevance sessions, the system reduced the volume of data requiring manual inspection by approximately 98%. While the framework focuses on tracking server-side interactions and does not capture client-side behavioral signals, the results show that meaningful UX insights can be extracted from existing logging infrastructure without the need for additional tracking mechanisms. Overall, NginxNarrator provides a scalable and practical approach to support UX analysis in large-scale web environments."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Mitigation of User Experience Bias in LLM-Driven Educational Web Services for Women and Neurodiverse Learners",
+    "authors": "Reyhane Abniki, Ali Imanifard, Babak Majidi",
+    "publish": "2026 12th International Conference on Web Research (ICWR)",
+    "url": "https://doi.org/10.1109/icwr69602.2026.11513353",
+    "source": "IEEE",
+    "abstract": "Web-based educational environments powered by generative large language models hold the promise of deeply personalized learning. However, these systems frequently harbor latent biases that degrade the user experience for women and neurodiverse populations. To address these challenges, we reframe experimental data through a human-computer interaction lens to evaluate how cognitive styles and decision-making processes interact with inclusivity in web software platforms. Our study utilized GenderMag-inspired personas to analyze simulated interactions within two distinct contexts: learning beginner programming and seeking support for identity-related vulnerabilities. The personas included Abi, representing a risk-averse female from an underrepresented background; Tim, a task-oriented male from the majority demographic; and Pat, who embodies neurodiverse traits characterized by variable tinkering. Qualitative and Quantitative analyses revealed notable disparities in empathy indices and sentiment polarity across persona profiles. Abi exhibited an empathy index of 0.45 compared to 0.78 for Tim, while Pat demonstrated higher variability <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$(\\text{SD}=0.15)$</tex>, suggesting shallower feedback and reduced personalization for specific groups. Qualitative insights further highlighted interface barriers, noting that ambiguous prompts appeared to exacerbate anxiety for the Abi persona, while inconsistent outputs often overwhelmed Pat. Drawing on usability models, mediation analysis confirmed ease of use as a central mediator of experience. This work contributes a novel reinterpretation of bias, offering empirical insights and redesign recommendations, such as adaptive prompts for affective engagement. These findings align with behavior analysis, digital health, and web society themes, underscoring that addressing these issues is vital for fostering equitable, inclusive education and mitigating societal gaps."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "LLM-Driven Constellation-Target Joint Dynamic Clustering Method",
+    "authors": "Xuxu Zhang, Kaifeng Yin, Wei Shi, Ding Linghu, Xiaoliang Xue, Cong Zhang",
+    "publish": "2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+    "url": "https://doi.org/10.1109/icaace69793.2026.11509165",
+    "source": "IEEE",
+    "abstract": "To address the difficulty of coordinating low-orbit constellations against highly dynamic targets, and the limitation of traditional clustering algorithms that solely focus on the constellation and easily fall into local optima, this paper proposes a two-stage constellation-target joint dynamic clustering method driven by a large language model and the target is incorporated into the clustering system. In the first stage, a Max-Overlap Clustering Algorithm (MOCA) based on integer linear programming is designed to quickly generate initial collaborative clusters that satisfy physical and communication hard constraints. In the second stage, a Decoupled Clip and Dynamic Sampling Policy Optimization (DAPO) is introduced, combined with a multi-dimensional efficacy composite reward model to perform reinforcement learning fine-tuning on Qwen3-32B, conducting deep logic optimization on the initial scheme. Experiments show that in multi-class complex threat scenarios, this two-stage fusion method achieved positive optimization in 47.1 % of the test samples, improving the clustering efficacy of highly dynamic networks."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "TreeEvolve: LLM-Driven End-to-End Pipeline for IIoT-Enabled Process Optimization in Food Industry",
+    "authors": "Seyyed Mohammad Mousavi, Babak Majidi, Mohammad Taghi Manzuri Shalmani",
+    "publish": "2026 12th International Conference on Web Research (ICWR)",
+    "url": "https://doi.org/10.1109/icwr69602.2026.11513348",
+    "source": "IEEE",
+    "abstract": "IIoT-enabled process optimization in food industry, such as in High-Temperature Short-Time (HTST) pasteurization, requires a critical balance between safety, quality, and energy efficiency. However, the “black-box” nature of artificial intelligence models presents a major obstacle to their application in these sensitive settings, preventing the use of advanced AI for optimization due to a lack of interpretability and trust. This paper introduces a novel four-phase workflow that leverages the TreeEvolve evolutionary framework to transform opaque optimization results into transparent and verifiable controllers, enabling end-to-end automation. The framework's adaptive methodology is demonstrated through two parallel workflows: a one-dimensional (1D) search that establishes an optimal static set-point at 70.64° C (improving product quality by 2.33 %), and a two-dimensional (2D) search that discovers an interpretable dynamic control law via symbolic regression, reducing energy consumption by a significant 28.84 %. The evolved controllers are then translated into verified Structured Text code for deployment on edge-computing PLCs and IIoT gateways. This study represents an early step toward automated, interpretable AI controller generation for industrial applications, supporting their safe and efficient use in manufacturing."
+  },
+  {
+    "date": "2026-5-15",
+    "title": "Research on Application of Large Language Model (LLM) in Macroeconomic Forecasting",
+    "authors": "Yuheng Li, Ruida Ye",
+    "publish": "Proceedings of the 2025 6th International Conference on Big Data Economy and Information Management",
+    "url": "https://doi.org/10.1145/3800000.3800169",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "RETHiNK: Simulating Human Reasoning via Multi-LLM Debate for Cognitive Reframing of Negative Thoughts",
+    "authors": "Xiaomeng Wang, Dharmendra Sharma, Dinesh Kumar, Xunzhu Tang",
+    "publish": "ACM Transactions on Computing for Healthcare",
+    "url": "https://doi.org/10.1145/3815586",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-14",
+    "title": "Separation of Concerns for Privacy-Preserving LLM Adoption: A Banking Architecture Framework",
+    "authors": "Yu Kong, Silvia Bartolucci, Fabio Caccioli, Giuseppe Destefanis",
+    "publish": "Proceedings of the 3rd IEEE/ACM Workshop on Software Engineering Challenges in Financial Firms",
+    "url": "https://doi.org/10.1145/3786170.3788387",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
