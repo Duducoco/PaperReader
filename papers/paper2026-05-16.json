@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-05-14",
+    "title": "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands",
+    "authors": "Pratinav Seth, Vinay Kumar Sankarapu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15164v1",
+    "source": "arXiv",
+    "abstract": "This position paper argues that behavioural assurance, even when carefully designed, is being asked to carry safety claims it cannot verify. AI governance frameworks enacted between 2019 and early 2026 require reviewable evidence of properties such as the absence of hidden objectives, resistance to loss-of-control precursors, and bounded catastrophic capability; current assurance methodologies (primarily behavioural evaluations and red-teaming) are epistemically limited to observable model outputs and cannot verify the latent representations or long-horizon agentic behaviours these frameworks presume to regulate. We formalize this structural mismatch as the audit gap, the divergence between required and achievable verification access, and introduce the concept of fragile assurance to describe cases where the evidential structure does not support the asserted safety claim. Through an analysis of a 21-instrument inventory, we identify an incentive gradient where geopolitical and industrial pressures systematically reward surface-level behavioral proxies over deep structural verification. Finally, we propose a technical pivot: bounding the weight of behavioral evidence in legal text and extending voluntary pre-deployment access with mechanistic-evidence classes, specifically linear probes, activation patching, and before/after-training comparisons."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Automating Bitvector and Finite Field Equivalence Proofs in Lean",
+    "authors": "Elizaveta Pertseva, Valentin Robert, Clark Barrett, James Parker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15163v1",
+    "source": "arXiv",
+    "abstract": "Efforts to verify Zero-Knowledge Proof circuit encodings have highlighted the challenge of proving the correctness of quantifier-free statements that make use of both bitvector and finite field operations. Existing verification workflows are either manual or rely on SMT solvers, which scale poorly on some classes of problems for reasons that include difficulties with conversion operators and challenges reasoning about inequalities. To address these limitations, we present a novel Lean tactic BitModEq that leverages range lemmas and case analysis to produce verified translations from finite fields to bitvectors. Our approach, combined with bit-blasting, outperforms state-of-the-art SMT solvers, solving 19% more ZKP arithmetization benchmarks."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Complete Local Reasoning About Parameterized Programs Over Topologies",
+    "authors": "Ruotong Cheng, Azadeh Farzan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15143v1",
+    "source": "arXiv",
+    "abstract": "This paper investigates the algorithmic safety verification problem of infinite-state parameterized concurrent programs over a rich set of communication topologies. The goal is to automatically produce a proof of correctness in the form of a universally quantified inductive invariant, where the quantification is over the nodes in the topology. We illustrate that under reasonable assumptions on the underlying topology, the problem can be reduced to and solved as a compositional scheme, that is, the verification of the parameterized family is reduced to a set of local proofs, in a complete manner. We propose a verification algorithm, which is implemented as a tool, and demonstrate through a set of benchmarks over several different topologies that our approach is effective in proving parameterized programs safe."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution",
+    "authors": "Saisab Sadhu, Pratinav Seth, Vinay Kumar Sankarapu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15138v1",
+    "source": "arXiv",
+    "abstract": "Standard unlearning evaluations measure behavioral suppression in full precision, immediately after training, despite every deployed language model being quantized first. Recent work has shown that 4-bit post-training quantization can reverse machine unlearning; we show this is not a tuning artefact but a systematic dual failure: gradient-based methods that achieve meaningful forgetting lose it under compression, while methods that survive quantization barely change the model. Both failures trace to the same root cause: across all baselines, per-parameter updates lie 47-828x below the NF4 quantization bin width; updates diffused across billions of parameters cannot clear quantization bin boundaries, a consequence we formalize as a sparsity-permanence tradeoff. We present MANSU (Mechanistic-Aligned Null-Space Unlearning), which resolves both modes by combining causal circuit attribution to isolate the minimal forget-set subgraph, circuit-restricted null-space projection with a diagonal-Fisher retain bound, and a per-parameter magnitude floor guaranteeing quantization survival by construction. We additionally introduce Circuit Attribution Divergence (CAD), a mechanistic verification metric distinguishing structural erasure from behavioral suppression, a distinction existing metrics cannot make. Across multiple model families and hazard benchmarks, MANSU is the first method to jointly satisfy all four properties with margin on each (meaningful forgetting, retain preservation, non-positive PTQ gap, and structural erasure), while gradient-based baselines recover up to +0.05 accuracy under compression."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Natural Synthesis: Outperforming Reactive Synthesis Tools with Large Reasoning Models",
+    "authors": "Frederik Schmitt, Matthias Cosler, Niklas Metzger, Julian Siber, Vladimir Krsmanovic, Mohamed Ghanem, Bernd Finkbeiner",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15131v1",
+    "source": "arXiv",
+    "abstract": "Reactive synthesis, the problem of automatically constructing a hardware circuit from a logical specification, is a long-standing challenge in formal verification. It is elusive for two reasons: It is algorithmically hard, and writing formal specifications by hand is notoriously difficult. In this paper, we tackle both sides of the problem. For the algorithmic side, we present a neuro-symbolic approach to reactive synthesis that couples large reasoning models with model checkers to iteratively repair a synthesized Verilog implementation via sound symbolic feedback. Our approach solves more benchmarks than the best dedicated tools in the annual synthesis competition and extends to constructing parameterized systems, a problem known to be undecidable. On the specification side, we introduce an autoformalization step that shifts the specification task from temporal logic to natural language by introducing a hand-authored dataset of natural-language specifications for evaluation. We demonstrate performance comparable to that of starting from formal specifications, establishing natural synthesis as a viable end-to-end workflow."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "An Interpretable Latency Model for Speculative Decoding in LLM Serving",
+    "authors": "Linghao Kong, Megan Flynn, Michael Peng, Nir Shavit, Mark Kurtz, Alexandre Marques",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15051v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) accelerates large language model (LLM) inference by using a smaller draft model to propose multiple tokens that are verified by a larger target model in parallel. While prior work demonstrates substantial speedups in isolated or fixed-batch settings, the behavior of SD in production serving systems remains poorly understood: request load varies over time, and effective batch size emerges from the serving system rather than being directly controlled or observed. In this work, we develop a simple and interpretable latency model for SD in LLM serving. We infer effective batch size from request rate using Little's Law and decompose per-request demand into load-independent and load-dependent components for prefill, drafting, and verification. We validate our model using extensive measurements from vLLM across verifier and drafter model sizes, prefill and decode lengths, request rates, draft lengths, and acceptance probabilities. The model accurately describes observed latency, explains why speedups often diminish as server load increases, and characterizes how draft length, acceptance rate, and verifier-drafter size shape latency across serving conditions, with implications for configuring SD in deployed systems. We further show how the framework extends to mixture of experts models, where sparse expert activation changes the effective service costs across load regimes. Together, our results provide a structured framework for understanding SD in real LLM serving systems."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "SpeakerLLM: A Speaker-Specialized Audio-LLM for Speaker Understanding and Verification Reasoning",
+    "authors": "KiHyun Nam, Jungwoo Heo, Siu Bae, Ha-Jin Yu, Joon Son Chung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15044v1",
+    "source": "arXiv",
+    "abstract": "As audio-first agents become increasingly common in physical AI, conversational robots, and screenless wearables, audio large language models (audio-LLMs) must integrate speaker-specific understanding to support user authorization, personalization, and context-aware interaction. This requires modeling who is speaking, how the voice sounds, and how recording conditions affect speaker cues. Conventional speaker verification systems provide strong scalar scores but little linguistic evidence, while current audio-LLMs and speaker-aware language models have limited ability to organize speaker information beyond binary labels or descriptive profiles. We present SpeakerLLM, a speaker-specialized audio-LLM framework that unifies single-utterance speaker profiling, recording-condition understanding, utterance-pair speaker comparison, and evidence-organized verification reasoning within a natural-language interface. We construct verification-reasoning targets and a decision-composition policy that separate profile-level evidence from the final same-or-different decision and organize recording condition, profile evidence, and the decision into a structured trace. At its core, SpeakerLLM uses a hierarchical speaker tokenizer designed to capture multiple granularities of speaker evidence. Utterance-level speaker embeddings summarize identity and profile-level cues, whereas frame-level speaker features preserve fine-grained acoustic descriptors. Experiments show that SpeakerLLM-Base improves speaker-profile and recording-condition understanding over general audio-LLMs, while SpeakerLLM-VR preserves strong generated-verdict accuracy and produces decision traces grounded in the supervised verification reasoning schema. We will release the metadata-enriched supervision dataset and target-construction code for reproducibility."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Performance-Driven Policy Optimization for Speculative Decoding with Adaptive Windowing",
+    "authors": "Jie Jiang, Xing Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14978v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates LLM inference by having a lightweight draft model propose speculative windows of candidate tokens for parallel verification by a larger target model. In practice, speculative efficiency is often bottlenecked by hard-to-draft positions, where an early mismatch truncates the accepted prefix and invalidates the rest of the speculative window. Most learning-based drafters are still optimized with token-level supervised objectives, even though speculative utility is inherently window-level and prefix-sensitive. We propose PPOW (Performance-Driven Policy Optimization with Adaptive Windowing), a reinforcement learning framework that shifts drafter optimization from token-level imitation to window-level optimization. PPOW combines a Cost-Aware Speedup Reward, a Distribution-Based Proximity Reward, and Adaptive Divergence-Aware Windowing, which prioritizes informative windows with high confidence-weighted draft-target divergence. PPOW achieves average acceptance lengths of 6.29-6.52 and speedups of 3.39-4.36$\\times$ across multiple model families and benchmarks under a unified decoding protocol. These results show that performance-driven window-level optimization is a practical approach to improving speculative decoding efficiency."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Real-time virtual circuits for plasma shape control via neural network emulators",
+    "authors": "Alasdair Ross, George K. Holt, Kamran Pentland, Adriano Agnello, Nicola C. Amorisco, Pedro Cavestany, Aran Garrod, Timothy Nunn, Charles Vincent, Graham McArdle",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14939v1",
+    "source": "arXiv",
+    "abstract": "Reliable position and shape control in tokamak plasmas requires accurate real-time regulation of several strongly coupled shape parameters. The control vectors that disentangle these couplings, referred to as \\textit{virtual circuits} (VCs), enable independent shape parameter control for a specific Grad--Shafranov (GS) equilibrium. Numerical calculation of VCs is not currently feasible in real time, therefore VCs are usually computed prior to each experiment, using a small number of reference GS equilibria sampled along the desired scenario trajectory, with each VC used to control the plasma within a preset time interval. While effective near the reference equilibrium, this approach can lead to degraded performance as the plasma departs from the reference equilibrium and/or from the desired trajectory, and it complicates the design of robust control strategies for rapidly evolving plasma configurations. In this paper, we construct neural-network-based emulators of plasma shape parameters from which VCs can be derived, to provide the MAST Upgrade (MAST-U) plasma control system with state-aware VCs in real-time. To do this, we develop an extensive library of over a million simulated GS equilibria, covering a substantial portion of the MAST-U operational space. These emulators provide differentiable functions whose gradients can be rapidly computed, enabling the derivation of accurate VCs for real-time shape control. We perform extensive verification of the emulated VCs by testing whether they disentangle the control problem. The neural-network-based approach delivers high accuracy and orthogonality across a diverse range of equilibria. This work establishes the physical validity of emulated VCs as a scalable and general alternative to schedules of precomputed VCs."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Text-Dependent Speaker Verification (TdSV) Challenge 2024: Team Naive System Report",
+    "authors": "Amir Mohammad Rostami, Pourya Jafarzadeh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14896v1",
+    "source": "arXiv",
+    "abstract": "This paper presents a system for the 2024 Text-Dependent Speaker Verification (TdSV) Challenge. The system achieved a Minimum Detection Cost Function (MinDCF) of 0.0461 and an Equal Error Rate (EER) of 1.3\\%. Our approach focused on adapting existing state-of-the-art neural networks, ResNet-TDNN and NeXt-TDNN, originally trained on the VoxCeleb dataset. This strategy was chosen because of the limited challenge duration and the available resources at the time. In addition, we designed a lightweight and resource-efficient model, EfficientNet-A0, trained specifically on the challenge dataset to improve adaptation and strengthen the ensemble approach. Our system combines advanced neural architectures, extensive data augmentation, and optimised hyperparameters. These components helped achieve strong performance in text-dependent speaker verification. The results also demonstrate the effectiveness of multi-model ensemble learning for both speaker and phrase verification."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Unlocking Complex Visual Generation via Closed-Loop Verified Reasoning",
+    "authors": "Hanbo Cheng, Limin Lin, Ruo Zhang, Yicheng Pan, Jun Du",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14876v1",
+    "source": "arXiv",
+    "abstract": "Despite rapid advancements, current text-to-image (T2I) models predominantly rely on a single-step generation paradigm, which struggles with complex semantics and faces diminishing returns from parameter scaling. While recent multi-step reasoning approaches show promise, they are hindered by ungrounded planning hallucinations lacking verification, monolithic post-hoc reflection, long-context optimization instabilities, and prohibitive inference latency. To overcome these bottlenecks, we propose the Closed-Loop Visual Reasoning (CLVR) framework, a comprehensive system that deeply couples visual-language logical planning with pixel-level diffusion generation. CLVR introduces an automated data engine with step-level visual verification to synthesize reliable reasoning trajectories, and proposes Proxy Prompt Reinforcement Learning (PPRL) to resolve long-context optimization instabilities by distilling interleaved multimodal histories into explicit reward signals for accurate causal attribution. Furthermore, to mitigate the severe latency bottleneck caused by iterative denoising, we propose $Δ$-Space Weight Merge (DSWM), a theoretically grounded method that fuses alignment weights with off-the-shelf distillation priors, reducing the per-step inference cost to just 4 NFEs without requiring expensive re-distillation. Extensive experiments demonstrate that CLVR outperforms existing open-source baselines across multiple benchmarks and approaches the performance of proprietary commercial models, unlocking general test-time scaling capabilities for complex visual generation."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "A Deterministic Agentic Workflow for HS Tariff Classification: Multi-Dimensional Rule Reasoning with Interpretable Decisions",
+    "authors": "Yu Zhang, Dongjiang Zhuang, Qu Zhou, Zheng Huang, Junhe Wu, Jing Cao, Kai Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14857v1",
+    "source": "arXiv",
+    "abstract": "Harmonized System (HS) tariff classification is a high-stakes, expert-level task in which a free-form product description must be mapped to a specific six- or eight-digit code under the General Interpretive Rules (GIR), section notes, chapter notes, and Explanatory Notes. The difficulty lies not in knowledge volume but in *multi-dimensional rule reasoning*: a correct classification must satisfy competing priority rules along several axes simultaneously, including material, form, function, essential character, the part-versus-whole boundary, and specific listing versus residual headings. End-to-end prompting of large language models fails characteristically by resolving one axis while ignoring the priority constraints on the others. We present a *deterministic agentic workflow* in contrast to self-planning agents: the control flow is fixed, language model calls are confined to narrow stages, and reflection and verification are retained as local mechanisms. This design yields interpretability by construction--each decision is decomposed into stage-wise structured outputs with verbatim citation of the chapter or section notes that bear on it. The architecture combines offline knowledge-engineering of the Chinese HS tariff with an online six-stage pipeline. Evaluated on HSCodeComp at the six-digit level, the workflow reaches 75.0% top-1 and 91.5% top-3 at four digits, and 64.2% top-1 and 78.3% top-3 at six digits with Qwen3.6-plus; an open-weight Qwen3.6-27B-FP8 backbone in non-thinking mode achieves 84.2% four-digit and 77.4% six-digit top-1 agreement with the frontier model. A two-stage manual audit of 226 six-digit disagreements suggests that a non-trivial fraction of HSCodeComp ground-truth labels may deviate from HS general rules; full adjudication records are released in the appendix as preliminary findings for community review."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "IFPV: An Integrated Multi-Agent Framework for Generative Operational Planning and High-Fidelity Plan Verification",
+    "authors": "Zhigao Huang, Zhengqing Hu, Dong Chen, Shaohan Zhang, Zhao Jin, Bo Zhang, Han Wu, Mingliang Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14851v1",
+    "source": "arXiv",
+    "abstract": "Operational plan generation and verification are critical for modern complex and rapidly changing battlefield environments, yet traditional generation and verification methods still respectively face the challenges of generation infeasibility and verification insufficiency. To alleviate these limitations, we propose an Integrated Multi-Agent Framework for Generative Operational Planning and High-Fidelity Plan Verification (IFPV). IFPV consists of two tightly coupled modules: Multi-Perspective Hierarchical Agents (MPHA) for generative operational planning and an Adversarial Cognitive Simulation Engine (ACSE) for high-fidelity adversarial plan verification. MPHA decomposes commander intent into executable multi-platform tactical action sequences through the collaboration of Pathfinder, Analyst, and Planner agents. ACSE introduces an opponent equipped with a customized world model, which predicts the future evolution of mission-critical platforms and conducts dynamic counteractions against candidate plans. Simulation experiments in the Asymmetric Combat Tactic Simulator (ACTS) show that IFPV improves mission success by 19.4% and reduces operational cost by 41.7% compared with a single-step large language model (LLM) planning baseline. Compared with a traditional rule-based validator, ACSE increases the average suppression rate by 31.8%, indicating that the proposed verification environment is stricter and more discriminative in revealing the latent vulnerabilities of candidate plans. The code for IFPV can be found at https://github.com/zhigao3ks/IFPV."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "The Complexity of Nested Reset Counter Systems",
+    "authors": "A. R. Balasubramanian, Franzisco Schmidt",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14850v1",
+    "source": "arXiv",
+    "abstract": "Nested counter systems (NCS) are a generalization of counter systems to higher-order counters. Here, a higher-order counter is allowed to have other (lower-order) counters as elements, instead of just a number. Such systems can be viewed as working on trees, where the height of the tree naturally corresponds to the highest order counter that the system is working with. It is known that the coverability problem for NCS, which asks if a given final tree can be covered from a given initial tree, is $\\mathbf{F}_{ε_0}$-complete. Here $\\mathbf{F}_{ε_0}$ is a class in the fast-growing hierarchy of complexity classes. In this paper, we consider an extension of NCS called nested reset counter systems (NRCS) that extends NCS with resets. We show that coverability for NRCS over order-$k$ counters is $\\mathbf{F}_{Ω_k}$-complete where $Ω_k$ is the tower of height $k$ of the $ω$ ordinal. This gives the first natural hierarchy of complete problems for all of these classes. Furthermore, to prove our upper bounds, we also develop length function theorems for any fixed amount of applications of the multiset operation on finite sets. As an application of our results, we improve existing upper bounds for various problems from XML processing, graph transformation systems, $π$-calculus, logic and parameterized verification. Furthermore, using our completeness results for $k$-NRCS, we also prove $\\mathbf{F}_{Ω_k}$-completeness of the considered problems from the realms of parameterized verification and logic, for all $k$."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Exploring Vision-Language Models for Online Signature Verification: A Zero-Shot Capability Study",
+    "authors": "Marta Robledo-Moreno, Ruben Vera-Rodriguez, Ruben Tolosana, Javier Ortega-Garcia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14845v1",
+    "source": "arXiv",
+    "abstract": "Recent advancements in Vision-Language Models (VLMs) have demonstrated strong capabilities in general visual reasoning, yet their applicability to rigorous biometric tasks remains unexplored. This work presents an exploratory study evaluating the zero-shot performance of state-of-the-art VLMs (GPT-5.2 and Gemini 2.5 Pro) on the Signature Verification Challenge (SVC) benchmark. To enable visual processing, raw kinematic time-series are converted into static images, encoding pressure information into stroke opacity whenever available in the source data. Furthermore, we introduce a scoring protocol that extracts latent token probabilities to compute robust biometric scores. Experimental results reveal a significant performance dichotomy dependent on signal quality and forgery type. In random forgery scenarios, the zero-shot VLM achieves exceptional discrimination, with GPT-5.2 reaching an Equal Error Rate of 0.32% in mobile tasks, outperforming supervised state-of-the-art systems. Conversely, in skilled forgery scenarios, where the task is more challenging because both signatures are almost identical, the results are significantly worse, and a critical \"Rationalization Trap\" emerges: chain-of-thought (CoT) reasoning degrades performance as the model produces kinematic hallucinations to justify forgery artifacts as natural variability."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "A Heterogeneous Temporal Memory Governance Framework for Long-Term LLM Persona Consistency",
+    "authors": "Zhao Yang, Wang Huan, Li Yingshuo, Tu Haomiao, Lin Hujite",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14802v1",
+    "source": "arXiv",
+    "abstract": "Large language models often suffer from fact loss, timeline confusion, persona drift, and reduced stability during long-range interaction, especially under high-noise knowledge bases, context clearing, and cross-model transfer. To address these issues, we introduce ARPM, an external temporal memory governance framework for long-term dialogue. ARPM separates static knowledge memory from dynamic dialogue experience memory and combines vector retrieval, BM25, RRF fusion, dual-temporal reranking, chronological evidence reading, and a controlled analysis protocol for evidence verification and answer binding. Unlike approaches that encode persona consistency into model weights or rely only on long context, ARPM treats continuity as a traceable, auditable, and transferable governance problem. Using engineering logs, we conduct three experiments. First, in a 50-round question-answering setting, we compare signal-to-noise ratios of 1:5 and 1:200+, and distinguish CSV auto-judgment from manual review. Under 1:5, CSV recall accuracy is 54.0%, while manual review raises it to 100.0%. Under 1:200+, the values are 44.0% and 80.0%. These results show that automatic rules can underestimate recall after supporting evidence enters the prompt. Second, ablation results show that dialogue history retrieval is necessary for recent continuity: disabling it reduces strict accuracy from 100% to 66.7%, and disabling BM25 reduces it to 80.0%, indicating that pure semantic retrieval is insufficient for correction and tracing. Third, under a 5.1-million-character noise substrate, periodic context clearing, and multi-model handoff, ARPM maintains semantic continuity, boundary continuity, and persona consistency, while exposing limits caused by weak protocol compliance. These findings show that long-term persona consistency can be decomposed into governable components and evaluated in a white-box manner."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "COAL: Counterfactual and Observation-Enhanced Alignment Learning for Discriminative Referring Multi-Object Tracking",
+    "authors": "Shukun Jia, Shiyu Hu, Yipei Wang, Ximeng Cheng, Yichao Cao, Xiaobo Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14795v1",
+    "source": "arXiv",
+    "abstract": "Referring Multi-Object Tracking (RMOT) faces a fundamental structural contradiction between the high-discriminability demand and the sparse semantic supervision. This mismatch is particularly acute in highly homogeneous scenarios that require fine-grained discrimination over complex compositional semantics. However, under sparse supervision, models overfit to salient yet insufficient cues, thereby encouraging shortcut learning and semantic collapse. To resolve this, we propose COAL (Counterfactual and Observation-enhanced Alignment Learning), a framework that advances RMOT beyond isolated structural optimization through knowledge regularization. First, we introduce Explicit Semantic Injection (ESI) via a VLM to densify the observation space and enhance instance discriminability. Second, leveraging LLM reasoning, we propose Counterfactual Learning (CFL) to augment supervision, enforcing strict attribute verification for robust compositional recognition. These strategies are unified within a Hierarchical Multi-Stream Integration (HMSI) architecture, which distills external knowledge into domain-specific discriminative representations. Experiments on Refer-KITTI and Refer-KITTI-V2 benchmarks validate COAL's efficacy. Notably, it surpasses the state-of-the-art by 7.28% HOTA on the highly challenging Refer-KITTI-V2. These results demonstrate the effectiveness of knowledge regularization for resolving the sparsity-discriminability paradox in RMOT."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Hybrid Metaheuristic Optimization of Distributed Control System Hardware Architecture with Model-Based Verification",
+    "authors": "Ruslan Zakirzyanov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14788v1",
+    "source": "arXiv",
+    "abstract": "Large-scale chemical plants rely on distributed process control systems (PCS) comprising numerous processing units, communication modules, and I/O devices interconnected via industrial networks. The design of a cost-efficient and reliable hardware architecture under partial uncertainty in plant parameters remains a challenging combinatorial optimization problem. This paper proposes a formal model for distributed control system hardware architecture synthesis. A hybrid ant colony-based metaheuristic framework is developed to construct feasible hierarchical architectures. The proposed approach is validated on a large-scale sulfuric acid plant control system case study. Plant parameters are identified from operational data, system stability is analyzed, and a controller synthesis is performed based on the optimized architecture. The results demonstrate the feasibility of the approach and confirm that the obtained architecture satisfies structural and dynamic performance requirements."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Supervised Distributed Computing: Efficiency and Robustness under a Majority of Adversarial Workers",
+    "authors": "John Augustine, Henning Hillebrandt, Manish Kumar, Christian Scheideler, Julian Werthmann",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14784v1",
+    "source": "arXiv",
+    "abstract": "We consider a recently proposed \\emph{supervised distributed computing} paradigm \\cite{augustine2025supervised} that extends and refines the standard master-worker paradigm for parallel computations. In this paradigm, there is a supervisor, a source, a target, and a collection of workers. The distributed computation is given as an acyclic task graph that is known to the supervisor. The source initially stores the input and the target is supposed to store the output of the computation. The individual tasks of the computation are supposed to be executed by the workers under the guidance of the supervisor. The source, target and supervisor are assumed to be reliable, while a $β$-fraction of the workers might be adversarial, for some $β\\in [0,1)$. This covers, for example, the case where a supervisor has to work with untrusted volunteers. In the standard master-worker approach, the master checks whether the workers correctly execute the assigned tasks, creating a severe bottleneck, whereas in the supervised approach, the supervisor outsources this checking to the workers. Prior to this work, only supervised solutions were known for the case that $β$ is a sufficiently small constant. We show that robust and efficient supervised solutions are possible for \\emph{any} constant $β<1$ while the expected work for the honest workers is close to a \\emph{single} execution per task, given that there is a lightweight verification mechanism that allows honest workers to check the correctness of task outputs, which is significantly better than all robust master-worker as well as peer-to-peer approaches known so far."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Probabilistic Verification of Recurrent Neural Networks for Single and Multi-Agent Reinforcement Learning",
+    "authors": "Luca Marzari, Enrico Marchesini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.14758v1",
+    "source": "arXiv",
+    "abstract": "History-dependent policies induced by recurrent neural networks (RNNs) rely on latent hidden state dynamics, making verification in partially observable reinforcement learning (RL) challenging. Existing RNN verification tools typically rely on restrictive modeling assumptions or coarse over-approximations of the hidden state space, which can lead to overly conservative or inconclusive results. We propose $\\textbf{RNN}$ $\\textbf{Pro}$babilistic $\\textbf{Ve}$rification ($\\texttt{RNN-ProVe}$), a probabilistic framework that $\\textit{estimates the likelihood}$ of undesired behaviors in RNN-based policies. $\\texttt{RNN-ProVe}$ uses policy-driven sampling to approximate the set of hidden states that are feasible under a trained policy, and derives statistical error bounds to produce bounded-error, high-confidence estimates of behavioral violations. Experiments on partially observable single-agent and cooperative multi-agent tasks show that $\\texttt{RNN-ProVe}$ yields more quantitative, feasibility-aware probabilistic guarantees than existing tools, while scaling to recurrent and multi-agent settings."
+  }
+]
