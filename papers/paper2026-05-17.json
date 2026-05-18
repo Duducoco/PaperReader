@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-05-15",
+    "title": "The Collapse of Unentangled Stoquastic Merlin-Arthur Proof Systems",
+    "authors": "William Gay, Fernando Granha Jeronimo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.16249v1",
+    "source": "arXiv",
+    "abstract": "Entanglement and interference are among the most fundamental properties of quantum mechanics. In this work, we investigate the role and power of interference in the context of detecting entanglement. We do so from a computational complexity lens by proving that unentanglement gives no additional power to stoquastic Merlin-Arthur verification. For every polynomial number of provers $k=k(n)$, \\[ \\text{StoqMa}(k)=\\text{StoqMa} . \\] Conceptually, the proof separates the role of entanglement from the role of interference: once destructive interference is ruled out by stoquasticity, the product-state constraint can be absorbed into a polynomially larger one-witness stoquastic verification. The main analytic ingredient is a positive, value-based de Finetti theorem for separately symmetric extensions. If $M$ is an entrywise nonnegative positive semidefinite contraction on $A_1\\otimes\\cdots\\otimes A_k$, then the nonnegative product value of $M$ is approximated to additive error $ε$ by the largest eigenvalue of \\[ Π_R^{<k} (M_{A_{1,1}\\cdots A_{k-1,1}A_k}\\otimes I) Π_R^{<k}, \\qquad R=O\\!\\left(\\frac{k^2\\sum_i\\log\\dim A_i}{ε^3}\\right), \\] where $Π_R^{<k}$ is the operator on $A_1^{\\otimes R} \\otimes \\cdots \\otimes A_{k-1}^{\\otimes R} \\otimes A_k$ projecting to the subspace $\\mathrm{Sym}^R(A_1) \\otimes \\cdots \\otimes \\mathrm{Sym}^{R}(A_{k-1}) \\otimes A_k$. The spectral relaxation is then realized as an actual one-witness stoquastic verifier. After replacing the uniform permutation averages in the symmetric projectors by inverse-polynomially close dyadic inverse-invariant averages. Consequently, \\[ \\text{StoqMa}(k)=\\text{StoqMa}\\subseteq\\text{AM}\\cap\\text{PP}\\subseteq\\text{PSPACE} . \\] The positive de Finetti theorem is isolated as a standalone technique and may be useful in other nonnegative tensor-optimization and stoquastic-verification settings."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "LeanBET: Formally-verified surface area calculations in Lean",
+    "authors": "Ejike D. Ugwuanyi, Colin T. Jones, John Velkey, Tyler R. Josephson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.16169v1",
+    "source": "arXiv",
+    "abstract": "The Brunauer--Emmett--Teller (BET) method is a standard tool for estimating surface areas from adsorption isotherms, yet practical implementations involve multiple algorithmic steps whose correctness is rarely made explicit. In this work, we present a fully executable and formally verified BET analysis pipeline implemented in the Lean~4 theorem prover. Our formalization covers the complete BET Surface Identification (BETSI)-style workflow, including window enumeration, monotonicity checks, knee selection, and linear regression. We carry out computations in floating-point arithmetic and develop the corresponding correctness proofs over the real numbers, using a shared polymorphic implementation that supports both. On the proof side, we show that the regression coefficients returned by the algorithm agree with their specification-level definitions and minimize the least-squares error under the stated assumptions. We also formalize the algebraic derivation of the BET linearized expression and connect that result directly to the executable analysis pipeline. We further prove that the window enumeration is sound and complete, and that the admissibility checks and knee-based selection satisfy their formal specifications. We evaluate the implementation against the BETSI reference method on benchmark adsorption isotherms. Compared to BETSI, LeanBET agrees to machine precision for 18 of the 19 isotherms, with only a 0.03\\% deviation for the UiO-66 dataset. This demonstrates that a scientific computing workflow can be built in Lean, yielding both formal verification guarantees and numerical agreement with an established Python reference implementation."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "When Noisy Quantum Order Finding Remains Recoverable for Shor's Algorithm",
+    "authors": "Qingxin Yang, Stefano Markidis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.16074v1",
+    "source": "arXiv",
+    "abstract": "Order finding is the core subroutine of Shor's algorithm. On NISQ hardware, phase estimation output distributions are often distorted by noise, making correct order recovery difficult. We study recoverability in noisy order finding: given a measured precision-register distribution, when does standard classical post-processing still return the true order? We analyze 680 distributions from IBM quantum systems across problem instances and circuit settings. For each distribution, we apply continued-fraction post-processing with modular verification and define recoverability as whether the recovered order equals the true one. We characterize each distribution using four features: autocorrelation peak strength, normalized entropy, dominant verified mass fraction, and verified margin fraction. We evaluate these quantities using marginal feature comparisons, single-feature AUROC analysis, and multivariate tree-based classifiers. We use random-forest permutation importance to assess which quantities contribute distinct predictive information once the other features are known. To make classification behavior interpretable, we train a decision tree that exposes threshold rules for recoverable and non-recoverable distributions. We find that recoverability is strongly associated with residual comb-like structure in the measured distribution and the way verified probability mass is organized across candidate denominators. The dominant verified mass fraction is the strongest single-feature indicator of recoverability, and tree-based analysis shows it also provides the primary split in an interpretable threshold description. Some highly distorted distributions remain recoverable when one verified denominator dominates the post-processing mass, while some visibly structured distributions fail because classical post-processing favors an incorrect verified denominator."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "CitePrism: Human-in-the-Loop AI for Citation Auditing and Editorial Integrity",
+    "authors": "Gowrika Mahesh, Budanur Madappa Darshan Gowda, Kavana Gopladevarahalli Papegowda, Prajwal Basavaraj, Binh Vu, Swati Chandna, Mehrdad Jalali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.16000v1",
+    "source": "arXiv",
+    "abstract": "Editors and reviewers are expected to ensure that manuscripts cite relevant, accurate, current, and ethically appropriate literature, yet manuscript-level citation auditing remains largely manual, fragmented, and difficult to scale. Citation context, metadata quality, self-citation patterns, and bibliographic integrity all affect whether a reference appropriately supports a local claim. We present CitePrism, a transparent hybrid decision-support framework for editorial citation auditing that combines LLM-assisted contextual reasoning, embedding-based semantic similarity, metadata verification, integrity-oriented flags, and human-in-the-loop analyst review. CitePrism extracts citation neighborhoods, enriches reference metadata, computes fused relevance scores, surfaces metadata and self-citation review prompts, and supports configurable threshold-based triage. In a preliminary validation on a single case-study manuscript with 104 references from pavement engineering, agreement with human binary relevance labels reached Cohen's kappa = 0.429. At operating threshold tau = 17, CitePrism flagged all human-labeled irrelevant citations, while also producing false positives requiring analyst review. These results suggest that CitePrism may support conservative editorial screening and citation-quality triage, but they do not establish general editorial performance. CitePrism is intended as pilot-stage decision support, not as an autonomous misconduct detector or automated editorial decision system. Broader validation across manuscripts, domains, annotators, baselines, and deployment settings is required before operational use."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Segmentation, Detection and Explanation: A Unified Framework for CT Appearance Reasoning",
+    "authors": "Yuyuan Liu, Can Peng, Yingyu Yang, Qianye Yang, Cheng Ouyang, J. Alison Noble",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15997v1",
+    "source": "arXiv",
+    "abstract": "Recent progress in deep learning has significantly advanced CT image analysis, particularly for segmentation tasks. However, these advances are largely confined to image-level pattern recognition, with most methods lacking explicit anatomical or contextual reasoning. Large vision-language models introduce linguistic context into image analysis, yet most approaches typically focus on a single task, which is insufficient for clinical workflow analysis that requires multiple fine-grained types of analysis, such as anatomy detection and segmentation. In this paper, we propose a unified autoregressive framework that integrates language-guided visual reasoning into CT interpretation. Our method introduces task-routing tokens that trigger detection and segmentation heads conditioned on the hidden states of a large vision-language model, enabling coherent generation of visual outputs (e.g., masks and bounding boxes) and textual reasonings. To progressively enhance localisation accuracy and semantic clarity, we further design a \"closer-look\" mechanism that allows the model to perform progressive coarse-to-fine visits to regions of interest under refined fields of view. To support model training and evaluation, we curated a new multimodal CT dataset containing pixel-wise masks, bounding boxes, spatial prompts, and structured descriptions for visual objects constructed through an AI-assisted annotation process with human verification. Experiments on public benchmarks demonstrate consistent improvements over the SoTA, achieving up to 1.0% Dice on BTCV and 1.7% Dice on MosMed+, while additionally providing appearance reasoning outputs. The code and dataset will be available."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Singular control with state-dependent costs for Lévy processes",
+    "authors": "Mordecki Ernesto, Muler Nora, Oliú Facundo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15993v1",
+    "source": "arXiv",
+    "abstract": "We study a discounted singular stochastic control problem driven by a general Lévy process, where the objective is to minimize a cost functional composed of a running cost and a control cost that depends on the current state of the process. We first establish a Hamilton Jacobi Bellman (HJB)-type verification theorem providing sufficient conditions under which a reflecting barrier strategy is optimal and characterizing the value function. Our main contribution is to connect this control problem with an associated optimal stopping problem: we prove that the optimal reflection threshold coincides with the optimal stopping boundary of the auxiliary problem. This connection allows us to characterize the optimal strategy through probabilistic tools and leads to explicit or semi-explicit solutions in several relevant cases. We illustrate the results with several examples, including an application to pollution abatement."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "PAGER: Bridging the Semantic-Execution Gap in Point-Precise Geometric GUI Control",
+    "authors": "Jingxuan Wei, Xi Bai, Shan Liu, Caijun Jia, Zheng Sun, Xinglong Xu, Siyuan Li, Linzhuang Sun, Bihui Yu, Conghui He, Cheng Tan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15963v1",
+    "source": "arXiv",
+    "abstract": "Large vision-language models have significantly advanced GUI agents, enabling executable interaction across web, mobile, and desktop interfaces. Yet these gains largely rely on a forgiving region-tolerant paradigm, where many nearby pixels inside the same component remain valid. Precise geometric construction breaks this assumption: actions must land on points in continuous canvas space rather than tolerant regions. Because geometric primitives carry ontological dependencies, a local coordinate error can induce cascading topological failures that distort downstream objects and invalidate the final construction. We identify this regime as precision-sensitive GUI tasks, requiring point-level accuracy, geometry-aware verification, and robustness to dependency-driven error propagation. To benchmark it, we introduce PAGE Bench, with 4,906 problems and over 224K process-supervised, pixel-level GUI actions. We further propose PAGER, a topology-aware agent that decomposes construction into dependency-structured planning and pixel-level execution. Pixel-grounded supervised tuning establishes executable action grammar, while precision-aligned reinforcement learning mitigates rollout-induced exposure bias through state-conditioned geometric feedback. Experiments reveal a pronounced Semantic-Execution Gap: general multimodal models can exceed 88% action type accuracy yet remain below 6% task success. PAGER closes this gap, delivering 4.1x higher task success than the strongest evaluated general baseline and raising step success rate from below 9% for GUI-specialized agents to over 62%, establishing a new state of the art for point-precise GUI control."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Caesar: A Deductive Verifier for Probabilistic Programs",
+    "authors": "Philipp Schröer, Kevin Batz, Umut Yiğit Dural, Darion Haase, Benjamin Lucien Kaminski, Joost-Pieter Katoen, Christoph Matheja",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15827v1",
+    "source": "arXiv",
+    "abstract": "Caesar is a deductive verifier for probabilistic programs. At its core lies HeyVL, a quantitative intermediate verification language based on the real-valued logic HeyLo. HeyVL allows users to express a probabilistic program, its specifications, and proof rules in a programming-language style, so that new proof rules can be easily integrated into the verifier. Caesar translates HeyVL programs into verification conditions, which are then checked using the Z3 SMT solver. It also includes a backend based on probabilistic model checking for a subset of HeyVL. We report on the results of five years of development of Caesar, highlighting its main features and architecture. In particular, we describe recent improvements such as additional proof rules, a model-checking backend, and better diagnostics."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "BootstrapAgent: Distilling Repository Setup into Reusable Agent Knowledge",
+    "authors": "Sihan Fu, Oucheng Liu, Shiyuan Wang, Jin Shi, Chengkun Wei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15815v1",
+    "source": "arXiv",
+    "abstract": "Code agents increasingly help developers work with unfamiliar repositories, but every such task depends on a costly prerequisite: bootstrapping the repository into a usable development state. This process requires substantial trial-and-error exploration, yet the resulting knowledge--resolved dependencies, repair strategies--stays trapped in a single conversation, unavailable to future agents. We therefore formulate repository bootstrapping as a reusable startup knowledge problem and introduce BootstrapAgent, a multi-agent framework that distills the heuristics discovered during bootstrap exploration into a persistent, verifiable, agent-consumable .bootstrap contract. Through evidence extraction, structured planning, deterministic Docker-based verification, and trace-driven repair, BootstrapAgent generates a contract covering environment setup, diagnostic checks, minimal verification, and accumulated repair knowledge. We further propose warm repair with clean replay to accelerate iterative debugging without sacrificing cold-start reproducibility, and a delta repair with sanity check to prevent reward hacking. Experiments on three benchmarks show that BootstrapAgent achieves a 92.9% success rate, outperforming the baseline by over 10% while reducing downstream agent token usage by 25.9% and build time by 22.3%. Our code is available at https://github.com/Vossera/BootstrapAgent."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "SaaS-Bench: Can Computer-Use Agents Leverage Real-World SaaS to Solve Professional Workflows?",
+    "authors": "Kean Shi, Zihang Li, Tianyi Ma, Zengji Tu, Jialong Wu, Xinbo Xu, Qingyao Yang, Ruoyu Wu, Weichu Xie, Ming Wu, Jason Zeng, Michael Heinrich, Elvis Zhang, Liang Chen, Kuan Li, Baobao Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15777v1",
+    "source": "arXiv",
+    "abstract": "Computer-Using Agents (CUAs) are rapidly extending large language models (LLMs) beyond text-based reasoning toward action execution in more complex environments, such as web browsers and graphical user interfaces (GUIs). However, existing web and GUI agent benchmarks often rely on simplified settings, isolated tasks, or short-horizon interactions, making it difficult to assess capabilities of agents in realistic professional workflows. Software-as-a-Service (SaaS) environments are a natural choice for CUA evaluation, as they host a large share of modern digital work and naturally involve dynamic system states, cross-application coordination, domain-specific knowledge, and long-horizon dependencies. To this end, we introduce SaaS-Bench, a benchmark built on 23 deployable SaaS systems across six professional domains, containing 106 tasks grounded in realistic work scenarios. These tasks require long-horizon execution, cover both text-only and multimodal settings, and are evaluated with weighted verification checkpoints that measure strict task completion and partial progress. Experiments show that representative LLM-based agents struggle on SaaS-Bench, with even the strongest model completing fewer than 4% of tasks end-to-end, exposing limitations in planning, state tracking, cross-application context maintenance, and error recovery. Code are available at https://github.com/UniPat-AI/SaaS-Bench for reproduction."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "PSD: Pushing the Pareto Frontier of Diffusion LLMs via Parallel Speculative Decoding",
+    "authors": "Shengyin Sun, Yiming Li, Renxi Liu, Xinqi Li, Hui-Ling Zhen, Weizhe Lin, Chen Chen, Xianzhi Yu, Mingxuan Yuan, Chen Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15609v1",
+    "source": "arXiv",
+    "abstract": "Diffusion large language models (dLLMs) generate text by iteratively denoising masked token sequences. Although dLLMs can predict all masked positions in parallel within each step, the large number of denoising iterations still makes inference expensive. This cost can be reduced spatially by unmasking multiple tokens per step, or temporally by collapsing multiple denoising steps into one verification call. We propose Parallel Speculative Decoding (PSD), a training-free framework that jointly improves inference along both axes. Using the confidence scores from a single forward pass, PSD selects positions to unmask via a configurable, adaptive unmasking policy and constructs multi-depth speculative drafts without extra model calls. A final batched verification pass then applies hierarchical acceptance, keeping the deepest draft that remains consistent with the updated predictions. Experiments on three dLLMs across reasoning and code generation tasks show that PSD achieves favorable trade-offs between inference efficiency and generation quality, reaching up to $5.5\\times$ tokens per forward pass with accuracy comparable to greedy decoding."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Bayesian Sequential Verification for Budget-Aware Quantum Program Testing",
+    "authors": "Lei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15601v1",
+    "source": "arXiv",
+    "abstract": "Quantum programs often produce probability distributions rather than deterministic outputs, making verification inherently statistical and increasingly costly on real hardware. In practice, developers still frequently rely on testing with fixed shot budgets on simulators, which are simple but time-consuming and poorly suited to noisy backends. What is missing is a verification approach that is both statistically explicit and budget-aware. This paper formulates Bayesian sequential verification as a reference-based Bayesian hypothesis testing workflow in which priors are derived from explicit reference sources, such as finite-shot reference runs or ideal/statevector-based computation, and verification decisions are updated batch by batch as measurement evidence accumulates. This approach is evaluated in Qiskit on two complementary workloads: Bell-state and QAOA-MaxCut. Across both case studies, the results show that Bayesian sequential verification can substantially reduce measurement costs compared to fixed-budget baselines when the success probability of the program exceeds the target threshold. The findings position Bayesian sequential verification as a practical verification workflow for quantum programs. The approach provides a foundation for future quantum continuous-integration pipelines that require reliable, budget-aware pass/fail decisions and motivates validation on real quantum hardware."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "p-Wave Orbital Angular Momentum Texture in a Chiral Crystal",
+    "authors": "Dongjin Oh, Chiara Pacella, Xiangyu Luo, Chris Jozwiak, Aaron Bostwick, Eli Rotenberg, Mats Leandersson, Craig Polley, Angel Rubio, Domenico Di Sante, Riccardo Comin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15544v1",
+    "source": "arXiv",
+    "abstract": "The spin and orbital angular momentum (SAM and OAM) are conceptually analogous, yet their roles in condensed matter systems have not been often treated on equal footing. While SAM has been extensively explored, OAM has long been regarded as quenched in crystalline environments and thus largely overlooked. Recent experimental and theoretical advances, however, have demonstrated that OAM can drive a variety of novel electronic phenomena, highlighting the importance of probing OAM textures in the electronic band structure. Here, we investigate the momentum-space OAM texture of (TaSe4)2I, a one-dimensional chiral crystal. Using circular-dichroism angle-resolved photoemission spectroscopy (CD-ARPES), we uncover a p-wave OAM texture accompanied by OAM dipole structures. This orbital p-wave texture is intimately connected to, and thus controllable by the chirality of the host lattice. Complementary spin-resolved ARPES measurements and first-principles calculations reveal that the OAM polarization overwhelmingly dominates the low-energy electronic properties of (TaSe4)2I, far exceeding the SAM polarization. These observations represent the experimental verification of a new type of OAM texture in crystalline materials. Most importantly, these findings underscore a promising material platform for spinless orbitronics applications and lay the foundation for realizing multipolar OAM textures-orbital counterparts of the spin texture in unconventional magnets."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "RTL-BenchMT: Dynamic Maintenance of RTL Generation Benchmark Through Agent-Assisted Analysis and Revision",
+    "authors": "Jing Wang, Shang Liu, Hangan Zhou, Zhiyao Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15537v1",
+    "source": "arXiv",
+    "abstract": "This paper introduces RTL-BenchMT, an agentic framework for dynamically maintaining RTL generation benchmarks. Large Language Models (LLMs) assisted automated RTL generation is one of the most important directions in EDA research. However, current RTL benchmarks face two critical challenges: (1) flawed cases in the benchmarks and (2) overfitting to the benchmarks. Both challenges are difficult to resolve purely by manual engineering effort. To address these issues and systematically reduce human maintenance costs, we propose an automated agentic framework, RTL-BenchMT. RTL-BenchMT focuses on two key applications: (1) automatically identifying and revising flawed benchmark cases and (2) automatically detecting and updating overfitting cases. With the assistance of RTL-BenchMT, we conduct a thorough, in-depth analysis of flawed and overfitting cases and produce a refined benchmark suite that will be open-sourced to the community."
+  },
+  {
+    "date": "2026-05-15",
+    "title": "CAPS: Cascaded Adaptive Pairwise Selection for Efficient Parallel Reasoning",
+    "authors": "Fangzhou Lin, Shuo Xing, Peiran Li, Siyuan Yang, Qianwen Ge, Kazunori Yamada, Ziming Zhang, Haichong Zhang, Zhengzhong Tu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15513v1",
+    "source": "arXiv",
+    "abstract": "Parallel reasoning, where a generator samples many candidate solutions and an aggregator selects the best, is one of the most effective forms of test-time scaling in large language models, and pairwise self-verification has become its strongest aggregation primitive. Yet pairwise verification carries a heavy cost: each judgment reads two complete solutions in full, and existing methods perform tens of such judgments per problem regardless of whether the comparison is informative. We introduce CAPS (Cascaded Adaptive Pairwise Selection), an inference-only framework that allocates verifier compute non-uniformly along two orthogonal axes: an evidence axis that adapts how much of each candidate the judge sees, and a distribution axis that adapts how comparisons are spread across the pool. CAPS instantiates these into a four-stage cascade with an optional rescue subroutine, and admits a closed-form verifier-token cost in which the per-candidate marginal cost is roughly halved relative to uniform full-evidence schedules. On four self-verifying models (Qwen3-14B, GPT-OSS-20B, Qwen3-4B-Instruct/Thinking) and five reasoning benchmarks spanning code (LiveCodeBench-v5/v6, CodeContests) and math (AIME 2025, HMMT 2025), CAPS outperforms the leading pairwise verifier on 14 of 20 suites while using 25.4% of its verifier-token budget on code, and outperforms pointwise self-verification on all 20. The trade-off suites admit an interpretable diagnostic in terms of the verifier's accuracy at partial versus full evidence, providing a concrete pre-deployment check for cascade suitability."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Kofola 1.0: A Modular Approach to ω-Regular Complementation and Inclusion Checking (Technical Report)",
+    "authors": "Ondrej Alexaj, Vojtěch Havlena, Lukáš Holík, Ondřej Lengál, Yong Li, Nicolas Mazzocchi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15390v1",
+    "source": "arXiv",
+    "abstract": "We present Kofola, an efficient tool for complementation and inclusion checking of Büchi automata, two central tasks in automata-theoretic verification with applications in model checking, monitoring, and theorem proving. Kofola implements a state-of-the-art modular complementation framework that decomposes the input automaton into strongly connected components and applies to each component a complementation algorithm tailored to its structural properties. Building on this modular construction, Kofola also provides modular inclusion checking with new heuristics. A key ingredient is a new on-the-fly emptiness-checking algorithm for the simple generalized Rabin pair condition produced by our complementation, allowing the search to terminate as soon as the explored state space suffices. Empirical evaluation shows that Kofola is highly competitive with state-of-the-art complementation and inclusion-checking tools: it is the most robust tool in our evaluation and often outperforms competitors by several orders of magnitude on benchmarks from practical applications."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Distance-Preserving Digests: A Primitive for BFT Consensus",
+    "authors": "Ryan Patrick Mercier",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15329v1",
+    "source": "arXiv",
+    "abstract": "Every BFT consensus protocol uses collision-resistant hashes to compare validator state. Collision resistance destroys distance: two validators agreeing on 19 of 20 transactions produce unrelated hashes, indistinguishable from validators sharing nothing. This forces three design constraints across the BFT literature: validators must synchronize state before voting, agreement quality cannot be measured until votes are counted, and hierarchical committees must be large enough for independent BFT, limiting tree depth. This paper introduces distance-preserving transaction digests, a primitive that replaces collision-resistant hashes with commutative vector sums in 8-dimensional space. The primitive has three properties hashes lack: distance is proportional to disagreement, weighted means are exact, and set differences are identifiable via bloom filter diff. We demonstrate three applications: a two-phase BFT protocol (Proxima) that achieves single-round finality when validators agree; tree-structured consensus with groups of 10 validators (vs 128 in Ethereum), enabled because distance filtering replaces per-group BFT; and cross-shard consistency verification at 128 bytes per shard pair, replacing the per-transaction coordination of two-phase commit. Safety is proved: fewer than N/3 Byzantine validators cannot cause conflicting finalization, independent of Phase 1 clustering or tree topology. At N =100,000, Proxima Tree uses 2.2x fewer messages than HotStuff (a structural property unaffected by parallelism). Single-core finality is 0.9s vs 18s for HotStuff; multi-core BLS narrows but does not eliminate this gap."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "An $L^{\\#}$ Based Algorithm for Active Learning of Minimal Separating Automata",
+    "authors": "Jasper Laumen, Leonne Snel, Frits Vaandrager",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15294v1",
+    "source": "arXiv",
+    "abstract": "A DFA separates two disjoint languages $L_1$ and $L_2$ if it accepts every word in $L_1$ and rejects every word in $L_2$. Algorithms for active learning of small separating DFAs have many applications, e.g., for learning network invariants, learning contextual assumptions in compositional verification, learning state machines from large amounts of log data, and learning bug pattern descriptions. We propose a simple active learning algorithm, inspired by $L^{\\#}$, that learns a minimal separating DFA for disjoint languages $L_1$ and $L_2$ if one exists. Experiments show that our algorithm significantly outperforms existing active learning algorithms on both randomly generated and industrial benchmarks."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands",
+    "authors": "Pratinav Seth, Vinay Kumar Sankarapu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15164v1",
+    "source": "arXiv",
+    "abstract": "This position paper argues that behavioural assurance, even when carefully designed, is being asked to carry safety claims it cannot verify. AI governance frameworks enacted between 2019 and early 2026 require reviewable evidence of properties such as the absence of hidden objectives, resistance to loss-of-control precursors, and bounded catastrophic capability; current assurance methodologies (primarily behavioural evaluations and red-teaming) are epistemically limited to observable model outputs and cannot verify the latent representations or long-horizon agentic behaviours these frameworks presume to regulate. We formalize this structural mismatch as the audit gap, the divergence between required and achievable verification access, and introduce the concept of fragile assurance to describe cases where the evidential structure does not support the asserted safety claim. Through an analysis of a 21-instrument inventory, we identify an incentive gradient where geopolitical and industrial pressures systematically reward surface-level behavioral proxies over deep structural verification. Finally, we propose a technical pivot: bounding the weight of behavioral evidence in legal text and extending voluntary pre-deployment access with mechanistic-evidence classes, specifically linear probes, activation patching, and before/after-training comparisons."
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Automating Bitvector and Finite Field Equivalence Proofs in Lean",
+    "authors": "Elizaveta Pertseva, Valentin Robert, Clark Barrett, James Parker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15163v1",
+    "source": "arXiv",
+    "abstract": "Efforts to verify Zero-Knowledge Proof circuit encodings have highlighted the challenge of proving the correctness of quantifier-free statements that make use of both bitvector and finite field operations. Existing verification workflows are either manual or rely on SMT solvers, which scale poorly on some classes of problems for reasons that include difficulties with conversion operators and challenges reasoning about inequalities. To address these limitations, we present a novel Lean tactic BitModEq that leverages range lemmas and case analysis to produce verified translations from finite fields to bitvectors. Our approach, combined with bit-blasting, outperforms state-of-the-art SMT solvers, solving 19% more ZKP arithmetization benchmarks."
+  }
+]
