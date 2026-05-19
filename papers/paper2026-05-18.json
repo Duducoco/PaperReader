@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-5-18",
+    "title": "MonoRouter: Enforcing Monotonicity in Item Response Theory for LLM Routing",
+    "authors": "Yousheng Zhu",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519177",
+    "source": "IEEE",
+    "abstract": "The development of large language models(LLMs) has led to the emergence of many small models focused on specific domains, which demonstrate outstanding performance in those areas. Researchs indicated that integrating these smaller models through effective mechanisms can achieve performance comparable to a large-scale model. LLM routing has garnered widespread attention as an efficient ensemble paradigm, dynamically allocating user queries to the optimal candidate model without the need to invoke all available models. LLM routing requires a precise alignment between model capabilities and user query difficulty. To achieve this joint modeling, Item Response Theory (IRT) has been adopted, as it effectively decouples complex queries into latent variables such as difficulty and discrimination. However, during unconstrained optimization, conventional IRT often suffers from parameter drift with negative discrimination, leading to counter-intuitive routing logic. In this paper, we introduce MonoRouter, an enhanced IRT routing framework integrated with a monotonicity constraint. Specifically, by constraining the discrimination parameter to be strictly positive, we eradicate the paradoxical negative correlation between model capability and success rate. Extensive experiments across multiple benchmarks using 16 open-source models demonstrate the efficacy of our method."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "LLM inference delay prediction based on machine learning algorithms",
+    "authors": "Jingtao Zhang, Haorui Gao",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519320",
+    "source": "IEEE",
+    "abstract": "Large language model technology is evolving rapidly, with the number of parameters increasing from billions to hundreds of billions. Its applications cover areas such as intelligent dialogue, code generation, and academic writing. However, inference latency is gradually becoming the core bottleneck restricting its industrial deployment. The interaction of different model configurations, hardware performance and other factors leads to significant fluctuations in latency. For instance, the inference latency of a model with hundreds of billions of parameters on the CPU can reach the second level. Under high concurrency, it can also cause problems such as a decline in user experience and waste of computing power. However, machine learning algorithms, with their data-driven characteristics, have become the key to solving the problem of latency prediction. To break through the limitations of existing algorithms in the collaborative modeling of global and temporal features, the research first conducted correlation analysis and violin graph analysis, and then through comparative experiments of multiple machine learning algorithms, it was found that The DE-Transformer-BiLSTM algorithm is generally superior to multiple algorithms such as ExtraTrees and Random Forest in terms of prediction performance. Only some error indicators are slightly inferior to DE-Transformer-BiLSTM, and the goodness of fit is even better. Its design that integrates kernel extreme learning machines, long short-term memory networks and Transformer architecture enables it to surpass traditional algorithms in terms of feature extraction and time series prediction accuracy. This algorithm provides an effective path for the precise prediction of LLM inference latency, which can help optimize the allocation of computing power resources and improve user experience, laying an important technical foundation for promoting the industrial deployment of LLM."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "Learning to Debate: Optimal Stopping Strategies for Multi-Agent LLM Deliberation",
+    "authors": "Xinyi Zhang, Di Hu",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519273",
+    "source": "IEEE",
+    "abstract": "Multi-agent debate has emerged as a promising paradigm for improving the reasoning capabilities of large language models (LLMs). However, the relationship between debate duration and output quality remains poorly understood. In this paper, we introduce the debate fatigue hypothesis: the notion that debate quality follows a non-monotonic trajectory, initially improving with additional rounds before eventually degrading. We propose a scaling law that models debate quality as a function of rounds: Q(T) = a • log(T + c) − b • T, where the fatigue coefficient b> 0 captures diminishing returns. Through extensive experiments with GPT-4o across 108+ debates spanning five task categories (Mathematics, Code, Logic, Science, and Finance), we validate this hypothesis with 100% confirmation rate. We further develop an adaptive stopping strategy that achieves 98.7% of oracle performance while reducing computational costs by up to 50%. Additionally, our security evaluation demonstrates that multi-agent debate reduces hallucination indicators by 61.6% and corrects 50.6% of single-agent errors, providing significant safety improvements for LLM deployment. Our findings provide both theoretical foundations and practical guidelines for deploying multi-agent debate systems efficiently in industrial applications."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "Tracker-LLM: Enhancing Visual Object Tracking via Bi-directional Chain-of-Thought Reasoning and Spatio-Temporal Memory",
+    "authors": "Zijing Luo",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519166",
+    "source": "IEEE",
+    "abstract": "While Vision-Language (VL) tracking has shown promise in improving tracking versatility by integrating linguistic cues, existing methods often rely on static and potentially ambiguous textual descriptions. Furthermore, these frameworks fail to leverage the deep, multi-step reasoning capabilities inherent in modern Multimodal Large Language Models (MLLMs). To address these limitations, we propose Tracker-LLM, a novel tracking framework that treats the MLLM as an active logical reasoning hub rather than a passive text generator. We introduce a Bi-directional Chain-of-Thought (Bi-CoT) reasoning mechanism that empowers the model to autonomously derive and refine localization logic based on real-time tracking feedback. To bridge the gap between high-level abstract semantics and low-level granular visual features, we design an Asynchronous Spatio-Temporal Memory (ASTM) engine. This engine alleviates the problem of semantic obsolescence caused by target appearance evolution and environmental shifts in long-term tracking by maintaining and updating a lightweight memory pool. Furthermore, a Dynamic Background-Sensitive Awareness (DBSA) strategy is proposed to refine background descriptions iteratively through the mining of hard distractors. Extensive experiments on several mainstream benchmarks demonstrate that Tracker-LLM significantly enhances tracking robustness and precision, particularly in complex scenarios involving severe occlusions, illumination variations, and drastic appearance changes, while achieving an average end-to-end latency of 6.89 ms (145.1 FPS) and a peak speed of 215.1 FPS on GPU."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "LLM-driven Dark Web Intelligence Analysis Pipeline",
+    "authors": "Lei Jiang, Meng Wang, Yongqing Sun, Jiayi Wang, Haohao Zhang, Haohua Duan",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519123",
+    "source": "IEEE",
+    "abstract": "Dark web platforms contain abundant early-stage cyber threat intelligence, such as discussions of exploits, malware, and underground services, which is valuable for proactive security analysis. However, dark web intelligence is highly noisy, fragmented, and temporally dispersed across heterogeneous sources, making large-scale daily analysis and reporting challenging. Existing approaches based on keyword matching, static rules, or isolated mining tasks struggle to synthesize multi-source intelligence into coherent analytical reports.In this paper, we formulate daily dark web intelligence analysis as a multi-source document synthesis problem, where selectively incorporating relevant historical context is essential for capturing threat evolution. To address this problem, we propose an LLM-driven analysis pipeline with a dual-channel retrieval mechanism that combines semantic retrieval for high recall and entity-guided structured retrieval for high precision. We further design a hierarchical summarization strategy to incrementally aggregate intelligence across time and sources, reducing long-context reasoning burden and mitigating hallucinations. Experiments on real-world dark web intelligence demonstrate that our approach generates more coherent, comprehensive, and temporally consistent reports than baseline methods, while remaining efficient for daily operational use."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "FLAP: Faithful LLM-Aligned Prompting for NLP-Driven Abstractive Text Summarization via Saliency-Guided Encoding and Reinforcement-Based Faithfulness Optimization",
+    "authors": "Yuxin Chen",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519156",
+    "source": "IEEE",
+    "abstract": "Abstractive text summarization is a core challenge in natural language processing (NLP), and deploying large language models (LLMs) in this setting exposes three critical limitations: (1) LLMs tend to ignore semantically central content due to unstructured input representations, leading to uninformative summaries; (2) standard fine-tuning objectives fail to align NLP generation pipelines with human preferences for factual fidelity, resulting in entity-level and relational hallucinations; and (3) existing decoding strategies impose no length or faithfulness constraints, producing verbose or factually inconsistent outputs. To address these shortcomings, we propose FLAP (Faithful LLM-Aligned Prompting), a two-stage NLP framework that integrates (1) a saliency-guided Semantic Prompt Encoder that selects and re-weights semantically central sentences via a primacy–recency positional bias, (2) a composite reward model combining lexical, semantic faithfulness, and conciseness signals to drive Group Relative Policy Optimization (GRPO) for human-aligned NLP generation, and (3) a constrained decoding strategy that jointly enforces target length and entailment-based faithfulness at inference time. Extensive experiments on CNN/DailyMail, XSum, and Reddit across LLM backbone scales from 7B to 70B demonstrate that FLAP consistently outperforms strong NLP baselines in ROUGE, BERTScore, BARTScore, and human evaluation, while reducing hallucination rates by up to 25.1 percentage points."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "LLM-Triaged Vulnerability Analysis for Compiled DNNs",
+    "authors": "Minghui Li, Yang Li, Changchun Yin, Mingwei Li, Liming Fang",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3814615",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "Corrective Distillation: Mitigating Catastrophic Forgetting in LLM Fine-Tuning via External Correction of Self-Generated Errors",
+    "authors": "Jianchun Jiang, Yingfei Qu, Hui Li",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519134",
+    "source": "IEEE",
+    "abstract": "Fine-tuning large language models (LLMs) for downstream tasks often results in a significant decline in their general capabilities and safety alignment. This issue is typically attributed to a mismatch in distribution between the task-specific data and the model’s original training data. Self-distillation methods aim to address this issue by preserving the model’s own output distribution. However, their effectiveness is limited when the model itself produces erroneous reasoning or answers. In this study, we propose a simple yet effective framework, \"Corrective Distillation\" (CD), that leverages a more powerful external language model to optimize the seed model's outputs. Rather than completely rewriting the responses, the external model focuses on correcting factual and logical errors while largely preserving the original style. These corrected outputs are then used as supervision signals for further fine-tuning. We evaluated CD on the Llama-3-8B-Instruct model across multiple tasks, including mathematical reasoning, code generation, and tool usage. The results demonstrate that, compared to standard fine-tuning and self-distillation, CD enhances task performance while better preserving the model’s general capabilities. Furthermore, we observed that this method helps maintain safety-related behaviors and, in some cases, even slightly improves them. Overall, CD offers a practical method for improving task-specific performance without significantly compromising the model’s original alignment."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective",
+    "authors": "Noppanat Wadlom, Junyi Shen, Yao Lu",
+    "publish": "Proceedings of the ACM on Management of Data",
+    "url": "https://doi.org/10.1145/3802046",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "PVAdoptAgent: Simulating Residential Photovoltaic Adoption via an LLM Framework with Dynamic Decision Intervals",
+    "authors": "Tongyun Li, Kang Yao, Junwei Liu, Fuzhen Shen, Juan Feng",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519129",
+    "source": "IEEE",
+    "abstract": "Driven by the global imperative for urban carbon neutrality, this paper introduces PVAdoptAgent (Photovoltaic Adoption Agent), an LLM-based framework designed for high-fidelity simulation of residential Photovoltaic(PV) adoption behaviors. Our core contribution, the Dynamic Decision Interval (DDI) mechanism, replaces rigid fixed-step updates with a decision process triggered by external perturbations and internal cognitive evolution. This design accurately captures the decision inertia inherent in low-frequency, high-cost household investments. Additionally, a Reflexion-based memory module enables agents to evaluate historical rejection rationales, ensuring cognitive consistency over multi-year horizons. Validated against empirical data from Shenzhen (2020-2025), the framework achieves a mean annual error of 5.16%. Beyond fitting accuracy, PVAdoptAgent serves as a generative policy sandbox that processes unstructured semantic information. It provides an interpretable tool for precise energy transition policy-making and offers a novel paradigm for simulating low-frequency, high-involvement decision behaviors."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "ScaleDoc: Scaling LLM-based Predicates over Large Document Collections",
+    "authors": "Hengrui Zhang, Yulong Hui, Yihao Liu, Huanchen Zhang",
+    "publish": "Proceedings of the ACM on Management of Data",
+    "url": "https://doi.org/10.1145/3802106",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "CoD-Judge: Efficient LLM-as-a-Judge for Biomedical Relation Extraction Evaluation via Chain-of-Thought Distillation",
+    "authors": "Zhuo Li, Quan Qian",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519324",
+    "source": "IEEE",
+    "abstract": "Automatic evaluation for biomedical relation extraction remains difficult because generated outputs are often semantically correct but lexically diverse, which limits the effectiveness of exact-match-based metrics. To address this issue, this paper proposes CoD-Judge, an efficient evaluation framework that transfers structured judgment logic from a closed-source teacher model to a lightweight open-source model through chain-of-thought distillation. The framework constructs high-quality teacher supervision data and adopts a reason-before-score training strategy for structured evaluation. Experimental results show that CoD-Judge improves evaluation accuracy, reduces scoring error on the source-domain dataset, and maintains strong zero-shot transferability on heterogeneous target datasets. These results demonstrate the effectiveness of chain-of-thought distillation for low-cost and reliable biomedical relation extraction evaluation."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Reconsidering Conversational Norms in LLM Chatbots for Sustainable AI",
+    "authors": "Ronnie de Souza Santos, Cleyton Vanut Cordeiro de Magalhães, Italo Santos",
+    "publish": "Proceedings of the 2026 7th International Workshop on Bots and Agents in Software Engineering",
+    "url": "https://doi.org/10.1145/3786161.3788457",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "DeepServeCB: SLO-Aware and Cost-Aware Elastic Scheduling for Serverless Multi-Tenant LLM Inference",
+    "authors": "Xuexian Li, Xiayuan Liu, Zilong Wang, Zijian Xiao, Chun-Yao Hsieh, Yixue Liu",
+    "publish": "2026 International Conference on Generative Artificial Intelligence and Information Security (GAIIS)",
+    "url": "https://doi.org/10.1109/gaiis69281.2026.11519206",
+    "source": "IEEE",
+    "abstract": "Deploying large language model (LLM) inference services in serverless, multi-tenant environments present compounding challenges: cold start latency, GPU memory fragmentation, inter-tenant resource contention, and unpredictable tail latency. Existing systems optimize individual aspects but fail to jointly address service-level objective (SLO) compliance and cost efficiency under dynamic, heterogeneous workloads. We present DeepServeCB, an elastic scheduling framework that formulates the joint SLO--cost optimization as a contextual bandit problem. The system introduces a Request Profiler that extracts online features---prompt length, historical KV-cache hit ratio, and predicted generation length---and feeds them into a contextual bandit agent that adaptively selects batch sizes, concurrency levels, KV-cache eviction policies, and warm-standby strategies. We evaluate DeepServeCB on ShareGPT and BurstGPT traces using LLaMA-2-13B and Mixtral-8x7B models on NVIDIA A100 GPUs. Results show that DeepServeCB reduces P99 latency by 38--62% compared to state-of-the-art baselines while improving GPU utilization by 14--23% and reducing per-request cost by up to 27%, with only a modest increase in scheduling overhead."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "Serving Hybrid LLM Loads with SLO Guarantees Using CPU-GPU Attention Piggybacking",
+    "authors": "Zizhao Mo, Junlin Chen, Huanle Xu, ChengZhong Xu",
+    "publish": "Proceedings of the ACM on Management of Data",
+    "url": "https://doi.org/10.1145/3802107",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "<i>DataStates-LLM</i>\n                    : Scalable Checkpointing for Transformer Models Using Composable State Providers",
+    "authors": "Avinash Maurya, M. Mustafa Rafique, Franck Cappello, Bogdan Nicolae",
+    "publish": "IEEE Transactions on Parallel and Distributed Systems",
+    "url": "https://doi.org/10.1109/tpds.2026.3694405",
+    "source": "IEEE",
+    "abstract": "The rapid growth of Large Transformer-based models, specifically Large Language Models (LLMs), now scaling to trillions of parameters, has necessitated training across thousands of GPUs using complex hybrid parallelism strategies (e.g., data, tensor, and pipeline parallelism). Checkpointing this massive, distributed state is critical for a wide range of use cases, such as resilience, suspend-resume, investigating undesirable training trajectories, and explaining model evolution. However, existing checkpointing solutions typically treat model state as opaque binary blobs, ignoring the “3D heterogeneity” of the underlying data structures–varying by memory location (GPU vs. Host), number of “logical” objects sharded and split across multiple files, data types (tensors vs. Python objects), and their serialization requirements. This results in significant runtime overheads due to blocking device-to-host transfers, data-oblivious serialization, and storage I/O contention. In this paper, we introduce DataStates-LLM, a novel check pointing architecture that leverages State Providers to decouple state abstraction from data movement. DataStates-LLM exploits the immutability of model parameters during the forward and backward passes to perform “lazy”, non-blocking asynchronous snapshots. By introducing State Providers, we efficiently coalesce fragmented, heterogeneous shards and overlap the serialization of metadata with bulk tensor I/O. We evaluate DataStates-LLM on models up to 70B parameters on 256 A100-40GB GPUs. Our results demonstrate that DataStates-LLM achieves up to 4× higher checkpointing throughput and reduces end-to-end training time by up to 2.2× compared to state-of-the-art solutions, effectively mitigating the serialization and heterogeneity bottlenecks in extreme-scale LLM training."
+  },
+  {
+    "date": "2026-5-18",
+    "title": "RAG-Based LLM in Intellicise Networks: A Comprehensive Review and A Semantic Information Transmission Framework",
+    "authors": "Jiarong Lu, Xi Li, Shanghe Shi, Heli Zhang",
+    "publish": "IEEE Transactions on Network Science and Engineering",
+    "url": "https://doi.org/10.1109/tnse.2026.3694151",
+    "source": "IEEE",
+    "abstract": "Semantic information transmission assisted by large language model (LLM) is regarded as an efficient paradigm in intellicise networks. This paper provides a comprehensive review of semantic communication based on LLM with retrieval-augmented generation (RAG) in intellicise networks. On this basis, we propose an innovative semantic information transmission framework that incorporates RAG-based LLM to address vertical domain knowledge and resource allocation. In this framework, RAG is utilized to improve the accuracy of semantic information in vertical domains. Given the dependencies among multiple LLM agents in RAG, it is necessary to design a resource allocation scheme to balance semantic richness and latency. Therefore, regarding heterogeneous computing and transmission resources, a multi-objective problem aimed at maximizing semantic richness and minimizing latency is formulated. Then, the problem of jointly optimizing user-server matching, graphics processing unit allocation, semantic information length, and power allocation is formulated. The problem is nonlinear mixed-integer programming. Gibbs sampling and Lagrangian duality are applied to transform it. Finally, an algorithm for resource allocation is designed. Simulations demonstrate that the proposed algorithm has superiority in improving semantic richness and reducing latency."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Liar, Liar, LLM on Fire: Investigating Deception in Turkish Text Generation",
+    "authors": "Necva Bölücü, Zehra Yücel, Dilber Çetintaş",
+    "publish": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+    "url": "https://doi.org/10.1145/3811025",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "Practical LLM-Based Function-Level Automated Program Repair: How Far Are We?",
+    "authors": "Jiahong Xiang, Xiaoyang Xu, Fanchu Kong, Mingyuan Wu, Zizheng Zhan, Haotian Zhang, Yuqun Zhang",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3812804",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-18",
+    "title": "From Silent Automation to Conversational Intelligence: Empowering Smart Homes with LLM-Based Agents",
+    "authors": "Dhyego Tavares, Erlon Almeida, Enio Santana, Frederico Durao, Gustavo Bittencourt, Maycon Peixoto, Cassio Prazeres, Ivan Machado, Eduardo Santana de Almeida",
+    "publish": "IEEE Software",
+    "url": "https://doi.org/10.1109/ms.2026.3693949",
+    "source": "IEEE",
+    "abstract": "Smart home systems have evolved from simple automation to AI-driven ecosystems. Nevertheless, user interaction often remains limited to rigid interfaces. This paper presents ECLIPS (Environmental Command Language Intelligent Processing System), an extension of a previously proposed Smart Home Orchestration Framework for a more intelligent and responsive environment. ECLIPS introduces a Two-Layer Modular Hierarchical Multi-Agent Architecture that integrates Large Language Model (LLM) agents as a semantic interpretation layer, while preserving established predictive models based on LSTM (Long Short-Term Memory) and MLP (Multi-Layer Perceptron) networks. The proposed approach enables natural language interaction, contextual information retrieval, and transparent explanation of system behavior without altering the underlying automation logic. Evaluated through a design science–oriented case study within an industrial smart home project, results demonstrate improved user understanding, flexibility, and control. Combining predictive machine learning with agentic LLM architectures enhances usability, transparency, and adaptability in smart home ecosystems."
+  }
+]
