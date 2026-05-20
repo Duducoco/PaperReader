@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-05-19",
+    "title": "k-Inductive Neural Barrier Certificates for Unknown Nonlinear Dynamics",
+    "authors": "Ben Wooding, Hongchao Zhang, Taylor T. Johnson, Abolfazl Lavaei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20108v1",
+    "source": "arXiv",
+    "abstract": "While conventional (k=1) discrete-time barrier certificate conditions impose strict safety constraints by requiring the function to be non-increasing at every step, k-inductive barrier certificates relax this by allowing a temporary increase -- up to k-1 times, each within a threshold $ε$ -- while maintaining overall safety, and improving flexibility. This paper leverages neural networks and constructs k-inductive neural barrier certificates (k-NBCs) for (partially) unknown nonlinear systems. While neural networks offer scalability in the design process, they lack formal guarantees, requiring additional approaches such as counterexample-guided inductive synthesis (CEGIS) with satisfiability modulo theories (SMT) for verification. However, the CEGIS-SMT framework requires knowledge of system dynamics, which is unavailable in practical settings. To address this, we leverage the generalization of the Willems et al.'s fundamental lemma, using a single state trajectory, to construct a data-driven representation of (partially) unknown models for SMT verification without sacrificing accuracy. Additionally, CEGIS-SMT further removes the constraint of restricting barrier certificates to specific function classes, such as sum-of-squares, enabling greater flexibility in their design. We validate our approach on three nonlinear case studies with (partially) unknown dynamics."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Neurosymbolic Learning for Inference-Time Argumentation",
+    "authors": "Gabriel Freedman, Adam Dejl, Adam Gould, Mansi, Lihu Chen, Jianqi Jiang, Francesca Toni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20098v1",
+    "source": "arXiv",
+    "abstract": "Claim verification is an important problem in high-stakes settings, including health and finance. When information underpinning claims is incomplete or conflicting, uncertain answers may be more appropriate than binary true or false classifications. In all cases, faithful explanations of the considerations determining the final verdict are crucial. We introduce inference-time argumentation (ITA), a trainable neurosymbolic framework for ternary claim verification in which a formal argumentation semantics giving the strength of claims is used both (i) to guide LLM training as models learn to generate arguments and assign them base scores (representing intrinsic strengths) and (ii) to compute ternary (true/false/uncertain) predictions from generated, scored arguments. As a result, at training time, argument generation and scoring can be optimised according to the quality of the induced argumentative predictions. Moreover, at inference time, the final prediction is faithful, by construction, to the arguments and scores determining the verdict, rather than being justified by a potentially unfaithful post-hoc reasoning trace as in conventional reasoning models. We finally show that, on two datasets for ternary claim verification, ITA improves upon argumentative baselines and can perform competitively against non-argumentative direct-prediction baselines, while providing verdicts that are computed deterministically from explicit, inspectable argumentative structures."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "A Nash Equilibrium Framework For Training-Free Multimodal Step Verification",
+    "authors": "Rohit Sinha, Kunal Tilaganji, Tanuja Ganu, Nagarajan Natarajan, Amit Sharma, Vineeth N. Balasubramanian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20033v1",
+    "source": "arXiv",
+    "abstract": "Multimodal large language models often generate reasoning chains containing subtle errors that lead to incorrect answers. Current verification approaches have notable limitations. Learned critics need extensive labeled data and show inconsistent performance across different tasks. Meanwhile, existing training-free methods simply average scores from different sources, missing a key insight: when these scores disagree, that disagreement itself carries important information about whether a reasoning step is truly valid or not. We propose a training-free verification approach that treats step-wise verification as a coordination problem among specialized judges. We formalize these judges' interaction as a Nash equilibrium game where agreement signals valid steps while disagreement reveals instability. Our method computes equilibrium scores through a closed-form solution, enabling both disagreement-aware filtering and stability-conscious ranking of reasoning steps. Evaluated across six benchmarks, our approach achieves consistent improvements of 2.4% to 5.2% over baseline models and shows competitive performance against learned critics, demonstrating that cross-modal agreement (not just average confidence) provides robust verification signals without task-specific adaptation."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "FlexDraft: Flexible Speculative Decoding via Attention Tuning and Bonus-Guided Calibration",
+    "authors": "Yaojie Zhang, Jianuo Huang, Junlong Ke, Yuhang Han, Yongji Long, Tianchen Zhao, Biqing Qi, Linfeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20022v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates memory-bound LLM inference without quality degradation by using a fast drafter to propose multiple candidate tokens and the target model to verify them in parallel. However, conventional sequential speculative decoding suffers from mutual waiting between drafting and verification, and repeated exchange of intermediate states further increases memory access overhead. Parallel speculative decoding addresses this limitation by performing drafting and verification within a single target forward pass, allowing future drafts to be prepared while current candidates are being verified. Although effective at small batch sizes, existing parallel speculative decoding methods either require costly continual pretraining with quality degradation or suffer from low acceptance rates. More importantly, this paradigm inherently suffers from uncertainty in both the bonus token and the accepted length, leading to draft verification mismatch and causing throughput gains to collapse at large batch sizes. To address these limitations, we introduce FlexDraft, a lossless speculative decoding framework that flexibly adapts to varying batch sizes through three key designs. (1) Attention Tuning enables block diffusion drafting by tuning only the attention projectors of the final few layers on mask tokens, while keeping the autoregressive path frozen to preserve the target distribution and produce high quality drafts with minimal trainable parameters. (2) Bonus-guided Calibration uses a lightweight MLP conditioned on the resolved bonus token to calibrate draft logits, mitigating draft verification mismatch caused by bonus token uncertainty. (3) Flex Decoding dynamically switches between parallel draft and verify at small batch sizes and sequential draft then verify at large batch sizes, and adjusts verification length based on draft confidence to eliminate redundant computation."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
+    "authors": "Hongyu Lin, Mingyu Li, Weichen Zhang, Yihang Lou, Mingjie Xing, Yanjun Wu, Haibo Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19988v1",
+    "source": "arXiv",
+    "abstract": "Documentation has long guided computer system tuning by distilling expert knowledge into per-parameter recommendations. Yet such guides capture only what experts conclude, discarding how they reason. This fundamental gap manifests in three concrete deficiencies: documentation grows stale as software evolves, fails under heterogeneous workloads, and ignores inter-parameter dependencies. We propose shifting from static documentation to dynamic action for system tuning. We introduce PerfEvolve, which translates expert tuning methodologies into executable skills that equip LLM-based agents to perform version-consistency verification, workload-specific profiling, and multi-parameter joint optimization. Evaluated on PostgreSQL under TPC-C and TPC-H benchmarks, PerfEvolve outperforms state-of-the-art documentation-driven tuning baselines by up to 35.2%. The tool is available at https://github.com/ISCAS-OSLab/PerfEvolve."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Time-Inconsistent Singular Control Problems with a Running Minimum Process",
+    "authors": "Rui Dai, Guohui Guan, Zongxia Liang, Xiaodong Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19914v1",
+    "source": "arXiv",
+    "abstract": "This paper develops a time-inconsistent and path-dependent singular control framework incorporating a running minimum process. We derive a verification theorem that characterizes equilibria under substantially weaker regularity conditions than those imposed in the existing literature, and we obtain a stronger notion of equilibrium by enlarging the class of feasible perturbations. We first establish the mathematical foundations of the framework by proving the existence and uniqueness of strong solutions to a class of Skorokhod reflection problems involving the running minimum and by characterizing admissible singular control laws. We further demonstrate the existence of an equilibrium through a dividend problem, where the running minimum leads to a highly coupled and nonlinear differential-algebraic system. For this problem, we prove the monotonicity and local concavity of the dividend boundary, thereby providing a mathematical explanation for dividend smoothing and scarring effects. Numerical simulations confirm the robustness of the equilibrium across a wide range of parameter values."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "SpecSA: Bridging Speculative Decoding and Sparse Attention for Efficient LLM Inference",
+    "authors": "Zhibin Wang, Ziyu Zhong, Nuo Shen, Yuhang Zhou, Rong Gu, Sheng Zhong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19893v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding and dynamic sparse attention are two complementary approaches for accelerating long-context LLM inference: the former amortizes target-model execution across multiple verifier queries, while the latter reduces each query's KV-cache working set. Directly combining them, however, exposes a structural mismatch: speculative verification relies on cross-query commonality, whereas dynamic sparse attention assigns query-specific sparse layouts. This mismatch limits KV-block reuse, amplifies NSA's branch-wise overheads, and makes verification strategy selection input- and regime-dependent. We present SpecSA, a sparse speculative-verification framework that turns dynamic sparse attention into a verification-oriented workload. SpecSA combines overlap-aware grouped-query execution, refresh/reuse-based NSA kernel fusion, and profile-guided prompt-adaptive orchestration to improve cross-query reuse, reduce selected-index and branch-fusion overheads, and select effective draft-verification strategies under user-specified precision classes. Experiments on NVIDIA H100 GPUs show that SpecSA achieves up to 3.49x end-to-end throughput over autoregressive NSA decoding and up to 6.86x kernel speedups for sparse speculative verification."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Realization of a parity-violating antiferromagnetic state in LaMnSi",
+    "authors": "Takuma Iwata, K. Shiraishi, T. Aoyama, D. Senba, T. Takeda, Y. Fujisawa, M. Nurmamat, K. Nakanishi, K. Yamagami, M. Arita, T. Yamada, Y. Yanagi, A. Kimura, H. Tanida, Kenta Kuroda",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19891v1",
+    "source": "arXiv",
+    "abstract": "Spontaneous symmetry breaking underlies functional electronic phenomena in quantum materials. Breaking space-inversion ($\\mathcal{P}$) or time-reversal ($\\mathcal{T}$) symmetry can generate spin-split electronic bands central to modern spintronics. By contrast, parity-violating antiferromagnetic (AFM) order breaks both $\\mathcal{P}$ and $\\mathcal{T}$ while preserving the combined $\\mathcal{PT}$ symmetry, enabling spin-degenerate yet momentum-asymmetric electronic bands. This momentum asymmetry has been proposed as a microscopic origin of unconventional nonreciprocal and nonlinear responses but its experimental verification has remained challenging because it requires establishing both the symmetry-breaking magnetic order and the associated electronic structure. Here we combine soft x-ray angle-resolved photoemission spectroscopy (ARPES) and polarization-resolved optical second-harmonic generation (SHG) microscopy to study LaMnSi, a candidate parity-violating AFM metal. Soft x-ray ARPES resolves the three-dimensional bulk band structures in agreement with density functional theory calculations for the AFM phase, whereas SHG microscopy detects sign-reversing nonlinear optical responses from opposite AFM domains that carry $\\mathcal{T}$-odd parity-violating order. Together, these results provide direct evidence for parity-violating AFM state in LaMnSi, establish LaMnSi as a parity-violating AFM metal, and identify this class of AFMs as a promising platform for symmetry-controlled nonreciprocal and nonlinear electronic responses."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Passive Construction Site Safety Monitoring via Persona-Scaffolded Adversarial Chain-of-Thought VLM Verification",
+    "authors": "Ananth Sriram, Neel Mokaria, Rajveer Singh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19869v1",
+    "source": "arXiv",
+    "abstract": "Construction remains the deadliest industry sector in the United States, with 1,055 fatal worker injuries recorded in 2023, and the majority preventable. Existing monitoring approaches are expensive, require real-time human operators, or address only a narrow subset of violations. This paper presents a passive, end-of-shift construction safety monitoring pipeline processing video from POV body-worn and fixed wall-mounted cameras through a three-stage architecture: (1) fine-tuned YOLO11 for primary PPE and hazard detection, (2) SAM 3 for segmentation refinement and worker deduplication, and (3) Qwen3-VL-8B-Instruct with a method-prompted, persona-scaffolded three-pass adversarial chain-of-thought protocol for compliance verification and hallucination control. The principal contribution is the Stage 3 prompt design: professional persona backstories following the method-actor framing drive an observed 12% precision improvement over single-pass prompting in an informal three-author review of the 12-video Ironsite development corpus, with the largest gains on hallucination-prone violation categories. Structural message isolation enforces observational independence between a generator, discriminator, and reconciliation pass governed by asymmetric rules encoding priors about human observation versus automated detection reliability. The system maps violations to OSHA standards, performs REBA-inspired ergonomic risk scoring from pose keypoints, and produces per-worker safety reports with timestamped evidence. An evaluation harness is released for future reproduction."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "OpenComputer: Verifiable Software Worlds for Computer-Use Agents",
+    "authors": "Jinbiao Wei, Qianran Ma, Yilun Zhao, Xiao Zhou, Kangqi Ni, Guo Gan, Arman Cohan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19769v1",
+    "source": "arXiv",
+    "abstract": "We present OpenComputer, a verifier-grounded framework for constructing verifiable software worlds for computer-use agents. OpenComputer integrates four components: (1) app-specific state verifiers that expose structured inspection endpoints over real applications, (2) a self-evolving verification layer that improves verifier reliability using execution-grounded feedback, (3) a task-generation pipeline that synthesizes realistic and machine-checkable desktop tasks, and (4) an evaluation harness that records full trajectories and computes auditable partial-credit rewards. In its current form, OpenComputer covers 33 desktop applications and 1,000 finalized tasks spanning browsers, office tools, creative software, development environments, file managers, and communication applications. Experiments show that OpenComputer's hard-coded verifiers align more closely with human adjudication than LLM-as-judge evaluation, especially when success depends on fine-grained application state. Frontier agents struggle with end-to-end completion despite partial progress, and open-source models exhibit sharp drops from their OSWorld-Verified scores, exposing a persistent gap in robust computer automation."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Memory-Augmented Reinforcement Learning Agent for CAD Generation",
+    "authors": "Yin Xiaolong, Liu Yu, Shen Jiahang, Lu Xingyu, Ni Jingzhe, Fan Fengxiao, Sang Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19748v1",
+    "source": "arXiv",
+    "abstract": "Automatic generation of computer-aided design (CAD) models is a core technology for enabling intelligence in advanced manufacturing. Existing generation methods based on large language models (LLMs) often fall short when handling complex CAD models characterized by long operation sequences, diverse operation types, and strong geometric constraints, primarily because reasoning chains break and effective error-correction mechanisms are lacking. To address this problem, this paper proposes a memory-augmented reinforcement learning framework for CAD generation agents. The framework encapsulates the underlying geometric kernel into a structured toolchain callable by the agent and builds a closed-loop mechanism of design intent understanding, global planning, execution, and multi-dimensional verification. It also designs a dual-track memory module consisting of a case library and a skill library, and proposes a dynamic utility retrieval algorithm. By introducing reinforcement learning into retrieval and policy optimization, the agent can effectively avoid retrieval traps in which examples are semantically similar but geometrically infeasible, enabling online self-correction and continual evolution without additional large-scale annotated data. Experiments show that the proposed method significantly improves both the success rate and geometric consistency on complex CAD model generation tasks."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Mathematical Reasoning in Large Language Models: Benchmarks, Architectures, Evaluation, and Open Challenges",
+    "authors": "Husnain Amjad, Raja Khurram Shahzad, Aamir Shahzad, Mehwish Fatima",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19723v1",
+    "source": "arXiv",
+    "abstract": "Mathematical reasoning is essential for problem-solving in education, science, and industry, serving as a crucial benchmark for evaluating artificial intelligence systems. As Large Language Models (LLMs) improve their reasoning capabilities, understanding how well they perform mathematical reasoning has become increasingly important. This survey synthesizes recent advancements in mathematical reasoning with LLMs through a structured analysis of datasets, architectures, training strategies, and evaluation protocols. Our systematic review encompasses approximately 120 peer-reviewed studies and preprints, examining the evolution of this research area and providing a unified analytical framework to understand current progress and limitations. Our study particularly introduces a unified taxonomy of mathematical datasets, distinguishing between pretraining corpora, supervised fine-tuning resources, and evaluation benchmarks across varying levels of reasoning complexity. A systematic analysis of reasoning architectures and training strategies, including tool integration, verifier-guided reasoning, and parameter-efficient adaptation, is presented to assess their effects on reasoning robustness and generalization. Moreover, a comparative evaluation of existing metrics highlights the gap between final-answer accuracy and process-level reasoning verification. By synthesizing insights across these areas, our analysis identifies recurring failure modes, such as reasoning faithfulness issues, benchmark biases, and generalization limitations, and outlines key research directions toward improving symbolic grounding, evaluation reliability, and the development of more robust and trustworthy LLM-based reasoning systems."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Measuring Safety Alignment Effects in Autonomous Security Agents",
+    "authors": "Isaac David, Arthur Gervais",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19722v1",
+    "source": "arXiv",
+    "abstract": "Do stock safety-aligned language models and their uncensored or abliterated derivatives behave differently when run as autonomous security agents? Single-turn refusal benchmarks cannot answer this question: security agents must inspect repositories, call tools, and produce vulnerability evidence inside authorized sandboxes. We present a trace-based benchmark of 30 local vulnerability-analysis tasks with fixed tools, deterministic success predicates, redaction rules, and grounding checks, and compare four stock models against uncensored or abliterated derivatives: Gemma 4 31B, Gemma 4 26B A4B, Qwen2.5-Coder 7B, and Llama 3.1 8B. The artifact contains 1,500 security-agent traces and 800 non-security control traces. The Gemma pairs show large less-restricted gains on security tasks: 14.0% versus 0.7% success for 31B and 10.7% versus 0.0% for 26B, with higher mean grounding (3.91 versus 3.27 and 4.12 versus 1.64 out of five) and 0.0% refusal, suppressed-action, and unsafe-action rates in the 31B traces. However, controls and non-Gemma pairs rule out a clean security-specific or universal less-restricted effect: Gemma gaps also appear on ordinary coding tasks, Qwen2.5-Coder success is lower for the less-restricted derivative (2.0% versus 5.3%), and the abliterated Llama derivative fails the tool protocol. Across all families, hard proof-of-trigger and patch-verification tasks remain unsolved. These results show that safety alignment effects in autonomous security agents should be measured at the system level, separating refusal, unsafe action, tool reliability, and evidence grounding rather than treating refusal rate as the safety signal."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Asking Grok: AI-Assisted Sensemaking in Social Media Conversations",
+    "authors": "Michelle Bobek, Emma Demirel, Nicolas Pröllochs",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19720v1",
+    "source": "arXiv",
+    "abstract": "LLM-powered AI assistants (e.g., Grok) are increasingly integrated into social media platforms, where they help explain content, provide context, and verify claims directly within conversation threads. While prior research has examined the accuracy of LLMs for fact-checking, little is known about how people interact with such systems in real-world social media environments. In this study, we empirically analyze user interactions with the AI assistant Grok on the social media platform X. Using a large-scale dataset consisting of 169,137 posts invoking Grok, we examine the types of requests directed at the AI assistant and the contexts in which it is used. We find that Grok is primarily invoked reactively to obtain or verify information. Although responses appear quickly, they typically only reach small audiences. Adoption is widespread but shallow, with 76.8% of users invoking Grok just once. We further examine how these interactions relate to Community Notes, X's community-based fact-checking system. While overlap between both systems is limited, it concentrates on verification-oriented and high-visibility content. Grok interactions typically occur earlier and do not predict subsequent correction activity. Together, these findings suggest that AI assistants function as an early complementary layer of sensemaking on social media rather than a replacement for crowd-based fact-checking systems."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
+    "authors": "Elias Berger, Muhammad Usama, Jan Mehlstäubl, Bernhard Saske, Kristin Paetzold-Byhain",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19717v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) can generate Computer-Aided Design (CAD), yet lack physical comprehension required for reliable engineering design. Instead of attempting to implicitly learn physical laws from data, we propose a Hybrid Agentic-Physical Architecture that embeds validated knowledge-based engineering tools directly into the decision making loop of autonomous AI agents. In this framework, engineering design is formulated as a closed-loop, sequential decision making process guided by explicit physical verification. Based on a load case, dedicated agents iteratively plan, generate, evaluate, and revise engineering designs using knowledge-based tools as a feedback signal. We introduce a benchmark dataset and metrics for assessing functional validity in generative CAD. Our system generates more complex and physically verified designs, with a 4.2 increase in structural complexity and improving compile rate by 3.5% compared to similar agentic methods. The codebase, prompts and dataset will be made publicly available to support reproducibility and future research."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "SCARA: A Semantics-Constrained Autonomous Remediation Agent for Opaque Industrial Software Vulnerabilities",
+    "authors": "Bowei Ning, Xuejun Zong, Lian Lian, Kan He, Guogang Wang, Yifei Sun, Jinyang Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19668v1",
+    "source": "arXiv",
+    "abstract": "Critical-infrastructure operators are increasingly expected to assess and remediate vulnerabilities in deployed industrial software. However, much of this software exists as opaque industrial software (OIS), including stripped firmware, proprietary protocol handlers, and compiled control logic without source code, symbols, build environments, or hardware interfaces. While binary analysis can identify vulnerability candidates, existing automated repair systems largely rely on source code, compilable artifacts, sanitizer feedback, or instrumentable builds, leaving a gap between binary-level discovery and validated remediation. This paper presents SCARA, a Semantics-Constrained Autonomous Remediation Agent for OIS. SCARA operates under a source-unavailable defender model and connects upstream binary vulnerability candidates to conditionally validated remedies through a four-stage pipeline. Operational-state-aware verification (OSVA) filters infeasible candidates using a nine-component industrial state model; remediation synthesis (RSA) selects the strongest available remedy across protocol mitigation, binary hardening, and SSCKG-constrained source patches; and correctness validation (CVA) provides conditional correctness evidence via behavioral-coverage preservation, independent replay, and typed rejection feedback. On OIS-RemedBench, a 15-case benchmark spanning firmware, protocol handlers, and ICS/PLC artifacts, SCARA achieves observed 100% precision with no false positives, refutes 20.0% of cases as operationally infeasible, and reaches 88.9% remediation success after targeted reruns. To our knowledge, SCARA is the first end-to-end framework that connects binary vulnerability candidates to conditionally validated remediation for opaque industrial software."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Nonlinear Stabilization of Non-Adiabatic Magnonic Dynamics",
+    "authors": "A. M. Tishin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19647v1",
+    "source": "arXiv",
+    "abstract": "We propose a nonlinear magnonic platform for bounded non-adiabatic parametric excitation in nanoscale ferrite structures. The approach is based on the η-algorithm, where the non-adiabaticity parameter quantifies the strength of the parametric drive, while the nonlinear frequency regulator U represents the anharmonic spectral detuning of the medium. Using Co-doped yttrium iron garnet (YIG:Co) as a representative material system, we analyze how nonlinear detuning suppresses uncontrolled parametric growth and drives the system toward a dynamically localized low-occupancy magnonic state. Numerical verification in truncated Fock bases shows that a finite regulator U can suppress leakage into higher-order modes and preserve bounded dynamics under non-adiabatic excitation. The experimentally reported absorbed energy density for ultrafast switching in YIG:Co corresponds to an estimated switching energy of approximately 22 aJ for a 20x20x10 nm3 cell, providing a physically relevant scale for low-energy resonant state formation. We further discuss the role of magnetic damping, exchange-gap confinement, and phonon transparency in maintaining coherent magnonic dynamics over multiple operation cycles. These results suggest that nonlinear self-limited non-adiabatic dynamics in ferrite nanostructures may provide a physical basis for low-energy wave-based information processing."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "The Accessibility Capability Boundary: Operational Limits and Expansion Potential of AI-Generated Browser-Native Accessibility Systems",
+    "authors": "Rizwan Jahangir, Daisuke Ishii",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19638v1",
+    "source": "arXiv",
+    "abstract": "As large language models (LLMs) demonstrate increasing competence in synthesizing functional user interfaces, a fundamental question emerges in accessibility computing: \\textit{how far can AI-driven accessibility systems go?} This paper introduces the \\textit{Accessibility Capability Boundary} (ACB), a formal framework for reasoning about the operational limits and expansion potential of autonomous accessibility systems, and grounds this theory in a real-world systems artifact. We model accessibility not as a binary compliance property but as a dynamic, multidimensional capability space constrained by measurable variables including deployment latency, cognitive load, infrastructure dependency, offline persistence, interaction complexity, and adaptability. We argue that AI-generated, browser-native systems constructed as single-file HTML artifacts leveraging standard browser APIs may dramatically shift the ACB outward by reducing deployment friction to near-zero and enabling rapid, context-specific interface adaptation. We ground our theoretical framework in the analysis of two real-world exploratory prototypes. The first is an AI-generated browser-native accessibility interface deployed for a blind user in Nepal. The second is a fully functional, open-source webcam alignment assistant for visually impaired users, serving as a concrete systems artifact. Through formal definitions, propositions, and a comparative evaluation matrix, we characterize the regions of the accessibility capability space that such systems can and cannot reach. We further identify remaining computational, infrastructural, and verification constraints that constitute the hard boundaries of this paradigm. This work contributes a theoretical foundation for understanding the scalable limits of autonomous accessibility computing and proposes a research agenda for future work in accessibility-aware AI systems."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Provable Fairness Repair for Deep Neural Networks",
+    "authors": "Jianan Ma, Jingyi Wang, Qi Xuan, Zhen Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19549v1",
+    "source": "arXiv",
+    "abstract": "Deep neural networks (DNNs) are suffering from ethical issues such as individual discrimination. In response, extensive NN repair techniques have been developed to adjust models and mitigate such undesired behaviors. However, existing fairness repair methods are typically data-centric, which often lack provable guarantees and generalization to unseen samples. To overcome these limitations, we propose ProF, a novel fairness repair framework with provable guarantees. The key intuition of ProF is to leverage interval bound propagation (a widely used NN verification technique) to soundly capture model outputs over the whole set $S(\\mathbf{x})$ around a biased sample $\\mathbf{x}$. The derived bounds are utilized to guide fairness repair which encourages the model to produce consistent outputs on $S(\\mathbf{x})$. Specifically, we integrate fairness constraints and model modifications into a unified constraint-solving formulation, which can be transformed to a Mixed-Integer Linear Programming (MILP) problem solvable by off-the-shelf solvers. The solution to the MILP problem effectively induces a repaired model with guaranteed fairness over the whole set $S(\\mathbf{x})$. We evaluate ProF on four widely used benchmark datasets and demonstrate that it achieves provable fairness repair, with generalization of up to 95.93\\% on full datasets and 93.16\\% on the entire input space. Notably, ProF can be easily configured to support multiple sensitive attributes and more practical fairness definitions, while providing provable repair guarantees and delivering around 90\\% fairness improvement. Our code is available at https://github.com/nninjn/ProF."
+  },
+  {
+    "date": "2026-05-19",
+    "title": "CaptchaMind: Training CAPTCHA Solvers via Reinforcement Learning with Explicit Reasoning Supervision",
+    "authors": "Pengcheng Wang, Haoxiang Liu, Yang Dai, Xiangxiang Zeng, Guanhua Chen, Baotian Hu, Longyue Wang, Weihua Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.19538v1",
+    "source": "arXiv",
+    "abstract": "CAPTCHAs are widely deployed as human verification mechanisms and frequently block intelligent agents from completing end-to-end automation in real-world web environments. Solving modern CAPTCHAs requires robust multi-step visual reasoning and interaction capabilities, yet training-based approaches have remained absent due to the lack of large-scale training data and process-level annotations. We introduce CaptchaBench, the first CAPTCHA benchmark designed to support large-scale training, comprising 16,000 programmatically generated samples across eight task categories with detailed region and process-level annotations. Systematic evaluation on CaptchaBench reveals that existing methods fail consistently on tasks requiring fine-grained visual detail capture and region-level comparison. We therefore present CaptchaMind, an RL-based solver trained with explicit reasoning process supervision, achieving 82.9% average success rate across eight tasks and 71.0% on real-world instances, substantially outperforming all existing methods without closed-source APIs."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "The Unbearable Darkness Of Being (In The Job Market): Privacy and Reliability of LLM-based Candidate Evaluation",
+    "authors": "Junichi Koizumi, Lakshya Dhingra, Rakibul Hasan",
+    "publish": "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+    "url": "https://doi.org/10.1145/3803628.3807974",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "LIVE-GS: LLM Powers Interactive VR Experience with Physics-Aware Gaussian Splatting_supp1-3680710.pdf",
+    "authors": "Haotian Mao",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tvcg.2026.3680710/mm1",
+    "source": "IEEE",
+    "abstract": "As 3D Gaussian Splatting (3DGS) emerges as a leading approach for novel view synthesis and scene reconstruction, its potential in digital asset creation has gained significant attention. An increasing number of asset libraries based on GS are being established. However, generating physics-based dynamic assets remains a time-consuming and expertise-intensive task, especially for non-experts. In this paper, we propose LIVE-GS, a highly realistic Virtual Reality (VR) system powered by Large Language Models (LLMs), which enables rapid creation of dynamic Gaussian assets and real-time VR interactions. To inform our system design, we conducted interviews to examine challenges faced by current GS-based VR systems and the specific demands of users. Based on these insights, we employed GPT-4o to analyze key physical properties of objects that significantly impact user interactions, ensuring physics-based interactions in VR align with real-world phenomena. A key innovation of LIVE-GS is its ability to predict reasonable parameters in just 10 seconds from static Gaussian assets while maintaining high-quality VR interactions. To validate our approach, we invited participants experienced in physical simulation to manually adjust physical parameters, providing a baseline for comparison in both asset quality and authoring efficiency. We also conducted a comprehensive user study to evaluate system usability and user satisfaction. Experimental results demonstrate that LIVE-GS, leveraging LLMs' scene understanding capabilities, can achieve efficient physical scene creation and natural interactions without requiring manual design or annotation."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+    "authors": "N/A",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1145/3803628",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Real-Time Signal Quality Monitoring and Interference Detection Using RTL-SDR: A Hybrid PSD Thresholding and PSO-Adaptive Line Enhancement Approach",
+    "authors": "Aejaz Ahmad Ansari, Divyesh Shanmugarajah, Manik Shrivastav, Mutyala Jahnavi Sai, Sirisha Tadepalli",
+    "publish": "2026 Third International Conference on Networking and Communications (ICNWC)",
+    "url": "https://doi.org/10.1109/icnwc68145.2026.11518363",
+    "source": "IEEE",
+    "abstract": "Real-time spectrum monitoring is a critical requirement in modern wireless environments due to increasing spectral congestion, unintentional emissions, and interference originating from both communication systems and low-cost receivers. Software-Defined Radio (SDR) platforms, particularly RTL-SDR devices, provide an inexpensive and flexible solution for wideband signal monitoring, but they suffer from severe hardware-induced artifacts such as DC offsets, image frequencies, impulsive spectral spikes, IQ imbalance, and non-stationary noise. These impairments significantly degrade the reliability of conventional interference detection techniques based on fixed thresholding or gradient-based adaptive filters.This paper presents a real-time signal quality monitoring and interference detection framework using RTL-SDR that employs a hybrid two-stage denoising architecture. In the first stage, a smart percentile-based Power Spectral Density (PSD) thresholding method dynamically isolates statistically significant spectral components while suppressing broadband noise and impulsive distortions. Hardware-aware artifact mitigation is explicitly integrated to eliminate DC spikes and characteristic ±420 kHz image frequencies inherent to RTL-SDR receivers, which arise due to local oscillator (LO) leakage in the direct-conversion front-end. In the second stage, an Adaptive Line Enhancer optimized using Particle Swarm Optimization (PSO) is applied to enhance correlated and structured signal components while minimizing residual noise. The PSO-based optimization strictly follows the canonical Kennedy and Eberhart update rules, enabling global convergence in non-linear and non-stationary noise environments where traditional LMS-based methods fail."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Self-Promotion in LLM Recommendations",
+    "authors": "Rustom M. Dubash, Sorelle A. Friedler",
+    "publish": "Proceedings of the 18th ACM Web Science Conference 2026",
+    "url": "https://doi.org/10.1145/3795766.3799780",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "LLM-Guided Gym Exercise Feedback from Video: A Feasibility Study",
+    "authors": "Samet Ucuncu, Haibin Cai, Hui Fang",
+    "publish": "2026 6th International Conference on Advances in Electrical, Electronics and Computing Technology (EECT)",
+    "url": "https://doi.org/10.1109/eect68756.2026.11517800",
+    "source": "IEEE",
+    "abstract": "Automating gym exercise self-assessment has the potential to significantly enhance routine coaching for professional athletes, ultimately improving their performance. In this paper, we present a feasibility study towards this goal by combining 3D body reconstruction, temporal data processing, and LLMbased reasoning into a unified, end-to-end solution. Using a monocular video of a bench press as input, we leverage a state-of-the-art 3D human reconstruction model and propose to extract joint-level kinematic descriptors, including elbow range of motion, inter-limb symmetry, head stability, and repetition tempo, for action quality assessment. To address frame-to-frame reconstruction inconsistencies, we design a lightweight temporal refinement module that generates more stable and reliable trajectory data for movement repetition analysis. Once these structured biomechanical metrics are obtained, they enable a Large Language Model (LLM) to provide insightful coaching feedback for subsequent training. Experiments conducted on a collected gym dataset demonstrate reliable repetition segmentation, consistent kinematic estimation, and effective translation of geometry-derived features into actionable language feedback. The study establishes the feasibility of geometry-driven, temporally consistent, and explainable action quality assessment for realworld automated coaching systems."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Automatic Grading of Chinese as a Second Language Reading Texts Based on Multi-LLM Weighted Voting",
+    "authors": "Xinxin Han, Juan Xu",
+    "publish": "2026 15th International Conference on Educational and Information Technology (ICEIT)",
+    "url": "https://doi.org/10.1109/iceit68991.2026.11521725",
+    "source": "IEEE",
+    "abstract": "To address the issues of unstable prediction and discriminatory biases of single LLMs in the automatic grading of Chinese as a Second Language reading texts, this paper proposes a text grading method based on multi-LLM weighted voting. This research constructs a decision fusion framework for heterogeneous LLMs, introduces a conditional weight calibration mechanism to dynamically allocate weights according to LLM performance across different levels, and adopts a weighted median strategy to suppress outlier predictions. Experimental results show that the proposed method is superior to single LLMs in terms of Accuracy, Quadratic Weighted Kappa (QWK), and Mean Absolute Error (MAE), verifying the effectiveness of multi-LLM collaboration in improving grading accuracy and system robustness."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "LLM-Enabled Digital Teacher and Metaverse-Based Laboratory for Teaching Network Communications",
+    "authors": "Jiarun Song, Youguang Yu, Ninghao Wan",
+    "publish": "2026 15th International Conference on Educational and Information Technology (ICEIT)",
+    "url": "https://doi.org/10.1109/iceit68991.2026.11521098",
+    "source": "IEEE",
+    "abstract": "This study presents a case-based design that integrates a large language model (LLM)-enabled digital teacher with a metaverse-based virtual laboratory for teaching network communications. The approach addresses limits of lecture-centric models by linking abstract protocol concepts to executable tasks through contextualized, interactive practice. The digital teacher offers intelligent explanations, real-time Q&A, and personalized guidance, while the virtual reality (VR) laboratory visualizes protocol behavior, enables reproducible experiments. Using the VR lab, students situate address resolution protocol (ARP) within the TCP/IP stack, observe broadcast requests and directed replies, track cache updates, and analyze packets. Spoofing scenarios are also simulated to support diagnosis and response. Results indicate enhanced conceptual understanding and procedural mastery, providing a scalable blueprint for experiment-intensive courses."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Outlier-aware Low-bit Quantization for LLM-based TTS: DuQuant MLP-only W4A8 Quantization on TTS Model",
+    "authors": "Xiuyuan Li",
+    "publish": "2026 6th International Conference on Advances in Electrical, Electronics and Computing Technology (EECT)",
+    "url": "https://doi.org/10.1109/eect68756.2026.11517795",
+    "source": "IEEE",
+    "abstract": "Large language model (LLM) backbones are increasingly incorporated into speech generation pipelines to improve robustness and expressive prosody, yet deployment remains constrained by GPU memory footprint and inference cost. Lowbit quantization is a widely adopted compression technique for resource-efficient AI; however, most studies evaluate LLM quantization primarily on language modeling or NLP benchmarks, leaving its transferability to end-to-end text-to-speech (TTS) insufficiently understood. In this paper, we extend DuQuant—a low-bit quantization method originally proposed for LLMs—to an LLM-based TTS system (CosyVoice3-0.5B), and empirically evaluate how low-bit perturbations propagate to intelligibility and perceptual attributes. We integrate DuQuant into all Transformer MLP linear layers (gate/up/down projections) of the CosyVoice30.5B LLM component while keeping attention and non-LLM components in FP16, and adopt a W4A8 fake-quantization setting (quantize-dequantize simulation) to study numerical effects without integer kernels. We conduct (i) layer-wise sensitivity scanning using cosine similarity/MSE/max-absolute error between quantized and FP16 activations, and (ii) end-to-end TTS evaluation aligned with CV3-Eval metrics: CER (content fidelity), speaker similarity (SS), and DNSMOS (perceptual quality). On the Chinese (zh) subset with 500 samples runs, MLP-only W4A8 fake quantization increases CER from $3.717 \\pm 0.166 \\%$ (FP16 Baseline) to $\\mathbf{4. 3 2 3} \\pm \\mathbf{0. 1 3 3 \\%}$, while SS and DNSMOS remain nearly unchanged. These results suggest that DuQuant-style MLP quantization can be transferred to TTS with limited impact on speaker identity and perceived quality, but content fidelity is more sensitive and may require selective mixed precision. Finally, we discuss the limitation that fake quantization does not provide real acceleration without integer GEMM kernels and outline a path toward deployable INT-kernel inference."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "An LLM-Driven and BERT-Based Analysis of Industry Requirements for Software Project Managers",
+    "authors": "Junyu Zhang, Jingdong Jia",
+    "publish": "2026 15th International Conference on Educational and Information Technology (ICEIT)",
+    "url": "https://doi.org/10.1109/iceit68991.2026.11521699",
+    "source": "IEEE",
+    "abstract": "Software project manager is a key role in a software development team, and her/his competence directly affects project success. Software engineering management course in universities aims to cultivate outstanding software project managers who meet industry requirements. Therefore, accurately understanding industry requirements for this role is an essential prerequisite for achieving excellence in talent development. In this context, this study uses job advertisements as the primary data source and proposes an industry requirement analysis approach that integrates large language models (LLMs) with deep learning. We first obtained lots of job ads for software project managers from a recruitment website. Then,we obtained valid \"job requirements\" text through automated data collection and rule-based identification. Next, we used LLMs to extract atomic-level requirements. Further, a fine-tune BERT model was used to classify these requirements into three categories: knowledge, skill, and disposition. Finally, we employed normalization and statistical analysis to distill common industry requirements. In addition, we also investigated the common industry requirements of each category for three sub-roles: informationization construction, system integration, and digital application project managers, and conducted a comparative analysis among industry requirements for sub-roles and the overall. The findings provide data-driven guidance for optimizing software engineering management course and supporting individual competency development of software project managers."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Analysing Logs of LLM-Based Counselling-Style Conversation Agents: A Perspective from NLP",
+    "authors": "Chengqian Wang, Arjumand Younus, Kalpana Shankar",
+    "publish": "Proceedings of the 18th ACM Web Science Conference 2026",
+    "url": "https://doi.org/10.1145/3795766.3799774",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Engineering LLM-based Multi-Agent Systems: A Taxonomy of Emerging Frameworks",
+    "authors": "Davide Di Ruscio, Phuong T. Nguyen, Claudio Di Sipio, Riccardo Rubei, Juri Di Rocco",
+    "publish": "IEEE Software",
+    "url": "https://doi.org/10.1109/ms.2026.3694089",
+    "source": "IEEE",
+    "abstract": "LLM–based multi-agent systems (LMAS) are emerging as a promising paradigm, enabling specialized agents to collaborate and act autonomously across complex software engineering (SE) tasks. Yet, despite rapid progress, the field still lacks a clear conceptual foundation to guide researchers and practitioners in systematically designing, implementing, and evaluating such systems. This article introduces a taxonomy intended to provide practical guidance for integrating LMAS into software development workflows. Grounded in an analysis of prominent frameworks and scientific contributions for engineering LMAS, the taxonomy organizes the design space along five key dimensions offering a structured lens for understanding and engineering LMAS. Our analysis reveals substantial gaps in current frameworks, particularly regarding monitoring, performance evaluation, and quality assessment. These findings highlight pressing research challenges and identify concrete directions toward more reliable, transparent, and effective agentic systems for SE."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Agentic LLM-Driven Cyber Threat Hunting Using MITRE ATT&amp;CK Knowledge Mapping and Graph-Based Evidence Correlation",
+    "authors": "Manikandan R, Royal Bhavitha, Shaik Banuheer, Sasmal Aniket Arun, Dinesh K",
+    "publish": "2026 Third International Conference on Networking and Communications (ICNWC)",
+    "url": "https://doi.org/10.1109/icnwc68145.2026.11518378",
+    "source": "IEEE",
+    "abstract": "Modern cyberattacks are increasingly utilizing multi-stage, evasive, and automated approaches that are difficult to detect with standard rule-based monitoring systems. Security analysts must study massive amounts of diverse security records, which makes manual correlation and threat detection time-consuming and error-prone. This study provides an Agentic Large Language Model (LLM)-based cyber threat hunting system that analyzes suspicious security activities using contextual reasoning and adaptive investigative tactics. The proposed system combines agentic planning with LLM-based analysis to generate investigation hypotheses, correlate multi-source security telemetry, and map detected behaviors to the MITRE ATT&CK knowledge framework for standardized threat classification. Graph-based evidence correlation is used to identify relationships between entities such as hosts, users, IP addresses, and domains, allowing detection of coordinated attack patterns.The methodology also incorporates IOC enrichment and adaptive risk assessment to aid in prioritized threat response and analyst decision-making."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Reconsidering Conversational Norms in LLM Chatbots for Sustainable AI",
+    "authors": "Ronnie de Souza Santos, Cleyton Vanut Cordeiro de Magalhães, Italo Santos",
+    "publish": "Proceedings of the 2026 7th International Workshop on Bots and Agents in Software Engineering",
+    "url": "https://doi.org/10.1145/3786161.3788457",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Liar, Liar, LLM on Fire: Investigating Deception in Turkish Text Generation",
+    "authors": "Necva Bölücü, Zehra Yücel, Dilber Çetintaş",
+    "publish": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+    "url": "https://doi.org/10.1145/3811025",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Analysis of LLMs Against Prompt Injection and Jailbreak Attacks",
+    "authors": "Piyush Jaiswal, Aaditya Pratap, Shreyansh Saraswati, Harsh Kasyap, Somanath Tripathy",
+    "publish": "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+    "url": "https://doi.org/10.1145/3803628.3807972",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Digital Human Teaching Assistants: LLM-Empowered Construction of First-Class Courses in Higher Education",
+    "authors": "Jing Xiong, Xue Zhai, Bingbing Wei, Yuxia Lei, Zhaoan Dong, Yan Yao, Jianguo Liang",
+    "publish": "2026 15th International Conference on Educational and Information Technology (ICEIT)",
+    "url": "https://doi.org/10.1109/iceit68991.2026.11521321",
+    "source": "IEEE",
+    "abstract": "The establishment of first-class undergraduate courses, namely \"Golden Courses\", stands as a strategic focal point in contemporary higher education. Nevertheless, it encounters impediments in the form of substantial instructor workloads and restricted student-teacher interaction. This paper presents an innovative framework for a Digital Human Teaching Assistant (DHTA) that is enabled by Large Language Models (LLMs) and multi-modal interaction technology. Empirical findings indicate that the DHTA pipeline curtails course production time by 88.5%, concurrently leading to a notable improvement in student performance (the mean score of the Experimental Group is 86.9, compared to 78.7 in the Control Group). The t-test produced a p-value of <0.001, validating the statistically significant influence of the presence of the digital human on knowledge retention and student engagement. This research offers a scalable and efficient model for the intelligent transformation of higher education, integrating technological innovation with pedagogical humanism."
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Illuminating LLM Coding Agents: Visual Analytics for Deeper Understanding and Enhancement",
+    "authors": "Junpeng Wang, Yuzhong Chen, Menghai Pan, Chin-Chia Michael Yeh, Mahashweta Das",
+    "publish": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://doi.org/10.1109/tvcg.2026.3694444",
+    "source": "IEEE",
+    "abstract": "Coding agents powered by large language models (LLMs) have gained traction for automating code generation through iterative problem-solving with minimal human involvement. Despite the emergence of various frameworks, e.g., LangChain, AutoML, and AIDE, ML scientists still struggle to effectively review and adjust the agents' coding process. The current approach of manually inspecting individual outputs is inefficient, making it difficult to track code evolution, compare coding iterations, and identify improvement opportunities. To address this challenge, we introduce a visual analytics system designed to enhance the examination of coding agent behaviors. Focusing on the AIDE framework, our system supports comparative analysis across three levels: (1) Code-Level Analysis, which reveals how the agent debugs and refines its code over iterations; (2) Process-Level Analysis, which contrasts different solution-seeking processes explored by the agent; and (3) LLM-Level Analysis, which highlights variations in coding behavior across different LLMs. By integrating these perspectives, our system enables ML scientists to gain a structured understanding of agent behaviors, facilitating more effective debugging and prompt engineering. Through case studies using coding agents to tackle popular Kaggle competitions, we demonstrate how our system provides valuable insights into the iterative coding process."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "A Black-Box Inversion Attack on Small Language Models and Differential Privacy-Based Defense",
+    "authors": "Xingyun Wang, Seonghoon Jeong, Hyunjae Kang, Dan Dongseong Kim",
+    "publish": "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+    "url": "https://doi.org/10.1145/3803628.3807971",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-19",
+    "title": "Embedded Tutorial: AI Vs. Verification Engineer: Fight or Synergy?",
+    "authors": "Marcela Zachariasova",
+    "publish": "2026 IEEE 29th International Symposium on Design and Diagnostics of Electronic Circuits and Systems (DDECS)",
+    "url": "https://doi.org/10.1109/ddecs69233.2026.11520998",
+    "source": "IEEE",
+    "abstract": "The paper investigates the application of Artificial Intelligence (AI) algorithms in two critical areas of simulationbased verification: (1) the development of verification testbenches (2) debugging activities within simulation environments. The primary objective is to assess how AI can enhance the productivity of verification engineers and improve the overall efficiency and quality of verification workflows in industrial practice. The paper presents the role of functional verification in the chip development flow, reviews widely adopted verification methodologies, AI techniques already used for automation and analysis, as well as the recent state-of-the-art research activities targeting emerging verification challenges. A key contribution is the identification of a significant gap in publicly available, high-quality open-source datasets tailored specifically for training AI models in hardware verification tasks. To ground the discussion in industrial reality, the paper also presents results from a survey conducted among 50 verification engineers, providing insight into which parts of a testbench could most benefit from AI-driven code generation or AI assistance. By combining a comprehensive state-of-the-art review with empirical insights from industry practitioners, this paper provides a structured analysis of current limitations and outlines concrete future research directions aligned with realworld verification needs."
+  }
+]
