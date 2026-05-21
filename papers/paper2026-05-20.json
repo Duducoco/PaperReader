@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-05-20",
+    "title": "Agentic Model Checking",
+    "authors": "Youcheng Sun, Jiawen Liu, Daniel Kroening, Jason Xue",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21434v1",
+    "source": "arXiv",
+    "abstract": "Verifying LLM-generated systems code is hard: bugs are prevalent, formal specifications are missing, and safety contracts are encoded implicitly at call sites rather than enforced at function boundaries. We propose agentic model checking, a paradigm that couples LLM agents with a bounded model checking backend under the principle agents propose, solvers verify: agents handle tasks requiring semantic judgment (spec inference, check selection, counterexample classification, refinement proposal) while BMC discharges every soundness-relevant decision. The paradigm rests on three commitments. Specifications are inferred top-down from caller context in a restricted DSL that translates deterministically into the backend's assume/assert primitives, with optional functional-correctness clauses lifting verification from panic-freeness to behavioural faithfulness. Verification is compositional: each function is checked in isolation against its spec with callees replaced by postcondition-constrained stubs, so per-query cost scales with a single function's state space and refinements propagate automatically to callers. Counterexamples are not bug reports: they pass through a validation pipeline (reachability, callee feasibility, dynamic replay, realism audit) that distinguishes active in-tree crashes from latent public-API failures, while modelling artifacts drive a refinement loop rather than being suppressed. We instantiate the approach in BMC-Agent and evaluate it on LLM-generated kernel and compiler code in C and Rust alongside mature OSS-Fuzz-hardened libraries, confirming real defects, producing bounded clean verifications on heavily-fuzzed surfaces, and establishing functional equivalence on selected algorithmic functions."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Portfolio Preference Elicitation in Institutional Crossing Markets",
+    "authors": "Yoontae Hwang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21409v1",
+    "source": "arXiv",
+    "abstract": "Institutional crossing platforms face a hidden-information problem: investors value trades as portfolios, but liquidity discovery is typically organized around individual securities. We model portfolio crossing as limited-communication preference elicitation over signed portfolio trades. The platform first uses price-directed demand queries to search the portfolio space and then verifies selected packages through value queries; an incumbent verification query records the demand-discovered allocation before further exploration. Final allocations are chosen from elicited reports, so the learning model guides queries but does not determine welfare. The analysis shows why search and verification are complementary. Demand queries locate high-value regions of a nonseparable portfolio space, but they provide only conservative welfare evidence unless selected packages are verified. Value queries provide exact welfare comparisons, but they are ineffective when applied to poorly targeted packages. Market-calibrated experiments using equity panels from the United States, Korea, Japan, and Germany show that demand-only and value-only designs recover only about half of full-information welfare under a limited query budget, whereas the hybrid procedure recovers 88\\% and approaches 95\\% as communication expands. We then compare exact security-level packages with factor-completed basket packages within the same allocation rule. Security-level packages are the unadjusted-efficiency mode when exact-securities disclosure is inexpensive. Factor-completed baskets become preferable when pretrade message informativeness is costly. The results characterize portfolio crossing as a selective verification problem and identify disclosure-sensitive package representation as a core design choice for hidden liquidity platforms."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "TCARD: Nearly Balanced Two-Level Designs with Treatment Cardinality Constraints with an Application to LLM Prompt Engineering",
+    "authors": "Kexin Xie, Ryan Lekivetz, Xinwei Deng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21408v1",
+    "source": "arXiv",
+    "abstract": "Modern experimental designs often face the so-called treatment cardinality constraint, which is the constraint on the number of included factors in each treatment. Experiments with such constraints are commonly encountered in engineering simulation, AI system tuning, and large-scale system verification. This calls for the development of adequate designs to enable statistical efficiency for modeling and analysis within feasible constraints. In this work, we study two-level designs under this $k$-treatment cardinality constraint (TCARD), where the design matrix $\\mathbf{X} \\in \\{0,1\\}^{n \\times p}$ has constant row sums equal to $k$. Although TCARDs are closely related to balanced incomplete block designs (BIBDs), exact BIBD structure is unavailable for many practical $(n,p,k)$ combinations. This leads to the notion of nearly balanced TCARDs, which we prove minimize the first two components of the generalized word-length pattern. We also show that good projection behavior in this setting is governed by two count-based regularities: balanced factor replications and uniform pairwise concurrences. Motivated by this characterization, we then propose the Balanced Concurrence Deviation ($Φ_{\\mathrm{BCD}}$), a model-free objective that jointly penalizes replication imbalance and concurrence dispersion. We further show that this criterion is closely connected to classical optimality principles, including $(M,S)$-optimality, centered $\\mathrm{UE}(s^2)$ criterion, and Bayesian $D$-optimality. To construct designs minimizing $Φ_{\\mathrm{BCD}}$, we develop a coordinate-exchange (CE) algorithm with efficient incremental updates, together with a simulation-based procedure for calibrating the criterion weights to the intended downstream task. Numerical experiments confirm that the proposed method compares favorably with existing alternatives across a range of problem sizes and constraint strengths."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Verification of Configurable SRA Systems",
+    "authors": "Alessandro Cimatti, Alberto Griggio, Christian Lidström, Gianluca Redondi, Dylan Trenti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21385v1",
+    "source": "arXiv",
+    "abstract": "Many digital systems are designed as collections of asynchronous processes orchestrated by a domain-specific scheduler. The verification of such scheduler-restricted asynchronous systems (SRA) is challenging due to process-process and process-scheduler interactions. In this paper, we tackle the problem of verifying configurable SRA. A configurable SRA describes an unbounded family of possible SRA, each resulting from an instantiation satisfying given configuration constraints; our goal is proving at once that every legal instantiation of a configurable SRA is correct. We propose a contract-based, deductive verification approach that combines (i) compositional proof rules that abstract the scheduler to prove top-level invariant properties, (ii) automatic summarizations of the methods invoked by the scheduler, (iii) simplification with respect to the nature of the space of configurations. The approach is grounded in (object-oriented) first order logic, requires reasoning over quantified statements, and leverages the Dafny software verifier as a backend. An experimental evaluation on industrial case studies demonstrates that the framework scales effectively and enables practical reasoning about complex parameterized behaviors."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "The Human-AI Delegation Dilemma: Individual Strategies, Collective Equilibria and Sociotechnical Lock-in",
+    "authors": "Angjelin Hila",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21351v1",
+    "source": "arXiv",
+    "abstract": "This paper takes an ecological approach toward large-scale models of hybrid human-AI intelligence. Emerging models of human-AI interaction predominantly advance the complementarity thesis variously dubbed human-AI collaboration and human-AI hybrid intelligence. However, this constitutes an over-simplification of the modalities of human-AI interaction and possibility-space for both individual and collective action that human-AI interaction potentiates. To fill these gaps, this paper develops a decision and game-theoretic approach to the human-AI delegation-verification dilemma. First, we map out canonical decision-theoretic strategies that account for adaptive user trajectories, modeling how agents transition between strategies based on interaction feedback to reach stable equilibria. Second, we scale individually stable strategies to collective equilibria using three extrapolation principles: (a) non-communicative aggregation (b) local social signaling and (c) institutional norms setting. The analysis identifies the emergence of sociotechnical lock-in, a macro-behavioral state where individually adaptive delegation, in the absence of communicative and institutional safeguards, aggregates into a systemic collective action problem modeled as a prisoner's dilemma that degrades shared epistemic standards. We argue that adoption under higher communicative standards and institutional norms can mitigate suboptimal collective equilibria by imposing social commitments on individual users."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Systematic Design of Separation Logics",
+    "authors": "Roberto Bruni, Lorenzo Gazzella, Roberta Gori",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21262v1",
+    "source": "arXiv",
+    "abstract": "Thanks to the locality principle, separation logics support modular, scalable analysis of large codebases by relying on local axioms and frame rules to focus only on the heap fragments required for verification. However, depending on the direction (forward vs. backward) and sense of approximation (over vs. under) of the analysis, designing the corresponding proof systems can require some ingenuity. In his work on the calculational design of program logics, Patrick Cousot outlines a methodology for deriving proof systems directly from program semantics using abstract interpretation, covering both correctness and incorrectness analyses. Unfortunately, when applied to heap-manipulating programs, Cousot's calculational approach cannot handle the locality principle, because it does not provide a calculational way to derive frame rules and produces axioms that refer to the global heap. In this paper, we propose a general methodology for systematically deriving local axioms in which the locality principle is embedded by construction. For heap-manipulating primitives, we can derive the minimal required heap and the corresponding pre- and postconditions, complemented by universal frame rules without additional syntactic side conditions. Our method is parametric w.r.t. a set of semantic closure properties that are exploited to design local axioms; it can deal with different memory models; it favors the reuse of many inference rules across over- and under-approximation; and it produces logical systems capable of deriving a broader range of triples w.r.t. existing, cleverly designed, program logics for (in)correctness, ranging from Separation Logic and Incorrectness Separation Logic to Separation Sufficient Incorrectness Logic. Furthermore, we demonstrate the flexibility of our methodology by applying it to design a novel proof system for inferring necessary preconditions with separation logic."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Reliable Automated Triage in Spanish Clinical Notes: A Hybrid Framework for Risk-Aware HIV Suspicion Identification",
+    "authors": "Rodrigo Morales-Sánchez, Soto Montalvo, Raquel Martínez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21256v1",
+    "source": "arXiv",
+    "abstract": "Standard clinical Natural Language Processing (NLP) benchmarks often yield inflated metrics by forcing deterministic classification on ambiguous instances, thereby obscuring the clinical risks of overconfident predictions. To bridge this gap, we propose a risk-aware hybrid selective classification framework, evaluated on early Human Immunodeficiency Virus suspicion identification in Spanish clinical notes. Our dual-verification approach explicitly decouples aleatoric uncertainty through Mondrian conformal prediction and epistemic uncertainty using a Multi-Centroid Mahalanobis Distance veto. Empirical evaluations reveal that standard uncertainty metrics and baseline classifiers are structurally insufficient for safe medical triage, suffering severe coverage collapse when forced to operate under strict reliability constraints. In contrast, by demanding that clinical narratives pass both probabilistic and geometric safeguards, the proposed framework successfully isolates a highly trustworthy operational domain."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "WCXB: A Multi-Type Web Content Extraction Benchmark",
+    "authors": "Murrough Foley",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21097v1",
+    "source": "arXiv",
+    "abstract": "Web content extraction - isolating a page's main content from surrounding boilerplate - is a prerequisite for search indexing, retrieval-augmented generation, NLP dataset construction, and large language model training. Progress in this area has been constrained by the limitations of existing evaluation benchmarks, which are small (100-800 pages), restricted to news articles, or based on web pages from over a decade ago. We introduce the Web Content Extraction Benchmark (WCXB), a dataset of 2,008 web pages from 1,613 domains spanning seven structurally distinct page types: articles, forums, products, collections, listings, documentation, and service pages. The dataset includes a 1,497-page development set and a 511-page held-out test set with matched page type distributions. Ground truth annotations were produced through a five-stage pipeline: LLM-assisted drafting, automated verification, four-pass frontier model review, snippet and quality verification scripts, and human review. We evaluate 13 extraction systems - 11 heuristic and 2 neural - and find that while top systems converge on articles (F1 = 0.93), performance diverges sharply on structured page types (F1 = 0.41-0.84), revealing blind spots invisible to existing article-only benchmarks. The dataset is released under CC-BY-4.0 with HTML source files, ground truth annotations, page type labels, and baseline results."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "An Evidence-driven Protocol for Trustworthy CI Pipelines",
+    "authors": "Fernando Castillo, Eduardo Brito, Pille Pullonen-Raudvere, Sebastian Werner, Stefan Tai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21089v1",
+    "source": "arXiv",
+    "abstract": "Enterprise software supply chains are increasingly vulnerable to infrastructure attacks, resulting in financial and reputational damage. Ensuring the integrity and provenance of software artifacts remains a significant challenge, where re-execution of the build and tests by every consumer to guarantee provenance produces a verification bottleneck and credibility reduction. This paper presents an evidence-driven protocol for trustworthy Continuous Integration (CI) pipelines that combines Deterministic Build Systems (DBS) with Trusted Execution Environments (TEEs). The approach provides cryptographically verifiable guarantees of integrity, authenticity, and attestation for CI artifacts in distributed environments, reducing implicit trust without requiring costly re-execution by consumers. We introduce a protocol that binds deterministic builds with TEE-based attestations, formalizing the evidence life cycle, together with a practical implementation using Nix and Intel TDX. Experimental results show that artifact verification is reduced from redundant computation to lightweight signature and policy checks. These findings demonstrate that evidence-driven CI pipelines establish scalable and verifiable trust in digital infrastructure, effectively amortizing the initial computational overhead introduced by TEEs."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "AutoRPA: Efficient GUI Automation through LLM-Driven Code Synthesis from Interactions",
+    "authors": "Minghao Chen, Xinyi Hu, Zhou Yu, Yufei Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21082v1",
+    "source": "arXiv",
+    "abstract": "Large Language Model (LLM) based agents have demonstrated proficiency in multi-step interactions with graphical user interfaces (GUIs). While most research focuses on improving single-task performance, practical scenarios often involve repetitive GUI tasks for which invoking LLM reasoning repeatedly, i.e., the ReAct paradigm, is inefficient. Prior to LLMs, traditional Robotic Process Automation (RPA) offers runtime efficiency but demands significant manual effort to develop and maintain. To bridge this gap, we propose AutoRPA, a framework that automatically distills the decision logic of ReAct-style agents into robust RPA functions. AutoRPA introduces two core innovations: (1) A translator-builder pipeline, where a translator agent converts hard-coded ReAct actions into soft-coded procedures, and a builder agent synthesizes robust RPA functions via retrieval-augmented generation over multiple trajectories; (2) A hybrid repair strategy during code verification, combining RPA execution with ReAct-based fallback for iterative refinement. Experiments across multiple GUI environments demonstrate that RPA functions generated by AutoRPA successfully solve similar tasks while reducing token usage by 82% to 96%, significantly improving runtime efficiency and reusability."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Causal Past Logic for Runtime Verification of Distributed LLM Agent Workflows",
+    "authors": "Benedikt Bollig",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20923v1",
+    "source": "arXiv",
+    "abstract": "Distributed LLM agent workflows should not be monitored as if they produced a single sequential log. In an asynchronous execution, a decision can only depend on events that are causally visible to the lifeline that makes it: an event that appears earlier in some log may still be unknown locally. We extend the ZipperGen agent-workflow framework with Causal Past Logic (CPL), a small past-time temporal logic for guards in conditionals and while loops. In addition to standard past-time modalities such as previous and since, a guard can inspect the latest causally visible event of another lifeline and selected variables stored there. The formula is a source-level guard: it is evaluated online by the owner lifeline and can influence control flow at runtime. We give a vector-clock monitor with latest-value views and prove that the locally computed monitor value coincides with the denotational semantics of the guard at the current event. Thus runtime verification becomes part of the coordination language itself, rather than a post-hoc check over an execution log."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "FruitEnsemble: MLLM-Guided Arbitration for Heterogeneous ensemble in Fine-Grained Fruit Recognition",
+    "authors": "Enhui Yu, Junhui Li, Ruitong Lu, Jialu Li, Youshan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20892v1",
+    "source": "arXiv",
+    "abstract": "Fine-grained fruit classification is a critical yet challenging task in agricultural computer vision, primarily hindered by a severe shortage of high-quality datasets and the high visual similarity between classes. To address these challenges, we first constructed a comprehensive dataset comprising 306 fruit categories with 116,233 samples. Moreover, we propose FruitEnsemble, a practical two-stage dynamic inference framework designed to overcome the generalization limitations of static single-model architectures. In the first stage, FruitEnsemble employs a validation-calibrated weighted ensemble of heterogeneous backbones to generate a robust Top-3 candidate pool. To tackle difficult samples, we introduce an expert arbitration mechanism: when ensemble confidence falls below 0.6, a multimodal large language model (MLLM) is triggered to perform rigorous visual verification by integrating external botanical descriptions using Chain-of-Thought (CoT) reasoning. Furthermore, we optimized the training pipeline with a hard sample-aware joint loss. Extensive experiments demonstrate that FruitEnsemble achieves a classification accuracy of 70.49\\% and outperforms existing state-of-the-art models. Our framework provides an efficient, deployment-oriented solution for real-world agricultural visual sorting and quality inspection tasks."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "PlanningBench: Generating Scalable and Verifiable Planning Data for Evaluating and Training Large Language Models",
+    "authors": "Ziliang Zhao, Zenan Xu, Shuting Wang, Hongjin Qian, Yan Lei, Minda Hu, Zhao Wang, Shihan Dou, Zhicheng Dou, Pluto Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20873v1",
+    "source": "arXiv",
+    "abstract": "Planning is a fundamental capability for large language models (LLMs) because such complex tasks require models to coordinate goals, constraints, resources, and long-term consequences into executable and verifiable solutions. Existing planning benchmarks, however, usually treat planning data as fixed collections of instances rather than controllable generation targets. This limits scenario coverage, ties difficulty to surface-level proxies rather than structural sources, and offers limited support for scalable generation, automatic verification, or planning-oriented training. We introduce PlanningBench, a framework for generating scalable, diverse, and verifiable planning data for both evaluation and training. PlanningBench starts from real planning scenarios and abstracts practical workflows into a structured taxonomy of more than 30 task types, subtasks, constraint families, and difficulty factors. Guided by this taxonomy, a constraint-driven synthesis pipeline instantiates self-contained planning problems with adaptive difficulty control, quality filtering, and instance-level verification checklists. This shifts planning data construction from fixed benchmark collection to controllable generation while preserving realistic task grounding. We use PlanningBench to evaluate open-source and closed-source frontier LLMs, and find that current models still struggle to produce complete solutions under coupled constraints. Beyond evaluation, reinforcement learning on verified PlanningBench data improves performance on unseen planning benchmarks and broader instruction-following tasks. Further analysis suggests that determinate or well-specified optimal solutions provide clearer reward signals and more stable training dynamics. Overall, PlanningBench provides a controllable source of planning data for diagnosing and improving generalizable planning abilities in LLMs."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation",
+    "authors": "SeungJeh Chung, Geonho Park, Misong Kim, HyeongYeop Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20872v1",
+    "source": "arXiv",
+    "abstract": "Adaptive densification is the engine of 3D Gaussian Splatting (3DGS). However, when transposed to the optimization-based Generative Distillation paradigm, this reconstruction-native mechanism reveals fundamental limitations, resulting in inefficient representations cluttered with redundant primitives. We diagnose this failure as a Densification Dilemma stemming from the stochastic nature of generative guidance: the standard magnitude-based accumulation indiscriminately aggregates transient noise alongside geometric signals, making it difficult to strike a balance between over-densification and under-fitting. To resolve this, we introduce Context-Adaptive Moment Estimation (CAdam), a novel framework that reinterprets densification as a statistically grounded signal verification problem. CAdam leverages the first moment of gradients to exploit the interference principle, where stochastic fluctuations cancel out via destructive interference while consistent geometric drifts accumulate via constructive interference, effectively disentangling the underlying signal from the generative noise floor. This is further augmented by a quantile-based context awareness and an intrinsic Signal-to-Noise Ratio (SNR) gating mechanism, which ensure robust adaptation across optimization stages and enable the soft termination of densification. Extensive experiments across diverse objectives (SDS, ISM, VFDS) and strong generative 3DGS backbones show that CAdam reduces Gaussian count by 85%-97% relative to standard densification while preserving overall comparable perceptual quality. These results highlight signal-aware density control as a practical way to improve memory efficiency in optimization-based generative distillation."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "A Classification of Positive-Curvature Discrete Einstein Metrics on Trees",
+    "authors": "Haoxuan Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20862v1",
+    "source": "arXiv",
+    "abstract": "For a weighted tree, the Lin--Lu--Yau Ricci curvature admits an explicit formula in terms of the edge weights. Consequently, the constant-curvature equation is equivalent to an eigenvalue problem for an edge-indexed Ricci matrix $R_T$. Building on the spectral characterization of discrete Einstein metrics on trees, we classify all finite trees whose discrete Einstein metric has positive curvature, equivalently all trees satisfying $λ_{\\max}(R_T)<0$. For caterpillars with spine order $m\\ge 12$, this occurs precisely for the endpoint families $T_m(a,0,\\ldots,0,b)$ with $1\\le a,b\\le 3$ and $(a,b)\\ne(3,3)$. The remaining cases $3\\le m\\le 11$ are settled by an exact finite verification using rational characteristic polynomials and Sturm root counts. We also determine the zero level set $λ_{\\max}(R_T)=0$: among caterpillars, it consists of the stable family $(3,0,\\ldots,0,3)$ together with nine exceptional short-spine caterpillars, while $S_3^2$ is the unique non-caterpillar zero example."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Large Language Models for Operations Research: A Comprehensive Survey",
+    "authors": "Xianchao Xiu, Jianhao Li, Jun Fan, Wanquan Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20849v1",
+    "source": "arXiv",
+    "abstract": "Operations Research (OR) serves as a core decision-support methodology for complex systems, with significant applications across mathematics, management science, and computer science. Traditional approaches heavily rely on expert knowledge and often struggle to efficiently solve large-scale and multi-constraint problems. The rapid advancement of Large Language Models (LLMs) in recent years has offered a novel research paradigm to address these challenges. This paper presents a systematic survey of Large Language Models for Operations Research (LLM4OR). We begin by introducing the definition of OR problems and the fundamental principles of LLMs. We then focus on analyzing the roles of LLMs in OR, specifically covering such as model formulation, algorithm design, and solution verification. In addition, we discuss practical applications in representative scenarios and summarize benchmark datasets in this field. Finally, we outline the key challenges and provide perspectives on future research directions. A collection of related literature is available at https://github.com/xianchaoxiu/LLM4OR."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "USV: Towards Understanding the User-generated Short-form Videos",
+    "authors": "Haoyue Cheng, Su Xu, Liwei Jin, Wayne Wu, Chen Qian, Limin Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20838v1",
+    "source": "arXiv",
+    "abstract": "Several large-scale video datasets have been published these years and have advanced the area of video understanding. However, the newly emerged user-generated short-form videos have rarely been studied. This paper presents USV, the User-generated Short-form Video dataset for high-level semantic video understanding. The dataset contains around 224K videos collected from UGC platforms by label queries without extra manual verification and trimming. Although video understanding has achieved plausible improvement these years, most works focus on instance-level recognition, which is not sufficient for learning the representation of the high-level semantic information of videos. Therefore, we further establish two tasks: topic recognition and video-text retrieval on USV. We propose two unified and effective baseline methods Multi-Modality Fusion Network (MMF-Net) and Video-Text Contrastive Learning (VTCL), to tackle the topic recognition task and video-text retrieval respectively, and carry out comprehensive benchmarks to facilitate future research. Our project page is https://usvdataset.github.io."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "VIHD: Visual Intervention-based Hallucination Detection for Medical Visual Question Answering",
+    "authors": "Jiayi Chen, Benteng Ma, Zehui Liao, Winston Chong, Yasmeen George, Jianfei Cai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20772v1",
+    "source": "arXiv",
+    "abstract": "While medical Multimodal Large Language Models (MLLMs) have shown promise in assisting diagnosis, they still frequently generate hallucinated responses that appear linguistically plausible but lack visual evidence. Such hallucinations pose risks to clinical decision-making and necessitate effective detection. Existing introspective detection methods primarily perform uncertainty estimation or logical verification by analyzing model responses conditioned on original or perturbed inputs. However, such external perturbations are often heuristic and context-agnostic, which overlooks the internal cross-modal dependency between generated tokens and related visual tokens during decoding. To address this issue, we propose VIHD, a Visual Intervention-based Hallucination Detection method that leverages targeted visual token masking to calibrate semantic entropy for more effective hallucination detection. VIHD locates visually dominant decoder layers via Visual Dependency Probing (VDP), executes Visual Intervention Decoding (VID) via token masking to calibrate the semantic distribution, and quantifies the resulting Calibrated Semantic Entropy (CSE) as a reliable hallucination signal. Extensive experiments on three medical VQA benchmarks with two medical MLLMs demonstrate that VIHD consistently outperforms state-of-the-art methods, underscoring the importance of fine-grained visual dependency for hallucination detection. The code will be available at https://github.com/Jiayi-Chen-AU/VIHD"
+  },
+  {
+    "date": "2026-05-20",
+    "title": "ShapeBench: A Scalable Benchmark and Diagnostic Suite for Standardized Evaluation in Aerodynamic Shape Optimization",
+    "authors": "Shaghayegh Fazliani, Krissh Chawla, Jack Guo, Yiren Shen, Matthias Ihme, Madeleine Udell",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20763v1",
+    "source": "arXiv",
+    "abstract": "Rapid progress in aerodynamic shape optimization (ASO) has outpaced currently-available standardized evaluation frameworks. Fair comparison requires a unified benchmark spanning diverse shape classes, objective formulations, and matched-budget state-of-the-art baselines. We introduce ShapeBench, an open-source ASO benchmark with a unified API spanning 103 tasks across eight shape categories and multiple optimization regimes. Each ShapeBench task includes a validated surrogate for fast search; when feasible, a high-fidelity Computational Fluid Dynamics (CFD) pipeline for final verification is available, enabling systematic fidelity-gap analysis. ShapeBench provides a reproducible protocol with well-configured baselines to compare fairly using a consistent budget metric, allowing for comparison among both classical and LLM-driven methods, including general-purpose optimizers and a new domain-specialized evolutionary LLM baseline, ShapeEvolve. Results on ShapeBench demonstrate substantial variance in optimizer rankings across shape categories and problem formulations, with mean pairwise Spearman $ρ= 0.013$, so single-task conclusions do not reliably generalize across problem classes. The benchmark is also far from saturation; classical methods are rarely applicable across all shape categories and tasks, further highlighting the need for more general-purpose approaches."
+  },
+  {
+    "date": "2026-05-20",
+    "title": "The Hidden Signal of Verifier Strictness: Controlling and Improving Step-Wise Verification via Selective Latent Steering",
+    "authors": "Yefan Zhou, Yilun Zhou, Austin Xu, Soroush Vosoughi, Shafiq Joty, Jiang Gui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.20745v1",
+    "source": "arXiv",
+    "abstract": "Generative verifiers have emerged as a promising paradigm for step-wise verification, but their verification behavior is often poorly calibrated: they may be under-critical and miss erroneous steps, or over-critical and reject correct reasoning. We refer to this tendency to be overly lenient or overly critical as verifier strictness. In this work, we study whether verifier strictness can be controlled through hidden-state intervention. We uncover a verification-specific hidden-state signal: in step-wise verification, a verifier's tendency to accept or reject a solution step is encoded near the boundary of the corresponding verification paragraph. Exploiting this signal, we show that hidden-state steering can directly modulate verifier strictness without fine-tuning. However, uniform steering induces a trade-off between error detection and correctness certification. To address this, we propose VerifySteer, which exploits latent correctness signals for sample-level routing and selectively intervenes on paragraph boundaries. Experiments on ProcessBench and Hard2Verify show that VerifySteer outperforms prompt optimization and activation steering baselines, and is competitive with self-consistency while requiring 4-7x less inference compute. VerifySteer is also complementary to verification fine-tuning, providing further gains on top of fine-tuned verifiers. The code is available at https://github.com/YefanZhou/VerifySteer."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Empirical Evaluation of Self and Cross-Model Verification for LLM Hallucination Detection in Cybersecurity",
+    "authors": "Mohd Adnan, Kausar Ali, Maaz Shamim, Nawaz Sarwar",
+    "publish": "2026 Second International Conference on Emerging Computational Intelligence (ICECI)",
+    "url": "https://doi.org/10.1109/iceci69159.2026.11519426",
+    "source": "IEEE",
+    "abstract": "In cybersecurity, large language models are being used more and more for threat intelligence, incident response guidance, and security code generation. But LLMs hallucinate; they make up information that sounds true but isn’t. In security contexts, such hallucinations can result in dire consequences, encompassing fabricated CVE numbers, erroneous remediation commands, or deceptive threat assessments. We empirically examine whether LLMs can identify hallucinations in their own security-related outputs (self-verification) and juxtapose this capability with cross-model verification. We assessed 5 LLMs across three categories of cybersecurity tasks, using 736 humanlabeled responses (Fleiss’ $\\kappa=0.79$). The analysis shows that hallucination rates vary a lot by domain: $\\mathbf{1 0. 1 \\%}$ for security commands and $\\mathbf{9 0 \\%}$ for CVE analysis. Cross-verification ($\\mathbf{5 6 \\%}$) significantly surpassed self-verification $(36.4 \\%, p=0.034)$. Most importantly, we found that LLM verification is not calibrated. Verifiers flag errors at about the same rate no matter how common they are, which gives people false confidence in areas with a lot of errors and unnecessary doubt in areas with few errors. These results have significant ramifications for the implementation of LLMs in security operations."
+  },
+  {
+    "date": "2026-5-21",
+    "title": "LLM-X: A Scalable Negotiation-Oriented Exchange for Communication Among Personal LLM Agents",
+    "authors": "Giuliano Lorenzoni, Paulo Alencar, Donald Cowan",
+    "publish": "Proceedings of the 2026 International Workshop on Agentic Engineering",
+    "url": "https://doi.org/10.1145/3786167.3788429",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "The Unbearable Darkness Of Being (In The Job Market): Privacy and Reliability of LLM-based Candidate Evaluation",
+    "authors": "Junichi Koizumi, Lakshya Dhingra, Rakibul Hasan",
+    "publish": "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+    "url": "https://doi.org/10.1145/3803628.3807974",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Proceedings of the Workshop on Privacy in Large Language Models (LLM) and Natural Language Processing (NLP) 2026",
+    "authors": "N/A",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1145/3803628",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Self-Promotion in LLM Recommendations",
+    "authors": "Rustom M. Dubash, Sorelle A. Friedler",
+    "publish": "Proceedings of the 18th ACM Web Science Conference 2026",
+    "url": "https://doi.org/10.1145/3795766.3799780",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "A Secure Retrieval-Augmented LLM Framework for Cloud-Based Incident Response",
+    "authors": "Saravanan Raj",
+    "publish": "2026 International Conference on Multidisciplinary Innovations For Smart &amp;amp; Sustainable Future (MISSF)",
+    "url": "https://doi.org/10.1109/missf68264.2026.11521941",
+    "source": "IEEE",
+    "abstract": "The response to a cloud incident is characterized by the need to make fast decisions and maintain evidentiary integrity, tenant isolation, and adherence to policies. In this paper, the authors introduce SRAG-IR, a secure retrievalaugmented LLM framework governing an incident response on the cloud that interconnects a controlled evidence lake and an attested retrieval and action layer. SRAG-IR builds a timeindexed part of incident memory over logs, alerts, tickets, and certified threat intelligence and determines only those fragments that are policy authorized through attribute-based access control and tenant-bound vector indices. A context firewall removes untrusted instructions in text accessed and enforces schema constrained prompts to minimize prompt injection and data exfiltration. Chunks of evidence are hash-chained and signed and produce verifiable cites and auditable respondent provenance. To have containment and recovery, sandboxed tool broker runs approved cloud actions as per playbook templates, producing change plans and rollback hints. The design enhances trust, privacy, and operational safety and does not need model retraining with multi-tenant production clouds. Dual retrieval integrates semantic search and asset-dependency graphs allowing root-cause hypothesis and prioritized triage suggestions should there be strict latency and cost budget limits."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Radgaze-LLM: Anatomical Region-Grounded Radiology Report Generation via Learning From Expert Gaze",
+    "authors": "Jamalia Sultana, Ruwen Qin, Zhaozheng Yin",
+    "publish": "2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)",
+    "url": "https://doi.org/10.1109/isbi61048.2026.11515459",
+    "source": "IEEE",
+    "abstract": "The increasing demand for fast and accurate diagnoses places significant strain on radiologists. Automated radiology report generation offers a solution by alleviating the time-intensive task of manual report writing. However, existing methods generate reports from broad image-level features, often overlooking critical anatomical regions. We propose a simple yet effective radiology report generation method (RadGazeLLM) that learns from expert eye-gaze data and anatomical regions. Using three-pronged multi-modal prompts that integrate expert eye-gaze, anatomical regions, and image features, RadGaze-LLM achieves state-of-the-art results on MIMIC-CXR and an overall <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\sim 9 \\%$</tex> relative improvement on IU-Xray over the strongest prior method."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "QwenCLIP: Boosting Medical Vision-Language Model Pretraining via LLM Embeddings and Prompt Tuning",
+    "authors": "Xiaoyang Wei, Camille Kurtz, Florence Cloppet",
+    "publish": "2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)",
+    "url": "https://doi.org/10.1109/isbi61048.2026.11515750",
+    "source": "IEEE",
+    "abstract": "Contrastive Language-Image Pretraining (CLIP) has demonstrated strong generalization for vision-language tasks in computer vision and medical domains, yet its text encoder accepts only up to 77 tokens, which limits its ability to represent long and information-rich radiology reports. Recent adaptations using domain-specific encoders, such as PubMedBERT or ClinicalBERT, mitigate this issue by leveraging medical corpora, but remain constrained by their limited input length (typically 512 tokens) and relatively shallow semantic understanding. To address these limitations, we propose QwenCLIP, a vision-language framework that replaces CLIP's text encoder with a large language model (LLM)-based embedding module (e.g., Qwen3-Embedding) and introduces learnable prompts to enhance cross-modal alignment. By leveraging the extended context window and richer representations of LLMs, QwenCLIP captures comprehensive medical semantics from long-form clinical text, substantially improving medical image-text alignment and downstream performance on radiology benchmarks. Our code is publicly available at https://github.com/Wxy-24/QwenCLIP."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "An IoT-Based Multi-Sensor Soil Health Monitoring System with LLM-Assisted Decision Support for Precision Agriculture",
+    "authors": "Raj Singh, Achintya Singhal, Vandana Sethi",
+    "publish": "2026 Second International Conference on Emerging Computational Intelligence (ICECI)",
+    "url": "https://doi.org/10.1109/iceci69159.2026.11519424",
+    "source": "IEEE",
+    "abstract": "Precision agriculture requires continuous soil observation, but current sensor-based technology is mainly focused on environmental and moisture aspects, offering limited support for monitoring critical soil nutrients and chemical properties essential for crop growth. To overcome this challenge, we developed an ESP32-based multi-sensor system that combines soil moisture, pH, environmental factors, and macronutrient data into an integrated sensing framework capable of providing a comprehensive view of soil health conditions. The collected data are transmitted to a cloud-based web interface, which incorporates a Large Language Model for intelligent, context-aware decision-making and real-time soil health assessment. Unlike conventional machine learning approaches, our system employs context-aware language model reasoning to analyze sensor data, detect soil health anomalies, and deliver practical and timely agricultural advice directly to farmers. The system’s integration and usability are validated through experimental implementation, demonstrating that macronutrient sensing combined with large language model-based decision support are scalable and practical for modern agricultural needs. Notably, results indicate that this continuous monitoring approach provides actionable insights in real time, in contrast to traditional laboratory soil testing, which typically involves multi-day delays."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Analysing Logs of LLM-Based Counselling-Style Conversation Agents: A Perspective from NLP",
+    "authors": "Chengqian Wang, Arjumand Younus, Kalpana Shankar",
+    "publish": "Proceedings of the 18th ACM Web Science Conference 2026",
+    "url": "https://doi.org/10.1145/3795766.3799774",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Arabic Handwritten Text Recognition Using TrOCR with LLM-Based Post-Processing",
+    "authors": "Amal J. Al Ali, Alanood M. Almansoori, Ashraf Elnagar",
+    "publish": "2026 1st International Conference on Emerging Technologies and Engineering Systems (ICETES)",
+    "url": "https://doi.org/10.1109/icetes68504.2026.11518724",
+    "source": "IEEE",
+    "abstract": "This paper proposes a two-stage approach to Arabic handwritten text recognition that blends vision-based OCR with language-model refinement. Because Arabic handwriting is inherently complex, with its flowing cursive style, contextdependent letter shapes, diacritics, and visually similar characters, straightforward digitization often falls short. The first stage finetunes a TrOCR model on 11,398 images from the KHATT dataset, achieving a Character Error Rate of 13.82 percent and a Word Error Rate of 35.66 percent, outperforming traditional vision-only systems. The second stage applies large language models to polish the OCR output. A locally deployed Falcon-2-11B model tends to preserve the original transcription closely, while the cloud-based Gemini model leans more toward semantic correction and normalization. A real-time interface supporting image uploads and freehand input was also developed for evaluation. Although vision transformers have nothing inherently better or worse than LLM, the strategy works generally fine when used in conjunction with LLM-based postprocessing."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Modernizing Legacy Enterprise Platforms Using LLM-Driven Refactoring and AI-Assisted Architecture Transformation",
+    "authors": "Nirmal Kumar Jingar",
+    "publish": "2026 3rd International Conference on Research Methodologies in Knowledge Management, Artificial Intelligence and Telecommunication Engineering (RMKMATE)",
+    "url": "https://doi.org/10.1109/rmkmate69073.2026.11518954",
+    "source": "IEEE",
+    "abstract": "The traditional enterprise systems tend to be based on monolithic architecture, obsolete programming models, and high levels of component integration, thus modernization is made difficult, risky, and consumes resources. Conventional refactoring methods are largely based on manual code inspection and rule of thumb tools that often do not maintain business logic and turn systems into scalable cloud-native systems. As a solution to these issues, the proposed research suggests an LLM-based Refactoring and AI-Assisted Architecture Transformation Framework (LRAATF) which combines the Large Language Models (LLMs) and autonomous AI agents to automatize semantic code comprehension, architectural decomposition, and modernization validation. The framework proposed comprises three synchronized layers, including the LLM Code Intelligence Layer to perform semantic parsing and dependency extraction, the AI Architecture Transformation Layer to convert monolithc to microservices and generate microservices, and the Governance and Validation Layer to verify the compliance with policies, the functional equivalence, and the trust scoring. A new algorithm of an LLM-Guided Enterprise Modernization (LGEM) takes place to maximize the quality, scalability, risk, and cost of modernization considering specific constraints. Experimental analysis proves that the suggested framework has strong positive effects on refactoring accuracy, scalability, reduction of risks, and transformation efficiency in comparison with the already existing strategies like the HARMLESS and the ServiceMiner model. The findings substantiate the notion that the combination of LLM intelligence with AI-augmented architecture transformation represents a scalable and proven avenue of the modernization of the legacy enterprise platforms with the minimum of human involvement as well as low-risk operation."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "AraToxi-Agent: A Multi-LLM Consensus System for Arabic Toxicity Detection and Sanitization",
+    "authors": "Israa R. A. Lulu, Fatima A. Alhammadi, Ashraf Elnagar",
+    "publish": "2026 1st International Conference on Emerging Technologies and Engineering Systems (ICETES)",
+    "url": "https://doi.org/10.1109/icetes68504.2026.11518772",
+    "source": "IEEE",
+    "abstract": "This paper introduces AraToxi-Agent, a hybrid Arabic toxicity moderation system, a system that uses transformer-based toxicity classification and multi-LLM consensus analysis to obtain toxicity knowledge and detoxify. According to the performance of three Arabic pretrained models, MARBERT, AraBERT, and CAMeLBERT, based on the Jordanian Hate Speech Corpus (JHSC), we fine-tuned them to compare their binary toxicity detection. The JHSC dataset serves as a benchmark corpus for comparison with recent Arabic hate speech research. The best classifier was implemented in an automated n8n workflow to support real-time moderation and combined with GPT and Gemini to allow dual-LLM assessment which generates toxicity classes, justification rationales, and safe neutral rewrites. Such a design is based on consensus and reduces reliance on a single generative model and model-specific bias in moderation decisions. Training data balancing can greatly improve both recall and F1-score, as the experimental results show, which is particularly important for moderation systems, where the failure to recognize harmful content is more perilous than false positives. The combined transformer-LLM architecture generates transparent, interpretable moderation results that can be directly embedded into working pipelines. In practice, the system in question can be implemented for social media monitoring, content moderation websites, and educational or governmental digital services that need safety measures implemented in Arabic. In summary, this paper provides a single detection and detoxification pipeline for the Arabic layer and exemplifies a practical end-to-end solution to the management of harmful online materials in the real world."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "PLANTWIN: Privacy-Preserving Planning Abstractions for Cloud-Assisted LLM Agents",
+    "authors": "Guangsheng Yu, Qin Wang, Rui Lang, Shuai Su, Xu Wang",
+    "publish": "IEEE Transactions on Services Computing",
+    "url": "https://doi.org/10.1109/tsc.2026.3695494",
+    "source": "IEEE",
+    "abstract": "Cloud-hosted large language models (LLMs) have become the de facto planners in agentic systems, coordinating tools and guiding execution over local environments. In many deployments, however, the environment being planned over is private, containing source code, files, credentials, and metadata that cannot be exposed to the cloud. Existing solutions address adjacent concerns, such as execution isolation, access control, or confidential inference, but they do not control what cloud planners observe during planning: within the permitted scope, raw environment state is still exposed. We introduce PLANTWIN, a schema-constrained projection based architecture for cloud-assisted planning that prevents raw local context from leaving the local boundary. The key idea is to project the real environment into a planning-oriented digital twin: a schema-constrained and de-identified abstract graph that preserves planning-relevant structure while removing reconstructable details. The cloud planner operates solely on this sanitized twin through a bounded capability interface, while a local gatekeeper enforces safety policies and cumulative disclo sure budgets. We further formalize the privacy–utility trade-off as a capability granularity problem, define architectural privacy goals using (k,δ)-anonymity and ε-unlinkability, and mitigate compositional leakage through multi-turn disclosure control. We implement PLANTWIN as middleware between local agents and cloud planners and evaluate it on 60 agentic tasks across ten domains with four cloud planners. PLANTWIN achieves SND = 1.0 against passive-observer adversaries, while maintaining planning quality close to full-context systems: three of four cloud planners achieve PQS > 0.79, within ∼4% of the no-privacy Raw Context baseline; the privacy-hardening pipeline stages add less than 2.2 percentage points of further PQS variation. Residual identifiability under stronger structural-fingerprint adversaries persists and is bounded by deployment-side controls rather than architecturally eliminated."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Energy- and AoI-Aware Hierarchical Personalized Federated Learning for Distributed Edge Systems with Selective LLM Module Exchange",
+    "authors": "Faranak Solat, Joohyung Lee",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3695103",
+    "source": "IEEE",
+    "abstract": "Distributed edge systems require federated learning (FL) frameworks that can jointly support timely model updates, user-level personalization, and communication-efficient coordination. However, conventional hierarchical federated learning (HFL) methods mainly focus on reducing communication overhead and often struggle to maintain model freshness and local adaptability in multi-tier environments with heterogeneous data and resource constraints. To address these challenges, we propose an Energy- and Age-of-Information (AoI)-Aware Hierarchical Personalized Federated Learning (EA-HPFL) framework. The proposed method introduces two key ideas: 1) selective module exchange, in which clients communicate only lightweight adapter, head, or other trainable sub-module updates instead of full model parameters; and 2) deterministic AoI- and energy-aware aggregation, in which freshness and energy indicators guide client- and edge-level aggregation. This design enables efficient hierarchical coordination while preserving local personalization under non-IID data distributions. Experimental results on WESAD, HAR, and Amazon-EN show that EA-HPFL provides a favorable trade-off among communication efficiency, update freshness, and personalized performance across diverse edge settings. In particular, the proposed framework maintains competitive accuracy while substantially reducing the overhead associated with full-model exchange, and the revised TinyLlama-based Amazon-EN evaluation further confirms its effectiveness in an LLM-oriented setting. These results demonstrate the practical value of AoI-aware coordination and selective sub-module exchange for scalable and adaptive FL in real-time intelligent edge systems."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "LLM-Driven Autonomous Reasoning for Scientific Knowledge Discovery",
+    "authors": "Maulik Bhatt, Navdeep Singh, Gulshan Dhasmana, Prabhakar Bhandari, Konda Mamatha, Amit Chaudhary",
+    "publish": "2026 International Conference on Multidisciplinary Innovations For Smart &amp;amp; Sustainable Future (MISSF)",
+    "url": "https://doi.org/10.1109/missf68264.2026.11521892",
+    "source": "IEEE",
+    "abstract": "Scientific discovery is requiring systems which are not only able to process data, but also able to reason in complex areas independently. The following paper presents a new autonomous reasoning (LDAR) system based on LLMs that promotes the use of large language models (LLMs) to level beyond pattern recognition and guide to scientific inference autonomously. The LDAR architecture is unlike existing methods, which need human-corroborated pipelines or fixed knowledge graphs, as it is a dynamic synthesis of multi-modal scientific products, predicts hypothesis spaces, abandons loops of iteration, making use of contextualized symbolic grounding and causal trace validations. A reasoning controller that breaks down discovery tasks into interpretable sub-goals and incorporates a meta-learning verifier that assesses hypothesis using domain constraints, experimental data and logical consistency are introduced. It is based on this synergy that LDAR can create new insights on its own, suggest testable hypotheses and revise conceptual structures without the aid of a person. There is also a preliminary test on benchmark scientific corpora that has proven to be well-correlated to domain knowledge and enhancing conceptual generalization. The future generation of AI systems with autonomous scientific reasoning and discovery is made possible by the proposed framework."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "A Safety-Aligned LLM Framework for Trustworthy Decision Making",
+    "authors": "Debrath Banerjee, Yuvraj Joshi, Sriharsha Makineni, Surabhi Shankar, Amit Dutt, M. Lakshman",
+    "publish": "2026 International Conference on Multidisciplinary Innovations For Smart &amp;amp; Sustainable Future (MISSF)",
+    "url": "https://doi.org/10.1109/missf68264.2026.11522245",
+    "source": "IEEE",
+    "abstract": "A Safety-Loyal considerable Architecture of Reliable Decision Making presents a visionary model that impregnates large-scale model rationale with normative and risk consciousness, and verifiability. The framework incorporates value-based layers of policies, uncertainty sensitive inference and continuous alignment auditing to control the decision pathways in dynamic settings. The design does not merely maximize surface rather it focuses on minimizing harm, consistency, and accountability when dealing with a group of reasoning tasks of multi-steps. An abstract to machine interpretable compiled compiler mapping constraint results as machine interpretable guards, and a causal trace module maintaining transparent reasons why a decision was made in any direction. Adaptive feedback Loops refresh model behavior based on a disagreement signal, distributional deviation, and an ethical stress test, which avoids degrading behaviour over time. The framework also allows rule injection-based domain specific governance through retraining-free modular deployment in high stakes environments. Combining enforcements of alignment, explainability, and robustness in one decision pipeline, the suggested framework pushes the idea of trustful decision making on LLPs beyond reactive controls toward proactive and constantly verified safety aspects. This kind of integration enhances belief in reasoning systems."
+  },
+  {
+    "date": "2026-5-21",
+    "title": "Building LLM-Based Voice Agents for Requirements Elicitation: An Experience Report on Early Prototypes",
+    "authors": "Oshani Weerakoon, Tuomas Mäkilä, Erkki Kaila, Shola Oyedeji",
+    "publish": "Proceedings of the 2026 International Workshop on Agentic Engineering",
+    "url": "https://doi.org/10.1145/3786167.3788420",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-5-20",
+    "title": "LLM-Powered Automation for Cloud Vulnerability Scanning and Reporting",
+    "authors": "Narayana Swamy Ramaiah, Suresh Ranganathan, Sheik saidhbi, A. Rajeswari, N. Vijayakumari, R. Abeetha",
+    "publish": "2026 International Conference on Multidisciplinary Innovations For Smart &amp;amp; Sustainable Future (MISSF)",
+    "url": "https://doi.org/10.1109/missf68264.2026.11522059",
+    "source": "IEEE",
+    "abstract": "The fast-growing trends towards cloud-native infrastructures have ensured the increment of attack surface and vulnerability management aspects, which require simpler but adaptive and context-aware security automation. The current paper introduces the new framework containing LLM-Powered Automation of Cloud Vulnerability Scanning and Reporting, an original solution designed to implement semantic-based security evaluations through the combination of large language models with ongoing cloud telemetry, configuration analysis, vulnerability intelligence feeds. In contrast to signature-based engines or static rule engines, the proposed system uses scan results, logs and infrastructure markers to produce normalized, explicative, and prioritized vulnerability reports within close to real-time. The architecture deploys a reasoning layer founded on the LLM which links misconfigurations, services to the outside world, and threat guidance to infer compound risk patterns in multi-cloud settings. Automated remediation advice is generated with prompt-governed argumentation, which guarantees adherence to organizational and regulatory limitations. The structure also underpins dynamic scanning approach as it dynamically changes probing depth as seen risk and asset criticality. The proposed method leverages natural language logic and security analytics to advance the detection reach, reporting lucidity, and operational effectiveness, which is appropriate in massive and constantly shifting cloud environments."
+  },
+  {
+    "date": "2026-5-20",
+    "title": "Knee Osteoarthritis Severity Grading Using Optimized Deep Learning and LLM-Driven Intelligent AI on Computationally Limited Systems",
+    "authors": "Dayam Nadeem, Neha, Safdar Mustafa, Adnan Alvi, Mohd Hussain",
+    "publish": "2026 Second International Conference on Emerging Computational Intelligence (ICECI)",
+    "url": "https://doi.org/10.1109/iceci69159.2026.11519471",
+    "source": "IEEE",
+    "abstract": "Knee osteoarthritis (KOA) is among the musculoskeletal disorders that considerably restrict joint mobility, cause severe chronic pain and impact negatively on quality life. It is one of the persistent health issues worldwide. Generally, subjectivity and inter-observer variability undermine conventional practices and evaluation process that are adopted to address such health issues. Hence precise and timely diagnosis would be one of the effective ways for the assessment of its severity. This paper proposes an automated diagnostic approach for severity grading of KOA by blending a deep learning convolutional neural network (CNN) with a device-based inference platform powered by TensorFlow Lite. It proposes a model based on the ResNet-18 convolutional neural network. The designed model is trained on publicly available database. Through a transfer learning approach obtained knee images are first classified into five KellgrenLawrence (KL) grades. Further the developed model is optimised. During the training of the model test accuracy of 94.48%. with stable convergence has been achieved. Subsequently the optimised model transformed into a lightweight TensorFlow Lite format, facilitating seamless deployment on resource-constrained devices. The designed model is capable enough to operate in the environment having no continuous internet connectivity. Also, an auxiliary Large Language Model (Gemini-2.0-flash) is applied to generate structured interpretive findings like potential symptoms, risk factors, and preventive majors etc. The LLM component functions as interface without influencing the classification process. The proposed model articulates the feasibility of an ondevice, interpretable decision-support tools for early diagnosis and improve accessibility to Artificial Intelligence (AI)-assisted knee screening tool."
+  }
+]
