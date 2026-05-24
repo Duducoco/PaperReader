@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-05-20",
+    "title": "Trace2Skill: Verifier-Guided Skill Evolution for Long-Context EDA Agents",
+    "authors": "Zijian Du, Nathaniel Pinckney",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.21810v1",
+    "source": "arXiv",
+    "abstract": "Complex Verilog Design Problems (CVDP) challenge hardware LLM agents because solving them requires localizing verifier-relevant RTL, testbenches, include paths, and build dependencies inside large repository snapshots, making precise edits, and recovering from sparse hidden-verifier failures. We present Trace2Skill, a test-time scaling framework that improves a hardware agent without RTL-specialized model fine-tuning. Rather than training a new model or only sampling more candidate solutions, Trace2Skill treats the agent's natural-language skill as an evolvable policy. It mines repeated rollout traces for success and failure modes, converts them into dense diagnostics and oracle lessons, and uses an oracle, mutator, and selector loop to produce task-specific skills that guide later search, editing, validation, and recovery. Because final pass/fail labels are often too coarse for hard failures, Trace2Skill also supports bounded runtime dense verifier feedback that returns sanitized functional observations while keeping hidden harnesses and reference solutions inaccessible to the agent. This feedback helps guide skill evolution and agent execution by connecting skill text, verifier evidence, and downstream behavior. Across hard CVDP tasks that defeat the seed CVDP agent, including tasks that also defeat frontier coding agents, Trace2Skill with dense verifier feedback substantially improves task pass rates and produces breakthrough passes on previously unsolved tasks, without requiring high-quality fine-tuning data, specialized RTL model training, or model weight updates. The same framework provides a general test-time scaling strategy that can extend beyond digital design to other verifiable EDA tasks.",
+    "title_zh": "Trace2Skill：基于验证器引导的技能进化框架，用于长上下文EDA代理",
+    "abstract_zh": "复杂的Verilog设计问题（CVDP）对硬件LLM代理提出了挑战，因为解决这些问题需要在大型代码库快照中定位与验证器相关的RTL、测试平台、包含路径和构建依赖项，进行精确编辑，并从稀疏的隐藏验证器失败中恢复。我们提出了Trace2Skill，这是一种测试时扩展框架，可以在无需针对RTL进行模型微调的情况下提升硬件代理的能力。与训练新模型或仅增加候选解决方案采样不同，Trace2Skill将代理的自然语言技能视为一种可进化的策略。它通过分析重复的回滚轨迹，挖掘成功和失败模式，将其转化为密集的诊断信息和Oracle课程，并通过Oracle、变异器和选择器循环生成任务特定技能，以指导后续的搜索、编辑、验证和恢复过程。由于最终的通过/失败标签对于严重失败通常过于粗略，Trace2Skill还支持有限运行时的密集验证器反馈，该反馈返回经过清理的功能性观察结果，同时保持隐藏的测试框架和参考解决方案对代理不可访问。这种反馈通过连接技能文本、验证器证据和下游行为，帮助指导技能进化和代理执行。在击败初始CVDP代理的困难CVDP任务中，包括击败前沿编码代理的任务，Trace2Skill结合密集验证器反馈显著提高了任务通过率，并在之前未解决的任务上实现了突破性通过，而无需高质量的微调数据、专门的RTL模型训练或模型权重更新。同一框架提供了一种通用的测试时扩展策略，可扩展到数字设计以外的其他可验证EDA任务。"
+  }
+]
