@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-05-22",
+    "title": "A Manifold-Based Framework for Coupling-Aware Surrogate Optimization of Antenna Arrays Using Characteristic Modes",
+    "authors": "Leonardo Mörlein, Dirk Manteuffel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23851v1",
+    "source": "arXiv",
+    "abstract": "A surrogate-based synthesis framework for antenna arrays is presented that incorporates mutual coupling while keeping optimization computationally efficient. The method combines a common characteristic-mode basis, a global modal coupling model, and element-wise generalized scattering matrices (GSMs). Array design variables are formulated and optimized on physically meaningful manifolds, in particular the manifold of unitary symmetric matrices for reciprocal and lossless element GSMs. A staged penalty strategy is used to progressively enforce sidelobe and cross-polarization constraints during multi-beam optimization. The framework is demonstrated for an 8x8 left-handed circularly polarized patch phased array with scan behavior in one principal plane. Different degree-of-freedom assignment strategies are compared, showing that constrained non-identical element classes can satisfy stringent pattern requirements where equal-element designs fail. For the demonstrated case, the optimization converges within seconds on a single CPU core, and full-wave verification of the realized arrays confirms the predicted trends, with good agreement for the SLL and useful accuracy for the XPR. The results indicate that the proposed formulation is a practical and scalable route for coupling-aware array synthesis and realization."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "A blueprint for constructing 3-pass AKE protocols under commitment-based models",
+    "authors": "Rodrigo Martín Sánchez-Ledesma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23843v1",
+    "source": "arXiv",
+    "abstract": "The commitment-based AKE model provides a formal security framework for key exchange protocols that avoid long-term cryptographic material, achieving authentication through a final out-of-band verification of session-derived values. Within this model, secure KA-based and KEM-based protocols were previously constructed via a commitment-based MT compiler, yielding optimized 4-pass protocols. In this work, we show that 3-pass protocols secure under this model exist for both primitives. These protocols are constructed ad hoc, following the core ideas of the commitment-based MT authenticator, and their SK security in the unauthenticated model is proved using the same game-based techniques, achieving bounds of the same form as those previously achieved. The resulting protocols provide one-way authentication in three message exchanges."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Agentic Proving for Program Verification",
+    "authors": "Alessandro Sosso, Akhil Arora, Bas Spitters",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23772v1",
+    "source": "arXiv",
+    "abstract": "Agentic systems have recently emerged as state-of-the-art approaches for automated theorem proving in formal mathematics. To assess how far these capabilities extend to program verification, we evaluate Claude Code in an agentic proving framework on CLEVER, a Lean 4 benchmark for verifiable code generation. Our results show that Claude generates arguably valid specifications for 98.8% of problems (with 81.3% also accepted by CLEVER's isomorphism-based scoring on the correct portion of the benchmark), certifies implementations against correct ground-truth specifications for 87.5% of problems, and reaches a 98.1% success rate on the end-to-end program generation and verification pipeline over entries with self-consistent premises. Across all stages, Claude further provides high-quality feedback on its own attempts (as confirmed under manual review), identifying underlying causes of failure and lingering bugs in the dataset. These findings highlight a growing mismatch between the difficulty of existing program verification benchmarks and the capabilities of modern agentic provers, and point to the need for more rigorous, bug-resilient evaluation methodologies, and in particular for alternatives to isomorphism-based scoring of generated specifications. More broadly, our results provide empirical evidence that tight compiler-in-the-loop agentic paradigms are currently the most effective approach for foundational program verification."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "DAE4HLS: Exposing Memory-Level Parallelism for High-Level Synthesis using Explicit Decoupling",
+    "authors": "David Metz, Magnus Själander",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23549v1",
+    "source": "arXiv",
+    "abstract": "High-level synthesis (HLS) performs well for simple memory access patterns, such as for sequential accesses that can be turned into bursts, or for memory accesses into small datasets that can be stored in scratchpads. This limits HLS to accelerating only the low-hanging fruit, where memory-level parallelism is either trivially abundant, due to simple access patterns, or latency is low, due to the small dataset. Applications with more complex access patterns on large datasets would also benefit from acceleration, and would especially benefit from the reduction in design and verification effort that HLS promises. In this paper, we present DAE4HLS, a decoupled access-execute (DAE) paradigm for HLS. We propose a new programming model for explicitly decoupling requests and responses, which unlocks memory-level parallelism that otherwise cannot be automatically provided by a compiler. We apply the DAE4HLS paradigm to the commercial AMD Vitis HLS toolchain and show that the existing AXI stream and AXI burst interfaces can be repurposed for explicit decoupling. We further apply the paradigm to a dynamic-HLS framework, which is better suited for handling irregular workloads as compared to statically scheduled HLS. We show that support for explicit decoupling improves the performance and achieves a total speedup of 10-79$\\times$."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test",
+    "authors": "Zhangyi Hu, Chenhui Liu, Tian Huang, Jindong Li, Yang Yang, Jiemin Wu, Zining Zhong, Menglin Yang, Yutao Yue",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23491v1",
+    "source": "arXiv",
+    "abstract": "Recently, Reinforcement Learning with Verifiable Rewards (RLVR) and Test-Time Scaling (TTS) have advanced LLM code generation through executable verification. Yet Ground-Truth Unit Tests (GT UTs) remain a bottleneck: SOTA RLVR methods require them for costly training, while existing TTS methods lose competitiveness without them. This motivates GT-free TTS, where existing methods directly use self-generated UTs to refine and select code candidates. Yet such UTs are often noisy or spuriously coupled with wrong code, and UT quality in turn cannot be validated without reliable code. The key challenge is therefore to jointly improve both. To this end, we present CoSPlay, a GT-free, training-free framework that jointly improves codes and UTs through cooperative self-play. It first explores diverse solution ideas and identifies their potential failure modes to produce discriminative UT ideas. It then uses bidirectional pass-count signals from the Code-UT execution matrix to iteratively prune or fix weak codes and refresh or replace unreliable UTs, letting the two pools co-evolve. Finally, when multiple codes remain tied at the highest pass count, it picks the final code from the largest output-consensus cluster, since correct codes agree on the same inputs while wrong codes diverge. Experiments on four challenging benchmarks show that CoSPlay on Qwen2.5-7B-Instruct improves average BoN from 22.1% to 33.2% and UT accuracy from 14.6% to 78.3%, matching or surpassing the RLVR model CURE-7B. When applied to CURE-7B, it further improves BoN by 5.7%. CoSPlay also generalizes across diverse backbones and outperforms GT-free TTS baselines under comparable token budgets, with continued gains as the budget scales up. These results suggest a scalable inference strategy for competitive code generation without any GT data."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+    "authors": "Chitra Badagi, Divye Singh, Animesh Sen, Adinath Shirsath",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23459v1",
+    "source": "arXiv",
+    "abstract": "Enterprise AI systems, built on large language models, retrieval pipelines and autonomous agents, introduce a class of risks that traditional software quality assurance was never designed to address. These systems are probabilistic, context-sensitive and emergent: they cannot be verified to be correct in the classical sense, but only evaluated with increasing confidence. This paper presents a comprehensive assurance strategy for enterprise AI systems built around three key principles: first, that AI testing should focus on continuous risk reduction rather than strict correctness verification; second, that evaluation must be treated as a core engineering discipline alongside development; and third, that failures in AI assurance can lead to organizational impacts that are fundamentally different from those seen in traditional deterministic software systems. We introduce a structured AI Failure Taxonomy, propose a revised five-layer AI Assurance Pyramid and provide operational guidance on evaluation-driven development, RAG system testing, model lifecycle management and governance. The goal is to equip engineering leaders and practitioners with a strategy that is both philosophically grounded and operationally deployable."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Quantum Simulation of Energy Bifurcation and Z_2-Symmetry Restoration in Macroscopic Quantum Tunneling",
+    "authors": "Masao Hirokawa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23413v1",
+    "source": "arXiv",
+    "abstract": "Macroscopic quantum tunneling (MQT), a cornerstone of Leggett's program, is deeply linked with instanton physics, yet its experimental verification remains elusive. This Perspective demonstrates that the quantum Rabi model manifests observable, instanton-like effects via quantum simulation. In the MQT regime, qubit-boson interactions drive Polyakov's energy bifurcation, governing tunneling and spontaneous symmetry breaking. Mapping the quantum Rabi model onto an effective double-well potential reveals that while tunneling suppression induces spontaneous symmetry breaking, instanton-like contributions act to restore it. This mechanism enables experimental access to the classical Euclidean action of an effective instanton-like particle, offering a route to probe non-perturbative phenomena."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Formal Verification of Probing Security via Conditional Independence",
+    "authors": "Satoshi Kura, Katsuyuki Takashima",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23316v1",
+    "source": "arXiv",
+    "abstract": "Side-channel attacks are a major threat to the security of cryptosystems. Masking is a widely used countermeasure against such attacks, but proving the security of masked algorithms is error-prone without formal verification. In this work, we propose a novel approach to formal verification of noninterference properties of masked algorithms based on probabilistic separation logic. By establishing a connection between noninterference and conditional independence, we show how noninterference can be verified using Lilac, a separation logic for conditional independence. We also provide several proof rules that facilitate the verification of probing security and demonstrate their application to example algorithms."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Ontological Knowledge Blocks: Executable Compliance and Profile-Based Validation for Trustworthy AI Systems",
+    "authors": "Aasish Kumar Sharma, Julian M. Kunkel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23297v1",
+    "source": "arXiv",
+    "abstract": "AI-enabled services deployed in critical digital infrastructure are subject to governance obligations spanning transparency, accountability, fairness, and traceability. Compliance today remains documentation-centric: obligations are described in prose, audits rely on static checklists, and verification depends on manual review. Such approaches do not scale to automated AI systems. This paper introduces Ontological Knowledge Blocks (OKBs), a programmable governance infrastructure that compiles regulatory obligations into machine-checkable constraints over structured evidence graphs. We formalize an OKB as a 5-tuple that binds normative obligations to an RDF/OWL concept schema, executable SHACL validation rules, explicit evidence requirements, and PROV-O provenance links. A deterministic regulatory compiler translates structured Intermediate Representation (IR) records into composable KB modules, enabling profile-based governance reconfiguration without modifying service code. We implement two prototypes and evaluate them in an AI-assisted HPC resource allocation scenario across 24 validation runs and four governance profiles. Results demonstrate profile-sensitive validation, strictly additive violation accumulation, SHACL validation latency between 12.6 ms and 100.3 ms, and profile equivalence testing confirming Combined as the strictly most comprehensive profile. All artefacts are released as open source."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Lipschitz Optimization for Formal Verification of Homographies",
+    "authors": "Jean-Guillaume Durand, Panagiotis Kouvaros, Maxime Gariel, Alessio Lomuscio",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23203v1",
+    "source": "arXiv",
+    "abstract": "The adoption of vision neural networks in regulated industries requires formal robustness guarantees, especially in safety-critical domains such as healthcare, autonomous vehicles, and aerospace. However, current approaches are confined to incomplete statistical verification or robustness to $\\ell_p$-norm and affine transforms, which cover only a narrow subset of perturbations to the image formation process. In particular, robustness to camera motion remains an open problem despite being key to deploy many vision applications. We present a formal verification approach that targets robustness against 3D motion perturbations of the capturing camera. We first establish a closed-form mapping from camera pose to pixel values. By analyzing the continuity properties of the resulting homographies, we show that recent work on Lipschitz optimization and piecewise continuity can be extended to derive tight linear bounds on perturbed pixel values. Our approach applies to scenes with predominantly planar structure, such as ground planes in augmented reality, road markings and traffic signs in autonomous driving, or planar workspaces in robotic manipulation. This enables the first formal verification of projective geometry transforms, without complex simulation, surrogate networks, or explicit image-formation models. We validate our implementation and show up to 89% speedup and 7% tighter bounds over prior work. We then evaluate our method on the VNN-COMP benchmark and reveal systematic weaknesses to projective perturbations. Finally, we demonstrate a real-world case study on a safety-critical runway classifier, highlighting practical vulnerabilities to camera motion, and addressing a key challenge in the certification of learned models. Data and code are publicly available at https://github.com/jeangud/homography-verification ."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "IntentionNav: A Benchmark for Intent-Driven Object Navigation from Implicit Human Instruction",
+    "authors": "Lin Qian, Shijie Li, Sihao Lin, Xuan Zhang, Bangya Liu, Yanran Li, Hujun Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23187v1",
+    "source": "arXiv",
+    "abstract": "Existing object navigation benchmarks usually tell an embodied agent which object category to find, such as microwave or chair. Human-facing embodied AI is often asked something less direct: \"I need something to warm this food\" or \"the room feels stuffy.\" The agent must infer the object that can satisfy the need, find a scene-grounded instance, and decide whether the goal has been reached. We study this setting as intent-driven object navigation and introduce IntentionNav, a diagnostic benchmark for active object search from implicit human instructions. Each episode provides a free-text intent, RGB-D observations, and pose, but withholds the target object name. IntentionNav contains 500 intents over 176 Isaac Sim scenes and 64 target categories. Each intent is rewritten in four controlled instruction styles and annotated with one of four intent modes, separating surface phrasing from semantic cue type under matched geometry. This paired design supports analysis of target inference, language robustness, neighborhood reachability, and terminal success rather than only aggregate success. We evaluated three VLMs using a fixed active-navigation agent. Models identify the intended target in 48.3 percent of episodes and enter its 2 m neighborhood in 68.7 percent, but terminate successfully in only 24.9 percent and achieve grounded 1 m success in 5.5 percent. Success is highest for event-script intents (28.7 percent) and lower for physical-state and affordance intents (19.2 percent and 18.5 percent), showing that indirect human intent remains a bottleneck for target selection, visual verification, and terminal localization in active embodied search."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Redrawing the AI Map: A Theory of Accountability Boundaries in Agentic Ecosystems",
+    "authors": "Muhammad Zia Hydari, Farooq Muzaffar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23179v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI orchestrators reduce the interface and assembly costs of composing information systems capabilities across organizational boundaries, seemingly accelerating modularization and organizational disaggregation. Yet AI-enabled capabilities whose outputs require evidence, review, signoff, or assignable responsibility may retain integrated accountability boundaries even when their technical interfaces become modular. We develop a capability-level theory of accountability-boundary placement in agentic ecosystems. We introduce accountability assets: complementary assets that make AI-supported outputs legitimate, auditable, reviewable, and assignable to a responsible party. We argue that verification cost and responsibility transferability determine whether the execution and accountability boundaries can move together. The theory identifies three boundary strategies: component, integrated, and dual-track. It also introduces rule debt, the governance burden that accrues when organizational decision rules migrate from formal information systems into ungoverned agentic execution environments. Integrating digital innovation, transaction cost, complementary-assets, digital platform governance, and IS control perspectives, we develop seven propositions linking agentic assembly-cost reductions, accountability assets, appropriability, orchestrator intent capture, and boundary misconfiguration to boundary strategy, value appropriation, and rule debt. The theory explains when digital modularization extends to organizational disaggregation and when accountability keeps capabilities integrated. Structured illustrations across document processing, legal services, audit, clinical decision support, and procurement discipline the boundary logic."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Robust LLM Watermarking with Minimal Semantic Distortion for IP Protection",
+    "authors": "Kieu Dang, Phung Lai, NhatHai Phan, Yelong Shen, Ruoming Jin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23175v1",
+    "source": "arXiv",
+    "abstract": "Proprietary large language models (LLMs) face risks of intellectual property (IP) violation, as adversaries can replicate an LLM by collecting input-output pairs to train a surrogate model, causing financial setbacks. Watermarks offer a promising defense to verify ownership, but existing methods often struggle with semantic distortion, factual inconsistency, and adversarial attacks. In addition, key-conditioned watermarks for provider-specific detection, especially in cross-provider and multi-user scenarios, remain largely underexplored. To address these challenges, we propose SAFESEAL, a novel key-conditioned watermarking framework that achieves strong detectability with minimal impact on model utility, effectively balancing detectability, utility, and robustness. SAFESEAL preserves named entities while substituting linguistic terms with context-aware synonyms through a key-conditioned Tournament sampling mechanism, maintaining semantic fidelity and factual consistency. For detection, we introduce a key-conditioned contrastive detector that jointly encodes the text and key, enabling provider-specific and robust watermark verification. We derive theoretical bounds on the utility-detectability trade-off and significantly reduce latency through lightweight models, batching, and parallelism. Extensive experiments show that SAFESEAL outperforms baselines in utility, detectability, and robustness, achieving a BERTScore of 0.983, entity similarity of 0.963, a 98.2% detection rate, and the highest human ratings for text quality and content preservation, with latency comparable to the fastest baseline. To promote transparency and community-driven progress, we release the first public watermark leaderboard and an interactive demo."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "SolarChain: Bridging Physical Law, Verifiable Trust, and Sustainable Markets for Urban Energy Resilience",
+    "authors": "Shilin Ou, Yifan Xu, Zhenshan Zhang, Luyao Zhang, Ming-Chun Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23162v1",
+    "source": "arXiv",
+    "abstract": "Urban decarbonization requires scaling rooftop solar across millions of fragmented producers, yet cities face a fundamental tension: energy data is easily manipulated, and economic incentives often reward speculation rather than actual infrastructure deployment. We present SolarChain, a platform that resolves both problems by anchoring digital accountability to the thermodynamic limits of solar energy conversion. Using real-time meteorological data, geospatial coordinates, and first-principles calculations of solar yield, the system establishes a hard physical boundary for every panel's maximum possible output; any reported generation exceeding this limit is automatically rejected before entering the shared ledger. This trustless verification enables a peer-to-peer marketplace with programmatic reward structures that continuously reinvest value into equipment maintenance and market liquidity, preventing the speculative hoarding that typically destabilizes blockchain-based marketplaces. When electricity is consumed, the corresponding digital credits are permanently retired in direct proportion to physical energy dissipation, creating an auditable one-to-one mapping between urban consumption and carbon accounting. Deployed across heterogeneous city nodes, the prototype demonstrates resilience against data injection attacks while lowering capital barriers for community-level solar expansion. Beyond energy, the framework offers a general model for coordinating economic activity with physical law in any domain where distributed infrastructure demands both data integrity and sustainable investment. We release the data and code as open-access on GitHub."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "The Impact of AI Coding Assistants on Software Engineering: A Longitudinal Study",
+    "authors": "Annie Vella, Kelly Blincoe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23135v1",
+    "source": "arXiv",
+    "abstract": "AI coding assistants have become prolific in recent years. Through a longitudinal mixed-methods investigation, we examined how professional software engineers perceive the effects of AI coding assistants in regard to task focus, developer experience, and productivity. Two questionnaires were administered six months apart, yielding 158 eligible participants at the first time point, 101 at the second, and a matched longitudinal cohort of 95. Participants reported spending less time on most development tasks, with 82% reporting less on writing code. We find broader shift in focus from creation to verification activities. We propose a new category of work we term supervisory engineering work, encompassing the direction, evaluation, and correction of AI output. We also identified a productivity-experience paradox: productivity perceptions held stable, with 84% reporting improvement at both time points, yet among matched participants, the proportion reporting worsened developer experience in at least one dimension nearly doubled from 14% to 27%, with flow state and cognitive load eroding while feedback loops improved. These findings suggest that AI coding assistants are impacting both the nature of software engineering work and how engineers experience it."
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Exploiting Longitudinal Context in Clinician-Verified Interactive Lesion Tracking",
+    "authors": "Yannick Kirchhoff, Maximilian Rokuss, Daniel Philipp Mertens, David Füller, Benjamin Hamm, Andreas Schreyer, Oliver Ritter, Klaus Maier-Hein",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23118v1",
+    "source": "arXiv",
+    "abstract": "Tracking tumor lesions across serial CT scans is essential for oncological response assessment. Existing automated methods face a fundamental trade-off: end-to-end trackers achieve high automation but offer no opportunity to correct silent tracking failures, while decoupled registration-segmentation pipelines permit user verification yet discard the lesion's prior appearance, limiting accuracy in ambiguous cases. In this work, we propose a Verified Tracking paradigm: a clinician verifies a registration-proposed prompt, which the model leverages alongside the baseline lesion appearance to resolve segmentation ambiguities. We present a unified framework combining early spatial prompt fusion with latent temporal difference weighting for longitudinally-informed segmentation. To address data scarcity, we leverage large-scale synthetic pretraining, proving essential for exploiting longitudinal context, improving performance by up to 4.5 Dice points over training from scratch. Our approach secured first place in the MICCAI autoPET IV challenge. We further curate and release PanTrack, a new longitudinal pancreatic cancer benchmark, to assess out-of-distribution generalization. Experiments show that our model outperforms prior work in both fully automatic and the proposed verified tracking setting offering a clinically safe middle ground between automation and control. Code, model and dataset will be released at https://github.com/MIC-DKFZ/LongiSeg"
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Inductive Deductive Synthesis: Enabling AI to Generate Formally Verified Systems",
+    "authors": "Shubham Agarwal, Alexander Krentsel, Shu Liu, Mert Cemri, Audrey Cheng, Rui Meng, Tomas Pfister, Chun-Liang Li, Sylvia Ratnasamy, Aditya Parameswaran, Matei Zaharia, Ion Stoica, Mohsen Lesani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23109v1",
+    "source": "arXiv",
+    "abstract": "AI agents increasingly excel at generating, testing, and refining code. However, they fall short on tasks requiring formal guarantees of full coverage that testing alone cannot provide. Distributed systems are a prime example: properties such as consistency between reads and writes must hold under every possible interleaving of events. Mechanized formal verification can guarantee such correctness, but typically demands months to years of expert effort. As evidence, even SOTA coding agents (Codex with GPT-5.4 and Claude Code with Opus 4.6) succeed on only 2/7 distributed key-value-store specifications. In this paper, we present the first effective approach to addressing this gap, Inductive Deductive Synthesis (IDS), which jointly and incrementally synthesizes implementation and proof, and learns from failed attempts to systematically try promising strategies. Built as an agentic LLM system, IDS achieves 7/7 in about 6.8 hours and $106 per spec on average, roughly 200x faster than expert effort and 17% cheaper than SOTA agents. IDS further incorporates performance feedback into the same loop, yielding implementations up to 3x faster than published verified systems."
+  },
+  {
+    "date": "2026-05-21",
+    "title": "Mode-Shape Expansion Using Physics-Constrained Gaussian Process Regression",
+    "authors": "Farid Ghahari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23101v1",
+    "source": "arXiv",
+    "abstract": "This paper addresses the challenge of reconstructing full-field structural mode shapes from sparse sensor data. While Gaussian Process Regression (GPR) offers a robust non-parametric framework for spatial interpolation and uncertainty quantification, standard formulations often yield physically inconsistent mode-shape reconstructions under sparse sensing conditions. A Physics-Constrained Single-Output Gaussian Process (CONS-SOGP) framework is derived that utilizes independent modal kernels while coupling the optimization via a mass-orthogonality penalty. The paper presents derivations for the marginal likelihood, hyperparameter gradients, and penalty coupling. Numerical verification on a multi-degree-of-freedom structure demonstrates that the proposed method overcomes existing limitations in GP-based prediction, providing more accurate and reliable expanded mode shapes."
+  },
+  {
+    "date": "2026-05-21",
+    "title": "Encrypted Neural Networks without Overflows",
+    "authors": "Philipp Kern, Lorenzo Rovida, Samuel Teuber, Edoardo Manino, Carsten Sinz, Alberto Leporati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23096v1",
+    "source": "arXiv",
+    "abstract": "Fully homomorphic encryption (FHE) enables private inference by evaluating neural networks on encrypted data. In this way, we can delegate the computation to a third party server without ever revealing the user's data. Currently, the CKKS scheme is the backbone of most efficient FHE implementations, but it only supports addition, multiplication, and array rotation operations, thus requiring all activation functions of the neural network to be approximated by polynomials within a certain interval, imposing strict design tolerances. In this paper, we demonstrate for the first time that this scheme is vulnerable to overflow attacks, i.e., seemingly benign inputs that can exceed such tolerances of the FHE circuit, thereby causing corrupt and unusable outputs. To avoid them, we propose a formal verification technique that computes certified bounds on the ranges of all neurons in the network. By construction, our method eliminates overflows and, in our experiments, removed observed overflows on all benchmarks, reducing failure rates from up to 47% to 0%. Moreover, our overflow-free solution is compatible with most CKKS-based frameworks, as it allows to simply substitute standard polynomials by polynomials with rigorously designed ranges."
+  },
+  {
+    "date": "2026-05-21",
+    "title": "A measurement substrate for agentic Kubernetes operations: Methodology and a case study in retrieval-compounding falsification",
+    "authors": "Joshua Odmark, Gideon Rubin, Deon van der Vyver",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2605.23058v1",
+    "source": "arXiv",
+    "abstract": "Empirical claims about autonomous Kubernetes operations agents are largely unfalsifiable. Published work reports observational results without controlled comparisons against an agent-disabled baseline, selection bias is endemic, pre-registered decision matrices are absent, and samples are typically too small for the noise level of the underlying scoring system. The cause is the same gap that limits the agents themselves: code agents have a verification substrate that turns \"did it work\" into a fast, falsifiable, ground-truth signal, and operations has nothing equivalent. We present agent-breakage, a closed-loop measurement framework that injects faults into a target Kubernetes cluster, observes how an autonomous agent responds, scores the response on four axes against ground truth, and accumulates outcome-labeled (state, action, outcome) tuples. The framework distinguishes framework error from reasoning error, supports a true off-condition control via a deterministic-embedder mechanism, and enforces pre-registered decision matrices. We use it as a case study to test whether retrieval over past postmortems compounds an agent's capability. The methodological payload is three confounds the substrate caught during that case study, each of which would have produced a wrong published claim on a less instrumented version of the same work: a pgvector index bug, a +19% selection-bias artifact, and small-sample estimates that overstated effects by roughly 3x. The retrieval result itself is a partial falsification: 1 of 3 dense-corpus scenarios significant at p<0.05, pooled effect +3.9 percentage points, not significant at n=60. A within-scenario corpus-density sweep at 360 runs shows that mechanistic alignment of near-neighbors dominates raw count. The framework is released open source."
+  }
+]
