@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-06-08",
+    "title": "RTL-BenchLS: A Large-Scale Benchmark for RTL Reasoning and Generation with Large Language Models",
+    "authors": "Jing Wang, Shang Liu, Wenji Fang, Yuchao Wu, Yugao Zhu, Zhiyao Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.08976v1",
+    "source": "arXiv",
+    "abstract": "LLM-based RTL generation and reasoning is a promising direction for hardware design automation. High-quality benchmarks are critical infrastructure for tracking progress in this direction. However, existing RTL benchmarks face inherent limitations in both scale and task scope. The designs they cover are typically small and simple, and the tasks focus almost entirely on specification-to-RTL generation. Frontier models' performance already saturates on the existing benchmarks. Scaling these benchmarks up is fundamentally difficult because aligned labels are required for benchmarking, such as specifications and testbenches. Such aligned high-quality data are rarely available for real-world designs. We introduce RTL-BenchLS, a large-scale benchmark addressing both limitations above. It contains over 10,000 formally verified Verilog designs, covering substantially larger and more complex designs than existing benchmarks. Beyond specification-to-RTL generation, we propose three novel tasks that jointly evaluate reasoning and generation: round-trip reasoning, masked-content reasoning, and repository-issue reasoning. The first two are self-supervised, which directly resolves the scaling bottleneck. All tasks are verified through formal equivalence checking without any manual testbenches. We evaluate eight LLMs on RTL-BenchLS. Even the best model reaches only 23% on natural-language round-trip reasoning, 28% on masked-content reasoning, and 12% on repository-issue fixing. RTL-BenchLS is substantially more challenging than existing benchmarks. It leaves ample room for future improvement and offers guidance for developing LLM-based methods for hardware design.",
+    "title_zh": "RTL-BenchLS：基于大型语言模型的RTL推理与生成的大规模基准",
+    "abstract_zh": "基于大型语言模型（LLM）的RTL生成与推理是硬件设计自动化的一个有前景的方向。高质量的基准是追踪这一方向进展的关键基础设施。然而，现有的RTL基准在规模和任务范围上存在固有的局限性。它们所涵盖的设计通常较小且简单，任务几乎完全集中于从规范到RTL的生成。前沿模型在现有基准上的表现已经趋于饱和。扩展这些基准的规模本质上是困难的，因为基准测试需要对齐的标签，例如规范和测试平台。而对于真实世界的设计来说，这种对齐的高质量数据很少可用。我们提出了RTL-BenchLS，一个解决上述两大局限性的大规模基准。它包含超过10,000个经过形式验证的Verilog设计，涵盖了比现有基准更大且更复杂的设计。除了规范到RTL的生成，我们还提出了三个新颖任务，联合评估推理与生成能力：回路推理、内容掩码推理以及代码库问题推理。前两个任务是自监督的，直接解决了规模扩展的瓶颈。所有任务均通过形式等价性验证，无需任何人工测试平台。我们在RTL-BenchLS上评估了八个大型语言模型。即使是表现最好的模型，在自然语言回路推理上仅达到23%，在内容掩码推理上达到28%，在代码库问题修复上达到12%。RTL-BenchLS比现有基准更具挑战性，为未来的改进留下了充足空间，并为开发基于LLM的硬件设计方法提供了指导。"
+  }
+]
