@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-6-10",
+    "title": "A Two-Phase LLM-Based Procedure for Processing Spanish-Language Qualitative Teaching Feedback in Higher Education",
+    "authors": "Edgardo R. Bravo",
+    "publish": "2026 IEEE Engineering Education World Conference (EDUNINE)",
+    "url": "https://doi.org/10.1109/edunine62390.2026.11547053",
+    "source": "IEEE",
+    "abstract": "Purpose: This study addresses the challenge of efficiently processing Spanish-language qualitative teaching feedback in higher education by developing a systematic approach combining Large Language Models (LLMs) with human oversight. Method: A two-phase procedure was implemented: Phase 1 utilized ChatGPT-4 for generating feedback categories from student comments, followed by expert validation. Phase 2 employed the validated framework to classify individual comments through LLM processing and human refinement. Findings: The procedure yielded eighteen distinct categories encompassing pedagogical and interpersonal dimensions of teaching. The implementation effectively categorizes diverse student feedback while maintaining analytical rigor through human oversight. Originality/Value: This study presents an innovative, resource-efficient approach for Spanish-language institutions to process qualitative feedback, addressing limitations in current NLP solutions while ensuring pedagogical relevance. Research limitations: Current limitations of the procedure include prompt dependency, execution variability, context window restrictions, and the black box nature of LLMs, which impede complete understanding and auditability of the analytical process. Practical implications: The framework enables systematic analysis of qualitative feedback for evidence-based decision-making in faculty development and course improvement initiatives."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Enhancing Static Analysis through LLM-Based Semantic Validation",
+    "authors": "Seyed Mohammad Taghavi Far, Farid Feyzi, Nima Esmi",
+    "publish": "2025 11th International Conference on Signal Processing and Intelligent Systems (ICSPIS)",
+    "url": "https://doi.org/10.1109/icspis68676.2025.11551686",
+    "source": "IEEE",
+    "abstract": "Static Application Security Testing (SAST) tools play a critical role in identifying vulnerabilities during early software development stages; however, their effectiveness is often limited by extremely high false positive rates (FPRs). This paper introduces a hybrid workflow that integrates a high-recall static analyzer, Semgrep, with Large Language Model (LLM)–based validation to improve detection precision while maintaining high recall. Using the OWASP Benchmark v1.2 dataset comprising 2,740 labeled Java test cases, we systematically evaluate multiple models, including GPT-5-mini, GPT5-nano, and Claude-haiku, against a Semgrep-only baseline. Experimental results show that the proposed LLM-augmented static analysis drastically reduces the false positive rate from 91.8% to 11.9%, achieving a state-of-the-art F1-score of 92.84% and recovering 57% of vulnerabilities missed by Semgrep. Moreover, the entire validation process completes in under 44 minutes at a total cost of $1.44, confirming the feasibility of this approach for CI/CD integration. A detailed per-CWE and interaction analysis reveals that LLM validation eliminates 88.7% of Semgrep’s false alarms with minimal risk of overruling true positives (≈1%), while also exposing consistent weaknesses in cryptographic CWE-328 (Weak Hash). The results establish a practical pathway toward semantic, high-precision vulnerability detection through cost-efficient LLM validation layers."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "FAST-Prefill: FPGA Accelerated Sparse Attention for Long Context LLM Prefill",
+    "authors": "Rakshith Jayanth, Viktor Prasanna",
+    "publish": "2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    "url": "https://doi.org/10.1109/fccm68464.2026.00067",
+    "source": "IEEE",
+    "abstract": "Prefill latency dominates long-context LLM inference due to quadratic attention. Dynamic context-aware sparse attention reduces compute but creates irregular, memory-bound workloads that GPUs handle inefficiently. We propose FAST-Prefill, an FPGA accelerator that mitigates large intermediate tensors, irregular KV access, and limited compute resources via a fused streaming pipeline, a liveness-driven dual-tier cache, and a hybrid DSP–LUT MPU. On a Xilinx U280, FAST-Prefill delivers up to 2.2× speedup and 4.5× lower EDP compared to GPU baselines on the LLaMA-3.2-3B model."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "LLM-Based Agentic Decision Support for Maritime Threat Assessment",
+    "authors": "Krishikaa Mathi Bharathi S S, T. Grace Shalini, Bhavesh P, Nayantra Ramkrishnan",
+    "publish": "2026 International Conference on Air Defense and Security (ICADS)",
+    "url": "https://doi.org/10.1109/icads69450.2026.11545513",
+    "source": "IEEE",
+    "abstract": "Maritime border security remains a significant challenge, particularly due to the low false-positive requirements of detection systems, unreliable AIS data, and the scarcity of labeled datasets needed for conventional deep learning models. To address these constraints, this work proposes a software-only, multi-agent decision-support framework that integrates unsupervised trajectory anomaly detection with large language model (LLM)-based threat reasoning for real-time maritime situational awareness. The system employs a self-supervised Variational Autoencoder (VAE) trained on publicly available AIS datasets to detect deviations in vessel behavior without domain-specific labels. An LLM-based analytical agent then interprets these anomalies within an operational context. Additionally, a decentralized multiagent coordination protocol enables distributed situational assessment across multiple maritime zones. By allowing independent agents to jointly evaluate risk indicators, exchange high-level signals, and generate clear, human-understandable explanations, the framework enhances robustness, reduces false alarms, and strengthens human-machine teaming. Early evaluations on realworld AIS pathways indicate promising performance with high anomaly-detection accuracy, low response time, and efficient multi-agent coordination. Overall, this study presents a practical, explainable, software-centric strategy to improve maritime border surveillance, demonstrating how agentic, LLM-powered intelligence can enhance national defense processes in dynamic and information-poor environments."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "LLM.265: Video Codecs Are Secretly Tensor Codecs",
+    "authors": "Ceyu Xu, Yongji Wu, Xinyu Yang, Beidi Chen, Matthew Lentz, Danyang Zhuo, Isa Wu Wills",
+    "publish": "IEEE Micro",
+    "url": "https://doi.org/10.1109/mm.2026.3701735",
+    "source": "IEEE",
+    "abstract": "Video codecs have been refined for decades to compress visual data efficiently. This paper revisits them as general-purpose tensor codecs for large language models. LLM training and inference are increasingly limited by memory footprint and communication bandwidth, while existing tensor-compression methods are often specialized for weights, activations, gradients, or KV cache. We show that standard video codecs can compress these tensors effectively because tensor layouts expose statistical structure that codec stages such as prediction, transform coding, quantization, and entropy coding can exploit. Building on this observation, LLM.265 repurposes existing GPU video engines to support compression during both inference and distributed training. We further show that video-codec hardware can be customized and enhanced to improve tensor encoding and decoding throughput without substantial cost, making it an effective path for large-scale model deployment without major changes to GPU architecture."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "LLM-Assisted Analysis of On-Chip Protocol Implementations",
+    "authors": "Melisande Zonta-Roudes, Nora Hinderling, Supraja Sridhara, Srinidhi Nagendra, Shweta Shinde",
+    "publish": "2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    "url": "https://doi.org/10.1109/fccm68464.2026.00048",
+    "source": "IEEE",
+    "abstract": "Hardware designs comprise many IP blocks that must communicate over rigorously specified on-chip protocols. These protocols regulate not only functionality but also cycle-accurate timing and ordering. Even a single cycle deviation can become a permanent silicon fault with functional consequences (e.g., execution integrity, denial of service). To verify and validate these critical protocol implementations, existing tools use assertion-based verification (ABV) and formal methods. As input, these approaches require properties that need to be extracted from long, natural-language specifications and adapted to a given implementation-under-test. Currently, engineers perform this property generation manually, making it slow and error-prone, and hindering the ability to determine whether implementations adhere to specifications or exhibit violations."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Scholar Augment: An End-to-End Multi-LLM Platform for Accelerating Systematic Literature Reviews and Semantic Corpus Analysis",
+    "authors": "Mihai-Emanuel Spiță, Ovidiu-Andrei Schipor",
+    "publish": "2026 International Conference on Development and Application Systems (DAS)",
+    "url": "https://doi.org/10.1109/das69882.2026.11553334",
+    "source": "IEEE",
+    "abstract": "Systematic literature reviews and large-scale qualitative document analysis are foundational to academic progress in fields ranging from Computer Science to the social sciences. However, the process is fundamentally constrained by the time-intensive, laborious, and error-prone nature of manual data extraction. This bottleneck not only slows the pace of research but also limits the scope and scale of questions that can be feasibly investigated. Existing digital tools offer partial solutions but fail to address the core challenge holistically. Standard reference managers excel at citation management but are content-agnostic, while Qualitative Data Analysis Software (QDAS) still relies on extensive manual coding.This paper introduces Scholar Augment, a novel, user-centric web platform designed to bridge this methodological gap. We present its architecture and a new framework for researcher-AI collaboration that accelerates systematic data extraction while keeping the researcher in full control. Scholar Augment introduces a unified pipeline that automates the entire SLR lifecycle: from AI-driven Boolean search string generation and automated PDF retrieval (via Unpaywall), to structured data extraction and semantic corpus interaction. Leveraging a provider-agnostic Multi-LLM architecture and Retrieval-Augmented Generation (RAG) backed by a vector database, the platform enables researchers to generate custom analytical frameworks. The platform incorporates a persistent database and post-processing tools for data standardization. A case study analyzing 592 academic articles demonstrates that Scholar Augment reduced data extraction time by approximately 99.32%, offering a new paradigm for efficient, scalable, and rigorous document analysis. To demonstrate real-world viability, the platform has been deployed as a public web service (https://starlit-brioche-15a023.netlify.app) and is currently actively used by an initial cohort of researchers, offering a new scalable paradigm for rigorous document analysis"
+  },
+  {
+    "date": "2026-6-10",
+    "title": "TileFuse: Fused Mixed-Precision Kernels for Quantized LLM Inference on AMD XDNA2 NPUs",
+    "authors": "Wesley Pang, Gregory Jun, Feiyang Liu, Deming Chen",
+    "publish": "2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    "url": "https://doi.org/10.1109/fccm68464.2026.00065",
+    "source": "IEEE",
+    "abstract": "On-device LLM inference increasingly relies on low-bit quantization, but practical formats such as W4A16 do not map cleanly to existing client NPU software stacks. We present TileFuse, a fused mixed-precision kernel library for AMD XDNA2 NPUs that directly consumes quantized weights, performs on-the-fly dequantization, and executes GEMM/GEMV without materializing BF16 weights in DRAM. TileFuse combines offline interleaved pre-tiling, optimized microkernels, and a memory-core-assisted 2D weight-distribution dataflow. Across Ryzen AI platforms, TileFuse achieves over 2× kernel-level gains and up to 1.9× faster prefilling with over 50% lower energy in end-to-end LLM inference in comparison with the iGPU baseline."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "RC-RAG: A Reliability-Centered Retrieval-Augmented LLM Framework for PHM Question Answering",
+    "authors": "Hanqi Su, Ruoxin Wang, Dai-Yan Ji, Jay Lee",
+    "publish": "IEEE Transactions on Reliability",
+    "url": "https://doi.org/10.1109/tr.2026.3702056",
+    "source": "IEEE",
+    "abstract": "Large language model (LLM)-based question answering has the potential to improve access to technical knowledge, but hallucinated responses remain a severe reliability risk when answers are generated without sufficient evidential support. In reliability-critical domains such as prognostics and health management (PHM), this risk is particularly concerning, as unsupported information can lead to incorrect maintenance decisions or unsafe actions. However, existing retrieval-augmented generation pipelines often lack explicit control over evidence sufficiency and could produce wrong answers, thereby raising concerns about artificial intelligence (AI) reliability issues. In this article, we propose RC-RAG, a reliability-centered retrieval-augmented generation (RAG) framework for PHM question answering that explicitly incorporates evidence evaluation and verification into the retrieval and generation pipeline. RC-RAG augments PHM literature with document-level meta-knowledge, performs hierarchical document–content retrieval, and applies relevance and evidence assessment with verification-aware answer generation to ensure that answers are produced only when sufficient and consistent evidence is available. To evaluate the framework, we construct a curated PHM data challenge question-answering benchmark (PHMQA) derived from a series of PHM conferences and data challenge competitions, including those organized by the IEEE Reliability Society and the PHM research community. Experimental results show that RC-RAG achieves significantly higher accuracy and precision compared to other state-of-the-art methods."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "HyPIM: LLM Acceleration with A Hybrid ReRAM/SRAM 3D-PIM Architecture",
+    "authors": "Xiaolong Hu, Chubo Liu, Yan Ding, Keqin Li, Kenli Li",
+    "publish": "ACM Transactions on Embedded Computing Systems",
+    "url": "https://doi.org/10.1145/3820366",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Periodic Forecasting of Virtual Power Plant Feasibility Zones Based on Fourier-Enhanced KAN and LLM Rule Parsing",
+    "authors": "Jingyi Chen, Jianhang Sun, Zeyu Liang, Weiqi Pan",
+    "publish": "2026 9th International Conference on Energy, Electrical and Power Engineering (CEEPE)",
+    "url": "https://doi.org/10.1109/ceepe69795.2026.11552036",
+    "source": "IEEE",
+    "abstract": "In the context of constructing new power systems, virtual power plants (VPPs) have emerged as key flexibility providers participating in electricity spot markets. However, traditional centralized market clearing models involve numerous integer variables, resulting in high computational complexity that struggles to meet the stringent, rapid-response demands of real-time markets. Furthermore, current electricity market rules are typically published in unstructured text formats, where manually extracting critical parameters proves inefficient and prone to errors. To tackle the above challenges, this paper proposes an intelligent acceleration and clearance framework that incorporates a large language model (LLM) with a Fourier-enhanced Kolmogorov-Arnold network (Fourier-KAN). Firstly, an LLM-based market rule parsing module is developed to precisely map unstructured policy texts into deterministic mathematical constraints within the optimization model through prompt engineering, enabling automated parameter extraction. Next, the Fourier-KAN network proposes to predict the operational feasible region of VPPs. By incorporating Fourier series, this network effectively captures the inherent periodic patterns of wind/solar output and load, achieving high-precision fitting of feasible region boundaries. Joint simulation results on the IEEE 118-node main grid and 33-node VPP demonstrate: the proposed Fourier-KAN model achieves feasibility domain prediction errors below 5%, with training time reduced by approximately 66.7% compared to traditional methods. The overall clearing framework reduces solution time by 90%, aligning with spot market clearing rhythms. This mathematical model effectively resolves computational bottlenecks and rule conversion challenges in large-scale VPP clearing, providing robust technical support for efficient, intelligent real-time electricity market operations."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "LUT-LLM: Efficient Language Model Inference with Memory-based Computations on FPGAs",
+    "authors": "Zifan He, Shengyu Ye, Rui Ma, Yang Wang, Jason Cong",
+    "publish": "2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    "url": "https://doi.org/10.1109/fccm68464.2026.00027",
+    "source": "IEEE",
+    "abstract": "The rapid development of large language models (LLM) has greatly enhanced everyday applications. While many FPGA-based accelerators, with flexibility for fine-grained data control, exhibit superior speed and energy efficiency compared to GPUs, recent GPU-specific optimizations have diminished this advantage. When limited to arithmetic-based computation, FPGAs often underperform GPUs due to their comparatively fewer computational resources. To address this challenge, we exploit a key advantage of FPGAs over GPUs: abundant distributed on-chip memory embedded among computational units. We believe that shifting LLM inference from arithmetic-based to memory-based computations through table lookups can improve the efficiency on FPGAs to compete with GPUs. However, existing methods are inefficient or unable to scale and deploy language models due to algorithm and architecture design limitations. This paper introduces LUT-LLM <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup>, the first FPGA accelerator that deploys 1B+ language model with memory-based computation, leveraging vector quantization. We construct a performance model, evaluate multiple quantization schemes, and identify the activation-weight vector co-quantization as the most effective approach. To support this scheme, LUT-LLM features (1) a bandwidth-aware parallel centroid search to reduce decoding latency, (2) efficient 2D table lookups, and (3) a spatial-temporal hybrid design to reduce data caching for a higher throughput table lookup. We develop a training recipe that converts existing models to support table lookups with high accuracy and prototype LUT-LLM for Qwen 3 1.7B model on the AMD V80 FPGA, reducing arithmetic operations by 4× and achieving a 1.10∼3.29× faster generation speed and a 3.05∼6.60× higher energy efficiency than GPUs."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Caf4AVC: LLM-Enhanced Collaborative Framework for Attribute Value Canonicalization in Open KBs",
+    "authors": "Ying He, Qiang Yang, Yaxin Wang, Dan Gao, Zhouhong Gu, Zhixu Li, Yanghua Xiao",
+    "publish": "IEEE Transactions on Knowledge and Data Engineering",
+    "url": "https://doi.org/10.1109/tkde.2026.3702048",
+    "source": "IEEE",
+    "abstract": "Open Knowledge Bases (Open KBs) are fundamental to knowledge-driven applications, including semantic search, knowledge reasoning, and recommendation systems. However, the presence of redundant and ambiguous expressions within Open KBs significantly hinders their application. This highlights the urgent need for Open KB canonicalization, particularly of attribute values, which comprise nearly 40% of the facts within Open KBs. Unlike entities and predicates, attribute values are inherently sparse and diverse, posing unique challenges for their canonicalization. However, existing studies mainly focus on entities or predicates, leaving attribute value-level noun phrase canonicalization (NPC-AV) underexplored. Large language models (LLMs), with their strengths in common-sense reasoning and fault tolerance, have shown promise in Open KB canonicalization. Yet, current LLM-based approaches often rely heavily on LLM responses, overlooking their high computational cost and potential errors. In this paper, we introduce Caf4AVC, a collaborative framework that integrates clustering-based methods and LLMs for the NPC-AV task. We further propose an innovative two-factor authentication correction mechanism and an adaptive threshold-based selection strategy to address these limitations. Extensive experiments on multiple real-world Open KB datasets demonstrate the effectiveness of our framework, achieving a 17.52% reduction in LLM call costs and a 6.3% average performance improvement compared to competitive methods. The code and dataset are available at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://github.com/hedyHe/Caf4AV</uri>."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "FedSiamese: Privacy-Preserving Face Verification using Federated Learning",
+    "authors": "Arshia Akbari Aleagha, Athena Abdi",
+    "publish": "2025 11th International Conference on Signal Processing and Intelligent Systems (ICSPIS)",
+    "url": "https://doi.org/10.1109/icspis68676.2025.11551730",
+    "source": "IEEE",
+    "abstract": "Face verification, as a key biometric technology, aims to confirm an individual’s identity from digital images. However, the widespread use of this technology has raised serious concerns regarding the privacy of sensitive user data. In response to this significant challenge, Federated Learning emerges as a novel approach that enables the training of intelligent models without the need to collect or share raw data. In this research, a face verification system based on Federated Learning is designed. This system leverages a Siamese deep network architecture to assess the similarity between two face images and determine if they belong to the same person. During the training process, the data remains completely confidential on the user’s local device, and only the learned model parameters are exchanged with a central server. The results indicate that the proposed method, while guaranteeing privacy, achieves a desirable level of accuracy and efficiency for implementation in security systems and access control applications."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Automating Identity Verification in Exams: A Low-Cost, Privacy-Preserving Approach",
+    "authors": "Chengcheng Han, Sathiamoorthy Manoharan, Xinfeng Ye, Ulrich Speidel, Manuel Castro, Elio Sancristobal",
+    "publish": "2026 IEEE Engineering Education World Conference (EDUNINE)",
+    "url": "https://doi.org/10.1109/edunine62390.2026.11547054",
+    "source": "IEEE",
+    "abstract": "Most universities still rely on manual identity verification for examinations and class tests. While adequate for small classes, such checks are slow, error-prone, and vulnerable to impersonation in larger cohorts. This paper investigates whether these shortcomings can be addressed through a low-cost privacypreserving system that integrates with existing institutional records. We propose an architecture that captures student ID data and photographs at the point of entry using a barcode scanner and a laptop with a webcam, with subsequent offline analysis against institutional records. A proof-of-concept implementation demonstrates that the system can operate quickly, store data locally and securely, and detect cases of impersonation. Preliminary trials suggest that the approach is both practical and promising, though larger-scale evaluation is needed to validate its effectiveness under real examination conditions."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Language-Agnostic Fault Injection for VHDL and Mixed-HDL Designs in PyUVM-Based Verification",
+    "authors": "Salma Khaled Hanafy, Mohamed Fathy Abu-ElYazeed",
+    "publish": "2026 International Conference on Development and Application Systems (DAS)",
+    "url": "https://doi.org/10.1109/das69882.2026.11553318",
+    "source": "IEEE",
+    "abstract": "In hardware verification and testing, Python-based frameworks like cocotb and PyUVM are increasingly popular, but most tools focus on SystemVerilog, making them difficult to apply to VHDL or legacy VHDL systems. This work addresses the issue by extending the PyUVM-based CocoSim framework for fault injection to support VHDL and mixed VHDL/SystemVerilog designs. A unified design abstraction allows consistent fault targeting and monitoring across multisource HDL designs without modifying existing PyUVM testbenches. The proposed performance optimization reduces execution time for fault injection campaigns by up to an order of magnitude compared to the CocoSim system. The approach was validated using both VHDL-only and mixed-language benchmarks. This validation confirmed the preservation of correct fault semantics and showed substantial performance improvements."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Reconfigurable Computing Challenge: FPGA-Gym-v2: FPGA-Based RL Environment Acceleration with LLM-Assisted Onboarding",
+    "authors": "Jiayi Li, Hongxiao Zhao, Wenshuo Yue, Yihan Fu, Daijing Shi, Anjunyi Fan, Bonan Yan",
+    "publish": "2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    "url": "https://doi.org/10.1109/fccm68464.2026.00076",
+    "source": "IEEE",
+    "abstract": "Reinforcement learning (RL) repeatedly executes environment rollouts computation, where environment stepping may dominate training time when many environments run in parallel. Building on our prior FPGA-Gym/PEARL acceleration backbone, this work introduces FPGA-Gym-v2, a upgraded framework that keeps RL inference, training, and replay-buffer management on the host CPU/GPU, but offloads massively parallel environment stepping to an FPGA. It reduces host–FPGA traffic with compact encoding, on-chip state residency, and compute–communication overlap. Across representative Gymnasium workloads, FPGA-Gym-v2 achieves 4.36×–972.6× throughput speedup over EnvPool and up to 4699.3× over VectorEnv, while reducing DQN/PPO training time by 7%–15% over EnvPool and 18%–61% over VectorEnv. Further, FPGA-Gym-v2 adds an large-language-model-assisted (LLM-assisted) onboarding flow that generates environment-specific specifications, wrappers, Verilog HDL skeletons, and golden tests under explicit validation gates. The code is available at https://github.com/Selinaee/FPGA_Gym."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "LENS-HLS: LLM-Enhanced Learning-based Design Space Exploration for High-Level Synthesis",
+    "authors": "Yujie Yan, Guanhua Chen, Keren Zhu",
+    "publish": "2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    "url": "https://doi.org/10.1109/fccm68464.2026.00060",
+    "source": "IEEE",
+    "abstract": "High-Level Synthesis (HLS) improves hardware productivity by translating C/C++ programs into RTL implementations [1] . However, the quality of HLS designs strongly depends on pragma configurations such as loop pipelining, unrolling, and tiling. Since the pragma space is typically sparse, high-dimensional, and highly nonlinear, efficient design space exploration (DSE) remains challenging."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "System-Modeling-Based Verification of Datasets for Reliable Data-Driven Digital Twin Development in Grid-Connected Solar Photovoltaic Inverter",
+    "authors": "Arun Kumar, Nishant Kumar",
+    "publish": "IEEE Transactions on Reliability",
+    "url": "https://doi.org/10.1109/tr.2026.3701974",
+    "source": "IEEE",
+    "abstract": "Ensuring reliable operation of grid-tied photovoltaic (PV) inverters is critical as semiconductor aging, environmental variability, and grid disturbances pose major threats to system stability. This work presents a Data-Driven Digital Twin (DD-DT) framework for real-time predictive monitoring of a two-stage single-phase grid-connected PV inverter, incorporating Physics-Aware Statistical Cross Validation (PASCV) and Temporal Convolutional Networks (TCN). The proposed framework addresses critical challenges such as sensor noise, measurement faults, and system variations by integrating a physics-based validation layer with DD learning. PASCV ensures only trusted measurements are used for model training and real-time synchronization, while TCN enables high-fidelity time-domain prediction of key inverter states under dynamic operating conditions. Experimental validation is carried out on an NIsbRIO-OPAL-RT-based hardware testbed under diverse scenarios, including datasets with 2, 3, and 4 corrupted signals with irradiance variations and grid voltage disturbances. Results demonstrate that the DD-DT achieves superior predictive accuracy (MAE ∼ 3.40%, MAPE ∼ 3.17%, and correlation coefficient ≥ 0.971) compared to conventional DT approaches. The proposed reliability-centric DD-DT thus provides a scalable pathway toward reliable DTs for power electronic circuits in renewable energy systems."
+  },
+  {
+    "date": "2026-6-10",
+    "title": "Research on the Design and Experimental Verification of Explosion-proof High-voltage AC Bushings",
+    "authors": "Zhicheng Pan, Jun Deng, Zhicheng Xie, Haibing Zhou",
+    "publish": "2026 9th International Conference on Energy, Electrical and Power Engineering (CEEPE)",
+    "url": "https://doi.org/10.1109/ceepe69795.2026.11552150",
+    "source": "IEEE",
+    "abstract": "High-voltage AC bushings play a crucial role in the power grid system. Arc faults in bushings can easily lead to explosion and fire. In response to the demands for explosion prevention and fire control of bushings, this paper focuses on the weak points of the bushing structure, and conducts targeted explosion-proof design of the bushings. It proposes technical measures such as mechanical reinforcement and explosion-proof devices, and develops explosion-proof bushings. Moreover, it conducts arc test evaluations on the explosion-proof bushings to verify the engineering feasibility of the explosion-proof design."
+  }
+]
