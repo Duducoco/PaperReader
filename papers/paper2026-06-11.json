@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-11",
+    "title": "A local bijection between alternating sign matrices and descending plane partitions and a Striker--Fulmek-type $q$-statistic",
+    "authors": "Michael J. Schlosser",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13653v1",
+    "source": "arXiv",
+    "abstract": "We prove a local bijection between alternating sign matrices (ASMs) and descending plane partitions (DPPs) in the refined fibres of Behrend--Di Francesco--Zinn-Justin. The map is constructed by moving a boundary line through the ASM and DPP pictures. At each step only a bounded neighbourhood of that boundary is changed. In growth-diagram language, the boundary states are ordinary ASM row frontiers and shifted DPP path frontiers, and the elementary moves are reversible Fomin-type square rules. The proof checks that overlapping local moves are confluent, that every square is invertible, and that the completed boundary again satisfies the ordinary ASM and DPP coordinate inequalities. The only terminal choice is resolved by a radius-two fan rule on the visible height contour. The same local framework gives a statistic on refined ASMs whose generating function is the DPP degree enumerator. The statistic has a Striker--Fulmek quadratic core \\[ Q_{\\rm SF}(A)= \\sum_{1\\le r<s\\le n}\\ \\sum_{1\\le b<a\\le n} (n-r+1)A_{r,a}A_{s,b}, \\] plus a bounded fan-boundary correction and, outside the normal boundary gauge, an explicit compact-potential endpoint term. In the normal gauge this is \\[ W_{\\rm ASM}^{\\rm SF}(A)=Q_{\\rm SF}(A)+B_{\\rm fan}(A). \\] Thus the paper gives both a local ASM--DPP bijection and a statistic-preserving refined \\(q\\)-enumeration. The supplementary files reproduce selected local checks and the displayed arithmetic examples."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "SupraBench: A Benchmark for Supramolecular Chemistry",
+    "authors": "Tianyi Ma, Yijun Ma, Zehong Wang, Weixiang Sun, Ziming Li, Connor R. Schmidt, Chuxu Zhang, Matthew J. Webber, Yanfang Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13477v1",
+    "source": "arXiv",
+    "abstract": "Supramolecular chemistry, which includes the study of non-covalent host-guest assemblies, has advanced various applications. However, designing host-guest systems remains time-consuming, requiring days of dry-lab verification per candidate pair. Although LLMs have emerged as a fast alternative with strong performance on molecular binding tasks, no benchmark currently systematically evaluates LLMs for host-guest reasoning across fundamental supramolecular chemistry tasks, e.g., binding affinity prediction. To this end, we collaborate with domain experts to release the first Supramolecular Benchmark, called SupraBench, to evaluate LLMs in chemistry reasoning. Specifically, we design four fundamental tasks, i.e., binding affinity prediction, top-binder selection, solvent identification, and host-guest description, plus an auxiliary vision-based task for molecular identification. We also release SupraPMC, a curated 16M-token corpus of Supramolecular chemistry articles distilled from Europe PMC, to support the adaptation to the supramolecular domain. We benchmark a broad range of open and proprietary LLMs and find that LLMs leave substantial headroom across all tasks. Domain adaptation pretraining over SupraPMC transfers cleanly to in-distribution regression but trades off against strict letter-format output. Moreover, the difficulty profile differs sharply across task families, revealing distinct failure modes that indicate specific gaps in current supramolecular chemistry reasoning. Our source codes and benchmark datasets are available at https://github.com/Tianyi-Billy-Ma/SupraBench."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling",
+    "authors": "Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyang Jiang, Jin Zhu, Han Ding, Fei Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yu Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13473v1",
+    "source": "arXiv",
+    "abstract": "We present MaxProof, a population-level test-time scaling framework for competition-level mathematical proof in the MiniMax-M3 series. M3 first trains three proof-oriented capabilities -- proof generation, proof verification, and critique-conditioned proof repair -- using a defense-in-depth generative verifier engineered for low false-positive rate. These capabilities are merged into a single released M3 model. At test time, MaxProof treats the model as a generator, verifier, refiner, and ranker, searches over a population of candidate proofs, and returns one final proof through tournament selection. With MaxProof test-time scaling, the M3 model reaches 35/42 on IMO 2025 and 36/42 on USAMO 2026, exceeding the human gold-medal threshold on both."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests -- Insights from the AIDev Dataset",
+    "authors": "Mahmoud Abujadallah, Ali Arabat, Mohammed Sayagh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13468v1",
+    "source": "arXiv",
+    "abstract": "AI coding agents are increasingly used to generate pull requests (PRs) that propose code fixes in software projects. From a first exploration of the AIDev dataset, we find that 46.41\\% of the fixes proposed by the agents Copilot, Devin, Cursor, and Claude are rejected. This represents a significant amount of wasted resources that require human reviews, verifications, and running tests and validations for fixes that are merely discarded. Our goal in this paper is to understand the failure modes of AI-agents, an understanding that is crucial for better integrating AI-agents as efficient teammates. In this paper, we conduct a qualitative study on a representative sample of 306 non-merged pull requests created or co-authored by the agents mentioned earlier, followed by a quantitative analysis of the reasons for rejection. Our qualitative findings identify 14 reasons divided into four high-level categories for rejecting AI-agent fixes. We observe that developers can reject fixes due to fixes whose implementation is incorrect (e.g., incomplete, wrong approach), fixes that do not pass the continuous integration (CI) pipelines and fail tests, fixes for which the agent is unable to perform the implementation (e.g., no code generated, sessions lost), and fixes whose priority is low. Our results shed light on the importance of better guiding the model at these levels: (1) proposing hints about the approach to follow for fixing an issue, (2) outlining constraints or limitations regarding the approaches that should not be taken, and (3) instructing the agent on how to validate the implementation through CI pipelines and without introducing a breaking change. Our results suggest the need for good prioritization of tasks so that generated fixes do not lead to wasted human review efforts or wasted agent resources (e.g., tokens, compute, or allowed number of requests)."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Accelerating Speculative Diffusions via Block Verification",
+    "authors": "Alexander Soen, Hisham Husain, Valentin De Bortoli, Arnaud Doucet",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13426v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding speeds up LLM inference by using a draft model to generate tokens, with an acceptance-rejection scheme that ensures that the output matches the target distribution. Adapting this to continuous diffusions is difficult because speculative sampling requires drawing from a residual distribution. While straightforward in discrete spaces, efficiently sampling this residual in continuous space is non-trivial. Consequently, existing diffusion adaptations either use computationally inefficient sampling techniques or rely on an alternative scheme. In this work, we introduce a novel scheme that efficiently implements the original speculative sampling mechanism for diffusion models. Our approach offers a critical advantage over current methods: it enables us to adapt block verification from LLMs to diffusions -- which provably improves the acceptance rate of drafts. Furthermore, we formalize and analyze the Free Drafter, a heuristic self-speculative drafter for diffusions that requires no training. By enabling block verification, our Free Drafter yields up to a 6.3% speedup over existing speculative methods with no additional training and negligible overhead beyond the existing parallel verification pass."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "From Verdict to Process: Agentic Reinforcement Learning for Multi-Stage Fact Verification",
+    "authors": "Rongxin Yang, Shenghong He, Siyuan Zhu, Chao Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13262v1",
+    "source": "arXiv",
+    "abstract": "Recent approaches combining Large Language Models (LLMs) with retrieval-augmented reasoning have shown promise for automated fact verification. To process complex claims, these verification pipelines typically execute multi-stage workflows that coordinate tightly coupled modules, including claim decomposition, evidence gathering, and verdict prediction. However, existing methods optimize individual stages in isolation or rely on fixed heuristics, which limits adaptive coordination among stages and can lead to suboptimal outcomes. In this work, we propose ProFact, an agentic reinforcement learning framework for end-to-end optimization of multi-stage fact verification trajectories. ProFact trains a unified policy to coordinate claim decomposition, evidence seeking, answer generation, and verdict prediction. To address the sparse and delayed supervision provided by final veracity labels, ProFact introduces process-aware rewards that provide stage-level learning signals throughout the verification process. Empirical evaluation shows that ProFact consistently outperforms strong baselines in both verification performance and inference efficiency. These results highlight the effectiveness of process-aware trajectory optimization for multi-stage fact verification."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?",
+    "authors": "Dat Tien Nguyen, Thao Nguyen, Fadillah Adamsyah Maani, Huy M. Le, Muhammad Umer Sheikh, Numan Saeed, Muhammad Haris Khan, Salman Khan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13148v1",
+    "source": "arXiv",
+    "abstract": "Climate and environmental decision-making increasingly requires reasoning across heterogeneous inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs. Weather and climate foundation models can forecast well, but do not reason interactively in language, while large language models (LLMs) reason in language but cannot operate directly on high-dimensional Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation. TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals, Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified execution steps. These results indicate that reliable Earth-science agents must go beyond tool access to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "EA-WM: Event-Aware World Models with Task-Specification Grounding for Long-Horizon Manipulation",
+    "authors": "Kailin Wang, Haoxiang Jie, Yaoyuan Yan, Jiacheng Zhou, Zhiyou Heng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13053v1",
+    "source": "arXiv",
+    "abstract": "Pretrained-feature world models provide a useful substrate for robot imagination, but visual or latent prediction alone does not determine whether an imagined future satisfies task-relevant events. Long-horizon manipulation requires progress signals that are relational, predicate-level, and physically grounded: whether an object has moved, whether a drawer or contact state has changed, whether a placement predicate is satisfied, and whether a candidate future is reliable enough for execution. We introduce EA-WM, an event-aware world-model framework that augments frozen visual-feature dynamics with task-specification-grounded event prediction and verification. EA-WM rolls out candidate futures in pretrained visual-feature space, decodes them into structured event states, and scores them using task-progress, semantic-consistency, physical-feasibility, and uncertainty terms. The verifier guides sampling-based planning, gates candidate actions, and, in the contact-sensitive LIBERO wine-rack setting, selects among PPOgenerated proposals. Across navigation, deformable-object, wall-constrained, and languagedescribed manipulation studies, EA-WM shows that event-aware verification can make featurespace world models more interpretable and better aligned with task progress."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "The Rise of AI-Native Software Engineering: Implications for Practice, Education, and the Future Workforce",
+    "authors": "Mamdouh Alenezi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12986v1",
+    "source": "arXiv",
+    "abstract": "Generative Artificial Intelligence (GenAI), Large Language Models (LLMs), and emerging Agentic AI constitute the most disruptive transformation in the history of software engineering (SE), reshaping development processes, required competencies, professional roles, and the educational outcomes that universities must deliver. This paper presents a systematic review of 48 verified, influential peer-reviewed publications (2016--2026) drawn from leading venues in software engineering, machine learning, computing education, human--AI collaboration, and software productivity. Studies were discovered, screened, and analyzed through a four-agent research workflow (Literature Discovery, Scientometric Analysis, Curriculum Transformation, and Workforce Impact) and were verified against primary sources. We synthesize the evidence along nine themes and three trajectories -- practice, education, and workforce -- and report a scientometric inflection in which annual LLM-for-SE output grew roughly five-fold after late 2022. From this synthesis we contribute: (i) a conceptual framework for AI-native software engineering organized around \\emph{intent}, \\emph{collaboration}, and \\emph{verification}; (ii) a nine-dimension competency model spanning specification, critical evaluation, agent orchestration, and metacognition; (iii) a four-phase university curriculum roadmap with AI-resilient assessment; (iv) faculty-development and workforce-transformation strategies; and (v) a prioritized agenda of eleven research gaps. The evidence base is internally contradictory on the magnitude and direction of productivity effects, underscoring that benefits are strongly context-dependent and that educating engineers for judgment, verification, and orchestration -- rather than code production alone -- is the central challenge of the AI-native era."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Structured Testbench Generation for LLM-Driven HDL Design and Verification-Oriented Data Curation",
+    "authors": "En-Ming Huang, Yu-Hung Kao, Ren-Hao Deng, Wei-Po Hsin, Yao-Ting Hsieh, Cheng Liang, Hsiang-Yu Tsou, Mu-Chi Chen, Yu-Kai Hung, Shao-Chun Ho, Po-Hsuang Huang, Shih-Hao Hung, H. T. Kung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12983v1",
+    "source": "arXiv",
+    "abstract": "Automated testbench generation has become a critical bottleneck in large language model (LLM)-driven Register Transfer Level (RTL) workflows, where large numbers of candidate designs must be verified rapidly and reliably. Existing prompt-based approaches treat testbench generation as unconstrained code synthesis, yielding stochastic outputs with high token cost, low reproducibility, and insufficient coverage. To address this gap, we present STG, a Structured Testbench Generation framework that exploits the inherent structure of hardware designs to generate deterministic testbenches. As a direct verification tool, STG runs 720x faster than an iterative LLM-based testbench generation flow and higher rate of successful compilation, achieves higher coverage, and reduces false-pass verdicts on incorrect DUTs. STG also helps identify errors in RTL generation benchmarks by exposing faulty benchmark testbenches. As a data curation engine, it is 11x faster than LLM-based filtering on a single CPU core with 127x less energy, and the resulting distilled models provide state-of-the-art performance in our multi-benchmark evaluation. As a test-time scaling oracle, it reduces node count by 14-47\\%. Our models are available at https://huggingface.co/collections/AS-SiliconMind/siliconmind-v12."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Binary Search Variants: A Comprehensive Analysis",
+    "authors": "Ali Dasdan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12970v1",
+    "source": "arXiv",
+    "abstract": "Binary search is deceptively simple in concept yet notoriously difficult to implement correctly. This paper presents a unified treatment of binary search: five core variants, six derived query functions, and four standard library implementations (BSD, glibc, Java, C++ STL), each with consistent notation, loop invariants, and analysis. We introduce bsearch_ultimate, a combined search that subsumes all variants in a single call. Every algorithm is provided as synchronized Python code, Dafny formal proof, and pseudocode. All implementations are validated by over 9,500 tests and 21 Dafny formal verifications; an additional six deliberately faulty implementations demonstrate common bug categories and Dafny's ability to detect them. We also provide memorable rules linking boundary choices to loop conditions and update formulas."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization",
+    "authors": "Gaurav Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12854v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models such as GPT-4o and GPT-5 achieve strong zero-shot performance on biomedical claim verification, but cost and opacity limit scalable use. We fine-tune three small LLMs: Phi-3-mini (3.8B), Qwen2.5-3B, and Mistral-7B, via QLoRA on SciFact and HealthVer, providing the first study of QLoRA models against GPT-4o and fine-tuned BioLinkBERT encoders. Mistral-7B QLoRA surpasses both GPT-4o and GPT-5 (up to 12% F1 gain) at a fractional cost using just 1,008 training examples. We conduct extensive in-domain and cross-domain evaluation: models trained on SciFact tested on HealthVer and vice versa, at matched sizes to isolate dataset structure from data quantity. We identify a previously unreported structural artifact in SciFact that inflates in-domain scores, and show through bidirectional out-of-domain evaluation that training on structurally sound data enables robust cross-domain transfer. We plan to release all code and adapter checkpoints."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
+    "authors": "Tianyu Liu, Allen Xin Wang, Antonia Panescu, Lisa Xinyi Chen, Wenxin Long, Xinyu Wei, Yueqian Jing, Ziyao Zeng, Jihang Chen, Sihan Jiang, Ziqing Wang, Siyi Gu, Siyu Chen, Xinyang Hu, Haoran Shao, Leqi Xu, Wangjie Zheng, Zhiyuan Cao, Ada Fang, Botao Yu, Kunyang Sun, Rex Ying, Arman Cohan, Qingyu Chen, Lingzhou Xue, Kaize Ding, Yuanqi Du, Wengong Jin, Zhuoran Yang, Marinka Zitnik, James Zou, Hua Xu, Hongyu Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12736v1",
+    "source": "arXiv",
+    "abstract": "AI agents are increasingly being developed to accelerate scientific discovery, yet their practical capabilities in real research settings remain poorly understood. Existing benchmarks for AI agents rarely capture the complexity, heterogeneity, and extended reasoning required by scientific work, whereas benchmarks for scientific tasks often reduce research to static, direct problems and provide limited support for interactive evaluation. Here, we introduce SciAgentArena, a systematic benchmark for evaluating AI agents in real-world scientific research scenarios drawn from emerging needs across multiple domains. SciAgentArena comprises approximately 200 tasks with stepwise verification and an interactive, agent-agnostic environment for assessing diverse AI agents. Using this benchmark, we find that current agents can contribute effectively to well-specified data-analysis workflows, particularly when the task structure and evaluation criteria are clear. However, their performance remains uneven across scientific contexts: agents struggle to generate genuinely novel insights, sustain self-directed exploration, and formulate robust solutions for open-ended research questions. We further characterize common failure modes across agents and identify opportunities for improving their reliability, autonomy, and scientific reasoning. Together, SciAgentArena provides a practical framework for measuring progress in AI agents for science and for guiding the design of future agents capable of addressing complex scientific challenges. Full codes, tasks, and datasets can be accessed via this link: https://sciagentarena.github.io/."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "EquiDexFlow: Contact-Grounded SE(3)-Equivariant Dexterous Grasp Generative Flows",
+    "authors": "Clinton Enwerem, John S. Baras, Calin Belta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12728v1",
+    "source": "arXiv",
+    "abstract": "Most learned dexterous grasp generators relegate contact forces to a downstream verification step, so a kinematically-plausible pose can still violate the conditions for a stable physical grasp. We address this with EquiDexFlow, an SE(3)-equivariant flow-matching model that jointly predicts wrist pose, joint angles, fingertip contacts, surface normals, and contact forces from an object point cloud. Our architecture projects contacts onto the object surface and forces into the Coulomb friction cone by construction, so placement and friction compliance hold without loss penalties. We prove end-to-end SE(3) equivariance and verify it empirically over 200 rotations, with wrist residuals below $0.04^\\circ$ and exactly zero joint deviation. Trained on 8,100 force-closure grasps across 81 objects for the 16-DoF Allegro Hand, our model achieves zero friction violations, the best composite score, and the lowest wrench residual among all ablation variants. We retarget decoded fingertip contacts to a 16-DoF LEAP Hand via per-finger inverse kinematics, and our hardware-feasible refinement places every joint at least 5% inside its actuator envelope while preserving wrench balance. On the physical robot, retargeted EquiDexFlow-decoded grasps complete open-loop pick-and-hold trials on all six test objects, with every asymmetric object succeeding at both the canonical pose and a $120^\\circ$ co-rotation. Videos, code, and checkpoints are available at https://equidexflow.github.io."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Definitional alignment before capability alignment: a Design-Science framework for adjudicating claims about AGI",
+    "authors": "J. E. Aguilera Briones",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12713v1",
+    "source": "arXiv",
+    "abstract": "Claims that artificial general intelligence has already arrived and claims that it remains decades away are often defended from overlapping evidence. \"AGI\" lacks a single shared and stable referent and competing operationalizations can return different verdicts on the same system. This article treats that under-specification as a design and governance problem. Following Design Science Research Methodology, it develops DAF-AGI, a second-order conceptual artifact with two coupled components: five ordinal criteria for assessing the adjudicative fitness of candidate definitions and a structured governance audit of authorship, interest, certification, external verification and revision authority. The artifact is demonstrated on five prominent measurement families and one deflationary boundary position in a documented corpus and then stress-tested against a stylized strong arrival claim: that current generative systems constitute AGI because they outperform a well-educated adult on many cognitive tasks. On evidence from the cited 2024-2025 sources, the claim was certifiable only under a performance-based operationalization; capability-ontology, psychometric and skill-acquisition approaches did not certify it, the economic family remains indeterminate and the deflationary position refuses binary adjudication. The contribution is a novel integration and operationalization, not an empirical validation: independent application, inter-rater testing and author-external cases remain necessary. The paper further proposes definitional sovereignty as an enabling component of algorithmic sovereignty: the institutional capacity to contest, certify and revise imported technological categories under public accountability."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents",
+    "authors": "Tianyu Ding, Jianhong Xin, Juan Pablo De la Cruz Weinstein",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12634v1",
+    "source": "arXiv",
+    "abstract": "Long-horizon tool-use reinforcement learning can learn from outcome verification, but its trajectory-level advantage is broadcast across many reasoning, API, and answer tokens. Self-distillation promises a denser signal by reusing a policy's own rollouts or a privileged teacher. We show, however, that direct token-level self-distillation can silently destroy tool use: it rehearses teacher behavior without knowing which actions the verifier rewards, so useful skills and harmful shortcuts are amplified together. We introduce Sibling-Guided Credit Distillation (SGCD), which uses distillation for credit assignment rather than as a competing actor loss. Dynamic sampling produces mixed successful and failed sibling rollouts; an external LLM summarizes their contrast into a training-only stepwise credit reference; dense teacher/student divergence drives credit reassignment; and bounded detached credit weights reshape GRPO token advantages. The deployed student sees no external LLM, sibling evidence, or oracle. Across AppWorld and $τ^3$-airline, SGCD improves over matched GRPO comparators: AppWorld TGC $42.9 \\to 45.6$ on test_normal and $24.7 \\to 27.0$ on test_challenge, and $τ^3$-airline pass@1 $0.583 \\to 0.602$."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "\"Did you lie?\" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms",
+    "authors": "Alan Cooney, David Africa, Geoffrey Irving",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12618v1",
+    "source": "arXiv",
+    "abstract": "Robust lie detectors for language models could enable powerful techniques for auditing, monitoring, and post-hoc investigation of model behaviour, but evaluating them requires testbeds where models verifiably believe the opposite of what they say. We show that existing trained model organisms often fail this requirement, leaving prior positive and negative detection results difficult to interpret. We address this with 13 reasoning model organisms whose hidden beliefs are verified in chain-of-thought and shown to generalise to held-out tasks, alongside Varied Deception, a prompted-lying testbed covering a broad range of lie-inducing motivations. On these testbeds we evaluate four detectors: a chain-of-thought judge, a logprob classifier, and two activation probes, including Did-You-Lie (DYL), a new method for training follow-up probes. On prompted lying, across 31 open-weight models spanning 2B to 1T parameters, all four detectors show positive scaling with model capability. However, every activation- and logprob-based detector drops sharply on our trained model organisms, with DYL retaining the most signal; only the chain-of-thought judge remains strong, with 0.82 balanced accuracy, partly as an artefact of our verification process favouring CoT-readable beliefs. Current lie detectors therefore cannot support high-confidence claims about model beliefs, and we suggest research directions that may address some of their current limitations. We release our datasets, model organisms, and trained detectors."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Beam modelling of Hitachi PROBEAT proton therapy system for a GPU-based Fast Monte Carlo dose engine",
+    "authors": "Qianxia Wang, Poenisch Falk, Yao Zhao, Xueming Bai, Roelf Slopsema, Kirk Jon Luca, Thomas J Whitaker, Yun Hu, Uwe Titt, Radhe Mohan, Pablo Yepes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12602v1",
+    "source": "arXiv",
+    "abstract": "Background: An in-house dose engine independent of clinic TPS is not only a reliable tool for patient QA verification. More importantly, it plays vital role in cutting-edge research due to its flexibility in implementing new functions. In this study, we upgraded our existing beam model with using double-Gaussian distributions for both spatial and opening angle distributions of particles to obtain more accurate phase space files. It is expected to potentially improve the performance of this independent dose engine in both clinic and research at the expanded MD Anderson proton center."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "VIA-SD: Verification via Intra-Model Routing for Speculative Decoding",
+    "authors": "Yuchen Xian, Yang He, Yunqiu Xu, Yi Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12243v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) addresses the high inference costs of LLMs by having lightweight drafters generate candidates for large verifiers to validate in parallel. Existing draft-verify methods use binary decisions: accept or fully recompute. Yet we find that many rejected tokens can be verified correctly by a slim submodel derived from the full verifier via intra-model routing, instead of the full verifier. This motivates our slim-verifier to handle tokens requiring moderate verification resources, reducing expensive large-model calls. We propose Verification via Intra-Model Routing for Speculative Decoding (VIA-SD), a multi-tier framework using a routed slim-verifier. Draft tokens are processed hierarchically: direct acceptance for high-confidence cases, slim-verifier regeneration for medium-confidence cases, and full-model verification for uncertain cases. Across four representative tasks and multiple model families, VIA-SD reduces rejection rates by 0.10-0.22 and delivers 10-20% speedups over strong SD baselines, while achieving 2.5-3x acceleration over non-drafting decoding. Moreover, VIA-SD is compatible with existing SD frameworks without modifying their training procedures. Our results suggest multi-tier SD as a general paradigm for scalable and efficient LLM inference. Project page: https://zju-xyc.github.io/VIA-SD-Project-Page/"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning",
+    "authors": "Ziang Yan, Sheng Xia, Jiashuo Yu, Yue Wu, Tianxiang Jiang, Songze Li, Kanghui Tian, Yicheng Xu, Yinan He, Kai Chen, Limin Wang, Yu Qiao, Yi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12195v1",
+    "source": "arXiv",
+    "abstract": "Recent progress in foundation models has shifted toward agentic behavior involving multi-step reasoning and tool use. However, open-source efforts largely focus on text-dominant settings, leaving long-horizon multimodal tasks underexplored. This gap is evident in video tasks requiring sustained temporal understanding and iterative interaction. We present InternVideo3, a framework enhancing these capabilities via Multimodal Contextual Reasoning (MCR). MCR treats understanding as a closed-loop process over a shared, evolving context containing observations, instructions, reasoning, tool actions, and memory. This frames long-video understanding as evidence accumulation and verification. To ensure efficiency, we introduce Multimodal Multi-head Latent Attention (M^2LA), a token-preserving reparameterization compressing KV-cache states while retaining the full token stream. Our staged training includes continued pretraining, short-to-long supervised fine-tuning, rule-based reinforcement learning, and on-policy distillation. Experiments show InternVideo3 achieves strong performance on benchmarks like Video-MME, MLVU, and EgoSchema. We further instantiate the model as a video agent with retrieval tools, demonstrating robust evidence-grounded behavior. Our results suggest that efficient context handling and closed-loop reasoning are vital for adapting open multimodal models toward long-horizon visually grounded agency."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "LIMR: Intent-Aware Mashup API Recommendation via LLM-Augmented Multi-Scale Fusion_supp1-3674665.pdf",
+    "authors": "Xiaohong Li",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tsc.2026.3674665/mm1",
+    "source": "IEEE",
+    "abstract": "The increasing availability of Web APIs has amplified the complexity of mashup creation, where developers must identify compatible and functionally relevant APIs based on often ambiguous natural language descriptions. Traditional methods also fall short in capturing hierarchical semantic cues, modeling compatibility, and aligning with developer intent. Although large language models (LLMs) offer strong generalization capabilities, they remain unreliable in mashup recommendation due to hallucinated outputs, limited controllability, and token-length constraints when dealing with large-scale API repositories. To overcome these limitations, we introduce <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LIMR</i>, an intent-aware mashup recommendation framework that combines LLM-augmented semantic reasoning with structured, multi-scale neural modeling. <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LIMR</i> first prompts a LLM to extract high-level intent from user requirements, which serves as a global semantic signal. This intent is fused with low-level, multi-scale features extracted by a convolutional encoder, which are designed to capture fine-grained lexical/phrasal patterns at different granularities and provide precise semantic grounding for API matching. These heterogeneous representations are further contextually refined through a Transformer-based interaction module. To handle nonlinear semantic dependencies and compositional complexity, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LIMR</i> integrates a Kolmogorov–Arnold Network (KAN) with learnable activation functions, enhancing the model's capacity to capture intricate feature interactions. The entire framework is optimized via LLM, incorporating auxiliary objectives such as mashup category prediction and API quality estimation to guide generalization and reduce overfitting. Comprehensive experiments on the ProgrammableWeb and APIBench datasets show that <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LIMR</i> significantly outperforms state-of-the-art baselines, which the ranking-oriented metrics, including NDCG and mAP, achieves improvements of 17.1%–34.2% over the strongest competitors. These results confirm the effectiveness of <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">LIMR</i>'s hybrid design in delivering precise, robust, and intent-aware mashup API recommendations, especially in scenarios where LLMs alone fail to meet accuracy and scalability demands."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "LLM-based Generation of High-Level Benchmarks for MVL Designs",
+    "authors": "Rolf Drechsler",
+    "publish": "2026 IEEE 56th International Symposium on Multiple-Valued Logic (ISMVL)",
+    "url": "https://doi.org/10.1109/ismvl68998.2026.00040",
+    "source": "IEEE",
+    "abstract": "Benchmark circuits are crucial for evaluating and comparing algorithms in Electronic Design Automation (EDA). While extensive benchmark suites exist for binary logic, only a few are available for Multi-Valued Logic (MVL) circuits. Existing methods often rely on encoded binary circuits, which do not adequately capture the structural properties of MVL designs.In this work, we demonstrate that Large Language Models (LLMs) can be used to generate meaningful MVL benchmarks with minimal effort on a higher abstraction level. As a proof of concept, we present the automatic generation of an 8-bit Arithmetic Logic Unit (ALU) operating over GF(3). The resulting benchmark exhibits realistic design structures and functional diversity, illustrating the potential of LLM-based generation for future MVL synthesis and verification research."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "LLM-Guided Adaptive Compensator: Bringing Adaptivity to Robotic Feedback Control With Large Language Model_supp1-3700674.docx",
+    "authors": "Yuxi Lu",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tase.2026.3700674/mm2",
+    "source": "IEEE",
+    "abstract": "Recent advances in code generation and reasoning have enabled the growing use of large language models (LLMs) in robotics. The design of traditional robotic feedback controllers often requires extensive expert knowledge and iterative computational effort, motivating the exploration of LLM-assisted controller development. However, existing efforts are largely restricted to overly simplified systems, provide limited comparison with human-designed controllers, and lack validation on real-world robotic platforms. To address these gaps, this work investigates the use of LLMs in robotic feedback control by focusing on adaptive control and proposing an LLM-guided adaptive compensator. Instead of generating a complete controller from scratch, the LLM is guided to design a compensator that modulates the response of an unknown system to match that of a predefined reference system, thereby achieving adaptivity. The proposed approach is evaluated using five adaptive controllers on a two-degree-of-freedom (DoF) soft robot and a one-DoF shoulder joint of a humanoid robot. Both simulation and real-world experiments demonstrate that the LLM-guided adaptive compensator achieves performance comparable to four conventional adaptive controllers. Lyapunov-based analysis further establishes the stability and generalization capability of the proposed compensator, while analysis of the reasoning process suggests a more structured design approach. This study introduces a novel framework for integrating LLMs into robotic feedback control, with promising practical applicability. Note to Practitioners—This paper proposes a framework that uses large language models (LLMs) to design an adaptive compensator for robotic feedback control. Existing LLM-based approaches have largely been limited to simple systems and to adjusting controller gains, which restricts their reliability and applicability in real automation settings. In contrast, the proposed framework enables an LLM to design a compensator that modulates the response of an existing controller to track a predefined reference system, thereby achieving adaptivity. We provide theoretical analysis, drawing on Lyapunov stability theory and analysis of the LLM reasoning process, to demonstrate the stability and generalization capability of the compensator. We also compare its performance with that of several human-designed adaptive controllers, showing comparable control performance along with improved usability and design efficiency. These results support validation on real-world robots, where both simulations and prototype experiments confirm improved performance. From a practical standpoint, the proposed approach is zero-shot, requires only the desired system response as input, and uses open prompts that generalize across different robot platforms. This eliminates the need for a complete system model. Although demonstrated on robotic feedback control, the framework is applicable to other feedback control domains. A current limitation is that the upper bound of system complexity that can be reliably handled remains to be established, motivating future benchmarking efforts."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "LLM-Guided Adaptive Compensator: Bringing Adaptivity to Robotic Feedback Control With Large Language Model_supp2-3700674.mp4",
+    "authors": "Yuxi Lu",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tase.2026.3700674/mm1",
+    "source": "IEEE",
+    "abstract": "Recent advances in code generation and reasoning have enabled the growing use of large language models (LLMs) in robotics. The design of traditional robotic feedback controllers often requires extensive expert knowledge and iterative computational effort, motivating the exploration of LLM-assisted controller development. However, existing efforts are largely restricted to overly simplified systems, provide limited comparison with human-designed controllers, and lack validation on real-world robotic platforms. To address these gaps, this work investigates the use of LLMs in robotic feedback control by focusing on adaptive control and proposing an LLM-guided adaptive compensator. Instead of generating a complete controller from scratch, the LLM is guided to design a compensator that modulates the response of an unknown system to match that of a predefined reference system, thereby achieving adaptivity. The proposed approach is evaluated using five adaptive controllers on a two-degree-of-freedom (DoF) soft robot and a one-DoF shoulder joint of a humanoid robot. Both simulation and real-world experiments demonstrate that the LLM-guided adaptive compensator achieves performance comparable to four conventional adaptive controllers. Lyapunov-based analysis further establishes the stability and generalization capability of the proposed compensator, while analysis of the reasoning process suggests a more structured design approach. This study introduces a novel framework for integrating LLMs into robotic feedback control, with promising practical applicability. Note to Practitioners—This paper proposes a framework that uses large language models (LLMs) to design an adaptive compensator for robotic feedback control. Existing LLM-based approaches have largely been limited to simple systems and to adjusting controller gains, which restricts their reliability and applicability in real automation settings. In contrast, the proposed framework enables an LLM to design a compensator that modulates the response of an existing controller to track a predefined reference system, thereby achieving adaptivity. We provide theoretical analysis, drawing on Lyapunov stability theory and analysis of the LLM reasoning process, to demonstrate the stability and generalization capability of the compensator. We also compare its performance with that of several human-designed adaptive controllers, showing comparable control performance along with improved usability and design efficiency. These results support validation on real-world robots, where both simulations and prototype experiments confirm improved performance. From a practical standpoint, the proposed approach is zero-shot, requires only the desired system response as input, and uses open prompts that generalize across different robot platforms. This eliminates the need for a complete system model. Although demonstrated on robotic feedback control, the framework is applicable to other feedback control domains. A current limitation is that the upper bound of system complexity that can be reliably handled remains to be established, motivating future benchmarking efforts."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Testing LLM-Generated Distributed Protocol Code",
+    "authors": "Brendan Coyne, Ankush Das",
+    "publish": "Proceedings of the 2026 ACM SIGPLAN International Workshop on Principles of Agentic Engineering",
+    "url": "https://doi.org/10.1145/3819802.3820581",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-11",
+    "title": "CloudHeal: LLM-Driven Fault Self-Healing in Aerospace Cloud Platforms via Structured Recovery Knowledge",
+    "authors": "Xiangyu Wang, Xinhua He, Xin Cui, Xiaoyu Guo",
+    "publish": "2026 China Aerospace Information Technology Conference (CAIT)",
+    "url": "https://doi.org/10.1109/cait70489.2026.11553922",
+    "source": "IEEE",
+    "abstract": "As aerospace missions increasingly rely on cloud-native infrastructure for measurement, launch, and control (MLC) services, the need for autonomous fault recovery has become critical. This paper presents CloudHeal, an LLM-driven self-healing agent framework designed for containerized cloud platforms. We propose a structured recovery knowledge architecture that organizes fault-handling experience into three layers—recovery strategies, repair routines, and command-level operations—enabling systematic reuse of diagnostic and repair experience across heterogeneous fault scenarios. An automatic knowledge acquisition module distills and refines recovery procedures from successful healing trajectories, enabling continuous self-improvement. We evaluate CloudHeal on a containerized cloud testbed deploying representative MLC microservices. Experimental results demonstrate that CloudHeal achieves 91.0% recovery success rate with an average of 8.5 steps, outperforming platform-native self-healing (16.0% success) and manual recovery (78.0% success, up to 15.2 minutes) by a significant margin."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Agentic AI Frameworks: Orchestration Architectures and Autonomous LLM-Based Reasoning Systems",
+    "authors": "Yashwanth L, SU Rishwanth, Shiny R. M",
+    "publish": "2026 3rd International Conference on Integrated Intelligence and Communication Systems (ICIICS)",
+    "url": "https://doi.org/10.1109/iciics67880.2026.11483602",
+    "source": "IEEE",
+    "abstract": "Agentic AI systems shift from static generative models to autonomous agents capable of reasoning and action. However, research remains fragmented across definitions, architectures, and evaluation practices, limiting informed adoption. Methods: 20 publications were reviewed (2021-2025) analyzing reasoning paradigms (CoT, ReAct, ToT), orchestration models (single-agent to multi-agent), memory designs, and evaluation methodologies using a five-dimensional analytical framework. Results: ReAct-based loops dominate (68 % adoption). Only 32% report safety mechanisms; evaluation is largely qualitative. Multi-agent architectures improve robustness but introduce 2-5x latency; hierarchical hallucination mitigation reduces errors by <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{4 0 - 5 0 \\%}$</tex>. Conclusion: The proposed research provide practitioners a structured framework for selecting reasoning, orchestration, and guardrail strategies. Key gaps remain in standardized benchmarks, safety governance, and interoperability, outlining opportunities for production-grade agentic systems.tonomous Reasoning, Multi-Agent Systems, Tool-Augmented Intelligence"
+  },
+  {
+    "date": "2026-6-11",
+    "title": "LLM-Enhanced RAG System for Multilingual Fake News Detection",
+    "authors": "Atia Sultana Mim, Habibur Rahman Shihab, Abdus Sattar",
+    "publish": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence &amp;amp; Networking (QPAIN)",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11546194",
+    "source": "IEEE",
+    "abstract": "The spread of fake news on social media is extremely quick and depletes the level of trust among the population. It is hard to detect fake news in the Bangla language due to ambiguity in sentence meaning, sarcasm, and the use of images with misleading text. The old approaches to machine learning and early deep learning are typically unable to cope with these multimodal difficulties. In this paper, a Large Language Model (LLM)-enhanced Retrieval-Augmented Generation (RAG) architecture is suggested to detect fake news. The system uses ChromaDB to retrieve the relevant information, the Serper API to verify news claims in real-time by using the web search service, and the EasyOCR to extract Bangla text in pictures. To enhance reliability and minimize false or hallucinated responses, two large language models, Gemini 2.5 Flash and Groq LLaMA-3.1, are combined and applied jointly and with a fusion-based decision process. The proposed framework is evaluated on the BanFakeNews dataset consisting of more than 57,000 Bangla news articles, and on a larger balanced assessment sample of 500 samples of 250 fake and 250 real cases of text and image modalities. Based on the experimental results, the proposed dual-model framework yields an 87% accuracy, 87.8% precision, 86% recall, and 86.9% F1 score, which is higher in comparison with the proposed Gemini 2.5 Flash model (84% accuracy) and Groq LLaMA-3.1 model (82.2% accuracy). The findings indicate that the retrieval-based evidence—LLM reasoning becomes an effective and reliable method in the detection of fake news in Bangla."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "GenAI-Driven Lifestyle and Dietary Analysis for Diabetes Risk Prediction: An Interactive Surrogate LLM Approach",
+    "authors": "V. Savithiri",
+    "publish": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence &amp;amp; Networking (QPAIN)",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11545650",
+    "source": "IEEE",
+    "abstract": "Diabetes mellitus is a health problem that is widely influenced by lifestyle and nutritional habits throughout the world, and is a major contributor to premature death, and a significant health burden from non-communicable diseases. In this paper, the author presents a GenAI based surrogate LLM architecture for predicting the disease risk of diabetes based on the main variables, such as Body Mass Index (BMI), age, family history, exercise, and preference towards sugary food. Aligned to the nature of SDG3 that is to address both universal health coverage as well as lowering death rate from non-communicable diseases, this medical framework is in line with the need for access to diagnostic tools in resource-constrained environments where the density of specialized health workers might be low. The algorithms used are the pre-processing process of an organized list of lifestyle and dietary features, rules-based surrogate predictor of the risk and creation of interactive visualization tools. The framework was implemented with the help of Gradio-interface that allows users to make predictions based on dataset and manual entries with the ability to see logic behind the answer. The results indicate that out of an estimated 188 number, 120 were non-diabetic and 68 were diabetic (Fig. 2), higher value of BMI (ranging between 20-35) (Fig. 3), age predisposition (being young 20-30 years old) (Fig. 4), positive family history (Fig. 5), lack of exercise (Fig. 6) and preference of foods rich in sugar (Fig. 7) had significant correlation with the risk of diabetes. The interactive model simplified the prediction and predictions were based on the predicted score with the help of graphic charts, in favor of improving mortality and increasing life expectancy with early intervention. To sum up, this framework illustrates the power of the explainable AI in combination with lifestyle-based analysis, in order to prevent diabetes and promote healthy lives and wellbeing. Additional features (e.g., sleep, stress, diet diversity) will be introduced to the product in the future, it will be upscale to different data sets, and validated in clinical and mobile health applications furthering the international health policy goals and strengthening biomedical innovation for disability prevention."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Unifying Data, Memory, and Compute Efficiency in LLM training: A Survey",
+    "authors": "Vanessa Schmidt, Huy Hoang Nguyen, Cédric Jung, Shirin Salehi, Anke Schmeink",
+    "publish": "IEEE Transactions on Artificial Intelligence",
+    "url": "https://doi.org/10.1109/tai.2026.3702625",
+    "source": "IEEE",
+    "abstract": "Resource constraints increasingly determine what can be trained, fine-tuned, and deployed in large language models (LLMs), yet efficiency is often studied through isolated techniques rather than as an interacting system of limits. This survey adopts a constraint-centric perspective and organizes recent progress around three coupled bottlenecks: data efficiency (what to train on), memory efficiency (how to fit training), and compute budget awareness (when and where to spend FLOPs). On the data axis, we review selection and pruning methods that maximize learning per token, ranging from scalable proxy signals based on learning dynamics to gradient- and influence-based scoring, as well as difficulty-aware and curriculum-style strategies. We highlight emerging evidence that different notions of “good data” dominate in different regimes, implying that optimal subsets depend on the task objective and resource budget rather than being universal. On the systems side, we show that GPU memory, not raw compute, is often the dominant bottleneck in fine-tuning, and that effective scaling requires jointly reducing weight storage, optimizer states, and activation memory rather than optimizing any single component in isolation. Beyond memory, we frame training and inference as compute-governed processes in which optimization, data selection, and decoding must explicitly account for finite FLOP budgets. We review evidence for computeoptimal allocation and stopping rules, where computation should be halted or reallocated once marginal performance gains fall below a budget-dependent threshold. Together, these results unify compute-aware data selection, scaling laws, and adaptive inference under a common principle of resource-conditioned decision-making."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Enhancing Reinforcement Learning Alignment via LLM-Based Interpretation of Human Natural Language Feedback",
+    "authors": "Md.Abdur Rahman, Md. Ferdaus Hossen, Hazrat Ali, Tousif Tanvir",
+    "publish": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence &amp;amp; Networking (QPAIN)",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11545848",
+    "source": "IEEE",
+    "abstract": "This paper talks about FA-GPT Align, a framework for reinforcement learning that improves LLM alignment by understanding human natural language feedback. A special feedback interpretation module turns free-form human reviews into multi-dimensional reward attributes. This lets you get more information than with traditional scalar RLHF signals. During optimization, an adaptive reward fusion mechanism changes the weights of the reasoning, factuality, coherence, and safety dimensions. A stability-enhanced reinforcement loop that normalizes rewards and refines itself over and over again makes things even more consistent and strong. The results of the experiment show that FA-GPT Align is better than the standard SFT, RLHF, and DPO baselines. This shows that semantically grounded reward modeling works for making LLM behavior more human-like. Reinforcement Learning, LLMs, Natural Language Feedback, Human Alignment, and Reward Shaping are all terms that come to mind."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "FIT-Print: Towards False-claim-resistant Model Ownership Verification via Targeted Fingerprint_supp1-3702542.pdf",
+    "authors": "Yiming Li",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tifs.2026.3702542/mm1",
+    "source": "IEEE",
+    "abstract": "Model fingerprinting has emerged as a crucial mechanism for safeguarding the intellectual property of open-source models, offering a non-intrusive approach that requires no modifications to the protected model. However, our analysis reveals that existing fingerprinting techniques are fundamentally vulnerable to false claim attacks, wherein adversaries can fraudulently assert ownership over independent third-party models. We demonstrate that this vulnerability stems from the untargeted nature of current methods, which evaluate model similarity based on arbitrary sample outputs rather than alignment with a specific, predefined reference. To mitigate this vulnerability, we introduce FIT-Print, a targeted fingerprinting paradigm that actively counters false claim attacks. Specifically, FIT-Print leverages optimization to transform the fingerprint into a verifiable, targeted signature. Building upon this foundation, we propose two black-box fingerprinting methods, the bit-wise FIT-ModelDiff and the list-wise FIT-LIME, which utilize output distances and feature attributions as robust model signatures, respectively. Extensive evaluations across benchmark models and datasets show that our framework perfectly neutralizes false claim attacks (100% defense success rate) and eliminates false alarms on independent models (0.0%), all while maintaining a 100% ownership verification rate against diverse model reuse techniques."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "LLM-Integrated Declarative Program Analysis",
+    "authors": "Sara Baradaran, Amirmohammad Nazari, Mukund Raghothaman",
+    "publish": "Proceedings of the 15th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis",
+    "url": "https://doi.org/10.1145/3814987.3814993",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-11",
+    "title": "CSLID: An Industrial Intrusion Detection Framework with Shift-Aware Feature Screening and LLM-Augmented Ensemble Inference",
+    "authors": "Tuyen T. Nguyen, Hanh P. Du, Hoa N. Nguyen",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3702753",
+    "source": "IEEE",
+    "abstract": "Intrusion detection in Industrial Control Systems (ICS) remains challenging due to evolving attack behaviors, limited labeled data, train–deployment distribution mismatch, and strict timing constraints of industrial protocols. This paper presents CSLID, a practical intrusion detection framework for the IEC 60870-5-104 and DNP3 protocols. CSLID integrates shift-aware feature screening with SHAP-guided feature selection, controlled offline LLM-based tabular augmentation, and lightweight parallel ensemble inference to improve benchmark stability and deployment efficiency under changing traffic conditions. The augmentation module is not assumed to generate fully realistic traffic; instead, it is used to expand training-data diversity for rare and evolving attack categories. Constraint checks, filtering, and quantitative validity/artifact analyses are applied to reduce generation-induced risks. Detection decisions are produced through a parallel weighted-voting ensemble of heterogeneous base classifiers, enabling low-latency inference while maintaining competitive detection performance. Experiments on two benchmark datasets show that CSLID achieves an F1-score of 87.47% with a false alarm rate of 1.13% on IEC 60870-5-104, and an F1-score of 99.86% with a false alarm rate of 0.01% on DNP3 dataset. Comparative results indicate competitive and, in several cases, higher reported benchmark performance than prior approaches under broadly comparable reported settings. Offline evaluations further show per-flow processing latencies on the order of tens of microseconds, suggesting compatibility with typical ICS/SCADA timing requirements. Validation in hardware-in-the-loop or real industrial testbeds remains future work."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "The Decoy Dilemma in Online Medical Information Evaluation: A Comparative Study of Credibility Assessments by LLM and Human Judges",
+    "authors": "Jiqun Liu, Jiangen He",
+    "publish": "ACM Transactions on Interactive Intelligent Systems",
+    "url": "https://doi.org/10.1145/3820166",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Temporal-Aware GPU Resource Allocation for Distributed LLM Inference via Reinforcement Learning",
+    "authors": "Chengze Du, Zhiwei Yu, Heng Xu, Haojie Wang, Bo Liu, Jialong Li",
+    "publish": "IEEE Transactions on Cloud Computing",
+    "url": "https://doi.org/10.1109/tcc.2026.3702578",
+    "source": "IEEE",
+    "abstract": "The rapid growth of large language model (LLM) services imposes increasing demands on distributed GPU inference infrastructure. Most existing scheduling systems follow a reactive paradigm, relying solely on the current system state to make decisions, without considering how task demand and resource availability evolve over time. This lack of temporal awareness in reactive approaches leads to inefficient GPU utilization, high task migration overhead, and poor system responsiveness under dynamic workloads. In this work, we identify the fundamental limitations of these instantaneous-state-only scheduling approaches and propose Temporal Optimal Resource scheduling via Two-layer Architecture (TORTA). TORTA introduces a spatiotemporal scheduling framework that captures both long-term workload patterns and short-term execution constraints. It adopts a two-layer design: a macro-level scheduler leverages reinforcement learning and optimal transport to coordinate inter-region task distribution, while a micro-level allocator refines task-to-server assignments within each region to reduce latency and switching costs. Experimental results across multiple network topologies show that TORTA reduces average inference response time by up to 15%, improves load balance by approximately 4-5%, and cuts total operational cost by 10-20% compared to state-of-the-art baseline methods."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "AgriMind: An IoT-Driven LLM Framework for Intelligent Precision Agriculture",
+    "authors": "Sheikh Sidratul Muntaha Punno, Tanvir Ahmed, MD. Akhtarujjaman Siddiquee, Zohaira Khan Amisha, Saurav Chandra Das",
+    "publish": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence &amp;amp; Networking (QPAIN)",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11546542",
+    "source": "IEEE",
+    "abstract": "Agriculture is a critical sector of Bangladesh's economy, but it is increasingly threatened by a lack of resources, changing weather patterns and soaring food demand. Conventional methods of farming are no longer sufficient enough for sustainable production, and that's where intelligent data-centric solutions become the need of the hour. In this context, we propose an IoT-enabled smart farming framework, where low-cost sensors, microcontrollers for data acquisition, cloud platforms and AI-driven applications are combined to perform real-time environmental monitoring and intelligent decision-making. The architecture measures temperature and humidity, soil moisture, air quality and water level for irrigation control interfaced with the microcontroller. Sensor readings are sent to the cloud where data is stored, visualised, and analyzed in MATLAB. This data is processed by LLM model, which produces contextaware recommendations for crops as well as irrigation, ventilation and lighting control. A synchronised cross-platform application provides real-time visualisation, actuator control and AI-driven insights. An experimental deployment showed that the system achieved 25 % water savings and kept data latency to within 3 seconds, thus confirming its efficiency, scalability and deployment feasibility. The cost-effective, accessible and scalable nature of the proposed system can contribute to precision and sustainable agriculture in resource-limited countries such as Bangladesh."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Enhancing Misinformation Detection in Bangla Social Media: A Hybrid Framework Using Fine-Tuned BanglaBERT and LLM-Based Explainability",
+    "authors": "Tasmia Chowdhury Munira, Tahara Irin Tithy, Md. Arifuzzaman",
+    "publish": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence &amp;amp; Networking (QPAIN)",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11546062",
+    "source": "IEEE",
+    "abstract": "The spread of misinformation on social media is a growing concern, especially for low-resource languages like Bangla where effective tools are very limited. Most current solutions rely on general multilingual models that often miss the subtle cultural and linguistic variation of the Bangla language. In this paper, we propose a specialized, hybrid framework for analyzing and predicting the propagation of online misinformation. Our approach combines a fine-tuned BanglaBERT model with linguistic stemming to better understand complex Bangla grammar and uses optimal probability thresholding to make smarter decisions in uncertain cases. To address the lack of transparency in traditional AI models, we integrated an LLM Model like Google Gemini to generate reasoning behind the classification, explaining why a specific news appears to be fake or authentic. We evaluated our framework using two distinct, collected datasets to simulate different propagation environments. On the standard BanFakeNews benchmark, our model achieved a high accuracy of 96 %, demonstrating its effectiveness on structured data. When applied to a collected real-world social media dataset, the accuracy was 77 %, which highlights the complexity of analyzing the messy, evolving patterns of actual online rumors. On an important note, our explainability module successfully provided clear justifications for these decisions with the transparency and trust that is often missing in automated detection systems."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "BDTour-LLM: Enhancing Bangladesh Tourism Assistance Through Domain-Specific Fine-Tuning of Large Language Models",
+    "authors": "Zobayer Hasan, S M Ashaduzzaman, Mohammed Masud Chowdury Mahir, Sadia Akter, Faias Satter, Mrinmoy Biswas Akash",
+    "publish": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence &amp;amp; Networking (QPAIN)",
+    "url": "https://doi.org/10.1109/qpain69676.2026.11545828",
+    "source": "IEEE",
+    "abstract": "The tourism industry in Bangladesh encounters considerable obstacles stemming from the absence of a centralized and readily accessible digital information system. Although general-purpose Large Language Models (LLMs) possess interactive functionalities, they frequently lack the localized context essential for delivering accurate travel assistance within specialized domains. This study presents BDTour-LLM, a tailored generative model meticulously fine-tuned for the tourism context of Bangladesh. We conduct a comparative analysis of two experimental frameworks: a Qwen2.5-3B model trained on a meticulously curated dataset comprising 1.5 K entries and a Qwen31.7 B model trained on an augmented dataset encompassing 65 K entries. By employing Parameter-Efficient Fine-Tuning (PEFT) via Quantized Low-Rank Adaptation (QLoRA), we illustrate that the volume of the dataset serves as a more pivotal determinant of performance than the parameter count for tasks specific to a given domain. Our results indicate that the 1.7 B model attained a 79% enhancement in factual recall and exhibited substantially reduced perplexity in comparison to its baseline version, thereby offering a scalable framework for localized artificial intelligence assistants."
+  },
+  {
+    "date": "2026-6-11",
+    "title": "Adaptive Approaches to Mitigating Extreme Verification Latency in Dynamic Environments - A Research Meta-Analysis",
+    "authors": "Mobin M. Idrees, Frederic Stahl, Atta Badii",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3702733",
+    "source": "IEEE",
+    "abstract": "Existing Data Stream Mining algorithms assume the availability of labelled and balanced data streams. However, in many real-world applications such as Robotics, Weather Monitoring, Internet of Things Fraud-Detection systems, Cybersecurity, Human Activity Recognition, etc., a vast amount of high-speed data is generated by sensors and real-time transaction data on the Internet, and this data is often unlabelled. In the domain of machine learning and data-driven decision-making, the challenge of Extreme Verification Latency (EVL) in non-stationary environments has gained significant attention. EVL refers to the considerable delay between the time a prediction is made and the time the true outcome becomes available. This latency is particularly problematic in non-stationary environments, where the underlying data distribution changes over time, rendering the delayed feedback less useful for model adaptation and accuracy improvement. This paper presents a research meta-analysis of adaptive approaches proposed to mitigate EVL in dynamic environments. The meta-analysis highlights common trends, trade-offs, and performance benchmarks as reported by across prior studies on EVL in non-stationary environments, providing both qualitative and quantitative insights into the state-of-the-art. By consolidating findings from the literature, this study identifies key research gaps and outlines promising directions for future work in handling EVL in evolving data streams. The key contribution of this meta-analysis is the systematic evaluation of EVL mitigation techniques across dynamic data stream contexts, providing practical insights and guidelines for selecting appropriate strategies in different application domains."
+  }
+]
