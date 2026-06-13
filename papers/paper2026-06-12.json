@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-11",
+    "title": "A local bijection between alternating sign matrices and descending plane partitions and a Striker--Fulmek-type $q$-statistic",
+    "authors": "Michael J. Schlosser",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13653v1",
+    "source": "arXiv",
+    "abstract": "We prove a local bijection between alternating sign matrices (ASMs) and descending plane partitions (DPPs) in the refined fibres of Behrend--Di Francesco--Zinn-Justin. The map is constructed by moving a boundary line through the ASM and DPP pictures. At each step only a bounded neighbourhood of that boundary is changed. In growth-diagram language, the boundary states are ordinary ASM row frontiers and shifted DPP path frontiers, and the elementary moves are reversible Fomin-type square rules. The proof checks that overlapping local moves are confluent, that every square is invertible, and that the completed boundary again satisfies the ordinary ASM and DPP coordinate inequalities. The only terminal choice is resolved by a radius-two fan rule on the visible height contour. The same local framework gives a statistic on refined ASMs whose generating function is the DPP degree enumerator. The statistic has a Striker--Fulmek quadratic core \\[ Q_{\\rm SF}(A)= \\sum_{1\\le r<s\\le n}\\ \\sum_{1\\le b<a\\le n} (n-r+1)A_{r,a}A_{s,b}, \\] plus a bounded fan-boundary correction and, outside the normal boundary gauge, an explicit compact-potential endpoint term. In the normal gauge this is \\[ W_{\\rm ASM}^{\\rm SF}(A)=Q_{\\rm SF}(A)+B_{\\rm fan}(A). \\] Thus the paper gives both a local ASM--DPP bijection and a statistic-preserving refined \\(q\\)-enumeration. The supplementary files reproduce selected local checks and the displayed arithmetic examples."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "SupraBench: A Benchmark for Supramolecular Chemistry",
+    "authors": "Tianyi Ma, Yijun Ma, Zehong Wang, Weixiang Sun, Ziming Li, Connor R. Schmidt, Chuxu Zhang, Matthew J. Webber, Yanfang Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13477v1",
+    "source": "arXiv",
+    "abstract": "Supramolecular chemistry, which includes the study of non-covalent host-guest assemblies, has advanced various applications. However, designing host-guest systems remains time-consuming, requiring days of dry-lab verification per candidate pair. Although LLMs have emerged as a fast alternative with strong performance on molecular binding tasks, no benchmark currently systematically evaluates LLMs for host-guest reasoning across fundamental supramolecular chemistry tasks, e.g., binding affinity prediction. To this end, we collaborate with domain experts to release the first Supramolecular Benchmark, called SupraBench, to evaluate LLMs in chemistry reasoning. Specifically, we design four fundamental tasks, i.e., binding affinity prediction, top-binder selection, solvent identification, and host-guest description, plus an auxiliary vision-based task for molecular identification. We also release SupraPMC, a curated 16M-token corpus of Supramolecular chemistry articles distilled from Europe PMC, to support the adaptation to the supramolecular domain. We benchmark a broad range of open and proprietary LLMs and find that LLMs leave substantial headroom across all tasks. Domain adaptation pretraining over SupraPMC transfers cleanly to in-distribution regression but trades off against strict letter-format output. Moreover, the difficulty profile differs sharply across task families, revealing distinct failure modes that indicate specific gaps in current supramolecular chemistry reasoning. Our source codes and benchmark datasets are available at https://github.com/Tianyi-Billy-Ma/SupraBench."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling",
+    "authors": "Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyang Jiang, Jin Zhu, Han Ding, Fei Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yu Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13473v1",
+    "source": "arXiv",
+    "abstract": "We present MaxProof, a population-level test-time scaling framework for competition-level mathematical proof in the MiniMax-M3 series. M3 first trains three proof-oriented capabilities -- proof generation, proof verification, and critique-conditioned proof repair -- using a defense-in-depth generative verifier engineered for low false-positive rate. These capabilities are merged into a single released M3 model. At test time, MaxProof treats the model as a generator, verifier, refiner, and ranker, searches over a population of candidate proofs, and returns one final proof through tournament selection. With MaxProof test-time scaling, the M3 model reaches 35/42 on IMO 2025 and 36/42 on USAMO 2026, exceeding the human gold-medal threshold on both."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests -- Insights from the AIDev Dataset",
+    "authors": "Mahmoud Abujadallah, Ali Arabat, Mohammed Sayagh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13468v1",
+    "source": "arXiv",
+    "abstract": "AI coding agents are increasingly used to generate pull requests (PRs) that propose code fixes in software projects. From a first exploration of the AIDev dataset, we find that 46.41\\% of the fixes proposed by the agents Copilot, Devin, Cursor, and Claude are rejected. This represents a significant amount of wasted resources that require human reviews, verifications, and running tests and validations for fixes that are merely discarded. Our goal in this paper is to understand the failure modes of AI-agents, an understanding that is crucial for better integrating AI-agents as efficient teammates. In this paper, we conduct a qualitative study on a representative sample of 306 non-merged pull requests created or co-authored by the agents mentioned earlier, followed by a quantitative analysis of the reasons for rejection. Our qualitative findings identify 14 reasons divided into four high-level categories for rejecting AI-agent fixes. We observe that developers can reject fixes due to fixes whose implementation is incorrect (e.g., incomplete, wrong approach), fixes that do not pass the continuous integration (CI) pipelines and fail tests, fixes for which the agent is unable to perform the implementation (e.g., no code generated, sessions lost), and fixes whose priority is low. Our results shed light on the importance of better guiding the model at these levels: (1) proposing hints about the approach to follow for fixing an issue, (2) outlining constraints or limitations regarding the approaches that should not be taken, and (3) instructing the agent on how to validate the implementation through CI pipelines and without introducing a breaking change. Our results suggest the need for good prioritization of tasks so that generated fixes do not lead to wasted human review efforts or wasted agent resources (e.g., tokens, compute, or allowed number of requests)."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Accelerating Speculative Diffusions via Block Verification",
+    "authors": "Alexander Soen, Hisham Husain, Valentin De Bortoli, Arnaud Doucet",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13426v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding speeds up LLM inference by using a draft model to generate tokens, with an acceptance-rejection scheme that ensures that the output matches the target distribution. Adapting this to continuous diffusions is difficult because speculative sampling requires drawing from a residual distribution. While straightforward in discrete spaces, efficiently sampling this residual in continuous space is non-trivial. Consequently, existing diffusion adaptations either use computationally inefficient sampling techniques or rely on an alternative scheme. In this work, we introduce a novel scheme that efficiently implements the original speculative sampling mechanism for diffusion models. Our approach offers a critical advantage over current methods: it enables us to adapt block verification from LLMs to diffusions -- which provably improves the acceptance rate of drafts. Furthermore, we formalize and analyze the Free Drafter, a heuristic self-speculative drafter for diffusions that requires no training. By enabling block verification, our Free Drafter yields up to a 6.3% speedup over existing speculative methods with no additional training and negligible overhead beyond the existing parallel verification pass."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "From Verdict to Process: Agentic Reinforcement Learning for Multi-Stage Fact Verification",
+    "authors": "Rongxin Yang, Shenghong He, Siyuan Zhu, Chao Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13262v1",
+    "source": "arXiv",
+    "abstract": "Recent approaches combining Large Language Models (LLMs) with retrieval-augmented reasoning have shown promise for automated fact verification. To process complex claims, these verification pipelines typically execute multi-stage workflows that coordinate tightly coupled modules, including claim decomposition, evidence gathering, and verdict prediction. However, existing methods optimize individual stages in isolation or rely on fixed heuristics, which limits adaptive coordination among stages and can lead to suboptimal outcomes. In this work, we propose ProFact, an agentic reinforcement learning framework for end-to-end optimization of multi-stage fact verification trajectories. ProFact trains a unified policy to coordinate claim decomposition, evidence seeking, answer generation, and verdict prediction. To address the sparse and delayed supervision provided by final veracity labels, ProFact introduces process-aware rewards that provide stage-level learning signals throughout the verification process. Empirical evaluation shows that ProFact consistently outperforms strong baselines in both verification performance and inference efficiency. These results highlight the effectiveness of process-aware trajectory optimization for multi-stage fact verification."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?",
+    "authors": "Dat Tien Nguyen, Thao Nguyen, Fadillah Adamsyah Maani, Huy M. Le, Muhammad Umer Sheikh, Numan Saeed, Muhammad Haris Khan, Salman Khan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13148v1",
+    "source": "arXiv",
+    "abstract": "Climate and environmental decision-making increasingly requires reasoning across heterogeneous inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs. Weather and climate foundation models can forecast well, but do not reason interactively in language, while large language models (LLMs) reason in language but cannot operate directly on high-dimensional Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation. TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals, Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified execution steps. These results indicate that reliable Earth-science agents must go beyond tool access to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "EA-WM: Event-Aware World Models with Task-Specification Grounding for Long-Horizon Manipulation",
+    "authors": "Kailin Wang, Haoxiang Jie, Yaoyuan Yan, Jiacheng Zhou, Zhiyou Heng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.13053v1",
+    "source": "arXiv",
+    "abstract": "Pretrained-feature world models provide a useful substrate for robot imagination, but visual or latent prediction alone does not determine whether an imagined future satisfies task-relevant events. Long-horizon manipulation requires progress signals that are relational, predicate-level, and physically grounded: whether an object has moved, whether a drawer or contact state has changed, whether a placement predicate is satisfied, and whether a candidate future is reliable enough for execution. We introduce EA-WM, an event-aware world-model framework that augments frozen visual-feature dynamics with task-specification-grounded event prediction and verification. EA-WM rolls out candidate futures in pretrained visual-feature space, decodes them into structured event states, and scores them using task-progress, semantic-consistency, physical-feasibility, and uncertainty terms. The verifier guides sampling-based planning, gates candidate actions, and, in the contact-sensitive LIBERO wine-rack setting, selects among PPOgenerated proposals. Across navigation, deformable-object, wall-constrained, and languagedescribed manipulation studies, EA-WM shows that event-aware verification can make featurespace world models more interpretable and better aligned with task progress."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "The Rise of AI-Native Software Engineering: Implications for Practice, Education, and the Future Workforce",
+    "authors": "Mamdouh Alenezi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12986v1",
+    "source": "arXiv",
+    "abstract": "Generative Artificial Intelligence (GenAI), Large Language Models (LLMs), and emerging Agentic AI constitute the most disruptive transformation in the history of software engineering (SE), reshaping development processes, required competencies, professional roles, and the educational outcomes that universities must deliver. This paper presents a systematic review of 48 verified, influential peer-reviewed publications (2016--2026) drawn from leading venues in software engineering, machine learning, computing education, human--AI collaboration, and software productivity. Studies were discovered, screened, and analyzed through a four-agent research workflow (Literature Discovery, Scientometric Analysis, Curriculum Transformation, and Workforce Impact) and were verified against primary sources. We synthesize the evidence along nine themes and three trajectories -- practice, education, and workforce -- and report a scientometric inflection in which annual LLM-for-SE output grew roughly five-fold after late 2022. From this synthesis we contribute: (i) a conceptual framework for AI-native software engineering organized around \\emph{intent}, \\emph{collaboration}, and \\emph{verification}; (ii) a nine-dimension competency model spanning specification, critical evaluation, agent orchestration, and metacognition; (iii) a four-phase university curriculum roadmap with AI-resilient assessment; (iv) faculty-development and workforce-transformation strategies; and (v) a prioritized agenda of eleven research gaps. The evidence base is internally contradictory on the magnitude and direction of productivity effects, underscoring that benefits are strongly context-dependent and that educating engineers for judgment, verification, and orchestration -- rather than code production alone -- is the central challenge of the AI-native era."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Structured Testbench Generation for LLM-Driven HDL Design and Verification-Oriented Data Curation",
+    "authors": "En-Ming Huang, Yu-Hung Kao, Ren-Hao Deng, Wei-Po Hsin, Yao-Ting Hsieh, Cheng Liang, Hsiang-Yu Tsou, Mu-Chi Chen, Yu-Kai Hung, Shao-Chun Ho, Po-Hsuang Huang, Shih-Hao Hung, H. T. Kung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12983v1",
+    "source": "arXiv",
+    "abstract": "Automated testbench generation has become a critical bottleneck in large language model (LLM)-driven Register Transfer Level (RTL) workflows, where large numbers of candidate designs must be verified rapidly and reliably. Existing prompt-based approaches treat testbench generation as unconstrained code synthesis, yielding stochastic outputs with high token cost, low reproducibility, and insufficient coverage. To address this gap, we present STG, a Structured Testbench Generation framework that exploits the inherent structure of hardware designs to generate deterministic testbenches. As a direct verification tool, STG runs 720x faster than an iterative LLM-based testbench generation flow and higher rate of successful compilation, achieves higher coverage, and reduces false-pass verdicts on incorrect DUTs. STG also helps identify errors in RTL generation benchmarks by exposing faulty benchmark testbenches. As a data curation engine, it is 11x faster than LLM-based filtering on a single CPU core with 127x less energy, and the resulting distilled models provide state-of-the-art performance in our multi-benchmark evaluation. As a test-time scaling oracle, it reduces node count by 14-47\\%. Our models are available at https://huggingface.co/collections/AS-SiliconMind/siliconmind-v12."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Binary Search Variants: A Comprehensive Analysis",
+    "authors": "Ali Dasdan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12970v1",
+    "source": "arXiv",
+    "abstract": "Binary search is deceptively simple in concept yet notoriously difficult to implement correctly. This paper presents a unified treatment of binary search: five core variants, six derived query functions, and four standard library implementations (BSD, glibc, Java, C++ STL), each with consistent notation, loop invariants, and analysis. We introduce bsearch_ultimate, a combined search that subsumes all variants in a single call. Every algorithm is provided as synchronized Python code, Dafny formal proof, and pseudocode. All implementations are validated by over 9,500 tests and 21 Dafny formal verifications; an additional six deliberately faulty implementations demonstrate common bug categories and Dafny's ability to detect them. We also provide memorable rules linking boundary choices to loop conditions and update formulas."
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Small LLMs for Biomedical Claim Verification: Cost-Effective Fine-Tuning, Structural Dataset Shortcuts, and Cross-Domain Generalization",
+    "authors": "Gaurav Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12854v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models such as GPT-4o and GPT-5 achieve strong zero-shot performance on biomedical claim verification, but cost and opacity limit scalable use. We fine-tune three small LLMs: Phi-3-mini (3.8B), Qwen2.5-3B, and Mistral-7B, via QLoRA on SciFact and HealthVer, providing the first study of QLoRA models against GPT-4o and fine-tuned BioLinkBERT encoders. Mistral-7B QLoRA surpasses both GPT-4o and GPT-5 (up to 12% F1 gain) at a fractional cost using just 1,008 training examples. We conduct extensive in-domain and cross-domain evaluation: models trained on SciFact tested on HealthVer and vice versa, at matched sizes to isolate dataset structure from data quantity. We identify a previously unreported structural artifact in SciFact that inflates in-domain scores, and show through bidirectional out-of-domain evaluation that training on structurally sound data enables robust cross-domain transfer. We plan to release all code and adapter checkpoints."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
+    "authors": "Tianyu Liu, Allen Xin Wang, Antonia Panescu, Lisa Xinyi Chen, Wenxin Long, Xinyu Wei, Yueqian Jing, Ziyao Zeng, Jihang Chen, Sihan Jiang, Ziqing Wang, Siyi Gu, Siyu Chen, Xinyang Hu, Haoran Shao, Leqi Xu, Wangjie Zheng, Zhiyuan Cao, Ada Fang, Botao Yu, Kunyang Sun, Rex Ying, Arman Cohan, Qingyu Chen, Lingzhou Xue, Kaize Ding, Yuanqi Du, Wengong Jin, Zhuoran Yang, Marinka Zitnik, James Zou, Hua Xu, Hongyu Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12736v1",
+    "source": "arXiv",
+    "abstract": "AI agents are increasingly being developed to accelerate scientific discovery, yet their practical capabilities in real research settings remain poorly understood. Existing benchmarks for AI agents rarely capture the complexity, heterogeneity, and extended reasoning required by scientific work, whereas benchmarks for scientific tasks often reduce research to static, direct problems and provide limited support for interactive evaluation. Here, we introduce SciAgentArena, a systematic benchmark for evaluating AI agents in real-world scientific research scenarios drawn from emerging needs across multiple domains. SciAgentArena comprises approximately 200 tasks with stepwise verification and an interactive, agent-agnostic environment for assessing diverse AI agents. Using this benchmark, we find that current agents can contribute effectively to well-specified data-analysis workflows, particularly when the task structure and evaluation criteria are clear. However, their performance remains uneven across scientific contexts: agents struggle to generate genuinely novel insights, sustain self-directed exploration, and formulate robust solutions for open-ended research questions. We further characterize common failure modes across agents and identify opportunities for improving their reliability, autonomy, and scientific reasoning. Together, SciAgentArena provides a practical framework for measuring progress in AI agents for science and for guiding the design of future agents capable of addressing complex scientific challenges. Full codes, tasks, and datasets can be accessed via this link: https://sciagentarena.github.io/."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "EquiDexFlow: Contact-Grounded SE(3)-Equivariant Dexterous Grasp Generative Flows",
+    "authors": "Clinton Enwerem, John S. Baras, Calin Belta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12728v1",
+    "source": "arXiv",
+    "abstract": "Most learned dexterous grasp generators relegate contact forces to a downstream verification step, so a kinematically-plausible pose can still violate the conditions for a stable physical grasp. We address this with EquiDexFlow, an SE(3)-equivariant flow-matching model that jointly predicts wrist pose, joint angles, fingertip contacts, surface normals, and contact forces from an object point cloud. Our architecture projects contacts onto the object surface and forces into the Coulomb friction cone by construction, so placement and friction compliance hold without loss penalties. We prove end-to-end SE(3) equivariance and verify it empirically over 200 rotations, with wrist residuals below $0.04^\\circ$ and exactly zero joint deviation. Trained on 8,100 force-closure grasps across 81 objects for the 16-DoF Allegro Hand, our model achieves zero friction violations, the best composite score, and the lowest wrench residual among all ablation variants. We retarget decoded fingertip contacts to a 16-DoF LEAP Hand via per-finger inverse kinematics, and our hardware-feasible refinement places every joint at least 5% inside its actuator envelope while preserving wrench balance. On the physical robot, retargeted EquiDexFlow-decoded grasps complete open-loop pick-and-hold trials on all six test objects, with every asymmetric object succeeding at both the canonical pose and a $120^\\circ$ co-rotation. Videos, code, and checkpoints are available at https://equidexflow.github.io."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Definitional alignment before capability alignment: a Design-Science framework for adjudicating claims about AGI",
+    "authors": "J. E. Aguilera Briones",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12713v1",
+    "source": "arXiv",
+    "abstract": "Claims that artificial general intelligence has already arrived and claims that it remains decades away are often defended from overlapping evidence. \"AGI\" lacks a single shared and stable referent and competing operationalizations can return different verdicts on the same system. This article treats that under-specification as a design and governance problem. Following Design Science Research Methodology, it develops DAF-AGI, a second-order conceptual artifact with two coupled components: five ordinal criteria for assessing the adjudicative fitness of candidate definitions and a structured governance audit of authorship, interest, certification, external verification and revision authority. The artifact is demonstrated on five prominent measurement families and one deflationary boundary position in a documented corpus and then stress-tested against a stylized strong arrival claim: that current generative systems constitute AGI because they outperform a well-educated adult on many cognitive tasks. On evidence from the cited 2024-2025 sources, the claim was certifiable only under a performance-based operationalization; capability-ontology, psychometric and skill-acquisition approaches did not certify it, the economic family remains indeterminate and the deflationary position refuses binary adjudication. The contribution is a novel integration and operationalization, not an empirical validation: independent application, inter-rater testing and author-external cases remain necessary. The paper further proposes definitional sovereignty as an enabling component of algorithmic sovereignty: the institutional capacity to contest, certify and revise imported technological categories under public accountability."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents",
+    "authors": "Tianyu Ding, Jianhong Xin, Juan Pablo De la Cruz Weinstein",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12634v1",
+    "source": "arXiv",
+    "abstract": "Long-horizon tool-use reinforcement learning can learn from outcome verification, but its trajectory-level advantage is broadcast across many reasoning, API, and answer tokens. Self-distillation promises a denser signal by reusing a policy's own rollouts or a privileged teacher. We show, however, that direct token-level self-distillation can silently destroy tool use: it rehearses teacher behavior without knowing which actions the verifier rewards, so useful skills and harmful shortcuts are amplified together. We introduce Sibling-Guided Credit Distillation (SGCD), which uses distillation for credit assignment rather than as a competing actor loss. Dynamic sampling produces mixed successful and failed sibling rollouts; an external LLM summarizes their contrast into a training-only stepwise credit reference; dense teacher/student divergence drives credit reassignment; and bounded detached credit weights reshape GRPO token advantages. The deployed student sees no external LLM, sibling evidence, or oracle. Across AppWorld and $τ^3$-airline, SGCD improves over matched GRPO comparators: AppWorld TGC $42.9 \\to 45.6$ on test_normal and $24.7 \\to 27.0$ on test_challenge, and $τ^3$-airline pass@1 $0.583 \\to 0.602$."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "\"Did you lie?\" Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms",
+    "authors": "Alan Cooney, David Africa, Geoffrey Irving",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12618v1",
+    "source": "arXiv",
+    "abstract": "Robust lie detectors for language models could enable powerful techniques for auditing, monitoring, and post-hoc investigation of model behaviour, but evaluating them requires testbeds where models verifiably believe the opposite of what they say. We show that existing trained model organisms often fail this requirement, leaving prior positive and negative detection results difficult to interpret. We address this with 13 reasoning model organisms whose hidden beliefs are verified in chain-of-thought and shown to generalise to held-out tasks, alongside Varied Deception, a prompted-lying testbed covering a broad range of lie-inducing motivations. On these testbeds we evaluate four detectors: a chain-of-thought judge, a logprob classifier, and two activation probes, including Did-You-Lie (DYL), a new method for training follow-up probes. On prompted lying, across 31 open-weight models spanning 2B to 1T parameters, all four detectors show positive scaling with model capability. However, every activation- and logprob-based detector drops sharply on our trained model organisms, with DYL retaining the most signal; only the chain-of-thought judge remains strong, with 0.82 balanced accuracy, partly as an artefact of our verification process favouring CoT-readable beliefs. Current lie detectors therefore cannot support high-confidence claims about model beliefs, and we suggest research directions that may address some of their current limitations. We release our datasets, model organisms, and trained detectors."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Beam modelling of Hitachi PROBEAT proton therapy system for a GPU-based Fast Monte Carlo dose engine",
+    "authors": "Qianxia Wang, Poenisch Falk, Yao Zhao, Xueming Bai, Roelf Slopsema, Kirk Jon Luca, Thomas J Whitaker, Yun Hu, Uwe Titt, Radhe Mohan, Pablo Yepes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12602v1",
+    "source": "arXiv",
+    "abstract": "Background: An in-house dose engine independent of clinic TPS is not only a reliable tool for patient QA verification. More importantly, it plays vital role in cutting-edge research due to its flexibility in implementing new functions. In this study, we upgraded our existing beam model with using double-Gaussian distributions for both spatial and opening angle distributions of particles to obtain more accurate phase space files. It is expected to potentially improve the performance of this independent dose engine in both clinic and research at the expanded MD Anderson proton center."
+  },
+  {
+    "date": "2026-06-10",
+    "title": "VIA-SD: Verification via Intra-Model Routing for Speculative Decoding",
+    "authors": "Yuchen Xian, Yang He, Yunqiu Xu, Yi Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12243v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) addresses the high inference costs of LLMs by having lightweight drafters generate candidates for large verifiers to validate in parallel. Existing draft-verify methods use binary decisions: accept or fully recompute. Yet we find that many rejected tokens can be verified correctly by a slim submodel derived from the full verifier via intra-model routing, instead of the full verifier. This motivates our slim-verifier to handle tokens requiring moderate verification resources, reducing expensive large-model calls. We propose Verification via Intra-Model Routing for Speculative Decoding (VIA-SD), a multi-tier framework using a routed slim-verifier. Draft tokens are processed hierarchically: direct acceptance for high-confidence cases, slim-verifier regeneration for medium-confidence cases, and full-model verification for uncertain cases. Across four representative tasks and multiple model families, VIA-SD reduces rejection rates by 0.10-0.22 and delivers 10-20% speedups over strong SD baselines, while achieving 2.5-3x acceleration over non-drafting decoding. Moreover, VIA-SD is compatible with existing SD frameworks without modifying their training procedures. Our results suggest multi-tier SD as a general paradigm for scalable and efficient LLM inference. Project page: https://zju-xyc.github.io/VIA-SD-Project-Page/"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning",
+    "authors": "Ziang Yan, Sheng Xia, Jiashuo Yu, Yue Wu, Tianxiang Jiang, Songze Li, Kanghui Tian, Yicheng Xu, Yinan He, Kai Chen, Limin Wang, Yu Qiao, Yi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12195v1",
+    "source": "arXiv",
+    "abstract": "Recent progress in foundation models has shifted toward agentic behavior involving multi-step reasoning and tool use. However, open-source efforts largely focus on text-dominant settings, leaving long-horizon multimodal tasks underexplored. This gap is evident in video tasks requiring sustained temporal understanding and iterative interaction. We present InternVideo3, a framework enhancing these capabilities via Multimodal Contextual Reasoning (MCR). MCR treats understanding as a closed-loop process over a shared, evolving context containing observations, instructions, reasoning, tool actions, and memory. This frames long-video understanding as evidence accumulation and verification. To ensure efficiency, we introduce Multimodal Multi-head Latent Attention (M^2LA), a token-preserving reparameterization compressing KV-cache states while retaining the full token stream. Our staged training includes continued pretraining, short-to-long supervised fine-tuning, rule-based reinforcement learning, and on-policy distillation. Experiments show InternVideo3 achieves strong performance on benchmarks like Video-MME, MLVU, and EgoSchema. We further instantiate the model as a video agent with retrieval tools, demonstrating robust evidence-grounded behavior. Our results suggest that efficient context handling and closed-loop reasoning are vital for adapting open multimodal models toward long-horizon visually grounded agency."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Temporal-Aware GPU Resource Allocation for Distributed LLM Inference via Reinforcement Learning_supp1-3702578.pdf",
+    "authors": "Jialong Li",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tcc.2026.3702578/mm1",
+    "source": "IEEE",
+    "abstract": "The rapid growth of large language model (LLM) services imposes increasing demands on distributed GPU inference infrastructure. Most existing scheduling systems follow a reactive paradigm, relying solely on the current system state to make decisions, without considering how task demand and resource availability evolve over time. This lack of temporal awareness in reactive approaches leads to inefficient GPU utilization, high task migration overhead, and poor system responsiveness under dynamic workloads. In this work, we identify the fundamental limitations of these instantaneous-state-only scheduling approaches and propose Temporal Optimal Resource scheduling via Two-layer Architecture (TORTA). TORTA introduces a spatiotemporal scheduling framework that captures both long-term workload patterns and short-term execution constraints. It adopts a two-layer design: a macro-level scheduler leverages reinforcement learning and optimal transport to coordinate inter-region task distribution, while a micro-level allocator refines task-to-server assignments within each region to reduce latency and switching costs. Experimental results across multiple network topologies show that TORTA reduces average inference response time by up to 15%, improves load balance by approximately 4-5%, and cuts total operational cost by 10-20% compared to state-of-the-art baseline methods."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Intelligent Multi-Agent Reinforcement Sanitizer for Securing LLM Systems",
+    "authors": "Pramila P, Nadana Ravishankar T",
+    "publish": "2026 7th International Conference on Intelligent Communication Technologies and Virtual Mobile Networks (ICICV)",
+    "url": "https://doi.org/10.1109/icicv68925.2026.11554850",
+    "source": "IEEE",
+    "abstract": "LMs are increasingly vulnerable to prompt poisoning, where adversarial instructions cause the model to behave unexpectedly. Current defense mechanisms have been inadequate against attacks that are paraphrased or in another language, as well as against multimodal or multi-turn attacks, and generally lack reliable mechanisms for protecting hidden prompts from the system. This paper describes IMARS, a new multi-agent defense pipeline designed to help defend against prompt poisoning of large language models (LLMs). IMARS integrates multiple elements, including semantic contrastive detection, attention-based anomaly scoring, cryptographic integrity verification, iterative sanitization, temporal analysis, and explainability, to form a new pipeline to protect LLMs. IMARS integrates text and OCR inputs to provide multimodal data for the inspection, while also using drift-aware contextual reasoning to detect changes in attack patterns over time. The goal of IMARS is to create a reliable, near real-time, and interpretable security framework that improves LLM safety against sophisticated prompt poisoning attacks while allowing for transparency in the decision-making process. Experimental validation of IMARS effectiveness in the detection and mitigation of sophisticated prompt injection attempts has shown success across a variety of attack conditions."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "A Hybrid GUI-LLM Interface Paradigm for 3D Scene Customisation",
+    "authors": "Isaac Valadez, Irving Avina, Beat Signer",
+    "publish": "Proceedings of the 2026 Designing Interactive Systems Conference",
+    "url": "https://doi.org/10.1145/3800645.3812986",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "PromptMirror: Visualizing LLM Use to Support STEM Student Reflection",
+    "authors": "Ka Hei Carrie Lau, Nađa Terzimehić, Enkelejda Kasneci",
+    "publish": "Proceedings of the 2026 Designing Interactive Systems Conference",
+    "url": "https://doi.org/10.1145/3800645.3812863",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "An LLM-Based Agent Framework for Intelligent Power Module Design",
+    "authors": "Ruiting Ke, Jianfeng Tao, Xiaojian Ding, Chengliang Liu",
+    "publish": "2026 12th International Conference on Electrical Engineering, Control and Robotics (EECR)",
+    "url": "https://doi.org/10.1109/eecr69522.2026.11548842",
+    "source": "IEEE",
+    "abstract": "This paper proposes a large language model (LLM)driven agent for power module design. Unlike conventional automation pipelines, it employs a standardized tool interface contract (description-schema-function) to encapsulate modeling, simulation, optimization, and validity checking into a callable tool pool. This enables the LLM to select and orchestrate tools at runtime based on intent captured from dialogue and intermediate feedback. Most tools in this pool are specialized for power module design tasks, such as topology is encoded with a directed adjacency matrix for geometric modeling, and check tools flag die overlaps and boundary violations. For robust execution, constraints are handled in two layers: (i) hard constraints are enforced within tool functions or immutable deterministic chains; (ii) instance-dependent constraints are evaluated by validity checking tools or via log parsing, with results fed back to the LLM. An agent-in-the-loop chip placement optimization task validates the agent's effectiveness, and the implementation is released as open source at https://github.com/henkuailederen/Agent-power-module-design."
+  },
+  {
+    "date": "2026-6-13",
+    "title": "One More Prompt: LLM Coding is a Game You Can’t Quite Put Down - A Provocation",
+    "authors": "Russell Beale",
+    "publish": "Companion Publication of the 2026 ACM Designing Interactive Systems Conference",
+    "url": "https://doi.org/10.1145/3802974.3809412",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "LAPS: LLM-based ABAC Policy Synthesis from Unstructured Text",
+    "authors": "Pratik Sonune, Ritwik Rai, Shamik Sural",
+    "publish": "Proceedings of the 12th ACM International Workshop on Security and Privacy Analytics",
+    "url": "https://doi.org/10.1145/3806007.3810960",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "AgenticNav: A Hierarchical Multi-Agentic System for LLM-Driven Autonomous Problem-Solving in Robotics",
+    "authors": "Kaveesha Samarathunga, Ranuri Gurusinghe, Kugesan Sivasothynathan, Jason Mars, V. Logeeshan, Chathura Wanigasekara",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3703330",
+    "source": "IEEE",
+    "abstract": "A primary challenge in autonomous robotics is bridging the semantic-execution gap in environments where pre-defined plans fail. This paper presents AgenticNav, a cognitive architecture that achieves autonomous problem-solving through a hierarchical Multi-Agentic System (MAS) orchestrated by a Large Language Model (LLM). Within this framework, specialized agents handle environmental perception and task execution, while a stateful agentic hierarchy facilitates failure detection and strategic recovery. When an environmental impasse is encountered, it escalates the execution failure to a strategic level where the LLM re-evaluates the environment’s topological structure to autonomously generate a viable alternative route. Validated in both a high-fidelity simulation and on a physical robot, the system demonstrates the ability to move beyond rigid instruction-following toward true, goal-oriented autonomy. Our results prove that the MAS framework effectively facilitates real-time, reason-based replanning, allowing robots to autonomously resolve complex execution failures in unpredictable real-world settings. The comprehensive evaluation data are available at https://github.com/AgenticNav/mas-llm-robotics-eval."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Sustainable Building Energy Performance Assessment Using a Hybrid LLM-RAG Framework",
+    "authors": "Muhammad Arslan, Fahad Mehmood, Zainab Riaz, Saba Munawar",
+    "publish": "2026 ASU International Conference in Emerging Technologies for Sustainability and Intelligent Systems (ICETSIS)",
+    "url": "https://doi.org/10.1109/icetsis68266.2026.11549220",
+    "source": "IEEE",
+    "abstract": "Residential buildings account for a substantial share of electricity consumption, yet energy performance evaluation often requires technical expertise to interpret raw meter data. This study presents a hybrid large language model (LLM) and retrieval-augmented generation (RAG) framework for sustainable assessment of residential building energy performance. The proposed framework integrates structured time-series data and descriptive metadata with contextual knowledge retrieval to enable natural language (NL) interaction and generate interpretable textual responses and graphical visualisations. A six-and-a-half-month dataset from November 2018 to May 2019 was analysed to evaluate total and monthly energy consumption, peak demand characteristics, load factor, appliance contribution, daily load behavior, and seasonal transition effects. Results indicate a steady increase in coolingrelated demand toward early summer, with air-conditioning (AC) loads significantly influencing peak growth. Beyond numerical analysis, the framework translates computed metrics into interpretable textual summaries and visualisations, facilitating accessibility for non-specialist users. The system demonstrates how hybrid language model architectures can transform structured building energy data into actionable, usercentered sustainability insights."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "PsyMooc: Empowering Simulation-Based Educational Systems with LLM Agents to Train Clinical Interviewing Skills",
+    "authors": "Haoyuan Che, Fangyuan Ye, Xiangfei Hu, Yunzhan Zhou",
+    "publish": "Proceedings of the 2026 Designing Interactive Systems Conference",
+    "url": "https://doi.org/10.1145/3800645.3813015",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Phishlyze: A Hybrid AI Framework Combining Gradient Boosting And LLM Analysis For Advanced Phishing Detection",
+    "authors": "M. Rajasekaran, K Manjunadha Swamy, T Sai Ganesh",
+    "publish": "2026 8th International Conference on Information Technologies in Engineering Education (Inforino)",
+    "url": "https://doi.org/10.1109/inforino68543.2026.11556548",
+    "source": "IEEE",
+    "abstract": "Quick changes in phishing attempts make sophisticated detection techniques absolutely vital. This work presents a phishing detection system aiming at increasing accuracy and adaptability by combining machine learning with artificial intelligence-driven analysis. Along with Google’s Gemini 2.0 Flash LLM for more in-depth contextual analysis, it makes use of a Gradient Boosting Classifier (GBC) taught on 30 URL characteristics. SMote for class balance and tuned hyperparameters help to improve the model by means of fine- tuning of the detection performance. Two parts characterize the development process: the first phase concentrates on establishing the ML model, which comprises URL categorization, shortlink identification, and phishing pattern analysis; the second phase employs JSP and NetBeans to build a Java-based web application. Three portals comprise the system: an administrative portal for user management, phishing trend analysis and URL classification; a user portal for secure web browsing, suggestions, and automatic phishing alerts; and an attacker simulation site to test phishing detection capability. Python is connected with NetBeans to provide real-time classification and security analysis; an automatic access control method warns or temporarily limits users who surpass limits on browsing harmful URLs. This research presents a very accurate phishing detection system with real-time alarms and enhanced protection against changing threats by combining machine learning with AI-driven analysis."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "LearnMate²: Design and Evaluation of an LLM-powered Personalized and Adaptive Support System for Online Learning",
+    "authors": "Xinyu Jessica Wang, Christine P. Lee, Bilge Mutlu",
+    "publish": "Proceedings of the 2026 Designing Interactive Systems Conference",
+    "url": "https://doi.org/10.1145/3800645.3812972",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Interpretable Decision Support for Credit Risk Assessment Using Machine Learning and LLM-based Explanations",
+    "authors": "Artyom Dyomin, Ming Li, Meri Hovsepyan, Grach Mkrtchian, Mikhail Gorodnichev",
+    "publish": "2026 Wave Electronics and its Application in Information and Telecommunication Systems (WECONF)",
+    "url": "https://doi.org/10.1109/weconf69969.2026.11553827",
+    "source": "IEEE",
+    "abstract": "This paper presents an interpretable decision support framework for credit risk assessment in the financial sector that aims to balance predictive accuracy and explanation quality. The proposed architecture combines Logistic Regression as a transparent baseline, LightGBM as the main predictive model, SHAP-based feature attribution as a formal explanation layer, and a large language model used to convert structured feature contributions into human-readable text. Experiments were conducted on a cleaned Lending Club dataset containing approximately 1.35 million loan records described only by features available at the time of decision making. The results show that LightGBM substantially outperforms Logistic Regression, achieving 0.85 ROC-AUC, 0.39 PR-AUC, 0.52 F1, 0.78 Accuracy, 0.23 MCC, and 0.175 Brier score. The study also shows that the most practically justified configuration is the one in which the LLM operates in translator mode grounded in SHAP attributions rather than as an autonomous source of explanations."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "KnitFuzz: LLM-guided Kernel Fuzzing via Context-Sensitive Socket System Calls",
+    "authors": "Siwei Zhang, Endadul Hoque",
+    "publish": "Proceedings of the Sixteenth ACM Conference on Data and Application Security and Privacy",
+    "url": "https://doi.org/10.1145/3800506.3803511",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "LLM-Orchestrated Multi-Agent Framework for Log-Centric Cyber Threat Detection and Analysis",
+    "authors": "Sasikrishna A, Subhash J, Chaarvi Sai Renuka Choudary Ayineni, Balachander T",
+    "publish": "2026 7th International Conference on Intelligent Communication Technologies and Virtual Mobile Networks (ICICV)",
+    "url": "https://doi.org/10.1109/icicv68925.2026.11554848",
+    "source": "IEEE",
+    "abstract": "The current cloud-native and distributed computing systems produce enormous amounts of system logs that are heterogeneous at network, host, and application layers. Despite providing highly useful evidence to distinguish cyber threats, such logs are unstructured, highly variable, and large-scale, making them challenging to analyze manually and limiting the capabilities of traditional Security Information and Event Management (SIEM) systems. Traditional rule-based application detection and monolithic machine learning applications have problems with scalability, contextual knowledge and high rates of false positives in dynamic environment. To address these shortcomings, this paper introduces an LLM-Orchestrated multi-agent system of log-based detection and analysis of cyber threats that includes the generation of structured signals, contextualization of features, and intelligent agent-driven reasoning. The suggested framework initially uses an asynchronous log ingestion mechanism which enables the processing of large volume log streams on a scaled basis. Raw logs are then converted to structured signals by Drain3 based online log template mining and regex-based normalization. The signals are augmented with contextual threat data and past behavioral patterns, and then statistical anomaly detection is performed using z -score analysis. These signals are then mapped to corresponding MITRE ATT&CK techniques and fed to a central orchestration layer which then sends them to specific analytical agents that combine deterministic detection rules with reasoning using large language models to validate threats. The results of experimental assessment performed on 6000 raw logs constituting known and unknown attack cases show that the framework results in detection rates of 98.5 and 92.7 respectively and enhances scalability and reliability in log-based cyber threat detection."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Transitive Priors for LLM Weight Initialization in Spatiotemporal Transport Analytics",
+    "authors": "N. G. Kuftinova, O. A. Tetchenko, A. V. Ostroukh, I. A. Artemyev, A. A. Podberezkin",
+    "publish": "2026 Wave Electronics and its Application in Information and Telecommunication Systems (WECONF)",
+    "url": "https://doi.org/10.1109/weconf69969.2026.11553815",
+    "source": "IEEE",
+    "abstract": "This article discusses an approach to initializing weights of language models based on the analysis of structural properties of data related to transitivity of relations in transport networks. In the context of the study, the “set of transitive numbers” is understood as a formalized representation of the quantitative characteristics of transitive relationships (e.g., node accessibility, cumulative delays, cascading effects in logistics chains), which can be used to construct informative initial weight distributions. This approach allows taking into account a priori knowledge about the topology of transport infrastructure and movement dynamics already at the initialization stage, minimizing the number of convergence iterations and increasing the model's resistance to data noise. The paper formalizes a set of numerical characteristics reflecting the degree of transitivity of relations in transport networks, develops an algorithm for mapping these characteristics into the space of initial weights of a neural network architecture, and evaluates the impact of the proposed initialization on the convergence rate and the quality of solving traffic prediction and incident classification problems. Experimental results show that the proposed transitive-based initialization preserves gradient stability, improves forecasting accuracy by <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">${2. 1 \\%}$</tex> (MAE: <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">${8. 7 4} \\rightarrow {0. 5 6}$</tex>), and accelerates convergence by <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">${1 5}-{2 0}{\\%}$</tex> compared to standard methods such as Xavier and Kaiming. The obtained results contribute to the development of domain-based adaptation methods for language models in transport logistics and urban mobility management."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "SemOpt: LLM-Driven Code Optimization via Rule-Based Analysis",
+    "authors": "Yuwei Zhao, Yuan-An Xiao, Qianyu Xiao, Zhao Zhang, Yingfei Xiong",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3820167",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "MCP-SecLint: An Open-Source Static Analyzer for Detecting Vulnerabilities in LLM Tool Integrations",
+    "authors": "Alfonso Pedro Ridao, Melissa Safari, Zachary Kang, Nicola Dragoni",
+    "publish": "Proceedings of the 12th ACM International Workshop on Security and Privacy Analytics",
+    "url": "https://doi.org/10.1145/3806007.3810961",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Exploring Critical Testing Scenarios for Decision-Making Policies: An LLM Approach",
+    "authors": "Weichao Xu, Huaxin Pei, Jingxuan Yang, Yuchen Shi, Yi Zhang, Qianchuan Zhao",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3703032",
+    "source": "IEEE",
+    "abstract": "Recent advances in decision-making policies have led to notable progress in various fields such as autonomous driving and robotics. However, testing these policies remains crucial with the existence of critical scenarios that may threaten their reliability. Despite ongoing research, challenges such as low testing efficiency and limited scenario diversity persist, primarily due to the complexity of the policies and their operating environments. To address these challenges, this paper proposes an adaptable Large Language Model (LLM)-driven adaptive testing framework to explore critical and diverse testing scenarios for decision-making policies. Specifically, we introduce a “generate-test-feedback” pipeline, leveraging templated prompt engineering to harness the world knowledge and reasoning abilities of LLMs. Additionally, a multi-scale scenario generation strategy is proposed to overcome the limitations of LLMs in making fine-grained adjustments, thereby further enhancing testing efficiency. Furthermore, during the feedback phase, a well-designed scenario evaluation module assesses the criticality and diversity of the generated scenarios for adaptive testing. The proposed LLM-driven method is extensively evaluated on five widely recognized benchmarks, demonstrating that our proposed method significantly outperforms baseline methods in uncovering both critical and diverse scenarios. These findings highlight the great promise of LLM-driven schemes in advancing the testing of decision-making policies."
+  },
+  {
+    "date": "2026-6-12",
+    "title": "Synergistic LLM and Cognitive Platform for Neuro-Diagnostic Screening",
+    "authors": "B. Mohanraj, B. Maga Sree Aswenth, B.Maha Sriee Prasenna, P. Narumuzhil, P. Dineshkumar, Dwijen Kirtania",
+    "publish": "2026 7th International Conference on Intelligent Communication Technologies and Virtual Mobile Networks (ICICV)",
+    "url": "https://doi.org/10.1109/icicv68925.2026.11554788",
+    "source": "IEEE",
+    "abstract": "The increased number of neurodegenerative conditions in the world needs intelligent systems that can help detect the conditions at an early stage and monitor the cognitive status continuously. Current AI-based diagnostic systems are usually restricted to the single-modality analysis, e.g. MRI alone or text interfaces and do not offer assessment with a longitudinal perspective. The present paper presents NeuroVision, a multimodal framework that combines three fundamental elements, namely: (1) Deep learning brain MRI classification with EfficientNet, (2) Neuro-Gym gamified cognitive assessment, and (3) an interactive voice assistant on the basis of a Large Language Model (LLM). Multi-Class Neurological Disorder (MCND) dataset with 3,590 MRI scans of ten neurological conditions was used to train and evaluate the system using five-fold cross-validation. The experimental outcomes show classification accuracy of 96.6% together with a Macro F1-score of 97.3 with almost perfect F1-scores of 0.98 to the critical conditions like Parkinson disease and stroke. Its architecture has a low voice latency of 1.2 seconds and end-to-end response time of less than 3 seconds, which allows clinical use in real time. NeuroVision is a clinically relevant, scalable solution to early neurodegenerative screening and digital therapeutics through a combination of the structural imaging, cognitive evaluation, and natural language interaction. The practical implications of the system are that it will be possible to conduct an early intervention or diagnose patients with limited resources in a timely manner and empower patients with limited mobility to self-monitor their cognitive status."
+  }
+]

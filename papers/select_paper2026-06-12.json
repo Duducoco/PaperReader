@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-06-11",
+    "title": "Structured Testbench Generation for LLM-Driven HDL Design and Verification-Oriented Data Curation",
+    "authors": "En-Ming Huang, Yu-Hung Kao, Ren-Hao Deng, Wei-Po Hsin, Yao-Ting Hsieh, Cheng Liang, Hsiang-Yu Tsou, Mu-Chi Chen, Yu-Kai Hung, Shao-Chun Ho, Po-Hsuang Huang, Shih-Hao Hung, H. T. Kung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12983v1",
+    "source": "arXiv",
+    "abstract": "Automated testbench generation has become a critical bottleneck in large language model (LLM)-driven Register Transfer Level (RTL) workflows, where large numbers of candidate designs must be verified rapidly and reliably. Existing prompt-based approaches treat testbench generation as unconstrained code synthesis, yielding stochastic outputs with high token cost, low reproducibility, and insufficient coverage. To address this gap, we present STG, a Structured Testbench Generation framework that exploits the inherent structure of hardware designs to generate deterministic testbenches. As a direct verification tool, STG runs 720x faster than an iterative LLM-based testbench generation flow and higher rate of successful compilation, achieves higher coverage, and reduces false-pass verdicts on incorrect DUTs. STG also helps identify errors in RTL generation benchmarks by exposing faulty benchmark testbenches. As a data curation engine, it is 11x faster than LLM-based filtering on a single CPU core with 127x less energy, and the resulting distilled models provide state-of-the-art performance in our multi-benchmark evaluation. As a test-time scaling oracle, it reduces node count by 14-47\\%. Our models are available at https://huggingface.co/collections/AS-SiliconMind/siliconmind-v12.",
+    "title_zh": "面向LLM驱动的HDL设计与验证导向数据整理的结构化测试平台生成",
+    "abstract_zh": "自动化测试平台生成已成为大语言模型（LLM）驱动的寄存器传输级（RTL）工作流中的关键瓶颈，在此工作流中需要快速且可靠地验证大量候选设计。现有的基于提示的方法将测试平台生成视为无约束的代码合成，导致输出具有随机性、高令牌成本、低可重复性以及覆盖率不足的问题。为了解决这一问题，我们提出了STG，一种利用硬件设计固有结构生成确定性测试平台的结构化测试平台生成框架。作为直接验证工具，STG的运行速度比迭代式LLM测试平台生成流程快720倍，具有更高的成功编译率，实现了更高的覆盖率，并减少了对错误DUT的错误通过判定。STG还通过揭示有缺陷的基准测试平台，帮助识别RTL生成基准中的错误。作为数据整理引擎，它在单个CPU核心上的速度比基于LLM的过滤快11倍，能耗减少127倍，所提炼的模型在我们的多基准评估中提供了最先进的性能。作为测试时的扩展预测工具，它将节点数量减少了14-47%。我们的模型可在https://huggingface.co/collections/AS-SiliconMind/siliconmind-v12获取。"
+  },
+  {
+    "date": "2026-6-12",
+    "title": "An LLM-Based Agent Framework for Intelligent Power Module Design",
+    "authors": "Ruiting Ke, Jianfeng Tao, Xiaojian Ding, Chengliang Liu",
+    "publish": "2026 12th International Conference on Electrical Engineering, Control and Robotics (EECR)",
+    "url": "https://doi.org/10.1109/eecr69522.2026.11548842",
+    "source": "IEEE",
+    "abstract": "This paper proposes a large language model (LLM)driven agent for power module design. Unlike conventional automation pipelines, it employs a standardized tool interface contract (description-schema-function) to encapsulate modeling, simulation, optimization, and validity checking into a callable tool pool. This enables the LLM to select and orchestrate tools at runtime based on intent captured from dialogue and intermediate feedback. Most tools in this pool are specialized for power module design tasks, such as topology is encoded with a directed adjacency matrix for geometric modeling, and check tools flag die overlaps and boundary violations. For robust execution, constraints are handled in two layers: (i) hard constraints are enforced within tool functions or immutable deterministic chains; (ii) instance-dependent constraints are evaluated by validity checking tools or via log parsing, with results fed back to the LLM. An agent-in-the-loop chip placement optimization task validates the agent's effectiveness, and the implementation is released as open source at https://github.com/henkuailederen/Agent-power-module-design.",
+    "title_zh": "基于大型语言模型的智能功率模块设计代理框架",
+    "abstract_zh": "本文提出了一种基于大型语言模型（LLM）的代理框架，用于功率模块设计。与传统的自动化流程不同，该框架采用标准化的工具接口契约（描述-模式-功能），将建模、仿真、优化和有效性检查封装到一个可调用的工具池中。这使得LLM能够根据对话中捕获的意图和中间反馈，在运行时选择并协调工具。该工具池中的大多数工具专为功率模块设计任务而设计，例如，拓扑结构通过有向邻接矩阵进行几何建模，而检查工具则标记芯片重叠和边界违规情况。为了实现稳健的执行，约束条件分为两层处理：（i）硬性约束在工具功能或不可变的确定性链中强制执行；（ii）实例相关的约束通过有效性检查工具或日志解析进行评估，结果反馈给LLM。通过一个代理参与的芯片布局优化任务验证了该代理的有效性，相关实现已作为开源项目发布，地址为：https://github.com/henkuailederen/Agent-power-module-design。"
+  }
+]
