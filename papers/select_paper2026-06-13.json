@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-06-11",
+    "title": "Structured Testbench Generation for LLM-Driven HDL Design and Verification-Oriented Data Curation",
+    "authors": "En-Ming Huang, Yu-Hung Kao, Ren-Hao Deng, Wei-Po Hsin, Yao-Ting Hsieh, Cheng Liang, Hsiang-Yu Tsou, Mu-Chi Chen, Yu-Kai Hung, Shao-Chun Ho, Po-Hsuang Huang, Shih-Hao Hung, H. T. Kung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.12983v1",
+    "source": "arXiv",
+    "abstract": "Automated testbench generation has become a critical bottleneck in large language model (LLM)-driven Register Transfer Level (RTL) workflows, where large numbers of candidate designs must be verified rapidly and reliably. Existing prompt-based approaches treat testbench generation as unconstrained code synthesis, yielding stochastic outputs with high token cost, low reproducibility, and insufficient coverage. To address this gap, we present STG, a Structured Testbench Generation framework that exploits the inherent structure of hardware designs to generate deterministic testbenches. As a direct verification tool, STG runs 720x faster than an iterative LLM-based testbench generation flow and higher rate of successful compilation, achieves higher coverage, and reduces false-pass verdicts on incorrect DUTs. STG also helps identify errors in RTL generation benchmarks by exposing faulty benchmark testbenches. As a data curation engine, it is 11x faster than LLM-based filtering on a single CPU core with 127x less energy, and the resulting distilled models provide state-of-the-art performance in our multi-benchmark evaluation. As a test-time scaling oracle, it reduces node count by 14-47\\%. Our models are available at https://huggingface.co/collections/AS-SiliconMind/siliconmind-v12.",
+    "title_zh": "面向LLM驱动的HDL设计与验证导向数据整理的结构化测试平台生成",
+    "abstract_zh": "自动化测试平台生成已成为大语言模型（LLM）驱动的寄存器传输级（RTL）工作流中的关键瓶颈，在这些工作流中，大量候选设计需要快速且可靠地进行验证。现有的基于提示的测试平台生成方法将其视为无约束的代码合成，导致输出具有随机性、高令牌成本、低可重复性以及覆盖率不足的问题。为了解决这一问题，我们提出了STG，一种利用硬件设计固有结构生成确定性测试平台的结构化测试平台生成框架。作为直接验证工具，STG的运行速度比迭代式LLM测试平台生成流程快720倍，具有更高的成功编译率，覆盖率更高，并减少了对错误设计单元（DUT）的错误通过判定。STG还通过揭示有缺陷的基准测试平台，帮助识别RTL生成基准中的错误。作为数据整理引擎，它在单个CPU核心上的速度比基于LLM的过滤快11倍，能耗减少127倍，所提炼的模型在我们的多基准评估中提供了最先进的性能。作为测试时的扩展预测工具，它将节点数量减少了14-47%。我们的模型可在https://huggingface.co/collections/AS-SiliconMind/siliconmind-v12获取。"
+  }
+]
