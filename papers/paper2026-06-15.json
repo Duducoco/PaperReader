@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-06-15",
+    "title": "ExpRL: Exploratory RL for LLM Mid-Training",
+    "authors": "Violet Xiang, Amrith Setlur, Chase Blagden, Nick Haber, Aviral Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17024v1",
+    "source": "arXiv",
+    "abstract": "Sparse reward reinforcement learning (RL) has become a standard tool for improving LLM reasoning, but its success depends critically on the coverage present in the base model. In practice, models are often primed for RL through \\emph{mid-training} on curated reasoning traces that teach useful primitive skills such as decomposition, verification, or self-correction. Although effective, this strategy requires manually specifying what the model should learn, and it remains unclear whether such primitive coverage is enough for much harder problems, which require combining these skills into broader solution strategies. We study a more automated approach: \\emph{RL-based mid-training} using large corpora of human-written question-answer data. Rather than treating reference solutions as targets to imitate, our method, ExpRL, uses them as \\emph{reward scaffolds}: references are hidden from the policy and used only to construct problem-specific grading rubrics for judging on-policy reasoning traces. The policy samples from the original problem prompt, while an LLM judge compares the sampled reasoning trace against the reference solution and assigns outcome-level or process-level dense rewards. This lets ExpRL reinforce partial progress, useful intermediate reductions, and productive reasoning behaviors that sparse final-answer rewards often fail to upweight. On challenging math reasoning tasks, ExpRL yields stronger RL priming than SFT, sparse-reward GRPO, and self-distillation, and provides a better initialization for subsequent sparse-reward RL. Additional mixed-domain experiments further suggest that ExpRL can extend beyond the original math-only setting."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Selection Without Signal, Recovery Through Expression: A Measurement Study of Post-Hoc Falsification Operators for Frozen Small Code Models",
+    "authors": "Mehmet Iscan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16999v1",
+    "source": "arXiv",
+    "abstract": "Frozen small code models (<=1.5B parameters, run locally without fine-tuning) suit offline and privacy-constrained use, but often emit plausible-but-wrong programs. A natural remedy is a post-hoc operator that selects, verifies, repairs, or re-processes the model's samples without retraining; in principled form it is Popperian: attack each candidate with a severe test, keep what survives. We measure whether such operators help. Under one deterministic execution oracle and a leakage-free, matched-compute protocol, 26 semantic post-hoc operators (selection, verification, repair, elimination, portfolios, sound vetoes, generation conditioning) are evaluated against Best-of-N (BoN); on the cells and benchmarks tested, none improves held-out accuracy over BoN. The negative is mechanistic: a coverage wall (systematic hard-task failures deeper sampling does not rescue), a capability scissors (a competent generator leaves almost no discriminable error among visible-test passers), and a near-empty consensus trap (the visible-pass-but-hidden-wrong majority a leakage-free selector needs rarely co-occurs with a correct alternative). A distribution-free do-no-harm bound cannot certify a harm rate <=alpha at zero observed harm unless n>=45. Two operators help on a different axis, outside the semantic output space. An expression-layer recovery (M1), the only accuracy gain here, recovers correct programs the standard extractor discards (robust extraction and public-test signature alignment); it does no harm (b10=0), is leakage-free, and lifts DeepSeek-Coder-1.3B by +12 tasks on HumanEval+ (p=2.4e-4). An adaptive consensus early-stop (ACE) is a calibrated compute-saving control (~19% saving, zero harm). M1 and the selection negative replicate on HumanEval+ and MBPP+ across three model cells. The lesson: fix the harness and measure coverage before blaming semantic post-hoc reasoning."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Exploring Extrinsic and Intrinsic Properties for Effective Reasoning with Code Interpreter",
+    "authors": "Patomporn Payoungkhamdee, Napat Laosaengpha, Jenta Wonglertsakul, Pittawat Taveekitworachai, Pume Tuchinda, Panjapong Poobanchuen, Ekapol Chuangsuwanich, Can Udomcharoenchaikit, Samuel Cahyawijaya, Peerat Limkonchotiwat, Sarana Nutanong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16934v1",
+    "source": "arXiv",
+    "abstract": "Reasoning with a Code Interpreter (CI) has emerged as an effective paradigm for enhancing the reasoning capabilities of large language models (LLMs) through executable computation and iterative verification. Despite its growing adoption, the behavioral properties underlying effective code reasoning remain largely underexplored. In this work, we investigate code reasoning from two distinct perspectives inspired by prior studies of natural language reasoning: extrinsic properties, represented by crucial tokens, and intrinsic properties, represented by code-specific cognitive behaviors. Across multiple LLMs, we find that stronger CI reasoning models consistently exhibit a higher prevalence of crucial tokens and cognitive behaviors, particularly verification, backtracking, and backward chaining. Building on these observations, we examine how these properties can be leveraged during both inference and training. At inference time, appending code-specific crucial tokens improves performance on several reasoning capabilities, including mathematical, ordering, and optimization, while yielding limited benefits elsewhere. At training time, augmenting a state-of-the-art framework with code-specific cognitive behaviors improves supervised fine-tuning and reinforcement learning performance in two of three evaluated models. Further analysis shows that these behaviors reduce overthinking in incorrect responses and improve token efficiency, while also revealing factors that limit gains in a certain model. Our findings provide the first systematic characterization of effective reasoning with CI and demonstrate both the potential and limitations of leveraging key properties to improve CI-based reasoning."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Communication Channel Modelling of Unmanned Aerial Vehicles",
+    "authors": "Necati Kagan Erkek, Emre Balcı, Berkin Halay, Hakan Ali Çırpan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16927v1",
+    "source": "arXiv",
+    "abstract": "Wireless communication channel characterization for unmanned aerial vehicles (UAVs) is essential for reliable control, data transmission, and mission performance in civil, industrial, and defence applications. Channel behaviour is examined using a measurement-based approach that captures both large-scale propagation effects, represented by path loss, and small-scale characteristics, represented by the channel impulse response (CIR) and power delay profile (PDP). An SDR-based channel sounding system is employed to collect and process in-phase and quadrature (IQ) data, enabling the extraction of key channel parameters. Following system verification, measurements are conducted in ground-to-ground (G2G), air-to-ground (A2G), and air-to-air (A2A) scenarios. The results demonstrate that path loss alone is insufficient to describe UAV communication channels, as CIR and PDP provide additional insight into multipath propagation and delay-domain behaviour. The findings indicate that realistic UAV channel models should incorporate both large-scale and small-scale channel statistics. Further improvements may be achieved through increased sounding bandwidth, enhanced synchronization, measurements in a wider range of environments, and more detailed analysis of Doppler effects."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Neuro-Symbolic Software Verification: Hyper-charging Local Language Models with Symbolic Reasoning at Scale",
+    "authors": "Muhammad A. A. Pirzada, Julian Parsert, Weiqi Wang, Konstantin Korovin, Lucas C. Cordeiro",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16886v1",
+    "source": "arXiv",
+    "abstract": "Loop invariant synthesis remains a central and pivotal bottleneck in formal software verification. Recent LLM-based Neuro-Symbolic tools have achieved impressive solve rates. However, these tools rely on proprietary, often expensive cloud APIs, which constitute a hurdle for privacy-sensitive industrial deployments where the source code cannot leave the organisation or where cost is a factor. We present VerIbmc, a neuro-symbolic pipeline that pairs symbolic invariant generation with locally deployable open-weight language models with the ESBMC verification tool. Our pipeline combines a deterministic symbolic invariant synthesis phase with an iterative LLM refinement loop driven by structured verifier feedback. In addition, we provide two types of pipelines that differ in their prompting strategy: Chain-of-Thought vs. Tree-of-Thought. We conduct an extensive experimental evaluation with five open-weight models (ranging from 7B to 120B parameters) across five benchmark families comprising of 520 problems (499 after excluding 21 with unavoidable overflow). Overall, the best single configuration (GPT-OSS-120B) solves 431 of 499 problems (86.4%). Additionally, on the four benchmark suites shared with the strongest cloud-API tools, VerIbmc is competitive running only on a single local machine. The evaluation shows symbolic invariant synthesis solves 75 problems without any LLM call and yields up to +35 additional problems for the weakest model. Importantly, all inference runs entirely on a single local machine using open-weight models -- no cloud API or proprietary model is required. Overall, we demonstrate that a neuro-symbolic approach based on LLMs can be used effectively for invariant synthesis in a privacy-preserving and energy-efficient manner, without having to resort to expensive proprietary frontier models locked behind APIs."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Follow the Latent Roadmap: Navigating Revocable Decoding for Diffusion LLMs with Anchor Tokens",
+    "authors": "Yizhen Yao, Qinglin Zhu, Runcong Zhao, Xiangxiang Dai, Yanzheng Xiang, Yulan He, Lin Gui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16847v1",
+    "source": "arXiv",
+    "abstract": "Diffusion Large Language Models (dLLMs) offer a promising avenue for parallel generation but face a trade-off between decoding speed and quality. While revocable decoding strategies attempt to mitigate errors by verifying and remasking tokens, they typically operate within a mixed-quality context. This leads to two critical failures: \\textit{Error Propagation}, where new tokens absorb toxic information from erroneous context, and \\textit{Local Error Reinforcement}, where errors mutually reinforce each other to evade detection. To alleviate these challenges, we propose ASRD (Anchor Supervised Revocable Decoding), a training-free framework that operates within the embedding space. ASRD explicitly decouples the decoding context into trusted \\textit{Anchor Tokens}, which are identified via temporal consistency, and uncertain candidates. Leveraging a dynamic Anchor Tokens Cache, we introduce two complementary mechanisms: (1) Anchor-Guided Generation, which injects entropy-weighted anchor signals into masked positions to implicitly rectify attention toward the reliable global skeleton; and (2) Anchor-Perturbed Verification, which applies orthogonal perturbations to uncertain candidate tokens, destabilizing and remasking errors driven by fragile local consensus. Extensive experiments on math and coding benchmarks demonstrate that ASRD outperforms recent remasking baselines, achieving accuracy improvements of up to 6.4\\% while accelerating inference throughput by up to 7.2$\\times$."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Verification of Stochastic Dominance Envy-Freeness in Time Proportional to Input Size",
+    "authors": "Kui-Wang Choi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16816v1",
+    "source": "arXiv",
+    "abstract": "We present a time-optimal algorithm for verifying Stochastic Dominance Envy-Freeness (SD-EF) and its relaxation, SD-EF up to one good (SD-EF1), in the fair division of indivisible goods. By leveraging a single-pass prefix-dominance check per agent and lazy-initialization, we reduce the verification complexity from the previously known $\\mathcal{O}(n^2m)$ by Aziz (2016) to $\\mathcal{O}(nm)$. Given that the input preference matrix is of size $nm$, our algorithm is asymptotically optimal with respect to the input size."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Scaling LLM Reasoning from Minimal Labels: A Semi-Supervised Framework with a Lightweight Verifier",
+    "authors": "Keizo Kato, Chenhui Chu, Yugo Murawaki, Sado Kurohashi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16811v1",
+    "source": "arXiv",
+    "abstract": "For the development of Large language models (LLMs), recent approaches to generating pseudo intermediate reasoning have shown remarkable progress. But they typically rely on large numbers of correctly annotated answers to assess reasoning quality. This paper presents a semi-supervised framework that scales reasoning learning from minimal supervision, turning reasoning verification itself into a data creation mechanism. We train a lightweight reasoning-correctness classifier on only a few labeled samples, which judges whether intermediate reasoning traces generated by an LLM are valid. Furthermore, an entropy-based confidence threshold filters out unreliable samples, and the remaining high-confidence reasoning traces are used to fine-tune the model. Experiments on Verifiable Math Problems (Orca-Math subset) and Question Answering on Image Scene Graphs (GQA) with Visual Programming show that our method achieves accuracy comparable to using 10-15x more labeled data. Ablation analyses confirm that both the classifier and entropy filtering are essential for scalable and noise-resistant pseudo-labeling. By replacing expensive answer-level supervision with lightweight reasoning verification, our method provides a practical path toward constructing large-scale reasoning resources and paves the way for future autonomous reasoning systems that learn from minimal human input."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Witnesses and Counterexamples for Timed Bisimulation",
+    "authors": "Alexander Lieb, Malte Lochau",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16736v1",
+    "source": "arXiv",
+    "abstract": "Timed automata provide a modeling formalism for time-critical properties of reactive systems with discrete-state/continuous-time behaviors. To handle the infinite state space of timed automata, recent verification tools use zone graphs, a symbolic semantic model that guarantees sound results, at least for properties reducible to reachability problems. If we instead want to compare the behavior of two timed automata, checking for timed trace equivalence is undecidable. Fortunately, timed bisimulation equivalence is decidable, but currently available checks do not provide useful explanations of the results. To overcome this limitation, we use a recently proposed extension of zone graphs by so-called virtual clocks. The extension not only facilitates effective tool support for timed bisimilarity checking but also enables the derivation of useful explanations from the results. If timed bisimilarity holds, all witnesses derivable from the composed symbolic representation of both models are indeed valid for both models. If timed bisimilarity does not hold, we describe how to obtain counterexamples, making explicit the behavioral differences. These witnesses/counterexamples may serve as test cases in later stages of system refinement."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Trust by design -- in praise of modularization: a case study",
+    "authors": "Peter Fettke, Wolfgang Reisig",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16670v1",
+    "source": "arXiv",
+    "abstract": "Ensuring that collective adaptive systems remain safe, reliable, and trustworthy requires measures that transcend so far established formal methods, and in particular established verification techniques. In this contribution, we suggest three such measures: (1) conceptual means: runs with locally confined cause and effect of events, (2) temporal logic like verification techniques that respect and exploit such runs, (3) composing system properties from properties of components. This contribution presents a case study which particularly focuses on the benefits of modularization for achieving trust by design. Further work will develop a full-fledged theory for the presented ideas."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "FraudSMSWalker: Benchmarking Agentic Large Language Models for SMS-to-Webpage Fraud Detection",
+    "authors": "Y. H. Zhou, Z. M. Ma, Y. J. Zhou, Y. T. Li, H. X. Xiang, Y. M. Cheng, T. L. Chen, K. J. Zhang, Z. H. Nan, J. H. Ni, Z. Wu, Q. Y. Pan, S. Zhang, S. Cheng, M. Y. Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16659v1",
+    "source": "arXiv",
+    "abstract": "SMS fraud is increasingly cross-channel: a message directs the user to a webpage, and the final risk depends on how the SMS claim aligns with the page content and requested user action. However, existing evaluations either focus on message-only smishing classification or expose URL and domain cues that allow models to rely on reputation shortcuts. To address this gap, we introduce \\textbf{FraudSMSWalker}, a controlled benchmark for URL-masked SMS-to-webpage fraud judgment. FraudSMSWalker contains 699 bilingual chains, including 332 fraudulent and 367 benign cases, across ten service scenarios. The model-visible input consists of the SMS context and sanitized webpage evidence, while raw URLs, hosts, domains, IPs, redirects, and reputation metadata are withheld. The benchmark further includes hard benign cases whose pages contain login, payment, verification, or account-management elements that are plausible under the service context but also appear in scam flows. We evaluate nine web agents under masked browser-agent protocols and conduct URL-visibility ablations. The results show that current agents can detect suspicious cues, but struggle to preserve benign recall and often produce positive predictions that are weakly supported by the observed evidence. These findings position FraudSMSWalker as a benchmark for measuring whether web agents can make fraud judgments that remain both accurate and evidence-grounded when direct reputation shortcuts are suppressed. The associated code and dataset are accessible at the \\href{https://anonymous.4open.science/w/FraudMessageWalker-Bench}{anonymous link}."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Islamic Large Language Models: From Knowledge Acquisition to Trustworthy and Hallucination-Resistant AI",
+    "authors": "Mohammed Amine Mouhoub",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16629v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly used for knowledge-intensive question answering, including religious and legal questions. Islamic knowledge is a particularly demanding setting: answers are expected to be grounded in authoritative sources, citations must be exact, Arabic varieties differ substantially from the language of classical sources, and legitimate jurisprudential disagreement must be represented rather than collapsed into a single answer. This survey reviews the emerging field of Islamic LLMs and trustworthy Islamic AI. We organize the literature around Arabic NLP and Arabic-centric LLMs, Islamic NLP resources, Qur'anic question answering, Islamic knowledge benchmarks, retrieval-augmented generation, Islamic legal reasoning, inheritance reasoning, hallucination evaluation, and trustworthiness. We argue that fluency in Arabic is not sufficient for Islamic AI. Reliable systems require curated sources, retrieval and verification modules, citation-aware generation, madhhab-aware reasoning, human expert evaluation, and benchmarks that measure not only answer accuracy but also faithfulness, source validity, and reasoning quality. The survey concludes with a research agenda for hallucination-resistant Islamic AI systems."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Using AI in engineering education: a balancing act, driven by clear purpose",
+    "authors": "Olya Kudina",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16626v1",
+    "source": "arXiv",
+    "abstract": "Based on a questionnaire of 100 higher-education students, predominantly from engineering-related fields, and a critical review of recent literature, this chapter examines how students use and perceive Large Language Models (LLMs) in engineering education. Students primarily value LLMs for writing support, conceptual clarification, coding assistance, and brainstorming, while simultaneously expressing concerns about inaccuracies, bias, overreliance, academic integrity, and the burden of verification. Through an analysis of two dominant metaphors, namely LLMs as an \"oracle\" and as a \"tutor,\" the chapter shows how these systems cultivate expectations of authority, expertise, and personalized learning that often exceed their actual capabilities. The chapter further argues that students' attachment to the promises of efficiency and personalized support reflects a form of \"cruel optimism,\" where the perceived benefits of LLMs often depend on the very skills, vigilance, and expertise that students are still developing. Overall, the chapter argues for a purpose-driven and context-sensitive approach to AI integration in engineering education, emphasizing critical AI literacy, reflective assessment design, pedagogical caution, and consideration of broader ethical and environmental impacts."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "TNODEV: Toolbox for Neural ODE Verification",
+    "authors": "Abdelrahman Sayed Sayed, Pierre-Jean Meyer, Mohamed Ghazel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16567v1",
+    "source": "arXiv",
+    "abstract": "Neural ordinary differential equations (neural ODE) have started to appear in safety critical settings such as continuous-time controllers for cyber-physical systems and classifiers integrated into automated decision pipelines, raising the question of whether their behavior can be formally verified. Existing tools dedicated to neural ODE provide only a single reachability call without iterative input set refinement, limiting the precision of their verdicts to whatever one reachability call can deliver. We present TNODEV, the first sound formal verifier for neural ODE that integrates a falsification checker, a fast interval-based reachability backend based on continuous-time mixed monotonicity, a verification and refinement loop with three input-set splitting heuristics, and a parallel scheduler in a single end-to-end pipeline. TNODEV supports safe-set inclusion verification on pure neural ODE, neural ODE in closed loop with a neural network controller and general neural ODE (GNODE), with the safe set specified either as an interval or as the half-space intersection induced by a target classification label. We evaluate TNODEV on a range of benchmarks across safe-set inclusion and classification-robustness properties, including a direct reachability comparison against NNV~2.0 and CORA and a verification comparison against NNV2.0 on MNIST general neural ODE classifiers."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Testing the max-flow min-cut property and the replication conjecture",
+    "authors": "Ahmad Abdi, Tamás Schwarcz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16543v1",
+    "source": "arXiv",
+    "abstract": "The replication conjecture [Conforti and Cornuéjols, 1993] states that every clutter with the packing property has the MFMC property. If true, this conjecture would have far-reaching consequences from integer programming and combinatorial optimization to commutative algebra. In this paper, we set out to verify the conjecture for the cuboid of a set-system in which the Hamming graph induced on the infeasible points has degree at most $δ$. The family of cuboids of degree at most $δ$ contains a rich source of clutters with the packing property, including all clutters over a ground set of size at most $δ$. We prove that any minimal counterexample must have dimension at most $δ$, thus making the target search space finite. We then use a state-of-the-art SAT solver to verify the replication conjecture for cuboids of degree at most $9$, and for clutters over at most $10$ elements. Our computational verification relies crucially on another theoretical result, that to verify the MFMC property of a clutter over $n$ elements, it suffices to check finitely many weight vectors, namely $w\\in \\left\\{0,1,\\ldots,t\\right\\}^n$ where $t\\leq\\max\\{\\lceil n/2\\rceil, \\lfloor n-\\sqrt{4n+1}+1\\rfloor\\}$. The upper bound of $t$ improves the previous best upper bound by algebraists, which could be exponential in $n$."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "DoubtProbe: Black-Box Jailbreak Defense via Structural Verification and Semantic Auditing",
+    "authors": "Xuanyu Yin, Yilin Jiang, Jun Zhou, Kai Chen, Zhengfu Cao, Xiaolei Dong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16527v1",
+    "source": "arXiv",
+    "abstract": "As large language models (LLMs) are increasingly deployed in user-facing systems, black-box jailbreak defense has become an important practical problem. Existing defenses often rely on known-attack coverage, prompt-level semantic judgment, or local runtime control, yet these paths can become unstable under evolving prompt packaging, expression rewriting, and structure manipulation. We observe that many black-box jailbreaks do not remove the harmful goal, but reorganize the information needed to express and execute it, thereby evading safety alignment while remaining recoverable during generation. Motivated by this observation, we propose DoubtProbe, a dual-branch inference-time defense framework that combines structural verification with semantic auditing and formulates black-box jailbreak defense as consistency checking under controlled transformation. The structural branch extracts a structured representation from the original request, reconstructs the request under representation constraints, and detects information-preservation failures between the original and reconstructed requests; the semantic branch audits the original prompt directly. We evaluate DoubtProbe against representative black-box defenses on jailbreak and benign-request benchmarks, and further test backbone transfer from Qwen2.5-72B to Llama-3.1-70B. Results show that DoubtProbe achieves a stronger and more stable defense-utility trade-off: on Qwen2.5-72B, it reduces the JBB attack success rate from 0.293 to 0.100 and the CodeAttack attack success rate from 0.152 to 0.001, while maintaining false positive rates of 0.022 and 0.016 on AlpacaEval and OR-Bench; the same pattern remains stable on Llama-3.1-70B. These findings show that structural inconsistency signals provide a practical and generalizable basis for black-box jailbreak defense, especially when combined with semantic auditing."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "daVinci-kernel: Co-Evolving Skill Selection, Summarization, and Utilization via RL for GPU Kernel Optimization",
+    "authors": "Dayuan Fu, Mohan Jiang, Tongyu Wang, Dian Yang, Jiarui Hu, Liming Liu, Jinlong Hou, Pengfei Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16497v1",
+    "source": "arXiv",
+    "abstract": "GPU kernel optimization represents a paradigm where functional correctness is assumed and execution efficiency is the objective. We present daVinci-kernel, a reinforcement learning framework that couples skill discovery with skill exploitation through a dynamically evolving skill library. daVinci-kernel jointly trains three agents sharing one LLM backbone: a Skill Selection Agent that retrieves relevant techniques via BM25 and LLM reranking, a Policy Agent that generates multi-turn CUDA/Triton kernels conditioned on selected skills, and a Skill Summary Agent that distills successful rollouts into reusable skills. Candidate skills are added only after execution-based verification confirms reproducible speedups. All three agents share a single LLM backbone, are initialized via a structured SFT cold start on diversity-filtered data, and are then jointly optimized end-to-end with multi-turn REINFORCE and per-agent advantage estimation. On KernelBench, daVinci-kernel-14B achieves 37.2%, 70.6%, and 32.2% on Level 1, Level 2, and Level 3 under the Fast$_1$ threshold, outperforming the strongest prior RL-trained model, Dr.Kernel-14B."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Evaluating LLM Personalization via Semantic Constraint Verification",
+    "authors": "Xuran Li, Guanqin Zhang, Imran Razzak, Hakim Hacid, Eleanna Kafeza, Hao Xue, Flora D. Salim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16368v1",
+    "source": "arXiv",
+    "abstract": "Current evaluation paradigms for Large Language Model (LLM) personalization rely heavily on brittle surface-matching metrics or computationally expensive LLM-as-a-judge protocols, both of which lack interpretability. To address these limitations, we introduce Natural Language Inference Constraint Verification (NLICV), a scalable, semantically invariant framework that maps sentence meanings to truth-condition sets to verify personalization constraints via a Natural Language Inference (NLI) model. Moving beyond binary scoring, NLICV categorizes LLM behaviors into four distinct modes: personalization, generalization, sycophancy, and failure. Extensive experiments demonstrate that NLICV aligns closely with human annotations while drastically reducing the latency and token costs associated with LLM judges (up to 2100 inference speedup). Finally, through an ablation-based procedure, NLICV pinpoints the exact sentences driving the constraint verification, yielding faithful, understandable evidence for its evaluations."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Communication-Efficient Verifiable Attention for LLM Inference",
+    "authors": "Ziqun Chen, Ming Wu, Michael Heinrich, Jason Zeng, Huiying Lan, Tianwei Zhang, Rui Tan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16352v1",
+    "source": "arXiv",
+    "abstract": "Computation integrity of remote large language model (LLM) serving can be questionable. For conventional deep neural networks (DNNs), the existing TEE-shielded DNN partitioning (TSDP) approach uses Trusted Execution Environment (TEE) to compute non-linear components and verify the integrity of linear components offloaded to an untrusted GPU. However, directly applying TSDP to Transformer-based LLMs incurs significant TEE computation and TEE-GPU communication overhead. This paper presents Communication-efficient TEE-GPU Attention (\\textsc{VeriAttn}) for accelerating verifiable LLM inference. \\textsc{VeriAttn} offloads both linear and non-linear computations of attention to the GPU, while TEE performs verification. Moreover, for prefill, \\textsc{VeriAttn} uses a two-level pipeline to overlap data movement, TEE pre-/post-processing, and GPU computation. For decoding, when the key-value cache exceeds available GPU memory, \\textsc{VeriAttn} partitions attention across TEE and GPU to reduce repeated key-value transfers. Evaluation on an Intel TDX platform shows that \\textsc{VeriAttn} achieves 2.60-3.38$\\times$ and 3.86-5.42$\\times$ acceleration over TSDP for 6k-token prompts and 10k-token outputs during prefill and decoding, respectively."
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Is Your Trajectory Displacement Safe in Long-tail?",
+    "authors": "Qiao Sun, Weicheng Zheng, Yixin Huang, Hang Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.16313v1",
+    "source": "arXiv",
+    "abstract": "Long-tail scenarios remain a major bottleneck for autonomous driving evaluation, even as datasets grow by orders of magnitude. Existing evaluation pipelines are rarely human-aligned, safety-aware, verifiable, and explainable at the same time: closed-loop metrics often saturate among strong planners, while unstructured human ratings can be noisy without a carefully designed protocol. We formulate planning evaluation as additional-threat detection: given a planner trajectory and an expert reference, does the planner's displacement introduce new unsafe driving behavior? We propose FluidTest, an evaluation pipeline with three components: a pairwise WebUI protocol for reliable human annotation; a taxonomy of 32 semantic threats with evidence-grounded decision graphs; and a three-agent verification system with reflection for precision and auditability. Experiments on the WOD-E2E dataset show that FluidTest produces consistent labels among trained annotators and identifies additional threats in 65% of Poutine trajectories and 51% of RAP trajectories. These results show that state-of-the-art planners can still exhibit substantial safety-relevant failures despite high Rater Feedback Scores (RFS) and low Average Displacement Error (ADE). Additional details, guidance, and code are available at https://fluidtest.web.app."
+  }
+]
