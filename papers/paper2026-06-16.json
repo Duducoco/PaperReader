@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-16",
+    "title": "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
+    "authors": "Mingtong Zhang, Dhruv Shah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18247v1",
+    "source": "arXiv",
+    "abstract": "Robots deployed in the real world should learn from their experience and improve over time. This requires a mechanism of practicing and learning from feedback. In this paper, we propose VERITAS, a generator-verifier framework for generalist robot policies for inference-time policy steering and self-improvement. We use a pre-trained generalist robot policy as a ``generator'' and pair it with a gradient-free ``visual verifier'' that evaluates actions at inference time. This framework enables inference-time steering that improves policy performance without additional training. We demonstrate that inference-time verification consistently outperforms vanilla generalists without training on additional demonstration data. Additionally, we demonstrate that the verified rollouts provide effective supervision for offline policy improvement: policies fine-tuned on verified self-generated trajectories achieve consistent performance gains. Notably, we find that post-training with verified rollouts achieves comparable efficiency to expert demonstrations, while requiring no human interventions. Our results highlight inference-time verification as a practical and scalable mechanism for improving robotic policies during deployment."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Receiver-Aware Analysis and Verification of the Spectral Separation Coefficient Under Interference-Induced Degradation",
+    "authors": "Lucas Heublein, Fabian Benschuh, Alexander Rügamer, Felix Ott",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18196v1",
+    "source": "arXiv",
+    "abstract": "Interference poses a significant challenge to satellite-based positioning systems, making it essential to accurately quantify the effects of specific interference types on receiver performance and the resulting reliability of position computation. In current practice, interference effects are often quantified using receiver-independent metrics, with receiver-specific front-end characteristics either idealized or only implicitly considered. In this paper, we address this limitation by explicitly incorporating receiver-specific front-end characteristics into the computation of interference effects and validating the resulting receiver-dependent analysis experimentally. Therefore, we record a real-world open-field dataset comprising 210 distinct interference scenarios and compute the receiver-dependent spectral separation coefficient (SSC) and interference impact for a specific receiver module. Furthermore, we verify the computation using a controlled dataset generated with a radio frequency constellation simulator (RFCS), employing the same receiver module and replaying similar interferences classes. The comparison of results obtained in both environments demonstrates the robustness of the interference impact computation."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "All Smoke, No Alarm: Oracle Signals in Agent-Authored Test Code",
+    "authors": "Dipayan Banik, Kowshik Chowdhury, Shazibul Islam Shamim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18168v1",
+    "source": "arXiv",
+    "abstract": "Software practitioners increasingly use AI coding agents that generate test code alongside production code in open source pull requests (PRs). Recent studies report more than 932,000 agent-authored PRs across more than 116,000 repositories, yet whether their test files contain meaningful verification logic remains underexplored. Test files lacking explicit assertions execute code without verifying behavior, so quality gates based on test-file presence overestimate verification strength. The goal of this paper is to help practitioners assess the verification strength of agent-authored patches by characterizing oracle signals and their link to merge outcomes and review effort. We conduct an empirical study of 86,156 test-file patches from 33,596 agent-authored PRs across 2,807 GitHub repositories produced by five coding agents: OpenAI Codex, GitHub Copilot, Devin, Cursor, and Claude Code. A qualitative analysis of 384 stratified patches informs a syntactic taxonomy of eight oracle signal categories. Applied at scale, 80.2% of test patches contain weak or no explicit oracle signals. While raw merge rates are lower for strong-oracle PRs, a regression analysis adjusting for agent, PR size, repository popularity, task type, and language shows strong oracles significantly improve merge likelihood (OR = 1.28, p < 0.001). Our findings suggest that test file counts substantially overestimate verification strength and that practitioners can adopt oracle-aware quality checks to more accurately evaluate agent-authored contributions."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Verifiable computations for dynamic encrypted control",
+    "authors": "Sebastian Schlor, Frank Allgöwer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18109v1",
+    "source": "arXiv",
+    "abstract": "Encrypted control can preserve the privacy of data and parameters while the necessary computations can be outsourced to a cloud server. To ensure the integrity of the received values from the cloud, i.e., that they have not been changed, however, strong assumptions or verification algorithms are needed. Previous methods require computationally expensive cryptographic protocols or are only applicable to static computations. In this paper, we present a novel type of verification algorithm for linear dynamic encrypted control. We utilize system-theoretic input-output properties of the controller for artificial challenge signals, which are processed in the cloud in parallel with the requested control input, to check the correctness of the results at the plant. This results in almost no additional computational load, wrong computations are revealed with high probability, and no replay attacks are possible."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "IsabeLLM: Automated Theorem Proving Applied to Formally Verifying Consensus",
+    "authors": "Elliot Jones, William Knottenbelt",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18098v1",
+    "source": "arXiv",
+    "abstract": "Advances in Artificial Intelligence (AI) have led AI for Theorem Proving to become a promising means of formally verifying computer systems. Whilst formal verification is traditionally reserved for safety-critical systems due to the required amount of expertise and effort, AI can help to automate a large amount of this workload and make it far more accessible. Blockchain-based systems are becoming increasingly popular and are frequently targeted by malicious actors, often resulting in huge financial losses, highlighting the need to better verify these systems and mitigate vulnerabilities. Arguably the most important component of these systems is the consensus protocol, which allows nodes to agree on decisions in a potentially adversarial environment. In this paper, we improve upon IsabeLLM, the automated theorem proving tool in Isabelle. Namely, we implement a Retrieval-Augmented Generation framework, Error tracing and counterexample generation for improved context supplied to the Large Language Model. Compatibility with the latest version of Isabelle and Sledgehammer is also implemented for improved efficiency. We compare the performance of the two versions of IsabeLLM in their ability to complete the verification of Bitcoin's Proof of Work consensus."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Defense-in-Depth Runtime Safety in Move",
+    "authors": "Victor Gao, Wolfgang Grieskamp, Vineeth Kashyap, George Mitenkov, Teng Zhang, Runtian Zhou, Andrea Cappa, Marco Ilardi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18064v1",
+    "source": "arXiv",
+    "abstract": "Move is a smart-contract language used to execute transactions on the Aptos blockchain. Move programs execute in a sandboxed VM as typed bytecode. The VM statically verifies foundational safety properties like type safety and reference safety at code loading time. In principle, this design gives strong guarantees for Move. However, the static verification logic is complex and continually evolving with the language; like any software, it is not immune to bugs. In a live blockchain setting, a missed rule violation can translate directly into loss of assets, forged authority, or unrecoverable corruption of on-chain state. For this reason, Aptos relies on defense-in-depth runtime safety checks that independently verify the critical invariants during execution, providing protection against latent verifier bugs and malicious bytecode. This paper motivates and describes the runtime safety checks for Move on Aptos."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents",
+    "authors": "Ander Alvarez, Santhiya Rajan, Samuel Mugel, Román Orús",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18037v1",
+    "source": "arXiv",
+    "abstract": "Tool-using LLM agents increasingly use the Model Context Protocol (MCP) to answer from heterogeneous evidence sources, including search, APIs, databases, clinical records, and formulary tools. Standard factuality metrics usually test whether an answer is supported by pooled evidence, missing a provenance-sensitive failure mode: a claim may be supported somewhere while being attributed to the wrong source. We call this cross-source conflation. We introduce ProvenanceGuard, a source-aware verifier for MCP-grounded answers. It consumes captured MCP traces with stable tool IDs, source IDs, and raw outputs; decomposes answers into atomic claims; routes claims to source-specific evidence; checks support with NLI and a token-alignment proxy; compares stated attribution with the routed source; and returns per-claim verdicts plus an answer-level allow/block decision. Blocked answers can be repaired with retrieval-augmented answer revision and re-verified. We evaluate on 281 medical-domain MCP-agent traces. A 266-trace adjudicated subset yields 2,325 LLM-assisted claim labels split by trace; 361 held-out labels are human-verified. On the 40-trace held-out split, ProvenanceGuard achieves block F1 0.802 and source accuracy 0.858 over 260 source-eligible claims, outperforming source-blind baselines that do not emit claim-to-source IDs. On a harder multi-source benchmark it reaches block F1 0.846, while source-plus-relation accuracy drops to 0.229, showing that exact source ownership remains difficult with semantically close sources. Repair-and-reverify resolves all blocked answers in the full trace set, often via conservative fallback. In 50 controlled clinical conflation probes, ProvenanceGuard detects all injected attribution swaps with no retained wrong attribution. These results show that source attribution is an independent axis for factuality verification in MCP-based agents."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Planning to Hammer: Difficulty-Aware Decomposition for Automating Rocq Proofs",
+    "authors": "Ning Zhang, Nongyu Di, Zenan Li, Yuan Yao, Xiaoxing Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17981v1",
+    "source": "arXiv",
+    "abstract": "As AI-generated code proliferates, formal verification, particularly through interactive theorem provers such as Rocq and Isabelle, becomes increasingly important for ensuring software correctness. However, producing machine-checked proofs in such provers remains a bottleneck. Existing solutions bring complementary strengths to proof automation: large language models (LLMs) can propose high-level proof strategies but lack local rigor, while automated tactics such as CoqHammer can reliably discharge many local goals but lack long-range planning capabilities. To combine the best of both worlds, we present Quarry, a planning-based proof synthesis framework that separates proof planning from proof execution. Specifically, Quarry asks an LLM to actively propose multiple proof decompositions with arbitrary sublemmas, type-checks them in Rocq under temporarily admitted sublemmas, and ranks candidates using a proof-state-based difficulty model that estimates hammer solvability. It then recursively proves sublemmas within a bounded budget, effectively turning long proofs into sequences of hammer-solvable obligations. We implement Quarry on top of SerAPI and CoqHammer and evaluate it using multiple frontier LLMs across multiple benchmarks. The experimental results show that planning-based decomposition with solvability-aware ranking substantially improves automation while maintaining predictable cost. Under a uniform 10-minute wall-clock budget, Quarry improves over the strongest baseline by 7% to 13% in success rate across three Rocq benchmarks. These results demonstrate that reliable proof automation can be achieved by coordinating neural planning with symbolic execution rather than replacing either."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Learning task-specific subspaces via interventional post-training of speech foundation models",
+    "authors": "Jack Cox, Jon Barker",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17967v1",
+    "source": "arXiv",
+    "abstract": "Speech foundation models, pre-trained on large corpora of unlabelled speech data, produce general-purpose representations which are useful across tasks. However, these representations encode information about salient speech variables in a distributed manner, while downstream speech tasks rely on only some of this variability. In this work, we propose a post-training refinement approach using interventional contrastive learning. By leveraging an interventional dataset and multi-part contrastive loss, we learn a transformation from the entangled representation space of speech foundation models into separate content and speaker subspaces. We evaluate the learnt representations on speaker verification and keyword spotting tasks, showing improved out-of-domain speaker verification performance and evidence that speaker and content information are separated across the learned subspaces."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?",
+    "authors": "Tongxu Luo, Rongsheng Wang, Jiaxi Bi, Chenming Xu, Zhengyang Tang, Jianlong Chen, Juhao Liang, Ke Ji, Shuqi Guo, Yuhao Du, Fan Bu, Wenyu Du, Xiaotong Zhang, Kyle Li, Shaobo Wang, Linfeng Zhang, Yuxuan Liu, Xin Lai, Chenxin Li, Yiduo Guo, Zhexin Zhang, Xinyuan Wang, Tianyi Bai, Ziniu Li, Benyou Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17861v1",
+    "source": "arXiv",
+    "abstract": "Game generation is an emerging application of coding agents, requiring models to transform natural-language specifications into playable interactive systems. Unlike traditional coding tasks, game generation takes place within a game engine, where scripts, scenes, assets, rendering, and runtime interactions must jointly produce coherent gameplay. We formalize end-to-end game generation as the problem of producing a complete game artifact that realizes a specification through observable player-game interaction in a target environment. We argue that evaluating this setting requires three desiderata: Engine Grounding, Artifact Completeness, and Interactive Verification. We propose an interaction-grounded evaluation framework that assesses executable gameplay through replayed demonstrations and rubric-guided multimodal judging. We instantiate this framework as GameCraft-Bench, a benchmark comprising 140 Godot tasks across 15 game families. Evaluations of frontier coding agents show that end-to-end game generation remains highly challenging: the strongest agent achieves only 41.46%, and most agents score below 40%. Further analysis reveals that while agents often implement recognizable mechanics, they struggle to deliver complete games with sufficient content, functional visual feedback, and coherent presentation. See https://tongxuluo.github.io/gamecraft-bench-website for demos, code, and data."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "LiveStarPro: Proactive Streaming Video Understanding with Hierarchical Memory for Long-Horizon Streams",
+    "authors": "Zhenyu Yang, Kairui Zhang, Bing Wang, Shengsheng Qian, Changsheng Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17798v1",
+    "source": "arXiv",
+    "abstract": "Despite the remarkable progress of Video Large Language Models (Video-LLMs), current online architectures still struggle to simultaneously process continuous video streams, decide autonomously when to respond, and preserve long-horizon contextual memory. These obstacles undermine real-time responsiveness and cause severe forgetting throughout prolonged interactions. In this work, we introduce LiveStarPro, a live streaming assistant that is designed for proactive video understanding over long-horizon streams. The design of LiveStarPro rests on three complementary components. The first component is Streaming Verification Decoding (SVeD), an inference framework that identifies the appropriate response timing through single-pass perplexity verification, thereby eliminating the dependency on explicit silence tokens. The second component is Streaming Causal Attention Masks (SCAM), a training strategy that enforces incremental video-language alignment over variable-length streams. The third component is Tree-Structured Hierarchical Memory (TSHM), a recursive memory architecture that organizes evicted historical information into event chains and consequently enables efficient retrieval from effectively unbounded video streams. To facilitate a comprehensive evaluation under realistic online conditions, we further present OmniStarPro, a large-scale benchmark that spans 15 diverse real-world scenarios and that extends to hour-scale streams for the assessment of long-term recall. Extensive experiments demonstrate that LiveStarPro consistently surpasses existing methods, attaining a 28.9% improvement in semantic correctness and an 18.2% reduction in timing error, while its streaming key-value cache further yields a 1.58x inference speedup over the same model without caching. The model and the code are publicly available at https://github.com/sotayang/LiveStarPro."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "LongWebBench: Evaluating Structural and Functional Webpage Generation in Long-Horizon Settings",
+    "authors": "Yi Zhao, Zhen Yang, Mengpan Chen, Mingde Xu, Shanghui Gong, Xijun Liu, Jibing Gong, Jie Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17727v1",
+    "source": "arXiv",
+    "abstract": "Recent vision-language models (VLMs) have shown promising progress in generating webpages from visual inputs, yet existing evaluations mainly focus on short, single-screen, and largely static webpages. We introduce LongWebBench, a benchmark for evaluating long-horizon webpage generation from both structural and functional perspectives. LongWebBench contains 490 real-world long webpages for structural fidelity evaluation and 507 goal-oriented interaction tasks over 129 webpages for functional evaluation. It employs two complementary protocols: a multi-dimensional VLM-based metric for assessing long-range structural coherence, and a DOM-augmented agent-based pipeline for end-to-end functional verification. We further examine the automatic evaluation protocols through human agreement analysis. Experiments with state-of-the-art open-source and proprietary VLMs under single-image and multi-image settings reveal that structural fidelity degrades as webpage length increases, while visually plausible generations often fail to support executable multi-step interactions. These results highlight the need to evaluate long webpage generation beyond visual similarity, with executable interaction as a core criterion. Our code and data are available at https://github.com/zheny2751-dotcom/LongWebBench."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Robust Bayesian Portfolio Optimization with Discrepancy-based Posterior Ambiguity",
+    "authors": "Zongxia Liang, Yang Liu, Xingjian Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17643v1",
+    "source": "arXiv",
+    "abstract": "We study a continuous-time robust Bayesian portfolio optimization problem under drift uncertainty of risky assets. The investor learns unknown asset drifts through Bayesian filtering while considering uncertainty around posterior estimates via discrepancy-based ambiguity sets, including Wasserstein and $L^p$ distances. To address the resulting time inconsistency, we introduce a feedback-type ambiguity framework that reformulates ambiguity conditionally on observable states. This leads to a modified Hamilton--Jacobi--Bellman--Isaacs (HJBI) equation characterizing the value function and the optimal strategy. For a semi-explicit solution example, we use the exponential utility to derive a reduced semilinear parabolic PDE and establish existence of classical solutions via a verification theorem."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Brick-DICL: Dynamic In-Context Learning for Automated Brick Schema Classification",
+    "authors": "Yiyue Qian, Shinan Zhang, Huan Song, Negin Sokhandan, Hannah Marlowe, Diego Socolinsky",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17637v1",
+    "source": "arXiv",
+    "abstract": "Building Management Systems (BMS) are essential for optimizing energy efficiency and operational performance in modern buildings. However, the lack of standardization across BMS points from different manufacturers creates significant barriers to integration and data utilization. While the Brick schema offers a standardized ontology for building systems, mapping BMS points to appropriate Brick classes presents three critical challenges: (i) the extensive number of Brick classes (936 in the latest version), (ii) limited domain-specific knowledge in large language models (LLMs), and (iii) substantial manual effort required for verification. To address these challenges, we propose Brick-DICL, a two-stage dynamic in-context learning framework for automated Brick schema classification. Brick-DICL consists of two primary components: metadata-RAG, which retrieves relevant examples to enhance LLMs' domain knowledge, and class-RAG, which narrows down potential Brick classes to address the large classification space. Additionally, we implement a multi-LLM filtering mechanism that compares predictions across multiple models, flagging low-confidence classifications for human review. As a result: (i) General: Brick-DICL is applicable to any building management system regardless of manufacturer or metadata format; (ii) Novel and Powerful: as the first dynamic in-context learning approach for Brick schema classification, Brick-DICL achieves significant classification accuracy improvements on building datasets, outperforming existing methods; (iii) Efficient: our multi-LLM filtering strategy reduces manual verification effort, enabling rapid digital building onboarding. Extensive experiments demonstrate Brick-DICL's effectiveness across diverse building datasets, accelerating the path toward standardized, interoperable building management systems."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "An AI Security Agent for Banking: Multi-Vector Fraud and AML Detection Across Retail and Corporate Accounts",
+    "authors": "Joseph Walusimbi, Joshua Benjamin Ssentongo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17555v1",
+    "source": "arXiv",
+    "abstract": "Banks simultaneously face signature-based fraud (card-not-present attacks, account takeover, ATM cloning) and behavioural financial crime (structuring, layering, mule networks, business email compromise) -- two threat families with fundamentally different detection requirements. Static rule engines that reliably catch brute-force and high-velocity events are structurally blind to business-email-compromise (BEC) payment redirection, session hijacking, and money-laundering layering, which are engineered to appear indistinguishable from legitimate activity at the individual transaction or session level. This paper presents an AI security agent for retail and corporate banking that addresses this gap through a three-component fusion architecture operating on two parallel event streams: a transaction stream (card fraud, ACH/wire fraud, AML categories) and a session stream (account takeover, session hijacking, SIM-swap, insider abuse). Each stream combines an LSTM sequence model capturing per-account behavioural history, a statistical velocity/threshold monitor, and a graph/network module capturing account-counterparty relationship patterns (fan-in, fan-out, pass-through ratio) for money-laundering detection. Experiments on a synthetic event log of 237,669 transactions and 113,508 sessions across 13 threat categories and 3,470 simulated accounts demonstrate overall F1 of 0.787 (transaction stream) and 0.867 (session stream) for the proposed model, versus 0.562/0.733 for a rule-based baseline and 0.655/0.713 for an LSTM-only baseline. The agent includes a customer-facing transaction-verification chatbot (96.6% identity verification accuracy, 86.8% mass-reset attack detection) and an analyst case-summary assistant (99.3% action-recommendation F1), with Critical-tier automated response latency under 0.43 ms at the 95th percentile."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Killed resolvents and measure-valued stopping gains for reflected optimal stopping with max-type rewards",
+    "authors": "Louis Shuo Wang, Jiguang Yu, Ye Liang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17517v1",
+    "source": "arXiv",
+    "abstract": "We study an infinite-horizon optimal stopping problem for a normally reflected two-dimensional diffusion in the positive quadrant with nonsmooth max-type reward \\(G(x_1,x_2)=x_1\\vee αx_2\\). The paper develops a conditional measure-theoretic framework for the associated reflected obstacle problem. The main innovation is to show that the stopping gain \\(Γ=c+rG-\\mathcal LG\\) is a signed measure, not a function: the kink of \\(G\\) generates an explicit negative surface measure on \\(Δ=\\{x_1=αx_2\\}\\). We then prove that the correct potential representation uses the resolvent of the reflected diffusion killed on first entry into the stopping set, rather than the unrestricted reflected resolvent. Under explicit monotonicity, regularity, and measure-superharmonicity assumptions, we derive an epigraph representation, a continuation-side boundary-trace condition, and a candidate verification theorem. The framework clarifies hidden regularity and uniqueness assumptions in multidimensional nonsmooth optimal stopping."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Distinguishing Majorana zero modes from trivial defect states on the surface of the iron-based superconductor Fe(Te,Se)",
+    "authors": "Dongfei Wang, Jon Ortuzar, Freek Massee, Ruidan Zhong, Genda Gu, Wende Xiao, Yugui Yao, Roland Wiesendanger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17499v1",
+    "source": "arXiv",
+    "abstract": "Majorana zero modes, which obey non-Abelian exchange statistics, are promising candidates for topological quantum computation due to their robustness against environmental perturbations. The iron-based superconductor Fe(Te,Se) has been identified as an intrinsic topological superconductor, possibly hosting Majorana zero modes. In this paper, we report the observation of near-zero-energy localized states at multiple structural defects on the Fe(Te,Se) surface, which could be misidentified as Majorana zero modes without additional verification. By using spin-polarized scanning tunneling spectroscopy, we demonstrate that the near-zero-energy localized states on step edges and line defects originate from topologically trivial Yu-Shiba-Rusinov states. In addition, zero-energy bound states are also observed for regions without surface defects. A combined spatial and magnetic field dependent analysis of the spin-resolved tunneling spectra in these regions reveals that this type of zero-energy states cannot be attributed to the presence of Majorana bound states. These findings emphasize the importance of spin-dependent studies of low-energy states for pursuing Majorana zero modes."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "AUTOGATE: Automated Clock Gating via Toggling-Aware LLM-based RTL Rewriting",
+    "authors": "Yiting Wang, Chenhui Deng, Chia-Tung Ho, Yanqing Zhang, Zhuo Feng, Cunxi Yu, Ang Li, Gang Qu, Brucek Khailany",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17461v1",
+    "source": "arXiv",
+    "abstract": "Fine-grain clock gating (FGCG) is among the most effective techniques for reducing dynamic power, yet current FGCG optimization flows remain largely manual. Recent LLM-based RTL optimization approaches remain limited by two key drawbacks: (1) the inability to process long waveform traces spanning millions of cycles, and (2) the difficulty of scaling optimization to large hierarchical codebases while preserving correctness. In this work, we present AUTOGATE, the first agentic framework for industry-grade RTL power optimization, enabling workload-aware clock-gating optimization across large hierarchical codebases. AUTOGATE introduces a Machine Learning (ML)-LLM co-design that bridges waveform-level analysis and RTL rewriting. Specifically, we design an ML-based clustering algorithm that distills raw toggling traces into compact, structured representations that guide LLM-based RTL rewriting. This enables accurate identification and application of clock-gating opportunities without requiring LLMs to directly process raw waveform data. To enhance scalability, AUTOGATE employs a hierarchical multi-agent architecture that decomposes large designs into independently optimizable modules, enabling coordinated optimization across deep design hierarchies. We evaluate AUTOGATE on a diverse set of designs ranging from small RTL designs to large industrial-grade codebases. Experimental results show that AUTOGATE consistently reduces dynamic power relative to baselines. Across the small-design suite, AUTOGATE reduces dynamic power by 49.31% on average. On industry-scale designs, it achieves 19.34% and 7.96% dynamic power reductions on NVDLA and BlackParrot, respectively, and up to 6.86% on highly optimized proprietary production designs."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "MODE-RAG: Manifold Outlier Diagnosis and Energy-based Retrieval-Augmented Generation Evaluation",
+    "authors": "Zehang Wei, Jiaxin Dai, Jiamin Yan, Xiang Xiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17449v1",
+    "source": "arXiv",
+    "abstract": "While Multimodal Retrieval-Augmented Generation (M-RAG) enhances Large Vision-Language Models, it remains highly susceptible to cross-modal hallucinations, causal fabrications, and sycophancy. Furthermore, existing mitigation pipelines often face an intervention paradox: static rules tend to unnecessarily disrupt accurate generations, whereas leaving the multi-modal reasoning completely unguided allows existing mismatches to cascade into severe logical fabrications. To quantify and mitigate these hallucinations, we propose a Multi-Agent system, MODE-RAG, driven by Variational Free Energy (VFE) and internal attention states to dynamically gate interventions. High-risk queries are routed to five stage-specific agents, integrating Monte Carlo Tree Search (MCTS) for rigorous causal derivation and logit perturbations to penalize sycophancy. Dedicated Correction and Overseer agents ensure formatting stability and perform post-hoc factual verification. To objectively evaluate our approach, we introduce ModeVent, a challenging subset derived from the MultiVent dataset. Extensive experiments indicate that our system effectively reduces hallucination rates and logical fabrication, significantly improving the robustness of M-RAG systems."
+  },
+  {
+    "date": "2026-06-16",
+    "title": "L-Proto: Language-Aware Episodic Prototypical Training for Multilingual Speaker Verification",
+    "authors": "Hyung-Seok Oh, Deok-Hyeon Cho, Seung-Bin Kim, Seong-Whan Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.17416v1",
+    "source": "arXiv",
+    "abstract": "Multilingual speaker verification remains challenging because language-dependent acoustic variability causes speaker identity to become entangled with linguistic characteristics, degrading generalization across languages. In multilingual training, embeddings often encode language cues with speaker identity, causing speakers to form language-specific clusters. We propose L-Proto, a language-aware episodic prototypical training strategy that constructs language-consistent episodes. By sampling speakers from a single language per episode, L-Proto reduces language-driven variation during training and encourages embeddings to focus more directly on speaker identity. Experiments on the TidyVoice Challenge benchmark demonstrate consistent performance improvements over conventional fine-tuning and random episodic sampling across multiple backbone architectures."
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Trajectory-Level Runtime Integrity Monitoring for Deployed Conversational LLM Services",
+    "authors": "Reem Almarwani, Maryam Almarwani",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3704306",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents",
+    "authors": "Yonas Atinafu, Robin Cohen",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00009",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Rel-LLM: A Filter-then-Rerank Framework for Knowledge Graph Relation Prediction",
+    "authors": "Yongzhen Zhang",
+    "publish": "2026 7th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)",
+    "url": "https://doi.org/10.1109/ainit70033.2026.11557697",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "LLM-generated Schema Matching with Formally Verifiable Explanations",
+    "authors": "Dante Pinto, Len Feremans, Frank Neven, Marcel Parciak, Stijn Vansummeren",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00023",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "MARS: Multi-Agent Reflective Synergy with Role-Aware Critique for Enhanced LLM Reasoning",
+    "authors": "Wenhao Liu, Qun Xu",
+    "publish": "2026 7th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)",
+    "url": "https://doi.org/10.1109/ainit70033.2026.11557855",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Second International Workshop on LLM+Vector Data: Agentic RAG Edition",
+    "authors": "Arijit Khan, Yuyu Luo, M. Tamer Özsu, Danrui Qi, Jiannan Wang",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00017",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "DAEE: Degeneracy-Aware Entailment Entropy as Uncertainty Quantification for LLM-Assisted Measurements",
+    "authors": "Fan Wang, Shervin Shirmohammadi, Cheng-Hsin Hsu",
+    "publish": "2026 IEEE International Symposium on Artificial Intelligence for Instrumentation and Measurement (AI4IM)",
+    "url": "https://doi.org/10.1109/ai4im69129.2026.11558238",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Adaptive LLM Inference in 6G Vehicular Networks via Layer Pruning and Offloading",
+    "authors": "Yan Zhang, Huiru Li, Junhua Wang, Xuewen Luo, Kun Zhu, Zhu Han",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "url": "https://doi.org/10.1109/wcnc65185.2026.11555375",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "CORE - An LLM-Powered System for Resolution Mining and Retrieval from Conversational Platforms",
+    "authors": "Archan Dutta, Vinay Raj Sisodiya, Hardik Airen, Phani Nivarthi",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00020",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Lightweight LLM Intent Understanding in Data-Scarce Scenarios: An Architecture-Aware Classification Paradigm",
+    "authors": "Xinlei Du, Jiadong Gan, Haoyi Wang, Jun Yang",
+    "publish": "2026 7th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)",
+    "url": "https://doi.org/10.1109/ainit70033.2026.11557978",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Towards Native Intelligence: 6G-LLM Trained with Reinforcement Learning from NDT Feedback",
+    "authors": "Zhuoran Xiao, Tao Tao, Chenhui Ye, Yunbo Hu, Yijia Feng, Tianyu Jiao, Liyu Cai",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "url": "https://doi.org/10.1109/wcnc65185.2026.11555128",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "GAN-Augmented and LLM-Enhanced Intrusion Detection for Intelligent Vehicles",
+    "authors": "Elizaveta Andrushkevich, Zahra Pooranian, Chuan H. Foh, Rocío Pérez de Prado, Fabio Martinelli, Mohammad Shojafar",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "url": "https://doi.org/10.1109/wcnc65185.2026.11555542",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Improving LLM performance through black-box online tuning: a case for adding system specs to Factsheets for Trusted AI",
+    "authors": "Yonas Atinafu, Henry Lin, Robin Cohen",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "How Far Can They Map? Probing LLM Capabilities for Cross-Schema SQL Generation",
+    "authors": "Mohammadreza Daviran, Davood Rafiei",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00039",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "LLM-NER Driven Parametric Completion for Aircraft Assembly Order Document",
+    "authors": "Linsen Ma, Wei Chen, Chengye Ma, Junhao Geng",
+    "publish": "2025 11th International Conference on Mechanical Engineering and Aerospace Engineering (MEAE)",
+    "url": "https://doi.org/10.1109/meae68077.2025.11557972",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Less Is More? When Dataset Context Hurts LLM-Generated Dataset Descriptions",
+    "authors": "Lisa-Yao Gan, Arunav Das, Johanna Walker, Klaus Diepold, Elena Simperl",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering Workshops (ICDEW)",
+    "url": "https://doi.org/10.1109/icdew71238.2026.00022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "ReaLM: Real-Time Channel Prediction with Distilled LLM",
+    "authors": "Bo Wang, Lin Li, Decan Zhao, Wensheng Lin, Qinghe Du, Lixin Li",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "url": "https://doi.org/10.1109/wcnc65185.2026.11555068",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Fusing Situations of Massive Mobile Nodes Improves the LLM-Based Attack Prediction for AI-Native Edges",
+    "authors": "Rushan Li, Jin Tan, Zhuoran Duan, Guoshun Nan, Qimei Cui, Xiaofeng Tao",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "url": "https://doi.org/10.1109/wcnc65185.2026.11555753",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Vision-Augmented LLM for Communication Beam Steering Compensation",
+    "authors": "Xiaoyu Xing, Dingyi Lu, Peng Yang, Zehui Xiong, Xianbin Cao, Tony Q. S. Quek",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "url": "https://doi.org/10.1109/wcnc65185.2026.11555470",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-16",
+    "title": "Assessing the Sustainability of LLM Inference through Energy–Accuracy Analysis",
+    "authors": "Sabiya Banu Masthan Ali, Syed Muhammad Danish, Zeeshan Sattar, Arghavan Asad",
+    "publish": "Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems",
+    "url": "https://doi.org/10.1145/3744255.3811741",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
