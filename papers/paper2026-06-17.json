@@ -1,0 +1,326 @@
+[
+  {
+    "date": "2026-06-17",
+    "title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+    "authors": "Jisoo Kim, Sangwon Baik, Taeksoo Kim, Sungjoo Kim, Junyoung Lee, Mingi Choi, Hanbyul Joo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.19340v1",
+    "source": "arXiv",
+    "abstract": "We present a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-frame task grounding and primitive-level 2D keypoints, then lifts them into 3D via multi-view fusion. This lifting combines triangulation of view-wise VLM groundings with reference-view ray voting, which searches along a semantic camera ray for geometrically consistent candidates across neighboring views. The resulting 3D keypoints support both pick-and-place and tool-use: for tool-use, we retrieve an object-centric atomic action corresponding to the inferred skill category and align its stored 6D tool trajectory to the scene; for dexterous execution, we expand the lifted grasp keypoint into a task-conditioned grasp affordance region and generate feasible grasp-motion pairs with an arm-hand motion generator. Real-world experiments show improved 3D grounding accuracy and execution reliability over single-view RGB-D grounding and fine-tuned VLA baselines. We further demonstrate long-horizon manipulation through closed-loop status verification and replan, enabling zero-shot execution on unseen objects and tool-use tasks in novel scenes."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "CollaboratoR: A scalable workflow for collaborative data entry and management",
+    "authors": "Patrick Bills, Ashwini Ramesh, Lais Petri, Alejandra Martinez Blancas, Kelly Kapsar, Amar Deep Tiwari, Phoebe L. Zarnetske",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.19280v1",
+    "source": "arXiv",
+    "abstract": "Effective collaborative data entry and transparency are foundational for building robust databases and high-quality data synthesis. Yet researchers often face inconsistent data entries, inadvertently introducing errors, misreadings, and inconsistencies that compromise data integrity. Despite the growing use of open-source tools, many still rely on inefficient formats or costly commercial platforms, while fewer adopt complex open-source solutions. These inefficiencies slow workflows and hinder researchers' ability to build foundational databases for synthesis research, including meta-analyses. To address this, we developed CollaboratoR, a customizable R package that automates data validation and aggregation, ensuring consistency and transparency and adhering to FAIR data principles, while optionally using Google Sheets for collaborative data entry and GitHub for version control. CollaboratoR fills the gap between ad-hoc spreadsheets and complex systems for data extraction in meta-analyses. Data are entered into shared Google Sheets, validated, and pushed to GitHub for version control, then re-validated after verification to ensure accuracy before finalizing. Tested in two case studies, plant competition and avian interaction databases, CollaboratoR proved effective at managing large collaborative datasets. In both, automated validation flagged common entry and formatting issues early, improving traceability and reducing time spent on post-hoc cleaning. This framework applies across disciplines where data synthesis informs data-driven decision-making, such as social science, ecology, and medical and pharmaceutical research. Ultimately, CollaboratoR offers guidance for efficient, transparent, and reproducible collaborative data management, enhancing research synthesis across fields and industries alike."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Runtime Compliance Verification for AI Agents",
+    "authors": "Nafiseh Kahani, Masoud Barati, Diana Addae",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.19242v1",
+    "source": "arXiv",
+    "abstract": "AI agents now handle personal data through tool use, function calls, and multi turn dialogue, which can create obligations under the General Data Protection Regulation (GDPR). Current testing practices mainly rely on offline red teaming or static prompt review, but they do not guarantee at runtime that agent behavior follows regulatory rules. We propose C-Trace (Compliance Trace based Runtime Agent Conformance Enforcement), a verification framework that: (i) expresses a subset of GDPR requirements, including consent, purpose limitation, data minimization, and the right to erasure, as formal policy predicates over agent execution traces; (ii) uses a runtime monitor that intercepts every tool invocation and model output and rejects non-compliant actions; and (iii) tests the agent with attack dialogues, including DSPy generated prompts and verbatim prompts from red teaming corpora, that try to induce violations. We evaluate the framework on four case studies reframed to GDPR. Under 10 percent per-category extractor noise, including drop-out and over-typing, the monitor keeps the attack success rate at less than or equal to 12 percent, below the baselines we compare against, and false positives at less than or equal to 16 percent, and reaches 0 percent ASR under perfect extraction."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Generalised Eigenvalue Geometry of Semantic Adversarial Attacks",
+    "authors": "Martin Anthony, Kaveh Salehzadeh Nobari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.19212v1",
+    "source": "arXiv",
+    "abstract": "Recent empirical work shows that semantically equivalent paraphrases can fool financial sentiment classifiers: although a paraphrase remains close to the original under a strong reference embedding, it may shift the target model's representation enough to change the predicted class. Existing robustness theory either assumes a single-model threat model or focuses mainly on empirical attack algorithms. We develop a continuous local model of semantic paraphrase perturbations that captures this two-model structure. We show that the worst-case local displacement of the target representation, subject to a proxy-model budget, is governed by the largest generalised eigenvalue of a matrix pencil $(A,B)$ constructed from the Jacobians of the two embedding maps. The resulting attackability index $λ^*(x)$ is intrinsic to the local paraphrase geometry and the chosen embedders, yields a closed-form prediction-flip condition for affine readouts, and supports conservative population and finite-sample attackability certificates. For uniform control over classes of affine readouts, we derive a distribution-free VC bound for binary attackability indicators and a scale-sensitive margin bound based on an attackability-adjusted margin that subtracts a local geometric penalty from the standard classifier margin. We also connect the continuous theory to discrete paraphrase search, identify an asymmetry between successful and unsuccessful finite searches, and give a covering condition under which the discrete and continuous settings agree. Finally, we propose an empirical verification framework using soft-token relaxations and generated paraphrase sets to assess the local eigenvalue geometry, prediction-flip condition, and finite-search approximation on a deployed financial-text classifier."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "OpenAnt: LLM-Powered Vulnerability Discovery Through Code Decomposition, Adversarial Verification, and Dynamic Testing",
+    "authors": "Nahum Korda, Gadi Evron",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.19149v1",
+    "source": "arXiv",
+    "abstract": "Automated vulnerability discovery in large codebases remains challenging: traditional static analysis produces high false-positive rates, while dynamic approaches such as fuzzing require substantial infrastructure and often target narrow classes of bugs. Recent advances in large language models (LLMs) enable semantic reasoning about program behavior, but applying LLMs to repository-scale security analysis introduces challenges related to context management, cost, and verification. We present OpenAnt, an open-source vulnerability discovery system that integrates static program analysis with LLM-based reasoning in a multi-stage pipeline. OpenAnt introduces three key techniques. First, codebases are decomposed into self-contained analysis units filtered by reachability from external entry points, reducing the analysis surface by up to 97% while preserving attack-relevant code. Second, candidate vulnerabilities undergo adversarial verification through constrained attacker simulation, where the model evaluates exploitability under realistic attacker capabilities. Third, findings are validated through dynamic verification, in which exploit environments are generated automatically, executed in sandboxed containers, and discarded after use. Evaluation on widely used open-source projects including OpenSSL, WordPress, and Flowise shows that this architecture can identify previously unknown vulnerabilities while maintaining manageable analysis cost and substantially reducing false positives. Our results suggest that closed-loop vulnerability discovery pipelines, combining semantic reasoning with exploit validation, provide a practical path toward scalable automated security analysis. OpenAnt is released as open source under the Apache 2.0 license at https://github.com/knostic/OpenAnt."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A Measure-Valued Obstacle Problem for an Obliquely Reflected Diffusion with a Max-Type Payoff",
+    "authors": "Louis Shuo Wang, Jiguang Yu, Ye Liang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.19070v1",
+    "source": "arXiv",
+    "abstract": "We study an obliquely reflected optimal stopping problem in the nonnegative quadrant with nonsmooth max-type payoff \\(G(x)=x_1\\veeαx_2\\), and we develop a measure-valued potential-theoretic formulation of the associated obstacle problem. The kink of \\(G\\) on the diagonal \\(x_1=αx_2\\) produces a singular surface measure in the distributional generator, while the oblique reflection directions generate boundary local-time contributions on the coordinate faces. Together with the absolutely continuous stopping gain, these terms define a total signed stopping measure \\(\\Gtot\\). We derive the corresponding reflected Itô--Tanaka identity, prove a killed-resolvent representation of the value function in the continuation region, and show that the unrestricted reflected resolvent is generally incorrect because the process is not absorbed on the stopping set. The free boundary is formulated through a continuation-side trace condition for the killed potential. Under a vertical monotonicity hypothesis on \\(V-G\\), the stopping set is shown to have an epigraph form. We finally prove a verification theorem: any admissible epigraph candidate satisfying contact, strict continuation, reflected Neumann compatibility, growth, the trace condition, and measure-superharmonicity coincides with the value function, and its first entry time is optimal."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "SingFox: A Multi-Lingual Singfake Detection Corpus",
+    "authors": "Arth J. Shah, Devanshi K. Trivedi, Himanshi U. Borad, Hemant A. Patil",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18985v1",
+    "source": "arXiv",
+    "abstract": "In this work, we introduce SingFox, a comprehensive and large-scale dataset specifically designed to support robust evaluation of singing deepfake detection and source tracing systems. SingFox is divided into six distinct tracks (T1--T6), each targeting a unique form of novelty, ranging from language diversity (global and Indian) to genre-specific music and alternative fake generation methods. The dataset encompasses over 113,802 audio clips across 20 languages, totaling more than 126.32 hours of audio data and featuring 1,150 singers. Each track is designed to emulate real-world scenarios and evaluate how reliably models perform under different conditions, thereby assessing their robustness. SingFox aims to foster reproducibility and accelerate research in singing deepfake detection by providing a reliable benchmark for both the singfake detection task and the source verification task (model explainability). Experimental results show a highest accuracy of 77.84\\% in cross-dataset evaluation settings. All code and resources required to reproduce the dataset are publicly available at https://github.com/Arth-Shah/SingFox."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "PaSTTeL: Parallel analysiS framework for Termination and non-Termination of Lasso programs",
+    "authors": "Anissa Kheireddine, Souheib Baarir, Hugo De Sa Pereira Pinto",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18977v1",
+    "source": "arXiv",
+    "abstract": "Proving termination or non-termination of lasso programs is a challenging problem in program verification. To unify state-of-the-art approaches under a common execution framework, we present PaSTTeL, a modular and generic parallel portfolio framework for termination and non-termination analysis of lasso programs. PaSTTeL is designed to: (1) facilitate the integration of new analysis algorithms into the portfolio, (2) execute registered strategies concurrently, and (3) act as a self-contained library component that can be seamlessly embedded into any external project requiring (non-)termination analysis. Initial experiments demonstrate that an instantiation of PaSTTeL performs competitively against state-of-the-art tools."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts",
+    "authors": "Minseo Kim, Minjae Lee, Seunghyuk Oh, Kevin Galim, Donghoon Kim, Coleman Hooper, Harman Singh, Amir Gholami, Hyung Il Koo, Wonjun Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18967v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning (RL) has become a representative post-training paradigm for LLMs, enabling strong reasoning and agentic capabilities. However, rollout generation remains a dominant latency bottleneck because autoregressive sampling decodes responses sequentially and a small number of long-tailed generations often determine completion time. Speculative decoding (SD) offers a natural way to address this bottleneck, as it is a well-established technique for serving fixed LLMs that reduces latency by rapidly drafting tokens and accepting them through parallel verification while preserving the target-model distribution. However, its practical speedups do not directly carry over to RL rollouts: (i) the evolving target policy makes any fixed drafter increasingly mismatched with the policy's output distribution; and (ii) active batch sizes shrink throughout rollout decoding, shifting decoding from compute-bound to memory-bound regimes where parallel verification can exploit underutilized compute. Therefore, accelerating RL rollouts requires both a drafter that remains effective under long, high-temperature generations from an evolving policy and system-aware use of SD that avoids compute-bound regimes. We present EfficientRollout, a system-aware self-SD framework designed to address this gap for RL rollouts. EfficientRollout induces a quantized drafter from the target model (i.e. self-speculative decoding), keeping it coupled to the evolving policy without separate drafter pretraining or online adaptation. It further coordinates a system-aware SD toggle policy with acceptance-aware draft-length adaptation, enabling speculation only in beneficial regimes while matching the drafting budget to evolving drafter quality. EfficientRollout reduces rollout and end-to-end latency by up to 19.6% and 12.7%, respectively, over an accelerated AR rollout baseline, while preserving final model quality."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Graph-ESBMC-PLC: Formal Verification of Graphical PLCopen XML Ladder Diagram Programs Using SMT-Based Model Checking",
+    "authors": "Pierre Dantas, Lucas Cordeiro, Waldir Junior",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18941v1",
+    "source": "arXiv",
+    "abstract": "PLCopen XML defines two encoding formats for IEC 61131-3 Ladder Diagram programs: a textual encoding using <rung> elements, and a graphical encoding that represents rung logic as a directed graph of localId/refLocalId connections. ESBMC-PLC supported the textual format but parsed graphical exports from CONTROLLINO, Beremiz, and OpenPLC Editor into an empty GOTO intermediate representation, causing vacuous verification success. This paper presents Graph-ESBMC-PLC, which closes this gap with a DFS-based graphical LD resolver. The resolver traverses the connection graph from leftPowerRail to each coil, extracts rung paths as Boolean contact conjunctions, and applies a three-tier I/O inference scheme. Ordering coils by rightPowerRail connectionPointIn sequence ensures SET coils process before RESET coils, matching IEC scan-cycle semantics. The graphical-to-IR conversion leaves the ESBMC backend unchanged. Validation on 3 graphical LD programs from CONTROLLINO/OpenPLC Editor shows all produce full GOTO IR with nondeterministic inputs and rung logic, versus the empty IR previously. All 3 verify SAFE at k=2 under 70ms. The 11 textual LD benchmarks are fully preserved, with no regression. Two Beremiz examples with no LD content or unsupported timer semantics are reported as discovered limitations. Artifact at Zenodo (DantasCordeiro2026graphical, doi:10.5281/zenodo.20699856)."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Some Complexity Results for Robustness Verification for Binarized Neural Networks",
+    "authors": "Harshit Goyal, Sudakshina Dutta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18918v1",
+    "source": "arXiv",
+    "abstract": "This paper studies the computational complexity of verification problems for Binarized Neural Networks (BNNs), where activations (and sometimes weights) are binary. We analyze two problems: satisfiability and robustness under uniform image occlusion. We show that BNN satisfiability is NP-complete via a reduction from Boolean satisfiability problem (SAT), and that uniform occlusion induces a piecewise-constant structure in the network output, enabling a polynomial-time robustness-checking algorithm."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "REVES: REvision and VErification--Augmented Training for Test-Time Scaling",
+    "authors": "Yuanxin Liu, Ruida Zhou, Xinyan Zhao, Amr Sharaf, Hongzhou Lin, Arijit Biswas, Mohammad Ghavamzadeh, Zhaoran Wang, Mingyi Hong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18910v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling via sequential revision has emerged as a powerful paradigm for enhancing Large Language Model (LLM) reasoning. However, standard post-training methods primarily optimize single-shot objectives, creating a fundamental misalignment with multi-step inference dynamics. While recent work treats this as multi-turn reinforcement learning (RL), conventional approaches optimize over the multi-step trajectories directly, failing to further exploit the high-quality mistakes in intermediate steps that model can learn from correcting them. We propose a two-stage iterative framework that alternates between online data/prompt augmentation and policy optimization. By converting the intermediate steps (``near-miss'' answers) in the successful recovery trajectories into decoupled revision and verification prompts, our approach concentrates training on both effective answer transformation and error identification. This approach enables efficient off-policy data generation and reduces the computational overhead of long-horizon sampling compared to standard multi-turn RL. On LiveCodeBench, using publicly available test cases as feedback, we observe gains of +6.5 points over the RL baseline and +4.0 points over standard multi-turn training. Beyond coding, our approach matches the previously reported SOTA result on circle packing while using the smallest base model (4B) and far fewer rollouts than the much larger evolutionary search systems. Math results under ground-truth verification further confirm improved correction ability. It also generalizes to out-of-distribution constraint-satisfaction puzzles such as n\\_queens and mini\\_sudoku, where correctness is defined entirely by problem constraints. Code is available at https://github.com/yxliu02/REVES.git."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "URDF Synthesis from RGB-D Sequences via Differentiable Joint Inference and Energy-Consistent Verification",
+    "authors": "Xinze Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18861v1",
+    "source": "arXiv",
+    "abstract": "Reconstructing simulation-ready digital twins of articulated objects from sensor observations remains constrained by two persistent gaps: (i) part-level geometric reconstruction is decoupled from kinematic-parameter estimation, and (ii) the recovered models often violate basic dynamic invariants such as energy conservation, leading to drift when the URDF is replayed in physics simulators. We present KinemaForge, a constraint-driven pipeline that jointly infers part-level shape, joint topology, and joint parameters from short RGB-D sequences and validates the result against an energy-consistent verifier built on differentiable rigid-body dynamics. The pipeline introduces three components: a kinematic constraint graph that encodes joint-part incidences as soft edges; a differentiable screw-axis solver that backpropagates from rendered observations through Featherstone's articulated-body algorithm to joint parameters; and an energy residual loss that penalises non-physical free responses of the reconstructed model. Across five PartNet-Mobility categories and an internal RGB-D benchmark, KinemaForge reduces the average joint-axis error from 4.52 degrees to 2.83 degrees (-37.4%) over the strongest geometric baseline (PARIS) and from 5.30 degrees to 2.83 degrees (-46.6%) over the interaction-based Ditto baseline, lowers long-horizon simulation drift by 64% (vs. PARIS) over 50 s rollouts, and yields URDFs whose closed-loop manipulation success rate improves by 14.6 percentage points over Ditto in our preliminary evaluation. Code and reconstruction data will be released upon acceptance."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Unconditional Primality Certificates for the Hexagonal 3-smooth Family p = 3m(m+1) + 1: Deterministic Pocklington Witnesses and Arithmetic Filters",
+    "authors": "Hassane Bakkaoui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18859v1",
+    "source": "arXiv",
+    "abstract": "We study the parametric subfamily p = 3m(m+1) + 1 with m = 2^a 3^b - 1, a,b in N*, a 3-smooth slice of the centred hexagonal numbers 3m^2 + 3m + 1 = (m+1)^3 - m^3, from the point of view of unconditional primality certification via the Pocklington-Lehmer criterion. The 3-smoothness of m+1 = 2^a 3^b yields, for every (a,b), a fully factored divisor F = 2^a 3^(b+1) of p-1 satisfying F > sqrt(p) unconditionally, reducing the certificate to two witnesses, for q = 2 and q = 3. Our main new contribution is a complete, deterministic characterisation of the two canonical witnesses. We prove that w_2 = 5 is a valid witness if and only if a - b = 1, 2 (mod 4), by quadratic reciprocity; and that w_3 = 7 is a valid witness if and only if m is not congruent to 2 (mod 7), by cubic reciprocity in Z[omega] using the explicit Eisenstein factorisation p = ((1+m) - m omega)((1+m) - m omega^2). These two results turn the heuristic \"5 and 7 always work\" (which is in fact false) into exact congruence conditions, and yield a deterministic witness-selection rule. Alongside, three elementary arithmetic filters (mod 6, a (-3) quadratic-residue sieve, and a mod-7 forbidden-class test) remove about 87% of candidates at negligible cost. As a demonstration, a multi-core implementation produced four unconditional certificates on consumer hardware, the largest a prime of 29998 decimal digits."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "SAMA: Semantic Anchor-aligned Augmentation for Unified Low-Resource Multimodal Information Extraction",
+    "authors": "Quanjiang Guo, Chong Mu, Jiazhou Pan, Ming Jia, Ling Tian, Hui Gao, Zhao Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18780v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Information Extraction (MIE)-covering tasks such as Multimodal Named Entity Recognition (MNER), Relation Extraction (MRE), and Event Extraction (MEE)-is essential for understanding multimedia content but remains constrained by severe data scarcity. Although data augmentation is a promising remedy, existing approaches are impeded by coarse cross-modal alignment and fragmented, task-specific designs that fail to exploit shared semantic knowledge. To overcome these limitations, we introduce Semantic Anchor-aligned Multimodal Augmentation (SAMA), a unified framework for generating high-fidelity, task-aware synthetic data. SAMA constructs structured semantic anchors from ground-truth labels to guide a Collaborative Multi-Experts Multimodal Large Language Model (CME-MLLM), which integrates a Universal Adapter for shared semantics with Task-Specific Adapters to produce diverse yet constraint-compliant textual samples. For image synthesis, SAMA employs an Anchor-Preserving Diffusion mechanism that uses anchor-weighted prompts and latent conditioning to maintain critical semantic anchors while diversifying visual contexts. To eliminate the need for manual verification, SAMA further introduces a Dual-Constraint Filtering module that selects synthetic samples based on both cross-modal consistency and anchor fidelity. Extensive experiments across benchmark datasets for MNER, MRE, and MEE demonstrate that SAMA consistently outperforms state-of-the-art augmentation baselines under both fully supervised and low-resource settings, underscoring its versatility, robustness, and effectiveness."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "$d$-wave altermagnetism revealed by resonant inelastic X-ray scattering",
+    "authors": "Guangkai Zhang, Yuehong Li, Xubin Ye, Vincent C. Morano, Sze Tung Li, Jaewon Choi, Rebecca Scatena, Shuai Tang, Maocai Pi, Mengqi Ye, Mirian Garcia-Fernandez, Alessandro Bombardi, Xiaomei Qin, Zhao Pan, Daniel G. Mazzone, Qisi Wang, Yi Lu, Yao Shen, Youwen Long",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18731v1",
+    "source": "arXiv",
+    "abstract": "Altermagnetism defines a third fundamental class of collinear magnetic order, featuring compensated magnetic moments with antiparallel spin alignment, yet lifted Kramers degeneracy without the need for relativistic spin-orbit coupling. Its ability to host spin-polarized electronic bands and unconventional chiral magnons makes it a promising platform for functional materials. However, experimental verification has proven challenging; while circular dichroism in resonant inelastic X-ray scattering (RIXS) has been suggested as a signature of chiral magnons, it remains controversial whether this effect is an intrinsic property of altermagnetism or an artifact of experimental geometry. In this work, we resolve this debate and provide unambiguous experimental evidence of $d$-wave altermagnetism in the strongly correlated Lieb-lattice magnet La$_2$O$_3$Mn$_2$Se$_2$. The RIXS spectra exhibit a $d$-wave-symmetry circular dichroism in the magnetic excitations that vanishes in the paramagnetic phase. Through RIXS-operator symmetry analysis and exact-diagonalization calculations, we prove that the observed dichroism is a direct consequence of altermagnetic symmetry constraints, independent of magnon branch splitting. Our results provide definitive evidence for the experimental realization of $d$-wave altermagnetism in La$_2$O$_3$Mn$_2$Se$_2$ and establish circularly polarized RIXS as a highly symmetry-sensitive spectroscopic framework for detecting magnetic phases that evade conventional probes."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Morpheus: A Morphology-Aware Neural Tokenizer and Word Embedder for Turkish",
+    "authors": "Tolga Şakar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18717v1",
+    "source": "arXiv",
+    "abstract": "Turkish is agglutinative: meaning is carried by morphemes, yet the subword tokenizers that drive modern language models split words by corpus statistics, fragmenting semantically loaded suffixes and -- in the case of WordPiece and rule-based analyzers -- failing to decode their output back to the original text. This paper presents \\textbf{Morpheus}, a neural morpheme-boundary model for Turkish that is at once a lossless, morphology-aware tokenizer and a word-embedding producer. A differentiable Poisson-binomial dynamic program turns per-character boundary probabilities into soft morpheme memberships during training and exact segments at inference, with no string normalization, so $\\mathrm{decode}(\\mathrm{encode}(w)) = w$ holds by construction. Because the model is neural, the same forward pass that tokenizes also emits a structured word embedding. Among reversible tokenizers -- the only ones valid for generation -- Morpheus attains the lowest bits-per-character ($1.425$), roughly doubles the gold morphological alignment of the subword family (MorphScore macro-F1 $0.61$ vs.\\ ${\\sim}0.32$), and uses ${\\sim}19\\%$ less GPU memory than 64K-vocabulary subword tokenizers. As an embedder, frozen Morpheus vectors lead on lexical retrieval (root-family MAP $0.85$) and same-root verification (ROC-AUC $1.00$), surpassing the multilingual retriever BGE-M3 and BERTurk; on context- and inflection-dependent tasks (NER, case/number probing) the heavier contextual encoders remain ahead -- a trade-off we attribute to Morpheus's root-centric geometry. Code: https://github.com/lonewolf-rd/TurkishMorpheus; model: https://huggingface.co/lonewolflab/Morpheus-TR-50K; interactive demo: https://huggingface.co/spaces/lonewolflab/morpheus-tr-demo."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "HANSEL: Extracting Breadcrumbs from Web Agent Trajectories for Interactive Verification",
+    "authors": "Yujin Zhang, Daye Nam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18671v1",
+    "source": "arXiv",
+    "abstract": "AI web agents can perform complex, multi-step tasks such as searching for products, comparing options, and making purchases on behalf of users. However, verifying the correctness of an agent's output remains difficult. Existing transparency mechanisms, including full trajectory logs, source links, screenshots, and LLM-generated summaries, treat verification as a passive reading task, leaving users to sift through overwhelming logs or trust potentially unfaithful explanations. We present HANSEL (Highlighting Agent Navigation Steps as Evidence Links), a system that extracts interactive, verifiable evidence from web-agent trajectories. Given an agent trajectory, HANSEL extracts evidence pages and snippets and presents them as navigable, interactive views with relevant page state preserved (e.g., applied filters, search queries, and scroll positions), enabling users to verify how the agent arrived at its answer. When the agent's answer cannot be traced to any visited page, HANSEL explicitly flags this gap. A technical evaluation on 45 tasks from AssistantBench and Online-Mind2Web shows that HANSEL achieves 83.7% precision and 88.8% recall in identifying evidence pages, while reducing trajectory volume by 61.6%. In a controlled user study with 14 participants, HANSEL significantly reduced task completion time and perceived effort compared to a standard agent interface, while participants rated it significantly higher on usability, verification ease, and error identification. Our results demonstrate that reframing verification as an interactive activity, rather than passive consumption of agent explanations, leads to more efficient human oversight of AI agents."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "Deep Research in Physical Sciences: A Multi-Agent Framework and Comprehensive Benchmark",
+    "authors": "Yigeng Jiang, Tengchao Yang, Taoyong Cui, Jiaxing Wan, Yuan Wang, Weida Wang, Zhiyu Liu, Chuyi Peng, Binzhao Luo, Maoli Gao, Huaihai Huang, Yuqianer Zeng, Ziyang Zheng, Dongchen Huang, Chao Chen, Zichao Liu, Weiping Shen, Shuchen Pu, Siyu Zhou, Runmin Ma, Yusong Hu, Fei Chao, Bo Zhang, Xiawu Zheng, Zifu Wang, Lei Bai, Yunqi Cai, Shufei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18648v1",
+    "source": "arXiv",
+    "abstract": "Deep research agents are Large Language Model (LLM)-based systems designed for autonomous, multi-step scientific reasoning, and they hold immense potential for accelerating research in the physical sciences. However, comprehensive and in-depth evaluations of their capabilities within this domain remain lacking. To address this gap, we introduce PhySciBench, a benchmark highly relevant to physical science research, comprising 200 expert-curated questions, balanced between physics and chemistry, across six task categories that reflect real-world scientific workflows. Evaluations of state-of-the-art models and agent systems on PhySciBench reveal limited performance; even the strongest baseline, Gemini Deep Research, achieves an accuracy of only 33.5%. Analysis of failure cases identifies three recurrent deficiencies: fragility in extended reasoning chains, limited knowledge transfer across steps, and a lack of physics-grounded self-verification. Motivated by these findings, we develop DelveAgent, a modular multi-agent framework equipped with an adaptive planning loop, dual-granularity memory, and a hierarchical physics-grounded reflection mechanism. Across four scientific benchmarks, DelveAgent improves accuracy by up to 7.5 percentage points while reducing inference costs to approximately one-third of the strongest baseline. These results establish the significance of PhySciBench as a critical benchmark for evaluating AI systems in the physical sciences and demonstrate that architectural specialization can effectively enhance the reliability of autonomous scientific research."
+  },
+  {
+    "date": "2026-06-17",
+    "title": "DNN Koopman-Based Deviation Compensation for UGV Path Tracking Control on Coupled Slope and Potholed Road",
+    "authors": "Jian Zhao, Wenbo Zhou, Zhicheng Chen, Bing Zhu, Jiayi Han, Dongjian Song, Yinju Lin, Peixing Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.18630v1",
+    "source": "arXiv",
+    "abstract": "Unmanned ground vehicles (UGVs) operating in off-road scenarios are confronted with complex terrain disturbances that can substantially degrade path tracking performance. To address this challenge, this paper proposes a deep neural network (DNN) Koopman-based deviation compensation strategy for UGV path tracking control. Firstly, based on the vehicle dynamic function on coupled slope, an adaptive forgetting recursive least squares method with decoupled error terms is designed to estimate tire cornering stiffness. On this basis, a Laguerre model predictive control (LMPC) path tracking control strategy is designed by incorporating Laguerre functions, which can reduce computational resource usage while maintaining reliable tracking performance across different coupled slope scenarios. Then, by integrating Koopman operator theory with DNN, a DNN Koopman (DK) path deviation compensation method is proposed, which significantly improves the path tracking accuracy of UGV under potholed road disturbances. Furthermore, an event-triggered parallel cooperative (EPC) compensation mechanism that couples LMPC with DK is established based on compensation activation criteria and credibility verification. This mechanism improves path tracking accuracy on potholed road while ensuring the feasibility of overall steering command and stability of vehicle after DK compensation. Finally, a hardware-in-the-loop (HiL) experimental platform is constructed for validation. Experimental results demonstrate that the proposed UGV path tracking strategy improves tracking performance by more than 11.5% across multiple operating conditions."
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Meteorology-Driven Self-Correcting LLM Priors for Smart Grid Outage Prediction and Bayesian Fault-Chain Risk Analysis_supp1-3703813.pdf",
+    "authors": "Zuqing Zheng",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tce.2026.3703813/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "A Lightweight Multimodal LLM-Based Intrusion Detection System for Open RAN",
+    "authors": "Jean-Jarcke Mukombelwa Malasi, Hajar Moudoud, Rokia Missaoui",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference Workshops (WCNCW)",
+    "url": "https://doi.org/10.1109/wcncw67598.2026.11555393",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+    "authors": "Faouzi El Yagoubi, Godwin Badu-Marfo, Ranwa Al Mallah",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3704541",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Confirmation Bias Awareness in Visual Information Retrieval via LLM-Guided Interaction-Trace Monitoring",
+    "authors": "Mariia Tytarenko, Daniel Atzberger, Michael Bedek, Stefan Lengauer, Tobias Schreck",
+    "publish": "2026 IEEE 19th Pacific Visualization Conference (PacificVis)",
+    "url": "https://doi.org/10.1109/pacificvis68791.2026.00017",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Multimodal LLM-Based Automated Assessment of VR User Interface Layouts",
+    "authors": "Zijie Zheng, Qing Lu, Qiuxu Yu, Jiuyang Li, Yu He, Ge Yu",
+    "publish": "2026 IEEE 19th Pacific Visualization Conference (PacificVis)",
+    "url": "https://doi.org/10.1109/pacificvis68791.2026.00031",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "LLM-Empowered Covert Control in Low-Altitude Wireless Networks",
+    "authors": "Guoliang Yang, Yi Wu, Xiaotong Zhao, Yanxi Xie, Tao Liu",
+    "publish": "2026 IEEE Wireless Communications and Networking Conference Workshops (WCNCW)",
+    "url": "https://doi.org/10.1109/wcncw67598.2026.11555496",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "From Natural Language to Solver-Ready Power System Optimization: An LLM-Assisted, Validation-in-the-Loop Framework",
+    "authors": "Yunkai Hu, Tianqiao Zhao, Meng Yue",
+    "publish": "2026 IEEE/PES Transmission and Distribution Conference and Exposition (T&amp;amp;D)",
+    "url": "https://doi.org/10.1109/td48022.2026.11562194",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Power-Aware Orchestration for Geo-Distributed LLM Inference via Quantum Optimization",
+    "authors": "Xiangdong Zheng, Jianan Min, Long Luo, Hongfang Yu, Zonghang Li",
+    "publish": "IEEE Transactions on Network Science and Engineering",
+    "url": "https://doi.org/10.1109/tnse.2026.3704855",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "LLMsafe-Spectre: Efficient Spectre Attack Detection in LLM Environments using An Intelligent HPC events Selection Methodology",
+    "authors": "Quan Zhou, Ran Wen, Jiajia Jiao",
+    "publish": "ACM Transactions on Design Automation of Electronic Systems",
+    "url": "https://doi.org/10.1145/3821636",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Adversarial-Robust Child Face Verification Using Spiking Neural Networks",
+    "authors": "Julian Götzinger",
+    "publish": "2026 IEEE 20th International Conference on Automatic Face and Gesture Recognition (FG)",
+    "url": "https://doi.org/10.1109/fg67764.2026.11557075",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Probabilistic Verification to Support Next-Generation Certification",
+    "authors": "Sam Procter, Dionisio de Niz",
+    "publish": "2026 IEEE Workshop on Formal Arguments for CPS Certification (FACCT)",
+    "url": "https://doi.org/10.1109/facct71761.2026.00012",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Understanding Liquid Types, Contracts and Formal Verification with Ada/SPARK",
+    "authors": "Fernando Oleo Blanco",
+    "publish": "ACM SIGAda Ada Letters",
+    "url": "https://doi.org/10.1145/3821489.3821498",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-17",
+    "title": "PaW-ViT: A Patch-based Warping Vision Transformer for Robust Ear Verification",
+    "authors": "Deeksha Arun, Kevin W. Bowyer, Patrick Flynn",
+    "publish": "2026 IEEE 20th International Conference on Automatic Face and Gesture Recognition (FG)",
+    "url": "https://doi.org/10.1109/fg67764.2026.11556519",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Verification of Magnetic and Thermal Impact of GIC on Two Large Power Transformers On – Site",
+    "authors": "R Girgis, M. Bernesjo, D. Bonmann",
+    "publish": "2026 IEEE/PES Transmission and Distribution Conference and Exposition (T&amp;amp;D)",
+    "url": "https://doi.org/10.1109/td48022.2026.11562699",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "Pillar-Suspended Bridge (PSB); Fabrication Process Verification and Interconnect Design for 25-Micron Pitch Die-to-Die Interface",
+    "authors": "Shinichi Arioka, Tanapun Srichanthamit, Koji Iwabu, Takashi Suzuki, Yoshiaki Aizawa, Yoichiro Kurita",
+    "publish": "2026 IEEE 76th Electronic Components and Technology Conference (ECTC)",
+    "url": "https://doi.org/10.1109/ectc51846.2026.00035",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-17",
+    "title": "EVA: Efficient Token Compression Co-Optimization With Heterogeneous CIM Architecture for Video LLM Acceleration",
+    "authors": "Pinfeng Jiang, Letian Wang, Yilong Fang, Yi Wang, Juncheng Huang, Mingde Zhu, Xiangshui Miao, Xingsheng Wang",
+    "publish": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+    "url": "https://doi.org/10.1109/tvlsi.2026.3703379",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
