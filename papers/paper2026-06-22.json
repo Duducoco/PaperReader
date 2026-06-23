@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-22",
+    "title": "Statistical Proof as a Window into Human-AI Collaboration: Practical Insights and a Community Agenda",
+    "authors": "Xiaojing Sun, Huayu Tang, Buxin Su, Mateo Matijasevick, Chong Wu, Fei Xue, Bingxin Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23666v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly woven into expert cognitive work in daily research, yet we know little about how human expertise should adapt when an AI system can execute substantial technical reasoning on its own. Here we use statistical proof development, a demanding and structured form of expert reasoning, as a window into this broader question. Drawing on day-to-day proof problems, we find that current general-purpose LLMs occupy a useful but limited role: they can execute technical components given a precisely formulated problem and targeted guidance, but become unreliable when the problem is open-ended or requires a long reasoning chain with multiple interdependent steps. This execution-strategy gap is rooted in what makes research-level statistical proof distinctive: unlike pure mathematics, where problems arrive pre-formulated and often demand novel techniques, statistical proof requires first modeling a scientific question into a statistical framework with appropriate assumptions, and then identifying and adapting the right strategy from a repertoire of reusable domain-specific tools. Each step requires deep expertise in both the statistical literature and the real-world context being modeled. In such work, current AI assistance does not reduce the need for human expertise; it relocates that expertise to where human decision-making matters most, such as problem formulation and verification of AI-generated results, and may raise the bar for both. These findings yield practical suggestions for how statisticians can structure AI-assisted proof workflows, and point to a broader community agenda for shared resources, better AI tools, and training the next generation of researchers. Using statistical proof as a window, our study has implications for how experts structure human-AI collaboration in technical cognitive domains more broadly."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "A Watermark for Vision-Language-Action and World Action Models",
+    "authors": "Yule Liu, Shuai Liu, Jiaheng Wei, Xinlei He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23574v1",
+    "source": "arXiv",
+    "abstract": "Vision-language-action (VLA) models and world-action models (WAM) are the generative models now driving general-purpose robot control, turning raw camera input directly into motor commands. They are increasingly deployed as black-box services, where a partner runs the policy through an interface while the owner keeps the weights private. Training such a model takes proprietary data and heavy computational power, making the deployed model itself a valuable intellectual property. To address this, we propose the \\emph{keyed latent-provenance verification} method, which fingerprints the policy through the seed of the Gaussian noise vector that the models draw before generation. At the injection stage, the owner swaps this seed for a keyed one with the same distribution as ordinary noise, so the fingerprinted actions are statistically identical to those of an ordinary run and an adversary watching the output finds no signal to detect or remove. At the verification stage, the owner runs the suspect model under authorized access and records the action channels the robot executes, a partial and possibly post-processed view of the policy's output. From this view, the verifier recovers the seed by gradient-based maximum a posteriori (MAP) optimization, tests it for the secret key to score each rollout, and aggregates these scores into a single decision on whether the suspect model belongs to the owner. We evaluate the method on two representative models across two robot suites. The experiments cover detection of the fingerprint, identification of which of several keys a suspect carries, robustness to a range of attacks, and an analysis of why the design works. Across both models, the fingerprint can be detected reliably with little change to task performance, and it remains detectable under output-side removal attacks and weight-level edits."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Exponential stability of abstract boundary-coupled positive systems",
+    "authors": "Yassine El Gantouh, Mahyar Mahinzaeim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23549v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we study the well-posedness and exponential stability of a class of abstract boundary-coupled positive systems. Within a general semigroup framework, we establish well-posedness in terms of existence, uniqueness, and regularity of solutions. More concretely, we derive some simple and readily verifiable tests on the boundary coupling operators for the verification of the well-posedness of the coupled system and, at the same time, provide spectral criteria that guarantee exponential stability of the solutions. The analysis is based on two complementary approaches: the feedback-theoretic method and perturbation techniques for resolvent positive operators on Banach lattices (i.e., Banach spaces equipped with a compatible order structure). This unified framework allows for a systematic treatment of a broad class of boundary couplings in abstract dynamical systems. Several examples are presented to illustrate the applicability of the theoretical results."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "An Open-Source LFSR-Based Stochastic Leaky Integrate-and-Fire Neuron in SkyWater 130 nm: Design, Stochastic Characterisation, and Rate Coding",
+    "authors": "Poornima Kumaresan, Santhosh Sivasubramani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23532v1",
+    "source": "arXiv",
+    "abstract": "Stochastic spiking neurons trade exact arithmetic for controlled randomness, lowering area and tolerating input noise, which suits event-driven edge hardware. We present a compact, configurable stochastic leaky integrate-and-fire neuron in standard-cell CMOS on the SkyWater 130 nm process, released openly. A 16-bit configurable-polynomial linear-feedback shift register drives an eight-entry programmable activation table that sets a Bernoulli firing probability, and a saturating 16-bit leaky integrator with a programmable threshold and a refractory period of zero to seven cycles produces the spike train. All parameters are set through a sixteen-register serial interface, and the neuron runs from parallel inputs or entirely from the register file. From a model checked bit-exact against the register-transfer code, the period is 65535 states for a maximal-length polynomial and 63 for the shipped default, the eight-bit comparison value is uniform over the full period, and the per-entry firing probability equals the table value divided by 256. We also characterise a property a system-level model would not expose: the comparator output is serially correlated at short lags, with a negative lobe near lag eight, because the compared byte shifts by one bit each cycle; subsampling every sixteen cycles restores whiteness. Rate-coding sweeps show monotonic control of the output rate by the input weight and the threshold, and the refractory period caps the rate at one spike per refractory-plus-one cycles. The neuron occupies about 10,600 square micrometres at 70 per cent utilisation on a single Tiny Tapeout tile, meets 50 MHz timing with positive margin, and passes eighteen directed cocotb tests at register-transfer and gate level. All results are pre-silicon, from simulation and the open flow. The neuron is an openly released companion to a four-block neuromorphic suite reported separately."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Hallucinations in Organization-backed AI advisors: Evidence about Skepticism, Verification, and Reliance in Goal-Directed Use",
+    "authors": "Simon J. Blanchard, Aaron M. Garvey, Laura O'Laughlin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23491v1",
+    "source": "arXiv",
+    "abstract": "Generative AI systems are increasingly used by organizations to deliver information to consumers, patients, students, employees, and citizens. These systems can hallucinate, producing plausible but inaccurate responses. A central question for AI-advised decisions is therefore not only whether users rely on inaccurate information, but whether they recognize that a response may require verification. To answer this question, we review emerging empirical evidence relevant to hallucination detection in goal-directed interactions, with a focus on organization-backed AI advisors. We distinguish three constructs that existing studies often conflate: whether users are skeptical of information presented, whether they check it, whether checking succeeds, and whether the result of user verification affects reliance on the information. Across studies examining product search, medical decision-making, content generation, and chatbot-assisted tasks, several patterns emerge. Nearly all studies measure reliance, while variables such as user skepticism and verification of the information are more often targeted by an intervention than measured directly. The cues used to prompt scrutiny of the AI response are predominantly related to the AI output, such as source citations, and the most deployable of these AI output interventions for organizations (general and specific warnings about the risk of hallucinations) show the weakest and most mixed effects in the studies reviewed. Although the existing literature posits that users may be more likely to scrutinize responses related to particular areas of content, no studies varied the content category, leaving this question open for further research. In future research, measuring skepticism and verification separately from reliance may clarify what current evidence shows, what it only implies, and which questions require further exploration."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "ReasoningLens: Hierarchical Visualization and Diagnostic Auditing for Large Reasoning Models",
+    "authors": "Jun Zhang, Jiasheng Zheng, Boxi Cao, Yaojie Lu, Hongyu Lin, Jia Zheng, Xianpei Han, Le Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23404v1",
+    "source": "arXiv",
+    "abstract": "The emergence of Large Reasoning Models has introduced exceptionally long Chain-of-Thought traces, creating a transparency burden where critical logic is often buried under massive procedural text. To address this, we present ReasoningLens, an open-source framework designed for the hierarchical visualization and diagnostic auditing of complex reasoning chains. ReasoningLens addresses information necropsy by: (1) structuring traces into interactive hierarchies that separate high-level strategy from low-level execution; (2) leveraging an agentic auditor for automated error detection and tool-augmented verification; and (3) synthesizing systemic reasoning profiles to reveal model-specific blind spots. By transforming unstructured walls of text into actionable insights, ReasoningLens provides a modular foundation for interpreting, debugging, and optimizing the next generation of reasoning-centric AI."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Automated Semantic Fault Localization in SysML v2: A Human-in-the-Loop Framework Using Knowledge-Graph Augmented LLMs",
+    "authors": "Haitham Al-Shami, Rohail Malik, Riku Ala-Laurinaho, Jari Vepsäläinen, Raine Viitala",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23395v1",
+    "source": "arXiv",
+    "abstract": "SysML v2's textual syntax enables compiler-based validation of model structure and language conformance. However, semantic mistakes that preserve syntactic validity but violate domain rules cannot be detected through compilers. These errors can propagate through the design process and surface late as costly integration failures. This paper presents a human-in-the-loop framework for identifying and repairing such errors automatically. It combines a fine-tuned Small Language Model (SLM) with a domain knowledge graph encoding physical compatibility rules between system elements. The knowledge graph also guides the generation of synthetic training data by systematically introducing plausible domain violations, and augments the model at inference time to ground repair suggestions in valid engineering constraints. We demonstrate the framework using the vehicle systems domain, where the knowledge graph captures the relationships between the mechanical, electrical, fluid, and signal interfaces. Two SLMs, Qwen2.5-Coder-1.5B and DeepSeek-Coder-6.7B, are fine-tuned to output unified diff patches that localize faults and present candidate repairs for engineer review, preserving human judgment in the design process. Evaluation of 1,184 test samples shows that fine-tuning improves semantic fault repair from less than 3% to more than 91%, with patch-based output reducing token length by over 60%. The framework offers a practical path toward AI-assisted model verification that complements existing MBSE tools."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Partial Automation of Verification Condition Proving for Reflex Programs (Draft)",
+    "authors": "Artyom Ishchenko, Igor Anureev",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23377v1",
+    "source": "arXiv",
+    "abstract": "Process-Oriented Programming is a software development approach that emphasizes the management of control systems through abstractions of processes and their states, enabling these systems to be described in terms of real physical processes. This native description of control is particularly important for industrial systems consisting of hundreds or thousands of processes. For such systems, safety is critical. To ensure the reliability and safety of these systems, formal verification methods must be applied. One such method is deductive verification, which involves formalizing programs and their requirements as logical formulas, known as verification conditions. Proving these conditions confirms that the program meets its requirements. The automatic generation of verification conditions is performed by a specialized software tool called a verification condition generator. We previously proposed a verification condition generator for the Reflex language. However, it generates too many verification conditions, making their manual proof impossible. This paper proposes modifications to the verification condition generator aimed at automating the proof of some of these conditions. These modifications include introducing an annotation language to describe requirements in a structured form, generating invariants based on the program structure, and using SMT solvers for the preliminary attempt to solve the verification conditions."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "The EVerest Dataset for Secure Software Engineering",
+    "authors": "Sophie Corallo, Debora Grupp, Dominik Fuchß, Jan Keim, Frederik Reiche, Tobias Hey, Anne Koziolek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23197v1",
+    "source": "arXiv",
+    "abstract": "End-to-end security verification, from requirements through architecture to code, requires datasets that span all three artifact types with fine-grained security labels. No existing dataset provides this combination. We present the EVerest dataset, a multi-artifact resource based on EVerest, an industry-driven open-source software stack for electric vehicle charging stations. The dataset includes 84 manually elicited security requirements annotated with security objectives, 1,445 fine-grained security elements (components, entities, data, data flows, states, etc.), acceptance windows, coreferences, and architectural trace links, as well as the EVerest software architecture model, source code, and natural language documentation. It enables research on security requirements classification, named entity recognition, architectural trace linking, and design-time or code-level security verification. During dataset creation, a real security weakness (CWE-1295) was identified, disclosed to the project maintainers, and subsequently fixed. The dataset is publicly available. A short video is available at https://youtu.be/pnn1uqpomvQ."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Position: Correct Answer, Wrong Mechanism -- When AI Scientists Defend General Claims Their Own Data Contradicts",
+    "authors": "Steven Young Eulig",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23175v1",
+    "source": "arXiv",
+    "abstract": "AI scientist systems are described as tools, coauthors, or founders, but we evaluate them as if only the final answer matters. This position paper argues that outcome-only evaluation is insufficient, and that task outcome, mechanism fidelity, and epistemic honesty must be measured separately. Our evidence comes from 28 episodes of a coding agent attempting to rediscover a known particle identification observable in a Geant4 simulation, including an 8-episode probe across two additional frontier models. In 4/20 primary-model and 3/8 cross-model episodes, agents reach right-looking results through incorrect reasoning that breaks when conditions change, which we call Correct Answer, Wrong Mechanism (CAWM). Honesty and mechanism fidelity dissociate within a single agent trajectory. When given a partially misleading prior, all five agents reject the false component on evidence, yet one defends its chosen observable with physics inconsistent with its own data. In the simulation-based discovery setting studied here, coding agents prove reliable tools but unreliable scientific co-authors for open-ended claim-making, where co-author trust requires mechanism-fidelity verification they do not reliably self-apply. The failure is detectable, and we propose a lightweight test. A one-step regime-shift check needs only the agent's claim and flags the over-generalized cases. A companion recomputation flags the remaining cases when the correct observable is known. Together, these checks flag every CAWM case in this study."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Safety in Self-Evolving LLM Agent Systems: Threats, Amplification, and Case Studies",
+    "authors": "Ruixiao Lin, Xinhao Deng, Qingming Li, Jianan Ma, Yunhao Feng, Yuqi Qing, Zhenyuan Li, Yechao Zhang, Shiwen Cui, Changhua Meng, Tianwei Zhang, Xingjun Ma, Qi Li, Ke Xu, Shouling Ji",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23075v1",
+    "source": "arXiv",
+    "abstract": "Self-evolving LLM agent systems, which autonomously update their model parameters, memory, tools, and architectures, introduce a qualitatively new threat landscape in which adversarial influences become permanently encoded, self-amplify across generations, and propagate through populations without sustained attacker access. We present a systematic security and privacy analysis organized around the Module-Lifecycle Attack Surface (MLAS) matrix, which decomposes the attack surface into five functional modules (Brain, Cognitive Resource, Execution, Self-Design, Collective) $\\times$ five lifecycle stages (Bootstrap, Propose, Evaluate, Commit, Serve). Analysis of the resulting 25 cells reveals that 17 face critical threats for which no effective partial mitigation. We identify seven cross-cutting amplification effects that interact synergistically and cannot be addressed by securing individual modules in isolation. Comparative case studies of two open-source frameworks demonstrate that evolution-native design activates $3.5\\times$ more attack surface cells and achieves a 100% attack persistence rate (40/40 payloads across all CIA+Privacy categories), while co-located security scanners block only 2.5% of attacks. Our findings establish that self-evolution converts every known attack category from session-bounded to lineage-persistent, gives rise to entirely new attack classes, and renders static defenses structurally inadequate, motivating evolution-aware security frameworks and formal verification for self-modifying systems."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "MotionHalluc: Diagnosing Kinematic Hallucinations in Fine-Grained Motion Reasoning",
+    "authors": "Weile Guo, Shenghong He, Danying Mo, Chengdong Xu, Xuexun Liu, Chao Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.23061v1",
+    "source": "arXiv",
+    "abstract": "Motion instruction generation in cross-video comparison aims to produce corrective feedback that describes the differences between a query and a reference motion. However, existing models often generate instructions that exhibit motion hallucinations, failing to reflect actual kinematic differences between paired videos. To systematically investigate these hallucinations, we introduce MotionHalluc, a dedicated benchmark for evaluating motion hallucinations in paired-video comparison. MotionHalluc comprises 1540 fine-grained questions over 553 video pairs, evaluating hallucinations along three core dimensions: (1)directional hallucination, (2)attributional hallucination, and (3)temporal hallucination. Extensive evaluations of state-of-the-art large multimodal models demonstrate high susceptibility to these hallucinations. Furthermore, we provide Perceive-Parse-Verify (PPV) as a training-free measurements extraction and verification baseline that converts candidate instructions into executable measurement queries and supplies kinematic measurements at inference time. Our results show that this simple measurements injection yields an average 10.6% performance gain across models, suggesting that motion reasoning with explicit quantitative measurements is a key factor in reducing hallucinations in cross-video comparison. Our code and dataset will be made publicly available upon acceptance."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "TEXEDO : Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation",
+    "authors": "Jianuo Cao, Yuxin Chen, Yuzhen Song, Masayoshi Tomizuka, Chenran Li, Thomas Tian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22998v1",
+    "source": "arXiv",
+    "abstract": "Text-conditioned motion generation is a promising interface for programming humanoid robots, yet current generators are often trained on human motion datasets retargeted to robot morphologies. Although such data provides rich semantic and kinematic priors, it fails to capture the nuances of whole-body tracking controllers, including balance, contact dynamics, actuation limits, and controller-specific failure modes. As a result, generated motions can be semantically plausible but difficult or impossible for the robot to execute. We introduce TEXEDO, a test-time scaling framework for humanoid motion generation that improves motion quality without requiring a stronger underlying generator. Given a text prompt, TEXEDO samples multiple candidate motions from a pretrained text-conditioned generator and selects the best motion that is both executable and task-aligned. The reward model combines a dynamic feasibility verifier, distilled from whole-body tracking rollouts to predict physical executability, with a semantic alignment verifier that measures text-motion alignment in a learned co-embedding space. Our pipeline treats dynamic feasibility as a hard constraint and semantic alignment as the selection objective within the feasible set. Through large-scale simulation studies and real-world deployment on a Unitree G1 humanoid robot, we show that TEXEDO consistently improves both tracking fidelity and text alignment. These results demonstrate that grounded verification is an effective path toward deployable language-guided humanoid motion generation. Project website: https://jianuocao.github.io/TEXEDO/"
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Predicate Importance Estimation and Decoupled Rationale-Score Distillation for Entity Alignment",
+    "authors": "Keunha Kim, Yoonjin Jang, Hyeon-gu Lee, Sihyung Kim, Youngjoong Ko",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22992v1",
+    "source": "arXiv",
+    "abstract": "Knowledge graphs (KGs) are increasingly used as structured context for Large Language Models (LLMs), but industrial KG-RAG systems often need to integrate public and domain-specific KGs constructed from heterogeneous databases. This integration relies on Entity Alignment (EA), where lexical matching alone is insufficient under predicate-name variation and incomplete local neighborhoods. We address EA for KG integration by constructing a pairwise EA dataset and proposing two complementary modules: Predicate Importance Estimation (PIE) and Decoupled Rationale-Score Distillation (DRSD). PIE is a compact embedding-based approach that removes the subject information from each 1-hop triple, encodes the resulting subjectless triples, and aggregates them with learnable predicate-importance weights to build predicate-aware entity embeddings. DRSD trains a distilled small language model (SLM) with pseudo-answers produced by a teacher LLM through distinct prompts. By converting binary EA labels into text-based supervision and decoupling confidence-score estimation from label-consistent rationales, DRSD enables the SLM to learn task-specific reasoning while retaining a less label-biased confidence signal. Experiments show that PIE and DRSD improve EA classification. Moreover, because DRSD decouples confidence-score estimation from the decision, a discrepancy between the two flags an uncertain prediction for human review, thereby enabling a practical discrepancy between automatic acceptance and human-in-the-loop verification."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Diffusions with resetting boundaries: ergodic control and renewal optimization",
+    "authors": "Sergey Nikitin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22990v1",
+    "source": "arXiv",
+    "abstract": "We study ergodic optimization problems for one-dimensional diffusions with resetting boundaries, namely diffusions that are instantaneously reset according to prescribed distributions upon reaching designated boundary points. For controlled diffusions with resetting boundaries, we consider optimization of the ergodic cost over a broad class of admissible real-time controls. We derive a Hamilton--Jacobi--Bellman equation with non-local boundary conditions and establish a verification theorem for optimal stationary Markov controls. In the case of one resetting and one reflecting boundary, we also prove an existence result under weak integrability assumptions. We then study renewal diffusions. Using their regenerative structure, we derive explicit formulas for the ergodic cost. These formulas are applied to optimization problems over families of drift coefficients, yielding explicit characterizations of optimal drift parameters in several examples. Finally, we study an infinite-penalty regime in which boundary hitting is prohibited and characterize the corresponding optimal ergodic cost."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents",
+    "authors": "Zhanbo Hua, Yifan Yao, Weihao Xie, Yongchi Zhao, Minghao Liu, Ruizhi Qiu, Zhewei Huang, Zun Wang, Yiyan Ji, Yunhai Ye, Letian Zhu, Xinping Lei, Han Li, Zhiyuan Ma, Zili Wang, Zhaoxiang Zhang, Jiaheng Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22883v1",
+    "source": "arXiv",
+    "abstract": "While recent LLM-based terminal agents have demonstrated promising capabilities, the scarcity of high-quality, executable training data remains a critical bottleneck. Existing synthesis pipelines typically scale by retrofitting surface-level artifacts into tasks, frequently yielding ambiguous instructions, shallow execution paths, and brittle tests that provide weak learning signals. To overcome this, we introduce CLI-Universe, a principled synthesis engine that constructs terminal-agent tasks. CLI-Universe generates candidate tasks by sampling combinations across a multi-dimensional capability taxonomy (domain, skill type, capability, and engineering pillar), then grounds each candidate through evidence-guided deep research over real-world technical materials. To ensure rigorous supervision, validated blueprints are instantiated into Dockerized environments and subjected to a multi-stage executable verification pipeline featuring rubric-gated test construction, hint-conditional filtering, and strict fail-to-pass checking. Across the full pipeline, from candidate generation to verification, approximately two-thirds of candidates are discarded, retaining only those that are genuine, verifiable, and non-trivially challenging. To validate our framework, we instantiate a highly distilled dataset of 6,000 trajectories called CLI-Universe-6K. Remarkably, fine-tuning Qwen3-32B on CLI-Universe-6K achieves 33.4% on Terminal-Bench 2.0. This sets a new state-of-the-art for models trained on open-source data at or below 32B parameters, and outperforms several models an order of magnitude larger, demonstrating the profound data efficiency of structured, high-fidelity synthesis."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "FedOT: Ownership Verification and Leakage Tracing via Watermarks for Federated LDMs",
+    "authors": "Wenlong Cheng, Yuan Gan, Yunqiu Xu, Jiaxu Miao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22875v1",
+    "source": "arXiv",
+    "abstract": "Training Latent Diffusion Models (LDMs) within Federated Learning (FL) has attracted increasing attention due to its ability to combine the powerful generative capacity of LDMs with the privacy-preserving properties of FL. However, FL requires sharing the global model with multiple participants, which risks unauthorized model distribution or resale by malicious clients. While an intuitive approach is to adopt existing VAE-based watermarking techniques for LDMs in FL, this strategy falls short in addressing such threats due to two fundamental challenges: (1) Existing methods support ownership verification but lack the ability to trace model leakage to a specific malicious client; (2) VAE-based watermarks are vulnerable, as they can be removed simply by replacing the decoder with a clean counterpart. In this paper, we propose FedOT, the first framework for ownership verification and leakage tracing in federated LDMs. Specifically, to address the first challenge, we design a chunked watermark, where the first part is for ownership verification, and the second part is used for client identification. Furthermore, to overcome the second challenge and secure the model against VAE replacement attack, we introduce Latent Vector Transformation (LVT), which strengthens the connection between the VAE and U-Net latent spaces by modifying the original latent distribution of the VAE. Consequently, any attempt to replace the VAE for watermark removal leads to significant image quality degradation, making the LDM model unusable. Extensive experiments demonstrate that FedOT achieves superior performance in both ownership verification and traceability. Project page: https://spyzixuan.github.io/FedOT/."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "MSU-Bench: Towards Speaker-Centric Understanding in Conversational Multi-Speaker Scenarios",
+    "authors": "Zhaokai Sun, Shuai Wang, Zhennan Lin, Chengyou Wang, Dehui Gao, Yuang Cao, Chunjiang He, Pan Zhou, Lei Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22868v1",
+    "source": "arXiv",
+    "abstract": "Spoken Language Understanding (SLU) is moving from task-specific pipelines toward large audio language models (LALMs) that generate natural-language responses. However, existing speech benchmarks mainly focus on single-speaker settings or isolated subtasks, leaving speaker-centric understanding in realistic multi-speaker conversations insufficiently evaluated. We introduce MSU-Bench, a diagnostic benchmark for multi-speaker conversational understanding, covering 16 speaker-centric tasks and 2,300 QA instances in a two-tier framework from speaker grounding to dialogue reasoning. We build a Gemini-assisted annotation and QA generation pipeline with human-in-the-loop verification, achieving high QA validity and strong agreement between human answers and verified labels. We further analyze speaker-referencing schemes and diagnostic error types to reveal bottlenecks in speaker grounding and reasoning. Experiments reveal clear gaps across model families, with closed-source systems leading overall but all models still facing challenges in complex speaker grounding and multi-speaker reasoning. The benchmark annotations, metadata, and evaluation scripts will be available at the GitHub repository: https://github.com/ASLP-lab/MSU-Bench."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "AI Scientists as Engines of Discovery: A Case for Development within Reformed Institutions",
+    "authors": "Raul Jimenez, Boris Bolliet, Francisco Villaescusa-Navarro, Rabih Zbib, Benjamin Wandelt, David N. Spergel, Thomas Meier, Jessica Montgomery, Hana Aliee, Licia Verde",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22859v1",
+    "source": "arXiv",
+    "abstract": "Agentic artificial intelligence (AI) systems are beginning to assist, accelerate, and partially automate scientific discovery, performing tasks that span literature synthesis, code generation, data analysis, hypothesis proposal, and model criticism. We argue that this transition is qualitative rather than incremental, and that suitably designed multi-agent systems may evolve from passive computational tools into ``AI scientists'' that can expand the hypothesis-generating and verification capacity of science. Such systems must be developed and deployed within a scientific ecosystem fit for purpose: institutions must be redesigned for verification, accountability, interpretability, and dual-use safety. We sketch how multi-agent architectures, illustrated by the prototype framework \\textit{Denario}, accelerate the discovery cycle and traverse model spaces beyond human reach; examine what this implies for authorship, peer review, and the enduring role of human scientists; and close with recommendations for governing AI as an epistemic actor rather than a mere instrument."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "A Linearized Obstruction to the Supersymmetric Extension of Conformal Boundary Conditions in Euclidean Gravity",
+    "authors": "Xingyang Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.22810v1",
+    "source": "arXiv",
+    "abstract": "Witten's conformal boundary condition \\cite{Witten:2018lgb} provides an elliptic boundary-value problem for the finite-boundary perturbative Euclidean gravitational path integral: one fixes the boundary conformal class and the mean curvature, while the trace-free extrinsic curvature is left free as the conjugate response. We show that this perturbative construction admits no half-supersymmetric extension in linearized minimal supergravity. For fixed conformal bosonic data, no half-dimensional gravitino boundary condition (local or pseudodifferential, APS-type included, with any compatible ghost condition at highest-derivative order) closes the full preserved chiral supersymmetry. Supersymmetry first selects the natural local chiral gravitino datum. Acting back on this datum then produces the trace-free extrinsic curvature, precisely the response that the conformal prescription leaves unfixed. The obstruction is therefore not the failure of a particular elliptic ansatz: even the chiral/Robin completion that is LS-elliptic and BRST-compatible at highest-derivative order would impose Dirichlet control on a Neumann response. The obstruction is pointwise in tangential momentum and survives compensating gauge transformations. It is a linearized, highest-derivative obstruction, not a global or nonlinear no-go; nonlinear supercovariant boundary terms may evade it by tying the trace-free extrinsic curvature to gravitino bilinears."
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Detecting and Visualizing LLM Usage in Students' Essays Leveraging Past Assignments and LLM Answers",
+    "authors": "Yuhui Zhao, Ryan Lueder, Qiao Zhang, Thad Starner",
+    "publish": "Proceedings of the Thirteenth ACM Conference on Learning @ Scale",
+    "url": "https://doi.org/10.1145/3774398.3811559",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Trust-Aware Orchestration Architecture for LLM-Assisted Workflows in Multi-Tenant Enterprise Systems",
+    "authors": "Nandakishore Leburu",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3706063",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "SemGuard: A Hierarchical Shared Semantic Intelligence Architecture for Secure LLM Systems",
+    "authors": "Nino Gvazava, Rasib Khan",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569137",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Trustworthy LLM-based Recommenders: Uncertainty, Conformal Prediction, and Hallucination Mitigation",
+    "authors": "Saloua Zammali",
+    "publish": "2025 2nd International Conference on Innovative and Intelligent Information Technologies (IC3IT)",
+    "url": "https://doi.org/10.1109/ic3it69043.2026.11567549",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "HalluGuard: A Multi-Signal Detection Framework for Hallucinations in LLM-Generated Code",
+    "authors": "Hasan Md Imran, Jacob Hauenstein",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569641",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Rethinking LLM Evaluation: A Comprehensive Survey, Taxonomy, and the Evaluation Trilemma",
+    "authors": "Vaibhavi Tiwari, Ramy Othman, Ola Suaifan, Dajin Wang",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569594",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp1-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm6",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp3-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm2",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp7-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm5",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp8-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm7",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp4-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm3",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp6-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp5-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm4",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Benchmarking the Engineering Reliability of LLM-Based Design for Resonant Wireless Power Transfer Systems_supp2-3695234.mp4",
+    "authors": "Patrick Chi-kwong Luk",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tie.2026.3695234/mm8",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "PACT: An AI-Driven Framework for Organizational Cybersecurity Using LLM-Based Prediction, Risk Assessment, and Adaptive Training",
+    "authors": "Shideh Yavary Mehr, Saltuk Karahan",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569584",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Scalable SRL Conversational Scaffolding for Student–LLM Interaction",
+    "authors": "Olga Viberg, Jacqueline Wong, Selma Ozdere, Richard Lee Davis",
+    "publish": "Proceedings of the Thirteenth ACM Conference on Learning @ Scale",
+    "url": "https://doi.org/10.1145/3774398.3811582",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Convergence of LLM Integration and Edge Intelligence in Decentralized IoT Ecosystems",
+    "authors": "Khushboo Bhatia, Shreya Gupta, Nagesh Gulkotwar, Amanpreet Kaur, Rahul Rishi Sharma",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569542",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "SQL-MCP: An AI-Powered Multi-LLM Framework for Autonomous Oracle Database Object Debugging Using GPT-4 and Claude",
+    "authors": "Mohankrishna Kothapalli, Dharanidhar Vuppu",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569528",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Workflow Strategy in a Modular Human-AI Collaboration Framework for LLM-Assisted Thematic Analysis of POTS Interviews",
+    "authors": "Yunbing Bai, Aileen S Gabriel, Joseph Finkelstein",
+    "publish": "2026 IEEE World AI IoT Congress (AIIoT)",
+    "url": "https://doi.org/10.1109/aiiot68874.2026.11569616",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-22",
+    "title": "Uncertainty-Guided Sampling for LLM Calibration in Automated Short Answer Grading",
+    "authors": "Ovide Kuichua, Michel Desmarais, Arman Bakhtiari, Chahé Nerguizian, Alexandre Gélinas",
+    "publish": "Proceedings of the Thirteenth ACM Conference on Learning @ Scale",
+    "url": "https://doi.org/10.1145/3774398.3811588",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
