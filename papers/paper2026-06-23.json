@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-23",
+    "title": "Probing Merger Shocks in Galaxy Clusters in the SKA Era",
+    "authors": "Arpan Pal, Ruta Kale, Gabriella Di Gennaro, Francesco de Gasperin, Swarna Chatterjee, Majidul Rahaman, Ramananda Santra, Mamta Pandey-Pommier, Abhirup Datta, Kenda Knowles, Nasmi S. Anand",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24738v1",
+    "source": "arXiv",
+    "abstract": "Galaxy cluster mergers represent the most energetic phenomena in the Universe since the Big Bang releasing gravitational potential energy of $\\sim 10^{63-64}$ erg, injecting turbulence and driving shocks through the intracluster medium (ICM). These merger shocks can accelerate cosmic ray electrons and compress magnetic fields, sometimes producing Mpc-scale synchrotron radio structures known as radio relics. Radio relics are powerful tracers of merger dynamics, particle acceleration, and magnetic field evolution, yet fundamental questions about the underlying physics and their time evolution remain unresolved. In this chapter, we review the current understanding of cluster merger shocks and their radio signatures, presenting the observational evidence from the SKA pathfinders and precursors, linking radio relics to shocks alongside outstanding theoretical challenges. We also consider related shock-influenced phenomena: radio phoenices from revived fossil AGN plasma and Gently Re-Energised Tails. Further, we outline the directions of investigation using the sensitivities of the SKA-Low and Mid complemented with X-ray observations that will allow us to make significant progress in understanding the cluster merger shocks. Detailed studies of individual targets in continuum and polarization and studies of populations of relics using wide surveys will both provide insights to the micro-physics and cosmic evolution of merger shocks. We present SKAO capabilities across staged deployments starting from AA0.5 to AA4 and identify science verification targets that will illuminate the physics of cluster merger shocks in the SKA era"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "SER: Learning to Ground Video Reasoning with Semantic Evidence Rewards",
+    "authors": "Sheng Xia, Zhengqin Lai, Tianxiang Jiang, Kanghui Tian, Shoujun Zhou, Bin Li, Yi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24726v1",
+    "source": "arXiv",
+    "abstract": "Video MLLMs often struggle with fine-grained spatio-temporal reasoning, sometimes generating correct answers based on irrelevant frames or objects. Although outputting spatio-temporal evidence during reasoning is a promising direction, existing RL frameworks typically rely on geometry-only (IoU) rewards, which can be sensitive to boundary perturbations and overlook semantic alignment. To address this, we propose Semantic Evidence Reward (SER), which reformulates spatio-temporal evidence grounding as a constrained verification task. Instead of computing pixel-level overlap, SER uses a referee VLM as a local checker to evaluate model-generated evidence claims across two dimensions: relevance and localization quality, combined with a temporal penalty. This design reduces the reliance on dense box annotations and enables training directly on standard video QA data. On the V-STAR benchmark, SER achieves 49.6% mLGM, improving by 3.0 points over the strong evidence-grounded baseline Open-o3-Video, demonstrating its potential in enhancing both answer accuracy and evidence grounding."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Bit-Precise Conformance Testing of Simulink Model Checkers",
+    "authors": "Daisuke Ishii, Takashi Tomita, Toshiaki Aoki, Hideaki Takai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24719v1",
+    "source": "arXiv",
+    "abstract": "MATLAB/Simulink provides a practical modeling language and a simulation engine for the development of cyber-physical systems. To ensure the quality of the developed models, there are formal verification tools available, such as Simulink Design Verifier (SLDV) and third-party SMT-based model checkers (SmtMC). However, due to the absence of a semantics of Simulink that covers every element of models and the details of its numerical behavior, the reliability of the model checkers themselves is often doubtful, potentially analyzing models differently from the simulator. This work aims to verify the quality of the Simulink model checkers by addressing the following items. 1) Formalization of the basic block types of Simulink. It involves defining block type feature sets and the bit-precise behavior of the blocks. 2) A method for testing bit-precise conformance relations among the tools for each block type. The pass rate of our test suites measures (i) conformance of model checking results with simulation results by Simulink and (ii) conformance between the results of SmtMC and SLDV. 3) Experiment to perform tests on 10 block types. We confirmed that SmtMC efficiently passed all test cases, while SLDV achieved pass rates of only 94-96% and 80-90% for conformance (i) and (ii), respectively. We analyzed the causes of failed tests, such as errors, corner cases, and timeouts."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "PowerFuzz: Power-Based Black-Box Firmware Fuzzing",
+    "authors": "Dakshina Tharindu, Sahan Sanjaya, Philip Baptist, Prabhat Mishra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24692v1",
+    "source": "arXiv",
+    "abstract": "Fuzzing is widely used for software and hardware verification, offering an effective alternative to random testing. While gray-box fuzzers benefit from full visibility into the system under test and can leverage execution feedback such as branch coverage, these approaches are not applicable when verifying systems whose firmware or binaries are not publicly available. In such scenarios, obtaining coverage information for guiding the fuzzer becomes infeasible. In this paper, we introduce PowerFuzz, a statistical black-box fuzzing framework that leverages power side-channel measurements as a substitute for binary instrumentation, requiring no internal visibility into the target firmware. A central challenge in black-box firmware fuzzing is determining the executed branches during test execution. To address this challenge, we use power traces to identify branches utilizing a sliding window followed by a growing window full-trace correlation method. This approach also enables the construction of a high-level control-flow graph of the black-box firmware, which we utilize to drive the fuzzer to unexplored execution paths. Extensive evaluation using three embedded hardware platforms and ten firmware benchmarks demonstrates that PowerFuzz can provide branch coverage comparable (within 13.5%) to gray-box fuzzers while significantly outperforming (up to 22%) state-of-the-art black-box fuzzers."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "When CQs Go Wrong: Challenges in CQ Verification with OE-Assist",
+    "authors": "Anna Sofia Lippolis, Mohammad Javad Saeedizade, Robin Keskisärkkä, Aldo Gangemi, Eva Blomqvist, Andrea Giovanni Nuzzolese",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24619v1",
+    "source": "arXiv",
+    "abstract": "Competency Questions (CQs) are the central component of CQ-verification, an established process in which an ontology is evaluated against a set of natural language questions to determine whether the intended purpose of the ontology has been properly modelled. However, CQ-verification is often time-consuming and error-prone, as it requires careful interpretation of linguistic nuances and precise alignment with formal ontology constructs. Ambiguities and complexity in CQs can further complicate this process, leading to inconsistent modelling decisions and verification outcomes. In this paper, we investigate what makes a CQ challenging and possible solutions to enhance the users' performance in the CQ-verification process. We experimented with the data of 19 participants who performed CQ-verification on 20 tasks using an LLM assistant to support ontology evaluation. The results show the necessity of a tool to refine CQs before publishing them to avoid ambiguity or excessive complexity in later phases of the ontology engineering process."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "EERLoss: A Novel Loss Function for Training Deep Biometric Models. A Case Study in Keystroke Dynamics",
+    "authors": "Nahuel Gonzalez, Marta Robledo-Moreno, Ivan DeAndres-Tame, Ruben Vera-Rodriguez, Ruben Tolosana",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24586v1",
+    "source": "arXiv",
+    "abstract": "Deep learning approaches to biometric verification are commonly trained by optimizing indirect objectives, creating a misalignment between the optimization process and the primary evaluation metric, typically the Equal Error Rate (EER). This paper introduces EERLoss: a subdifferentiable, arbitrarily accurate approximation to EER for training deep biometric models. Furthermore, this framework has the potential to be adapted to optimize any specific operating point on the DET curve, enhancing its generalizability. To validate this approach, EERLoss is evaluated on a particularly demanding behavioral biometric modality: keystroke dynamics verification. This task is characterized by its high intra-class and low inter-class variability. Experiments are conducted on the large-scale KVC-onGoing benchmark, incorporating data from over 185,000 subjects across different scenarios. A comprehensive ablation study initially demonstrates the superiority of EERLoss in comparison to existing state-of-the-art loss functions. It also converges substantially faster compared to other losses, reducing the overall training cost. Additionally, a comparison is made between the proposed loss and the KVC-winning architecture by re-training it with EERLoss, demonstrating that the proposed approach significantly outperforms the original SoTA, achieving a relative EER reduction of up to approx. 30\\%. This improvement on a challenging, large-scale benchmark validates the effectiveness of EERLoss as a task-aligned training objective specifically suited for high-variance biometric traits."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Unified Position-Invariant Random Access Through Two Compression Layers via Absolute-Offset Coordinates: A Bit-Perfect Device-Resident Proof",
+    "authors": "Yakiv Shavidze",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24531v1",
+    "source": "arXiv",
+    "abstract": "Random access into compressed data is normally confined to a single layer. Entropy-layer methods (Recoil) seek within rANS by storing intermediate decoder states; dictionary/match-layer methods seek within LZ-style references. We are not aware of a format that supports a single position-invariant seek through both an entropy layer and a match layer addressed by one coordinate. We show that ACEAPEX's absolute-offset design provides exactly this: because the match layer resolves every back-reference to an absolute position at encode time, and the entropy layer is applied per block, an arbitrary block can be decoded through both layers using one coordinate, bit-perfect, in isolation. We prove this with a three-phase verification that closes the empty-buffer trap. The seek of one 16KB block through ANS-entropy and match completes in 0.334ms. We verify the full entropy+match pipeline end-to-end on four data profiles and characterize the hardware ceiling the format reaches: the absolute-offset structure unrolls to as many as 25,344 independent parsers on one H100, which sequential LZ77 cannot do. We state explicitly what is not claimed: this is a round-trip correctness proof, not a disk-archive format; throughput figures are match-phase; and the unified-seek result is demonstrated for two layers, with three-layer generalization left as a hypothesis. Code and the verification harness are in the project repository."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "VisCritic: Visual State Comparison as Process Reward for GUI Agents",
+    "authors": "Jiachen Qian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24525v1",
+    "source": "arXiv",
+    "abstract": "GUI agents powered by vision-language models show strong potential for automating digital tasks, yet frequently fail in long-horizon scenarios due to the absence of step-level verification. Existing process reward models verify actions through textual reasoning alone, missing the visual nature of GUI state changes. We introduce VisCritic, a visual process reward framework that verifies agent actions by directly comparing pre-action and post-action screenshots in visual feature space. VisCritic employs a Siamese vision transformer to extract change-aware representations, coupled with an Action-Aware Critic Head that jointly evaluates action success, task progress, and error type. A critic-training data construction pipeline generates weakly supervised samples from existing trajectories without additional human labels for critic training. Experiments and offline analyses across five benchmarks demonstrate that VisCritic serves as a plug-and-play enhancement for diverse GUI agents, generally improving benchmark metrics while providing visual diagnostic cues."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Bayesian control for coding agents",
+    "authors": "Theodore Papamarkou, Vladislav Smirnov, Viktor Mazanov, Artem Vazhentsev, Preslav Nakov, Timothy Baldwin, Artem Shelmanov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24453v1",
+    "source": "arXiv",
+    "abstract": "Modern coding agents pair LLM generators with various tools, including cheap diagnostics and expensive verifiers. The tool-use decisions are typically governed by orchestrators that often use fixed rules and ignore uncertainty. We formulate orchestration as cost-sensitive sequential hypothesis testing: a Bayesian controller maintains a belief over candidate correctness and dynamically decides whether to gather more evidence, refine the candidate, verify it, or stop. Across six generators and nine coding benchmarks, Bayesian control proves to be most valuable when verification is costly and critics are informative but imperfect. Beyond control, the belief state yields an interpretable correctness score that outperforms token-probability and raw tool-success baselines for uncertainty quantification."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Verifiable Auto-Formalization of Mathematics Using a Relaxed Natural Formal Language",
+    "authors": "Zhicheng Hui, Lihan Xie, Xingzhi Qi, Zhehao Li, Yingjun Lan, Qinxiang Cao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24443v1",
+    "source": "arXiv",
+    "abstract": "Auto-formalization aims to translate informal mathematical content into formal languages that can be processed by theorem provers. However, directly targeting existing theorem provers requires LLMs to bridge a substantial representational gap between informal mathematical writing and formal proof languages. This gap also makes semantic consistency difficult to evaluate. We address these difficulties by introducing a Relaxed Natural Formal Language (Relaxed NFL) as an intermediate target for auto-formalization. The Relaxed NFL is designed to remain close to informal mathematical writing: it preserves the usual structure of informal reasoning and allows partially specified expressions and propositions, without requiring their precise interpretation to be fixed at the auto-formalization stage. The remaining ambiguity and implicitness inherited from informal reasoning are resolved during a later elaboration stage, which transforms Relaxed NFL proofs into Core Natural Formal Language (Core NFL) proofs with formally defined semantics. The elaboration procedure combines rule-based transformations with LLM-generated heuristics, while maintaining verifiability through explicit constraints on each transformation step. The Core NFL is then used to generate proof gaps, namely verification conditions that must hold for the formalized proof to be correct. These gaps are discharged by LLM-generated proof scripts written in a domain-specific tactic language, which provides commands for invoking theorem libraries and domain-specific solvers implemented as part of our system."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Beyond Logprobs: A Multi-Signal Confidence Engine for LLM-Based Document Field Extraction",
+    "authors": "Nitesh Kumar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24420v1",
+    "source": "arXiv",
+    "abstract": "In high-stakes document processing pipelines, including financial reconciliation, compliance verification, and procurement automation, an LLM extraction that is silently wrong is more dangerous than one that is visibly absent. The central challenge is not extraction accuracy alone but reliable confidence estimation: knowing, field by field, whether an extraction can be trusted for automation or deferred to human review. Token-level log-probabilities, verbalized confidence, and multi-sample self-consistency all collapse toward all-positive behaviour at practical thresholds, offering no reliable separation between trustworthy and untrustworthy extractions. We present ExtractConf, a cross-domain, field-agnostic confidence engine that grounds confidence estimation in two structurally different readings of the same document. A field-guided Hunter call extracts each field under schema-slot completion pressure; a document-guided Mapper call scans holistically and surfaces values grounded in document content. This asymmetry yields different failure modes: Hunter hallucinates values for absent fields, while Mapper misses visually non-salient ones. Their disagreement is independently informative. ExtractConf fuses cross-call disagreement, LLM-internal uncertainty, OCR, image quality, and spatial layout into a classifier requiring no domain-specific rules or retraining. On DocILE (55-field invoices, 26% failure rate), it achieves 0.928 ROC AUC and reduces selective prediction risk by 70% over logprob-mean. At 80% coverage, accuracy reaches 99.1%, enabling a practical human-in-the-loop workflow. Zero-shot transfer to CORD receipts achieves 0.858 AUC; lightweight Lasso recalibration reduces ECE by 89% and Brier by 43%, confirming the signals generalise across document domains."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Agentic AI for Bilevel Long-Term Optimization of Policy-Driven Physical Layer Systems",
+    "authors": "Bingnan Xiao, Chenhao Yang, Wei Ni, Xin Wang, Tony Q. S. Quek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24416v1",
+    "source": "arXiv",
+    "abstract": "Network operators' changing policies, service requirements, and stringent real-time constraints render existing methods designed with fixed objectives and constraints ineffective. This paper presents Agentic long-term performance optimization (Agentic-LTPO), a nested bilevel optimization framework that can be applied to adaptive physical layer problem configuration. The key idea is to employ agentic AI to generate upper-level configurations in a bilevel optimization structure, where evolving operator policies, environment summaries, and historical experiences are translated into structured lower-level optimization problem configurations. The lower level solves the problems with updated configurations for real-time physical-layer decisions. Considering cell-free MIMO beamforming as a use case, we embody Agentic-LTPO by designing a new multi-agent decision process with retrieval-augmented experience-based verification in the upper level, together with a closed-form beamformer in the lower level. Experiments demonstrate that Agentic-LTPO exhibits strong adaptability to dynamic operator policies and effectively enhances the system's long-term performance by 57.2% compared to traditional methods."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Cycle-Consistent Neural Explanation of Formal Verification Certificates",
+    "authors": "Andoni Rodriguez, Alberto Pozanco, Daniel Borrajo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24414v1",
+    "source": "arXiv",
+    "abstract": "Formal verification produces machine-checkable certificates that attest to the satisfaction or violation of temporal properties, yet these certificates remain opaque to non-specialist stakeholders. We propose a cycle-consistent neural architecture that generates faithful natural language explanations of verification certificates. A forward network NN1 maps certificates to explanations, and an inverse network NN2 reconstructs certificates from explanations; a symbolic verifier closes the loop, providing a differentiable faithfulness proxy. A pointer-generator mechanism ensures lexical grounding by copying state names directly from the certificate. We evaluate on 420 test certificates spanning six verification methods (bounded proof, k-induction, inductive invariant, lasso, reachability, witness pair) in both YES and NO verdict variants, drawn from a financial compliance domain with 207 named states. Our trained architecture, combined with a hybrid inference-time routing strategy, achieves 90.0% cycle-verified soundness, surpassing a multi- LLM few-shot baseline (76.1% for the best of 16 LLM combinations across four frontier models) by 13.9 percentage points. The neural model wins on 10 of 12 verdict/kind categories, with three categories reaching 100% soundness. The architecture offers 860x faster inference (185 ms vs. 160 s per certificate for the full multi-LLM baseline), offline operation, deterministic outputs, and zero per-inference cost. These results demonstrate that trained specialization outperforms general-purpose LLM prompting for structured certificate explanation, while eliminating the deployment constraints of cloud-based inference."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Poisoned Playbooks: Demystifying Knowledge Poisoning Effects on AI Security Agents",
+    "authors": "Juho Park, Hyunmin Choi, Kevin Nam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24402v1",
+    "source": "arXiv",
+    "abstract": "AI security agents increasingly rely on Retrieval-Augmented Generation (RAG) to use external security knowledge for vulnerability analysis and exploit reasoning. This creates a new risk: poisoned write-ups can be operationalized into incorrect exploit behavior. Yet, prior work on RAG poisoning has mostly studied answer corruption in QA settings, much less is known about action-taking security agents. This paper aims to reveal such characteristics with crafted poisons about real-world challenges and AI agents. First, we demonstrate how a crafted single poisoned write-up injected into public-style security knowledge sources which we denote as Poisoned Playbooks, alters the behavior of RAG-based AI security agents. Across 11 CTF challenges, 3 frontier LLM families, 2 model generations, and 11 real-world CVEs, we find that poison adoption is systematic rather than random. To explain this pattern, we introduce the Verification Boundary (VB), a 3-level empirical classification based on what evidence the agent can use to refute a retrieved claim. Finally, we evaluate verification prompting and multi-source retrieval, showing that both help when stronger evidence exists, but weaken under sparse-evidence and zero-day conditions."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees",
+    "authors": "Yedidel Louck",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24322v1",
+    "source": "arXiv",
+    "abstract": "LLM agents increasingly rely on persistent long-term memory, which creates a critical vulnerability that we study here: memory poisoning. An adversary can store untrusted content in one session that later steers a consequential action, such as a payment, a setting change, or data exfiltration, in a future session. Existing defenses base a memory item's authority to act on either its content (detection or trust-scoring) or its derivation history (lineage). We show that both signals are malleable. An attacker can launder an untrusted origin through three channels specific to LLM agents: the agent's own summarization, a trusted-tool echo, and manufactured corroboration. Each makes the content look benign and breaks or flips its derivation edge to ``trusted.'' We formalize malleability for the memory write-retrieve-act pipeline and prove a machine-checked separation theorem. No content- or lineage-based defense is sound under laundering (T1), write-time origin binding is necessary (T2), and non-malleable origin-bound authority with Sybil-resistant corroboration-gated elevation is sufficient (T3). Our construction, TMA-NM (Tamper-evident Memory Authority, Non-Malleable), instantiates non-malleable information-flow control (IFC) for LLM-agent memory. A cross-defense, cross-attack, and cross-model benchmark over eight frontier models shows that existing defenses fail exactly where the theory predicts (up to 68% laundering attack-success), while TMA-NM reaches 0% attack success on both direct and laundering attacks across all models and channels, at full legitimate utility. We release the benchmark, harness, and machine-checked TLA+ models to support reproducibility."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "LemonHarness Technical Report",
+    "authors": "Kailong Ren, Fubo Sun, Jiachen Liu, Liu Yang, Zimo Yin, Jiaying Li, Congli Yin, Ming He, Yu Huo, Jiawei Liu, Zeping Chen, Yubin Huangfu, Ronghua Li, Yixuan Wu, Xing Su, Yanzhi Xu, Likang Wu, Hongke Zhao, Lei Zhang, Xiaohui Geng, Jianping Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24311v1",
+    "source": "arXiv",
+    "abstract": "As large language model (LLM) agents are applied to longer tasks, they increasingly modify workspace state across multiple rounds of iteration. However, agents typically observe only tool outputs and log fragments, while the actual state changes occur in the file system. Without explicit workspace boundaries, state-changing operations such as file writes and temporary artifact generation may scatter changes across paths. Over time, these weakly constrained changes accumulate, making states such as modified files difficult to track. This paper presents LemonHarness, an integrated execution framework for long-horizon agents. LemonHarness establishes an explicit execution boundary by constraining state-changing operations within a clearly defined workspace and bringing model invocation, tool execution, and rule knowledge within a single controlled boundary. State-changing operations, including file writes, dependency installation, and temporary artifact creation, are executed through structured tool interfaces, with execution feedback recorded as observations available to subsequent model decisions. The system also introduces a reusable rule knowledge base, which turns recurring execution rules and acceptance criteria into runtime knowledge. LemonHarness further adds a time-aware execution mechanism that exposes elapsed and remaining budget to the model, so it can rebalance exploration, implementation, and validation effort as time pressure shifts and avoid timeouts from long waits or excessive verification. On Terminal-Bench 2.0, LemonHarness_GPT-5.3-CodeX reached 84.49% accuracy over 445 trials; pairing the same framework with the stronger GPT-5.5 backbone raised the average accuracy to 86.52% across five jobs. The results suggest that a unified runtime boundary, callable rule knowledge, and time-aware execution can improve the stability of long-horizon agent execution."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "VeryTrace: Verifying Reasoning Traces through Compilable Formalism and Structured Verification",
+    "authors": "Ninghan Zhong, Ahmet Ege Tanriverdi, Kaan Kale, Sriram Vishwanath",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24124v1",
+    "source": "arXiv",
+    "abstract": "Multi-step reasoning with Chain-of-Thought (CoT) prompting remains fragile: logical errors or hallucinations in early steps silently propagate, producing confident but incorrect conclusions. This paper presents VeryTrace, a zero-shot verification-and-repair framework that formalizes natural-language reasoning traces into a structured, compilable representation. VeryTrace introduces a Domain-Specific Language (DSL) that (i) makes step dependencies explicit, (ii) mechanizes quantitative content as executable expressions, and (iii) structures semantic inferences via deduction schemas. Our hybrid verifier combines deterministic checks for computational correctness, dependency resolution, and constraint satisfaction with targeted LLM audits for non-mechanizable semantic judgments, enabling step-level error localization and repair. Across three diverse domains-competition mathematics (AIME 2025), robotics planning (LLM-BabyBench), and kinship reasoning (CLUTRR), VeryTrace improves accuracy over zero-shot baselines on state-of-the-art LLMs without requiring domain-specific training or in-context examples, demonstrating that formalized trace verification achieves both precision and generalization."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "ReMMD: Realistic Multilingual Multi-Image Agentic Verification for Multimodal Misinformation Detection",
+    "authors": "Chenhao Dang, Dantong Zhu, Jun Yang, Conghui He, Weijia Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24112v1",
+    "source": "arXiv",
+    "abstract": "Multimodal misinformation detection is increasingly important because viral posts now combine long multilingual narratives, several images, mixed provenance, and subtle text--image framing errors. Existing benchmarks and methods remain poorly matched to this setting: they usually isolate short captions, single images, binary labels, or one manipulation source, while agentic verification remains costly under realistic evidence search. We present ReMMD, a realistic multilingual multi-image agentic verification framework for multimodal misinformation detection. ReMMD includes ReMMDBench, a real-world multimodal misinformation detection benchmark with 500 samples, 2,756 images, five monolingual languages, two cross-lingual settings, three text-length tiers, multi-image posts, five-way veracity labels, eight distortion labels, evidence provenance, and rationales. It also includes ReMMD-Agent, a persistent-memory verifier that decomposes posts into atomic points, builds a reusable evidence set, and predicts structured L1/L2/L3 outputs. Across proprietary systems, open LVLMs, MMD-Agent, and T2-Agent, ReMMD-Agent obtains the best five-way veracity performance, with 41.80% accuracy and 39.12% macro-F1 using GPT-5.2, while reducing cost by 17.5% relative to MMD-Agent and 79.9% relative to T2-Agent. The project is available at https://dang-ai.github.io/ReMMD."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "Distributionally Robust Joint Information and Mechanism Design for Multi-Area Power System Coordination",
+    "authors": "Furkan Sezer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24015v1",
+    "source": "arXiv",
+    "abstract": "We study a continuous-time stochastic Stackelberg control problem in which a leader steers a system of strategic followers through two non-standard channels - the information structure and a transfer mechanism - rather than through the dynamics directly. The latent environment is a jump-diffusion; the leader commits to a Gaussian public-signaling channel whose belief consequences are tracked by a finite-dimensional projection filter (the exact filter being infinite-dimensional), together with a Groves transfer that aligns the followers' incentives. Under truthful disclosure, efficient behavior is a dominant-strategy best response, and the induced differential game admits saturated and bang-bang Nash feedback. We cast the leader's distributionally robust problem, over a relative-entropy ambiguity neighborhood, as a two-controller Isaacs equation; prove that incentive alignment collapses the bilevel Stackelberg problem to a single robust control problem with an exact first-order condition; and characterize the value function as the unique viscosity solution, with a verification theorem valid for the non-smooth bang-bang feedback and a semiconcavity result that renders the switching set Lebesgue-null. We instantiate the framework on resilient multi-area power-system coordination under extreme weather. Calibrated to the 2021 Winter Storm Uri, an Isaacs solve over ERCOT's near-islanded interconnection (a 0.82 GW tie, under 2% of peak) shows mutual aid removes about 8% of social cost, rising to roughly 30% under the FERC/DOE-recommended interregional transfer capability; a reserve-scheduling experiment shows that public disclosure lowers welfare cost by 37% under autarky and 48% under market coupling, and that information design and market coupling are complements under common (systemic) risk."
+  },
+  {
+    "date": "2026-06-22",
+    "title": "DissProve: Automated Verification of Distributed Protocols with Affine Communication",
+    "authors": "Christian Fontenot, Gowtham Kaki, Bor-Yuh Evan Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.24003v1",
+    "source": "arXiv",
+    "abstract": "We consider the problem of automatically proving safety properties of distributed protocols. Distributed protocols have been particularly challenging for automated verification due to their asynchronous and parametric nature. Compared to synchronous systems, asynchronous communication leads to a combinatorial explosion of possible execution histories of message handlers. And because distributed protocols are typically defined parametrically on the number of actors, these definitions lead to an unbounded number of possible execution histories of unbounded length. Existing verification techniques for such distributed protocols typically require global invariants about the entire actor system, which are complex even for simple protocols. In this paper, we present an automated verification technique based on proving unreachability backwards from error states in an actor system. One key insight is that the unboundedness from parametricity can be further classified into \\emph{affine} and non-affine protocols, where affine protocols have execution histories of unbounded length in a bounded number of communication rounds. We show how to use novel, goal-directed notions of materialization, causality, and summarization to verify safety properties of affine protocols with an unbounded number of actors in an automated manner. Using our prototype verification tool DissProve, we provide evidence for the feasibility of automated safety verification of asynchronous parametrized systems with affine communication."
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Theory-Grounded LLM Societies for Emergent Coordination",
+    "authors": "J. De Curtò, I. De Zarzà",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3706338",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "SkipHBM: Bridging the Granularity Gap in Sparse LLM Inference",
+    "authors": "Jiajie Fan",
+    "publish": "2026 IEEE 4th International Conference on Control, Electronics and Computer Technology (ICCECT)",
+    "url": "https://doi.org/10.1109/iccect68671.2026.11565091",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "AI-ClassSims: Multi-Agent LLM Classroom Simulation with Real-Time Feedback for Teacher Training",
+    "authors": "Majid Memari, Krista Ruggles",
+    "publish": "2026 Intermountain Engineering, Technology and Computing (IETC)",
+    "url": "https://doi.org/10.1109/ietc69527.2026.11568604",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Promoting Behavior Change with Feedback Using LLM Based on User Activity Data",
+    "authors": "Shogo Mochizuki, Hideyuki Takada",
+    "publish": "2026 International Conference on Activity and Behavior Computing (ABC)",
+    "url": "https://doi.org/10.1109/abc68169.2026.11567167",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Comparative Analysis of Traditional, Machine Learning, and LLM-based Data Preprocessing Methods",
+    "authors": "Vishwatej Reddy Anugu, Jimmy Singla",
+    "publish": "2026 7th International Conference on Inventive Research in Computing Applications (ICIRCA)",
+    "url": "https://doi.org/10.1109/icirca69024.2026.11570529",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Automatic Arabic Dialect Identification Using Structured LLM-chains With Validators",
+    "authors": "Hamza Shamieh, Mohammad Azzeh",
+    "publish": "Proceedings of the 17th International Conference on Information and Communication Systems",
+    "url": "https://doi.org/10.1145/3812734.3813408",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Auditing LLM-Governed Social Robots with Culture-Specific Moral Gradients",
+    "authors": "Carmen Ng, Gjergji Kasneci",
+    "publish": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+    "url": "https://doi.org/10.1145/3805689.3812366",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-23",
+    "title": "The Stability Trap: Evaluating the Reliability of LLM-Based Instruction Adherence Auditing",
+    "authors": "Murtuza N. Shergadwala",
+    "publish": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+    "url": "https://doi.org/10.1145/3805689.3806536",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Adaptive Multi-Source Data Crawling via LLM-Guided Semantic Filtering and Propagation Analysis",
+    "authors": "Hao Li, Yanqi Cheng, Shifan Luo",
+    "publish": "2026 IEEE 4th International Conference on Control, Electronics and Computer Technology (ICCECT)",
+    "url": "https://doi.org/10.1109/iccect68671.2026.11565337",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "A Multi-Stage NLP Framework for Enterprise Data Protection in Public LLM Interactions",
+    "authors": "Sunil Gentyala, Nimmagari Tejasri, Sunil Kumar Mudusu",
+    "publish": "2026 7th International Conference on Inventive Research in Computing Applications (ICIRCA)",
+    "url": "https://doi.org/10.1109/icirca69024.2026.11570292",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "An LLM-Based Multilingual Phishing Detection Framework for Regional Languages",
+    "authors": "S Sanjay, Nishant Krishna, G Paramesh, KV Kiran Kumar",
+    "publish": "2026 International Conference on AI-Driven Innovations &amp;amp; Applications (IC-AIDA)",
+    "url": "https://doi.org/10.1109/ic-aida68291.2026.11564455",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Less Is More: Measuring How LLM Involvement Affects Chatbot Accuracy in Static Analysis",
+    "authors": "Krishna Narasimhan",
+    "publish": "Proceedings of the 25th ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences",
+    "url": "https://doi.org/10.1145/3814885.3816409",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Reinforcement-Enhanced LLM-based Intelligent Robotics Programming for Autonomous Industrial Automation Systems",
+    "authors": "N.Nithya, A. Priya, R.Janani, M Praneesh, Beaulah David, G Vinoth Chakkaravarthy",
+    "publish": "2026 7th International Conference on Inventive Research in Computing Applications (ICIRCA)",
+    "url": "https://doi.org/10.1109/icirca69024.2026.11570540",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "A Unified XAI-LLM Approach for Endotracheal Suctioning Activity Recognition",
+    "authors": "Hoang Khang Phan, Quang V. Dang, Noriyo Colley, Christina A. Garcia, Nhat Tan Le",
+    "publish": "2026 International Conference on Activity and Behavior Computing (ABC)",
+    "url": "https://doi.org/10.1109/abc68169.2026.11567204",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Who Defines “Best”? Towards Interactive, User-Defined Evaluation of LLM Leaderboards",
+    "authors": "Minji Jung, Minjae Lee, Yejin Kim, Sarang Choi, Minsuk Kahng",
+    "publish": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+    "url": "https://doi.org/10.1145/3805689.3812353",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-23",
+    "title": "On Integrating Resilience and Human Oversight into LLM-Assisted Modeling Workflows for Digital Twins",
+    "authors": "Lekshmi Premkumar, Neha Karanjkar",
+    "publish": "Proceedings of the 40th ACM SIGSIM International Conference on Principles of Advanced Discrete Simulation",
+    "url": "https://doi.org/10.1145/3806789.3810262",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Better Together: An LLM-assisted approach to designing software architectures using Attribute-Driven Design",
+    "authors": "Humberto Cervantes, Rick Kazman, Yuanfang Cai",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3706446",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "A Survey on Multi-Agent LLM Frameworks with Semantic Memory Integration and Dynamic DAG Orchestration",
+    "authors": "Tumma Divya, Vempaty Prashanthi, Vaskula Srikanth, Venu Gopalachari M",
+    "publish": "2026 7th International Conference on Inventive Research in Computing Applications (ICIRCA)",
+    "url": "https://doi.org/10.1109/icirca69024.2026.11570324",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Retrieval-Augmented LLM with Distractor Refinement Automatic MCQ Generation",
+    "authors": "S. Somasekhar, M. Jaya Babu, M. Sivamma, Madri Vijaya Raju, G. Anusha, P. Venkata Kishore",
+    "publish": "2026 2nd International Conference on Intelligent Systems and Computational Networks (ICISCN)",
+    "url": "https://doi.org/10.1109/iciscn67954.2026.11566656",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-23",
+    "title": "Reproducibility Report for the Paper: “On Integrating Resilience and Human Oversight into LLM-Assisted Modeling Workflows for Digital Twins”",
+    "authors": "Matteo Federico",
+    "publish": "Proceedings of the 40th ACM SIGSIM International Conference on Principles of Advanced Discrete Simulation",
+    "url": "https://doi.org/10.1145/3806789.3816108",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
