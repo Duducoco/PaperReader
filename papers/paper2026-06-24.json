@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-24",
+    "title": "Monitoring Discounted Sum Properties",
+    "authors": "Filip Cano, Thomas A. Henzinger, Konstantin Kueffner, N. Ege Saraç",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25979v1",
+    "source": "arXiv",
+    "abstract": "Runtime monitoring of quantitative signals faces a fundamental trade-off between volatility and over-aggregation: instantaneous observations are noisy, while long-run averages obscure local structure. Localisation measures such as discounted averages offer a principled middle ground, yet remain poorly understood in runtime verification. This paper studies discounted sums from a monitoring perspective, in both deterministic and stochastic settings. We formalize the discounted monitoring problem and show that exact, sound monitoring of discounted sums cannot be achieved with finite memory. To overcome this impossibility, we introduce $\\varepsilon$-approximately sound monitoring, deriving explicit bounds on memory and observation requirements. We then extend the framework to stochastic processes via expected discounted sums, defining pointwise and uniform $(\\varepsilon,δ)$-soundness notions, establishing statistical optimality, and proving impossibility beyond a precision threshold. We also formalize the resource complexity of deterministic discounted monitoring via affine register machines and prove a tight worst-case lower bound. Finally, we present a specification language for arithmetic expressions over multiple discounted sums with synchronous and asynchronous semantics, and evaluate our approach on practical scenarios including algorithmic fairness."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Dominance-Based Feasibility Inference for Packing-Constrained Pickup and Delivery Problems",
+    "authors": "Siqiao Li, Mahnam Saeednia, Patrick Stokkink",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25970v1",
+    "source": "arXiv",
+    "abstract": "Routing and packing are intrinsically coupled in transport problems, requiring joint planning for cost-efficient and physically realizable solutions. We study a pickup and delivery problem with two-dimensional packing constraints (2P-PDP). Unlike vehicle routing variants where items are loaded before vehicles leave the depot and packing is validated only once, the 2P-PDP induces non-monotonic free-space evolution, substantially increasing feasibility-checking complexity. To address this bottleneck, we propose a generic dominance-based feasibility framework that is embeddable in a broad class of exact and heuristic routing algorithms. Under no-relocation constraints, inferring feasibility from a previously verified packing state requires preserving the pickup and delivery order of onboard items. To this end, we introduce an order-preserving mapping that jointly captures geometric containment and sequence compatibility, enabling dominance-based inference by embedding the new packing state into a verified reference plan. To further reduce dominance-screening overhead, we design three search rules to guide candidate exploration and tailored strategies to store, retrieve, and prioritize verified states. Computational experiments show that the proposed approach reduces feasibility-checking time by up to 42% compared to a benchmark without dominance. The improvement stems from reducing exact packing-procedure calls, shifting verification effort away from the most computationally expensive stage."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "SurgAtlas: A Large-Scale Surgical Video-Language Dataset with 2,391 Hours of Open and Minimally Invasive Surgery",
+    "authors": "Filippos Bellos, Andre S. Gala-Garza, Miaowei Wang, Alyssa M. Hardin, Ahmad M. Hider, Yayuan Li, Jing Bi, Susan Liang, Chenliang Xu, Donald S. Likosky, Jason J. Corso",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25905v1",
+    "source": "arXiv",
+    "abstract": "We introduce SurgAtlas, the largest surgical video-language dataset to date, comprising 15,291 videos (2,391 hours) spanning 18 surgical specialties and over 5,000 procedure types, sourced entirely from publicly available YouTube content. SurgAtlas is also the first surgical video-language dataset to include open surgery at scale, with 6,182 open procedure videos alongside over 9,000 minimally invasive recordings, and the first to establish standardized benchmarks for open-surgery video understanding. We additionally provide an expert-validated subset with verified visual question-answer pairs across diverse open and minimally invasive procedures, serving as a clinically grounded benchmark for surgical reasoning. Compared with existing surgical video-language datasets, SurgAtlas provides one of the most diverse annotation schemas, combining segment-level captions, step- and phase-level descriptions, video-level surgical descriptions, and reasoning-oriented question-answer pairs organized within a hierarchical taxonomy. These annotations are constructed through an automated multi-tier pipeline with LLM-based enrichment and a staged VQA generation framework with explicit groundedness verification. The scale and diversity of SurgAtlas enable training surgical foundation models with broad procedural coverage: we finetune Qwen3-VL-8B through a two-stage captioning-then-instruction pipeline and achieve competitive or state-of-the-art results on multiple established surgical benchmarks, including phase recognition, triplet detection, and reasoning question answering. More broadly, SurgAtlas provides a large native public video corpus that can support future large-scale pretraining of multimodal surgical AI systems and contribute to the development of next-generation foundation models for surgery."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Enhancing Brain MRI Anomaly Detection and Reasoning with ROI Rethink and Synthetic Data",
+    "authors": "Shangkun Li, Jie Xu, Yi Guo, Zeju Li, Yuanyuan Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25894v1",
+    "source": "arXiv",
+    "abstract": "Medical vision-language models typically generate diagnoses through single-pass inference without indicating which image regions support their conclusions. This lack of spatial grounding limits clinical utility: outputs cannot be audited, and models may hallucinate findings on normal scans. We present BrReMark (Brain Rethink via ROI Marking), a framework that introduces explicit region marking into brain MRI diagnosis. The model first generates hypotheses about potential abnormalities and grounds them through explicit bounding box marking, then verifies conclusions by re-examining the marked evidence. Training combines supervised fine-tuning on structured reasoning trajectories with reinforcement learning using a composite reward over localization accuracy and diagnostic reasoning. Furthermore, we integrate a domain randomization-based pathology synthesis augmentation strategy to improve the model's generalizability to out-of-distribution (OOD) data. On internal benchmark, BrReMark improves mAP50 from 0.74% to 37.54% compared to the base model, while achieving 21.57% Clinical F1 and 45.26% diagnostic accuracy. On NOVA OOD benchmark, it also achieves competitive overall performance with a 45.7% reduction in false positives compared to the state-of-the-art, indicating reduced hallucination on rare pathologies. These findings suggest that explicit hypothesis-verification grounding is a practical path toward trustworthy open-ended brain MRI diagnosis across both in-distribution and OOD settings."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "MiniOpt: Reasoning to Model and Solve General Optimization Problems with Limited Resources",
+    "authors": "Ke Zhao, Zixiang Di, Hong Qian, Xiang Shu, Yaolin Wen, Qitao Shi, Bingdong Li, Xingyu Lu, Xiangfeng Wang, Jun Zhou, Ke Tang, Yang Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25832v1",
+    "source": "arXiv",
+    "abstract": "Achieving strong optimization generalization across diverse optimization problems while requiring limited training resources remains a challenging problem for optimization-oriented large language models (LLMs). Existing approaches typically rely on large-scale supervised datasets, costly reasoning annotations, and expensive intermediate step verification, resulting in substantial training overhead. To address these challenges, we propose MiniOpt, a reinforcement learning framework that learns to solve optimization problems through an \"reasoning-to-model-and-solve\" paradigm. MiniOpt decomposes optimization reasoning into structured optimization modeling and executable solver generation. Building upon this paradigm, we introduce OptReward, a reward function with hierarchical score structure that jointly evaluates formulation and solution, enabling effective policy learning without expert demonstrations. We further develop an optimization-oriented policy optimization strategy that improves exploration efficiency and stabilizes reinforcement learning for compact models. Extensive experiments show that MiniOpt-3B exhibits strong optimization generalization across various optimization types, problem scenarios, and task domains. For models with fewer than 10B parameters, MiniOpt series achieves the highest average solving accuracy (SA). For models with more than 10B parameters, MiniOpt still shows competitive performance. These results suggest that optimization-oriented reward design and reinforcement learning provide an effective pathway for developing compact optimization-specialized language models with strong optimization generalization capabilities. The code is available at https://github.com/Hsiang-1/MiniOpt."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability",
+    "authors": "Yang Tian, Zhengpeng Shi, Bo Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25819v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly deployed as agents that solve tasks by interacting with external tool environments. Although recent tool-use benchmarks increasingly cover complex task settings, they still largely assume clean, stable, and trustworthy tool environments, leaving tool-environment unreliability insufficiently examined. We introduce ToolBench-X, a benchmark for evaluating agents under recoverable reliability hazards. ToolBench-X contains executable multi-step tasks across diverse domains and sequential, parallel, and mixed workflows, each paired with deterministic tools and a canonical final answer for automatic evaluation. Starting from clean tool environments, ToolBench-X injects five structured hazard types: Specification Drift, Invocation Error, Execution Failure, Output Drift, and Cross-source Conflict. Crucially, each injected instance remains solvable through at least one valid recovery path, such as retrying, fallback, verification, or cross-checking. Experiments reveal a substantial reliability gap: agents that perform well with reliable tools often fail under recoverable hazards. Further analysis shows that failures are driven less by tool-use volume or inference budget than by limited hazard diagnosis and ineffective recovery. Targeted recovery hints recover many failed tasks, while test-time scaling yields more limited gains. These results suggest that tool-use evaluation should move beyond function-call accuracy toward task completion under unreliable tool environments. The code and data is available at https://github.com/Foreverskyou/ToolBench-X."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Probing High-redshift Intracluster Medium Using SKA",
+    "authors": "Ramananda Santra, Ruta Kale",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25727v1",
+    "source": "arXiv",
+    "abstract": "Galaxy clusters host vast reservoirs of magnetised plasma in their intracluster medium (ICM), where turbulence and shocks generated during structure formation sometimes give rise to diffuse synchrotron emission in the form of radio halos and relics. However, the origin and amplification of the magnetic field in the ICM remains among the least understood problems, particularly at high redshift, where direct detections are scarce. Recent observations of clusters at z $\\gtrsim 0.6$ have revealed radio powers of the diffuse sources comparable to those of nearby systems, implying that efficient magnetic amplification suppressed inverse Compton losses. Such rapid growth of the magnetic fields after a few Gyrs of the Big Bang challenges standard dynamo timescales, and it raises fundamental questions about the mechanisms that strengthened cluster magnetic fields. In this chapter, we highlight the massive merging system El Gordo (ACT-CL J0102$-$4915, z$\\sim$0.87) as a unique testbed for investigating theoretical models under extreme conditions. Proposing as a SKA science verification target, El Gordo will allow detailed studies of the ICM magnetic field structure, strength through broadband continuum and polarisation measurements with SKA-Low and SKA-Mid, across staged deployments starting from AA0.5 to AA4, reaching a physical resolution of $\\sim$ 20-30 kpc at our redshift of interest. We further outline how upcoming SKA surveys will build statistical samples of high-redshift clusters, enabling tests of different models of magnetic fields and cosmic rays in the formation of large-scale structure."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Tracing Target Answers in Poisoned Retrieval Corpora via Token Influence Attribution",
+    "authors": "Yan-Lun Chen, Pin-Yu Chen, Chia-Mu Yu, Ying-Dar Lin, Yu-Sung Wu, Wei-Bin Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25721v1",
+    "source": "arXiv",
+    "abstract": "Retrieval-Augmented Generation (RAG) systems are vulnerable to corpus poisoning attacks that manipulate model outputs through malicious retrieved documents. Existing detection methods typically rely on auxiliary classifiers or additional LLM-based verification, introducing substantial computational overhead. We present TRACE, a lightweight detection framework that identifies poisoning attacks by tracing answer-related tokens through token influence attribution. TRACE first discovers recurrent high-influence keywords across retrieved documents and then performs a secondary verification to confirm their influence on model predictions. Experiments on three QA benchmarks and six LLMs demonstrate strong detection performance while simultaneously uncovering attacker-specified target answers."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Probabilistic Agents in Deterministic Audits: Evaluating Multi-Agent Systems for Automated Audits Based on the German IT-Grundschutz",
+    "authors": "Lea Roxanne Muth, Marian Margraf",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25622v1",
+    "source": "arXiv",
+    "abstract": "The NIS-2 Directive mandates robust Risk Management from thousands of small and medium enterprises. To ensure compliance, companies rely on established standards such as the German IT-Grundschutz (IT-GS) of the Federal Office for Information Security. However, IT-GS certification is resource-intensive and requires a high level of manual effort for documentation, validation, and revision, making scalable implementation difficult and expensive. Building upon our previous conceptual framework, this paper presents the technical implementation and empirical evaluation of a Multi-Agent System (MAS) architecture combined with Hybrid Retrieval Augmented Generation (HybridRAG) for the partial automation of IT-GS certification. We introduce two novel technical contributions to the MAS architecture to enforce the compliance rigor. The Hypothesis-Verification Loop in the Structural Analysis (SA) phase that cross-references agent-inferred dependencies against the Knowledge Graph to reduce hallucinations, and a Decoupled Reasoning Pipeline that separates agent-driven semantic extraction from the deterministic protection need inheritance. We utilize the BSI's \"RecPlast GmbH\" case study as a human expert-generated reference data set for end-to-end evaluation of the architecture and to quantify Precision, Recall, and F1-scores. The performance of the system is investigated across the phases of SA, Protection Needs Assessment (PNA), Modeling, and IT-GS Check. The empirical results reveal noticeable differences throughout the different steps of IT-GS. While the MAS demonstrates high efficacy in semantic tasks (SA and Modeling), significantly reducing manual effort through automated information extraction, quantitative results reveal limitations in logical reasoning phases (PNA and IT-GS Check) as the probabilistic nature of current LLMs struggles to meet the deterministic rigor required by IT-GS."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "When LLM Rationales Become User-Facing: Effects on Trust Perception, Decision-Making, and Gaze Behaviors",
+    "authors": "Xin Sun, Ting Pan, Yajing Wang, Shu Wei, Jos A. Bosch, Isao Echizen, Abdallah El Ali, Saku Sugawara",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25489v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) increasingly show step-by-step reasoning rationales alongside their answers, turning reasoning from an internal model capability into a user-facing interface feature. Yet it is unclear whether such rationales help users judge when trust is warranted or merely persuade through fluent reasoning. We address this gap through the lens of auditable trust calibration: user-facing rationales should help people inspect whether an answer is warranted by evidence. We test this framing in factual verification through two linked studies. Study 1, an online experiment (N=68), manipulated rationale presentation format (instant, delayed, on demand), rationale correctness (correct, incorrect), and certainty framing (none, certain, uncertain). Study 2, a controlled eye-tracking study (N=54), examined how no-, correct-, and incorrect-rationale conditions were associated with users' trust, decision-making, and eye-movement patterns. Study 1 showed no reliable presentation-format effects; instead, rationale correctness and certainty framing influenced the trust in the information, trust in the LLM system, and decision confidence. In Study 2, incorrect rationales drew more attention to the supporting evidence and larger pupil diameter while the rationale was viewed, consistent with greater cognitive effort. Incorrect rationales also lowered trust in LLM system relative to showing no rationale, whereas the no-rationale difference was weaker for trust in information. A post-hoc predictive modeling analysis of gaze data from Study 2 further showed that gaze features carried predictive signal for trust- and decision-related user states. This work challenges the assumption that more reasoning is always better and supports rationale designs that are selective, linked to evidence, calibrated in how they express certainty, and easier to verify."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Equilibrium singular dividend control under ambiguity aggregation of heterogeneous discount rates",
+    "authors": "Yue Cao, Guohui Guan, Zongxia Liang, Xiaodong Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25461v1",
+    "source": "arXiv",
+    "abstract": "This paper studies a singular dividend control problem for a firm with heterogeneous shareholders whose discount rates follow a given distribution. The central planner aggregates expected discounted payoffs using an ambiguity aggregation function $phi$, which captures shareholder heterogeneity and ambiguity attitudes but also leads to time inconsistency. To address this issue, we seek a time-homogeneous equilibrium dividend law characterized by a partition of the state space into waiting and dividend-paying regions. We provide a rigorous mathematical characterization by proving a verification theorem and deriving necessary conditions for the equilibrium law. We then analyze barrier-type equilibria, showing non-existence for a class of aggregation functions that includes power-type and logarithmic aggregation functions, and establishing existence and uniqueness under linear and exponential aggregation. In the linear case, the bounded-rate equilibrium is shown to converge to the singular barrier-type equilibrium as the dividend rate bound tends to infinity. Numerical examples illustrate the effects of discount-rate heterogeneity and ambiguity aversion on the equilibrium barrier."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Fully Differentiable Neural Forced Alignment via Soft Dynamic Programming",
+    "authors": "Rotem Rousso, Eyal Cohen, Joseph Keshet",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25460v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in sequence modeling have significantly improved ASR systems, bringing them close to human-level recognition accuracy and enhancing robustness across diverse acoustic conditions and languages. In contrast, Forced Alignment has not experienced comparable progress, and traditional HMM-GMM frameworks remain widely adopted and highly competitive. To address this gap, we propose an end-to-end, fully differentiable neural architecture specifically designed for phoneme alignment. The model consists of an encoder that processes the input signal and a decoder that produces alignment decisions. The encoder is structured into two complementary branches: one dedicated to phoneme identity verification and the other to phoneme boundary detection. The decoder is implemented as a trainable module based on differentiable soft dynamic programming. The entire system is optimized end-to-end using a novel contrastive loss that encourages clear separation between steady-state phoneme regions and transition boundaries. The proposed approach outperforms the current state of the art in phoneme alignment on hand-annotated English benchmarks, achieves strong word-level generalization results, and demonstrates generalization on unseen languages."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Formalization of Line Search Methods by Lean",
+    "authors": "Yiyang Zhang, Kenneth W. Shum",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25412v1",
+    "source": "arXiv",
+    "abstract": "This paper presents a formalization of line search methods in the Lean 4 theorem prover. Our goal is to advance machine verification of nonlinear optimization theory by translating standard textbook definitions and convergence arguments into rigorous Lean code. We formalize fundamental notions related to gradient descent and descent directions, adaptive step-size selection via backtracking line search, and several classical line search criteria, including the Armijo, Goldstein, and Wolfe conditions, as well as nonmonotone variants. We further formalize a key convergence result, namely the Zoutendijk theorem, which plays a central role in the global convergence analysis of gradient-based iterative methods. By providing machine-checkable definitions and proofs for line search theory, this work complements existing formalizations of first-order optimization methods and establishes a foundation for the verified development of more advanced algorithms in nonlinear programming."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "CV-Rules: Serializability Verification of Concurrency Control Protocols via Explicit Transaction Ordering",
+    "authors": "Takashi Hoshino, Shigeo Mitsunari, Takashi Kambayashi, Ryoji Kurosawa, Sho Nakazono",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25409v1",
+    "source": "arXiv",
+    "abstract": "We present CV-rules, an alternative characterization of serializability in which a transaction order constructed by a protocol satisfies two per-read conditions, C-rule (Causality) and V-rule (View Consistency), that constrain the reads-from relation and competing writers. While classical Multi-Version Serialization Graph (MVSG) reasoning characterizes serializability via its acyclicity, our approach requires explicit order construction, enabling direct proofs that build on the protocol's own mechanisms. We prove that CV-rules, serializability, and MVSG acyclicity are all equivalent. Moreover, the C/V separation reveals that serializability is polynomial-time decidable for any fixed bound on the width of the order forced by C-rule. We verify five protocols: Two-Phase Locking, Multi-Version Timestamp Ordering, Serial Safety Net (SSN), Aria, and SnapChain. For SSN and Aria, whose original papers defined only certification conditions, we identify explicit transaction orders arising from their mechanisms; we also prove that Aria's unique-write constraint is unnecessary for serializability. SnapChain, in contrast, is designed directly from CV-rules, enforcing V-rule by construction. All results except the complexity bounds are mechanized in Lean with no additional axioms and no admitted goals."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Invoice Haystack: Benchmarking Document Retrieval and Visual Question Answering Under Strong Visual Homogeneity",
+    "authors": "Heethanjan Kanagalingam, Thenukan Pathmanathan, Mokeeshan Vathanakumar, Basim Azam, Sarah Monazam Erfani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25343v1",
+    "source": "arXiv",
+    "abstract": "Vision Language Models have achieved near-human performance on single-document Visual Question Answering, yet their effectiveness degrades significantly when retrieving information from large collections of visually homogeneous documents. Existing multi-document benchmarks aggregate diverse document types, creating artificial separation in embedding space that does not reflect enterprise document repositories where thousands of records share identical visual templates. We identify this as embedding collapse and introduce Invoice Haystack, a benchmark with 1,500 anonymized invoice images paired with 200 discriminative question-answer pairs, specifically designed to stress-test retrieval under strong visual homogeneity. Invoice Haystack exhibits a mean pairwise cosine similarity of 0.73, compared to 0.38 (DocHaystack) and 0.31 (InfoHaystack) in existing benchmarks, posing a fundamentally more challenging retrieval problem. Addressing the identified challenge, we propose VL-RAG, a hybrid retrieval-augmented generation framework that jointly leverages text and visual embeddings to harness the complementary strengths of both modalities, followed by a VLM-based verification filter for precise document identification. VL-RAG achieves 60.0\\% Recall@1 on Invoice Haystack-500, outperforming existing state-of-the-art method by up to an absolute 13.5 percentage points. It further improves retrieval considerably on DocHaystack-1000 (77.1\\% vs.\\ 75.2\\%) and InfoHaystack-1000 (84.5\\% vs.\\ 80.0\\%), establishing the proposed dual-stream fusion as a consistently superior retrieval strategy across both homogeneous and heterogeneous document collections."
+  },
+  {
+    "date": "2026-06-24",
+    "title": "V-Zero: Answer-Label-Free On-Policy Distillation with Contrastive Evidence Gating for Fine-Grained Visual Reasoning",
+    "authors": "Haoxiang Sun, Zhihang Yi, Langxuan Deng, Yuhao Zhou, Peiqi Jia, Jian Zhao, Li Yuan, Jiancheng Lv, Tao Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25319v1",
+    "source": "arXiv",
+    "abstract": "Fine-grained visual reasoning requires multimodal large language models (MLLMs) to identify task-relevant visual evidence and ground their reasoning in local image regions. Existing agentic methods typically rely on reinforcement learning with verifiable rewards or supervised fine-tuning on large-scale annotated reasoning traces, leading to costly exploration, hand-designed verification rules, or heavy dependence on textual supervision. A natural way to avoid such external answer labels is to learn from trajectories sampled by the student itself, which points to On-Policy Distillation (OPD). To understand what OPD can and cannot provide for visual reasoning, we revisit it as negative-free stop-gradient alignment. This perspective shows that, although OPD provides effective token-level correction, its ceiling is constrained by the absence of trajectory-level discrimination. Motivated by these observations, we propose V-Zero, an answer-label-free framework for visual reasoning with contrastive evidence gating. V-Zero uses no annotated textual answer labels; instead, during training it pairs a question-relevant regional crop with a negative visual view to evaluate student-sampled trajectories and gate dense token-level distillation. Experiments on multiple visual reasoning benchmarks show that V-Zero consistently improves fine-grained visual reasoning while preserving strong generalization. Notably, V-Zero is more than 5$\\times$ faster than previous supervised fine-tuning methods and more than 10$\\times$ faster than reinforcement learning baselines. Code and dataset will be released at https://github.com/eVI-group-SCU/V-Zero"
+  },
+  {
+    "date": "2026-06-24",
+    "title": "SafeGen: LLM-Driven Assertion Generation and Fault Criticality Evaluation for Functional Safety",
+    "authors": "Xuanyi Tan, Arjun Chaudhuri, Rubin Parekhji, Krishnendu Chakrabarty",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25296v1",
+    "source": "arXiv",
+    "abstract": "With advances in autonomous driving and electric vehicle technologies, functional safety has become a critical requirement in automotive chip design. Traditional simulation-based fault analysis is often overly conservative at the module level and fails to accurately reflect fault criticality. This paper presents SafeGen, an LLM-driven, formal-verification-assisted framework for functional-safety-oriented fault criticality assessment. SafeGen leverages large language models (LLMs) and a document-level Hyper Knowledge Graph (HyperKG) that incorporates Failure Modes, Effects, and Diagnostic Analysis (FMEDA) guidelines to extract verifiable specifications from design and safety documents and evaluate their relevance to overall system safety. The HyperKG is further enriched with register-transfer-level (RTL) information to guide the generation of Functional Safety Assertions (FSAs) that are both semantically grounded and design-aware. Each assertion is linked to its corresponding specification, enabling traceable reasoning throughout the assessment process. A gate-to-RTL fault-mapping mechanism supporting both stuck-at and bridging faults, combined with formal property verification (FPV), enables semantic-level fault criticality grading based on specification-linked assertion violations. A digital-physical co-simulation platform for a field-oriented control (FOC) system is developed to validate SafeGen. Experimental results demonstrate that SafeGen generates higher-quality assertions than existing LLM-based assertion generation frameworks while providing greater semantic interpretability in fault criticality assessment compared with traditional simulation-based approaches."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "SurveilNav: Collaborative Object Goal Navigation with Robot and Surveillance System",
+    "authors": "Ming-Ming Yu, Qunbo Wang, Rongtao Xu, Yanghong Mei, Yirong Yang, Longteng Guo, Wenjun Wu, Jing Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25119v1",
+    "source": "arXiv",
+    "abstract": "With the growing deployment of surveillance systems in factories, offices, and homes, integrating them with robots offers a promising direction for collaborative and efficient task execution. However, existing approaches largely focus on single-robot scenarios and struggle with multi-view collaboration in large-scale environments. In this paper, we present a novel indoor collaborative object navigation dataset built on Habitat-Sim, featuring 206 cameras across 74 floors. The dataset enables systematic evaluation of an agent's ability to exploit multi-view surveillance information. To address the limitations of single-robot perception, we propose SurveilNav, a collaborative navigation framework that integrates active camera scheduling, joint 2D/3D mapping, VLM-based value estimation, and collaborative target verification. By synergizing the robot's dynamic local perception with the static global view of surveillance, this architecture effectively overcomes both the limited perception range of single agents and the inherent blind spots of fixed cameras, resolving inefficient exploration. Experimental results on the HM3D dataset demonstrate that SurveilNav substantially outperforms existing methods, achieving state-of-the-art performance in both exploration efficiency and navigation success rate. Moreover, the system shows strong potential for applications in large-scale search, home environments, and rescue missions."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "An SKA-Low RM Grid for constraining the origin of cosmic magnetism",
+    "authors": "Shane P. O'Sullivan, Franco Vazza, Ettore Carretti, Valentina Vacca, Francesca Loi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25096v1",
+    "source": "arXiv",
+    "abstract": "Understanding the origin and evolution of cosmic magnetic fields is a key science goal for the SKAO. Recent advances in metre-wavelength (m-$λ$) Faraday rotation measure (RM) grids are enabling precision probes of cosmic magnetism, with implications extending to early-Universe physics, AGN feedback, and the magnetized circumgalactic medium. Here we model the m-$λ$ polarized source counts to predict an RM Grid density with SKA-Low of $N(>P) \\sim 5 ({P}/{100{\\rm μJy}})^{-0.75}\\,\\, {\\rm deg}^{-2} $, where $P$ is the polarized intensity detection threshold. This represents at least an order of magnitude improvement over the current state-of-the-art. For a representative wide-area SKA-Low AA4 survey covering 10,000 deg$^2$ in $\\sim$3,200 hours, we predict more than 50,000 RMs. Coupled with an expected RM precision of $\\sim$0.05 rad/m$^2$, SKA-Low promises to produce the leading RM Grid survey for constraining the origin of cosmic magnetism in the SKA era. These predictions can be partially tested during the Science Verification phase using the AA* Sky Model data. For example, at a nominal detection threshold of 240~$μ$Jy/beam (8 times the noise in Stokes $Q$ and $U$), we expect $\\sim$2.6 RMs/deg$^2$ (5x the current best m-$λ$ RM Grid density). Combining both wide-area and all-sky data, SKA-Low could detect up to 100,000 m-$λ$ RMs across its observable sky. Finally, we demonstrate new constraints on the origin of cosmic magnetism by comparing cosmological MHD simulations with the LOFAR m-$λ$ RMs, and highlight the transformative advances an SKA-Low RM Grid will enable for precision studies of cosmic magnetism."
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Speculation at a Distance: Where Edge-Cloud Speculative Decoding Actually Pays Off",
+    "authors": "Yuan Lyu, Bharath Irukulapati, Jaya Prakash Champati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.25091v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding (SD) accelerates LLM inference by $1.5$-$3$ times when the draft and target models are co-located. This has motivated a distributed variant (DSD) that places the draft model on an edge device while the target stays in the cloud. We show with closed-form inequalities that DSD's per-request latency benefit is limited under WAN edge-cloud communication. If the server can host both models, co-located SD has lower latency and communication than synchronous DSD, with the same per-output FLOPs and model-weight memory. Pipelining can make DSD competitive with co-located SD only in low-RTT regimes where the round trip is shorter than the edge drafting time window; at WAN RTTs, the cloud round trip remains too large for pipelined DSD to beat co-located SD. Against cloud autoregressive decoding, DSD can reduce latency only inside a bounded window given the target-model speed, acceptance rate, and RTT. DSD is also infeasible against closed-source APIs without a verifier-only interface. The main case for DSD appears in multi-tenant capacity. Under cross-client overlap, offloading draft compute lets a saturated cloud server sustain $(1 + γ\\,t_d/t_v)$ times more concurrent clients at the same per-client rate, where $γ$ is the speculation length and $t_d, t_v$ are the per-step draft and verification times. DSD should therefore be evaluated primarily by multi-tenant capacity and server throughput, not only by single-request latency."
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Misinformation Detection via LLM-Based Expert Discussion Network_supp1-3693762.pdf",
+    "authors": "Chih-Ya Shen",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tcss.2026.3693762/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Beyond Pass Fail Fine Grained Bug Detection in LLM Generated Code",
+    "authors": "Arbaz Surti",
+    "publish": "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)",
+    "url": "https://doi.org/10.1109/aiita69518.2026.11567252",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "LLM-Empowered Adaptive Wavelet Denoising for Physical Layer Communications in Mixed Noise Environments",
+    "authors": "Tianhong Fu",
+    "publish": "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)",
+    "url": "https://doi.org/10.1109/aiita69518.2026.11567360",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Automatic Arabic Dialect Identification Using Structured LLM-chains With Validators",
+    "authors": "Hamza Shamieh, Mohammad Azzeh",
+    "publish": "Proceedings of the 17th International Conference on Information and Communication Systems",
+    "url": "https://doi.org/10.1145/3812734.3813408",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Context-Aware Remote ID Anomaly Detection for UAS Activity Monitoring Using Multi-Agent LLM Reasoning",
+    "authors": "Sreejith Vidhyadharan, Paul Snyder, Michael Ullrich",
+    "publish": "2026 Integrated Communications, Navigation and Surveillance Conference (ICNS)",
+    "url": "https://doi.org/10.1109/icns69853.2026.11570603",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "LLM-Empowered Fine-Grained Information Extraction for School Bullying Narratives on Social Media",
+    "authors": "Yafei Sun",
+    "publish": "2026 5th International Conference on Electronic Information Engineering, Big Data and Computer Technology (EIBDCT)",
+    "url": "https://doi.org/10.1109/eibdct69742.2026.11567010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "LLM-Based Multimodal Entity Linking",
+    "authors": "Qi Liu, Bingbing Qiu, Xiaodong Xia, Heyang Sun, Zhengdao Zhou, Enze Yi, Tao Ren, Xingqi Li",
+    "publish": "2026 38th Chinese Control and Decision Conference (CCDC)",
+    "url": "https://doi.org/10.1109/ccdc69976.2026.11560337",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "PIDAgent: PID Tuning Via LLM Agents and RAG",
+    "authors": "Yitao Chen, Hongye Su, Yang Zhu",
+    "publish": "2026 38th Chinese Control and Decision Conference (CCDC)",
+    "url": "https://doi.org/10.1109/ccdc69976.2026.11560610",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Minimax-Based Task-Aware Routing for Robust Multi-LLM Document Intelligence",
+    "authors": "N.R. Rajalakshmi, V. Jeevanantham, Prudhvi Rohith, Sandhu Sai Sri Sushanth",
+    "publish": "2026 International Conference on Computational Robotics, Testing and Engineering Evaluation (ICCRTEE)",
+    "url": "https://doi.org/10.1109/iccrtee68719.2026.11566108",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Mitigating LLM Hallucinations in Cyber Threat Attribution via Attack Pattern-Guided Graph-Constrained Reasoning",
+    "authors": "Changcheng Liu, Changheng Yang, Jun Ma",
+    "publish": "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)",
+    "url": "https://doi.org/10.1109/aiita69518.2026.11567142",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Software Testing Education in the LLM Era: Insights and Emerging Theory",
+    "authors": "Samhitha Dwarakanath, Nathalia Nascimento, Everton Guimaraes",
+    "publish": "Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test",
+    "url": "https://doi.org/10.1145/3793654.3793757",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Data validation: SOC and LLM approaches",
+    "authors": "Patrik Dobrovodsky, Eszter Kail, Rita Fleiner, Gergely Nyilas, Anikó Szarvák, Valéria Póser",
+    "publish": "2026 IEEE 8th International Conference and Workshop Óbuda on Electrical and Power Engineering (CANDO-EPE)",
+    "url": "https://doi.org/10.1109/cando-epe71091.2026.11569448",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "LLM-Driven Multi-Agent Reinforcement Learning for Resilient AGV Dispatching Under Dynamic Disruptions in Smart Manufacturing",
+    "authors": "Fuliang Ma, Yuzhen Dang, Hongbin Ma",
+    "publish": "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)",
+    "url": "https://doi.org/10.1109/aiita69518.2026.11567113",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "A Multimodal LLM Framework Fusing EEG and Text for Personalized Depression Reporting",
+    "authors": "Xiaolong Su, Bin Hu, Zhi-Hong Guan",
+    "publish": "2026 38th Chinese Control and Decision Conference (CCDC)",
+    "url": "https://doi.org/10.1109/ccdc69976.2026.11560166",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Disturbance-Aware Closed-Loop Rescheduling for Airport Ground Operations Via LLM-Enhanced Decision Support",
+    "authors": "JiaXin Guo, HongWei Guo, BingQian Li, YanLiu Huang, Can Zhu, YuanHang Zou",
+    "publish": "2026 6th International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA)",
+    "url": "https://doi.org/10.1109/aiita69518.2026.11567235",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Scaling Behavior of Energy per Token in LLM Inference on Apple Silicon",
+    "authors": "Dávid Csikai, Döníz Borsos, Zoltán Komáromi, Géza Kulcsár, Ernő Rigó",
+    "publish": "2026 IEEE 8th International Conference and Workshop Óbuda on Electrical and Power Engineering (CANDO-EPE)",
+    "url": "https://doi.org/10.1109/cando-epe71091.2026.11569440",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "A Context-Aware LLM Framework for Battery State-of-Charge Prediction",
+    "authors": "Xiangyun Ren, Cheng Yang, Yangmei Zhou, Jihui Tu, Cheng Li, Qiran Li",
+    "publish": "2026 Joint International Conference on Automation-Intelligence-Safety (ICAIS) &amp;amp; International Symposium on Autonomous Systems (ISAS)",
+    "url": "https://doi.org/10.1109/icaisisas68969.2026.11567768",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-24",
+    "title": "BatteryAgent: Synergizing Physics-Informed Interpretation with LLM Reasoning for Intelligent Battery Fault Diagnosis",
+    "authors": "Songqi Zhou, Ruixue Liu, Boman Su, Jiazhou Wang, Yixing Wang, Benben Jiang",
+    "publish": "2026 38th Chinese Control and Decision Conference (CCDC)",
+    "url": "https://doi.org/10.1109/ccdc69976.2026.11560033",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Understanding on the Edge: LLM-generated Boundary Test Explanations",
+    "authors": "Sabinakhon Akbarova, Felix Dobslaw, Robert Feldt",
+    "publish": "Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test",
+    "url": "https://doi.org/10.1145/3793654.3793754",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-24",
+    "title": "Improving Verification Practices for Complex ATC Systems Through Development of Specialized Automation Frameworks",
+    "authors": "Eric Heitmann",
+    "publish": "2026 Integrated Communications, Navigation and Surveillance Conference (ICNS)",
+    "url": "https://doi.org/10.1109/icns69853.2026.11570456",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
