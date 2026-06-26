@@ -1,0 +1,263 @@
+[
+  {
+    "date": "2026-06-25",
+    "title": "Cultivating logical catalysts for fault-tolerant dyadic phase rotations",
+    "authors": "Yichen Xu, Xiao Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27358v1",
+    "source": "arXiv",
+    "abstract": "We introduce a surface-code cultivation protocol for reusable logical catalyst states that implement exact fine dyadic phase gates $Z^{2^{-b}}$ by phase kickback. The catalyst is an eigenstate of a high-period Clifford circuit $U$, with a direct construction supported on $O(2^b)$ logical qubits. Once cultivated, each invocation implements the target phase through a controlled-$U$ gadget, removing Clifford+$T$ synthesis approximation error from the online gate and making the online non-Clifford depth independent of the target logical accuracy. As a concrete demonstration, we construct a catalyst for $\\sqrt{T}=Z^{1/8}$, where $U$ is a nine-qubit brickwork Clifford circuit and controlled-$U$ consists of eight controlled-CNOTs. Starting from nine distance-three rotated-surface-code blocks, we cultivate the catalyst through logical-$U$ checks, syndrome extraction and postselection, code growth, and complementary-gap decoding. Due to the intrinsic fault tolerance of the phase read-out, a \\emph{single} verification round already reaches the leading error-corrected scaling, in contrast to the repeated logical checks required when cultivating single-qubit magic states. A hybrid tensor-network and stabilizer simulation shows that, at physical error rate $p=10^{-3}$, the postselected catalyst can be grown to distance-seven rotated-surface-code blocks with logical leakage rate $\\sim 10^{-6}$ using around seven expected attempts, and can be suppressed further with stronger postselection. Compared with existing protocols, our approach trades offline, phase-specific catalyst cultivation for exactness, reusability, and constant-depth online implementation of fixed fine dyadic phases in codes with restricted transversal gate sets."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+    "authors": "Angela Cui, Ferran Hermida-Rivera, Jack Toubes, Raghav Gupta, Jim Fang, Chengyi Lux Zhang, Ella Schwarz, Junha Kim, Yakun Sophia Shao, Borivoje Nikolic, Christopher W. Fletcher, Sagar Karandikar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27350v1",
+    "source": "arXiv",
+    "abstract": "Agentic artificial intelligence shows great promise for radically improving the pace of innovation in hardware/software co-design research across computer architecture, systems, compilers, and VLSI. Thus far, however, applications of AI in these contexts have generally been demonstrated in isolated settings on small-scale problems, due to the difficulty of designing and deploying complex AI-infused hardware and software development workflows. This paper introduces CHIA, an open-source hardware/software co-design framework for agile and principled research on the application of AI to co-design. CHIA treats the productive construction and scalable deployment of the co-design flow itself as a first-class objective. In CHIA, agentic AI-driven hardware and software design flows are expressed as \\textit{CHIA loops}: directed cyclic graphs whose nodes execute various system-on-chip design tools, microarchitectural simulators, software build systems, AI models, evolutionary coding agents, and more. The \\textit{CHIA library} provides node implementations for many popular tools, including Chipyard, gem5, ChampSim, FireSim, Hammer (thus several commercial ASIC CAD tools), Vivado, AlphaEvolve, AdaEvolve, and many others. CHIA also provides a broad set of features to conduct principled science around these flows. These include isolation between AI models and hardware tools, profiling mechanisms, fault-tolerant execution, and reliability at scale across hundreds of heterogeneous systems (CPUs, FPGAs, GPUs, etc., across public cloud/on-prem.). To showcase CHIA, we present five CHIA loops as case studies: (1) automatic RTL-to-gem5 simulator alignment, (2) LLM-driven implementation of microarchitectural features in RTL, (3) agentic, IPC-aware critical path optimization, (4) evolutionary architectural discovery, and (5) maintainer-friendly agentic GitHub issue fixing."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "All you need is log",
+    "authors": "Akshay Balsubramani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27349v1",
+    "source": "arXiv",
+    "abstract": "Comparing two probability distributions is a basic building block of statistics and machine learning, and the right family is well understood: the Rényi divergences of order $α\\in[0,\\infty]$ are the unique family monotone under data processing and additive on independent products. Many problems instead compare more than two distributions at once -- multi-population fairness, multi-prior PAC-Bayes bounds, multi-hypothesis testing -- and the right multi-distribution generalization of the Rényi family has been an open question. We characterize it. Every functional of $W$-tuples of distributions that is monotone under data processing and additive on independent products is a positive integral of multi-way coincidence divergences $C_α(π_1,\\dots,π_W) := -\\log\\int π_1^{α_1}\\cdotsπ_W^{α_W}$ (with $\\sum_k α_k = 1$) over a parameter space with four strata: the simplex interior; mixed-sign exponent cones (the analogue of Rényi orders $>1$); a tropical boundary at infinity carrying max-divergences; and pairwise Kullback-Leibler edges at the simplex vertices. Each stratum is necessary -- the destination of an explicit data-processing-monotone, product-additive divergence the others cannot reproduce -- and each is a clean limit of simplex-interior atoms. The same family arises from five independent routes -- the structural axioms, Kolmogorov-Nagumo means with Rényi's entropy axiomatics, classical entropy characterizations, multi-hypothesis testing error exponents, and a multi-lottery betting interpretation -- structural evidence that this is the canonical multi-distribution Rényi calculus rather than an artefact of any one axiomatic input. The two-prior case recovers the standard Rényi result; a worked $W=3$ instance, numerical verification, and a conditional extension round out the treatment."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "A Verification Theorem for an Optimal Control Problem Governed by the Convective Brinkman--Forchheimer Equations",
+    "authors": "Sagar Gautam, Manil T. Mohan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27312v1",
+    "source": "arXiv",
+    "abstract": "This article establishes a verification theorem for an optimal control problem governed by the two- and three-dimensional convective Brinkman--Forchheimer equations on the $d$-dimensional torus, $d\\in\\{2,3\\}$: $$\\frac{\\partial\\mathfrak{u}}{\\partial t} -μΔ\\mathfrak{u} +(\\mathfrak{u}\\cdot\\nabla)\\mathfrak{u} +α\\mathfrak{u} +β|\\mathfrak{u}|^{r-1}\\mathfrak{u} +\\nabla\\mathfrak{p} =\\boldsymbol{f}, \\qquad \\nabla\\cdot\\mathfrak{u}=0,$$ where $μ,α,β>0$ and $r\\in[1,\\infty)$. We derive the Pontryagin maximum principle and develop a verification framework for the associated control problem, a topic that has received comparatively little attention for fluid models of Navier--Stokes type. A major challenge in establishing the verification theorem and the corresponding feedback characterization for the CBF system is that the analysis requires a substantially different regularity framework from that used for the two-dimensional Navier--Stokes equations. In particular, the present approach relies on strong solution theory, a delicate treatment of the nonlinear absorption term, novel estimates in negative-order Sobolev spaces, and continuous dependence estimates in stronger topologies, especially in the three-dimensional setting. A distinctive feature of the present work is that the verification framework is developed not only in two dimensions, but also in the three-dimensional supercritical regime, corresponding to $r\\in(3,5]$, and in the critical case $r=3$ under the condition $2βμ\\geq1$. Consequently, the feedback characterization and verification arguments can be rigorously justified in both two and three dimensions."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "\"Everyone Says Them\": Deception Typologies, Probabilistic Trust, and Grassroots Safety Knowledge Among Gay Dating App Users in China",
+    "authors": "Yibo Meng, Lyumanshan Ye, Yingfangzhong Sun, Bingyi Liu, Huidi Lu, Xiaolan Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27284v1",
+    "source": "arXiv",
+    "abstract": "Gay dating applications have become critical platforms for sexual minority men to seek relationships and community, yet they also expose users to deceptive interactions that remain underexplored in HCI and CSCW research. This study examines how gay male users in China experience, identify, and respond to deception on dating applications. Through semi-structured interviews with 22 participants across platforms including Blued, Aloha, Fanka, and Soul, we make three contributions. First, we identify a typology of deceptive practices extending beyond profile misrepresentation to encompass relational, emotional, financial, and commercial forms of deception. Second, we document the layered, probabilistic verification strategies users develop through long-term platform use, showing that trust assessment operates as a multi-signal, provisional process rather than a binary judgment. Third, we demonstrate that risk recognition is a collaborative practice shaped by the circulation of experience, the abstraction of recurrent tactics, and the codification of shared rules within the community."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Resource-Aware Neuro-Symbolic Reasoning for Local Small Language Models",
+    "authors": "Carlos Ramírez Ovalle, Abel Alvarez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27281v1",
+    "source": "arXiv",
+    "abstract": "Small language models can run locally on consumer hardware, but structured reasoning often pushes users toward repeated sampling or larger models. This article studies a bounded neuro-symbolic alternative for local inference: a model translates a problem into typed finite-domain rules and constraints, a symbolic layer checks traceability and consistency, and a deterministic solver performs the reasoning step. The resulting Verifiable Formalization and Repair pipeline (VFR-LLM) tests when symbolic verification can replace repeated sampling without weakening accuracy. We evaluate it through LM Studio on Apple Silicon, using Qwen3-4B-2507 as the primary model, with Phi-4-mini-reasoning and Gemma-3n-E4B as robustness checks. On 120 generated pure-precedence problems, Qwen VFR-LLM achieves 0.983 accuracy, versus 0.700 for serial self-consistency using one model call instead of five. On a 120-instance BBH-derived extended logical-deduction subset, it reaches 0.933 versus 0.283. The advantage persists against a stronger cost-aware adaptive self-consistency baseline, which lowers sampling cost but not the single-call accuracy gap. Gemma reproduces the same model-dependent boundaries and Phi is negative on typed constraints. The contribution is bounded: finite-domain logic can replace repeated local sampling for some structured tasks, saving model calls and serial latency, with stratum-dependent token savings."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+    "authors": "Junhao Shi, Zezheng Huai, Siyin Wang, Jia Chen, Yubang Wang, Zhaoye Fei, Hechang Chen, Jingjing Gong, Xipeng Qiu, Yu-Gang Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27251v1",
+    "source": "arXiv",
+    "abstract": "Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and VLA policies execute open-loop without detecting their own failures. We argue that persistent autonomy requires not a monolithic model but a hierarchical asynchronous architecture with explicit separation of planning, memory, and verification. To this end, we present OmniAct, a framework integrating a multimodal semantic planner for skill routing across unified action spaces, an adaptive hierarchical memory with event-boundary-driven compression for sub-linear context growth, and an asynchronous visual preemption engine that closes the semantic loop during physical execution. Across 40 real-world long-horizon tasks on two robotic platforms coordinating four IoT devices, OmniAct achieves consistent improvements in end-to-end success across all complexity levels, maintains near-flat token consumption over under 100k+ accumulated interaction tokens, and elevates mid-scale open-weight models to proprietary-level performance."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+    "authors": "Shaohua Liu, Liang Fang, Yilong Sun, Shudong Huang, Qingsong Luo, Xiaoyang Chen, Dongqiang Liu, Chuangang Ma, Zhenzhen Chai, Henghuan Wang, Shijie Quan, Changyuan Cui, Zhangbin Zhu, Peng Chen, Wei Xu, Lei Xiao, Haijie Gu, Jie Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27243v1",
+    "source": "arXiv",
+    "abstract": "Industrial advertising recommender models are continuously improved through architecture evolution. Upgrades such as RankMixer, TokenMixer-Large, and MixFormer show that better structures remain a key source of quality and business gains. Yet developing such upgrades in production is expert-intensive and difficult to scale. Existing automation is insufficient: AutoML mainly tunes hyper-parameters, while effective gains often require cross-module changes under strict constraints; generic LLM coding agents optimize for runnable code, but runnable code does not imply a valid recommender architecture. Candidates may pass local tests while causing silent failures that degrade performance. We present NOVA, a level-aware agent harness for verification-aware architecture evolution. NOVA uses an architecture gradient, an SGD-inspired, non-differentiable update signal that aggregates prior modifications, verification diagnostics, metric feedback, and trajectory memory to guide the next modification. A verification cascade checks structure semantics, local executability, offline effectiveness, and online impact; invalid candidates are blocked early, with failure patterns recorded as forbidden directions. L1--L4 task-level control matches automation to task complexity and risk, routing high-risk tasks to Copilot for human oversight. Deployed in an industrial advertising system, NOVA achieves the highest effective pass rate on L2 ScaleUp and L3 Literature-to-Production tasks (54.5% and 60.0%), reduces silent failures compared with coding-agent baselines, and shortens one literature-to-production cycle by over 13x in human-attended time. In online A/B testing, the selected L3 candidate improves GMV on three pCVR objectives by +1.25%, +1.70%, and +2.02%, while reducing pCVR bias by 58.8%, 66.7%, and 37.3%."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "On Parameterized Verification Over Tree Topologies",
+    "authors": "Romain Delpy, Anca Muscholl, Grégoire Sutre",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27172v1",
+    "source": "arXiv",
+    "abstract": "Parameterized verification of finite-state processes with rendez-vous synchronization is notoriously undecidable when processes are linearly ordered. In this paper we study two kinds of bounds under which we determine the complexity of safety checking over tree topologies. When bounding the depth we obtain that the complexity is related to the fast growing hierarchy. Our second bound limits the alternations between upwards and downwards synchronizations in the tree (phases), and occurs naturally in many concrete settings. If we fix the number of phases then the complexity of safety checking is EXPSPACE complete, and if the number of phases is part of the input it is 2EXPSPACE complete (both for arbitrary depth)."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+    "authors": "Aoyang Fang, Yifan Yang, Jin'ao Shang, Qisheng Lu, Junjielung Xu, Rui Wang, Songhan Zhang, Yuzhong Zhang, Boxi Yu, Pinjia He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27154v1",
+    "source": "arXiv",
+    "abstract": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from cause to effect rather than inferring backward from symptoms. Applying PAVE yields OpenRCA 2.0 (500 instances), the first cross-system RCA benchmark with step-wise causal annotations for LLM agents. Across 11 frontier LLMs, recovering the exact root-cause set succeeds in only 20.7% of cases on average. To locate where this difficulty lies, we relax the criterion and find what we call the ungrounded diagnosis: agents identify at least one correct root-cause service in 76.0% of cases, but ground that service in a verified causal propagation path to the observed symptom in only 61.5%. Outcome-only evaluation hides this failure mode; step-wise causal ground truth is the missing piece for trustworthy LLM-based RCA agents."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "zQR: A Verifiable QR-Driven zkSNARK Proof Verification Framework for Mobile Platforms",
+    "authors": "Goshgar Can Ismayilov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27092v1",
+    "source": "arXiv",
+    "abstract": "Privacy is one of the fundamental rights of individuals in modern societies. Yet, the practical adoption of privacy-preserving technologies in daily interactions remains limited. Zero-knowledge proofs offer strong privacy guarantees but are often hindered by their technical complexity. In this paper, we advance the idea of verifiable QR codes that enable off-line verifiers to verify proofs encoded in QR codes. Based on this core idea, we build a novel QR-driven zkSNARK proof verification framework (i.e., zQR) for mobile platforms. The framework integrates blockchain for auditability, non-repudiation and logging; and large-language models for automatic circuit generation. We perform a security discussion of the framework by considering multiple attack surfaces. Furthermore, we present an experimental evaluation measuring temporal costs (proof generation and verification latency, QR code encoding and decoding latency) and financial costs (blockchain gas consumption). Our results demonstrate the feasibility of zQR as a proof-of-concept framework for privacy-preserving verification on mobile platform where proofs are compactly represented with QR code symbol version of 19 with low error correction level. Finally, we discuss potential applications, current limitations and future directions for the broader adoption of privacy-preserving technologies in daily interactions."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Formalizing a Many-Sorted Hybrid Polyadic Modal Logic in Lean",
+    "authors": "Andrei-Alexandru Oltean, Bogdan Macovei, Ioana Leuştean",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27041v1",
+    "source": "arXiv",
+    "abstract": "We present a Lean formalization of a general hybrid modal logic with many-sorted signatures and polyadic modal operators. The system borrows ideas from both algebraic specification and dynamic logics, and is designed to serve as a uniform axiomatic foundation for specifying and verifying programming languages and security protocols. We expose a DSL for users to define languages and protocols as many-sorted signatures, specify the relevant domain-specific axioms, and reason about program executions or protocol runs. We provide a machine-checked proof of its soundness theorem and showcase the framework's versatility through several applications: an imperative programming language for code verification, the BAN logic for security protocols, and the modal system S5. We have designed our formalization to be intrinsically sorted, that is, well-sorted formulas in the base language are well-typed terms in Lean. Thanks to intrinsic sorting, all domain specific applications can be easily embedded in our framework via the DSL, at no additional syntactic overhead required for the user to prove. All code presented in this paper is openly accessible in the following repository: https://github.com/alexoltean61/msphml-lean"
+  },
+  {
+    "date": "2026-06-25",
+    "title": "GAVEL: Grounded Caption Error Verification and Localization",
+    "authors": "Zixian Gao, Atsushi Hashimoto, Kuniaki Saito",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26923v1",
+    "source": "arXiv",
+    "abstract": "Vision-language models (VLMs) often produce hallucinated or inconsistent outputs, where text and images are not properly aligned. Addressing this issue requires not only detecting misalignment but also explaining the discrepancy and localizing its visual evidence. We introduce GAVEL (Grounded Caption Error Verification and Localization), a task that jointly addresses verification, explanation, and localization for image-text pairs. To support systematic evaluation, we also present a corresponding dataset and benchmark. We further train a supervised baseline on the human-annotated training split to assess whether GAVEL provides learnable supervision for these abilities. Experiments show that even strong closed-source models struggle on GAVEL, while the supervised baseline yields consistent improvements across grounding and explanation metrics."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems",
+    "authors": "Changxin Lao, Fei Pan, Guozhuang Ma, Han Li, Huihuang Lin, Jijun Shi, Kangzhi Zhao, Kun Gai, Mo Zhou, Qinqin Zhou, Quan Chen, Ruochen Yang, Shifu Bie, Shuang Yang, Shuo Yang, Wenhao Li, Wentao Xie, Xiao Lv, Xuming Wang, Yijun Wang, Yiming Chen, Yusheng Huang, Zhongyuan Wang, Zibo Zhao, Zijie Zhuang, Baoning Xia, Chao Liu, Chaoyi Ma, Chubo He, Dawei Cong, Feng Jiang, Gang Wang, Guilin Xia, Hanwen Xu, Jiahong Xie, Jiahui Qiao, Jian Liang, Jiangfan Yue, Jing Wang, Jinghan Yang, Jinghui Jia, Kan Qin, Lei Wang, Ming Li, Peilin Song, Pengbo Xu, Qiang Luo, Ruiming Tang, Shiyang Liu, Shuxian Jin, Tao Wang, Tao Zhang, Xiang Gao, Xianghan Li, Yingsong Luo, Yiwen Ning, Yongcheng Liu, Yuan Guo, Zhaojie Liu, Zhenkai Cui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26859v1",
+    "source": "arXiv",
+    "abstract": "Recommendation algorithm iteration is moving from an artisanal, engineer-bound process toward an industrialized research loop, but this transition remains blocked by a structural execution bottleneck: the idea-to-launch cycle still depends on human engineers to generate hypotheses, modify production code, launch A/B experiments, and attribute online results. Innovation therefore scales linearly with headcount rather than compounding with evidence, compute, and accumulated experimental knowledge. We present AgentX, a production-deployed multi-agent system that fundamentally restructures this production function. AgentX operates as a self-evolving development engine: it autonomously generates, implements, evaluates, and learns from recommendation experiments at a scale and pace that no manual workflow can sustain. The system orchestrates four tightly coupled stages in a closed loop. A Brainstorm Agent synthesizes evidence from historical experiments, system architecture, data analysis, and external research into ranked, executable proposals. A Developing Agent translates each proposal into production-ready code through repository-grounded generation and multi-dimensional reliability verification. An Evaluation Agent conducts safe online rollout with guardrail-vetoed A/B judgment, converting both successes and failures into structured knowledge assets. A Harness Evolution layer (SGPO) then distills execution trajectories into semantic-gradient updates that continuously sharpen the agents themselves -- making the system not merely automated, but self-improving."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Complementing Emerson-Lei Elevator Automata (Technical Report)",
+    "authors": "Ondrej Alexaj, Vojtěch Havlena, Ondřej Lengál, Yong Li, Nicolas Mazzocchi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26768v1",
+    "source": "arXiv",
+    "abstract": "Büchi elevator automata naturally appear in several areas of formal methods as a structural expressibly-equivalent subclass of Büchi automata where every strongly connected component is either deterministic or inherently weak. It was shown that this class contains the majority of Büchi automata generated in practical applications, including LTL model-checking and verification of hyperproperties. Moreover, the elevator subclass enables more efficient complementation and determinization algorithms than unrestricted Büchi automata. In this paper, we introduce Emerson-Lei elevator automata, which is a generalization of Büchi elevator automata to richer acceptance conditions. We provide a complementation algorithm with a significantly better asymptotic complexity than the best known algorithm for unrestricted Emerson-Lei automata. The practical efficiency of our algorithm is demonstrated by an experimental comparison with the popular state-of-the-art tool Spot. Our work is, to the best of our knowledge, the first step towards practical algorithms for complementing, determinizing, and testing universality and inclusion of Emerson-Lei automata with rich acceptance conditions."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+    "authors": "Taiheng Pan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26753v1",
+    "source": "arXiv",
+    "abstract": "Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it. ConvMemory v3 adds a validity context layer that detects and surfaces this update evidence through target-conditioned relation verification, sitting after the v1/v2 retrieval path. The core mechanism is a dual-evidence gate that conditions a relation judgment on the specific target proposition, scoring a (target, source) pair through the product of a MiniLM slot head and a DeBERTa-v3 slot head and gating it by conservative event/operation evidence. On a synthetic multi-hop validity benchmark the gate reaches 90.12% +/- 1.73 accuracy; through a real-data feedback loop that mines failure patterns but trains on synthetic pairs only, the verifier transfers to Memora role binding with zero target-side labels, reaching 98.8% +/- 0.9 group-all-correct. The deployed layer preserves retrieval by default: a context mode attaches structured validity metadata while keeping the candidate set and rank order fixed, and a query-conditioned demote mode is an explicit opt-in for dense current-state workloads, where it raises current-active H@1 from a never-demote baseline of 45.1% to 95.7% +/- 1.2 while protecting non-superseded memories at 99.4% recall. Six machine-verifiable safety contracts pin the layer's behavior. Multi-hop graph propagation is validated as a mechanism; fully automatic construction of strict prerequisite edges is characterized as a boundary, since strict necessity requires counterfactual world knowledge. This report extends ConvMemory v1 (arXiv:2605.28062) and v2 (arXiv:2606.10842)."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "NebulaExp-8B: An Empirical Post-Training Pipeline via Full-Scale Ablation Research",
+    "authors": "Qiaobo Hao, Yangqian Wu, Shunyi Wang, Zhongjian Zhang, Ziqun Li, Yayin He, Muqing Li, Chen Zhong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26671v1",
+    "source": "arXiv",
+    "abstract": "Post-training alignment determines the reasoning and human preference following capabilities of large language models, yet most existing works withhold detailed data construction, filtering rules and training recipes, which hinders community reproducibility and lightweight model optimization. This work presents NebulaExp, a fully transparent, ablation-driven post-training pipeline built on Qwen3-8B-base, covering two orthogonal model branches: general instruct model and complex reasoning-specialized model. We curate a raw corpus of 3.84M multi-source SFT samples and a 200K verifiable RL candidate pool, and design an end-to-end data processing stack including response distillation, multi-dimensional cross-verification filtering, fine-grained difficulty grading, task classification and diversity-aware sampling. For the Instruct branch, our three-stage optimized supervised fine-tuning approach NebulaExp-Ins-SFT improves the average benchmark score from the 55.01 baseline of Qwen3-8B-nothink to 60.99. GRPO reinforcement learning then further elevates the average score to 61.85. For the Reasoning branch, medium-difficulty GRPO RL improves average reasoning score from 73.88 to 75.17. To address RL's dependency on task verifiers, we systematically investigate single-teacher and multi-teacher OPD (MOPD): utilizing merely 4K instruction-following samples and outperforms RL baseline by 3.26 points on IFEval with +4.43 average overall gain; MOPD fuses four domain-specialist teachers with merely 10K samples, lifting average performance by 4.18 over the base model. This report provides a fully reproducible empirical post-training recipe for 8B-scale LLMs, and comprehensively dissects the capability trade-offs among instruction adherence, mathematical reasoning, code generation and general knowledge."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "A Multi-Level Validation and Traceability Framework for AI-Generated Telescope Scheduling Decisions",
+    "authors": "Hengchu Xiao, Chuanjun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26585v1",
+    "source": "arXiv",
+    "abstract": "With the gradual introduction of AI into telescope scheduling, AI-based decision-making has shown advantages in handling complex multi-constraint problems. However, its outputs often suffer from inconsistent data references, reasoning errors, and non-executable decisions, limiting applicability in high-reliability observational tasks. In this work, we propose a multi-level validation and traceable reasoning framework that performs systematic reliability verification of AI-generated decisions prior to execution, and enables explicit representation of the reasoning process to support traceable decision-making. The framework integrates data reference validation, logical consistency checks, and observational and instrumental constraint verification to filter and correct invalid decisions. It also introduces atomic reasoning units and their dependency relationships, representing scheduling decisions as a sequence of interconnected reasoning steps that support error localization and post hoc analysis. Experiments show that the framework improves executability and reliability of AI scheduling and reduces loss of transient opportunities. In particular, feedback correction and structured validation of reasoning steps enhance the ability to repair and block erroneous decisions, especially in complex scenarios. Compared with pure AI methods, the framework-enhanced approach maintains flexibility while substantially improving reliability and executability. These results demonstrate a feasible and verifiable pathway for applying AI to high-reliability astronomical observation scheduling."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Ring Spacing from a Fourth-Order Radial Feedback Green Function in a Keplerian Accretion Disk",
+    "authors": "Yiwei Bao, Can Cui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26568v1",
+    "source": "arXiv",
+    "abstract": "ALMA observations of protoplanetary disks reveal ubiquitous concentric ring structures whose origin remains debated. We present an exactly solvable local model for ring spacing in a Keplerian disk. The passive advection--diffusion problem with a general vertical diffusivity profile separates into a vertical Sturm--Liouville spectrum and a radial modified-Bessel Green function. This passive kernel is smooth and does not by itself generate a periodic ring train. We therefore introduce a minimal fourth-order radial feedback closure for the ring-averaged surface density. For a localized steady ring source, the resulting Green function has a damped oscillatory exterior branch whenever the decaying spatial roots are complex. Under an observationally motivated AU scaling, the same dimensionless solution gives an illustrative spacing of order $12$~AU, distinct from the fastest-growing temporal wavelength. The model separates the passive transport kernel from the feedback mechanism that selects the observable radial scale. Because this mechanism is internal to the disk, it does not require pre-existing planets. The vertical diffusivity profile affects the background kernel but is not the source of the Green-function oscillation."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "TESLA-for-5G: Broadcast Authentication for 5G Networks Using TESLA",
+    "authors": "Subin Song, Michael K. Reiter, Taekyoung Kwon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.26528v1",
+    "source": "arXiv",
+    "abstract": "5G base stations broadcast unauthenticated system information (SI) that every user equipment (UE) reads during cell selection. This enables attackers to broadcast forged SI from a fake base station (FBS), deceiving UEs into camping on it. Prior approaches require UEs to authenticate System Information Block 1 (SIB1) using digital signatures. This necessitates computation-heavy verification for every SIB1 reception, imposing a significant burden on resource-constrained UEs. We propose TESLA-for-5G (TF5), a broadcast authentication protocol for 5G SIB1 that combines TESLA with GG09 Schnorr-like identity-based signatures (IBS). In the steady state, TF5 enables UEs to authenticate each SIB1 message using a symmetric MAC and delayed key disclosure, eliminating the need for per-message digital signatures. Initial trust is bootstrapped during cell entry using a lightweight GG09 IBS over the TESLA parameters, avoiding certificate distribution overhead. We formally verify TF5 in Tamarin under a Dolev-Yao adversary and demonstrate its favorable computation, communication, and storage costs through both an implementation on the OpenAirInterface 5G stack and trace-driven analysis."
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Detecting Hallucinations in Multilingual LLM-Generated Headlines: A Fine-Grained Classification Approach",
+    "authors": "Hanzhe Zhang, Tianyu Wang, Xiaqing Xu, Junke Hou",
+    "publish": "2025 4th International Conference on Computer Applications Technology (CCAT)",
+    "url": "https://doi.org/10.1109/ccat68690.2025.00045",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Software Testing Education in the LLM Era: Insights and Emerging Theory",
+    "authors": "Samhitha Dwarakanath, Nathalia Nascimento, Everton Guimaraes",
+    "publish": "Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test",
+    "url": "https://doi.org/10.1145/3793654.3793757",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-25",
+    "title": "A Survey of AI for Materials Science: Foundation Models, LLM Agents, Datasets, and Tools",
+    "authors": "Minh-Hao Van, Prateek Verma, Chen Zhao, Xintao Wu",
+    "publish": "ACM Computing Surveys",
+    "url": "https://doi.org/10.1145/3822503",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Demo Abstract: DiPe: Real-Time Diffusion LLM Inference on Edge Devices for Planning Tasks",
+    "authors": "Yejia Liu, Xiaomin Ouyang",
+    "publish": "2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems - Posters and Demos (SenSys-Adjunct)",
+    "url": "https://doi.org/10.1109/sensys-adjunct71932.2026.00026",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Poster Abstract: Detecting and Mitigating Triggerable Degradation in CPU-Only Long-Context LLM Inference",
+    "authors": "Hao Gao, Xiaoli Liu, Sasu Tarkoma",
+    "publish": "2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems - Posters and Demos (SenSys-Adjunct)",
+    "url": "https://doi.org/10.1109/sensys-adjunct71932.2026.00059",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Impromptu: An LLM-Driven Prompt-to-Hardware Circuit Prototyping Platform on a Cartesian Gantry",
+    "authors": "Vincent Alesi, Absa Fall, Matthew Grimalovsky, Adrian Jackson, Deze Liu, Daniel Burbano, Sasan Haghani",
+    "publish": "2026 IEEE International Symposium on Robotic and Sensors Environments (ROSE)",
+    "url": "https://doi.org/10.1109/rose69181.2026.11570982",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-25",
+    "title": "Understanding on the Edge: LLM-generated Boundary Test Explanations",
+    "authors": "Sabinakhon Akbarova, Felix Dobslaw, Robert Feldt",
+    "publish": "Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test",
+    "url": "https://doi.org/10.1145/3793654.3793754",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-25",
+    "title": "REST-at: An LLM-Based Tool for Automating Traceability between Requirements and Test Cases",
+    "authors": "Nicole Leon-Quinstedt, Bao Lindgren, Mert Yurdakul, Francisco Gomes de Oliveira Neto",
+    "publish": "Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test",
+    "url": "https://doi.org/10.1145/3793654.3793746",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-25",
+    "title": "From Logs to Lessons: An Exploration of LLM-based Log Summarization for Debugging Automotive Software",
+    "authors": "Anton Ekström, Hampus Rhedin Stam, Francisco Gomes de Oliveira Neto, Gregory Gay, Sabina Edenlund",
+    "publish": "Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test",
+    "url": "https://doi.org/10.1145/3793654.3793748",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
