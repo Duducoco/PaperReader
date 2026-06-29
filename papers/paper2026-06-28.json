@@ -1,0 +1,209 @@
+[
+  {
+    "date": "2026-06-26",
+    "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+    "authors": "Rajesh Jayaram, Drew Tyler, David Woodruff, Corinna Cortes, Yossi Matias, Vahab Mirrokni, Vincent Cohen-Addad",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28277v1",
+    "source": "arXiv",
+    "abstract": "Artificial intelligence is driving a revolution in scientific discovery, accelerating everything from hypothesis generation to mathematical theorem proving. However, this rapid acceleration is creating a systemic challenge: traditional human peer review cannot scale to match the influx of AI-assisted science. Ultimately, to resolve this tension, we must also deploy AI to accelerate the verification and review process itself. To frame the discussion around this transition, we propose a taxonomy consisting of four progressive levels of AI-human collaboration in scientific evaluation, and discuss various trade-offs involved with each. As a step toward this future, we introduce the Paper Assistant Tool (PAT), an agentic AI framework built for deep scientific review and verification. PAT ingests full scientific manuscripts and produces a comprehensive evaluation, checking theoretical results, validating experiments, suggesting improvements, and identifying potential flaws. By utilizing inference scaling techniques, PAT is able to identify deeper issues than a single model call alone, achieving a 34% improvement over zero-shot recall on mathematical errors in the SPOT benchmark. Pilot deployments of PAT as a pre-submission tool for authors at two major Computer Science conferences -- STOC and ICML -- demonstrate its ability to identify critical errors and suggest substantive improvements to research papers. By catching errors early, PAT eases the cognitive burden placed on referees, while preserving their control over the outcomes of the review process."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "COCOLogic-V2: Identifying Logical Inconsistencies via Truly Hard-Negatives",
+    "authors": "David Steinmann, Antonia Wüst, Kristian Kersting, Wolfgang Stammer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28194v1",
+    "source": "arXiv",
+    "abstract": "While interpretable models such as concept bottleneck models (CBMs) and program synthesis methods enable verification of model decisions, their evaluation is typically limited to simple tasks, leaving complex reasoning on real-world images largely unexplored. We introduce COCOLogic-V2, an object-centric dataset for visual inductive reasoning on real-world images covering a broad subset of first-order logic. By categorizing samples into positive variants, near-boundary (NB), and far-from-boundary (FB) negatives, COCOLogic-V2 enables fine-grained diagnosis of model accountability. Our evaluations show that models tend to separate positive and FB samples well but fail on NB samples, while perceptual noise and large rule-induced search spaces pose additional challenges in few-shot settings. Together, these results highlight that visual inductive reasoning remains an open challenge and COCOLogic-V2 provides a concrete foundation for advancing methods in this direction."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "OSOR: One-Step Diffusion Inpainting for Effect-Aware Object Removal",
+    "authors": "Qinming Zhou, Chenxi Sun, Deyang Kong, Junhao He, Xiangheng Tang, Peike Yu, Haotian Wu, Leilei Cao, Linfeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28094v1",
+    "source": "arXiv",
+    "abstract": "Real-world object removal is challenging due to two key difficulties: the target object's non-local effects, such as shadows and reflections, which are difficult to model, and the fact that user-provided masks are often inaccurate or incomplete. With billions of parameters and tens of denoising steps, diffusion-based models achieve strong removal performance at the expense of substantial computational cost, limiting their use in interactive applications and on edge devices. To address these challenges, we present OSOR (One-Step Object Removal), which simultaneously achieves efficient, effect-aware, and mask-robust object removal. Concretely, OSOR introduces: (1) an occupancy-guided discriminator for precise boundary supervision, enabling stable single-step diffusion training; (2) an alpha head that leverages knowledge from pretrained diffusion models to predict appropriate removal regions with minimal overhead, thereby handling imperfect masks; and (3) a semantic-anchored verification pipeline (SAVP) that filters noisy instruction-based triplets to produce effect-aware supervision at scale. Using SAVP, we curate CORNE, which contains 280K verified removal pairs, and further annotate AnimeEraseBench and TextEraseBench to evaluate performance on more complex removal tasks. Experiments show that OSOR surpasses strong multi-step diffusion baselines in perceptual quality while achieving $4\\times$ to $30\\times$ faster inference."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Diffusion Model Attribution via Spectral Coupling of Denoiser Responses",
+    "authors": "Pragati Shuddhodhan Meshram, Varun Chandrasekaran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28092v1",
+    "source": "arXiv",
+    "abstract": "Attributing a generated image to its source diffusion model is a fundamental challenge in provenance verification and intellectual property protection. This problem is particularly difficult because diffusion models trained on different datasets can converge to similar score functions and thus similar output distributions, making the generated images themselves unreliable as attribution evidence. Existing non-invasive methods either fail on architecturally similar variants or rely on signals that vanish when models share the same autoencoder. We propose Spectral Denoising Signatures (SDS), a non-invasive attribution method that identifies the source model by fingerprinting each candidate model's denoising behavior. Our key insight is that a model's denoising score function exhibits a distinctive spectral geometry, reflected in how it redistributes energy across spatial frequency bands during denoising. By probing this behavior with frequency-controlled perturbations, SDS extracts a stable signature that is intrinsic to the model, requiring only standard forward passes with no inversion, optimization, or generation-time enrollment. Our results demonstrate that SDS achieves approximately 99.9% accuracy across eight diverse diffusion models and 96.2% under cross-domain prompt shift, outperforming non-invasive baselines across variations in training data, architecture, and training procedure, establishing spectral geometry as a principled and practical basis for diffusion model attribution. Code is available at: https://github.com/Pragati-Meshram/SGS"
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Prophecy-Based Automated Verification of Message-Passing Programs",
+    "authors": "Takashi Nagatomi, Musashi Katsura, Naoki Kobayashi, Yusuke Matsushita, Ken Sakayori",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28066v1",
+    "source": "arXiv",
+    "abstract": "We propose a fully automated method for verifying functional correctness of message-passing concurrent programs by reducing verification problems to constrained Horn clause (CHC) solving. Inspired by RustHorn's prophecy-based technique, we represent each sender channel by a list of values to be sent over the channel in the future, which enables modular encoding of sender and receiver threads in CHCs. To capture causal dependencies between different channels, we further attach timestamps to messages. We prove that the resulting reduction is sound and complete: a program is free from assertion failures if and only if the corresponding system of CHCs is satisfiable. We have also implemented a prototype verifier for Rust-like programs and experimentally confirmed the effectiveness of the approach."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "DG^VoiC: Speaker Clustering for Fraud Investigation under Real Call-Centre Conditions",
+    "authors": "Muhammad Shakeel Akram, Amal Htait, Abdul Hamid Sadka, Emma Meisingseth, Karishma Jaitly",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28048v1",
+    "source": "arXiv",
+    "abstract": "Insurance fraud remains costly and operationally difficult, particularly in call-centre workflows where many customer interactions begin at FNOL. While recent fraud detection methods mainly rely on structured data, text, or images, repeated speaker identity across calls remains underused as an investigative signal. This paper presents DG^VoiC, a voice clustering framework for customer verification and cross-profile speaker linking on anonymised real call-centre audio. The approach combines sensitive information-aligned anonymisation, speech-focused preprocessing, sliding-window speaker embedding extraction, and cosine similarity based clustering to identify repeated speakers under real telephony conditions. The method was evaluated on 121 recordings, with a curated reference subset of 56 samples in 22 human-agreed speaker clusters. used for validation. The best configuration achieved 96% AMI, 95% ARI, 98% completeness, 100% homogeneity, and 99% V-measure. These results show that speaker clustering can provide a strong additional signal for fraud investigation by helping analysts verify speaker consistency and surface repeated voices across customers."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "A joint meta-analysis framework for the accuracy of two diagnostic tests accounting for varying study designs",
+    "authors": "Vera Hudak, Nicky J. Welton, Efthymia Derezea, Hayley E. Jones",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.28033v1",
+    "source": "arXiv",
+    "abstract": "Meta-analyses of the accuracy of two diagnostic tests typically assume tests are independent conditional on true disease status. This assumption is often unrealistic and violation leads to biased estimates of the accuracy of tests used in combination. Existing models accounting for conditional dependence require `joint classification' data (results for both tests and the `gold standard' on all participants) from all studies and/or suffer from computational instability. We propose a Bayesian hierarchical model for joint meta-analysis of the accuracy of two binary tests, modelling conditional dependence through study-specific log-odds ratios. The model accommodates studies that do not report joint classification data. We show how the model extends to accommodate data from varied study designs, including studies without a gold standard and studies with partial verification, without assuming imperfect reference standards are error-free. We demonstrate the framework with two example meta-analyses. Our modelling framework retains key features of standard diagnostic test accuracy meta-analysis methods, while allowing for conditional dependence. Ignoring conditional dependence yields biased joint accuracy estimates when conditional dependence is substantial. Our parametrisation maintains computational stability and accommodates data from varied study designs, without requiring an initial data imputation step or assuming error-free reference standards in all studies."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Self-Verifying Measurement Records: Hash-Linked Evidence Graphs for Hardware Benchmarking",
+    "authors": "Faruk Alpay, Baris Basaran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27934v1",
+    "source": "arXiv",
+    "abstract": "Performance numbers reported for hardware are accepted on trust: the reader cannot recompute them, the apparatus is gone, and the silicon itself can be silently wrong, with fleet studies reporting on the order of one core in a thousand returning incorrect arithmetic with no error raised. We make a reported hardware measurement a tamper-evident, independently checkable record. Every quantity in the text, a table, or a figure is bound, by its content hash, to the observation and the verification behind it; the whole is a hash-linked, append-only structure (a transparency log for measurement) that a verifier audits offline without trusting its producer. Matrix products are verified by a probabilistic identity (Freivalds) at O(k n^2) cost under a tolerance we derive from floating-point error analysis and calibrate to the device's own measured residual floor, so a wrong product is rejected with probability 1 - 2^(-k); quantities with no such identity carry an algebraic checksum and a measured reproducibility class. We then treat the check itself as a security object: a probe seed committed for offline reproducibility is an attack surface, and a probe-aware adversary can hide a corruption in the probe's null space, fooling even a quorum of bit-identical witnesses, while a Fiat-Shamir challenge derived from the claimed output closes this. Driving the device from an unprivileged tenant's reach, with a di/dt power virus and a thermal soak, neither moves the calibrated tolerance nor produces a silent error, placing the physical-fault threat at the rare defective part or the privileged attacker and marking the boundary at which the record must compose with a hardware root of trust. We demonstrate the construction across Blackwell and Hopper GPUs and report a residual-floor and reproducibility map by precision, size, and device."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Verifiable Geometry Problem Solving: Solver-Driven Autoformalization and Theorem Proposing",
+    "authors": "Can Li, Ting Zhang, Junbo Zhao, Hua Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27926v1",
+    "source": "arXiv",
+    "abstract": "Geometry Problem Solving have increasingly adopt the neuro-symbolic paradigm, combining neural intuition with symbolic rigor. However, current frameworks suffer from severe bottlenecks in two core stages: autoformalization, which treats multimodal translation as a static task decoupled from downstream solver compatibility, and theorem prediction, where solvers frequently hit a deductive impasse due to fixed rule libraries. To address these, we propose SD-GPS, a solver-driven framework that treats the symbolic solver as an execution oracle throughout both formalization and deduction. First, Solver-Driven Autoformalization unifies supervised formal-language adaptation and solvability-guided reinforcement learning into a single module built on QwenVL3-2B, making executability the central training signal. Second, Verified Theorem Proposing introduces an impasse-aware agent that proposes local auxiliary lemmas from current proof states, ensuring soundness by filtering all proposals through symbolic verification. Empirical evaluations on Geometry3K and PGPS9K demonstrate that SD-GPS consistently outperforms existing MLLM, neural, and neuro-symbolic methods across standard completion, multiple-choice, and cross-modal reference regimes, proving that closing the loop between multimodal perception and symbolic execution significantly improves geometric reasoning, offering profound insights into how neural agents can be grounded by formal systems to achieve verifiable problem-solving capabilities."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Reflect-R1: Evidence-Driven Reflection for Self-Correction in Long Video Understanding",
+    "authors": "Shuimu Chen, Yuteng Chen, Yuanshen Guan, Zebang Cheng, Zeyu Zhang, Shengqian Qin, Bin Xia, Jiaran Li, Wenming Yang, Fei Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27922v1",
+    "source": "arXiv",
+    "abstract": "Current multimodal reflection mechanisms for long video understanding predominantly rely on closed-loop self-reflection within internal parameters. Lacking objective external evidence, models are frequently trapped in blind confidence and often fail to correct errors. Furthermore, applying reinforcement learning to multi-stage reflection pipelines introduces severe policy coupling, which is exacerbated by a critical scarcity of dedicated training data. To address these limitations, this work proposes Reflect-R1, the first Evidence-Driven self-correction framework for long video understanding. The framework constructs a three-stage pipeline consisting of intuition, verification, and arbitration. By dynamically retrieving objective visual evidence to verify initial intuitions and autonomously executing multiple temporal searches to resolve conflicts, it completely breaks the hallucination loop. To overcome policy coupling, we design a stage-decoupled reinforcement learning algorithm named SD-GRPO that independently computes advantage functions across different reasoning stages. Concurrently, we construct a dataset of 120K samples to bridge the training data gap. Extensive experiments on benchmarks such as VideoMME and LongVideoBench demonstrate that Reflect-R1 achieves state-of-the-art performance. Our method significantly improves the genuine rectification rate and enables authentic self-correction strictly grounded in objective evidence."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "On-sky Fibre-Target-Alignment of the 4MOST instrument: calibration and performance",
+    "authors": "Roland Winkler, Weijia Sun, Daniel Sablowski, Thomas Liebner, Ole Streicher, Steffen Frey, Ingo Stilz, Alexander Pramskiy, Scott Smedley, Thomas Szeifert, Diogo Rio Fernandes, Gerard Zins",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27882v1",
+    "source": "arXiv",
+    "abstract": "The 4-metre Multi-Object Spectroscopic Telescope (4MOST) is a new wide-field, fibre-fed spectroscopic survey facility for the VISTA telescope at ESOs Paranal Observatory. The instrument enables the simultaneous acquisition of 2436 spectra across a 4.2 square deg field of view, using a tilting spine fibre positioner feeding three dedicated spectrographs. In this paper, we describe the calibration process, and performance verification of the Fibre-Target-Alignment (FTA) process for 4MOST. We show the complete FTA process, including calibration of the individual hardware- and software components. Namely the Metrology camera system, the Fibre Positioner AESOP, a spine based Secondary Guiding System, the sky to focal surface projection software, and residual minimization via raster scans. In total, the FTA system required one special tool, a large calibration target for the focal surface, and approximately 1 month of accumulated calibration work on the telescope. The FTA process reached approx. 24 um (0.4 arc sec) RMS distance between fibres and targets on sky about 3 weeks after installation of the final hardware components of 4MOST, which is when 4MOST had its first light event. By the time of writing this paper, i.e. 6 months later, we reach approx. 16 um (0.27 arc sec) RMS. Currently, we far exceed our requirements in terms of accuracy, and are doing trade-off studies to maximize scientific returns."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Parameterized Verification of Asynchronous Round-Based Distributed Algorithms via Reduction to Finite-Counter Systems",
+    "authors": "Nathalie Bertrand, Pranav Ghorpade, Sasha Rubin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27867v1",
+    "source": "arXiv",
+    "abstract": "Traditional model-checking techniques typically verify distributed algorithms only for a fixed number of finite-state processes. Parameterized model checking generalizes this to any number of processes, while still typically assuming that each process is finite-state. In this work, we consider asynchronous round-based distributed algorithms in which each process is infinite-state since it can execute for an infinite number of rounds. We show that the parameterized verification problem for asynchronous round-based distributed algorithms is undecidable, already for simple specifications. Nevertheless, as our main contribution, we provide a reduction to LTL model checking over finite-counter systems and prove that it is sound and complete. This enables the use of off-the-shelf, mature symbolic model checkers for finite-counter systems. We demonstrate the practical applicability of this reduction by verifying safety and liveness properties of several asynchronous round-based consensus and leader-election algorithms using the nuXmv model checker."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "ToE: A Hierarchical and Explainable Claim Verification Framework with Dynamic Multi-source Evidence Retrieval and Aggregation",
+    "authors": "Zhaoqi Wang, Zijian Zhang, Kun Zheng, Zhen Li, Xin Li, Chunlei Li, Jiamou Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27736v1",
+    "source": "arXiv",
+    "abstract": "The rapid spread of fake news poses increasing threats to information ecosystems, especially as AI-generated misinformation under Generative Engine Optimization (GEO) poisoning allows adversarially crafted content to be systematically surfaced by retrieval systems, contaminating LLM reasoning. In this paper, we propose Tree of Evidence (ToE), a hierarchical evidence reasoning framework for automated fact-checking that models each claim as a dynamically expanding argument tree. ToE integrates a reinforcement learning-driven multi-source retrieval agent, an evidence evaluation agent, and an argument tree aggregation algorithm to iteratively decompose, retrieve, and verify claims through an explainable evidence chain. We further provide a theoretical analysis of the retrieval process, deriving a formal error bound that guarantees the learned policy converges to a neighborhood of the information-theoretically optimal policy. Experiments across multiple datasets and backbone LLMs demonstrate that ToE achieves improvements ranging from 4 to 24 percentage points over competitive baselines, with particularly pronounced gains on adversarially poisoned inputs."
+  },
+  {
+    "date": "2026-06-26",
+    "title": "MultModLM: A multi-modal benchmark for Large-Language Model based hardware schematic generation",
+    "authors": "Dhruv Kulkarni, Sai Manoj Pudukotai Dinkarrao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27666v1",
+    "source": "arXiv",
+    "abstract": "Recently, Large Language models (LLMs) find application in several fields. This extends to hardware definition and synthesis. However, most works at the intersection of LLMs and hardware generation focus on text-based tasks, creating a gap for multi-modal LLMs for RTL design. In this work, we introduce MultModLM, a benchmark for evaluating LLMs on the task of generating hardware schematics from RTL (Register Transfer Level) descriptions. The dataset consists of 99 diverse RTL modules spanning arithmetic, control, and state-based designs. To address the challenges of non-unique schematic representations, we propose a multi-stage evaluation framework combining rubric-based scoring, self-evaluation, cross-model assessment, blind evaluation, and human validation to enable exhaustive evaluation. Through experiments on state-of-the-art LLMs, we observe that while models can generate visually interpretable schematics, their functional correctness remains constrained. Furthermore, we find that LLM-based evaluators exhibit near-zero agreement with human raters, revealing, as a key finding, that LLM-as-a-judge paradigms are unreliable in structurally precise domains. These findings suggest that reliable evaluation of multi-modal hardware outputs remains an open challenge, motivating the need for more robust and domain-aware evaluation methodologies, as well as tools for structural evaluation, so as to enable formal equivalence checkers."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "COOPA: A Modular LLM Agent Architecture for Operations Research Problems",
+    "authors": "Chuanhao Li, Xiaoan Xu, Dirk Bergemann, Ethan X. Fang, Yehua Wei, Zhuoran Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27611v1",
+    "source": "arXiv",
+    "abstract": "Operations Research (OR) provides a rigorous framework for high-stakes decision-making, but effective OR modeling requires substantial domain knowledge, mathematical abstraction, and solver expertise. Recent LLM-based systems automate parts of this pipeline, yet remain limited by low accuracy on complex problems, opaque outputs, and narrow solver support. We propose COOPA (COoperative OPerations Agent), a modular LLM-agent architecture for interpretable and scalable OR decision support. It combines three components: iterative confidence-based modeling, which generates multiple candidate formulations, self-evaluates them across modeling dimensions, and selects one using a max-min confidence criterion; element-level provenance and confidence explanations, which link variables, parameters, constraints, and objectives to quoted source text and provide an audit trail for human verification; and multi-solver routing to specialized optimizer agents for different OR problem classes. Across three OR benchmarks, eight LLM backbones, and four baselines under identical conditions, COOPA achieves the best macro-average accuracy on six of eight backbones and improves over the strongest baseline by up to 6.7 percentage points. A within-system ablation isolates the contribution of iterative confidence-based modeling, while additional analyses and case studies illustrate the value of source traceability and multi-solver dispatch."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Radar Guided Camera Verification for Automatic Emergency Braking Rethinking Object Detection in Radar Camera Fusion",
+    "authors": "Ram Charan Akula, Sivanathan Kandhasamy, Manikandan Ganesan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27556v1",
+    "source": "arXiv",
+    "abstract": "Radar camera fusion is widely used in Automatic Emergency Braking AEB systems because radar provides reliable range and velocity measurements while cameras provide a proper visual confirmation of the objects . Most of the deployed systems perform this confirmation using computationally intensive object detectors. However, if the radar has already localized a target, the camera may only need to verify the obstacles presence rather than solving a full problem by identifying the object. Our work proposes a radar scoped edge density gate that performs obstacle verification within radar guided image regions of interest. This method requires no training data, model weights, or GPU acceleration and was integrated into a complete radar camera fusion AEB system with brake by wire actuation. Evaluated on a real instrumented vehicle across 72 driving sessions and 131,603 camera frames, the proposed approach reduced the camera search space by up to 98.7 percentage, achieved a mean processing latency of 0.121 ms per ROI, an AUC of 0.898, and a recall of 0.994. Across 33 staged threat scenarios, the complete AEB system recorded zero missed brake events."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction",
+    "authors": "Carrie Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27550v1",
+    "source": "arXiv",
+    "abstract": "Multi-token prediction has been shown to increase data density during training, improve downstream text-generation quality, and serves as the defacto approach for self-speculative decoding. Existing foundation and open source models that use MTP heads commit to a static tree-based attention topology throughout the entire generation sequence, meaning the speculation depth, and thus the compute required during verification, stays constant regardless of the context. This is fundamentally misaligned with the entropy patterns of natural language where low-entropy regions often support reliable multi-step drafting, while high-entropy regions require more conservative speculation. To address this, we propose Entropy-guided Multi-Token Prediction (EntMTP), a training-free scheduler that toggles between tree-based attention topologies from a set of task-specific pareto-optimal trees conditioned on a running estimate of local generation entropy. By matching speculation depth to context predictability, EntMTP maximizes expected accepted-token throughput across the full distribution of generated text without sacrificing generation quality. When evaluated across Humaneval, ShareGPT, GSM8k, and Litbench benchmarks, EntMTP consistently achieves a 1.15x speedup against Hydra and peak speedup of 1.36x against Medusa baselines respectively."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Coordinate projections of $c$-vectors of cluster algebras from the annulus",
+    "authors": "Sarah B. Brodsky",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27523v1",
+    "source": "arXiv",
+    "abstract": "For an acyclic cluster algebra, the $c$-vectors are, up to sign, the real Schur roots of the associated root system. We study the two-coordinate projections $(c_v, c_w)$ of this configuration: when the difference $c_v - c_w$ is bounded the image lies in a band of lattice lines, and we ask when the projection fills that band. A band-existence dichotomy, valid in every acyclic type, shows the difference is bounded if and only if the null root satisfies $δ_v = δ_w$. For affine type $\\widetilde{A}_n$ (the annulus), in the source-sink orientation, we resolve the filling question completely: every coordinate projection fills its band except along the source-sink diagonal, which carries only the finite regular part. The obstruction is the Auslander--Reiten defect, which a projection sees on its diagonal exactly when the defect is a coordinate difference; the only such pair is the source-sink pair of $\\widetilde{A}_n$, so the pattern depends on the chosen seed. More generally, every banded pair of null-root coefficient one fills, except these diagonals. Off the diagonal a banded pair in $\\widetilde{E}_7$ fails to fill, so non-filling is not confined to type $\\widetilde{A}_n$; a computation classifies the pairs of coefficient at least two over a range of affine types, where this $\\widetilde{E}_7$ pair is the only further failure, and the general classification remains open."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Cultivating logical catalysts for fault-tolerant dyadic phase rotations",
+    "authors": "Yichen Xu, Xiao Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27358v1",
+    "source": "arXiv",
+    "abstract": "We introduce a surface-code cultivation protocol for reusable logical catalyst states that implement exact fine dyadic phase gates $Z^{2^{-b}}$ by phase kickback. The catalyst is an eigenstate of a high-period Clifford circuit $U$, with a direct construction supported on $O(2^b)$ logical qubits. Once cultivated, each invocation implements the target phase through a controlled-$U$ gadget, removing Clifford+$T$ synthesis approximation error from the online gate and making the online non-Clifford depth independent of the target logical accuracy. As a concrete demonstration, we construct a catalyst for $\\sqrt{T}=Z^{1/8}$, where $U$ is a nine-qubit brickwork Clifford circuit and controlled-$U$ consists of eight controlled-CNOTs. Starting from nine distance-three rotated-surface-code blocks, we cultivate the catalyst through logical-$U$ checks, syndrome extraction and postselection, code growth, and complementary-gap decoding. Due to the intrinsic fault tolerance of the phase read-out, a \\emph{single} verification round already reaches the leading error-corrected scaling, in contrast to the repeated logical checks required when cultivating single-qubit magic states. A hybrid tensor-network and stabilizer simulation shows that, at physical error rate $p=10^{-3}$, the postselected catalyst can be grown to distance-seven rotated-surface-code blocks with logical leakage rate $\\sim 10^{-6}$ using around seven expected attempts, and can be suppressed further with stronger postselection. Compared with existing protocols, our approach trades offline, phase-specific catalyst cultivation for exactness, reusability, and constant-depth online implementation of fixed fine dyadic phases in codes with restricted transversal gate sets."
+  },
+  {
+    "date": "2026-06-25",
+    "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research",
+    "authors": "Angela Cui, Ferran Hermida-Rivera, Jack Toubes, Raghav Gupta, Jim Fang, Chengyi Lux Zhang, Ella Schwarz, Junha Kim, Yakun Sophia Shao, Borivoje Nikolic, Christopher W. Fletcher, Sagar Karandikar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.27350v1",
+    "source": "arXiv",
+    "abstract": "Agentic artificial intelligence shows great promise for radically improving the pace of innovation in hardware/software co-design research across computer architecture, systems, compilers, and VLSI. Thus far, however, applications of AI in these contexts have generally been demonstrated in isolated settings on small-scale problems, due to the difficulty of designing and deploying complex AI-infused hardware and software development workflows. This paper introduces CHIA, an open-source hardware/software co-design framework for agile and principled research on the application of AI to co-design. CHIA treats the productive construction and scalable deployment of the co-design flow itself as a first-class objective. In CHIA, agentic AI-driven hardware and software design flows are expressed as \\textit{CHIA loops}: directed cyclic graphs whose nodes execute various system-on-chip design tools, microarchitectural simulators, software build systems, AI models, evolutionary coding agents, and more. The \\textit{CHIA library} provides node implementations for many popular tools, including Chipyard, gem5, ChampSim, FireSim, Hammer (thus several commercial ASIC CAD tools), Vivado, AlphaEvolve, AdaEvolve, and many others. CHIA also provides a broad set of features to conduct principled science around these flows. These include isolation between AI models and hardware tools, profiling mechanisms, fault-tolerant execution, and reliability at scale across hundreds of heterogeneous systems (CPUs, FPGAs, GPUs, etc., across public cloud/on-prem.). To showcase CHIA, we present five CHIA loops as case studies: (1) automatic RTL-to-gem5 simulator alignment, (2) LLM-driven implementation of microarchitectural features in RTL, (3) agentic, IPC-aware critical path optimization, (4) evolutionary architectural discovery, and (5) maintainer-friendly agentic GitHub issue fixing."
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Scene2Scene: LLM-driven 3D Spatial Blockout for Guided AI Video Synthesis",
+    "authors": "Yutong Alison Mei, Wei Cai",
+    "publish": "Companion Proceedings of the Symposium on Interactive 3D Graphics and Games",
+    "url": "https://doi.org/10.1145/3807895.3807932",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Improving LLM-assisted code generation through the use of architectural documents and implementation plans.",
+    "authors": "Humberto Cervantes, Rick Kazman, Yuanfang Cai",
+    "publish": "Proceedings of the 3rd International Workshop on Designing Software",
+    "url": "https://doi.org/10.1145/3786152.3788588",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "An Authoring Framework for LLM-Based Drama Managers",
+    "authors": "Tiffany Wang, Yuqian Sun, Yi Wang, Melissa Roemmele, Shm Garanganao Almeda, John Joon Young Chung, Max Kreminski",
+    "publish": "Companion Proceedings of the Symposium on Interactive 3D Graphics and Games",
+    "url": "https://doi.org/10.1145/3807895.3807937",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
