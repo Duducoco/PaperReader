@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-29",
+    "title": "The Role of Vehicles in Digital Forensic Investigations: A Structured Synthesis of Digital Vehicle Forensic Characteristics",
+    "authors": "Kevin Mayer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30564v1",
+    "source": "arXiv",
+    "abstract": "Modern vehicles are cyber-physical, networked systems that may contain valuable digital traces for accident reconstruction, crime investigation, warranty analysis, and cybersecurity incident response. However, digital vehicle forensics (DVF) remains less mature than computer, mobile, and cloud forensics because relevant data is distributed across in-vehicle components, mobile devices, manufacturer back ends, third-party services, and physical evidence. This article addresses this gap through a structured synthesis of academic literature, standards, and practitioner-oriented sources. First, we define DVF as the identification, preservation, acquisition, verification, interpretation, and reporting of vehicle-related digital evidence under safety, legal, privacy, and forensic-soundness constraints. Second, we formalize the DVF triage problem as the selection and correlation of evidence sources subject to volatility, accessibility, safety, integrity, and authorization constraints. Third, we explain how eight characteristics were derived from the literature and case material: multiple users, massively networked, cyber-physical system, dependencies between components, functional data, safety implications, accessibility, and limited abstraction. Finally, we add an adversarial perspective and a characteristic-driven triage procedure that helps investigators prioritize evidence sources while documenting assumptions, limitations, and failure cases. The resulting contribution is not an algorithmic performance claim; it is a reproducible conceptual framework for understanding, planning, and communicating DVF investigations."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Demonstration of unpartible entanglement",
+    "authors": "Philip Held, Laura Ares, Federico Pegoraro, Jonas Lammers, Benjamin Brecht, Jan Sperling, Christine Silberhorn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30468v1",
+    "source": "arXiv",
+    "abstract": "We report on the first experimental verification of mode-independent entanglement. Commonly, the entanglement of a state is firmly based on pre-defined parties that are correlated, and the state might be disentangled when the definition of the parties is changed. Exceeding this party-dependent concept, we realize a type of quantum entanglement that persists even if the parties, in our case modes, are transformed. This safeguards the performance of entanglement in real-world applications, such as quantum communication settings involving noise and untrusted parties. For the state generation, we present an experimental scheme based on a fully reconfigurable temporally multiplexed interferometer with measurement-induced nonlinearities, which generates heralded two-photon states in two modes that are entangled for all choices of orthonormal mode basis. For the certification process, we utilize a tailored quantum-state tomography, achieving fidelities that validate the presence of mode-independent entanglement as a resilient and operationally advantageous quantum correlation."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "A Quantum Spectral Solver for Periodic Incompressible Stokes Flow",
+    "authors": "Juan M. Gimenez, Fehmi Cirak, Michael Ortiz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30447v1",
+    "source": "arXiv",
+    "abstract": "We present a quantum spectral solver for the steady incompressible Stokes equations on a two-dimensional periodic domain. The method uses the Quantum Fourier Transform as a coherent change of basis and exploits the resulting spectral structure of the Stokes operator: the Laplacian becomes diagonal, while incompressibility is enforced mode by mode through a Helmholtz projection. In two dimensions, this projection is realized by a mode-dependent rotation from Cartesian velocity components to longitudinal--transverse coordinates, followed by component-conditioned inverse-Laplacian scaling. The velocity and pressure fields are encoded as quantum states over Fourier modes and physical components, and the corresponding spectral factors are implemented through polynomially encoded amplitude blocks. The construction extends recent quantum spectral methods in computational mechanics to an incompressible flow operator with explicit pressure--velocity splitting and divergence-free projection. The approach is also compatible with multiscale finite-element architectures in which quantum parallelism can simultaneously update all representative volume element (RVE) states. Numerical verification includes a steady vortex, a regularized periodic force-dipole benchmark, and an RVE-inspired Kolmogorov-like fluctuation benchmark. The latter illustrates how the circuit can recover a homogenized kinetic-energy observable without reconstructing the full velocity field, consistent with the role of averaged quantities in multiscale flow calculations. Under the standard assumptions of efficient state preparation and observable estimation, the circuit has polylogarithmic dependence on the grid resolution, with the polynomial degree and tile count appearing as explicit approximation and implementation parameters."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "The FIL Hypothesis: Inductive Biases Help with Kernel Engineering",
+    "authors": "Nikolai Rozanov, Subhabrata Dutta, Preslav Nakov, Iryna Gurevych",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30442v1",
+    "source": "arXiv",
+    "abstract": "The Bitter Lesson, which posits that general-purpose methods that scale with computation and data ultimately outperform those with built-in human knowledge, has become a dominant paradigm in the era of Large Language Models. We revisit this principle by observing a new and critical scaling dimension: the duration of the Feedback Information Loop (FIL), the time required for a system to receive a verification signal after generating a prediction. Most historic successes in Artificial Intelligence (AI) have benefited from near instantaneous feedback (e.g., games or classification tasks), but we argue that future AI applications in science and the physical world will inherently involve FILs ranging from hours to weeks. This trend poses a fundamental scaling limit, as obtaining enough verification steps required by purely data-driven methods becomes practically impossible. Additionally, we propose a method that is orthogonal to purely data-driven approaches, based on human-inspired expert knowledge. The method relies on inductive biases and constraining the solution space. We provide an initial validation of the hypothesis and the method, by studying the real-world GPU programming task, a domain with non-trivial FIL, and demonstrate that incorporating inductive biases yields superior performance over data-driven approaches. The code is released under: https://github.com/ai-nikolai/robust_kernelbench"
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
+    "authors": "Marco Aruta, Francesco Improta, Vadim Malvone, Aniello Murano, Vladana Perlic",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30441v1",
+    "source": "arXiv",
+    "abstract": "A rigorous formalization of system requirements is a fundamental prerequisite for the verification of Multi-Agent Systems (MAS). However, writing correct formal specifications is well known as an error-prone, time-consuming, and expertise-intensive task. This difficulty is further accentuated in MAS, where requirements must capture strategic abilities and temporal objectives. At present, there is no established methodology for deriving MAS specifications from natural language. We present a framework for translating Natural Language descriptions of strategic requirements into well-formed ATL/ATL* formulas using Large Language Models (LLMs). Since no available dataset supports supervised learning for the NL-to-ATL/ATL* translation task, we create and curate a novel expert-validated dataset, employed for training and evaluating fine-tuned models. On a held-out test set, evaluated under the LLM judge that best agrees with expert annotations, in-domain fine-tuning of small open-weight models (3 - 7B parameters) matches strong few-shot proprietary API baselines. Our best fine-tuned system reaches 0.84 semantic accuracy, statistically on par with 0.86 for the strongest few-shot proprietary baseline, while keeping requirements on-premises. We further find that judge reliability is inverse to generator strength. The open-weight Llama-3.3-70B tracks human verdicts most closely, whereas the strongest proprietary models are the least reliable judges, over-rejecting faithful paraphrases of the reference. To assess the practical applicability of the generated specifications, we embed our tool to an existing strategic logics model checker, enabling non-expert users to specify strategic properties in natural language."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Optimizing Image Preparation and Compression for Face Recognition within 1024 Bytes",
+    "authors": "Paul Andreas, Torsten Schlett, Christoph Busch",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30321v1",
+    "source": "arXiv",
+    "abstract": "ICAO-compliant machine readable travel documents enable automated biometric face verification. The biometric reference is stored on an RFID chip included in form of a JPEG or JPEG 2000 compressed facial image. In contrast, temporary travel documents lack of machine readability, which excludes the owner from such automated processes. This disadvantage could be solved by equipping such documents with 2D barcodes. This technology offers a resource-saving alternative to expensive RFID chips, while still offering machine readability and fast issuing processes. However, this solution introduces the challenge of storing the face images at significantly smaller storage capacities, creating the need for reducing the file size of the included facial image to a maximum of 1024 bytes. This study examines preprocessing steps and compression configurations, using JPEG, JPEG 2000, JPEG XL, JPEG AI, HEIF, AVIF, and WebP for image compression to this target size, while still preserving as much face recognition performance as possible. While the reference sample must always comply with ICAO specifications, the individual samples may or may not meet these requirements, depending on the application. This work optimizes compression steps for both of these prerequisites. It is shown that the recently standardised JPEG AI, when using optimized settings, provides the best face recognition performance, in particular when the comparison includes only images with high face image quality. AVIF and WebP also provide good results. The losses caused by the strong lossy compression are comparatively small. For the comparison of ICAO-compliant face images only, converting the images to grayscale proves to be a helpful preprocessing step, whereas for comparisons involving less suitable samples, preserving color is preferable. In addition, smoothing and resizing the images beforehand also turns out to be beneficial."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Continuous-Time Information Design for Hurricane Evacuation: Disclosure, Congestion, and Optimal Phasing under Model Uncertainty",
+    "authors": "Furkan Sezer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30320v1",
+    "source": "arXiv",
+    "abstract": "We study continuous-time information design for emergency evacuation, where an Emergency Management Agency (the Stackelberg leader) steers strategic evacuation zones via two levers: public advisory precision (information design) and a tiered release schedule. The latent storm is a jump-diffusion process with publicly observed rapid-intensification epochs tracked by an exact finite-dimensional belief filter. Zones play a capacity-constrained congestion game on shared corridors with belief-weighted hazard exposure. The running cost couples beliefs to a convex congestion externality, making disclosure double-edged: sharper information reduces false-alarm departures but synchronizes genuine ones, and convex congestion penalizes that synchronization. We prove that: (i) the followers' game admits a potential reduction to a convex control problem; (ii) the leader's distributionally robust relative-entropy problem is characterized by an Isaacs equation whose value is the unique viscosity solution, with verification valid for non-smooth bang-bang feedback; and (iii) without transfers, the leader's first-order condition retains an equilibrium-response term, positioning optimal information design as a second-best congestion toll. Structurally, we show that a staggered evacuation order dominates simultaneous advisories; phased evacuation emerges endogenously as optimal information design. Furthermore, public-signal precision is sign-ambiguous due to an informational Braess effect, where vague advisories are optimal unless complemented by a staggered order. Calibrated to Hurricane Rita using NHC archives, TxDOT capacities, and HRRC surveys, the model reproduces the observed gridlock along the Interstate 45 (I-45) evacuation corridor in Texas. The optimal policy removes essentially all in-transit congestion exposure, reducing social cost by 89%, while staggered disclosure alone yields a 70% reduction."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "TRACE: A Concept Bottleneck Model for Longitudinal 3D Glioblastoma Response Assessment",
+    "authors": "Alia Tarek, Hamsa Saberr, Hamza Elghonemy, Youssef Afify, Tamer Basha, Omair Shahzad Bhatti, Abdulrahman M. Selim, Hasan Md Tusfiqur Alam Daniel Sonntag",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30313v1",
+    "source": "arXiv",
+    "abstract": "Longitudinal glioblastoma response assessment requires comparing subtle tumor changes across MRI time points using structured clinical criteria such as RANO. However, most deep learning methods predict response labels directly from imaging features, which limits clinical inspection, verification, and correction. We introduce TRACE, a RANO 2.0-aligned concept bottleneck model for interpretable 4-class glioblastoma response classification on longitudinal 3D MRI. TRACE processes paired baseline and follow-up multimodal MRI scans with a shared 3D vision encoder, predicts clinically meaningful tumor measurements as root concepts, computes downstream RANO-derived concepts through deterministic rules, and incorporates scan interval and new-lesion information as passthrough concepts. This design frames response assessment as structured concept reasoning rather than direct image-to-label prediction. Using 5-fold patient-wise cross-validation on the LUMIERE dataset, TRACE achieves a 4-class macro F1 of 0.4769 and a binary progression-versus-non-progression macro F1 of 0.7085. It improves over a concept bottleneck baseline and remains within the range of published non-interpretable deep learning approaches. Ablation studies show that the expert RANO graph and intervention-consistency training are important for performance, while intervention experiments demonstrate that correcting concepts can improve downstream predictions. These results suggest that structured concept bottlenecks offer a transparent and clinically aligned direction for longitudinal glioblastoma response assessment, while highlighting the need for larger protocol-aligned datasets and external validation."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Multi-Agentic System Leveraging Open-Source LLMs to Mitigate Disinformation Threats",
+    "authors": "Sebastian Kula, Martin Tamajka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30259v1",
+    "source": "arXiv",
+    "abstract": "In contemporary societies, the threat of disinformation has reached alarming levels, exacerbated by the proliferation of electronic communication, social media, and advancements in artificial intelligence. As a result, there is an urgent need to develop effective countermeasures to mitigate this menace. However, the sheer scale of the problem renders manual fact-checking and human-based verification inadequate, underscoring the necessity for automated methods to detect and debunk disinformation. This article proposes a novel approach based on a multi-agent system that emulates the decision-making processes of human annotators engaged in disinformation detection tasks. By incorporating a consensus mechanism, diversity in cognition and diversity in knowledge, and also hierarchical structure, inspired by human annotators' behavior, the proposed method achieves superior results compared to individual Large Language Models (LLMs), including GPT 4 and GPT 3.5. The system leverages open models (e.g., LLaMA, Kimi, Qwen, Deepseek and LLaMA-Nemotron) to ensure greater transparency. The evaluation of the proposed method encompasses datasets in languages with varying resource availability, including English (high-resource), Polish (medium-resource), Slovak (low-resource) and Bulgarian (low-resource). Experiments were conducted on tasks such as direct disinformation detection, identification of texts worthy of verification, and detection of texts containing verifiable factual claims."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Operational capabilities and on-sky performance of SAMOS at the completion of science commissioning",
+    "authors": "Massimo Robberto, Stephen A. Smee, Robert H. Barkhouser, Stephen C. Hope, John J. Piotrowski, Dana Koeppe, Mario Gennaro, Zoran Ninkov, Megan E. Donahue, Andrei Tokovinin, Randolph P. Hammond, Albert J. Harding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30207v1",
+    "source": "arXiv",
+    "abstract": "We present the operational capabilities and on-sky performance of the SOAR Adaptive Module Optical Spectrograph (SAMOS) at the completion of its science commissioning phase. SAMOS is a Digital Micromirror Device (DMD)-based multi-object spectrograph and imager installed behind the SOAR Adaptive Module (SAM) ground-layer adaptive optics system. The instrument relays the full 3 x 3 arcmin AO-corrected field onto a large-format DMD, where each micromirror can direct light to either a spectroscopic or a parallel imaging channel. This architecture enables programmable slit-mask patterns that can be generated and reconfigured within seconds. SAMOS provides low-resolution spectroscopy over the 4000-10000 A wavelength range at resolving power R ~ 2500 and high-resolution spectroscopy (R ~ 10,000) in the 4500-5150 A and 6 000-7000 A bands. We summarize the operational workflow established during commissioning, including target acquisition, astrometric registration, DMD slit-mask generation, simultaneous imaging and spectroscopy, and automated data reduction. Science-verification observations demonstrate accurate target acquisition, reliable programmable slit-mask operation, multiplexed spectroscopy of crowded stellar fields, wavelength-calibration accuracy of about 0.3 A, and end-to-end spectrophotometric calibration through the combination of imaging and spectroscopic data. These results establish SAMOS as a unique facility instrument that combines adaptive-optics-assisted imaging, programmable multi-object spectroscopy, and rapid slit-mask reconfiguration for efficient spectroscopic surveys, transient follow-up, and studies of crowded stellar populations."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Small complete 3-term progression free sets in cyclic groups and vector spaces",
+    "authors": "Bence Csajbók, Zoltán Lóránt Nagy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30186v1",
+    "source": "arXiv",
+    "abstract": "A classical extremal problem on progression free sets is to determine the maximum size of a $3$-term arithmetic progression free set in algebraic structures, for instance in intervals of integers or in finite vector spaces. To determine the minimum size of a complete $3$-term arithmetic progression free set is a lower-end analogue of this problem. It is also closely related to complete caps and saturating sets in finite geometry. A simple counting argument shows that the order of magnitude of the minimum size is at least the square root of the cardinality of the structure. Addressing two open problems, we show that this lower bound is essentially tight. First, for every cyclic group $\\mathbb{Z}_m$, we give explicit constructions of complete $3$-AP-free sets whose size is less than $2\\sqrt m$. For $m\\ge81$ the constructed sets satisfy the stronger, so-called complete $(2,-1)$-avoiding property; the remaining cases $m<81$ are covered by a finite verification. Second, we resolve the vector space variant in a weaker sense by showing that for every fixed odd prime $p$ and $\\varepsilon>0$, there is a constant $C_{p, \\varepsilon}$ such that \\[ a(3\\text{-}\\mathrm{AP},\\mathbb{F}_p^n)\\le C_{p, \\varepsilon}\\,n^{1+\\varepsilon}\\,p^{n/2} =p^{n/2+o(n)} \\] holds for the minimum size $a(3\\text{-}\\mathrm{AP},\\mathbb{F}_p^n)$ of a complete 3-AP-free subset of $\\mathbb{F}_p^n$, for all $n\\ge1$."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Propagation of~Interval Belief Structures and~Imprecise Copulas for~Neural Network Verification",
+    "authors": "Francesc Pifarre-Esquerda, Eric Goubault, Sylvie Putot",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30105v1",
+    "source": "arXiv",
+    "abstract": "Quantitative verification of neural networks requires reasoning about probabilities under substantial uncertainty in both input distributions and their dependence structure. In realistic settings, this information is often only partially specified, and assuming precise probabilistic models can lead to unreliable results. We propose a sound framework for quantitative verification under imprecise probabilistic information, combining interval belief structures to represent marginal uncertainty with imprecise copulas to model uncertain dependence. We develop a propagation method for imprecisely coupled interval belief structures through feed-forward neural networks. Using mixed imprecise copula volumes, we derive sound push-forward constructions through affine transformations and activation functions. The resulting output can provide guaranteed lower and upper bounds on probabilistic safety properties, valid for all probability models compatible with the specified imprecise inputs."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "ESOFinder: an LLM-powered tool to help users navigate ESO documentation",
+    "authors": "P. Sánchez-Sáez, C. Reinero, M. Vioque, M. Wittkowski, M. Rejkuba, M. Romaniello, A. Barnes, J. Pritchard, M. Marsset",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30029v1",
+    "source": "arXiv",
+    "abstract": "The large amount and diversity of documentation available for users of the European Southern Observatory (ESO), spanning the full observing lifecycle from proposal preparation and observation planning to data reduction and archival access, makes it increasingly challenging for the astronomical community to efficiently find relevant information. To address this, we have developed ESOFinder, an in-house chatbot powered by Large Language Models (LLMs) and Retrieval Augmented Generation (RAG). ESOFinder integrates public information from instrument manuals, phase 1/2/3 documentation, data reduction pipeline manuals, the ESO Knowledge Base, and key web resources (spanning more than 3500 links and over 100 manuals) to provide concise, context-aware, and reference-linked answers to user queries about proposal or observation preparation, data retrieval, and data processing. Built on open-source LLMs, running on a local server, ESOFinder ensures data privacy, transparency, and complete control over the knowledge base. Its multi-step architecture allows verification of retrieved documents and generated answers, reducing the risk of hallucinations and improving the reliability of responses compared to commercial tools. The current version of ESOFinder is being tested internally at ESO to evaluate its performance, assess its integration with internal workflows, and identify limitations in coverage and accuracy. These tests will guide further improvements, including the incorporation of additional documentation, and enhanced retrieval strategies. Ultimately, ESOFinder aims to become an interface for users to navigate ESO's complex documentation ecosystem and to support both staff and community astronomers in their daily tasks."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Node-to-Neighborhood Semantic Consistency: Text-Topology Alignment for TAGs Anomaly Detection",
+    "authors": "Bochen Lin, Jianxiang Yu, Jiayi Wu, Lin Qi, Huang Lu, Xiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.30009v1",
+    "source": "arXiv",
+    "abstract": "Graph anomaly detection (GAD) on text-attributed graphs (TAGs) is vital for applications such as fraud detection and academic integrity verification. Existing approaches generally fall into two paradigms. GNN-based methods effectively capture structural patterns but struggle to capture fine-grained textual semantics. Methods integrating LLMs with graphs improve semantic understanding yet fail to fully comprehend topological relationships among neighboring nodes. Moreover, both paradigms overlook the correspondence between textual semantics and graph topological relationships, limiting their ability to identify nodes whose semantics are inconsistent with their neighborhoods. In this paper, we formalize TAG anomaly detection as a node-to-neighborhood semantic consistency problem, where anomalies may arise from either textual semantic mismatch or topological deviation between a node and its neighbors. We propose N2NSC (Node-to-Neighborhood Semantic Consistency), a framework that captures the correspondence between graph topology and textual semantics through two complementary fusion paths. The two pathways work synergistically, enabling the LLM to fully leverage both textual and structural neighborhood information for anomaly detection. Extensive experiments across eight datasets demonstrate that N2NSC consistently outperforms current state-of-the-art methods."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "AlgoSkill: Learning to Design Algorithms by Scheduling Human-Like Skills",
+    "authors": "Xinyuan Song, Zekun Cai, Liang Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.29999v1",
+    "source": "arXiv",
+    "abstract": "Designing an algorithm from a natural-language problem statement requires identifying the problem structure, reading constraints, choosing a suitable paradigm, checking correctness, and refining complexity. Existing large language model (LLM) methods often rely on direct generation or generic self-refinement, leaving these steps implicit. We propose AlgoSkill, which models algorithm design as sequential decision-making over a typed library of algorithmic skills, including abstraction, constraint analysis, state design, data-structure selection, proof checking, counterexample construction, and complexity refinement. A learned scheduler proposes skills from the current design state, while a Monte Carlo Tree Search (MCTS) controller explores skill sequences using verification feedback from compilation, testing, stress testing, and complexity analysis. Experiments on competitive programming and combinatorial optimization benchmarks show that AlgoSkill improves over direct LLM generation, chain-of-thought prompting, self-refinement, and MCTS without typed skills. Ablations show that typed skills, verification-based repair, and search-based scheduling each contribute to performance. These results support treating automatic algorithm design as verification-guided skill scheduling rather than one-shot code generation."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "BPBO: Blindness-Preserving Brickwork Optimization by Certified Region Resynthesis",
+    "authors": "Youngkyung Lee, Juyoung Kim, Doyoung Chung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.29962v1",
+    "source": "arXiv",
+    "abstract": "Universal blind quantum computation (UBQC) hides a client's computation by using a computation-independent BFK09 brickwork graph and encoding the computation in measurement angles, which limits the use of graph-changing optimizations. We study blindness-preserving brickwork optimization (BPBO): certified local resynthesis of BFK09-compatible brickwork patterns below the blinding layer. BPBO detects one-, two-, and three-wire regions; for each candidate region it either proves a semantic floor or supplies an executable witness, and it accepts a replacement only after its branch-frame, output-frame, and blinding behavior have been checked. The optimized outputs remain standard brickwork patterns and are evaluated with a logical qubit-recycled UBQC execution stack that runs arbitrary-length patterns using n x 2 active logical qubits. The layer evidence includes a one-wire H-count floor, a two-wire CNOT-cost floor, a three-wire parity-ledger floor, a clean three-cell CCZ witness whose optimality claim is scoped to the CNOT+T phase-gadget family, and an endpoint-target three-cell CCX/Toffoli application witness; the fixed middle-target CCX case is retained as a four-cell fallback. The security statement is a compatibility result: BPBO preserves UBQC blindness at the declared optimized dimensions and remains compatible with inherited verification guarantees under explicit test-round conditions, without introducing a new trap-soundness theorem. On Bell/CX, Grover-2, endpoint-Toffoli, and Grover-3 evaluation cases, BPBO demonstrates certified local reductions; in the largest case, Grover-3, the materialized pattern is reduced from 3 x 725 to 3 x 98 while preserving the expected marked-state statistics up to sampling noise."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Can LLM-as-a-Judge Reliably Verify Rubrics in Agentic Scenarios?",
+    "authors": "Yangda Peng, Yunjia Qi, Hao Peng, Haotian Xia, Guanzhong He, Xintong Shi, Richeng Xuan, Songyuanyi Lu, Yixian Liu, Zhichao Hu, Yuhong Liu, Lei Hou, Bin Xu, Juanzi Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.29920v1",
+    "source": "arXiv",
+    "abstract": "Rubric-based scoring has become a widely used paradigm in model evaluation, typically with LLM-as-a-Judge (LaaJ) for rubric scoring. However, the reliability of LaaJ for rubric scoring remains underexplored. This concern is especially pronounced in agentic scenarios, where long, complex outputs further challenge reliable scoring. To address this, we conduct a systematic meta-evaluation of LaaJ reliability for rubric verification. We introduce RuVerBench, the first benchmark for assessing LaaJ reliability in rubric verification for agentic scenarios. RuVerBench covers two prevalent agentic domains, deep research and agentic coding, with 2,458 instances, each containing a model-generated output, a rubric, and a human-annotated label indicating whether the output satisfies the rubric. Using RuVerBench, we evaluate numerous frontier LLMs and find that even the most advanced models achieve strong performance but still exhibit substantial noise. We further analyze the impact of key LaaJ strategies, including prompt design, batching, and majority voting, on rubric verification. We find that weaker models are more sensitive to prompt variations, batched verification presents a trade-off between accuracy and efficiency, and majority voting yields effective but diminishing returns. We have released our dataset and code to facilitate future research: https://github.com/THU-KEG/RuVerBench."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Pondering the Way: Spatial-perceiving World Action Model for Embodied Navigation",
+    "authors": "Hong Chen, Daqi Liu, Zehan Zhang, Haiguang Wang, Tianhao Lu, Longfei Yan, Haiyang Sun, Fangzhen Li, Hongwei Xie, Bing Wang, Guang Chen, Hangjun Ye, Yihua Tan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.29908v1",
+    "source": "arXiv",
+    "abstract": "Existing world model-based planners for visual navigation typically follow a verification-centric paradigm, decoupling goal intent from trajectory synthesis. This approach suffers from candidate dependence, heavy computational overhead, and inconsistencies between sampled actions and predicted visuals. To address these issues, we propose SWAM (Spatial-perceiving World Action Model), a task-centric joint observation-action generation framework. Given start and goal RGB observations, SWAM performs single-pass inference to simultaneously generate intermediate RGB-D sequences and corresponding action trajectories, promoting goal-consistent trajectory generation and improved spatial feasibility. While SWAM leverages depth pseudo-labels during training to internalize spatial priors, it requires only monocular RGB input at inference time. We further introduce a visual-guided action refinement module and a trajectory-scale regularization loss to enforce fine-grained alignment between motion and visual cues while stabilizing predictions across varying distances. Extensive experiments show that SWAM significantly outperforms state-of-the-art two-stage planners in success rate, trajectory accuracy, and inference efficiency, while demonstrating robust zero-shot generalization to unseen environments."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Efficient Visual Pointing for Embodied AI:Agent-Driven Data Synthesis, Cross-Block Attention, and Iterative Correction",
+    "authors": "Zijian Hong, Qi Lv, Yuxiang Xie, Jianming Xing, Xiang Deng, Weili Guan, Liqiang Nie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.29850v1",
+    "source": "arXiv",
+    "abstract": "Visual pointing maps a language instruction to pixel co ordinates, a core skill for embodied AI. We describe our PointArena 2026 solution, which achieves 77.2% overall accuracy and ranks second on the benchmark. The ap proach targets three failure modes. First, agent-driven syn thesis builds large semantic and anchor-relative candidate pools; the server inventory contains 55,372 processed out puts, 53,772 de-duplicated sample IDs, and 37,574 train able completed or accepted rows. Second, a determinis tic steerable-data pipeline creates a verified 10,000-sample main set, plus reserve samples, using masks, templates, and path verification. Third, two model-side modules address complementary errors: AttnRes adds gated cross-block at tention for steerability, while ABC correction encodes per turbed coordinates with visual features for general coordi nate grounding. Category-aware routing combines comple mentary specialists; local validation used to select experts records 93.9% Affordance, 82.6% Spatial Relation, 78.2% Reasoning, 70.4% Counting, and 63.0% Steerability."
+  },
+  {
+    "date": "2026-06-29",
+    "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+    "authors": "Yiting Hu, Lingjie Duan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.29841v1",
+    "source": "arXiv",
+    "abstract": "Continual learning (CL), where a model is trained on a sequence of data tasks, is increasingly being adopted across key fields such as large language models and image recognition, yet it remains highly vulnerable to data poisoning that triggers learning divergence or severe excess risk. Despite these threats, a principled theoretical foundation in CL for understanding attack and defense remains lacking. In this paper, we develop a theoretical framework to analyze strategic attacks and defenses in regularization-based CL, a cornerstone of recent CL theory. By framing the adversary-defender interaction as an online zero-sum game, we first establish a fundamental performance limit: no defense succeeds when an adversary poisons a linear proportion of tasks by injecting unbounded noise or pattern shifts in regularization-based CL. We then analyze two possibly defensible scenarios: infrequent attacks and bounded noise per attack. For the former regime, we propose a task-to-task verification mechanism to detect data poisoning and reduce cumulative bias for learning convergence. For the latter regime, we derive a robust defense that minimizes the model's sensitivity to poisoned features, provably accelerating the convergence rate. Extensive experiments on realistic tasks further validate our theoretical results."
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Not All Uncertainty Is Equal: How Uncertainty Granularity Shapes Human Verification in LLM-Assisted Decision Making",
+    "authors": "Mauricio Villavicencio, Sitong Pan, Qianwen Wang",
+    "publish": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+    "url": "https://doi.org/10.1145/3805689.3812329",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "FASST-LLM: Implementing Service Scanning Tools Automatically with LLM",
+    "authors": "Lichao Qin, Yirui Luo, Chenglong Li, Zhiliang Wang, Jiahai Yang",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571366",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Policy-Governed LLM Routing with Intent Matching for Instrument Laboratories",
+    "authors": "Emmanuel A. Olowe, Danial Chitnis",
+    "publish": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+    "url": "https://doi.org/10.1109/educon67543.2026.11574158",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Author-Guided, Hybrid LLM Dialogue Systems for Educational VR Simulations",
+    "authors": "Jan Munz, Erkan Binici, Gerrit Meixner",
+    "publish": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+    "url": "https://doi.org/10.1109/educon67543.2026.11574129",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "A Rubric for Evaluating Prompt Design in LLM-based Feedback: Pilot Validation",
+    "authors": "Eyman Alyahyan, Mireilla Bikanga Ada",
+    "publish": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+    "url": "https://doi.org/10.1109/educon67543.2026.11574446",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "GenSched: Phase-Aware Generative Scheduling for LLM Inference in Heterogeneous Edge Networks",
+    "authors": "Hengli Jin, Shuo Li, Mark A Gregory",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571651",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "LLM-FPR: Large Language Model-based False Positive Reduction Framework for Network Intrusion Detection",
+    "authors": "Shan Jiang",
+    "publish": "2026 6th International Symposium on Computer Technology and Information Science (ISCTIS)",
+    "url": "https://doi.org/10.1109/isctis70043.2026.11572627",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Rollback Is Not Undo: Path-Dependent Failures in LLM-Arbitrated Network Control",
+    "authors": "Weici Pan, Zhenhua Liu",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571400",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Prediction-Aware Link Selection for Distributed LLM Inference in Dynamic mmWave Environments",
+    "authors": "Shoki Ohta, Tomoya Kageyama, Hisashi Nagata, Takayuki Yamada",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571328",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "CoLo: Correcting LLM-Generated IR with Precise Error Location",
+    "authors": "Jiahao Chen, Xianbo He, Lulin Wang",
+    "publish": "Proceedings of the 40th ACM International Conference on Supercomputing - Workshops",
+    "url": "https://doi.org/10.1145/3774895.3812202",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Gamified Learning Using Augmented Reality and LLM-Powered Chatbots for Teaching Kepler’s Laws",
+    "authors": "John F. Suárez-Pérez, Edgar André Ramírez-Alonso",
+    "publish": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+    "url": "https://doi.org/10.1109/educon67543.2026.11574387",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "HALO: Semantic-Aware Distributed LLM Inference in Lossy Edge Network",
+    "authors": "Peirong Zheng, Wenchao Xu, Haozhao Wang, Jinyu Chen, Xuemin Sherman Shen",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571536",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "OnlineCritic-xApp: Online Learning for LLM-Assisted RAN Slice Resource Management",
+    "authors": "Zhou Fang, Shuping Dang, Zhenrong Zhang, Yan Zhang",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571592",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Scene2Scene: LLM-driven 3D Spatial Blockout for Guided AI Video Synthesis",
+    "authors": "Yutong Alison Mei, Wei Cai",
+    "publish": "Companion Proceedings of the Symposium on Interactive 3D Graphics and Games",
+    "url": "https://doi.org/10.1145/3807895.3807932",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "An LLM-Assisted Decision Support System for Automated CLO-PLO Mapping and Academic Evaluation Reporting",
+    "authors": "Faruk Altuntaş, Samet Diri, Ayhan Gültekin, Mustafa Ozcan",
+    "publish": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+    "url": "https://doi.org/10.1109/educon67543.2026.11574443",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "BROS: Efficient LLM Serving on Hybrid Real-time and Best-effort Requests",
+    "authors": "Borui Wan, Juntao Zhao, Chenyu Jiang, Chuanxiong Guo, Chuan Wu",
+    "publish": "IEEE INFOCOM 2026 - IEEE Conference on Computer Communications",
+    "url": "https://doi.org/10.1109/infocom59046.2026.11571463",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Intelligent System for Bank Statement Recognition and Data Extraction Using LLM",
+    "authors": "Shin Yee Chow, Kevin Hung, Gary Man-Tat Man",
+    "publish": "2026 IEEE 16th Symposium on Computer Applications &amp;amp; Industrial Electronics (ISCAIE)",
+    "url": "https://doi.org/10.1109/iscaie68866.2026.11576463",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Augmenting LLM Code Translation with Compiler Analysis for C to Triton Kernel Generation",
+    "authors": "Xiao Qin, Chunwei Xia, Zheng Wang",
+    "publish": "Proceedings of the 40th ACM International Conference on Supercomputing - Workshops",
+    "url": "https://doi.org/10.1145/3774895.3812200",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Improving LLM-assisted code generation through the use of architectural documents and implementation plans.",
+    "authors": "Humberto Cervantes, Rick Kazman, Yuanfang Cai",
+    "publish": "Proceedings of the 3rd International Workshop on Designing Software",
+    "url": "https://doi.org/10.1145/3786152.3788588",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-29",
+    "title": "Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities",
+    "authors": "Ilana Nguyen, Harini Suresh, Thema Monroe-White, Evan Shieh",
+    "publish": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+    "url": "https://doi.org/10.1145/3805689.3806452",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
