@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-06-30",
+    "title": "AxDafny: Agentic Verified Code Generation in Dafny",
+    "authors": "Benjamin Breen, Austin Letson, Borja Requena Pozo, Leopoldo Sarra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.32007v1",
+    "source": "arXiv",
+    "abstract": "We study agentic code generation in Dafny, where a model must generate both executable code and the proof artifacts for verification. We present AxDafny, a verifier-guided repair framework that iteratively generates implementations, invariants, assertions, and termination arguments. We also introduce LiveCodeBench-Pro-Dafny (LCB-Pro-Dafny), a benchmark of 250 competition-style programming problems translated into Dafny with formal specifications and a verifier-based evaluation harness. On LCB-Pro-Dafny, AxDafny substantially improves verification success over baseline GPT-5.5 performance. On DafnyBench, AxDafny achieves 92.7\\% verification success, outperforming the strongest previously reported proof-hint baseline by 6.5 percentage points. Lastly, we show that verification success and runtime test performance measure different aspects of generated code."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Amplifying Membership Signal Through Chained Regeneration",
+    "authors": "Wojciech Łapacz, Stanisław Pawlak",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31991v1",
+    "source": "arXiv",
+    "abstract": "The tendency of large generative models to memorize training data makes sample verification critical for privacy auditing and copyright enforcement. Current membership (MIA) and dataset inference (DI) attacks often rely on one-shot generations, which yield weak signals and limited sensitivity across modalities. Inspired by Model Autophagy Disorder (MAD), we introduce MADreMIA, a model-agnostic framework that enhances white-, gray-, and black-box MIA and DI. Rather than relying on shadow model training -- often infeasible for large generative models -- our framework facilitates scalable inference by leveraging inherent signals through iterative trajectories. This process utilizes chained generations across diverse modalities, where each output serves as the subsequent input, to improve membership evidence at low FPR. We demonstrate that memorized training samples exhibit significantly higher coherence and slower degradation during iterative regeneration than non-member generations. Our results show that MADreMIA provides richer signals across diverse model families and modalities; we present comprehensive evaluations for IARs, diffusion, and language models, alongside preliminary results demonstrating its potential for audio models."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "LuxEmo: Expressive Text-to-Speech Corpus for Luxembourgish",
+    "authors": "Nina Hosseini-Kivanani, Sandipana Dowerah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31947v1",
+    "source": "arXiv",
+    "abstract": "State-of-the-art speech datasets predominantly focus on widely spoken languages, often overlooking low-resource languages such as Luxembourgish, which remain underrepresented in speech technology research. In this work, we introduce LuxEmo, a 21-hour conversational expressive speech corpus for Luxembourgish with 4 emotion categories. LuxEmo is derived from Radio Télévision Luxembourg (RTL) youth broadcasts, using automated detection followed by human validation. We propose a semi-automatic curation workflow combining voice activity detection, denoising, language identification, LuxASR-based segmentation, automatic emotion prediction, lexical cues, and targeted human review. Additionally, we benchmark five expressive TTS systems covering German-based cross-lingual transfer, multilingual Luxembourgish support, Luxembourgish adaptation, and non-parametric prosody transfer. Performance is evaluated using both objective metrics and human evaluation."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Certifying quantum states without independence assumptions",
+    "authors": "Mariana Navarro, Leonardo Zambrano",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31913v1",
+    "source": "arXiv",
+    "abstract": "Standard quantum verification and certification protocols often assume that experimental sources emit independent and identically distributed (i.i.d.) states. In realistic scenarios, however, temporal drift, memory effects, feedback, and correlated noise can violate this assumption, causing standard analyses to underestimate uncertainty and overestimate device performance. Here, we introduce a framework for quantum verification and certification that remains valid without independence assumptions. Our method gives rigorous confidence intervals for the time-averaged expectation value of any fixed observable, even when each prepared state may depend on the previous experimental history. For full verification, we recover the standard i.i.d. sample-complexity scaling. For certification, we develop a spot-checking protocol that randomly selects a subset of states to certify an average target property of the remaining states, which are used for a parallel quantum task. We demonstrate the framework numerically for energy estimation and entanglement witnessing under drift, and experimentally for Bell-state certification on a quantum processor."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Review Residuals: Update-Conditioned Residual Gating for Transformers",
+    "authors": "Kyle Kramer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31859v1",
+    "source": "arXiv",
+    "abstract": "Residual connections add every sublayer's proposed update with a fixed coefficient of one; the network never evaluates whether an update is reliable before committing it. Drawing on the human-factors principle of independent verification, we introduce Review Residuals, which scale each update by a learned, input-dependent gate conditioned on both the current state and the proposed update: h_l = h_{l-1} + r_l * u_l with r_l = sigmoid(W[RMSNorm(h_{l-1}), RMSNorm(u_l)]). Conditioning the gate on the update is the property that distinguishes it from prior gated and scaled residuals. We report two findings. First, a depth-stability result: a convex (Highway-style) form of the gate reintroduces vanishing gradients and fails to train beyond ~20 layers, whereas the additive, identity-preserving form trains stably at all depths we tested. Second, an emergence-with-scale result: trained from scratch across five sizes (60M-1B parameters, multi-seed), Review Residuals show no advantage at small scale but at 590M significantly outperform both a parameter-matched Highway gate and a parameter-matched standard residual (p<0.05), with a larger advantage at 1B. The benefit grows with model size rather than shrinking."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Nuclear excitation via inelastic scattering of low-energy vortex electrons",
+    "authors": "Jia-Lin Zhang, Zhi-Wei Lu, Mamutjan Ababekri, Yuanbin Wu, Jian-Xing Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31818v1",
+    "source": "arXiv",
+    "abstract": "Vortex particles carrying orbital angular momenta (OAMs) have found important applications in broad fields. However, the experimental verification of OAM transfer at the nuclear scale remains a great challenge. Here, we put forward a novel method to probe such OAM transfer through nuclear excitation via inelastic scattering of low-energy vortex electrons. We develop a Dirac distorted-wave Born approximation framework that incorporates the incident-electron OAM and a nonperturbative treatment of the Coulomb field, and apply it to $^{229}\\mathrm{Th}$. We find that the vortex and non-vortex electrons yield opposite angular distributions, attributed to the OAM-modified selection rule and the Coulomb-induced redistribution of partial-wave strengths, providing an angle-resolved signature. Moreover, the vortex electron exhibits topological protection in the nuclear Coulomb field. Our method offers a route to probing nuclear-scale OAM transfer and deepens our understanding of the topological properties of vortex particles."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Test Management and Coordination During the Vera C. Rubin Observatory Commissioning and Early Operations Using Zephyr Scale",
+    "authors": "Bruno Quint, Tiago Ribeiro, Erik Dennihy, Brian Stalder, David Sanmartim, Keith Bechtol",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31795v1",
+    "source": "arXiv",
+    "abstract": "The commissioning of the NSF-DOE Vera C. Rubin Observatory required coordinating the planning, design, and execution of hundreds of integration and on-sky tests involving different subsystems and geographically distributed teams. To support this task, we adopted a Jira-native test management tool, Zephyr Scale. The initial use of Zephyr Scale focused solely on system verification and validation. Its use was rescoped to coordinate higher-level tests, and it is still in use in early operations. Zephyr Scale allows the creation of Test Cases, which represent individual tests. Each Test Case contains the information needed to execute a test at the summit. This includes a step-by-step script. Every day, Test Cases are grouped into a Test Cycle, which represents the test plan for all tests to be executed that day and that same night. We describe the defined workflow for test creation, review, and deployment, which bridges the gap between ideation and on-sky execution within a Test Cycle. We also outline how we write more complex tests as partially automated JSON files consumed by the Scheduler--the system's real-time, constraint-aware observation optimization engine. This integration enables the Scheduler to ingest high-level observing scripts that communicate with subsystems via an abstraction layer to execute common observatory operations, such as slewing, tracking, and data acquisition. Finally, we summarize the benefits and limitations of using Zephyr Scale, designed initially to coordinate software testing, for large-scale observatory commissioning and early operations."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Context-Verified, Error-Budget-Aware Decomposition Selection for Toffoli Networks",
+    "authors": "Karol Bartkiewicz, Patrycja Tulewicz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31791v1",
+    "source": "arXiv",
+    "abstract": "Two-qubit-gate error dominates the failure budget of near-term quantum circuits, so the decomposition chosen for each Toffoli (CCX) gate should minimize hardware two-qubit infidelity, not gate count. The cheapest decompositions - relative-phase and approximate Toffolis - are only correct in context: their residual phase or bounded error must be cancelled or absorbed downstream. We present the first compiler pass that selects a per-Toffoli decomposition to minimize a two-qubit-infidelity error budget. It admits each context-dependent decomposition only when an exact, instance-specific equivalence check certifies its validity in that circuit context, coupling an error-budget objective with per-instance verification and closing the gap between context-aware-but-unverified and verified-but-context-free optimizers. The central result is a safety one: pattern-matched relative-phase substitution is silently incorrect. Our verifier flags 66 library rewrites of a deployed open optimizer as non-equivalent without a context check, and count-greedy substitution silently corrupts 6 of 12 benchmark circuits; the verification gate certifies 0 errors while still applying every valid decomposition. The two-qubit-gate reduction is real but workload-dependent: up to 39.5% fewer two-qubit gates and 36.7% lower infidelity over exact-only on a compute/uncompute-heavy suite (approx. 39%/35% versus Qiskit opt-3 and tket), and 15.6% aggregate on a larger 12-24-qubit suite, with decision-diagram checking certifying every substitution past the exhaustive-verification limit. At current superconducting and trapped-ion error rates, the certified substitutions lower estimated circuit infidelity by 36-43%, and on a quantum state-resetting circuit, the pass removes 48.8% of the native two-qubit gates, every substitution verified."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Distributed Property Testing with (Quantum) Carrier Pigeons: Tight Bounds on State Certification",
+    "authors": "Kenny Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31753v1",
+    "source": "arXiv",
+    "abstract": "Recently, Doosti et al. introduced the problem of distributed quantum state verification, where $m$ distributed nodes are given a copy of an unknown state $ρ$, and can send limited one way communication to a central node, who has a complete description of a known state $σ$. They ask how many distributed nodes $m$ are required, before the central node can succeed at distinguishing whether $ρ=σ$ or $\\|ρ-σ\\|_1\\geq\\varepsilon$ with high probability. In the setting where only quantum communication is allowed, Doosti et al. exhibit conditional lower bounds in both the public and private-coin settings, and a matching upper bound in the public-coin setting. We extend these results, and show unconditional lower bounds for when both classical and quantum communication are permitted. We show the public-coin lower bound is tight by giving an algorithm with a matching upper bound. We also show an almost tight upper bound in the private-coin setting when only quantum communication is permitted."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "JL1-CC&QA: Extending the JL1-CD Benchmark with Change Captioning and Question Answering",
+    "authors": "Ziyuan Liu, Ruifei Zhu, Ouqiao Ma, Yuantao Gu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31745v1",
+    "source": "arXiv",
+    "abstract": "Remote sensing change detection (CD) traditionally focuses on pixel-level binary segmentation, which identifies where changes occur but neither what nor why. To bridge this semantic gap, we introduce JL1-CC&QA, a multi-task benchmark that extends the JL1-CD dataset with two complementary annotation layers: change captioning (CC) and change question answering (QA). Built upon 5,000 bi-temporal image pairs acquired by the Jilin-1 satellite at 0.5-0.75m ground sample distance, the benchmark comprises: (i) JL1-CC, providing 17,021 quality-verified captions that describe diverse land-cover transformations; and (ii) JL1-QA, offering 20,060 question-answer pairs across eight question types, enabling fine-grained, interactive interrogation of surface changes. All annotations are produced via a three-stage pipeline consisting of multi-modal large language model (LLM) generation, vision-grounded LLM judging, and human expert verification. We hope that JL1-CC&QA, as a benchmark unifying binary change masks, change captions, and change-oriented QA over the same image set, will serve as a valuable resource for the community to advance multi-task change understanding in remote sensing. The dataset is available at https://github.com/circleLZY/JL1-CD."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "STEB: Style Text Embedding Benchmark",
+    "authors": "Rafael Rivera Soto, Anna Wegmann, Cristina Aggazzotti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31741v1",
+    "source": "arXiv",
+    "abstract": "While semantic embeddings are rigorously evaluated on the Massive Text Embedding Benchmark, the evaluation of style embeddings remains fragmented, with each work relying on their own set of tasks and datasets. To bridge this gap, we introduce the Style Text Embedding Benchmark, a comprehensive open-source benchmark intended to standardize the evaluation of style embeddings. STEB encompasses 96 datasets across 7 languages, spanning applications such as authorship verification, authorship retrieval, AI-text detection, probing of linguistic features, and others. We find that semantic embeddings consistently fail in stylistic tasks, and that there is no style embedding that is universally superior across all tasks evaluated. We open-source the STEB code base at: https://github.com/rrivera1849/STEB."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Exploring Side-Channel Protections in Hardware Implementations of PQC ML-KEM Verification",
+    "authors": "Davis Ranney, Yashaswini I Makaram, A. Adam Ding, Yunsi Fei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31681v1",
+    "source": "arXiv",
+    "abstract": "As ML-KEM is adopted as a post-quantum cryptographic standard, resilience against physical side-channel attacks has become essential. Among the constituent steps, the decapsulation Fujisaki-Okamoto (FO) verification is particularly vulnerable to side-channel power and electromagnetic (EM) analysis. In this work, we focus on common FPGA-based implementations and examine their side-channel vulnerabilities, and compare them with those of microcontroller implementations. Three verification implementations, unprotected, hash-based (first-order), and higher-order masked, are evaluated for side-channel security on both a microcontroller and an FPGA. While FPGAs offer higher speed and parallelism, they often exhibit stronger side-channel leakage, especially in high bandwidth configurations. The higher-order masked designs still leak information about the underlying data due to hardware-level effects and data-dependent processing. Our experiments show that their parallelized processing on FPGAs introduces sufficient first-order leakage for full secret-key recovery. These results underscore the persistent challenge of securing PQC algorithms in performance-constrained and parallelized hardware environments."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Sparsity-Inducing Divergence Losses for Biometric Verification",
+    "authors": "Dimitrios Koutsianos, Ladislav Mošner, Yannis Panagakis, Themos Stafylakis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31664v1",
+    "source": "arXiv",
+    "abstract": "Performance in face and speaker verification is largely driven by margin-penalty softmax losses such as CosFace and ArcFace. Recently introduced $α$-divergence loss functions offer a compelling alternative, particularly due to their ability to induce sparse solutions (when $α>1$). However, standard geometric margins are designed for the softmax function and do not naturally extend to this generalized probabilistic framework. In this paper we propose Q-Margin, a novel $α$-divergence loss that introduces a principled probabilistic margin. Unlike conventional methods that apply geometric penalties to the logits (unnormalized log-likelihoods), Q-Margin encodes the margin penalty directly into the reference measure (prior probabilities). This formulation naturally encourages discriminative embeddings while preserving the beneficial sparsity properties of the $α$-divergence. We demonstrate that Q-Margin achieves competitive or superior performance on the challenging IJB-B and IJB-C face verification benchmarks and similarly strong results in speaker verification on VoxCeleb. Crucially, against ArcFace and CosFace baselines trained under an identical recipe, Q-Margin consistently improves at low False Acceptance Rates (FARs), a capability critical for practical high-security applications. Finally, the extreme sparsity of the Q-Margin posteriors enables exact and memory-efficient training, offering a scalable solution for datasets with millions of identities."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "V-Line Tensor Tomography in a Disk: Theoretical and Numerical Reconstruction",
+    "authors": "Rahul Bhardwaj, Madhu Gupta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31632v1",
+    "source": "arXiv",
+    "abstract": "In this article, we investigate V-line transforms for symmetric $m$-tensor fields whose support lies inside a disk of radius $R$ and centered at the origin. We provide an explicit characterization of the kernel of the V-line transforms acting on a symmetric $m$-tensor field and derive a new inversion formula using a decomposition result. In addition, we present a comprehensive numerical verification and validation of the inversion algorithms for these V-line transforms for vector fields and symmetric $2$-tensor fields, which were recently developed in \\cite{bhardwaj_2024,bhardwaj2025tensor}. The reconstruction results obtained for various phantoms demonstrate the effectiveness and robustness of the proposed numerical methods, including in the presence of noise."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Sign Laws and Mock Theta Functions",
+    "authors": "Manosij Ghosh Dastidar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31606v1",
+    "source": "arXiv",
+    "abstract": "Let \\[ ρ(q)=\\sum_{m\\geq 0}\\frac{q^{2m(m+1)}}{(1+q+q^2)(1+q^3+q^6)\\cdots(1+q^{2m+1}+q^{4m+2})} =\\sum_{n\\geq 0}r(n)q^n \\] be Ramanujan's third order mock theta function. We prove the sign law \\[ r(3m)>0,\\qquad r(3m+1)\\leq 0,\\qquad r(3m+2)\\leq 0, \\] with equality precisely at $n=2,4,8,11,20$. Watson's identity \\[ 2ρ(q)+ω(q)=T(q) \\] reduces the problem to comparing the mock theta function $ω(q)$ with the eta quotient \\[ T(q)=3\\frac{(q^6;q^6)_\\infty^4}{(q^3;q^3)_\\infty^2(q^2;q^2)_\\infty}. \\] We prove effective root-of-unity estimates for this difference. The polar contributions at $q=1$ cancel, the contribution at $q=-1$ is polynomially bounded, and the first surviving exponential term occurs at the primitive cubic roots of unity. It has the sign pattern \\[ κ_0=\\frac13\\cos\\fracπ{18}>0,\\qquad κ_1=-\\frac13\\sin\\frac{2π}{9}<0, \\qquad κ_2=-\\frac13\\sin\\frac\\pi9<0. \\] The resulting effective asymptotic proves the desired sign law for all sufficiently large $n$, and an exact integer-arithmetic verification completes the finite range. We conclude by indicating how the same root-of-unity method should lead to analogous sign laws for other third order mock theta functions, including $φ(q)$ and $χ(q)$."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "SimpleSearch-VL: A Simple Recipe for Multimodal Agentic Deep Search",
+    "authors": "Ming Dai, Zhihong Lu, Jinjie Gu, Jiedong Zhuang, Yefeng Liu, Wankou Yang, Jian Wang, Chunhua Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31504v1",
+    "source": "arXiv",
+    "abstract": "We present SimpleSearch-VL, an efficient, reliable, and practical framework for multimodal agentic search. Its core idea is to improve the agent's own search-and-verification process rather than scaling data, tools, or auxiliary model components. For efficiency, Factorized Adaptive Rollout (FAR) improves sampling efficiency by forming more informative training groups while using redundant samples to mitigate long-tail latency and expose hard samples. For reliability, SimpleSearch-VL performs evidence-verified reasoning, explicitly using chain-of-thought verification to assess the relevance of retrieved visual and textual cues to the original context. For practicality, SimpleSearch-VL keeps a lightweight tool interface and performs webpage self-summary within the agent, requiring no additional external dependencies. With only 5K supervised tool-interleaved trajectories and 2K RL data, SimpleSearch-VL improves Qwen3-VL agentic baselines by 15.8 and 16.0 average points for the 8B and 30B-A3B variants, respectively. The SimpleSearch-VL-30B-A3B model further achieves performance competitive with agentic Gemini-3-Pro."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Witness Complexity of Short Descriptions: A Cryptographic Perspective",
+    "authors": "Fabio F. G. Buono",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31370v1",
+    "source": "arXiv",
+    "abstract": "In cryptographic practice, where protocols impose strict time bounds, implementations demand predictable resource usage, and real-world systems require immediate verification for security and usability, a short key or certificate is useful only if it can be expanded or verified within a bounded time; otherwise a compact representation that requires superpolynomial work to expand offers no operational guarantee within a bounded-time protocol. This paper formalises that gap by introducing \\emph{witness complexity} \\(\\gam(x)\\), the minimum running time over near-shortest descriptions of a string on a universal Turing machine. \\(\\gam\\) differs from Shannon entropy and Kolmogorov complexity \\(\\KC\\): low \\(\\KC\\) can coexist with high \\(\\gam\\). We prove invariance up to polynomial factors; a conditional separation (assuming \\(\\PneqNP\\)). An unconditional lower bound from incomputability of \\(\\KC\\); a biconditional characterisation of \\(\\PeqNP\\) via the class-relative variant \\(\\gP\\); and polynomial-time tractability for structured \\(\\classNP\\) families. Part II develops companion measures and shows an unconditional gap between grammar size and derivation cost, positioning \\(\\gam\\) as a metric for the usability of keys and certificates."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Ultrafast magnetization induced by linearly polarized pulses is widespread in nonmagnetic semiconductors",
+    "authors": "Xiangzhou Zhu, Junfeng Qiao, Nicola Marzari, Matteo Calandra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31358v1",
+    "source": "arXiv",
+    "abstract": "Ultrafast optical on-off switching of magnetic order promises near-petahertz information processing. Recently, it has been proposed that non-magnetic semiconductors with narrow band edges or strong exchange interactions could display ultrafast magnetization when photoexcited with linearly polarized femtoseconds pulses, but the experimental detection of this effect remains a challenge, mostly for the lack of suitable candidate compounds. Here, we present a high-throughput first-principles screening of the MC3D database of experimentally known inorganic crystals, identifying nearly 440 non-magnetic semiconductors that develop spin polarization under photoexcitation with linearly polarized pulses via a light-induced exchange-driven instability. We determine how the crystal field environment and band-edge orbital character govern the magnitude and the type of magnetic order of the photoinduced state and we unveil systematic chemical and periodic trends that provide intuitive guidance for materials selection. Our results argue that on-off switching of magnetization with linearly polarized femtosecond pulses is a widespread occurrence in non-magnetic semiconductors, opening novel avenues for experimental verification and application."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Automated High-Precision Extraction and Forensic Verification of Data-Bearing Vector Figures",
+    "authors": "Bowen Sun, Chaowei Xiao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31345v1",
+    "source": "arXiv",
+    "abstract": "The quantitative record of science and engineering is increasingly carried by figures rather than text or tables, and a reader who needs the underlying numbers must usually re-digitize them by hand: slowly, imprecisely, and with no way to prove the result is faithful. Yet when a figure is stored as vector graphics, its data are not approximated by the picture but encoded in it: the renderer writes each marker and vertex at a printed precision that, for the dominant scientific toolchain, exceeds the data's own. We turn this into three contributions, one per shortcoming of hand digitization. First, a precision theory bounding how accurately data can be recovered for a given renderer and export format: bit-exact float32 for matplotlib markers, and a calibration-limited three to four significant figures end to end. Second, an automatic extractor that decodes a figure in one pass with no human in the loop, in place of the slow point-by-point tracing a digitizer demands. Third, a verification theory: recovery is injective except on a characterized, vanishingly small interval near zero; accidental agreement between unrelated data is astronomically unlikely; and a re-rendering certificate binds the recovered values to the markers, lines, and ticks the figure draws, not its text, making a result non-repudiable. With no ground truth used during recovery, decoded figures match external archives (Planck 2018 to 10^-9; the Keeling CO2 record to 5*10^-4, and one decoded figure independently reproduces a correction to the Chinchilla scaling-law confidence interval. We map the achievable precision across common renderers and their PDF, SVG, and EPS formats. What we deliver is certified data; the scientific significance of any particular dataset lies outside this paper's scope, and recovered values are candidates for human review, never accusations."
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems",
+    "authors": "Guoqin Tang, Qingxuan Jia, Yichen Tan, Zeyuan Huang, Ning Ji, Gang Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2606.31339v1",
+    "source": "arXiv",
+    "abstract": "Agentic artificial intelligence is increasingly used to decompose industrial tasks, propose robot actions, and adapt execution plans in dynamic cyber-physical environments. However, autonomous proposal generation alone does not guarantee that multi-robot industrial systems preserve task dependencies, resource ownership, safety holds, or repair boundaries during long-horizon execution. This paper introduces a verification-gated agentic mission-state governance framework for intelligent industrial multi-robot systems. The framework maintains two synchronized state objects: an evolving task forest for persistent hierarchy, delayed grounding, and repairable substructures; and a governed blackboard for online execution state, robot traces, resource locks, world beliefs, proposals, verification records, and scene-temporary constraints. From each forest--blackboard snapshot, a derived execution coupling topology exposes cross-branch dependencies for proposal verification, parallel-commit eligibility, and bounded repair. Candidate assignments, repairs, deferrals, and constraint updates may be generated by heuristic, optimization, or agentic reasoning modules, but they can update the committed mission state only after deterministic verification and atomic commit. We evaluate the framework in an indoor factory multi-robot scenario, 30-seed remote-construction stress benchmarks, structural ablations, and scalability probes. The results show improved verified and safety-audited mission-state progress with fewer invalid commitments, lock conflicts, duplicate assignments, abandoned nodes, and disruptive repairs under modeled mission predicates. The study positions agentic AI as a proposal-generating layer governed by inspectable mission-state verification rather than as an unchecked execution authority."
+  },
+  {
+    "date": "2026-6-30",
+    "title": "LLM-Inpainter: LLM-Adapted Feature Prediction with Fine-Grained Mask-Aware Reinforcement for High-Fidelity Face Image Inpainting_supp1-3703338.pdf",
+    "authors": "Si Wu",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tmm.2026.3703338/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "InDe-LLM: Defending against Jailbreak Attacks in LLM-Powered Systems via Intention Disentangling",
+    "authors": "Yujue Wang, Quan Zhang, Chijin Zhou, Gwihwan Go, Dalong Shi, Yu Jiang",
+    "publish": "Proceedings of the ACM on Software Engineering",
+    "url": "https://doi.org/10.1145/3797136",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "PEACE: Preemptive and Efficient Cluster Scheduling for LLM Inference with Mixed Prompts",
+    "authors": "Zeyu Zhang, Haiying Shen",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+    "url": "https://doi.org/10.1109/ipdps65963.2026.00105",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "SocialPhishGuard: Enhancing Social Engineering Phishing Detection Using LLM-Based Techniques",
+    "authors": "Taimur Bakhshi, Akbar Sheikh-Akbari, Fraz Yousaf",
+    "publish": "2026 International Conference on IT and Industrial Technologies (ICIT)",
+    "url": "https://doi.org/10.1109/icit68548.2026.11577689",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "OpenClaw RedTeam Recon: A Local OSS-LLM-Powered Autonomous Reconnaissance Agent",
+    "authors": "Marcelo Garcia, Robson de Oliveira Albuquerque",
+    "publish": "Proceedings of the 2026 ACM Secure Development Conference",
+    "url": "https://doi.org/10.1145/3805773.3806641",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "CoLo: Correcting LLM-Generated IR with Precise Error Location",
+    "authors": "Jiahao Chen, Xianbo He, Lulin Wang",
+    "publish": "Proceedings of the 40th ACM International Conference on Supercomputing - Workshops",
+    "url": "https://doi.org/10.1145/3774895.3812202",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "APEX: Asynchronous Parallel CPU-GPU Execution for Online LLM Inference on Constrained GPUs",
+    "authors": "Jiakun Fan, Yanglin Zhang, Xiangchen Li, Dimitrios S. Nikolopoulos",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+    "url": "https://doi.org/10.1109/ipdps65963.2026.00099",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Transformer-Based Detection of Online Fake Job Advertisements Using DistilBERT with LLM-Powered Explainability",
+    "authors": "Vignesh S R, Praveen Kumar S",
+    "publish": "2026 4th International Conference on Integrated Circuits and Communication Systems (ICICACS)",
+    "url": "https://doi.org/10.1109/icicacs68679.2026.11578934",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Augmenting LLM Code Translation with Compiler Analysis for C to Triton Kernel Generation",
+    "authors": "Xiao Qin, Chunwei Xia, Zheng Wang",
+    "publish": "Proceedings of the 40th ACM International Conference on Supercomputing - Workshops",
+    "url": "https://doi.org/10.1145/3774895.3812200",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "LLM-Assisted Input-Requirement-Aware Differential Testing of Array Programming Frameworks",
+    "authors": "Zhichao Zhou, Jingzhu He",
+    "publish": "Proceedings of the ACM on Software Engineering",
+    "url": "https://doi.org/10.1145/3808162",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-1",
+    "title": "SafeAIMerge: A Tool for Integrating DAST and LLM-Generated Security Feedback into GitHub Actions Workflows",
+    "authors": "Arpit Thool, Justin Smith, Chris Brown",
+    "publish": "Proceedings of the 2026 ACM Secure Development Conference",
+    "url": "https://doi.org/10.1145/3805773.3806003",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "PowerMorph: Shaping LLM Training for Data Center Demand Response",
+    "authors": "Boqiang Li, Luanzheng Guo, Buxin She, Nathan R. Tallent, Veronica Adetola, Rong Ge",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+    "url": "https://doi.org/10.1109/ipdps65963.2026.00100",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Enhance Performance Tuning via LLM-guided Search Templates",
+    "authors": "Yassine Marzouki, Chunwei Xia, Vardan Voskanyan, Mike Basios, Leslie Kanthan, Zheng Wang",
+    "publish": "Proceedings of the 40th ACM International Conference on Supercomputing - Workshops",
+    "url": "https://doi.org/10.1145/3774895.3812194",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Lineage: A UMA2.0 Protocol Extension for Multi-Hop LLM Agent Delegation",
+    "authors": "Ștefania Ștefănescu, Iulian Aciobăniţei",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3708618",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Corrigendum: SmartNote: An LLM-Powered, Personalised Release Note Generator That Just Works",
+    "authors": "Farbod Daneshyan, Runzhi He, Jianyu Wu, Minghui Zhou",
+    "publish": "Proceedings of the ACM on Software Engineering",
+    "url": "https://doi.org/10.1145/3771920",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Quran ILM: an Empirical Study of LLM and RAG Architectures for Quranic Question Answering",
+    "authors": "Muhammad Abdullah, Samia Aziz, Sajid Anwer, Syed Muhammad Taqi, Muhammad Huzaifa Asif",
+    "publish": "2026 International Conference on IT and Industrial Technologies (ICIT)",
+    "url": "https://doi.org/10.1109/icit68548.2026.11577717",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "PlayCoder: Making LLM-Generated GUI Code Playable",
+    "authors": "Zhiyuan Peng, Wei Tao, Xin Yin, Chenhao Ying, Yuan Luo, Yiwen Guo",
+    "publish": "Proceedings of the ACM on Software Engineering",
+    "url": "https://doi.org/10.1145/3808097",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Converting a Monolithic E-Commerce Application to Microservices with OpenCV-Accelerated Virtual Try-On and LLM-Guided Interaction",
+    "authors": "Priya Darshini I, Kotalo Aswini, Pavani S, P Nagarathna",
+    "publish": "2026 4th International Conference on Integrated Circuits and Communication Systems (ICICACS)",
+    "url": "https://doi.org/10.1109/icicacs68679.2026.11578520",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "I/O-Aware PIM Acceleration for Long-Sequence LLM Inference with Hybrid Sparse Attention",
+    "authors": "Xiaoyang Lu, Lihan Hu, Hongrui Huang, Peng Jiang, Xian-He Sun",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+    "url": "https://doi.org/10.1109/ipdps65963.2026.00046",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-6-30",
+    "title": "Reward-Free Code Alignment from Pretrained or Fine-Tuned LLM: Unpacking the Trade-offs for Code Generation",
+    "authors": "Sanjeepan Sivapiran, Gias Uddin",
+    "publish": "Proceedings of the ACM on Software Engineering",
+    "url": "https://doi.org/10.1145/3808123",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
