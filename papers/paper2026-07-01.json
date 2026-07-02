@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-01",
+    "title": "Theoria: Rewrite-Acceptability Verification over Informal Reasoning States",
+    "authors": "Ben Slivinski, Michael Saldivar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.01223v1",
+    "source": "arXiv",
+    "abstract": "When should an AI system's answer be trusted? Formal proof assistants offer certainty but cannot reach most of the problem distribution; scalar LLM judges offer coverage but produce opaque scores that cannot be audited after the fact and are subject to the same coherence issues as any LLM. We present Theoria, a verification architecture that closes this gap. A candidate solution is rewritten into a sequence of typed state transitions, each licensed by an explicit justification, whether that be a citation, computation, or problem-given fact, and every transition is independently auditable. The foundational invariant is completeness of change: every difference between consecutive proof states must be accounted for, so hidden premises surface as unlicensed mutations rather than passing silently. On HLE-Verified Gold (185 text-only expert problems), Theoria certifies 105 at 91.4% strict precision (Wilson 95% CI [84.5%, 95.4%]). Every certification produces a human readable proof trace in which each step can be independently challenged. Holistic LLM judges achieve comparable precision at matched coverage but fail on different problems (Jaccard 0.14-0.36), making the approaches complementary. On 95 adversarial poisoned proofs across 15 domains, structured judges catch 94.7% versus 83.2% for holistic judging (p= 0.0017). The overall 11.5 pp gap concentrates in hidden premises (90.6% vs. 62.5%, a 28 pp difference) and fabricated citations (100% vs. 90%), the error classes where the formal analysis predicts an advantage; performance is identical on arithmetic and theorem-misapplication errors, where no advantage is predicted. On GPQA Diamond (n= 65), certified precision is 97.1% (Wilson CI [85.1%, 99.5%])."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Disentangling Speaker and Language Effects in Cross-Lingual Speaker Verification for Iberian Languages",
+    "authors": "Pol Buitrago, Javier Hernando",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.01161v1",
+    "source": "arXiv",
+    "abstract": "Cross-lingual speaker verification (SV) systems typically exhibit performance degradation when enrollment and test utterances are spoken in different languages. However, standard evaluation protocols confound language mismatch with inter-speaker variability, as evaluation is generally performed with different speakers across languages. In this work, we introduce a bilingual same-speaker evaluation set for five Iberian languages, enabling analysis of cross-lingual SV under constant speaker identity. We apply this setup to a HuBERT-based SV system previously shown to exhibit strong language dependence, and analyze results using the Cross-Lingual Transfer Matrix (CLTM) to study pairwise cross-lingual transfer. Our results show that speaker-related variability accounts for part of the observed degradation, but language mismatch remains the main driver of cross-lingual performance loss. These findings provide a more precise characterization of language dependence in cross-lingual SV."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Verification of a sequential thermo-poroelasticity formulation in PFLOTRAN",
+    "authors": "J. Al Kubaisy, G. E. Hammond, S. Karra, J. Burghardt, L. Murdoch, T. Johnson, K. M. Rosso",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.01156v1",
+    "source": "arXiv",
+    "abstract": "We present the verification of a thermo--hydrologic--mechanical capability implemented within the PFLOTRAN framework, with emphasis on benchmark-based assessment of the THM implementation. The thermal--hydrologic (TH) equations for mass and energy balance are solved on control-volume blocks or Voronoi cells, while the quasi-static momentum balance is solved on an element-based dual mesh. The coupling is achieved using a strictly sequential, non-iterative fixed-stress split strategy in which the TH system is solved implicitly for pressure and temperature, followed by a mechanics update for the displacement unknowns. Several verification problems are set up against poroelastic and thermo-poroelastic benchmarks, demonstrating agreement with analytical or semi-analytical benchmark responses for pressure diffusion, the temperature field, and mechanical deformation. In addition, we propose a treatment for discontinuities (e.g., fractures) based on mapping between mechanical and flow degrees of freedom, and validate the approach by comparison to an analytical solution. This work establishes the basis for thermo-poroelastic coupling in PFLOTRAN and provides a solid modeling foundation for a range of applications (e.g., enhanced geothermal systems and other subsurface energy storage) involving coupled thermal--hydrologic--mechanical (THM) processes in geologic porous media."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Clinician-Level Agreement Without Clinical Caution: LLM Evaluator Limits in Medical AI Benchmarking",
+    "authors": "William Philipp, Finn Fassbender, Thorsten Langer, Martje Pauly, Rebecca Herzog, Alexander Baumann, Markus Hobert, Theresa Paulus, Ip Chi Wang, Lukas Goede, Johanna Reimer, Sebastian Löns, Ronald Böck, Sebastian Fudickar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.01103v1",
+    "source": "arXiv",
+    "abstract": "Open-response evaluation provides stronger clinical validity than multiple-choice benchmarks but creates a scoring bottleneck that motivates automated LLM-asa-Judge approaches. Whether such evaluators replicate clinical calibration and caution, however, remains untested. We introduce MedQADE, the first standardised open-response clinical benchmark for German, a major clinical language lacking native evaluation infrastructure, comprising 3,800 items annotated by ten practising physicians and nine Large Language Model (LLM) evaluators. The top-performing evaluator model, Gemini 3 Flash, reached alignment consistent with the physician ceiling (\\k{appa} = 0.694 vs. \\k{appa} = 0.709), though wide confidence intervals limit interpretation. Despite this statistical alignment, automated evaluators exhibited near-absent clinical metacognition: physicians scaled abstention with item difficulty, while frontier models assigned definitive scores in every case. We additionally quantified systematic lineage-dependent biases, where models preferentially scored architectural siblings, an effect independent of language. These results show that statistical alignment does not ensure clinical caution, and that evaluator independence requires explicit verification."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Explicit formulas for gradients and the divergence in n-dimensional spherical coordinates",
+    "authors": "Bern Rummler, Gudrun Thäter",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.01096v1",
+    "source": "arXiv",
+    "abstract": "We use the Laplacian in n-dimensional spherical coordinates (n>1) to write the divergence of a vector field defined on radially symmetric domains in the context of vector calculus. We apply straightforward equations of vector calculus with the nabla operator and the transformation matrices from Cartesian to spherical polar coordinates. One needs the divergence of a vector field e.g. to prove that vector fields are eigenfunctions of the Stokes operator on n-dimensional annuli and balls. Our divergence formula in partial derivatives in n-dimensional spherical polar coordinates is an important step in a future verification of further Stokes eigenfunctions on those domains."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Agentic generation of verifiable rules for deterministic, self-expanding reaction classification",
+    "authors": "Daniel Armstrong, Maarten Dobbelaere, Valentas Olikauskas, Helena Avila, Octavian Susanu, Jérôme Waser, Philippe Schwaller",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.01061v1",
+    "source": "arXiv",
+    "abstract": "Computer-assisted synthesis planning breaks target molecules into accessible precursors using large libraries of reaction rules that assign each transformation a deterministic, interpretable label. But chemistry is long-tailed, making manual encoding intractable, and existing tools rely on fixed rulesets that cannot adapt to new chemistries. Here we present a fully automated pipeline in which a multi-agent framework of large language models (LLMs) classifies reactions and writes the rules themselves across 665,901 US patent reactions, generating each rule under a verification loop that tests it against the corpus. It expands a standard taxonomy from 68 to 14,073 classes without human curation. With a lightweight fingerprint classifier, it classifies 97.7\\% of unseen reactions, matching a leading proprietary classifier while resolving chemistry more finely and extending on demand to chemistry outside its training distribution. The result is a living reactivity database and a general route to turning generative models into reliable, self-expanding symbolic systems."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "From Runtime Records to Legal Findings: An Evidentiary-Adequacy Criterion for Agentic AI Oversight",
+    "authors": "Jeroen Janssen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00941v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI systems generate runtime records, logs, traces, and audit artefacts, but the existence or integrity of such records does not by itself establish that legally operative oversight findings can be recovered from them. This technical report defines an evidentiary-adequacy criterion for a bounded class of determinations: binary findings of fact about specific events and their relations, such as whether protected data crossed a boundary, whether a human could intervene, whether an information barrier held, or whether delegated authority was valid at the moment of use. The criterion states that a runtime record can answer such a determination only if it carries both a typing that maps recorded events to the legally operative category and the relation, such as provenance, authority, derivation, or temporal validity, on which the determination's truth depends. The claim is one of necessity, not sufficiency. The report instantiates the criterion against selected EU AI Act oversight obligations and explains why tamper-proof logs, generic process frameworks, and provenance structures alone cannot establish the relevant findings. It further relates the argument to requisite variety, the Good Regulator Theorem, and the trace-versus-hyperproperty boundary of runtime verification. Companion materials and the experiment protocol are archived on Zenodo."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Leveraging LLM-Based Agentic Systems to Generate Quantum Applications for Test Optimization",
+    "authors": "Ming Tao, Yuechen Li, Tao Yue, Man Zhang, Aitor Arrieta Marcos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00939v1",
+    "source": "arXiv",
+    "abstract": "Quantum computing is increasingly explored for software engineering (SE) optimization, but translating natural-language (NL) task-level requirements into executable quantum applications still demands substantial quantum and programming expertise. We present QPipe, a large language model (LLM)-based multi-agent architecture that autonomously turns NL requirements into traceable quantum-application workflows through specialized agents for requirement parsing, formulation, code generation, review, execution, and verification. We evaluate QPipe on 20 NL requirements, each associated with a real-world benchmark and a test-optimization problem. QPipe successfully completes the key stages of quantum-application generation across requirements, achieving average rates of 100% for code compilation and 96.7% for application execution and final-result combination, with average generation costs of 260.1 seconds and 1.89M tokens per requirement. Among the generated quantum applications that execute successfully, the returned solutions outperform the offline genetic algorithm baseline in most cases. Ablation results further show that QPipe's advantage depends on retaining code-generation skills, task knowledge, review feedback, and multi-agent decomposition. These results indicate that agentic coordination can support generation of executable quantum applications for tackling test optimization problems from real-world benchmarks."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "From Personas to Plot: Character-Grounded Multi-Agent Story Generation for Long-Form Narratives",
+    "authors": "Aayush Aluru, Chloe Ho, Muhammad Hammouri, Kerry Luo, Myra Malik, Ryan Lagasse, Arjun Bahuguna, Vasu Sharma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00918v1",
+    "source": "arXiv",
+    "abstract": "Although large language models (LLMs) have demonstrated impressive creative fiction generation, they struggle to maintain narrative consistency and coherent plot lines in long-form stories. In this work, we introduce a unified framework for long-form narrative generation and verification. MAGNET, a multi-agent goal-driven narrative engine for storytelling, generates stories with persona-grounded character agents that propose actions based on a shared world state and evolving story goals, while ATLAS is a graph-based pipeline that compares scene-level world representations across a generated story to detect hallucinations. By evaluating MAGNET using an LLM editor, pairwise rubric scoring, and ATLAS, we show that our framework produces coherent narratives compared to single-model prompting and IBSEN. At 100 pages, MAGNET reduced annotations and hallucinations by 41 and 50%, respectively, compared to the single model baseline and by 34 and 45%, respectively, compared to IBSEN, with pairwise rubric evaluation showing similar results. These results suggest that long-form narratives can emerge from explicit world-state tracking and goal-driven multi-agent generation, providing a foundation for controllable and structurally coherent long-form narrative generation."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Positive-Incentive Noise Predictor for Adversarial Purification in Speaker Verification",
+    "authors": "Yibo Bai, Sizhou Chen, Michele Panariello, Hao Ma, Xiao-Lei Zhang, Xuelong Li, Massimiliano Todisco, Nicholas Evan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00899v1",
+    "source": "arXiv",
+    "abstract": "Modern automatic speaker verification (ASV) systems are vulnerable to adversarial perturbations. Diffusion-based purification has recently shown strong effectiveness against such perturbations, but its reverse denoising process requires iterative sampling and leads to high inference latency. We find that the forward noising process provides most of the robustness gain. Motivated by this observation, we reformulate adversarial purification as a learnable noising problem, and propose the Positive-Incentive Noise Predictor (PnP), the first framework that explicitly introduces positive-incentive noise (π-noise) into the purification task. PnP learns input-adaptive π-noise and mixes it with the input to improve the robustness of downstream ASV systems. Experiments on four advanced ASV backbones show that PnP effectively defends against adversarial attacks while preserving performance on natural speech. Compared with representative purification baselines, the proposed framework provides a competitive balance among defense effectiveness, impact on genuine utterances, and inference efficiency under white-box, black-box, and defender-aware adaptive attacks, with a real-time factor as low as 0.014. Moreover, PnP can be cascaded with a diffusion denoiser to further improve the perceptual quality of purified utterances. Code and purified audio examples are available at https://eurecom-asp.github.io/pnp/"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Petrify: Petri-net Based Analysis of Concurrency Properties in Java Bytecode",
+    "authors": "Akshatha Shenoy, Carlo A. Furia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00830v1",
+    "source": "arXiv",
+    "abstract": "The landscape of automated formal verification is populated by techniques that make prominently different trade-offs: some focus on expressiveness and precision, supporting the verification of complex properties; others favor scalability and practicality, so that they are applicable to larger programs using different features. This paper presents Petrify, a novel automated verification technique for concurrency properties that achieves a distinctive trade-off. Petrify encodes the semantics of Java bytecode programs into Petri nets (PNs), which can be analyzed by state-of-the-art model checking tools such as LoLA. As our experiments demonstrate, Petrify's approach offers an interesting combination of expressiveness and practicality: PNs are a fairly precise encoding of the concurrent behavior of programs; at the same time, Petrify's PN encoding is succinct, so that its analysis remains quite insensitive to parameter size. Another practical benefit of targeting bytecode is that jPetrify, the prototype tool that implements the Petrify technique, is applicable to programs written in any version of Java and even a subset of Kotlin (another language that compiles to Java bytecode) while other similar tools are limited to older versions of Java. While this paper's experiments focus on analyzing fundamental properties like deadlock, Petrify's approach lends itself to be extended to other kinds of concurrency analysis, which we plan to tackle in future work."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Practical Range Refinement Types with Inference",
+    "authors": "Valentin Aebi, Carlo A. Furia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00824v1",
+    "source": "arXiv",
+    "abstract": "Refinement types are a static verification technique that aims at increasing the expressivity of traditional type systems while remaining easy and natural to use. While systems based on refinement types have been developed for several mainstream languages, their practical adoption remains limited by their annotation overhead, which is often a more significant burden than when using the \"plain\" type annotations of languages like Java or Scala. To improve the state of the art, this paper introduces Ranger: a refinement type system designed to keep the annotation overhead small and to seamlessly integrate with imperative-style constructs like variables and loops. As the name suggests, Ranger focuses on integer range types: a particular kind of refinement types that express bounded integer ranges. Such types are widely useful to verify correct index manipulation and in-bounds data accesses, among others. To combine expressiveness and succinctness, Ranger is based on a bidirectional type system, which runs a type inference algorithm to provide the typechecking pass with information useful to reduce the need for user-written auxiliary annotations. Ranger also integrates other forms of lightweight flow-sensitive static analysis techniques that precisely capture the program's behavior without explicit annotations. We implemented Ranger on top of the Licorne experimental programming language. Our experiments show that Ranger's implementation can concisely express and verify a variety of useful properties that fall beyond the capabilities of standard static type systems like those of Java and Scala, and that Ranger compares favorably to other extended type systems, such as the Java Checker Framework and Liquid Java, that can also check properties about ranges."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "LRAT-Catcher: Importing SAT Solver Certificates into Lean4 by Reflection",
+    "authors": "Stefan Szeider",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00815v1",
+    "source": "arXiv",
+    "abstract": "SAT solvers settle combinatorial problems beyond the reach of interactive theorem provers and produce LRAT certificates for independent verification. We present LRAT-Catcher, a standalone, general-purpose tool that imports a DIMACS formula together with an LRAT certificate into Lean 4 as a theorem. LRAT-Catcher runs the formally verified LRAT checker from Lean core as compiled native code via reflection. This scales to instances where Mathlib's explicit proof-term import exhausts memory. LRAT-Catcher also composes cube-and-conquer solving runs entirely inside Lean. Per-cube refutations are combined with a cover-completeness certificate, itself an LRAT proof, into a single unsatisfiability theorem. Verified encodings connect CNF-level results to the original combinatorial problems. We evaluate the tool against Mathlib's proof-term import and the external checker cake_lpr on establishing the Schur number S(4) = 44 and the Ramsey number R(4,4) = 18 as Lean theorems."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Algorithms and fine-grained complexity for nondeterministic and symmetric difference automata",
+    "authors": "Dmitry Chistikov, Radosław Piórkowski, Neha Rino, Brink van der Merwe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00742v1",
+    "source": "arXiv",
+    "abstract": "Symmetric difference automata (XNFA) are a variant of standard finite automata in which an input word is accepted iff the number of accepting runs is odd. Equivalently, these are weighted automata over the two-element field. We study the fine-grained complexity of the basic decision problems for XNFA: acceptance, emptiness, and equivalence, aiming to optimise the degree of the polynomial in their running-time bounds. Under the assumption of polynomial ambiguity, we provide a randomised reduction of NFA acceptance to XNFA acceptance. For automata of bounded ambiguity (e.g., unambiguous automata), we show that acceptance for both NFA and XNFA can be decided faster than in the general case. Without ambiguity assumptions, we give faster algorithms for the verification of suitable certificates for (non)emptiness and (non)equivalence of XNFA. Several of our results extend to weighted automata over other semirings and fields."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Phantom References: Hallucinated Citations That Survive Peer Review at Top-Tier Conferences",
+    "authors": "Mark Russinovich, Ram Shankar Siva Kumar, Ahmed Salem",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00738v1",
+    "source": "arXiv",
+    "abstract": "Large language models can generate polished scientific text that includes unsupported claims, allowing hallucinations to enter the archival record. Assessing this risk via technical statements is difficult and often requires expert judgment, but citations provide a more auditable surface: a reference either resolves to a real scholarly work with compatible authorship, or it does not. We measure citation hallucination in peer-reviewed proceedings using a conservative definition limited to identity-level failures: non-existent works and substantial author-list mismatches. We explicitly exclude ordinary bibliographic drift (e.g., venue/year differences, publication-status updates, minor name variants). To audit citations at scale, we build RefChecker, a verification pipeline that resolves bibliography entries against multiple bibliographic sources and escalates unresolved cases to web-search re-verification. We apply RefChecker to accepted camera-ready papers from ICLR, ICML, NeurIPS, and USENIX Security. Hallucinated citations have entered the archival record. While reference-level rates are usually below 1%, proceedings are large enough that paper-level failures are visible: in 2025, roughly one in twenty NeurIPS and USENIX Security papers contains at least two likely hallucinated academic-paper-like references under our strict definition. We also observe post-ChatGPT increases in several venues, including a tail of papers with 5+ failures in a single bibliography, and likely hallucinated citations even among award-winning papers. These results suggest peer review alone does not reliably enforce citation integrity, yet auditing is tractable (about 0.04$ per paper in one venue-scale scan). We open-source RefChecker for routine, reproducible citation verification before publication (https://github.com/markrussinovich/refchecker)."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "M2Note: Continual Evolution of Vision Language Models via Mistake Notebook Learning",
+    "authors": "Haiwen Li, Jing Tang, Rui Chen, Lei Sun, Xiangxiang Chu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00685v1",
+    "source": "arXiv",
+    "abstract": "Vision Language Models (VLMs) have demonstrated remarkable capabilities in multimodal reasoning tasks, yet they still suffer from recurring failures, such as skipping key visual checks, misapplying domain rules, and hallucinating unsupported concepts. Most existing solutions rely on supervised fine-tuning (SFT) and reinforcement learning (RL), which are expensive to iterate and can be brittle under distribution shift. To this end, we propose Multimodal Mistake Notebook Learning (M2Note), a training-free continual evolution framework that externalizes learning into an editable memory. M2Note transforms failed trajectories into compact subject-guidance notes: the subject summarizes the underlying domain and concept, while the guidance provides actionable verification steps that can be reused in future inference. At test time, M2Note retrieves relevant notes via multimodal retrieval-augmented generation (RAG) and appends them to the model context, steering reasoning away from previously observed pitfalls. To stabilize continual evolution, we adopt batch-level post-verification with rollback, which commits notebook edits only if they improve performance on the same batch, reducing noisy updates and preventing regressions. M2Note supports both self-evolving, where the same VLM acts as solver and supervisor, and cross-model evolving, where a stronger supervisor guides a weaker solver, enabling capability transfer without weight updates. Experiments on six multimodal reasoning benchmarks show consistent improvements across domains and backbones, while achieving strong cost and sample efficiency and remaining complementary to Chain-of-Thought (CoT) prompting."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Faithful by Definition: Emotion Analysis via Natural Semantic Metalanguage Explications",
+    "authors": "Frank Xing, Erik Cambria",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00661v1",
+    "source": "arXiv",
+    "abstract": "Explanations for emotion classifiers are usually produced post hoc, with no guarantee that they reflect the computation behind the label. We present an explication interface for event-based emotion analysis. A parser maps the input text to an explication, a short script in the closed vocabulary of Natural Semantic Metalanguage organized into twelve typed slots, and a fixed decision list of rules transcribed from published semantic definitions computes the label from the explication alone. The faithfulness guarantee is therefore causal and definitional, while all empirical risk lives in the learned parser, which the per-line entailment interface makes auditable against the input. On crowd-sourced event descriptions, our fine-tuned parser reaches 0.33 accuracy and 0.48 selective accuracy on a small held-out set, suggesting that the interface trades insignificant accuracy difference to a black-box model for a verifiable, inspectable decision basis for first-person event-based emotion analysis. We also release EmoExpl-1200 with per-line verification metadata and the full rule set."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Retrieved Images as Visual Thought: Training-Free Multimodal In-Context Learning for the Open-vs-Closed Gap",
+    "authors": "Bingchen Huang, Zhiling Wang, Yifu Chen, Yuanchao Du",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00606v1",
+    "source": "arXiv",
+    "abstract": "Recent work on Thinking with Images makes vision a dynamic part of reasoning, but does so through generation: the model invokes external tools, synthesizes code, or imagines new imagery, each at the cost of a tool protocol, brittle code, or an expensive training pipeline. A fourth route makes vision dynamic without generating anything, by retrieving labeled exemplar images and reasoning over them, yet it remains underexplored despite being train-free. We present ReVisIT, a train-free framework that realizes this retrieval-based route by treating each retrieved image-label pair as a unit of visual thought. ReVisIT combines structured class definitions, per-query multimodal retrieval of exemplars, and alternating user/assistant injection of those exemplars before joint multi-attribute decoding, and degrades gracefully to whichever components a task admits. On VL-ICL Bench Fast Open MiniImageNet, Qwen3-VL-30B-A3B with ReVisIT reaches 98.5% at 4-shot, statistically indistinguishable from the 72B LLaVA-OneVision SOTA (98.7%) on this near-saturated task at about 1/2.4 the parameters, while the same backbone without the scaffold sits at chance. The turns layer alone adds 26.1 points to GPT-4.1 on free-form concept induction (Bongard-OpenWorld), and the full stack yields a 4-6 point macro gain across three backbones on MAAC-Bench, a new license-clean 27-class, 5-attribute benchmark, significant by paired bootstrap on the curator-derived attributes. Component analysis shows that retrieval-plus-turns is the universal lever while structured definitions are need-adaptive, and that 83% of the retrieval gain comes from retrieval quality rather than from the presence of exemplars. MAAC-Bench is released with a rubric-grounded LLM verification protocol that replaces author spot-check on subjective attributes."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Minos: A Multi-Agent Collaborative Framework for Provenance-Based Backward Tracking",
+    "authors": "Jiahui Wang, Zhenyuan Li, Zhengkai Wang, Xiangmin Shen, Fan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00440v1",
+    "source": "arXiv",
+    "abstract": "Sophisticated cyber attacks, particularly Advanced Persistent Threats (APTs), require effective post-intrusion forensic analysis. Provenance-based backward tracking reconstructs attack scenarios by tracing causality from security alerts, but existing methods rely on low-level statistical features and rigid traversal strategies, limiting their ability to capture high-level adversarial intent and suffering from dependency explosion. We present Minos, a multi-agent framework that formulates backward tracking as an LLM-driven reasoning process. Minos adopts a two-tiered architecture: for event-level analysis, it combines hierarchical context management, retrieval-augmented reasoning with citation verification, and adversarial deliberation to improve reasoning quality; for graph exploration, it coordinates four specialized agents under a finite state machine (FSM), replacing exhaustive traversal with hypothesis-guided reasoning and count-first query protocols to efficiently prune the search space. Experiments on 14 attack scenarios across five public datasets show that Minos achieves an average recall of 0.92 and precision of 0.64, significantly outperforming state-of-the-art baselines while producing attack subgraphs that are 49% more compact. Moreover, Minos generates interpretable reasoning throughout the tracking process, facilitating forensic auditing and system refinement. These results demonstrate the effectiveness of LLM-driven reasoning for automated provenance-based backward tracking."
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Queue-Aware Graph Reinforcement Learning for UAV-ISAC-Assisted Maritime Data Collection",
+    "authors": "Bohan Li, Min Ye, Haochen Liu, Yongkang Gong, Ning Gao, Jie Nie, Pei Xiao, Xiuzhen Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00324v1",
+    "source": "arXiv",
+    "abstract": "This paper studies high-altitude platform (HAP)-assisted sparse cooperative integrated sensing and communication (ISAC) for UAV-enabled ocean monitoring. A fleet of rotary-wing UAVs senses drifting buoys, collects their monitoring data, and reports local posterior estimates to a HAP that performs fusion and sparse cooperation control. The model explicitly accounts for a spatially correlated sea-patch field, patch-aware buoy dynamics, RCS- and clutter-aware echo sensing, fused posterior Cramér-Rao bounds (PCRBs), and propulsion-energy-limited UAV mobility. The long-horizon objective is cast as a queue-weighted buffered-collection Markov decision process rather than instantaneous throughput, where each buoy maintains a backlog of buffered observations. The resulting long-horizon design is formulated as a mixed discrete-continuous problem with sensing, communication, mobility, safety, buffered-collection, and onboard-energy constraints. To address the combinatorial association component without replacing learning by a deterministic optimizer, we propose a structured feasible-association graph-MARL framework. A heterogeneous graph encoder produces candidate-edge logits, and a masked sequential b-matching policy samples legal UAV-buoy associations while exactly satisfying UAV-load and buoy-cluster constraints. A MAPPO-style training procedure, an independent queue-state value critic, and a consistency-verification protocol are then specified to support reproducible training. Simulation results on congested maritime scenarios show that the proposed policy improves the cumulative queue-weighted collection utility by about 106\\% over the rate-driven deterministic decoder, maintains a large margin across sea-state sweeps and medium-to-heavy traffic loads, and transfers to larger networks without fine-tuning."
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Hollow-LLM Attack: Computationally Trivial Weights in Zero-Knowledge Verification of LLM Inference",
+    "authors": "Chen Gong, Beijie Liu, Mengyuan Li",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00258",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "LLM-ASF6G: LLM-Based Algorithm Selection Framework for 6G Network Service Optimization",
+    "authors": "Anestis Dalgkitsis, Cyril Shih-Huan Hsu, Chrysa Papagianni, Paola Grosso",
+    "publish": "2026 Joint European Conference on Networks and Communications &amp;amp; 6G Summit (EuCNC/6G Summit)",
+    "url": "https://doi.org/10.1109/eucnc/6gsummit68295.2026.11577403",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "SpecAuditor: Generating Audit Specifications for LLM-Driven Bug Detection",
+    "authors": "Miaoqian Lin, Hao Chen",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00206",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses",
+    "authors": "Georgios C. Androutsopoulos, Antonio Bianchi",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00060",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Navigating Developers' Quagmire: LLM-Enabled Privacy Compliance Analysis for SDK Integrations",
+    "authors": "Zhaojie Hu, Xueqiang Wang",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00126",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "SeaAlert: Robust Severity Classification and LLM-Based Information Extraction for Noisy Maritime Distress Communications",
+    "authors": "Tomer Atia, Yehudit Aperstein, Alexander Apartsin",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3709004",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "LLM Unlearning Should Be Form-Independent",
+    "authors": "Xiaotian Ye, Mengqi Zhang, Shu Wu",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00037",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "OpenClaw RedTeam Recon: A Local OSS-LLM-Powered Autonomous Reconnaissance Agent",
+    "authors": "Marcelo Garcia, Robson de Oliveira Albuquerque",
+    "publish": "Proceedings of the 2026 ACM Secure Development Conference",
+    "url": "https://doi.org/10.1145/3805773.3806641",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Quality Assurance for AI-Generated Code: A Framework for Validating LLM-Produced Software in Production Environments",
+    "authors": "Somasundaraprabhu Suryanarayanan",
+    "publish": "2026 4th International Conference on Inventive Computing and Informatics (ICICI)",
+    "url": "https://doi.org/10.1109/icici68773.2026.11580904",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Smart Contract Vulnerability Detection Empowered by LLM: Can It Really Work?",
+    "authors": "Yuxuan Zhou, Kunsong Zhao, Xiapu Luo, Yuzhe Tang",
+    "publish": "2026 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)",
+    "url": "https://doi.org/10.1109/icbc67748.2026.11575484",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Knocking on the Front Door: An LLM-Guided Systematic Analysis of DNS Query Processing Vulnerabilities",
+    "authors": "Yuqi Qiu, Xiang Li, Zheli Liu",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00208",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "LLM-Guided Subgraph Synthesis for Bitcoin Money Laundering Detection",
+    "authors": "Jeongheon Kim, James Won-Ki Hong",
+    "publish": "2026 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)",
+    "url": "https://doi.org/10.1109/icbc67748.2026.11575444",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "MetaBreak: Jailbreaking Online LLM Services via Special Token Manipulation",
+    "authors": "Wentian Zhu, Zhen Xiang, Wei Niu, Le Guan",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00095",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "RailReserve: An LLM-Powered Multi-Agent Framework for Conversational Railway Ticket Booking and Graph-based Route Optimization",
+    "authors": "Sanket Borse, Abhijit A. M.",
+    "publish": "2026 4th International Conference on Inventive Computing and Informatics (ICICI)",
+    "url": "https://doi.org/10.1109/icici68773.2026.11581265",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "RadKey: An LLM-Guided RF Backscatter System for Through-Wall Keystroke Inference",
+    "authors": "Qijun Wang, Chunqi Qian, Huacheng Zeng",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00160",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics",
+    "authors": "Haichuan Xu, David Oygenblik, Runze Zhang, Mingxuan Yao, Muhammad Ibrahim, Brendan Saltaformaggio",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00252",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "3DLS: A 3D Logic-Stacked Architecture for Disaggregated LLM Serving",
+    "authors": "Jaehun Lee, In-Jun Jung, Joo-Young Kim",
+    "publish": "IEEE Computer Architecture Letters",
+    "url": "https://doi.org/10.1109/lca.2026.3709108",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-1",
+    "title": "SafeAIMerge: A Tool for Integrating DAST and LLM-Generated Security Feedback into GitHub Actions Workflows",
+    "authors": "Arpit Thool, Justin Smith, Chris Brown",
+    "publish": "Proceedings of the 2026 ACM Secure Development Conference",
+    "url": "https://doi.org/10.1145/3805773.3806003",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-2",
+    "title": "Smarter Robots, Fewer Queries: A Knowledge-Driven Approach to Reduce LLM Dependency",
+    "authors": "Ayush Mothiya, Gayathri Rangu, Shivashankar B. Nair",
+    "publish": "Proceedings of the 2025 7th International Conference on Advances in Robotics",
+    "url": "https://doi.org/10.1145/3787370.3787413",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-1",
+    "title": "Incalmo: an Autonomous Llm-Assisted System for Red Teaming Multi-Host Networks",
+    "authors": "Brian Singer, Keane Lucas, Lakshmi Adiga, Meghna Jain, Lujo Bauer, Vyas Sekar",
+    "publish": "2026 IEEE Symposium on Security and Privacy (SP)",
+    "url": "https://doi.org/10.1109/sp63933.2026.00132",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
