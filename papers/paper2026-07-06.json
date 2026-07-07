@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-06",
+    "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+    "authors": "Jacky Kwok, Shulu Li, Pranav Atreya, Yuejiang Liu, Yixing Jiang, Chelsea Finn, Marco Pavone, Ion Stoica, Azalia Mirhoseini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05391v1",
+    "source": "arXiv",
+    "abstract": "Scaling pre-training, post-training, and test-time compute have become the central paradigms for improving the capabilities of LLMs. In this work, we identify verification, the ability to determine the correctness of a solution, as a new scaling axis. To unlock this and demonstrate its effectiveness, we introduce LLM-as-a-Verifier, a general-purpose verification framework that provides fine-grained feedback for agentic tasks without requiring additional training. Unlike standard LM judges that prompt LLMs to produce discrete scores for candidate solutions, LLM-as-a-Verifier computes the expectation over the distribution of scoring token logits to generate continuous scores. This probabilistic formulation enables verification to scale along multiple dimensions: (1) score granularity, (2) repeated evaluation, and (3) criteria decomposition. In particular, we show that scaling the scoring granularity leads to better separation between positive and negative solutions, resulting in more calibrated comparisons. Moreover, scaling repeated evaluation and criteria decomposition consistently lead to additional gains in verification accuracy through variance and complexity reduction. We further introduce a cost-efficient ranking algorithm for selecting the best solution among candidates using the verifier's continuous scores. LLM-as-a-Verifier achieves state-of-the-art performance on Terminal-Bench V2 (86.5%), SWE-Bench Verified (78.2%), RoboRewardBench (87.4%), and MedAgentBench (73.3%). Beyond verification, the fine-grained signals from LLM-as-a-Verifier can also serve as a proxy for estimating task progress. We build an extension for Claude Code, enabling developers to monitor and improve their own agentic systems. Finally, we show that LLM-as-a-Verifier can provide dense feedback for RL, improving the sample efficiency of SAC and GRPO on robotics and mathematical reasoning benchmarks."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "How Far is Too Far? Defining the Distance Threshold for Verification Siamese Networks",
+    "authors": "Heloísa Dias Viotto, Cauê Samonek, Lucas Garcia Pedroso, Marcos Sunye, André Abed Grégio, Paulo Lisboa de Almeida",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05329v1",
+    "source": "arXiv",
+    "abstract": "Siamese verification networks are widely used to compare items such as faces, cars, or signatures. In these scenarios, the network is trained to learn an embedding space in which similar objects are mapped closer together, while dissimilar objects are mapped further apart. Two objects are considered to belong to the same class (e.g., the same person in two different images) when the distance between their embeddings falls below a predefined threshold. Defining this threshold, however, is a non-trivial task and typically requires labeled data. In this work, we assume that the distribution of distances produced by a siamese verification network can be approximated by a bimodal function. Based on this assumption, we propose an unsupervised method to determine the verification threshold by identifying the minimum point between the two modes. The proposed approach does not require annotated samples, enabling the verification threshold to be updated directly in the deployment environment without the cost of manual labeling. We evaluate our method on four datasets: MNIST, CIFAR-10, LFW, and PKLot. The results indicate that the proposed approach achieves an average verification accuracy of 94%, comparable to the Equal Error Rate method, while eliminating the need for labeled data."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "FlowMark: Mask-Guided Video Watermarking",
+    "authors": "Vishal Asnani, Shruti Agarwal, John Collomosse",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05261v1",
+    "source": "arXiv",
+    "abstract": "We present FlowMark, a video watermarking framework guided by automatically predicted object masks. In contrast to prior region-based approaches that require user-supplied mask guidance, FlowMark learns to identify optimal regions for watermark embedding through a dedicated Mask Predictor network. Our end-to-end trainable architecture combines region-aware encoding with noise-augmented training to ensure robustness against compression, geometric transformations, and content variation, while preserving high perceptual quality. Our content-adaptive masking keeps watermark signals coherent with natural video dynamics, effectively eliminating perceptual flicker. Beyond compression robustness, FlowMark maintains reliable watermark recovery under video-native temporal edits (e.g., frame swap, insertion, deletion, resampling, and interpolation) and real-world social media distribution pipelines (e.g., YouTube and Facebook re-encoding). Experimental results on both image and video datasets show that FlowMark reliably embeds $128$-bit messages with up to $50.08$ dB PSNR, offering strong performance for content provenance, temporal authenticity verification, and video integrity protection."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Privacy-Preserving Robustness Verification for Neural Networks",
+    "authors": "Nianyun Song, Xiaokun Luan, Yu Guo, Rongfang Bie, Meng Sun, Xiyue Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05251v1",
+    "source": "arXiv",
+    "abstract": "Neural network verification and data privacy are inherently in tension: verification demands full access to model parameters and input data, yet both are increasingly restricted by privacy regulations and intellectual property constraints. This tension has left robustness verification impractical in privacy-sensitive domains. In this work, we address this gap with SecureCROWN, the first framework for privacy-preserving neural network robustness verification. Built upon secure two-party computation (2PC), our framework enables a model owner and a data owner to jointly compute certified robustness bounds -- revealing only the final result while provably protecting both parties' private data under the semi-honest security model. A key challenge is securely computing the conditional operations in Linear Bound Propagation, where the data-dependent branching is incompatible with standard secure computation protocols. We eliminate branching by formulating conditional logic as continuous arithmetic operations. Additionally, we introduce a Newton--Raphson refinement method to improve numerical stability. Extensive analysis and experiments show that SecureCROWN strictly matches plaintext verification results, while completing in 0.1--200s across varied model sizes and communication settings (LAN/WAN), demonstrating the feasibility of privacy-preserving neural network verification."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "MoP-JEPA: Hard-Assigned Predictor Mixtures for Stochastic JEPA World Models",
+    "authors": "Zhi Song, Ximing Xing, Zhenchao Tang, hanbo Huang, Tianxu Lv, minghao Yang, Zhongzheng Niu, He Bing, Lusheng Wang, Jianhua Yao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05238v1",
+    "source": "arXiv",
+    "abstract": "JEPA world models predict the next latent state with a single deterministic predictor trained by latent regression. We show that this fails structurally when the environment is stochastic: at a branching transition, the regression-optimal predictor outputs the conditional mean of the successor embeddings, a point between the true next states that corresponds to no state at all. We prove this collapse for deterministic and gated mixture-of-experts predictors, and prove that MoP-JEPA's hard-assigned predictors converge instead to a quantizer of the transition distribution: one head per successor mode, enumerable in a single forward pass, which is the interface a planner consumes. On official OGBench offline data with leak-free evaluation, planning over single-predictor rollouts performs poorly ($0.02$--$0.09$ success) while planning over our predicted modes reaches up to $0.85$, ahead of deterministic, gated-MoE, and variational predictors on every task. Because multi-prediction evaluation invites coverage freeloading, a verification protocol is part of the method: an input-agnostic codebook control, a shuffled-context test, router-gated readouts, transition-precision guards, and a verified-route criterion in which the model proposes its transition graph blind and ground truth is used only to check the result. Under this criterion our method outperforms the strongest soft alternative on all three mazes ($2$--$5\\times$), and the protocol identifies the remaining gap in that baseline's raw scores as routes through predicted transitions that do not exist. The same model executes in the real environment, placing second of seven against the published OGBench baselines on the hardest maze. Multimodal dynamics decide whether a JEPA world model can plan at all; a mixture of predictors with hard assignment is a minimal and verifiable fix."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+    "authors": "Xingze Gao, Chuanrui Hu, Hongda Chen, Pengfei Yao, Zhao Wang, Yi Bai, Zhengwei Wu, Yunyun Han, Xiaofeng Cong, Jie Gui, Yafeng Deng, Teng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05202v1",
+    "source": "arXiv",
+    "abstract": "Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification. Yet current evaluations do not isolate this form of transfer. Agent benchmarks test single-episode task solving; memory benchmarks target information retention rather than procedural reuse. We introduce EvoAgentBench, a benchmark for agent self-evolution via Ability-guided transfer across four agentic domains: web research, algorithmic reasoning, software engineering, and knowledge work. EvoAgentBench extracts trace-grounded Abilities from agent executions, canonicalizes them into operational units, and builds domain-specific Ability Graphs linking tasks that share procedural overlap. By design, every test task is backed by verified training-side Ability support. Across a 528/267 train/test split, two scaffolds, and three backbones, curated Ability content transfers reliably across model families, but no current automatic method sustains positive gain in all settings. EvoAgentBench shifts self-evolution evaluation from aggregate accuracy comparison to fine-grained diagnosis of experience encoding, routing, and uptake. The benchmark is publicly available at https://huggingface.co/datasets/EverMind-AI/EvoAgentBench."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Rethinking On-Policy Self-Distillation for Thinking Models",
+    "authors": "Simran Kaur, Narutatsu Ri, Yinghui He, Liam Fowl, Sanjeev Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05184v1",
+    "source": "arXiv",
+    "abstract": "Self-distillation is a promising recipe for self-improvement in language models. In this setting, a model can serve as its own teacher when given privileged information, such as a solution to a math problem. This seems especially appealing for thinking models, which can use test-time reasoning to absorb the privileged information. Surprisingly, we show that privileged self-distillation degrades thinking models on long reasoning traces: across five Qwen3 and OLMo thinking models evaluated on AIME24, AIME25, and HMMT25, privileged-context distillation causes a relative drop of up to 17% in avg@16 accuracy. The degradation scales with the amount of privileged context withheld from the student and is most pronounced at long rollout budgets, where thinking models otherwise obtain their largest gains. This failure mode is not specific to self-distillation: on-policy distillation (OPD) improves thinking models, but privileged OPD reverses these gains. Our diagnostics link this failure mode to how privileged teacher context reshapes learning at high-entropy forking positions, where multiple continuations remain plausible and may lead to different reasoning paths. Privileged context lowers fork rates in thinking-model rollouts but not in instruction-model rollouts. This leads to an interesting dichotomy, where privileged context can help instruction-tuned models but hurts stronger thinking models. The effect is visible when the student begins a self-correction branch, where privileged OPD penalizes sampled reconsideration tokens that vanilla OPD supports. Thinking models trained with a privileged teacher produce fewer verification, backtracking, and hedging markers, even after length normalization. These findings indicate that self-distillation for strong thinking models requires attention to token-level signal, especially around correction and reasoning steps."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Claim-Level Rubric Rewards for Video Caption Reinforcement Learning",
+    "authors": "Mingqi Gao, Hongyuan Dong, Yifei Chen, Zhisheng Zhong, Zheng Ruan, Wenjin Hou, Yu Chen, Han Hu, Yansong Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05150v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we introduce Claim-Level Rubric Rewards (CuRe), a structured reward framework designed to address the reward-design bottleneck in reinforcement learning for dense video captioning. Existing reward designs generally fall into two categories: holistic response-level judgment across heterogeneous criteria, or alignment-based evaluation against reference captions. However, both paradigms suffer from fundamental limitations. Holistic rewards struggle to ensure factual accuracy and are prone to stylistic reward hacking, while reference-based rewards overly rely on rigid textual alignment, failing to preserve the completeness and diversity inherent to open-ended generation tasks. To address these challenges, CuRe reformulates reward modeling as fine-grained claim-level verification. Specifically, CuRe decomposes captions into category-aware atomic claims through a structured rubric, converting holistic evaluation into simpler and more reliable claim-level verification."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation",
+    "authors": "Xin Cheng, Xingkai Yu, Chenze Shao, Jiashi Li, Yunfan Xiong, Yi Qian, Jiaqi Zhu, Shirong Ma, Xiaokang Zhang, Jiasheng Ye, Qinyu Chen, Chengqi Deng, Jiping Yu, Damai Dai, Zhengyan Zhang, Yixuan Wei, Yixuan Tan, Wenkai Yang, Runxin Xu, Yu Wu, Zhean Xu, Xuanyu Wang, Muyang Chen, Rui Tian, Xiao Bi, Zhewen Hao, Shaoyuan Chen, Huanqi Cao, Wentao Zhang, Anyi Xu, Huishuai Zhang, Dongyan Zhao, Wenfeng Liang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05147v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates Large Language Model (LLM) inference by decoupling draft generation from target verification. While recent parallel drafters efficiently propose long token sequences in a single forward pass, they suffer from rapid acceptance decay due to a lack of inter-token dependencies. Furthermore, indiscriminately verifying these extended blocks wastes critical batch capacity on tokens with high rejection risks, severely degrading throughput in high-concurrency serving systems. We introduce DSpark, a speculative decoding framework that unifies high-throughput parallel generation with adaptive, load-aware verification. To maintain draft quality, DSpark utilizes a semi-autoregressive architecture, coupling a parallel backbone with a lightweight sequential module, to introduce intra-block dependency modeling and mitigate suffix decay. To optimize system efficiency, DSpark employs confidence-scheduled verification, dynamically tailoring the verification length for each request based on estimated prefix survival probabilities and engine-specific throughput profiles. On offline benchmarks across diverse domains, DSpark substantially improves the accepted length over state-of-the-art autoregressive and parallel drafters. When deployed within the DeepSeek-V4 serving system under live user traffic, DSpark successfully mitigates verification waste. Compared to the established production baseline (MTP-1), DSpark accelerates per-user generation speeds by 60 to 85 percent at matched throughput levels. More importantly, by preventing severe throughput degradation under strict interactivity constraints, it enables performance tiers that were previously unattainable, shifting the Pareto frontier of our serving system."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "AIFS-SUBS: Extending Data-Driven Forecasting to Sub-Seasonal Timescales",
+    "authors": "Jakob Schloer, Steffen Tietsche, Christopher D. Roberts, Lorenzo Zampieri, Simon Lang, Gert Mertes, Gareth Jones, Matthew Chantry, Frederic Vitart",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05100v1",
+    "source": "arXiv",
+    "abstract": "Data-driven models now rival numerical weather prediction in the medium range, but extending them to sub-seasonal lead times raises challenges absent at shorter horizons. Errors accumulate over long autoregressive rollouts, systematic biases grow with lead time, and several years of data must be held out for independent verification, even though machine-learning models otherwise benefit from longer training records. To address these challenges, we adapt ECMWF's AIFS-CRPS medium-range model. AIFS-SUBS adopts a 24h autoregressive time step to reduce error accumulation, adds stratospheric levels and top-of-atmosphere thermal radiation as predictors, and reserves 2007--2011 as an independent verification window. We evaluate two config-durations: AIFS-SUBS, fine-tuned on operational analyses, and AIFS-SUBS-ERA5, trained on ERA5 alone. Across weeks 2--6, AIFS-SUBS matches the operational Integrated Forecasting System (IFS) in probabilistic skill while reducing systematic biases. For the convective (OLR) component of the Madden--Julian Oscillation (MJO), AIFS-SUBS extends skilful forecasts (correlation > 0.5) by eight days relative to the IFS, while matching or exceeding the IFS for the full multivariate RMM index. AIFS-SUBS also reproduces the observed MJO modulation of tropical cyclone activity comparably. Stratospheric skill is particularly strong with AIFS-SUBS reproducing sudden stratospheric warming (SSW) frequency and surface impact. In the AI Weather Quest, AIFS-SUBS-ERA5 attains a variable-averaged ranked probability skill score slightly ahead of the IFS at weeks 3 and 4. At inference, AIFS-SUBS uses about 200 times less energy than the IFS, opening the door to much larger real-time ensembles. AIFS-SUBS is ECMWF's first machine-learning model targeted at sub-seasonal time-scales."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Can Code Specify a System Precisely Enough to Formally Verify It?",
+    "authors": "Jean-Jacques Dubray",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05076v1",
+    "source": "arXiv",
+    "abstract": "Formal verification is seldom applied to production software, because writing and maintaining a model has historically cost more than it returns. A companion study [1] extended SysMoBench [4] with a lower-cost alternative: specifications are graded against traces captured from the running system. It found that when large language models write the specifications, reliability is governed by the structure of the specification contract, not the language. This paper evaluates both on production software: the payment workflow of an operational restaurant point-of-sale system, which must keep the register, payment terminal, and payment processor in agreement. We report three results. First, the core protocol is correct relative to a hand-built, line-cited model under a precisely stated failure model. The audit found seven failure-handling gaps, nearly all with a common root cause; three were reproduced as real executions, and a patch closing them was re-checked with all failure gates enabled, after which a follow-up patch closed a defect the re-check itself exposed. Systematic extensions of the failure model (crash-restart, stale reads, two attempts) each found the windows they were designed to probe. Second, a single probe of the production payment sandbox exposed a response-shape divergence that makes an entire recovery ladder unreachable against the live API. The emulator-based audit could not detect it, because code and emulator share the same misreading: a correlated-oracle failure. Third, the companion study's central finding replicates across seven models from two vendors: contract structure, not language, governs what LLMs specify reliably. The replication concerns the ordering of contracts and the failure taxonomy, not the absolute level: only the strongest models reached the corpus ceiling, and the harder task restores discriminating power the benchmark had lost."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "When AI Is Wrong on Purpose: How Students Respond to Buggy GenAI Code",
+    "authors": "Victor-Alexandru Pădurean, Kaitlin Riegel, Alkis Gotovos, Jyotika Mahapatra, Ahana Ghosh, Paul Denny, Juho Leinonen, James Prather, Adish Singla",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05068v1",
+    "source": "arXiv",
+    "abstract": "As Generative AI (GenAI) becomes increasingly central to software development, CS education is integrating prompt-centered workflows where students describe intended program behavior in natural language to elicit code. However, professional practice requires careful review and verification of GenAI-generated code that may appear correct while containing subtle faults. This creates a challenge for CS1-level activities, where current models often solve tasks correctly and reduce students' incentive to closely inspect generated outputs. We investigate how prompt-centered programming activities can be adapted to better foster these practices. Specifically, we explore an approach where realistic, runnable bugs are injected into otherwise correct solutions, thus requiring students to read and repair generated outputs. We analyzed 2,636 sessions from 917 students, and examined behavior across instances of naturally occurring prompt-related failures and deliberately injected bugs within each session. Our findings show that students responded differently across bug sources. Deliberately injected bugs more often led to direct code edits and higher next-attempt success, suggesting localized repair of near-miss solutions. Prompt-related failures instead more often led students to refine prompts by clarifying constraints, updating function signatures, adding edge cases, or reframing the task. Student reflections reinforce the emphasis on review and repair, describing useful practice in code understanding, code review, and debugging, as well as a more careful verification mindset and greater awareness of GenAI limitations. Ultimately, prompt-related failures and injected bugs together support a pedagogically useful GenAI workflow, where students practice both specification refinement through prompts and debugging through code editing."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Security Analysis of RIS-Assisted Physical-Layer Authentication Over Multipath Channels",
+    "authors": "Linda Senigagliesi, Anna V. Guglielmi, Marco Baldi, Stefano Tomasin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05042v1",
+    "source": "arXiv",
+    "abstract": "In physical layer authentication, verification of a user's identity is based on the characteristics of the transmission channel through which signals are delivered to the authenticator (Bob). In this paper, we assume that the signals received by Bob pass through a \\ac{RIS} (controlled by Bob) and that the legitimate transmitter (Alice) is equipped with one antenna. Conversely, the attacker (Trudy) has multiple antennas and uses precoding to deceive Bob's verification. Assuming that Trudy knows all the channel matrices, we first derive her optimal attack strategy. Then, we analyse the conditions under which the channel estimated by Bob is indistinguishable when either Alice or Trudy is transmitting. When Trudy has a single antenna, we show that the indistinguishability condition cannot be met when the channels to the RIS are the result of propagation over multiple paths. For single-path line-of-sight (LOS) conditions, instead, Trudy can impersonate Alice although transmitting from a different position. We verify these results numerically and assess the security of the considered scenario, even when the indistinguishability conditions cannot be met."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Algorithmically Presented Numbers and Canonical Representations in Cryptographic Protocols",
+    "authors": "Arslan Brömme",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05016v1",
+    "source": "arXiv",
+    "abstract": "This paper develops a representation-theoretic perspective on cryptographic protocols. The focus is not solely on the computability of the abstract value as an extensional property, but on the algorithmic structure of its presentation in a representation system: for operational use in protocols, algorithmic accessibility of the value does not suffice; its fixed presentation is also decisive. We distinguish three representation-theoretic notions -- algorithmically approximable (A_app, the computable real numbers), finitely exactly describable in a system (A_fin(S)), and canonical normalizability of a system -- and show that there is no computable extensional canonicalizer that uniformly transforms arbitrary approximation programs of computable real numbers into unique finite value encodings. As the operational rational core presentation we use the rational system with its canonical encoding specification Sigma_Q (fixed rules for valid fraction descriptions, canonical codes, and normalization); the associated value set is A_ex = Q. The notion of a canonically serializable object class transfers this core idea to practical protocol objects (files as byte sequences, hash values, transaction IDs, and normatively serialized payloads). We illustrate the consequences for interoperability, well-definedness, and verification with fully worked toy examples from symmetric and asymmetric encryption and hashing, and with a real-world example, the snaproot hash-anchoring protocol for blockchain-based file integrity verification. The paper thereby shows that the mathematical determinacy of a value and its operational uniqueness as a protocol object are two different requirements. Once a normative representation specification has been fixed, byte-level correctness and well-definedness arguments can be carried out without further implementation-dependent serialization or rounding decisions."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction",
+    "authors": "Mouhamed Amine Bouchiha, Gregory Blanc",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.05001v1",
+    "source": "arXiv",
+    "abstract": "Cyber Threat Intelligence (CTI) reports are predominantly unstructured, heterogeneous, and noisy, which limits their direct usability for automated analysis and reasoning. Cybersecurity Knowledge Graphs (CSKGs) provide a structured representation of adversarial entities, actions, and relations, but constructing such graphs from free-text CTI remains a challenge. Recent approaches rely on monolithic Large Language Models (LLMs) to perform end-to-end extraction and completion, leading to high cost, limited controllability, and unstable performance. This paper introduces TACTIC-KG, an agentic framework for CSKG construction that decomposes the task into modular, specialized LLM agents responsible for extraction, typing, verification, and curation. Using lightweight models (3B--8B), TACTIC-KG improves stability, recall, and graph consistency while reducing deployment cost. We implement and evaluate TACTIC-KG against recent state-of-the-art systems. Experiments on human-annotated CTI reports show that agent specialization consistently outperforms larger monolithic in-context-learning (ICL) baselines in extraction F1-score, typing accuracy, and structural graph similarity."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Compliance Evidence in the Automotive Supply Chain: A Systematisation of the Quality-Document Spine and a Taxonomy of Documentation Failure Modes",
+    "authors": "Dawar Jyoti Deka, Nilesh Sarkar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.04924v1",
+    "source": "arXiv",
+    "abstract": "The automotive industry runs on a dense, standardised chain of supplier-quality and certification evidence: production part approval packages, initial sample reports, material certificates, inspection sign-offs, and the type approval dossiers. The chain is operationally central, yet no literature maps it as an information system, and its failures are studied as corporate misconduct rather than system outcomes. This paper systematises the chain and taxonomises its documented failures. First, it systematises the supplier-quality evidence chain across the two dominant regimes, AIAG PPAP and VDA Volume 2 PPA, organised by artefact, producer, verifier, trigger, approval state, and retention. Second, it compiles a compendium of thirteen compliance-documentation failures made public 2012 to 2024, built strictly from the public record and each classified by evidentiary status (adjudicated, company-acknowledged, or alleged), with the Japanese certification cluster of 2016 to 2024 as centrepiece. Third, it builds a failure-mode taxonomy over the compendium, dimensioned by mechanism, lifecycle locus, driver, and detection path, shown exhaustive and discriminating over the case set. Fourth, it derives evidence architecture requirements mechanism by mechanism and sets an open-problems agenda. Across all thirteen cases, not one failure surfaced through the chain's own routine verification; the record indicts the verification layer, not only the evidence authors."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better",
+    "authors": "Gengluo Li, Xingyu Wan, Shangpin Peng, Weinong Wang, Hao Feng, Yongkun Du, Binghong Wu, Zheng Ruan, Zhiqiong Lu, Liang Wu, Pengyuan Lyu, Huawen Shen, Zibin Lin, Shijing Hu, Jieneng Yang, Hongbing Wen, Guanghua Yu, Hong Liu, Bochao Wang, Can Ma, Han Hu, Chengquan Zhang, Yu Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.04884v1",
+    "source": "arXiv",
+    "abstract": "We present HunyuanOCR-1.5, a lightweight end-to-end OCR-specialized vision-language model. HunyuanOCR unifies document parsing, text spotting, information extraction, text-image translation, and multi-image document understanding within a single end-to-end VLM. Building upon the lightweight architecture of HunyuanOCR-1.0, HunyuanOCR-1.5 does not redesign the backbone, but systematically improves both efficiency and capability. For efficiency, we adapt DFlash to OCR decoding, significantly reducing the latency of long structured outputs such as dense documents, tables, and formulas while preserving output distribution. Powered by DFlash, HunyuanOCR-1.5 achieves a 6.37x Transformer inference speedup and a 2.14x speedup under vLLM, delivering the fastest inference among lightweight OCR VLMs. For capability, we propose Agentic Data Flow, an agent-driven data construction system that transforms model weaknesses into executable data requirements and autonomously performs material search, quality verification, and pipeline development. It substantially improves long-tail capabilities in ancient-script OCR, fine-grained chart and table parsing, multi-image text-centric QA, low-resource multilingual parsing, and document hallucination evaluation. HunyuanOCR-1.5 ranks among the top-tier end-to-end OCR solutions on OmniDocBench v1.6 while achieving new performance milestones across these long-tail tasks. Combined with an upgraded pretraining and post-training recipe, HunyuanOCR-1.5 further extends its capability in high-resolution, long-context, and multi-task scenarios. Experiments demonstrate faster inference, broader OCR capability coverage, and the deployment advantages of a lightweight end-to-end model. We will release the model weights and training code to support future research and real-world OCR applications."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "EventCoT: Event-centric Video Chain-of-thought for Reasoning Temporal Localization",
+    "authors": "Youngkil Song, Yoonjae Baek, Dongwon Kim, Inho Kim, Dongkeun Kim, Suha Kwak",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.04872v1",
+    "source": "arXiv",
+    "abstract": "Reasoning temporal localization (RTL) requires a model to generate an answer that itself contains the time interval supporting it, so high-level reasoning and precise temporal grounding must be produced jointly in a single response. To tackle this challenging task, we propose the first event-centric video chain-of-thought framework, dubbed EventCoT. EventCoT first performs event-centric tokenization of the input video to convert it into compact event tokens, enabling efficient identification of question-relevant events. It then reasons within the identified events to generate the answer, grounding the time interval via embedding matching that aligns placeholder tokens with visual embeddings. EventCoT achieves state-of-the-art results on ActivityNet-RTL for reasoning temporal localization while using substantially fewer visual tokens than previous work. To verify its general performance, we further evaluate EventCoT on the grounded video question answering benchmark ReXTime, where it attains strong zero-shot results."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Dynamic Airspace Management for UAVs in Evolving Urban Environments: Collaborative Coordination and Human Safety",
+    "authors": "Lin Sun, Yuhang Wang, Fan Meng Hong, Haopeng Chen, Yan Jiao, Yongming Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.04825v1",
+    "source": "arXiv",
+    "abstract": "The low-altitude economy is an emerging industry with significant development potential, in which the safety of unmanned aerial vehicle (UAV) operations is a critical challenge. Particularly within complex urban topographies and human-populated environments, UAV airspace management must prioritize collision avoidance and human safety. We propose Pharos, a collaborative multi-UAV airspace management system. Pharos lies between the distributed local perception paradigm and the centralized fine-grained control paradigm. Pharos coordinates the safe parallel execution of UAVs in shared airspace while innovatively accounting for the impact of human fear. Pharos is implemented using the MAPPO algorithm due to its faster convergence and higher rewards than other typical MARL algorithms (HAPPO and HATRPO). To evaluate Pharos, we developed a 3D simulation system using real urban data. Visualization results demonstrate its effective airspace coordination capability. Regarding performance verification, Pharos reduced human fear by 52.72% compared to the benchmark Ipopt. Moreover, we designed spatial entropy as a system evaluation metric to quantify space utilization, which improved performance by 70.82% and 2.03% compared to the benchmarks Ipopt and A-star, respectively. The source code is available at an anonymized repository: https://github.com/pharos-anonymized/source-code.git."
+  },
+  {
+    "date": "2026-07-06",
+    "title": "A Temporal Reasoning Benchmarking Framework for LRMs via Difficulty-controlled and Dynamic Test Generation",
+    "authors": "Shide Zhou, Kailong Wang, Ling Shi, Haoyu Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.04784v1",
+    "source": "arXiv",
+    "abstract": "Defining the reasoning boundaries and ensuring the reliability of Large Reasoning Models (LRMs) remains a critical challenge. Current benchmarks primarily rely on static datasets susceptible to data contamination or synthetic tasks lacking fine-grained difficulty control. Furthermore, standard outcome-based evaluations often conceal reasoning flaws by neglecting the reasoning process. To address these limitations, we introduce TRACE, a testing framework that models temporal reasoning as constraint satisfaction problems via Allen's Interval Algebra. This approach enables precise regulation of logical complexity and incorporates a Trace-Based Verification Oracle to validate reasoning faithfulness. Using this framework, we construct TRACEBench, an extensive benchmark comprising 1,200 synthesized test instances across graded difficulty levels. We employ TRACE to evaluate eight widely used LRMs on TRACEBench. The results confirm a strong negative correlation between model performance and our difficulty metric (Pearson's r approximately -0.96), validating the effectiveness of our difficulty control mechanism. Moreover, our trace-based analysis exposes significant discrepancies between reasoning validity and final answers, revealing a high spurious guessing rate of approximately 28% in mid-sized models. In addition, we diagnose scale-dependent failure modes, ranging from Degenerative Loops in small models to Reasoning Explosion in advanced architectures. TRACE thus provides a robust, automated platform for benchmarking the true temporal reasoning capabilities of LRMs."
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-assisted Verification of Protocol Implementations for Logic Flaws Using TLA+",
+    "authors": "Kai Tian, Xi Chen, Fushan Wei, Chunxiang Gu, Maosong Chen, Jiaxing Guo",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582755",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-RR: Large Language Model Enhanced Reader-Retriever with Triple Verification for Closed Information Extraction",
+    "authors": "Hongrui Zhang, Ji Xiang, Xiaobo Guo, Lei Wang",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582383",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-Flex: Adaptive Heterogeneous Federated Learning Based on LLM in Uncertain Scenarios",
+    "authors": "Qian Liu, Weilong Wang, Borui Li, Shuai Huang, Shuai Wang",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11581641",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "Design and RTL-to-Netlist Implementation of a 64-Bit RISC-V Processor Using EDA Tool",
+    "authors": "Suhas M Angadi, Sathish Kumar M",
+    "publish": "2026 International Conference on Computing Theory and Wireless Communications (ICCTWC)",
+    "url": "https://doi.org/10.1109/icctwc68241.2026.11583119",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "S\n                    <sup>3</sup>\n                    -Repair: Error-Semantic Guided Symbolic Synthesis for RTL Repair",
+    "authors": "Enyuan Tian, Yiwei Ci, Qiusong Yang, Yufeng Li, Zhichao Lyu",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582271",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-ISR:Intent-Driven Sequential Recommendation with Large Language Models",
+    "authors": "Xiangyu Chen, Run Lin, Honghui Chen",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582299",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "RoMa: A Credibility-Aware Fault-Tolerance Framework for LLM Multi-Agent Systems",
+    "authors": "Kunyu Li, FengHe Wu",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582680",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "Towards Energy-Aware LLM Inference for Text2SQL workflows through Context-Driven Model Routing",
+    "authors": "Argyris Kokkinis, Charalampos Lagonidis, Thanassis Mavropoulos, Stefanos Vrochidis",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3709895",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "Toward Reliable Collective Intelligence in LLM-MAS: Coordination, Challenges, and Future Directions",
+    "authors": "Yang Zhang, Mohan Zhang",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11581698",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-Augmented Multimodal Recommendation with Dynamic Feature Weighting and Multi-Scale Graph Convolution",
+    "authors": "Yining Pang, Chenghan Li",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582536",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "SAPDS: Providing Latency Guarantees for Prioritized DAGs in Embodied LLM Systems",
+    "authors": "Zhendong Chen, Zhanshang Nie, Shuai Zhao",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582410",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-7",
+    "title": "LLM-Powered On-Demand Test Suites in Self-Graded Student Programming Assignments",
+    "authors": "Chang Liu",
+    "publish": "Proceedings of the 3rd International Workshop on Large Language Models For Code",
+    "url": "https://doi.org/10.1145/3786181.3788709",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-6",
+    "title": "A Novel LLM-based Interpretable Intrusion Detection Framework for the Internet of Things (IoT)",
+    "authors": "YuFei An, HuaQiang Su",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11581648",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "PAMPS: Path-Aware Adaptive Multi-Subflow Parallel Scheduling for LLM Training Workloads",
+    "authors": "Haoyong Yu, Meng Yuan, Qiang Wu",
+    "publish": "2026 7th International Conference on Computing, Networks and Internet of Things (CNIOT)",
+    "url": "https://doi.org/10.1109/cniot69547.2026.11582381",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-Guided Tree-Structured Rules Expansion for Knowledge Graph Reasoning",
+    "authors": "Jianan Sun, Zhe Wang, Hongyue Wu, Kewen Wang",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582637",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "Adaptive Parallelism for LLM Inference with Model Irrelevant Profiler",
+    "authors": "Yubo Li, Lei Li, Chaoqun He, Jianchao Zhang, Bing Liu",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11581475",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "LLM-Guided Runway Incursion Scoring and Evidence Flow for Runway Incursion Early Warning",
+    "authors": "Yixiang Peng, Jing Li, Zhihai Liu",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582305",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "AmpFuzz: Collaborative Smart Contract Fuzzing via LLM-Enhanced Seeding and Amplify-and-Deepen Mutation",
+    "authors": "Wanrou Zhang, Yueling Zhang, Ting Su",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11581456",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-6",
+    "title": "Enabling Student Ownership of LLM-Use through Team Contracts",
+    "authors": "Floris Westerman, Sarah Carruthers",
+    "publish": "Proceedings of the 31st ACM Conference on Innovation and Technology in Computer Science Education V. 2",
+    "url": "https://doi.org/10.1145/3803401.3811958",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-6",
+    "title": "KG-First, LLM-Fallback: A Hybrid Microservice for Grounded Skill Search and Explanation",
+    "authors": "Ngoc Luyen Le, Marie-Hélène Abel, Bertrand Laforge",
+    "publish": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/cscwd68734.2026.11582287",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
