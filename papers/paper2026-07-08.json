@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-08",
+    "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+    "authors": "Chen Tang, Yizhou Wang, Jianyu Wu, Lintao Wang, Shixiang Tang, Pengze Li, Encheng Su, Jun Yao, Jiabei Xiao, Yuqi Shi, Jielan Li, Hongxia Hao, Zhangyang Gao, Fang Wu, Ben Fei, Xiangyu Yue, Pan Tan, Bozitao Zhong, Jinouwen Zhang, Aoran Wang, Yan Lu, Jiaheng Liu, Xinzhu Ma, Liang Hong, Mingyue Zheng, Phil Torr, Bowen Zhou, Wanli Ouyang, Lei Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07708v1",
+    "source": "arXiv",
+    "abstract": "Structure-property relationships are foundational to biology, chemistry and materials science, where function, reactivity and physical response emerge from spatial, chemical and periodic organization. Mechanistically explaining these relationships requires interpreting structural evidence through scientific principles and physical constraints, from stereochemistry and bonding to symmetry, energetics and periodic order. However, applying artificial intelligence to this process presents a joint challenge of representation and reasoning: models must preserve domain-native structural information while showing how specific evidence supports predictions under these constraints. Here we introduce SciReasoner, a multimodal scientific foundation model for native structural reasoning across proteins, small molecules and inorganic crystals. SciReasoner discretizes coordinates, topologies and periodic connectivities into a unified structure-aware vocabulary, treating structural tokens as addressable evidence units during reasoning. In homology-controlled Gene Ontology prediction, SciReasoner improves Cellular Component annotation for low-homology and orphan-like proteins, increasing $F_{\\max}$ from 0.42 to 0.55. In chemistry, it raises single-step retrosynthesis accuracy from 0.63 to 0.72 while generating fragment-level disconnection and precursor-verification traces. In materials science, its representations separate elemental and compound phases and resolve high- and low-band-gap regimes. Across 86 benchmarks, SciReasoner achieves state-of-the-art performance on 67 tasks. Double-blind expert evaluation rates its reasoning traces as preferred or at least comparable to those of a frontier large language model in 98% of cases. By making structure an inspectable substrate for reasoning under scientific constraints, SciReasoner connects accurate prediction with interpretable scientific inference."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization",
+    "authors": "Ying Chang, Jiahang Xu, Xuan Feng, Chenyuan Yang, Peng Cheng, Yuqing Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07702v1",
+    "source": "arXiv",
+    "abstract": "The optimization of long-horizon agents increasingly relies on reflection-based mechanisms, where a large language model (LLM) acts as an optimizer to diagnose agent failures and improve agent policies. However, real execution traces are difficult to use directly for optimization: large trace collections are often redundant and heterogeneous, making optimization inefficient and prone to overfitting to low-value failures; meanwhile, each individual trajectory also contains many irrelevant steps, while naive context reduction methods such as truncation or sliding windows can discard causally important evidence and produce misleading optimization signals. To resolve this dilemma, we introduce STRACE (Structural TRajectory Analysis and Causal Extraction), a framework that constructs high signal-noise optimization contexts for more precise and effective optimization. At the batch level, STRACE mines failure patterns to filter redundant traces and retain representative failures; within each selected trace, it performs causal localization over a textual dependency graph to remove non-causal steps and identify the true root-cause module for optimization. Empirical results demonstrate that STRACE significantly outperforms standard context-filtering baselines. Notably, on a challenging formal verification task (VeruSAGE-Bench), it successfully optimizes human-expert designed agents, delivering $1.4\\times$ success-rate improvement (42.5% to 58.5%). The code is available at https://github.com/moomight/STRACE ."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "When one sign is not enough: 2+1 circular motion Unruh effect at low energies",
+    "authors": "Leo J. A. Parry, Christopher J. Fewster, Jorma Louko",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07686v1",
+    "source": "arXiv",
+    "abstract": "We address the circular motion Unruh effect in 2+1 spacetime dimensions, as probed by a pointlike Unruh-DeWitt detector coupled to a massless scalar field. The effective temperature due to circular acceleration, operationally defined in terms of the detector's excitation and de-excitation probabilities, is known to be much smaller than the linear acceleration Unruh temperature when the detector's energy gap is small and the interaction lasts for a long time. It was shown by Parry et al. [Class. Quant. Grav. 42, 245012 (2025), arXiv:2508.19987] that a temperature of the order of the linear acceleration Unruh temperature can nevertheless be recovered in a simultaneous long-time-small-gap double limit, using suitable classes of detector-field couplings described by asymptotically scaled switching families (ASSFs). The successful constructions presented there required the coupling to change sign. Here we prove, within the ASSF framework and under certain technical boundedness and localisation conditions, that sign changes in the detector-field coupling are in fact *necessary* for obtaining a nonvanishing limiting effective temperature. Our analysis is motivated by current work towards an experimental verification of the circular motion Unruh effect in analogue spacetime experiments."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+    "authors": "Mingguang Chen, Licheng Wang, Bo Qu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07663v1",
+    "source": "arXiv",
+    "abstract": "AI systems increasingly participate in their own improvement: revising their outputs, adapting their own harnesses during deployment, training on data they generate, and, increasingly, conducting AI research itself. This literature is described under a vocabulary (\"self-refine,\" \"self-reward,\" \"self-play,\" \"self-evolve\") that conflates fundamentally different ambitions. We survey 1,250 arXiv papers (2024-2026) along two axes: what the system improves -- its behavior in deployment, its policy through training, its evaluator, or the research process itself -- and the degree of loop closure (human-in-the-loop to fully closed). The taxonomy separates bounded self-refinement -- convergent, evaluable, and already industrial practice -- from open-ended recursive self-improvement (RSI), which remains bounded by grounding requirements, collapse dynamics, and compute constraints on every measured axis. Its distinctive feature is a dedicated category for self-evaluation: every improvement loop is a claim that some signal can substitute for human judgment. We survey the evaluator design space -- judges, process reward models, verifiers, rubrics, meta-evaluation -- order the signals into a verification hierarchy from formal verifiers (strongest) to intrinsic self-assessment (weakest), and observe that demonstrated self-improvement strength tracks this hierarchy, that its failure modes (self-confirming loops, model collapse, diversity collapse) follow from its violations, and that the \"research direction-setting\" bottleneck keeping humans in the loop sits at the top of that hierarchy. We connect the technical literature to the theory of RSI limits and to the safety and governance questions raised by frontier-lab accounts of closing the loop, and identify governance-grade measurement of self-improvement as the field's most underpopulated niche."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "ATLAS: Automated HLS for DL-Optimized FPGAs",
+    "authors": "Ruthwik Reddy Sunketa, Aman Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07643v1",
+    "source": "arXiv",
+    "abstract": "FPGA architectures increasingly incorporate domain-specific in-fabric hardblocks to accelerate DL inference, particularly GEMM, which dominates DL computation. To realize the performance gains of these hardblocks, manual RTL design is required: the programmer must understand the hardblock microarchitecture, instantiate them in RTL, and manage tiling and control logic. While programming in C/C++ and using HLS tools has increased the abstraction level and productivity of FPGA engineers, HLS tools do not support code generation for custom hardblocks natively. Prior work has demonstrated that blackbox mechanisms in HLS tools can be used to target custom hardblocks, but this still requires explicit function calls in user-written HLS C and manual creation of RTL IP libraries, significant effort that must be repeated for every layer in a DL model. Furthermore, for DL, an even high-level programming interface, e.g., Pytorch/Keras instead of C/C++, is desirable for improved programmability and user adoption. We present ATLAS, a fully automated flow from a high-level DL model description to a hardware implementation on an FPGA with custom in-fabric DL-optimized hardblocks, requiring no manual RTL design or explicit hardblock instantiation from the end user. Our approach uses GEMM as a universal abstraction layer and comprises two components: (1) hls4ml-GEMM, a compiler frontend that transforms DL layers into HLS C code with architecture-agnostic GEMM function calls, and (2) a GEMM IP Generator, an architecture-aware backend that produces hardblock-based RTL wrappers with tiling logic, control FSMs, and scheduling metadata. We evaluate the flow across 11 DL designs, including individual fully connected, convolution, and attention layers, as well as full CNN, MLP, and Transformer models targeting an FPGA architecture with Tensor Slices using Catapult for HLS and VTR for implementation."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Text-Independent Speaker Verification Using Discrete Audio Tokens",
+    "authors": "Zheng Liang, Junjie Li, Kong Aik Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07579v1",
+    "source": "arXiv",
+    "abstract": "Neural audio codecs (NACs) enable efficient audio compression and have achieved success in downstream tasks such as speech synthesis. However, their discrete representations consistently underperform traditional spectral features in automatic speaker verification (ASV). We empirically demonstrate that speaker cues are implicitly preserved in discrete tokens but remain underutilized by conventional ASV training paradigms. To address this, we propose a Cross-Feature Knowledge Distillation (CFKD) framework. By guiding the codec-based student to mimic the embedding space of a strong Fbank-based teacher, CFKD provides structured supervision for effective utilization of speaker information in tokens. Experiments on the VoxCeleb benchmarks show that CFKD substantially improves the ASV performance of codec-based systems, allowing them to approach the accuracy of Fbank-based teacher models and highlighting the potential of discrete audio tokens for diverse speech tasks."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "HIVE: Understanding Post-Hallucination Reasoning in Vision Language Models",
+    "authors": "Feng He, Zhenting Wang, Qifan Wang, Qiang Guan, Dongfang Liu, Ruixiang Tang, Qiankun Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07507v1",
+    "source": "arXiv",
+    "abstract": "Hallucinations in vision language models (VLMs) are commonly treated as semantic errors, yet they often arise from partial or ambiguous visual evidence. Prior work mainly focuses on detecting or suppressing hallucinations at generation time, leaving the subsequent reasoning stage largely unexplored. In this work, we study Post Hallucination Reasoning (PHR), the stage in which hallucinated semantics enter the model's inference context and influence downstream predictions. To systematically investigate PHR, we introduce HIVE, Hallucination Inference and Verification Engine, an evaluation infrastructure that enables controlled comparisons between faithful and hallucinated captions. Across nine tasks and nine models, we observe structured modality dependent patterns: hallucinated captions often improve accuracy on vision language tasks, while text only tasks exhibit limited or unstable effects. Further analyses show that hallucinated cues broaden semantic coverage and reshape reasoning dynamics while preserving stable inference. These findings highlight that hallucinated semantics may influence downstream reasoning once they enter the model's inference context. Understanding this post hallucination stage is important for improving the reliability and interpretability of multimodal reasoning systems. Code is publicly available at https://github.com/hefengcs/HIVE."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "LLM Assisted Verification Assertion Generation: Challenges and Future Directions",
+    "authors": "Bhabesh Mali, Chandan Karfa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07444v1",
+    "source": "arXiv",
+    "abstract": "Assertion-based Verification (ABV) plays a critical role in the Design Verification (DV) process. However, ABV requires substantial manual effort in generating assertion from specification by verification engineers, making it a time-consuming stage in the chip design flow. With the recent development of Large Language Models (LLMs), researchers have started exploring their use as an assistance in the ABV process, particularly for generating SystemVerilog Assertions (SVAs) from design specification. In this paper, we provide an overview of recent works, highlighting the different methods used to generate SVAs. In particular, we investigate LLM-based SVA generation and ask a central question: How can LLM-based assertion generation be made systematic and quality-aware? While addressing this key question, we provide Key Takeaways at the end of each challenge, summarizing the important methodological insights, and also provide guidelines and directions in solving those challenges that can help generate a high-quality set of assertions using LLMs."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents",
+    "authors": "Vikas Reddy, Sumanth Reddy Challaram, Abhishek Basu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07405v1",
+    "source": "arXiv",
+    "abstract": "Tool-using LLM agents can violate the very policies they are deployed to enforce while appearing to complete the task successfully. In policy-permissive environments, a tool may execute any well-formed call even when the corresponding state transition is forbidden by domain policy. The result is a silent wrong state (a booking cancelled, a passenger count changed, a claim acted on without verification) that neither the tool nor the agent's self-report exposes. We study this failure mode in the $τ^2$-bench airline domain. On a budget agent, 78% of observed failures are silent wrong-state failures with no tool error, and the aggregate failure rate is reproducible across disjoint seeds, not sampling noise. We then evaluate a lightweight intervention: deterministic, read-only pre-execution gates that inspect the proposed call and current state before allowing a write. A four-gate suite raises full-benchmark success from 29.6% to 42.0% on gpt-4o-mini (+12.4pp; paired task-level bootstrap P=0.0012), and the lift reproduces on a disjoint 15-seed set (+12.3pp; P=0.0008). The effect is concentrated where the gates fire: on the 26/50 firing tasks, success rises by +19.2pp, while movement on the 24 non-firing tasks does not exclude zero. Two negative controls (a self-enforcing retail domain and BFCL) bound the mechanism: gates help when tools are policy-permissive and add little where tools already self-enforce. As suggestive evidence, not a central claim, the same failure mode persists at the frontier: gpt-5.2 at default reasoning still attempts policy-violating writes, and the same suite improves success from 61.2% to 71.6% (+10.4pp; P=0.020; n=5, no replication). The contribution is a bounded evaluation and reliability result: deterministic gates do not guarantee task success, but they can deterministically prevent a known class of silent policy-violating writes at the action boundary."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Multi-Agent Robotic Control with Onboard Vision-Language Models",
+    "authors": "Kajetan Rachwał, Maciej Majek, Bartłomiej Boczek, Jakub Matejczyk, Dominik Matejkowski, Adam Dąbrowski, Tim Seyde, Alexander Amini, Maria Ganzha",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07403v1",
+    "source": "arXiv",
+    "abstract": "Vision Language Models (VLMs) and Vision Language Action (VLA) models have shown promise in robotic control. Yet, they face significant challenges regarding explainability, generalization, and compute requirements. This paper presents a Multi-Agent System (MAS) architecture that addresses these limitations by deploying specialized agents on onboard hardware - eliminating dependence on external compute. The system controls a multi-purpose autonomous mobile manipulator in a simulated industrial warehouse, fulfilling five task categories: safety inspection, warehouse maintenance, warehouse search, package quality verification, and responding to human requests. Compact VLMs (3-20B parameters) are used throughout, with fine-tuning applied to improve package inspection accuracy. A novel \"Megamind\" orchestration agent mitigates context retention issues inherent to long-horizon planning with smaller models. The system was validated in a hardware-in-the-loop simulation using an AMD Ryzen(TM) AI mini PC. Results demonstrate that a fully onboard MAS architecture is a viable, cost-efficient alternative to cloud-dependent deployments, with strong potential for real-world transfer. The simulation environment has been released as open source under the Apache 2.0 licence."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Evaluating Static and Process Evidence for Code Authorship in Programming Education",
+    "authors": "Marek Horváth",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07400v1",
+    "source": "arXiv",
+    "abstract": "In programming courses, instructors may need to interpret whether a submission is consistent with a student's prior programming profile, especially when code similarity alone is inconclusive. Existing source-code authorship methods are often evaluated on programming-contest or open-source datasets, where reusable templates and local code patterns can produce strong author-related signal. Educational repositories present a different setting. Students solve shared assignments while their programming practices are still developing. This study uses task-aware evaluation to contrast these production contexts and tests whether repository-visible process features add information beyond final code in six matched educational comparisons. Contest data provide a high-signal contrast, with a Kick Start mean top-1 of 0.938. Educational datasets produce substantially lower attribution performance. Adding process features raises the educational mean from 0.094 to 0.233 and mean pairwise verification ROC-AUC from 0.556 to 0.752. The comparisons show that measured signal depends on production context and that process patterns can complement weak final-code signal in educational repositories. Such models are therefore appropriate only as instructor-mediated decision support, not as independent proof of authorship."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "MIRA-Math: A Benchmark for Minimal Information Requesting and Mathematical Reasoning",
+    "authors": "Charbel Al Bateh, Samer Saab",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07391v1",
+    "source": "arXiv",
+    "abstract": "Mathematical reasoning benchmarks typically provide all facts needed to solve each problem, while interactive benchmarks often mix reasoning with tools, retrieval, and long-horizon dialogue. We introduce MIRA-Math, a benchmark for a narrower diagnostic capability: solving mathematical problems whose full latent state has a unique answer, but whose solver-facing view is missing exactly one necessary atomic fact. The solver must request the missing information in natural language under a strict budget and then integrate the returned fact into an exact final answer. A fixed constrained LLM responder sees only the dataset-provided atomic fact and must either offer the quoted fact when the request matches it, or decline otherwise. Thus, instance generation, typed hint specifications, validation, and final-answer verification are deterministic, while request metrics are measured under a fixed LLM-mediated responder channel. MIRA-Math contains 2{,}310 generated instances from 22 typed mathematical families spanning algebra, probability, linear systems, discrete structures, signal processing, Markov chains, circuits, interpolation, and numerical boundary-value problems. Experiments across frontier and small models show that request success and final-answer accuracy are separable: models may ask for the right fact yet fail the downstream computation, or fail before obtaining the canonical hint. We release generators, verifiers, prompts, run metadata, and dataset documentation to support reproducible evaluation of minimal information requesting in mathematical reasoning."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "JAX-FVM: A differentiable, entropy-stable finite volume solver on unstructured meshes for compressible flows",
+    "authors": "Guillaume de Romémont",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07385v1",
+    "source": "arXiv",
+    "abstract": "We present JAX-FVM, an open-source, fully differentiable finite volume method (FVM) for the two-dimensional compressible Euler and Navier-Stokes equations on unstructured triangular meshes. The solver is written entirely in JAX, so that every operation : mesh connectivity, flux evaluation, slope limiting, and time integration is just-in-time compiled, vectorised, and end-to-end differentiable through automatic differentiation (AD), and runs transparently on CPU or GPU. On the numerical side, JAX-FVM is built around an entropy-conservative Tadmor/Ismail-Roe two-point flux supplemented with entropy-variable Rusanov or Roe dissipation, second-order MUSCL reconstruction of primitive variables with least-squares gradients and Venkatakrishnan limiting, and a family of explicit (RK2-4) and matrix-free implicit (Newton, SDIRK2) time integrators whose Jacobian actions are obtained by AD. The combination of an unstructured-mesh compressible FVM with end-to-end differentiability fills a gap left by existing differentiable CFD frameworks, which are almost exclusively restricted to structured grids or spectral discretisations. We describe the governing equations, the discretisation, the software architecture, and a set of standard verification cases. The code is openly available at https://github.com/guigzair/jax_fvm."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "MMAgent-R$^2$: Learning to Rerank and Reject for Agentic mRAG",
+    "authors": "Tao Zhang, Ziqi Zhang, Zongyang Ma, Yuxin Yang, Bing Li, Chunfeng Yuan, Kang Rong, Fengyun Rao, Jing Lyu, Weiming Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07383v1",
+    "source": "arXiv",
+    "abstract": "Knowledge-based Visual Question Answering (KB-VQA) requires models to retrieve visual entities matching the query image from large-scale encyclopedic knowledge bases and answer related questions. Existing multimodal Retrieval Augmented Generation (mRAG) methods rely on global visual features to match candidate entities, yet when the knowledge base contains numerous visually similar entities, the retriever struggles to distinguish them, populating the candidate set with visually similar but factually mismatched distractors. Since subsequent processing steps such as noise filtering are also confined to this fixed candidate set, errors from failed retrieval inevitably propagate to the final answer. To address these challenges, we propose MMAgent-R$^2$, an agentic mRAG framework that integrates visual reranking and active rejection as its internal verification mechanism. Visual reranking directly compares query and candidate images, capturing discriminative details beyond textual descriptions to precisely identify the target entity among similar candidates; active rejection discards unreliable results and retrieves additional candidates when no confident match is found, moving beyond the fixed candidate pool. We design a composite reward function with step-level verification rewards and achieve joint optimization of external retrieval, internal verification, and answer generation via GRPO training. Experiments on InfoSeek, E-VQA, and MMhops demonstrate that \\ours{} achieves state-of-the-art performance, with particularly notable advantages in challenging retrieval scenarios and complex multi-image multi-hop reasoning tasks."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Physics-Audited Agentic Discovery in Scientific Machine Learning",
+    "authors": "Diab W. Abueidda, Bilal Ahmed, Panos Pantidis, Mostafa E. Mobasher",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07379v1",
+    "source": "arXiv",
+    "abstract": "In agentic scientific machine learning (SciML), large language model (LLM) agents can discover surrogate models and select one by an automated score, typically an error metric. A low error, however, does not establish that the predicted fields satisfy the physics that matter for mechanics, such as boundary conditions, superposition, stiffness scaling, or causality. We introduce Physics-Audited Agentic SciML (PA-SciML), a verification-first workflow for agentic SciML discovery. The workflow fixes a scoring evaluator before search, derives reviewable machine-checkable physics requirements, checks each trained candidate on its outputs, and separately searches prescribed input ranges or measured load-history spans for high-violation cases without reference solution fields. A surrogate is reported as verified only under the stated checks. When enabled, the workflow also adds advisory numerical probes before training and tests one modeling change at a time to record which isolated edits are associated with score gains before reuse. In the reported computational-solid-mechanics numerical examples, the static elasticity run selects a surrogate with lower validation error than the error-only baseline while both selected models pass the common linear-elastic checks. In the transient elastodynamics run, an error-only baseline with similar mean error fails a stricter causality check by responding to future parts of the loading history, while the selected surrogate passes the stated checks. The main distinction is per-candidate physics evidence on predicted fields, not a richer aggregate score."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "zk-ScalHard: Scalable and Hardware-Rooted Privacy-Preserving Authentication for Secure OTA Updates in Zonal SDVs",
+    "authors": "Shrikant Tangade, Bansi Pambhar, Valeria Loscri, Mauro Conti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07371v1",
+    "source": "arXiv",
+    "abstract": "The automotive industry is transitioning to Zonal-oriented Architectures (ZoA) for Software-Defined Vehicles (SDVs), enabling frequent over-the-air (OTA) updates for 100+ Electronic Control Units (ECUs). While OTA updates improve efficiency, they introduce safety-critical security risks. Current standards like Uptane and AUTOSAR Adaptive rely on Public-Key Infrastructure (PKI). However, PKI-based authentication creates bandwidth bottlenecks in in-vehicle and vehicle-to-cloud (V2I) communication as ECU density increases. It also risks exposing sensitive vehicle configurations and passenger privacy due to centralized architectures. Next-generation Zonal SDVs require decentralized, scalable authentication with data privacy. To address this, we propose zk-ScalHard, a hardware-rooted, privacy-preserving authentication protocol. We introduce a decentralized, hierarchical trust-promotion model utilizing Silicon Physical Unclonable Functions (PUFs) and two novel Zero-Knowledge Proof (ZKP) circuits: (1) Zonal Identity and Integrity (ZIDI) and (2) High-Performance Computing Aggregation (HPCA). These circuits employ multi-party computation (MPC) and recursive aggregation to achieve decentralization and scalability. The integration of ZKPs and PUFs ensures 100% vehicle-level data sovereignty. Benchmarked against Uptane, zk-ScalHard achieves constant O(1) communication and verification complexity, improving upon the linear O(n) complexity of current systems. Evaluation shows a 99.2% reduction in authentication bandwidth and a 99.9% reduction in the temporal attack surface. Our results demonstrate that zk-ScalHard provides a scalable, secure, and GDPR-compliant architecture for future Zonal SDVs."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "A Word-Level Digital Reader of the Prasthanatrayi with Sankara's Bhasya: Corpus, Method, and an Open, Offline Reading Aid for the Advaita Vedanta Canon",
+    "authors": "Tamal Maharaj",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07282v1",
+    "source": "arXiv",
+    "abstract": "The Prasthanatrayi -- the ten principal Upanisads, the Brahmasutra, and the Bhagavadgita, with Sankara's commentaries (bhasya) -- is the foundational corpus of Advaita Vedanta. Continuous euphonic combination (sandhi), long compounds (samasa), and dense scholastic prose make it hard to read at the word level: where one word ends, and what each word means grammatically, are both obscured. We present an open, fully offline, word-level digital reader of the entire Prasthanatrayi with Sankara's bhasya. Every word -- of both the root text (mula) and the commentary -- is clickable and resolves to a pop-up giving its split (padaccheda), morphological analysis, and gloss. Because every word carries a lemma, the reader also acts as a concordance: a search on a dictionary headword retrieves all of that word's inflected and sandhi-hidden occurrences, and its occurrences inside compounds, across both layers. The resource covers thirteen commentarial units (2,971 verses, sutras, and prose sections; 36,881 analysed word-occurrences of root text) and a global dictionary of 95,587 distinct commentarial surface forms. We describe the corpus, the hybrid pipeline -- a rule-based sandhi splitter over an inflected-form lexicon and attested-corpus look-ups, with LLM-assisted analysis under an adversarial two-pass verification protocol -- and a durable human-review loop whose corrections survive every regeneration. An intrinsic evaluation against independent Sanskrit resources finds high-confidence analyses agree with an authoritative inflectional lexicon on over 99% of attested forms, and a band-blind adjudication confirms that quality degrades predictably across confidence bands, with errors concentrated in the low-confidence tier the review loop targets. The reader is a single self-contained HTML file needing no server or network, offered as a freely redistributable teaching and reading aid."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Validate the Dream Before You Trust Its Verdict: Admissibility for World-Model Simulators",
+    "authors": "Christian Oefinger, Finn Rasmus Schäfer, Korbinian Moller, Mattia Piccinini, Johannes Betz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07196v1",
+    "source": "arXiv",
+    "abstract": "Across robotics, World Models (WMs) are increasingly used to evaluate action policies by simulating the consequences of actions in an imagined world, and returning a success or safety verdict. Yet a verdict is only as trustworthy as the WM that produced it, and the WM itself needs to be certified. In video-generation WMs, fidelity metrics such as Fréchet Video Distance (FVD) reward visual realism, but ignore whether the world responds correctly to the policy's actions, including those unseen in training. Classical simulation-based validation assumes a trusted simulator evaluating an untrusted policy, whereas generative WMs are themselves unverified learned artifacts. Hence, we argue that any WM used as a test oracle must first be accredited before its verdicts can serve as evidence. Building on credibility practices from safety-critical simulation, including Verification, Validation & Accreditation (VV&A), Safety of the Intended Functionality (SOTIF), and scenario-based testing standards, we define an admissibility ladder (L0-L4) that a WM must climb before its closed-loop verdicts are accepted as assurance evidence. Our framework is embodiment-agnostic, and is instantiated in autonomous driving (AD), where assurance methods for traditional simulation are most mature. Applied to two driving WMs, the lower rungs reveal a reversal: the model that ranks higher on visual generation quality (L0) ranks lower on action-following (L1-L2), so visual fidelity does not predict the action-robustness a closed-loop verdict depends on."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Miter-Aware LUT Mapping: Aligning Structure and Solvability for Efficient Logic Equivalence Checking",
+    "authors": "Jiaying Zhu, Zhengyuan Shi, Mengxia Tao, Kezhi Li, Min Li, Qiang Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07164v1",
+    "source": "arXiv",
+    "abstract": "Logic Equivalence Checking (LEC), a fundamental hardware verification task, is often bottlenecked by synthesis-induced structural perturbations and XOR-dense regions that degrade SAT solver performance. We contend that the modeling of the miter is as critical as the SAT solver itself. To this end, we introduce a miter-aware mapping framework that strategically formulates the problem before solving. By constructing a LUT-based miter -- instead of a traditional, flat netlist -- our approach preserves critical structural correspondence between the two designs while making high-level logic relations explicit. Our framework uniquely integrates three techniques: equivalence-preserving mapping to structurally align the two circuits, Gaussian-guided XOR modeling to algebraically simplify dense arithmetic, and solver-oriented LUT selection to generate a representation optimized for efficient SAT reasoning. Evaluated on comprehensive datasets, our method achieves up to a \\textbf{92.1\\%} reduction across state-of-the-art SAT solvers. This demonstrates that a solver-aware modeling paradigm, which unifies structural mapping with SAT reasoning, can fundamentally enhance LEC efficiency."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Separation Logic for Memory Conflict Detection in High-Level Synthesis",
+    "authors": "Yeonseok Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07126v1",
+    "source": "arXiv",
+    "abstract": "High-Level Synthesis leverages loop unrolling and array partitioning, but scheduling concurrent accesses is challenging when indices contain non-affine arithmetic. Conventional polyhedral frameworks systematically over-approximate these non-linear transformations, forcing conservative serialization that degrades performance. To minimize this bottleneck, we present a spatial verification framework operating at the LLVM Intermediate Representation (IR) level. By extracting flat arithmetic expressions from \"getelementptr\" instructions, it models memory banks as polymorphic spatial predicates to handle non-affine terms. Structural safety is enforced via a Conflict-Free Unrolling condition using Separation Logic's separating conjunction; concurrent operations targeting the same bank trigger an automatic spatial contradiction. This disjointness requirement is reduced to a matrix of pairwise inequalities over immutable Static Single Assignment (SSA) variables for a Satisfiability Modulo Theories (SMT) oracle. To guarantee safety against undecidable non-linear arithmetic, we implement a deterministic sequential fallback. Finally, a theorem of soundness bridges algebraic SMT verification with Register Transfer Level trace safety, ensuring physical hardware immune to structural memory collisions."
+  },
+  {
+    "date": "2026-7-8",
+    "title": "CKG-LLM: LLM-Assisted Detection of Smart Contract Access Control Vulnerabilities Based on Knowledge Graphs",
+    "authors": "Xiaoqi Li, Hailu Kuang, Wenkai Li, Zongwei Li, Shipeng Ye",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786582.3786817",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-8",
+    "title": "An Overview of LLM-Based AI Chatbots",
+    "authors": "Amarildo Rista, Edmira Xhaferra, Lindita Mukli",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11591907",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "From Games to Robotics: Unifying Human-Centered LLM Integration",
+    "authors": "Nikolina Roso, Mirko Sužnjević, Nenad Markuš",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11591744",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "LLM Randomness and Creativity: An Experiment on Human-AI Collaboration",
+    "authors": "A. Villarreal, A. Sachdeva, L. Brandimarte",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11592010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Polyglot but Perilous: A Multi-Model, Multi-Language Audit of LLM-Generated Code",
+    "authors": "Antonio Mastropaolo, Saima Afrin",
+    "publish": "Computer",
+    "url": "https://doi.org/10.1109/mc.2026.3696004",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Conversational Stance Detection for Rumour and Misinformation Analysis: Datasets, Conversational Modelling, Evaluation Protocols, and Emerging LLM Challenges",
+    "authors": "Alba Amato",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3711193",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Explainable LLM-Driven Fashion Recommendation with Knowledge Graph Reasoning",
+    "authors": "Luong Vuong Nguyen, Hoang Tran",
+    "publish": "2026 3rd International Conference on Electronic Engineering and Information Systems (EEISS)",
+    "url": "https://doi.org/10.1109/eeiss69782.2026.11584528",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Design and Evaluation of a Local LLM-Based Architecture for Intelligent Educational Applications",
+    "authors": "Filip Buhiniček, Antun Drobnjak, Ivica Botički",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11591872",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Characterizing Prefill and Decode Regimes for Edge LLM Inference",
+    "authors": "Jonas Scheffler, Stefan Naumann, Florian Mohr, Lejla Begic Fazlic",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11591742",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Behavior-Guided Decompilation of AVR Firmware with Autonomous LLM Agents : Paper Type: Practical Experience Report",
+    "authors": "Charles Cao",
+    "publish": "2026 56th Annual IEEE International Conference on Dependable Systems and Networks (DSN)",
+    "url": "https://doi.org/10.1109/dsn69566.2026.00070",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Evolving Programming Education with AL Opportunities and Challenges of LLM-Integrated Assessment Systems",
+    "authors": "I. Mekterović, Lj. Brkić, M. Tadijal, T. Vanjak",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11591576",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Automatic Validation of LLM-Generated Code with Prompt Paraphrasing",
+    "authors": "Xiaoyin Wang, Dakai Zhu",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786582.3786809",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Specification and Detection of LLM Code Smells",
+    "authors": "Brahim Mahmoudi, Zacharie Chenail-Larcher, Naouel Moha, Quentin Stiévenart, Florent Avellaneda",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786582.3786835",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Establishing Zero-Shot LLM Performance at Network Tomography",
+    "authors": "India-Jane Barry, Ilir Gashi, Kizito Salako, Pedro Marques, Pranava Madhyastha",
+    "publish": "2026 56th Annual IEEE International Conference on Dependable Systems and Networks Workshops (DSN-W)",
+    "url": "https://doi.org/10.1109/dsn-w70714.2026.00036",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Brief Announcement: PRESERVE: Prefetching Model Weights and KV-Cache in Distributed LLM Serving",
+    "authors": "Ahmet Caner Yüzügüler, Jiawei Zhuang, Lukas Cavigelli",
+    "publish": "Proceedings of the 38th ACM Symposium on Parallelism in Algorithms and Architectures",
+    "url": "https://doi.org/10.1145/3816782.3819214",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Context-Adaptive Requirements Defect Prediction through Human-LLM Collaboration",
+    "authors": "Max Unterbusch, Andreas Vogelsang",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786582.3786843",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Towards Bridging Language Gaps in OSS with LLM-Driven Documentation Translation",
+    "authors": "Elijah Kayode Adejumo, Mariam Guizani, Fatemeh Vares, Brittany Johnson",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786582.3786828",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-8",
+    "title": "Evaluating LLM Proficiency in Analyzing Privacy Aspects of Network Traffic",
+    "authors": "P. Puhtila, T. Heino, H-K. Terho, S. Rajapaksha, S. Harshani, L. Koivunen, T. Mäkilä",
+    "publish": "2026 49th MIPRO ICT and Electronics Convention (MIPRO)",
+    "url": "https://doi.org/10.1109/mipro70003.2026.11592022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "LLM-PEA: Leveraging Large Language Models Against Phishing Email Attacks",
+    "authors": "Najmul Hasan, Prashanth BusiReddyGari, Haitao Zhao, Yihao Ren, Jinsheng Xu, Shaohu Zhang",
+    "publish": "2026 56th Annual IEEE International Conference on Dependable Systems and Networks Workshops (DSN-W)",
+    "url": "https://doi.org/10.1109/dsn-w70714.2026.00038",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-8",
+    "title": "ALLSTaR — Automated LLM-Driven Scheduler Generation and Testing for Intent-Based RAN",
+    "authors": "Maxime Elkael, Michele Polese, Reshma Prasad, Stefano Maxenti, Tommaso Melodia",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3711510",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]

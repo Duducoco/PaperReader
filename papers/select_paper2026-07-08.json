@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-07-08",
+    "title": "ATLAS: Automated HLS for DL-Optimized FPGAs",
+    "authors": "Ruthwik Reddy Sunketa, Aman Arora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07643v1",
+    "source": "arXiv",
+    "abstract": "FPGA architectures increasingly incorporate domain-specific in-fabric hardblocks to accelerate DL inference, particularly GEMM, which dominates DL computation. To realize the performance gains of these hardblocks, manual RTL design is required: the programmer must understand the hardblock microarchitecture, instantiate them in RTL, and manage tiling and control logic. While programming in C/C++ and using HLS tools has increased the abstraction level and productivity of FPGA engineers, HLS tools do not support code generation for custom hardblocks natively. Prior work has demonstrated that blackbox mechanisms in HLS tools can be used to target custom hardblocks, but this still requires explicit function calls in user-written HLS C and manual creation of RTL IP libraries, significant effort that must be repeated for every layer in a DL model. Furthermore, for DL, an even high-level programming interface, e.g., Pytorch/Keras instead of C/C++, is desirable for improved programmability and user adoption. We present ATLAS, a fully automated flow from a high-level DL model description to a hardware implementation on an FPGA with custom in-fabric DL-optimized hardblocks, requiring no manual RTL design or explicit hardblock instantiation from the end user. Our approach uses GEMM as a universal abstraction layer and comprises two components: (1) hls4ml-GEMM, a compiler frontend that transforms DL layers into HLS C code with architecture-agnostic GEMM function calls, and (2) a GEMM IP Generator, an architecture-aware backend that produces hardblock-based RTL wrappers with tiling logic, control FSMs, and scheduling metadata. We evaluate the flow across 11 DL designs, including individual fully connected, convolution, and attention layers, as well as full CNN, MLP, and Transformer models targeting an FPGA architecture with Tensor Slices using Catapult for HLS and VTR for implementation.",
+    "title_zh": "ATLAS：面向深度学习优化FPGA的自动高层次综合",
+    "abstract_zh": "FPGA架构日益集成特定领域的硬件模块（硬块）以加速深度学习（DL）推理，特别是占主导地位的通用矩阵乘法（GEMM）。为了实现这些硬块的性能提升，通常需要手动编写RTL设计：程序员必须理解硬块的微架构，在RTL中实例化它们，并管理分块和控制逻辑。尽管使用C/C++编程和高层次综合（HLS）工具提高了FPGA工程师的抽象层次和生产力，但HLS工具本身并不原生支持针对自定义硬块的代码生成。已有研究表明，HLS工具中的黑盒机制可以用于支持自定义硬块，但这仍然需要在用户编写的HLS C代码中显式调用函数，并手动创建RTL IP库，这是一项需要为每个深度学习模型的每一层重复的大量工作。此外，对于深度学习，更高层次的编程接口（例如Pytorch/Keras而非C/C++）在可编程性和用户接受度方面更具吸引力。我们提出了ATLAS，这是一种从高层次深度学习模型描述到基于FPGA的硬件实现的全自动流程，支持自定义的深度学习优化硬块，无需用户手动编写RTL设计或显式实例化硬块。我们的方法使用GEMM作为通用抽象层，并包含两个组件：（1）hls4ml-GEMM，一个将深度学习层转换为包含与架构无关的GEMM函数调用的HLS C代码的编译器前端；（2）GEMM IP生成器，一个架构感知的后端，用于生成基于硬块的RTL封装器，包括分块逻辑、控制有限状态机（FSM）和调度元数据。我们在11个深度学习设计中评估了该流程，包括单独的全连接层、卷积层和注意力层，以及完整的卷积神经网络（CNN）、多层感知机（MLP）和Transformer模型，这些设计针对具有张量切片的FPGA架构，使用Catapult进行HLS综合并使用VTR进行实现。"
+  },
+  {
+    "date": "2026-07-08",
+    "title": "LLM Assisted Verification Assertion Generation: Challenges and Future Directions",
+    "authors": "Bhabesh Mali, Chandan Karfa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07444v1",
+    "source": "arXiv",
+    "abstract": "Assertion-based Verification (ABV) plays a critical role in the Design Verification (DV) process. However, ABV requires substantial manual effort in generating assertion from specification by verification engineers, making it a time-consuming stage in the chip design flow. With the recent development of Large Language Models (LLMs), researchers have started exploring their use as an assistance in the ABV process, particularly for generating SystemVerilog Assertions (SVAs) from design specification. In this paper, we provide an overview of recent works, highlighting the different methods used to generate SVAs. In particular, we investigate LLM-based SVA generation and ask a central question: How can LLM-based assertion generation be made systematic and quality-aware? While addressing this key question, we provide Key Takeaways at the end of each challenge, summarizing the important methodological insights, and also provide guidelines and directions in solving those challenges that can help generate a high-quality set of assertions using LLMs.",
+    "title_zh": "基于LLM的验证断言生成：挑战与未来方向",
+    "abstract_zh": "基于断言的验证（Assertion-based Verification, ABV）在设计验证（Design Verification, DV）过程中起着至关重要的作用。然而，ABV需要验证工程师从规范中手动生成断言，这使得这一阶段在芯片设计流程中耗时较多。随着大型语言模型（Large Language Models, LLMs）的最新发展，研究人员开始探索其在ABV过程中的应用，特别是从设计规范中生成SystemVerilog断言（SystemVerilog Assertions, SVAs）。本文概述了近期的相关研究，重点介绍了用于生成SVAs的不同方法。特别是，我们探讨了基于LLM的SVA生成，并提出了一个核心问题：如何使基于LLM的断言生成系统化且注重质量？在解决这一关键问题的过程中，我们在每个挑战的末尾提供了关键要点，总结了重要的方法学见解，并提供了解决这些挑战的指南和方向，以帮助利用LLMs生成高质量的断言集。"
+  }
+]
