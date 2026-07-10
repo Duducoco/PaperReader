@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-09",
+    "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+    "authors": "Yifan Zhou, Qihao Yang, Yan Li, Donggang Li, Xiru Hu, Hokin Deng, Ziyang Gong, Xuanyi Zhou, Huacan Wang, Xiangchao Yan, Wanghan Xu, Wenlong Zhang, Shaofeng Zhang, Yue Zhou, Yifan Yang, Zhihang Zhong, Xue Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08758v1",
+    "source": "arXiv",
+    "abstract": "Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench is organized around the IdeaGene framework: each paper or proposal is represented as a set of minimal, typed, evidence-grounded Idea Genome objects, and a GenomeDiff aligns these objects to record inheritance, mutation, loss, external import, and novel insertion under six operational evolutionary dynamics. The benchmark contains 1,961 golden lineage traces, 1,085 curated Idea Genome objects, and 920 pairwise GenomeDiff records across 10 scientific domains. It supports two evaluations. IG-Exam (42 task types, 1,029 instances) tests closed-form lineage reasoning across Idea Genome abstraction, inheritance tracing, evolutionary reasoning, and lineage verification. IG-Arena evaluates generation with a lineage-conditioned Population-Evolution Score(PES), asking whether a proposal can be inserted as a coherent descendant of a given lineage population: it should inherit the right Idea Genome objects, vary meaningfully from nearby work, and offer selection value for future research. Experiments on 14 LLM-based scientists expose a compositional bottleneck. The strongest system reaches only 27.3% exact accuracy on lineage reasoning, and structured lineage context reshuffles system rankings rather than helping every participant uniformly."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Rationales",
+    "authors": "Wenbo Xu, Zhimin Chen, Xiaojie Liang, Hengrui Liu, Wei Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08705v1",
+    "source": "arXiv",
+    "abstract": "Rapid advancements in video diffusion models and temporal editing tools have enabled the generation of highly realistic human-centric videos, posing unprecedented challenges to digital content forensics. Existing benchmarks primarily focus on either face-swapping or global text-to-video synthesis, overlooking the crucial dimensions of human-object or human-human interactions and multi-modal alignment. To address these limitations, we introduce HumanForge, a unified, large-scale, and multi-paradigm human-centric video forgery dataset. To construct and annotate this dataset without labor-intensive manual labeling or hallucinated monolithic prompts, we propose Gen2Anno, a modular active multi-agent pipeline built on LangGraph. Gen2Anno coordinates six specialized agents-ranging from source profiling to MoE-based reference analysis and closed-loop forensic verification-to generate over 18K high-fidelity video segments and produce structured, contrastive omni-annotations containing binary decisions, fine-grained artifact categories, and spatio-temporal localization. Extensive benchmarks using state-of-the-art traditional detectors and Large Multimodal Models (LMMs) demonstrate the significant challenges of zero-shot generalization and fine-grained reasoning on HumanForge. Code and dataset will be publicly released."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "From Rules to Nash Equilibria: A Lean 4 Case Study in Game-Theoretic Analysis of a Competitive Trading Card Game",
+    "authors": "Arthur F. Ramos, Tulio Soria",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08692v1",
+    "source": "arXiv",
+    "abstract": "We present a metagame analysis of the competitive Pokemon Trading Card Game, machine-checked in Lean 4 over real tournament data. The headline game-theoretic results, including Nash equilibrium, replicator dynamics, and the matrix-level type-bridge computation, rely on native_decide, which trusts Lean's compiler rather than its kernel; the trust boundary is made explicit. The artifact spans approximately 31,900 lines, 87 files, and 2,627 theorems, of which roughly 200 directly verify empirical claims, with no sorry, admit, or custom axioms. Analyzing Trainer Hill data from January to February 2026 for events with at least 50 players, over 14 archetypes and their full pairwise matchup matrix, we prove a popularity paradox: the most played deck, Dragapult, with 15.5% metagame share, has only 46.7% expected win rate, while Grimmsnarl, with 5.1% share, achieves 52.7%. A machine-checked Nash equilibrium of the raw game assigns Dragapult 0% weight; exhaustive enumeration over all nonempty support subsets confirms a unique symmetric Nash equilibrium of the constant-sum symmetrization with seven-deck support. Against this equilibrium mix, Dragapult falls 40.4 permil below the game value. Single-step replicator dynamics indicate downward fitness pressure on Dragapult, upward pressure on Grimmsnarl, and strongest extinction pressure on Alakazam. A 10,000-iteration sensitivity analysis confirms qualitative stability, with core support decks appearing in more than 96% of resampled equilibria. The primary contribution is methodological: a reproducible case study showing how formal verification can turn qualitative metagame narratives into machine-checkable, re-runnable strategic science."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Cantor measures with odd base do not admit Fourier frames",
+    "authors": "Jaume de Dios Pont, Lukas Liehr, Mitchell A. Taylor",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08656v1",
+    "source": "arXiv",
+    "abstract": "We prove that the Cantor measure with base $b$ does not admit a Fourier frame whenever $b > 1$ is an odd integer. In particular, this answers a question of Strichartz on the existence of a Fourier frame for the middle third Cantor measure. A formalization of our main result in Lean 4 is also provided."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "CAAD: Causality-Aware Multivariate Time Series Anomaly Detection via Multi-Scale Alignment and Structural Causal Consistency",
+    "authors": "Xin Wang, Yunshi Wen, Yanan He, Haotian Xu, Youlan Zhao, Michel Ferreira Cardia Haddad, Tengfei Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08555v1",
+    "source": "arXiv",
+    "abstract": "The operational integrity of complex industrial systems relies on precise anomaly detection and diagnosis. The vast majority of existing methods narrowly focus on capturing temporal similarities of representations, often overlooking the disruption of internal causal relationships, which characterizes system failures and latent anomalies. In this paper, we propose a novel framework (CAAD) that reframes anomaly detection as the continuous verification of Granger causality consistency through exogenous variables. Specifically, the CAAD framework models exogenous time-series variables as residuals, identifying anomalies as significant deviations caused by external interventions. The proposed framework leverages multi-scale alignment to internalize system dynamics and utilizes a gradient-based matrix to monitor internal causal relationship breakdowns. By quantifying causal deviations of both dynamic evolution and relational topology, the CAAD is able to capture subtle causal shifts to achieve precise anomaly detection. Extensive experiments on real-world industrial datasets demonstrate that the CAAD achieves high-precision anomaly detection, outperforming most state-of-the-art baselines."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "ESBMC-Arduino: Closing the Deployment Gap for Formal Verification of Open-Hardware PLCs",
+    "authors": "Pierre Dantas, Lucas Cordeiro, Waldir Junior",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08550v1",
+    "source": "arXiv",
+    "abstract": "OpenPLC, Arduino OPTA, CONTROLLINO, and Industrial Shields M-Duino bring IEC 61131-3 to low-cost microcontrollers used in real automation and industrial control system (ICS) security research. Existing open-source verifiers for IEC 61131-3, including ESBMC-PLC, prove safety over an abstract scan-cycle model with idealized unbounded integers. The board artifact runs on a resource-constrained microcontroller unit (MCU) with 16-bit words (8-bit AVR Arduinos), and sensors are read via a finite-resolution analog-to-digital converter (ADC). We show this deployment gap makes naive width-aware verification unsound: across 123 real programs, checking 16-bit overflow without a hardware input model yields 44% false alarms (54/123) and finds no genuine defects, because it explores sensor values no ADC can produce. Since the gap lies where computation meets the physical process - a bounded sensor reading scaled by finite-width arithmetic into an actuation command - an overflow can silently suppress a safety action, such as a high-level alarm. An unbounded input model fabricates alarms that no environment can trigger. We present hardware-faithful verification for IEC 61131-3 on open hardware: a declarative hardware abstraction layer (HAL) descriptor (width, ADC/PWM resolution, I/O binding) and a sound lowering that interprets arithmetic at target width and constrains inputs to hardware-realizable ranges. We instantiate it for Arduino as ArduinoTool, deriving HAL parameters from official cores and realizing the input-range model in the ESBMC Ladder Diagram (LD) frontend. On the 123-program corpus, the HAL annotator eliminates all 54 false alarms while preserving robustness proofs, and a controlled corpus demonstrates the rare width-dependent defects it detects with realizable witnesses."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "An Effective Quantum Hoare Logic for Hybrid Quantum Programs with Unbounded Loops",
+    "authors": "Christophe Chareton, Jad Issa, Romain Péchoux",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08548v1",
+    "source": "arXiv",
+    "abstract": "While quantum hardware remains limited, hybrid quantum-classical algorithms with complex control structures, including unbounded loops, are emerging, posing new challenges for quantum program analysis, including the accurate estimation of the resource consumption of a given program. Meanwhile, precise analysis techniques such as symbolic execution have largely left out hybridization and unbounded recursion. On the other hand, current quantum Hoare logics that generally support them are lacking in expressiveness and miss out on efficient computational equational reasoning that could be implemented in a semi-automated tool. This leaves a gap awaiting to be filled. In this work, we answer this challenge with the first semi-automated static analysis solution combining effective functional verification and resource (termination or cost) estimation for hybrid quantum programs with unbounded loops. Towards that end, we introduce integer hybrid path-sums (IHPS), extending path-sums to handle unbounded while loops, as a representation of possible executions of a program. A generic strategy for determining termination and expected resource consumption via loop invariants is also proposed and illustrated on several examples. Finally, the solution is implemented as a semi-automatic Haskell program. This work is the first step toward the design of a complete static resource analysis tool for hybrid quantum programs, essential for the development of real-world quantum computing."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Potential Functions as Types",
+    "authors": "Harrison Grodin, Ethan Chu, Runming Li, Jan Hoffmann, Robert Harper",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08547v1",
+    "source": "arXiv",
+    "abstract": "Amortized analysis can be framed from the physicist's view, amenable to manual verification in dependent type theory using potential functions, and the banker's view, amenable to automated inference in substructural type theory using type-level credit annotations. In this work, we synthesize these perspectives in Calf, a dependent type theory cost verification. From the physicist's view, we present a fracture and gluing theorem that renders every type as containing a fusion of an abstraction function and a potential function. By construction, every program between two such types must preserve abstraction, to facilitate modularity of behavior, and conserve potential, to facilitate modularity of cost. Incorporating the banker's view, we synthetically construct type operators for credits and debits. We then define Giralf, a graded substructural dependent type theory for programming with credits and debits, which is semantically interpreted as a sub-language of Calf. Finally, we adapt an inference algorithm to transform a limited class of Calf programs into Giralf counterparts, automating the cost analysis of common algorithms in Calf."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Detecting Ladder Logic Bombs in IEC 61131-3 PLC Programs using ESBMC-PLC+: A Formal Verification Approach with Trigger Synthesis",
+    "authors": "Pierre Dantas, Lucas Cordeiro, Waldir Junior",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08417v1",
+    "source": "arXiv",
+    "abstract": "A Ladder Logic Bomb (LLB) is malicious control logic in a Programmable Logic Controller (PLC) program that lies dormant until a trigger activates a payload to manipulate actuators, forge sensor readings, or deny operator control. We observe that real malicious logic hides inside function-block bodies, which existing ladder-diagram verifiers drop from their intermediate representation (IR), making bombs invisible to provers. We present ESBMC-LLB, which uses ESBMC-PLC+ as its verification engine and adds a modeling layer that exposes function-block logic and recasts bomb detection as a formal verification problem: a scan-watchdog exposes non-termination payloads, and output wiring exposes actuator-forgery payloads as safety violations. k-induction gives an unbounded proof of bomb-absence across all scans, and the bounded model checker returns a counterexample that is the trigger - guarantees that signature, anomaly, and CFG-triage detectors lack. On the public Iacobelli 2024 dataset, ESBMC-LLB detects all 30 bombs and recovers every trigger; it also detects adaptive triggers (computed, opaque-arithmetic, multi-scan) that evade CFG-triage. We also report the first semantic model-checker evaluation on PLC-Defuser's SWaT corpus: our analog extension makes the full corpus parseable; on v1.0.0, it detects 149/150 bombs (99%) with zero false positives, recovering each trigger; on a later version with nonlinear non-termination bombs, detection drops to 49% as the SMT solver times out. We conclude that semantic model checking and CFG-triage are complementary - the former gives unbounded proofs, adaptive-trigger robustness, and handles Boolean/integer and linear analog logic; the latter leads to nonlinear analog non-termination, and we delineate where each wins."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Secure QR Codes: Authenticity Verification via EdDSA Signatures and CBOR Certificates",
+    "authors": "Wojciech Jonderko, Wojciech Wodo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08383v1",
+    "source": "arXiv",
+    "abstract": "QR codes are a ubiquitous part of daily life, widely trusted by millions. However, their lack of inherent security features has given rise to critical attack vectors, such as spoofing (quishing) on public infrastructure like self-service parking machines. To address this, we present a comprehensive evolution of secure QR code architectures. First, we evaluate a fully offline proof-of-concept leveraging EdDSA signatures (instantiated on the Ed25519 curve), CBOR-encoded certificates, and ZLIB compression, demonstrating that robust cryptographic integrity can be achieved within the QR code's strict static capacity. However, recognizing the scalability limitations of fully offline models-specifically the inability to perform immediate key revocation in massive smart-city IoT deployments-we subsequently propose a scalable Hybrid Web PKI architecture. This forward-looking model utilizes standardized JWKS endpoints, a Central Trust Registry, and URL fragments to ensure seamless backward compatibility with standard native cameras while providing dynamic, real-time validation for compliant applications. This dual-mode approach offers a practical, deployable path toward eliminating QR spoofing."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "DaV-Gen: End-to-End Generative Retrieval via Draft-and-Verify",
+    "authors": "Meng Zhao, Chunmei Liu, Qinyong Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08365v1",
+    "source": "arXiv",
+    "abstract": "Mainstream industrial information retrieval systems (e.g., search and recommendation) are usually built upon Multi-Stage Cascade Architectures (MCAs), which balance effectiveness and efficiency through a coarse-to-fine ``retrieval-ranking'' pipeline. However, the optimization objectives across different stages are substantially inconsistent, propagating or even amplifying the early-stage errors that ultimately degrade the quality of final results. While emerging end-to-end generative models offer a potential solution by unifying the pipeline, their online serving performance is severely hindered by the auto-regressive process inherited from the standard decoder-only structure. To bridge this gap, we introduce \\textbf{DaV-Gen}, a novel unified solution designed to fundamentally refactor the paradigm for both search and recommendation via a ``Draft-and-Verify'' mechanism. Inspired by the process used by speculative decoding, our framework redesigns the generation task into two synergistic operations within a single model. During training, the model is concurrently optimized for both candidate drafting and fine-grained verification. This is achieved by a composite loss function that jointly trains the model on two distinct but related objectives: 1) a contrastive loss that structures the embedding space for efficient drafting, and 2) a fusion loss that combines generative likelihood with vector similarity to produce a superior verification score. This integrated training strategy equips the model with dual capabilities. At inference time, it first performs highly efficient vector-based drafting to generate a candidate set, and then verifies these candidates using the more powerful fused scoring function, thereby achieving both the speed of sparse drafting and the precision of advanced generative models within a unified, end-to-end architecture."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Reverse Engineering Compliance: A Dual-Graph Verification Framework for Auditing Legacy IT Security Concepts",
+    "authors": "Lea Roxanne Muth, Marian Margraf",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08292v1",
+    "source": "arXiv",
+    "abstract": "The NIS-2 Directive increases the need for continuous, auditable compliance evidence and motivates a shift from document-based compliance toward machine-readable compliance artifacts. The Open Security Controls Assessment Language (OSCAL) is a standard for this purpose, which the German Federal Office for Information Security (BSI) is adapting with Grundschutz++. However, companies are still managing extensive legacy IT security concepts (IT-SCs), and migrating them without verification could transfer outdated assets into the new format. While existing research primarily addresses the generation of new concepts, there is a lack of a verification framework that extracts legacy IT-SCs into an auditable intermediate representation, deterministically compares the extracted graph with an independently constructed reference state, and exports schema-valid OSCAL artifacts. This paper introduces the Automated Security Concept Structure Extraction and Reverse Topology-checking (ASSERT) Framework, which addresses this gap by using ontology-based extraction of legacy documents into formal document graphs, a five-class graph difference against a verified reference graph, and the export into schema-valid OSCAL outputs for system description and assessment evidence. Using the BSI's RecPlast dataset, we compare a local open-weight model and a commercial model across three configurations with different levels of reference-ontology exposure. The evaluation shows that ASSERT makes document-infrastructure inconsistencies measurable, but reveals a trade-off between discovering undocumented entities and enforcing a schema."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
+    "authors": "Miseong Shawn Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08255v1",
+    "source": "arXiv",
+    "abstract": "Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Threshold Authorization Without Threshold Signatures: Signature-Agnostic MPC Custody",
+    "authors": "Dariia Porechna",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08226v1",
+    "source": "arXiv",
+    "abstract": "Digital-asset custody has been built on threshold multi-party approval: no operation proceeds unless $t$ of $n$ parties approve, and fewer than t compromised parties can neither authorize nor learn the authorization secret. Threshold signature schemes (TSS) have been the standard mechanism, but the post-quantum transition disrupts this model: standardized hash-based signatures resist efficient threshold signing, and lattice-based threshold protocols remain an emerging research track. We present a dual-gate architecture that separates member authentication from threshold authorization. Each member signs its approval with an ordinary signature under any EUF-CMA scheme; the quorum jointly produces a threshold seal from Shamir-shared secrets bound to the operation. The seal is the base instance of a programmable authorization computation: simple quorum is the minimal policy, while richer policies can evaluate secret-shared state without making the member-signature scheme part of that computation. The signature scheme is a deployment parameter: migrating from ECDSA to SLH-DSA or ML-DSA is a key rotation, not a protocol redesign, and members holding keys in commodity HSMs participate through the standard sign API. The architecture can be deployed wherever the asset-control path supports programmable verification, such as smart contracts, vault modules, or HSMs guarding a master key, and produces an enforcement-layer authorization rather than a native chain signature. Below-threshold secrecy is information-theoretic; an adversary holding $\\geq t$ signing keys but no coefficient shares still cannot produce the seal."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Nyquist-Sampled Time-Domain Adjoint FDTD for Memory-Efficient Broadband Nanophotonic Inverse Design",
+    "authors": "Mingyu Park, Owen D. Miller, Haejun Chung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08159v1",
+    "source": "arXiv",
+    "abstract": "Adjoint optimization is a cornerstone of broadband nanophotonic inverse design, but conventional time-domain implementations face a severe memory bottleneck because they retain forward-field histories at every finite-difference time-domain (FDTD) time step. Here, we show that this full time-step storage is unnecessary for band-limited design objectives. By storing forward fields only at Nyquist-compliant temporal intervals and using the resulting sparse field history during the reverse-time adjoint pass, the proposed method enables on-the-fly gradient accumulation without retaining full forward- or adjoint-field histories. This Nyquist-sampled adjoint FDTD framework preserves the two-simulation scaling of time-domain adjoint optimization while substantially reducing the dominant field-storage cost. Gradient verification confirms that Nyquist-compliant sampling reproduces conventional full-storage adjoint gradients with negligible error, whereas undersampling beyond the Nyquist limit produces aliasing-induced gradient degradation. Across four two-dimensional broadband nanophotonic benchmarks and a fully three-dimensional metalens, the method maintains gradient fidelity and optimized device performance while reducing dominant field-storage memory by up to 107x. These results suggest that the principal memory barrier in broadband time-domain adjoint FDTD is not an intrinsic requirement of gradient evaluation, but a consequence of redundant temporal field storage, opening a practical route to large-scale three-dimensional nanophotonic inverse design."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "The Southern-sky MWA Rapid Two-metre (SMART) pulsar survey--IV. Survey update and an atlas of 205 non-recycled southern pulsars",
+    "authors": "N. D. R. Bhat, C. P. Lee, S. J. McSweeney, B. W. Meyers, C. M. Tan, M. Xue, Q. Fu, N. A. Swainston, S. M. Ord, G. J. Sleap, S. E. Tremblay, W. van Straten, A. Williams, C. Di Pientrantonio, C. J. Harris, P. J. Elahi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08106v1",
+    "source": "arXiv",
+    "abstract": "The SMART survey is an ambitious effort to conduct sensitive searches for pulsars and fast transients at 140-170 MHz. The novelty of voltage recording, long dwell times and the high-time and -frequency resolutions exchange a large survey speed for high computational cost. The survey covers the entire sky south of +30 degree in declination through a series of dedicated campaigns, accumulating 4 PB of data. The large volumes of data necessitate processing to be approached in multiple phases, and the initial searches focused on a shallow survey of parts of the skies, as reported in earlier papers. These data are also processed for re-detections of hundreds of known pulsars in the southern sky, many of which are also the first detections below 400 MHz. This paper is motivated by the need to address the inherent difficulties in handling large amounts of voltage data and software/processing challenges for routine pulsar detections, and also by the fast-evolving landscape of the SKA Observatory (SKAO). With the construction ramping up towards the full-scale SKA-Low, a low-frequency catalogue of detectable pulsars in the southern sky will prove to be a valuable reference for science verification. A growing sample of low-frequency detections and measurements will also prove invaluable in a variety of science applications including population studies, survey simulations and emission beam models, refining interstellar medium models for electron densities and the spatial distribution of turbulence, and also for forecasting the detection prospects and survey yield from pulsar surveys planned with SKA-Low. We present various data products, including pulse profiles, time series and multi-channel folded archives, along with the measurements of dispersion and rotation measures, and mean flux densities, and this will be periodically updated as more detections flow on from the ongoing data processing."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis",
+    "authors": "Fan Ma, Mauro Giuffrè, Donald Wright, Kent McCann, Mark Iscoe, Lingfei Qian, Mingyang Jiang, Chi Wing Ng, Na Hong, Huan He, Cathy Shyr, Qingyu Chen, Lee Schwamm, Lucila Ohno-Machado, Hua Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08038v1",
+    "source": "arXiv",
+    "abstract": "Diagnostic error is a major threat to patient safety, yet current large language model (LLM) systems often treat diagnosis as a one-shot prediction task, lacking safeguards against missed high-risk alternatives or rigorous verification of their reasoning. Here, we present AegisDx, a safety-oriented framework for hypothetico-deductive clinical reasoning. AegisDx coordinates specialized LLM components through role-specific contracts, structured intermediate outputs, evidence-retrieval interfaces, and verification gates to generate broad differential diagnoses, enforce explicit screening for dangerous \"must-not-miss\" conditions, verify reasoning against grounded medical evidence, and structure actionable next steps. We evaluated AegisDx across three layers. On literature-derived case reports from NEJM and JAMA, with GPT-oss-120B as the shared backbone, Top-3 diagnostic accuracy was 59.9% versus 52.1% for the standalone LLM on JAMA cases and 62.7% versus 51.4% on NEJM cases. On cases from Annals of Emergency Medicine, Top-3 accuracy was 85.7% versus 68.6%; against physician-consensus must-not-miss diagnosis sets, AegisDx captured at least one such condition among its top three diagnoses in 78.0% of cases versus 52.0%. In a blinded physician evaluation of 43 real-world emergency department notes from the Yale New Haven Health System compared against GPT-5, AegisDx improved the physician-rated composite safety score from 4.31 to 4.55 on a 5-point scale (adjusted p = 2.1x10^-4), with qualitative gains in must-not-miss identification and reasoning safety. Our findings suggest that engineering diagnostic AI as a safety-oriented reasoning framework, rather than optimizing raw predictive accuracy alone, can provide a safer, more transparent, and clinically meaningful layer of bedside decision support for acute care workflows."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "APIVOT: Adaptive Planning with Interleaved Vision-Language Thoughts",
+    "authors": "Emily Jin, Joy Hsu, Yiqing Xu, Weiyu Liu, Nick Haber, Jiajun Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08024v1",
+    "source": "arXiv",
+    "abstract": "Long-horizon robot planning requires jointly reasoning over semantic task structure and geometric feasibility. To successfully execute a task, a robot must decompose goals, select task-relevant objects, and sequence actions, while ensuring that plans satisfy spatial constraints such as limited free space and object collisions. In this work, we propose APIVOT, a VLM-based planner that adaptively interleaves language and visual thoughts for long-horizon planning. APIVOT learns to leverage language for semantic reasoning, while using visual thoughts as imagined future states for internal verification of geometric feasibility. On long-horizon kitchen tasks, APIVOT outperforms general-purpose VLMs and prior planning frameworks, achieving the largest gains in spatially constrained settings. We find that APIVOT learns meaningful modality selection behavior, demonstrating that adaptive interleaving of vision-language thoughts improves both planning success and reasoning efficiency."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems",
+    "authors": "Yufei Xia, Anjun Gao, Yueyang Quan, Zhuqing Liu, Minghong Fang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07989v1",
+    "source": "arXiv",
+    "abstract": "Large language model (LLM) based multi-agent systems enable complex problem solving through coordinated reasoning and action, but their distributed structure also introduces new challenges in diagnosing system-level failures. When an execution fails, identifying which agent is responsible and at what point the trajectory first becomes irreversibly misdirected is difficult due to long-horizon interactions and tightly coupled agent behaviors. In this paper, we study the problem of failure localization in LLM-based multi-agent systems and present AgentLocate, a framework that attributes failures to both a specific agent and the earliest decisive step. AgentLocate combines an LLM-based judging mechanism with multi-perspective verification by independent evaluators, whose assessments are aggregated using a confidence-aware strategy. The resulting feedback is further used to adapt the judge through lightweight fine-tuning, improving attribution quality. We evaluate AgentLocate on two complementary benchmarks covering diverse tasks, agent configurations, and trajectory lengths. Experimental results show that AgentLocate consistently outperforms existing failure localization methods in identifying both responsible agents and failure steps, while remaining efficient in terms of token usage and running time."
+  },
+  {
+    "date": "2026-07-08",
+    "title": "A Puck-informed mode-resolved phase-field fatigue framework for unidirectional composites",
+    "authors": "Aamir Dean",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07977v1",
+    "source": "arXiv",
+    "abstract": "Fatigue fracture in unidirectional fibre-reinforced composites is strongly mode dependent: transverse and off-axis cycling is governed by matrix and inter-fibre mechanisms, whereas fibre-aligned cycling activates a longitudinal channel with a higher fracture-energy scale and a different crack topology. Single-damage-variable models can fit global stiffness loss but cannot identify the active mechanism. This work proposes a Puck-informed, mode-resolved phase-field fatigue framework with separate channels for fibre-dominated and matrix/inter-fibre fatigue. Each channel has its own fatigue history, threshold, and resistance-degradation law. Fatigue does not directly degrade elastic stiffness; it lowers the fracture resistance of the active channel, while the corresponding phase field controls stiffness loss and crack-path evolution. The formulation is implemented in Abaqus/Standard using a compact UMAT-UEL architecture with one orthotropic mechanical routine and two scalar phase-field layers. Using one fixed IM7/8552 material and fatigue card, the model is verified through one-element tests, parameter sweeps, and centred-notch and open-hole tension cases at 0, 45, and 90 degrees under monotonic and cyclic loading. Without orientation- or geometry-specific tuning, the framework reproduces transverse matrix/inter-fibre cracking at 90 degrees, off-axis cracking at 45 degrees, and longitudinal matrix splitting with delayed fibre activation at 0 degrees. The fatigue lives follow the expected ordering: 45- and 90-degree cases fail within about 1,000 cycles, while 0-degree cases run out to 200,000 cycles without fibre cracking. Additional load, hole-size, mesh, length-scale, and cycle-block studies confirm consistent crack modes and converged trends. The study is a numerical verification and cross-geometry consistency assessment, not a calibrated experimental life-prediction claim."
+  },
+  {
+    "date": "2026-7-9",
+    "title": "MU4Sum: Aspect Unlearning in LLM-based Document Summarization",
+    "authors": "Giuseppe Gallipoli, Luca Cagliero",
+    "publish": "ACM Transactions on Intelligent Systems and Technology",
+    "url": "https://doi.org/10.1145/3828668",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-9",
+    "title": "LLM-Enabled User Semantic Driven Coordinated Scheduling Framework for PV–Storage–Charging Microgrids",
+    "authors": "Zhaoyi Yang, Chengjie Dai",
+    "publish": "2026 IEEE 3rd International Conference on Electrical Power Systems and Intelligent Control (EPSIC)",
+    "url": "https://doi.org/10.1109/epsic70071.2026.11590023",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "LLM Agent-enhanced Bi-level Online Order Dispatching and Scheduling for Large-scale Agile Earth Observation Satellites_supp1-3710264.pdf",
+    "authors": "Yonghao Du",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tgrs.2026.3710264/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "LLM-Driven Green and Trustworthy Automl with Voronoi-Based Optimization for Network Automation",
+    "authors": "Andreou Andreas, Constandinos X. Mavromoustakis, George Mastorakis, Athina Bourdena, Evangelos Markakis",
+    "publish": "2026 32nd International Conference on Telecommunications (ICT)",
+    "url": "https://doi.org/10.1109/ict70370.2026.11594753",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Enhancing Typing Speed in LLM-Based P300 Speller BCIs Using A New Data-Driven Dynamic Stopping Strategy",
+    "authors": "Jiazhen Hong, Laleh Najafizadeh",
+    "publish": "2025 12th International IEEE/EMBS Conference on Neural Engineering (NER)",
+    "url": "https://doi.org/10.1109/ner61569.2025.11589088",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Inductive–Abductive Unseen-Node Reasoning on Fuzzy Event Graphs Via LLM Calibration",
+    "authors": "Chao Wang, Ruizhe Ma, Xinyu Liang, Zongmin Ma",
+    "publish": "IEEE Transactions on Fuzzy Systems",
+    "url": "https://doi.org/10.1109/tfuzz.2026.3711107",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "RAG-Driven Multi-Agent LLM Framework with Task Decomposition for Beyond 5G Auto-Configuration",
+    "authors": "İrşat Emin Sarıdaş, Onur Salan, Ali Görçin, İbrahim Hökelek, Hakan Ali Çırpan",
+    "publish": "2026 32nd International Conference on Telecommunications (ICT)",
+    "url": "https://doi.org/10.1109/ict70370.2026.11594648",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Prompt Caching on Flash: Achieving Memory-Class Latency for LLM Inference",
+    "authors": "Joohee Lee, Kwangjin Ko, Taeho Hwang, Woosuk Chung, Hoshik Kim, Donguk Moon",
+    "publish": "IEEE Computer Architecture Letters",
+    "url": "https://doi.org/10.1109/lca.2026.3711675",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Rationality Meets Irrationality: Incentivizing Dual Cognitive Loop for LLM-Based Agent in Social Simulation",
+    "authors": "Qun Ma, Xiao Xue, Xuwen Zhang, Zihan Zhao, Hui Yu, Juanjuan Li",
+    "publish": "IEEE Transactions on Computational Social Systems",
+    "url": "https://doi.org/10.1109/tcss.2026.3710148",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Adaptive Power Grid Optimization Dispatch under Complex Operating Conditions: A Collaborative Framework of LLM Skill Agent",
+    "authors": "Zhanhong Huang, Hailin Pang, Tao Yu, Zhenning Pan",
+    "publish": "2026 IEEE 3rd International Conference on Electrical Power Systems and Intelligent Control (EPSIC)",
+    "url": "https://doi.org/10.1109/epsic70071.2026.11590351",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Verifiable and Fair Registered Attribute-Based Multi-Hop Proxy Re-Encryption Scheme for LLM Agents",
+    "authors": "Dongliang Cai, Yiwen Gao, Qixiang Li, Liang Zhang, Borui Chen, Bo Wang, Haibin Kan",
+    "publish": "IEEE Transactions on Information Forensics and Security",
+    "url": "https://doi.org/10.1109/tifs.2026.3711852",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Automatic Model-Based Characterization for Filter Design Verification",
+    "authors": "Owen Czuchra, Dries Peumans, John Lataire, Domenico Spina",
+    "publish": "2026 IEEE 30th Workshop on Signal and Power Integrity (SPI)",
+    "url": "https://doi.org/10.1109/spi68887.2026.11594732",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Design and Verification of Vivaldi Array Antenna Optimized by Genetic Algorithm",
+    "authors": "Ruxin Zheng, Yongzhe Wei, Zhongyuan Zhou",
+    "publish": "2026 IEEE 9th International Symposium on Electromagnetic Compatibility (ISEMC)",
+    "url": "https://doi.org/10.1109/isemc70545.2026.11588769",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "LLM-as-Parameterizer: A Language-Guided Safe Game-Theoretic DER Control Algorithm for Distribution Voltage Regulation",
+    "authors": "Xinlei Cai, Zijie Meng, Zhijun Shen, Kai Dong, Qian Guo, Lizhou Jiang, Yifan Luo",
+    "publish": "2026 IEEE 3rd International Conference on Electrical Power Systems and Intelligent Control (EPSIC)",
+    "url": "https://doi.org/10.1109/epsic70071.2026.11590345",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Insight into the User behind the Text: An LLM Powered User-Centric Text Opinion Analysis Framework",
+    "authors": "Jintao Wen, Yongqi Li, Mayi Xu, Xin Miao, Dexi Liu, Bing Liu, Wenpeng Lu, Weiyu Zhang, Tieyun Qian",
+    "publish": "IEEE Transactions on Affective Computing",
+    "url": "https://doi.org/10.1109/taffc.2026.3711665",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "LLM-Agent-Assisted PE-GNN for Accelerated MISOCP Power Flow in Hybrid AC/DC Distribution Networks",
+    "authors": "Yushuai Ding, Yueqian Zhang, Xuzhe Tian, Chang Liu, Jiasheng Zuo, Tianyang Zhao",
+    "publish": "2026 IEEE 3rd International Conference on Electrical Power Systems and Intelligent Control (EPSIC)",
+    "url": "https://doi.org/10.1109/epsic70071.2026.11590437",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Emotion Recognition in Agile Software Meetings: A Comparative Study of ML, DL, and Text-based LLM Approaches",
+    "authors": "Theo Canuto, Eduardo Sardenberg, Paulo Mann, Matheus Utino, Daniel Coutinho, Anderson Uchôa, Juliana Alves Pereira",
+    "publish": "Proceedings of the 19th International Conference on Cooperative and Human Aspects of Software Engineering",
+    "url": "https://doi.org/10.1145/3794860.3794910",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Size Reduction of a 2.4 GHz Microstrip Patch Antenna Using a Central Rectangular Slot: Theory, Reduced-Order Modeling and Full-Wave Verification",
+    "authors": "H.T. Xu, F. Qi, Z.H. Liu",
+    "publish": "2026 IEEE 9th International Symposium on Electromagnetic Compatibility (ISEMC)",
+    "url": "https://doi.org/10.1109/isemc70545.2026.11588852",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "Key AI Technologies for Power Load Forecasting in New Power Systems: Mechanism Analysis and Provincial Grid Pilot Verification",
+    "authors": "Zhifeng Liang, Yuchen Chen, Qipei Zhang, Rui Yin, Li Wu, Bingxiang Wu",
+    "publish": "2026 IEEE 3rd International Conference on Electrical Power Systems and Intelligent Control (EPSIC)",
+    "url": "https://doi.org/10.1109/epsic70071.2026.11590466",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-9",
+    "title": "An Enhanced Pearson Verification Method for Accurate Consumer– Transformer Connectivity Assessment in Low-Voltage Distribution Networks",
+    "authors": "Huijun Hong, Shijin Xu, Yiru Yang, Jiaying Hu, Ying Chen, Jiaqiang Wu",
+    "publish": "2026 IEEE 3rd International Conference on Electrical Power Systems and Intelligent Control (EPSIC)",
+    "url": "https://doi.org/10.1109/epsic70071.2026.11590240",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
