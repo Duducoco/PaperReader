@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-07-10",
+    "title": "Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI",
+    "authors": "Yuan Cao, Haiqian Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09560v1",
+    "source": "arXiv",
+    "abstract": "Modern AI systems are increasingly being evaluated for their ability to reason, code, prove theorems, use tools, and long-horizon research tasks. These are powerful capabilities, but they share a structural limitation: the representational frame within which the model operates, including its conceptual vocabulary, the space of admissible solutions it can search, and the criteria by which success is evaluated, is typically fixed and supplied in advance. This paper argues that building stronger intelligent systems capable of open-ended innovation requires additional classes of operations: the creation, stabilization, and reuse of new representational primitives, which alter the space being searched rather than simply searching within it. We characterize the distance between current AI systems and genuinely open-ended intelligence through two gaps. The first is the vocabulary gap, the difficulty of inventing and stabilizing new representational primitives rather than merely recombining existing ones. The second is the verifier gap, the difficulty of judging the value of a new primitive when its full payoff may be visible only after future reuse. We interpret both gaps through a unified framework of intelligence as cognitive discrepancy reduction. By viewing intelligent behaviors as a sequence of cognitive transformations, we distinguish intra-space transformations which operate within a fixed representational frame, from generative transformations which may modify the frame itself. On this basis, we propose a ladder of innovation autonomy and outline several directions for advancing open-ended AI, including objectives that reward useful representational change, persistent memory architectures for invented primitives, and adaptive verification mechanisms capable of evolving alongside the representations they evaluate."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Short Graph Sketches Suffice for Error-resilient Leader Verification in CONGEST",
+    "authors": "Pawel Garncarek, Tomasz Jurdziński, Dariusz Kowalski, Subhajit Pramanick",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09522v1",
+    "source": "arXiv",
+    "abstract": "Locally Checkable Proofs (LCPs) enable the verification of global graph properties using locally checkable certificates assigned by a prover. Recently, this framework was extended to Locally Checkable Proofs-with-Errors (LCPE), where an adversary may corrupt some certificates. Existing LCPE algorithms, however, are designed for the LOCAL model, whose unbounded communication makes them unsuitable for direct implementation in the bandwidth-restricted CONGEST model. We initiate the study of efficient CONGEST implementations of LCPE through the \\textsc{unique-leader} verification problem on trees. The main challenge is that tolerating $\\varepsilon$ certificate errors requires each node to reason about its $(2\\varepsilon+1)$-hop neighborhood, whose exact topology may require up to $O(Δ^{2\\varepsilon+1}\\log n)$ bits to communicate. To overcome this bottleneck, we introduce \\emph{local graph sketches}, together with the notions of \\emph{imagined trees} and \\emph{imagined certifications}, which encode precisely the information needed for verification using only $O(\\varepsilon^2\\log n)$ bits per node. Based on these sketches, we design an LCPE algorithm that tolerates up to $\\varepsilon$ adversarial certificate errors and constructs the required sketches in $O(\\varepsilon^2)$ communication rounds in the CONGEST model. We complement our algorithm with a matching impossibility result: even in the strictly more powerful LOCAL model, and even with unbounded certificate size, no verification scheme with view distance at most $\\varepsilon$ can tolerate $\\varepsilon$ adversarial certificate errors. Since every CONGEST algorithm can be simulated in LOCAL, this lower bound immediately applies to CONGEST, showing that a view distance exceeding $\\varepsilon$ is unavoidable."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Normalisation-Based Likelihood Ratio Estimation for Forensic Authorship Verification",
+    "authors": "Sadie Barlow, Andrea Nini, Edoardo Manino",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09501v1",
+    "source": "arXiv",
+    "abstract": "Authorship verification (AV) is the task of determining whether two texts were written by the same author. In a forensic context, the strength of AV evidence can be quantified using likelihood ratios. Most AV methods are score-based and deriving well-calibrated likelihood ratios from these scores requires a separate calibration model. This, in turn, requires additional amounts of case-relevant data, which is often time-consuming to obtain and prepare. This study proposes two novel normalisation techniques, the Square Root Correction and the Hapax Correction, for deriving likelihood ratios from the AV method LambdaG without the need of a calibration model (Nini et al. 2026). These corrections are designed to mitigate the overestimation of evidential strength that may result from long or highly repetitive texts. Performance is evaluated against logistic regression calibration across fifteen corpora and a range of text lengths (100-9,500 tokens), using the log-likelihood ratio cost (Cllr). The proposed methods achieve performance comparable to logistic regression calibration, with the Hapax Correction outperforming it in approximately 45% of tests (weighted by corpora). Furthermore, performance was more frequently close (within 5%) when the Hapax Correction was outperformed by logistic regression calibration, compared with the reverse comparison. Eliminating the need to train a calibration model reduces data-requirements, time and complexity, thereby increasing the accessibility and transparency of forensic text comparison. This combination of empirical performance and practical advantages supports the adoption of the proposed methods in forensic settings."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Multimodal Reward Hacking in Reinforcement Learning",
+    "authors": "Jiayu Yao, Yiwei Wang, Anmeng Zhang, Zhe Sun, Songsong Wang, Lingrui Mei, Yuyao Ge, Shenghua Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09492v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when visual evidence is evaluated by text-only or weakly grounded rewards. We study reward hacking in MLLM RL across safety VQA, chart VQA, and stress-test settings, varying reward design, data ambiguity, model scale (2B-32B), and RL algorithm (GRPO, RLOO, DAPO). We introduce Newly Rewarded Failure Rate (NRFR), which measures failures among samples whose proxy reward improves over the SFT baseline. Outcome-only rewards cause severe hacking, reaching 48.1% Reward Hacking Rate (RHR), while NRFR exceeding RHR shows that RL creates new failures rather than merely inheriting them. Scaling reduces but does not eliminate hacking: even the 32B model retains a 54.9% worse rate under outcome-only rewards, whereas answer-aware rewards improve the oracle trend at every scale. Robustness is also algorithm- and scale-dependent: GRPO is consistently most resistant, RLOO remains vulnerable, and DAPO improves substantially from 2B to 8B. Visual-evidence rewards help only with reliable verification: keyword-based checks increase hacking, while VLM-as-judge semantic verification reduces it. Overall, multimodal reward hacking is a systematic result of optimizing imperfect rewards, and robust alignment requires rewards and verifiers that remain reliable under optimization pressure."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
+    "authors": "Johannes Schmitt, Tim Gehrunger, Jasper Dekoninck, Gergely Bérczi, Uri Kreitner, Liam Price, David Holmes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09474v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have shown increasing promise in solving open problems in mathematics. However, their performance can be further improved through agentic workflows tailored to real-world mathematical practice. To this end, we introduce ProofCouncil, a mathematical agent that is designed to tackle open problems using an author-critic architecture. ProofCouncil served as a submission to the second batch of FirstProof, a challenge consisting of 10 real-world mathematical problems that agents must solve autonomously. Its submissions for 6 of the 10 problems were judged by the referees to be correct up to at most minor revisions, showing the best performance among participating teams. We also evaluate ProofCouncil on 30 open problems collected from mathematical researchers. Among the 21 solutions that received human feedback, 5 were judged completely correct, 2 more were judged promising pending final verification, and a further 8 contained useful partial progress. In this short paper, we describe the development of ProofCouncil and the agent-building library used to create it, which we release as open source to the community."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Test-Time Scaling for Small VLMs on Multilingual Visual MCQ",
+    "authors": "Spiros Baxevanakis, Peng-Jian Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09438v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling (TTS) reliably improves reasoning in large language models, but whether it transfers to small open vision-language models remains unclear. We examine this on EXAMS-V, a multilingual visual multiple-choice benchmark, comparing self-consistency, describe-then-reason with PRM-guided beam search, and two post-hoc selectors across Qwen2.5-VL-7B-Instruct and Qwen3.5-4B. What matters is the conditions under which TTS runs, not the search or verification machinery. The largest factor is parseability: an early prompt format left many chains reasoning correctly yet never committing to an answer letter, which a standard answer cue and a guided repair step largely remove. A larger decoding budget removes the rest: raising the per-chain token limit from 1k to 2k recovers 3.7 pp, whereas sampling more chains (8 to 16) adds only 0.15 pp. Once chains have room to finish, elaborate methods contribute little: PRM-guided beam search trails plain self-consistency by 0.39 pp at over eight times the cost, and neither a training-free generative critic nor a trained multimodal PRM beats majority vote across both policies. The largest gain comes instead from the policy model itself (+11.4 pp). Our best configuration reaches 84.1% on the held-out ImageCLEF 2026 test split, ranking first on the Visual MCQ leaderboard."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Diversifying to Verify: When Task-Equivalent Programs Differ in Verifiability",
+    "authors": "Shirley Yu, Ruben Martins",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09366v1",
+    "source": "arXiv",
+    "abstract": "Program verification is crucial for software correctness, but producing fully verified programs remains difficult in practice. This paper studies whether implementation structure affects automated verifiability when multiple generated programs are intended to satisfy the same task-level semantics. We present Diversify2Verify, a staged LLM-based pipeline for Why3 that infers representation-specific contracts, generates and tests diverse recursive and imperative array/list implementations, and attempts verification with bounded verifier-guided annotation repair. We also construct a verification-oriented benchmark of 73 tasks over integers, arrays, and lists, yielding 292 implementation variants. Diversify2Verify verifies 96 artifacts initially and 154 after two repair passes, improving artifact-level verification from 32.9% to 52.7%. At the task level, at least one variant verifies for 49 of 73 tasks, a 67.1% success rate. These results show that task-equivalent implementations can differ substantially in verifiability and that implementation diversity helps find verification-friendly artifacts."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation",
+    "authors": "Cedric Caruzzo, Donggeun Yoo, Tae Soo Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09349v1",
+    "source": "arXiv",
+    "abstract": "Retrieval-augmented generation evaluation checks whether model claims are factually grounded in retrieved documents. It does not check whether retrieved evidence is attributed to the correct entity. A clinical RAG response can pass every automated check (zero hallucinations, near-perfect faithfulness, real citations) while presenting drug Y's clinical evidence as evidence about queried drug X. We term this deceptive grounding (DG): a failure invisible to faithfulness, hallucination, and citation checks because every claim is sourced from a real document, about the wrong entity. Using a controlled factorial benchmark across 13 models, we find DG rates spanning 8-87% at peak adversarial conditions. Medical and biomedical fine-tuned models reach up to 86.7%; domain specialization amplifies the failure rather than mitigating it. A controlled ablation identifies the mechanism: removing entity-specific clinical evidence from retrieved documents eliminates entity-attribution failure entirely, shifting all failures to confabulation. The two failure modes respond to the same trigger, taking different paths. Production measurement across 740 drug-disease pairs finds 7.8% overall DG in a deployed RAG system, rising to 13.6% for recently approved drugs. Entity-attribution verification (checking that cited evidence applies to the queried entity) detects DG at 97.0% precision and 98.7% DG recall (IPW-adjusted human gold standard); no existing framework implements it."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "An Improved Deep Reinforcement Learning Control Strategy for Traction Dual Rectifiers in EMUs",
+    "authors": "Zhigang Liu, Mingwei Tang, Xiangyu Meng, Hui Wang, Qiao Zhang, Haoyu Wang, Mengru Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09276v1",
+    "source": "arXiv",
+    "abstract": "Due to the use of PI-based d q current decoupling in the pulse rectifier of CRH5 high-speed trains, the PI parameters directly affect the traction system's control performance. Linearized control may have issues with reference trajectory changes or model mismatches, leading to a decrease in system performance, while nonlinear control may have problems with jitter and poor steady-state accuracy. This paper proposes a new control strategy that replaces all PI in the d q current decoupling control with a single intelligent agent. This method based on Deep Reinforcement Learning (DRL) can avoid various drawbacks of linearization and nonlinear control and ensure the stability of intermediate DC voltage. However, when EMUs are in different working conditions and switching, the Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm used in traction dual rectifiers does not have a good control effect. Focusing on the issue, Reward Shaping (RS) is added to re-design a nonlinear reward function, which can be combined with Prioritized Experience Replay (PER) to increase the convergence speed of the episode reward. The simulation results show that the improved control strategy can be effectively applied to EMUs working in multiple conditions. Finally, the stability analysis is carried out using Lyapunov's second method and the verification results of the hardware-in-the-loop (HIL) simulation platform show that the DRL control has a good effect."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "OpenProver: Agentic and Interactive Theorem Proving with Lean 4",
+    "authors": "Matěj Kripner, Milan Straka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09217v1",
+    "source": "arXiv",
+    "abstract": "In this system paper, we present OpenProver, an open-source system for LLM-driven automated theorem proving (ATP) with integrated Lean 4 formal verification. OpenProver integrates a Planner-Worker-Verifier architecture inspired by recent ATP agentic systems such as Aletheia. A Planner agent maintains a compact Whiteboard scratchpad and an unbounded Repository of intermediate findings, and decomposes mathematical work into parallel Workers. OpenProver is fully open-source, offers reproducible evaluation through automatic formal verification of generated proofs, and provides an interactive terminal interface for human-guided proof search. In interactive mode, OpenProver allows the human operator to monitor and steer the proof search process, motivated by the established human-AI synergy in interactive code generation. To showcase the potential for quantitative ablation experiments enabled by automatic formal verification, we evaluate OpenProver on ProofNet and compare it with a simple baseline. OpenProver is publicly available at https://github.com/kripner/OpenProver."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift",
+    "authors": "Dan C. Hsu, Luke Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09175v1",
+    "source": "arXiv",
+    "abstract": "Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a persistent system-level instruction that is updated from operational experience while the model, tools, and harness remain fixed. Over long evolution horizons, flat-text maintenance makes verification increasingly difficult as accumulated instructions grow and interact. We propose Graph-Regularized Agentic Context Evolution (GRACE), which maintains the persistent instruction component as a typed semantic graph and validates proposed updates within the local typed neighborhoods of modified nodes. Accepted graph updates are reconstructed as incremental edits to the textual instruction checkpoint used at deployment. We evaluate GRACE within a fixed telecom agent harness derived from $τ^2$-bench under a controlled distribution-shift protocol. Across five independent replications, GRACE improves strict reliability, measured by pass^3, from the Gemini 2.5 Flash zero-shot value of 0.091 to 0.673$\\pm$0.136 at the final checkpoint. This exceeds a Gemini 3.1 Pro zero-shot reference of 0.242 on the same held-out set, while the flat-text HCE baseline finishes at 0.191$\\pm$0.051. These results identify two requirements for reliable long-horizon context evolution, a structural substrate that makes verification local and a consolidation mechanism that keeps accumulated instruction content usable."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Elusive but Coverable: The Recursion-Theoretic Structure of Complete Abstract Interpretations",
+    "authors": "Nicklas Carpenter, Roberto Giacobazzi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09128v1",
+    "source": "arXiv",
+    "abstract": "We study local completeness and incompleteness of abstract interpretations from a recursion-theoretic perspective. Local completeness weakens global completeness and captures the absence of precision loss for a specific precondition: abstract computation yields exactly what is obtained by abstracting the corresponding concrete computation. This enables compositional reasoning and rules out false positives in verification. We characterize the distinction between static and dynamic program analysis in terms of uniformly decidable operations and observe that the latter is uniformly decidable only for trivial abstractions. We then prove that the class of programs inducing a predicate transformer that is locally complete for a given non-trivial abstract domain is elusive in a precise recursion-theoretic sense: it is a productive set, hence not computably enumerable, and, under mild hypotheses, the same holds for its complement. In particular, the first class lies in $Π^0_2$ and the second in $Σ^0_2$. Unlike the usual examples of $Π^0_2$ properties, we show that the classes of locally complete programs admit decidable coverings. This makes it possible to construct, via program transformation, an effective enumeration of a representative subset of programs that entirely covers this class -- capturing from the outside a class that eludes enumeration from within."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Study of $χ_{c1,2}$ decays to $PPP$ via light meson resonances",
+    "authors": "Bo Lan, Jie Zhu, Jin-Huan Sheng, Yuan-Guo Xu, Ru-Min Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09096v1",
+    "source": "arXiv",
+    "abstract": "The three-body decays of charmonium states provide a valuable laboratory for probing non-perturbative QCD dynamics and investigating light meson resonances. Three-body decays $χ_{c1,2} \\to P_{1}P_{2}P_{3}$ are studied in this work ($P$ denotes the light pseudoscalar meson). Branching ratio analysis is performed for the $χ_{c1,2} \\to P_{1}P_{2}P_{3}$ decays incorporating light vector ($V$) meson resonance, light tensor ($T$) meson resonance and light scalar ($S$) meson resonance contributions. Based on the SU(3) flavor symmetry approach, we calculate the branching ratios under both the narrow width approximation and the finite width effect, and provide the predict results in the $χ_{c1,2}\\to (V/T)P_{3} \\to P_{1}P_{2}P_{3}$ processes. Furthermore, based on the significant $a^{+}_{0}(980)$ resonance signal in $χ_{c1} \\to π^{+ }π^{- }η$ decay, the predict results for $χ_{c1}\\to SP_{3} \\to P_{1}P_{2}P_{3}$ are also obtained. While the resonance signals observed in current experiments are mainly concentrated in the $χ_{c1} \\to π^+ π^- η$ decay, our results suggest potential resonance contributions in other channels. Especially in $χ_{c1,2}\\to KKπ$ channels, the predicted results show the significant resonance contributions from $V$ mesons and $T$ mesons, which is worth further experimental verification and exploration."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "AgentKGV: Agentic LLM-RAG Framework with Two-Stage Training for the Fact Verification of Knowledge Graphs",
+    "authors": "Yumin Heo, Hyeon-gu Lee, Sumin Seo, Youngjoong Ko",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09092v1",
+    "source": "arXiv",
+    "abstract": "Knowledge graphs (KGs) are often automatically constructed from large-scale corpora, but they inevitably contain factual errors due to noisy sources and extraction failures, and verifying them reliably at industrial scale remains a critical challenge. To address this, we propose AgentKGV, the Agentic LLM-RAG framework for KG fact Verification, that integrates dynamic routing and iterative query rewriting, which handles surface-form mismatch in document-level retrieval. To make this framework more accurate and cost-efficient for industrial deployment, we further introduce a two-stage training strategy: turn-level distillation-based SFT that transfers reasoning ability from a large teacher model into a small model for stable query rewriting and reasoning, and trajectory-level GRPO that optimizes the search policy to reduce unnecessary retrieval at scale. On the long-tail-predicate split of the open-domain T-REx benchmark, our framework improves macro-F1 over single-turn RAG by 5.5 \\%p, and two-stage training does it further by 9.4 \\%p. GRPO also cuts the average number of search calls from 3.24 to 1.63 without lowering accuracy."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "New bounds for double covers of the discrete box {0,1,2}^d",
+    "authors": "Patrick White",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09014v1",
+    "source": "arXiv",
+    "abstract": "A proper sub-box of $A=\\{0,1,2\\}^d$ is a product $S_1\\times\\dots\\times S_d$ with each $\\varnothing\\neq S_i\\subsetneq\\{0,1,2\\}$. A double cover is a finite multiset of proper sub-boxes covering every point of $A$ exactly twice; write $f(d)$ for the minimum size of a double cover. Leader, Milicevic and Tan asked whether $f(d)\\ge 2^d$ for all $d$ (Question 4.1 of the PatternBoost paper of Charton-Ellenberg-Wagner-Williamson), analogous to the Alon-Bohman-Holzman-Kleitman partition bound $2^d$. No better than the trivial volume bound was previously known, for any $d\\ge 2$. We prove the first nontrivial lower bounds. A modular refinement of the parity argument gives $f(d)\\ge 2^{d+1}/(d+1)$; a slicing argument gives $f(4)\\ge 19$, $f(5)\\ge 33$, both above $2^d$, resolving the question for $d=4,5$ -- the first cases beyond the trivially known $d\\le 3$. A finer \"line rigidity\" argument yields $f(6)\\ge 60$, breaking the profile-statistic barrier (capped at $57$, shown here). This is formally verified in Lean 4: $f(6)\\ge 60$ is machine-checked on the three standard Mathlib axioms alone. On the upper-bound side, a dimension-lifting construction $f(r+3)\\le 6\\cdot 2^r+3f(r)$ gives $f(6)\\le 81$ (improving the known $82$) and $f(d)\\le(\\tfrac65+o(1))2^d$ asymptotically; a refinement improves the constant to $\\tfrac87$. This makes partial progress on PatternBoost's problem of reducing their constant $1.28$, and refutes the closed-form guess $f(d)=5\\cdot 2^{d-2}+1$ from $d=7$ on. Together, $60\\le f(6)\\le 81$. Finally we isolate the construction-side obstruction -- an \"S+c=2^j+1\" phenomenon, every skeleton sitting exactly one box past the partition bound -- and show it is of a piece with the Leader-Milicevic-Tan question itself."
+  },
+  {
+    "date": "2026-07-10",
+    "title": "RaMark: Radioactive Watermarking for Generated Tabular Data",
+    "authors": "Xin Che, Lingyang Chu, Qiqi Zhang, Xinyu Ma, Xuan Luo, Jian Pei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.09000v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in generative modeling have made generated tabular data a practical solution for privacy-sensitive data sharing, where watermarking enables ownership verification. However, existing watermarking methods fundamentally fail under retraining attacks, in which an adversary retrains a generative model on a watermarked dataset and regenerates high-utility data that no longer carries the watermark. We address this challenge by introducing radioactivity, the property that a watermark remains detectable after generative model retraining, and propose RaMark, a radioactive watermarking method that embeds a sinusoidal dependency as an intrinsic component of the data distribution. By coupling the watermark with the underlying distribution, RaMark ensures that any generative model preserving data utility also has to preserve the watermark. We theoretically show that with high probability removing watermark degrades utility and alters data distribution. Extensive experiments on two real-world tabular datasets, under a large-scale ownership verification setting with $10^5$ independent data owners, demonstrate that RaMark achieves substantially stronger radioactivity than seven state-of-the-art methods and consistently outperforms them against both retraining and data modification attacks."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Loop-Based Slicing and Input-Driven Concretization: An Empirical Study of Termination and Non-Termination Analysis",
+    "authors": "Negar Fathi, Rahul Purandare, Tachio Terauchi, Hiroshi Unno",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08988v1",
+    "source": "arXiv",
+    "abstract": "Termination and non-termination are fundamental correctness properties, but verifying them in real-world C programs remains difficult because loop interactions and nondeterministic inputs challenge existing analyzers. This paper presents an empirical study of lightweight, tool-independent source-level preprocessing for (non-)termination analysis. We implement FocusTNT, a C front end that applies loop-based slicing to isolate loop-level obligations and input-driven concretization to specialize nondeterministic inputs into selected input-scenario variants. We evaluate slicing, concretization, and their combination across six analyzers on 117 C/C++ programs derived from real-world non-termination bugs and their fixes. The study examines effects on analyzer correctness, complementarity with original-program analysis, loop-level diagnostics, feature sensitivity, runtime behavior, semantic scope, and integration potential. Results show that preprocessing is not uniformly beneficial: its impact depends on the analyzer, task, and program features. Slicing provides conservative structural isolation and localization, whereas concretization can improve detectability for selected scenarios but narrows semantic scope and may increase analysis effort. Their combination is not consistently additive. Overall, the results support adaptive use of preprocessing as a complement to original-program analysis and provide practical guidance to application developers interpreting verification outcomes and tool developers improving analyzer robustness."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "The Patchwork Problem in LLM-Generated Code",
+    "authors": "Viraaji Mothukuri, Reza M. Parizi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08981v1",
+    "source": "arXiv",
+    "abstract": "LLM-generated code often compiles, passes tests, and appears correct, yet breaks once deployed. The root cause is frequently structural rather than logical. A generated endpoint references configuration keys never declared in the project, an import targets a package that does not exist in any registry, or a new route omits the authentication guard applied to every sibling endpoint. Each patch is locally valid but globally incoherent, and standard CI toolchains rarely surface these failures. As LLM-powered coding tools see widespread adoption, this blind spot poses a growing risk to software quality. We call this the \\textbf{patchwork problem}. This paper formalizes structural coherence as consistency invariants over graph representations of repository artifacts, including import, call, dependency, configuration, schema, resource, control-flow, and routing graphs, and introduces an eight-category failure taxonomy distinguishing defects specific to LLM generation from those merely amplified by it. We present a hybrid verification framework that delegates to mature static analysis tools where they already excel and deploys purpose-built detectors for cross-cutting invariants underserved by existing toolchains, targeting provable constraint violations rather than heuristic pattern matching. Empirical evaluation across two frontier models under four prompting strategies reveals that the vast majority of structural failures evade type checking, testing, and SAST entirely, and that failure patterns diverge qualitatively between models in ways that challenge model-agnostic mitigation strategies. External validation on real-world AI-generated repositories confirms that these failures are not artifacts of controlled experimentation but are prevalent wherever LLMs write code with minimal human oversight."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "A Machine Learning Surrogate for Component Criticality Ranking in Interdependent Power-Communication Networks",
+    "authors": "Sohini Roy, Xheni Hylviu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08918v1",
+    "source": "arXiv",
+    "abstract": "Cyber-physical power systems are vulnerable to cascading failures caused by tight interdependencies between power and communication infrastructures. Evaluating these failures over large N-k contingency sets with a high-fidelity simulator is computationally prohibitive for resilience planning. Using the previously published Modified Implicative Interdependency Model (MIIM) as the ground-truth cascade simulator, this paper develops a machine-learning surrogate that predicts contingency severity from leakage-free structural features and derives a component-criticality ranking for prioritized hardening analysis. On the IEEE 118-bus system, the Gradient Boosting surrogate achieves Spearman correlations of 0.849 for per-contingency severity prediction and 0.853 for per-component criticality ranking, while remaining stable across three independently sampled datasets. MIIM-derived component criticality itself reproduces only to a Spearman of approximately 0.85 under the present sampling pipeline, and the surrogate operates at this empirical ceiling to within sampling variation. Topological centrality measures on the full interdependent network provide meaningful baselines (Spearman 0.60-0.69), and feature ablation shows that the surrogate's advantage is driven primarily by inter-layer dependency information. These results support a two-stage workflow in which the surrogate rapidly ranks candidate components and MIIM is reserved for selective verification."
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Tentative detection of circularly polarized bursty radio emissions from the HD 189733 exoplanetary system using NenuFAR beamformed observations",
+    "authors": "Jake D. Turner, Philippe Zarka, Jean-Mathias Grießmeier, Corentin K. Louis, Xiang Zhang, Emilie Mauduit, Tomoki Kimura",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.08910v1",
+    "source": "arXiv",
+    "abstract": "Observing auroral radio emission is one of the most promising methods for detecting exoplanetary magnetic fields, which provide valuable insights into planetary interiors, atmospheric properties, and potential habitability. The first hints of exoplanet auroral emission are starting to emerge. Recently, Zhang et al. (2025) reported a detection at 50 MHz of a circularly polarized bursty emission from the HD 189733 exoplanetary system using NenuFAR low-frequency imaging observations. The source of the emission is still unknown and may be caused by planetary auroral emissions, star-planet interactions, stellar activity, or the M-dwarf stellar companion. In this study, we analyze beamformed observations from NenuFAR of HD 189733 taken simultaneously during the previously detected burst. This dataset allows for an independent verification of the detected burst with a different backend and processing steps. Using the BOREALIS data reduction pipeline, we tentatively detect circularly polarized bursty emission ($\\sim$10$σ$) from HD 189733 $\\sim$1 hour before the burst found from the imaging observations. However, some uncertainty remains on whether our detected signal is astrophysical in nature due to excess correlated noise. Assuming an astrophysical origin, our observed characteristics are most consistent with a planetary origin, but stellar emission cannot be completely ruled. Therefore, more low-frequency radio observations are needed to confirm the astrophysical nature of our signal and to search for periodicity in the radio signal from HD 189733 to determine the true cause of the emission. These observations are ongoing. Our study highlights the power of simultaneous beamformed and imaging observations in the search for radio emission from exoplanets."
+  }
+]
