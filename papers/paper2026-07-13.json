@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-13",
+    "title": "Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation",
+    "authors": "Runhui Huang, Qihui Zhang, Zhe Liu, Yu Gao, Jie Wu, Hengshuang Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11886v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we propose SpectraReward, a training-free reward function that turns pretrained MLLMs into off-the-shelf reward models for image-generation reinforcement learning. Instead of asking the MLLM to judge a generated image or answer decomposed verification questions, SpectraReward measures how well the original prompt can be recovered from the generated image through a single image-conditioned, teacher-forced forward pass. We use the average image-conditioned prompt log-likelihood as the reward, directly reusing the MLLM's pretrained image-text alignment ability without preference labels, reward-model fine-tuning. We further introduce Self-SpectraReward, a special case for unified multimodal models where the policy's own understanding branch serves as the reward model for its generation branch, forming a closed-loop self-improving framework without external reward models or external knowledge. Extensive experiments validate SpectraReward through a broad image-generation RL study covering two diffusion models, three RL algorithms, nine reward MLLM backbones from four MLLM families spanning 4B to 235B parameters, and five out-of-distribution text-to-image benchmarks. Results show that both SpectraReward and Self-SpectraReward significantly and consistently improve generation performance and outperform prior MLLM-derived reward training methods. Further analysis reveals that larger reward MLLMs are not always better, while Self-SpectraReward can match or surpass much larger external reward models, suggesting that reward-policy alignment is a key factor for effective image-generation RL. Project Page: https://huangrh99.github.io/SpectraReward/"
+  },
+  {
+    "date": "2026-07-13",
+    "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
+    "authors": "Lingkai Kong, Zijian Wu, Yuzhe Gu, Haiteng Zhao, Wenyong Huang, Shuang Sun, Zhicheng Xiong, Xiaotian Zhang, Shuya Zhao, Yan Wang, Disheng Xu, Wenwei Zhang, Kai Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11849v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style mathematics, yet their capabilities on advanced mathematics remain poorly understood. Existing benchmarks, however, fall short in both scope and evaluation granularity: they provide limited disciplinary coverage and often rely on final-answer correctness or coarse judgments, leaving the validity of the reasoning process inadequately assessed. To bridge this gap, we introduce AdvancedMathBench, a benchmark suite designed to evaluate advanced mathematical reasoning capabilities. Its core proof-generation benchmark, ProverBench, contains 296 problems spanning undergraduate and doctoral qualifying-exam levels. To provide reliable evaluation of the proofs, we develop a dedicated automatic verification pipeline trained on large-scale expert annotations to produce both correctness verdicts and fine-grained assessments of proof errors, which exhibits strong agreement with human experts on held-out proof trajectories. We further introduce VerifierBench, consisting of 888 model-generated proof trajectories paired with expert ground truth, to evaluate whether models can correctly judge proof validity and provide sound verification rationales. Experiments show that AdvancedMathBench remains challenging for frontier models. On proof generation, the best-performing model, GPT-5.5-xhigh, achieves only 75.8 and 66.1 on the UGD and QE splits, respectively, indicating substantial room for improvement on advanced mathematical proof construction. On proof verification, the best model attains a Balanced F1 of only 65.1, and models generally exhibit low true negative rates, suggesting that critical error detection remains a major bottleneck."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Beyond the Single Camera: Agentic Multi-View Reasoning in Sports Video Understanding",
+    "authors": "Kerui Chen, Jinglu Wang, Xiaoyi Zhang, Yan Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11844v1",
+    "source": "arXiv",
+    "abstract": "Recent Multimodal Large Language Models (MLLMs) achieve strong performance on single-view video understanding benchmarks. However, sports videos involve dense occlusion, rapid motion, and complex interactions that are difficult to resolve from a single viewpoint. In practice, sports events are recorded from multiple camera angles, providing complementary evidence used by referees. Yet, no existing benchmark evaluates MLLMs on multi-view sports video understanding. To address this gap, we introduce SportMV-Bench, a comprehensive benchmark built from official match recordings, through a dedicated pipeline combining LLM-based generation, MLLM-based verification, and human filtering to ensure quality and consistency. SportMV-Bench containing 787 multi-view video bundles and 2592 question-answer pairs across three categories: Perception-Aware Recognition (PAR), Rule-aware Event Interpretation (REI), and Adjudicative Decision Reasoning(ADR). Our analysis shows that current MLLMs fail to effectively exploit multi-view information, with the bottlenecks lying in fine-grained visual perception and view selection rather than logical reasoning or domain knowledge. We propose SportMV-Agent, an agentic framework that orchestrates an iterative loop of active view selection, perception tool execution, and evidence-grounded reasoning, achieving a significant 14.46% relative improvement over the strongest MLLM baseline."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "StoryTeller: Training-Free Narrative Grounding for Long-Form Audio Description",
+    "authors": "Seung Hyun Hahm, Minh T. Dinh, SouYoung Jin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11798v1",
+    "source": "arXiv",
+    "abstract": "Long-form audio description (AD) requires more than describing visible actions: it must preserve characters, events, relationships, and story context across scenes so that blind and low-vision (BLV) audiences can follow a film. Modern video-language models (VLMs) are effective on short clips, but they often treat each moment independently, producing descriptions that miss who characters are, why events matter, and how the current scene connects to earlier narrative context. We propose StoryTeller, a training-free framework for story-aware long-form AD. Instead of relying only on local visual cues, StoryTeller maintains a verified narrative memory that carries forward story-relevant information across scenes, enabling later descriptions to remain coherent, grounded, and contextually informative. Given only raw video and a movie title, StoryTeller can optionally retrieve public movie metadata to resolve names and story context, while accepting only facts that are supported by the video through semantic filtering and VLM verification. The method requires no subtitles, scripts, AD transcripts, aligned captions, character banks, precomputed face identities, or task-specific fine-tuning. To evaluate whether generated AD preserves narrative information, we introduce StoryAD-QA, a question-answering benchmark that tests whether a language model can answer story-context questions using only the generated descriptions. Experiments on standard AD benchmarks and diverse long-form videos show that StoryTeller consistently improves narrative coherence, factual grounding, and story comprehension over strong baselines in automatic, QA-based, and human evaluations."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence",
+    "authors": "Yuanzhi Liang, Xufeng Zhan, Haibin Huang, Chi Zhang, Xuelong Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11689v1",
+    "source": "arXiv",
+    "abstract": "Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions with predicted consequences. However, progress remains fragmented: models use incompatible action spaces and prediction targets, datasets and tasks follow different conventions, and runtime systems expose limited interfaces for reuse and evaluation. We review the evolution toward WAMs and organize these limitations into three coupled gaps: model roles and representations, objectives and standardization, and system composition. Building on this analysis, we propose a co-evolution roadmap for physical intelligence centered on the \\emph{embodied brain}, a long-term model target for integrating multimodal context, comparing candidate interventions, and issuing state-transition or capability requests rather than direct actuator commands. WAMs provide promising prototypes for its predictive functions, while a physical harness grounds model outputs through tools, controllers, verification, and trace logging. Shared contracts align heterogeneous models, data, tasks, and embodiments, and closed-loop post-training converts verified interaction into reusable experience. Together, these components define a modular physical-intelligence stack for adaptive and self-improving embodied agents."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "A Model for Mediating Multi-Modal Human Intent into Safe Maneuvers for UAVs",
+    "authors": "Sofia Nelson, Dalal Alrajeh, Pedro Antonio Alarcon Granadeno, Jane Cleland-Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11654v1",
+    "source": "arXiv",
+    "abstract": "Direct human interaction with autonomous UAV systems can be enabled through modalities such as speech, gestures, and graphical interfaces. However, interpreting such inputs as directly executable commands introduces safety risks in dynamic environments. Operator requests may conflict with terrain constraints, inter-UAV separation requirements, or flight-envelope limitations. In this paper, we present a requirements-governed maneuver-response model that mediates multi-modal human intent into safe UAV maneuvers by treating operator inputs as bounded maneuver requests rather than direct commands. Requested maneuvers are mapped to constrained motion primitives and processed through a structured request-evaluate-execute pipeline. Each request is interpreted with associated confidence, validated against terrain, separation, workspace, and flight-envelope constraints, and either constrained, rejected, or executed under continuous runtime monitoring. We further formalize the approach as a requirements-based specification model in which maneuver primitives are associated with explicit preconditions, invariants, guard conditions, and postconditions governing admissibility, execution safety, and emergency handling. These requirements support runtime verification and future reactive synthesis approaches. We present an initial lab-based validation demonstrating that voice and GUI-based inputs can be reliably interpreted and safely executed as constrained maneuver requests."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Parse, Search, and Confirmation: Training-Free Aerial Vision-and-Dialog Navigation with Chain-of-Thought Reasoning and Structured Spatial Memory",
+    "authors": "Yu Qi, Hongyu Li, Shaofei Huang, Tianrui Hui, Yaxiong Wang, Lechao Cheng, Zhun Zhong, Si Liu, Meng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11529v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we tackle the Aerial Vision-and-Dialog Navigation (AVDN) task in the training-free setting for resource-efficient high-altitude UAV navigation.Naively applying MLLMs leads to unreliable navigation due to weak directional grounding and the lack of explicit spatial memory.To address these issues, we propose PSC-AVDN, a training-free framework that tightly couples a three-stage Parsing-Search-Confirmation reasoning pipeline with a Structured Spatial Memory (SSM).The parsing stage uses an LLM to convert ambiguous dialogue instructions into stable geometric directional and destination cues.A Search Chain-of-Thought (S-CoT) then performs stepwise target exploration under high-altitude observations, and a Confirmation Chain-of-Thought (C-CoT) conducts fine-grained verification around candidate regions to resolve visual ambiguity.Meanwhile, SSM integrates three complementary sources of spatial cues, including multi-scale visual observation, spatial visual memory, and structured geometric memory to provide global spatial context and long-horizon consistency.Extensive experiments on ANDH and ANDH-Full show that PSC-AVDN establishes new state-of-the-art performance in the training-free setting, matching or surpassing several finetuned methods.Code will be publicly available at: https://github.com/QY6616/PSC-AVDN"
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Prezta: Provable Remote Execution of Zero-Trust Authorization using SNARKs",
+    "authors": "Zhongjing Wei, Osaid Muhammad Ameer, Yupeng Zhang, Nikita Borisov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11466v1",
+    "source": "arXiv",
+    "abstract": "Modernizing the security of operational technology systems that control critical infrastructure has become a pressing challenge. Because edge devices have limited capabilities, modernization has relied on application gateways that interface with identity management systems and enforce access policies. These gateways are powerful enough to perform complex authorization decisions and support zero-trust architectures, but they create major deployment and management burdens: they must be collocated with remote, distributed edge devices, kept up to date with security patches, and managed with minimal downtime. We propose Provable Remote Execution of Zero-Trust Authorization (Prezta), an architecture that eliminates these gateways by evaluating policies within a zero-knowledge virtual machine (zkVM) running on the client. The zkVM produces a succinct proof of authorization that edge devices can verify efficiently, extending the zero-trust security envelope to the edge. Policies and identity management schemes can evolve without updating edge devices. To demonstrate the feasibility of Prezta, we implement a prototype built using the RISC Zero zkVM that supports XACML 3.0 policies and JWT identity claims. While zkVMs introduce substantial proof overhead, we mitigate this overhead by compiling policies to Rust code and precompiling regular expressions. Combined with optimized signature verification and JWT parsing, these measures reduce prover time by more than an order of magnitude. Our compiler correctly implements 83\\% of the XACML 3.0 conformance suite, with proof generation completing in tens of seconds on a desktop. Verification, by contrast, takes only tens of milliseconds, which is fast enough for resource-constrained edge devices."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "HourGlass: A probabilistic data-driven temporal downscaler for global and regional weather forecasting",
+    "authors": "Magnus Sikora Ingstad, Mariana C. A. Clare, Olav Ersland, Vera Gahlen, Håvard Homleid Haugen, Ophélia Miralles, Even M. Nordhagen, Thomas N. Nipen, Ivar A. Seierstad, John Bjørnar Bremnes, Michael Maier-Gerber, Zied Ben Bouallègue, Harrison Cook, Christian Lessig, Gert Mertes, Cathal O'Brien, Florian Pinault, Ana Prieto Nemesio, Matthew Chantry",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11457v1",
+    "source": "arXiv",
+    "abstract": "Many forecast applications require high frequency temporal resolution, yet most state-of-the-art data-driven weather forecasting systems operate at 6-hourly resolution. Although direct hourly forecasting is possible, it suffers from error accumulation and temporal inconsistency. We introduce HourGlass, a probabilistic data-driven temporal downscaling method that reconstructs the evolution between forecast states. HourGlass is trained using variants of the continuous ranked probability score (CRPS) preserving small-scale spatial variability while encouraging temporal consistency. Unlike existing deterministic temporal downscaling approaches, which tend to produce overly smooth fields, HourGlass generates realistic probabilistic forecasts. Training on forecast trajectories rather than reanalysis or analysis data also avoids the temporal inconsistencies present in datasets used by previous methods. We evaluate HourGlass in two settings: AIFS-HourGlass, applied globally to ECMWF's AIFS-Single and AIFS-ENS forecast systems, and Bris-HourGlass, applied regionally to MET Norway's high-resolution stretched-grid ensemble model, Bris. Verification against observations shows that both models retain the skill of their underlying forecasting systems while producing temporally coherent hourly forecasts with realistic small-scale variability. Case studies demonstrate physically consistent evolution during rapidly developing weather events, including extratropical cyclones and organised convection. Hourly precipitation remains challenging: HourGlass improves the spatial realism of precipitation fields but still underestimates the most intense extremes, a common limitation of data-driven weather forecasting models. These results demonstrate that HourGlass effectively bridges the gap between 6-hourly data-driven forecasts and the hourly products required for operational regional and global forecasting."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Omni-Decision: A Progressive Evidence-State Agent System for Omni-Modal QA",
+    "authors": "Ming Ma, Yi Zhu, Yiran Zhong, Feida Zhu, Weigao Sun, Junhan Shi, Lingrui Mei, Tianming Yang, Steven Hoi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11433v1",
+    "source": "arXiv",
+    "abstract": "Omni-modal evidence-seeking QA requires agents to answer questions whose evidence is sparsely distributed across videos, audio, images, web pages, and computation results. Existing agentic multimodal systems often leave evidence in scratchpads, tool trajectories, or free-form histories, making it difficult to track what has been grounded, what remains missing, and when the evidence is sufficient to answer. We propose Omni-Decision, a training-free evidence-state system that turns omni-modal QA into a query-scoped evidence-closure process. For each query, Omni-Decision maintains a structured evidence state containing confirmed evidence, unresolved conflicts, fact and computation dependencies, and open evidence needs. A shared state view conditions planning, evidence acquisition, validation, repair, and finalization. Heterogeneous observations from media, web, computation, and verification modules are normalized, judged, and committed through deterministic state updates. This design enables targeted evidence acquisition, preserves sparse cross-modal cues, and provides inspectable control over repair and stopping. Omni-Decision achieves 45.6% accuracy on OmniGAIA and 58.3% on WorldSense, improving over the baselines by +27.3 and +30.2 percentage points, respectively. No-state ablations and trajectory audits further support the role of explicit evidence-state control in multi-step omni-modal evidence seeking."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Video Transformer for Remote Identity Document Hologram Detection",
+    "authors": "Joris Voerman, Nicolas Sidere, Jean-Christophe Burie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11419v1",
+    "source": "arXiv",
+    "abstract": "Remote identity authentification using Identification Documents has been a major challenge for several years. DeepFakes advent and the development of AI-guided tools helps fraudsters creating counterfeit ID Documents. Ensuring the authenticity of ID Documents has become a real clue in the seurization of remote authentification. This need is all the more pressing given the increasing digitization of administrative and transactional processes. To ensure widespread accessibility, the system should rely solely on video captured via mobile devices. In this specific context, confirming the authenticity of ID is a real challenge as many security features needs specific device like infrared sensor for instance. Among underutilized but promising security features, holographic printings hold a special place. Difficult to counterfeit, they produce distinctive visual effects according enlightment, making them both detectable in a video captured by a smartphone camera and difficult to imitate. In this paper, we propose a Remote Identity Document Verification System (RIDVS) and an approach based on a video transformer for detecting holograms in simple videos captured by smartphones. Our system is designed for a smartphone-based capture process, followed by a server-side verification. The hologram detection method builds on a robust model previously validated in a related research domain. We demonstrate that it outperforms existing SotA methods, achieving near-perfect accuracy even when trained on medium- to small-sized datasets. In particular, we report improvements of +26.86\\% in Recall and +17.93\\% in accuracy over the best MIDV-Holo baseline. This study includes several experiments that evaluate the model adaptation to frugality, both for training samples and computational resources."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Generative AI in Higher Education Laboratory Learning: A Qualitative Case Study of Epistemic Scaffolding and Assessment Boundaries",
+    "authors": "Matteo Tuveri, Alessandro Riggio",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11417v1",
+    "source": "arXiv",
+    "abstract": "Advanced physics laboratories require students to integrate disciplinary knowledge, experimental practice and scientific argumentation across complex observational and analytical tasks. The increasing availability of generative artificial intelligence (GenAI) adds complexity to this coordination, since AI systems may function as conceptual explainers, operational assistants, artefact reviewers or apparently authoritative evaluators. This exploratory qualitative case study examines AstroTutor, a constrained GenAI tutor introduced as an optional support resource in a Master's-level advanced astrophysics laboratory. The study investigates how students framed the tutor within a broader GenAI-mediated learning ecology that included the instructor, peers, course materials, observations, measurements, data analysis and final assessed reports. Seven students attended the course, five used the tutor, and three groups produced a final report. The analysis combined content analysis, thematic analysis and frame analysis. Drawing on chat logs, final reports and limited post-use reflective responses, the results identify five principal GenAI functions: interface interpreter, warrant organiser, report scaffold, unstable authority and resource whose traces may appear in downstream reports. These findings extend previous research on GenAI in education to the context of advanced physics laboratories, showing that its use requires explicit design boundaries, guidance on legitimate and prohibited practices, verification routines, and assessment requirements that preserve students' epistemic responsibility. The educational implications of a GenAI-mediated learning ecology in advanced physics laboratories are also discussed."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Agentic Routing: The Harness-Native Data Flywheel",
+    "authors": "Xinchen Liu, Hang Zhou, Yingjie Zong, Yuchuan Tian, Liuyang Song, Shuo Zhang, Yulong Li, Wei He, Mengyu Zheng, Runke Liu, Siyang Cheng, Xiang Kuang, Hailin Hu, Kai Han, Yunhe Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11399v1",
+    "source": "arXiv",
+    "abstract": "Large language model agents are increasingly executed not by a single model call, but by an execution harness that manages observation, context, control, action, state, and verification. At the same time, frontier and open models are becoming structurally specialized: a model that is strong at code editing, long-context recovery, tool use, mathematical reasoning, or low-latency response may not dominate on the other axes. This makes model selection inside an agent a core systems problem rather than a per-query serving trick. Existing routing methods mostly optimize single-turn cost-quality trade-offs and therefore miss the execution state, intermediate failures, and feedback loops that make agents different from chat completion. We propose Harness-Native agentic routing, a step-level routing paradigm that selects either a single best-fit model for cost-effective execution or multiple complementary models for ensemble-style accuracy improvement, conditioned on the full harness state. The key insight is that every routing decision naturally produces a structured data record -- consisting of the query, harness state, model choice or model set, execution trace, outcome, and cost -- whose labels are supplied by the environment rather than by the router itself. These records form a harness-native data flywheel: execution traces train better routers and harness-native models, which improve cost-quality trade-offs and generate more traces under the same budget. We instantiate this idea in OpenSquilla with a four-layer routing stack, an open LightGBM cold-start ranker, and a staged router-model path that turns logged arena records into progressively stronger routing policies. The report studies singleton and multi-model routing on agentic benchmarks including DRACO and PinchBench, and argues that agentic routing is not merely cost control, but a data engine for agent-native training."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "StructAgent: Harness Long-horizon Digital Agents with Unified Causal Structure",
+    "authors": "Wenyi Wu, Sibo Zhu, Kun Zhou, Aayush Salvi, Zixuan Song, Biwei Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11388v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in large language models (LLMs) and vision-language models (VLMs) have enabled increasingly capable digital agents for computer use. However, real-world tasks are often long-horizon and involve evolving contexts containing accumulated observations, intermediate edits, failed attempts, and partially completed executions. Existing agents typically operate over raw interaction history, making task progress difficult to interpret, verify, and recover, which ultimately limits reliable long-horizon execution. In this paper, we argue that addressing this challenge requires explicitly structuring both the agent's state and workflow around a unified causal representation of task progress. We present \\textbf{StructAgent}, a state-centered framework that introduces a unified state for maintaining compact, verifiable task progress and a structured workflow that regulates progress through verifier-backed state transitions. Building on this design, StructAgent further enables explicit progress checkpointing, evidence-driven task completion, targeted failure recovery, and tool-supported execution, while ensuring that all progress updates remain grounded in verification. Extensive experiments demonstrate that StructAgent consistently improves a wide range of LLM and VLM backbones on long-horizon computer-use tasks. On OSWorld-Verified, it improves Qwen3.5-9B from 27.0\\% to 46.9\\% success rate and Qwen3.5-27B from 31.6\\% to 62.2\\%, while achieving a new open-source state of the art of 78.9\\% with MiniMax-M3. Moreover, the same framework generalizes beyond desktop environments to Minecraft, demonstrating the generality of our design."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "AutoVSR: Automatic Visual-to-Symbolic Reasoning for Symbolic Expression Generation from Circuit Schematic",
+    "authors": "Zhe Xiao, Longfei Li, Xu He, Haoying Wu, Zixing Zhang, Mingyu Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11338v1",
+    "source": "arXiv",
+    "abstract": "Symbolic expressions can effectively characterize and predict circuit behavior, but deriving them directly from circuit schematics is challenging. This process requires accurate visual-to-symbolic construction of circuit structure from images and correct multi-step symbolic derivation, both of which impose strict correctness requirements. This work proposes AutoVSR, an automated framework for visual-to-symbolic generation of circuit expressions using Vision Language Models (VLMs). By reconstructing circuit diagrams into an executable intermediate representation (Executable IR) and leveraging a symbolic solver for reasoning, AutoVSR significantly improves the accuracy of symbolic expression generation. AutoVSR introduces two key innovations: an IR construction method guided by component rule retrieval and verification-based feedback, and a symbolic solver implemented as a planning agent equipped with a symbolic tool library for reliable multi-step derivation. Compared with end-to-end VLM approaches and specialized methods on the main symbolic expression generation task, AutoVSR achieves accuracy improvements of 30.01--59.45% and 41.96--51.84%, respectively. Moreover, AutoVSR surpasses closed-source state-of-the-art VLMs in inference cost and computational efficiency. Code is available at https://github.com/LongfeiLi1/AutoVSR."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Minimizing Benchmark-Relative Drawdown Duration via Occupation Time Penalization",
+    "authors": "Jun Sekine, Marcus Wunsch",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11335v1",
+    "source": "arXiv",
+    "abstract": "We study a continuous-time portfolio optimization problem in which an investor is evaluated relative to a non-replicable benchmark and seeks to control the persistence of benchmark-relative underperformance. We introduce a benchmark-relative drawdown-duration criterion that penalizes the expected discounted time spent in unfavorable benchmark-relative performance states. Despite the path dependence induced by benchmark-relative drawdowns, we show that the problem admits a one-dimensional Markovian representation and derive the associated Hamilton-Jacobi-Bellman equation. We obtain an explicit projection-based characterization of the optimal feedback control, establish a verification theorem, and identify geometric settings under which the associated closed-loop reflected diffusion admits a unique strong solution. Our results provide a tractable downside-risk-oriented alternative to classical benchmark-tracking formulations and reveal a novel projection-based control structure for benchmark-relative risk management."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Verifier-Guided Twelve-Tone Composition: A Generate-Verify-Repair Harness for Symbolic Music Generation",
+    "authors": "Congren Dai, Danni Zhao, Enyang Liu, Michael Ching Yam, Zhancheng Guo, Siyi Gu, Wentao Yang, Bo Dai, Xiaobing Li, Maosong Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11334v1",
+    "source": "arXiv",
+    "abstract": "Large language models can produce superficially legal twelve-tone scores that collapse into degenerate textures. We introduce a neuro-symbolic harness that wraps a language-model proposer in a generate-verify-repair-trace loop with symbolic verification. The complete pipeline improves event-local consistency without claiming whole-piece legality. Across 40 controlled tasks and four paired models, audited delivery yield rises from 13.3% under raw generation to 48.1% with the harness, which explicitly abstains otherwise. The pass rate of a narrower collision and serialisation-consistency check rises from 33.5% to 58.3%, while degeneracy remains near 0.05, including under exploratory adversarial prompting. A blinded evaluation by five experts also shows a descriptive aggregate preference for harness candidates over raw generation in adherence, perceived legality, coherence, and overall quality."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "A dual linear programming bound for sphere packing in dimension 36",
+    "authors": "Rifat Jumagulov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11319v1",
+    "source": "arXiv",
+    "abstract": "We construct an explicit dual-feasible point for the Cohn-Elkies linear program in dimension 36, built from the space of weight-18 modular forms for $Γ_0(24)$ following the method of Cohn and Triantafillou. The certificate shows that the two-point linear programming bound on the sphere packing density in dimension 36 exceeds the density of the best packing currently known -- the Kschischang-Pasupathy packing, of center density $2^{18}/3^{10}$ -- by a factor of at least 32.91. In particular, no Cohn-Elkies auxiliary function can certify the best known packing in dimension 36 as optimal. To our knowledge this is the first such dual bound in any dimension above 32, extending the table of Cohn-Triantafillou ($d=12,16,20,28,32$), Li ($3 \\le d \\le 13$), and de Courcy-Ireland-Dostert-Viazovska ($d=6$). The certificate is exact: the dual point is a rational vector, coefficient nonnegativity is verified by exact arithmetic up to $n=800$, and eventual positivity of the two relevant $q$-expansions is proved via an explicit Deligne-type tail bound whose constant is certified with outward-rounded interval arithmetic. Two methodological points may be of independent interest: a constraint-generation (cutting-plane) formulation of the exact rational LP, which makes the tail-safe optimum reachable; and a sharpened, lift-aware form of the Deligne bookkeeping constant, $C=\\sum_{f,e}|λ_{f,e}|\\,e^{-(k-1)/2}$, without which the finite verification in dimension 36 fails marginally."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Toward AI-Agent-Driven Particle Transport Simulations: Implementation of AI-Assisted Workflows for PHITS",
+    "authors": "Tatsuhiko Sato, Shintaro Hashimoto, Tatsuhiko Ogawa, Takuya Furuta, Yuho Hirata, Seiki Ohnishi, Yasuhito Sakaki, Nobuhiro Shigyo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11309v1",
+    "source": "arXiv",
+    "abstract": "Monte Carlo particle transport codes are powerful tools, but their use requires substantial knowledge of input preparation, execution, and result analysis. In this study, we present a code-side strategy for applying existing AI assistants and AI agents to PHITS. Two complementary sets of AI-ready resources were prepared from manuals, lecture materials, sample inputs, utility information, and developer-curated cautions: a bundled knowledge base for retrieval-augmented generation (RAG)-based assistants and a compact agent reference for direct use by AI agents. The knowledge base was loaded into NotebookLM to provide conversational PHITS support, while the agent reference was combined with PHITS-specific policies and execution rules to enable Codex and Claude Code to edit input files, execute calculations, inspect errors, analyze results, and assist with source-code modification and compilation. Five demonstration tasks covered input modification, repeated simulations, parameter optimization, program compilation, post-processing, and result interpretation. The results showed that AI agents could handle complex PHITS workflows when appropriate resources and rules were provided. Practical lessons included precise prompts, human verification, well-documented sample files, explicit execution policies, and command-line-accessible tools. These findings support bundling AI-ready resources with particle transport codes to enable the use of general-purpose AI tools without requiring dedicated code-specific applications."
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Efficient Test-Time Optimization for Multi-Agent Proof Autoformalization",
+    "authors": "Tian-Shuo Liu, Shiyuan Zhang, Zijie Geng, Haoyu Liu, Runjie Xu, Pengyuan Wang, Lei Yuan, Yang Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11307v1",
+    "source": "arXiv",
+    "abstract": "Full-proof autoformalization bridges extensive mathematical proofs in natural language with formally validated reasoning, offering a pathway to elevate the ceiling of verifiable mathematical reasoning. Unlike statement-level formalization, proof autoformalization is a long-horizon challenge requiring coordination of claims, contexts, and dependencies across many proof steps, yet has only recently come under focused study. Current approaches either rely on costly model training or apply excessive, unguided repair at inference time. To this end, we introduce ToMap, a multi-agent framework that structures proof autoformalization as a Decomposer-Formalizer-Prover pipeline with efficient test-time optimization guided by formal verification and semantic rubrics for proof quality. Rather than distributing test-time compute across all agents, we perform bottleneck analysis and identify the Decomposer as the critical bottleneck: the quality of its atomic, self-contained proof units directly determines whether downstream agents can successfully formalize and prove each step. ToMap therefore treats the Formalizer and Prover as downstream executors and efficiently focuses test-time compute on Decomposer refinement. This refinement follows a loop inspired by GEPA, evolving prompts over candidate decompositions and using formal verification progress together with semantic proof rubrics to define a Pareto frontier that guides the next decomposition update. Experiments on ProofFlowBench show that ToMap improves over the best previous method by 19.0% when evaluated by both syntactic correctness and semantic faithfulness, while requiring lower test-time cost. Scaling analysis shows that most gains emerge within a few iterations of decomposition evolution, guiding test-time budget selection."
+  },
+  {
+    "date": "2026-7-13",
+    "title": "VTR-LLM: Multi-Agent LLM Framework for Automated Debugging of FPGA CAD Flows",
+    "authors": "Mohamed A. Elgammal, Jamie Wu, Lynne Liu, Taehoon Kim, Vaughn Betz",
+    "publish": "ACM Transactions on Reconfigurable Technology and Systems",
+    "url": "https://doi.org/10.1145/3829373",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Heuristic Static RTL Analysis for Pre-Silicon Design Quality Assurance: A Zero-Dependency Python-Based Approach",
+    "authors": "S Pranesh, S Yashwanth Prasad, Hazel Elsa Thomas, N. Kalaiselvan",
+    "publish": "2026 International Conference on Next Generation Electronics (NELEX)",
+    "url": "https://doi.org/10.1109/nelex69209.2026.11590789",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Multimodal Sleep Stage Classification with LLM based Sleep Report",
+    "authors": "Nandith Sreekumar, Jithin Velayudhan, Amrutha Veluppal",
+    "publish": "2026 International Conference on Next Generation Electronics (NELEX)",
+    "url": "https://doi.org/10.1109/nelex69209.2026.11590174",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Multi-Agent LLM Copilots for System of Systems Management",
+    "authors": "Theodor Pintilie, Anzhelika Borbak, George Suciu",
+    "publish": "2026 IEEE International Black Seas Conference on Communications and Networking (BlackSeaCom)",
+    "url": "https://doi.org/10.1109/blackseacom69760.2026.11598129",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Spontaneous Spectacles: AR- and LLM-Enabled Improvised Theatre Practice",
+    "authors": "Piotr Mirowski, Boyd Branch, Kory Mathewson",
+    "publish": "Proceedings of the 2026 Conference on Creativity and Cognition",
+    "url": "https://doi.org/10.1145/3803784.3816886",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "A Skill-Mediated LLM Workflow for Migrating a .NET Monolith to Cloud-Deployed Microservices: A Controlled Case Study",
+    "authors": "Florin Olariu, Lenuta Alboaie",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3712587",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "CoCortex: A Memory Governance Framework for Reliable Long-Horizon LLM Agents",
+    "authors": "R Kaviyaraj, Rishi Narayan Bijju, Tejha Nagarajan, Praveen Kumar Singh",
+    "publish": "2026 International Conference on Next Generation Electronics (NELEX)",
+    "url": "https://doi.org/10.1109/nelex69209.2026.11590154",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-14",
+    "title": "LatentScore: Sketching Soundscapes with LLM-Distilled Retrieval for Procedural Synthesis",
+    "authors": "Prabal Gupta",
+    "publish": "Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Talks",
+    "url": "https://doi.org/10.1145/3799818.3812120",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "LLM-QFL: Distilling Large Language Model for Quantum Federated Learning",
+    "authors": "Dev Gurung, Shiva Raj Pokhrel",
+    "publish": "IEEE Transactions on Network and Service Management",
+    "url": "https://doi.org/10.1109/tnsm.2026.3712394",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Language as a Material Interface for Creative LLM Interaction",
+    "authors": "Jon McCormack, Tace McNamara, Chen Wang, Maria Teresa Llano",
+    "publish": "Proceedings of the 2026 Conference on Creativity and Cognition",
+    "url": "https://doi.org/10.1145/3803784.3816859",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Rethinking LLM Deployment for Intent-Based Serving",
+    "authors": "Dimitrios Liakopoulos, Prasoon Sinha, Tianrui Hu, Myungjin Lee, Neeraja J. Yadwadkar",
+    "publish": "ACM SIGOPS Operating Systems Review",
+    "url": "https://doi.org/10.1145/3830422.3830428",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Amplifiers or Equalizers? A Longitudinal Study of LLM Evolution in Software Engineering Project-Based Learning",
+    "authors": "Hana Kataoka, Jialong Li, Yutaka Matsuno",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786580.3786960",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Too Long to Read? Restructuring LLM Responses for Users with Attention-Related Challenges",
+    "authors": "Jaeyeon Lee, Seo Yeon Lee, Gyuyeon Jung, Morgan G Ames",
+    "publish": "Proceedings of the 2026 Conference on Creativity and Cognition",
+    "url": "https://doi.org/10.1145/3803784.3816862",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "From LLM to LLH (Large Language models to Large Language Humans): Instruction as Medium in Human-AI Role Reversal",
+    "authors": "Kelly Haisu Zheng, Sang-won Leigh",
+    "publish": "Proceedings of the 2026 Conference on Creativity and Cognition",
+    "url": "https://doi.org/10.1145/3803784.3809278",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Breaking Memory Wall for Fast Edge LLM Inference Using Contextual Sparsity",
+    "authors": "Zhongxiang Wei, Yipeng Zhou, Jin Zhao, Kai Li, Xiaoming Fu",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3712257",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "LLM-Empowered Agentic MAC Protocols: A Dynamic Stackelberg Game Approach",
+    "authors": "Renxuan Tan, Rongpeng Li, Fei Wang, Chenghui Peng, Shaoyun Wu, Zhifeng Zhao, Honggang Zhang",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3712258",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Elastic Memory Remapping for Multi-tenant LLM Serving",
+    "authors": "Ruihao Li, Shagnik Pal, Vineeth Narayan Pullu, Prasoon Sinha, Jeeho Ryoo, Lizy K. John, Neeraja J. Yadwadkar",
+    "publish": "ACM SIGOPS Operating Systems Review",
+    "url": "https://doi.org/10.1145/3830422.3830427",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Prompting Without Principles: Are Students Transferring Software Engineering Knowledge to LLM Use?",
+    "authors": "Leonardo Sousa, Ipek Ozkaya, James Ivers, Celina Cywinska, Bingyu Xie, Mena Kostial, Tapajit Dey, Robert Edman",
+    "publish": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3786580.3786990",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Predictive Importance Sampling Based Coverage Verification for Multi-UAV Trajectory Planning",
+    "authors": "Snehashish Ghosh, Sasthi C. Ghosh",
+    "publish": "2026 IEEE International Black Seas Conference on Communications and Networking (BlackSeaCom)",
+    "url": "https://doi.org/10.1109/blackseacom69760.2026.11598028",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-13",
+    "title": "Formal verification of PKMv3 Protocol using ProVerif",
+    "authors": "Sohaib Hamioud, Noureddine Seddari, Abdelouahid Derhab, Eleonora Bottani, Piera Centobelli",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3712810",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
