@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-15",
+    "title": "Building Shor's Algorithm in Lean: An Agentic Formalization of Quantum Attacks on RSA-2048 and P-256",
+    "authors": "Lei Zhang, Yusheng Zhao, Hongshun Yao, Xin Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14082v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly assisting with demanding formal theorem-proving tasks, particularly when grounded in machine-checked libraries such as Lean. Agentic systems further amplify this process by searching, reusing, and extending existing formal developments to uncover new discoveries. In quantum computing, Shor's algorithm and its variants present such a demanding case for Lean formalization. In this work, we formalize this algorithm family in Lean through agentic formalization: software agents analyze sources, write Lean code and repair proofs, with human review of the scientific claims and machine checking of the resulting formal proofs. Our formalization develops the mathematical foundations for analyzing quantum attacks in two cryptographic settings: a 2048-bit modulus in the RSA-2048 and the standardized elliptic curve over a 256-bit prime field (P-256). To support these analyses, the formalization ranges from quantum algorithms for order finding to reversible quantum circuits for modular and elliptic-curve arithmetic. Based on [Quantum 5, 433] and [ASIACRYPT 2017, 241--270], we formalize the logical resource estimates for RSA-2048 and P-256, respectively, and provide additional estimates of classical operations. We expect the results pave the way for broader machine-checked quantum cryptanalysis and represent a step toward AI-assisted design and verification of quantum algorithms."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "PhysClaw-0: A Symbiotic Agentic System for Robot Autonomy via Language Corrections",
+    "authors": "Boyuan Wang, Zhenyuan Zhang, Zhiqin Yang, Peijun Gu, Shuya Wang, Xiaofeng Wang, Xianghui Ze, Yifan Chang, Guosheng Zhao, Jiangnan Shao, Guan Huang, Hengyu Liu, Yonggang Zhang, Wei Xue, Chunyuan Guan, Chenglin Pu, Yike Guo, Xingang Wang, Zheng Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14047v1",
+    "source": "arXiv",
+    "abstract": "Autonomous data collection governs the volume and quality of real-world trajectories for manipulation policy learning. Existing pipelines reduce human effort via self-resetting, VLM verification, or language-guided correction, yet episode-scoped fixes must be reissued whenever the same failure recurs, so oversight cost grows with session length rather than with the number of distinct problems. We present PhysClaw-0, a human-robot symbiotic agentic system in which corrections are retained and reused across rounds. The collection loop collects, verifies, and resets autonomously, pausing for a remote operator only when a phase exhausts an explicit retry budget. An LLM parser maps each natural-language utterance to a structured adjustment stored in Corrective Memory, so addressed failure modes typically need not be corrected again under the same conditions. On a real-robot desktop-clearing testbed, PhysClaw-0 matches teleoperation episode success while reducing human working time to 16%. Language corrections improve verifier-human agreement in all four evaluated settings and raise average single-attempt success from 12.5% to 47.5% (arm-selection: 20.0% to 50.0%). Policies fine-tuned on PhysClaw-0 data match teleoperation-trained policy success at a fraction of collection human cost."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
+    "authors": "Tam Nguyen, Hung Nguyen, Robert Ogburn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14044v1",
+    "source": "arXiv",
+    "abstract": "By 2030, 59 of every 100 workers will need reskilling or upskilling, yet the average time to close an enterprise skills gap grew from roughly 3 days in 2014 to 36 days in 2018. Most current frameworks accelerate single stages of upskilling programs and generally lack industry validation. We present an end-to-end framework that applies AI acceleration across five stages of knowledge acquisition, content development, content review and verification, teaching, and assessment development; with a strong focus on both production and learning efficiency. Three strong external signals validates the framework: the US National Association of State Boards of Accountancy reviewed and approved an upskilling program built on the framework for continuing-professional-education credits; 3 learners followed the program and passed the NVIDIA Certified Professional in Agentic AI exam in a significantly short amount of time, with 14 more in progress; the program's knowledge base supports complex downstream analysis such as the production of a robust 1,267 risk item dataset for managing multi-agent AI system risks."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation",
+    "authors": "Alaina Brandt",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14040v1",
+    "source": "arXiv",
+    "abstract": "Automatic translation systems, from CAT tools to MT, overwhelmingly treat translation as a sentence-by-sentence act. This paper asks whether LLMs can be moved beyond that paradigm through whole-document, corpus-informed translation. We present PAT (Pragmatic Auto-Translator), a RAG-based system that pairs user-configured specifications with context from a comparable corpus of authentic longform texts in U.S. English and Latin American Spanish, passing retrieved paragraph-, section-, and document-level examples to an LLM for whole-document generation. The goal is draft translation for professional verification: target texts reformulated to fit their Spanish-language context, where discourse organization, rhetorical style, and pragmatic norms differ meaningfully from English. We evaluated six automatic translations of essays on generative AI across three projects using a customized MQM typology, assessed by two trained evaluators working from U.S. English into LATAM and Mexican Spanish. Results show that a limited prompt produced no meaningful reformulation, and specifications and corpus-informed translations at times showed substantial reformulation, though not always to effect. We find that LLMs can be moved toward reformulation and away from the sentence-by-sentence paradigm, though more work is needed to improve the effectiveness of those reformulations. In this paper, we discuss considerations related to automatic translation system design, corpus construction, and translation quality evaluation methodology and results."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "From Forecasts to Auditable Reports: Evidence Contracts for LLM-Assisted Housing-Guarantee Risk Monitoring",
+    "authors": "Hyeongcheol Kim, Yoontae Hwang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14026v1",
+    "source": "arXiv",
+    "abstract": "Translating next-month housing-guarantee risk forecasts into auditable operational reports is essential yet challenging because upper-tail events are sparse, source records are confidential, and generated narratives can distort the underlying evidence. Using monthly South Korean \\textit{jeonse} deposit guarantee data from September 2015 to December 2025, we introduce an evidence-constrained reporting pipeline that prioritizes upper-tail monitoring, retrieves historical precedents aligned with the forecasting rationale, organizes admissible information into typed evidence contracts, and verifies generated claims before analyst review. We train and select the forecasting backbone on the original panel, whereas the reporting experiments use synthetic aggregate scenarios calibrated to its empirical ranges and temporal structure. The selected forecasting model substantially improves high-risk detection while retaining competitive average error. Across eight LLMs, structured evidence consistently increases report quality, numerical fidelity, and claim-level grounding. A practitioner evaluation involving 51 analysts and related domain professionals further indicates that the reports support real-world review and decision-making: most participants rated them as practically useful and endorsed an operational pilot. These findings demonstrate that reliable LLM-assisted reporting requires predictive models to be coupled with structured evidence, explicit verification, and analyst oversight."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Agent-Alternation-Free Epistemic Metric Temporal Logic with Past: Model Checking and Complexity",
+    "authors": "Benedikt Bollig, Matthias Függer, Thomas Nowak, Paul Zeinaty",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13981v1",
+    "source": "arXiv",
+    "abstract": "We study model checking for an epistemic metric temporal logic with past, interpreted over finite Büchi automata under synchronous perfect recall. The logic is motivated by observation-based verification problems such as diagnosis and opacity, where an observer sees only a projection of an execution and reasons about events that may have occurred earlier. These requirements use no alternation between different agents' knowledge. We therefore consider the agent-alternation-free fragment, in which nested knowledge operators must refer to the same agent. We show that model checking for this fragment is EXPSPACE-complete. The lower bound already holds with one agent, one occurrence of the knowledge operator, and no non-trivial metric bounds. For the upper bound, we combine temporal test automata with perfect-recall observers. Because past formulas may have different truth values on indistinguishable histories ending in the same system state, the observer must track temporal automaton states in addition to system states."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Constraint-Aware Counterfactual Editing for Aspect-Based Sentiment Analysis",
+    "authors": "S M Rafiuddin, Vamsi Krishna Pavuluri, Atriya Sen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13977v1",
+    "source": "arXiv",
+    "abstract": "Aspect-Based Sentiment Analysis (ABSA) requires models to identify sentiment toward specific aspects rather than relying on the global polarity of a sentence. This makes counterfactual evaluation especially challenging: a valid counterfactual should flip the sentiment of one target aspect while preserving the sentiment of all non-target aspects, semantic meaning, fluency, and factual consistency. Existing counterfactual generation methods often focus on sentence-level label flipping and may produce edits that are fluent but aspect-invalid, semantically drifting, or contradictory. To address this limitation, we propose CAVE-ABSA, a Constraint-Aware Validated Editing framework for generating and validating aspect-level counterfactuals. CAVE-ABSA localizes the opinion span associated with the target aspect, performs controlled counterfactual rewriting, refines candidates through a repair module, and filters them using aspect-level verification, semantic similarity, AMR-guided structural preservation, edit minimality, fluency, and contradiction detection. The framework is designed to construct validated counterfactual ABSA datasets for robustness evaluation and data augmentation. By explicitly separating generation from validation, CAVE-ABSA provides a principled approach for producing meaningful aspect-local counterfactuals and for testing whether ABSA models truly rely on aspect-grounded sentiment reasoning."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Modified Family-Vicsek Scaling and Probability Distributions for Brownian Castle Interfaces",
+    "authors": "Noah Sublett, Charles Sutton, Benjamin Long, Daniel B. Dougherty",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13922v1",
+    "source": "arXiv",
+    "abstract": "The Brownian Castle is a new interface growth model that is a variation on the well-known ballistic deposition model that results in an entirely new universality class. We present numerical verification that the interface width for BC interfaces displays modified Family-Vicsek scaling properties up to finite size corrections. Specifically, we find a growth exponent of $β=0.470 \\pm 0.012$ and a roughness exponent of $α=1.01 \\pm 0.018$. The scaling is modified at short times with a size scaling exponent that described the early time dependence of interface width on length. The probability distribution of heights for the BC interface shows significant deviations from simple Gaussian behavior and the probability distribution of height changes shows a Cauchy-Lorentz form consistent with expectations for a process involving relatively large jumps."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Partially Correlated Verifier Cascades in LLM Harnesses: Concave Log-Odds, Polynomial Reliability, and Blind-Spot Ceilings",
+    "authors": "Jiangang Han",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13918v1",
+    "source": "arXiv",
+    "abstract": "Serial verification gates are a core reliability primitive in LLM harnesses: a candidate answer is returned only if $k$ verifier calls all accept it. Under conditionally independent gates, the recent Odds Law (arXiv:2606.15712) shows that posterior log-odds grow linearly in $k$, so failure decays exponentially, and states that \"a tight theory of partially correlated verifier cascades remains open.\" This note gives a minimal such theory. Modeling the per-instance false-accept rate on the generator's own errors as a latent variable $α\\sim G$ (de Finetti), the exact cascade posterior is $\\ell_k = \\ell_0 - \\ln m_k$, with $m_k$ the $k$-th moment of $G$. Then: (i) $\\ell_k$ is concave in $k$ for every non-degenerate $G$ -- the Odds Law is its tangent at the first gate and an upper bound; (ii) for Beta$(a,b)$ latents, failure decays polynomially, $1-r_k \\asymp k^{-b}$, with correlation parameter $ρ_v = 1/(a+b+1)$; (iii) a blind-spot atom of mass $1-π$ at $α=1$ caps the evidence extractable from any number of gates at $-\\ln(1-π)$ nats, so reliability saturates below 1; (iv) letting the true-accept rate also vary ($β\\sim H$) yields a trichotomy -- gates eventually always help, plateau, or actively harm -- decided by the upper-tail exponents of $G$ and $H$, with closed-form crossover $k^\\dagger$. The mechanism is survivorship: errors surviving gates are the high-$α$ ones. The theory is measurable: $R$ repeated verdicts per instance identify the first $R$ moments of $G$, so two verdicts identify $ρ_v$; beta-binomial likelihood and NPMLE recover the reliability curve and the ill-posed ceiling. In synthetic tests, independence-based extrapolation underestimates failure by 20x at $k=5$ and ~3000x at $k=10$; the correlated fit at $R=8$ tracks held-out depths. The practical lever is decorrelation -- changing model family, modality, or evidence source -- not adding gates."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "The 2nd International StepUP Competition for Biometric Footstep Recognition: From Steps to Strides",
+    "authors": "Robyn Larracy, Anant Gupta, Gourav Gupta, Ethan Eddy, Maxime Devanne, Cyril Meyer, Jin-Chern Chiou, Yueh-Shan Lee, Zong-Han Lu, Aaron Tabor, Erik Scheme",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13905v1",
+    "source": "arXiv",
+    "abstract": "The International StepUP Competition Series was launched to advance research in pressure-based footstep biometrics through a standardized and challenging evaluation framework. Using the large-scale StepUP-P150 dataset (with more than 200,000 high-resolution dynamic footsteps from 150 individuals) and a previously unreleased test set, the 2nd edition of the competition addressed three key challenges: (1) generalization to unseen users with limited enrollment data, (2) robustness to domain shift caused by variations in footwear and walking speed and (3) effective fusion of paired left-right footsteps. While the first two challenges built on the inaugural competition, this edition introduced more extreme cross-domain conditions and moved beyond isolated footsteps to stride-level verification, enabling new opportunities for representation learning and inter-step information fusion. The competition attracted 26 registrants from academia and industry, with a best equal error rate of 8.00% achieved by the ArogyaPandit Research Team using a spatiotemporal CNN combined with an ensemble-based scoring strategy. The top solutions showcase the value of harnessing temporal patterns and of incorporating inference-time normalization and calibration strategies to improve scoring. However, the results also reveal that recognizing users in unseen personal footwear remains a challenge, especially in the presence of distractors with similar characteristics."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Hybrid Time-Frequency Domain Frequency Offset Compensation Under GHz Doppler Shift for LEO Satellite-to-Ground Coherent Free-Space Optical Communication",
+    "authors": "Tiankuo Jiao, Hossein Kazemi, Harald Haas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13904v1",
+    "source": "arXiv",
+    "abstract": "Coherent free-space optical (FSO) communication is a promising solution for low Earth orbit (LEO) satellite downlink transmission. However, high orbital velocity introduces multi-GHz Doppler shifts that appear as a rapidly time-varying carrier frequency offset (CFO), which is a major challenge for conventional coherent optical receivers. Narrow-range digital loops cannot acquire the initial offset, while wide-range feedforward or optical domain solutions either leave large residual errors or impose substantial implementation cost. In this paper, a Doppler-aware hybrid time-frequency frequency offset compensation (HTF-FOC) receiver architecture is proposed for coherent LEO satellite-to-ground FSO links using a cumulative time-varying random process model for the dynamic Doppler-induced phase shift. The proposed receiver implements a hybrid acquisition and tracking procedure to acquire and compensate for multi-GHz Doppler variations, including 4th-power FFT-based coarse CFO acquisition, residual CFO handover verification, and low-complexity decision-directed (DD) frequency-locked loop (FLL) tracking. The phase-averaged pairwise error probability (PEP) and union-bound symbol error rate (SER) expressions are derived and verified using Monte Carlo simulations. The results demonstrate that the proposed HTF-FOC method tracks Doppler shifts beyond $\\pm5$ GHz while keeping the residual CFO below $80$ MHz with a success rate of $100\\%$ for typical LEO altitudes of $400{\\!-\\!}800$ km and orbital speeds of $7.3{\\!-\\!}7.9$ km/s."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Verifying formulas for interventional distributions",
+    "authors": "Francesco Freni, Leonard Henckel, Sebastian Weichwald",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13883v1",
+    "source": "arXiv",
+    "abstract": "We formalize verification in causal graphical models: deciding whether a given observational formula identifies a target interventional distribution. This opens a problem complementary to identification, asking not whether any identifying formula exists, but whether the given formula is identifying. We show that even sound and complete solutions to identification do not solve verification. We propose a falsifier as a first practical route forward, prove that it induces an almost-surely correct verifier for regular exponential-family models, and use the resulting verifier to develop the gateway test, which finds all sets admissible for use in a front-door formula."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "From Classification to Consistent Templates: Multiple Permuted-Label Classifier Encoding for Biometric Template Protection",
+    "authors": "Baogang Song, Zhongshu Zhao, Qianrong Zheng, Jianwen Xiang, Dongdong Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13845v1",
+    "source": "arXiv",
+    "abstract": "Biometric template protection (BTP) must secure stored templates while tolerating intra-class variations. Existing methods rely on protected-domain similarity matching, error correction, or predefined-template mappings, potentially retaining exploitable similarity structures, introducing helper-data risks, depending on artificial targets, or coupling protection to specific modalities. Storing only cryptographic hash digests eliminates directly comparable representations and conceals pre-hash templates, but hash-based exact-match verification requires genuine samples to generate identical intermediate templates before hashing. Identity classification is naturally suited to this requirement because it maps variable biometric samples to stable and discriminative identity-level outputs. Based on this insight, we propose Multiple Permuted-Label Classifier Encoding (MPLCE). Through classifier-specific label permutations, MPLCE assigns each identity different labels across multiple classifiers. The predicted labels are encoded and concatenated to form an intermediate template, preventing repeated encodings of a single identity label and enlarging the effective candidate space while preserving classification consistency. The template is randomized with an application-specific XOR string and cryptographically hashed, enabling exact-match verification without error correction codes or biometric-dependent helper data. Using modality-specific classifiers, MPLCE retains the same template generation and protection procedure across modalities. On four face and two iris datasets, MPLCE achieves competitive performance, including a GAR of 98.61\\% at a FAR of 5.51\\(\\times\\)10\\textsuperscript{-5}\\% on YTF and a GAR of 99.10\\% at a FAR of 0.00\\% on CASIA-Iris-Lamp. Security analyses and attack evaluations support its irreversibility, revocability, and unlinkability under the threat model."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Persona Migration and Expectation Recalibration in Generative AI Adoption: A Longitudinal Study at a State Department of Transportation",
+    "authors": "Omidreza Shoghli, Fatemeh Banani Ardecani, Amin Mohamadi Hezaveh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13798v1",
+    "source": "arXiv",
+    "abstract": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey measured perceived usefulness, perceived ease of use, behavioral intention, and trust before and after participation. After matching and response-quality screening, the sample included 124 employees. Nonparametric tests assessed aggregate changes, k-means clustering identified baseline acceptance personas, and fixed-centroid assignment tracked migration. Open-ended responses were examined using keyword-based content mapping. Perceived usefulness declined significantly after use, suggesting recalibration of expectations, while perceived ease of use, behavioral intention, and trust showed only small, nonsignificant changes. Three baseline personas emerged: Skeptics, Cautiously Positive users, and Champions. Although persona counts changed modestly, individual movement was substantial: 40 percent of Skeptics moved to Cautiously Positive, while 68 percent of Champions moved to less enthusiastic personas. Upward movement was associated with gains in usefulness, behavioral intention, and trust; downward movement was associated with declines in usefulness and trust. Communication and summarization remained stable use cases, while data, chart, and presentation tasks declined. Accuracy and privacy concerns decreased, but job and skills concerns increased. Public-sector AI adoption should be monitored dynamically and supported through persona-specific training, workflow examples, verification routines, and trust-calibration safeguards. The study offers a framework for tracking workforce heterogeneity during enterprise generative AI implementation."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "A phase transition in the exactness of the NPA hierarchy at the critical doubly-tilted CHSH functional",
+    "authors": "Anton Pakhunov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13774v1",
+    "source": "arXiv",
+    "abstract": "Gigena et al. [npj Quantum Inf. 11, 82 (2025)] proved the exact quantum maximum of the doubly-tilted CHSH functional $B_{αβ}=α\\langle A_0\\rangle+β\\langle B_0\\rangle+\\mathrm{CHSH}$ and observed that the NPA level required to reach it grows without evident bound toward the critical line $α+β=2$. We quantify the mechanism on the symmetric slice $s=2-α-β$: (i) the quantum value leaves the local bound cubically, $c_Q=4-s+s^3/6-s^4/36+O(s^5)$; (ii) each NPA level overshoots quadratically, $c_k(s)=4-s+a_k s^2+O(s^3)$, with the almost-quantum coefficient computed exactly, $a_{1+AB}=3/64$; (iii) the divergence of the required exact level is equivalent to positivity of the single sequence $(a_k)$ - proven for every $k$ in the companion paper. We prove the supercritical side completely: for all $α,β\\ge 1$ and every level the hierarchy is exact, via three explicit rational certificates realizing an affine identity. The hierarchy's exactness thus undergoes a phase transition at the critical line. On the subcritical side we certify the first four levels in exact arithmetic (rational pseudo-moments beating $c_Q$, confirmed by Sturm's theorem). We identify the exact mechanism: rescaled to the critical corner, the limiting obstruction is the Motzkin polynomial, the classical nonnegative-but-not-sum-of-squares form, so the finite-level failure sits in the restricted-certificate regime. The phase boundary has a precise geometric reading via Nie's finite-convergence theorem and Marshall's boundary Hessian condition: a self-tested optimum is finitely NPA-certifiable whenever its boundary Hessian is nondegenerate (contact order two), which holds for the single tilt and fails exactly at the doubly-tilted cubic touch. Three verified errata in the published polynomial system of Gigena et al. are documented."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "No finite level of the NPA hierarchy is exact for the doubly-tilted CHSH functional near the critical tilt",
+    "authors": "Anton Pakhunov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13762v1",
+    "source": "arXiv",
+    "abstract": "Gigena, Panwar, Scala, Araujo, Farkas and Chaturvedi [npj Quantum Inf. 11, 82 (2025)] determined the quantum maximum of the doubly-tilted CHSH functionals, observed that the Navascues-Pironio-Acin level needed for exactness grows without evident bound toward the critical tilt, and asked whether any finite level suffices. We answer this in the negative. For the symmetric critical family $B_s=(1-s/2)(\\langle A_0\\rangle+\\langle B_0\\rangle)+\\mathrm{CHSH}$ we prove: for every NPA level $k\\ge 2$ there are an explicit rational $g_k>0$ and an $s^*_k>0$ with $c_k(s)\\ge 4-s+g_k s^2$ on $(0,s^*_k]$; since the quantum value leaves the local bound only cubically, every finite level strictly overshoots on an interval: no finite level is exact on any neighbourhood of the critical point. Unconditionally $a_2>1/39$, $a_3>1/188$, $a_4>1/641$. The proof is a primal construction: an exactly feasible moment curve at each level, built from level-uniform structural laws and one level-independent signed witness -- a closed-form class function $y^*$ with $N_k^TΓ(y^*)N_k=u_k u_k^T$ at every level. The mechanism forces the sign: for $k\\ge 3$ no quantum state and no smooth curve of quantum models can realize the gain direction, so the overshoot lives strictly in the non-quantum part of the NPA tangent cone. The proof is computer-assisted in the strict sense: finite exact-integer verifications with proven degree bounds are constituent parts of the argument; the chain has been re-verified against independent implementations, including a symbolic per-regime proof of the witness identity and a clean-room implementation written from the paper text alone. The one external input is the published quantum value of Gigena et al., cross-checked to twelve digits."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems",
+    "authors": "Zexun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13716v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI systems increasingly act through heterogeneous runtimes: local coding hooks, SDK tools, browser automation, managed-agent traces, API gateways, and workflow engines. A single operational act such as publishing code, changing identity state, moving money, or exporting data may therefore be represented by many incompatible runtime records. This makes a basic governance question difficult to answer: what action was actually approved, what evidence binds the approval to execution, and can an independent verifier reproduce the same action identity later? This paper presents Canonical Action Verification and Attestation (CAVA), a runtime-semantics layer for converting heterogeneous agent activity into canonical runtime action objects. CAVA is positioned below Proof-Carrying Agent Actions (PCAA): PCAA defines the deployer-owned route-review-prove governance process, while CAVA defines the stable action object that process governs. The paper formalizes canonical action identity, semantic pattern detection, approval binding, receipt integrity, runtime-portable projection, and optional attestation substrates. We study a reference implementation through a 96-seed, 384-variant benchmark covering semantic equivalence, semantic separation, wrapper bypass, false-positive control, approval binding, receipt reproducibility, attestation tamper detection, runtime portability, semantic pattern detection, policy degradation, and Azure deployment drills. The contribution is a systems formulation of action-level canonicalization and policy-addressable semantic patterns as a necessary substrate for deployer-side AI governance."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "WarpGuard: Towards Control-Flow Attestation for Heterogeneous CPU-GPU Execution",
+    "authors": "Christian Lindenmeier, Meni Orenbach, Amro Awad, Fabian Schwarz, Fritz Alder, Ahmad Atamli",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13640v1",
+    "source": "arXiv",
+    "abstract": "Heterogeneous CPU-GPU workloads are increasingly used in safety-critical embedded systems, yet no existing approach provides joint attestation of their execution. Prior Control-Flow Attestation (CFA) techniques focus on CPU-side CFA, while GPU attestation is limited to static, load-time verification and does not provide runtime guarantees. As a result, runtime attacks on GPU kernels and violations of the CPU-GPU interaction contract remain unaddressed. We present WarpGuard, the first composite CFA framework for heterogeneous CPU-GPU workloads. WarpGuard verifies execution against a unified control-flow graph (CFG) that captures both CPU and GPU components. It extends prior CFA techniques in two ways: it enables runtime CFA of GPU kernels by tracing their execution against kernel-specific CFGs, and it monitors kernel launch events and enforces per-call site policies to detect violations at the CPU-GPU boundary. These extensions address challenges arising from GPU parallelism and cross-device interactions. We implement WarpGuard using software-based instrumentation, requiring no specialized hardware or binary modifications. Our evaluation on an NVIDIA Jetson Orin Nano shows that WarpGuard detects GPU-side control-flow and cross-boundary attacks. Across microbenchmarks, SPECAccel, and eight TensorRT inference workloads, WarpGuard incurs moderate overheads, suggesting practicality for embedded safety-critical settings."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Accelerating gas-network feasibility screening with a physics-informed graph neural network surrogate",
+    "authors": "Dongrui Jiang, Jochen Garcke, Okan Akca, Jeremias Hollnagel, Bernhard Klaassen, Mehrnaz Anvari, Joachim Müller-Kirchenbauer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13610v1",
+    "source": "arXiv",
+    "abstract": "Large-scale gas-network scenario evaluation is a computational bottleneck in integrated energy-system planning, particularly when gas infrastructure interacts with power, heat, hydrogen, and sector-coupling pathways. Conventional nonlinear hydraulic solvers provide reliable feasibility assessment but are costly for stochastic screening, whereas unconstrained learning-based surrogates may produce hydraulically infeasible states. This study develops a physics-informed graph neural network surrogate for steady-state gas-network simulation and feasibility screening. The model uses an edge-centric architecture to predict pipe-level squared-pressure differences and flows. A differentiable projection layer enforces nodal mass conservation on predicted flows, while a Laplacian reconstruction maps edge pressure differences to topologically consistent nodal pressures. The framework is evaluated on GasLib-134, GasLib-135, and GasLib-582 using stochastically generated operating scenarios. On the meshed 582-node benchmark trained with 5000 scenarios, the surrogate achieves a pressure mean absolute error of 1.05~bar, corresponding to 1.3\\% of the realized pressure range, with $R^2 = 0.981$. Projected-flow predictions reach $R^2 = 0.972$, and mass-balance residuals are reduced to numerical precision, on the order of $10^{-5}$--$10^{-4}$~Nm$^3$/s. Compared with the MYNTS reference solver, inference is reduced from seconds to milliseconds, with the largest benchmark evaluated in less than 40~ms. Loadability and out-of-distribution stress-test evaluations demonstrate robust feasibility screening under high-load conditions, while strongly localized demand concentrations are identified as cases requiring solver-based verification near feasibility limits. The framework provides a physically constrained planning accelerator for high-volume scenario screening and prioritization."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Security evaluation of quantum distance-bounding protocols via semidefinite programming",
+    "authors": "Kevin Bogner, Aysajan Abidin, Dave Singelee, Bart Preneel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.13464v1",
+    "source": "arXiv",
+    "abstract": "Quantum distance-bounding (QDB) protocols let a verifier check that a prover is both genuine and physically nearby. During a timed fast phase of quantum communication, the verifier measures round-trip times to obtain an upper bound on the prover's distance. For a uniform comparison, we isolate the fast phase and study one-round distance-fraud (DF) and mafia-fraud (MF) games. For discrete-variable QDB, we show that these games reduce to convex optimization problems and can therefore be solved exactly with semidefinite programming; each MF value comes with an explicit attack achieving it and a matching certificate that no attack does better. This contrasts with quantum position verification, where an attack is split between two separated parties, so its optimization is nonconvex and analyses rely on relaxations. In our MF game, the cooperating pair collapses to a single sequential strategy, which keeps the game convex and its exact value computable. Across the discrete-variable protocols we examine, the best one-round DF attack succeeds with the same probability ($1/2$) for every protocol, whereas MF clearly separates the protocols. For continuous-variable QDB, we report estimated attack success probabilities from a calibrated Gaussian attack model. The benchmark covers protocols whose fast phase itself authenticates the prover; designs that follow Brands and Chaum and instead bind the fast phase with a final authenticated message, like the earliest QDB proposal, fall outside it and are treated separately. Of the four protocols studied, two had no previously known one-round attack values, and we report the first ones; for the other two, we find MF attacks with higher success probability than previously reported. Overall, one-round MF resistance depends on whether an attacker can use information revealed early by the prover to answer a fresh challenge from the verifier."
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Logic-Based Verification of Task Allocation for LLM-Enabled Multi-Agent Manufacturing Systems",
+    "authors": "Jonghan Lim, Mostafa Tavakkoli Anbarani, Rômulo Meira-Góes, Ilya Kovalenko",
+    "publish": "2026 18th International Workshop on Discrete Event Systems (WODES)",
+    "url": "https://doi.org/10.1109/wodes69290.2026.11598152",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Synthesis of RTL-Based Characterization Programs for Fault Injection",
+    "authors": "Jonah Alle Monne, Guillaume Bouffard, Damien Couroussé, Mathieu Jan",
+    "publish": "2026 IEEE International Symposium on Hardware Oriented Security and Trust (HOST)",
+    "url": "https://doi.org/10.1109/host68814.2026.11604960",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "MilletsGAI: An LLM for the Indian Millet Ecosystem",
+    "authors": "Aryan Nair, Khushi Thakur, Shubham Dey, Nandyala D. Gangadhar",
+    "publish": "2026 International Conference on Emerging Trends in Mobile Computing and Sustainable Informatics (ICEMCSI)",
+    "url": "https://doi.org/10.1109/icemcsi67638.2026.11602999",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Physics-Aware Joint Optimization for Embodied Agents via LLM-Based Decision Correction",
+    "authors": "Fangyue Shan, Jianxin Dai, Chen Zhu, Zhaoyang Zhang, Zhaohui Yang",
+    "publish": "2026 IEEE International Conference on Communications Workshops (ICC Workshops)",
+    "url": "https://doi.org/10.1109/iccworkshops63917.2026.11586281",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "A Task-Based Benchmark for Model Context Protocol-Driven Geospatial Dataset Discovery: LLM Agents Vs Human Search",
+    "authors": "Luca Morandini, Richard O. Sinnott",
+    "publish": "2026 IEEE International Conference on Human-Machine Systems (ICHMS)",
+    "url": "https://doi.org/10.1109/ichms69701.2026.11602360",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Closing the Keyword Gap: A Student-Built LLM Resume Assistant",
+    "authors": "Devashish Sathawane, Shiv Nath Chaudhri",
+    "publish": "2025 9th International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC)",
+    "url": "https://doi.org/10.1109/i-smac65734.2025.11597598",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "HAFLQ: Heterogeneous Adaptive Federated LoRA Fine-tuned LLM with Quantization",
+    "authors": "Yang Su, Na Yan, Yansha Deng, Mischa Dohler, Robert Schober",
+    "publish": "IEEE Transactions on Wireless Communications",
+    "url": "https://doi.org/10.1109/twc.2026.3711528",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "LLM-Guided Reinforcement Learning for OTFS-Enabled Low-Altitude Wireless Networks",
+    "authors": "Qingqing Cheng, Zhenguo Shi, Yiyan Ma, Yan Li, Derrick Wing Kwan Ng",
+    "publish": "2026 IEEE International Conference on Communications Workshops (ICC Workshops)",
+    "url": "https://doi.org/10.1109/iccworkshops63917.2026.11586250",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "On the Robustness of LLM Re-Rankings",
+    "authors": "Reyhaneh Goli, Alistair Moffat",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3809883",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Embodiment Matters in LLM-Driven Interactive Storytelling: Comparing a Physical Robot and a Virtual Agent",
+    "authors": "Anuj Nandanwar, Chinmaya Mishra, Shubhajit Roy Chowdhury, Laxmidhar Behera",
+    "publish": "2026 IEEE International Conference on Human-Machine Systems (ICHMS)",
+    "url": "https://doi.org/10.1109/ichms69701.2026.11602146",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Bridging LLM Embeddings and VAE Parameters for Disentangled Recommendation",
+    "authors": "Nhu-Thuat Tran, Hady W. Lauw",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3809537",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Quotation-Based Data Retention Mechanism for Data Privacy in LLM-Empowered Network Services",
+    "authors": "Bin Han, Di Feng, Zexin Fang, Jie Wang, Hans D. Schotten",
+    "publish": "2026 IEEE International Conference on Communications Workshops (ICC Workshops)",
+    "url": "https://doi.org/10.1109/iccworkshops63917.2026.11586748",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "From Misunderstanding to Alignment: LLM-Supported Training to Enhance Controller-Pilot Collaboration",
+    "authors": "Donglin Li, Bin Shi, Zhimin Li, Fan Li",
+    "publish": "2026 IEEE International Conference on Human-Machine Systems (ICHMS)",
+    "url": "https://doi.org/10.1109/ichms69701.2026.11602320",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "One Pass, Any Order: Position-Invariant Listwise Reranking for LLM-Based Recommendation",
+    "authors": "Ethan Bito, Yongli Ren, Estrid He",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3809952",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "RubricRAG: Towards Interpretable and Reliable LLM Evaluation via Domain Knowledge Retrieval for Rubric Generation",
+    "authors": "Kaustubh Dhole, Eugene Agichtein",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3809940",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "RIP-Guided Graph Evidence for LLM-Based Equivalent Mutant Detection",
+    "authors": "Lei Hu, Xiangjuan Yao, Changqing Wei, Dunwei Gong, Baicai Sun",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3827622",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "When LLM Judges Inflate Scores: Exploring Overrating in Relevance Assessment",
+    "authors": "Chuting Yu, Hang Li, Guido Zuccon, Joel Mackenzie, Teerapong Leelanupab",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3809905",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "LLM Based Cognitive AIOps Autonomous Cloud Incident Management",
+    "authors": "Kavitha K S, Nagraj M Lutimath, Akash Singh, Ayush Gupta, Adi Hema Ajay Charan, Ananya Gupta",
+    "publish": "2026 International Conference on Emerging Trends in Mobile Computing and Sustainable Informatics (ICEMCSI)",
+    "url": "https://doi.org/10.1109/icemcsi67638.2026.11603148",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Scaling Search Relevance: Augmenting App Store Ranking with LLM-Generated Judgments",
+    "authors": "Evangelia Christakopoulou, Vivekkumar Patel, Hemanth Velaga, Sandip Gaikwad",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3808460",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-15",
+    "title": "Factorized Latent Reasoning for LLM-based Recommendation",
+    "authors": "Tianqi Gao, Chengkai Huang, Zihan Wang, Cao Liu, Ke Zeng, Lina Yao",
+    "publish": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "url": "https://doi.org/10.1145/3805712.3809559",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
