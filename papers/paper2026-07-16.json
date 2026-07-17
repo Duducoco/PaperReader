@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-16",
+    "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+    "authors": "Hoang-Loc Cao, Van Pham, Truong Thanh Hung Nguyen, Phuc Truong Loc Nguyen, Phuc Ho, Veronica Whitford, Hung Cao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.15202v1",
+    "source": "arXiv",
+    "abstract": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, expert-in-the-loop annotation framework for Major Depressive Disorder (MDD) that combines large language model (LLM)-assisted labeling with expert verification. The framework is intended to support the construction of explainable, DSM-5-TR-aligned datasets rather than to perform clinical diagnosis. It operates in three stages: candidate evidence selection from textual records, criterion-level DSM-5-TR analysis, and case-level synthesis that produces label-level diagnostic and severity annotations. A dual-memory architecture, composed of Example Memory and Reflection Memory, is designed to internalize expert feedback and iteratively improve future annotations without retraining. We describe this mechanism and leave its evaluation across multiple feedback cycles to future work. In addition to final labels, the framework exports clinical evidence, reasoning traces, and edit histories, enabling comprehensive auditability. In a pilot study using expert-reviewed samples, the proposed approach improves annotation consistency and explainability while reducing manual revision effort."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Towards realistic large random models of labeled transition systems and their 0-1 laws",
+    "authors": "Milan Lopuhaä-Zwakenberg",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.15029v1",
+    "source": "arXiv",
+    "abstract": "Model checking is the automated verification of properties (specified in some modal logic) in labeled transition systems (LTSs); it is an essential tool in ensuring software systems function as intended. State spaces of software grow exponentially, and heuristics are needed to ensure model checking remains feasible in real-world applications. Heuristics, in turn, require a good understanding on the typical behaviour of LTSs. In this paper, we use random graph theory to create a probabilistic model of large LTSs. From a theoretical analysis of the creation of large LTSs, backed by empirical data from the Model Checking Contest, we endow these models with realistic parameter values. Then, we analyze the asymptotic behaviour of this model under LTL and CTL, two modal logics popular in model checking. We show that, depending on the precise model, as the size grows to infinity we either have a convergence law (for every formula, the probability that it holds converges to a limit) or a 0-1 law (...and this limit is 0 or 1). We also discuss the theoretical complexity of determining these limits, and give algorithms for doing so. These results are the starting point towards a deep theoretical understanding of typical LTS behaviour, and highlight the promising applicability of random graph theory to model checking. \\keywords{Model checking \\and Random graphs \\and 0-1 laws"
+  },
+  {
+    "date": "2026-07-16",
+    "title": "SMC-ES: Automated synthesis of formally verified control policies",
+    "authors": "Riccardo Curcio, Toni Mancini, Enrico Tronci",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.15003v1",
+    "source": "arXiv",
+    "abstract": "The deployment of autonomous cyber-physical systems in safety-critical environments requires closed-loop control strategies (i.e., policies) that are not only performant but also provably safe and robust. While learning-based methodologies such as Reinforcement Learning offer flexible and scalable approaches to automatically synthesize such controllers, they typically lack the formal guarantees necessary for safe deployment. To bridge this gap, we propose a novel simulation-based methodology to automatically synthesize policies with formal guarantees regarding performance, safety, and robustness specifications. Specifically, given a set of properties to verify, a confidence parameter $δ$ and an allowable failure probability $\\varepsilon$, our method guarantees that the synthesized policy comes with a certificate: with confidence at least $1 - δ$, the probability of encountering a scenario where the given properties are violated is at most $\\varepsilon$. We demonstrate the feasibility of our approach by developing SMC-ES, an algorithm that integrates Evolutionary Strategies with Statistical Model Checking-based verification. We evaluate SMC-ES on a suite of continuous control tasks using Gymnasium and Safety Gymnasium testbeds. Results show that, at the price of a sustainable increase in computational cost, our algorithm provides formal guarantees regarding performance, safety, and robustness specifications, while performing competitively against leading model-free Deep Reinforcement Learning (DRL) and Safe-DRL baselines."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "LQCDMaster: Agentic Scientific Computing for Lattice Quantum Chromodynamics Research",
+    "authors": "Haofei Gao, Tingjia Miao, Wenkai Jin, Muhua Zhang, Hanzhang Wang, Jie Ran, Jinxin Tan, Zhentao Zhang, Bo Tang, Leiyi Li, Jun Hua, Xiangyu Jiang, Qi-An Zhang, Siheng Chen, Wei Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.15001v1",
+    "source": "arXiv",
+    "abstract": "Lattice quantum chromodynamics (LQCD) provides a first-principles framework for computing hadronic observables, but its practical use remains limited by the substantial expertise required to turn research motivation into reliable computing workflows. Here we present \\textsc{LQCDMaster}, a tool-augmented, skill-guided and domain-specialized scientific computing agent that converts natural-language LQCD research tasks into executable PyQUDA computing workflows, including measurement scripts, job-submission artifacts, execution logs and numerical outputs. The system combines agentic planning, expert-annotated LQCD skills and a deterministic Wick-contraction tool to constrain the algebraically fragile components of code generation. We evaluate \\textsc{LQCDMaster} on a benchmark at the forefront of scientific research, comprising 70 LQCD computing tasks, with observables covering local and nonlocal two-point functions, Wilson loops, meson and baryon three-point functions. The generated workflows exactly reproduce expert-written implementations in 63 of 70 tasks at machine precision, with three additional discrepancies attributable to convention mismatches. Across representative observables, the agent reduces implementation time from hours to minutes while preserving end-to-end numerical validation. Further, we present a typical case of \\textsc{LQCDMaster}-driven exploration: a lattice computation of light-cone distribution amplitudes with diagonal Wilson-line, a quantity accessible with standard methods but never before computed, and computation of the spectrum of proton, deuteron, triton, hyperon, hyperdeuteron and hypertriton. This work pioneers the paradigm of agentic scientific computing by automating the end-to-end scientific computing workflows in lattice QCD research, lowering its barrier and facilitating the exploration and verification of non-standard scientific ideas."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Verification of a DPLL Transition System in Rocq",
+    "authors": "Julia Dijkstra, Benedikt Ahrens",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14999v1",
+    "source": "arXiv",
+    "abstract": "We present a formal verification of an abstract transition-system presentation of the Davis-Putnam-Logemann-Loveland (DPLL) procedure in the Rocq proof assistant. Following Nieuwenhuis et al., SAT solving is modeled as a set of rule-based transitions between states rather than as a concrete algorithm. We formalize the syntax and semantics of propositional formulas, define the classical and base DPLL transition systems, and prove their key metatheoretic properties. In particular, we establish correctness and completeness with respect to satisfiability, and we prove termination by showing that the transition relation is well-founded. The formalization extends the original abstract system by also including the pure literal rule. Building on the verified transition system, we introduce an abstract notion of strategy and derive a terminating solver from any strategy satisfying suitable conditions. We then implement a concrete strategy in Rocq and show that it satisfies the strategy specification."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Benchmarking Face Recognition without Real Faces",
+    "authors": "Paweł Borsukiewicz, Daniele Lunghi, Wendkûuni C. Ouédraogo, Jacques Klein, Tegawendé F. Bissyandé",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14932v1",
+    "source": "arXiv",
+    "abstract": "Synthetic face datasets have become effective enough to train face recognition models with accuracy rivaling that of models trained on real photographs. This progress sidesteps the ethical and legal burdens of collecting real biometric data, yet evaluation has not kept pace. Even studies that train entirely on synthetic images still rely on real-face benchmarks to measure performance, leaving the privacy problem only half solved. We ask whether synthetic datasets can replace real benchmarks for face recognition evaluation. We test 12 synthetic datasets against 7 established real benchmarks using 24 pre-trained models that span both convolutional and transformer architectures. Our evaluation covers biometric verification metrics, similarity score distributions, cross-model ranking consistency, and the underlying distributional properties of each dataset. Benchmarking fidelity varies widely across the synthetic candidates, but the two strongest, MorphFace and Vec2Face, reproduce the relative behavior of real benchmarks and reach agreement levels that fall within the natural disagreement already observed among the real benchmarks themselves. These results establish that well-constructed synthetic datasets can support reliable comparative evaluation for face recognition, moving the field closer to a fully synthetic and privacy-preserving pipeline for both training and benchmarking."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "A Three-Point Continuous-Variable Quantum MacWilliams Identity",
+    "authors": "Yinzi Xiao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14920v1",
+    "source": "arXiv",
+    "abstract": "We construct the three-point continuous-variable (CV) quantum MacWilliams identity, extending the two-point framework of Burchards, and give its closed-form integral kernel. Its configuration space carries a symplectic invariant with no classical counterpart, which encodes the GKP quantization condition and a three-point sign phase. Using the identity, we derive the semidefinite-programming bounds it supports on the dimension of CV quantum error-correcting codes, and we prove, in two collapse theorems, that the three-point apparatus does not improve on the two-point bound. For GKP lattice codes the three-point optimum equals the Burchards two-point linear-programming optimum identically. This is an exact determination of the lattice three-point optimum, so the $E_8$ and Leech magic functions saturate it rather than beat it. For general bosonic codes a completely-positive reformulation bypasses the positivity obstruction that rules out the natural factored-form constructions; the phase-sign condition together with Choi positivity then force the three-point term to vanish. We certify this collapse for radial Choi forms on the first eight Laguerre levels at one mode, and leave the full trace-class cone open. Both collapses have a single cause with no classical analogue, the code projector: it orients the bound correctly but also removes the full positivity that powers the classical three-point improvement."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Leveraging Instruction Tuning and Merging for Reasoning Model Adaptation",
+    "authors": "Yu-Du Feng, Niels Mündler-Sasahara, Mark Vero, Martin Vechev",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14895v1",
+    "source": "arXiv",
+    "abstract": "Reasoning language models (RLMs) have demonstrated impressive performance in domains such as mathematics and coding. These domains permit reliable verification of model outputs, which is important for enabling the reinforcement learning that drives RLM performance gains. However, training RLMs on domains that lack reliable verifiers remains challenging. Meanwhile, for both verifiable and unverifiable domains, large amounts of unused supervised fine-tuning data with human-written solutions exist. In this work, we show that these data can be used efficiently to further improve RLM performance. For this, we first use classic instruction tuning, supervised fine-tuning without reasoning traces, on the RLM. Next, we merge our instruction-tuned model with the original reasoning model, recovering its reasoning behavior on the target domain. Our extensive evaluation demonstrates that our technique improves RLM performance in both verifiable and hard-to-verify domains, including coding and text summarization, while preserving RLM capabilities across other domains. Importantly, our method is highly cost-effective, enabling such improvements for less than USD $3."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Contraction versus Recurrence: An Exponential Separation in Observation-Based Prediction of Deterministic Dynamics",
+    "authors": "Pavel Popovich",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14885v1",
+    "source": "arXiv",
+    "abstract": "Given a scalar observable of an ergodic dynamical system with a low-dimensional attractor, two families of methods reconstruct and predict the underlying state: recurrence-based methods (the method of analogues and its descendants), which wait for the trajectory to return to an $\\varepsilon$-neighborhood of a previously observed state, and observer-based methods, which fit a converging state estimator on the delay reconstruction. We formalize and empirically verify an exponential separation between the two: the expected cost of recurrence scales as $\\varepsilon^{-d}$, where $d$ is the pointwise dimension of the invariant measure (a consequence of the Kac lemma and quantitative Poincare recurrence), whereas a detectable linear observer converges in $Θ(\\log(1/\\varepsilon)/(1-ρ(A_{cl})^2))$ steps, where $ρ(A_{cl})$ is the closed-loop spectral radius of the Riccati fixed point. Both laws are verified numerically (return-time exponent $-1.8$ on the Lorenz attractor against the theoretical $-2.05$; observer cost linear in $\\log(1/\\varepsilon)$ with $R^2=1.000$ and in $(1-ρ^2)^{-1}$ with $R^2=0.985$), yielding a measured cost gap of $\\sim 10^{9}$ at $\\varepsilon=10^{-6}$ for $d\\approx 2$. We complement the theorem with an admission protocol (the Kac-Riccati gate) deciding whether a signal lies inside the theorem's class, via surrogate-data prediction gating; it also explains the folklore of \"universal\" fractal dimensions as a dataset-size artifact bounded by $2\\log_{10}N$. On real data the gate admits the Santa Fe laser benchmark ($\\hat D_2=2.0$) and refuses the monthly sunspot series, reproducing the settled resolution of historical low-dimensionality claims. All results reproduce from a single verification script (17/17 checks)."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Empirical verification of principal mode orthogonality and relative phase calibration in photonic lanterns",
+    "authors": "Adam K. Taras, Barnaby R. M. Norris, Christopher Betters, Daniel S. Dahl, Andrew Ross-Adams, Peter G. Tuthill, Jin Wei, Sergio Leon-Saval",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14767v1",
+    "source": "arXiv",
+    "abstract": "Photonic lanterns efficiently map input spatial modes to single-mode outputs for applications like high angular resolution imaging and nulling interferometry. However, manufacturing limits prevent full control over the device's mode transfer matrix at the design stage, making empirical characterisation essential. In this work we further analyse a dataset of direct measurements of a photonic lantern's principal modes using digital off-axis holography over a 73 nm range near 1550 nm. By analysing the electric field directly, we find that the principal modes are significantly more orthogonal than random vectors in a space of the same size, as expected for near-adiabatic devices. We propose metrics for quantifying this effect, noting that mode converters with orthogonal principal modes provide better conditioned inverse solvers. We also simulate additional measurements that characterisation systems could take, where the orthogonality would be leveraged to determine the relative phase between principal modes."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Large Audio Language Models for Spoofing-Aware Speaker Verification",
+    "authors": "Sofya Savelyeva, Mariia Perunova, Evgeny Kushnir, Artem Dvirniak, Dmitrii Korzh, Oleg Y. Rogov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14753v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in text-to-speech and voice cloning make high-quality spoofing inexpensive and scalable, threatening voice authentication systems, especially automatic speaker verification (ASV). Existing defenses mainly address this threat through binary countermeasures (CMs) for deepfake detection or spoofing-aware speaker verification (SASV), where current systems are dominated by modular ASV-CM fusion and cascaded pipelines. Although large audio language models (LALMs) have shown promise on related audio tasks, including CM and ASV, their use for SASV remains unexplored, despite their capacity to produce natural-language rationales for auditing and robustness beyond discriminative predictions. This work systematically evaluates LALMs for SASV against conventional pipelines under zero-shot prompting, supervised adaptation, reasoning-oriented training, and reinforcement-learning-based optimization. Our results show that pretrained LALMs are near chance in the zero-shot setting, confirming that they are not natively suited to SASV, but that task-specific adaptation closes this gap. We further find that competitive SASV performance can be achieved through several distinct routes. These findings position LALMs as a promising and auditable foundation for unified SASV, while clarifying where conventional cascade systems still lead."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Rethinking Issue Resolution for AI/ML Systems",
+    "authors": "Ahmed Adnan, Mushfiqur Rahman, Antu Saha, Oscar Chaparro",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14657v1",
+    "source": "arXiv",
+    "abstract": "We advocate for AI/ML issue resolution frameworks tailored to maintenance workflows and the nature of modern AI/ML systems. Existing issue resolution frameworks largely emerged for traditional software maintenance practices and do not explicitly account for characteristics common in AI/ML systems, such as stochastic behavior, experimentation-driven workflows, and heterogeneous artifacts beyond source code. To identify the unique characteristics of issue resolution in AI/ML systems and motivate the need for tailored frameworks, we conducted a qualitative study of issue resolution workflows documented in 100 issue reports and pull requests across four widely used AI/ML systems: TensorFlow, scikit-learn, MLflow, and AutoGPT. Our findings suggest that issue resolution in AI/ML systems involves: recurring AI/ML-related activities that span multiple resolution stages; iterative experimentation and adaptive verification; and coordinated changes across artifacts such as datasets, prompts, and model configurations. We also observed challenges related to reproducibility, nondeterministic behavior, and artifact coordination. Building on these findings, we present a vision for AI/ML issue resolution frameworks and discuss research directions and tooling support needed to realize this vision."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "D-cut: Adaptive Verification Depth Pruning for Batched Speculative Decoding",
+    "authors": "Tianyu Liu, Yuhao Shen, Rui Cen, Junhan Shi, Jiebin Zhang, Guangshuo Qin, Hong Liu, Song Liu, Guanghua Yu, Jianchen Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14647v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates large language model (LLM) inference without compromising output quality. Recent parallel drafting methods further improve single-request performance by decoupling draft length from drafting latency, enabling longer drafts and higher mean accepted tokens (MAT). However, under high request concurrency, long drafts waste substantial computation on rejected tokens, increasing verification cost and potentially making speculative decoding slower than autoregressive decoding. We present D-Cut, an adaptive pruning method that selects draft tokens jointly across the batch and concentrates the verification budget on tokens most likely to be accepted. D-Cut is motivated by two observations. First, acceptance lengths vary considerably across concurrent requests; D-Cut therefore performs cross-request pruning, allocating the verification budget adaptively according to draft confidence. Second, verification cost depends strongly on the deployment environment, including GPU architecture and parallelism strategy; D-Cut incorporates a runtime cost model to adapt its pruning depth to the target environment. Experiments on dense and mixture-of-experts (MoE) models show that, under high concurrency, D-Cut improves the average speedup from \\(1.26\\times\\) to \\(1.65\\times\\), restores acceleration in dense-model configurations where long-draft baselines are slower than autoregressive decoding, and achieves up to \\(3.0\\times\\) speedup over autoregressive decoding on MoE models."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "MathCoPilot: An Interactive System for Human-AI Symbiotic Paradigm of Mathematical Research",
+    "authors": "Junjie Zhang, Jiayu Liu, Wenbin Liu, Zhenya Huang, Doudou Wang, Yan Jiang, Leiye Xu, Tao Xiong, Wen Huang, Qi Liu, Guoping Hu, Enhong Chen, Mengping Zhang, Xiangdong Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14582v1",
+    "source": "arXiv",
+    "abstract": "Existing LLM-based theorem provers have achieved impressive results on formal mathematics benchmarks, yet they remain confined to acting as autonomous agents that prove a stated proposition. In this paper, we propose MathCoPilot, a human-in-the-loop system that embodies a new human--AI symbiotic paradigm for mathematical research, in which the mathematician steers the high-level mathematical direction while AI agents carry out the detailed formalization and proof work under continuous human guidance. MathCoPilot unifies three core capabilities: (1) an interactive workbench where the mathematician and AI agents collaborate through a living proof blueprint that decomposes a proof into navigable steps the human can directly inspect, direct, and refine; (2) automated proving skill orchestration with adaptive knowledge base search and Lean-integrated iterative verification; and (3) topic-driven paper retrieval and automated formalization into a verified Lean knowledge base. Using MathCoPilot, we systematically compare four state-of-the-art LLMs, including Gemini~3.1~Pro, GPT-5.4, and Claude~Opus~4.7, on a FormalMATH subset and on two real PDE theorems requiring deep domain expertise, evaluating their ability to produce verified Lean~4 proofs and to identify errors in deliberately incorrect proofs. Our results show that while current models can handle undergraduate-level problems with high success rates under favorable autoformalization conditions, substantial challenges remain for domain-specific theorems requiring genuine mathematical understanding."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Design and Development of a Lab Prototype of a Fiber-Based Integral Field Spectrograph",
+    "authors": "Nitish Singh, S Sriram, Jurgen Schmoll, Bharat Kumar Yerra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14546v1",
+    "source": "arXiv",
+    "abstract": "Integral Field Spectroscopy provides simultaneous spatial and spectral information, making it a powerful technique for studying both point like and extended astronomical sources. As part of our effort to develop a compact Integral Field Spectrograph (IFS) for optical astronomy, we have designed and realized a fiber based prototype with a resolving power of ~800 at the H-$α$ wavelength. The front end optics, including the fore optics and lenslet based integral field unit (IFU), have been designed and optimized. In the present work, we focus on the design and laboratory verification of a fiber only IFU module consisting of 37 fibers arranged in a precise hexagonal geometry to match the lenslet pitch. The back end of the system forms a linear fiber slit that feeds a laboratory built spectrograph. The optical design was optimized using ZEMAX, and the system was experimentally tested using a Neon emission lamp and solar light. The measured spectra clearly show prominent features including the H-$α$ lines, with dispersion and resolution consistent with theoretical predictions. Although lenslets are not yet integrated, this work establishes a validated methodology for accurate fiber alignment for IFS. This results form a crucial step toward the full implementation of a lenslet fiber based IFS for the 2.34 meter Vainu Bappu Telescope."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Formal Verification for Deep Learning-based Power Control in Massive MIMO",
+    "authors": "Thanh Le, Takeshi Matsumura, Yusheng Ji, John C. S. Lui",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14500v1",
+    "source": "arXiv",
+    "abstract": "Deep learning is a promising approach to optimize wireless communication by simplifying the search for near-optimal solutions. Prior studies on deep learning-based wireless communication optimization have explored supervised learning approaches that map raw user information, such as location or channel state information, to optimal power allocation vectors. While this approach demonstrates competitive performance, it is susceptible to adversarial attacks via input perturbations. Current defense mechanisms primarily rely on empirical methods, which do not provide formal guarantees of robustness. We fill this gap by proposing a formal verification framework to evaluate the robustness of deep learning-based power allocation in multi-cell massive multiple-input multiple-output (MIMO) systems against a wide range of potential adversarial input manipulations. To the best of our knowledge, this is the first attempt to formally verify deep neural networks in a regression setting with non-linear output constraints. We model the adversary's capabilities using hyper-rectangle constraints on their perturbation, adopt the abstraction-based bound-propagation technique (DeepPoly) to bound the interval of potential allocated powers, and formulate the minimum performance requirements as a constrained program for numerical feasibility analysis. Evaluation on publicly available datasets for power allocation in multi-cell massive MIMO indicates that a well-trained model can guarantee the local robustness under location perturbation by +-1m while retaining a maximum 1% optimality gap."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Syndrome-as-Header: A Quantum Label-Switching Architecture via Uncorrectable Error Injection",
+    "authors": "IlKwon Sohn, Ju-Bong Kim, Kwangil Bae, Wooyeong Song, Wonhyuk Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14484v1",
+    "source": "arXiv",
+    "abstract": "Scaling quantum networks beyond point-to-point links requires packet forwarding that can tolerate control-plane timing uncertainty. Existing optical-burst switching (OBS) and quantum-wrapper-based packet switching (QW) rely on external classical headers whose jitter-prone processing must remain aligned with in-flight quantum payloads, creating guard-window or fiber-delay-line budget failures. This paper proposes Syndrome-as-Header (SAH), a quantum label-switching architecture that embeds routing labels into the syndrome structure of an encoded payload. The proposed scheme uses Uncorrectable Error Injection (UEI) to map flow labels to reference syndromes and builds a syndrome-space header codebook whose decoding regions remain distinguishable under correctable channel-induced syndrome deviations. Core routers extract the syndrome header, suppress the correctable residual channel-error component, and swap labels without measuring or decoding the logical payload. SAH supports FAST forwarding and VERIFICATION mode, the latter providing end-to-end consistency checking while retaining swappable labels. In NSFNet timing benchmarks with common per-hop quantum error correction (QEC), SAH eliminates the external-header/payload alignment condition, so timing uncertainty appears as memory residence and delivered latency rather than alignment-budget drops. With a $T_2$-based memory-residence penalty, the advantage depends on router memory coherence; for sufficiently long coherence, SAH maintains higher acceptance and throughput than OBS+QEC and QW+QEC under high jitter."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Tactile: Giving Computer-Using Agents Hands and Feet",
+    "authors": "Yong Liu, Zhenyi Zhong, Zhanpeng Shi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14443v1",
+    "source": "arXiv",
+    "abstract": "Computer-use agents are becoming capable software operators, but their interface to desktop applications is still often a brittle motor layer: they look at screenshots, predict coordinates, click, and hope that the visible state changed as intended. This collapses target grounding, action execution, and outcome verification into a single ambiguous operation. We present Tactile, an open-source tool layer that gives agents a more reliable \"hands and feet\" for desktop use. Tactile converts heterogeneous UI evidence--operating-system accessibility semantics, OCR-grounded text, and visual fallback regions--into action-grounded interface states: compact target candidates with source labels, roles or text, state, geometry, executable affordances, and verification cues. Agents operate through an observe-ground-act-verify loop that prefers native semantic actions when available, falls back to OCR-grounded coordinates when visible text is the best evidence, and keeps full provenance for replay and failure attribution. On macOSWorld-style tasks, adding Tactile improves Codex Success@100 from 41.1% to 50.0% overall and from 45.2% to 55.3% on accessibility-adapted tasks; a 96-task cross-agent subset shows consistent gains across Codex, Claude Code, OpenCode, and Goose. These results suggest that reliable computer use requires not only stronger models, but also a reusable execution substrate that exposes software actions as semantic, verifiable, and auditable objects rather than anonymous screen coordinates."
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Disclosure Divergence: Measuring Privacy Policy and Data Safety Misalignment at Scale",
+    "authors": "Mst Eshita Khatun, Lamine Noureddine, Sideeq Bello, Aisha Ali-Gombe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14442v1",
+    "source": "arXiv",
+    "abstract": "With the rapid growth of mobile applications, user data privacy has become an increasing concern. While privacy policies describe how apps collect and share data, platforms such as Google Play provide Data Safety labels intended to summarize these practices. Because these disclosure channels are declared separately, they may present inconsistent representations of app data practices, creating uncertainty for users and regulators. In this work, we conducted a large-scale empirical study of disclosure consistency across 6,051 Android apps. Using an LLM-based extraction framework and a unified schema over 14 Google Play data categories and two operations (collection and sharing), we measure per-app and per-category consistency and introduce a sensitivity-weighted risk score that emphasizes high-risk data types. We find that misalignment disproportionately affects sensitive categories such as personal information and device identifiers, with sharing disclosures exhibiting lower consistency than collection disclosures. Elevated privac risk is concentrated in app categories associated with persistent monitoring and communication. Overall, our findings highlight structural gaps in current disclosure mechanisms and underscore the need for stronger verification and greater transparency in platform-level privacy reporting."
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Why Git Is the Memory Solution for the Agentic Development Lifecycle",
+    "authors": "Frank Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.14390v1",
+    "source": "arXiv",
+    "abstract": "Coding agents now produce a growing share of a team's code, while the reasoning behind each change -- the alternatives weighed, the constraints discovered, the approaches rejected -- is trapped in assistant transcripts that vanish with the session. Memory for this setting, the agentic development lifecycle (ADLC), is usually posed as one retrieval problem and built as machinery: tiered stores, memory graphs, compiled wikis, model-judged admission. We argue memory should instead be git-bound -- built into the repository's version control, inheriting the guarantees the machinery struggles to construct: ground truth from commits, freshness from rebuild, verification from the merge, containment from review. On this ledger we solve two problems separately, then combine them. Seed supply is closed as an eight-corpus retrieval study under a pre-registered ship discipline: five imported ranking mechanisms rejected, two kept, and a best configuration of ~0.31 pooled MRR -- ~60x the raw-transcript grep floor, ~15x an honest parsed-turn floor. Answer assembly is where ranking stops helping: single-shot retrieval scores only 0.07-0.20 answer-sufficiency on real developer questions, and ungated episode injection measurably degrades good answers. A router dispatches breadth to a git-anchored structural map, pointed lookups to confidence-gated episodes, and rationale to decision synthesis, which reconstructs why-arcs no single session contains (0.83 sufficiency on a young ~50k-LOC production system). Routed, the system answers at 382-980 tokens per question -- three orders of magnitude below the recorded history. Because ground truth is mined from commit-session links rather than annotated, every result is replicable on any user's own history at zero labeling cost. The remaining constraint is capture. Code, benchmark, and paper source: github.com/rekal-dev/rekal-cli."
+  },
+  {
+    "date": "2026-7-16",
+    "title": "How well LLM-based test generation techniques perform with newer LLM versions?",
+    "authors": "Michael Konstantinou, Renzo Degiovanni, Mike Papadakis",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00040",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "LLM-Assisted Cause-Effect Graph Generation for Requirements-Based Test Design",
+    "authors": "Hiroyuki Kirinuki",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00032",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Improving Automated Patch Correctness Assessment by Designing LLM-Based Oracles",
+    "authors": "Inyeong Jang, Jinyoung Kim",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00041",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "LLM2Alloy: Investigating LLM-Generated Formal Specifications for Automated Test Derivation in Production Software",
+    "authors": "Tasmim Rashid, Muhammad Zubair Malik",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00092",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "STARouter: Internal State based LLM Router for Software Testing Tasks",
+    "authors": "Hyunjoon Cho, Shin Yoo",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00015",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "XPJudge: Explanation-Aware Pairwise Judging for Cost-Effective Code LLM Selection",
+    "authors": "Yasmine Ben Braiek, Houssem Ben Braiek, Foutse Khomh",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00094",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Improving Dynamic Specification Inference with LLM-Generated Counterexamples",
+    "authors": "Agustín Balestra, Agustín Nolasco, Facundo Molina, Diego Garbervetsky, Renzo Degiovanni, Nazareno Aguirre",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00059",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Poster: Comparative Study of Human and Machine level prompts for LLM driven software testing",
+    "authors": "Anand Sharma, Vivek Yelleti, Sangharatna Godboley, P. Radha Krishna",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00052",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Improving LLM-Driven Test Generation by Learning from Mocking Information",
+    "authors": "Jamie Lee, Flynn Teh, Hengcheng Zhu, Mengzhen Li, Mattia Fazzini, Valerio Terragni",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00014",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Pinpointing Flakiness in Web Tests via DOM Event Analysis and LLM-based Reasoning",
+    "authors": "Yu Pei, Jeongju Sohn, Sarra Habchi, Mike Papadakis",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00026",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Observability and Fault Injection for LLM-Based Multi-Agent Systems in Software Engineering",
+    "authors": "Zahra Seyedghorban, Egor Klimov, Arie van Deursen, Annibale Panichella, Burcu Kulahcioglu Ozkan",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00037",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Configuration Quality Failures in LLM-Generated GitHub Actions Workflows: A Comparison with Human-Validated Baselines",
+    "authors": "Sajid Ahmed, Samia Rahman, Kazi Tasnia Farin Ifa, Proma Chowdhury",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00026",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Automated Black-Box Testing: A Comparative Study of LLM Agent Architectures and Prompt Engineering",
+    "authors": "Anna Arnaudo, Riccardo Coppola, Flavio Giobergia, Maurizio Morisio, Van-Thanh Nguyen, Enrico Chen, Xiaoning Ma, XiaoQuan Ji, Minh-Thai Mai",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00018",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "CodeQual-Agent: An Intelligent LLM-Agent Framework for Automated Software Quality Assessment with Explainable Predictions and Real-Time Analysis",
+    "authors": "Faisal Mohammad, Junaid K. Kakar, D. R. Bekale Be Ndong, Mot Chas, Duksan Ryu",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00035",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "An Activation Property-Based Framework for Efficient Neural Network Verification",
+    "authors": "Seunghyun Chae",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00011",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "RIVER: An eBPF-based Runtime Verification Platform for Cyber-Physical Systems",
+    "authors": "Dario Facchinetti, Matthew Rossi, Zhenya Zhang, Stefano Paraboschi, Paolo Arcaini",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00035",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "GraSF: Graph-based Similarity Filtering as a Preprocessing Step for SMT-based Verification of Cloud Access Policy Configuration",
+    "authors": "Tomohiro Takedato, Toshiharu Kato",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)",
+    "url": "https://doi.org/10.1109/icstw72326.2026.00030",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "LLM-Powered Framework for Real-World Exploit Prediction",
+    "authors": "R M Vigneshram, M. Saravanan",
+    "publish": "2026 Fourth International Conference on Secure Cyber Computing and Communications (ICSCCC)",
+    "url": "https://doi.org/10.1109/icsccc69031.2026.11600340",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "authors": "N/A",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/icst69053.2026",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-16",
+    "title": "Consistency Meets Verification: Enhancing Test Generation Quality in Large Language Models Without Ground-Truth Solutions",
+    "authors": "Hamed Taherkhani, Alireza DaghighFarsoodeh, Mohammad Chowdhury, Hung Viet Pham, Hadi Hemmati",
+    "publish": "2026 IEEE International Conference on Software Testing, Verification and Validation (ICST)",
+    "url": "https://doi.org/10.1109/icst69053.2026.00039",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
