@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-20",
+    "title": "Audio Cross Verification Using Dual Alignment Likelihood Ratio Test",
+    "authors": "Heidi Lei, Arm Wonghirundacha, Irmak Bukey, TJ Tsai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18190v1",
+    "source": "arXiv",
+    "abstract": "This paper explores a way to verify that audio has not been maliciously tampered in a specific context: short viral videos taken from news recordings. Rather than trying to detect artifacts of tampering (internal inconsistency), we focus on positively verifying a query against a trusted source such as a news recording (external consistency). We propose a method for cross verifying a short audio query against a reference recording from which it was taken. Our approach is to define two hypotheses (non-tampered vs tampered), calculate the most likely alignment between query and reference for each hypothesis, and then perform a likelihood ratio test on the two alignments. We show that this method is fast to compute, much more robust than using MFCC features with Euclidean distance, and has the key benefit of explainability. Our cross verification approach provides an alternative perspective and complementary tool to existing tampering detection methods."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications",
+    "authors": "Daniela Rojas, Abdulwahab Albassam, Aidan G. Leung, Jett Ngo, Ryan Luo, Peter R. Quawas, Junpyung Kim, Kangkai Liang, Mansi Nanavati, Jonathan Mai, Meng-Chi Tsai, Yun-Tong Tsai, Yize Chen, Yuanyuan Shi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18147v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) and agentic AI systems have evolved from natural language tasks to using external tools to plan, retrieve, and act in technical domains. In smart grids, recent work applies agentic schemes to forecasting, optimization, and control, wrapping trusted solvers behind language interfaces and orchestrating multi-step workflows. The literature lacks a unified approach to designing and evaluating such systems. LLMs can produce numerically plausible yet physically infeasible outputs, evaluation protocols vary across tasks, and the boundary between what the model should and should not compute is implicit. This paper presents a solver-grounded design principle: a numerical result is reported only when it originates from a trusted tool and passes explicit verification. We review the building blocks of LLM and agentic AI systems for power systems: prompting strategies and agentic architectures. We instantiate the principle in four case studies: wind power forecasting, EV charging scheduling, power flow analysis, and contingency diagnosis, each comparing an LLM-only baseline against its solver-grounded counterpart on identical data and metrics. EVAgent reproduces the CVXPY optimum while reducing LLM-only unmet energy by 7.5-9.5x, and GridDebugAgent repairs 17/39 contingency cases while reducing total violations by 52.3%. We propose a four-group evaluation framework spanning task utility, solver-grounded correctness, faithfulness and safe failure, and cost and latency. A consistent division of labor emerges: the agentic system reliably orchestrates, retrieves, and explains, while trusted tools compute and a verification gate decides what is reported."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
+    "authors": "Lopez Jhon, Hinojosa Carlos, Ghanem Bernard",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18116v1",
+    "source": "arXiv",
+    "abstract": "Recent work leverages Large Language Models (LLMs) to generate executable code for pedagogical animations using libraries such as Manim. However, ensuring spatial correctness and visual legibility remains challenging, as existing frameworks emphasize pedagogical content while overlooking geometric occlusions. We propose the Symbolic Geometric Agent (SGA), a plug-and-play module for code-centric animation pipelines that intercepts LLM-generated code, performs partial execution to extract symbolic scene graphs, and applies targeted refinement when spatial conflicts are detected. We further introduce the Manim Visual Quality Score (MVQS), a deterministic rendering-free proxy for spatial integrity. Experiments on the MMMC-Code benchmark across four LLM backbones and two agentic pipelines show that SGA achieves a peak MVQS of 73.11 (Code2Video + GPT-5.1), corresponding to a 16.1% relative improvement over the raw baseline, and improves MVQS in 7 of 8 backbone x pipeline configurations."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Sparse Evidence Can Suffice: Agentic Evidence Seeking for Multimodal Video Misinformation Detection",
+    "authors": "Haochen Zhao, Yongxiu Xu, Xinkui Lin, Dong Xie, Jiarui Lu, Yuqi Qian, Yubin Wang, Hongbo Xu, Gaopeng Gou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18080v1",
+    "source": "arXiv",
+    "abstract": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "An Early Warning of Emerging Biosecurity Risks in Frontier LLMs",
+    "authors": "Zhida He, Xia Hu, Baichen Le, Chunxiao Li, Jiajia Li, Lijun Li, Chaochao Lu, Jing Shao, Youbang Sun, Hua Tang, Xiang Wang, Xiao Wang, Xiaoyu Wen, Tong Wu, Jia Xu, Peng Yu, Shu Yu, Jie Zhang, Qiaosheng Zhang, Yi Zhang, Xing-Ming Zhao, Tianhang Zheng, Ziyuan Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18056v1",
+    "source": "arXiv",
+    "abstract": "Frontier large language models (LLMs) are increasingly integrated into scientific workflows, yet their growing biological capabilities may outpace current safeguards. To assess the biological risks of frontier models, we develop Intern-BioBreaker, a specialized bio-red-teaming model, together with an integrated computational-to-physical framework that couples model-level stress testing with wet-lab validation. Within this framework, Intern-BioBreaker generates targeted jailbreak prompts to test whether aligned models can be induced to provide operational guidance for safety-sensitive biological tasks or produce sequence-level outputs with potentially harmful properties. Selected sequence outputs are then carried forward for DNA synthesis, host expression, and orthogonal protein verification to assess whether model-generated designs can yield the intended biological products. Our evaluation reveals a concerning gap between text-level safeguards and the risks posed by capable scientific models: (i) Intern-BioBreaker outperforms baseline attack models and reveals widespread bio-risk jailbreak vulnerabilities across both open-weight and proprietary frontier LLMs, with several targets reaching near-saturated or 100% task-level attack success rate (ASR); (ii) in sequence-level case studies, GPT-5.5 can be induced to generate modified viral candidate sequences with pathogenic potential; the corresponding translated proteins may exhibit even stronger receptor-binding affinity and thus enhanced infection potential; and (iii) end-to-end verification shows that selected model-generated biological designs are not merely textual artifacts, but can be physically realized under controlled experimental settings. These findings underscore the need for stronger biological red-teaming, nucleic acid synthesis screening, and safety mechanisms that keep pace with model capabilities."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Parameterized Verification of Deterministic MPI Programs",
+    "authors": "Stephen F. Siegel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18049v1",
+    "source": "arXiv",
+    "abstract": "We consider the problem of verifying a message passing program in which the number of processes is a parameter NP and each process knows its unique ID. Processes communicate using send and receive commands which specify a single destination or source. To verify the program, the user provides functions specifying the number of messages sent from process i to process j, the level of each communication event in the happens-before hierarchy, and a fact that holds for the k-th message sent from i to j. These are used to transform the program to a parameterized sequential program which can be verified using any techniques appropriate for such programs. We realize this approach in an extension to Frama-C/Wp to verify C/MPI programs."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Does Robust VIO Need More Learning? Geometry-Verified Visual Measurements under Distribution Shift",
+    "authors": "Yangyang Ning, Shu Liang, Quanbo Ge, Tianchen Deng, Yuhua Qi, Shenghai Yuan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17956v1",
+    "source": "arXiv",
+    "abstract": "Learning is increasingly introduced into visual-inertial odometry (VIO), ranging from learned feature front-ends to learning-dominant motion and geometry estimation. However, learning more of the pipeline does not necessarily improve robustness when deployment conditions differ from the training distribution. This work asks whether robust VIO under distribution shift truly requires deeper learned estimation, or whether learning can be confined to visual measurement generation. We propose a minimal-learning stereo VIO framework in which SEA-RAFT is used only to propose dense stereo correspondences and predict their uncertainty, while temporal tracking, geometric verification, and state estimation remain explicit. Dense flow is sampled at sparse feature locations, filtered using predicted uncertainty and stereo epipolar consistency, and incorporated into a sliding-window stereo-inertial estimator through uncertainty-weighted reprojection factors. The same uncertainty is further propagated through stereo triangulation for downstream anisotropic 3D Gaussian mapping. Experiments on EuRoC, VIODE, and 4Seasons demonstrate accurate and stable estimation under motion blur, dynamic scenes, illumination changes, and large indoor-to-outdoor distribution shifts. Ablations show that learned flow alone is insufficient: the gains arise from combining learned correspondence proposals with geometric verification and uncertainty-aware weighting. These results suggest that, for OOD-robust VIO, carefully integrated learned visual measurements can be more effective than learning a larger fraction of the estimation pipeline. Code and configs for the benchmark will be open-source upon acceptance. A supplementary video is available at https://drive.google.com/file/d/1EVRhOkhanmNXHbQS1Vr80FoEIAYOYOV2/view"
+  },
+  {
+    "date": "2026-07-20",
+    "title": "SEAM-V: A Hybrid-Decoupled RISC-V Vector Processor with Backend-Visible EP Context for Sustained Vector Throughput",
+    "authors": "Weiying Wang, Zhiwei Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17899v1",
+    "source": "arXiv",
+    "abstract": "Data-parallel workloads in deep learning and scientific computing continue to drive demand for higher processor throughput, energy efficiency, and scalability. The RISC-V Vector Extension (RVV) supports scalable execution through a vector-length-agnostic programming model. However, many tightly coupled implementations still rely on the scalar core to supply vector instructions one at a time, making execution susceptible to vector-instruction supply gaps, scalar-side progression delays, and conservative dependence handling in short-vector, loop-tail, and control/memory-interleaved phases. This paper presents SEAM-V, a hybrid-decoupled vector execution architecture for RVV. SEAM-V forms a continuous stream of execute packets (EPs) through task-level decoupling, local instruction supply, and VLIW-style packing. After an EP is serialized into individual requests, its EP identity and request-bound prefetch context remain visible to the dynamic vector backend, enabling same-EP candidate-hazard suppression and request-bound prefetching. The hybrid-dispatch path can also provide limited cross-EP vector overlap when the required safety conditions are satisfied. Cross-EP dependences, dependences not exempted by the EP contract, resource conflicts, and memory ordering remain dynamically managed by the backend. Cycle-accurate RTL evaluation shows that, compared with an Ara-based tightly coupled RVV implementation (TC), SEAM-V achieves a geometric-mean speedup of 1.34x across 17 representative kernels. The one-dimensional variable-AVL, BLAS and matrix, and fixed-size application groups achieve speedups of 1.50x, 1.25x, and 1.27x, respectively. At AVL=32, the geometric-mean speedup across six one-dimensional vector kernels approaches 3x."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Zero Hallucination, by Construction: Hallucination-Aware Layered Oversight for Trustworthy Enterprise AI",
+    "authors": "Bogdan Raduta, Horia Velicu, Alexandru Preda, Serban Chiricescu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17883v1",
+    "source": "arXiv",
+    "abstract": "Enterprises will not deploy AI agents they cannot trust, and the most-cited reason for distrust is hallucination: confident, fluent output that is simply not true. The common response is to wait for a model that does not hallucinate. We argue that this is the wrong target. Large language models are, by construction, capable of generating unsupported text, and no amount of scale removes the possibility; a faithfulness judge bolted onto a raw model catches some errors but still ships others, and even well-curated retrieval pipelines have been shown to fabricate citations. We reframe the goal: \"zero hallucination\" is not a property a model possesses but a property a system enforces. We present HALO (Hallucination-Aware Layered Oversight), an assurance architecture which treats hallucination as a containable failure mode rather than an eliminable one. HALO composes six layers of defense: grounded generation over retrieved, approved content; constrained, deterministic execution that bounds where the model can err; multi-signal verification that scores every output for groundedness and hallucination using both an LLM judge and evidence-based checks against the source text; calibrated abstention, so the system declines rather than guesses when grounding is insufficient; total traceability of every retrieval, tool call, and generation; and continuous oversight that detects drift, alerts on threshold breaches, and closes the loop by regenerating and statistically validating improved agents. We detail each layer, give particular attention to evidence-based confidence (which verifies extractions against the source document rather than trusting the model's self-reported certainty), and illustrate the architecture on a regulated claims-extraction workload"
+  },
+  {
+    "date": "2026-07-20",
+    "title": "AlphaOracle: Oracle bone script decipherment via human-workflow-inspired deep learning",
+    "authors": "Yuliang Liu, Haisu Guan, Pengjie Wang, Xinyu Wang, Jinpeng Wan, Kaile Zhang, Handong Zheng, Xingchen Liu, Zhebin Kuang, Huanxin Yang, Bang Li, Yongge Liu, Lianwen Jin, Xiang Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17849v1",
+    "source": "arXiv",
+    "abstract": "Approximately 3,000 of the 4,500 oracle bone script (OBS) characters remain undeciphered due to fragmentary inscriptions and sparse evidence. Current AI approaches fail to replicate expert workflows that integrate form analysis, contextual semantics, and philological reasoning. We introduce AlphaOracle, a human-workflow-inspired framework that systematizes OBS decipherment using the largest digitized corpus to date. Its multi-stage pipeline comprises: (i) rubbing parsing; (ii) radical-based morphological analysis with diachronic modeling; (iii) contextual retrieval with semantic alignment; and (iv) philological validation against classical sources. Each stage generates explicit, confidence-weighted evidence chains, culminating in interpretable reports for scholarly verification. Across multiple test characters, AlphaOracle's readings strongly agreed with expert interpretations. In a study of 86 domain specialists, it reduced analysis time by 64% and 79% of participants rated it highly useful. Notably, AlphaOracle resolves the character \"Lao\" as a toponymic or clan designation, offering concrete revisions to Shang administrative and social interpretations. These results suggest that computational methods aligned with philological practice can facilitate OBS research and provide a conceptual reference for studies of other undeciphered scripts."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Graphs with zero as a main eigenvalue of the signless Laplacian",
+    "authors": "Hangxi Cha, Haiying Shan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17805v1",
+    "source": "arXiv",
+    "abstract": "An eigenvalue of the signless Laplacian $Q(G)$ is $Q$-main if its eigenspace is not orthogonal to the all-ones vector. We characterize graphs with exactly $\\ell\\ge3$ $Q$-main eigenvalues, one of which is zero. The case $\\ell=3$ reduces to non-semiregular bipartite graphs satisfying a vertexwise signed degree-sum identity. For each integer $k\\ge0$, we construct infinitely many pairwise nonisomorphic graphs of cyclomatic number $k$ and unbounded diameter, all with exactly three $Q$-main eigenvalues including zero. These families provide counterexamples to the stated classifications of trees, unicyclic graphs, and bicyclic graphs of Javarsineh and Fath-Tabar."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Weakly Non-Negative Supermartingales for Omega-Regular Verification",
+    "authors": "Toru Takisaka, Hongjie Qing, Libo Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17798v1",
+    "source": "arXiv",
+    "abstract": "Martingale-based methods are central to probabilistic program verification, but strong global non-negativity requirements can exclude simple certificates from tractable template classes. Relaxing this requirement enlarges the search space for automated synthesis, but naive relaxations are unsound in the probabilistic setting. We introduce lazy Streett supermartingales and their lexicographic extension, showing that weak non-negativity can nevertheless be used soundly to certify almost-sure satisfaction of $ω$-regular properties with polynomial templates under a broad class of sampling distributions, including all bounded-support distributions. This extends prior weakly non-negative methods from termination to general $ω$-regular verification. We further give a compositional account of lexicographic certificates in terms of one-dimensional ones. Experiments on 170 polynomial probabilistic-program benchmarks show increases of 20.0-23.5 percentage points in verification success over the strongly non-negative baseline."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Semantically Similar, Logically Distinct: Diagnosing the Semantic-Answerability Gap in Table RAG",
+    "authors": "Jiaming Tian, Liyao Li, Wentao Ye, Haobo Wang, Lihua Yu, Zujie Ren, Gang Chen, Junbo Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17742v1",
+    "source": "arXiv",
+    "abstract": "Tables are a critical knowledge source in retrieval-augmented generation (RAG), but a retrieved table may lack sufficient evidence to answer a query, a property we call answerability. While answerability broadly concerns whether a source or collection of sources contains sufficient evidence, retrieval models optimized for semantic relevance do not guarantee it even in the single-source case, creating a fundamental mismatch. To study this, we introduce TCR-Bench, a diagnostic benchmark for Table Content-level Answerability in RAG, built around sibling tables, i.e., tables with highly similar schemas but subtle content differences. On TCR-Bench, the dense retrievers we evaluate persistently exhibit a Semantic-Answerability Gap: they often retrieve the correct sibling group yet struggle to pinpoint the uniquely answerable table within it, dropping QA performance from 0.755 (oracle) to 0.330 (top-5 retrieved). Our analysis suggests this gap is associated with semantic accumulation, schema-level cue dependence, and weak row-column binding. As a diagnostic probe into the source of this gap, we test whether a lightweight two-stage pipeline, Answerability-Aware Reranking (AAR), applying direct query-table answerability judgment, can recover performance: it raises top-1 target retrieval from 18.2% to 57.4%, and this large gain is itself evidence that much of the observed failure reflects a missing answerability verification step, rather than an inherent limitation of model capacity alone."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Formal Verification of Continuous-Variable Quantum Programs",
+    "authors": "Stefanie Muroya, Thomas A. Henzinger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17714v1",
+    "source": "arXiv",
+    "abstract": "We provide a formal framework for Continuous-Variable Quantum Computing (CQC). While CQC is supported by photonic quantum hardware, we are not aware of a formal semantics for continuous-variable quantum programs nor of a unary Hoare logic for their verification. There are several technical obstacles to extending to CQC any of the formal frameworks available for Discrete-Variable Quantum Computing (DQC). Most importantly, continuous-variable quantum programs act on {\\em infinite-dimensional} Hilbert spaces; their measurement outcomes are often {\\em unbounded} and have expected values that are defined by an improper integral (or an infinite series), which may not converge. We overcome these challenges to give a formal semantics to a universal programming language for CQC and to provide the first Hoare logic for CQC. The assertions of our logic are built from polynomials over canonical observables. Besides proving relative completeness, we implement a symbolic weakest-precondition calculator for CQC based on our logic. Our tool has successfully verified CQC algorithms from textbooks and calculated their approximation errors for physically realizable implementations, proved the correctness (i.e., equivalence) of gate decompositions for CQC hardware, and computed the resource requirements (i.e., number of photon-number states) for achieving a desired accuracy in the classical simulation of continuous-variable quantum programs."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Integrating High-Level Requirements to Low-Level Tests with Machine-Readable V&V Specifications",
+    "authors": "Mansur Arief, Nur Ahmad Khatim, Ali Akarma, Ahmad Alfan Alfian Irfan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17686v1",
+    "source": "arXiv",
+    "abstract": "Modern software teams have mature tools for low-level testing, such as pytest, JUnit, and Jest, which make it inexpensive to write unit tests and run them on every commit. Systems engineering, in parallel, has developed rigorous principles for design verification and validation (V&V), which has worked very well across engineering discipline to align user expecations and requirements with developers' deliverables. In practice, however, the two rarely connect, and the link between users' high-level requirements and the low-level tests that machines actually run is maintained by hand, if at all. This gap is increasingly costly for AI-enabled and cyber-physical systems, for which regulators now ask for traceable evidence that high-level requirements are met, while raw test results provide little of the structure such evidence requires. We introduce VNVSpec, an open-source framework that makes V&V specifications machine-readable and executable. With this framework, users state high-level requirements directly or import them from catalogs derived from published standards. Then, the framework checks requirement quality, supports decomposition into module-level requirements with explicit metrics and acceptance criteria, links these requirements to test results through a traceability graph, and compiles the collected evidence into verdicts and audit-ready reports. We evaluate the framework by self-application, in which it is continuously assessed in CI against its own specification of 36 requirements verified by 449 tests, completed within limited time which scales linearly and thus can handle up to 10,000 requirements. We also discuss how the framework extends to testing black-box AI models and AI coding agents. The framework, its full test suite, the catalogs, and the benchmark scripts are available at https://github.com/ai-vnv/vnvspec."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Verify, Repair, Repeat, or Stop? Robust Stopping for Noisy Verify-Repair Loops in LLM Agents",
+    "authors": "Yitao Wu, Si Shen, Rui Yang, Hong Peng, Bin Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17641v1",
+    "source": "arXiv",
+    "abstract": "Verify-repair loops are a standard means for large language model (LLM) agents to correct faulty plans in code generation, mathematical reasoning, and tool use. When both the verifier and the repairer are noisy, repair can damage already-correct plans, and reported acceptance keeps rising while true validity falls, so existing methods lack a principled basis for deciding when repair should stop. We propose VRR-Stop, a robust stopping framework for noisy verify-repair-repeat (VRR) loops. A four-parameter noise model separates verifier false acceptance and false rejection from the repair and damage behavior of the repairer. Belief filtering turns repeated verification votes into an estimate of committed validity, and the loop commits or repairs according to the sign of the true marginal gain, which requires only sign identifiability rather than accurate recovery of all parameters. When verifier discrimination approaches zero, calibration itself fails and estimation error can flip the stopping sign, so we pair VRR-Stop with VRR-Guard, an estimation-free fallback that replaces the incumbent candidate only under a sufficient verification margin. On a GSM8K stress setting, VRR-Stop improves final true validity by 60.6 percentage points over fixed five-round repair at an average cost of 0.72 repair rounds. Across settings, stopping reliability is governed jointly by verifier discrimination and the decision margin rather than by the absolute size of estimation error."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Higher-Order Hankel Obstructions to Free Infinite Divisibility for Beta Distributions",
+    "authors": "Diwen Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17630v1",
+    "source": "arXiv",
+    "abstract": "We study free infinite divisibility in the two-parameter family of beta distributions $\\{β_{p,q}:p,q>0\\}$. Conditional positive definiteness of free cumulants yields a hierarchy of necessary Hankel conditions. We factor the first nontrivial determinant and obtain the explicit necessary inequality \\[ 2s^3(s+1)+pq\\bigl(s^3-7s^2-16s-12\\bigr)\\geq0, \\qquad s=p+q. \\] Its strict reverse defines an open two-dimensional non-freely-infinitely-divisible region not contained in the previously known exclusions. As a boundary consequence, we complete the classification of one boundary family: $β_{1/2,q}$ is freely infinitely divisible if and only if $q\\geq3/2$. The $3\\times3$ determinant is also obtained explicitly in the symmetric variables $s=p+q$ and $u=pq/s^2$. Finally, exact-rational $LDL^{\\mathsf T}$ certificates show that each leading Hankel test from $3\\times3$ through $12\\times12$ strictly enlarges the exclusion supplied by all preceding leading tests. In particular, the $4\\times4$ test already detects an open set with $p+q>3$, beyond the range accessible to the $2\\times2$ determinant. The results are finite-order obstructions rather than a complete classification; two limiting arguments explain why no fixed member $H_N$ of the leading Hankel hierarchy can provide a uniform obstruction up to the small-parameter boundary."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "It Matters How You Say It: Exploring Rhetorical Patterns for AI-Assisted Information Evaluation",
+    "authors": "Sadra Sabouri, Zeinabsadat Saghi, Jordan Lee Boyd-Graber, Jonathan May, Jonathan K. Kummerfeld, Souti Chattopadhyay",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17627v1",
+    "source": "arXiv",
+    "abstract": "Prior work on AI-assisted information evaluation has largely focused on what AI systems communicate, comparing explanation types and formats, with responses predominantly cast in directive rhetoric where the system delivers a verdict and the user passively accepts it. While debate-style interactions have recently shown promise in prompting critical evaluation over deference, the rhetorical patterns that structure AI responses and how they might induce reflection, uncertainty, or independent reasoning remain largely unexamined. To address this, we investigated eight rhetorical patterns known to induce contemplation: Intentional Misleading, Interpretive Alternative, Scaffold Explanation, Triggering Distrust, Information Distortion, Alternative Framing, Socratic Questioning, and an Oracle baseline. Through a within-subject study with n=98 participants on a hint-on-demand fact verification task, we observed preliminary evidence that Scaffold Explanation were associated with the highest accuracy gains, and encouraging deeper reflection. Surprisingly, the adversarial conditions also improved accuracy modestly. Participants preferred Alternative Framing most and Interpretive Alternative least, largely due to the latter's perceived time cost. We discuss the implications of designing conversational agents with varied rhetorical styles and the trade-offs among user performance, satisfaction, and contemplation."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "BTOR2-Based C Program Verification via Hardware Model Checking",
+    "authors": "Xinyu Zhang, Runxuan Fang, Ziqun Bao, Yechuan Xia, Jianwen Li, Geguang Pu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17622v1",
+    "source": "arXiv",
+    "abstract": "Program verification tools often rely on specific intermediate representations and analysis backends, limiting the reuse of verification algorithms and model checkers across frameworks. In contrast, hardware model checking has developed a mature backend ecosystem, where standard formats such as BTOR2 support reusable algorithms for counterexample search and inductive safety proving. Applying these capabilities to C requires translating assertion-based programs into transition systems that hardware model checkers can directly process. We present C2Btor, a method for encoding such verification tasks into BTOR2 models. C2Btor uses a program counter to capture control transfers, represents data states and memory objects with bit-vectors and arrays, and maps assumptions and assertion checks into BTOR2 constraints and bad-state properties. We evaluate C2Btor on SV-COMP C ReachSafety benchmarks and a curated assertion-category benchmark suite, comparing it with representative program verification tools. C2Btor correctly solves 263 tasks, 101 more than CBMC configured with bounded model checking, and is especially effective on bit-vector benchmarks, where it solves 75.5% of the tasks with no wrong verdicts. These results show that the BTOR2 route allows C program verification to benefit from advances in hardware model-checking backends, expanding the available capability for counterexample search, inductive safety proving, and word-level transition-system reasoning."
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Oracle Gap and Signal Fidelity: A Fixed-Pool Diagnostic for Test-Time Collaboration",
+    "authors": "Jie Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.17531v1",
+    "source": "arXiv",
+    "abstract": "Test-time collaboration, including self-consistency, best-of-N selection, critic models, and verifier pipelines, is often credited with broadly improving LLM reasoning, yet its gains are uneven and sometimes negative. We ask when training-free collaboration should be expected to help. For a fixed candidate pool, we decompose a selector or verifier's net gain into measurable factors: recoverable mass, verification-signal coverage, conditional selection quality, and harm to already-correct outputs. This reframes collaboration as a candidate-selection problem rather than as an intrinsic property of a multi-agent topology. Across LiveCodeBench, MATH Level-5 hard subjects, and GPQA-Diamond, gains are bounded first by the oracle gap and then by signal fidelity, which we measure directly as candidate-level agreement between verifier verdicts and official labels. On LiveCodeBench, a public-test verifier (MCC 0.825) gains +8.14 percentage points (pp) over a first-sample baseline; a generated-test verifier (MCC 0.248) improves by +2.70pp and is not statistically distinguishable from an LLM selector, but operates at near-zero harm versus the selector's 4.69% harm rate. On MATH, a symbolic answer-equivalence selector beats self-consistency by +4.67pp, while LLM selectors are negative. On GPQA-Diamond, recoverable mass is only 3.03% and 87.54% of candidate pools are answer-identical; a weaker model's pools shrink both further, suggesting that oracle gap is a joint property of task, model, and sampling configuration. Our framework yields a practical pre-deployment diagnostic: estimate the oracle gap, then measure coverage, signal fidelity, and harm before investing in collaboration."
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Integrating Analytical Physics with LLM-Guided Reward Evolution in Reinforcement Learning_supp1-3714198.pdf",
+    "authors": "Hua Yu",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tevc.2026.3714198/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Revisiting TuRTLe: A Comprehensive Evaluation of LLMs for RTL Generation",
+    "authors": "Miquel Alberti-Binimelis, Cristian Gutierrez-Gomez, Dario Garcia-Gasulla, Emanuele Parisi, Razine Moundir Ghorab, Orlando Montenegro, Bernat Homs, Miquel Moreto, Gokcen Kestor",
+    "publish": "ACM Transactions on Design Automation of Electronic Systems",
+    "url": "https://doi.org/10.1145/3831369",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Human-Out-of-the-Loop: Medical Image Augmentation via Autonomous LLM–GANs",
+    "authors": "Waad Bouzidi, Olfa Meddeb, Zouhour Neji Ben Salem",
+    "publish": "2026 Intelligence in Business and Industry (IBI)",
+    "url": "https://doi.org/10.1109/ibi68858.2026.11604083",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "LLM-Based Intrusion and Anomaly Detection for IoT Networks: A Systematic Survey",
+    "authors": "Stanislav Vítek",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3714987",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "NeuroScript-LLM: Leveraging a Large Language Model Architecture for Automated Alzheimer’s Disease Clinical Synthesis",
+    "authors": "Nour Ben Ameur, Marouene Chaieb, Haythem Ghazouani",
+    "publish": "2026 Intelligence in Business and Industry (IBI)",
+    "url": "https://doi.org/10.1109/ibi68858.2026.11604062",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "From Raw Text to Knowledge Graphs: An LLM-Driven Neuro-Symbolic Approach for Statistical Knowledge Extraction",
+    "authors": "Chaima Kaddour, Maha Mallek, Amal Tarifa",
+    "publish": "2026 Intelligence in Business and Industry (IBI)",
+    "url": "https://doi.org/10.1109/ibi68858.2026.11604077",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Fine-Grained Energy Accounting in Production LLM Serving",
+    "authors": "Xianyi Yuan, Hanlong Liao, Kunming Zhang, Deke Guo, Guoming Tang",
+    "publish": "Proceedings of the 10th Asia-Pacific Workshop on Networking",
+    "url": "https://doi.org/10.1145/3820441.3820447",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Temperature-Driven Uncertainty Assessment in LLM Medical Reasoning Using Geometric Embedding Analysis",
+    "authors": "Ainaz Rafiei, Jungwon Seo, Betul Yurdem, Ferhat Ozgur Catak",
+    "publish": "2026 1st International Conference on Human Centric Artificial Intelligence (ICHCAI)",
+    "url": "https://doi.org/10.1109/ichcai70183.2026.11607654",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Exploring LLM-Driven Textual Augmentation for Image-Level Weakly Supervised Remote Sensing Change Detection",
+    "authors": "Tingfeng Yi, Fang Liu",
+    "publish": "2026 2nd International Conference on Communication, Remote Sensing and Information Technology (CRSIT)",
+    "url": "https://doi.org/10.1109/crsit69981.2026.11605252",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "MSGNN-LDS: Multi-Source Graph Neural Network with LLM-Augmented Decision Support for Intelligent Transmission Line Health Assessment and Maintenance",
+    "authors": "Kun Wu",
+    "publish": "2026 International Conference on Electrical, Control and Information Technology (ECITech)",
+    "url": "https://doi.org/10.1109/ecitech69277.2026.11601462",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "ComAgent: Multi-LLM Based Agentic AI Empowered Intelligent Wireless Networks",
+    "authors": "Haoyun Li, Ming Xiao, Kezhi Wang, Robert Schober, Dong In Kim, Yong Liang Guan",
+    "publish": "IEEE Wireless Communications",
+    "url": "https://doi.org/10.1109/mwc.2026.3711801",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Evasion Under Disguise: Black-Box Attacks on LLM Safety Filters",
+    "authors": "Diem-Huong Le, Dang-Hieu Nguyen, Sang Quang Nguyen",
+    "publish": "Proceedings of the 7th International Workshop on Intelligent Cross-Data Analysis  and Retrieval",
+    "url": "https://doi.org/10.1145/3810987.3815533",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Modeling and Verification for Engine Uncontrollable High Thrust",
+    "authors": "Junfeng Wu",
+    "publish": "2026 International Conference on Electrical, Control and Information Technology (ECITech)",
+    "url": "https://doi.org/10.1109/ecitech69277.2026.11601539",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "When Corrective Hints Hurt: Prompt Design in Reasoner-Guided Repair of LLM Overcaution on Entailed Negations under OWL 2 DL",
+    "authors": "Yijiashun Qi, Xiang Xu, Yuxuan Li",
+    "publish": "2026 2nd International Conference on Artificial Intelligence and Digital Ethics (ICAIDE)",
+    "url": "https://doi.org/10.1109/icaide69370.2026.11604554",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "SCL-LLM: A method for adjusting input content of Large Language Models based on semantic contrastive learning",
+    "authors": "Sanli Huang, Kun Lan, Zhi Sun, Yifan Wang",
+    "publish": "2026 2nd International Conference on Artificial Intelligence and Digital Ethics (ICAIDE)",
+    "url": "https://doi.org/10.1109/icaide69370.2026.11604516",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-20",
+    "title": "LLM-Driven Network Management Reliability: Case of System Outage Probability in AF Relay Networks under Conditions of Different Types of Fading",
+    "authors": "Suad Suljović, Dragana Krstić, Nenad Petrović, Siniša Minić, Jovan Vujić",
+    "publish": "2026 9th International Balkan Conference on Communications and Networking (Balkancom)",
+    "url": "https://doi.org/10.1109/balkancom71095.2026.11605016",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "OptiFlow: Towards LLM-Driven Optimization of Collective Communication Algorithms",
+    "authors": "Fei Long, Ziyue Yang, Kaihui Gao, Shuai Wang, Li Chen, Zhixiong Niu, Ran Shu, Wenxue Cheng, Peng Cheng, Yongqiang Xiong, Dan Li",
+    "publish": "Proceedings of the 10th Asia-Pacific Workshop on Networking",
+    "url": "https://doi.org/10.1145/3820441.3820452",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-20",
+    "title": "Improved Finite Difference Scheme for Differential Equations and Computer Simulation Verification",
+    "authors": "Lina Guo, Chengyu Sun",
+    "publish": "2026 2nd International Conference on Artificial Intelligence and Digital Ethics (ICAIDE)",
+    "url": "https://doi.org/10.1109/icaide69370.2026.11604491",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Toward Efficient LLM Agents for Emulator-Based Network Experiment Automation",
+    "authors": "Chenguang Du, Chang Liu, Lei Zhang, Yong Cui",
+    "publish": "Proceedings of the 10th Asia-Pacific Workshop on Networking",
+    "url": "https://doi.org/10.1145/3820441.3821240",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "TigXMM: A Multimodal Cross-Lingual Transfer LLM Method for Low-Resource Sentiment Analysis",
+    "authors": "Hagos Gebremedhin Gebremeskel, Chong Feng, Asefa Mebrahtu Abera, Xuan Zhao",
+    "publish": "Proceedings of the 7th International Workshop on Intelligent Cross-Data Analysis  and Retrieval",
+    "url": "https://doi.org/10.1145/3810987.3815534",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
