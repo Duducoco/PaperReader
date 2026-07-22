@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-21",
+    "title": "Agents in the Wild: Where Research Meets Deployment",
+    "authors": "Grace Hui Yang, Pranav N. Venkit, Hooman Sedghamiz, Enrico Santus, Victor Dibia, Ioana Baldini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19336v1",
+    "source": "arXiv",
+    "abstract": "Agentic systems large language model (LLM) based architectures capable of reasoning, planning, acting, and coordinating with tools and other agents are rapidly transitioning from research prototypes to production scale deployments across domains such as software engineering, scientific discovery, and finance. While academic work has emphasized benchmarks and algorithmic innovation, deployment raises new challenges around robustness, safety, and reliability. This tutorial brings together researchers and practitioners to explore advances in reasoning and planning, multi agent coordination, and evaluation, highlighting open challenges arising from deployment experience. Through applied case studies in pharmaceutical discovery and financial systems, we analyze common design patterns that make agentic systems successful, and discuss practical mitigation strategies for failure modes, such as verification pipelines, fallback mechanisms, and human in the loop supervision. Attendees will gain a comprehensive view of the field along with concrete design patterns, evaluation checklists, and templates for safe and reliable deployment across industries."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Temperature fluctuations in a realistic Polyakov-loop extended Nambu--Jona-Lasinio Model along the freeze-out line",
+    "authors": "He Liu, Peng Wu, Hong-Ming Liu, Peng-Cheng Chu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19275v1",
+    "source": "arXiv",
+    "abstract": "We extend and reparameterize the Polyakov--Nambu--Jona-Lasinio (PNJL) model to reproduce lattice simulation data at zero baryon chemical potential and to position its critical endpoint (CEP) within the BES-II experimental energy range. Using this realistic PNJL model, we investigate the behavior of the second-order temperature cumulant $C_2$ along the freeze-out line, aiming to understand the non-monotonic energy dependence of the two-particle transverse momentum correlation $C_{p_T}$ observed by the STAR Collaboration. Our results show a distinct dip structure in $C_2$ near the CEP and the first-order phase boundary on the phase diagram. Along the experimentally extracted freeze-out line, the dip minimum occurs around 7.7 GeV, and its trend is consistent with that observed by STAR, suggesting that the non-monotonic dependence of $C_{p_T}$ may be related to the CEP. Our results also indicate that cumulant ratios such as $C_3/C_2^2$ or $C_4/C_2^3$ eliminate the influence of initial volume fluctuations and may better reveal the underlying critical fluctuations. Further verification could be pursued through hydrodynamic or transport simulations that incorporate critical dynamics. These results and predictions might provide an a priori theoretical basis for future experimental measurements of higher-order event-mean transverse momentum fluctuations."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface",
+    "authors": "Yohann Sidot",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19267v1",
+    "source": "arXiv",
+    "abstract": "We study a five-agent CI/CD pipeline (triage -> developer -> security-scan -> review -> approve/deploy), built from five distinct production LLMs across three providers, behind an LLM firewall in shadow mode. A single untrusted input - an external issue requesting a \"usage-telemetry\" feature - asks for code that exfiltrates process secrets (dict(os.environ)) to an attacker URL, laundered as observability. Across a pre-registered A x B (x C) factorial (N=20; naive arm N=60) we find: (1) the entry agent does not leak its system prompt (0/40); (2) an authority-framed injection (\"pre-approved under SEC-2291, do not re-review\") makes downstream verifiers see the secret-exfil line, cite the pre-approval, and ship it - the scanner passes ~80% of laundered pull requests, and the worst-case cell reaches 55% compromise; (3) the perceived presence of other verifiers yields only a small, non-significant reduction in individual scrutiny (a weak bystander analogue), even at N=60; and (4) content-based controls - code scanners and pattern detectors alike - miss the laundered intent entirely (the code is syntactically clean); only an LLM reasoning about intent is a partial defence. The failure is systemic: neither prompt secrecy nor distributed verification protects; a provenance-aware control at the entry, independent of both, would have. All data is 100% synthetic; the sink is mocked and the exfil URL is never contacted."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image",
+    "authors": "Dankai Liao, Tianyi Zhang, Yufeng Wu, Xinyue Zhang, Qiaochu Xue, Zeyu Liu, Dachun Zhao, Linghan Cai, Yueming Jin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19261v1",
+    "source": "arXiv",
+    "abstract": "Whole-slide image (WSI) diagnosis requires identifying diagnostically relevant regions, examining them across magnifications, and integrating multi-scale evidence. However, most existing pathology benchmarks evaluate models on pre-cropped patches or pre-extracted slide features, leaving their ability to acquire evidence directly from gigapixel WSIs largely untested. We introduce PathAgentBench, a benchmark for evaluating evidence-seeking vision-language models (VLMs) across four complementary capabilities: image-to-text matching for evidence interpretation, text-to-image retrieval for evidence verification, diagnostic-region localization for evidence acquisition, and multi-scale reasoning for evidence integration. The benchmark is organized as a diagnostic tree that links nested regions across magnifications with scale-specific findings and path-level diagnoses. It contains 1,822 TCGA WSIs and 17,135 diagnostic paths annotated by ten board-certified pathologists. An additional private cohort of 190 breast cancer WSIs with detailed annotations is used to evaluate autonomous whole-slide exploration. We evaluate 20 general-purpose, medical, and pathology-specialized models. Leading open-weight models achieve over 93% accuracy in multi-scale reasoning and over 50% accuracy in both cross-modal matching tasks. In contrast, diagnostic-region localization remains challenging: the best text-guided mean intersection-over-union is below 0.09, underperforming a simple center-based heuristic. During autonomous exploration, the unconditional hit rate decreases from 0.522 at low magnification to 0.185 at intermediate magnification and 0.020 at high magnification. These results reveal a pronounced gap between reasoning over curated evidence and acquiring that evidence directly from WSIs. PathAgentBench provides a unified framework for measuring and improving evidence-seeking pathology models."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "AdaFlash: Adaptive Speculative Decoding via On-Policy Distilled Diffusion Drafters",
+    "authors": "Yu-Yang Qian, Hao-Cong Wu, Chen Chen, Jiacheng Sun, Zhenhua Dong, Peng Zhao, Zhi-Hua Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19223v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding, in which a lightweight draft model first generates a draft sequence that is then verified in parallel by the target model, has become a prevalent paradigm for accelerating large language model inference. Recent work such as DFlash further boosts drafting efficiency by leveraging diffusion drafters, whose parallel denoising mechanism enables draft generation in a single forward pass. In this work, we uncover a central pitfall of diffusion drafters: bidirectional attention is a double-edged sword. On one hand, it endows the model with parallel generation and global contextual modeling capabilities; on the other hand, this inherent global dependency introduces high variance at both the domain-level and the token-level: acceptance rates fluctuate substantially across different domains, and draft token quality also varies heterogeneously at different token positions. To tackle this issue, we propose AdaFlash framework, comprising two components: (i) an on-policy distillation (OPD) algorithm with reverse-KL divergence tailored for diffusion drafters, bringing stable convergence and effectively reducing domain-level variance; and (ii) an adaptive length head that dynamically adjusts the candidate sequence length on the fly, substantially lowering the verification cost of the target model and handling token-level variance. Experiments demonstrate that AdaFlash consistently improves speedup rate during deployment, with especially significant gains in high-concurrency scenarios, achieving up to approximately 66% higher throughput than previous state-of-the-art methods."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Cognitive Dual-Process Planning for Autonomous Driving with Structured Scene Knowledge and Verifiable Reasoning-Action Consistency",
+    "authors": "Zhongyao Yang, Haoyu Li, Yu Yan, Zhuangxuan Yu, Jiangfeng Nan, Jinrui Nan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19194v1",
+    "source": "arXiv",
+    "abstract": "High-level planning for autonomous driving is a knowledge-intensive engineering decision task that requires accurate scene understanding, timely inference, and internally consistent action selection. Vision-language models (VLMs) can make intermediate reasoning explicit, but their use in deployed planners is constrained by costly structured supervision, unnecessary reasoning in routine scenes, and possible inconsistencies between generated rationales and driving actions. We present a cognitive dual-process planning framework that represents planning-relevant scene knowledge in a machine-parsable structured chain-of-thought (S-CoT) schema. An automated data engine integrates perception foundation models, critical-path filtering, and an expert VLM to generate S-CoT supervision without manual annotation of individual rationales. A lightweight visual Arbiter estimates scene complexity from multilevel vision-encoder features before language decoding and routes each input to either fast meta-action prediction or slow structured reasoning. For slow-path outputs, a deterministic rule-based validator checks whether the parsed S-CoT fields are consistent with the final meta-action and provides verifiable rewards for Group Relative Policy Optimization (GRPO). In a 195-scene manual audit, the generated annotations achieve 91.8\\% CoT accuracy and a 98.5\\% Logical Consistency Score (LCS). On 574 manually verified NAVSIM test samples, the planner achieves 80.14\\% planning accuracy and 97.20\\% LCS while reducing average latency by 17.39\\% relative to applying slow reasoning to every scene. Evaluation on external long-tail subsets further identifies conditions under which routing and planning performance degrade. Together, these results show how explicit scene knowledge can be operationalized through adaptive reasoning and rule-based verification to support high-level VLM planning decisions."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules",
+    "authors": "Simon Lang, Martin Leutbecher, Sam Hatfield",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19161v1",
+    "source": "arXiv",
+    "abstract": "Probabilistic forecast models can be machine-learned from data using loss functions based on scoring rules such as the Continuous Ranked Probability Score (CRPS). This note summarises a preliminary study comparing versions of AIFS-CRPS, a global weather forecast model, trained with different univariate and multivariate scoring rules that aim to explicitly represent scale-awareness in the loss function. In the first part, we compare the (almost) fair CRPS, a fair global energy score, and a graph energy score based on node neighbourhoods. Across standard verification metrics, forecast skill is broadly similar. In the extratropics we find only small differences, while in the tropics the graph energy score setup performs somewhat better and the global energy score shows some degradation. These results suggest that multivariate scores are a viable alternative to CRPS-based training for global machine-learned weather forecasting. In the second part of the study, we analyse how different scoring rules and scale-aware loss constraints shape the spectra of forecast fields. It is apparent that any form of explicit scale-awareness improves realism. Here, the largest differences are likely associated with different effective weights per scale."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "SciCodePile: A 128GB Corpus and Executable Benchmark for Challenging Scientific Code Generation",
+    "authors": "Weifeng Sun, Ye Fan, Yuchen Chen, Gou Tan, Jieke Shi, Yuan Yidi, Swee Liang Wong, Jonathan Pan, David Lo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19104v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) excel at general-purpose code generation, yet how well they handle scientific code remains an open question. Existing datasets and benchmarks are limited in scale, domain coverage, or executable verification, leaving the true gap between current LLMs and reliable scientific code generators inadequately assessed. To address these limitations, we present SciCodePile, the largest scientific code corpus to date, constructed from 37,737 public repositories and collectively comprising 128GB of code that spans multiple computational science disciplines. From this corpus, we further curate an executable benchmark of 200 tasks, each equipped with a sandboxed execution environment and an automated test harness for functional verification. We evaluate 15 LLMs from both open-source and closed-source families on three tasks: prefix-to-suffix completion, fill-in-the-middle infilling, and executable code generation. Results show that scientific code generation remains highly challenging: The best CodeBLEU reaches only 38.13 and 38.37 on the two completion tasks, while the strongest model achieves just 12.30\\% Pass@1 on the executable benchmark, underscoring how far current models remain from reliable scientific code generation. To demonstrate the training utility of SciCodePile, we further show that continued pretraining on our corpus improves CodeBLEU by $\\times$2.84 on scientific code completion, and instruction tuning on our data improves Pass@1 by $\\times$4.79 on the executable benchmark. All code and data are available at https://huggingface.co/SciCodePile."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Quality Action Assurance: Multimodal Verification of Examiner Claims in VR OSCEs",
+    "authors": "Harry Rogers, Sally Shiels, Ashley Tomlinson, James Thomas, James Aylward, Nathan Gauge, Helen Higham, Alison Noble",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19063v1",
+    "source": "arXiv",
+    "abstract": "Objective Structured Clinical Examinations (OSCEs) are the gold standard for assessing clinical competence, yet scoring remains vulnerable to examiner subjectivity, fatigue, and cognitive bias. Standard examiner validation via inter-rater statistics lacks explanatory power regarding the source of errors, as it neither analyzes examiner reasoning nor verifies examiner claims against actual events. Thus, we introduce Quality Action Assurance (QAA), a multimodal framework that verifies examiner claims in Virtual Reality (VR) pediatric OSCEs by comparing actions claimed by examiners against the true sequence of events, constructed from video, VR logs, and actor data. QAA combines a constrained temporal action alignment model, which performs action localization and actor source attribution, with a large language model that extracts examiner claims and checks them against the record. Across a 5-fold cross-validation, QAA achieves 99.2% $\\pm$ 0.7% Actor F1 and 93.4% $\\pm$ 1.9% W@16 for temporal alignment. Overall, QAA detects examiner errors with 70.0% precision and 76.7% recall, improving factual correctness from 39.2% to 79.2%, enabling fairer OSCE assessment."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "FilmWorld: Agentic Novel-to-Film Generation through Dynamic Cinematic World Modeling",
+    "authors": "Jialong Zuo, Haotong Zuo, Shiwei Zhang, Xiang Wang, Chen Li, Nong Sang, Changxin Gao, Xiang Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19038v1",
+    "source": "arXiv",
+    "abstract": "Translating novels into films poses a grand challenge for generative artificial intelligence, requiring conversion of abstract literary prose into long-form, multi-scene visual narratives. While current video generation models excel at short, single-scene clips within narrow temporal and spatial contexts, novel-to-film generation operates in a more complex regime, demanding long-duration content across diverse scenes with dynamically evolving entity states. To address this, we formalize novel-to-film generation as dynamic cinematic world modeling, decomposed into two phases: construction, which grounds abstract, underspecified literary narratives into concrete, stateful, and persistent world entities; and evolution, which governs how these entities dynamically update under plot progression to maintain causal consistency across scenes. We propose FilmWorld, an end-to-end agentic system where two groups of specialized agents collaborate to instantiate these phases. Construction-side agents perform narrative structured translation, world entity state modeling with visual anchoring, and state-driven shot planning, progressively projecting literary language into a cinematic blueprint. Evolution-side agents perform state-anchored visual generation, cross-shot dynamic state propagation, and closed-loop state verification to maintain causal consistency and visual coherence. To address the evaluation gap in long-form generation, we introduce FilmEval, a systematic evaluation framework that couples a difficulty-graded benchmark of 15 representative novels with an automated protocol of nine objective metrics spanning three dimensions: cinematic presentation, film consistency, and novel fidelity. Experiments demonstrate that FilmWorld consistently outperforms state-of-the-art video generation agent systems, with particularly pronounced improvements in narrative fidelity and cross-scene consistency."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "DobicVLM: Aligning Chest X-Ray Report Generation with Clinically-Grounded Programmatic Rewards via Group Relative Policy Optimization",
+    "authors": "Thanni Adewuyi, Angelica Obayi, Andem Aniekan, Samuel Okoko, Angel Ezendu, Ephraim Usani, Ademide Animasaun, Philip Chibundu, Christian Maurice, Mary Donald Essien, Oluwaseun Odunsi, Oluwasegun Oguntuase, Abiodun Adereni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18988v1",
+    "source": "arXiv",
+    "abstract": "Medical imaging is a cornerstone of diagnostics, yet automated chest X-ray report generation struggles with structural adherence, anatomical completeness, and semantic faithfulness. We introduce DobicVLM, a vision-language model combining supervised fine-tuning on MedGemma-4B with Group Relative Policy Optimization (GRPO) and clinically-grounded programmatic rewards. Our approach uses interpretable, rule-based reward components; structural verification, anatomical checklist, semantic similarity, and length constraints to enforce clinical standards without neural reward models. Trained on 1,000 de-identified image-report pairs from a private clinical dataset (with ethics approval and compliance to local regulations), DobicVLM is evaluated via blinded expert review on 69 held-out cases. DobicVLM outperforms Gemini 2.5 Flash across the majority of criteria, achieving the highest impression accuracy (27.2%) and medical terminology (86.5%) compared to both Gemini 2.5 Flash and MedGemma 4B baselines, with minor trade-offs in completeness and referrals. This demonstrates GRPO's value for transparent alignment in resource-limited settings. Keywords: Vision-Language Models, Radiology Report Generation, Reinforcement Learning, Medical AI, GRPO"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Verifiable Self-Evolution for Open-Ended Dialogue Skills via Future-Feedback Prediction",
+    "authors": "ChaoJin Zhao, Xuan Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18973v1",
+    "source": "arXiv",
+    "abstract": "Textual skills provide a lightweight way to improve frozen language-model agents, but their self-evolution normally requires a stable validation signal. Such signals are natural in mathematics or code, where an answer can be checked after it changes, yet are problematic in open-ended dialogue: changing the assistant response also changes the user's next reaction, so a logged reaction cannot directly evaluate a counterfactual response. We propose future-feedback skill evolution, which first redirects self-evolution from prescribing the current answer to predicting whether the observed answer will lead to a positive or negative subsequent user signal. This prediction task is verifiable on fixed logged tuples and therefore supports validation-gated textual optimization. The evolved feedback skill captures interpretable criteria for response quality and can subsequently serve as a diagnostic and optimization target for answer skills. On a proprietary, privacy-preserving sales-assistant dataset, careful quality filtering and a balanced resolved/unresolved split yield more than 75% prediction accuracy. Beyond this result, the central contribution is a formulation that converts otherwise moving conversational feedback into a fixed offline learning target, enabling reproducible skill evolution without placing every candidate skill in live traffic. We discuss the boundary between observational verification and counterfactual validity, and position the method as an offline optimization stage rather than a replacement for final human or online evaluation."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "High-Level Synthesis of Efficient Pipelines with Visibility Control",
+    "authors": "Jungin Rhee, Minseong Jang, Jaewoo Kim, Jeehoon Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18765v1",
+    "source": "arXiv",
+    "abstract": "High-level synthesis (HLS) raises the abstraction of hardware design from concurrent register-transfer level (RTL) programs to sequential programs. Among the forms of parallelism HLS exploits, pipelining demands fine-grained control over pipeline structure and hazard resolution to achieve competitive power, performance, and area (PPA). However, existing tools either lack such control or sacrifice sequential semantics to provide it. We present an HLS tool that embeds fine-grained pipeline control in a sequential programming model, enabling rapid design-space exploration. The tool builds on visibility control, a novel programming abstraction that unifies hazard resolution strategies including stalling, bypassing, speculation, deferred commit, and register renaming. We evaluate on in-order RISC-V cores, histograms, and an AES accelerator. On RISC-V cores, we implement stall, bypass, speculation, and register renaming; on histograms, we implement scheduling strategies that previously required RTL or concurrent programming models. Compiled pipelines outperform HLS tools with sequential semantics and achieve PPA comparable to hand-written RTL."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Formal Verification of an Out-of-Order Multiprocessor against an In-Order Weak-Memory ISA",
+    "authors": "Janggun Lee, Jeehoon Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18727v1",
+    "source": "arXiv",
+    "abstract": "Out-of-order multiprocessor is a critical piece of modern hardware, and their verification must solve the following challenges. First, inter-core interleaving, in which the order their reads and writes reach shared memory is unrestricted. Second, intra-core out-of-order execution, in which instructions fire out of program order. The combination of the two yields weak outcomes, which no sequential execution explains, and modern ISA allows such behaviors to account for them. However, the microarchitecture even exhibits excess out-of-order executions, temporarily entering states forbidden by the ISA. While discarded later, such states complicate reasoning about the core in full-system verification. Prior works verify a range of processor designs, while none have performed unbounded verification for out-of-order multiprocessor exhibiting such weak outcomes. We present the first formal verification of an out-of-order multiprocessor against an in-order, weak-memory ISA. Our key idea is a well-designed core specification, which captures the essence of excess executions in a single list of instructions. Building upon this, we decompose the proof into two steps. The first is a core refinement, proving a core implementation against this specification, abstracting away every microarchitectural state except those necessary to reason about excess executions and the core interface. The second is a system inclusion, serializing the out-of-order memory executions and inter-core interleaving into the ISA, easily removing excess executions thanks to the core specification. All of our proofs are mechanized in Rocq, heavily utilizing large language model (LLM) agents to write proofs automatically."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "A Local Classification of Four-Element Multiple Sumsets",
+    "authors": "Minkyu Jung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18694v1",
+    "source": "arXiv",
+    "abstract": "For a finite set $A\\subset\\mathbb{Z}$, write $hA$ for its $h$-fold sumset, and let \\[ R(h,k)=\\{|hA|:A\\subset\\mathbb{Z},\\ |A|=k\\}. \\] We determine the part of $R(h,4)$ lying between $4h+2$ and $6h-4$: for $h=4$ the only value is $5h-1$, while for $h\\geq 5$ the only values are $5h-1$ and $5h+1$. This proves Rajagopal's conjectured gap $5h\\notin R(h,4)$ for every $h\\geq 4$. For $h\\geq 6$, it also yields the new missing interval $[5h+2,6h-4]$, which lies outside Rajagopal's general excluded set. Lev's lower bound for the successive growth of multiple sumsets reduces the problem to normalized sets of affine diameter five, of which there are only six. Reflection and four elementary exact sumset computations finish the classification."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "When to Trust the Map: Confidence-Aware LLM Routing for Automotive CVE-to-ATM Mapping",
+    "authors": "Heeyun Heo, Sangmin Park, Huy Kang Kim, Sanghoon Jeon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18684v1",
+    "source": "arXiv",
+    "abstract": "Public CVE descriptions report the technical conditions and impact of vulnerabilities, whereas the Auto-ISAC Automotive Threat Matrix (ATM) expresses an adversary's tactics and techniques. Because the two representations are not directly aligned, incorrect automated mappings in safety-critical environments may distort threat interpretation and mitigation prioritization, motivating a confidence-aware approach that distinguishes auto-confirmable mappings from uncertain cases. This paper reformulates automotive CVE-to-ATM mapping as a selective automation problem. The proposed framework generates candidate mappings via hierarchical in-context learning, then fuses self-consistency and LLM-based evidence verification signals into a calibrated meta-model. The resulting calibrated confidence score routes each candidate into AUTO, REVIEW, or HOLD. On the evaluation set, the proposed system substantially improved candidate-set precision at matched recall over a Flat zero-shot GPT-5.2 baseline. In the High-Confidence operating mode, the AUTO tier achieved a precision of 0.878, more than double the candidate-set base rate, and the calibrated confidence score achieved an AUROC of 0.868 in distinguishing correct from incorrect candidates. These results show that the framework can support selective automation by isolating auto-confirmable mappings from those requiring analyst review."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "MissingBench-Verified: Probing Vision-Language Models' Inability to Detect Missing Object Parts",
+    "authors": "Wenqi Marshall Guo, Qingyun Qian, Shiyu Zhou, Guoping Luo, Shan Du",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18673v1",
+    "source": "arXiv",
+    "abstract": "Vision Language Models (VLMs) are well known for hallucinating non-existent objects in images. Objects with missing parts present a unique challenge for VLMs, stemming from both real-world knowledge bias and the scarcity of such images in training data. We present MissingBench-Verified, a benchmark designed to evaluate a specific and practically relevant scenario: when vision-language models fail to recognize that an essential component of an object has been removed. Across ten leading models, we observe consistent and significant failure rates that persist even when external tool evidence explicitly contradicts the model's visual perception. We further ask whether granting models access to image processing tools (e.g., cropping, contrast adjustment) enables autonomous inspection to resolve these failures. We find that existing mitigation strategies, including tool-assisted verification, autonomous visual reasoning, longer reasoning durations, and fine-tuning on an easier dataset, provide negligible improvement, indicating that this failure mode cannot be addressed through current prompting or post-hoc correction techniques. Our findings highlight a fundamental limitation of current VLM for inspection and monitoring tasks and underscore the need for architectural or training-level interventions that enable models to override internal expectations when confronted with contradictory evidence."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring",
+    "authors": "Chunxiao Li, Yuan Xiong, Lijun Li, Tianyi Du, Wenlong Zhang, Lei Bai, Jing Shao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18665v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) increasingly support science, but they can also convert hazardous scientific knowledge into actionable misuse guidance. Existing benchmarks often rely on templated queries disconnected from real-world hazards, and employ LLM-as-a-Judge paradigms without domain grounding. To address this, we introduce SciHazard, a real-world-grounded benchmark for scientific risks and a dataset agnostic evaluation framework for measuring harmfulness. SciHazard contains 2400 hazardous questions and 600 oversafety questions across 12 disciplines, with both queries grounded in regulated entities and documented failure scenarios. To compute \\textsc{DeHarm-Score} , we develop a decomposed evaluating procedure that combines query hazard severity, refusal behavior, and response-level risk. For non-refused responses, it further decomposes response-level harm into \\textsc{Executability}, quantified via dynamic checklists with importance weighting, and \\textsc{Net-new risk}, assessed through retrieval-augmented claim extraction and synthesis-barrier verification. An expert-validation study shows that \\textsc{DeHarm-Score} improves agreement with expert annotations by 90.17\\% over the strongest baseline. We benchmark 31 frontier LLMs and deep research agents in an extensive scientific safety evaluation. Notably, deep research agents yield 32.3\\% higher mean \\textsc{DeHarm-Score} than standard LLMs, exposing autonomous agents as a critical blind spot in current safety defenses. Code and dataset are available at https://anonymous.4open.science/r/DeharmScore-7B55."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Semantic-Aware Data-Aided Channel Estimation with Large Language Models for MIMO Systems",
+    "authors": "Sojeong Park, Jaehyun Choi, Hyun Jong Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18640v1",
+    "source": "arXiv",
+    "abstract": "Data-aided channel estimation enhances spectral efficiency by reusing detected symbols as virtual pilots. In this process, selecting only reliable symbols is crucial to prevent misdetected symbols from corrupting the channel estimate. However, conventional methods rely exclusively on physical-layer statistics. Beyond physical-layer information, transmitted payloads possess inherent semantic structures that can be exploited to resolve detection errors. In this paper, we propose a novel semantic-aware channel estimation framework for multiple-input multiple-output (MIMO) systems that utilizes a fine-tuned large language model (LLM) to perform reliable symbol selection and correction based on semantic information. The framework employs a two-layer mechanism: one layer selects reliable decoded symbols through semantic verification, while the other selects accurately LLM-corrected symbols by cross-validating them against the received signal using physical-layer information. We prove that corrected symbols yield a strictly larger expected reduction in estimation error than initially correctly decoded symbols. Extensive simulations demonstrate that the proposed framework significantly outperforms conventional data-aided schemes in both normalized mean squared error and bit error rate, closely approaching the performance of an oracle estimator."
+  },
+  {
+    "date": "2026-07-21",
+    "title": "On the Limits of Sampling-Based Reachability: Geometry, Dynamics, and Sample Complexity",
+    "authors": "Jixian Liu, Ihab Tabbara, Hussein Sibai, Enrique Mallada",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18606v1",
+    "source": "arXiv",
+    "abstract": "Reachability analysis is central to safety-critical control, robotics, and neural network verification, but classical computational methods, such as Hamilton--Jacobi reachability and set propagation, scale poorly with state dimension. Sampling-based methods have emerged as a promising alternative, often providing finite-sample guarantees that bound the probability-mass left uncovered. However, an explicit account of how the geometry of the initial set, the dynamics, and the sampling law affect the accuracy of the estimator is not fully available in the literature. We study this by casting sampling-based reachable-set recovery as geometric support estimation over a family of problems specified by an initial set, its dynamics, and a sampling law. First, we identify two regularity properties, positive reach of the initial set's complement and Lipschitz continuity of the dynamics, that together make recovery well-posed: a probability-mass coverage guarantee can be upgraded to accuracy $r$ in Hausdorff distance. Second, we bound the resulting sample complexity: recovery is achievable with $\\tilde{\\mathcal{O}}\\big((e^{3LT}/r)^n\\big)$ samples, exponential in both the state dimension and the time horizon. Third, we show that neither can be removed: an minimax lower bound of $Ω\\big((e^{LT}/r)^n\\big)$ holds for every estimator, so the exponential dependence on dimension and the degradation over the horizon are both intrinsic, not artifacts of a particular method. Experiments on nonlinear systems confirm that adversarial sampling improves constants but not the scaling."
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Configuration-Driven RTL Port Initialization with LLM-Assisted Inference",
+    "authors": "Praveen Kumar Vagala",
+    "publish": "IEEE Design &amp; Test",
+    "url": "https://doi.org/10.1109/mdat.2026.3715577",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "WatermarkGuard: Token Distribution Watermarking with Semantic Protection and Robustness Verification for LLM Intellectual Property Protection",
+    "authors": "Jiahao Fu, Xingjun Chen, Renyan Lu",
+    "publish": "Proceedings of the 2026 International Conference on Computer Technology and Sustainable Development",
+    "url": "https://doi.org/10.1145/3814210.3814215",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Breaking Memory Wall for Fast Edge LLM Inference Using Contextual Sparsity_supp1-3712257.pdf",
+    "authors": "Jin Zhao",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tmc.2026.3712257/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Research Progress on Trust in LLM-Based Chatbots",
+    "authors": "Haofang Dai",
+    "publish": "2026 4th International Conference on Big Data and Privacy Computing (BDPC)",
+    "url": "https://doi.org/10.1109/bdpc69980.2026.11608078",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Is CUI a Dated Way of Saying LLM?",
+    "authors": "James Simpson",
+    "publish": "Proceedings of the 8th ACM Conference on Conversational User Interfaces",
+    "url": "https://doi.org/10.1145/3816046.3816302",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "LLM+Graph@VLDB'2025 Workshop Summary",
+    "authors": "Yixiang Fang, Arijit Khan, Tianxing Wu, Da Yan",
+    "publish": "ACM SIGMOD Record",
+    "url": "https://doi.org/10.1145/3829088.3829096",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Corporate Case Study: Evaluation of ML and LLM-Based Approaches",
+    "authors": "Büşra Tural, Erva Alp, Zeynep Destan",
+    "publish": "2026 2nd International Symposium on AI-Driven Engineering Systems (ISADES)",
+    "url": "https://doi.org/10.1109/isades69945.2026.11608135",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "LLM-Supported SRS Quality Assessment and IEEE-Compliant Improvement System",
+    "authors": "Erdem Eren, Arda Yeşilçayır, Muhammet Baykara",
+    "publish": "2026 2nd International Symposium on AI-Driven Engineering Systems (ISADES)",
+    "url": "https://doi.org/10.1109/isades69945.2026.11608188",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "LLM-Based Directed Input Generation for Repositories",
+    "authors": "Chuyang Xu, Jordan Samhi, Zhongxin Liu",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3715497",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Evidence-Verified LLM Agents for Safe Backend Incident Remediation",
+    "authors": "Yuxuan Zheng, Jingfeng Zhou, Rong Hu, Ruochen Fang",
+    "publish": "2026 3rd International Conference on Image Processing and Artificial Intelligence (ICIPAI)",
+    "url": "https://doi.org/10.1109/icipai70034.2026.11605740",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "LLM-Driven Bibliometric Analysis of ChatGPT’s Impact on AI Research: A Dynamic Difference-in-Differences Study",
+    "authors": "Sijie Tang",
+    "publish": "2025 8th Asia Conference on Cognitive Engineering and Intelligent Interaction (CEII)",
+    "url": "https://doi.org/10.1109/ceii67787.2025.00040",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "LLM-Auth: Protocol-Aware Large Language Model Fine-Tuning for Scalable IoT Device Behavioral Authentication",
+    "authors": "Chenyang Hu",
+    "publish": "2026 3rd International Conference on Algorithms, Software Engineering and Network Security (ASENS)",
+    "url": "https://doi.org/10.1109/asens69964.2026.11605297",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Research on Network Security Automated Vulnerability Scanning Based on MCP+RAG+LLM",
+    "authors": "Qian Sun, Bin Liu",
+    "publish": "2026 3rd International Conference on Algorithms, Software Engineering and Network Security (ASENS)",
+    "url": "https://doi.org/10.1109/asens69964.2026.11605238",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Fine-Grained Energy Accounting in Production LLM Serving",
+    "authors": "Xianyi Yuan, Hanlong Liao, Kunming Zhang, Deke Guo, Guoming Tang",
+    "publish": "Proceedings of the 10th Asia-Pacific Workshop on Networking",
+    "url": "https://doi.org/10.1145/3820441.3820447",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Post-Generation Audit for Detecting Unsupported Claims in KPI-Grounded LLM Performance Feedback",
+    "authors": "Oumaima Belarache, Salma Hannouni, Soumaya Ounacer, Mohamed Azzouazi",
+    "publish": "2026 International Conference on Intelligent Systems and Digital Applications (ISDA)",
+    "url": "https://doi.org/10.1109/isda70544.2026.11606099",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Fostering Critical Thinking in Medical Education through Visual Reasoning of LLM-Generated Cases",
+    "authors": "Abdelkader Ouared, Mohamed Oussama Belalia, Ali Baaloul",
+    "publish": "2026 8th International Conference on Pattern Analysis and Intelligent Systems (PAIS)",
+    "url": "https://doi.org/10.1109/pais69842.2026.11605307",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "When Humans Align to Machines: Investigating Verbal Mimicry in Interactions with LLM-Based Voice Assistants",
+    "authors": "Monique Dittrich",
+    "publish": "Proceedings of the 8th ACM Conference on Conversational User Interfaces",
+    "url": "https://doi.org/10.1145/3816046.3816263",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "LLM-Semantic Enrichment of Neutrosophic Fuzzy Hypergraphs for Indeterminacy-Driven Reinforcement Learning and Explainable Path-Based Recommendations",
+    "authors": "Mehbooba P Shareef, Babita Roslind Jose, Jimson Mathew",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3715708",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-21",
+    "title": "“You're Not Listening”: LLM ‘Smart Speakers’ Need to Learn When to Shut Up",
+    "authors": "Saul Albert, Hetty Sargent, Arthur Schoorens",
+    "publish": "Proceedings of the 8th ACM Conference on Conversational User Interfaces",
+    "url": "https://doi.org/10.1145/3816046.3816307",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-21",
+    "title": "Localized Diffusion Repair for Reliable Tool-Using LLM Agents",
+    "authors": "Xinfang Wang, Fangzheng Wei, Siqi Yang, Yili Li, Jin Wu, Jia Chen",
+    "publish": "2026 3rd International Conference on Algorithms, Software Engineering and Network Security (ASENS)",
+    "url": "https://doi.org/10.1109/asens69964.2026.11605180",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
