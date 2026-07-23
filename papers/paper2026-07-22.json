@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-22",
+    "title": "Sphere Packing in Dimensions 39 and 43 from the Antipode Construction",
+    "authors": "Xiaoming Sun, Chengu Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20359v1",
+    "source": "arXiv",
+    "abstract": "We construct non-lattice sphere packings in dimensions $39$ and $43$, improving records that had stood since the Laminated lattices construction by Conway and Sloane (1982). Both packings come from the antipode construction applied to cross-sections of extremal even unimodular $48$-dimensional lattices. The $43$-dimensional packing also raises the best known kissing number. The $39$-dimensional packing is built on the very cross-section that Conway and Sloane used in 1982; only the ten-point antipode cluster placed over it is new. Machine-checkable certificates for all claims, together with the search and verification code, are publicly available."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "PoTRE: Test-Time Reasoning inspired by Cognitive Heterogeneity",
+    "authors": "Anmol Kankariya, Sercan Ö. Arık",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20268v1",
+    "source": "arXiv",
+    "abstract": "While Large Language Models (LLMs) excel at many tasks, they frequently struggle with complex reasoning that requires long-horizon planning and iterative error correction. Furthermore, standard single-stream prompting proves brittle when models encounter novel abstractions or rigorous domain constraints. We introduce PoTRE (Poly-Topological Reasoning Ensembles), a heterogeneous framework that decouples inference into four agents: (1) Adversarial Refinement Agent, (2) Hierarchical strategic Planning Agent, (3) Spectrum Search Agent, and (4) Direct Chain Agent. A final Task-Adaptive Aggregation Layer dynamically reconciles these perspectives -- via final candidate selection, semantic synthesis, or neuro-symbolic verification -- to produce a robust global solution. We evaluate PoTRE on three frontier benchmarks: ARC-AGI-2, Humanity's Last Exam (HLE), and PRBench Finance. PoTRE achieves state-of-the-art accuracy of 49.92% on HLE, surpassing the previous best official score. We demonstrate that this architectural heterogeneity achieves improved reasoning performance using similar or fewer inference tokens compared to heavily scaled homogeneous baselines."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "An Approach to the Abstract Interpretation of Goal-Directed Answer Set Programming",
+    "authors": "Daniel Jurjo-Rivas, Joaquín Arias, Gopal Gupta, Jose F. Morales, Pedro López-García, Manuel V. Hermenegildo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20252v1",
+    "source": "arXiv",
+    "abstract": "Abstract Interpretation infers and verifies program properties by over-approximating program semantics. It has been highly successful for (Constraint) Logic Programming, enabling the analysis of determinism, types, aliasing, and resource usage, as well as application in verification and program optimization. However, Abstract Interpretation has not yet been studied in the context of Goal Directed Answer Set Programming (ASP). In this work, we take a first step in this direction. We present a top-down algorithm based on the PLAI fixpoint, implemented in the abstract interpreter of the Ciao Prolog Preprocessor, to perform abstract interpretation of goal-directed ASP. We also introduce the Shared-Constraints abstract domain, designed to capture potential relations among variables induced by constraints. Finally, we study the practicality of the approach in s(CASP) through three applications: detection of false odd loops over negation, efficient forall evaluation enabled by the Shared-Constraints domain, and abstract specialization (including the simplification of required global constraints). Our results show that compile-time static analysis can improve the evaluation of goal-directed ASP programs."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Towards Relating Ciao Assertions and LPTP Theorems",
+    "authors": "Marco Pérez, Pedro López-García, Jose F. Morales, Manuel V. Hermenegildo, Fred Mesnard",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20249v1",
+    "source": "arXiv",
+    "abstract": "Abstract interpretation-based verification is a central component of the Ciao Prolog system, enabling expressive specifications of properties of programs, predicates, and execution states. Independently, the LPTP (Logic Programming Theorem Proving) framework offers a first-order logical formalism for expressing and proving properties of predicates. In this paper, we address a fundamental issue in relating these two frameworks: studying the translation of Ciao assertions into LPTP formulae and identifying a partial correspondence between assertion-based and logic-based specifications. We introduce a systematic translation scheme, characterize assertion classes according to their logical encodability, and propose approximation strategies and auxiliary constructs for non-translatable cases, and finally analyze the resulting soundness and completeness trade-offs. We argue that our proposal enables a tight integration of Ciao's assertion checking with LPTP-based deductive verification, thereby leveraging their complementary capabilities."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "HalluTruthQA: A Fine-Grained Benchmark for Hallucination Detection, Localization, and Explanation in Arabic Question Answering",
+    "authors": "Abdessalam Bouchekif, Mohammed-En-Nadhir Zighem, Salah Eddine Bekhouche, Hichem Telli, Somaya Eltanbouly, Shahd Gaben, Heba Sbahi, Samer Rashwani, Mutaz Al-Khatib, Emad Mohamed, Mohammed Ghaly, Abdenour Hadid",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20219v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) can generate fluent Arabic answers, yet factual errors remain difficult to detect, localize, explain, and verify. Existing hallucination benchmarks often provide response-level labels, with limited support for identifying the exact erroneous content, explaining why it is incorrect, or selecting the correct factual answer. We introduce \\textsc{HalluTruthQA}, a fine-grained benchmark for hallucination evaluation in Arabic question answering. The benchmark contains 2,400 expert-curated examples across four knowledge-intensive domains: Islamic knowledge, history, science, and geography. Each example pairs an Arabic question and a model-generated answer with a verified reference answer, a binary hallucination label, six candidate answers for factual verification, and, for hallucinated answers, character-level erroneous spans, human-written explanations, and macro and micro hallucination types. We evaluate four open-source LLMs, \\textsc{Allam}, \\textsc{Falcon-H1}, \\textsc{Qwen32}, and \\textsc{Silma}, in a zero-shot setting across hallucination detection, span-level localization, factual verification, and explanation evaluation. Results show that these tasks capture different abilities: no single model achieves the strongest performance across all tasks, with best scores of 0.880 Macro-F1 for detection, 0.516 F1-Sp for localization, 0.852 LO-Score for factual verification, and 0.644 final score for explanation evaluation. Our taxonomy shows that hallucination evaluation should move beyond detection toward localizing, verifying, and explaining factual errors. The code, dataset, prompts, and evaluation scripts are available at https://gitlab.com/nlpresearcher/HalluTruthQA."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "OLEDLM: A Unified Language Model for OLED Molecular Design",
+    "authors": "Fukang Wen, Yuchong Tang, Jingyuan Li, Beichen Wang, Yixuan Jiang, Xiaoyi Jiang, Yaxuan Liu, Shunyu Wang, Zuoqiang Shi, Yi Zhu, Yanan Zhu, Pipi Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20194v1",
+    "source": "arXiv",
+    "abstract": "The development of organic light-emitting diode (OLED) materials faces the compounded challenges of an astronomically large chemical space, stringent quantum-chemical constraints, and a scarcity of labeled data. Although the question of OLED generation is important, few models have been trained effectively for this specific domain. We propose an inverse molecular design framework based on causal language models: given target optoelectronic properties (e.g., excitation energy, oscillator strength), our model directly generates OLED SMILES sequences satisfying the specified constraints. We employ a multi-stage strategy: first, we establish a foundational chemical language model using a LLaMA-style transformer architecture. To the best of our knowledge, this represents the first successful adaptation of LLMs specifically for the OLED domain, bridging the gap between generic molecular generation and the stringent structural requirements of optoelectronic materials. Second, we fine-tune property predictors based on a BERT model pre-trained on our large-scale OLED dataset. Then, we perform Reinforcement Learning on our fine-tuned model, leveraging our property predictor, for better SMILES generation. Finally, through DFT verification, we demonstrate that our framework can efficiently navigate the OLED chemical space, generating novel candidates with high structural validity and optimized optoelectronic properties."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Multiparty Session Types for GDPR Purpose Compliance",
+    "authors": "Evangelia Vanezi, Dimitrios Kouzapas, Anna Philippou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20190v1",
+    "source": "arXiv",
+    "abstract": "The General Data Protection Regulation (GDPR) establishes purpose limitation as a fundamental constraint on personal data processing: personal data must be collected, stored, and processed strictly in accordance with explicitly specified purposes. Therefore, systems are required not only to declare the purposes under which personal data are processed, but also to ensure that their runtime behaviour remains aligned with the declared purposes. Yet, in mainstream software engineering practice, purposes are often treated as informal declarations, largely disconnected from system behaviour and, therefore, not amenable to rigorous reasoning about purpose compliance. This gap becomes particularly problematic in distributed systems, where personal data may flow across multiple entities and evolve through complex communication patterns. To address this challenge, recent works propose a more elaborate treatment of purposes based on structured, action-oriented representations of the data-processing interactions involved in their fulfilment. Building on these insights, we introduce a formal, purpose-aware framework grounded in multiparty session types in which purposes are modelled as structured interaction protocols among system entities. Within our framework, system implementations are specified using a process calculus that captures the semantics of distributed interactions and features private data as a first-class entity. Furthermore, we define a type system that verifies compliance between declared purposes and system models, and we establish subject reduction and purpose fidelity results, thereby ensuring that well-typed systems do not deviate from their specified purposes during execution. We demonstrate our approach through a case study involving a healthcare system. Ultimately, our objective is to evolve this formal framework into a software-engineering-oriented approach that unifies purpose modelling and compliance verification within a lifecycle-driven methodology, thus enabling a practically applicable privacy-by-design process."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Dynamic Logic with Parallel Operator for Verifying Communication Protocols",
+    "authors": "Luiz C. F. Fernandez, Mario R. F. Benevides",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20180v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we present a dynamic logic with parallel operators for the formal verification of authenticity and safety properties of cryptographic protocols. The logic incorporates communication actions and is specifically designed to reason about protocol executions in adversarial environments. We extend an existing dynamic logic with parallel operators by introducing concepts derived from the Dolev-Yao intruder model. As the underlying logic is completely axiomatizable, we obtain a complete axiomatization for the extended system. Furthermore, we develop a tableau calculus for the proposed logic and prove its termination, soundness, and completeness."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs",
+    "authors": "Xin Li, Siyuan Duan, Shang Wang, Zhimin Mao, Bingliang Hu, Geng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20116v1",
+    "source": "arXiv",
+    "abstract": "Global visual localization of unmanned aerial vehicles (UAVs) using remote-sensing reference maps has attracted increasing attention. However, acquisition-time and imaging-platform differences between UAV and reference imagery induce substantial cross-domain appearance and viewpoint shifts, challenging robust six-degree-of-freedom (6-DoF) pose estimation. We address these shifts by sampling UAV-viewpoint reference views from Google 3D Tiles across locations, altitudes, and orientations. A two-stage cross-domain fine-tuning recipe adapts SALAD using pose-near positives and geographically distant hard negatives, while local geometric consistency re-ranks the Top-K candidates. We further propose Retrieval-In-Matching (RIM), which freezes the adapted DINOv2-B retriever and distils a local-descriptor decoder that reuses its token field alongside a shallow VGG19 detail stream. One query-side DINOv2-B forward thus serves both SALAD retrieval and local description, eliminating a second foundation-model backbone while preserving retrieval descriptors by construction. We evaluate RIM zero-shot on the reconstructed EPFL Urbanscape and self-collected Chang'an Park datasets, both geographically disjoint from the training data. RIM outperforms ten recent retrieval baseline families. At 25/50 m under the full 3D distance metric, it improves Recall@1 over SALAD by 8.55/13.77 percentage points on EPFL and 4.45/8.94 points on Park. At Top-K=5, the complete measured localization query, including retrieval, candidate matching, and robust geometric verification, takes 67.9 ms end-to-end: 1.8 times faster than the strongest separate sparse-matching baseline and over 40 times faster than RoMa, while achieving comparable re-ranking accuracy. These results establish an efficient and deployable pipeline for UAV global visual localization in GNSS-challenged environments."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Order-2 Tightness of Block-Sparse SOS Relaxations for One-Layer ReLU Network Verification with a Matching Input-Sharing Graph",
+    "authors": "Godai Azuma, Sunyoung Kim, Makoto Yamashita",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20013v1",
+    "source": "arXiv",
+    "abstract": "Azuma, Kim, and Yamashita formulated the verification problem for one-layer ReLU networks as a quadratically constrained quadratic program and established tight semidefinite relaxations for the edgeless case and for one-unit settings. In this work, we represent the sharing pattern of undecided ReLUs over a box input set through an input-sharing graph and focus on the case where this graph is a matching. We then derive an explicit, checkable sufficient condition for the tightness of the order-$2$ block-sparse SOS relaxation associated with the connected-component decomposition of this graph. Under the matching assumption, the global problem decomposes into isolated-vertex blocks and single-edge blocks. The key difficulty, which is absent from the edgeless case, is establishing tightness for a two-unit edge block. For regular rank-one edges, we show that the convex hull of each two-unit local set can be described exactly by two reduced one-unit hulls coupled through a common shared scalar. Combining the one-unit tightness result of Azuma et al. with Farkas' lemma and affine elimination, we obtain a local order-$2$ certificate for each edge block. Isolated-vertex blocks reduce to one-unit problems over box input sets and are therefore handled at the same order. We prove that, when the input-sharing graph is a matching and every edge satisfies the regular rank-one condition, the order-$2$ block-sparse SOS relaxation is tight. This extends the tight sparse relaxation result for the edgeless case to the first sparse setting with a nontrivial two-unit interaction."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "What Does the Credential Still Certify? Cognitive Stewardship for AI-Mediated Education",
+    "authors": "Kai Yao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19988v1",
+    "source": "arXiv",
+    "abstract": "Generative AI is changing a basic premise of educational assessment: that submitted work can reliably evidence the human capacities a credential claims to certify. The challenge is not simply whether students use AI, but what remains inferable about learning when some cognitive work has been delegated to a system. This paper develops cognitive stewardship, a framework for AI-mediated assessment that links the learning claim, delegation boundary, evidence standard, and safeguards. We then audit verified public generative AI assessment guidance from 30 universities. Using a pre-specified scoring codebook--a written, source-grounded rubric--four open-weight LLM models applied the rubric as structured coders, with scores averaged to reduce dependence on any single model's bias. The audit shows that public policies are becoming better at classifying AI use than at explaining what evidence and protections preserve credential validity. Boundaries are more visible than evidence standards; safeguards are uneven; and guidance is clearest when AI use resembles final-output substitution rather than feedback, access, verification, or professional workflow. The takeaway is that permission categories are necessary but insufficient. Universities need policies that make the certification logic visible: what learners may delegate, what they must still demonstrate, and how institutions will protect fair evidence rather than merely monitor AI use."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "EvoThink: Evolving Thinking in Large Reasoning Models via Self-Pruning and Aha-Moment Preference Optimization",
+    "authors": "Xinbang Dai, Zheyu Xin, Huikang Hu, Lin Ren, Rihui Jin, Guohui Xiao, Guilin Qi, Kuicai Dong, Zhaocheng Du, Yuyang Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19962v1",
+    "source": "arXiv",
+    "abstract": "Large Reasoning Models (LRMs) often suffer from overthinking due to redundant verification steps. Existing approaches for mitigating overthinking, such as fast-slow thinking switching and reasoning trajectory compression, fail to make a fine-grained distinction between beneficial and redundant steps within the LRM's reasoning process, and may thus impair reasoning capability in their pursuit of efficiency. To simultaneously improve reasoning efficiency and capability, we propose EvoThink, a framework that reduces redundant verification and encourages the exploration of new reasoning paths. EvoThink comprises two key components: Self-Pruning Training (SPT), an unsupervised method that iteratively prunes redundant reasoning steps and self-trains on the concise trajectories; and Aha-Moment Preference Optimization (AMPO), which, inspired by genetic algorithms, identifies valuable failed reasoning attempts, synthesizes from-wrong-to-right aha-moment data, and optimizes the model to internalize this reasoning pattern. Extensive evaluations across mathematical reasoning and code generation benchmarks demonstrate that EvoThink not only substantially reduces inference-time token usage but also improves the reasoning capability of LRMs."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Towards Ultra-High Reliability in Wi-Fi 8: IEEE 802.11bn Core Mechanisms, mmWave Integration, and Performance Verification",
+    "authors": "Xiaoqian Liu, Ming Gan, Weijie Dai, Yuhan Dong, Calvin Chun-Kit Chan, Jian Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19931v1",
+    "source": "arXiv",
+    "abstract": "As the demand for wireless connectivity expands from high-speed data transmission to high-reliability applications, such as the Industrial Internet of Things and immersive communications, traditional Wi-Fi technologies optimized primarily for peak throughput face new challenges in reliability and latency. Consequently, Wi-Fi 8 aims to achieve ultra-high reliability (UHR), improve communication performance in complex environments, and drive the transition from high-speed connectivity to highly reliable intelligent connectivity. This article provides a comprehensive review of the core mechanisms of Wi-Fi 8 and conducts system-level performance verification. We focus on the key enhancement mechanisms at the physical (PHY) and medium access control (MAC) layers in IEEE 802.11bn, elaborating on their theoretical principles and key application scenarios. Additionally, this paper explores the potential role of integrated millimeter-wave (IMMW) technology as a complementary solution for spectrum expansion in the Wi-Fi 8 era, analyzing its basic architecture and implementation. Finally, system-level simulations are performed to verify the effectiveness of the key technologies in IEEE 802.11bn in achieving their performance targets, while further validating the robust performance of the IMMW scheme under practical hardware impairments."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "MTVDiff: Multimodal Conditional Latent Diffusion for Enhanced Thermal-to-Visible Face Translation",
+    "authors": "Zhiyuan Xia, Haojie Li, Jingyu Lin, Yiguo Qiao, Cunjian Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19886v1",
+    "source": "arXiv",
+    "abstract": "Thermal-to-visible face translation presents fundamental challenges including geometric discontinuities, semantic attribute mismatches, and identity degradation. We propose MTVDiff, a novel multimodal latent diffusion framework that synergistically integrates depth and textual information to address these limitations while preserving identity characteristics. The MTVDiff framework presents three core technical contributions: (1) a Dual-Branch Cross-Attention Fusion (DBCAF) module for multi-scale thermal-depth feature extraction and fusion; (2) a Gated Text-to-Visual Feature Alignment mechanism for semantically-guided generation; and (3) Spatial Feature Transformations (SFT) for adaptive multimodal prior integration. Extensive experiments on the MCXFace and SpeakingFaces datasets demonstrate that our multimodal approach significantly outperforms existing GAN-based and diffusion-based approaches across multiple metrics, achieving substantial improvements in both image quality and face verification performance, with FID reductions of up to 48.3% and Rank-1 accuracy improvements of up to 8.9\\%. Our work provides a robust solution for face recognition systems operating under varying illumination conditions and advances the state-of-the-art in cross-spectral facial image translation through effective multimodal integration."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+    "authors": "Jiazhen Jiang, Boxi Cao, Lingyong Yan, Yaojie Lu, Hongyu Lin, Shuaiqiang Wang, Dawei Yin, Xianpei Han, Le Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19865v1",
+    "source": "arXiv",
+    "abstract": "As autonomous agents rapidly evolve, their ability to reliably manipulate ubiquitous digital documents has become critical for enabling general-purpose AI assistants and automating complex workspace workflows. In this paper, we introduce DocOps, a deterministically verifiable evaluation framework underpinned by a hierarchical taxonomy that deconstructs document operations inspired by real-world practices into atomic dimensions and escalating workflow complexities. Based on DocOps, we systematically evaluate representative closed- and open-source models across various agentic harnesses, revealing that even the most advanced frontier configurations still exhibit profound limitations when handling highly coupled, long-range tasks. Furthermore, a fine-grained analysis of existing agents' manipulation behaviors uncovers 3 key failure modes: long-term state tracking collapse, shallow semantic verification, and destructive editing of structural metadata. Ultimately, our work exposes the capability boundaries of agents in maintaining global document consistency, shedding light on the future design of robust, non-destructive agents for complex digital ecosystems."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Clinical Pathways as Safety Specifications for Physical AI in Hospital Wards",
+    "authors": "Gabriele Franchini, Giulio Mallardi, Michele De Carolis, Filippo Lanubile",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19827v1",
+    "source": "arXiv",
+    "abstract": "Ensuring safety in Physical AI systems operating in real-world environments is a critical challenge, particularly in hospital wards where vulnerable patients, clinical staff, medical devices, and assistive robots coexist. In this paper, we reinterpret Clinical Pathways as explicit runtime safety specifications for embodied medical AI. We propose a conceptual robotic architecture that integrates wearable sensors, smart medical devices, and assistive robotic components into a unified framework for real-time safety monitoring. At its core, a Runtime Safety Monitor (RSM) evaluates multimodal physiological and system-level signals against clinically defined constraints derived from the prescribed care process. Rather than relying solely on statistical anomaly detection, the proposed approach combines temporal prediction, uncertainty-aware reasoning, and constraint-based verification to identify safety violations. The RSM targets three classes of events: physiological deviations from prescribed care, hardware and communication failures, and potential data tampering or misuse. This work contributes to Safe Physical AI by operationalizing domain-specific clinical knowledge as enforceable safety constraints, bridging learning-based perception and runtime safety monitoring to assist nursing staff in real-world hospital wards."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Towards Automated Formal Verification of zkEVMs Using LLM-Guided Constraint Synthesis",
+    "authors": "Shichen Huang, Zhenghe Jiang, Yi Jiang, Ling-I Wu, Jingyang Li, Guoqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19795v1",
+    "source": "arXiv",
+    "abstract": "Zero-Knowledge Ethereum Virtual Machines (zkEVMs) secure Ethereum rollups by generating zero-knowledge proofs that guarantee off-chain execution correctness. However, subtle implementation bugs (e.g., incorrect gas accounting) can lead to valid proofs certifying semantically faulty states, thereby silently defeating cryptographic guarantees. Formal verification via SMT solvers can prevent this, but is bottlenecked by specification: current zkEVM development practice lacks automated methods to translate Rust opcode handlers into verification models. Current practices rely on unsustainable manual specifications, while LLM-based approaches suffer from hallucination and lack formal guarantees. To address this, we propose VeriSynth, a framework that synthesizes executable Python/Z3 verification models from Rust zkEVM code. VeriSynth enforces a hybrid paradigm: an LLM acts strictly as a formalization frontend to translate code into symbolic constraints, while an SMT solver serves as the correctness arbiter. To handle complex multi-component state transitions, VeriSynth integrates semantic decomposition, retrieval-grounded prompting, and verification-guided auto-repair into a closed-loop pipeline. We evaluate VeriSynth on the first source-level zkEVM verification benchmark, encompassing both correct and faulty opcode implementations. VeriSynth achieves a bug detection rate of over 90%, substantially outperforming direct and conversational LLM baselines, as well as a production-grade handwritten mutation-testing suite. Ablation studies confirm that each pipeline component is critical to the framework's overall effectiveness."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Neuro-Symbolic AI for Korean Criminal Law: Sentencing Prediction and Document Drafting",
+    "authors": "Yeonseok Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19740v1",
+    "source": "arXiv",
+    "abstract": "The Korean criminal justice system utilizes summary proceedings (guyaksik) to expedite high-volume minor infractions, such as simple driving under the influence (DUI), unlicensed driving, and minor traffic casualties. Although this mechanism improves judicial throughput, processing these cases creates a substantial administrative burden for prosecutors, driving the need for automated systems that can precisely translate unstructured legal text into deterministic statutory outcomes. While recent Large Language Models (LLMs) excel at semantic extraction, their probabilistic nature inherently limits their reliability in Legal Judgment Prediction tasks. Specifically, when confronted with the arithmetic constraints of legal statutes, LLMs can produce hallucinations. Given that legal accountability permits virtually no tolerance for stochastic errors, purely neural architectures remain limited in their direct judicial applications. To address these limitations, we propose a Neuro-Symbolic framework that bridges unstructured legal facts with formal verification. Our architecture restricts the LLM exclusively to semantic extraction, while offloading statutory fine calculations to a Satisfiability Modulo Theories solver. This division of labor reduces hallucination risks during computation. Furthermore, we incorporate a Human-in-the-Loop verification scheme to preserve professional legal oversight. We formalize the 2026 Sentencing Guidelines for Traffic Offenses within this pipeline, demonstrating a deterministic approach to supporting summary indictments."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Foundations of Machine-Checked Control Theory in Lean",
+    "authors": "Moritz Doll, Iman Shames",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19727v1",
+    "source": "arXiv",
+    "abstract": "We introduce an open-source library for machine-checked control theory in the interactive proof assistant Lean to lay foundations for the verification of cyber-physical systems. To this end, as representative theorems, we present formalizations of Lyapunov stability theory and the small-gain theorem. First, the machinery employed for formalizing Lyapunov stability, i.e., neighborhood filters, allows stating a Lyapunov theorem that covers both points and sets and applies to continuous, discrete, and hybrid systems. Second, the small-gain theorem is proved via stating input-output systems as relations without the usual well-posedness assumption. The Lean formalization of each of these theorems is then presented. We conclude by discussing the library architecture and mentioning some of the other system theoretic results that are formalized in the library along with future plans."
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Multimodal Speaker Verification as a Threat to Speaker Anonymization",
+    "authors": "Ashi Garg, Cristina Aggazzotti, Leibny Paola García-Perera, Nicholas Andrews",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19636v1",
+    "source": "arXiv",
+    "abstract": "Most automatic speaker verification (ASV) systems operate on individual utterances, despite real-world interactions typically consisting of multiple utterances. As speech accumulates, increasingly rich speaker information becomes available through acoustic, prosodic, and linguistic cues, potentially challenging speaker anonymization methods that primarily target vocal characteristics. We investigate ASV in a multi-utterance, multimodal setting and examine whether aggregating information across anonymized speech impacts privacy. We first study audio-only aggregation across multiple anonymized utterances and observe consistent performance improvements as more speech becomes available. We then incorporate prosodic and linguistic information, showing that multimodal systems outperform unimodal approaches. Finally, we compare aggregation strategies and find that frame-level aggregation yields the lowest EERs. Even with only five anonymized utterances, combining audio and text reduces EER by over 15% relative to audio-only aggregation, demonstrating that substantial speaker-discriminative information remains accessible despite anonymization."
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Configuration-Driven RTL Port Initialization with LLM-Assisted Inference_supp1-3715577.pdf",
+    "authors": "praveen kumar vagala",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/mdat.2026.3715577/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "MARVEL: Multi-Agent RTL Vulnerability Extraction using Large Language Models",
+    "authors": "Luca Collini, Baleegh Ahmad, Joey Ah-kiow, Ramesh Karri",
+    "publish": "ACM Transactions on Design Automation of Electronic Systems",
+    "url": "https://doi.org/10.1145/3832325",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-22",
+    "title": "LLM-Empowered Agentic MAC Protocols: A Dynamic Stackelberg Game Approach_supp1-3712258.pdf",
+    "authors": "Rongpeng Li",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tmc.2026.3712258/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Titan Transients and LLM Scalability",
+    "authors": "Neil J. Gunther",
+    "publish": "Queue",
+    "url": "https://doi.org/10.1145/3819082",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-22",
+    "title": "A Binary Tree-Based Routing-Only Architecture for RTL-Designed FPGAs Using Addressable Configuration Memory",
+    "authors": "Tomoaki Sato, Anyu Murakami, Sorawat Chivapreecha, Phichet Moungnoul",
+    "publish": "2026 23rd International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI-CON)",
+    "url": "https://doi.org/10.1109/ecti-con68836.2026.11608576",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Multiplier-Free LLM Linear Layers via Weights-Only Power-of-Two QAT",
+    "authors": "Ikteder Akhand Udoy, Omiya Hassan",
+    "publish": "2026 IEEE International Conference on AI and Data Analytics (ICAD)",
+    "url": "https://doi.org/10.1109/icad69378.2026.11609079",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "AI- Powered Workflow Visualization from PDF Documents through LLM- Driven Automation",
+    "authors": "Mahima Jain, Jaya Dubey, Ankita Bhadoriya",
+    "publish": "2025 IEEE International Conference on Innovate for Humanitarian: Tech Solutions for Global Challenge (ICIH)",
+    "url": "https://doi.org/10.1109/icih67754.2025.11608459",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Rethinking Tabular Data Extraction: A Comparative Study of Traditional and LLM-Based Pipelines",
+    "authors": "Valerio Bellandi, Cristihan Peverelli, Stefano Siccardi",
+    "publish": "2026 6th International Conference on Machine Learning and Intelligent Systems Engineering (MLISE)",
+    "url": "https://doi.org/10.1109/mlise70044.2026.11607553",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "VeriAct-Agent: Evidence-Verified Tool Execution for Reliable LLM Agents",
+    "authors": "Chong Zhang, Jianan Sun, Ziyan Hu, Junqi Zhang, Yuxiao Wang, Zhenyu Yang",
+    "publish": "2026 6th International Conference on Machine Learning and Intelligent Systems Engineering (MLISE)",
+    "url": "https://doi.org/10.1109/mlise70044.2026.11607636",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Failure-Gated Hierarchical Memory: Preventing Memory Pollution in Long-Horizon LLM Agents via Critic-Guided Write Control",
+    "authors": "Qizhi Liu, Meng Wang, Jing Xie",
+    "publish": "2026 6th International Conference on Machine Learning and Intelligent Systems Engineering (MLISE)",
+    "url": "https://doi.org/10.1109/mlise70044.2026.11607496",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "MindRouter: Open-Source LLM Inference Gateway for Institutional AI Sovereignty",
+    "authors": "Lucas Sheneman",
+    "publish": "Proceedings of the Practice and Experience in Advanced Research Computing 2026: Resilient Roots + Empowered Communities",
+    "url": "https://doi.org/10.1145/3785462.3815861",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Quality-Driven Agentic Reasoning for LLM-Assisted Software Design: Questions-of-Thoughts (QoT) as a Time-Series Self-QA Chain",
+    "authors": "Yen-Ku Liu, Yun-Cheng Tsai",
+    "publish": "2026 IEEE International Conference on AI and Data Analytics (ICAD)",
+    "url": "https://doi.org/10.1109/icad69378.2026.11608706",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "CORALL: A COLREGs-Guided Risk-Aware LLM for Decision-Making in Maritime Autonomous Surface Ships",
+    "authors": "Klinsmann Agyei, Pouria Sarhadi, Wasif Naeem",
+    "publish": "IEEE Journal of Oceanic Engineering",
+    "url": "https://doi.org/10.1109/joe.2026.3703695",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-22",
+    "title": "STREAM: Multi-Tier LLM Inference Middleware with Dual-Channel HPC Token Streaming",
+    "authors": "Anas Nassar, Steve Mohr, Leonard Apanasevich, Himanshu Sharma",
+    "publish": "Proceedings of the Practice and Experience in Advanced Research Computing 2026: Resilient Roots + Empowered Communities",
+    "url": "https://doi.org/10.1145/3785462.3815847",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-22",
+    "title": "STREAM: Multi-Tier LLM Inference Middleware with Dual-Channel HPC Token Streaming",
+    "authors": "Anas Nassar, Steve Mohr, Leonard Apanasevich, Himanshu Sharma",
+    "publish": "Proceedings of the Practice and Experience in Advanced Research Computing 2026: Resilient Roots + Empowered Communities",
+    "url": "https://doi.org/10.1145/3785462.3815841",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-23",
+    "title": "“There Are Things I Can’t Ask People”: User Perceptions of LLM-Based Chatbot for Sexual and Reproductive Health in India",
+    "authors": "Sara Moin, Pushpendra Singh",
+    "publish": "Proceedings of the 2026 ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies",
+    "url": "https://doi.org/10.1145/3811242.3827556",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-23",
+    "title": "ModelAuflow༚ A Highly Scaffolded LLM-Orchestrated Framework for RF Passive Device Parameter Extraction",
+    "authors": "Chuhao Chen, Wangyong Chen, Minghui Dong, Linlin Cai",
+    "publish": "ACM Transactions on Design Automation of Electronic Systems",
+    "url": "https://doi.org/10.1145/3829374",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-23",
+    "title": "PHONON: Silicon-Photonic Network-on-Interposer for Energy-Efficient and High Performance LLM Inferencing",
+    "authors": "Gaurav Narang, ASHISH REDDY BOMMANA, Krishnendu Chakrabarty",
+    "publish": "ACM Transactions on Design Automation of Electronic Systems",
+    "url": "https://doi.org/10.1145/3831707",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-22",
+    "title": "A Comparative Study on LLM-enabled HPC User Support",
+    "authors": "Mingkai Zheng, Fangru Linghu, Sikan Li, Marty Charles Kandes, Niall Gaffney, Ian Foster, Zhao Zhang",
+    "publish": "Proceedings of the Practice and Experience in Advanced Research Computing 2026: Resilient Roots + Empowered Communities",
+    "url": "https://doi.org/10.1145/3785462.3815796",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-22",
+    "title": "Research on Power Emergency Knowledge Question Answering Methods Based on LLM GraphRAG",
+    "authors": "Baiju Yan, Xiyuan Xu, Cong Zou, Zeyu Liu, Zehao Zhang",
+    "publish": "2026 8th International Conference on Energy Systems and Electrical Power (ICESEP)",
+    "url": "https://doi.org/10.1109/icesep70386.2026.11607917",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
