@@ -1,0 +1,272 @@
+[
+  {
+    "date": "2026-07-23",
+    "title": "An integrated all-van der Waals nanobeam laser",
+    "authors": "Aris Koulas-Simos, Pietro Metuh, Athanasios Paralikis, Kartik Gaur, Maximilian Klonz, Imad Limame, Bárbara L. T. Rosa, Chirag C. Palekar, Battulga Munkhbat, Stephan Reitzenstein",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21566v1",
+    "source": "arXiv",
+    "abstract": "Transition-metal dichalcogenides offer a promising platform for integrated coherent light sources, yet lasing has largely relied on hybrid photonic architectures without direct quantum-optical verification. Here, we demonstrate an all-van der Waals (all-vdW) high-$β$ nanobeam laser based on a WS$_2$/MoSe$_2$/WS$_{2}$ heterostructure, with the MoSe$_2$ monolayer directly integrated in the WS$_{2}$-based optical resonator for optimal gain-mode overlap. The devices exhibit efficient exciton-cavity coupling at cryogenic temperatures, strongly directional and linearly polarized emission, soft nonlinear input-output characteristics and linewidth narrowing, enabling lasing operation with $β$ near unity. Excitation-power-dependent photon-autocorrelation measurements reveal a transition from thermal to Poissonian photon statistics, with $g_{\\mathrm{peak}}^{(2)}(0)$ decreasing from $(1.28\\,\\pm\\,0.09)$ near threshold to $(1.07\\,\\pm\\,0.07)$ above threshold, directly verifying lasing operation. Furthermore, temporal broadening of the autocorrelation uncovers fluctuation-dominated lasing dynamics. These results establish all-vdW heterostructures as a highly attractive platform for integrated coherent light sources in layered-material photonic architectures and scalable quantum-photonic circuits."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+    "authors": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21557v1",
+    "source": "arXiv",
+    "abstract": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context",
+    "authors": "Alagappan Valliappan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21535v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates autoregressive generation by having a cheap draft propose tokens that a target verifies in parallel. Frontier models increasingly ship a built-in Multi-Token-Prediction (MTP/NEXTN) draft head under the assumption that the draft is negligibly cheap. At million-token context this breaks: an MTP draft head typically runs full attention over the entire KV cache at every draft step, so its read grows linearly with context and comes to dominate the draft cost -- precisely where speculation is most valuable. The effect compounds with draft length (a deep native draft can turn net-negative, slower than no speculation) and sharpens under hybrid/linear-attention targets, where cheaper verification leaves the draft's full-attention read exposed. We apply a StreamingLLM-style sliding window plus attention sink to the draft's attention only (Windowed-MTP), leaving full-attention verification intact. It is training-free, drop-in, and lossless by construction: the full-attention target still decides every accepted token, so windowing changes only which tokens are proposed, never which are accepted. It bounds the draft's KV working set to a constant, dropping ~99% of KV entries at 1M. Across three architecture families (Qwen GDN-MoE 35B/122B and a Mamba2-hybrid NoPE 120B) at 1M context on a single GPU in SGLang, windowing cuts the per-decode-step cost over the shipping native MTP draft by +28% to +44%, an input-invariant margin that widens with context. Since per-token latency is this cost divided by acceptance length, at matched acceptance end-to-end decode latency improves by the same amount, and more where windowing also lifts acceptance, while preserving the target's verified output distribution. Finally, the unread draft KV -- 7.7-11% of total KV at 1M -- is reclaimed via a compact ring buffer at no acceptance or quality cost."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Benchmarking Agents for Proving Theorems in Quantum Algorithms and Quantum Information",
+    "authors": "Lei Zhang, Yusheng Zhao, Yimeng Cao, Ranyiliu Chen, Mingrui Jing, Jizhe Lai, Ziao Tang, Jingu Xie, Hongshun Yao, Xuanqiang Zhao, Guocheng Zhen, Chengkai Zhu, Xin Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21533v1",
+    "source": "arXiv",
+    "abstract": "Formal verification is becoming increasingly practical for quantum computing, yet the ability of AI agents to construct machine-checkable proofs in this domain remains unmeasured. We introduce Lean-QuantumAlg-Bench and Lean-QIT-Bench, two Lean 4 benchmarks containing 36 and 40 theorem-completion tasks for quantum algorithms and quantum information theory, respectively. Every task compiles in a fixed environment and is evaluated by deterministic proof checking and targeted semantic review, with difficulty weights assigned before model execution. We evaluate four models-GPT-5.5, Kimi K3, DeepSeek V4-Pro, and MiniMax M3-within a common theorem-proving framework under two settings: a task-only baseline and library-augmented deduction (LAD), which additionally provides access to a verified domain library. The highest difficulty-weighted scores are 60.4 out of 100 on the quantum-algorithm benchmark and 59.6 out of 100 on the quantum-information benchmark. LAD improves both score and completion rate in all eight model-benchmark comparisons, with gains of up to 15.9 points, providing evidence that verified libraries can strengthen domain-specific proof agents. The results reveal recurring weaknesses of agentic proving in areas such as quantum simulation, quantum learning, quantum information measures, and entanglement theory. Monetary and wall-clock costs per score point also vary substantially across models, highlighting important capability-efficiency trade-offs. We expect these benchmarks to establish a reproducible baseline for developing more capable and reliable proof agents, and to pave the way toward self-evolving AI scientists for advancing quantum information science."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+    "authors": "Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang, Hongwang Xiao, Zheng Liu, Lei Xiong, Jiahao Wang, Sen Wang, Xiyan Jiang, Wanli Li, Yuyang Hu, Hongjin Qian, Bingyu Yan, Ziyi Xia, Yingxia Shao, Kang Liu, Zhicheng Dou, Di He, Chaozhuo Li, Qiwei Ye, Zhongyuan Wang, Zheng Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21461v1",
+    "source": "arXiv",
+    "abstract": "Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering such answers is costly, whereas verifying a candidate can often be decomposed into tractable constraint-wise checks. This discovery--verification asymmetry suggests that a research agent should do more than simply search longer: it should recursively improve its current answer by verifying intermediate results and using the partially verified state to guide subsequent refinement. We introduce AREX, a family of Recursively Self-Improving (RSI) deep research agents. AREX alternates between an inner research loop that gathers evidence and constructs a provisional answer, and an outer self-improvement loop that audits the answer constraint-wise, identifies unresolved claims, and launches targeted follow-up research. To sustain RSI over long horizons, AREX learns an autonomous context-update tool that compresses growing interaction history into a compact improvement state preserving verified evidence and unresolved constraints, without relying on an external model. We train AREX on verified synthetic tasks and high-quality trajectories through agentic mid-training and long-horizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Diffusion posterior sampling enables zero shot kilometre scale wind forecasting over complex terrain",
+    "authors": "Yujiang Cai, Ya Wang, Shuanglei Feng, Bo Wang, Yiming Liu, Hui Yuan, Xinyi Sun, Haijie Li, Shenming Fu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21460v1",
+    "source": "arXiv",
+    "abstract": "Reliable prediction of near surface wind over complex terrain is limited by the mismatch between the spatial resolution of operational forecasts and terrain controlled local wind variability. Here, we develop KiloGen, a diffusion posterior sampling framework for kilometre scale wind forecast enhancement. KiloGen learns a high resolution vector wind prior from Weather Research and Forecasting (WRF) model simulations and constrains posterior sampling with 25 km forecasts from the European Centre for Medium Range Weather Forecasts (ECMWF) at inference time. This formulation avoids paired ECMWF and WRF training samples and an explicitly learned mapping from coarse to fine resolution. Applied over Shanxi, China, a region with complex mountainous terrain, KiloGen reconstructs terrain organized wind structures and restores high wavenumber variability while retaining the large scale evolution of the operational forecast. Station verification shows that KiloGen achieves the lowest overall wind speed root mean square error (RMSE) among the evaluated products, with larger benefits at elevated and topographically complex sites. The improvement is strongest under strong wind conditions, reducing RMSE by approximately 10% for observed winds above 20 m s^-1. Across 13 distinct strong wind events, KiloGen improves upon the 0.25 degree ECMWF forecast in all cases and outperforms the 0.1 degree ECMWF forecast in most cases. These results show that diffusion posterior sampling provides an effective approach for terrain aware kilometre scale wind forecast enhancement."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "pAI-Econ-claude: A Gated Human-in-the-Loop Multi-Agent Architecture for AI-Assisted Economic Theory Development",
+    "authors": "Chen Zhu, Xiaolu Wang, Weilong Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21268v1",
+    "source": "arXiv",
+    "abstract": "In many social-science research tasks, such as economics, LLM-based agents must produce outputs for which no cheap, task-complete, machine-readable correctness signal exists. This creates a distinctive reliability problem for multi-agent systems: how should generation, critique, coordination, and human judgment be organized when no component can certify the final result? We address this problem through pAI-Econ-claude, a gated, human-in-the-loop multi-agent architecture for AI-assisted economic theory development. Agents coordinate through a shared workspace of inspectable intermediate records; specialized gates diagnose targeted failure modes and recommend loopbacks without certifying correctness; and human checkpoints retain authority over decisions that are costly to reverse. We evaluate the architecture on five matched economic-theory tasks against an ungated baseline. Two evaluators blinded to configuration agreed on all five pairwise rankings, preferring the gated architecture in four tasks and the baseline in one. Mean failure severity fell from 1.58 to 1.16, while overall usefulness rose from 2.60 to 3.10. The largest observed gain occurred when a reality check rejected a false market-structure premise and a proof review prompted revision of a false welfare claim. The negative case shows that scaffolding can also compress an economically important mechanism too aggressively. The results support a bounded claim: gated oversight improves the auditability of AI-assisted economic theory without substituting for formal verification, and the allocation of irreversible human judgment is a more informative design variable than pure agent autonomy. The workflow is publicly available at https://github.com/maxwell2732/pAI-Econ-claude."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Delayed Constraints in Narrowing for the Logic-Based Analyses of Real-Time Systems",
+    "authors": "Santiago Escobar, Raúl López-Rueda, Carlos Olarte",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21205v1",
+    "source": "arXiv",
+    "abstract": "The formal analysis of real-time systems must address two dimensions of infiniteness: an unbounded number of agents and messages, and a potentially infinite state space induced by dense time. We present a novel narrowing-based verification method that deals with both dimensions. Our approach integrates (i) rewriting modulo SMT for symbolic representation of timing constraints, (ii) narrowing with logical variables to reason about systems with an unknown number of agents, and (iii) a constraint store over partially instantiated terms, in the style of constraint logic programming. We further introduce a folding mechanism that, under certain conditions, ensures termination of the symbolic analysis. The method has been implemented as an extension of the Maude rewriting engine. We evaluate the approach by verifying the correctness of a timed mutual exclusion protocol without imposing bounds on the number of participating processes. Moreover, we show that the framework uniformly supports the analysis of other real-time models, including parametric timed automata with unspecified components that our method can synthesize. Our results suggest that the proposed framework provides a sound and expressive basis for the symbolic verification of real-time rewrite theories."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Animation, Verification and Visualisation of Prolog Transition Systems with ProB",
+    "authors": "Jan Gruteser, Michael Leuschel, Katharina Engels, Fabian Vu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21192v1",
+    "source": "arXiv",
+    "abstract": "ProB is a Prolog-based model checker, animator and constraint solver for high-level formal specifications. One can also use ProB to animate transition systems defined by Prolog predicates, allowing the application of its various validation techniques. In this work, we present the existing features of ProB's Prolog animation mode and its recent extensions. The extended capabilities include simulation for statistical checks, more reliable trace replay, transitions with user input and improved state visualisation. We apply the new features to case studies, particularly for evaluating different strategies in game play, such as Connect Four. The features are useful for many other applications, especially for ProB's new sequent prover for Event-B proof obligations, as well as for demonstration models for teaching in combination with interactive visualisation."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "DTIF: Robust Loop Closure Detection via Delaunay Triangle Topology in Complex Forests",
+    "authors": "Xin Zhao, Jianping Li, Qin Zou, Fuxun Liang, Zhen Dong, Bisheng Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21138v1",
+    "source": "arXiv",
+    "abstract": "Accurate forest inventory and large-scale mapping are essential for ecosystem monitoring and sustainable forest management. Multiple low-cost edge platforms enable efficient large-area data acquisition, but merging independently constructed local maps in GNSS-denied understory environments still requires initialization-free loop closure detection and global registration. This task is challenging because low-cost LiDAR point clouds are sparse and noisy, while repetitive trunk layouts and the lack of distinctive geometric landmarks lead to severe perceptual aliasing and false correspondences. To address these issues, we propose DTIF (Delaunay Triangulation in Forests), a lightweight trunk-topology-based framework for forest loop closure detection and global registration. Tree trunks are first extracted as stable landmarks and encoded using a Delaunay topology for compact scene representation. Candidate submaps are then screened using edge-length and radius statistics, followed by edge--radius consistency verification and strong/weak vertex support aggregation to construct weighted vertex correspondences. Finally, topology-derived reliability weights are incorporated into a decoupled robust pose estimator that separately estimates yaw, horizontal translation, and elevation translation under gravity alignment. Experiments on simulated and real-world forest datasets demonstrate that DTIF achieves accurate registration with low computational overhead, providing a favorable balance among robustness, efficiency, and deployability on resource-constrained edge platforms."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Causal-AgentIR: Self-Evolving Causal Memory for Adaptive Image Restoration Agents",
+    "authors": "Hu Gao, Yulong Chen, Lizhuang Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21125v1",
+    "source": "arXiv",
+    "abstract": "Image restoration agents have recently emerged as a flexible paradigm for handling diverse and unpredictable degradations in real-world scenarios. Existing agents typically formulate restoration as a tool-using process, where the agent perceives degradations, searches candidate tools, executes restoration operations, and revises the plan through reflection or rollback. However, their knowledge is often stored as static tool descriptions, manually defined degradation priors, or unstructured textual summaries, which limits the accumulation, verification, revision, and forgetting of restoration knowledge over long-term experience. In this paper, we propose Causal-AgentIR, a hierarchical multi-agent framework with self-evolving causal memory for collective image restoration intelligence. Instead of representing restoration experience as isolated textual records, Causal-AgentIR organizes degradation patterns, image regions, restoration tools, actions, quality changes, and user preferences into a structured causal memory graph. This graph supports graph-based retrieval and multi-hop causal reasoning, enabling agents to infer how specific restoration operations or tool sequences affect restoration quality under different degradation conditions. The framework further organizes multiple agents into a collaborative system, including planning, degradation analysis, tool expertise, causal memory reasoning, outcome critique, and memory curation. Through this design, restoration experience can be added, updated, merged, reinforced, ignored, or discarded according to observed quality changes and feedback, allowing the agent to maintain reliable and transferable restoration knowledge. Extensive experiments demonstrate the effectiveness of the proposed framework."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "MVEI & EmObserver: Empowering MLLM-Oriented Visual Emotional Intelligence via Emotion Statement Judgement",
+    "authors": "Daiqing Wu, Dongbao Yang, Jiashu Yao, Hongrui Zhang, Can Ma, Yu Zhou, Sicheng Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21061v1",
+    "source": "arXiv",
+    "abstract": "Affective Image Content Analysis (AICA) aims to recognize and understand emotions elicited by visual content, representing an indispensable step toward Artificial General Intelligence (AGI). However, despite the rapid progress of Multimodal Large Language Models (MLLMs), systematic evaluation of their visual emotional intelligence remains largely absent from recent model releases. We attribute this gap to a structural mismatch between conventional AICA paradigms and the open-ended, instruction-driven nature of MLLMs, where further analysis reveals four major limitations: omission of plausible responses, limited emotion taxonomies, neglect of contextual factors, and labor-intensive annotation. To overcome these barriers, we introduce Emotion Statement Judgement (ESJ), a statement-verification formulation that preserves the expressiveness of the input space while constraining outputs to discriminative judgements. We further develop INSETS, a labor-efficient pipeline that instantiates ESJ at scale by constructing INSETS-462k and supporting MVEI, a rigorously refined benchmark spanning sentiment polarity, emotion interpretation, scene context, and perception subjectivity. Beyond evaluation, we build EmObserver, an emotion-oriented MLLM optimized on ESJ through an elaborate multi-stage recipe. Extensive evaluation of broad-spectrum MLLMs on MVEI reveals fine-grained insights into current artificial visual emotional intelligence, while experiments on multiple AICA benchmarks demonstrate the accuracy, generalization, and reasoning faithfulness of EmObserver. Collectively, these results establish ESJ as a practical formulation, MVEI as a comprehensive benchmark, and EmObserver as an advanced baseline for advancing MLLM-oriented visual emotional intelligence. Code will be released at: https://github.com/wdqqdw/EmObserver."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Achieving Text-based Person Retrieval with Any Granularity",
+    "authors": "Jialong Zuo, Hanyu Zhou, Dongyue Wu, Yongtai Deng, Mengdan Tan, Nong Sang, Changxin Gao, Xiang Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21057v1",
+    "source": "arXiv",
+    "abstract": "Text-based person retrieval faces a critical but under-explored challenge: the inherent uncertainty of query granularity in real-world scenarios. This paper introduces a new paradigm, Text-based Person Retrieval with Any Granularity, and provides a systematic solution. First, we formalize a five-level granularity spectrum and construct UFine6926-MG, a high-quality multi-grained dataset annotated comprehensively at all granularities via a novel Multi-grained Text Annotation Engine. Second, acknowledging that coarse queries naturally correspond to multiple valid candidates, we propose MG-Eval, a holistic evaluation benchmark with progressively detailed texts and cross-identity labels that reflect real-world semantics, alongside tailored evaluation metrics and protocols. Third, after a comprehensive diagnosis reveals the systemic limitations of existing research, we propose the Cross-modal Multi-grained Aligning and Matching (CMAM) framework. CMAM achieves granularity-aware retrieval through: 1) orthogonal-expert perception to disentangle granularity-specific features; 2) probabilistic alignment to model many-to-many matches under query uncertainty; and 3) granularity-consistent reasoning to steer feature learning via joint cross-modal granularity verification. Experiments demonstrate that CMAM significantly outperforms state-of-the-art methods across all granularity levels. This work establishes a foundational benchmark and a robust baseline, paving the way for more practical person retrieval systems."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "ZONDA: Zero-shot Object Navigation with Dynamic Avoidance in Multi-floor Environments",
+    "authors": "Shaomin Liang, Xuanhong Liao, Shiyao Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21025v1",
+    "source": "arXiv",
+    "abstract": "In Object Goal Navigation task, existing methods are typically restricted to static and single-floor environments, ignoring cross-floor topologies and dynamic pedestrian, which limits their real-world deployment. To address these limitations, we propose ZONDA, a zero-shot object navigation with dynamic avoidance framework. In particular, ZONDA integrates three core components: (i) Heuristic multi-floor planning: from height-difference traversable maps, enables stair traversal and cross-floor exploration without a platform-specific learned controller; (ii) Multi-view target verification: cross-checks multi-scale observations with a vision-language model, significantly reducing false positives; and (iii) Dynamic pedestrian avoidance: explicitly tracks and predicts moving pedestrians to generate anticipatory behaviors. Evaluated on a real Direct Drive Tech TITA biped robot and extensive simulations on HM3D and MP3D, ZONDA achieves significantly improved results. Moreover, ZONDA can maintain robust navigation on the dynamic benchmark HM3D-DYNA compared to the existing baseline."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Explainable Deepfake Detection Challenge",
+    "authors": "Abhijeet Narang, Kartik Kuckreja, Shreya Ghosh, Muhammad Haris Khan, Usman Tariq, Jianfei Cai, Abhinav Dhall",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21007v1",
+    "source": "arXiv",
+    "abstract": "Deepfake detection is moving beyond binary classification decisions toward systems that can also explain the visual evidence supporting those decisions. This transition is important for real-world verification settings, where diverse users need to understand not only whether an image is manipulated, but also why it is considered suspicious. The Explainable Deepfake Detection Challenge at ACM Multimedia 2026 is designed to benchmark this joint capability. Built on XPlainVerse, a million-scale benchmark for explainable deepfake detection, the challenge evaluates methods on image classification and grounded natural-language explanation generation. Participants submit a real/fake label together with two explanations for each image: a detailed complex explanation for technical users and a concise simple explanation for general users. The evaluation combines classification metrics with semantic similarity, simplicity, and intent-aware grounding metrics that assess whether explanations identify the relevant manipulated entities and supporting visual evidence. The methodologies developed through the challenge will contribute to the development of next-generation explainable deepfake detectors. Evaluation script, baseline models, and accompanying code are available on https://github.com/Abhijeet8901/XPlainVerse-ACMChallenge."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Best-of-Evidence: Best-of-N Selection under Partial Verification",
+    "authors": "Cenwei Zhang, Teng Fang, Yuxia Wang, Derek Li, Bryan Dai, Lei You",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20950v1",
+    "source": "arXiv",
+    "abstract": "BoN improves model outputs by sampling several candidates and selecting one with a proxy score, but it assumes that complete candidates can be evaluated reliably. Many vision-language tasks instead provide only partial verification: a finding, span, value, region, or relation may be checkable even when no dependable whole-response verifier exists. Moreover, the same claim may recur across candidates with opposing stances, allowing one observation to support part of the pool and contradict another. We introduce Best-of-Evidence (BoE), an inference-time selection framework that keeps the BoN candidate pool fixed, represents reusable claims with a signed candidate--factor graph, and allocates a limited budget to evidence actions that can change the final choice. BoE formalizes selection under partial verification and provides a practical score-based controller, with the zero-budget case recovering the underlying BoN decision. Theoretically, we show that residual evidence capacity limits any evidence-driven improvement and that shared factor queries can achieve an O(log K) versus Θ(K) query separation in a factor-code model. Common-ledger experiments on four medical VQA settings show that BoE can improve fixed-pool selection and rescue some BoN failures when evidence is reliable, contrastive, and decision-relevant, while also revealing the channel-quality and candidate-generation limits that prevent universal gains."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Traceable Scholarship: Page Anchors and Ariadne's Thread for Humanistic Inquiry in the Age of Generative AI",
+    "authors": "Deyu Jing",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20916v1",
+    "source": "arXiv",
+    "abstract": "Generative AI lets large language models produce scholarly-looking text within seconds, yet fluency does not equal valid explanation. The deepest risk is not factual error alone but the appearance that an explanation is already established without clear sources, page numbers, editions, or evidence. We liken the page anchor to Ariadne's thread: within the labyrinth of generative fluency, it is the thread that leads the scholar back to the source. This paper proposes Traceable Scholarship as the minimum normative condition for AI-assisted humanistic research, situating it across the three revolutions of knowledge infrastructure: print, digital, and generative AI. We introduce page anchors, dual page numbers, citation-first generation, NO_EVIDENCE, human verification, four-level compliance, and Scope Contract, and present AIH-Infra as a three-layer reference implementation: Contexture (document structuring), Open WebUI AIH-Infra (traceable knowledge base), and AIH-Infra MCP Server (agent gateway). A case study on a 29-volume Kant Akademie-Ausgabe knowledge base illustrates how traceability supports retrieval correction, evidence grading, and judgment downgrading. Traceability is not a software feature; it is the condition under which humanistic research can remain public and refutable in the age of generative AI."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+    "authors": "Tencent WorkBuddy Bench Team, Siqi Cai, Shaopeng Chen, Xiang Fei, Yong Mao, Zihan Xu, Zhiheng Lyu, Zhijian Shao, Yuchen Shi, Shuwen Zhang, Chaofan Qiu, Linjie Che, Xiaoxi Zhao, Feng Wu, Kai Zhang, Chaofan Zhu, Yubin Qi, Xiaoyun Liang, Peijie Dong, Yunhao Zhang, Yuanjie Zhu, Ling Jiang, Xianjun Zhang, Zhehang Chu, Anyuan Sang, Zhen Feng, Sen Nie, Shi Wu, Yuanzhen Xu, Xin Li, Ning Yang, Zhiqiang Dong, Hande Dong, Qiang Lin, Yi Liu, Yunsheng Wu, Ke Li, Xing Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20911v1",
+    "source": "arXiv",
+    "abstract": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard. At its core is a unified evaluation framework for constructing and running distribution-informed coding-agent tasks across four work domains - Code, Web, Office, and Security. Rather than adapting public issue text, every task is reverse-engineered from a real commit, pull request, or business scenario and rewritten as a short, colloquial, role-played request, so that a task's prompt is not recoverable by web-searching the underlying issue, pull request, or commit thread. Because the dataset is released openly - task directories, environment images, evaluation harness, tests, and reference solutions - contamination resistance rests on this construction together with dataset versioning rather than on secrecy. The four subsets - repository-level engineering, front-end development, office and business workflows, and red-/blue-team security - probe complementary facets of real work, each with its own verification style. All are packaged in a uniform task-directory format and run, under a uniform and reproducible protocol, on two agent harnesses (CodeBuddy Code and Claude Code); the full open release makes the benchmark reproducible end to end and directly auditable, since any third party can re-run each task and inspect its content. Because each subset uses a different scoring instrument, scores are not comparable across subsets and the suite reports no suite-wide average. We report a cross-model leaderboard across several model families."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Is Deep Research Reliable? Misleading Knowledge Induces False Conclusions",
+    "authors": "Pengyu Zhu, Lijun Li, Longju Yang, Sen Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20891v1",
+    "source": "arXiv",
+    "abstract": "Deep Research agents extend LLM-based assistants into long-horizon workflows involving planning, retrieval, evidence synthesis, and report generation, yet their reliability in open information environments remains underexplored. A key concern is whether apparently credible but factually misleading knowledge encountered in such environments can propagate through these workflows and be adopted as false conclusions in final reports. To study this failure mode, we introduce MisKnow-Agent, a framework for constructing and validating misleading knowledge for Deep Research tasks. MisKnow-Agent generates misleading instances with controllable authority levels and styles, yielding 5,933 quality-controlled instances built on DeepResearch Benchmark tasks. Extensive experiments across open-source and closed-source Deep Research agents show that even limited exposure to misleading knowledge can induce false-conclusion adoption in final reports, revealing a broad reliability vulnerability in current Deep Research agents. Although search-enabled verifier models consistently identify the retained instances as misleading during focused corpus validation, the same instances can still be adopted during long-horizon research, revealing a disconnect between focused verification and workflow-level evidence use. Finally, we evaluate pre- and post-research defenses, both individually and in combination, finding that all three configurations mitigate but do not fully prevent false-conclusion adoption. Our findings suggest that reliable Deep Research requires evidence verification and correction capabilities at both the model and framework levels, beyond improvements in planning, retrieval, evidence integration, or report-generation abilities."
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Agentic Designer: Progressive Multi-Agent Collaboration for Structure-Aware Interior Layout Generation",
+    "authors": "Zhijing Yang, Haocheng Lin, Zhihua Xu, Haojie Li, Keze Wang, Liang Lin, Tianshui Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.20866v1",
+    "source": "arXiv",
+    "abstract": "Generating realistic interior furniture layouts that strictly adhere to architectural constraints (e.g., walls, doors, and windows) remains a fundamental challenge in automated spatial design. Existing approaches, primarily based on one-shot generation using diffusion models or Large Language Models (LLMs), lack explicit mechanisms for intermediate geometric constraint verification, often resulting in structural collisions and functionally infeasible arrangements under complex room constraints. To address these challenges, we propose Agentic Designer, a progressive, multi-agent framework that formulates structure-aware interior layout generation as an iterative and constraint-verified decision process. By decomposing layout synthesis into modular stages of proposal, verification, and adjustment, the framework coordinates three specialized agents, a Generator, an Evaluator, and a Refiner, through a Progressive Consensus Mechanism. This mechanism enforces stepwise geometric validation and correction before each placement is committed, thereby preventing error accumulation. To facilitate this structure-aware paradigm and standardize evaluation, we establish InStruct, a comprehensive benchmark that integrates a dataset comprising over 18,000 high-quality, parametrically annotated samples with a novel suite of structure-centric metrics. Extensive quantitative evaluations, qualitative analyses, and user studies show that Agentic Designer significantly outperforms state-of-the-art methods, demonstrating substantial improvements in strict structural adherence and functional design coherence."
+  },
+  {
+    "date": "2026-7-24",
+    "title": "GBC: GameScript Generation Using BERT Classification : Enhancing Interactive Narratives with LLM",
+    "authors": "Jiahua Zhang",
+    "publish": "2024 International Conference on Quantum Information and Quantum Computing (QIQC)",
+    "url": "https://doi.org/10.1109/qiqc63873.2024.00033",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "Intent-Driven GraphRAG for LLM-Based Analysis of Online Conversations",
+    "authors": "Arbër Ceni, Alda Kika",
+    "publish": "2026 18th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+    "url": "https://doi.org/10.1109/ecai69016.2026.11613653",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "LLM-based Automated Architecture View Generation: Where Are We Now?",
+    "authors": "Miryala Sathvika, Rudra Dhar, Karthik Vaidhyanathan",
+    "publish": "2026 IEEE 23rd International Conference on Software Architecture (ICSA)",
+    "url": "https://doi.org/10.1109/icsa66085.2026.00031",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "LLM-Guided Reinforcement Learning for Service Orchestration Under Demand Shifts",
+    "authors": "Hani Sami, Ahmad Hammoud, Azzam Mourad, Hadi Otrok, Jamal Bentahar",
+    "publish": "2026 International Conference on Smart Mobility (SM)",
+    "url": "https://doi.org/10.1109/sm69703.2026.11614151",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "From Entity Mentions to Tone: An LLM-Based Pipeline for Media Bias Analysis",
+    "authors": "Klesti Hoxha, Olti Qirici",
+    "publish": "2026 18th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+    "url": "https://doi.org/10.1109/ecai69016.2026.11613638",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "Can an LLM Detect Instances of Microservice Infrastructure Patterns?",
+    "authors": "Carlos Eduardo Duarte, Neil B. Harrison, Filipe Figueiredo Correia, Ademar Aguiar, Pavlína Gonçalves",
+    "publish": "2026 IEEE 23rd International Conference on Software Architecture (ICSA)",
+    "url": "https://doi.org/10.1109/icsa66085.2026.00010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "An Agentic Multi-Modal Unstructured Data Preprocessing Framework with LLM-Guided Orchestration and Quality-Driven Validation",
+    "authors": "Amodhya Silva, Lakmini Abeywardhana, Amanda Arangalla, Lavindi Endera Arachchi, Nanduni Weerakoon, Jeramin Radesh Hillary",
+    "publish": "2026 18th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+    "url": "https://doi.org/10.1109/ecai69016.2026.11613591",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "Design Requirements for LLM-Based Assistive Tools for Parents and Educators Supporting Autistic Learners: A Qualitative Requirements Analysis in the Indian Context",
+    "authors": "Theakanath Steffy Burly, Adithya Divakaran, J. Sophie von Lieres, Miriam Silverman",
+    "publish": "2026 18th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+    "url": "https://doi.org/10.1109/ecai69016.2026.11613723",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "Decision-Level Fusion of One Class Detectors for Zero Trust Continuous Verification",
+    "authors": "Robert Cristian Robu, Constantin Viorel Marian, Alexandru Petrisor Cioponea",
+    "publish": "2026 18th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+    "url": "https://doi.org/10.1109/ecai69016.2026.11613717",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-24",
+    "title": "An Automated Modular System for Unannounced Metrological Verification of Time and Distance Parameters in Road Transport, with Robotic Assistance and IoT Functionalities",
+    "authors": "Catalin Buse, Simona Stoica",
+    "publish": "2026 18th International Conference on Electronics, Computers and Artificial Intelligence (ECAI)",
+    "url": "https://doi.org/10.1109/ecai69016.2026.11613635",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
