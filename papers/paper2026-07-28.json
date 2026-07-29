@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-28",
+    "title": "INTACT: Isomorphic Intent-to-Action Learning for Search-Free World Models",
+    "authors": "Junhan Sun, Hao Zhao, Guofeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26056v1",
+    "source": "arXiv",
+    "abstract": "Forward latent world models predict how actions change a scene, but recover actions for a desired change only through expensive test-time search. We introduce INTACT (INtent-To-ACTion), an end-to-end JEPA that turns action-labeled, reward-free trajectories into a deployable intent-to-action interface. Each transition supplies physical intent $z_{t+1}-z_t$, while a future goal supplies deployment intent $\\operatorname{sg}(z_g)-z_t$. The architecture is isomorphic between the local and goal motion-intent backbone-input graphs through an identical four-slot grammar and shared parameters, and between supported local and goal motion-intent families through action-law semantics induced by the same predictor rather than pointwise latent equality. INTACT also provides intact transfer from RGB evidence to action-effective latent intent coordinates and from intent families to their corresponding action-law families. Asymmetric endpoint gradients ground physical successors and fix future goals as anchors, joining representation learning and control without pointwise latent matching or globally linear dynamics. The resulting coordinates support a robust distributional action law: its conditional mean serves directly as a search-free policy, while sampling remains available for diversity or optional verification. On the four official LeWM tasks, one-epoch, zero-search models reach 85.78\\%, 100.00\\%, 97.67\\%, and 97.89\\% success. Optional local CEM centered on the Direct plan reaches 96.86\\% macro success using 384 instead of 9,000 candidate sequences, reducing sampling by $23.44\\times$ while improving pure CEM by 16.00 points. One shared four-task encoder reaches 89.39\\% E5 Direct macro and improves every task over jointly trained LeWM, while predicted--expert action-family kNN tracks Direct success at $r=0.954$. Direct inference takes 2.9--5.5 ms."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Photonuclear Neutron Production in OpenMC: Verification Against MCNPX, FLUKA, and a First-Collision Analytical Solution",
+    "authors": "Lorenzo Loi, Andrea Missaglia, Carolina Introini, David Breitenmoser, Shaun D. Clarke, Sara A. Pozzi, Antonio Cammi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26045v1",
+    "source": "arXiv",
+    "abstract": "The modeling of photonuclear reactions is increasingly important for applications involving high-energy photon fields, including accelerator-driven neutron sources, radiation shielding, medical physics, and fusion technologies. Although the Monte Carlo code OpenMC provides well-verified photoatomic transport capabilities, its photonuclear physics is currently available only in an unofficial development branch and requires independent verification before broader scientific use or possible integration into the official code distribution. This work presents a systematic verification of the OpenMC photonuclear implementation using six single-collision broomstick benchmarks based on 2H, 9Be, and 238U targets irradiated by monoenergetic 5 MeV and 15 MeV photons and by a continuous 1--20 MeV linear accelerator (LINAC)-representative spectrum. OpenMC was compared with MCNPX using common ENDF7u photonuclear data, with FLUKA using its native photonuclear models, and with a first-collision analytical solution for the integrated neutron yield. Calculations using the IAEA/PD-2019 library were also performed to quantify nuclear-data sensitivity. OpenMC and MCNPX agreed within 0.7% in integrated neutron yield for all benchmark cases when the same ENDF7u data were used. FLUKA, which relies on its own native photonuclear models rather than ENDF7u, differed from the analytical solution by approximately 6-9% for the monoenergetic cases and by no more than approximately 4% for the continuous-source cases. Changing the OpenMC library to IAEA/PD-2019 produced deviations of up to 11.3% from the ENDF7u-based analytical solution, with the sensitivity varying strongly by nuclide and source spectrum."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+    "authors": "Abhishek Pillai, Samir Kumar Nayak, Yuan Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26041v1",
+    "source": "arXiv",
+    "abstract": "Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for rejecting stale observations, verifying progress, and recovering from failure. This is difficult because inference, remote input, app rendering, and screenshot capture are asynchronous: the next observation may be delayed, occluded, transient, or unrelated, then misread as progress and carried into subsequent planning. We introduce Desktop-Delta Bench (DDB), an offline step-level benchmark with 2,013 human-verified instances from novel, multi-app Linux trajectories across ~15 applications and 50 task domains. DDB trajectories targets 3 failure dimensions- state verification, source tracking, and context-aware control- through 2 complementary tasks: 463 3-frame temporal-ordering instances, including 105 with a cross-trajectory decoy, and 1,550 before-after pairs labeled from 5 actions + its payload. We evaluate 8 closed and open-source model families across 32 ordering and 16 single-action settings, observing consistent gaps. Ordering remains unsaturated: best non-decoy and decoy exact-match rates are 65.1% and 65.7%. Task context improves decoy identification by 6.9 percentage points but reduces non-decoy exact match by 2.2 points; error analysis reveals systematic copying of the presented A-B-C order. Single-action results show that inferring the action family is harder than locating it: click F1 is 0.96 vs, 0.76 for drag, while recognized drags are generally localized well. DDB, thus, complements end-to-end benchmarks by filling the missing diagnostic layer between GUI grounding and final task success, enabling targeted improvements to desktop CUA verification, reliability, and recovery."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Observable Estimation in the Absence of Classical Verification",
+    "authors": "Samantha V. Barron, Bradley Mitchell, Vinay Tripathi, Francesco Grieco, Ilan Rosen, Francesca Pietracaprina, Davide Materia, Alireza Seif, Darvin Wanisch, Ramón L. Panadés-Barrueta, Ewout van den Berg, Jay-U Chung, Andrew Eddins, Sam Ferracin, Guillermo García-Pérez, John Goold, Luke C. G. Govia, Holger Haas, Ian Hincks, Jesse C. Hoke, Zoë Holmes, Su-un Lee, Youngseok Kim, Swarnadeep Majumder, Sabrina Maniscalco, Simone Montangero, Daniel Puzzuoli, Tomaž Prosen, James Raftery, Ricardo Rivera Cardoso, Max Rossmannek, Manuel Rudolph, Brendan Saxberg, Liran Shirizly, Karthik Siva, Joshua Skanes-Norman, Ilaria Siloi, Kevin C Smith, Boris Sokolov, Maika Takita, Yanting Teng, Mao Tian Tan, Joseph Tindall, Zoltán Zimborás, Matteo A. C. Rossi, Minh C. Tran, Sergei N. Filippov, Abhinav Kandala",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25998v1",
+    "source": "arXiv",
+    "abstract": "The predictive success of quantum mechanics underpins many areas of modern science, even as the exact simulation of large, interacting quantum systems remains beyond the reach of classical computation. This success has been enabled by the remarkable advancement of scalable numerical approximation methods, which often demonstrate practical accuracy despite the absence of formal guarantees. As quantum simulation pushes into regimes where these approximations struggle, a fundamental challenge arises: How can quantum outcomes be trusted when reliable classical benchmarks are unavailable? Here, we establish a framework for the independent validation of quantum estimates in this setting and present evidence that they provide the most credible result among several considered methods, in the absence of an immediately accessible ground-truth solution. We apply our framework to the semi-scrambling dynamics of a physical model that strains several leading classical simulation methods yet remains experimentally accessible, in part through our introduction of the \\textit{operator Loschmidt echo}. We systematically design a series of experiments using quantum heuristics that, taken together, test the underlying assumptions and provide strong confidence in the observable estimates obtained from the quantum computer. We then show how this framework can be extended to place accuracy bounds on quantum estimates via careful characterization and manipulation of the device noise, transforming the problem of validating the observable estimation to validating the noise model. These results establish a route towards trusted quantum computation for scientific discovery, independent of classical verification."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
+    "authors": "Mingqiao Ye, Zhaochong An, Zhitong Gao, Xian Liu, François Fleuret, Chuan Li, Amir Zadeh, Serge Belongie, Afshin Dehghan, Jesse Allardice, David Mizrahi, Oğuzhan Fatih Kar, Roman Bachmann, Amir Zamir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25948v1",
+    "source": "arXiv",
+    "abstract": "Any-to-any models predict any modality from any combination of others within a single network, a formulation used in multimodal vision and vision-language models, and increasingly in scientific domains such as ecology and astronomy. Existing any-to-any models are typically trained from scratch using encoder-decoder or diffusion architectures, impacting their performance and preventing them from using strong pre-trained decoder-only models as a prior. In this work, we investigate decoder-only any-to-any multimodal modeling, which treats all modalities symmetrically and supports arbitrary modalities as inputs and outputs without modality-specific heads, losses, or task pipelines. Because every modality is both an input and an output of the same model, the resulting model, named Modus, can support a range of applications, such as chained generation through intermediate modalities or cross-modal self-verification by scoring the model's own outputs with another generated modality. Modus demonstrates strong out-of-the-box performance and is competitive with specialist and multitask baselines using a single model across various benchmarks. All materials are open-sourced at https://modus-multimodal.epfl.ch/."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification",
+    "authors": "Chenrui Shi, Yuwei Wu, Yang Liu, Ruining Feng, Zirui Shang, Zhi Gao, Lifeng Fan, Che Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25904v1",
+    "source": "arXiv",
+    "abstract": "Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction. Automated GUI task evaluation has received increasing attention because the evaluation results can serve as reward signals for both test-time scaling and post-training. However, reliable GUI task evaluation remains challenging because the judgments often require access to environment states, such as system configurations, file data, and application settings, beyond the screenshots of execution trajectories. In this paper, we propose an interactive reward agent (IRA) based on a propose-then-verify framework to acquire and verify evidence from the post-execution environment. Given a task instruction and a GUI environment after the GUI agent execution, IRA first proposes the task completion conditions and then verifies them by invoking system tools, application tools, and GUI tools. This design combines evidence from both visible interfaces and the environment state in an interactive process. We further introduce GUI-RewardBench, a benchmark of 321 GUI task trajectories spanning 10 Ubuntu desktop application categories. Experiments show that IRA achieves 86.9% accuracy on GUI-RewardBench, outperforming existing evaluator baselines. We further apply IRA to reinforcement learning of GUI agents, achieving a 34.0% OSWorld success rate, which demonstrates that IRA can provide effective reward signals for training GUI agents."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "AngelSpec: Towards Real-World High Performance Inference with Speculative Decoding",
+    "authors": "Hong Liu, Rui Cen, Junhan Shi, Guangshuo Qin, Jiebin Zhang, Tianyu Liu, Runzhi Fan, Guoliang Zhao, Ruobing Xie, Kai Zhang, Song Liu, Guanghua Yu, Jianchen Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25852v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates large language model inference without changing the target distribution, but no single drafting structure performs best across real-world workloads. Autoregressive multi-token prediction (MTP) is a lightweight, stable proposal mechanism, whereas block-parallel diffusion amortizes drafting latency over much longer candidate sequences; the better choice depends strongly on the output distribution. We present AngelSpec, a unified training framework for MTP and block-parallel speculative decoding that addresses this heterogeneity at three levels. At the training level, rather than fitting one universal drafter to a uniform data mixture, we co-specialize structure and data: the MTP drafter is trained on diverse conversational data for high-entropy open-ended chat, and the block-diffusion drafter on code and mathematics data for longer predictable continuations. At the architecture level, we propose DFly, a block-diffusion framework combining a hybrid target-conditioning backbone with a predecessor-conditioned autoregressive head, improving target-feature utilization and intra-block dependency modeling while keeping generation parallel. At the inference level, both acceptance length and verification cost vary with domain, request, online load, and hardware, so DFly treats verification as a shared batch-level resource: it reallocates compute toward high-confidence prefixes across requests and combines expected utility with a profiled cost model to adapt verification depth online. Across the Hy3 series, DFly raises the average accepted length on Hy3-A21B by roughly 30% and attains the highest average throughput at every tested concurrency from 4 to 64, a 1.98-2.40x speedup over autoregressive decoding and 10.5-11.8% higher throughput than DFlash. We release AngelSpec to support training and extending these methods."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "CHILL-Harness: Counterfactual Harness Learning for Efficient Reasoning in Long-Horizon Agents",
+    "authors": "Jiarun Fu, Lizhong Ding, Sida Chen, Honglei Xin, Chunhui Zhang, Pengqi Li, Qiuning Wei, Ye Yuan, Guoren Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25825v1",
+    "source": "arXiv",
+    "abstract": "Agent harnesses have become the operational infrastructure of modern large language model agents, coordinating context, tools, verification, and execution control to translate latent model capability into reliable long-horizon behavior. However, reliable long-horizon behavior requires harness control to adapt to task demands, execution environments, and evolving execution states, whereas current harnesses predominantly rely on hand-crafted or globally fixed policies; this mismatch manifests as unnecessary computational overhead and, in adverse cases, reduced task success. To address this limitation, we formulate the task of enabling adaptive orchestration in harness systems as a causal learning problem and propose Counterfactual Harness Intervention Learning for Long-Horizon Agents (CHILL-Harness). CHILL-Harness intervenes at the orchestration layer to enable advantage-guided workflow adaptation, thereby improving reasoning and execution efficiency while preserving task performance. Specifically, we develop causal intervention effect learning as the effect-estimation component of CHILL-Harness to estimate intervention-relative workflow advantage from confidence-weighted execution evidence and identify advantageous workflow adaptations. We further introduce advantage-realizing causal orchestration as its realization component to adaptively allocate counterfactual reasoning and realize only workflow adjustments supported by sufficient expected advantage. Finally, we incorporate a success-preserving objective and advantage-margin authorization constraints into CHILL-Harness to promote reliable adaptation. Extensive experiments on heterogeneous long-horizon tasks spanning information seeking, software engineering, and terminal interaction show that CHILL-Harness consistently preserves or improves task success while substantially reducing token consumption and execution time."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Verification of Provers and Solvers",
+    "authors": "René Thiemann",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25793v1",
+    "source": "arXiv",
+    "abstract": "Automatic deduction tools such as automatic theorem provers, SAT (satisfiability) solvers, SMT (satisfiability modulo theories) solvers, and termination analyzers can be connected to proof assistants using various approaches, notably by certification and verification. This chapter reviews and compares the approaches available, and mentions several successful applications."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Towards Faithful Sentimental Image Captioning via Evidence-Aware Multi-Agent Reasoning",
+    "authors": "Tiecheng Cai, Zexian Yang, Chao Chen, Shanshan Lin, Xiangwen Liao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25789v1",
+    "source": "arXiv",
+    "abstract": "Sentimental Image Captioning (SIC) requires balancing emotional expression with visual fidelity. Existing methods often struggle with this trade-off, leading to hallucinations due to insufficient local grounding and the lack of sentimental verification mechanisms. To address these limitations, we propose SEA-Cap, a Sentiment-Evidence-Aware Multi-Agent System for faithful and evidence-grounded sentimental image captioning. SEA-Cap incorporates a Sentiment Evidence Miner that extracts structured, local affective cues to shift sentiment control from global attributes to verifiable object-level evidence. Leveraging this evidence, our framework orchestrates a collaborative workflow where a Generator, Hallucination Checker, and Arbitrator iteratively refine captions via a shared blackboard. By explicitly auditing generated content against mined visual evidence, SEA-Cap ensures both sentiment accuracy and factual consistency. Extensive experiments on two benchmark datasets demonstrate that SEA-Cap effectively mitigates hallucinations and achieves state-of-the-art performance."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Verifiable blind probabilistic error cancellation",
+    "authors": "Bo Yang, Elham Kashefi, Harold Ollivier",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25704v1",
+    "source": "arXiv",
+    "abstract": "Quantum error mitigation (QEM) is an essential tool for mitigating hardware noise without incurring space overhead. Yet, its reliability depends on modeling, calibration, and implementation, leaving end-to-end security on untrusted quantum hardware unresolved. We address this problem by introducing verifiable blind probabilistic error cancellation (VBPEC), the first secure verification protocol against a fully malicious adversary that integrates QEM. VBPEC brings probabilistic error cancellation (PEC), a widely studied QEM technique, within the scope of composable security by formalizing delegated mitigation as a cryptographic resource in the abstract cryptography framework. The protocol performs PEC with perfect blindness and an exponentially small security error. VBPEC retains the absence of quantum-space overhead from recent statistically-secure verified quantum computation protocols and from PEC. The only overhead takes the form of additional repetitions due to the QEM procedure. To achieve this, we extend trap-based verification from deterministic pass/fail checks to statistical tests that benefit from QEM and develop a new proof technique that integrates the corresponding additional deviation sources. Rather than merely tolerating honest noise below a fixed threshold, VBPEC actively cancels it, enabling correctly mitigated estimates to be accepted with high probability without compromising security. Our framework thus establishes an essential route towards secure, reliable, and practical delegated quantum computation on near-future quantum hardware: VBPEC fundamentally improves the practicality of verification."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Benchmarking Optical Receivers for Quantum Communication and Randomness Certification",
+    "authors": "Hamid Tebyanian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25702v1",
+    "source": "arXiv",
+    "abstract": "The choice of optical receiver determines which properties of the transmitted states remain visible in the observed data and therefore affects the performance of different quantum protocols. We compare continuous-variable, photon-counting and hybrid receivers within the same prepare-and-measure framework, using semi-device-independent randomness generation as the main case study. The measurement device is left uncharacterised, while the source is described by the Gram matrix of its pure signal states using an energy-derived overlap constraint, a magnitude-Gram benchmark or the full complex Gram matrix of a certified coherent phase-shift-keyed constellation. Within this framework, the observed receiver statistics are used to bound $H_{\\min}(B|X,Λ)$ against classical side information correlated with the measurement device but independent of the input. For a fixed Gram matrix, this bound is obtained from an exact semidefinite program, with complex multi-input cases treated in block-real form and checked through the corresponding dual certificate. Photon counting alone is phase blind for fixed-modulus phase encoding and therefore certifies no worst-case randomness. Continuous-variable receivers give the highest certified entropy at moderate energy, while under the nominal source calibration a hybrid receiver performs better at low energy when the beacon-region label is retained in the output. The same receiver statistics also provide receiver-level comparisons for discrete-modulated continuous-variable quantum key distribution, quantum reading, covert communication and quantum-signature verification, without replacing the full security analysis required for each protocol."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "AI's Capability in Assisting Scientific Research in Physics, Astrophysics, and Cosmology I: Literature Review",
+    "authors": "Anamaria Hell, Kateryna Vovk, Veena Krishnaraj, Jia Liu, Kosuke Aizawa, Adrian E. Bayer, Linda Blot, Jessica Cowell, Suyog Garg, Jonathan Grée, Ben Horowitz, Masaya Ichikawa, Kanyuni Iemoto, Keigo Kondo, Zacharie Lorsin, Kevin McCarthy, Jamie Robinson, Miguel Ruiz-Granda, Leander Thiele, Ievgen Vovk, Mingshen Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25672v1",
+    "source": "arXiv",
+    "abstract": "We investigate how well large language models (LLMs) can assist with literature reviews for scientific research. We perform a controlled study of eight expert-conceived research projects across the areas of physics, astrophysics, and cosmology. Each project has a defined background and goal, and human experts and AI prompters are asked to perform identical literature review tasks in parallel. We compare the relevant literature selected by humans with that selected by mid-2025 LLMs (ChatGPT-4o, ChatGPT Deep Research, and Gemini). We find the overlap between human- and AI-selected references to be small ($<$6\\%), indicating that AI models do not yet reproduce a competent expert search on their own, though they have the potential to complement literature searches by humans. We then assess the reliability and completeness of AI-generated candidate references, distinguishing two types of hallucination: fabrications (references to nonexistent papers) and metadata mismatches (real papers with one or more incorrect fields). We find that while fabricated references make up 3\\% of the AI-generated references, 64\\% are real papers with at least one incorrect field (title, author, year, journal, DOI, or link), indicating that the mid-2025 models require systematic verification. However, the performance is significantly improved for the 2026 model ChatGPT Pro 5.5, with a single-project test showing zero fabrication or metadata mismatches."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "OmniPhys: Knowledge-Graph-Driven Benchmarking and Collective Optimization for Physical Commonsense in Text-to-Image Generation",
+    "authors": "Yajing Xu, Yarong Lan, Jiaoyan Chen, Yichi Zhang, Jeff Z. Pan, Mingchen Tu, Zhizhen Liu, Wen Zhang, Huajun Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25641v1",
+    "source": "arXiv",
+    "abstract": "While text-to-image models exhibit remarkable visual fidelity, they frequently violate fundamental physical commonsense. Existing benchmarks often rely on coarse-grained descriptions, failing to diagnose the mastery of specific physical principles. Moreover, the high stochasticity of generative processes causes current prompt optimization methods to suffer from gradient hallucinations, where optimizers are misled by transient visual artifacts rather than systemic flaws. To address these challenges, we introduce OmniPhys, a rigorous benchmark of 1,551 samples grounded in a Physical Knowledge Graph. By aligning PhET simulations with standard curricula, OmniPhys operationalizes a knowledge-to-scenario pipeline that performs diagnostic stress tests via a dual-path verification protocol. We further propose OmniPrompt, an iterative framework that treats physical alignment as a discrete optimization problem. For each query, OmniPrompt aggregates K stochastic images into a per-query feedback buffer. Across training, it further merges feedback from batches of B queries before each meta-policy update, filtering seed and query-local noise. Evaluations across 12 representative text-to-image models reveal universal physical bottlenecks. Results demonstrate that OmniPrompt significantly enhances physical consistency across diverse backbones, proving the transferability and efficacy of our evolved meta-policies. The code and data are available at https://github.com/zjukg/OmniPhys"
+  },
+  {
+    "date": "2026-07-28",
+    "title": "F(AI)2R: Who Did What, and Who Checked? Verifiable AI Provenance as an Executable Skill",
+    "authors": "Florian Krebs",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25637v1",
+    "source": "arXiv",
+    "abstract": "F(AI)2R is FAIR research with AI in the loop, twice: an AI-assisted authoring pass and a machine-readable audit pass over every artefact. AI systems now draft, refactor, and verify research artefacts, yet their contributions are rarely recorded in a form a later human or machine can audit. Building on the original F(AI)2R experiment, we generalize its provenance model beyond scholarly writing into aiprov, a PROV-O extension covering any AI-in-the-loop artefact, and we package the method as an executable skill that an AI agent operates itself: setup asks the human operator for their ORCID ID, resolves their identity from the public registry, and scaffolds continuous integration that gates every push on graph conformance and publishes the current build of this very paper. The paper is its own case study. Every activity, claim, and source in its production is recorded in the repository's provenance graph under two invariants: no parentless claim, and verification rungs that only humans may grant."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Construction-Driven Injection: Linguistically-Grounded Edit-Based Code-Mixing Fingerprints for Large Language Models",
+    "authors": "Yongyi Cui, Yue Li, Tianbao Jiang, Xin Yi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25633v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are costly intellectual assets that remain exposed to unauthorized redistribution and commercial misuse. Injected fingerprints, i.e., trigger--target pairs embedded in model behavior, offer a practical, black-box-verifiable ownership signal, but existing methods decouple the two stages of the fingerprint life cycle: how a fingerprint is constructed and how it is injected. Existing fingerprinting frameworks suffer from two limitations. Natural-language fingerprints are prone to accidental activation, and garbled fingerprints are easily filtered by perplexity-based detection. Furthermore, decoupling construction from injection leaves the latter unaware of the trigger's linguistic structure, missing the opportunity for targeted optimization. We argue that fingerprint construction should drive injection, and present a unified fingerprinting framework that jointly optimizes both stages. First, LCF constructs code-mixing fingerprints by combining low-resource languages under a semantic-density substitution rule and grammar-biased mixing, yielding triggers whose perplexity sits far below garbled baselines while avoiding the accidental-activation failures of natural-language triggers. Second, LCFEdit injects each fingerprint with a null-space projection derived from high-resource multilingual representations that preserves knowledge, augmented by a cross-lingual alignment step that steers the weight update toward the fingerprint language's representation subspace. This construction-aware injection ensures that the update is linguistically informed and therefore more stable. Extensive evaluations on imperceptibility, detectability, and harmlessness demonstrate persistent ownership verification with negligible impact on utility."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Beyond Epistemia: Epistemic Schizologia and Large Language Models as Techno-Semiotic Machines",
+    "authors": "Federico Cabitza, Gianluca Colombo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25620v1",
+    "source": "arXiv",
+    "abstract": "Quattrociocchi and colleagues warn that the fluent outputs of large language models may allow linguistic plausibility to substitute for epistemic evaluation, producing the condition they call *Epistemia*: the experience of possessing knowledge without undertaking the practices through which judgment would ordinarily be warranted. This article accepts that diagnosis but challenges its explanatory framework, which compares an embodied, socially situated human knower with an isolated generative model thereby locating epistemic legitimacy in capacities internal to autonomous agents. Drawing on Carlo Sini's philosophy of practices, writing, signs, and technics, we propose instead to understand a large language model (LLM) as a *techno-semiotic machine* that automates a phase of written semiosis by producing plausible linguistic configurations from the sedimented archive of human writing. From this perspective, *Epistemia* is one consequence of a broader phenomenon that we call *epistemic schizologia*: the socio-technical cleavage between signs as linguistically accomplished expressions and signs as moments within socially embedded circuits of interpretation, evidence, criticism, verification, and responsibility. This cleavage is reinforced by *eikotic closure*, through which a plausible continuation is presented with the finality of an epistemic result, and by algorithmic authority and epistemic self-misrecognition. The relevant unit is therefore not the model alone but the complete practice in which generated inscriptions are prompted, interpreted, verified, contested, used, and made consequential. This reframing preserves the distinction between linguistic production and responsible understanding while grounding a design programme centred on inspectable genealogy, contestability, distributed responsibility, epistemic agency, and the evaluation of hybrid human--AIpractices."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Progenitor and Explosion Mechanism of 3C 397 Indicated from XRISM High-resolution Spectroscopy of Fe-group Elements",
+    "authors": "Hiroshi Nakajima, Yuken Ohshiro, Shing-Chi Leung, Koji Mori, Yoshiaki Kanemaru, Yoshitomo Maeda, Hiroya Yamaguchi, Masayoshi Nobukawa, Kumiko Nobukawa, Manabu Ishida, Yuichiro Ezoe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25575v1",
+    "source": "arXiv",
+    "abstract": "We present spatially resolved X-ray spectroscopy of the Type Ia supernova remnant 3C 397, one of the most promising candidates to have originated from a white dwarf with a mass close to the Chandrasekhar limit. The remnant was observed during the performance verification phase of the X-ray Imaging and Spectroscopy Mission (XRISM), with the field of view of the Resolve calorimeter array positioned on the eastern half of the remnant. We divide the Resolve field of view into southeastern and northeastern regions and extract spectra from each region for both Resolve and Xtend. The Resolve spectra are characterized by narrow K-shell emission lines from intermediate-mass elements (IMEs) such as Si, S, Ar, and Ca, and by broader K-shell emission lines from iron-group elements (IGEs) such as Cr, Mn, Fe, and Ni. K-shell emission lines from Ti and Cr are also detected, and are found to be locally enhanced in the southeastern region, as reported in previous observations. We model the Resolve and Xtend spectra simultaneously by a non-equilibrium ionization (NEI) plasma model with multiple temperatures and ionization states. The observed mass ratios of Ti/Fe and Cr/Fe in the southeastern region can only be explained by nucleosynthesis in a neutron-rich environment produced by electron-capture reactions in the innermost layers of the exploding white dwarf. By comparing the observed mass ratios with those predicted by nucleosynthesis models, we constrain the central density to be >= 4.0 x 10^9 g cm^{-3} for the deflagration-to-detonation transition model and >= 6.0 x 10^9 g cm^{-3} for the pure turbulent deflagration model. On the other hand, the observed Ni/Fe mass ratio is globally enhanced across the field of view, suggesting an additional neutronization mechanism beyond electron-capture reactions, such as a higher progenitor metallicity."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "ARCHER: Agentic Rule and Compliance Harness for Executable Regulations",
+    "authors": "Chiraag Singh Anand, Xue Wen Tan, Lionel Teo, Eric Tan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25566v1",
+    "source": "arXiv",
+    "abstract": "Verifying building compliance requires validating thousands of rules against large Building Information Modeling (BIM) designs, which is laborious, capital-intensive, and unscalable. Existing Automated Compliance Checkers (ACCs) are often difficult to generalize across different scenarios, as they are typically developed for highly specific rule sets and use cases. In addition, many ACCs are proprietary, meaning the underlying verification code is not released to end users, so users cannot verify whether their regulatory intent can be accurately captured. We introduce ARCHER (Agentic Rule and Compliance Harness for Executable Regulations), a test-driven, deterministically orchestrated multi-agent program-synthesis harness that generates auditable verification code from regulatory Codes of Practice, enabling transparent, adaptable, and scalable compliance checking. To characterize what makes agentic synthesis work, we evaluate a taxonomy of six harnesses of increasing agentic sophistication across four backbone models, spanning realistic data-governance tiers (from frontier third-party APIs to a fully on-premise open-weights model) on a novel dataset derived from real-world compliance scenarios. ARCHER's deterministic multi-agent orchestration achieves the highest accuracy for every backbone, improving mean union accuracy by 82% over a naive single-pass prompting baseline. Our cost-accuracy analysis further shows that using the ARCHER harness, a self-hosted open-weights model can reach 97.8% of frontier-API accuracy at a quarter of the cost, making data-sovereign compliance checking practical."
+  },
+  {
+    "date": "2026-07-28",
+    "title": "ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition",
+    "authors": "Jooyeol Yun, Jintae Park, Hyesu Lim, Junha Hyung, Hyungjin Chung, Jaegul Choo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.25565v1",
+    "source": "arXiv",
+    "abstract": "Recovering an editable design file from a raster image is a common and costly bottleneck in modern design workflows, yet remains challenging since editability depends on recovering multi-modal attributes, such as typography, vector geometry, colors, grouping, and layer ordering. We present ReDesign, an agentic framework that grows an editable layer hierarchy by selecting and composing specialized tools across modalities. To keep this long decision process reliable despite imperfect tool outputs, we introduce graceful verification at each expansion, which provides local accept, prune, or retry feedback that prevents error accumulation and avoids large scale reruns. To evaluate editability at scale, we introduce the Figma Edit Replay Benchmark, consisting of 909 raw Figma files and 14,796 controlled edit instructions that replay edits on reconstructed outputs. Across this benchmark and standard reconstruction metrics, ReDesign achieves strong visual fidelity while delivering the highest editability across layout, color, and text edits, outperforming layered decomposition baselines and serial tool use pipelines."
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Contamination Percolation in Multi-Agent LLM Systems: A Measurement Framework and Benchmark",
+    "authors": "Aman Sharma",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3717722",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Sealed Tokens, Open Throughput: LLM Serving Performance under Hopper-Class GPU Enclaves",
+    "authors": "YugantKumar Gajera",
+    "publish": "2026 2nd International Conference on Artificial Intelligence Systems (AIS)",
+    "url": "https://doi.org/10.1109/ais69919.2026.11621081",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Rapid Episodic-Merging Memory for LLM Agents",
+    "authors": "Hao Yang, Anilkmar Kothalil Gopalakrishnan",
+    "publish": "2026 2nd International Conference on Mechatronics, Robotics, and Artificial Intelligence (MRAI)",
+    "url": "https://doi.org/10.1109/mrai70020.2026.11621122",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Secure Governance and Reliability Engineering for AI/LLM Cloud Workloads in Regulated Industries",
+    "authors": "Mourya Chigurupati",
+    "publish": "2026 6th International Conference on Intelligent Technologies (CONIT)",
+    "url": "https://doi.org/10.1109/conit69683.2026.11620825",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Toward LLM-Based Evaluation of Hybrid Object Detection Models",
+    "authors": "Zelin Qu",
+    "publish": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "url": "https://doi.org/10.1109/caibda70336.2026.11621388",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "QA Bot: LLM-Based Quality Assurance for Online Courses",
+    "authors": "Natalia Echeverry",
+    "publish": "2026 2nd International Conference on Human-AI Interaction and Experience Design (HAXD)",
+    "url": "https://doi.org/10.1109/haxd70072.2026.11620617",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Defense Against Retrieval Injection Attacks in MCP-based LLM Agents",
+    "authors": "Fang Hao",
+    "publish": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "url": "https://doi.org/10.1109/caibda70336.2026.11621400",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "DriftBench: Detecting LLM Coding Agent Cheating via Specification-Level Constraint Drift Mutation",
+    "authors": "Fang Hao",
+    "publish": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "url": "https://doi.org/10.1109/caibda70336.2026.11621849",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Mechanistic Perspectives on LLM Jailbreaks and Internal Defenses",
+    "authors": "Yuhui Huang, Yansong Wang, Yanan Zhang",
+    "publish": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "url": "https://doi.org/10.1109/caibda70336.2026.11621239",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "An LLM and Knowledge-Graph Based Escalation Engine for Root-Cause Analysis in Advanced Robotics Systems",
+    "authors": "Nikhil Mallala, Amar Sharma",
+    "publish": "2026 6th International Conference on Intelligent Technologies (CONIT)",
+    "url": "https://doi.org/10.1109/conit69683.2026.11621839",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Agentic AI in Cybersecurity:Threat Modeling and Containment Strategies for Autonomous LLM Agents",
+    "authors": "Lokanatha Reddy Gandikota, Vasanth Jegathesan, Chandra Doddapalli Ramachandra Reddy",
+    "publish": "2026 2nd International Conference on Artificial Intelligence Systems (AIS)",
+    "url": "https://doi.org/10.1109/ais69919.2026.11621639",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Feedback Granularity in Bounded Repair of LLM-Generated PDDL Domains",
+    "authors": "Yajun Zhang, Ning Li, Zixuan Zhou, Yuteng Lu",
+    "publish": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "url": "https://doi.org/10.1109/caibda70336.2026.11621110",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Translating Deep Multi-Omic Latent Spaces into LLM-Synthesized Mechanistic Hypotheses",
+    "authors": "Neil Lin",
+    "publish": "Proceedings of the 17th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics",
+    "url": "https://doi.org/10.1145/3807503.3820007",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Safety Claims Under Pressure: A Methodological Review of LLM and MLLM Jailbreaks",
+    "authors": "Wenxiong Ma, Wenbin Ren, Yanan Zhang",
+    "publish": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+    "url": "https://doi.org/10.1109/caibda70336.2026.11621495",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Prompt Engineering Techniques for Enhanced LLM Reasoning Capabilities",
+    "authors": "Jai Amrish Shah, Harsh Jangid, Hastimal Jangid, Mayur Patel, Ravi Kiran Gadiraju, Foysal Mahmud",
+    "publish": "2026 6th International Conference on Intelligent Technologies (CONIT)",
+    "url": "https://doi.org/10.1109/conit69683.2026.11621384",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "LLM-Simulated Users for Rapid Usability Evaluation of Decision Support Tools",
+    "authors": "Addi Ait-Mlouk, Omar Ait-Mlouk",
+    "publish": "2026 2nd International Conference on Human-AI Interaction and Experience Design (HAXD)",
+    "url": "https://doi.org/10.1109/haxd70072.2026.11620802",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "SyzScout: Automated Syzkaller Specification Generation via LLM-Based Agents",
+    "authors": "Wenyu Zhen, Minhuan Huang, Xiang Li, Yuanping Nie, Yuxian Wan, Fan Zhong",
+    "publish": "2026 11th International Conference on Computer and Communication Systems (ICCCS)",
+    "url": "https://doi.org/10.1109/icccs69761.2026.11613509",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Feasibility of LLM-Augmented VR Micro-Coaching for Children with ADHD",
+    "authors": "Ho Yan Kwan",
+    "publish": "2026 11th International Conference on Computer and Communication Systems (ICCCS)",
+    "url": "https://doi.org/10.1109/icccs69761.2026.11613247",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Dynamic Task Scheduling and Function Orchestration for Serverless LLM",
+    "authors": "Myrsini Kellari, Christina Diamanti, Dimitrios Spatharakis, Aris Leivadeas, Symeon Papavassiliou",
+    "publish": "2026 IEEE 27th International Conference on High Performance Switching and Routing (HPSR)",
+    "url": "https://doi.org/10.1109/hpsr68369.2026.11615182",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-28",
+    "title": "Coarse-to-Fine Failure Attribution for Long-Horizon LLM Multi-Agent Systems",
+    "authors": "Lei Zhao, Xiaofeng Xie, Zhenhao Xu, Yan Gao",
+    "publish": "2026 2nd International Conference on Mechatronics, Robotics, and Artificial Intelligence (MRAI)",
+    "url": "https://doi.org/10.1109/mrai70020.2026.11621223",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
