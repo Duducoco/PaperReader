@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-29",
+    "title": "It Doesn't Take a Thief: Optical-Scan Voting Systems Fail Even Without Adversaries",
+    "authors": "Aleksander Essex, Philip B. Stark",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.27101v1",
+    "source": "arXiv",
+    "abstract": "Optical-scan voting systems and their supporting ecosystem of people, processes, and technology are fallible. While a substantial body of work examines adversarial threats to such systems, we have encountered jurisdictions where the possibility of tabulator error is not fully internalized. Stakeholders there often find hypothetical attacks unconvincing, but some are persuaded by real-world accounts of equipment and procedural failures. This paper introduces a taxonomy of non-adversarial failure modes organized into intuitive categories: recording votes on paper, reading votes from the paper, combining votes as read into a reported outcome, and testing and verifying, all illustrated with documented incidents. We map common verification mechanisms against this taxonomy, identifying gaps that no paper-based audit can detect or correct, most notably failures that compromise the trustworthiness of the paper trail, such as giving voters the wrong ballot style (omitting contests they are eligible for, or including ones they are not), using ballot-marking devices to record votes, or failing to keep voted ballots secure and organized."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Deductive Verification for Earliest Deadline First Scheduler Implementations",
+    "authors": "Daniel Kuhse, Junjie Shi, Jan Duy Thien Pham, Kay Heider, Marcus Völker, Kuan-Hsun Chen, Jian-Jia Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26927v1",
+    "source": "arXiv",
+    "abstract": "Real-Time Operating Systems (RTOSes) rely on scheduler implementations to provide predictable task execution. For safety-critical systems, it is therefore not sufficient to reason only about the abstract scheduling policy; the concrete implementation must also preserve the intended scheduling semantics. This is particularly challenging for Earliest Deadline First (EDF) scheduling, because EDF introduces dynamic, deadline-derived priorities that are often realized by reusing kernel infrastructure originally designed for fixed-priority scheduling. In this work, we formalize EDF correctness through three essential properties that any implementation of the Earliest Deadline First (EDF) scheduler must satisfy. Based on these properties, we propose a framework utilizing deductive verification, that applies to any EDF-based scheduler realization. We instantiate the framework in Frama-C/ACSL and apply it to three structurally different EDF scheduler realizations: RTEMS 5, RTEMS 6, and an EDF extension of FreeRTOS."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Network Verified NTN Positioning for 6G A Standards Oriented Survey of Hybrid TN NTN Localization",
+    "authors": "Donglin Wang, Zexing Fang, Qiuheng Zhou, Hans D. Schotten",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26846v1",
+    "source": "arXiv",
+    "abstract": "Wireless positioning is evolving from legacy cellular and standalone satellite navigation toward hybrid, high-accuracy, three-dimensional (3D), and network-verifiable frameworks for 5G Advanced, 6G, and non terrestrial network (NTN) systems. This shift is driven by intelligent transportation, unmanned aerial vehicle (UAV) operation, low-altitude economy services, public warning, and regulated NTN use cases that require not only accurate location estimates, but also vertical awareness and verification confidence. This survey reviews the evolution from Long Term Evolution (LTE) and Global Navigation Satellite System (GNSS) positioning to New Radio (NR), Release-18/19 positioning enhancements, and NTN-enabled 3D positioning. It synthesizes observable families, 3rd Generation Partnership Project (3GPP) standard evolution, method-level tradeoffs, and open challenges for hybrid terrestrial network (TN) NTN designs, with emphasis on standardization impact, vertical observability, reliability-aware measurement selection, and network-side verification."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "A First Look at Coding Agents' Compliance with AI Contribution Rules in Open-Source Communities",
+    "authors": "Wenhao Yang, Runzhi He, Minghui Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26819v1",
+    "source": "arXiv",
+    "abstract": "Open source communities have been flooded with AI-generated contributions. In defense, they have written contribution rules to regulate coding agents' behavior, spanning from a total ban, mandatory disclosure, to verification gates and human sign-offs. Yet, whether coding agents read and follow those rules, and behave in open source repositories, remains unknown. To estimate real-world rule compliance of coding agents, we curate 106 issues from 49 repositories containing AI contribution rules into RepoComplianceBench. We judge the trajectory of each run against the repository's rules, measuring whether the agent refuses to contribute, discloses its assistance truthfully, clears the required verification gates, or escalates critical steps to a human. We also test if extra prompts, rule disclosure, or feedback from the compliance verifier help with the situation. Our experiments on four frontier models show that today's agents almost never proactively retrieve the contribution rules. Agents pick up disclosure and verification with reminder prompts, rule quotes, and verifier feedback; however, they never refuse to contribute in AI-banned repositories under any condition we tested. The status reveals that verification and disclosure issues are solvable with existing mechanisms, yet enforcing bans and human escalations remains an open problem."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "MRCoder: An Efficient Context Selecting Approach for Repository-Level Code Generation",
+    "authors": "Peiding Wang, Li Zhang, Fang Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26805v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have demonstrated strong capabilities in code generation. However, repository-level code generation remains challenging, as it requires effectively identifying and utilizing repository-specific context. While retrieval-augmented generation (RAG) incorporates relevant code snippets, it often introduces redundant context that interferes with the LLM's ability to utilize relevant information, leading to degraded generation quality and increased computational cost. Moreover, existing context selection and compression methods struggle to balance efficiency and quality, either introducing additional computational overhead or failing to effectively select valid context. In this paper, we propose MRCoder, an efficient context selection framework that improves both the effectiveness and efficiency of repository-level code generation. MRCoder adopts a Map-Reduce paradigm: in the Map Phase, a lightweight draft model generates drafts over partitioned contexts, and Structure-Aware Draft-Guided Selection (SADGS) selects informative contexts based on drafts through API consistency and logical similarity; in the Reduce Phase, the refined contexts are aggregated for final generation, with a parallel verification strategy further accelerating decoding. We evaluate MRCoder on two widely used repository-level code generation benchmarks, CoderEval and DevEval, using Qwen2.5-Coder and DeepSeek-Coder as backbone LLMs. Experimental results show that MRCoder improves code generation accuracy over strong baselines while reducing token consumption by 30 to 50% and inference time by up to 52%. These results demonstrate that our proposed structured and draft-guided context selection strategy is crucial for improving both the quality and efficiency of repository-level code generation"
+  },
+  {
+    "date": "2026-07-29",
+    "title": "CheckVLA: Execution-Time Verification with Action-Conditioned World Model for Long-Horizon Mobile Manipulation",
+    "authors": "Yushan Liu, Peibo Sun, Xintao Chao, Zhenyang Yang, Yifan Xie, Lingfeng Zhang, Shoujie Li, Chenyu Tang, Fang Chen, Xiao-Ping Zhang, Wenbo Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26789v1",
+    "source": "arXiv",
+    "abstract": "Vision-language-action (VLA) policies commonly execute long-horizon mobile manipulation through open-loop action chunks, issuing multiple actions without receiving new high-level visual input. A committed chunk therefore implies how observations should evolve, but accidental deviations can violate this expectation while the remaining actions continue to propagate the error: commit-time policy confidence cannot react to a deviation that occurs after dispatch, and observation-only anomaly scores lack an action-conditioned reference for separating expected effects from unexplained changes. We propose CheckVLA, which verifies execution with a separately trained, frozen action-conditioned world model. A conformally calibrated risk threshold bounds the episode-level probability of an unnecessary first intervention and determines when to intervene, its exceedance controls how strongly the rewritten suffix retains the superseded chunk, latency-aware hard prefixing restricts replacement to actions that remain deployable, and an event-driven keyframe bank preserves evidence of prior progress across repairs. On RoboCasa365, under a common training recipe and a matched invocation budget, CheckVLA attains a 36.1% average success rate against 27.6% for periodic replanning (+8.5 points). At a matched 5% episode-level false-alarm target, action conditioning raises timely recall to 77.9%, against 48.6% for an observation-only control and 37.9% for an action-shuffled control. These simulation results support action-conditioned verification as a way to restore feedback during chunked execution while keeping the repair consistent with inference latency."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "FARI: Robust One-Step Inversion for Watermarking in Diffusion Models",
+    "authors": "Jindong Yang, Han Fang, Weiming Zhang, Nenghai Yu, Kejiang Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26723v1",
+    "source": "arXiv",
+    "abstract": "Inversion-based watermarking is a promising approach to authenticate diffusion-generated images, yet practical use is bottlenecked by inversion that is both slow and error-prone. While the primary challenge in the watermarking setting is robustness against external distortions, existing approaches over-optimize internal truncation error, and because that error scales with the sampler step size, they are inherently confined to high-NFE (number of function evaluations) regimes that cannot meet the dual demands of speed and robustness. In this work, we have two key observations: (i) the inversion trajectory has markedly lower curvature than the forward generation path does, making it highly compressible and amenable to low-NFE approximation; and (ii) in inversion for watermark verification, the trade-off between speed and truncation error is less critical, since external distortions dominate the error. A faster inverter provides a dual benefit: it is not only more efficient, but it also enables end-to-end adversarial training to directly target robustness, a task that is computationally prohibitive for the original, lengthy inversion trajectories. Building on this, we propose \\textbf{FARI} (\\textbf{F}ast \\textbf{A}symmetric \\textbf{R}obust \\textbf{I}nversion), a one-step inversion framework paired with lightweight adversarial LoRA fine-tuning of the denoiser for watermark extraction. While consolidation slightly increases internal error, FARI delivers large gains in both speed and robustness: with approximately 20 minutes of fine-tuning on a single NVIDIA RTX A6000 GPU, it surpasses 50-step DDIM inversion on watermark-verification robustness while dramatically reducing inference time. Code and pretrained models are available at https://github.com/0xD009/FARI."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Graph Is the Verifier: Agentic Reinforcement Learning for Interprocedural Vulnerability Detection",
+    "authors": "Yikun Li, Ting Zhang, Jiakun Liu, Jinfeng Jiang, Yuheng Yieh, Yixin Yang, Wen Bin Leow, Yide Yin, Yintong Huo, Eng Lieh Ouh, Lwin Khin Shar, David Lo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26656v1",
+    "source": "arXiv",
+    "abstract": "Real-world vulnerabilities often span multiple functions, yet most learning-based detectors classify each function in isolation: on a sample of real CVEs, we find that 71.7% of vulnerable functions require evidence from outside the function to be classified correctly. Agentic reinforcement learning (RL) could close this gap by enabling a model to gather that evidence itself, but it lacks a reliable reward, since a reward defined on the final verdict alone can be obtained without performing any investigation. We propose VulAgentRL, an agentic RL framework for interprocedural vulnerability detection built on a Code Property Graph (CPG). The CPG serves two roles: at inference time the policy queries it for callers, callees, dataflow, and other queries, and at training time the same graph verifies the evidence the policy cites. Because every CPG node carries a persistent integer identifier, this verification is an exact comparison rather than a textual match, so the reward credits verdicts that are supported by evidence. We further initialize the policy by distilling teacher investigations, and show that this warm start is necessary, since RL cannot acquire tool-use behavior it never samples. Under a repository-level split that prevents leakage, VulAgentRL outperforms state-of-the-art baselines, including frontier models, on the strict pair-wise-correct metric while issuing fewer tool calls, and its advantage persists on an out-of-distribution corpus and under class imbalance."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Fingerprint-Driven Automation: Coupling Reconnaissance with POC Verification",
+    "authors": "Hongping Wang, Xiaoqi Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26655v1",
+    "source": "arXiv",
+    "abstract": "In the field of network security confrontation, reconnaissance is the first and most critical step. Accurate, efficient, and comprehensive reconnaissance can help network security workers more fully understand the target's current state, identify potential weaknesses, and formulate a targeted attack strategy. However, there are some problems in the existing tools on the market, such as low accuracy of the collected information, lack of concealment, time-consuming, low or high integration of tools, which makes them difficult to start using. With the continuous development of technology, systems need to continuously upgrade their technologies and strategies, and expand new functions. The scalability of tool functions is also one of the factors that need to be taken into consideration. These problems in the practice of network security have a serious impact on user experience and work efficiency. In view of this, a more user-friendly, more automated reconnaissance and vulnerability verification tool is designed.This paper proposes to develop a highly automated reconnaissance and vulnerability verification tool. This paper presents the tool functions and conducts the basic design. Finally, we implement and test all the functions specifically to verify the feasibility of the tool functions and highlight the advantages of this tool in terms of automation, retrieval, and use in network security operations.Through the test of the online security simulation range, the results show that this tool can complete the automatic reconnaissance and in-depth data processing of specific targets, and conduct automatic vulnerability detection and verification."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "FakeIDet3-DB: Refining Digital Attacks and Patch Extraction for Secure ID Benchmarking",
+    "authors": "Muñoz-Haro Javier, Teruel Andres, Tolosana Ruben, DeAlcala Daniel, Vera-Rodriguez Ruben, Morales Aythami, Fierrez Julian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26641v1",
+    "source": "arXiv",
+    "abstract": "Identity document (ID) authentication relies on the structural integrity of complex, high-frequency security patterns. However, advanced Generative AI models can now inject localized, high-fidelity manipulations, creating deceptive attacks that bypass standard verification. Training robust image forensic models to detect these anomalies is hindered by privacy regulations, forcing reliance on synthetic templates lacking the intricate visual patterns of real IDs. To bridge this domain gap, we introduce FakeIDet3-DB, the first comprehensive database of digital manipulations on real, government-issued IDs. FakeIDet3-DB encompasses classical (e.g., copy-move) and Generative AI-driven manipulations (e.g., face-swapping, inpainting) enhanced with advanced image refinement procedures to suppress visual artifacts. In addition, to comply with strict data protection regulations (e.g., GDPR), we adopt a recently-proposed framework based on patches. In order to maximize forensic utility, we formulate privacy-aware patch extraction from a real ID as a geometrically constrained image processing problem. We propose PACE, a Pseudo-Anonymized Contextual patch Extraction algorithm, which leverages Integral Image mapping and distance-driven Non-Maximum Suppression (NMS). PACE efficiently contours anonymization masks that prevent Personally Identifiable Information (PII) leakage while maximizing semantic density in peri-censorship regions, yielding almost 5.2M patches extracted from more than 6.4K images from real/fake IDs. Furthermore, an extensive evaluation of the proposed FakeIDet3-DB is performed using state-of-the-art models, showcasing they all struggle to detect and locate attacks coming from generative and classic techniques (32.45\\% EER in detection and 83.48\\% AUC-ROC in localization)."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Equilibrium for Regular-Singular Control under Mean-Variance Criterion",
+    "authors": "Zongxia Liang, Xiaodong Luo, Jiayu Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26635v1",
+    "source": "arXiv",
+    "abstract": "This paper studies a class of mixed regular-singular control problems under mean-variance criteria. We seek time-consistent equilibrium strategies in an intrapersonal game setting and propose a novel equilibrium notion. Under which, we derive a verification theorem and necessary conditions providing a full mathematical characterization of the equilibrium. To illustrate the theory, we construct explicit coupled equilibrium solutions for a reinsurance problem, where the regular control depends on the singular control state, and the free boundary of the singular control switches dynamically in accordance with the variation of the regular control expression, yielding nontrivial coupling. In the degenerate case $α_2=0$, the coupled solution reduces to the combination of two independent single-control equilibria and coincides with the limit as the parameter tends to zero."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Revisiting Lossy Verification in Speculative Decoding: Mechanisms, Trade-offs, and Failure Modes",
+    "authors": "Tianyu Wang, Yuxuan Zhou, Wenbin Wang, Heng Li, Zikai Xiao, Junyuan Shang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26627v1",
+    "source": "arXiv",
+    "abstract": "Speculative Decoding (SD) accelerates large language model inference by allowing a lightweight draft model to propose tokens that are subsequently verified in parallel by a larger target model. Recent approaches introduce lossy verification schemes to further improve efficiency by relaxing strict distributional matching. Yet such relaxation silently rewrites the decoding distribution, and the resulting acceleration can come at the cost of unstable, sometimes severely degraded generation quality. In this work, we present a principled analysis of the distributions induced by lossy verification methods. We show that many seemingly distinct approaches differ only superficially and can be classified into two categories: truncation-based verification and collaborative verification. We further construct a diagnostic evaluation framework across curated benchmarks. For truncation-based methods, we identify a fundamental pitfall: performance can degrade significantly compared to the true truncation sampling baseline due to distributional distortion. For collaborative verification, we uncover a key principles: controlling the overshoot of draft probabilities relative to target probabilities is essential to prevent low-quality outputs. Our code is available at https://github.com/ZhouYuxuanYX/Fast-HSD."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Harnessing Large Language Models for Intelligent Resource Allocation in the Internet of Everything",
+    "authors": "Haijun Zhang, Zhuojun Duan, Zijun Wu, Xu Ma, Yuzheng Ren",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26602v1",
+    "source": "arXiv",
+    "abstract": "The rapid development of the Internet of Everything (IoE) is accelerating the adoption of intelligent applications. However, the massive number of connected devices generates diverse and heterogeneous tasks, which pose increasing challenges for dynamic resource scheduling in IoE environments. Using their superior semantic understanding and reasoning capabilities, Large Artificial Intelligence Models (LAIMs) demonstrate significant potential to handle complex scheduling scenarios and improve resource utilization efficiency. This paper investigates a task-oriented LAIM-driven resource scheduling mechanism, which constructs a multidimensional scheduling decision model by integrating task semantics, network states, and constraint conditions. Furthermore, a task-oriented prompt generation method is designed to establish a deep association between task requirements and network state. In the proposed resource allocation scheme, an external evaluation and feedback module is incorporated to conduct real-time feasibility verification and performance evaluation of scheduling strategies, thus enhancing the robustness and adaptability of scheduling. Simulation results demonstrate that the proposed Large Language Model (LLM)-driven network architecture and resource allocation scheme achieve significant improvements in convergence speed, processing latency, and energy consumption, effectively enhancing IoE task responsiveness and resource utilization."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Optimal control problems for quasi-linear parabolic equations and their linear approximations",
+    "authors": "Xu Liu, Meisai Wang, Xu Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26585v1",
+    "source": "arXiv",
+    "abstract": "Motivated by thermal diffusion models, a controlled quasi-linear parabolic equation can be formally replaced by its linear approximation, when the initial datum, target and control actions are sufficiently small. This paper makes this approximation precise at the level of optimal control problems. First, we provide verification criteria which distinguish whether an optimal control is an interior point or a boundary point of the admissible control set. We then prove that the differences between the optimal controls and the corresponding optimal trajectories for the quasi-linear and linear parabolic equations are higher-order infinitesimals with respect to the small initial datum and target appearing in the cost functional. Consequently, for small data, the optimal control problem governed by the quasi-linear equation can be approximated by the corresponding linear problem. In the interior-point case, the resulting approximation order is sharp."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "A Design Study on Voice-based Interaction for Immersive Network Visualization and Analysis",
+    "authors": "Sam Yu-Te Lee, Hsin-Ai Chen, Sarah Yuniar, David Bauer, Kwan-Liu Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26526v1",
+    "source": "arXiv",
+    "abstract": "Visual network analysis leverages network visualization authoring techniques to facilitate sensemaking, serendipitous discovery, and hypothesis verification on network data. However, transferring the same paradigm to immersive environments is non-trivial due to insufficient UI affordance for authoring operations. Researchers have studied combining multiple modalities for interactions, but the high learning curve of such input systems limits their adoption by typical data analysts, let alone for network analytics. In this work, we investigate the advantages and limitations of voice as the primary input modality with a research-through-design (RtD) study, in which we design a system that supports voice-based interactions for immersive network visualization facilitated by Large Language Models (LLMs). Through a user study on social network data analysis with participants from social science and computer science backgrounds, we find that voice interactions can improve perceived usability relative to controller-based interaction and lower the cognitive effort of formulating commands, since users can express intent in natural language rather than compressing it into terse instructions. We discuss design implications for immersive visualizations, highlighting how usability limits adoption while simplified interactions and voice-based controls enhance fluidity and support complex, multi-parameter operations."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "EvoPINN: Agentic Discovery of Executable Algorithms for Physics-Informed Neural Networks",
+    "authors": "Peng Yin, Kai Li, Yifan Zhang, Jian Cheng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26490v1",
+    "source": "arXiv",
+    "abstract": "Physics-informed neural networks (PINNs) have emerged as a powerful paradigm for solving partial differential equations (PDEs), yet their performance heavily relies on the manual, trial-and-error engineering of neural representations, loss formulations, and optimization dynamics. While Large Language Models (LLMs) offer a promising avenue for automated design, unconstrained code generation often yields mathematically invalid or numerically unstable solutions under strict scientific computing constraints. To bridge this gap, we propose \\textbf{EvoPINN}, an agentic framework that reformulates PINN development from labor-intensive manual design into a rigorous, execution-grounded algorithm discovery problem. EvoPINN navigates a modular search space by decoupling neural representations from training programs, utilizing an LLM agent to iteratively propose memory-conditioned programmatic modifications. To ensure scientific validity, all candidates undergo strict structural verification and budget-matched PDE evaluation. Extensive experiments across diverse PDE regimes (oscillatory, elliptic, dissipative, and nonlinear transport) demonstrate that EvoPINN discovers PDE-specialized learning algorithms that significantly reduce relative $L_{2}$ error compared to baselines. Crucially, EvoPINN autonomously invented SLRC-PINN, a novel architecture whose performance gains persist under rigorous parameter-matched comparisons, establishing the viability of execution-grounded agents for discovering genuinely new scientific computing mechanisms."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Can We Trust AI in 6G? Verifiable and Auditable AI-Driven Trustworthy Wireless Networks",
+    "authors": "Genze Jiang, Yizhou Huang, Kezhi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26409v1",
+    "source": "arXiv",
+    "abstract": "Mobile network operators are increasingly exploring the use of artificial intelligence (AI) to automate complex network tasks, such as cell selection and mobility management. A fundamental problem arises: there is currently no way to verify that an AI function is making the right decisions or for the right reasons, rather than arriving at correct-looking answers through unreliable shortcuts. In safety-critical and resilience-focused infrastructure, this lack of transparency poses a significant challenge to the widespread adoption of AI technologies in wireless networks. In this paper, we propose a mechanical auditing approach: inspecting a function's internal representations and checking them against machine-verifiable 3GPP specifications. Specifically, we set out a general three-step auditing principle that locates protocol-relevant features, verifies their causal role, and diagnoses how adaptation reshapes their use, grounding it throughout publicly available interpretability and telecommunications research. We present an audit-native network architecture in which a dedicated verification agent continuously checks the reasoning of AI functions in networks, supporting both predeployment certification and runtime auditing. We also discuss how it could be realised, the data and benchmarks, as well as the open challenges that remain before mechanistic auditing can enter telecommunications practice and standardisation."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "A Fresh Look at Best Inductive Loop Invariant Synthesis for Bit-Vector Relations",
+    "authors": "Hanrui Zuo, Peisen Yao, Kui Ren",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26386v1",
+    "source": "arXiv",
+    "abstract": "Synthesizing best inductive invariants (BII) is fundamental to program analysis and verification, yet existing approaches face significant efficiency challenges. We introduce a new formulation for the problem through the lens of mathematical optimization over quantified constraints in first-order theories. The formulation offers a constructive and operational perspective on the BII problem and opens new algorithmic avenues. Building on this formulation, we present two new algorithms for bit-vector programs: a strategically guided linear search that exploits the lattice structure and a bitwise greedy approach that resolves bound bits from high to low with a solver-call count linear in bit-width. We evaluate our approach on a comprehensive benchmark suite, demonstrating significant performance improvements over conventional methods based on symbolic abstraction and chaotic iteration. Experimental results demonstrate our approach solves up to 86\\% more benchmarks than baseline methods, with improved scaling in solver-call count for high bit-widths and improved verification effectiveness when integrated with k-induction."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Exploring Structures in Physics Problems: Can AI Agents Discover Statistical Mechanical Mappings?",
+    "authors": "Wanyu Zhao, Wanbing Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26367v1",
+    "source": "arXiv",
+    "abstract": "An important skill in theoretical physics is to recognize when a new problem can be transformed into a known model. We study this skill as an AI-agent task: can LLM-based agents discover statistical mechanical mappings from a raw partition function to a tractable representation? To probe this question, we introduce StatMechBench-v0, a benchmark of six Ising-type problems covering transfer-matrix methods, gauge-removable disorder, and planar/Pfaffian structure. We evaluate a simple propose-verify-revise agent across multiple LLMs and problem phrasings. The results show that numerical feedback often helps agents repair code and recover correct partition functions. However, agents can also pass the numerical checks while misidentifying the underlying tractable class or understating computational complexity. This both reveals limitations in current LLM reasoning and calls for a verification stack that goes beyond numerical agreement, incorporating, for example, symbolic checks and structural invariants. Our study provides an early evaluation and design directions for AI agents aimed at structural discovery in theoretical physics."
+  },
+  {
+    "date": "2026-07-29",
+    "title": "A counterexample to the claw-free Schur-positivity conjecture",
+    "authors": "Jitendra Prajapati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.26364v1",
+    "source": "arXiv",
+    "abstract": "The claw-free Schur-positivity conjecture, recorded by Stanley (1998) and credited there to Gasharov, asserts that the chromatic symmetric function of every claw-free graph is Schur-positive. We give a counterexample on 12 vertices: the line graph $G$ of the graph obtained from a 4-cycle by attaching triangles at two opposite vertices and pendant edges at the other two satisfies $[s_{(3,3,3,3)}]X_G = -64$. The coefficient follows from a short computation by hand and is also reproduced by three exact implementations. An exhaustive computation over all 216,777 connected claw-free graphs on at most 11 vertices shows that every one is Schur-positive, so 12 vertices is the minimum order of any counterexample. A complete census of the 1,728,404 connected claw-free graphs on 12 vertices finds exactly two non-Schur-positive isomorphism classes; the other has graph6 code K?`CR@`bAbRB and coefficient $[s_{(3,3,3,3)}] = -40$."
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Leak-Free Machine Learning for Hardware Trojan Detection at RTL",
+    "authors": "Raj Kumar, Ananya Jyoti Mahanta, Shyamapada Mukherjee",
+    "publish": "2026 9th International Conference on Computing Methodologies and Communication (ICCMC)",
+    "url": "https://doi.org/10.1109/iccmc69250.2026.11624696",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "LLM-Based Intrusion and Anomaly Detection for IoT Networks: A Systematic Survey_supp1-3714987.pdf",
+    "authors": "Stanislav Vitek",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/jiot.2026.3714987/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "LLMEdger: Phase-Aware Model Parallelism Scheduler for LLM Inference on Edge",
+    "authors": "Xinyang Shen, Lena Mashayekhy",
+    "publish": "2026 IEEE 10th International Conference on Fog and Edge Computing (ICFEC)",
+    "url": "https://doi.org/10.1109/icfec69006.2026.00010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "LLM-based Multilingual Fake News Detection using Cross-Lingual Semantic Alignment and Contextual Reasoning",
+    "authors": "T Divya, A Meenakshi",
+    "publish": "2026 9th International Conference on Computing Methodologies and Communication (ICCMC)",
+    "url": "https://doi.org/10.1109/iccmc69250.2026.11625000",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Adaptive Multi-LLM Hallucination Detection web application",
+    "authors": "S.Rajeshwari, Muthumanikandan K, Mohamed Habith S, Sandeep Raj KT, Pranav T",
+    "publish": "2026 9th International Conference on Computing Methodologies and Communication (ICCMC)",
+    "url": "https://doi.org/10.1109/iccmc69250.2026.11624792",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "A Federated LLM-Based Framework for DDoS Defense in Mobile Edge Computing",
+    "authors": "Zhang Shuo, Mori Kousuke, Hirotsu Toshio",
+    "publish": "2026 IEEE 10th International Conference on Fog and Edge Computing (ICFEC)",
+    "url": "https://doi.org/10.1109/icfec69006.2026.00017",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "The Reproduction Number of AI Worms: Epidemic Modeling of Adversarial Attacks in LLM Agent Ecosystems",
+    "authors": "Jong-Hyouk Lee",
+    "publish": "IEEE Security &amp; Privacy",
+    "url": "https://doi.org/10.1109/msec.2026.3713527",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Translating Deep Multi-Omic Latent Spaces into LLM-Synthesized Mechanistic Hypotheses",
+    "authors": "Neil Lin",
+    "publish": "Proceedings of the 17th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics",
+    "url": "https://doi.org/10.1145/3807503.3820007",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Prompt-Based LLM Analysis of Policy Agenda Evolution in U.S. Presidential Debates (1960-2024)",
+    "authors": "Lavanya Prahallad, Radhika Mamidi",
+    "publish": "2026 2nd International Conference on Federated Learning and Intelligent Computing Systems (FLICS)",
+    "url": "https://doi.org/10.1109/flics70075.2026.11621938",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Forecasting Tourist Arrival Using Image Data and LLM",
+    "authors": "Kaijian He, Ruoxi Wu, Linyuan Zheng, Yingchao Zou, Don Wu",
+    "publish": "2025 International Conference on Computer Science and Artificial Intelligence Applications (CSAIA)",
+    "url": "https://doi.org/10.1109/csaia65930.2025.11623789",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "From Video QoE to LLM QoE: Analogies, Gaps, and Challenges in Modeling Interactive QoE",
+    "authors": "Pablo Pérez, Marta Orduna, Kamil Koniuch",
+    "publish": "2026 18th International Conference on Quality of Multimedia Experience (QoMEX)",
+    "url": "https://doi.org/10.1109/qomex69967.2026.11618379",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "InfiTRON: An LLM-Powered Infrastructure for Monitoring, Intervention, and Technology Repair Operations Network",
+    "authors": "Timothy W. Tron, Abdelbaset Hamza",
+    "publish": "2026 IEEE 26th International Symposium on Cluster, Cloud and Internet Computing Workshops (CCGridW)",
+    "url": "https://doi.org/10.1109/ccgridw69005.2026.00042",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Toward a Taxonomy of LLM Roles and Interaction Patterns in Game Content Generation Systems",
+    "authors": "Ashley Hart",
+    "publish": "Proceedings of the 21st International Conference on the Foundations of Digital Games",
+    "url": "https://doi.org/10.1145/3815598.3815694",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Executable Control Matters More Than Model Intelligence in LLM-Assisted Software Sustaining Engineering",
+    "authors": "Salvatore Vella, Salah Sharieh, MalekSharieh, Alex Ferworn",
+    "publish": "2026 2nd International Conference on Federated Learning and Intelligent Computing Systems (FLICS)",
+    "url": "https://doi.org/10.1109/flics70075.2026.11621935",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Playing the Model: Ideology, Bias, and the Rhetoric of LLM Games",
+    "authors": "Jack Kelly, Noah Wardrip-Fruin, Elin Carstensdottir",
+    "publish": "Proceedings of the 21st International Conference on the Foundations of Digital Games",
+    "url": "https://doi.org/10.1145/3815598.3815659",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-29",
+    "title": "Precise LLM-based Semantic Slicing for Deadlock Detection in Concurrent Java Programs",
+    "authors": "Taythir G Martin, Rodion Podorozhny, Shibbir Ahmed",
+    "publish": "Proceedings of the 2026 34th IEEE/ACM International Conference on Program Comprehension",
+    "url": "https://doi.org/10.1145/3794763.3794793",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-29",
+    "title": "On the Limited Effect of Role Prompting in LLM-based Code Vulnerability Detection",
+    "authors": "Jinyang Guan, Haoyu Wang, Ying Yin, Yuhai Zhao",
+    "publish": "2026 7th International Conference on Big Data &amp; Artificial Intelligence &amp; Software Engineering (ICBASE)",
+    "url": "https://doi.org/10.1109/icbase70763.2026.11619486",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "FedLNS: Crowdfunding Success Prediction in E-Commerce with Reduced LLM Utilization",
+    "authors": "Srinivasa Reddy Arekuti, Sai Mounika Chintalapudi, Sai Anurag Illendula, Suryateja Kothuru, C Veena, Vishwesh Nagamalla",
+    "publish": "2026 9th International Conference on Computing Methodologies and Communication (ICCMC)",
+    "url": "https://doi.org/10.1109/iccmc69250.2026.11624828",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-29",
+    "title": "MS-CLIP-AD: Multi-Scale CLIP-Guided Anomaly Detection with Chain-of-Thought LLM Reasoning for Interpretable Industrial Inspection",
+    "authors": "Bing Liu",
+    "publish": "2026 7th International Conference on Big Data &amp; Artificial Intelligence &amp; Software Engineering (ICBASE)",
+    "url": "https://doi.org/10.1109/icbase70763.2026.11619505",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Quest of Aivengarde: Comparative Study of Player Experience Across LLM Dialogue Systems",
+    "authors": "Emil Rimer, Anthon Petersen, Rasmus Ploug, Marco Scirea",
+    "publish": "Proceedings of the 21st International Conference on the Foundations of Digital Games",
+    "url": "https://doi.org/10.1145/3815598.3815622",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
