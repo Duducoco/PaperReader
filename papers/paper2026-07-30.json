@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-07-30",
+    "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+    "authors": "Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen, Fangzhi Xu, Zichen Ding, Nuo Chen, Jialin Cao, Xingdong Gong, Zehao Li, Kaiming Jin, Xinfeng Yuan, Zhoumianze Liu, Jingyang Gong, Zhangyue Yin, Jiahui Gao, Zhiyong Wu, Tianbao Xie, Jianbing Zhang, Ben Kao, Lingpeng Kong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28609v1",
+    "source": "arXiv",
+    "abstract": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60% lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+    "authors": "Haomin Qi, Xingliang Wang, Xuanqi Gao, Baihui Sang, Xin Zhang, Minghua Ma, Pengfei Gao, Yu Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28591v1",
+    "source": "arXiv",
+    "abstract": "Scaling coding agents requires a continuing supply of executable data for training, benchmarking, and continuous evaluation. Each task must couple a realistic software state with a specification, development tools, and reliable verification. To expand this supply, we present Change2Task, a system grounded in repository history that converts merged pull requests into verified tasks on healthy modern revisions of the same repository. It aligns historical evidence with evolved code, reconstructs task states through Patch Reversal, Code Mapping, or Agent Reconstruction, and validates the lifecycle from a healthy base to a task state and a restored state. By deriving multiple tasks grounded in developer evidence from maintained environments, Change2Task provides executable data for coding agent training and evaluation while reducing repeated environment setup, storage, and task construction effort. We evaluate the system through five common and widely adopted coding agent task families: Bug Fix, Feature Addition, Test Generation, Application Programming Interface Migration, and Security Repair. Starting from 1,130 source changes eligible for construction, Change2Task achieves 79.6% verified task construction success across these task families. On a matched candidate set, it recovers 29.2% more verified tasks than a construction baseline based on pull requests. Historical and reconstructed cases achieve up to 98.0% matched outcome agreement under agent evaluation, while reuse of modern bases reduces measured expenditure across the complete pipeline by 10.8%."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+    "authors": "Jiacheng Tao, Qingyun Sun, Haonan Yuan, Ziwei Zhang, Jianxin Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28580v1",
+    "source": "arXiv",
+    "abstract": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop reasoning tasks. Existing methods primarily focus on independent instance-level matching, which often fails to capture explicit relationships across modalities and documents. Although Graph-enhanced methods introduce structural modeling, they face a fundamental challenge in multimodal scenarios: incorporating fine-grained visual features leads to rapid graph expansion and retrieval noise, whereas coarse-grained representations cause the discarding of critical local evidence. To address this dilemma, we propose DualG-MRAG, a Dual-tier framework that introduces a decoupled architecture comprising Macro-reasoning and Micro-matching Graphs for Multimodal RAG. Specifically, to suppress retrieval noise by isolating global structural reasoning from fine-grained evidence matching, we construct a Macro Graph for global topological routing and a Micro Graph for precise local verification. Subsequently, to enable dynamic relevance propagation across heterogeneous evidence sources, we formulate retrieval as a query-driven message passing process via a GNN Retriever. Furthermore, to provide the generative model with coherent structural guidance, we introduce a dynamic programming decoding mechanism that extracts explicit reasoning paths directly from the GNN's forward pass, replacing the standard input of isolated document chunks. Extensive experiments demonstrate that DualG-MRAG outperforms baselines in both evidence recall and complex QA accuracy."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",
+    "authors": "Iliya Mirzaei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28576v1",
+    "source": "arXiv",
+    "abstract": "Methods that make a language model plan, criticise and rewrite its own answer, reflect on mistakes, pick the best of several attempts, or debate with copies of itself nearly all make it generate far more text than a single chain of thought. Because generating more text raises accuracy by itself, a gain over one chain of thought does not show the method's idea is what helped. Wang et al. (2024) reported that a simple baseline, sampling the same question repeatedly and keeping the most common answer, often wins once budgets are comparable, but gave point estimates with no confidence intervals or significance tests. We rerun that comparison as a designed experiment: seven methods, open models of 1.5B, 3B and 7B parameters, two mathematics benchmarks, 150 questions each. We count every generated token, including those spent on critiques, reflections, debate turns and checking, and compare each method against repeated sampling at its own measured cost. All 36 comparisons are paired by question, with bootstrap intervals and multiplicity correction. No method is reliably better than repeated sampling at equal cost anywhere. Ten are reliably worse, all of them methods where the model inspects its own output, and all 18 self-inspection comparisons are negative. The two kinds of self-inspection part company as models grow. Choosing stops hurting: taking Best-of-N's eight samples and just counting the most common answer beats letting the model pick by 8.0 and 11.3 points at 1.5B, but only 2.0 and 1.3 at 7B, no longer distinguishable from zero. Rewriting does not recover: Self-Refine and a forced Reflexion stay 3.6 to 10.1 points below baseline at 7B. Reflexion as published never triggered its own retry on the smallest model. It judged itself correct every time and silently became a single chain of thought. We release code, prompts, all generations, and our verification scripts."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "LeanCSP: A Framework for Certifying Constraint Reformulation and Solving in Lean",
+    "authors": "Pablo Manrique, Stefan Szeider",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28459v1",
+    "source": "arXiv",
+    "abstract": "Constraint programming is a core technology for solving complex combinatorial problems in scheduling, planning, configuration, and verification. Trusting its results therefore demands guarantees at two levels: that reformulations applied beforehand are semantics-preserving, and that solvers produce correct answers. In this work, we introduce a framework that addresses both verification levels in the Lean theorem prover: it can be used to prove formulation-level properties, such as equivalence, equisatisfiability, and the correctness of symmetry-breaking constraints, parametrically for entire problem families; and to check solver-produced certificates for individual instances via translation backends to external formats such as MiniZinc, SMT-LIB, and OPB. Combining both levels yields an end-to-end workflow that establishes the satisfiability or unsatisfiability of a constraint problem without trusting the external solver. Experimental results show that our framework's verified symmetry breaking also pays off in practice: a single parametric proof per problem family, reused across all instance sizes, reduces solver search effort by a factor of up to 2x10^7, while the entire in-Lean certification stays affordable, taking at most a few minutes for our largest instances."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+    "authors": "Hongyu Chen, Liang Lin, Guangrun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28457v1",
+    "source": "arXiv",
+    "abstract": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while verifier-guided refinement relies on external feedback. We introduce Self-Verifying Refinement (SVR), an oracle-free multi-turn reinforcement learning framework that learns to use self-verification as a compute-control policy. At each turn, the model produces a solution together with a discrete correctness verdict and a confidence score; it retains the current answer only when the verdict is Correct and confidence exceeds a threshold, and otherwise continues refinement using its own self-verification. Ground-truth correctness is used only to construct training rewards and is never exposed to the policy through refinement prompts or required at inference. SVR is trained with GRPO on fixed-horizon trajectories using rewards that promote solution correctness, calibration-aware self-verification, and stop-ready correct states; adaptive stopping is activated only at inference. On seven mathematical reasoning benchmarks with Qwen3.5-2B, SVR achieves a macro-average accuracy of 0.563 with only 2.99 inference turns on average. In the evaluated complete-system comparison, it exceeds standard GRPO, strong multi-turn baselines, and a fixed-budget oracle-guided score-feedback reference while requiring substantially fewer turns than fixed ten-turn inference. These results demonstrate that learned self-verification can serve as an effective internal control signal for answer retention and adaptive test-time compute allocation."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "When Derived Measurements Mislead: Quantifying and Mitigating LLM Over-Trust with Privileged-Modality Reliability Evidence",
+    "authors": "Zongheng Guo, Tao Chen, Tianli Li, Mingzhe Cui, Yang Jiao, Lei Xie, Yi Pan, Xiao Hu, Manuela Ferrario",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28421v1",
+    "source": "arXiv",
+    "abstract": "Derived measurements increasingly enter large language model (LLM) pipelines as direct facts despite their instance-dependent validity. We define derived-feature over-trust (DFOT) as the failure in which a downstream LLM assigns such a measurement the epistemic status of a direct fact or uses it outside its valid scope. Using physiological sensing as a case study, D1 tests acceptance of a PPG-derived rhythm contradicted by offline ECG, whereas D2 tests rejection of an offline-confirmed reliable PPG rhythm under misleading severe history. ECG supplies training supervision and offline reference construction but is never shown to the LLM. Five estimands quantify this chain: conflict over-trust rate (COTR) and context-induced error rate (CIR) characterize D1/D2; correct repair rate (CRR) measures frozen-error repair; evidence-specific repair margin (ESRM) contrasts matched and patient-disjoint shuffled evidence; and utility harm rate (UHR) measures unnecessary verification among HIGH-reliability cases used without verification at baseline. The framework does not depend on a particular reliability generator. We demonstrate it on 50,000 paired PPG-ECG records using ECG-to-PPG privileged distillation as an illustrative baseline and PPG-only inference. On a protocol-locked 187-patient test, the baseline improves four repair and specificity endpoints by 1.82-6.69 percentage points, with all paired confidence intervals excluding zero; UHR increases by 0.67 percentage points (95% CI: -0.4 to +1.7). DFOT provides a common evaluation target for stronger mitigation methods. The code is available at https://github.com/Zongheng-Guo/When-Derived-Measurements-Mislead."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "LEDGERMIND: Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger",
+    "authors": "Enjun Du, Hange Zhou, Chenxu Du, Siyi Liu, Zirong Chen, Ziyu Zheng, Yongqi Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28374v1",
+    "source": "arXiv",
+    "abstract": "Multimodal agents for visual question answering increasingly operate as multi-step trajectories that interleave perception, retrieval, and reasoning, yet evaluation still largely reduces to final-answer accuracy. This aggregate signal cannot tell whether a correct answer was reached through grounded evidence, language priors, or accidental error cancellation. We propose to treat a multimodal agent trajectory as a provenance-constrained state machine: tool outputs are normalized into a Structured Evidence Ledger that serves as the trajectory state, downstream reasoning and decision claims may cite only active ledger entries, grounding is checked at the entity and numeric level, and repair is realized as typed state transitions that cannot introduce content without tool-produced provenance. We instantiate this design as LedgerMind (Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger), augmented by a Three-Layer Grounding Protocol, an Adaptive Dual-Path Dispatcher that matches reasoning depth to question complexity, and an Event-Triggered Verification-and-Repair engine with a formal provenance non-amplification guarantee. We use LedgerMind to target four recurring failure patterns that final-answer accuracy tends to obscure: unsupported intermediate reasoning, citation-backed entity hallucination (Phantom Grounding), over-reasoning on simple queries, and repair-time amplification. Experiments across multiple multimodal reasoning benchmarks and backbone MLLMs show that LedgerMind improves both answer accuracy and trajectory-level faithfulness."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "How Benchmarks Mis-Score Computer-Use Agents",
+    "authors": "Zihan Dong, Zhiyuan Ma, Zekun Wang, Yunqing Li, Zirou Liu, Ruixuan Deng, Qishi Zhan, Rui Qian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28367v1",
+    "source": "arXiv",
+    "abstract": "Computer-use agents (CUA) are being deployed to browse the web and operate desktop software, yet their benchmark scores are still commonly produced by brittle scripted oracles. A score is the output of a pipeline in which tasks can be stale, trajectories can omit decisive visual evidence, evaluators can reject valid alternatives, and aggregate reports can hide the cause of failure. We organize these problems into a reliability framework spanning task construction, trajectory observation, scoring, and reporting. We then audit 150 public failure-scored trajectories from five web, enterprise-workflow, and desktop-control benchmarks, find that 15.3\\% of FAIL verdicts are wrong: 10.7\\% are evaluator false negatives and 4.7\\% are broken tasks. For genuine failures, a three-tier diagnostic taxonomy shows that verification/feedback and planning failures dominate execution/grounding errors, while a single scalar success rate can not explain. We connect these findings to newer long-horizon CUA benchmarks and derive stage-specific design rules for CUA evaluation."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Tycho: Active Abstraction with Programmatic World Models for ARC-AGI-3",
+    "authors": "Jens Lehmann, Andrei Aioanei, Sahar Vahdati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28287v1",
+    "source": "arXiv",
+    "abstract": "ARC-AGI-3 turns abstraction into an interactive problem of skill acquisition. A player must infer an unfamiliar game's rules, hidden state, and goal while maintaining action efficiency because every move counts. We formalize these environments as parameterized rendered deterministic Moore machines and introduce Tycho, a coding-agent system that constructs and uses game-specific models during interaction. Tycho separates actionable observations from intermediate animation, level-completion, and game-over frames. From this structured history, an agent can model, test, plan with, repair, or bypass a free-form executable hypothesis. In one matched public-set run per policy, we compare four orchestration policies on all 25 public games using Claude Opus 4.8 under matched inference budgets. Actor-requested delegation to a model builder obtains the highest observed mean Relative Human Action Efficiency (RHAE), 88.49. With this selected policy, GPT-5.6 Sol and Opus 5 both reach 100.00 RHAE and complete all 183 levels. Their game-balanced first-run human-replay midranks are 98.5 and 100.0. Opus 5 uses 61% fewer scored actions than the aggregate official human baselines. Automatic repair after verification failures produces models that reproduce observed transitions much more accurately, yet reaches only 83.07 RHAE. Transition match indicates whether a simulator reproduces observed dynamics, not whether it has identified the objective or improves the next action. Strong play also requires deciding when to construct, repair, use, or bypass a model. We call this joint problem active abstraction: generating a testable model from costly interaction and deciding when acquiring or using it is worth its cost."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "A MATLAB Tool for the Stable Generation of Matrix Polynomial Evaluation Schemes with Two-Product Savings",
+    "authors": "J. Ibáñez, J. Sastre, J. M. Alonso, E. Defez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28286v1",
+    "source": "arXiv",
+    "abstract": "Computing numerical approximations of matrix functions frequently relies on the efficient evaluation of high-degree matrix polynomials. Although computational bounds are historically governed by the Paterson--Stockmeyer (PS) method, recent theoretical developments have demonstrated the viability of evaluation schemes that eliminate two matrix products ($2M$). Existing literature documents stable instances of this $2M$ reduction only for isolated cases, such as specific degrees of Taylor approximations for the matrix exponential and the matrix logarithm. However, a generalized approach for arbitrary polynomials remains unestablished. To address this limitation, this work presents a software-driven procedure that extends these computational savings to polynomials of degrees $m \\in \\{18, 21, 24, 26, 27, 28\\}$ and all $m \\ge 30$, requiring primarily a non-zero leading coefficient. Since the underlying evaluation coefficients must be determined by solving systems of nonlinear equations (SNEs), selecting a numerically stable solution set is critical. We introduce an automated verification routine designed to filter and validate robust coefficient sets for floating-point execution. The primary contribution is a MATLAB implementation leveraging variable precision arithmetic to handle the underlying SNEs, verify stability, and project precision bounds. Numerical experiments involving various matrix functions verify that the developed implementation preserves or, in some instances, enhances the numerical accuracy of the classic PS method, while systematically achieving the theoretical reduction of $2M$."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Space2Ground 2.0: A Multi-Source Dataset and Framework for Agricultural Monitoring through Fusion of Street-Level and Satellite Imagery",
+    "authors": "Iason Tsardanidis, Alkiviadis Koukos, George Choumos, Vasileios Sitokontantinou, Charalampos Kontoes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28247v1",
+    "source": "arXiv",
+    "abstract": "Accurate and scalable parcel-level agricultural monitoring remains challenging because satellite Earth Observation alone provides only an overhead perspective of agricultural parcels, while optical observations are further affected by cloud-induced temporal gaps. This paper presents Space2Ground 2.0, a multi-source framework integrating Sentinel-1 SAR and Sentinel-2 multispectral time series with geo-tagged street-level imagery acquired using vehicle-mounted cameras and shared through the Mapillary platform. A largely automated processing pipeline performs semantic filtering, image quality assessment, viewpoint-based parcel association, and dataset refinement, transforming large volumes of crowdsourced imagery into parcel-linked, analysis-ready data. Applied over Cyprus during the 2022 growing season, the pipeline produced a curated dataset of 46,050 annotated street-level images, selected from an initial collection exceeding 900,000 images and linked with satellite information for 8,581 agricultural parcels. The practical value of the dataset was assessed through parcel-level crop classification experiments using both single- and multi-source observations. The results demonstrate that street-level imagery provides complementary fine-scale visual information that enhances classification when integrated with satellite time series. Overall, Space2Ground 2.0 provides an openly available benchmark dataset and a reproducible methodology for multimodal agricultural monitoring, with potential applications in visual verification, reduced reliance on costly field inspections, and data-driven agricultural policy implementation."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "AI and Authenticity in Islamic Research: A Critical Evaluation of Generative AI Reliability, Hallucination, and Source Fidelity in Quranic, Hadith, and Fiqh Knowledge",
+    "authors": "Muhammad Sajjad Akbar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28237v1",
+    "source": "arXiv",
+    "abstract": "Generative Artificial Intelligence (AI) is increasingly used by Muslims for religious guidance, Qur'anic interpretation, Hadith explanation, jurisprudential rulings, and Islamic education. Despite its growing adoption, there is limited empirical evidence on whether current AI systems provide authentic, verifiable, and trustworthy Islamic knowledge suitable for high-trust religious contexts. This study evaluates six leading generative AI systems using fifty realistic open-ended Islamic questions covering Qur'anic interpretation, Hadith, Fiqh, ethics, pastoral advice, and Madhhab-sensitive topics. Responses were collected under real-world conditions from participants in Australia and the United Kingdom and analysed using a mixed-method framework examining domain accuracy, citation verification, hallucinations, jurisprudential consistency, uncertainty handling, source provenance, and geographical variation. The study addresses four research questions: (1) How accurate and authentic are AI-generated responses across major Islamic knowledge domains? (2) To what extent do AI systems produce hallucinations, incomplete citations, or unverifiable religious references? (3) How consistently do models handle jurisprudential disagreement, Madhhab diversity, and uncertainty? (4) Are current AI systems sufficiently reliable for religious guidance, Islamic education, and scholarly research? Overall, current generative AI systems are valuable as assistive tools for introductory Islamic learning but should not be treated as authoritative sources for religious rulings or Islamic research without verification against authenticated primary sources and qualified scholarly expertise. This study provides one of the first comprehensive empirical evaluations of AI reliability within Islamic knowledge, offering practical guidance for researchers, educators, AI developers, and the wider Muslim community."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents",
+    "authors": "Luigi Sigillo, Matteo Silvestri, Francesco Tabaro, Rajat Bhatnagar, Syed Irtaza Mubashar, Matt Jeffryes, Daljit Nijjer, Vittorio Perera, Ola Spjuth, Julio Saez-Rodriguez, Melissa Harrison, Fabio Petroni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28229v1",
+    "source": "arXiv",
+    "abstract": "The web is increasingly accessed by AI agents rather than humans. Every agent needs knowledge, especially in the life-sciences, where agentic pipelines are growing fast. Access to the literature is a crucial part of that need, and resources such as Europe PMC, with over 40M indexed records, are widely used to meet it. Yet these resources were not built for AI agents: they take keywords and complex syntax and return whole papers, so every agent must learn the syntax, issue several searches, and read full papers to find the evidence it needs. We introduce EMBL AI Librarian, a knowledge layer that upgrades the Europe PMC interface for AI agents: an agent asks in natural language and receives evidence that answers it. A single LLM orchestrates the whole knowledge retrieval process: it plans complementary subqueries executed by the live Europe PMC search engine, then reads the selected papers and locates the relevant evidence. We evaluate Librarian across four benchmarks: literature synthesis, claim verification, open-domain question answering, and downstream biology tasks such as protocol questions and sequence manipulation. On ScholarQABench, Librarian improves Citation F1 by more than $16$ points over strong recently published baselines. Used as the retrieval layer of an existing claim-verification pipeline, it increases agreement with expert consensus; and on the open-form LitQA2 benchmark, a GPT-5.4 agent scores about $8$ points higher when grounded in Librarian than with web search. Overall, our results show that equipping life-science agents with the Librarian knowledge layer improves performance across a range of tasks. We release our code publicly at https://github.com/petroni-lab/librarian"
+  },
+  {
+    "date": "2026-07-30",
+    "title": "FaithEyes: Towards Faithful Tool Use via Multi-Agent Process-Image Verification",
+    "authors": "Haoqing Wang, Xingrun Xing, Wei Xia, Ziheng Li, Yehui Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28225v1",
+    "source": "arXiv",
+    "abstract": "Agentic vision-language models (VLMs), which interleave textual reasoning with explicit tool calls such as cropping and code-based image manipulation, have emerged as a compelling paradigm for reliable and interpretable multimodal reasoning. However, recent studies have revealed that such models often use tools unfaithfully. Many process images are irrelevant to the question (e.g., the tool crops the wrong region or misses the queried target), yet the call still receives full credit and the model still answers correctly. Such decorative or misaligned tool calls waste computation and reveal that the model leans on prior knowledge or the original image rather than the evidence it retrieves. This may stem from two limitations of prevailing methods: the tool reward fails to distinguish useful from useless calls, and tool feedback carries no signal of usefulness. To this end, we introduce FaithEyes, a multi-agent self-judging framework. Concretely, we use a VLM to judge whether each process image helps answer the question. The judgement is injected into the reasoning context as part of the tool observation to help subsequent reasoning, and meanwhile is used to scale the tool reward by the helpful-tool ratio to suppress reward hacking. To keep judgement available at evaluation and thus ensure train-test consistency, we further design a multi-agent framework where the model itself serves as a subagent to judge the tool calls from main agent, eliminating any dependence on an external model at inference. Training via a two-stage SFT + RL pipeline on adapted open-source data, FaithEyes attains competitive or superior accuracy across visual perception and reasoning benchmarks, while markedly improving tool faithfulness. The homepage is at https://github.com/Mosi-AI/FaithEyes."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Bridging Probabilistic LLMs and Deterministic Statistical Validation: The PROVE Multi-Agent Framework for Clinical Trial Reporting",
+    "authors": "Zhaohua Lu, Cheng Zheng, Yuanyuan Han",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28218v1",
+    "source": "arXiv",
+    "abstract": "Ensuring the accuracy and consistency of clinical trial Tables, Figures, and Listings (TFLs) remains a major challenge in regulatory reporting. Independent programming and manual review are essential quality-control practices, but cross-output verification still depends heavily on reviewer inspection and may miss structural, logical, or arithmetic discrepancies. Large language models (LLMs) can help interpret varied table language and navigate lengthy study documents, but they are not reliable substitutes for programmed statistical checks. We introduce PROVE (Programmatic Reporting and Output Verification Engine), an auditable framework that uses optional LLM and retrieval support for table interpretation while reserving numerical and logical decisions for programmed validators. PROVE links findings to source evidence, supports cross-output consistency checks, and allows LLM use to be enabled or disabled based on study requirements. We evaluated PROVE using ten replicated synthetic oncology reporting packages generated from raw data through SDTM, ADaM, and TFL outputs, with paired clean and discrepancy-injected packages; each replicate included 15 randomly injected discrepancies. We examined two table-label settings: exact labels matching the validator vocabulary and labels with similar clinical meaning but different wording. Within the implemented rule classes, all automated PROVE variants achieved perfect classification in the exact-label setting. In the label-variation setting, LLM-assisted semantic matching improved overall recall from 0.588 to 0.993 and overall F1 from 0.735 to 0.996 compared with exact-match, fuzzy lexical, and embedding-similarity variants. These findings suggest that LLMs are most useful for interpreting real-world variation in TFL wording and formatting, while executable checks should remain responsible for final numerical validation."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Causal Discovery with Inverted Self-attention for Multivariate Time Series",
+    "authors": "Yusen Liu, Yong Wang, Yifan Yin, Tianqing Zhu, Xiufeng Liu, Huan Huo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28212v1",
+    "source": "arXiv",
+    "abstract": "Causal discovery in multivariate time series data is challenging due to complex interactions, high dimensionality, and nonlinear dependencies among variables. Existing methods often struggle to capture these complexities, resulting in inaccurate causal structures. To address this issue, we propose a novel framework that leverages self-attention mechanisms within the transformer architecture for causal discovery. Our approach introduces a novel inverted causal self-attention mechanism (CSAM) that emphasizes latent and indirect causal relationships by inverting tokens and inducing sparsity in attention scores, focusing on significant causal interactions and reducing spurious correlations. Additionally, we develop a global causal algorithm to identify global causal links, providing a holistic metric for causal influence, along with a causal verification module to ensure robustness in the identified causal relationships, enhancing the reliability of our framework. Experiments on both linear and nonlinear datasets, along with ablation studies and sensitivity analyses, show that our framework outperforms existing methods, demonstrating its potential for causal discovery in complex multivariate time series."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Finite-time blow-up for the mass-critical half-wave equation with negative energy",
+    "authors": "Jeongheon Park",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28194v1",
+    "source": "arXiv",
+    "abstract": "We study the one-dimensional focusing mass-critical half-wave equation \\[ i\\partial_tu=|D|u-|u|^2u. \\] For even initial data with negative energy and mass slightly above the ground-state mass, we prove finite-time blow-up and obtain the upper bound \\[ \\|u(t)\\|_{\\dot H^{1/2}} \\lesssim \\frac{|\\log(T-t)|^{1/4}}{\\sqrt{T-t}} \\qquad\\text{as }t\\uparrow T. \\] This is the first finite-time blow-up result for negative-energy solutions to the mass-critical half-wave equation in the near-ground-state regime. The proof uses the modulation analysis developed by Merle--Raphaël \\cite{MerleRaphael2005AnnMath}. For the half-wave equation, the key missing ingredient is a coercivity estimate for a nonlocal quadratic form generated by the scaling direction. Unlike the local NLS, the half-wave equation does not admit the ODE methods used to establish the corresponding coercivity estimate. Instead, we prove the coercivity estimate by an analytic reduction followed by a rigorous computer-assisted proof. The spectral analysis part reduces the coercivity problem to a finite collection of spectral inequalities by combining constrained Morse index arguments with the Birman--Schwinger principle. The computer-assisted part certifies these inequalities by interval arithmetic using a validated approximation of the ground state obtained by compactifying the real line. Together with the modulation analysis, this coercivity theorem gives the finite-time blow-up result."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data",
+    "authors": "Pouya Rajabi, Mohsen Toorani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28191v1",
+    "source": "arXiv",
+    "abstract": "Federated learning enables multiple institutions to train shared models without exchanging raw clinical EEG data, but it does not fully prevent privacy leakage from individual model updates. This paper presents a privacy-preserving federated learning framework for clinical EEG data using masking-based secure aggregation as the core protection mechanism. The framework combines graph-based communication, threshold secret sharing, dropout-resilient aggregation, local update clipping, an optional Bloom filter-based privacy-preserving record-linkage initialization module, and auxiliary-notary-based verifiability. It supports both semi-honest and malicious aggregation settings and is implemented using the Flower federated learning framework. The secure-aggregation variants are evaluated in a simulated cross-silo healthcare setting using TUH EEG-derived data under different client configurations. Under the stated assumptions, the secure variants hide individual updates from the aggregation server. The results show that these variants remain compatible with federated model training, although malicious-setting safeguards and lightweight consistency-checking mechanisms introduce additional computation, communication, and round-duration overhead. The semi-honest variant provides the lowest overhead among the secure configurations, while malicious and auxiliary-notary variants offer stronger consistency, integrity, and lightweight verification support at higher cost."
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Piggybacking on Perception: Stealthy Concurrent Audio Prompt Injections against Multimodal LLM Agents",
+    "authors": "Mingxiao Liu, Yitong Li, Haoren Zhao, Yaoxiang Bian, Jianan Ma, Jian Zhang, Jialuo Chen, Xinhao Deng, Zhen Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28165v1",
+    "source": "arXiv",
+    "abstract": "Large Language Model (LLM)-driven multimodal agents are increasingly deployed to execute autonomous tasks via continuous audio interaction. While this paradigm enhances interaction naturalness, it introduces a critical yet under-explored attack surface, as audio inputs inevitably contain environmental noise beyond user control. In this paper, we investigate concurrent audio prompt injection attacks targeting multimodal agents. Distinct from traditional acoustic attacks on voice devices, we propose novel techniques for instruction augmentation and scenario concealment. These methods allow malicious audio instructions to imperceptibly \"piggyback\" onto user speech, thereby hijacking agents to execute malicious actions. To systematically quantify this threat, we construct AudioAgentSecurity, the first comprehensive benchmark for audio instruction injection attacks, encompassing 8 real-world task scenarios and 10 distinct attack patterns. We evaluate 11 state-of-the-art agents, including Gemini 3 Pro and GPT-4o-audio. Notably, our methods achieve an average Attack Success Rate (ASR) of 69.10\\% against the advanced Gemini 3 Pro. To counter this threat, we further introduce Cascaded Audio Decoupling and Verification (CADV), a defense mechanism based on source separation and consistency analysis. Compared with existing prompt-level defenses, CADV leverages acoustic source separation and cross-modal consistency analysis to detect audio instruction injections more robustly, achieving over 90\\% detection success across diverse attack vectors. Finally, real-world experiments with human volunteers on Doubao AI Smartphone in diverse dynamic real-world scenarios confirm the attacks' high stealth and efficacy, while demonstrating that our defense reliably mitigates these vulnerabilities."
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Enhancing Zero-Shot Object Navigation via LLM-Inferred Co-occurring Objects",
+    "authors": "Sangmin Park, Minhwan Ko, Kyoobin Lee",
+    "publish": "2026 23rd International Conference on Ubiquitous Robots (UR)",
+    "url": "https://doi.org/10.1109/ur69537.2026.11626776",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Modular Autonomy with Conversational Interaction: An LLM-driven Framework for Decision Making in Autonomous Driving",
+    "authors": "Marvin Seegert, Korbinian Moller, Johannes Betz",
+    "publish": "2026 IEEE Intelligent Vehicles Symposium (IV)",
+    "url": "https://doi.org/10.1109/iv66570.2026.11623831",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Enhancing LLM-based Autonomous Driving with Modular Traffic Light and Sign Recognition",
+    "authors": "Fabian Schmidt, Noushiq Mohammed Kayilan Abdul Nazar, Markus Enzweiler, Abhinav Valada",
+    "publish": "2026 IEEE Intelligent Vehicles Symposium (IV)",
+    "url": "https://doi.org/10.1109/iv66570.2026.11623835",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Interleaved LLM and Motion Planning for Scalable Multi-Object Collection in Large Scene Graphs",
+    "authors": "Ruochu Yang, Yu Zhou, Fumin Zhang, Mengxue Hou",
+    "publish": "2026 23rd International Conference on Ubiquitous Robots (UR)",
+    "url": "https://doi.org/10.1109/ur69537.2026.11626721",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Toward a Taxonomy of LLM Roles and Interaction Patterns in Game Content Generation Systems",
+    "authors": "Ashley Hart",
+    "publish": "Proceedings of the 21st International Conference on the Foundations of Digital Games",
+    "url": "https://doi.org/10.1145/3815598.3815694",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Distilling LLM Reasoning into Lightweight Neural Policies for Multi-Agent UAV Coordination",
+    "authors": "Suramya Pokharel, Eyuphan Bulut",
+    "publish": "2026 IEEE 27th International Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM)",
+    "url": "https://doi.org/10.1109/wowmom69805.2026.00026",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-31",
+    "title": "Skyt: Prompt Contracts for Software Repeatability in LLM-Assisted Development",
+    "authors": "Heitor Roriz Filho, Nasser Jazdi-Motlagh, Vicente Lucena Jr.",
+    "publish": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+    "url": "https://doi.org/10.1145/3793302.3793318",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-30",
+    "title": "WIP: Energy-Efficient LLM-Based Serving Cluster Formulation in Cell-Free Massive MIMO",
+    "authors": "Marcin Hoffmann, Pawel Kryszkiewicz",
+    "publish": "2026 IEEE 27th International Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM)",
+    "url": "https://doi.org/10.1109/wowmom69805.2026.00054",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Playing the Model: Ideology, Bias, and the Rhetoric of LLM Games",
+    "authors": "Jack Kelly, Noah Wardrip-Fruin, Elin Carstensdottir",
+    "publish": "Proceedings of the 21st International Conference on the Foundations of Digital Games",
+    "url": "https://doi.org/10.1145/3815598.3815659",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-30",
+    "title": "CogDeBias: An LLM-Based Multilingual Framework for Cognitive Bias Detection and Mitigation in Corporate Decision-Making Texts",
+    "authors": "Yutong Shen, Wang Yang, Yue Shen",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3717981",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Security-by-Design for LLM-Based Code Generation: Leveraging Internal Representations for Concept-Driven Steering Mechanisms",
+    "authors": "Maximilian Wendlinger, Daniel Kowatsch, Konstantin Böttinger, Philip Sperl",
+    "publish": "2026 IEEE 11th European Symposium on Security and Privacy (EuroS&amp;P)",
+    "url": "https://doi.org/10.1109/eurosp68448.2026.00049",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-31",
+    "title": "Bridging Design and Implementation: A Study of Multi-Agent LLM Architectures for Automated Front-End Generation",
+    "authors": "Caren Rizk, SayedHassan Khatoonabadi, Emad Shihab",
+    "publish": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+    "url": "https://doi.org/10.1145/3793302.3793371",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Quest of Aivengarde: Comparative Study of Player Experience Across LLM Dialogue Systems",
+    "authors": "Emil Rimer, Anthon Petersen, Rasmus Ploug, Marco Scirea",
+    "publish": "Proceedings of the 21st International Conference on the Foundations of Digital Games",
+    "url": "https://doi.org/10.1145/3815598.3815622",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Robust Assistive Mobile Manipulation via Structured LLM Programs, Confirmation Loops, and Hierarchical Skill Recovery\n                    <sup>*</sup>",
+    "authors": "Trung Minh Bui, Youngouk Kim, Jongsul Moon, Min-Young Cho, Myeongin Seo, Dongin Shin",
+    "publish": "2026 23rd International Conference on Ubiquitous Robots (UR)",
+    "url": "https://doi.org/10.1109/ur69537.2026.11626668",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "PRAM-R: A Perception-Reasoning-Action-Memory Framework with LLM-Guided Modality Routing for Adaptive Autonomous Driving",
+    "authors": "Yi Zhang, Xian Zhang, Saisi Zhao, Yinglei Song, Chengdong Wu, Nenad Petrovic, Alois Knoll",
+    "publish": "2026 IEEE Intelligent Vehicles Symposium (IV)",
+    "url": "https://doi.org/10.1109/iv66570.2026.11624007",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Formal Verification of Functional Safety Supervisors for Autonomous Vehicles Using Behavior Tree Architectures",
+    "authors": "Carlos Conejo",
+    "publish": "2026 IEEE Intelligent Vehicles Symposium (IV)",
+    "url": "https://doi.org/10.1109/iv66570.2026.11624044",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-31",
+    "title": "Leveraging Task-Specific Knowledge from LLM for Semi-Supervised 3D Medical Image Segmentation",
+    "authors": "Suruchi Kumari, Aryan Das, Swalpa Kumar Roy, Indu Joshi, Pravendra Singh",
+    "publish": "Proceedings of the Sixteen Indian Conference on Computer Vision, Graphics and Image Processing",
+    "url": "https://doi.org/10.1145/3774521.3774585",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-31",
+    "title": "LLM-Based Detection of Tangled Code Changes for Higher-Quality Method-Level Bug Datasets",
+    "authors": "Md Nahidul Islam Opu, Shaowei Wang, Shaiful Chowdhury",
+    "publish": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+    "url": "https://doi.org/10.1145/3793302.3793351",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Say the Mission, Execute the Swarm: Agent-Enhanced LLM Reasoning in the Web-of-Drones",
+    "authors": "Andrea Iannoli, Lorenzo Gigli, Luca Sciullo, Angelo Trotta, Marco Di Felice",
+    "publish": "2026 IEEE 27th International Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM)",
+    "url": "https://doi.org/10.1109/wowmom69805.2026.00027",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-7-30",
+    "title": "Development of a Document Processing Module for an AI assistant Based on LLM and RAG",
+    "authors": "Ksenia I. Eremina, Nikita V. Voinov, Pavel D. Drobintsev, Vladimir S. Tutygin, Ekaterina V. Skudneva, Dmitry F. Drobintsev",
+    "publish": "2026 XXIX International Conference on Soft Computing and Measurements (SCM)",
+    "url": "https://doi.org/10.1109/scm71573.2026.11625920",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
