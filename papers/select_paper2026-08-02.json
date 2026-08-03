@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-07-31",
+    "title": "RTLCurator: Label-Efficient Data Curation for RTL Generation",
+    "authors": "Siyang Cai, Cangyuan Li, Wenjing Chang, Kun Wang, Haoyu Gao, Yinhe Han, Ying Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29283v1",
+    "source": "arXiv",
+    "abstract": "Training large language models (LLMs) to write register-transfer level (RTL) requires large corpora of paired specifications and code, and such data is scarce enough that most public corpora are now synthesized. Synthesis provides scale but not correctness, and in two widely used RTL datasets only 24.4% and 53.5% of pairs pass generated functional tests. This raises the question of how much of such a corpus to keep and which part of it. Correctness alone is a poor answer. A pair that misbehaves in one corner case still shows valid syntax and interface conventions, and complex sequential designs are both harder to generate and harder to validate, so filtering by correctness leaves a corpus of short and simple modules. Correctness is also hard to obtain, since behavior leaves little trace on the surface in RTL, and validating an entire corpus only sorts pairs into passed and failed. We present RTLCurator, which learns a behavior-aware compatibility prior by contrasting each specification with implementations that fail simulation, and calibrates it to a new corpus using a small number of validated pairs. It then constructs the retained subset by balancing alignment, representation coverage, and RTL structural richness. On CodeV and RTLCoder, keeping 80% of the corpus this way improves on training with the full corpus across all reported metrics while validating only 10% of the pool, whereas ranking by the score alone falls below random selection and filtering the whole pool by simulation does no better.",
+    "title_zh": "RTLCurator：用于RTL生成的高效标签数据管理",
+    "abstract_zh": "训练大型语言模型（LLMs）以编写寄存器传输级（RTL）代码需要大量成对的规范和代码语料库，而此类数据非常稀缺，以至于目前大多数公开语料库都是通过合成生成的。合成方法提供了规模，但无法保证正确性。在两个广泛使用的RTL数据集中，仅有24.4%和53.5%的成对数据通过了生成的功能测试。这引发了一个问题：在这样的语料库中应该保留多少数据以及保留哪些部分。仅以正确性为标准并不是一个好的答案。一个在某个边界情况下表现异常的成对数据仍然可以展示有效的语法和接口约定，而复杂的顺序设计既难以生成也难以验证，因此仅以正确性为标准过滤会导致语料库中只剩下简短且简单的模块。此外，正确性也难以获得，因为在RTL中，行为在表面上几乎没有痕迹，而验证整个语料库只能将成对数据分为通过和失败两类。我们提出了RTLCurator，它通过对比每个规范与模拟失败的实现，学习一种行为感知的兼容性先验，并使用少量已验证的成对数据对新语料库进行校准。然后，它通过平衡对齐度、表示覆盖率和RTL结构复杂性来构建保留的子集。在CodeV和RTLCoder数据集上，以这种方式保留80%的语料库，在所有报告的指标上均优于使用完整语料库进行训练，同时仅验证了10%的数据池。而仅根据评分排序的效果低于随机选择，对整个数据池进行模拟过滤的效果也没有更好。"
+  }
+]

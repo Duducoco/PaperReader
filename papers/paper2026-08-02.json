@@ -1,0 +1,191 @@
+[
+  {
+    "date": "2026-07-31",
+    "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+    "authors": "Boyang Zhang, Adrian Lyjak, Eli Stewart, Zhaoqi Li, Simon Suo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29677v1",
+    "source": "arXiv",
+    "abstract": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ExtractBench}{HuggingFace} and \\href{https://github.com/run-llama/ExtractBench}{GitHub}."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Bootstrapping Self-Supervised Learning of Binary Classification Using Error Bounds: A Case Study on a Robotic Insertion Task",
+    "authors": "Zebin Duan, Norbert Krüger, Juan Heredia, Thorbjørn Mosekjær Iversen, Frederik Hagelskjær",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29640v1",
+    "source": "arXiv",
+    "abstract": "Flexible manufacturing requires rapid deployment of solutions and minimal setup time to remain competitive. An essential attribute is the ability to control error levels, as failures can range from minor performance degradation to severe equipment damage. However, conventional deployment often involves extensive setup, data collection, model training or parameter tuning, and system testing, resulting in significant delays that hinder commercial feasibility. We propose a data engine which gathers data and improves its performance while executing the task. The data engine consists of two classifiers, a fast model prediction and expensive verification. First, a model prediction is performed and based on the confidence level of the prediction, the expensive verification can be used. By adjusting the confidence level, users can control the level of tolerable error. Our method is implemented on a real-world robotic insertion task, which uses force data for the model prediction. The system applies UMAP dimensionality reduction and uses Wilson-Score to compute the confidence bounds of the prediction. Results demonstrate the ability to learn and reduce the need for expensive verifications over time, while staying within the set error-rate. The results highlight the potential of confidence bounds in self-improving models to enhance reliability in robotic classification task."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Educating the Agentic Engineer: Curricula, Collaboration, and Continuous Learning in the AI Era",
+    "authors": "Mamdouh Alenezi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29610v1",
+    "source": "arXiv",
+    "abstract": "Generative and agentic artificial intelligence (AI) are reconfiguring software and systems engineering from a discipline centered on human authorship of artifacts to one focused on directing, verifying, and governing autonomous systems. This transition demands a new professional archetype, the \\emph{agentic engineer}, whose enduring value lies in intent specification, orchestration of multi-agent workflows, critical evaluation of machine-generated outputs, and ethical judgment. This article presents an integrative conceptual synthesis across engineering education, computing education, human--AI interaction, human factors, and the learning sciences to derive an evidence-grounded educational architecture for this archetype. We introduce the ACCEL framework (Agentic Competencies through Curricula, Collaboration, and Enduring Learning), which organizes five competency pillars and maps them to three delivery vectors: curricula, collaboration, and continuous learning. Drawing on agency theory, trust-in-automation research, and empirical studies of AI-assisted programming, including evidence that AI benefits are unevenly realized and often misperceived, we propose a scaffolded curriculum, a delegation--verification pedagogical loop for human--AI teaming, redesigned assessment, governance-literate ethics integration, and alignment with current curricular guidelines and international AI competency frameworks. We identify key risks, including automation bias, deskilling, superficial engagement, and diffuse accountability, and conclude that educating the agentic engineer requires systemic transformation rather than incremental curricular change: instruction must shift from producing artifacts to exercising judgment over increasingly autonomous socio-technical systems."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention",
+    "authors": "Bryan Kwan, Benjamin Tan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29604v1",
+    "source": "arXiv",
+    "abstract": "As the hardware layer becomes a focus point for attackers, the need for improved hardware security verification techniques is more important than ever. State-of-the-art security verification techniques require significant manual effort from individuals with security expertise. Furthermore, there is no standard method to locate where the fault lies within the register transfer level (RTL) code. This paper presents CWEEP, a static analysis framework for detecting security weaknesses in RTL. CWEEP does not require a detailed security specification, so it can be used in the early stages of RTL development while properties are still under construction. Furthermore, CWEEP can identify the exact location in the RTL where the potential vulnerability resides and supports automatic code repair suggestions when applicable. Using datasets from the literature, we evaluate the performance of CWEEP on a set of two SoC designs with manually inserted bugs and on a large language model generated dataset, consisting of 3874 buggy modules. We find that CWEEP issues a correct warning up to 60.8% of the time. In contrast, the tool from a previous work issued a correct warning 17.5% of the time for the same dataset."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "AMTFV: Agentic Mathematical Tool-Flow Verification for LLM Self-Correction",
+    "authors": "Rui Zou, Yutao Zhu, Mengqi Wei, Ji-Rong Wen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29549v1",
+    "source": "arXiv",
+    "abstract": "Large language models have demonstrated strong mathematical problem-solving capabilities, yet reliably verifying their candidate answers remains challenging. Existing representative methods mainly revise outputs through natural-language reflection or assist verification by directly generating verification programs; the former may not reliably support exact computation, whereas the latter prematurely couples mathematical modeling with low-level implementation. We propose AMTFV (Agentic Mathematical Tool-Flow Verification). By introducing Mathematical Tool Flow (MTF) as an interrupt--execute--resume interface, AMTFV decouples verification modeling from concrete execution and supports exact computation through a mathematical toolbox. Specifically, the verification agent first constructs a verification workflow, encodes the mathematical objects and computational intent requiring reliable execution in an MTF request, and sends it to the mathematical toolbox agent. The latter parses the request, generates executable calls, and dispatches them to the backend for exact computation. Tool outputs then support candidate-answer adjudication, answer revision, and verification-workflow revision. We evaluate AMTFV on five challenging mathematical reasoning datasets with seven model configurations from DeepSeek, GPT, and Gemini. Experimental results show that AMTFV outperforms the representative baselines evaluated in this study overall; under an individual model configuration, it improves average accuracy over the strongest baseline by up to 8.3 percentage points, with larger gains on samples of medium and high verification complexity."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Robust mean field control: an application to optimal execution under composite uncertainty",
+    "authors": "Huafu Liao, Shuhui Liu, Chenchen Mou, Defeng Sun",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29514v1",
+    "source": "arXiv",
+    "abstract": "We provide a framework for robust mean field control problems that describe multi-dimensional optimal liquidation problems under uncertainty from both the underlying stochastic process and the deterministic model parameters. The verification results are established with Hamilton-Jacobi-Bellman-Isaacs (HJBI) equations where the variables are probability measures and the Hamiltonian nonlinearly involves the joint distribution of position and momentum. Using novel a priori estimates, we establish the well-posedness of the HJBI equations featuring general or quadratic Hamiltonians that are neither displacement convex nor concave in their momentum. The a priori estimates and well-posedness results are extended during their application to optimal liquidation problems, where we allow the Hamiltonian to have derivatives of linear growth and solve the constrained multi-dimensional linear quadratic optimal liquidation problem under composite uncertainty."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "DreamQAS: Learning a Decision-Useful World Model for VQE-Efficient Quantum Architecture Search",
+    "authors": "Jiayang Niu, Yan Wang, Jie Li, Ke Deng, Azadeh Alavi, Muhammad Usman, Yongli Ren",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29491v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement-learning-based quantum architecture search (RL-QAS) repeatedly optimizes a variational quantum eigensolver (VQE) after extending a circuit, although circuit construction and action legality are deterministic and known. We introduce DreamQAS, a model-based RL framework that preserves these exact circuit dynamics and learns only the expensive post-VQE feedback. A recurrent randomized-prior ensemble predicts an oracle-free score relative to an empirical energy frontier and supports multi-step imagined policy learning over explicit legal circuits. Ranking-based activation, uncertainty-aware pessimism and truncation, and selective real-VQE verification form a reliability-controlled learning loop. Under a common 15,000-episode budget and frozen evaluation for the RL methods, DreamQAS has the lowest mean frozen-policy energy error on four of five molecular tasks and the second-lowest on one. At fine-error targets reached by all seeds of both methods, it uses 1.6x to 2.0x fewer real VQE calls on four tasks and 10.6x fewer on BeH2-8q. Counterfactual action-ranking utility increases across all five tasks, with a mean increase of 0.346 and a 95 percent confidence interval of [0.185, 0.507], while direct greedy and beam use of the same model does not recover the gains of imagined policy learning. Ensemble disagreement also improves risk-coverage over random rejection on all three probed tasks. These results establish a world-model design for QAS whose value lies in decision-useful feedback rather than exact energy prediction."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "MolGVR: A Chemistry-Grounded Framework for Text-to-Molecule Generation",
+    "authors": "Qian Tan, Xuanyu Zhu, Lei Jiang, Zhonghang Yuan, Chen Zhang, Yuqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29479v1",
+    "source": "arXiv",
+    "abstract": "Text-to-molecule generation is typically formulated as a one-shot sequence generation problem, where a model directly maps target descriptions to molecular representations. However, molecular descriptions often contain informative structural constraints, and violating such constraints can change the molecular identity. This makes chemical verification and error correction important but underexplored. To fill this gap, we propose MolGVR, a chemistry-grounded Generator--Verifier--Refiner framework. The Generator infers structural evidence and generates candidate molecules. The Verifier addresses the lack of chemical validation by converting descriptions into chemical constraints and checking candidates against them. The Refiner addresses generation failures by revising candidates rejected by the Verifier. Experiments on ChEBI-20 and PCDes show that MolGVR improves exact-match performance. These results suggest that coupling generation with executable verification and feedback-guided refinement is an effective way to improve text-to-molecule generation."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair",
+    "authors": "Michael Fu, Qiyue Mei, Patanamon Thongtanunam, Kla Tantithamthavorn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29422v1",
+    "source": "arXiv",
+    "abstract": "Automated vulnerability repair aims to reduce the time and effort required to patch security flaws from a vulnerability triage report. Recent agentic AI approaches have shown promising results in automated program repair. However, vulnerability repair demands richer program context than general bug repair - context that security engineers routinely assemble in practice but that existing agentic approaches do not engineer. We identify three critical gaps: code-structure context capturing cross-file data flows and memory operation patterns, runtime-execution context revealing crash semantics and memory origins, and commit-history context recovering how fragile code patterns were introduced. We present AgenticRepair, an agentic vulnerability repair framework that addresses the gaps through multi-faceted program context engineering. AgenticRepair orchestrates three specialized LLM subagents to engineer the contexts, which are then embedded into the memory of a dedicated repair subagent for context-conditioned patch synthesis. Evaluated on SEC-Bench comprising 300 real-world instances with sanitizer-based patch verification, AgenticRepair achieves a 73% success rate, substantially outperforming the strongest baseline by 29%. Our ablation study confirms that the three context facets are mutually complementary, and that multi-agent scaffolding and base-model capacity each play an essential role. Collectively, these findings establish multi-faceted program context engineering as a promising design direction for agentic vulnerability repair."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Algebraic Speedups for Exact Inversion of Hamiltonian Evolutions",
+    "authors": "Jizhe Lai, Mingrui Jing, Erdong Huang, Xin Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29382v1",
+    "source": "arXiv",
+    "abstract": "Deterministic exact inversion of an arbitrary $d$-dimensional unitary requires {$Θ(d^2)$} coherent forward calls in the worst case. We ask how this cost changes for Hamiltonian evolution $U(x)=\\exp(i\\sum_j x_jH_j)$ when the generators are known but the parameters are hidden. For one-parameter families with a fixed eigenbasis, we show that additive relations among the distinct eigenvalues determine the optimal query number exactly, and we construct the corresponding inversion protocol. For general families, we prove that repeated symmetry sectors do not affect the exact query complexity and give an automatic construction for combining inverses from inequivalent active sectors. We also give a sufficient phase-alignment condition under which family-specific structure can reduce the query number. These results establish structure-dependent bounds for reversing the unknown dynamics arising in Tavis-Cummings out-of-time-order correlator protocols, collective-spin echo verification, and passive multimode links, without requiring prior knowledge or explicit estimation of the underlying coupling strengths."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "SatEdit: Mask-Conditioned Image Editing via VLM-Guided Segment Annotation",
+    "authors": "Muhammad Talha, Muhammad Ahmed Amer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29367v1",
+    "source": "arXiv",
+    "abstract": "Satellite image editing requires spatially precise object-level control, but supervised editing datasets for overhead imagery are costly to build because object masks, semantic labels, and paired edits are rarely available at scale. We introduce SatEdit, a mask-conditioned satellite image editing framework that constructs training supervision from unlabeled imagery. SatEdit proposes object masks with a seg- mentation foundation model, assigns semantic la- bels to sampled segments with a Vision-Language Model, and applies lightweight human verification before generating paired addition and removal exam- ples through mask-guided inpainting. We fine-tune a high-resolution image editing backbone with LoRA on a SODA-A-derived dataset containing 1,014 im- ages and 852 verified object annotations across 91 classes. In controlled comparisons with open- source and proprietary image editing models, SatE- dit achieves the highest aggregate masked-region se- mantic alignment, with a CLIP score of 0.6322 and CLIP delta of 0.0726, while preserving the surround- ing scene qualitatively. These results suggest that VLM-assisted segment annotation is a practical route to data-efficient, spatially controllable satellite image editing."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "RTLCurator: Label-Efficient Data Curation for RTL Generation",
+    "authors": "Siyang Cai, Cangyuan Li, Wenjing Chang, Kun Wang, Haoyu Gao, Yinhe Han, Ying Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29283v1",
+    "source": "arXiv",
+    "abstract": "Training large language models (LLMs) to write register-transfer level (RTL) requires large corpora of paired specifications and code, and such data is scarce enough that most public corpora are now synthesized. Synthesis provides scale but not correctness, and in two widely used RTL datasets only 24.4% and 53.5% of pairs pass generated functional tests. This raises the question of how much of such a corpus to keep and which part of it. Correctness alone is a poor answer. A pair that misbehaves in one corner case still shows valid syntax and interface conventions, and complex sequential designs are both harder to generate and harder to validate, so filtering by correctness leaves a corpus of short and simple modules. Correctness is also hard to obtain, since behavior leaves little trace on the surface in RTL, and validating an entire corpus only sorts pairs into passed and failed. We present RTLCurator, which learns a behavior-aware compatibility prior by contrasting each specification with implementations that fail simulation, and calibrates it to a new corpus using a small number of validated pairs. It then constructs the retained subset by balancing alignment, representation coverage, and RTL structural richness. On CodeV and RTLCoder, keeping 80% of the corpus this way improves on training with the full corpus across all reported metrics while validating only 10% of the pool, whereas ranking by the score alone falls below random selection and filtering the whole pool by simulation does no better."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "ParaASR: Multi-Token Prediction for Fast and Long-Context LLM-Based Speech Recognition",
+    "authors": "Qingjian Lin, Yuxin Li, Haoyang Zhang, Jun Chen, Yechang Huang, Feng Tian, Xie Li, Xiangyu Tony Zhang, Daijiao Liu, Yuxin Zhang, Jinglan Gong, Bo Zhao, Fei Tian, Xuerui Yang, Gang Yu, Xiangyu Zhang, Daxin Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29279v1",
+    "source": "arXiv",
+    "abstract": "Audio-encoder-LLM-decoder architectures have become the dominant paradigm for modern automatic speech recognition (ASR), improving transcription quality through large-scale language modeling. However, the cost of autoregressive decoding scales with decoder size, creating a fundamental trade-off between recognition quality and serving latency. We argue this trade-off is not inherent: unlike open-ended text generation, ASR outputs are strongly anchored to the input speech signal, providing a natural inductive bias toward high-parallelism decoding. Building on this, we introduce ParaASR, an ASR system that leverages Multi-Token Prediction (MTP) to let a 4B LLM decoder emit multiple tokens per forward step. Starting from a publicly available audio-language foundation, the model first establishes a robust autoregressive recognizer and then aligns five future-token branches through a staged optimization recipe. At inference, it proposes a six-token continuation per step and admits only the verified prefix into the transcript, preserving the safety of standard autoregressive decoding. The average accepted length reaches 5.0 out of 6 proposed tokens, confirming that the deterministic structure of speech makes ASR an especially natural setting for multi-token decoding. ParaASR further retains a native 32K-context window and transcribes up to 30 minutes of audio in a single pass. Across diverse benchmarks, it attains average error rates of 2.97%, 3.68%, and 3.70% on Chinese, English, and long-form evaluations, respectively, while reaching a real-time factor (RTF) as low as 0.0053. These results show that decoder scaling, low-latency inference, and long-context transcription need not be competing goals when future-token proposals are anchored by the acoustic signal and guarded by autoregressive verification."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "A global mass-preserving numerical method for low-Mach-number real-gas flows in closed systems",
+    "authors": "Sanath Kotturshettar, Gonçalo Alcobia, Pietro Carlo Boldini, Rene Pecnik, Pedro Costa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29224v1",
+    "source": "arXiv",
+    "abstract": "A mass-preserving low-Mach-number framework is proposed for closed-system real-fluid flows governed by general nonlinear equations of state. The formulation enforces consistency between the spatially uniform thermodynamic pressure, the equation of state, and global mass conservation. Moreover, the numerical algorithm employs a segregated strategy in which the thermodynamic state is updated before the momentum equations, and the velocity field is advanced using a pressure-correction method. This approach enables an efficient solution procedure by decoupling the thermodynamic and momentum updates and retaining the use of FFT-based solvers for the pressure correction. The resulting formulation is implemented with second-order spatial accuracy. The implementation is first verified using the method of manufactured solutions, in which the thermodynamic state is prescribed through analytical density and thermodynamic-pressure fields, enabling verification of the nonlinear equation of state, thermodynamic-pressure evolution, and the low-Mach-number divergence constraint. The framework is subsequently validated against benchmark laminar and turbulent flows for both ideal and real fluids, particularly transcritical CO$_2$ channel flow, demonstrating its accuracy and robustness in the presence of strong thermodynamic nonlinearities."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Knox: Fortifying Smart Spaces With Safety Guarantees",
+    "authors": "Rishabh Menezes, Jadon T. Schuler, Kaimeng Zhu, Oliver Rogalski, Indranil Gupta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29198v1",
+    "source": "arXiv",
+    "abstract": "Internet of Things (IoT) devices in smart spaces and buildings are an emerging class of distributed systems with critical safety requirements. This paper presents Knox, the first system to enable safety checking in IoT-enabled smart spaces. Knox's contributions include (i) safety specifications: a new language for safety clauses in such smart spaces, and (ii) static safety checking: two new algorithms for static verification of multiple safety properties across multiple routines running inside a smart space. Since the latter problem is NP-hard, we present and analyze novel and explainable algorithms for the static version of the problem. We also present optimizations that further reduce runtime. Our analysis and experimental results with real datasets show that Knox reduces checking time significantly compared to baselines, while providing high accuracy in catching safety violations."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Frequency demodulation with magnetoelectric coreshells: A novel approach to enhanced bio-stimulation",
+    "authors": "Ram Prasadh Narayanan, Ali Khaleghi, Ilangko Balasingham",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29183v1",
+    "source": "arXiv",
+    "abstract": "Magnetoelectric (ME) coreshell devices have interesting applications in biomedical technologies including biosensing and communication, due to their strong inter-coupling between the magnetostrictive core and the piezoelectric shell. This property could be utilized for specific applications in localized bio-stimulation of cells. This paper provides a conceptual proof of using the non-linear property of ME coreshell devices for frequency demodulation and stimulation. We use the Multiphysics simulation approach, wherein the ME coreshell was biased with a DC magnetic field and perturbed through dual coil alternating magnetic fields. The combined effect of the ME non-linear magnetostriction and the dual coil perturbation resulted in the demodulation of the interference frequency component, that induced equivalent electrical hotspots on the piezoelectric shell. We provide a cross model verification, where the generated electrical current density on the piezo shell was provided as an input to a Hodgkin-Huxley (HH) neural cell model to actively induce membrane potentials on the cell. Future applications as a standalone, battery- and electronics-free, controllable, multi-functional and localized coreshells for targeted drug delivery, backscatter communication and bio-stimulation, is envisioned."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Authorship Verification of Transcribed German-Language Videos",
+    "authors": "Oren Halvani, Sophie Titze",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29168v1",
+    "source": "arXiv",
+    "abstract": "Authorship Verification (AV) represents an important subfield of digital text forensics and addresses the fundamental question of whether two texts were written by the same author. Although the field has made substantial progress over the past two decades, several important challenges remain unresolved or underexplored. For instance, most AV research has focused on written texts, despite the fact that language is expressed not only in written but also in spoken form, such as in videos. Moreover, existing AV studies have predominantly concentrated on English, while other languages, including German, have received comparatively little attention. To address these research gaps, we apply AV to spoken language in the form of transcripts of German-language videos and examine the effectiveness of established AV methods in verifying a speaker's identity across video pairs. Our experimental evaluation, based on a total of ten AV methods applied to three self-compiled corpora comprising 300 videos from 150 speakers, shows that the best performance (up to 88% accuracy and 90% AUC) is achieved by traditional AV approaches based on simple character- and token n-gram representations. In contrast, more modern transformer-based approaches perform significantly worse on all evaluated corpora. Our results therefore suggest that traditional methods in the field of AV remain both competitive and relevant."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Learning Lookahead Lemmas for Neural Network Verification",
+    "authors": "Liam Davis, Haoze Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29051v1",
+    "source": "arXiv",
+    "abstract": "State-of-the-art neural network verifiers use the branch-and-bound procedure as their core solving mechanism. We introduce an inprocessing framework for neural network verification driven by the lookahead procedure. Under this framework, lookahead derives new lemmas over the phases of unstable ReLUs, which are collected into an implication graph that is used to prune the search space and vivify boolean cuts. We instantiate the framework in two state-of-the-art verifiers, Marabou and $α$-$β$-CROWN, and demonstrate that it improves performance in both, proving up to 34% more instances unsatisfiable."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Evaluation-Verification Reward for Consistent Multi-Reference Image Editing",
+    "authors": "Yingmao Miao, Pengfei Zhang, Xiaochen Lv, Meng Yu, Lei Sun, Xiangxiang Chu, Chao Shen, Chenhao Lin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.29025v1",
+    "source": "arXiv",
+    "abstract": "While recent image editing models have made rapid progress, multi-reference editing remains challenging, particularly in maintaining visual consistency across references and ensuring overall visual harmony. Reinforcement learning has proven highly effective for text-to-image generation and single-image editing, but its extension to multi-reference editing is hindered by the absence of suitable reward models that capture multi-image relational constraints. Moreover, naively using multimodal large language models(MLLMs) as zero-shot evaluators faces a key tension between hallucination-prone long-form reasoning and the limited deductive power of short-form judgments. We address these issues with a Multi-dimensional Evaluation-Verification Reward(EVR). EVR decomposes evaluation into distinct visual criteria; for each criterion, an MLLM Evaluator generates multiple candidate hypotheses, and a Verifier grounds each claim in concrete visual evidence to accept or reject it, producing reliable and fine-grained reward signals. Together with a scalable data pipeline, our method enables RL fine-tuning of off-the-shelf editors without architectural changes. Extensive experiments show substantial gains over the base Qwen-Image-Edit, improving consistency and harmony to match or surpass NanoBanana."
+  },
+  {
+    "date": "2026-07-31",
+    "title": "CAER: Conflict-Aware Evidence Routing with Dual Prefix Experts for Multimodal Large Language Models",
+    "authors": "Zixuan Liu, Juntao Cai, Xiaoxu Cai, Haishuai Wang, Jiajun Bu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2607.28991v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in multimodal understanding and generation. However, when textual inputs conflict with visual evidence, they still suffer from hallucinations and produce responses inconsistent with visual content. Existing approaches mainly rely on decoding strategies, additional training, verification methods, or prompting techniques, but often lack fine-grained conflict localization and conflict-aware generation. In this work, we propose CAER, a backbone-agnostic framework for visual-language conflict detection and conflict-aware generation. CAER introduces a span-grounded evidence router that transforms claim representations into soft textual queries and retrieves corresponding evidence from frozen visual tokens, enabling fine-grained conflict estimation. Furthermore, we design a dual-prefix expert routing mechanism that learns separate experts for visually supported and contradicted inputs, enabling conflict-aware generation through explicit expert selection. Experiments on the public MMMC benchmark and our newly curated AgriConflict dataset demonstrate that CAER effectively detects visual-language conflicts and improves the reliability of open-source MLLMs without updating their backbone parameters."
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Collab-REC: An LLM-based Agentic Framework for Balancing Recommendations in Tourism",
+    "authors": "Ashmi Banerjee, Adithi Satish, Fitri Nur Aisyah, Wolfgang Wörndl, Yashar Deldjoo",
+    "publish": "ACM Transactions on Recommender Systems",
+    "url": "https://doi.org/10.1145/3837862",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
