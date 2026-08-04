@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-03",
+    "title": "CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs",
+    "authors": "Shuaijun Liu, Qifu Wen, Shuyang Hao, Qi Luo, Chenglong Zhang, Feiyang You, Chengyu Wu, Ningxin Su",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02578v1",
+    "source": "arXiv",
+    "abstract": "World Action Models (WAMs) augment robot policies with action-conditioned predicted futures, but a plausible future alone does not justify changing the action that a bimanual policy would execute. We present CoWAM, a selective intervention layer that expresses synchronization, role compatibility, and collision convergence as coordination contracts. Each contract combines typed admissibility checks with event-conditioned verification and calibrated intervention gates. CoWAM preserves the nominal action unless an alternative satisfies every active obligation and provides a clear, low-risk improvement; when the nominal action is also inadmissible, it invokes a predefined abstention fallback. To separate selector quality from proposal quality, all methods operate on identical candidate pools and commit their decisions before shared oracle labeling. Across eight simulated bimanual tasks, CoWAM improves coordination-valid selection by 16.7 percentage points over the contract-only variant and raises closed-loop success by 9.6 percentage points over the strongest selective baseline, while keeping harmful interventions below 1%. Together, these results establish coordination contracts as an effective interface for conservative policy intervention with predicted world-action evidence across coordination-rich bimanual tasks."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Probabilistic Reachable-Action Verification of Visuomotor Policies via Set-Based Training",
+    "authors": "Yanliang Huang, Zhuocheng Zhang, Peng Xie, Zhen Zhang, Wenyuan Wu, Majid Khadiv, Zhuoqi Zeng, Amr Alanwar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02545v1",
+    "source": "arXiv",
+    "abstract": "Reachability analysis for visuomotor policies is difficult because large visual encoders make end-to-end set propagation computationally expensive and excessively conservative. We therefore freeze the visual encoder and confine set propagation to a low-dimensional interface between it and the downstream policy, with the interface set calibrated from held-out camera-pose perturbations. Propagating this set through the policy with zonotopes yields a terminal output-enclosure width that set-based training optimizes directly. During evaluation, camera-pose perturbations are sampled from the prescribed distribution, and rollout-level split conformal calibration converts the resulting action-deviation scores into a probabilistic reachable-action radius with finite-sample coverage. In controlled manipulation experiments, set-based training reduces this radius while preserving closed-loop task capability, and matched behavior-only, observational-consistency, and pointwise-adversarial controls all leave a larger radius."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Abduction Without a Body? Representational Grounding and the Abduction Loop for Scientific Hypothesis Generation",
+    "authors": "Michael Farmer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02505v1",
+    "source": "arXiv",
+    "abstract": "Can scientific abduction occur without continuous sensorimotor embodiment? Recent arguments in AI and philosophy of science hold that genuine hypothesis generation requires an agent continuously coupled to the physical world. We defend a narrower claim: online embodiment is not necessary for every abductive scientific act. Our focus is identity abduction: the inference that two independently developed structures are one object under an explicit correspondence, reached through representational grounding rather than bodily interaction. An agent may acquire new inferential affordances not through physical interaction but through transformations into representations that expose latent invariants. Scientific diagrams are a practical substrate because they embody independently evolved conventions that partially canonicalize symmetry, topology, and operator structure across disciplines - a property we develop as convention space, which answers a hard retrieval problem: finding mathematically related work when two fields share no discriminating vocabulary. We operationalize the mechanism as an architecture, the Abduction Loop: representation generation, motif extraction, convention-space canonicalization, cross-domain retrieval, identity-hypothesis generation, and adversarial verification, with abstention as the designed default. A documented episode, in which a multimodal model given a figure of a gravitational-memory transport model generated and then verified the hypothesis that its central differential complex is equivalent to the spherical Kaiser-Squires mass-mapping complex of weak-lensing cosmology, serves as a motivating possibility witness from which the architecture is abstracted, not as evidence of general capability. We close with a falsifiable evaluation program, the DAB-30 benchmark. The contribution is a mechanistic proposal, an architecture, and a test program."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "CTRAG: An In-Context Retrieval-based Framework for Automated Compliance Checking using LLMs",
+    "authors": "Muhammad Roman, Karen Rafferty, Barry Devereux",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02472v1",
+    "source": "arXiv",
+    "abstract": "Trust is fundamental in modern regulatory ecosystems, and compliance checking plays a critical role in fostering that trust. Regulatory compliance verification is essential for businesses operating in highly controlled environments, as it ensures alignment with sector-specific guidelines across domains such as financial reporting, data privacy, and cybersecurity. Manual compliance testing, however, is often time-intensive and prone to inconsistencies, particularly when compliance depends indirectly on third-party services such as cloud providers, where vendors rely on external providers to meet regulatory standards. In this paper, we present CTRAG, a novel Retrieval-Augmented Generation (RAG) pipeline designed for automated compliance checking. CTRAG employs advanced strategies, including adaptive chunking, dynamic retrieval configurations, and in-context learning, to improve the precision and relevance of compliance assessments. By extracting control questions from regulatory texts and cross-referencing them with unstructured company documentation, CTRAG achieves highly accurate, document-informed compliance verification, even in cases of indirect compliance through third-party services. Empirical evaluations demonstrate significant improvements, with CTRAG achieving an F1-score of 78% and a recall of 85% in the final deployed configuration, ensuring minimal missed non-compliance cases while reducing manual reviewer effort in a real-world deployment. To validate CTRAG value, we developed and deployed a POC within a Big Four professional services firm, applying it to real-world cases and cross-checking results against manual compliance reports. These findings highlight CTRAG potential to streamline compliance workflows, mitigate risks, and enhance regulatory trust in complex, high-stakes environments."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Real-Time Detection and Repair of LLM Agent Failures",
+    "authors": "Sunny Dubey",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02464v1",
+    "source": "arXiv",
+    "abstract": "LLM agents fail mid-episode -- they loop, cascade tool errors, drift off goal, fabricate results, or silently absorb corrupted content -- and the standard remedy, judging every step with a second LLM, costs more than the agent itself. We ask how much detection is achievable from observable step telemetry alone, using monitors costing microseconds per step and trained only on healthy runs. On 2,823 committed agent episodes across three frameworks, three local models (qwen2.5 7b/3b, llama3.1 8b) and a commercial API (gemini-2.5-flash), a one-class echo-state-network ensemble with CUSUM alarms detects 0.71 of failures at a 5% false-alarm budget (AUROC 0.872). Its advantage over a memoryless baseline is a monotone function of post-onset horizon (+0.09 at <=3 steps, +0.40 at >=9), predicting its own failure region out of sample on AFTraj-2K. Ranking transfers with no retraining to two corpora from other groups (AFTraj-2K 0.745, ATBench 0.779). Monitors carry two burdens: a per-deployment healthy null (they do not transfer -- AUROC 0.527 cold against 0.885 recalibrated) and a residual false-alarm rate. We add a layer carrying neither: deterministic verification, which recomputes a run's stated total from the tool results it actually received and confirms every required call was made. Head-to-head it catches 60% of failures (96% with the coverage check) at 0 of 63 false positives against the monitor's 54% at 17%, transfers unchanged to llama3.1:8b (110 of 110 at 0 of 10), and trips on 0 of 1825 healthy episodes. Detection is then closed into repair: each flagged run is rolled back and re-run live, recovering 45% of failures against a 16% resampling control (p=0.0005) and lifting task success from 52% to 73% for about one extra model call per run. The system runs at ~200 microseconds per step, three orders of magnitude below a judge call. Code, traces and results are released."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+    "authors": "Xuan Ren, Weiqi Zhai, Tianle Pu, Yihua Zhu, Yihua Zhu, Hu Wei, Bing Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02442v1",
+    "source": "arXiv",
+    "abstract": "Scientific reasoning benchmarks typically evaluate large language models (LLMs) using final-answer accuracy. However, a correct answer does not necessarily demonstrate the reasoning capability targeted by the problem. We identify Solution Hacking, a failure mode in which an LLM reaches the correct answer through invalid shortcuts, such as numerical search, enumeration, guessing, or answer-first verification, without providing a valid task-targeted derivation. We systematically analyze this phenomenon across difficulty levels, scientific domains, and frontier models. Solution hacking increases sharply with benchmark difficulty, from 2.2\\% on common problems to 28.3\\% on Olympiad-level problems and 37.4\\% on HLE. Moreover, 8.2\\%-44.1\\% of answers credited as correct across frontier models are identified as hacked solutions. We further develop expert-inspired anti-hacking strategies, including an automatic judge and a test-time instruction. The results show that suppressing shortcut behavior substantially reduces reported accuracy while having a smaller effect on correct and non-hacked accuracy. These findings reveal that answer-only evaluation can overestimate the scientific reasoning capabilities of frontier LLMs."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Screening phonon-mediated superconductors from static orbital Hamiltonians",
+    "authors": "Jian-Feng Zhang, Ze-Feng Gao, Xiao-Qi Han, Dingshun Lv, Miao Gao, Kai Liu, Xinguo Ren, Zhong-Yi Lu, Tao Xiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02426v1",
+    "source": "arXiv",
+    "abstract": "The first-principles search for superconductors is severely limited by the high cost of electron-phonon coupling (EPC) calculations. Here we develop a low-cost, physically transparent framework that identifies strong-EPC materials directly from static orbital-based Hamiltonians without explicit phonon perturbation calculations. Verification using density functional perturbation theory (DFPT) for representative superconductors shows that the framework captures semi-quantitatively the EPC scale at substantially lower computational cost. Applied to more than 36,000 compounds in the MattKeyBond database, it identifies 34 dynamically stable superconducting candidates with calculated $T_c > 10$ K after DFPT verification. These candidates reveal two distinct routes to relatively high-$T_c$ superconductivity: a metallized covalent $σ$-bond route that is more favorable for achieving high-$T_c$ superconductors, and a Fermi-level density-of-states accumulation route that can enhance $T_c$ but usually to a more limited extent."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "An Evidence-Grounded Retrieval-Augmented Transformer Framework for Health Misinformation Verification",
+    "authors": "Isah M. Bukar, Bala Mairiga Abduljalil, Bashir Saleh Maina, Abdulbasit Hassan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02310v1",
+    "source": "arXiv",
+    "abstract": "The rapid spread of false and misleading health information through digital platforms has become a major public health challenge, particularly during infectious disease outbreaks where delayed verification can influence public behaviour and hinder effective disease control. Although recent advances in automated health misinformation detection have shown encouraging results, most existing approaches rely heavily on global biomedical resources and often fail to capture the local context needed to verify claims in developing countries. This study presents a retrieval-augmented transformer framework designed to verify health-related claims using trusted evidence from the World Health Organization and the Nigeria Centre for Disease Control and Prevention. The framework combines semantic evidence retrieval with transformer-based classification to determine whether a claim is true, false, or misleading. To evaluate the proposed approach, a manually annotated dataset of 67 verified health claims covering coronavirus disease, Lassa fever, cholera, measles, and monkeypox was compiled from Nigerian fact-checking sources. Three transformer models and a retrieval-augmented configuration were evaluated. The Bidirectional Encoder Representations from Transformers model achieved the best performance, with an accuracy of 71% and a weighted F1-score of 0.66. Although retrieval augmentation did not improve classification performance because the current evidence repository was limited in size and coverage, the findings highlight the importance of comprehensive and authoritative knowledge sources for reliable health misinformation verification. The proposed framework provides a practical foundation for developing context-aware and evidence-driven health misinformation verification systems for Nigeria and other resource-constrained settings."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
+    "authors": "Zelin Tan, Yiqun Zhang, Hao Li, Zhiyao Cui, Hejia Geng, Shao Zhang, Hangfan Zhang, Yang Chen, Xiaosong Wang, Lilong Wang, Zhenfei Yin, Shuyue Hu, Chen Zhang, Lei Bai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02287v1",
+    "source": "arXiv",
+    "abstract": "Agent skills have become an important mechanism for equipping language-model agents with reusable procedural knowledge. However, providing skills alone does not guarantee that current models can effectively identify, apply, and coordinate them. To improve skill-use capabilities, we introduce SKT, a verified data synthesis pipeline that constructs skill-grounded tasks and executable trajectories from large collections of agent skills. SKT selects suitable single-skill and multi-skill configurations, synthesizes tasks through rule-based and agent-based verification with feedback-guided repair, and retains only successful trajectories that substantially use every required skill. Using 2,000 public skills, SKT produces 4,000 task packages and 27,164 verified trajectories. Based on the same pipeline and a disjoint test pool, we further construct SkillEval, a held-out executable benchmark for evaluating skill use. Experiments across diverse models, benchmarks, and agent harnesses show that supervised fine-tuning on SKT-generated trajectories consistently improves skill-use performance. Verification ablations, cross-harness evaluation, and scaling experiments further demonstrate that these gains depend on high-quality supervision, extend beyond a single agent interface, and increase with broader skill coverage. Together, these results establish verified data synthesis as an effective and scalable approach for skill-use training."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Self-Certification of Representation Adequacy: Sequential Certification at Minimum Task Loss",
+    "authors": "Zijie Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02267v1",
+    "source": "arXiv",
+    "abstract": "Agents that act on a compressed representation of their history face a structural risk: if the representation aliases histories with different optimal actions, no rule measurable with respect to the representation can avoid an irreducible per-round loss, and the agent may be unable to detect this from its own transcript. This paper develops a four-layer theory of self-certification of representation adequacy. The static layer defines decision-theoretic adequacy through a Bayes-risk grouping identity and prices a one-shot external verification by an exact total-variation threshold. The sequential layer poses certification as an optimal-stopping problem in the currency of task loss: we define an environment-wise certification complexity constant through a covering linear program, prove an information-task-loss lower bound for every delta-correct strategy, and give a Certification Track-and-Stop policy whose cost matches the bound asymptotically. A final boundary layer gives an explicit kernel-switching example and identifies the open theorem needed to cover policy switching or representation repair; it does not claim that the fixed-kernel guarantees extend to representation revision. The proofs of the two main theorems are given in full in the appendices."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "From Simple QA to Deep Research: A Verifiable Benchmark Constructed through Iterative Task Evolution",
+    "authors": "Can Wang, Haoran Chen, Haowen Gao, Hao Ding, Zhaoyang Liu, Zhiying Tu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02163v1",
+    "source": "arXiv",
+    "abstract": "Deep research benchmarks require expert-level tasks and reliable evaluation grounded in task-specific knowledge. Existing benchmarks rely heavily on expert authoring or pre-existing human-authored materials, while fully automatic construction struggles to ensure consistent and traceable verification. To address this gap, we introduce a verifiable benchmark of 500 deep research tasks spanning 31 topics and 10 major categories, with three query forms designed to probe complementary capabilities required for deep research. The benchmark is constructed automatically using an iterative Explorer-Formalizer-Challenger pipeline that progressively transforms simple questions into deep research tasks. Each task is represented as a directed acyclic graph (DAG) of atomic steps and associated checkpoints, enabling the query, DAG, and rubrics to evolve together in a controlled manner. Experiments demonstrate that the benchmark clearly discriminates among models and query types, while its fact-grounded pointwise rubrics enable fine-grained, human-aligned, and stable evaluation. Our data, implementation, and results are publicly available."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "From Chains to Trees: Parent-Conditioned Drafting for Semi-Autoregressive Speculative Decoding",
+    "authors": "Zixian Li, Tong Li, Chi Xie, Xiaohui Song, Haonan Lu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02123v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates LLM inference only when drafted continuations survive target-model verification. Semi-autoregressive drafters such as DSpark predict an entire token block with one backbone forward and refine it with a lightweight Markov head. However, DSpark decodes this block as a single chain, so an early mismatch invalidates the remaining suffix and limits the benefit of large draft blocks. We show that the conditional structure already learned by DSpark can support multiple parent-consistent continuations without retraining or additional backbone passes. We introduce Parent-Conditioned Drafting Tree (PCTree), which uses the pretrained Markov head to score alternative children separately for each concrete parent and allocates a fixed verification budget to the most probable paths. This converts DSpark's linear draft into a tree while preserving its one-pass parallel backbone. Across Qwen3-{4B,8B,14B} and nine benchmarks, at $B{=}7$, measured speedup gains over autoregressive (AR) decoding, relative to matched DSpark, range from $3.1\\%$ to $29.5\\%$. On Qwen3-4B GSM8K at $B{=}16$, PCTree increases mean acceptance length from $9.41$ to $11.16$ and three-run mean AR speedup from $6.14{\\times}$ to $6.60{\\times}$. These show that parent-conditioned branching can turn conditional capacity already present in a semi-autoregressive drafter into end-to-end inference gains through an inference-only change."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "The Triguarded Fragment",
+    "authors": "Emanuel Kieroński, Sebastian Rudolph, Mantas Šimkus",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02013v1",
+    "source": "arXiv",
+    "abstract": "A prominent research question in computational logic is how to restrict first-order predicate logic (FO) in such a way that the satisfiability problem becomes decidable. Among others, past efforts have identified two prominent decidable FO fragments of high expressivity: the guarded fragment (GF), and the two-variable fragment (FO2). These fragments are of high interest and crucial importance as they provide significant insights into decidability and expressiveness of other prominent (computational) logics like Modal Logics (MLs)} and various Description Logics (DLs)}, which play a central role in Verification, Knowledge Representation, and other areas. In this article, we show that GF and FO2 can be combined into a new fragment that subsumes both, while maintaining decidability of the satisfiability problem. This fragment, called the triguarded fragment (denoted TGF), is obtained by relaxing the standard definition of GF by requiring guardedness of quantification only for subformulae with three or more free variables. We show that, when restricting the use of equality, satisfiability in TGF is N2ExpTime-complete, dropping to NExpTime-complete when the maximum predicate arity is fixed (a natural assumption in the context of MLs and DLs). We further establish that the problem is NP-complete in terms of data complexity, which is again in line with data complexity results for basic expressive DLs. We observe that many natural extensions of TGF, including the liberal use of equality, lead to undecidability. We also establish that TGF has the finite model property (providing a tight doubly exponential bound on the model size), whence finite satisfiability coincides with satisfiability."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "HALT: Verification-Aware Stopping for Retrieval-Augmented Search Agents",
+    "authors": "Daeyoung Roh, Donghee Han",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02009v1",
+    "source": "arXiv",
+    "abstract": "Retrieval-augmented search agents answer multi-hop questions by repeatedly issuing search queries and accumulating evidence. This creates a stopping problem: after the necessary evidence has appeared, further retrieval often adds cost, latency, and distracting context rather than useful information. We frame stopping as evidence coverage rather than generator confidence, and introduce HALT, a lightweight verification-aware policy that leaves the search agent unchanged. Given expected hop claims, HALT stops only when cumulative evidence supports each required claim. Across three multi-hop QA benchmarks, HALT reduces redundant search while largely preserving exact match. We separate a deployable setting, where hop claims are generated from the question, from a diagnostic upper bound that uses gold supporting-fact annotations: generated claims give smaller but still exact-match-preserving savings, while gold claims show the larger savings available when hop targets are clean. Baseline comparisons and ablations show that this behavior is driven by claim-evidence alignment rather than generic sufficiency, fixed stop positions, or lexical overlap. Open-corpus pilots further suggest that HALT abstains when coverage cannot be reliably verified. Overall, evidence coverage provides a practical runtime control signal for improving retrieval-augmented agents without retraining or modifying the host agent."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis",
+    "authors": "Lingwei Dang, Ziyan Qiu, Jiajia Cheng, Shishuo Shang, Zhenhao Zhang, Yufei Zhu, Qingxin Xiao, Pan Liu, Shenghui Huang, Yun Hao, Juntong Li, Qingyao Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.01973v1",
+    "source": "arXiv",
+    "abstract": "Existing indoor layout generators produce globally plausible layouts yet may retain local violations such as collisions, out-of-bounds placements, obstructed openings, and blocked circulation. Most prior work focuses on full-scene synthesis or scene-level optimization, with limited support for identifying responsible objects and locally repairing affected regions. We present Roomer, a reflective repair framework that casts these violations as sparse, object-grounded repair problems. Roomer encodes layouts as ``RoState'' and uses ``RoReview'' to bind measured violations to implicated objects. A geometry-conditioned vision-language model planner proposes a structured local edit, while a deterministic solver validates it and generates a finite set of candidate edits when needed. Each candidate is committed only if full-scene verification confirms that it resolves the target violation without new hard violations or broken protected constraints. We train the planner on Roomer-CC, a controlled-corruption dataset that pairs faulty layouts with object-grounded violation evidence and known-feasible inverse StatePatches. Since existing benchmarks rarely assess whether physically valid layouts are usable, we introduce Roomer-Eval to assess distributional quality, physical validity, and practical usability. Experiments show that Roomer repairs residual violations while preserving valid regions, improves physical validity and usability, and transfers across external generators."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "D-MUTRA: DLT-based MUTual Remote Attestation for Multi-Agent Systems",
+    "authors": "Adam Zahir, Vincent Lefebvre, Mark Angoustures, Milan Groshev, Carlos J. Bernardos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.01938v1",
+    "source": "arXiv",
+    "abstract": "Multi-agent systems (MAS) comprise autonomous software agents that collaborate to perform complex tasks in critical cyber-physical domains, including multi-robot coordination and the Industrial Internet of Things (IIoT). In such distributed environments, a compromised agent may execute modified software while appearing trustworthy, causing other agents to act on false information and corrupting the mission. Agents must therefore establish and maintain mutual trust throughout operation. Remote attestation (RA) is a well-established technique for this purpose, enabling a remote verifier to assess the integrity of a potentially compromised prover device. However, conventional RA approaches face significant limitations in MAS: integrity guarantees are restricted to boot or application-load time, designs rely on centralized trusted verifiers or security hardware, and attestation records lack transparency and auditability. To address these limitations, this paper presents D-MUTRA, a blockchain-based framework that introduces a mutual RA protocol in which agents measure their runtime integrity while verifying that of their peers, acting as both prover and verifier. The framework operates entirely in software and relies on two components: a Security-as-a-Service that instruments agents with lightweight measurement and verification capabilities, and a smart contract that coordinates the attestation protocol in a decentralized and transparent manner. We implement a proof-of-concept on a private Ethereum blockchain using Hyperledger Besu and evaluate it in a swarm robotics scenario built with Robot Operating System (ROS) and the Gazebo simulator. Results show that D-MUTRA enables agents to continuously attest one another, detects malicious software modifications, and scales to large deployments with negligible overhead on protected applications."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "GalSAS-SDR-SIM: An End-to-End Simulation Platform for Galileo Signal Authentication Service",
+    "authors": "Haiyang Wang, Yuanyu Zhang, Wensen Du, Ji He, Pinchang Zhang, Ning Xi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.01901v1",
+    "source": "arXiv",
+    "abstract": "Galileo is developing a Signal Authentication Service (SAS) that integrates Open Service Navigation Message Authentication (OSNMA) on the E1 band with Spreading Code Authentication (SCA) on the E6 band to strengthen its resilience to spoofing attacks. As Galileo SAS is still under development, access to realistic and controllable SAS signals remains limited, hindering both the early development of compatible receivers and reproducible research on signal authentication. To bridge this gap, this paper presents GalSAS-SDR-SIM, an open-source software-defined radio (SDR) simulation platform that emulates the SAS workflow by coupling E6 code encryption with the OSNMA key-disclosure process. The platform allows flexible SAS configuration of code encryption parameters to accommodate receivers with different computational capabilities. It also supports the concurrent generation of Galileo E1, E5b, and E6 signals for user-defined locations and times, and OSNMA cross-satellite configurations. Experimental results demonstrate simultaneous verification of navigation messages and spreading codes. We further evaluate SAS authentication performance and computational resource costs under different SAS configurations. Implemented according to publicly available official specifications, GalSAS-SDR-SIM provides a practical tool for accelerating SAS-capable receiver development and supporting the research community in evaluating and improving Galileo signal-authentication techniques."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills",
+    "authors": "Gaytri Jena, Kapil Wanaskar, Vinija Jain, Aman Chadha, Vasu Sharma, Amitava Das",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.01851v1",
+    "source": "arXiv",
+    "abstract": "Robot learning is splitting into two bets: policies that bake competence into frozen weights (vision-language-action, or VLA, models), and agents that write and refine their own executable skills as code. This survey organises the field around that axis of weights versus skills. Its central analytical contribution is a deep-dive that arranges code-as-policy methods by their degree of self-improvement, from zero-shot program synthesis, through closed-loop self-repair and persistent skill memory, to the sparsely populated cell in which execution feedback, skill memory, and evolutionary search combine into one open-ended loop; only a few very recent systems (for example ASPIRE, ENPIRE, and RoboClaw) occupy that cell. We map the complementary \"skills\" pole, from unsupervised reinforcement-learning skill discovery to large-language-model skill libraries, and show that the word \"skill\" is used in at least five distinct senses, of which only the code sense self-improves without gradient updates. We then connect the taxonomy to the emerging skill economy: commercial robot-skill marketplaces now distribute one-tap skills across robots but ship only static playback, which surfaces open problems of adaptation, cross-embodiment portability, provenance, safety verification, composition, and standardisation. This is a deliberately focused survey. Rather than cataloguing the field exhaustively, it examines 77 representative systems across six technique families through one taxonomy and a set of contrast tables, and it supplies operational definitions of the self-improvement mechanisms together with a statement of what each family cannot do."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation",
+    "authors": "Tankun Li, Zhi Chen, Yaohua Tang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.01804v1",
+    "source": "arXiv",
+    "abstract": "Post-training large language models (LLMs) via reinforcement learning (RL) has significantly advanced code generation capabilities. To bypass the heavy memory footprint of critic networks, current state-of-the-art frameworks leverage critic-free paradigms like Group Relative Policy Optimization (GRPO) tied to rule-based verification sandboxes. However, applying these frameworks to low-level systems programming, such as CUDA kernel generation-presents severe challenges: binary pass/fail rewards introduce severe signal sparsity, while multi-turn environmental feedback loops suffer from prohibitive compilation latencies and reward dilution across trajectories. In this work, we introduce LEAP (Lean Environment-Feedback via Adaptive Pruning), a scalable and computationally efficient multi-turn RL framework optimized for low-level hardware accelerator alignment. LEAP features Difficulty-Conditioned Pruning (DCP), a dynamic gating mechanism that adaptively cuts off simple and overly catastrophic tasks from multi-turn expansion, focusing resource-heavy compilation and hardware exploration exclusively on high-value, complex tasks. To fully operationalize these paths without manual hyperparameter engineering, we propose a Rank-Based Reward formulation. By deriving scale-free relative advantages from pairwise tournament outcomes within the GRPO rollout group, our method inherently penalizes token inefficiency on simple prompts while maximizing learning gradients on challenging distributions. Empirical evaluations show that LEAP achieves superior first-turn proficiency and robust multi-turn debugging resilience while converging faster than unpruned multi-turn baselines, establishing a practical paradigm for low-level code RL."
+  },
+  {
+    "date": "2026-08-03",
+    "title": "EntailLLM: Verifying LLM-Generated Vulnerability Discovery Paths with Domain Knowledge via Logic Programming",
+    "authors": "Kaustuv Mukherji, Jaikrishna Manojkumar Patil, Colton Payne, Paulo Shakarian, Dana Warmsley, Nigel Stepp, Evelyn Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.01763v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly used to reason about software vulnerabilities, but their outputs can silently violate domain knowledge, limiting their reliability in safety-critical settings such as medical devices. Prior work either treats that output as a prediction to be scored or constrains it to walks within a single knowledge graph; neither checks whether reasoning over a binary is consistent with an independent body of domain knowledge. We present EntailLLM, which validates each LLM-proposed analyst path by entailment: the path is a traversal of the binary's function call graph, the domain knowledge is represented in a separate graph, and verification aligns the two under temporal annotated logic. Across three CWE classes, four LLMs, three prompting strategies, and seven binaries varying in size from 405 to 12,696 function call-graph nodes, domain knowledge raises pooled entailment from 78% to 98%, with entailment decreasing in only 3% of the experiments. EntailLLM is deployed end-to-end on real medical-device binaries, reaching 98% pooled entailment without per-device tuning. Our system inherits the formal guarantees of generalized annotated logic, providing logical verification of LLM output that is both explainable and grounded in well-defined semantics."
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Evolution of the SWEBOK Guide and LLM-Empowered Software Security Engineering",
+    "authors": "Hironori Washizaki",
+    "publish": "2026 12th International Symposium on System Security, Safety, and Reliability (ISSSR)",
+    "url": "https://doi.org/10.1109/isssr69973.2026.00010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "LLM-Based Code Documentation Generation and Multi-Judge Evaluation",
+    "authors": "Ikbel Ghrab, Mohamed Dhieb, Ismail Khenissi, Ines Abdeljaoued-Tej",
+    "publish": "2025 IEEE International Conference on Advanced Healthcare Systems (ICAHS)",
+    "url": "https://doi.org/10.1109/icahs66950.2025.11553031",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Linguistic Pattern–Enriched Transformers for Prompt Injection Detection in LLM Systems",
+    "authors": "Carmen De Maio, Sabrina Senatore, Hao Fei",
+    "publish": "2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)",
+    "url": "https://doi.org/10.1109/fuzz69877.2026.11626451",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Coverage-Free LLM-based Fault Localisation via Semantic Reasoning over Historical Bug Reports",
+    "authors": "Jaehoon Song, Jeongju Sohn",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3719447",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "When Prompts Fail to Differentiate: Understanding Discriminative Power in LLM Agent Evaluation",
+    "authors": "Zizhao Chen, W. Eric Wong, Chih-Wei Hsu, George Dai",
+    "publish": "2026 12th International Symposium on System Security, Safety, and Reliability (ISSSR)",
+    "url": "https://doi.org/10.1109/isssr69973.2026.00023",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Collab-REC: An LLM-based Agentic Framework for Balancing Recommendations in Tourism",
+    "authors": "Ashmi Banerjee, Adithi Satish, Fitri Nur Aisyah, Wolfgang Wörndl, Yashar Deldjoo",
+    "publish": "ACM Transactions on Recommender Systems",
+    "url": "https://doi.org/10.1145/3837862",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Guest Editorial: Special Issue on Multimodal LLM for Elderly Diseases Discovery and Diagnosis",
+    "authors": "Honghao Gao, Muddesar Iqbal, Ramon J. Duran Barroso",
+    "publish": "IEEE Transactions on Computational Social Systems",
+    "url": "https://doi.org/10.1109/tcss.2026.3713007",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "LLM-Enhanced Planning: Extending R-IO SUITE for Operating Room Scheduling",
+    "authors": "Leah Rifi, Audrey Fertier, Safa Bhar Layeb, Aubry De Paule, Sébastien Rebière, Nicolas Salatgé, Olivier Oger, Philippe Olivier, Franck Fontanili",
+    "publish": "2025 IEEE International Conference on Advanced Healthcare Systems (ICAHS)",
+    "url": "https://doi.org/10.1109/icahs66950.2025.11553083",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Understanding Prompt Quality and Its Relation to LLM-based Code Generation",
+    "authors": "Antonio Della Porta, Stefano Lambiase, Valeria Pontillo, Joao F. Ferreira, Akond A. Rahman, Chaiyong Ragkhitwetsagul, Fabio Palomba",
+    "publish": "IEEE Transactions on Software Engineering",
+    "url": "https://doi.org/10.1109/tse.2026.3719766",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Enhancing Industrial Fault Diagnosis: A Probabilistic Expert System with LLM-Augmented Validation",
+    "authors": "Yunping Li, Xin Tang, Yinbo Dai, Hongyu Gao, Liyu Qian, Zhaoxiang Zang",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3719708",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Formal Verification of Quantum Arithmetic Circuits in Maude",
+    "authors": "Naoto Sato, Tsubasa Takagi",
+    "publish": "2026 12th International Symposium on System Security, Safety, and Reliability (ISSSR)",
+    "url": "https://doi.org/10.1109/isssr69973.2026.00019",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Fuzzy Inference–Driven Knowledge Modeling for LLM-Assisted Human–Machine Co-Learning",
+    "authors": "Chang-Shing Lee, Mei-Hui Wang, Chao-Cyuan Yue, Sheng-Chi Yang, Yusuke Nojima, Naoki Masuyama, Takeru Konishi, Ryosuke Saga",
+    "publish": "2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)",
+    "url": "https://doi.org/10.1109/fuzz69877.2026.11626452",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Systematic Exploration of Multi-core Architectures for Efficient LLM Serving using ArguSim",
+    "authors": "Tianhao Zhu, Dahu Feng, Erhu Feng, Yubin Xia, Haibo Chen",
+    "publish": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+    "url": "https://doi.org/10.1109/tcad.2026.3719164",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "A Remote-Controlled Automatic Polarity Verification Device for Current and Voltage Transformers",
+    "authors": "Hui Lin, Haoyang Zheng",
+    "publish": "2026 5th International Conference on New Energy System and Power Engineering (NESP)",
+    "url": "https://doi.org/10.1109/nesp70395.2026.11619622",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "HiFTLLM-Rail: A Hierarchical Fine-Tuned LLM for Spatio-Temporal Forecasting in Urban Railway Transit Systems",
+    "authors": "Qipeng Song, Tiantian Huang, Yue Li, Wei Shao, Hui Li",
+    "publish": "IEEE Transactions on Intelligent Transportation Systems",
+    "url": "https://doi.org/10.1109/tits.2026.3715544",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "LLM-Guided Review Condensation for Text-Convolutional Recommendation",
+    "authors": "Yoonhyuk Choi, Chong-Kwon Kim",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3719643",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "LLM-RDO: Large Language Model-guided Rules Dynamic Optimization for Temporal Knowledge Graph Reasoning",
+    "authors": "Qin Liu, Yang-Yang Chen, Guanghui Wen",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3719675",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Megawatt-Scale Partial PHIL Arm-Current Emulation for Submodule-Level Verification of MMC-Based Drives",
+    "authors": "Seung-Yong Lee, Jaeyeon Park, Dongjoon Kim, Seung-Ki Sul, Shenghui Cui, Jae-Jung Jung",
+    "publish": "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+    "url": "https://doi.org/10.1109/jestpe.2026.3719385",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "Asynchronous Diagnosability Verification and Enforcement in Unbounded Petri Nets Using Supervisory Control",
+    "authors": "Yihui Hu, Shaopeng Hu, Jun Li, Maria Pia Fanti, Huanchao Du",
+    "publish": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+    "url": "https://doi.org/10.1109/tsmc.2026.3714513",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-3",
+    "title": "RecSeal: Coded Verification with Bounded Recovery for Outsourced Computation",
+    "authors": "Feng Zhao, Yitong Dou, Huilin Li, Yong Yu",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3719657",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
