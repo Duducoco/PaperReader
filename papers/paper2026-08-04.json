@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-04",
+    "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+    "authors": "Mohsen Hariri, Weicong Chen, Nahal Shahini, Vikash Singh, Kai Ye, Amirhossein Samandar, Debargha Ganguly, Sreehari Sankar, Yanyan Zhang, Shouren Wang, Jerry Peng, Biyao Zhang, Michael Hinczewski, Vipin Chaudhary",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.04001v1",
+    "source": "arXiv",
+    "abstract": "Large language models can solve substantially harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, now covers diverse inference algorithms that extend deliberation along a single trajectory, sample completed candidates and aggregate them through voting or verification, or search over unfinished partial states. These algorithms differ in their statistical structure, compute accounting, and failure modes. Treating these procedures as interchangeable under a single scalar \"budget,\" or reporting accuracy without the inference protocol that produced it, makes results difficult to compare across studies. We develop a systematic account of test-time scaling along three axes. First, we formalize test-time scaling as budgeted inference over the implicit prefix tree of an autoregressive model and distinguish three structural regimes: single-trajectory sequential scaling, leaf-level scaling with terminal reduction, and prefix-level scaling. Second, we treat the evaluated object as the entire inference system and develop evaluation principles that separate end-to-end system performance from candidate-bank diagnostics. We introduce an evaluation profile whose coordinates and simple functionals recover or bound common repeated-sampling metrics, and prescribe protocol-matched reporting of compute and uncertainty. Third, we specify reproducibility requirements for inference protocols, distinguishing exact replay from distributional reproducibility and identifying the artifacts needed to support each. We also organize the open-weight reasoning ecosystem by model-side and interface mechanisms, apply these principles to broad-knowledge, symbolic-reasoning, and competition-mathematics benchmarks, and assemble over 2 billion full reasoning traces for release with progressively richer verifier and token-level signals."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "HalluTruthQA-4K: A Fine-Grained Corpus and Annotation Process for Arabic Hallucination Detection and Truth Verification",
+    "authors": "Salah Eddine Bekhouche, Abdessalam Bouchekif, Hichem Telli, Mohammed-En-Nadhir Zighem, Abdenour Hadid",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03966v1",
+    "source": "arXiv",
+    "abstract": "Large language models can generate fluent Arabic answers while introducing factual errors that are difficult to identify and verify. Existing Arabic hallucination resources often assign a binary label to an entire response, indicating whether it is hallucinated or non-hallucinated, but provide limited information about the exact erroneous content, the reason for the error, or the correct factual answer. We present HalluTruthQA-4K, an expanded version of the HalluTruthQA resource containing 4,000 expert-curated Arabic question-answering instances across four knowledge-intensive domains: Islamic knowledge, history, science, and geography. Serving as the official dataset for Track 2 of the HalluScoring 2026 shared task, HalluTruthQA-4K extends our original corpus to 4,000 instances. Each instance pairs an Arabic question with a model-generated response, a verified reference answer, and five plausible distractors. Hallucinated responses are additionally annotated with character-level erroneous spans, human-written explanations, and hierarchical hallucination types. The corpus contains 1,643 hallucinated and 2,357 non-hallucinated responses, with 1,843 annotated erroneous spans. We describe the resource construction and annotation methodology, including question selection, controlled answer generation, candidate construction, expert annotation, independent verification, adjudication, and quality control. We also document the annotation guidelines, taxonomy, data format, inter-annotator agreement, and corpus statistics. HalluTruthQA-4K provides a reusable resource for hallucination detection, span-level error localization, explanation generation, factual verification, and the broader evaluation of factual reliability in Arabic language models."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "KnowHal: A Knowledge-Driven Benchmark for Comprehensive Multimodal Hallucination Evaluation",
+    "authors": "Ruihan Li, Jiyang Tan, Kailin Jiang, Huining Li, Hengyang Lu, Yu Huang, Qian Li, Yuntao Du",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03782v1",
+    "source": "arXiv",
+    "abstract": "Hallucination remains a critical challenge for developing trustworthy Multimodal Large Language Models (MLLMs). While existing benchmarks mainly focus on entity, attribute, and relation hallucinations, knowledge-related failures are often investigated separately, lacking a unified evaluation framework across different hallucination dimensions. To overcome this, we propose \\textbf{KnowHal}, a benchmark that explicitly incorporates knowledge hallucination into multimodal hallucination evaluation spanning four dimensions: entity, attribute, relation, and knowledge. KnowHal constructs paired positive and negative questions over shared images and entities, enabling controlled comparisons among perceptual errors, knowledge-related errors, and false-premise acceptance. The benchmark contains 1,800 samples across 10 domains and 50 categories, constructed through a semi-automated pipeline combining LLM assistance, CLIP-based filtering, and human verification. We evaluate 14 representative MLLMs on KnowHal and conduct extensive analyses. Results show that the knowledge dimension consistently presents the greatest challenge for nearly all evaluated models, while most models exhibit substantial performance degradation on negative questions, revealing limited robustness to false premises. By unifying four hallucination dimensions with paired question design, KnowHal addresses an important gap in existing evaluation frameworks and enables a more comprehensive assessment of hallucinations in MLLMs."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "AgenticVAU: Multi-Agent Explore-Verify Reasoning for Video Anomaly Understanding",
+    "authors": "Yuxiang Duan, Huining Li, Ao Li, Shuai Feng, Lanju Kong, Ning Liu, Jian Zhang, Xingdong Sheng, Yuntao Du",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03779v1",
+    "source": "arXiv",
+    "abstract": "Video anomaly understanding (VAU) focuses on comprehensively interpreting abnormal events in videos, requiring models to identify anomalous occurrences, discover their supporting evidence, and explain the underlying causes beyond simple anomaly detection. Existing VAU methods often rely on specialized training or limited observations, restricting generalization or evidence coverage. Although single-agent alternatives support adaptive video observation, they still integrate exploration, observation, and decision-making within a unified reasoning process, offering limited role specialization and structured evidence coordination. To address these limitations, we present AgenticVAU, a training-free multi-agent framework that casts VAU as an explore--verify process, where the system first discovers potential anomalies and then verifies them through targeted observations. To achieve this, four specialized agents are introduced to handle visual-rule construction, search planning, video observation, and final decision, respectively. These agents communicate through an anchor registry, a shared evidence memory that binds each observation. Guided by this agent framework, AgenticVAU interleaves broad temporal exploration, dense local verification, and cross-interval comparison until sufficient evidence is collected. We conduct extensive experiments on the ECVA, UCF-Crime, and MSAD subsets of VAU-Bench, the results show that AgenticVAU outperforms zero-shot inference and reinforcement learning-based baselines, demonstrating the value of multi-agent collaboration for video anomaly understanding."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents",
+    "authors": "Han Xiao, Hongjun Xu, Xin Zhang, Yidong Chen, Xiaodong Shi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03699v1",
+    "source": "arXiv",
+    "abstract": "Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and reasoning. Most existing systems reduce memory updating to a binary Write/Hold decision, which cannot distinguish whether new information should be added, ignored, used to revise an outdated belief, rejected as unreliable, or deferred for verification. These choices may share the same binary label while producing fundamentally different memory states. We introduce TARL, a memory state update framework that maps each statement to one of five executable actions. TARL identifies the affected memory, resolves its temporal scope, compares source reliability, and updates accepted, pending, and rejected ledgers. It is further trained by comparing the memory states produced by alternative update operations, encouraging the model to select the operation that leads to the correct result. We also introduce TARL-Mem, a benchmark with fine-grained action labels and next-state targets. Across in-domain, cross-source, temporal, counterfactual, and sequential evaluations, TARL improves action prediction and state recovery, reduces memory pollution, preserves conflicting evidence, and limits cumulative corruption. The complete model implementation is provided in the supplementary material."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Statistical Verification of Quantitative Hyperproperties: Beyond Boolean Quantification",
+    "authors": "Amir M. Ahmadian, Hazem Torfah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03694v1",
+    "source": "arXiv",
+    "abstract": "Formalisms for hyperproperties provide a solid foundation for studying the verification problem across classes of relational properties, such as those in information flow control (IFC). However, existing formalisms remain limited in expressiveness when it comes to capturing practical aspects of real-world systems. In particular, they do not adequately account for the quantitative nature of such systems. In this paper, we address this gap by revisiting the specification and verification of hyperproperties from a quantitative, measure-based, perspective. We introduce Quantitative Hyper-Logic (QHL), which replaces qualitative trace quantifiers with measure-based ones and extends temporal predicates with richer quantitative expressions. We further study the verification problem from a statistical verification point of view, and develop algorithms for the statistical verification of QHL specifications. For the introduced measure-based quantifiers, we particularly provide an analysis in terms of sample complexity and achievable statistical guarantees. In particular, we show how statistical methods such as Hoeffding's inequality and extreme value theory can be combined to develop statistical verification algorithms for nested measure-based quantifiers. Our approach provides quantitative alternatives for where traditional verification methods become infeasible. We demonstrate both expressiveness and efficacy on benchmarks from quantitative IFC, comparing against qualitative methods."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "VetScore: Risk-Weighted Fact Verification for Veterinary Long-Form QA with Citations",
+    "authors": "Ivan Kartáč, Jan Tovarys, Mateusz Lango, Ondřej Dušek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03675v1",
+    "source": "arXiv",
+    "abstract": "Citation excerpts can be used to increase the reliability of generated outputs and their faithfulness to cited sources, which is especially important in high-stakes domains such as human and veterinary medicine. However, this does not guarantee that generated claims are faithful to the provided excerpts. We present VetScore, a multi-step evaluation method for veterinary long-form question answering, designed to assess how well are generated claims supported by the provided excerpts, weighing this information by each claim's harm potential. VetScore first segments the output and decomposes it into individual claims, then scores each claim with respect to its harm potential and evaluates its faithfulness to source excerpts, and finally calculates the overall risk-adjusted score. We collect an expert-annotated meta-evaluation dataset, evaluate our approach with a range of judge models, and show that it achieves high correlations with veterinary experts even with small judge models, while offering explainability across multiple dimensions."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "A Security-Oriented Lifecycle Model for Large Language Model Systems",
+    "authors": "Eleftherios Batzolis, George Drosatos, Vassilis Katsouros, Konstantinos Rantos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03626v1",
+    "source": "arXiv",
+    "abstract": "Large language models are being integrated into critical infrastructure and enterprise workflows at unprecedented scale,yet the lifecycle frameworks governing their development and operations were designed for operational efficiency rather than security analysis. As a result, security-relevant activities such as data provenance verification, artifact signing, agentic permission control, and decommissioning are often left implicit or assumed to receive due care. Governance frameworks, in turn, organise requirements around risk levels or management processes without clearly linking them to the lifecycle stages where they apply. This paper addresses both deficiencies. We propose a lifecycle model for LLM systems that supports security analysis by structuring it around security-relevant boundaries rather than workflow optimisation. The model comprises 32 stages across four core pipeline layers (Data, Model, Distribution, Application), supported by a 12-stage LLMOps pillar and a 9-category governance pillar. Thirteen stages are introduced here as separate units because they expose distinct security concerns that existing frameworks do not clearly distinguish. A governance mapping synthesising the NIST AI RMF, the EU AI Act, and ISO/IEC 42001 reveals a structural property of the current regulatory landscape: governance evidence concentrates at deployment-facing stages, where systems are visible to regulators, while the most consequential decisions, data selection, alignment strategy, and capability boundaries, are made at development-facing stages, where regulatory visibility is lowest."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Finite-field Krasner quotients: isomorphism thresholds, characteristics, and censuses",
+    "authors": "Alessandro Linzi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03625v1",
+    "source": "arXiv",
+    "abstract": "We study Krasner quotient hyperfields arising from finite fields, $F_q/G_r$, where $G_r\\le F_q^\\times$ has index $r$. Building on the structure theorem of Baker--Jin, we determine the characteristic and C-characteristic of all sufficiently large such quotients: they depend only on the parity of $r$ and, when $r$ is even, on the residue class of $q$ modulo $2r$. In particular, the two Baker--Jin stable classes for even $r$ are separated by characteristic $2$ versus $3$, while the C-characteristic is always $1$. We complement this structural result with a computational laboratory: sharp Weil thresholds for Baker--Jin large-$q$ isomorphism, empirical minimal stabilization bounds $N_r^{\\mathrm{emp}}$, complete finite-field quotient atlases for hyperfield orders $n\\le 7$, and comparisons with the enumerations of Ameri--Eyvazi--Hošková-Mayerová (orders $\\le 6$) and Massouros--Massouros (order $7$). Among other findings, exactly $15$ isomorphism types of order $7$ arise as finite-field quotients, out of $277$ hyperfields of that order -- a concrete data point toward the Baker--Jin rarity conjecture for quotients. All algorithms and tables are available in an open-source package suitable for independent verification and arXiv ancillary material."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Speaker Verification Under Real Classroom Conditions for English Speech",
+    "authors": "Saba Tabatabaee, Jing Liu, Megh Krishnaswamy, Carol Espy-Wilson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03623v1",
+    "source": "arXiv",
+    "abstract": "Developing speaker verification (SV) models that are robust to classroom noise and effective across both children and adult speakers is critical for AI tools supporting educational environments. In this study, we use a real-world English-speaking classrooms dataset containing partial speaker identity annotations, with most recordings remaining unlabeled. We adapt the WavLM-TDNN model for classroom SV, achieving average relative reductions in Equal Error Rate (EER) of 23.99% and 6.32% compared to the ECAPA-TDNN baseline and the ECAPA-TDNN model trained on classroom data, respectively. Additionally, we investigate two training strategies for SV in classroom settings: self-supervised learning (SSL) and a two-stage approach that first pre-trains with SSL and then fine-tunes with limited annotated data. Five-fold cross-validation demonstrates that the two-stage strategy consistently outperforms the SSL-only approach, achieving an average relative EER reduction of 13.39%."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Formal Verification of Agentic Systems over Operational Data",
+    "authors": "Alejandro J. Mercado, Alessio Lomuscio",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03609v1",
+    "source": "arXiv",
+    "abstract": "Agentic systems driven by large language models (LLMs) are increasingly deployed in real-world workflows where they act on persistent operational data. Before deployment, these systems need to be verified against business requirements that govern workflow execution and data evolution. However, existing approaches do not provide such system-level guarantees, as they mainly constrain or analyse behaviour at the agent's interface level. We study here the verification of agentic systems comprising a single LLM and a tool orchestration harness over relational operational data. We formalise them as Stateful Tool-Enabled Agentic Deployments (STEADs), give their semantics, define the problem of verifying them against First-Order Computation Tree Logic (FO-CTL) specifications, and show that it is undecidable. We identify sufficient conditions for exact preservation of FO-CTL specifications under a finite-domain restriction, over which verification is PSPACE-complete. The key requirement is that renaming opaque identifiers in the data must correspondingly rename the selected tool calls. We show that LLM-driven agents can violate this condition and introduce a canonical deployment wrapper that guarantees it for arbitrary base agents while preserving already-equivariant behaviour. We prove that computing canonical representations required by this construction is graph-isomorphism-hard. Finally, we illustrate our framework on an LLM agent orchestrating a case-management workflow."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Secure Long-Range Autonomous Valet Parking: A Reservation Scheme With Three-Factor Authentication and Key Agreement",
+    "authors": "Di Wang, Yue Cao, Fei Yan, Yining Liu, Daxin Tian, Yuan Zhuang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03590v1",
+    "source": "arXiv",
+    "abstract": "Long-range autonomous valet parking (LAVP) is increasingly adopted to alleviate traffic congestion and parking difficulties. For large-scale parking demand, reservation can improve parking management. However, existing schemes mainly focus on parking request verification and parking check-in, and do not adequately protect identity legitimacy and communication security during passenger drop-off and pick-up. To address this problem, we propose SecLAVP, a provably secure three-factor authentication and key agreement protocol for LAVP reservation services. SecLAVP combines passwords, biometrics, and smart cards. With assistance from the drop-off/pick-up point (DP), the passenger and the autonomous vehicle (AV) achieve mutual authentication and establish a session key for secure communication. In the Real-Or-Random (ROR) model, we formally prove that SecLAVP provides session-key security. AVISPA simulations show that SecLAVP resists man-in-the-middle attacks, while informal analysis demonstrates that it satisfies 15 defined security goals. Finally, performance evaluation in terms of communication overhead, computational overhead, and scheduling shows that SecLAVP is feasible for practical deployment."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "When Many Answers Are Valid, Voting Fails: Symbolic Verification for Best-of-K Causal Reasoning in LLMs",
+    "authors": "Omatharv Bharat Vaidya, Connor Thomas Jerzak, Zayne Rea Sprague, Fangcong Yin, Nhat Ho",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03506v1",
+    "source": "arXiv",
+    "abstract": "Self-consistency assumes the most frequent answer among sampled reasoning traces is the most reliable, but this can fail in causal reasoning: samples often repeat the same confounding error, and votes fragment across multiple valid answers, letting an invalid answer win despite a valid minority trace. We introduce CALVER (Causal Axiom-Level VERification), a training-free symbolic verifier that scores structured traces against Pearl's causal criteria, including -separation, backdoor adjustment, and intervention, and selects the highest-scoring candidate without consulting a reference answer. On CLEAR find-one-valid queries that admit multiple graph-valid answers, CALVER reaches 42.1% where plurality, a reward model, an LLM judge, and model confidence remain near 30% on identical frozen pools. Scaling the judge to 72B does not close the gap. In an audited clean-core subset, 11 of 21 graph-valid CALVER selections differ from the benchmark's listed answer while still satisfying the requested predicate. The advantage widens with the sampling budget and reproduces across ten published Bayesian networks, a second model family, and settings where the model must build the graph from text. CALVER also improves thresholded average-treatment-effect decisions against exact ground truth, generalizes to logic under a truth-table checker, and scores each candidate in milliseconds on CPU. CALVER needs only a causal structure, supplied outright or built from the text; wherever that holds, selection can aggregate via causal validity."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Leveraging System-Level Observations to Inform Bayesian Learning of Model Parameters for Quantitative Verification",
+    "authors": "Simos Gerasimou, Xingyu Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03489v1",
+    "source": "arXiv",
+    "abstract": "Combining Bayesian learning and quantitative verification is a powerful toolset for analysing key quantitative properties of software systems, like reliability and response time. However, the accuracy and robustness of verification results strongly depend on the prior knowledge (PK) underlying Bayesian inference. This knowledge reflects original beliefs about the probability of events and typically depends on domain expertise. Using inaccurate or uninformative PK can negatively affect quantitative analysis, yielding incorrect verification results. Our EPIK approach tackles this important challenge by eliciting and embedding PK in quantitative verification equipped with Bayesian estimators. Unlike existing approaches that require PK on formal model transition parameters, EPIK leverages system-level properties that are directly observable and are linked to real-world semantics. EPIK formulates a twofold optimisation problem to derive the distributions of unknown transition parameters and then embeds these distributions to verify new or difficult-to-measure (elusive) properties. The detailed experimental evaluation using multiple variants of real-world case studies and diverse EPIK instantiations shows its effectiveness, flexibility and generality."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Approximate Speculative Decoding",
+    "authors": "Yuannuo Feng, Zegang Peng, Yuxin Xie, Yubing Ye, Yizhe Chen, Wenshuai Yao, Wenyong Zhou, Wang Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03447v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates autoregressive generation by verifying a draft block with a target model in parallel. Under standard greedy verification, decoding stops at the first draft token that differs from the target argmax, discarding the remaining target-scored suffix. Although accepting such a mismatch changes the decoding trajectory, it can make a contiguous suffix reusable when its tokens remain target-greedy under the realized prefix. In this paper, we introduce \\textbf{Approximate Speculative Decoding (ASD)}, a training-free verifier that replaces binary first-mismatch truncation with budgeted longest-prefix selection. ASD accepts selected mismatches subject to a local target-logit regret gate, a per-block exception cap, and a persistent request-level regret budget, then reuses the contiguous target-greedy suffix without additional approximate decisions or target-model forward passes. ASD requires neither a new draft model nor fine-tuning, and exactly reduces to standard greedy verification when the budget is zero. Experiments show that ASD improves fixed-workload throughput by $3.05\\%$--$15.26\\%$ over matched strict verification and averages a $7.78\\%$ gain across seven Qwen3-14B + DSpark-14B tasks. On DeepSeek-V4-Flash (284B) with DSpark it also raises verifier-side acceptance by roughly $10\\%$--$16\\%$ on GSM8K and MATH-500 in an FP4-to-FP8 compatibility setting. The source code is publicly available at: https://github.com/Kissmetothemoon/ASD"
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Route-Align-Verify for Functional Correctness in Code Generation",
+    "authors": "Erxue Zhou, Jingxiang Meng, Aofan Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03341v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have substantially improved code generation, yet achieving strong functional correctness remains difficult, especially for heterogeneous programming tasks where a single prompting strategy and a single directly generated output are often insufficient. In this paper, we present RAV, a lightweight and modular framework that improves code generation with a fixed backbone model through three coordinated stages: Route, which applies task-aware prompt routing before generation; Align, which reduces the mismatch between fine-tuning prompts and inference-time prompts through aligned LoRA adaptation; and Verify, which selects the final output by executing multiple candidates against visible public tests. We evaluate RAV on the MBPP benchmark under both the sanitized and full settings. The complete RAV pipeline achieves the best performance among all evaluated configurations, reaching 0.8911 on MBPP Sanitized and 0.8520 on MBPP Full. Compared with the base model, these results represent improvements of 6.35 and 9.92 percentage points, respectively. Component-wise ablation experiments further show that task-aware routing and aligned adaptation become substantially more effective when combined with execution-based verification. Additional robustness and contamination analyses support the reliability of the observed improvements. Overall, the results indicate that functional correctness in code generation can be meaningfully improved without modifying the backbone architecture, by jointly optimizing how tasks are prompted, how the model is adapted, and how final outputs are selected."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "The Tell-Tale Trace: Detecting Reasoning Failures in LLMs Using Chain-of-Thought Dynamics",
+    "authors": "Shashwat Sourav, Aishwarya Balwani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03291v1",
+    "source": "arXiv",
+    "abstract": "Chain-of-thought (CoT) reasoning improves large language model (LLM) performance while also providing an observable interface to the model's reasoning process. Existing approaches that leverage verbalized CoTs to monitor reasoning correctness, however, largely evaluate the semantic correctness or consistency of individual intermediate steps, rather than how the reasoning process evolves across the trace. As a result, failures distributed across the reasoning trajectory, rather than those localized to a single incorrect step, remain comparatively underexplored. Furthermore, verbalized CoTs need not faithfully reflect the model's internal reasoning, motivating analyses that do not treat individual statements as literal accounts of internal computation. In this work, we therefore ask whether the dynamics of visible CoT can be leveraged to systematically distinguish successful from failed reasoning without assuming such semantic faithfulness. We study a range of LLMs on verifiable Boolean satisfiability tasks with variable complexity, enabling controlled comparisons near each model's capability frontier. Tagging CoT sentences by reasoning function reveals premature verification collapse on SAT problems: incorrect traces enter clause checking earlier, repeat similar operations, and finalize sooner. On UNSAT problems, models presumptuously move towards incorrect SAT conclusions, checking candidate assignments rather than deriving contradictions across constructed cases. Subsequently, a targeted proof-search prompt intervention raises Llama3-70B accuracy from 13.3% to 85%, correcting 84.6% of these errors. These results show that capability failures can manifest as distributed, task-dependent changes in the structure of visible reasoning, and that CoT dynamics agnostic to whether the verbalized trace reflects the model's internal computations can help diagnose and correct failures."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Diversity is Not Ambiguity: Toward Accurate and Efficient Ambiguity Detection for Open-Domain QA",
+    "authors": "Jiwon Lee, Yong-chan Park, Jungin Hong, U Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03177v1",
+    "source": "arXiv",
+    "abstract": "How can question answering (QA) systems determine whether a query is ambiguous? Ambiguity detection is essential in open-domain QA, as misclassification leads to answering the wrong interpretation or unnecessary clarification. However, existing methods conflate answer diversity with ambiguity, leading to inaccurate predictions. They also process queries uniformly, resulting in wasteful computation. We propose ARCHIVE (Ambiguity Recognition via Cascaded Hypothesis Inspection and Conflict Verification), an accurate and efficient framework that detects ambiguity via logical conflict: a query is ambiguous when its valid answers cannot all be true under a single interpretation. ARCHIVE combines a lightweight early-exit encoder for surface-detectable cases with a conflict reasoning module that models logical relations among answers, reinforced by an invariance objective for robustness to noisy answer sets. We present QuireQA, a 4,703-query benchmark spanning factoid, non-factoid, and ill-formed queries. Experiments show ARCHIVE outperforms competitors, improving F1-amb by up to 10.4% and F1-unamb by up to 21.6%, while operating 16$\\times$ faster than the best competitor."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "ANCHOR-RE: An Agentic Neuro-Symbolic Framework for Grounded Biomedical Relation Extraction",
+    "authors": "Shufan Ming, Yikun Han, Gibong Hong, Rui Zhang, Halil Kilicoglu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03154v1",
+    "source": "arXiv",
+    "abstract": "Biomedical relation extraction (BioRE) extracts structured knowledge from biomedical literature for applications such as knowledge base construction and hypothesis generation. Traditional symbolic systems such as SemRep provide high precision but limited recall, while large language models (LLMs) offer stronger contextual reasoning but remain prone to false-positive predictions. We developed ANCHOR-RE, a framework that integrates ontology-guided reasoning, external knowledge grounding, and data-driven verification rules into LLM inference. We evaluated it on three BioRE benchmarks (SemRepGS, DDI, and ChemProt) using both proprietary and open-weight LLMs. To assess generalizability beyond benchmark datasets while reducing potential evaluation bias from LLM pretraining contamination, we conducted a temporal evaluation using 100 biomedical articles published in 2026. With the proprietary backbone, ANCHOR-RE outperformed direct LLM prompting, improving micro-F1 from 0.654 to 0.676 on SemRepGS, from 0.769 to 0.872 on DDI, and from 0.939 to 0.941 on ChemProt. On DDI and ChemProt, it also outperformed previously reported inference-only methods and approached fine-tuned or instruction-tuned systems without parameter updates. Similar performance gains observed with open-weight LLMs indicate that the benefits were not limited to the proprietary backbone. On the post-cutoff set, manual assessment of 500 randomly sampled predictions yielded a precision of 69%, maintaining consistent precision on previously unseen biomedical literature. Neuro-symbolic reasoning can improve the reliability of LLM-based BioRE without fine-tuning. Results across multiple benchmarks, model families, and post-cutoff literature support ANCHOR-RE as a practical training-free approach to biomedical literature mining."
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Double Down on Defense: Strengthening Deep Perceptual Hashes against Evasion Attacks without Retraining",
+    "authors": "Bangjie Sun, Nayoung Kim, Mun Choon Chan, Jun Han",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.03101v1",
+    "source": "arXiv",
+    "abstract": "Near-duplicate image matching is crucial for trust and safety, provenance verification, copyright enforcement, and large-scale visual search. Modern platforms increasingly rely on deep perceptual hashes, which map visually similar images to nearby representations despite common image transformations. However, adversarial perturbations can cause near-duplicates to evade matching. We present DualShield, a plug-in defense that improves the robustness of existing deep perceptual hashes without retraining or modifying their underlying models. DualShield combines matching-time randomized smoothing, which aggregates decisions over perturbed reference-query pairs, with publication-time hardening, which adds an optimized imperceptible perturbation to each reference image before publication. Together, these mechanisms provide certified and empirical robustness. DualShield achieves a certified $\\ell_2$ radius of approximately 0.3, guaranteeing that query perturbations within this radius cannot evade matching. We further evaluate it against adaptive white-box, black-box, and image-transformation attacks. Across eight deep perceptual hashes and three datasets, DualShield substantially reduces attack success rates while preserving low collision rates. These results show that deep perceptual hashes can be strengthened without costly retraining by improving the matching procedure and hardening reference images before publication."
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Llm-Cache: an Efficient Context-Aware Semantic Caching Framework for Distributed Llm Inference Services",
+    "authors": "Haoying Jin, Haoyang Feng",
+    "publish": "2026 IEEE 46th International Conference on Distributed Computing Systems Workshops (ICDCSW)",
+    "url": "https://doi.org/10.1109/icdcsw72724.2026.00031",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Llm-Guided Training and Llm-Free Inference for Reliable Task Offloading in Edge Computing",
+    "authors": "Hao Guo, Kaixiang Xv, Lei Yang",
+    "publish": "2026 IEEE 46th International Conference on Distributed Computing Systems (ICDCS)",
+    "url": "https://doi.org/10.1109/2575-8411.2026.00079",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "$\\mathrm{P}^{3}$-LLM: An Integrated NPU-PIM Accelerator for Edge LLM Inference Using Hybrid Numerical Formats",
+    "authors": "Yuzong Chen, Chao Fang, Xilai Dai, Yuheng Wu, Thierry Tambe, Marian Verhelst, Mohamed S. Abdelfattah",
+    "publish": "2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)",
+    "url": "https://doi.org/10.1109/isca66397.2026.00055",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "ConServe: Contiguity-Preserving Memory Management for Multi-Turn LLM Serving",
+    "authors": "Bingyao Li",
+    "publish": "2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)",
+    "url": "https://doi.org/10.1109/isca66397.2026.00075",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Integrating Large Language Models and Reinforcement Learning for Efficient Home Energy Management_supp1-3719299.pdf",
+    "authors": "Chongyu Wang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/jiot.2026.3719299/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "LLM-Enhanced Architecture Design for Lightweight Small-Object Detection in Low-Altitude Remote Sensing_supp1-3719281.pdf",
+    "authors": "Nan Li",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/jstars.2026.3719281/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Trust-Guided Multimodal LLM Integration with Reinforcement Learning for Autonomous Driving",
+    "authors": "Sairam Chennaka, Jaswanth Nidamanuri",
+    "publish": "2026 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)",
+    "url": "https://doi.org/10.1109/wacvw68408.2026.00192",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Beyond Static Agents: A Six-Dimensional Taxonomy and Survey of Self-Evolving LLM Agents for Healthcare",
+    "authors": "Shubham Vatsal, Harsh Dubey, Ahsaas Bajaj",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3720396",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Approaching Shannon Bound with Lossless LLM Weight Compression",
+    "authors": "Hongshi Tan, Yao Chen, Gustavo Alonso, Weng-Fai Wong, Bingsheng He",
+    "publish": "2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)",
+    "url": "https://doi.org/10.1109/isca66397.2026.00024",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "A LLM Temporal Reasoning Framework via Fine-Grained Role Extraction and Action Pruning",
+    "authors": "Jiale Wang, Zhaoyun Ding, Siyang Sun",
+    "publish": "2026 IEEE 20th International Conference on Control and Automation (ICCA)",
+    "url": "https://doi.org/10.1109/icca69928.2026.11618166",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Automated Merging of Multi-Source Engineering Documents Using LLM Decision Making",
+    "authors": "Thilo Braun, Nicolai Schoch, Mohamed Elsheikh, Sebastian Palacio, Nika Strem",
+    "publish": "2026 21st Annual System of Systems Engineering Conference (SoSE)",
+    "url": "https://doi.org/10.1109/sose69681.2026.11622341",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "The Optimal Verification Frequency of Automatic Verification System of Electric Energy Measuring Instruments Based on Multi-Objective Optimization Algorithm",
+    "authors": "Dai Jingjing, Zhu Jie, Zhou Wenjuan",
+    "publish": "2026 International Conference on Data Science for Cyber-Physical Systems Resilience using Advanced Applications (ICDCA)",
+    "url": "https://doi.org/10.1109/icdca69396.2026.11620565",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "LLM-DTS: Resilience Formation Control Via Semantic Reasoning and Adaptive Topology Switching",
+    "authors": "Xuanjie Zhou, Yafen Zhang, Zhao Zhou, Dong Xue",
+    "publish": "2026 IEEE 20th International Conference on Control and Automation (ICCA)",
+    "url": "https://doi.org/10.1109/icca69928.2026.11618139",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries",
+    "authors": "Yanying Lin, Baicheng Chen, Xinyu Zhang, Chengzhong Xu, Kejiang Ye",
+    "publish": "2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)",
+    "url": "https://doi.org/10.1109/isca66397.2026.00077",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "CostGuard: A Cost-Aware Agentic AI Framework for Efficient Enterprise LLM Workflows",
+    "authors": "Sriram S, Arul Murugan A",
+    "publish": "2026 International Conference on Data Science for Cyber-Physical Systems Resilience using Advanced Applications (ICDCA)",
+    "url": "https://doi.org/10.1109/icdca69396.2026.11620090",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "KV Cache Reuse for Elastic LLM Inference on Edge Devices",
+    "authors": "Peishuo Wang, Zhenzhe Zheng, Xiaoyao Huang, Jie Wu, Fan Wu, Guihai Chen",
+    "publish": "2026 IEEE 46th International Conference on Distributed Computing Systems (ICDCS)",
+    "url": "https://doi.org/10.1109/2575-8411.2026.00035",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Consensus for Multi-Agent Systems with Stochastic Network and Noises by LLM",
+    "authors": "Jinxin Shang, Yiwen Qi",
+    "publish": "2026 IEEE 20th International Conference on Control and Automation (ICCA)",
+    "url": "https://doi.org/10.1109/icca69928.2026.11618120",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+    "authors": "Mingjin Zhang, Jiannong Cao, Tao Wu, Xiangchun Chen, Ne Wang",
+    "publish": "2026 IEEE 46th International Conference on Distributed Computing Systems (ICDCS)",
+    "url": "https://doi.org/10.1109/2575-8411.2026.00033",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "EDAgent: A Concurrent Orchestration Method for Collaborative LLM Multi-Agent System",
+    "authors": "Zongyang Yuan, Zechang Zhang, Qinbin Li, Lailong Luo, Deke Guo, Mingrui Lao",
+    "publish": "2026 IEEE 46th International Conference on Distributed Computing Systems (ICDCS)",
+    "url": "https://doi.org/10.1109/2575-8411.2026.00032",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-4",
+    "title": "Scalable Synthesis of Distributed Llm Workloads Through Symbolic Tensor Graphs",
+    "authors": "Changhai Man, Joongun Park, Hanjiang Wu, Huan Xu, Srinivas Sridharan, Tushar Krishna",
+    "publish": "2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)",
+    "url": "https://doi.org/10.1109/isca66397.2026.00170",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
