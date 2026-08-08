@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-06",
+    "title": "A Profile-Separation Framework for Quantitative Convergence of No-U-Turn Samplers",
+    "authors": "Krishnakumar Balasubramanian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06336v1",
+    "source": "arXiv",
+    "abstract": "We study multinomial and biased-progressive No-U-Turn Samplers for strongly log-concave targets satisfying $mI_d\\preceq \\nabla^2U(x)\\preceq LI_d,$ and $\\|\\nabla^2U(x)-\\nabla^2U(y)\\|_{\\mathrm F}\\le γL^{3/2}\\|x-y\\|$ with \\(κ\\coloneqq L/m\\). We introduce profile separation, a sufficient sign condition on the stationary mean U-turn diagnostics, and combine it with diagnostic concentration, leapfrog fidelity, and whole-orbit energy control to show that on a high-probability certification event, every doubling realization reaches a common terminal depth through a genuine U-turn. If \\(T_\\star\\) is the selected physical trajectory length and \\(a_\\star=\\sqrt m\\,T_\\star\\), a terminal-depth transfer argument yields restricted conductance and warm-start mixing without lazifying either kernel. Up to logarithmic warm-start and accuracy factors, the transition bounds are \\[ \\widetilde O\\!\\left( 1+a_\\star^2κ^2(1+γ)^{4/3} \\right) \\quad\\text{and}\\quad \\widetilde O\\!\\left( 1+a_\\star^4κ^3(1+γ)^2 \\right) \\] for multinomial and biased-progressive selection, respectively. These transition bounds are unconditional. Gradient-work bounds are deterministic when the maximum-depth cap is comparable to the certified depth and otherwise take cap-aware expected and high-probability forms. The framework recovers the Gaussian dimension dependence under these work-accounting conditions, provides population-profile and exact-diagnostic verification for nonlinear product targets, a near-isotropic specialization of the practical-tree certificate, and quantifies when a fixed post-warmup metric removes linear anisotropy."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "A Sound Translation from Tamarin to ProVerif: Enabling Comparative Analysis",
+    "authors": "Kevin Morio, Yavor Ivanov, Robert Künnemann",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06315v1",
+    "source": "arXiv",
+    "abstract": "Tamarin and ProVerif are two prominent tools for the formal verification of security protocols. They share the same high-level goal but differ significantly in their underlying formalisms and verification techniques, making a systematic comparison challenging: Tamarin uses multiset rewrite rules with sound and complete verification, whereas ProVerif employs an extension of the applied-pi calculus that provides fast but potentially incomplete results. We present a sound translation from Tamarin to ProVerif that enables a rigorous comparison of the two tools. It introduces novel techniques for formula rewriting, encoding multiset rewrite semantics, and handling simultaneous events, supporting an extensive subset of Tamarin's features, including multiset rewrite rules, lemmas, and restrictions, while precisely characterizing the cases where faithful translation is not possible. We provide formal proofs: within the faithful fragment, soundness ensures that any property verified in ProVerif also holds in the original Tamarin model, and completeness ensures that exists-trace properties not involving attacker knowledge are preserved. Best-effort encodings, in particular XOR, are reported separately and are outside these guarantees. Finally, we evaluate our translation on 121 Tamarin models. The translation covers 562 of 566 lemma tasks. Among non-XOR tasks with definitive results from both tools, 246 of 247 agree, with the remaining verdict explicitly flagged as using an incomplete model. Among the 362 tasks for which Tamarin returns a Boolean result and ProVerif completes with a logical result, ProVerif is faster in 334 cases (92.3%), with median per-task runtime and peak-memory ratios of 6.74x and 6.24x, respectively."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Benchmarking and Enhancing LLMs for Rule-Intensive Review of National Standard Documents",
+    "authors": "Tao Wang, Qihao Yang, Rongjiao Liang, Lianghong Lin, Haitao Wang, Xinyu Cao, Tianyong Hao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06312v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) increasingly support complex professional tasks, yet their capabilities in rule-intensive document review remain insufficiently evaluated. National standard documents, such as China GB/T standards, offer a representative testbed: they are lengthy, highly structured, and governed by explicit rules for scope, terminology, normative wording, and cross-section consistency. Existing benchmarks focus on domain knowledge and question answering, largely overlooking intrinsic quality review for professional documents. Such reviews rely heavily on human experts, making them costly and difficult to scale. To bridge this gap, we introduce GB/T-Bench, the first benchmark for the structured review of national standard documents. Its GB/T Review Taxonomy is a hierarchical schema covering document structure, scope alignment, normative modality, terminology consistency, and normative references, with 25 diagnosable error types. A controllable counterexample generation mechanism combines deterministic rules and constrained LLM rewriting to process 488 documents into 7,306 traceable review error instances for evaluation. We also develop a diagnosis-oriented evaluation protocol requiring exact matches on error location, review dimension, and error type, plus document-level coverage metrics. We further propose GB/T-Reviewer, a multi-agent framework that converts review knowledge into specialized skills and coordinates global inspection, targeted diagnosis, rule scanning, and result verification. Experiments with 14 mainstream LLMs reveal a substantial human-LLM gap: the strongest model achieves only 0.3280 CMCS versus 0.6640 for experts. GB/T-Reviewer raises the best CMCS to 0.5094, showing the value of structured skill coordination for rule-intensive document review. This work paves the way for trustworthy AI in standardization and other high-stakes document domains."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Fault Diagnosis and Prognosis in Partially-Observed Discrete Event Systems with Delayed Observations",
+    "authors": "Jiwei Wang, Simone Baldi, Wenwu Yu, Xiang Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06295v1",
+    "source": "arXiv",
+    "abstract": "Fault diagnosis and prognosis in discrete event systems are studied in the scenario where the observations are possibly received with delay. To address this scenario, two conditions for diagnosis and prognosis with delayed observations are proposed, where we show that the state-of-the-art notion of prognosability must be revised to avoid conservativeness. Diagnosability and prognosability conditions are then verified by introducing a delay observer and a new verification function. Theoretical analysis indicates the effectiveness of the verification method for fault diagnosis and prognosis in the system."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Automatic Translation of Unstructured Requirements into Linear Temporal Logic through Large Language Models",
+    "authors": "Alexandra Newcomb, Omar Ochoa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06287v1",
+    "source": "arXiv",
+    "abstract": "Automatically translating unstructured natural language requirements into formal specifications remains a challenge in requirements engineering and formal methods, particularly for safety- and mission-critical systems whose verification depends on mathematically precise specifications. This paper evaluates whether contemporary off-the-shelf Large Language Models (LLMs) can help bridge this gap by generating Linear Temporal Logic (LTL) formulas directly from unstructured requirements. The study examines six modern LLMs using a few-shot prompting strategy on a heterogeneous benchmark of 15 structurally varied requirements. Five independent generations were collected for each requirement-model pair, yielding 450 candidate LTL formulas in total. Performance was assessed through manual semantic evaluation, pass@k for k in {1, 3, 5}, and a self-consistency measure capturing syntactic reproducibility across stochastic trials. The results indicate that current general-purpose LLMs can achieve practically significant performance on the unstructured NL-to-LTL task without task-specific fine-tuning. The study also considers understandability for non-experts by pairing generated formulas with model-produced natural language explanations and discussing the complementary use of timeline-based LTL visualization. The findings suggest that modern LLMs are becoming viable front-end assistants for semi-automated formalization workflows."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Toward Deployable Bangla Sign Language Recognition with Expert-Validated Data and a Lightweight Attention-Based Model",
+    "authors": "Saad Ahmed, Md Khalid Syfullaha",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06252v1",
+    "source": "arXiv",
+    "abstract": "Deaf and hard-of-hearing people in Bangladesh communicate mainly through Bangla Sign Language (BdSL). Automatic BdSL recognition on personal devices could widen access to education and services. Existing systems use controlled-setting datasets without expert verification and heavyweight pretrained backbones unsuited to on-device use. We introduce RSBdSL38, 10,874 expert-validated images spanning all 38 BdSL hand signs, representing the 51 letters of the Bangla alphabet, recorded from real signers at three special-needs schools across Bangladesh. We propose a lightweight attention based convolutional network of 298,470 parameters, built from grouped bottleneck residual blocks, channel and spatial attention, a multi-scale depthwise hand-feature block, dual pooling, and Swish activations. Trained from scratch, it attains 96.37% accuracy (95.72% +- 0.54% over five seeds), within 1.08 percentage points of the best of nine ImageNet-pretrained efficient architectures under an identical protocol, using 8.5 to 68x fewer parameters and 1.3 to 21.7x fewer MACs. Retrained, it reaches 92.95 to 98.33% on six public BdSL benchmarks, 97.04% on a merged corpus, and 76.25% zero-shot on BdSL-38. Removing any architectural stage costs 7.61 to 89.30 points, against at most 3.17 for the training recipe. Grad-CAM with deletion-insertion and weight-randomization checks confirms that predictions follow the signing hand. A signer-independent split holding out 6 of 36 signers yields 85.18%. Quantized to 0.48 MB, it runs at 3.98 ms per image within a 15.5 MB footprint on a commodity smartphone. Together, RSBdSL38 and our from-scratch model turn benchmark accuracy into deployable accessibility at a fraction of pretrained-backbone cost; dataset, code, and models are released."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+    "authors": "Zishan Xu, Zhiyuan Yao, Yuxin Chen, Yifu Guo, Zhengxi Lu, Yuquan Lu, Jinyang Huang, Yan Xu, Yasheng Wang, Weinan Zhang, Xingshan Zeng, Weiwen Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06197v1",
+    "source": "arXiv",
+    "abstract": "Training large language model agents for long-horizon tool use typically relies on interactions with real or synthesized executable environments, whose construction and verification are costly, or on external simulators that are difficult to ground. We introduce EnvACE, an agentic reinforcement learning method that replaces external environment interaction during training with world rehearsal. The policy alternates between acting and rehearsal: it first generates a tool call, then plays the role of the environment to produce the response induced by that action, and conditions subsequent decisions on the rehearsed response. Both roles are jointly optimized end-to-end using task-success rewards. Through world rehearsal, the policy internalizes the relationship between actions and their environment responses in its parameters, yielding an agent world model that directly supports decision making. Across BFCL-v4, tau^2-Bench, VitaBench, and FinMCP-Bench, EnvACE achieves strong and transferable performance, outperforming environment-scaling baselines in the overall evaluation. Controlled studies further show that world rehearsal consistently improves policy learning across model scales. At test time, the internalized world model enables private rehearsal before committed execution, yielding further gains under a moderate rehearsal budget without additional external interaction. Our findings establish world rehearsal as a new path toward scaling LLM agent training beyond the constraints of external environments. Our code is publicly available at https://github.com/Within-yao/EnvACE."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Learning Globally Reusable Skills for Coding Agents",
+    "authors": "Chen Yang, Jiashuo Tian, Ziqi Wang, Xinyin Liu, Meiru Ye, Junjie Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06153v1",
+    "source": "arXiv",
+    "abstract": "Automated skill evolution enables Large Language Model (LLM) agents to continuously improve without expensive retraining. However, existing approaches typically treat skill evolution as a sequence of local updates, overlooking relationships among skills and often producing overfitted skill updates that fail to generalize across tasks. We propose GSE, a globalized skill evolution framework that jointly optimizes skill compatibility and skill generalization. To preserve consistency across the skill bank, GSE maintains a Skill Relation Graph (SRG) that explicitly models and co-evolves inter-skill relationships. To improve generalization, GSE performs cluster-based skill consolidation to abstract reusable capabilities from local updates and employs replay-driven verification to prevent overfitting and behavioral regressions. We evaluate GSE on two representative software engineering tasks: bug-revealing test generation and false-positive bug report filtering. Across two state-of-the-art coding agents, OpenHands and mini-SWE-agent, GSE consistently achieves the best precision, recall, and F1-score. Compared with existing evolution techniques, GSE improves precision and recall by 6.1%~34.1% and 31.8%~180.0% for test generation, and by 15.4%~96.4% and 13.1%~19.8% for false-positive filtering. Deployment on an internal industrial agent further yields a 61.4% improvement in F1-score, demonstrating the effectiveness and generalizability of GSE for evolving effective skills."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "CogVis: Must Open-Vocabulary Change Detection Perceive the Scene Anew for Every Query?",
+    "authors": "Zijie Wang, Chen Zhong, Wei He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06150v1",
+    "source": "arXiv",
+    "abstract": "Earth-surface monitoring requires change detection models capable of recognizing arbitrary semantic categories. Open-Vocabulary Change Detection (OVCD) addresses this need. However, existing methods often entangle temporal perception, semantic discrimination, and region verification, causing unstable results and redundant computation. Inspired by human visual change perception, we propose CogVis, a cognitive memory-guided framework that reformulates OVCD as a perception-memory-verification paradigm. CogVis first employs a Scene Change Perceptron (SCP) to extract a reusable, category-agnostic change prior from frozen bi-temporal features, thereby decoupling temporal evidence from semantic category decisions. A Semantic Memory Calibrator (SMC) then compensates for category-dependent score shifts by dynamically estimating an image-query-specific decision threshold. Finally, an Adaptive Region Filter (ARF) filters connected candidates using learned semantic, temporal, and structural reliability. Experiments on seven benchmarks spanning semantic change detection, binary change localization, and building-damage assessment show that CogVis achieves state-of-the-art performance across all evaluated datasets. By sharing scene-level change perception, CogVis further avoids repeating category-agnostic temporal perception across queries and improves inference throughput by 28.50%."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Distributed Fault Diagnosis in Discrete Event Systems with Transmission Delay Impairments",
+    "authors": "Jiwei Wang, Simone Baldi, Wenwu Yu, Xiang Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06035v1",
+    "source": "arXiv",
+    "abstract": "This note studies the distributed fault diagnosis problem in partially-observed discrete event systems, where the system is monitored by a group of agents to cooperatively diagnose faults within a finite number of steps. The novelty of this work is the creation of a methodology to verify when the faults can be diagnosed even in the presence of transmission delay impairments. To address this scenario, a new distributed diagnosability condition is proposed, which extends decentralized diagnosability conditions proposed in the literature. Such distributed diagnosability condition is then verified via a novel structure named delay recorder and a new diagnosis function. Theoretical analysis shows that the verification method can successfully determine whether the faults can be diagnosed."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "The Institutional Window: Occupation- and Jurisdiction-Specific Calibration of Liability Signaling for Preserved Human Fallback Capability",
+    "authors": "Andreas Bauer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05969v1",
+    "source": "arXiv",
+    "abstract": "Problem definition. When generative AI produces expert artifacts clients cannot distinguish from a competent provider's, the classical cost-based quality signal collapses and only outcome-contingent commitments can separate types. Such a commitment certifies an endogenous, perishable asset: the human fallback capability a firm builds by keeping staff engaged with cases the AI handles, eroding otherwise. Prior work is silent on where that mechanism holds. We ask where, across occupations and liability institutions, it remains informative. Methodology/results. We introduce an institutional wedge between the liability cap a firm posts and the retained exposure that carries information, generated by four legal primitives: the cost rule, the enforceability of penalty clauses, the displacement of private liability by state liability or pooled indemnity, and mandatory limits on contractual liability. The wedge compresses the separating type space into a signaling window, bounded above by solvency and the penalty doctrine and below where standard-terms control voids caps beneath a threshold. We calibrate five occupations and seven jurisdictions on published evidence. In common-law agreed-damages channels the provability gross-up is unavailable whenever verifiability falls below 1/m, turning a contracting problem into an operational one. Verifiability investment widens the window where the ceiling binds but narrows it where the cap floor binds. In an agent-based market, within the tested policy class, every empty-window cell converges to zero engagement and skill collapse. Managerial implications. Liability institutions are a workforce-capability instrument, not merely a risk-allocation device. Firms should target the binding margin in each jurisdiction; cap floors and pooled indemnity each suppress the signal sustaining fallback capacity."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "BALANCE: Hybrid Autoregressive-Speculative LLM Inference in Wireless Edge Networks",
+    "authors": "Guanqiao Qu, Shuo Chen, Qian Chen, Kin K. Leung, Xianhao Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05926v1",
+    "source": "arXiv",
+    "abstract": "Edge inference is a promising paradigm to provide large language model (LLM) inference services in next-generation mobile networks. LLM inference mainly relies on two approaches: Autoregressive decoding (AD) generates output tokens sequentially, resulting in long latency; Speculative decoding (SD) accelerates inference by using a small language model (SLM) to generate multiple draft tokens for LLM verification, but incurs extra memory costs. Due to this latency-memory tradeoff, neither approach alone can efficiently serve users with heterogeneous demands under limited edge computing resources. To address this challenge, we propose a hybrid autoregressive-speculative inference (BALANCE) framework for edge LLM inference. In BALANCE, an edge server hosts both an SLM and an LLM, assigns each user to AD or SD, and performs the two modes simultaneously. To maximize the number of served users, we formulate a task throughput maximization problem to jointly determine user scheduling and computing resource allocation between AD and SD under user latency requirements and server memory constraints. Since the problem is NP-hard, we develop a polynomial-time algorithm that transforms the original problem into two sub-problems and obtains a sub-optimal solution with a constant approximation guarantee. Experiments demonstrate that BALANCE consistently outperforms conventional AD and SD and significantly improves task throughput."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "DTRNet: Dual Text-Radical Decoding for Handwritten Chinese Text Recognition with Faked Character Detection",
+    "authors": "Runrui Li, Lin Zhu, Hua Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05848v1",
+    "source": "arXiv",
+    "abstract": "In K-12 educational scenarios, handwritten Chinese text recognition should not only transcribe student writing, but also detect faked characters. However, existing recognition models are usually confined to a predefined set of normal characters and therefore cannot explicitly identify faked characters. Existing detection methods exhibit complementary limitations: character-level methods provide interpretable structural evidence but suffer from low efficiency, whereas line-level methods are efficient but rely heavily on confidence scores, making them prone to missed detections and lacking explicit structural evidence. Thus, the key challenge is to preserve character-structural evidence independent of contextual inference while maintaining line-level efficiency. To this end, we propose DTRNet, a dual Text-Radical decoding framework for line-level faked character detection. DTRNet decouples context-aware text recognition from character-wise structural verification, where the text branch performs line-level transcription and the radical branch predicts legal Ideographic Description Sequences (IDS) for lexicon-based faked character judgment. We further introduce IDS-Guided Confidence Adjustment (IGCA) to refine text predictions using structural evidence during inference. Experimental results demonstrate that DTRNet effectively detects faked characters while maintaining strong recognition performance and providing interpretable radical-level evidence. Code, checkpoints, and the processed dataset are publicly available at https://github.com/BNU-ERC-ITEA/DTRNet."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Noise-aware Verification and Synthesis of Quantum Programs",
+    "authors": "Stefanie Muroya, Krishnendu Chatterjee, Thomas A. Henzinger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05807v1",
+    "source": "arXiv",
+    "abstract": "While most research on quantum programming considers an idealized, noise-free semantics for quantum programs, we reason about quantum programs that are executed on real, noisy hardware. We consider the error models published by quantum hardware vendors to give a hardware-dependent semantics to quantum programs. This work presents a comprehensive study of noise-aware quantum programming, ranging from logical foundations to automated verification and synthesis. We develop a noise-aware quantum Hoare logic, and use it to derive algorithmic methods for the bounded verification of quantum programs on specific hardware, and for the automatic synthesis of noise-optimal loop-free quantum programs. In this way, we synthesize hardware-dependent subroutines that commonly occur in quantum algorithms, such as parity checks, quantum state preparation, and quantum state discrimination. We evaluate our method on the hardware specifications provided by the IBM Qiskit toolkit. Besides finding different optimal subroutines for different noise models, our synthesis tool also shows that classical probabilistic branching is needed for optimality in quantum programming."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Finite Quantum Histories: Holonomy Spectra, Minimal Clocks, and Exact Clock-Change Covariance",
+    "authors": "Maxim V. Churilov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05748v1",
+    "source": "arXiv",
+    "abstract": "We solve cyclic finite-dimensional quantum histories for arbitrary time-dependent unitary steps, without assuming that one step has finite order. The propagation Hamiltonian is a unitary connection Laplacian on a cycle; its complete gauge invariant is the monodromy $M=U_{L-1}\\cdots U_0$. Its spectrum is $λ_{a,k}=1-\\cos((2πk-θ_a)/L)$, where $e^{iθ_a}\\in\\mathrm{spec}(M)$. Thus the exact history sector is isomorphic to $\\mathrm{Fix}(M)$, while frustration, the gap above a nonempty zero-energy sector, the determinant, and the finite-temperature trace are obtained in closed form. Ordinary spectral data recover the multiset of monodromy phase cosines but not phase orientation; low energy certifies proximity to an exact relational history. We then define the predictive quotient of a sharp finite clock relative to an accessible operator system as the unique coarsest event alphabet preserving all conditional statistics on a history sector. A finite-error theorem shows that threshold clustering recovers this quotient when the minimum diamond separation of inequivalent event channels exceeds four times the estimation error, and proves an optimal record-count bound. With full matrix access and homogeneous step $U$, the minimal number of clock events is the projective order of $U$. We distinguish the normalizer of the clock algebra from transformations preserving the coherent history code and classify oriented exact sharp clock changes by $U(r)\\times\\mathbb{Z}_L$ on a rank-$r$ history sector; without orientation the cyclic factor becomes dihedral. Reversible changes of full-information clock fibers are necessarily unitary, so irreversible coarse-graining is not exact clock covariance. Minimal realizations of a complete history Gram kernel are uniquely unitarily equivalent, with a finite-data Procrustes bound. Independent finite-matrix code verifies the main results."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots",
+    "authors": "S. M . Bhagya P. Samarakoon, M. A. Viraj J. Muthugala, W. K. R. Sachinthana, Mohan Rajesh Elara",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05715v1",
+    "source": "arXiv",
+    "abstract": "Vision-Language Models (VLMs) are increasingly deployed as planners in robotic systems, where they translate natural-language commands into executable actions grounded in visual scene understanding. This tight coupling between perception and instruction-following introduces a new attack surface: adversarial text placed within the robot's visual field can act as an indirect prompt injection into the VLM's reasoning stack. We present a systematic study of physical prompt injection attacks against VLM-controlled sorting, introducing a four-category taxonomy, indirect signage, task redefinition, authority impersonation, and conflict injection, instantiated as a benchmark of 20 attack prompts evaluated across three physical scene layouts and three command formulations that vary in destination specificity and rule explicitness. Across 5,670 trials on three frontier VLMs (GPT-4o, Gemini 2.5 Flash, Qwen3-VL-32B), attacks succeed at 27.0%, 29.4%, and 5.0% respectively, with authority-impersonating and negation attacks transferring across all three models. Analysis of reasoning traces reveals that successful compromise is nearly always conscious (99.9% acknowledgment rate), and that models defend through structurally different mechanisms, explicit rejection for Gemini, perceptual inattention for GPT-4o. We evaluate three simple mitigations: prompt-based defense (75-100% effective, model-dependent), two-stage verification (85-100%), and pre-processing text masking (100%). Our findings show that VLM-controlled manipulation is meaningfully vulnerable to human-readable physical signage, and that simple defenses substantially reduce risk, though defense choice involves trade-offs. The defenses preserve general task capabilities in our benchmark, but they may impair tasks that require reading in-scene labels."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Reasoning Errors Have a Region and a Direction in the Residual-Stream Trajectory of LLMs",
+    "authors": "Hamed Damirchi, Ignacio Meza De la Jara, Damith Ranasinghe, Yuhang Liu, Javen Shi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05660v1",
+    "source": "arXiv",
+    "abstract": "As language models are increasingly used for tasks that require verifiable reasoning, reliably distinguishing sound reasoning from flawed reasoning has become an important practical problem. Recent trajectory-based methods seek this signal in layerwise residual-stream displacements, which capture how representations change while attenuating some stable, token-specific information. However, displacement omits the state from which an update originates, whereas restoring the full state risks reintroducing shortcut-prone information. We identify this trade-off and propose a three-stream detector that combines motion with two restricted views of location. A coarse region reader based on vector quantization and a fine direction reader over normalized multi-layer states. This design restores enough state context to interpret the motion without returning to full-state probing. On reasoning benchmarks unseen during training, our method improves selection accuracy by up to 12% over the displacement-only state of the art and 21% over single-layer probing baselines. Although trained only on reasoning benchmarks, it also reads factual completion and fact verification, ahead of every detector we compare against, which places the signal on correctness rather than on a kind of reasoning. Ablations further show that motion, region, and direction provide complementary signals. These results suggest that reasoning validity is better read from state-conditioned motion than from either static states or decontextualized trajectories alone."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "MEC-Patch: Visible-Infrared Cross-Modal Adversarial Attack Driven by Intrinsic Material Emissivity Laws",
+    "authors": "Zhixiang Huang, Xinbo Nie, Wenxuan Wang, Lu Yang, Xin Li, Xuelin Qian, Peng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05634v1",
+    "source": "arXiv",
+    "abstract": "With the widespread deployment of visible-infrared multimodal perception systems in safety-critical domains such as autonomous driving, evaluating their cross-modal adversarial robustness has become increasingly vital. However, existing approaches exhibit significant limitations in approximating the intrinsic laws of imaging. Most studies either focus on a single modality, failing to bypass cross-modal verification, or simplify infrared modeling into heuristic pixel-intensity distributions, neglecting the impact of ambient temperature fluctuations on adversarial stability. To bridge this gap, this paper proposes MEC-Patch, a cross-modal adversarial attack framework driven by intrinsic physical laws. By leveraging the Stefan-Boltzmann Law, we establish a physics-grounded cross-spectral mapping that explicitly links material emissivity to thermal radiation. Building on this formulation, we reveal that, under a fixed emissivity distribution, ambient temperature variations induce consistent global scaling while preserving relative emissivity-induced contrast. We exploit this property to construct temperature-robust adversarial perturbations whose discriminative patterns remain stable in the infrared modality, thereby fundamentally mitigating environmental sensitivity. Furthermore, we employ the physics-constrained NSGA-II algorithm to synergistically optimize the material-distribution-based patch parameters effective across both modalities, while enhancing generalization through a Dynamic Adversarial Resampling (DAR) strategy. Experimental results demonstrate that MEC-Patch effectively deceives state-of-the-art multimodal detectors and exhibits high robustness within high-fidelity, physically-consistent, and multi-scene simulation environments. This research provides a physical-law-driven perspective for the security assessment of multimodal perception systems."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "SkillHEX: Improving Agent Skills via Hypothesis-Driven Autonomous Exploration and Exploitation",
+    "authors": "Yuru Feng, Yaoqi Chen, Beidi Zhao, Qianxi Zhang, Xinjiang Wang, Jianan Lu, Zhirui Wang, Shusen Xu, Zengzhong Li, Qi Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05628v1",
+    "source": "arXiv",
+    "abstract": "Although agent skills equip LLMs with reusable procedural knowledge, manual maintenance suffers from high costs, unscalability, and misalignment. Real-world deployments thus require autonomous, on-demand skill evolution at test time, constrained by limited interaction budgets and a lack of training or validation sets. This setting introduces a severe sparse reward challenge, where outcomes conflate multiple latent failure causes. Under such ambiguity, existing methods that greedily refine a single incumbent skill are particularly vulnerable to an exploitation trap, allowing early misdiagnoses to exhaust limited trials along unproductive trajectories. To address this, we introduce SkillHEX, a closed-loop framework coupling hypothesis-driven self-verification with evidence-guided tree search. SkillHEX translates falsifiable failure hypotheses into executable tests, producing diagnostic evidence as dense reward without additional environment attempts. This evidence guides a search over persistent skill-revision branches, dynamically balancing the exploitation of supported edits with the exploration of plausible alternatives. Evaluated on 87 tasks from SkillsBench, SkillHEX outperforms existing self-evolving methods and achieves an average pass rate of 55.9% and 57.9% using GPT-5.3-Codex and Claude Opus 4.7 under a five-iteration budget, respectively."
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Beyond Frame Selection: Rethinking Long-Video Understanding with MLLMs",
+    "authors": "Ziling Huang, Shin'ichi Satoh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.05592v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) have achieved strong progress in video understanding, yet it remains challenging because the token limitation makes MLLMs difficult to capture temporally sparse evidence. Existing methods typically rely on uniform sampling, or frame selection, but these strategies usually optimize either broad temporal coverage or local relevance, making it difficult to preserve both global storyline context and fine-grained evidence. We propose VideoRouter(VR) that rethinks long-video understanding as coordinating complementary evidence views rather than selecting a single subset of frames. It first organizes each video into a question-agnostic temporal hierarchy, which partition the video into coarse-to-fine temporally coherent segments. In this hierarchy, upper-level nodes capture broad storyline context and event progression, while lower-level nodes preserve fine-grained local details and evidence-bearing moments. This naturally gives rise to two complementary views: a global view for coverage-oriented reasoning and a local view for detail-oriented evidence recovery. We further introduce a verification-guided router to determine which view is better supported by the selected evidence and select the final answer. We validate the effectiveness of the proposed design through extensive experiments, showing that the verification-guided router effectively coordinates global and local reasoning, and that, on VideoMME, our method outperforms state-of-the-art frame selection methods by 2.9 points, respectively, under the LLaVA-Video-7B backbone. We will release the code."
+  },
+  {
+    "date": "2026-8-7",
+    "title": "PrivAnalogy: An Analogy Mechanism-Based Privacy Protection Framework for LLM Prompts_supp1-3715975.pdf",
+    "authors": "Xumeng Wang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tdsc.2026.3715975/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "From Trace to Line: An Empirical Study of What Drives LLM-Based OSS Vulnerability Localization_supp1-3721377.pdf",
+    "authors": "HAORAN XI",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/access.2026.3721377/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "LLM-Guided Bi-Objective Planning for Energy-Constrained AUV Fleets",
+    "authors": "Huibo Zhang, Jinzhi Cai, Ziyi Xia, Lin Hong, Francesco Maurelli, Fumin Zhang",
+    "publish": "OCEANS 2026 Sanya",
+    "url": "https://doi.org/10.1109/oceans66983.2026.11617008",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "LLM Security Defense Using Unsupervised Learning and Deep Reinforcement Learning",
+    "authors": "Leilei Wang, Hongying Li",
+    "publish": "2026 IEEE 3rd International Conference on Computer Vision and Deep Learning (DLCV)",
+    "url": "https://doi.org/10.1109/dlcv69906.2026.11635183",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "Automated PLC Programming Using a Multi-Task LLM System",
+    "authors": "Teresa Cacciapaglia, Denis Ruffino, David Naso, Paolo Roberto Massenio",
+    "publish": "2026 12th International Conference on Control, Decision and Information Technologies (CoDIT)",
+    "url": "https://doi.org/10.1109/codit70676.2026.11630895",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "An Agentic LLM-based Architecture for Automated Anomaly Detection and Adaptive Remediation",
+    "authors": "Paolo Palmiero, Antonio Iannaccone, Daniele Granata, Roberto Nardone",
+    "publish": "2026 12th International Conference on Control, Decision and Information Technologies (CoDIT)",
+    "url": "https://doi.org/10.1109/codit70676.2026.11631265",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "Doc2Control: LLM-Guided Scheduling and Control for UAV-Assisted Campus Vehicles",
+    "authors": "Zebin Huang, Mingrui Zheng, Hao Li, YeFeng Wu",
+    "publish": "IEEE Transactions on Vehicular Technology",
+    "url": "https://doi.org/10.1109/tvt.2026.3720280",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "LEAP: Learning-Dynamics-Guided Open-Loop Pricing for LLM Data Acquisition",
+    "authors": "Zhiheng Wang, Xuehe Wang",
+    "publish": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "url": "https://doi.org/10.1145/3770855.3817932",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-7",
+    "title": "CryptoAnalystBench: Failures in Multi-Tool Long-Form LLM Analysis",
+    "authors": "Anushri Eswaran, Oleg Golev, Darshan Tank, Sidhant Rahi, Himanshu Tyagi",
+    "publish": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "url": "https://doi.org/10.1145/3770855.3817585",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-7",
+    "title": "SpendCheck: An LLM-Based Mobile Personal Finance Tracker with Automated Categorization and Smart Budgeting",
+    "authors": "Ramana Reddy B, Kallam Raga Ramya Sree, L Yashaswini Sai Sri Laxmi, Raju Chittaboina",
+    "publish": "2026 IEEE Global Symposium on Emerging and Communication Technologies (GSEACT)",
+    "url": "https://doi.org/10.1109/gseact68539.2026.11620428",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "Evidencing LLM Misuse: A Hands-on Forensic Tutorial on Copyright Infringement and Plagiarism Detection",
+    "authors": "Denghui Zhang, Guangwei Zhang, Dongwon Lee",
+    "publish": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "url": "https://doi.org/10.1145/3770855.3816473",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-7",
+    "title": "<i>UAVBench</i>\n                    : An Open Benchmark Dataset for Autonomous and Agentic AI UAV Systems via LLM-Generated Flight Scenarios",
+    "authors": "Mohamed Amine Ferrag, Abderrahmane Lakas, Merouane Debbah",
+    "publish": "IEEE Open Journal of Vehicular Technology",
+    "url": "https://doi.org/10.1109/ojvt.2026.3721777",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "Retrieval-Guided Safety Alignment for Action Spaces in LLM-Based Embodied Agents",
+    "authors": "Wei Yang, Mo Han, Funa Ren, Jing Zhang",
+    "publish": "2026 1st International Conference on Artificial Intelligence and Computing (AIC)",
+    "url": "https://doi.org/10.1109/aic65131.2026.11633630",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "SLOPE: Fine-Grained Log Parser Combining Syntax with LLM-Distilled Semantic",
+    "authors": "Shuting Lai, Haiyu Huang, Pengfei Chen, Zilong He, Min Li, Tong Shen",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3838599",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-7",
+    "title": "LLM-Based Framework for Student Perceptions of Lecturer Satisfaction Analysis in Higher Education",
+    "authors": "Septian Eka Ady Buananta, Harco Leslie Hendric Spits Warnars, Yohannes Kurniawan, Harjanto Prabowo, Sfenrianto",
+    "publish": "2026 International Conference on Intelligent Engineering and Next-Gen Healthcare Systems (IEHNS)",
+    "url": "https://doi.org/10.1109/iehns68708.2026.11606875",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "Mapping LLM Capability Frontiers via Formalized and Calibrated Probes",
+    "authors": "Tianxi Gao, Yufan Cai, Yusi Yuan, Jin Song Dong",
+    "publish": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "url": "https://doi.org/10.1145/3770855.3818029",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-7",
+    "title": "AetherAI: A Modular Laravel-Based Multimodal Content Creation Platform With Unified LLM Orchestration, Tool-Specific Prompt Pipelines, and Subscription-Aware Governance",
+    "authors": "V Biksham, Ayush Kumar Phanigrahi, Manikonda Jaya Bhargav, Ramidi Varshith Reddy",
+    "publish": "2026 IEEE Global Symposium on Emerging and Communication Technologies (GSEACT)",
+    "url": "https://doi.org/10.1109/gseact68539.2026.11620521",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "From Chain-of-Note to Explainable Cognitive Prompting: Reproducible Multi-Layer Validation for Auditable LLM-Assisted PLC Programming : Structured Explainability and Deterministic Reasoning for Industrial PLC Applications",
+    "authors": "Ketut Adnyana, Andreas Schwung",
+    "publish": "2026 12th International Conference on Control, Decision and Information Technologies (CoDIT)",
+    "url": "https://doi.org/10.1109/codit70676.2026.11630927",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-7",
+    "title": "Efficient Test-Time Scaling for LLM-based Time Series Forecasting",
+    "authors": "Xuan-May Le, Minh-Tuan Tran, Ling Luo, Uwe Aickelin, Dinh Phung, Trung Le",
+    "publish": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "url": "https://doi.org/10.1145/3770855.3818201",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-7",
+    "title": "DREAM: LLM-based Dynamic Role-playing via Event-Aware Memory Graph",
+    "authors": "Zhihao Xiao, Mengting Li, Xintao Wang, Linfeng Li, Limin Shui, Mengqi Ji, Borui Cai",
+    "publish": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "url": "https://doi.org/10.1145/3770855.3818027",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
