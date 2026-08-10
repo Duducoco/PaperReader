@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-08-07",
+    "title": "Wasserstein Policy Gradient for Entropy-Regularized Linear-Quadratic Control",
+    "authors": "Zhaoyu Zhu, Rui Gao, Shuang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07433v1",
+    "source": "arXiv",
+    "abstract": "Wasserstein policy gradient (WPG) updates state-conditional action laws by transport in the action space. We study entropy-regularized discounted linear-quadratic (LQ) control. A Bellman verification argument shows that the unrestricted problem has a linear-Gaussian optimal policy, and the discounted-occupancy-weighted statewise Wasserstein gradient is tangent to this policy class. WPG therefore reduces exactly to a finite-dimensional ODE for the feedback gain and action covariance. We prove that this ODE is globally well posed and converges exponentially from every admissible initialization. For each fixed LQ problem, the exponent has a positive limit as the entropy temperature tends to zero and contains no perturbative factor of the form $\\exp(-c/τ)$, while retaining the usual dependence on the conditioning of the control problem."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "CoBa: Cost-Effective Test-Time Scaling via Compute-Balanced Routing",
+    "authors": "Yan Zhou, Yue Ouyang, Kaiyang Zheng, Suncheng Xiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07424v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling is often implemented by spending more compute along one axis: sampling more solutions, extending a chain of thought, or applying a stronger evaluator. Under a fixed inference budget, these choices compete. This paper formulates test-time reasoning as a compute-allocation problem in which a system must decide whether the next unit of compute should be spent on generation, verification, or stopping. We introduce CoBa, a compute-balanced routing policy that first obtains a small set of candidates, applies cheap verification broadly, and routes uncertain or high-value candidates to stronger verification. On 3,129 example-generator evaluations spanning MATH-500, AIME 2024/2025, AMC 2023, and procedural symbolic reasoning, CoBa-Routed-Strong reaches 85.13% macro accuracy, statistically matching a self-evaluation weighted-voting proxy at 85.20% while using 49.1% fewer parameter-weighted tokens. It also matches best-of-16 majority voting within 0.01 macro-accuracy points while using 58.9% fewer parameter-weighted tokens; paired tests retain a small best-of-16 edge at substantially higher cost. Paired bootstrap tests show significant gains over single-sample decoding, while the remaining gap to the pool oracle exposes headroom for sharper routing. For local reasoning systems, test-time scaling becomes a question of where the next computation is most valuable."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "I Seek You in Videos: Identity-Conditioned Queries for Person-Centric Video Reasoning",
+    "authors": "Shibo Gao, Chongxiao Wang, Chenglong Huang, Jie Ma, Haolin Shi, Fei Ding, Jing Li, Qiang Lyu, Yangyang Liu, Yang Liu, Jun Liu, Linlin Huang, Peipei Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07417v1",
+    "source": "arXiv",
+    "abstract": "Real-world video reasoning often involves multimodal, multi-source inputs, whereas existing video reasoning tasks typically assume a simplified video-text setting, limiting identity matching and person-centric reasoning. To bridge this gap, we introduce the Identity-conditioned Queries (ICQ) task, in which models are required to jointly associate and interpret an input video and a reference image of a person, and leverage this conditioning to address identity grounding, behavior understanding, and temporal reasoning, among other challenges. Building on ICQ, we present ISYV (I Seek You in Videos), a systematic solution comprising three components: (1) ISYV-Bench, a challenging evaluation benchmark with 1,377 real-world complex videos and 1,377 question-answer pairs, organized into six difficulty levels spanning capabilities from identity recognition to causal reasoning; (2) ISYV-75K, a large-scale training set of 75K high-quality samples constructed via automated annotation, multi-stage verification, and manual review; and (3) ISYV-Framework, containing an ICQ-oriented model and training strategy for learning to exploit informative video shots without additional shot-level annotations. Extensive experiments show that both mainstream closed-source and open-source MLLMs struggle on ISYV-Bench, especially in cross-domain identity matching and long-horizon tracking. ISYV-Model outperforms strong baselines and in some aspects approaches closed-source performance. Overall, ISYV provides a unified task definition, scalable datasets/benchmarks, and modeling insights for person-centric video reasoning."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "A Domain-Specific Harness for End-to-End Automation of Optimization Research",
+    "authors": "Heechang Kim, Ernest K. Ryu, Shuvomoy Das Gupta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07407v1",
+    "source": "arXiv",
+    "abstract": "We present AutoOPT, a domain-specific harness for end-to-end automation of optimization research. AutoOPT organizes the discovery of optimal first-order methods into four stages: numerical design through the BnB-PEP methodology; symbolic discovery of the analytic description and a convergence proof through frontier large language models (LLMs); formal verification in the Lean 4 proof assistant; and human interpretation and write-up. We demonstrate the framework on two case studies, each of independent interest. The first, lemniscate acceleration, is a new accelerated gradient method for minimizing the gradient norm of a smooth convex function: after $N$ gradient steps it reduces the squared gradient norm at the optimal $O(1/N^{4})$ rate, with a constant governed by the lemniscate constant $\\varpi$, a classical elliptic-integral constant. The second is the analytic description of ITEM-f, a method previously known only numerically: for $L$-smooth, $μ$-strongly convex minimization it contracts the function-value gap at an accelerated linear rate with a per-step factor $(1-\\sqrt{μ/L})^{2}$. The convergence theorems of both case studies are formalized and machine-checked in Lean 4."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Circuit-Based Program Verification: Sequential Circuits as an Intermediate Representation for Verifying C Programs",
+    "authors": "Po-Chun Chien, Nian-Ze Lee, Armin Biere, Dirk Beyer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07397v1",
+    "source": "arXiv",
+    "abstract": "Formal verification of software programs and hardware designs shares the common goal of reasoning about state-transition systems, yet the two communities have largely developed separate intermediate representations and verification algorithms. This paper investigates sequential circuits as an intermediate representation for software verification, with the goal of enabling direct application of hardware-model-checking techniques. We present Circuit-Based Program Verification (CPV), a modular framework that translates C programs into sequential circuits and employs off-the-shelf hardware model checkers as backends. Unlike traditional software verifiers, which typically rely on path-based exploration, CPV reasons over sequential circuits, where a program's control and data flows are folded into a monolithic transition relation that can be analyzed as a whole. The framework supports reachability-safety and termination analyses and integrates multiple state-of-the-art hardware model checkers, which together provide access to diverse verification algorithms, including bounded model checking, $k$-induction, and IC3/PDR. Counterexamples found by hardware model checkers are automatically translated back into software-verification witnesses for users to interpret verification results. We conducted a comprehensive evaluation on a benchmark suite of more than 16000 tasks. Our results show that CPV achieved competitive performance against five well-established software verifiers and exhibited complementary strengths by uniquely solving tasks that other verifiers cannot handle."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Banach lattices and phase retrieval: A case study for the use of AI in mathematics",
+    "authors": "Jaume de Dios Pont, Lukas Liehr, David Muñoz-Lahoz, Mitchell A. Taylor, Pedro Tradacete",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07396v1",
+    "source": "arXiv",
+    "abstract": "The ability of large language models to assist professional mathematicians has been progressing rapidly. Earlier this year, a group of researchers in Banach lattice theory and phase retrieval began incorporating this technology into their research workflows. Facing challenges about the reliability of these models, they also decided to couple the discovery process with Lean verification. Here, we present a case study of how this has led to a more united community and a deeper understanding of our field."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "LitTraceQA: A Benchmark for Multi-Stage Grounding and Verification in Scientific Question Answering",
+    "authors": "Xuye Liu, Yimu Wang, Peng Shi, Bo Xue, Xiangrui Ke, Songcheng Cai, Kath Choi, Di Wu, Freda Shi, Krzysztof Czarnecki",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07370v1",
+    "source": "arXiv",
+    "abstract": "Scientific literature is increasingly used as a knowledge source for language models, retrieval-augmented generation systems, and research assistants, but answering research questions from papers requires more than fluent generation. A reliable system must identify the relevant papers, locate the concrete evidence that supports the answer, and produce a response that is faithful to that evidence. We present LitTraceQA, a benchmark for literature-grounded question answering over scientific papers. Given a research question and a metadata pool of papers, a system must return three connected outputs: canonical paper identifiers, supporting evidence locations, and answers in one or more requested formats, including free-form text, multiple-choice answers, and structured tables. LitTraceQA targets evidence types common in scientific reading: tables, figures, text spans, equations or algorithms, and citation contexts. The public development split contains 55 examples, including 26 hidden-source single-paper questions and 29 multi-paper questions, and provides gold papers, evidence annotations, and answers for local validation. We also analyze a larger final annotation collection with 4,978 unique-question records over 4,859 unique gold papers. By evaluating paper retrieval, evidence grounding, and answer accuracy separately, LitTraceQA provides a testbed for scientific QA systems that produce verifiable answers rather than unsupported summaries."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Maximizing Algebraic Connectivity with $2(n-2)$ Edges: The Large Vertex Number Case",
+    "authors": "Zeru Zhu, Jinzheng Li, Yuanjie Ren, Ji Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07360v1",
+    "source": "arXiv",
+    "abstract": "Kolokolnikov conjectured that, among finite simple graphs on $n$ vertices with exactly $2(n-2)$ edges, the complete bipartite graph $K_{2,n-2}$ maximizes algebraic connectivity. We prove the conjectured statement for every $n\\ge123$: every such graph has algebraic connectivity at most $2$, while $K_{2,n-2}$ attains $2$. The proof begins with explicit Rayleigh-quotient certificates that exclude several local configurations from a hypothetical counterexample. A global degree count then controls the number and total excess of vertices of degree at least $5$ and bounds the edge excess of the subgraph induced by vertices of degree at most $4$. A Moore-type breadth-first-search criterion uses this excess to guarantee a short cycle, while a spectral criterion excludes cycles in the same length range. An explicit arithmetic estimate shows that the two criteria apply simultaneously once $n\\ge123$. A Lean formalization covering every $n\\ge4$, including the complementary range $4\\le n\\le122$, has been produced with MerLean and checked by the Lean kernel; the present paper gives a self-contained mathematical account of the large-order component."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Fractional Spin Ferroelectric and Sliding Spin Current in Magnetic Sliding Ferroelectrics",
+    "authors": "Yilin Han, Lei Li, Chaoxi Cui, Run-Wu Zhang, Zhi-Ming Yu, Yugui Yao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07305v1",
+    "source": "arXiv",
+    "abstract": "We investigate the fractional spin ferroelectric (FSFE) in magnetic sliding ferroelectrics (SFEs), where ferroelectric switching is characterized not only by the reversal of the out-of-plane electric polarization but also by a variation of fractional in-plane spin electronic polarization. We show that interlayer sliding in FSFEs can naturally lead to a symmetry-protected pure spin current, termed the sliding spin current here. The underlying mechanism is that, during switching, the contributions of valence electrons and ions to the in-plane charge transfer cancel each other, whereas the in-plane spin transfer, which stems solely from valence electrons, persists, leading to a pure spin current. We demonstrate our ideas in various material candidates, including $H$-stacked bilayer CrI$_3$, whose few-layer form has been experimentally confirmed to be a magnetic SFE, and $R$-stacked bilayers $2H$-V$X_2$ ($X=$ S, Se, Te), which have been experimentally synthesised. For a typical switching time of about $1$ ns, the estimated spin-current densities for bilayer CrI$_3$ and V$X_2$ reach $10^9 (\\hbar/2e)\\mathrm{A/m^2}$ and $10^8 (\\hbar/2e)\\mathrm{A/m^2}$, respectively. This means that by applying a periodic out-of-plane electric field, a significant alternating spin current can be generated in magnetic SFEs. Thus, our findings propose a compelling new mechanism for the all-electrical generation of pure spin current, and predict concrete realistic materials for experimental verification."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "EliSeg: Verified Target Construction for Report-Grounded Abnormality Segmentation",
+    "authors": "Chengyi Peng, Haoyu Yang, Meixing Shi, Yuxiang Cai, Yankai Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07299v1",
+    "source": "arXiv",
+    "abstract": "Radiology reports describe clinical observations but do not specify executable segmentation targets. They may contain present, negated, prior,uncertain, or irrelevant findings, while multiple valid abnormalities may coexist. Existing segmentation methods largely bypass this ambiguity by receiving a target identity or spatial prompt before inference, which acts as a hidden target oracle. We study report-grounded abnormality segmentation, where a model must determine target eligibility, cardinality, and finding-to-mask correspondence directly from an unfiltered report before delineating the corresponding regions. We propose \\textbf{EliSeg}, an atcor--verify--revise framework that integrates target construction with mask generation. A grammar-constrained Actor proposes target slots and masks, an independent text-only Verifier reconstructs the eligible finding inventory, and Revision selectively re-executes the shared Actor when their target structures disagree. EliSeg requires no predefined target identity, finding prompt, point, or bounding box. Experiments on MIMIC-CXR-ILS show that EliSeg consistently outperforms direct segmentation methods and extract-then-segment cascades across findings, while effectively suppressing masks for ineligible report mentions. Ablation studies confirm the complementary roles of verification and revision, and evaluation on CheXlocalize demonstrates effective transfer of the EliSeg to an external dataset.Code is available at https://github.com/Maybach-dream/EliSeg."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Grammar Engineering Meets LLMs: Development of Cantonese and Irish ParGram Treebanks",
+    "authors": "Chit-Fung Lam, Elaine Uí Dhonnchadha",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07283v1",
+    "source": "arXiv",
+    "abstract": "Grammar engineering requires expertise in linguistic formalism and computational implementation, especially in parallel grammar projects that balance cross-linguistic consistency with language-specific properties. This paper presents the development of Cantonese and Irish treebanks within the Parallel Grammar (ParGram) Project, where linguistic parallelism is maintained at an abstract functional level. We also investigate the methodological potential and limitations of using multilingual LLMs to support grammar engineering, focusing on Cantonese-Irish translation and the generation of formal syntactic structures using OpenAI's gpt-oss-120b model. The results show that translation performance was generally unsatisfactory and unaffected by prompt language. For syntactic structure generation, the model produced some structurally meaningful outputs, but performed poorly on tasks requiring cross-linguistic abstraction. Nonetheless, LLM-generated outputs may still offer some reference value by suggesting alternative analyses and (partially) capturing predicate-argument relations. Overall, our findings highlight both the potential and limitations of using LLMs in collaborative grammar engineering, while underscoring the continued importance of expert-driven analysis and verification."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Linear-Time Verification of Rings and Fields",
+    "authors": "Youlong Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07272v1",
+    "source": "arXiv",
+    "abstract": "We consider the following problems: Given two $n \\times n$ tables defining binary operations $+$ and $\\cdot$ on a set $S$ of $n$ elements, decide whether $(S,+,\\cdot)$ forms a ring or, respectively, a field. Recently, Dudek, Fischer, Gokaj, Jin, Künnemann, Mao, and Redzic (STOC 2026) obtained the following two (near-)optimal results: (1) A randomized $O(n^2\\log(1/δ))$-time algorithm for verifying rings. (2) A deterministic $O(n^2)$-time algorithm for verifying fields. Their algorithms build on machinery of Evra, Gadot, Klein, and Komargodski (FOCS 2024), which relies on Classification of Finite Simple Groups (CFSG). In this work, we give a deterministic $O(n^2)$-time algorithm for ring verification, resolving the deterministic complexity of this problem. As a corollary, we also obtain a deterministic $O(n^2)$-time algorithm for field verification. Our algorithms are elementary and avoid CFSG machinery entirely."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "The Exact Second Generalized Covering Radius of Binary Primitive Triple-Error-Correcting BCH Codes",
+    "authors": "Isaac Barouch Essayag, Aryeh Lev Zabokritskiy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07215v1",
+    "source": "arXiv",
+    "abstract": "Let $C_m=\\operatorname{BCH}(3,m)$ be the binary primitive triple-error-correcting BCH code of length $2^m-1$. We determine its second generalized covering radius exactly: $R_2(C_m)=8$ for every $m\\geq 5$. Equivalently, every two-dimensional syndrome subspace is contained in the binary span of at most eight parity-check columns, and eight columns are necessary in the worst case. This matches the known lower bound and settles the parameter for the entire binary primitive triple-error-correcting BCH family."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "From Test-Time Scaling to Reusable Memory: Measuring Crystallization in Text-to-SQL",
+    "authors": "Jiaqian Wang, Yutao Qi, Wenjin Hou, Yuanxi Che, Muning Wen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07213v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling can correct difficult text-to-SQL queries, but the extra computation is normally discarded after each answer. Systems increasingly retain verified repair episodes, yet evaluations still report one end-to-end score. It cannot distinguish replay on recurring questions from help on unseen questions, or identify the responsible memory choice. We call measuring this future value the crystallization problem. Our controlled evaluation holds the single-shot solver fixed and varies one memory choice at a time. We separately measure replay, cross-question retention, and held-out same-database transfer. On BIRD, storing verified corrected queries improves held-out first-attempt accuracy by 4.34 percentage points. This gain captures 44.4% of the accuracy headroom provided by on-demand repair on the same questions. Controlled interventions identify database-specific content as the main operating ingredient. Reliable verification and broader retrieval coverage yield supported gains; richer formats and elaborate retrievers do not. Open-source code, evaluation artifacts, and reproduction instructions are available at https://github.com/ai-jiaqian/text-to-sql-memory-crystallization."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "HNR-DAC: Hard-Negative Reranking and Distribution-Aligned Classification for Scientific Claim Verification",
+    "authors": "Zhenchao Wang, Xin Chen, Luoxi Zhang, Min Yang, Shiwen Ni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07204v1",
+    "source": "arXiv",
+    "abstract": "Scientific claim verification over a cited paper requires predicting the claim--paper relation and identifying the paragraphs that justify that prediction. This setting poses two linked challenges: within-paper distractors often resemble genuine evidence, while a classifier trained on gold evidence must operate on retrieved evidence at inference. We present HNR-DAC, a two-stage framework that trains each stage on the cases it will actually encounter. Hard-Negative Reranking (HNR) quantifies evidence confusability using a base reranker's scores on non-gold paragraphs and contrasts gold evidence against the most confusable candidates. Distribution-Aligned Classification (DAC) trains on the Top-1 paragraph produced by the same frozen HNR used to construct inference inputs, while HNR's Top-3 paragraph identifiers provide the evidence output. On the NLPCC 2026 Task 10 Track 2, the final configuration obtains 97.21% Hit@3, 95.79% Macro-F1, 94.47% Joint@3, and an average score of 95.13%. The corresponding submission ranks third on the official Track 2 leaderboard while achieving the highest overall Macro-F1 of 93.05%, alongside 70.16% Joint@3 and an average score of 81.61%."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs",
+    "authors": "Aditya Katkar, Om Karkele, Kartik Mandhane, Manisha More, Yash Kashid",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07167v1",
+    "source": "arXiv",
+    "abstract": "Giving an AI agent the ability to send emails, query databases, or execute commands is useful--until the agent is tricked into doing something it shouldn't. Prompt injection, hallucinated reasoning, and unsafe tool calls form the primary attack surface for autonomous LLM agents. Existing defenses rely on software checks like system prompts or policy filters running on the same machine the attacker targets, offering no verifiable proof of execution. We introduce Niyam-AI, a framework that makes safety enforcement provable. At session start, permitted tools and constraints are locked into an Intent Contract committed via SHA-256. Every tool call is intercepted and validated by an isolated Judge model; upon passing, a zk-SNARK proof is generated via EZKL. The tool executes only after proof verification, allowing third parties to confirm enforcement without accessing Judge model weights. Evaluating Niyam-AI on 2,000 real-world scenarios from Agent-SafetyBench against NeMo Guardrails, Meta's Llama Prompt Guard 2, and OpenAI's GPT-OSS-Safeguard using 5-fold stratified cross-validation yields an F1 score of 88.5% with a 1.1% false-positive rate (bootstrap 95% CI: [85.19%, 91.88%], N=1000). McNemar's exact paired test confirms significant improvement: Niyam-AI wins 390 discordant scenarios against NeMo (vs 20 losses), 115 against Prompt Guard 2 (vs 13), and 384 against GPT-OSS-Safeguard (vs 19) with p < 0.0001 in all cases. Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verification takes 53.1 +/- 11.8 ms. Niyam-AI provides a guardrail that is both highly accurate and mathematically verifiable--though this reflects a classifier adapted to Agent-SafetyBench evaluated against zero-shot baselines, a distinction discussed in Section IV.C."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training",
+    "authors": "Xucong Wang, Zhe Zhao, Liheng Yu, Di Wu, Xiaofeng Cao, Pengkun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07147v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning with Verifiable Reward (RLVR) has emerged as a powerful paradigm for training coding agents, where the execution feedback from compilation and tests provides objective verification. However, unlike agent tasks, coding agents face a unique and finer-grained credit assignment challenge: at each step, coding actions simultaneously pack varying changes into different regions of a code version, which makes the contribution of independent change indistinguishable. Existing RLVR methods mostly leverage the outcome reward or step-level reward, which fails to dive into a code diff and makes unique properties of coding actions invisible to training. In this paper, we propose Diff-in-Diff Policy Optimization (DiDPO), a critic-free RL method that constructs fine-grained credit units directly from the structure of code diffs. DiDPO organizes multi-turn coding interactions into multiple thought--action steps and discovers code diffs across sampled trajectories. It then selects anchors by aggregating highly similar sub-diffs split from each whole diff by our ``groupability score'', which provides the splitting schema that optimally balances the semantic scope of anchors and the group mass they may form. Finally these anchors form advantage groups and project the diff-level advantage back to individual response tokens. Experiments on long-horizon coding and reasoning benchmarks show that DiDPO significantly outperforms strong agentic RL baselines. On Qwen2.5-7B-Coder, DiDPO exceeds comparable methods by over 10\\% and narrows the gap with far larger models, offering a principled framework for fine-grained credit assignment in coding agent training. We also open-source verl-code, an agentic rl codebase that supports various RL methods and coding benchmarks."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Explanation-Guided Metamorphic Testing of Specialized Language Models: An Empirical Study",
+    "authors": "Xingcheng Chen, Mehmet Besenk, Andrea Stocco",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.07076v1",
+    "source": "arXiv",
+    "abstract": "\\head{Background} Task-specialized language models are increasingly integrated into software engineering workflows to support vertical-domain activities such as issue triaging, document classification, and automated analysis. Despite their adoption, there is limited empirical evidence on how to test their robustness and detect brittle behaviors under semantics-preserving input transformations. \\head{Aims} This paper investigates whether explainability-guided metamorphic testing can improve the effectiveness and validity of robustness testing for specialized language models compared to heuristic mutation strategies. \\head{Method} We conduct a large-scale empirical study of explanation-guided metamorphic testing across three datasets, four model architectures, and 20 testing configurations derived from combinations of attribution methods and mutation strategies. The evaluated configurations combine attribution-based token prioritization, LLM-driven mutation, and automated semantic verification to generate linguistically valid test variants. We assess failure discovery capability, semantic validity, and testing efficiency against heuristic baselines. \\head{Results} Explanation-guided metamorphic testing generates 2.30$\\times$ more verified failure-inducing test cases than heuristic mutation strategies. Semantic verification substantially improves mutation validity and achieves high label-preservation precision among gate-accepted variants according to human annotation. The study further reveals systematic shortcut behaviors across models, including over-reliance on named entities and formatting cues. \\head{Conclusions} The results provide evidence that explanation-guided metamorphic testing is an effective and practical approach for empirically evaluating the robustness of task-specialized language models used in vertical AI applications."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Blind to the Pivotal Vote: Aggregate Independence Metrics Miss Where Verification Actually Helps",
+    "authors": "Yang Shu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06940v1",
+    "source": "arXiv",
+    "abstract": "LLM judge panels are a standard evaluation tool, but prior work reports highly correlated panel errors: nine judges provide roughly the effective information of two independent ones, and aggregation closes only a small fraction of the gap. A natural remedy--a signal from a different evidence source, e.g., executing a test suite--produced no distinguishable change in the panel's effective-vote count at scale (-0.04, 95\\% CI [-0.10, +0.02]). Aggregate dependence and conditional decision utility are different questions. Elementary majority arithmetic fixes the affected set for single-ballot substitution: only decisions with a one-vote margin can change. The empirical question is whether panel error rates rise and useful substitutions concentrate there. They do: the entire accuracy gain concentrates on these pivotal queries, where it is large (+10.4 to +23.3 percentage points across three headline configurations), and is exactly zero elsewhere. We confirm the pattern across three code benchmarks and four panel sizes (a 9-judge extension and 56 dependent subsampling checks, gain +6.5 to +16.1 percentage points). On HumanEval+/MBPP+, a majority-side replacement rule raises overall accuracy from 82.44\\% to 85.62\\% while invoking the signal on 16.2\\% of queries; signal-only remains stronger at 87.60\\%. Thus population-level dependence diagnostics and margin-stratified utility are complementary, and the affected-set characterization yields a call-reduction rule for any specified single-ballot substitution policy."
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Rigid-Covert GNSS Spoofing of UAV Swarms: A Structural Blind Spot, Its Detection Limit, and Absolute-Anchor Defenses",
+    "authors": "Minseok Park, Joon Soo Yoo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.06885v1",
+    "source": "arXiv",
+    "abstract": "Cooperative UAV-swarm defenses commonly cross-check GNSS positions against measured inter-drone geometry. We show that this relative-geometry channel has a structural blind spot: a common, slowly varying translation (a rigid-covert shift, RigidShift) preserves all pairwise distances and is therefore unobservable to any relative-only detector (a gauge-freedom argument). We validate this blindness on distance-verification and semidefinite-feasibility baselines, while explicitly distinguishing it from onboard inertial/GNSS monitors that can raise a bare alarm but cannot recover the swarm's true position. To quantify when an external reference restores observability, we derive the drift-dependent detection floor $2γ/(1-t_s/T)$ for a calibrated anchor-residual detector and empirically identify an additional detector-specific noise floor (measured slope 2.66 vs. predicted 2.67). We then present a centralized anchor-rooted recovery pipeline that reconstructs swarm geometry from inter-drone ranges, aligns it to a trusted-anchor subset with Byzantine-robust fitting, and recovers the absolute positions of non-anchored drones. A segmented estimator jointly estimates anchor drift, attack rate, and onset when no clean-epoch label is available. Across statistical simulations, ArduPilot software-in-the-loop experiments, and Gazebo experiments with rendered vision anchors, the method recovers the positions of non-anchored drones to a median error of 0.39 m (20 seeds) under approximately 10.1 m of GNSS drift, and to 7.1 cm (5 seeds) in the rendered-vision multi-SITL setting. We also characterize the explicit limits imposed by non-collinear anchor geometry, anchor coverage, $τ\\to0$ drift-attack aliasing, and majority anchor compromise. All evaluations are simulation-based and use no RF spoofing hardware or physical swarm."
+  }
+]
