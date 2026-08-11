@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-10",
+    "title": "Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy",
+    "authors": "Rohan Bhagra, Mahantesh Halapannavar, Uddhav Bhattarai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09857v1",
+    "source": "arXiv",
+    "abstract": "Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: biased toward user-specified goals, they may suggest actions misaligned with scientific ethics, they may be unsafe due to an inability to \"remember\" prior safety risks, or they may be vulnerable to adversarial attacks on the autonomy ecosystem. We propose a LLM-driven verification layer between planning and execution to evaluate action permissibility. Our LLM-as-a-Judge ensemble combines chain-of-thought reasoning across models and synthesizes those expert judge outputs, mirroring a combination of a mixture of experts and self-consistency approach. This layer serves as middleware, gating plans from the server's planning module before they reach the MCP server and therefore the robot's low-level controls: plans are approved, rejected for reformulation, or escalated for human review. With this system, we achieve near 85% precision across accept/escalate/reject categories 97% containment of adversarial attacks, with negligible errors between accepting and rejecting tasks, and errors mostly manifesting at the escalate boundary."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Bijectivity analysis of rational T-spline surfaces via Bernstein representations",
+    "authors": "Jia-Xuan Li, Ying-Ying Yu, Ya-Shu Liu, Xin Li, Ye Ji, Chun-Gang Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09838v1",
+    "source": "arXiv",
+    "abstract": "Ensuring the bijectivity of spline-based parameterizations is fundamental in geometric modeling and isogeometric analysis, as invalid mappings may lead to self-intersections, singular Jacobians, and numerical instability. While T-splines offer enhanced flexibility through local refinement, this flexibility also makes bijectivity verification significantly more challenging. In this work, we propose a rigorous and efficient framework for bijectivity analysis of rational T-spline surfaces based on Bézier extraction. The key idea is to reformulate the T-spline representation into a collection of element-wise rational Bézier patches, on which the Gram determinant of the mapping admits a Bernstein polynomial representation. This enables a coefficient-based analysis of local regularity by exploiting the convex hull and positivity properties of the Bernstein basis. Based on this formulation, we derive a sufficient condition for bijectivity from the nonnegativity of Bernstein coefficients, together with a necessary condition based on the sign consistency of corner coefficients. For cases where these conditions are inconclusive, we introduce a hierarchical subdivision strategy that progressively localizes ambiguous regions and resolves them through refinement. The proposed method provides a certified and adaptive procedure for bijectivity verification that avoids dense numerical sampling and remains computationally efficient. Numerical experiments on complex T-spline geometries demonstrate that the approach accurately detects both valid and near-degenerate configurations, while scaling effectively to large models with thousands of rational Bézier patches. The framework is fully compatible with standard isogeometric analysis workflows."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "VideoVIBE: A Video-Grounded Diagnostic Benchmark for One-Shot Interactive Website Generation",
+    "authors": "Jiajun Xu, Yanghao Zhou, Jingyun Liao, Yu Bai, Jinxing Zhou, Chengliang Liu, Changsen Yuan, Bo Wang, Qian Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09573v1",
+    "source": "arXiv",
+    "abstract": "Natural-language-driven \"vibe coding\" enables the one-shot generation of visually rich and interactive web applications, yet reliable assessment of their quality has not kept pace. Existing evaluations often score isolated artifacts or final task outcomes, offering limited evidence about which failures occur and why. We introduce VideoVIBE, a video-grounded benchmark that transforms human-operated webpage recordings into fine-grained diagnostic tasks. It contains approximately 1.7K diagnostic Video QA instances derived from 6,338 verified failures across generated webpages, spanning semantic-logical, visual-motion, structural-temporal, and functional failures. Diagnoses are grounded primarily in recorded presentation and behavior, with webpage source code used as complementary context. We further propose V2Lens, a training-free, evidence-grounded multi-agent system that challenges and selectively refines initial video-based diagnoses through targeted visual and source-code verification. Across thirteen closed-source and open-weight Video MLLMs, Gemini-2.5-Flash is the strongest standalone model with a score of 64.54, while V2Lens reaches 71.72, an improvement of 7.18 points. Together, our results show that video-grounded evaluation can move beyond isolated artifacts and aggregate outcomes toward a behaviorally faithful and diagnostically informative account of generated application quality."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Model-Based Systems Engineering Framework for SysML-Driven Design of Autonomous UAVs",
+    "authors": "Deekshitha Angadi, Naveena Budda, Vikas Agarwal, Mohamed Samshad, Bharath Kumar Suryadevara, Narsimlu Kemsaram",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09547v1",
+    "source": "arXiv",
+    "abstract": "Autonomous Unmanned Aerial Vehicles (UAVs) are complex cyber-physical systems that require the coordinated integration of flight control, navigation, perception, communication, power management, and mission-level decision-making under safety, timing, and reliability constraints. However, many autonomous UAV development workflows still rely on document-centric requirements, separated architectural descriptions, and software implementation artifacts, which can lead to ambiguity, interface inconsistencies, and weak traceability during early design. This paper presents a Model-Based Systems Engineering (MBSE) design framework for the SysML-driven development of autonomous UAVs. The proposed framework uses the Systems Modeling Language (SysML) as a formal design backbone to structure UAV development across four connected layers: stakeholder requirements, functional decomposition, logical architecture, and physical/software allocation. SysML requirement diagrams, activity diagrams, block definition diagrams, internal block diagrams, state machine diagrams, and parametric diagrams are used to capture the functional, structural, behavioral, interface, and performance aspects of the UAV system. The logical architecture is then systematically mapped to a Robot Operating System 2 (ROS 2) software architecture by relating SysML blocks to ROS 2 nodes, flow ports and connectors to topics, request-response interactions to services, and goal-oriented behaviors to actions. The framework is illustrated at the design level using representative autonomous UAV mission scenarios, including autonomous take-off, waypoint navigation, hover stabilization, obstacle avoidance, return-to-home, and emergency handling. The resulting model supports requirement allocation, interface definition, subsystem responsibility assignment, and verification planning before simulation or physical deployment."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "TCS-BENCH: Benchmarking State-of-the-Art Generative AI Theoretical Computer Science Research Ability",
+    "authors": "Vincent Cohen-Addad, Dimitris Paparas, Ernest van Wijland, Max Springer, Julien Canitrot-Paradis, Honghao Lin, David Woodruff, Adarsh Kumarappan, Rajesh Jayaram, Rudrajit Das, Lalit Jain, Ola Svensson, Silvio Lattanzi, Mislav Balunovic, Theophane Weber, Vahab Mirrokni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09538v1",
+    "source": "arXiv",
+    "abstract": "We introduce TCS-Bench, a benchmark for evaluating Large Language Models (LLMs) on research-level Theoretical Computer Science (TCS) proof generation. TCS-Bench consists of theorem-proving tasks from papers published at top theoretical computer science venues (STOC, FOCS, and SODA). Each task provides the necessary context to derive a self-contained proof for a target result. We evaluate state-of-the-art models on this benchmark. We verify the correctness of generated proofs via a verification agent, and further benchmark the verifier against human-expert proof judgements on a set of target statements and generated proofs pairs. Our reference verifier achieves over 90% accuracy on the expert labeled set."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "HarnessWAM: Bridging Prediction and Deliberation in World Action Models",
+    "authors": "Zhaopeng Gu, Bingke Zhu, Tianxi Lin, Guibo Zhu, Yingying Chen, Kai Wang, Tingyu Yuan, Chaoyang Zhao, Zhaowen Li, Peng Su, Jinqiao Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09516v1",
+    "source": "arXiv",
+    "abstract": "World Action Models (WAMs) jointly learn environmental dynamics and robot actions, introducing priors over physical evolution into embodied control. However, finite-horizon prediction and action generation are insufficient for complex embodied tasks that require global planning, cross-stage state maintenance, execution verification, and failure recovery. We refer to this mismatch as the prediction-deliberation gap of WAMs. To address this gap, we propose HarnessWAM, an agentic framework for WAMs. HarnessWAM employs a vision-language-model-based Task Manager to maintain an evidence-grounded scene belief and a structured task graph. A capability-conditioned executable-space projection further constrains open-ended semantic plans into sequences of atomic skills that satisfy task dependencies, embodiment-state constraints, and the capability boundary of the underlying WAM. During execution, HarnessWAM operates through an event-driven, dual-timescale feedback loop: a lightweight progress estimator continuously provides high-frequency execution evidence, while the Task Manager deliberates at salient milestones by jointly considering the current observation, task state, and interaction history to determine whether to advance the task, acquire additional observations, revise the plan, or initiate local recovery. This mechanism enables the robot to recover its state after a subtask failure and resume execution without discarding previously acquired scene knowledge. HarnessWAM achieves state-of-the-art full-task and subtask success rates of 59.6% and 69.9% on RoboMemArena, and an SR of 23.7% on RoboCerebra Ideal. These results demonstrate that model-external structured state maintenance and closed-loop agentic decision making can effectively extend the local control capabilities of WAMs into embodied task execution that is plannable, verifiable, and recoverable."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Renormalising Generative Models for Active Inference: Foundations, Derivations, and Verification",
+    "authors": "Karim Zaghw, Andrew Pashea, Marc Pritsch, Wouter Nuijten, Karl Friston, Lancelot Da Costa",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09512v1",
+    "source": "arXiv",
+    "abstract": "Active inference offers a unified framework for perception, learning, and action, but scaling discrete active-inference models to rich spatial and temporal domains remains difficult. Renormalising generative models (RGMs) address this challenge by composing discrete generative models across spatial and temporal scales, coarse-graining lower-level states and paths into higher-level causes for objects, events, and action. However, fully reproducing and adapting the framework remains difficult: the mathematical exposition is compact, and the reference implementations are deeply integrated within specialized software environments, leaving many algorithmic details implicit. This paper addresses these challenges by providing a self-contained, derivation-oriented account of RGMs together with an open, verified implementation. We explain how the hierarchy is built, how beliefs and actions are updated within it, and how information is passed between levels. Where the published equations and implementation differ in emphasis, we make those choices explicit and explain their modelling consequences. By clarifying the theory and separating it from its original implementation context, this work lowers practical barriers to entry and makes RGMs more transparent, auditable, and reproducible, providing a foundation for future quantitative evaluation and development on machine-learning benchmarks."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "ANTMAN: An Efficient and Interpretable RTL-Level Run-Time Detection Framework for Stealthy Branch Predictor Attacks on BOOM",
+    "authors": "Muhammad Hassan, Maria Mushtaq, Jaan Raik, Tara Ghasempouri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09498v1",
+    "source": "arXiv",
+    "abstract": "Runtime detection of microarchitectural side channel attacks remains significantly underexplored in RISCV compared with x86 and ARM ISAs, posing a serious threat to critical applications. State-of-the-art branch predictor attacks bypass traditional data and instruction caches by directly exploiting the state of internal history tables, making them inherently stealthy. Recent research has explored offline detection of microarchitectural attacks on RISC-V; however, efficient runtime detection of microarchitectural attacks on RISC-V hardware remains significantly unaddressed. State-of-the-art hardware-based runtime detection solutions leverage hardware performance counters (HPCs) but suffer from a restricted set of counter registers and tradeoffs between detection accuracy, detection speed, and sampling granularity, making them impractical for stealthy attacks. Moreover, sampling HPCs after distinct intervals leaves intermediate relationships between different microarchitectural blocks unobserved. Additionally, proprietary x86 and ARM ISAs constrain researchers from modifying processor microarchitectural designs. To address these limitations, we propose the first secure-by-design, highly interpretable, non-intrusive, RTL-level runtime detection solution for stealthy branch predictor attacks on BOOM RISC-V, evaluated under both simplified Next-Line Predictor (NLP) and complex TAGE predictor configurations. The attack detection relies on association rules extracted offline and embedded in hardware as a non-intrusive rule monitor that enables runtime detection. The proposed approach achieves excellent detection speed, terminates execution before secret disclosure, and produces zero false positives while remaining flexible for detecting previously unseen variants within the same family of branch predictor attacks."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "A Sharper Explicit Result for the Sum of Two Almost Primes",
+    "authors": "Peter J. Campbell",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09488v1",
+    "source": "arXiv",
+    "abstract": "We prove that for every integer $N\\geq2$, there exist positive integers $a$ and $b$ such that $N=a+b$ and $Ω(ab)\\leq33$, where $Ω(n)$ denotes the number of prime factors of $n$, counted with multiplicity. This improves the previous bound of $40$ obtained by Dudek and Dunn. The proof applies the explicit Friedlander--Iwaniec $Λ^-Λ^2$ lower-bound sieve to a sequence derived from the products $n(N-n)$. The main new ingredient is pre-sieving at the prime $3$, which eliminates the extremal small-prime case in the dimension condition while keeping the resulting remainder terms under explicit control. We complete the proof using analytic estimates for large $N$, finite verification over an intermediate range, and explicit prime-gap data for small $N$."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents",
+    "authors": "Hongwei Yao, Yiming Liu, Meihui Chen, Jieling Chen, Zikun Chen, Yiling He, Wangze Ni, Cong Wang, Kui Ren",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09476v1",
+    "source": "arXiv",
+    "abstract": "Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API. We define behavioral safety and introduce ActBench, a self-evolving benchmark that evaluates such behavior risk from execution trajectories rather than final responses. Each case pairs a benign task with an adversarial variant that preserves its instruction, configuration, initial state, rating model, and trusted records while injecting a task-reachable payload. ActBench contains 600 cases from 213 scenarios, spanning 15 risk behaviors, six execution spaces, and 48 web-service APIs.To move beyond static payloads, we propose a reward-guided beam search method that jointly optimizes attack effectiveness and task utility, while reflection diagnoses failed execution checkpoint and guides payload revision. Besides, we propose a dual evidence verification mechanism that verifies agent execution safety and utility through log evidence and LLM-based trajectory evidence.We evaluate 15 LLMs and 6 open-source cowork agents over 24,000 trajectories. Under a fixed harness, attack success rates ranges from 10.1% to 94.4% across models, while under a fixed base model, they range from 73.7% to 94.4% across agents.These results show greater variation across models than agent harness, while attacks remain highly successful across all tested harnesses.Our benchmark is released at: https://github.com/zjuicsr/ActBench."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "FaLCon: Facet-Anchored Retrieval with Late Consensus for Sim2Real Text-Based Person Anomaly Search",
+    "authors": "Hieu Dinh Trung Pham, Phuong Huu Vu Tran, Thuan Duc Mai, Son Nguyen Minh Le, Khang Le Minh, Hoang Vo, Minh-Chi Phung, Huy Minh Nhat Nguyen, Cuong Tuan Nguyen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09474v1",
+    "source": "arXiv",
+    "abstract": "Text-based person anomaly search requires retrieving real-world pedestrian images from detailed natural-language descriptions using models trained primarily on synthetic data. This Sim2Real setting is particularly challenging because visually similar candidates may differ only in subtle actions, object interactions, or appearance attributes, while applying multimodal large language models to the entire gallery is computationally expensive. We propose an anchor-constrained coarse-to-fine retrieval framework that combines global semantic matching with fine-grained verification. First, each query is represented by its original caption, a structured concatenation, and several semantic facets. Heterogeneous vision-language retrievers are then integrated through robust per-query score calibration and soft claim-aware fusion. Full and concatenated captions serve as anchors to preserve candidate recall, whereas appearance, action, and object facets provide bounded corrective evidence. The resulting candidate pool is further refined by a discriminative Qwen3 reranker and two complementary semantic verification modules based on anomaly-aware cloze completion and multi-agent evidence reasoning. Finally, an uncertainty-gated consensus module adaptively reweights the three experts on ambiguous queries. Experiments on the PAB benchmark show that the proposed soft claim-aware retrieval achieves 86.44% mAP@10, substantially outperforming individual retrieval backbones. The complete framework further improves performance to 95.41% mAP@10, 94.44% R@1, and 99.09% R@5. These results demonstrate that preserving strong global retrieval while restricting expensive semantic reasoning to a small candidate pool is effective for fine-grained Sim2Real person anomaly search. Our code will be available on Github."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Climate-Conditioned Cascade Modeling for Multi-Peril Reinsurance: Analysis and Controlled Numerical Applications",
+    "authors": "N. Karimi, E. Salavati, F. Shokrollahi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09456v1",
+    "source": "arXiv",
+    "abstract": "Climate perils are linked through event ordering and state-dependent propagation, features not fully captured by joint loss distributions alone. This paper develops a Cascading Climate Risk Network (CCRN) for multi-peril reinsurance that separates calendar-scale climate conditioning from within-event propagation on a directed acyclic graph (DAG). The model combines complementary-log-log triggering hazards with bounded severity activation, mapping physical states to insured losses via a capacity-bounded demand-surge transformation. For fixed shocks, the event-scale cascade reaches a unique finite-step closure. Monotone comparative statics provide a pathwise upper-corner loss bound over rectangular stress sets, yielding a transparent contract-level stress-testing guarantee under common aleatory inputs. Comprehensive numerical experiments, including copula and Bayesian-network benchmarks, sensitivity analyses, and uncertainty propagation, demonstrate that while central layer prices remain robust across matched-marginal dependence structures, far-tail and high-layer behaviors differ materially. Directional propagation, annual event frequency, and dependence strength emerge as the principal risk drivers. The study provides a controlled synthetic verification of the proposed architecture."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "ZetaGPT: A Reference Implementation of Positional--Encoding--Free State--Space--Attention Language Models",
+    "authors": "Róisín Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09432v1",
+    "source": "arXiv",
+    "abstract": "Transformer-based language models rely on self-attention, whose computation is permutation-equivariant and therefore lacks an intrinsic mechanism for representing token order. Existing architectures address this limitation by explicitly incorporating positional information through learned positional embeddings or hand-crafted positional encodings, such as rotary positional encoding (RoPE), treating positional information as an architecturally acquired capability rather than an inherent property of the model. Motivated by the pursuit of positional-encoding-free architectures, this work explores a language model architecture that integrates causal state-space equations to implicitly encode positional information before attention computation. Specifically, each model block applies a causal state-space equation before self-attention, allowing recurrent state dynamics to encode sequential information into token representations. Consequently, subsequent attention layers operate on position-aware representations without requiring explicit positional encodings while retaining the expressive modeling capacity of self-attention. We present \\textsc{ZetaGPT}, a compact hybrid language model designed for research, rapid prototyping, algorithm verification, and educational applications. In addition to the proposed architecture, \\textsc{ZetaGPT} provides a fully open-source, end-to-end training pipeline encompassing dataset construction, tokenizer training, pretraining, supervised fine-tuning, reinforcement learning from human feedback (RLHF), and chain-of-thought (CoT) reasoning via pure reinforcement learning. To the best of our knowledge, \\textsc{ZetaGPT} is the first open-source small language model without explicit positional encoding and establishes a compact, reproducible reference implementation for the development and empirical study of positional-encoding-free language models."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation",
+    "authors": "Yunhao Zhao, Zhenyang Ni, Haoyang Chen, Ruohan Zhang, Qi Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09410v1",
+    "source": "arXiv",
+    "abstract": "Modern vision-language-action (VLA) policies have acquired broad manipulation skills, but typically generate each action chunk from the current observation or a short fixed-length history. However, real-world manipulation is often non-Markovian, requiring robots to retain and reason over task-relevant information from long-horizon interaction histories to determine the next action. To address this challenge, we propose HyMeS, a hybrid learning framework that leverages the reasoning and memory-management capabilities of coding agents to steer a Markovian VLA for memory-dependent manipulation. Specifically, HyMeS learns low-level motor skills through gradient-based imitation learning, while a coding agent acquires high-level memory-management strategies through heuristic learning by iteratively updating an executable heuristic system from rollout feedback. Furthermore, we close the loop between steering and execution through multimodal stage-completion verification, which updates memory using proprioceptive signals and multi-frame VLM judgments. Compared with end-to-end memory-augmented VLAs, HyMeS requires demonstrations only for reusable motor skills rather than for every history-dependent task configuration, enabling data-efficient compositional generalization. On RoboMemArena, HyMeS improves mean cumulative success from 52.5% to 66.2% and mean task success from 41.3% to 60.1% over pi0.5, while outperforming PrediMem by 4.5 points in cumulative success and 14.5 points in task success."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "OpenLoopEvolve: A Verifiable Self-Evolution Framework for Loop Policies in Long-Horizon Complex Tasks",
+    "authors": "Siqi Wang, Xinlin Li, Zhenglin Li, Li Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09380v1",
+    "source": "arXiv",
+    "abstract": "Long-horizon complex tasks require agents to repeatedly observe states, formulate plans, invoke tools, verify results, and recover from failures in continuously changing environments. However, such control experience often remains confined to a single context or a fixed prompt, and is difficult to accumulate and reuse across historical traces. This paper presents OpenLoopEvolve (OLE), a self-evolution framework centered on the Loop Policy. OLE represents an agent's observation, planning, memory, action, verification, recovery, stopping, and budget control as portable policy assets with versions and lineages, and provides online and offline evolution modes that can be selected according to practical needs: the online mode triggers candidate generation based on feedback from continuous operation, whereas the offline mode searches for candidate policies from archived traces and failure evidence. Both modes share an evolution mechanism consisting of autonomous proposals by a large language model, Champion--Challenger paired evaluation, and robust release. Policies released online are activated at a subsequent task boundary, monitored using subsequent feedback, and rolled back to their parent versions when degradation conditions are met. On the simulated business benchmark YC-Bench, both modes improve aggregate task performance, task success rate, and risk metrics relative to a fixed initial Loop Policy. The results indicate that treating the Loop Policy as a governable asset can support the accumulation, comparison, release, and reuse of control experience and improve agent performance on long-horizon complex tasks."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "White paper: A perspective on civilian-to-defence research transfer to SDD",
+    "authors": "Rute C. Sofia, Daniel Mendez, Simon Barner, Hao Shen, Julian Woermann, Andrea Stocco, Axel von Arnim, Holger Pfeifer, Alexander Pretschner",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09349v1",
+    "source": "arXiv",
+    "abstract": "Military capability is increasingly determined by software. Yet defence platforms are procured on decade-long timescales, while the software and AI models they carry must evolve in days or hours. This paper calls this mismatch the lifecycle paradox, and argues it is the central problem Software-Defined Defence (SDD) must solve. SDD rests on three dimensions: software and systems engineering (design, procurement, certification), AI engineering (sovereignty and trust of learned components), and connectivity and infrastructure engineering (timely exchange of information among sensors, AI, and operators). The proposed path to resilient SDD starts from civilian technologies, addressed through a continuous, DevOps-style loop: model-based systems engineering and simulation-based testing front-load design and verification; tactical connectivity and low-power edge execution carry that design into contested operation; continuous compliance, assurance, and variability management run as cross-cutting concerns. This loop is sustainable given capabilities already proven in automotive, manufacturing, space, and energy. The next step is validating them under adversarial or defence-certified conditions, with short-, medium-, and long-term paths to closing gaps. Closing the SDD gap while preserving civic benefits is a distributed responsibility: researchers must redirect methods toward adversarial conditions; industry must expose tooling to operational needs; policymakers must shape regulatory instruments; and defence agencies must validate results with operators. Recommendations span three horizons: a short-term baseline of adversarial testing and connectivity pilots; a medium-term pipeline of incremental certification; and a long-term validation closing the loop under operational conditions."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Rapid Orbital Decay in the Ultracompact Double-degenerate Binary eRASSU J060839.5$-$704014",
+    "authors": "Rahul Sharma, Chandreyee Maitra, Frank Haberl, Joheen Chakraborty, Susanne Friedrich, Yong-Feng Huang, Chichuan Jin, Zhaosheng Li, Georgios Vasilopoulos, Yanjun Xu, Haonan Yang, Weimin Yuan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09341v1",
+    "source": "arXiv",
+    "abstract": "We present timing and spectral analysis of the recently identified ultracompact double-degenerate (DD) white dwarf binary eRASSU J060839.5$-$704014 using observations from NICER and Einstein Probe (EP), together with archival XMM-Newton data. By phase-connecting the long-term XMM-Newton, NICER, and EP observations, we obtain a coherent quadratic timing solution, yielding an orbital period of 374.15013 (2) s and an orbital decay rate of $\\dot{P}= -4.7\\,(1) \\times 10^{-11} \\mathrm{~s~s^{-1}}$. This orbital decay exceeds that measured in the prototypical DD binaries HM Cnc and V407 Vul. Assuming that the observed orbital evolution is primarily driven by gravitational-wave (GW) angular momentum loss, the inferred chirp mass is $\\sim0.43\\, M_{\\odot}$, placing the source among the most massive known systems of this class. The phase-averaged spectra of NICER and EP-Follow-up X-ray Telescope (FXT) are described by a soft thermal component with temperatures of ~126 and ~144 eV, respectively, confirming the supersoft nature of the source. Phase-resolved spectroscopy reveals a clear decrease in temperature across the bright phase in both instruments, indicating a structured emission region with significant temperature gradients. These results establish eRASSU J060839.5$-$704014 as one of the most rapidly evolving ultracompact DD binaries presently known, belonging to the rare class of direct-impact ultracompact binaries, and a promising verification source for future low-frequency GW studies."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "CADEngBench: It Looks Like CAD, but Does It Work? Evaluating Parametric Design, Assembly Reasoning, and Physics Simulation",
+    "authors": "Harmanjot Singh, Abhra Dubey, Jorge Alejandro Amador Herrera",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09296v1",
+    "source": "arXiv",
+    "abstract": "A CAD model is not engineering-grade merely because it looks correct. It must satisfy design requirements, respond predictably to parameter changes, support controlled edits, match a reference structural response under a declared analysis, and connect to other parts through valid joints. We present CADEngBench, a two-track benchmark for these capabilities. CADEngBench-P evaluates 300 parametric parts, each used for one zero-to-CAD task and one functional-editing task (600 tasks in total), through boundary-representation (B-Rep) validity, engineering and DFM checks, parameter-family perturbations, functional editing, and matched linear-static FEA in CalculiX. CADEngBench-A evaluates 150 body pairs through ranked joint retrieval, exact face-and-edge grounding, joint-frame prediction, and kinematic verification. Across eight multimodal, code-capable models, editing supplied CAD is substantially easier than generating it, while complex edits and matched FEA remain difficult. Assembly predictions often locate the relevant region but fail to recover the recorded joint or mating entities. These results show that CAD evaluation must test engineering behavior rather than appearance alone."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "SafeSceneReason: A Multimodal Reasoning Benchmark Connecting Industrial Hazards with Accident Knowledge",
+    "authors": "Yuanchi Zhu, Kang An, Tengyue Wang, Zhongyu Yang, Chenxu Du, Xinqi Yang, Hebao Zhu, Bokai Zhao, Tianyu Liang, Ziliang Wang, Faqiang Qian, Yunli Yang, Weiyang Shi, Qibing Ren",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09230v1",
+    "source": "arXiv",
+    "abstract": "Industrial-safety understanding requires more than detecting workers, equipment, and personal protective equipment. Models must also assess compliance, identify hazardous interactions, explain potential accident mechanisms, and recommend preventive actions. Existing safety datasets primarily focus on visual perception or isolated violation recognition and provide limited supervision for evidence-grounded reasoning. We introduce SafeSceneReason, a multimodal industrial-safety reasoning benchmark and companion training corpus that connects workplace scenes with knowledge from occupational accident investigations. SafeSceneReason combines two complementary data-construction pipelines. The scene-centric pipeline converts annotated workplace images into executable safety scene graphs and generates deterministic answers through program execution over objects, relations, and safety rules. The report-centric pipeline extracts figures and contextual evidence from accident reports and constructs multimodal questions using evidence graphs, explicit information boundaries, multi-step reasoning paths, and iterative verification. The resulting resource contains 110,581 verified scene-centric question--answer pairs and 13,114 refined report-centric question--answer pairs, covering perception, spatial and quantitative reasoning, compliance assessment, evidence synthesis, causal analysis, and mitigation-oriented decision making. Evaluation of representative proprietary and open-source vision--language models reveals substantial performance differences and persistent weaknesses in comparative, technical, and multi-evidence reasoning, demonstrating that strong general visual understanding does not yet guarantee reliable industrial-safety reasoning."
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Memoir: Learning, Verifying, and Evolving False-Positive Memories for Static Application Security Testing Tools",
+    "authors": "Shenyuan Guan, Qiaodan Hou, Yanjun Chen, Xincheng Wen, Jia Feng, Keke Lian, Cuiyun Gao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.09181v1",
+    "source": "arXiv",
+    "abstract": "Static Application Security Testing (SAST) tools have become indispensable in modern secure software devel- opment. However, these tools often generate false-positive (FP) alerts, imposing substantial manual inspection costs and reducing the trust from developers. Existing FP reduction methods still face two primary challenges. First, the large differences among SAST tools and vulnerability categories make it difficult for these methods to learn recurring patterns in historical false positives. Moreover, the knowledge used by these methods are largely static and cannot be updated as newly validated cases accumulate. To address these challenges, we propose Memoir, a memory- driven framework for identifying false positives by transform- ing historical FP alerts into reusable semantic memories. It consists of two key modules. First, historical semantic memory construction converts historical FP alerts into structured semantic memories through LLM-guided annotation, pattern clustering, and memory synthesis to capture reusable behavioral patterns. Moreover, memory-driven identification and evolution retrieves relevant memories and performs semantic verification against taxonomy consistency and security invariants before making the final prediction. It then incorporates verified predictions back into the memory repository, allowing the knowledge base to evolve as new cases accumulate. We evaluate Memoir on CWE- Bench-Java to demonstrate its effectiveness in real-world security analysis. Specifically, Memoir achieves an F1-score of 99.43% with a Recall of 98.88% and perfect Precision, consistently outperforming other baselines. Furthermore, an industrial case study on production software systems from a top IT company shows that the learned memory base generalizes effectively across different SAST tools without retraining."
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Suppressing Hallucinations in Anti-Fraud LLM Agents: The Robust Dual-Verification (RDV) Architecture",
+    "authors": "Menghao Huo, Zhiming Xue, Kuan Lu, Weiran Yan",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634635",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "EduBot-LLM: An LLM-Driven Educational Robot Agent with Unified Dialogue and Action Planning",
+    "authors": "Gaojian Liu, Ngai Cheong",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634532",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Cost-Aware LLM Invocation Strategies in Large-Scale Enterprise Systems",
+    "authors": "Sai Chaitanya Kumar Paidi",
+    "publish": "2026 International Conference Automatics, Robotics and Artificial Intelligence (ICARAI)",
+    "url": "https://doi.org/10.1109/icarai70085.2026.11635457",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Intelligent Mining and Reasoning for Shipbuilding Process Rules Based on LLM-KG",
+    "authors": "Jingjing Wu, Yifei Zhu, Qichang He",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3722340",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Wisdom of LLM Crowds: Aggregation and Contamination in Language Model Ensembles",
+    "authors": "Igor Douven",
+    "publish": "ACM Transactions on Social Computing",
+    "url": "https://doi.org/10.1145/3839337",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-10",
+    "title": "RAG-based LLM Evaluation",
+    "authors": "André Ribeiro, Rúben Garrido, Violeta Ramos, Samuel Teixeira, Petia Georgieva",
+    "publish": "2026 International Conference Automatics, Robotics and Artificial Intelligence (ICARAI)",
+    "url": "https://doi.org/10.1109/icarai70085.2026.11635662",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "LLM-Enhanced Generative Multimodal Named Entity Recognition with Knowledge Augmentation",
+    "authors": "Yunjie Xu, Xu Li",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634526",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Runtime Protection Practice for LLM Agent Security: An On-Demand Behavioral Sandbox Approach",
+    "authors": "Junyong Jiang",
+    "publish": "2026 11th International Symposium on Advances in Electrical, Electronics and Computer Engineering (ISAEECE)",
+    "url": "https://doi.org/10.1109/isaeece70502.2026.11635191",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "A DSL-Based Agent Framework for Reliable LLM Arithmetic using Model Context Protocol",
+    "authors": "Ranjith Kumar C, K.S. Jishnu",
+    "publish": "2026 International Conference on Data Science and Business Systems (ICDSBS)",
+    "url": "https://doi.org/10.1109/icdsbs69077.2026.11634997",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "CacheRoute: KV-Cache-Aware Routing for LLM Backend Services on Kubernetes",
+    "authors": "Shaorui Pi, Shirui Zhang, Saina Shawulieti",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634378",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "High-Reliability LLM Summarization through Causal Cue Modeling and Factual Correction",
+    "authors": "Jiahui Hu, Yiyun Lyu, Jiejun Jiang",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634334",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "A Modular and Model-Agnostic LLM Framework for PHP Webshell Detection",
+    "authors": "Bibek Neupane, Cyril S. Ku, Kiho Lim",
+    "publish": "2026 IEEE 12th International Conference on Intelligent Data and Security (IDS)",
+    "url": "https://doi.org/10.1109/ids69480.2026.00010",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Securing LLM Software Supply Chains: A Layered Lifecycle Framework with Hybrid Post-Quantum Artifact Signing",
+    "authors": "Rafael Silva, Luiz Duarte",
+    "publish": "2026 IEEE 12th International Conference on Intelligent Data and Security (IDS)",
+    "url": "https://doi.org/10.1109/ids69480.2026.00011",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Cost-Constrained Automatic Workflow Search for Small LLM Agents",
+    "authors": "Kaili Zhang, Yu Jiang, Shuncheng Liu, Zhengxi Xiao, Zhiqing Yang",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634430",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Requirement-Aware LLM Testing for Backend REST APIs",
+    "authors": "Fei Xue, Ting Ying, Tian Ding, Lixing Wang, Ziyu Qing, Peifeng Hu",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634323",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Enhancing Review-Augmented Contrastive Recommendation with LLM-based Generation",
+    "authors": "Hoang V. Dong, Yuan Fang, Hady W. Lauw",
+    "publish": "ACM Transactions on Intelligent Systems and Technology",
+    "url": "https://doi.org/10.1145/3834863",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-10",
+    "title": "An LLM-Driven Multi-Agent Framework for Adaptive Decision-Making in Fashion Retail Supply Chains",
+    "authors": "Panduga Sowmika, Neelesh Agrawal, Syam Sundar, Kanniga Devi R",
+    "publish": "2026 International Conference on Data Science and Business Systems (ICDSBS)",
+    "url": "https://doi.org/10.1109/icdsbs69077.2026.11634822",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "TinyCAN-LLM: A Lightweight Language Model Framework for CAN Bus Intrusion Detection in Internet of Vehicles",
+    "authors": "Abdelaziz Amara Korba, Raja Wasseem Anwar",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634545",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "PRISM: Privacy-Aware Recommendation with Noisy LLM-Derived Signals",
+    "authors": "Yuan Zhang, Jiajun He, Lu Chang, Yuanzhe Zhang, Quan Zhou, Shiqi Huang",
+    "publish": "2026 10th International Conference on Electronic Information Technology and Computer Engineering (EITCE)",
+    "url": "https://doi.org/10.1109/eitce70137.2026.11634399",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-10",
+    "title": "Ai SecureDataGuard: A Big Data Security, Privacy-Preserving and Visualization System for LLM-Powered Smart Homes",
+    "authors": "Jun Zhou, Hongying Li, Fan Wang",
+    "publish": "2026 IEEE 3rd International Conference on Big Data Science and Engineering (ICBDSE)",
+    "url": "https://doi.org/10.1109/icbdse70225.2026.11635380",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
