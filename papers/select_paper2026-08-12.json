@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-08-12",
+    "title": "Uni-SFU: Algorithm-HW Co-Design for Universal SFUs via Mixed-Degree Piecewise Approximation",
+    "authors": "Miao Sun, Yucheng Huang, Mingcong Cao, Jaehyun Park, Partha Pratim Pande, Umit Y. Ogras",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11577v1",
+    "source": "arXiv",
+    "abstract": "Nonlinear activation functions are essential to modern deep neural networks (DNNs), but their hardware evaluation places significant pressure on the special-function units (SFUs) of GPUs and custom accelerators. Therefore, piecewise polynomial approximations are commonly used within allowed error bounds to improve computational efficiency. However, existing techniques often approximate each activation function in isolation using fixed-degree polynomials and uniform segments, leading to hardware redundancy and sub-optimal precision. To address these limitations, we present Uni-SFU, an algorithm-hardware co-design framework that jointly optimizes approximation accuracy and silicon area for a diverse set of activation functions. Uni-SFU leverages a joint search across all target functions to assign mixed-degree polynomials to nonuniform segments, guided by an RTL-derived area cost model. This approach identifies a unified hardware configuration to implement the target activation functions under given accuracy constraints. Validated across over 700 neural network variants and three Natural Language Processing (NLP) models, Uni-SFU achieves a superior Mean Squared Error (MSE) below 8.22x10^-8, limiting top-1 accuracy degradation to within 1.02% compared to floating-point baselines. The proposed design occupies only 6,800 um2 in GF 22nm CMOS technology, achieving a superior trade-off between silicon area and system-level accuracy compared to SOTA counterparts.",
+    "title_zh": "Uni-SFU：通过混合阶分段逼近实现通用特殊功能单元的算法与硬件协同设计",
+    "abstract_zh": "非线性激活函数是现代深度神经网络（DNNs）的核心组成部分，但其硬件计算对GPU和定制加速器的特殊功能单元（SFUs）造成了显著压力。因此，分段多项式逼近在允许的误差范围内被广泛应用，以提高计算效率。然而，现有技术通常使用固定阶数的多项式和均匀分段对每个激活函数进行单独逼近，导致硬件冗余和精度次优。为了解决这些局限性，我们提出了Uni-SFU，这是一种算法与硬件协同设计框架，可在多种激活函数之间联合优化逼近精度和硅面积。Uni-SFU通过对所有目标函数进行联合搜索，利用基于寄存器传输级（RTL）的面积成本模型，为非均匀分段分配混合阶多项式。该方法在给定精度约束下，确定了一种统一的硬件配置来实现目标激活函数。在超过700种神经网络变体和三个自然语言处理（NLP）模型上的验证表明，Uni-SFU实现了优异的均方误差（MSE），低至8.22x10^-8，并将top-1精度下降限制在1.02%以内（相较于浮点基线）。所提出的设计在GF 22nm CMOS技术中仅占用6,800 um2的面积，在硅面积与系统级精度之间实现了优于现有技术的权衡。"
+  }
+]

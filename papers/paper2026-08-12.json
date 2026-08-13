@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-12",
+    "title": "The Role Specialization Model (RSM): Coordinating LLM-Based Tools in Agentic Software Development - An Exploratory Case Study",
+    "authors": "Carlos Alberto Fernández-y-Fernández, Jorge R. Aguilar-Cisneros",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12311v1",
+    "source": "arXiv",
+    "abstract": "The integration of large language models (LLMs) into software development workflows has given rise to a paradigm known as Agentic Software Engineering (SE 3.0), in which autonomous agents manage full development life cycles under human supervision. This paper presents an exploratory case study in which three LLM-based tools, Antigravity (an agentic IDE with a Gemini 2.5 backend), Gemini CLI, and Qwen Code (local execution via Ollama), are coordinated according to a role-distribution framework proposed in this work as the Role Specialization Model (RSM). Three research questions guide the study: (RQ1) how can LLM-based tools with distinct capabilities be coordinated through the RSM in a real development workflow; (RQ2) what deviations from the planned role distribution emerge during RSM execution and what factors explain them; and (RQ3) how does the resulting product compare against the ISO/IEC 25010 quality model. The objective was to propose the RSM with the incremental development of a Python desktop application for interactive climate-data visualization. The workflow, observed deviations, prompt-hardening techniques, and a qualitative quality assessment are documented. Results suggest that explicit role coordination can support development cycle organization and architectural quality, but requires deliberate coordination strategies, context management, and human verification of agent-generated outputs."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "An Agentic Workflow for Legacy HPC Modernization: Converting the Two-Electron-Integral Core of GAMESS",
+    "authors": "Yuzhong Shen, Masha Sosonkina, Peng Xu, Mark S. Gordon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12249v1",
+    "source": "arXiv",
+    "abstract": "Modernizing legacy Fortran is a problem of volume: the transformations are individually routine, but the codebases can be enormous, and across much of computational science the work simply goes undone. We propose an agentic workflow that takes this work on at production scale, and we set out to measure how far such delegation can reach. In this work, three prompt-specialized agent roles operate under a version-controlled specification that the agents themselves authored and revised, while humans hold a small number of gates. The arrangement is kept safe by an exact verification oracle inherited from the domain, and the boundary of safe delegation lies exactly where that oracle stops seeing. We apply the proposed workflow in a case study, converting the two-electron-integral routines of GAMESS (General Atomic and Molecular Electronic Structure System), a mature quantum-chemistry package with a 48-year development history, from fixed-form Fortran 77 to free-form Fortran 2008. The scope of this work was twelve source files, 56,448 lines, and 225 subroutines for computing electron repulsion integrals. The agents ran as three Claude Code roles in isolated worktrees, and the work spanned four Claude model generations. Because the GAMESS group ships a standard test suite whose printed energies its user community treats as canonical, we could adopt bit-for-bit reproduction of those energies as the merge criterion, where a deviation in the twelfth decimal place counts as a failure rather than drift. All twelve source files pass a 51-test validation battery comprising the 49 standard GAMESS tests and two additional calculations, and across 612 test runs the number of chemistry-relevant differences is zero, and every file also passes the Jenkins tests that are used for continuous integration."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Sharp Berry-Esseen Bounds for the Log Determinant of a Gaussian Sample Correlation Matrix",
+    "authors": "Hongru Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12242v1",
+    "source": "arXiv",
+    "abstract": "Let $\\widehat R$ be the Pearson sample correlation matrix formed from $n$ independent Gaussian observations in $p$ dimensions, and write $m=n-1\\ge p$. Under the null correlation $R=I_p$, the classical independent beta product, exact cumulants, and full Fourier inversion yield, along every sequence $p\\to\\infty$ with $m\\ge p$, a uniform first Edgeworth expansion for $\\log\\det\\widehat R$, centered by its exact mean and scaled by its exact standard deviation. The expansion identifies the exact finite dimensional skewness correction and gives the sharp Kolmogorov equivalent $A_{m,p}/\\{6\\sqrt{2π}V_{m,p}^{3/2}\\}$, where $V_{m,p}$ is the exact variance and $A_{m,p}$ is the absolute third cumulant. This equivalent unifies the square, fixed gap, growing gap, proportional, and dilute regimes; in the square regime the error has order $(\\log p)^{-3/2}$ with an exact constant. For every positive definite population correlation matrix $R$, we prove a uniform finite sample Berry-Esseen bound that explicitly tracks population dependence. All theoretical results have exact or proved equivalent Lean 4 formulations whose declarations and dependencies are kernel checked."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Capability-Adaptive Cryptanalysis with Reduced-Space Quantum Verification",
+    "authors": "Nivedita Dey, Mrityunjay Ghosh, Pranav Kaushal, Abhinab Khare, Amlan Chakrabarti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12234v1",
+    "source": "arXiv",
+    "abstract": "Efficient integration of cryptanalytic evidence with quantum verification remains a fundamental challenge in hybrid classical-quantum cryptanalysis. This work presents a capability-adaptive cryptanalytic framework that unifies linear cryptanalysis, differential cryptanalysis, and side-channel leakage analysis within a common candidate-space reduction architecture, followed by reduced-space quantum verification through amplitude amplification. A formal mathematical model is developed for candidate-space construction, adaptive filtering, verification-space reduction, and complexity characterization, supported by the oretical results establishing the relationship between candidate-space contraction and quantum verification effort. A Hamiltonian formulation is further introduced to provide a physically realizable interpretation of the reduced-space verification process. Evaluation using statistically generated cryptanalytic observations demonstrates that the proposed framework reduces an initial candidate-key hypothesis space of 4096 candidates to an effective candidate space of 13 hypotheses, corresponding to an overall reduction of approximately 99.683%. Consequently, the Grover verification requirement decreases from 50 iterations to only 2 iterations, yielding an approximately 25-fold reduction in verification effort, while reduced-space amplitude amplification achieves a target-state success probability of approximately 94.53%. These results demonstrate that adaptive cryptanalytic filtering can substantially reduce quantum verification complexity while preserving cryptanalytic admissibility, providing a practical foundation for capability-aware hybrid cryptanalysis and reduced-space quantum search."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "A Sharp Four-Layer Theorem for Integer-Occupied Slices of a Planar Disk-Slab",
+    "authors": "Xinyue Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12204v1",
+    "source": "arXiv",
+    "abstract": "Let a rational positive-definite quadratic sublevel set on a full-rank affine lattice coset be intersected with a closed slab. A deterministic two-dimensional delta=3/4 reduction selects a primitive-dual integer functional and an inner ellipse. In the branch where the corresponding Babai point lies outside that ellipse, the lattice points in the disk-slab occupy at most four integer levels of the selected functional. An explicit rational instance attains four, so the bound is sharp. A strict diameter estimate reduces any counterexample to three blocks of five consecutive levels, and a nearest-integer inequality excludes the central block. Symmetry and cell localization reduce the two side blocks to eight modes: four follow from a shared-cap inequality, and four from an exact four-variable Bernstein certificate. The certificate contains 17,640 positive coefficients, with minimum 625/2048."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "The Average Singular Value of a Complex Gaussian Random Matrix Strictly Decreases with Dimension",
+    "authors": "Ondrej Hutník",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12147v1",
+    "source": "arXiv",
+    "abstract": "We settle a conjecture of Bandeira, Kennedy and Singer, arising from their analysis of approximation ratios for the little Grothendieck problem over the unitary group, by proving that the average singular value of a normalized square complex Gaussian random matrix strictly decreases with the dimension. The starting point is a recurrence relation of Abreu, derived from the Christoffel--Darboux formula and a Turán determinant for Laguerre polynomials. This recurrence reduces the problem to the estimation of a mixed Laguerre integral. We transform this estimate into an explicit finite inequality by expanding the relevant integrals in the orthogonal basis associated with the weight $x^{1/2}\\,\\mathrm{e}^{-x}$. A telescoping identity then converts the resulting inequality into a positive form. The final positivity argument combines explicit estimates for central binomial coefficients, a logarithmic lower bound, and a finite verification of small dimensions. This completes the proof that the average singular value strictly decreases with the dimension in the square complex Gaussian case. As a consequence, the same monotonicity is obtained for $N\\times(N+λ)$ complex Gaussian matrices with fixed rectangularity $λ=0,1,2,\\dots$."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "A corpus-specific clinical RAG system matches or outperforms newer frontier LLMs on HealthBench",
+    "authors": "Praveen Reddy, Charuta Mandke, Suvrankar Datta, Sarah Khan, Siddharth Reddy Anthireddy, Shitij Arora, Vishal Singh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12138v1",
+    "source": "arXiv",
+    "abstract": "General-purpose large language models (LLMs) have recently been reported to match or exceed specialized clinical AI tools on medical benchmarks, but such comparisons draw on a narrow set of systems and on benchmarks developed largely in high-income settings. We evaluate VITA, a retrieval-augmented generation (RAG) system purpose-built for contextual knowledge retrieval in India and other low- and middle-income (LMIC) settings. VITA retrieves from a curated corpus of disease-specific guidelines, India-specific antimicrobial resistance data, national formulary constraints, and resource-limited care protocols; its architecture and corpus are proprietary, but the benchmark, the physician-written rubrics, and our full response and scoring outputs are public for independent verification. On 4,023 English-language HealthBench questions (80.5% of the benchmark), scored with a GPT-4.1 judge, VITA ranked first with 51.9% of possible rubric points, ahead of GPT-5.4 (46.1%), o4-mini (44.3%), Gemini 3.1 Pro (42.6%), and Claude Sonnet 4.6 (37.3%), and scored highest on 45.4% of questions. To test robustness to newer models and judge lineage, a 500-question subset was re-run against current-generation models (GPT-5.5, Claude Opus 4.8, Gemini 3.5 Pro, Grok 4.3) and graded by a neutral open-weight judge (DeepSeek-V4-Pro) sharing no lineage with any system tested. Here the gap narrowed to parity: VITA and GPT-5.5 were statistically indistinguishable on mean per-question score, while VITA led on points-weighted score and won the most questions. VITA's advantages in accuracy and completeness persisted under the neutral judge; its communication scores were lower. These results indicate that a purpose-built clinical RAG system remains competitive with frontier LLMs on an open benchmark, consistent with corpus specificity as a design variable that improves grounding at some cost to communication polish."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Reconfiguring Geovisualization in the Age of Generative AI: Insights from Domain Experts",
+    "authors": "Mengyi Wei, Chenyu Zuo, Jiaying Xue, Nianhua Liu, Dongsheng Chen, Shengkai Wang, Yu Feng, Liqiu Meng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12059v1",
+    "source": "arXiv",
+    "abstract": "GenAI is increasingly integrated into geovisualization, yet its broader implications for professional practice are insufficiently understood. To examine these implications, we conducted semi-structured interviews with 20 geovisualization experts. The interviews were structured around four broad analytical domains: Data, Ideation, Prototyping, and Iteration, while also encouraging participants to reflect on issues that extend beyond these activities. Our findings show that GenAI expands the capabilities of geovisualization, particularly in terms of data handling, creative exploration, and rapid prototyping, but does not simply remove existing constraints. Instead, key bottlenecks are shifting from production to judgment and verification. As routine technical tasks become more automated, professional value increasingly depends on spatial reasoning, contextual interpretation, aesthetic and ethical judgment, and the ability to assess whether AI-generated outputs are appropriate for use. At the same time, GenAI introduces new challenges regarding provenance, interpretability, and accountability, raising questions about how responsibility should be distributed across models, developers, practitioners, institutions, and users. These shifts are particularly significant in geovisualization because spatial representations are constrained by geographic reality and must balance scientific validity, visual expression, and technical implementation. We therefore argue that responsible GenAI in geovisualization requires domain-specific approaches to spatial validation, provenance, uncertainty communication, human oversight, and accountable use. This study provides an expert-grounded perspective on how GenAI is reconfiguring geovisualization as a practice of spatial knowledge production. It also identifies implications for future professional practice, education, system design, and governance."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Do Not Forget the Obvious - RISC: A Risk-Informed Slice-Coverage Protocol for Safe Autonomous Driving",
+    "authors": "Fabian Hüger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12051v1",
+    "source": "arXiv",
+    "abstract": "Aggregate metrics may not fully reflect performance in insufficiently examined high-risk driving conditions. We propose RISC (Risk-Informed Slice Coverage), a practical protocol for risk-guided stress testing and coverage-qualified evaluation. Risk-guided stress testing directs a finite audit budget toward risk-relevant sub-datasets, called risk slices, while coverage-qualified evaluation reports results together with explicit statements about which slices are sufficiently or insufficiently covered. The protocol translates safety concerns into machine-readable risk slices, uses lightweight signals to tag candidate data, selects a compact audit set by risk, and qualifies the results using coverage evidence. An LLM can optionally support this process by surfacing relevant but potentially overlooked conditions during test planning, thereby helping engineers not to forget the obvious. RISC is model-agnostic and can be applied to perception modules, driving models, and other autonomous-driving subsystems. We instantiate the protocol for monocular pedestrian perception using 1,000 frames from the Zenseact Open Dataset, image statistics, and a YOLO-based detector proxy. In this proof-of-concept study, risk-guided selection increases critical failure discovery from 34.0% under random sampling to 98.5%. RISC provides a lightweight, assurance-oriented evaluation layer that complements scenario categorization, coverage assessment, and broader testing-and-verification workflows."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "From Safety Documentation to Safety Knowledge Support: An Evidence-Grounded LLM Framework for Medical Devices",
+    "authors": "Tuhinangshu Gangopadhyay, Rasmus Adler, Peter Liggesmeyer, Jan Reich",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12025v1",
+    "source": "arXiv",
+    "abstract": "Medical devices are becoming more software-intensive, connected, and AI-enabled. Their development requires risk-management evidence aligned with ISO 14971 and, for software, IEC 62304. This evidence must be kept consistent across requirements, design decisions, software changes, verification results, complaints, and post-market data. These tasks are costly and depend on scarce safety and domain experts. Large language models (LLMs) may reduce parts of this effort because medical-device safety work is highly document-based. However, current LLM-based safety-engineering studies often address isolated methods, rely on generic prompting or public examples, and provide limited support for source links, traceability, uncertainty handling, lifecycle updates, and recorded expert review. This limits their use in regulated medical-device development. This paper argues that the central research problem is not safety-text generation, but source-linked safety-knowledge support. We propose an evidence-grounded framework that connects device artifacts, controlled knowledge storage and retrieval, method-specific generation of candidate safety items, critique and uncertainty checks, and recorded expert review. The framework prepares, links, checks, and updates candidate safety artifacts for expert decision-making. It does not decide whether a device is safe and does not provide regulatory approval. We also outline an evaluation strategy using non-public or newly built medical-device case studies and expert reference analyses to assess coverage, correctness, relevance, traceability, duplicate rate, unsupported claims, and review effort."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Claim-Level Reliability Assessment for Efficient Test-Time Reasoning",
+    "authors": "Sen Xu, Wei Wang, Shixi Liu, Jixin Min, Yingwei Dai, Zhibin Yin, Yirong Chen, Junlin Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11994v1",
+    "source": "arXiv",
+    "abstract": "We propose claim-level falsification as a principle for test-time scaling and instantiate it through Claim-Level Reliability Assessment (CLR), a training-free framework that reallocates test-time compute from additional solution sampling to targeted verification. Since whole-trace evaluation often obscures decisive errors due to signal dilution from routine tokens, CLR condenses each reasoning trace into a compact set of decision-critical claims, thereby isolating its logical anchors. Furthermore, recognizing the inherent difficulty of generating entirely correct solutions under fixed model capabilities, CLR shifts the focus to semantic falsification. This approach exploits a fundamental asymmetry between solution construction and claim refutation. Constructing a valid solution requires a flawless reasoning path, whereas refuting an incorrect claim requires identifying only a single decisive flaw. This targeted search for negative evidence systematically compresses the survival space of high-confidence incorrect traces, effectively suppressing erroneous consensus via nonlinear reliability scoring. Across four LLMs and four reasoning benchmarks under matched budgets, CLR generally improves upon pass@1 and self-consistency. On GPT-OSS-20B/CMIMC25, for instance, CLR exceeds pass@1 by 27.15 percentage-points and raises self-consistency accuracy from 77.50\\% to 82.19\\% with 37.0\\% fewer tokens."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Benchmark-Based Comparative Assessment of Publicly Benchmarked Indian Foundation Models: A Capability and Evaluation-Maturity Framework",
+    "authors": "Avinash Agarwal, Vridhi Jain",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11891v1",
+    "source": "arXiv",
+    "abstract": "Governments increasingly fund indigenous foundation models to strengthen national AI capability, digital sovereignty, and multilingual computing. Assessing the progress of such national ecosystems is complicated by inconsistent benchmark reporting, proprietary evaluation methodologies, and rapidly evolving model releases. This paper presents a structured, benchmark-based comparative assessment of publicly benchmarked Indian foundation models against global frontier and comparable-scale models, across eight capability domains: general-purpose reasoning, coding and software engineering, agentic AI and computer use, cybersecurity, vision and image understanding, video and multimodal understanding, scientific research, and Indic language capability. Using only publicly reported benchmark results, we find that Indian models achieve strong scores on established benchmarks such as MMLU and MATH-500. However, these benchmarks are now widely regarded as saturated, and frontier developers no longer report them. Indian models participate far less frequently in newer, agentic, and domain-specialized evaluations. Benchmark participation is also highly uneven across Indian organizations. Among the models surveyed, Sarvam AI reports the broadest benchmark coverage by a substantial margin. We propose an exploratory four-dimension Benchmark Maturity Index (BMI), scoring each capability domain on standardization, participation, independent verification, and national coverage. We show that the BMI refines, and in some cases revises, the maturity judgments that a purely descriptive review would produce. We argue that many apparent capability gaps in the public record cannot be distinguished, on available evidence, from evaluation-ecosystem gaps. This has direct implications for how national AI programs should design monitoring and funding criteria."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Agent Skills Can Be Harmful: An Empirical Study of Skill-Induced Failures in LLM Agents",
+    "authors": "Gen Dong, Yanjie Gao, Liqun Li, Tianyin Xu, Yu Hua, Fan Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11888v1",
+    "source": "arXiv",
+    "abstract": "Agent skills are the de facto mechanism for extending LLM agents with reusable guidance. A skill can shape the agent's task execution, including planning, tool use, problem-solving, and validation. Prior work reported mixed results of agent skills: some skills improve task success rates, while others have no effect, increase token use and execution time, and even reduce success rates. This paper presents a comprehensive analysis of skill-induced agent failures by attributing task failures and cost regressions to specific loaded skills. We introduce a differential analysis framework that attributes a failure or regression to a skill by comparing a target skill-guided run against a no-skill or semantically matched skill reference run that solves the same task, or solves it more cheaply. We instantiate this framework on SkillsBench and SWE-Skills-Bench, yielding 307 skill-induced failures, including 125 functional failures and 182 efficiency regressions. We also build SkillTriage, a taxonomy-guided attribution tool that normalizes paired cases, extracts differential evidence, and produces triage reports. Our major findings include: (1) Skill induced functional failures are rarely caused by obviously irrelevant skills; instead, seemingly relevant skills often make the agent incorrectly implement or omit task-required implementation elements. (2) Skill-induced efficiency regressions are not explained by prompt length alone. (3) The largest sources within Excessive Procedure are excessive verification and heavy implementation pipelines, contributing 67 and 30 cases, respectively. This shows that skills often turn validation checklists and construction recipes into mandatory work. Based on our findings, we propose research topics and tooling improvements for safer and more cost-aware skill reuse."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "JieZi: A Large-Scale Expert-Audited Dataset and Benchmark for Ancient Chinese Character Exegesis",
+    "authors": "Ran Li, Huiguo He, Jiahuan Cao, Junle Liu, Hiuyi Cheng, Lianwen Jin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11741v1",
+    "source": "arXiv",
+    "abstract": "The scholarly exegesis of ancient Chinese characters demands integrating visual observation, linguistic analysis, and historical context. However, existing computational approaches focus narrowly on subtasks such as character recognition and retrieval, lacking the structured datasets and benchmarks required for comprehensive scholarly analysis. To address this limitation, we introduce Ancient Chinese Character Exegesis (ACCE), a vision-language question answering (VQA) task that models the scholarly exegesis process. ACCE is organized into four progressive levels: basic character identification, glyph-form analysis, meaning exegesis, and diachronic evolution analysis. To support this task, we construct two complementary resources. JieZi-Dataset is the first large-scale, expert-audited VQA training dataset for ACCE, comprising over 500K QA pairs. It is constructed via a pipeline that reduces factual errors by constraining generation with expert-designed templates and source-text references. Human verification is further applied at each key stage to ensure scholarly accuracy. JieZi-Bench is an evaluation benchmark aligned with the exegesis process, constructed and verified by human experts to ensure evaluation reliability. It consists of four levels with reference answers curated from authoritative lexicographic works held separate from the training data. Experiments on multimodal large language models show that current models perform well on basic identification but struggle with glyph analysis, semantic reasoning, and diachronic understanding. Fine-tuning on JieZi-Dataset substantially improves performance across all four levels. Code and dataset are available at https://github.com/Ran00w/JieZi."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Fingerprinting Text-to-Image Diffusion Models via Collapsed Generation",
+    "authors": "Yuanmin Huang, Chen Chen, Geng Hong, Xiaoyu You, Hui Xue, Zhenxing Qian, Mi Zhang, Min Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11732v1",
+    "source": "arXiv",
+    "abstract": "Proprietary text-to-image diffusion models are increasingly distributed as hosted services and downloadable checkpoints, making their intellectual property (IP) protection an increasingly critical concern when model leakage, copying, or unauthorized fine-tuning is disputed. In this work, we present a non-invasive model fingerprinting framework based on \\emph{collapsed generation}, a phenomenon where certain input conditions produce highly consistent images across multiple stochastic seeds. We show that collapsed generation is an intrinsic, model-dependent property of the learned generation process. These collapse-prone conditions therefore expose model-specific behavioral signatures, enabling reliable ownership verification without embedding invasive watermarks. After preparing conditions on the source model, the framework verifies a suspect model under two access settings: (1) white-box pipeline access, where optimized continuous embeddings can be injected into the generation process, and (2) black-box API-only access, where natural language prompts are queried through the service interface. In both cases, ownership evidence is measured by whether the suspect model reproduces the source model's collapse behavior across stochastic samplings. Extensive experiments across UNet- and transformer-based diffusion models show that collapsed generation fingerprints can distinguish different source models with low confusion. These fingerprints remain verifiable in fine-tuned derivatives and under common and adaptive model- or query-level obfuscations, while requiring only a modest verification query budget. Together, these results establish collapsed generation as a reliable intrinsic evidence source for non-invasive diffusion model ownership verification."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Video2Track: From Real-World Interaction Videos to Steerable Adversarial Closed-Track Testing for Automated Driving Systems",
+    "authors": "Mengjie Tian, Xinrui Zhang, Tianyu Li, Peizhi Zhang, Guirong Zhou, Haojie Feng, Junpeng Huang, Qixiang Zhang, Lu Xiong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11592v1",
+    "source": "arXiv",
+    "abstract": "Closed-track testing plays a fundamental role in the verification and validation of automated driving systems (ADS), particularly for safety-critical scenarios, by enabling reproducible evaluation under controlled conditions. However, most existing approaches still rely on standardized protocols or predefined trajectories, leading to overly scripted interactions and limited ability to reproduce the natural complexity of public-road traffic. To address this limitation, we propose Video2Track, a framework that transfers real-world interactive driving scenarios from videos into steerable adversarial closed-track testing. The framework consists of two tightly coupled modules. The first is a scenario semantic mapping module, which extracts structured semantics from driving videos using a vision-language model and grounds them onto a closed-track topology library via retrieval-augmented generation, thereby identifying compatible map segments and interaction anchors. The second is a dynamic interactive testing module, which conditions on the grounded topology and anchors to generate diverse multi-agent trajectories through a conditional diffusion model, while regulating interaction intensity via a Stackelberg game with a parameterized adversarial objective. Closed-track experiments demonstrate that the proposed framework can faithfully reproduce representative real-world interaction scenarios and generate executable scenario variants with controllable risk levels and interaction styles, providing a scalable approach for realistic and steerable ADS validation."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "CoAdapt-GUI: Joint Workflow Context and Policy Adaptation for Unseen GUI Applications",
+    "authors": "Linqiang Guo, Li Gu, Zihuan Jiang, Zhixiang Chi, Siobhan Reid, Ziqiang Wang, Yuanhao Yu, Wei Liu, Yang Wang, Tse-Hsun, Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11588v1",
+    "source": "arXiv",
+    "abstract": "Mobile GUI agents remain brittle when deployed to applications absent from source training. We study novel-app generalization under a limited target interaction budget and without target demonstrations. We introduce CoAdapt-GUI, a test-time adaptation (TTA) framework that jointly adapts structured workflow context and policy from the agent's own target-app rollouts and rewards. The workflow context retains transferable procedures, failure modes, and verification rules while excluding app-bound source details. This separation allows reusable workflow knowledge to guide adaptation without transferring source-interface state. For policy adaptation, task-context-matched group-relative optimization updates a LoRA adapter on a frozen vision-language model. Across two unseen-app evaluations, CoAdapt-GUI reaches 45.0% on AndroidWorld-Generalization, compared with 37.5% for the reported Policy-Only TTA baseline, and raises AndroidWorld Plus performance from 38.6% to 52.9%. These results show that transfer-constrained workflow context provides substantial gains and that joint policy adaptation further improves held-out performance."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Uni-SFU: Algorithm-HW Co-Design for Universal SFUs via Mixed-Degree Piecewise Approximation",
+    "authors": "Miao Sun, Yucheng Huang, Mingcong Cao, Jaehyun Park, Partha Pratim Pande, Umit Y. Ogras",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11577v1",
+    "source": "arXiv",
+    "abstract": "Nonlinear activation functions are essential to modern deep neural networks (DNNs), but their hardware evaluation places significant pressure on the special-function units (SFUs) of GPUs and custom accelerators. Therefore, piecewise polynomial approximations are commonly used within allowed error bounds to improve computational efficiency. However, existing techniques often approximate each activation function in isolation using fixed-degree polynomials and uniform segments, leading to hardware redundancy and sub-optimal precision. To address these limitations, we present Uni-SFU, an algorithm-hardware co-design framework that jointly optimizes approximation accuracy and silicon area for a diverse set of activation functions. Uni-SFU leverages a joint search across all target functions to assign mixed-degree polynomials to nonuniform segments, guided by an RTL-derived area cost model. This approach identifies a unified hardware configuration to implement the target activation functions under given accuracy constraints. Validated across over 700 neural network variants and three Natural Language Processing (NLP) models, Uni-SFU achieves a superior Mean Squared Error (MSE) below 8.22x10^-8, limiting top-1 accuracy degradation to within 1.02% compared to floating-point baselines. The proposed design occupies only 6,800 um2 in GF 22nm CMOS technology, achieving a superior trade-off between silicon area and system-level accuracy compared to SOTA counterparts."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Reinforcing Step-level Reasoning for Effective Self-Correction in LLMs",
+    "authors": "Vu Duc Anh, Nhat M. Hoang, Do Xuan Long, Cong-Duy Nguyen, Ponhvoan Srey, Luu Anh Tuan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11573v1",
+    "source": "arXiv",
+    "abstract": "Achieving effective self-correction, where models verify and correct their own mistakes, remains a fundamental challenge for large language models (LLMs). In this work, we propose Self-Fix Step-DPO (SFS-DPO), a reinforcement learning based, two-stage framework for step-level self-verification and self-correction. The first stage strengthens step-level reasoning via step-level preference optimization, while the second stage explicitly trains models to self-verify and self-correct. We further introduce a teacher-assisted variant, SFS-DPO-R, which incorporates explanatory rationales for error verification to provide stronger corrective signals. Comprehensive in-domain and out-of-domain evaluations across multiple LLMs demonstrate that SFS-DPO and SFS-DPO-R consistently outperform prior step-level training baselines. Our analysis further reveals improvements in self-correction frequency and effectiveness, highlighting the importance of strengthening step-level reasoning for robust performance."
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Repurposing RGB-based Foundation Model for Depth Estimation on Thermal Images Using Hierarchical Supervision",
+    "authors": "Jie Hong, Tingtian Li, Xuesong Li, Xiao Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.11564v1",
+    "source": "arXiv",
+    "abstract": "Depth estimation from thermal images is highly valuable for robotic applications in adverse conditions, such as nighttime and rainy weather. Recent studies have sought to transfer knowledge from RGB-based foundation models to thermal modalities, yet the rich hierarchical representations these models encode remain underutilized. To address this limitation, we propose RGB-HS, a novel framework for thermal-image depth estimation that leverages hierarchical supervision from an RGB-based foundation model. Specifically, we first replace the baseline thermal encoder with a foundational model and introduce a parallel RGB branch that also employs a foundational model as an encoder of the same architecture, taking RGB images as input. The alignment is then performed across multiple levels between the tokens of the two encoders, allowing the thermal student branch to capture both structural precision and semantic abstraction from the RGB teacher branch. Furthermore, we introduce verification to refine the alignment process by weighting tokens from the RGB branch based on RGB image quality. Extensive experiments on the popular benchmark demonstrate that RGB-HS achieves competitive performance and more effectively exploits the representational capacity of RGB-based foundation models for depth estimation on thermal images."
+  },
+  {
+    "date": "2026-8-12",
+    "title": "Treat LLM-Generated Terraform as Untrusted: An Exploratory Security Study and a Practitioner’s Verification Workflow",
+    "authors": "Mateen Ali Anjum",
+    "publish": "IEEE Software",
+    "url": "https://doi.org/10.1109/ms.2026.3721790",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-13",
+    "title": "SmartFuse-LLM: Fusing Computation into Collectives for Efficient Tensor-Parallel LLM Systems",
+    "authors": "Xiteng Yao, Bangjie Xue, Anthony Skjellum, Martin Herbordt",
+    "publish": "Proceedings of the 16th International Symposium on Highly Efficient Accelerators and Reconfigurable Technologies",
+    "url": "https://doi.org/10.1145/3814576.3814596",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-12",
+    "title": "Multi-Agent LLM Reasoning for Robotic Block Placement",
+    "authors": "Chengbao Jin, Chun Liu",
+    "publish": "2026 6th International Conference on Control and Intelligent Robotics (ICCIR)",
+    "url": "https://doi.org/10.1109/iccir70228.2026.11633346",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "Deterministic Validation for Reliable LLM-Based Causal Knowledge Extraction",
+    "authors": "David Tom Foss",
+    "publish": "2026 6th International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+    "url": "https://doi.org/10.1109/icecet65726.2026.11632715",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "LLM-Supervised Semantic Reward Adaptation for Reinforcement Learning-Based Robot Locomotion",
+    "authors": "Zixuan Yang",
+    "publish": "2026 6th International Conference on Control and Intelligent Robotics (ICCIR)",
+    "url": "https://doi.org/10.1109/iccir70228.2026.11633347",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "From Similarity to Answerability: Reliable Medical Retrieval via LLM-Driven Utility Distillation",
+    "authors": "Zilin Ding, Ting Chen",
+    "publish": "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+    "url": "https://doi.org/10.1109/ichi69079.2026.00221",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "Recovering Structure in Unstructured LLM Outputs",
+    "authors": "Joel Rorseth, Parke Godfrey, Lukasz Golab, Divesh Srivastava, Jarek Szlichta",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "url": "https://doi.org/10.1109/icde65706.2026.00360",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "Scalable Data Attribution Reveals Fine-Tuning Unlocks LLM Pretrained Knowledge in Biomedical Question Answering",
+    "authors": "Ye Cao, Zhaozhuo Xu",
+    "publish": "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+    "url": "https://doi.org/10.1109/ichi69079.2026.00228",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "ATeam: Governance-Aware LLM-Assisted Software Sustaining Engineering for Enterprise Systems",
+    "authors": "Salvatore Vella, Alex Ferworn, Malek Sharieh",
+    "publish": "2026 6th International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+    "url": "https://doi.org/10.1109/icecet65726.2026.11633274",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "LLMSQLMUTATOR: LLM-Powered Test Case Generation for Database Using Bug Reports",
+    "authors": "Chenglin Tian, Chaofan Li, Yawen Li, Yingxia Shao",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "url": "https://doi.org/10.1109/icde65706.2026.00240",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "TRACE-Med: Policy-based Abstention to Mitigate Hallucinations in LLM-Generated Clinical Case Analysis",
+    "authors": "Sagnik Dakshit, Bhavani Suryadevara, Lindsey Stockton",
+    "publish": "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+    "url": "https://doi.org/10.1109/ichi69079.2026.00243",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "LLM as Automated Theorem Provers for Map-Reduce Code Generation",
+    "authors": "Victor Simonov, Marat Khairetdinov",
+    "publish": "2026 IEEE 27th International Conference of Young Professionals in Electron Devices and Materials (EDM)",
+    "url": "https://doi.org/10.1109/edm69524.2026.11632200",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "RUBEN: Rule-Based Explanations for Retrieval-Augmented LLM Systems",
+    "authors": "Joel Rorseth, Parke Godfrey, Lukasz Golab, Divesh Srivastava, Jarek Szlichta",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "url": "https://doi.org/10.1109/icde65706.2026.00325",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "The Causal Impact of Tool Affordance on Safety Alignment in LLM Agents",
+    "authors": "Shasha Yu, Fiona Carroll, Barry L. Bentley",
+    "publish": "2026 6th International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+    "url": "https://doi.org/10.1109/icecet65726.2026.11632769",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "LLM-Powered Personalized Glycemic Assessment in Type 2 Diabetes with Wearable Sensor Data",
+    "authors": "Yifan Gao, Yanmin Gong, Yun Shi, Yuanxiong Guo",
+    "publish": "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+    "url": "https://doi.org/10.1109/ichi69079.2026.00060",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "HMITL: Manager-Governed LLM Iteration with Guardrails and Rollback for Reproducible Healthcare Machine Learning Pipelines",
+    "authors": "Jialuo Chen, Haijing Wang, Siyu Shao",
+    "publish": "2026 IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+    "url": "https://doi.org/10.1109/ichi69079.2026.00156",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "TAPE: A Temporal Graph-Based Memory System for Personal LLM Agents",
+    "authors": "Chengyang Luo, Qing Liu, Wenjie Zhang, Yunjun Gao",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "url": "https://doi.org/10.1109/icde65706.2026.00318",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "An LLM-Guided Query-Aware Inference System for GNN Models on Large Knowledge Graphs",
+    "authors": "Waleed Afandi, Hussein Abdallah, Ashraf Aboulnaga, Essam Mansour",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "url": "https://doi.org/10.1109/icde65706.2026.00128",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "HEXGEN-FLOW: Optimizing LLM Inference Request Scheduling for Agentic Text-to-SQL",
+    "authors": "You Peng, Youhe Jiang, Wenqi Jiang, Chen Wang, Binhang Yuan",
+    "publish": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+    "url": "https://doi.org/10.1109/icde65706.2026.00134",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-12",
+    "title": "Enhancing Indonesian Sentiment Analysis via LLM Driven Sarcasm Detection and Ensemble Learning",
+    "authors": "Krisna Abhi Padhana, Indra Budi",
+    "publish": "2026 International Conference on Advancement in Data Science, E-learning and Information System (ICADEIS)",
+    "url": "https://doi.org/10.1109/icadeis71120.2026.11644570",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
