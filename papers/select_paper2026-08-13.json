@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-08-13",
+    "title": "Why Do Prefetchers Fail? Let Agents Answer",
+    "authors": "Xiangfeng Sun, Ceyu Xu, Ningzhi Ai, Zeyu Zhu, Yiyang Yuan, Yuan Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13027v1",
+    "source": "arXiv",
+    "abstract": "Hardware prefetchers are crucial to processor performance, yet their design remains labor-intensive and expert-driven. Architects inspect execution and memory-access traces, identify patterns, translate them into online hardware heuristics, and evaluate them in simulation, often with no guarantee of improvement. Human experts cannot systematically inspect billion-instruction traces across diverse real-world workloads. We present a performance-anomaly-driven autoresearch flow that repeatedly asks why a deployed prefetcher fails and uses the diagnoses to construct the Mixture of Prefetchers (MoP). Each iteration localizes high-impact unexplained misses to program counters, gives agents hardware logs, source code, and sliced traces, validates diagnoses through runnable minimal cases, and synthesizes specialized sub-prefetchers for recurring pattern families. Measured performance and remaining anomalies feed subsequent iterations, enabling simulator-in-the-loop discovery beyond model priors. The campaign consumes 1.91 billion DeepSeek V4 Pro tokens. On SPEC CPU2006 and SPEC CPU2017, MoP achieves a 61.1% geomean IPC speedup over no prefetching, outperforming the human-designed Alecto, Berti, and Pythia prefetchers by 14.5%, 21.6%, and 23.6%, respectively. RTL synthesis in a 6nm library reports 110 KB of on-chip storage and 0.0347 mm^2 area. To our knowledge, this is the first empirical demonstration that an agent-driven hardware-design process can produce an RTL-practical prefetcher that outperforms state-of-the-art human designs on unseen workloads.",
+    "title_zh": "为什么预取器会失败？让智能代理来回答",
+    "abstract_zh": "硬件预取器对处理器性能至关重要，但其设计过程仍然是劳动密集型且依赖专家的。架构师需要检查执行和内存访问轨迹，识别模式，将其转化为在线硬件启发式算法，并在仿真中评估，通常无法保证改进。人类专家无法系统性地检查跨越多样化真实工作负载的数十亿指令轨迹。我们提出了一种基于性能异常驱动的自动研究流程，该流程反复询问部署的预取器为何失败，并利用诊断结果构建预取器混合模型（Mixture of Prefetchers, MoP）。每次迭代定位高影响力的未解释缺失到程序计数器，向智能代理提供硬件日志、源代码和切片轨迹，通过可运行的最小案例验证诊断，并为重复出现的模式家族合成专用子预取器。测量的性能和剩余异常反馈到后续迭代中，从而实现超越模型先验的仿真器循环内发现。整个研究活动消耗了19.1亿个DeepSeek V4 Pro令牌。在SPEC CPU2006和SPEC CPU2017基准测试中，MoP在无预取的情况下实现了61.1%的几何平均IPC加速，分别比人类设计的Alecto、Berti和Pythia预取器高出14.5%、21.6%和23.6%。在6纳米工艺库中进行的RTL综合报告显示，芯片上存储占用110 KB，面积为0.0347 mm^2。据我们所知，这是首次通过实验证明基于智能代理驱动的硬件设计流程能够生成一个RTL实用的预取器，并在未见过的工作负载上超越最先进的人类设计。"
+  }
+]
