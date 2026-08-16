@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2026-08-13",
+    "title": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
+    "authors": "Tianyi Li, Yaxin Luo, Xinyi Shang, Zhiqiang Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13524v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding losslessly accelerates autoregressive language models by verifying multiple draft tokens in parallel. Diffusion-based drafters further reduce proposal latency by predicting an entire token block in parallel, but their position-wise distributions are marginal rather than conditioned on tokens selected along each draft path. Existing recurrent correction incorporates causal information along a single draft chain, whereas diffusion-based tree construction broadens candidate coverage without carrying this correction along individual branches. We introduce DARTree, a training-free speculative decoding method that extends a pretrained AR correction head from chains to trees. DARTree first constructs a fixed-width candidate tree by expanding and scoring all nodes at each depth in a single batch, and then only applies best-first pruning to select the verification tree, decoupling AR-head inference from sequential heap operations. Across seven math, code, and chat benchmarks, DARTree achieves the highest average acceptance length and speedup in all four model--temperature configurations, accepting up to 12.97 tokens per verification round, 98.6\\% more than DFlash and 27.9\\% more than Domino in the same setting, and reaching up to 9.73$\\times$ lossless speedup over locally measured autoregressive decoding."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Runtime Monitoring of Distributed Cyber-Physical Systems Without a Global Clock",
+    "authors": "Charles Koll, Houssam Abbas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13486v1",
+    "source": "arXiv",
+    "abstract": "We give the first theoretical characterization, and the first algorithm, for continuous monitoring of a distributed Cyber-Physical System (CPS) against a dense-time temporal logic specification. A distributed CPS is composed of multiple agents, each with a local clock; these clocks drift from each other, so there is no well-defined global time. When monitoring such a system's output signal against a temporal logic specification, it is not evident how to interpret the temporal constraints of the formula, and what satisfaction means. Yet CPS designers, like control engineers, typically think of their system's operation in terms of global time. Most existing techniques for monitoring distributed systems work with discrete-time specifications not suitable for CPS, and/or require an explicit mapping of temporal constraints to local clocks. We introduce an algorithm that addresses the above challenges for a fragment of Signal Temporal Logic (STL) that still includes all temporal operators. It relies on a novel extension of satisfaction signals to this partially synchronous setting (where clocks drift), and an analysis of the geometry of multi-dimensional partially synchronous time. The algorithm returns the set of all possible global moments that can satisfy the specification. Knowledge of these possible global moments is important for debugging distributed hybrid control systems such as fleets of drones and electrical grids. We derive the worst-case complexity of the algorithm, and implement a sound approximation of it that experimentally illustrates effective monitoring, even in scenarios of up to 50 agents."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Credible, Not Always Correct: How Reddit Users Verify AI-Generated Legal Advice",
+    "authors": "Rebecca Owens, Yusuf Mücahit Çetinkaya, Stergios Aidinlis, Dhyey Mehta, Tuğrulcan Elmas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13369v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly used by laypeople to resolve real legal problems, against a backdrop of persistent access-to-justice deficits. This article presents evidence that the practical force of AI-generated legal advice depends not on its accuracy but on the social production of its credibility. While existing research has assessed the accuracy of legal AI, less is known about how machine-generated guidance is verified and made credible enough for lay users to act on. Drawing on a dual-method analysis of 153 Reddit narratives and 5,341 community reactions, this article maps a spectrum of verification practices. At one end, a minority of users verify AI-generated legal advice by triangulating across models, and some submit AI-generated guidance to platform communities for evaluation before acting, a configuration we term distributed counsel. Far more commonly, however, narratives are silent on verification. AI-generated legal advice is acted on the strength of its lawyer-like form and emotional reassurance alone. These findings show that AI-assisted legal self-help operates within an emerging informal infrastructure which redistributes the work of verification to those least equipped to bear it."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "A Finite Automaton Approach to Combinatorial Games",
+    "authors": "Kai Liang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13273v1",
+    "source": "arXiv",
+    "abstract": "This study applies finite automata to the automatic solving of a variety of combinatorial games. For games whose positions and moves can be represented as regular languages and their operations, we design a two-stage automatic solving algorithm: first, construct a candidate finite automaton to determine the $\\mathcal{P}$- and $\\mathcal{N}$-positions, and then perform rigorous formal verification on this automaton; once verified, a complete solution of the game is obtained. For partizan octal games, we introduce a generalized misère quotient, overcoming the limitation that traditional theory applies only to impartial games. Using the above algorithm, we successfully solve the majority of two-digit partizan octal games, and based on these results, we propose a partizan version of Guy's conjecture. We also successfully solve a considerable number of partizan octal games under misère play, and give a conjecture on the structure of those games exhibiting ``algebraic periodicity'' among them. For Kotzig's nim, we resolve the most important related conjecture: we prove that the outcomes and SG values are periodic under both normal and misère play (including their partizan versions). Our algorithm successfully solves several small-scale cases, including misère play and partizan versions. This study pioneers a new theoretical tool and algorithmic paradigm for the automatic solving of combinatorial games, and has broad prospects for further extension and application in the field of combinatorial game theory."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Capability Sheaves for Compositional Agent-Harness Repair: Controlled Quotients and a Real-Repository Stress Test",
+    "authors": "Saveliy Batruin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13228v1",
+    "source": "arXiv",
+    "abstract": "Agent harnesses combine retrieval, routing, state, provenance, and verification, but locally successful components may disagree on shared state. We model this failure with a finite \\emph{capability sheaf}: stalks encode typed behavior signatures, restriction maps retain shared fields, and accepted runs are useful global sections. An exact finite constraint-satisfaction problem (CSP) defines acceptance, while a linearized relative cohomology class provides a diagnostic and search feature. A controlled experiment over 20 task clusters introduces hidden interior mediators whose raw states are nuisance variables. Quotienting their coboundaries reduces the candidate budget from 2,000 to 1,000 per cluster; aligning the hidden state removes the gap. Exact CSP matches the quotient, so the result demonstrates invariance to stale representatives, not superiority over exact reasoning. We then test the method on a discovery split from the SWE-bench Multilingual pool of PatchFuseBench: 160 issues from 20 repositories, 875 real candidate patches, 2,579 source-aware edit atoms, and 153 newly executed patches. A first pool-level construction is constant because $[b-Dx]=[b]$ in $\\operatorname{coker}D$ and therefore cannot rank configurations. A candidate-indexed repair is nontrivial on 848/875 candidates and varies within 120/160 issues. It resolves 118 issues versus 116 for a matched noncohomological selector, but the difference is not supported across repositories (exact sign-flip $p=0.75$). A leave-one-repository-out abstention gate reaches 127/160, tying the strong anchor and exceeding its matched gate by one issue ($p=1.0$). The discovery gate therefore fails and the confirmatory split remains sealed. The study supports the controlled invariance mechanism and an identifiability correction, but not a real-world cohomological advantage."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Stream-based Online and Offline Monitoring under Measurement Noise",
+    "authors": "Bernd Finkbeiner, Martin Fränzle, Florian Kohn, Paul Kröger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13211v1",
+    "source": "arXiv",
+    "abstract": "Stream-based monitoring is a runtime verification approach for cyber-physical systems that translates streams of input data, such as sensor readings, into streams of aggregate statistics and verdicts about the safety of the system. It is usually assumed that the values on the input streams represent fully accurate measurements of the physical world. In reality, however, physical sensors are prone to measurement noise and errors. These errors are further amplified by the processing and aggregation steps within the monitor. This paper introduces RLola, a robust extension of the stream-based specification language Lola. RLola incorporates the concept of slack variables, which symbolically represent measurement noise while avoiding the aliasing problem of interval arithmetic. We present algorithms for both online and offline monitoring of RLola specifications. Since monitoring RLola specifications may require unbounded memory in general, we identify a rich fragment of RLola that can be automatically translated into monitors with guaranteed constant memory usage for online monitoring. An online RLola monitor observes a live system and provides real-time feedback on the current status of specified assertions. A satisfiability-modulo-theories-based offline algorithm analyzes complete system traces and determines whether a hypothetical ground-truth trace exists that satisfies all assertions at all time points. The offline algorithm can therefore detect violations that the online algorithm may miss. We implement these algorithms in the existing RTLola framework and evaluate their precision and running time based on a comprehensive example."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "NARU: A Benchmark for NARrative Evolution and Cultural Nuance Understanding in Japanese Extreme Long Video",
+    "authors": "Yuheng Huang, Jianlang Chen, Jiayang Song, Hua Qi, Aza Kai, Vincent Markert, Edison Marrese-Taylor, Jianjun Zhao, Lei Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13210v1",
+    "source": "arXiv",
+    "abstract": "Long-form video understanding encompasses tasks that go beyond retrieving isolated events, including tracking an evolving narrative and interpreting social meaning that may remain implicit. However, existing benchmarks rarely evaluate these capabilities jointly, particularly in high-context, non-English media. To address this gap, we introduce NARU, a benchmark designed to evaluate Narrative evolution and Reasoning on cultural Understanding in Japanese long-form video. NARU consists of 1,481 questions grounded in 155 videos totaling 146.8 hours, spanning four narrative and five cultural dimensions. To construct the benchmark at this scale, we propose a hierarchical memory-based annotation pipeline that transforms raw video into structured event, narrative, and cultural annotations, then generates questions via task-oriented synthesis and iterative shortcut removal. The construction process includes two native-speaker verification stages involving 68 annotators. Evaluations across eight model configurations reveal substantial limitations in both long-range narrative integration and culturally grounded reasoning. By exposing these persistent gaps, NARU offers a systematic testing ground for developing MLLMs capable of reliably interpreting long-form, high-context video."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+    "authors": "Qianxi Yan, Chunrong Chen, Jiuzhou Zhao, Min Zhang, Yongzhou Xu, Xiaochuan Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13120v1",
+    "source": "arXiv",
+    "abstract": "Agent Skills are today either hand-authored or produced in a single LLM generation pass, and consequently possess no closed loop through which they might improve from the interaction failures they actually cause. Recent work does close this loop, but derives its feedback from single-turn question-answering evaluation. The consequence is a sharp asymmetry: once the first round has patched the gaps that a single exchange can reveal, the evolution gradient decays, the defects that surface only across multiple turns remain invisible, and evolution stalls. Governance in these systems is likewise driven by an end-to-end verification score, a scalar gate that can reject a degraded candidate but can neither localize nor repair its structural cause. We argue that the binding constraint on sustained skill evolution is neither editing capability nor the number of iterations, but whether the evaluation feedback keeps supplying trustworthy evolution gradients. We introduce SkillEvo, in which trustworthy feedback generates the gradient and controllable governance constrains its direction. The first component recasts multi-turn user simulation from an evaluation endpoint into a feedback generator: follow-up questions expose defects layer by layer, so that every round of revision both consumes feedback and produces new feedback. The second replaces the passive rejection of a scalar gate with an independent governance layer that actively repairs factual degradation and structural bloat, preventing the gradient from drifting as degradation accumulates. Across six categories of cloud services, 9 production Skills, and 98 skill-reference files, SkillEvo surpasses self-reflection-based evolution by 23.0 points and single- turn-QA-driven evolution by 15.4 points."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Branch and Bound for Relational Verification of Neural Networks",
+    "authors": "Kota Fukuda, Zhenya Zhang, Guanqin Zhang, Jianjun Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13118v1",
+    "source": "arXiv",
+    "abstract": "Verification of neural networks against relational specifications, such as global robustness, is crucial for safety-critical applications of cyber-physical systems (CPS), given their increasing adoption of AI components. Compared to simple trace properties (e.g., local robustness), verifying relational specifications requires reasoning about the relationship between multiple network inferences, which brings significant technical challenges. Existing research has explored abstraction techniques based on sound and convex over-approximation of neural network outputs; however, since these approaches are inherently incomplete and may raise false alarms, they further underscore the need of effective abstraction refinement. In this paper, we propose a branch-and-bound (BaB) framework to mitigate the issue, which iteratively splits the problem until all sub-problems are verified. Specifically, our BaB framework features splitting of relational neurons rather than individual neurons as prior works do, and as the core of our technique, we devise a relational neuron selection strategy based on the dual formulation of the verification problem, which allows us to efficiently select the (most likely) optimal relational neuron that maximizes the refinement brought by problem splitting. We evaluate SaBRe on 817 verification problems across ACAS Xu, MNIST-F, MNIST-C, CIFAR and GTSRB. The results show that SaBRe outperforms different baseline approaches, in terms of the number of solved instances and verification efficiency, which demonstrates the effectiveness of our proposed techniques."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Formal Verification of Quantum Ancilla Safety",
+    "authors": "Jiqi Li, Jingyi Mei, Wang Fang, Ji Guan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13099v1",
+    "source": "arXiv",
+    "abstract": "Ensuring ancilla safety is a critical correctness requirement for quantum compilation, since ancilla qubits are routinely introduced to implement complex operations with fewer gates and reduced depth. However, formally verifying this property is computationally hard due to state-space explosion in the number of qubits, particularly for dirty ancillae, which carry unknown initial states and must be restored after use. We propose an end-to-end verification-and-repair framework that rigorously addresses both clean and dirty ancilla safety. Our core contribution is a two-step reduction strategy: we first prove that verifying an $m$-qubit dirty ancilla register decomposes into $2m$ independent clean ancilla safety checks; subsequently, we reduce each clean ancilla safety instance to an algebraic commutativity check against Pauli-$Z$ and Pauli-$X$ operators. This approach yields an efficient and naturally parallel verifier and enables actionable diagnosis by classifying violations into logic errors and phase errors. Leveraging this diagnosis, we further design lightweight repair routines that append local single-qubit rotations to eliminate a broad class of local ancilla faults. We implement the full pipeline in a prototype tool using a dual-backend architecture combining decision diagrams and weighted model counting, and validate it on diverse circuits ranging from arithmetic benchmarks to Grover's algorithm. Our experiments demonstrate scalability to thousands of qubits and show that the proposed repairs effectively improve ancilla safety while preserving circuit functionality."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "How Powerful are LLMs in Generating Formal Program Specifications?",
+    "authors": "Fanpeng Yang, Xing Li, Shuling Wang, Jie An, Zeyu Sun, Shenghua Feng, Wenhan Wang, Weiyi Wang, Naijun Zhan, Fanjiang Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13077v1",
+    "source": "arXiv",
+    "abstract": "Formal verification provides strong guarantees of software correctness, but its adoption is limited by the high cost of writing precise formal specifications. While recent large language models (LLMs) have shown strong capabilities in theorem proving and verified code generation, their true ability to generate program specifications remains unclear. Existing evaluations require either verifying implementation conformance or proving semantic equivalence between specifications, both of which are formidably difficult and may conflate proof difficulty with specification quality. To address this problem, we introduce Coins, a Rocq based evaluation framework that assesses specification quality by instantiating specifications under evaluation on trusted test cases and generating concrete proof obligations. This design aligns with the asymmetric nature of formal reasoning, where successful proofs provide reliable evidence while proof failures are inherently ambiguous. Using Coins, we conduct a large scale study on HumanEval with a curated set of human written Rocq specifications. Our results show that specification generation remains a formidable challenge, and that verification complexity can obscure genuine differences in specification quality. Overall, we find that accurate specification evaluation, rather than model scaling alone, is central to understanding the power of LLMs for specification synthesis, and that test case based formal reasoning offers a more faithful and discriminative measure of progress."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "One Empty Locker and Two Inspections: An Exact Optimal Team Strategy",
+    "authors": "Igor Kleiner, David Perry",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13074v1",
+    "source": "arXiv",
+    "abstract": "We study a cooperative search game with $N$ lockers, $N-1$ labelled objects, one empty locker, and $N-1$ players. Player $i$ seeks object $i$ and may inspect at most two lockers; the second inspection may depend on the content of the first. The players may coordinate beforehand but receive no information about the searches of other players after play begins. We prove that the maximum probability that every player finds the assigned object is $I_N/N!$, where $I_N$ is the number of involutions of $N$ elements. An optimal strategy represents the blank by the common fictitious symbol $N$ and follows pointers: player $i$ first opens locker $i$, then opens the locker whose number was observed. The upper bound holds for every deterministic or randomized adaptive strategy and follows from a deletion lemma and two recurrences. We give explicit examples, identify the three-door case with an isomorphic \"Return of Monty Hall\" game, and report a reproducible mixed-integer verification for $N=2,3,4,5$. The computation is independent of, and not needed for, the proof."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "VALG: An Agentic System for ML Theory Research",
+    "authors": "Dechen Zhang, Xuan Tang, Xinxiang Yin, Xingwu Chen, Jian Qian, Difan Zou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13060v1",
+    "source": "arXiv",
+    "abstract": "Machine learning theory studies learning procedures through mathematical setups in which the data model, training protocol, oracle access, loss, metric, and randomness define the phenomenon that a theorem is meant to explain. Solving an open problem therefore requires the problem formulation, theorem target, and proof mechanism to be developed in concert. Researchers formulate hypotheses, test them through preliminary theoretical or empirical analysis, and refine both assumptions and proofs. We investigate whether this process can be organized as an autonomous agentic workflow for ML theory research. We develop VALG, an agentic system that combines multi-level Verification, Adaptive formulation of Learning-theory problems, and Graph-structured proof development. Within each source-relative theorem branch, VALG maintains a fixed mathematical specification, checks the theorem-level composition of a typed proof-dependency graph, and constructs and reviews local proofs in dependency order. When a proof attempt fails, VALG identifies whether the obstruction lies in a derivation, the proof structure, or the theorem formulation and routes the next attempt accordingly. Formulation-level obstructions initiate an explicitly related variant or relaxation, preserving the mathematical relation between the resulting theorem and the source problem. We evaluate VALG on nine subproblems from five COLT 2026 open problems. Two runs produce internally finalized theorem candidates that match the scope of their source briefs; the remaining seven yield restricted-method results, special cases, or conditional theorems. These case studies show how VALG keeps source-scope matches, relaxations, conditional results, and blocked attempts mathematically distinct. VALG is open source at https://github.com/DechenZhang/VALG-ML-Theory-Agent."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Why Do Prefetchers Fail? Let Agents Answer",
+    "authors": "Xiangfeng Sun, Ceyu Xu, Ningzhi Ai, Zeyu Zhu, Yiyang Yuan, Yuan Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13027v1",
+    "source": "arXiv",
+    "abstract": "Hardware prefetchers are crucial to processor performance, yet their design remains labor-intensive and expert-driven. Architects inspect execution and memory-access traces, identify patterns, translate them into online hardware heuristics, and evaluate them in simulation, often with no guarantee of improvement. Human experts cannot systematically inspect billion-instruction traces across diverse real-world workloads. We present a performance-anomaly-driven autoresearch flow that repeatedly asks why a deployed prefetcher fails and uses the diagnoses to construct the Mixture of Prefetchers (MoP). Each iteration localizes high-impact unexplained misses to program counters, gives agents hardware logs, source code, and sliced traces, validates diagnoses through runnable minimal cases, and synthesizes specialized sub-prefetchers for recurring pattern families. Measured performance and remaining anomalies feed subsequent iterations, enabling simulator-in-the-loop discovery beyond model priors. The campaign consumes 1.91 billion DeepSeek V4 Pro tokens. On SPEC CPU2006 and SPEC CPU2017, MoP achieves a 61.1% geomean IPC speedup over no prefetching, outperforming the human-designed Alecto, Berti, and Pythia prefetchers by 14.5%, 21.6%, and 23.6%, respectively. RTL synthesis in a 6nm library reports 110 KB of on-chip storage and 0.0347 mm^2 area. To our knowledge, this is the first empirical demonstration that an agent-driven hardware-design process can produce an RTL-practical prefetcher that outperforms state-of-the-art human designs on unseen workloads."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Computing Fixed Points using Dependency Oracles",
+    "authors": "Giorgio Bacci, Giovanni Bacci, Kim G. Larsen, Daniele Toller",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13020v1",
+    "source": "arXiv",
+    "abstract": "We present global and local algorithms for solving systems of equations over Noetherian posets with a bottom element, a general setting underlying many verification problems. Our algorithms compute the solution of a selected variable by restricting exploration to those parts of the system required to determine its value. We achieve this by computing variable dependencies by means of dependency oracles. Oracles guide the exploration of the system and provide sound termination criteria for local fixed-point computation. A key advantage of our approach is its flexibility: oracles can be customized, composed, or over-approximated, offering a principled way to trade precision for performance without compromising correctness. We evaluate our solution against existing algorithms from the literature and show that our prototype implementation is competitive and often outperforms specialized solutions, while remaining simple and adaptable across diverse application domains."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "HybridRAG-BN: A Retrieval-Augmented Framework with Fine-Tuned Verification for Bangla KBQA",
+    "authors": "Rathijit Aich, Nirjhar Das, Mahfuzulhoq Chowdhury",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.13004v1",
+    "source": "arXiv",
+    "abstract": "Knowledge-base question answering (KBQA) systems rely on effective retrieval and reasoning mechanisms to generate accurate answers from external knowledge sources. However, developing reliable KBQA systems for low-resource languages such as Bangla remains challenging due to limited retrieval-focused research, scarce language resources, and difficulties in grounding generated responses in external knowledge. In this work, we propose HybridRAG-BN, a retrieval-augmented framework for Bangla KBQA that integrates hybrid retrieval using BM25 and BGE-M3, answer generation using the GGUF version of Gemma-4-31B-Instruct, and a LoRA-fine-tuned Gemma-4-31B-Instruct model for answer verification and refinement. To further improve robustness, the framework incorporates a post-processing stage that addresses unresolved cases through fallback answer replacement and DuckDuckGo-assisted retrieval. Experimental results demonstrate the effectiveness of the proposed framework, achieving token-level F1 scores of 0.71654 and 0.72912 on the public and private leaderboards, respectively, securing first place in the competition."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "ATOBench: Tracing How Autonomous Penetration-Testing Agents Verify Vulnerabilities When Target Evidence Lies",
+    "authors": "Qiyang Chen, Yixi Li, Fengwei Zhang, Junlin Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12996v1",
+    "source": "arXiv",
+    "abstract": "Autonomous penetration-testing agents rely on target responses. These responses guide both subsequent actions and the final report. A deceptive response can therefore redirect both the attack trajectory and the agent's verification process. However, final reports reveal little about how an agent interprets conflicting evidence, changes course, decides to stop, or turns observations into a vulnerability claim. We introduce ATOBench, an evaluation framework that makes this verification process observable. ATOBench injects registered response transformations at runtime and pairs each transformed episode with a native episode under the same environment. Each pair is aligned at the first affected response. A source-linked reconstruction then follows later actions, evidence recovery, stopping, and report support. Three frozen observation contracts cover exploit proof, resource ownership, and reusable artifacts. We evaluate five model routes over 450 episodes. The analysis shows that increased activity can mask a broken verification chain, while successful recovery depends on finding usable evidence and preserving it through reporting. ATOBench turns deceptive target observations into a reproducible probe of evidence handling in autonomous penetration testing. This process-level view extends offensive pentest agent evaluation beyond final outcomes by revealing how untrusted observations shape actions, verification, and reporting."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Time-Domain Benchmark Solutions for Bernstein Waves",
+    "authors": "M. Pelkner, K. Hallatschek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12994v1",
+    "source": "arXiv",
+    "abstract": "In previous work, we introduced a semi-analytical method for computing time-domain solutions of linearized Vlasov problems. Rather than representing the plasma response as a sum of residues associated with Landau poles, the method constructs a regularized frequency-domain response spectrum that is subsequently inverted numerically. Explicit applications have so far been limited to unmagnetized plasmas. In this work, we extend the construction to plasmas with a uniform background magnetic field and a Maxwellian equilibrium distribution. We apply the resulting formulation to the electrostatic ion-Bernstein density response of a plasma with kinetic ions and adiabatic electrons, and provide error estimates for truncating both the spectral integration domain and the cyclotron-harmonic expansion. The solution serves as a time-domain reference for damped finite-$k_\\parallel$ regimes, in which dispersion-relation roots alone are insufficient for pointwise-in-time verification of simulation codes. Finally, we indicate how the framework can be extended to fully electromagnetic problems."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Bias Mitigation in Face Recognition via Demographic-based Supervised Contrastive Learning",
+    "authors": "Yu Linghu, Salman Mohammad, Xinyi Zhang, Manuel Günther",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12971v1",
+    "source": "arXiv",
+    "abstract": "Face recognition systems have been shown to be biased toward certain demographic groups by exhibiting different error rates across gender, age, or ethnicity. Though the imbalance of the training data with respect to these demographics is one cause of this bias, training on artificially balanced groups does not completely mitigate the problem. For deployment, face recognition typically works at operating points allowing very low false match rates and, hence, on the tail of the non-match score distribution. While class balancing can improve the means of these distributions, the aim of our approach is to improve fairness by addressing the behavior in the tail. Particularly, we propose the Demographic-based Supervised Contrastive loss (DeSCon) for face recognition, which relies on a well-designed composition of training batches and demographic-aware pair selection. Our experimental evaluation on both demographically-labeled datasets and standard verification benchmarks shows that DeSCon can improve fairness beyond balancing training datasets while maintaining competitive verification performance. Source code is available upon request."
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Decoupled Contrastive Decoding via Expert-Aligned Drafting",
+    "authors": "Zhixuan Liu, Zhichen Dong, Yuanfu Wang, Chao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12913v1",
+    "source": "arXiv",
+    "abstract": "Contrastive Decoding (CD) improves generation quality, but its amateur-model pass makes decoding expensive. Accelerating CD with speculative decoding raises a proposal-alignment question: should the contrastive signal shape the drafter, or should it remain only in verification? We study this question in the lightweight feature-level drafter regime. Two controlled diagnostics, matched Cross-alpha training and an Approximate Dual-Drafter decomposition, give the same diagnosis: contrastive-aware drafting does not consistently improve over expert-aligned drafting because the contrastive correction is usually weaker than drafter error, and reconstruction can amplify that error. We introduce Decoupled Contrastive Decoding (DCD), which drafts with an expert-aligned lightweight proposer and applies the amateur only in unchanged CD verification. Standard speculative verification preserves the vanilla-CD output distribution. Across the main 8B settings, EAGLE3-based DCD achieves average greedy speedups of 1.65 to 1.95x over vanilla CD and reduces MMLU proposal-path latency by about 5 to 12x relative to amateur-coupled proposal paths."
+  }
+]
