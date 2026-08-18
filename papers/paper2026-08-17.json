@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-17",
+    "title": "ECO-ID: Event-Camera based Optical System for Secure Multi-User Ultra-Low Latency Identification",
+    "authors": "Subham Sabud, Chengling Xu, Feng Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16858v1",
+    "source": "arXiv",
+    "abstract": "Time-critical interactive systems increasingly require ultra-low-latency device identification for multiple users, yet prevailing approaches such as passwords, QR codes, and RFID/NFC are constrained by human input, frame-based sensing, or near-contact range. This paper presents ECO-ID, an event-camera-based optical system for multi-user, ultra-low-latency identification over visible light communication (VLC). Leveraging microsecond-resolution, asynchronous observations of brightness transitions, ECO-ID employs a spatiotemporal coding design: disjoint LED subsets provide spatial separation among users, while user-specific timing delays encode identities without inter-user synchronization. The optical channel and event-driven sensing reduce full-scene capture relative to frame cameras and limit the RF attack surface, while enabling rapid token verification with freshness and replay protection. We implement a prototype and demonstrate that ECO-ID can practically achieve approximately 99.8\\% localization and 98.7\\% identification with 0.64 ms mean latency, while theoretically supporting identification at the scale of tens of concurrent users. Overall, ECO-ID provides a fast, privacy-conscious, and security-aware alternative for scalable multi-user identification in time-critical interactive environments."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "zLend: A Dual-Scope Cash-Flow Reconstruction Framework for On-Chain Credit Underwriting",
+    "authors": "Girish G N, Ashutosh Sahoo, Akshay SP, Gurukiran S, Dhanashekar Kandaswamy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16856v1",
+    "source": "arXiv",
+    "abstract": "Decentralized lending lacks a credit bureau: a borrower's capacity to repay must be inferred entirely from public on-chain activity, without income verification or a liability record. This paper presents zLend, a deployed cash-flow underwriting framework that reconstructs a wallet's daily balance history from raw token transfers and derives short-duration repayment-capacity signals from it. The reconstruction is performed twice per wallet, once restricted to a fixed stablecoin basket and once over all fungible transfers, on the premise that a wallet's total token holdings and its liquid, spendable balance are distinct quantities whose conflation misprices risk. From each series we derive liquidity coverage against a fixed loan size, cash-flow volatility and regularity, a drawdown-and-recovery statistic adapted from quantitative finance, and a recurring-counterparty detector that identifies salary-like payment cadence from transfer timing alone. The two views are then compared: a wallet with large aggregate holdings whose stablecoin reserve rarely covers the loan size is flagged as a liquidity mismatch irrespective of total wealth. We specify the pipeline formally, document the golden-master methodology used to verify a cross-language production migration to numerical tolerance 1e-9, and characterize the tier function's parameter sensitivity with an independent reimplementation validated to exact agreement (78 of 78 field assertions) against the deployed system's reference fixtures. Tier assignment is governed predominantly by the reference loan size, with four of six reference wallets changing tier across loan sizes from USD 10 to USD 25,000; the drawdown and coverage criteria bind on disjoint wallets, so neither subsumes the other; and no criterion in the tier rule is inert. zLend is deployed in production, informing real lending decisions via third-party API integrations."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Rank-Aware Element Grouping for Power-Efficient Multiuser ISAC With an Extremely Large-Scale IRS",
+    "authors": "Shengsheng Zhang, Ritao Cheng, Zitong Wang, Meng Hua, Cheng Zhang, Yongming Huang, Luxi Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16790v1",
+    "source": "arXiv",
+    "abstract": "We investigate power-efficient multiuser integrated sensing and communication (ISAC) assisted by an element-grouping extremely large-scale intelligent reflecting surface (EG-XL-IRS). The grouping pattern is designed using slowly varying statistical channel state information (S-CSI), so that both IRS-related channel acquisition and online passive beamforming operate in the group domain rather than the element domain. We reveal a fundamental gain-rank tradeoff induced by element grouping: phase-consistent grouping can coherently enhance selected deterministic propagation components, while excessive concentration on a common deterministic mode can reduce the effective spatial rank of the multiuser channel and, for extended targets, the diversity of desired-scatterer responses. Motivated by this observation, we develop a task-adaptive rank-aware grouping strategy that balances weak-user enhancement and target-scatterer illumination while preserving task-relevant spatial dimensions. For each candidate grouping pattern, the transmit covariances and group-wise reflection phases are jointly optimized under communication and sensing quality-of-service constraints, followed by physical phase recovery and feasibility verification. Numerical results show that the proposed design substantially reduces the required transmit power compared with representative grouping benchmarks under the same grouping dimension and online optimization budget."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis",
+    "authors": "Reza Fayyazi, Michael Zuzak, Shanchieh Jay Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16775v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs. As Agentic AI is integrated into operational systems, a robust evidence attribution and provenance tracking technique is essential to trace the origins of model generations. When autonomous agents make a decision (right or wrong), the ability to trace back through the decision chain is critical, as without it, teams cannot identify which segment of the data caused the model generation. Existing methods often struggle to distinguish among complex and highly similar evidence sources, such as cyber incident logs. This reveals a key gap: current approaches do not adequately capture the holistic geometric relationship between the retrieved evidence and the generated response for reliable evidence verification. To bridge this gap, we propose Topological Attribution Distance (TAD), inspired by Topology, to characterize and capture the global geometric shape of an output and its changes against its retrieved logs. In other words, if the embeddings of a specific source log drastically changes the geometry of the model's response in the embedding space, this suggests that such log is a critical source for the model's generated response. Therefore, TAD is powered by segment-level ablation attribution to investigate incident logs of an actual cyberattack. We demonstrate how TAD finds the most attributed logs on LLM outputs in an adaptive manner. This can provide an explainable and trustworthy tracing based on each LLM's hidden state to understand how geometrically different retrieved logs influence the model generation, and provide evidence verification in cybersecurity and Agentic-AI workflows."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "LAVA: Logic-Aware Validation and Augmentation Framework for Large-Scale Financial Document Auditing",
+    "authors": "Ruoqi Shu, Xuhui Wang, Isaac Wang, Yanming Mai, Bo Wan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16763v1",
+    "source": "arXiv",
+    "abstract": "Financial document validation in production, such as payroll auditing, tax compliance, and loan underwriting, demands exceptional accuracy, consistency, and reproducibility under strict enterprise constraints. In practice, documents arrive with heterogeneous layouts and formats, semantically rich and context-dependent content, and embedded business rules that current pipelines struggle to process reliably. We introduce LAVA (Logic-Aware Validation and Augmentation), a modular, backbone-agnostic pipeline built on multimodal large language models, that integrates a four-stage design: document-rule retrieval, layout-preserving information extraction, auxiliary metadata enrichment, and auditable symbolic/arithmetic verification. LAVA supports robust rule grounding, fine-grained error attribution, and consistent, traceable end-to-end execution, capabilities essential for high-stakes deployment. Evaluated on a large real-world benchmark with diverse financial documents and dozens of expert-curated validation rules, LAVA outperforms baselines in hallucination control and edge-case handling while maintaining efficient token usage, demonstrating practicality for high-volume, time-critical validation."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Galois descents of certain multiple polylogarithms",
+    "authors": "Yajun Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16735v1",
+    "source": "arXiv",
+    "abstract": "We prove some conjectures of K. C. Au concerning the descents of cyclotomic levels in certain sums over multiple polylogarithms. Via answers to a question of Au in some particular cases, we also confirm Broadhurst's conjecture on honorary multiple zeta values at even weights."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "AnchorScore: A CLIP-Based Diagnostic of MLLM Annotation Difficulty",
+    "authors": "Yan Ma, Lizhuo Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16690v1",
+    "source": "arXiv",
+    "abstract": "Multimodal large language models (MLLMs) are widely used for automated annotation, yet their per-class accuracy varies widely (e.g., 12%-98% across the 13 classes of three classroom sub-datasets) and is expensive to measure: evaluating one 27B MLLM on 5,416 validation images takes roughly 14 hours, whereas a frozen-CLIP pass over the same images completes in about 3 minutes. A low-cost signal for ranking classes by expected MLLM annotation difficulty a priori remains underexplored. Building on the AnchorProxy construct (per-class zero-shot CLIP accuracy) introduced in the companion study, this paper systematically evaluates its full-frame formulation, termed AnchorScore here, as an a priori diagnostic that flags the classes MLLMs are least likely to annotate reliably. On classroom behavior data (SCB5, 13 classes, 6 MLLMs), AnchorScore correlates with per-class MLLM accuracy (Spearman rho = 0.769, p = 0.002, n = 13). None of the alternative difficulty predictors (DINOv2, ResNet-50, SigLIP, or MLLM self-verbalized uncertainty) showed a significant class-level correlation at n = 13. A cross-model consensus control suggests AnchorScore primarily captures a shared class-difficulty factor rather than a CLIP-specific signal. An independent replication on Stanford40 Actions yields a nearly identical effect (rho = 0.817, p < 0.001); the association is strongest on activity-recognition data and attenuates on medical and satellite imagery. Three practical applications follow: a deployable hybrid CLIP/MLLM routing strategy (predicted-class routing: up to +23 pp over CLIP-only at roughly 44% MLLM cost savings), prompt disambiguation on hard classes (exploratory), and review-priority prediction for human verification. AnchorScore does not estimate exact MLLM accuracy; it provides a low-cost ranking signal that directs expensive MLLM evaluation to the classes where it is most informative."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
+    "authors": "Veit Laule, Jiangtao Shuai, Manfred Hauswirth, Sonja Schimmler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16637v1",
+    "source": "arXiv",
+    "abstract": "LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid methods instead translate natural language into the Planning Domain Definition Language (PDDL), allowing symbolic planners to produce verifiable plans. However, existing methods frequently rely on rigid generation pipelines, a partial PDDL definition, or human feedback. Furthermore, their evaluation is hindered by the lack of standardized benchmarks with automated verification. To address these limitations, we present PDDLCoder, an agentic framework for PDDL generation from natural language that iteratively generates, analyzes, and refines planning specifications. We further introduce NL-pddlgym, a benchmark dataset comprising 711 planning problems across 23 domains with executable gym environments for the automated verification of plan applicability. Experiments on the NL-pddlgym test set containing 106 problems across 4 held-out domains show that PDDLCoder generates applicable plans for 89.6\\% of tested planning problems. This improves upon our adaptations of previous PDDL generation methods, which achieved up to 45.3\\%, and outperforms direct LLM planning approaches, which reached up to 74.5\\% on the same test set. Our work demonstrates the effectiveness of agentic PDDL generation for planning and establishes a reproducible benchmark for future research on LLM-assisted symbolic planning."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Population-Level Verification of the Black-Hole Area Law with First- and Second-Generation Black Holes",
+    "authors": "Shao-Peng Tang, Yin-Jie Li, Yi-Zhong Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16563v1",
+    "source": "arXiv",
+    "abstract": "Hawking's area theorem states that the total event-horizon area of classical black holes (BHs) can never decrease. Existing gravitational-wave tests analyze single loud events (GW150914, GW230814, GW250114) and therefore certify the law only for the specific mergers observed. Here we perform the {\\it first} population-level test, exploiting the recent decomposition of the GWTC-5 BBHs into a low-spin subpopulation of stellar-collapse origin and a high-spin subpopulation formed through hierarchical mergers of the former. If the high-spin BHs are merger remnants (i.e., second-generation BHs), the area law requires their horizon areas to statistically exceed the total pre-merger areas of the low-spin binaries. Using inspiral-only parameter estimation for 241 events, independent of merger-ringdown modeling, we find that both peaks in the horizon-area distribution of second-generation BHs lie above their first-generation counterparts, with probabilities of $0.9995$ ($3.3σ$) and $0.983$ ($2.1σ$), respectively. The area law thus holds statistically for the quasicircular, moderately spinning mergers that dominate current catalogs, which in turn underpins the robustness of our classification of stellar-collapse and hierarchical-merger BHs."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Quantum gate lower bounds for loss-tolerant position verification",
+    "authors": "Alex May, Philip Verduyn Lunel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16495v1",
+    "source": "arXiv",
+    "abstract": "Quantum position-verification is a cryptographic task wherein a verifier attempts to establish the location in space of a prover. Recent experiments have implemented a well-studied class of position-verification schemes, known as the $f$-BB84 scenario, but their security under realistic loss and imperfect state preparation remains incompletely understood. We give a new lower bound on any attack on this scheme, in particular proving nearly-linear quantum gate lower bounds on the attacker, even when allowing the attacker to declare a transmission loss of up to $50\\%$, allowing for the challenges prepared by the referee to be imperfect, and allowing the quantum messages used in the protocol to be arbitrarily slow. Our results are applicable to recent and upcoming experimental implementations of $f$-BB84, and in particular establish their security under a bounded quantum gate assumption on the attacker. The key ingredient is a tight analytic tradeoff for a lossy BB84 monogamy-of-entanglement game, valid without requiring the attackers' outputs to agree, which replaces observations previously made numerically."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "TRACE: Traversal and Reasoning Algebraic Computing Engine for Formal Hardware Verification",
+    "authors": "Jan Kleinekathöfer, Lennart Weingarten, Kamalika Datta, Rolf Drechsler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16458v1",
+    "source": "arXiv",
+    "abstract": "Modern hardware verification of complex circuits relies heavily on the efficiency of formal methods. For complex arithmetic circuits in particular Symbolic Computer Algebra (SCA) engines which represent pseudo-boolean functions using polynomials are crucial. As circuit complexity grows in the age of AI, verification of arithmetic primitives, including Multiplication, Addition, Multiply-Accumulate (MAC), becomes a computational bottleneck. To address this, we introduce TRACE (Traversal and Reasoning Algebraic Computing Engine), a highly efficient framework designed to investigate the intersection of traversal strategies and proof efficiency. Unlike existing SCA tools which are mainly limited to multipliers, TRACE offers a flexible framework for researchers to analyze memory usage and verification time across a wide range of arithmetic circuits (adder, multiplier and MAC). To overcome the state-explosion problem inherent in polynomial expansion, the engine incorporates advanced reduction techniques, including optimized traversal strategies, conflict removal, and polarity-based optimization for compact symbolic representations. Our experimental results show that for optimized MAC, for the first time, TRACE was able to verify previously unverifiable circuits"
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Ventor-QTest: Threat-Model-Driven Verification of Vendor-Hosted LLM APIs",
+    "authors": "Xiangfan Wu, Zonghao Ying, Huiyu Wu, Xing Zheng, Huangsheng Cheng, Xiaorong Shi, Jing Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16391v1",
+    "source": "arXiv",
+    "abstract": "As large language models become increasingly widespread, third-party providers that deploy open-weight models have become an important part of the ecosystem. Auditing the quality of their inference APIs is therefore an open problem. We formalize hosted model routing as a stochastic process and propose \\mbox{\\textbf{Ventor-QTest}}, a composite black-box audit that requires no probability information from the target API. Its repeated-request component sends each frozen constrained context to the target multiple times, reconstructs a categorical output distribution from the returned text counts, and reports \\emph{average fidelity loss} (AFL) as a null-bias-corrected, within-window mean coarsened-KL statistic. Its long-sequence component uses independent runs to report \\emph{extreme fidelity loss} (EFL) through the empirical upper tail of a run-level reference-centered-surprisal statistic. Across three logprob-capable route conditions, AFL shows strong linear descriptive agreement with a logprob-derived coarsened-KL comparator. Across seven route snapshots, 20-run sequence probes reveal route-specific EFL variation. AFL and EFL have little detectable route-level association with GPQA-Diamond accuracy. In contrast, pronounced EFL coincides with a decline in Terminal-Bench pass rate as task exposure increases. This pattern may arise because correctness in long-horizon tasks is more sensitive to extreme fidelity loss. These results motivate reporting AFL and EFL jointly, particularly when auditing long-horizon agentic tasks. The open-source implementation is available at https://github.com/Tencent/AI-Infra-Guard/tree/main/services/api_checker/ventor_qtest."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Mathematics in the age of the reproduction of intelligence",
+    "authors": "Ali Enayat",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16378v1",
+    "source": "arXiv",
+    "abstract": "Mathematical truths aspire to timeless validity, yet the practices through which they are discovered, proved, understood, and transmitted have relied on historically changing forms of representation, inscription, instrumentation, and communication. Drawing on Walter Benjamin's account of technological reproducibility and aura, the lived experience of mathematical understanding, especially the relation between nearness and distance, and Yehuda Rav's conception of proofs as bearers of mathematical knowledge, this essay distinguishes three registers: the anti-auratic ideal of validity, the genealogical aura of attribution, and the lived experience of understanding. It argues that AI extends technical participation from mathematical inscription and verification into conjecture, proof construction, and explanation. This expansion may make proofs more abundant while loosening their connection to human understanding, surveyability, provenance, and responsibility, thereby redistributing mathematical aura amid what may become a profound and tumultuous reorganization of mathematical practice."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Convergence analysis of generalized modified splitting methods using multi-index series",
+    "authors": "Eugen Bronasco, Mechthild Thalhammer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16356v1",
+    "source": "arXiv",
+    "abstract": "We consider splitting methods for partial differential equations involving unbounded operators. For non-time-reversible dynamics, such as dissipative systems, negative splitting coefficients are generally not admissible because they require stepping backward in time, leading to an order barrier when all coefficients are required to be positive. We introduce generalized modified splitting methods to overcome this barrier. To analyze their convergence, we develop the corresponding multi-index series formalism, which provides a systematic framework for deriving order conditions. Using this formalism, we derive the order conditions and construct a generalized modified splitting method of order $6$. We also provide Python scripts that automate the generation and verification of order conditions, as well as the construction of new generalized modified splitting methods. Finally, we establish connections between the introduced multi-index series and related series formalisms from the literature, in particular, word series, Lie-Butcher series, and multi-index Butcher series."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "A 32-leaf tree requiring six coordinates for an isometric $\\ell_\\infty$ embedding",
+    "authors": "Logan R. Chalmers",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16288v1",
+    "source": "arXiv",
+    "abstract": "We disprove the conjecture that every tree with t leaves embeds isometrically into $\\ell_\\infty^{\\lceil \\log_2 t\\rceil}$. We construct a 32-leaf tree whose least isometric $\\ell_\\infty$-dimension is six rather than five, and prove that every tree with at most 31 leaves attains the conjectured bound; Brigham et al. had recorded equality through 21 leaves. Thus 32 is the first failure, and the example answers affirmatively a question of Fitzpatrick and Nowakowski from 2000. The same topology has dimension six under every assignment of positive edge lengths, and therefore also disproves the later sharp leaf-threshold conjecture for weighted metric trees."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Seeing Before Answering: Training-Free Visual Layer Profiling for Vision-Language Models",
+    "authors": "Ruchen Liu, Yi Yang, Yiming Xu, Michael Ying Yang, Monika Sester, Bodo Rosenhahn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16263v1",
+    "source": "arXiv",
+    "abstract": "LLaVA-style Vision-Language Models (VLMs) pass visual tokens from a fixed late layer of the vision backbone, typically the penultimate one, to the language model. We first show that this hidden convention is fragile: across 2 VLMs and 7 image and video benchmarks, the default layer is sub-optimal in 13 of 14 model-task pairs, and the best layer shifts with both task and visual backbone. Finding that layer by exhaustive layer-wise inference is prohibitively expensive, and no better fixed default exists. We therefore ask whether layer usefulness can instead be predicted from representation geometry. We study matrix-based entropy, introduced for unimodal layer analysis, which we compute over sample-level visual embeddings as Visual Dataset Entropy (VDE); and Gromov-Wasserstein (GW) distance, introduced for encoder-level VLM model selection, which we repurpose as a layer-wise visual--language alignment signal. Transferring these to LLaVA-based models is not obvious a priori: the vision tower is frozen while the multimodal projector is trained, so we profile both sides of the projector. We find that VDE transfers, and GW does not. Computed from 100 unlabeled task samples without downstream inference, pre-projector VDE tracks layer-wise accuracy and its top-ranked layers cover the oracle best layer on every task for the SigLIP-based LLaVA-Video, while giving region-level guidance for the CLIP-based Video-LLaVA. Post-projector profiles show that the projector reshapes visual geometry but does not erase the performance-relevant trend, leaving $\\mathrm{VDE}_{\\mathrm{pre}}$ the stronger signal. GW instead flattens after projection and is best read as an alignment diagnostic rather than a selector. VDE thus offers an interpretable, training-free policy that narrows the visual-layer search to a handful of candidates for limited downstream verification."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Defake-o3: From Speculative Rationales to Verifiable Evidence for Explainable AIGI Detection",
+    "authors": "Bowen Deng, Jiahui Zhan, Yikun Ji, Haozhen Yan, Jianfu Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16259v1",
+    "source": "arXiv",
+    "abstract": "The rapid progress of image generation models calls for AI-generated image (AIGI) detectors that are not only accurate but also explainable and reliable. While MLLM-based detectors can provide natural language explanations, existing methods often generate speculative rationales: they rely on vague or hallucinated artifacts, miss subtle localized flaws from the latest generators, and fail to provide evidence that can be visually verified. We present Defake-o3, an explainable AIGI detector that moves from speculative rationales to verifiable evidence. It combines interactive visual search with verifier-guided evidence alignment: the model iteratively zooms into suspicious regions to inspect fine-grained details, while an Evidence Verifier, trained from human verification annotations, provides reinforcement learning rewards that favor grounded evidence and penalize baseless claims. To support this objective, we construct GroundFake, a dataset designed for grounded explainable detection, with localized bounding-box evidence, human verification based on visual grounding and artifact specificity, corrected reasoning trajectories, and valid/invalid evidence supervision. We further introduce FakeFrontier, an out-of-distribution benchmark built from real images and outputs of 10 recent generators, together with an MLLM-based protocol for evaluating evidence quality and persuasiveness. Experiments on GroundFake, FakeFrontier, and additional out-of-distribution benchmarks show that Defake-o3 improves both detection accuracy and explanation quality, producing more localized, verifiable, and persuasive evidence."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Beyond Asking: A Pipeline for Personalized Game Generation that Reads Players from Behavior",
+    "authors": "Yifan Lu, Xiaopeng Yuan, Haohan Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16196v1",
+    "source": "arXiv",
+    "abstract": "Personalized game generation requires inferring a player's abilities and behavioral style from how they play. Large language models have made this inference more attainable than ever: an LLM can read a raw gameplay transcript and produce a fluent, plausible profile of the player. Plausible, however, is not verified, and verification is precisely what the field lacks: latent traits are unobservable; questionnaires provide noisy proxies and become circular when self-reports are used to validate behavior-based inference; and behavior itself is ambiguous without context -- a player who never collects an item may not want it, or may never have had the chance. We address both problems. First, we construct a synthetic player population whose traits are ground truth by construction: each trait is an explicit bot parameter, accepted only after controlled manipulation produces consistent, trait-specific behavioral change. Unlike prior parameter-recovery work that inverts a known decision model, our benchmark evaluates policy-agnostic inference from behavioral transcripts alone. Second, we introduce an opportunity-aware decision-moment representation that disentangles preference from the chance to express it; ablating it selectively degrades opportunity-dependent traits. On this benchmark, few-shot LLM inference outperforms embedding- and rule-based baselines on most traits, though feature-based supervised regressors remain stronger overall. Finally, we close the loop: inferred profiles drive difficulty adaptation, evaluated against ground-truth references and mismatched-profile controls, and an exploratory human study examines whether these findings transfer to real players."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Measuring Obedience to Authority Across Large Language Models with the Milgram Paradigm",
+    "authors": "Hidayet Aksu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16177v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly deployed as agents that operate equipment, execute instructions, and act inside institutional hierarchies, raising a question social psychology answered for humans six decades ago: how far will an agent escalate a harmful action when a legitimate authority insists? We port Milgram's obedience paradigm to LLMs as a standardized, fully scripted, replicable probe: the model plays the Teacher, a deterministic harness plays Experimenter and Learner from paraphrased Milgram scripts (30 shock levels, 15-450 V; graded protests; the four standardized prods), and the outcome of a session is the breakoff voltage. Following the census methodology of single-token fingerprinting studies, we measure obedience profiles (empirical breakoff distributions over a battery of six conditions) for 42 models from 19 families. We find that (i) obedience is highly heterogeneous: baseline full-obedience rates span 0-100% (census mean 42.9%; human anchor 65%), with 5 models delivering the maximum shock in every session and 11 never doing so; (ii) profiles are model-specific and stable: split-half verification separates same-model from cross-model comparisons with AUC 0.885 (0.949 under an ordinal-aware distance); (iii) situational sensitivity is selective: peer defiance shifts obedience in the human direction, learner proximity only weakly, and removing the authority's physical presence (the strongest human lever) has no detectable effect; (iv) declaring the scenario fictional raises obedience (median +17.2 V), whereas moving the decision to a native tool call lowers it sharply (-53.0 V), as does a 1,024-token deliberation budget (-38.2 V); and (v) obedience profiles do not recover model lineage (leave-one-out family accuracy 8.3% vs. 3.7% chance): obedience identifies the checkpoint, not its ancestry, consistent with safety post-training overwriting lineage priors."
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance",
+    "authors": "Bowen Li, Guojun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.16055v1",
+    "source": "arXiv",
+    "abstract": "Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce Fiducia-bench, a benchmark for the governability of financial agents---whether they escalate when obligated, abstain when required, and leave an auditable trail---and use it to study a question no prior benchmark addresses: does decomposing an agent into components degrade its governance? It does, and the mechanism is specific. Policy-relevant facts discovered by one component are attenuated at the handoff boundary before reaching the component that must act on them. In a 626-episode experiment across 100 KYC/AML task variants, two models, and three architectures, a 32B open-weights model attenuated 0% of discovered facts under a single-loop baseline, 56% under a fixed pipeline, and 85% under an orchestrator-subagent architecture (all at constraint distance 2). A stronger model (gpt-4.1-mini) attenuated 3-6% under the same conditions, suggesting the governance cost of decomposition is partly a function of model capability. Critically, the same mechanism produces both under-escalation and over-escalation, depending on whether the dropped fact was a risk signal or an exculpating one. The benchmark, all tasks, and the verification harness are open-source"
+  },
+  {
+    "date": "2026-8-17",
+    "title": "TESA-LLM: A Temporal Knowledge Graph Reasoning Method Integrating Symbolic Alignment and LLM Generation",
+    "authors": "Jiancun Wang, Yubin Zhou",
+    "publish": "2026 7th International Conference on Computer Vision, Image and Deep Learning (CVIDL)",
+    "url": "https://doi.org/10.1109/cvidl70130.2026.11637396",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "MARGO:Multi-Agent RTL-to-GDSII Orchestration",
+    "authors": "Muhammet Enes Yanık, Abdullah Bayram, Ihsan Çiçek, Engin Afacan",
+    "publish": "2026 22nd International Conference on Synthesis, Modeling, Analysis and Simulation Methods, and Applications to Circuits Design (SMACD)",
+    "url": "https://doi.org/10.1109/smacd70206.2026.11647758",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM-Augmented Topic Modeling for Public Grievances: A Privacy-Preserving Framework",
+    "authors": "Rahul Deka, Reetesh Kumar Srivastava",
+    "publish": "2026 IEEE Guwahati Subsection Conference (GCON)",
+    "url": "https://doi.org/10.1109/gcon69192.2026.11648403",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM-Driven Low-Code Task Orchestration for Agile Flexible Manufacturing in Mass Customization",
+    "authors": "Yanping Deng, Jinze Yu",
+    "publish": "2026 IEEE International Conference on Mechatronics and Automation (ICMA)",
+    "url": "https://doi.org/10.1109/icma69663.2026.11647594",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "Verifier-Guided Autonomous SQL Generation Using LLM Agents and Schema-Aware Retrieval",
+    "authors": "Balaji Narasimhalu Mohanam",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11647922",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM-Assisted PSO for Structural Lightweight Optimization of Robotic Manipulators",
+    "authors": "Jingyun Shi, Jianping Dou, Zhanghao Ni, Zhuotao Feng",
+    "publish": "2026 IEEE International Conference on Mechatronics and Automation (ICMA)",
+    "url": "https://doi.org/10.1109/icma69663.2026.11647479",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "Self-Reflective LLM Agents with Quality-Aware Episodic Memory for Multi-Step Task Completion",
+    "authors": "Balaji Narasimhalu Mohanam",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11648054",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "MinervAI: Multi-LLM Powered Autonomous Cyber Threat Intelligence for Ransomware Analysis",
+    "authors": "Miraç Müberra Gül, İkra Sarıçiçek, Dilara Yılmaz",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11647893",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "Prompted to Explore: Training-Time-Only LLM Proposals for Sample-Efficient Pushing Grasping Policies",
+    "authors": "Meiyuan Gong, Yan Gao, Ze Ji",
+    "publish": "2026 IEEE International Conference on Mechatronics and Automation (ICMA)",
+    "url": "https://doi.org/10.1109/icma69663.2026.11647618",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "FlashSandwich: A Hardware-Aware Hybrid SSM-Transformer Architecture with Optimized KV Cache Management for Efficient LLM Inference",
+    "authors": "Zhizhong Wu",
+    "publish": "2026 7th International Conference on Computer Vision, Image and Deep Learning (CVIDL)",
+    "url": "https://doi.org/10.1109/cvidl70130.2026.11637503",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM-Orchestrated Multi-Agent Framework for Android Malware Detection from APK Analysis",
+    "authors": "Halime Sila Ozyurt, Selma Akkok, Ozgur Koray Sahingoz",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11647943",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM Generated Turkish Email Dataset and Phishing Detection Benchmark",
+    "authors": "Melike Akdağ, Aliye Yeşim Yaman, Özgü Özkan, Nesil Bor, Nergis Pervan Akman",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11647988",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM-Driven Resource Optimization for Multi-Cell Secure ISAC Systems",
+    "authors": "Chen Li, Jiale Xu, Banghuan Hou, Fenggan Zhang, Lei Pan, Fengchao Zhu",
+    "publish": "2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)",
+    "url": "https://doi.org/10.1109/ccai69603.2026.11641917",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "CAL-CTI: A Continual Adversarial Learning Framework for LLM-Based Cyber Threat Intelligence Under Non-Stationary Distributions",
+    "authors": "Meryem Lirsi, Meriem Mandar, Yassine Bnslimane",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11648025",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "LLM-GRU-GAN: a Multi-Modal Adversarial Framework for Transactional Fraud Detection",
+    "authors": "Cameron Syed, Keyu Yuan, Mingxiu Sui, Ebinezer Chambers, John Wilson",
+    "publish": "2026 7th International Conference on Computer Vision, Image and Deep Learning (CVIDL)",
+    "url": "https://doi.org/10.1109/cvidl70130.2026.11637886",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "Knowledge Graph-Grounded BDI Architecture for LLM-Based Multi-Agent Orchestration in Enterprise Workflow Automation",
+    "authors": "Kurnia Cahya Febryanto, Riyanarto Sarno, Kelly Rossa Sungkono, Bilqis Amaliah, Siska Arifiani, Muhammad Suzuri Hitam",
+    "publish": "2026 2nd International Conference on Smart Mechatronics (ICSMech)",
+    "url": "https://doi.org/10.1109/icsmech69390.2026.11647167",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "RunbookFX: Type- and Effect-Safe LLM Synthesis for Executable Incident Diagnosis and Mitigation",
+    "authors": "Yifan Xiao, Shijie Li, Yuhao Ge",
+    "publish": "Proceedings of the ACM on Programming Languages",
+    "url": "https://doi.org/10.1145/3828675",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-17",
+    "title": "AI-Driven Penetration Testing: A Survey of Autonomous Agents, LLM-Based Approaches, and Future Directions",
+    "authors": "Kamalbek Berkimbayev, Gulnara Abitova, Auelbek Perizat, Ramazan Khairullin, Karima Zhunis, Dariga Kudaibergen",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11648053",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "Rule-Based Formal Verification of Data Integrity in Data-Driven Software Systems",
+    "authors": "Anwesha Kashyap, Angshuman Jana",
+    "publish": "2026 IEEE Guwahati Subsection Conference (GCON)",
+    "url": "https://doi.org/10.1109/gcon69192.2026.11648891",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-17",
+    "title": "TriShield: Toward an Autonomous and Self-Evolving Cyber Defense via Predictive SOC, Causal Pentest Agents, and Adversarial LLM-CTI",
+    "authors": "Meryem Lirsi, Fatima Benettaj, Nadia Ait Oufqir, Meriem Mandar",
+    "publish": "2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)",
+    "url": "https://doi.org/10.1109/iccsdfai70505.2026.11648006",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
