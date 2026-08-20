@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-19",
+    "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+    "authors": "Bo Liu, Simon Yu, Yiding Jiang, Ao Qu, Andrew Zhao, Zichen Liu, Junsu Kim, Zijian Zhou, Seungone Kim, Tongzheng Ren, Mickel Liu, Hanfei Yu, Zhaorun Chen, Weiyan Shi, Paul Pu Liang, Luke Zettlemoyer, Yejin Choi, Natasha Jaques",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19197v1",
+    "source": "arXiv",
+    "abstract": "Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a self-play RL framework in which a single LLM plays two roles: an Environment Designer that writes complete, long-horizon training environments as executable code with an OpenAI Gym-style reset()/step() interface, and a Reasoning Agent that learns to act in them. Each is a stateful, multi-turn environment (state transitions, reward functions, and verification code), so one interface spans reasoning problems and multi-step agentic tool use. The Reasoning Agent's regret is estimated using the gap between its reward with and without privileged hints; in optimizing this regret signal the Environment Designer learns to target environments at the edge of the agent's capabilities while keeping them feasible. Through extensive experimentation, we find several components critical to success: grounding the Environment Designer on documents sampled from a large pretraining corpus, and giving it an accumulated environment memory. Scaling to 30B-parameter models, SPADE improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out math, science, code, and reasoning benchmarks, and lifts the tool-use setting by +5.7 on BFCL-v4 multi-turn and +13.9 on ACEBench-Agent; on the games setting, the margin over the strongest baseline grows with model scale. By making environment design itself a learnable component, SPADE takes a concrete step toward open-ended self-improvement."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Qualified Cross-References as a Verification Method: The Normative Environment of the EU AI Act",
+    "authors": "Nicola Fabiano",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19194v1",
+    "source": "arXiv",
+    "abstract": "Legal cross-references are commonly represented as links between instruments or provisions. For a curated legal knowledge base, the existence of a link is only the beginning of the claim: it must also state the legal character of the interaction, identify the provisions supporting it, preserve its conditions, and remain consistent when reached from either instrument. This paper presents a provision-level model and a construction protocol for qualified cross-references, developed through a bilingual corpus of fourteen instruments surrounding Regulation (EU) 2024/1689 (the AI Act). The model distinguishes direct textual reference, bounded presumption of conformity, substantive interaction without textual reference, mediated intersection, and institutional analogy, and treats applicative interaction and definitional overlap as independent dimensions. The methodological contribution is bidirectional inversion: a relationship documented from act A towards act B is reconstructed from B's perspective against the provisions of both. Inversion is not a duplicate table but a verification operation that tests provisions, qualification, direction, and conditions before deciding how the relationship should be rendered from either side. Applied during construction, the protocol surfaced six incorrect article references, three inaccurate legal qualifications, and one divergence between two published descriptions of the same interaction. The corpus also shows why qualification matters: one reference to Regulation (EU) 2019/881 carries the AI Act's bounded cybersecurity presumption for high-risk systems, while related product legislation uses the same certification framework through legally distinct mechanisms. The contribution is thus a map of one regulatory environment and a reproducible method for making curated cross-reference knowledge bases inspectable and internally testable."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "LearnAI: Just-in-Time AI Co-Creation Across Disciplines at a University",
+    "authors": "Weihao Qu, Ling Zheng, Chris Buzaid, Daniel Crawford",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19164v1",
+    "source": "arXiv",
+    "abstract": "As generative AI reshapes professional and educational practice, institutions face a challenge: how to support diverse learners, from non-coders to advanced students, in building confidence and practice with AI-supported problem solving. Most institutional responses bifurcate into conceptual workshops for general audiences or technical courses for computer science majors, leaving few spaces where mixed-ability learners can engage common AI tasks at levels matched to their prior experience. This experience report presents the LearnAI Framework, a two-layer model for just-in-time AI co-creation piloted at a comprehensive teaching university. The Wide-Exposure Layer embeds short presentations in existing courses to build AI awareness at scale, reaching students and faculty across 18 courses in five disciplines. The Customized Co-Creation Layer provides opt-in, one-on-one sessions where clients work with trained undergraduate tutors through a 5-Stage Pedagogical Script: Problem Framing, Tool-Task Mapping, Iterative Co-Prompting, Deployment and Verification, and Ethical Reflection. Over two semesters, 35 clients co-created 36 portfolio websites and over 20 deployed web applications. Interviews with five clients and two tutors suggest a recurring change in how clients described AI use, shifting from treating AI as a passive answer machine to engaging it as a collaborative tool under human direction. A small paired pre/post AI readiness dataset (N = 7) provides preliminary descriptive context, and tutor accounts document how the pedagogical script was enacted and adapted across client types. We report on boundary cases including clients who felt overwhelmed and respondents who deliberately rejected AI use. This paper contributes a practical, adoptable framework with initial evidence from a single institution."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Tuning the Stochastic Machine: A Systems Engineer's Operating Model for Human-AI Engineering",
+    "authors": "George Andrikopoulos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19125v1",
+    "source": "arXiv",
+    "abstract": "When an expert corrects an LLM assistant's error, the correction usually dies with the session, and the error class returns. I argue this is an operations problem, not a tooling problem: mechanisms for persisting corrections exist and are shipping, but the discipline for governing them -- versioning with provenance, recurrence monitoring, counter-metrics, retirement of stale rules -- does not. Writing as a systems engineer of thirty years, I map the LLM stack onto the machines my profession already operates (frozen silicon, firmware, loadable modules, persistent configuration, volatile memory), identify where the mapping fails (stochastic generation, configuration that binds only probabilistically, no general-purpose retirement (verification) stage by default), and derive from the failures a seven-principle operating discipline with an error loop at its core. Three cases from my own practice illustrate the mechanism, among them a control that silently became the exact harm it was built to prevent. I close with the measurement framework this view implies and the lab study required to test it."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery",
+    "authors": "Alizer Wong, Heng Cui, Yi Tan, Xiongchao Zhan, Liang Lin, Yuxiang Guo, Zhaorong Dai, Zixin Zeng, Wenyuan Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19047v1",
+    "source": "arXiv",
+    "abstract": "We present Eureka, a task-conditioned Meta-Agent architecture that compiles long-horizon tasks into dynamic obligation graphs with explicit acceptance semantics. During execution, Eureka forms Macro-Agents with specialized state, memory, operators, tools, verifiers, and local topology via receding-horizon planning, architecture promotion, and minimal-sufficient compilation. When bottlenecks recur, cost-benefit-gated evolution updates the local architecture under constraints. Theoretically, we establish results on regret, planning invalidation, amortization, subtree interfaces, serializability, and verification. Experimentally, Eureka completes 170/170 recursive tasks and generates 3,948 certificates with no false acceptances. Active context compresses median input from 9,490 to 4,005 tokens; incremental processing avoids 65.38% recomputation across 12,000 tasks; 16,000 concurrent executions serialize consistently. The same Meta-Agent instantiates a Theory-Discovery Agent and a Math/Conjecture Agent. The former yields structural results in quantum-process and spacetime theory. The latter identifies bottlenecks in Riemann Hypothesis research and advances a positivity certificate for Suzuki's localized Weil quadratic form to 0 < a <= 69/200 = 0.345, reaching ~99.55% of (log 2)/2. These results suggest that scientific-agent capability depends not only on the base model but on whether an architecture can be formed to match the task's cognitive structure."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning",
+    "authors": "Yajie Yin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19009v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly paired with verifiers (step checkers, self-consistency filters, tool-based fact checkers, formal proof assistants) that claim to detect the model's errors. Yet the verification literature uses the word \"level\" to mean at least five different things: verification granularity, concept abstraction, risk tier, system-stack layer, and the epistemic source of the ground truth. We propose Verification Autonomy Levels (VAL), a meta-standard classifying verification schemes along a single axis: where does the verification spec come from, and what does the verdict guarantee? VAL ranges from L0 (LLM self-declaration, no deterministic anchor) through L2 (objective ground truth, correctness only) to L3/L4 (decidable systems with single-property or domain-level completeness), with L5 impossible in the unrestricted case. Central to VAL is the completeness blind spot: substitution- and sampling-based verifiers can confirm that proposed candidates hold, but cannot prove that no candidate was missed. We further identify a dichotomy the literature has not stated: completeness is reachable only for formally specifiable properties, while empirical open-world verification (fact-checking, diagnosis) caps at anchored correctness (L2). We document this across four domains (symbolic mathematics, behavior monitoring, medical diagnosis, and code generation) and in the strongest existing formal-verification baseline, whose authors note the verifier \"focuses on the correctness of each step.\" We show the levels of granularity, concept hierarchy, risk, and system stack are orthogonal to VAL, resolving a systematic conflation across 17 surveyed papers. Code and full assessment are released as supplementary material."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "A Theory of Post-hoc Debate Judgement",
+    "authors": "Xiang Yin, Adam Dejl, Antonio Rago, Lihu Chen, Francesca Toni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19002v1",
+    "source": "arXiv",
+    "abstract": "Debates have recently emerged as a useful methodology for agentic AI to improve performance as well as to aid explainability and user engagement. For example, LLM-empowered agents may debate internally (with themselves) and/or externally (with other agents). In many settings where debates are used, debates' outcomes and resulting outputs are determined post-hoc by external judges, often LLMs. In this paper we develop and test a novel theory of debate judgement applicable to all settings where agents engage in debates by providing pros and cons for their opinions therein. Specifically, we identify a number of formal properties that debate judgement may be required to satisfy in general, as concerns reproducibility, robustness, groundedness and explainability. Then, we explore their satisfaction formally and/or experimentally, for claim verification settings, for two specific alternative debate judgement methods: variants of the LLMs as a judge idea and formal semantics drawn from computational argumentation. We show that the two methods give similar accuracy performances but the former may lack formal guarantees that the latter brings. Overall, our study indicates argumentation semantics as an ideal candidate for principled judges in debate-driven AI."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Towards a Deductive Verification Infrastructure for Weighted Programming",
+    "authors": "Emma Ahrens, Samuel Rode, Philipp Schröer, Joost-Pieter Katoen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18971v1",
+    "source": "arXiv",
+    "abstract": "Weighted programs extend guarded commands with trace weights drawn from a semiring, or more generally a monoid-module. Varying this algebra gives one programmatic syntax for a variety of quantitative and symbolic models. Weakest-preweighting semantics provides a compositional basis for reasoning about those programs. We present a deductive verification framework based on a weighted assertion language and an intermediate verification language. Its weight domains are ordered structures with implication and coimplication, which let verification conditions express lower- and upper-bound obligations internally. We prove sound translations of core commands and reusable encodings for various proof rules applying to procedure calls and loops. To facilitate automation, we prove soundness of a quantifier elimination procedure for our assertion language. A prototype in the Caesar verifier checks case studies for probabilistic queueing costs, recursive database provenance with cyclic dependencies, clearance bounds for networks of arbitrary size, and formal-language reasoning about lock-freedom of a compare-and-swap counter."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Who Can Make the Action Happen? An Authority-Decomposition Framework for High-Risk Automated Systems",
+    "authors": "Mengting Wu, Lin Wang, Yong Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18965v1",
+    "source": "arXiv",
+    "abstract": "High-risk automated systems distribute control across services, credentials, protected components, and lifecycle mechanisms. Labels such as authorized, approved, privileged, or protected therefore do not answer a basic causal question: which actors can actually make a consequential action occur? This paper provides an action-relative method for deriving which trust-domain coalitions are sufficient to cause protected execution, defined as the occurrence of a designated protected state transition. The framework models components, powers, resources, boundaries, and alternative realization structures; includes update, recovery, override, disablement, and alternative invocation; and separates causal control over execution from control over the authoritative account of an operation. It derives inclusion-minimal sufficient coalitions and tests whether claimed execution boundaries remain independent of designated upstream domains. Cross-domain analytical cases illustrate the method. In a split-control, release-intended, open-state, source-bounded Havenlon protocol model, the ordinary witness requires five trust domains, while certificate replacement yields a three-domain inclusion-minimal known requirement set among source-enumerated protocol witnesses; the Linux domain remains insufficient for the complete transition. Deployed global non-bypassability and boundary-bound veto coverage remain unresolved. The framework is a conceptual and analytical tool. It does not certify implementations, establish deployment security, guarantee complete discovery of hidden powers, or define evidence-verification semantics."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Test-Time Scaling in the Wild: Why Exploitation, Not Exploration, Is the Bottleneck",
+    "authors": "Davide Romano, Kanak Raj, Jerrod Parker, Daniele Giofrè",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18931v1",
+    "source": "arXiv",
+    "abstract": "Test-time scaling (TTS) improves language model outputs by spending additional inference compute - generating multiple candidates, searching over partial sequences, or iteratively refining drafts. These techniques yield large gains on mathematics and code, but have been developed and stress-tested almost exclusively on tasks where verification is straightforward. We conduct the first compute-normalised comparison of five TTS families across five open-ended generation benchmarks spanning medicine, law, finance, general chat, and creative writing - grounded in a unified framework that decomposes the effectiveness of each method's token budget into exploration and exploitation. The answer depends on which side of that decomposition you examine. Scaling exploration works: the best candidate in the pool improves steadily with compute across all settings. What breaks is exploitation - the step that converts a rich candidate pool into a final output. With state-of-the-art generators, reward models correlate at only $ρ_v \\approx 0.12$ with true quality, rendering selection near-random regardless of budget. Tree search amplifies this failure through diversity collapse. Refinement helps on one of five benchmarks; its apparent gains elsewhere are confounded. Only synthesis across candidates (Fusion) consistently improves over single-sample baselines, yet still recovers only ~40% of available quality. The candidate pool is not the bottleneck - choosing from it is."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+    "authors": "Wei Yu, Suxing Liu, Minjie Yu, Jiahao Wang, Zhijian Zheng, Haocheng Deng, Bing Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18884v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement-learning training of reasoning LLMs (e.g., GRPO) is expensive and requires a controllable environment, committing every contribution to a full training pipeline. We present EvoResearcher, a training-free, inference-time protocol that adds cost-bounded self-reflection to a single frozen LLM backbone. The protocol iterates generate -> self-critique -> revise until a maximum depth D is reached or the critique returns the CONFIRMED sentinel, an implicit early stop that lets the backbone self-verify its answer under a strict compute budget. Four self-reflective meta-reward components (correctness, efficiency, reflection depth, tool-call diversity) act as design principles instantiated as prompt-level mechanisms, so their benefits accrue with zero gradient updates. We validate the protocol on Big-Bench Hard (100 questions) and establish cross-domain behavior on GSM8K (500) and MATH (500) on the same frozen backbone, with cross-model replication on Qwen2.5-72B. All experiments use pure-reasoning benchmarks; the tool-call diversity component is validated in prompt-level form, and the environment-level and multi-agent extensions are design blueprints left to future work. On clean BBH the protocol does not raise accuracy beyond the 95% Wilson interval; its value is cost-bounded self-verification, with the CONFIRMED early stop terminating 82-88% of items at equal accuracy (about 2.1 generations per question)."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "ORBITER: Conflict-Aware Decision-Making for Agentic Last-Mile Delivery",
+    "authors": "Mingzhao Li, Chenxi Liu, Yan Zhao, Hao Miao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18846v1",
+    "source": "arXiv",
+    "abstract": "Last-mile delivery aims to handle dynamically arriving orders with couriers while modeling complex spatial and temporal correlations. Recent learning-based methods model spatiotemporal dependencies among orders to predict courier service sequences, but leave next-order decision making unexplained. Describing the current delivery state in language allows LLMs to reason explicitly about the spatial, temporal, and behavioral cues behind an individual decision. As direct predictors, however, LLMs remain sensitive to task presentation and often produce unreliable decisions. To address these challenges, we introduce ORBITER, an agentic Order Arbiter for next-order decision-making in last-mile delivery. ORBITER models courier service through decision points, each containing the courier's spatiotemporal state and visible orders and exposing local trade-offs for modeling and verification. Fixed proposers rank the candidates, and a structured report identifies where their rankings disagree. The LLM uses task-specific tools to gather evidence on the leading alternatives, while an independent critic checks the resulting decision against that evidence. We conduct extensive evaluations on data in four cities, where ORBITER outperforms existing state-of-the-art baselines by up to 9.2% on average showing its effectiveness."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "EVADE: Evidence-Verified Agentic Diagnosis with Escape",
+    "authors": "Mohaimenul Azam Khan Raiaan, Nur Mohammad Fahad",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18833v1",
+    "source": "arXiv",
+    "abstract": "Medical vision-language models (VLMs) can achieve high accuracy but remain unreliable: they are systematically overconfident, benefit little from test-time reasoning, and lack the ability to reliably calibrate trust in their own responses. We introduce EVADE (Evidence-Verified Agentic Diagnosis with Escape), an inferential, non-training method that enhances the safety of deploying a single frozen VLM. EVADE responds and, when uncertain, localises the region most diagnostically relevant, re-answers on a zoomed view, and commits only when both the entire image and the zoomed view responses agree; otherwise, it abstains. To directly address verification hallucination in single-model self-checking, our main idea is to verify gate consistency across different image views rather than re-reading the model's own text. Experimental evaluation on VQA-RAD, SLAKE, and PathVQA using Qwen2.5-VL-7B reports that EVADE is the only method that simultaneously improves both calibration and selective risk while maintaining accuracy, reducing expected calibration error (ECE) by up to 45% compared to zero-shot. Chain-of-thought, self-consistency, and self-verification all fail at least one axis. A grounding analysis reports that self-proposed regions perform better at diagnostic structure localisation than centres or random crops. However, a 7B VLM cannot use this localisation to revise answers. Therefore, reliability gains come from the consistency gate and calibrated abstention."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Contract-Aware Rescue of a Drifted Isabelle Development: The Double-Tank Case Study",
+    "authors": "Jim Woodcock, Gabriel Leite, Augusto Sampaio, Ran Wei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18822v1",
+    "source": "arXiv",
+    "abstract": "Large language models can propose proofs for interactive theorem provers, but a successful build does not show the surrounding verification task was preserved. We study this problem in an Isabelle development of a sampled-data double-tank controller. The work began with nine theories and ten unfinished obligations, grew to a 16-theory build without sorry, oops, added axiomatisation, or oracle use, and accumulated 23 stable and 36 broken proof states. A retrospective audit found material changes in 16 of the 100 original declarations, including a weakened end-to-end assurance theorem that assumed three of the four requirements in its conclusion. We used CAPRI, a contract-aware proof-repair tool, to govern a reconstruction by combining Isabelle acceptance with an independent check of repository changes against machine-readable edit contracts. The reconstruction discharged all ten scoped obligations within the original nine-theory structure. A secondary replay by a co-author reproduced the R10 build, contract checks, control tests, and principal audit findings; independent replication remains future work. Operational end-to-end verification remains incomplete: we still need to connect operational executions to the reconstructed quantitative trace contract, a task requiring an extended contract."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Simple Verification and Implementation of Observer Error Dynamics Linearization: A Pascal's Triangle--Hessian Matrix Criterion",
+    "authors": "Xu Haotian, Xinquan Shao, Liu Shuai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18804v1",
+    "source": "arXiv",
+    "abstract": "The classical theory of nonlinear observer error linearization---the nonlinear observer canonical form---has attracted sustained attention since its inception in the 1980s. Under the existing theoretical framework, the verification and construction for a nonlinear system to achieve observer error linearization admits a systematic, efficient implementation, severely limiting the applicability of the theory to high-dimensional systems. To address this issue, inspired by the definition of high-order fully measured systems, this paper proposes the Pascal-Hessian condition for single-output systems. This condition equivalently converts the necessary and sufficient condition for observer error linearization into a structural test on the Hessian matrix of the nonlinear term in high-order fully measured systems: the coefficients in the upper-left corner of Hessian matrix form a Pascal's triangle, while the lower-right corner vanishes identically. Simultaneously, we provide explicit integral formulas for all output-dependent univariate functions in the canonical form, eliminating the need to solve partial differential equations. Compared with the existing theory, our method reduces the computational complexity of condition verification from $O(n^4)$ to $O(n^2)$, and replaces the intricate process of solving partial differential equations with explicit indefinite integral for canonical form construction. We further extend the result to multi-output systems with equal observability indices. Beyond its computational advantages, this work reveals a fundamental structural connection between the nonlinear observer canonical form and Pascal's triangle---a link that has remained unnoticed since the inception of the theory in the 1980s. Numerical examples validate the effectiveness of the proposed method."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "An Integer Programming Approach to Compute Lower Bounds for Ramsey Numbers Using Circulant Graphs",
+    "authors": "Stefano Coniglio, Fabio Furini, Ivana Ljubić, Pablo San Segundo, Johannes Thüerauf, Emiliano Traversi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18769v1",
+    "source": "arXiv",
+    "abstract": "The Ramsey number $R(m,n)$ is the smallest order at which every red-blue edge coloring of a complete graph must contain a blue clique (a complete subgraph) of size $m$ or a red clique of size $n$. Determining these numbers exactly is extremely hard, and even certifying a lower bound requires exhibiting an explicit coloring that avoids both cliques. We develop an integer programming framework for certifying such lower bounds, restricting the search to circulant graphs, whose rotational symmetry lets us reformulate the problem in a projected distance space, reducing the number of binary variables from quadratic to linear in the graph order. We strengthen this projected model through coefficient reduction and solve it with a branch-and-cut algorithm whose separation routine exploits the common neighborhood structure of circulant graphs, combining heuristic and exact maximum-clique algorithms. In an extensive computational campaign on circulant graphs with up to 410 vertices, we improve the best lower bounds previously obtained by other methods by up to 11 points for 25 values of $R(3,n)$ with $24\\le n\\le49$ and $n\\neq27$, each backed by an explicit graph certificate that can be independently verified with a stand-alone exact clique solver. To the best of our knowledge, our method also provides the first reproducible optimization-based procedure for certifying circulant Ramsey numbers $R_C(m,n)$, which we use to establish eight new values of $R_C(3,n)$ with $13\\le n\\le20$. Our framework, graph certificates, and stand-alone checker are provided as supplementary material to support independent verification and reuse."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Metrics That Write Themselves: Evolving an Evaluator from Its Own Blind Spots",
+    "authors": "Xing Zhang, Yanwei Cui, Guanghui Wang, Zhihao Lin, Peiyang He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18744v1",
+    "source": "arXiv",
+    "abstract": "Agents improve quickly against a reliable automatic metric and stall without one, and the applications that need them most, report generation among them, are the ones nobody knows how to score. Can the metric write itself? Saying what makes an answer good is hard; pointing at something wrong with one is easier, so the metric we evolve is a pool of small Python operators that each flag a candidate for one named defect, or abstain, and vote. Asking a model for operators directly does not work: 183 candidates realise only 96 distinct behaviours, from one narrow region of an enormous space. EvalCEGAR instead borrows counterexample-guided abstraction refinement from program verification. It reads the pool as an abstraction and searches for a collision, two answers the operators score identically, one correct and one not. That pair, not a prompt, is the authoring request, and when a collision defeats every attempt the loop widens what an operator may read rather than resampling. On MBPP+ and HumanEval+, a sandbox whose hidden unit tests give exact ground truth, the loop writes a 55-line operator that closes 15.4% of the gap between flagging nothing and a perfect filter on 428 unseen tasks (+0.0065, p=0.0010) at a quarter of our best hand-written operator's flags. On the benchmark it never saw it matches that operator's effect exactly on a third of the flags. Six of eight runs admit such an operator and all six help out of sample; our 15 hand-written operators applied together as one filter lose accuracy. An LLM judge on the same information ties that delta on a nearly disjoint set of candidates, and charges a model call per candidate forever where the operator charges none."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Learning What to Fail On: Failure-Mode Contextual Bandits for Adversarial Data Curation",
+    "authors": "Roie Kazoom, Ofir Cohen, Rami Puzis, Asaf Shabtai, Ofer Hadar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18681v1",
+    "source": "arXiv",
+    "abstract": "We introduce a failure-aware adversarial retrieval-augmented framework for improving robustness in natural language understanding. Rather than selecting synthetic examples with a fixed reward threshold, our method formulates adversarial data curation as a failure-mode contextual bandit problem. Candidate examples are generated with retrieval-augmented prompting, filtered by the current target model, automatically validated by an LLM judge ensemble, and clustered into recurring failure modes. A stochastic policy then selects which failure modes to sample for retraining, and is updated using validation-based reward that balances robustness gains, forgetting, and data cost. This makes the data curator itself the learning agent, enabling adaptive selection of the most useful model failures across training rounds. On standard benchmarks, our approach improves RoBERTa-base accuracy from 88.48% to 92.60% on SNLI, from 75.04% to 80.95% on ANLI, and from 54.67% to 71.99% on MultiNLI, while consistently outperforming prior adversarial augmentation methods. We further demonstrate transfer to FEVER fact verification, achieving up to 79.86\\% FEVER score and 82.45\\% accuracy with RoBERTa-large. Finally, we provide a theoretical interpretation showing that, under stated assumptions, failure-mode sampling can reduce shortcut-aligned gradient contributions while inducing bounded distributional drift. By combining retrieval, automated validation, contextual-bandit failure selection, and controlled adversarial retraining, our framework enables scalable robustness improvement without additional human annotation."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Preference Reasoning under Indeterminacy in Large Language Models",
+    "authors": "Hadi Hosseini, Samarth Khanna, Xiyuan Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18631v1",
+    "source": "arXiv",
+    "abstract": "As large language models evolve into decision-making agents, the ability to reason over preferences becomes fundamental to alignment, coordination, and collective intelligence. Yet, unlike standard benchmarks, real-world preference reasoning is inherently indeterminate: information may be incomplete, and valid solutions may not exist. We argue that indeterminacy, rather than correctness alone, is a central challenge for AI reasoning. We formalize this challenge along two axes, (i) epistemic indeterminacy, arising from incomplete, partial, or expressive preferences, and (ii) structural indeterminacy, arising from the non-existence of solutions under standard social choice concepts. Across a hierarchy of tasks, we show that state-of-the-art language models systematically fail to distinguish between determined and undetermined instances, exhibiting miscalibrated reasoning even in verification settings."
+  },
+  {
+    "date": "2026-08-19",
+    "title": "On a conjecture on the Kasami APN function: reductions, structure theorems, a proof for $k\\bmod n\\in\\{1,2,n{-}2,n{-}1\\}$, and exhaustive verification for $n\\le 13$",
+    "authors": "Gábor P. Nagy, Attila Vajda",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.18584v1",
+    "source": "arXiv",
+    "abstract": "We study a conjecture on the Kasami almost perfect nonlinear (APN) function $F(x)=x^{4^k-2^k+1}$ on $GF(2^n)$, $\\gcd(k,n)=1$: for the $2^{n-1}$-element set $Δ=\\{F(b)+F(b+1)+1: b\\in GF(2^n)\\}$ and all distinct nonzero $v_1,v_2\\in GF(2^n)$, \\[ \\bigl|\\{(x,y,z)\\inΔ^3 : v_1x+v_2y+(v_1+v_2)z=0\\}\\bigr| \\;=\\; 2^{2n-3}. \\] The conjecture was proposed at the NSUCRYPTO~2019 cryptographic olympiad (the proposer of the problem was not publicly disclosed). We prove the conjecture for $k\\bmod n\\in\\{1,2,n-2,n-1\\}$, in particular a complete proof for $k=2$ ($d=13$) via a quadratic-form theory and an exact root-count reduction, and we verify it exhaustively by computer for every admissible $(n,k)$ with $n\\le13$."
+  },
+  {
+    "date": "2026-8-19",
+    "title": "From Algorithm to RTL: A Comparative Study of Compiler-Driven and LLM-Driven FPGA Design Flows",
+    "authors": "Md Mahfuzul Haque Gazi, Rickard Ewetz, Hao Zheng, Md Rubel Ahmed",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00056",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Twin-BT: An LLM-Based Behavior Tree Framework Integrating Digital Twin and Deterministic Semantic Verification for Robotics",
+    "authors": "Yuanxin Zheng, Manlu Liu, Lingfeng Hou, Liping Guiv, Rui Long",
+    "publish": "2026 International Conference on Electronics, Communications and Computer Science (ICECCS)",
+    "url": "https://doi.org/10.1109/iceccs70432.2026.11651329",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "RTL Design &amp; Simulation of LDPC Encoder Decoder System Using Verilog HDL",
+    "authors": "Ritushka Negi, Anu Tonk, Mona Aggarwal",
+    "publish": "2026 Fifth International Conference on Power, Control and Computing Technologies (ICPC2T)",
+    "url": "https://doi.org/10.1109/icpc2t68221.2026.11646342",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "LLM-HPC++: Evaluating LLM-Generated Modern C++ and MPI+OpenMP Codes for Scalable Mandelbrot Set Computation",
+    "authors": "Patrick Diehl, Noujoud Nader, Deepti Gupta",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00075",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Comparing High-Level Synthesis and RTL for Simple FPGA Kernels – Revisited",
+    "authors": "Vinicius R. Fertrin, Christopher D. Gill, Roger D. Chamberlain",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00057",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Programming Domain-Specific FPGA Hardblocks from HLS: An RTL Blackbox Approach",
+    "authors": "Ruthwik Reddy Sunketa, Jeevesh Choudhury, Aman Arora",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00053",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Llm-Based Intelligent Tutor System",
+    "authors": "Aditi Arya, Shweta Sinha, Priyanka Makkar",
+    "publish": "2026 International Conference on NextGen Data Science and Analytics (ICNDSA)",
+    "url": "https://doi.org/10.1109/icndsa68777.2026.11652109",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-20",
+    "title": "Effects of Interaction Modality on LLM-Based Information-Seeking",
+    "authors": "Julia Lansche, Fiona Draxler",
+    "publish": "Proceedings of Mensch und Computer 2026",
+    "url": "https://doi.org/10.1145/3820253.3820261",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Evaluating LLM Generated Task Codes",
+    "authors": "Sanjana Yasna, Simon Garcia De Gonzalo, Michael Robson",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00046",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-20",
+    "title": "From Design to Code: Exploring LLM-Supported Workflows in Figma Dev Mode",
+    "authors": "Surbhi Rajpal, Andreas Riener",
+    "publish": "Proceedings of Mensch und Computer 2026",
+    "url": "https://doi.org/10.1145/3820253.3820266",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Evaluating LLM-Generated Instructional Content for Parallel Computing Education",
+    "authors": "Xinyao Yi, Yonghong Yan",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00128",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Manual, Translated, or LLM-Generated? Comparing Paths to OpenMP Target Offload for LULESH",
+    "authors": "Yehonatan Fridman, Gal Oren",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00039",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Adaptive Local LLM Compression Under Dynamic Edge Constraints",
+    "authors": "Pardeep Singh, Azhar Ashraf, Saksham Sharma, Dhruv Soni, Jolly Tomar",
+    "publish": "2026 Fifth International Conference on Power, Control and Computing Technologies (ICPC2T)",
+    "url": "https://doi.org/10.1109/icpc2t68221.2026.11646233",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Autonomous Safety Systems for Smart Cities Using LLM Enabled Intelligent Multi-Agents",
+    "authors": "Sruthy Anand, A M Abhishek Sai",
+    "publish": "2026 Fifth International Conference on Power, Control and Computing Technologies (ICPC2T)",
+    "url": "https://doi.org/10.1109/icpc2t68221.2026.11646355",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "A Preliminary Study of LLM Inferencing on Sandboxed Environments for Jetson Edge Platforms",
+    "authors": "Yash Vijay Kamble, Mayank Arya, Yogesh Simmhan",
+    "publish": "2026 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)",
+    "url": "https://doi.org/10.1109/ipdpsw71298.2026.00120",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "An Efficient LLM Agent Framework for Cost Optimization through Token Optimization and Trajectory Reduction",
+    "authors": "Nipuna Ashok, Jossy George, Monisha Singh",
+    "publish": "2026 International Conference on NextGen Data Science and Analytics (ICNDSA)",
+    "url": "https://doi.org/10.1109/icndsa68777.2026.11652295",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "Detecting Manipulated LLM Outputs via Siamese Transformers and Semantic Dependency Graphs",
+    "authors": "Yue Xu",
+    "publish": "Proceedings of the 2026 2nd International Conference on Artificial Intelligence and Computational Intelligence",
+    "url": "https://doi.org/10.1145/3810280.3810295",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-19",
+    "title": "LLM Enabled Phoneme-Aware Pronunciation Feedback System for Rural English Learners",
+    "authors": "Kasa Amareswar Reddy, Pitti Abhiram Reddy, Sruthy Anand",
+    "publish": "2026 Fifth International Conference on Power, Control and Computing Technologies (ICPC2T)",
+    "url": "https://doi.org/10.1109/icpc2t68221.2026.11646264",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "LLM Fact-Checking Under No-Retrieval Constraints: A Five-Model Comparative Evaluation and Ensemble Approach",
+    "authors": "Xinrui Chen, Andrés G. Fortino",
+    "publish": "2026 IEEE International Conference on Engineering, Technology &amp; Management (ICETM)",
+    "url": "https://doi.org/10.1109/icetm68138.2026.11648098",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-19",
+    "title": "SmartSpend: A Hybrid OCR-LLM Framework for Automated Expense Analysis and Semantic Categorization",
+    "authors": "N. Jeevitha, V Anusha, A Kaarthikraja, S Lavanya",
+    "publish": "2026 International Conference on NextGen Data Science and Analytics (ICNDSA)",
+    "url": "https://doi.org/10.1109/icndsa68777.2026.11652222",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
