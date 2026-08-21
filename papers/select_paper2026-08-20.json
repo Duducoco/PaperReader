@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-08-20",
+    "title": "Automated Estimation of MBIST Area and Test Time in Heterogeneous Memory IPs via Stacked Ensemble Framework",
+    "authors": "Chee Jin Teoh, Ab Al-Hadi Ab Rahman, Johnny Kee Hui Wong, Premkumar A/L Kesavan Prabagaran, Muhammad Nadzir Marsono, Nuzhat Khan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.19705v1",
+    "source": "arXiv",
+    "abstract": "Embedded memories occupy a large portion of modern System-on-Chip (SoC) designs, especially in high-performance applications such as artificial intelligence and edge computing. Memory Built-In Self-Test (MBIST) is commonly used to ensure memory reliability, but it introduces additional area and test time overhead. Accurate early estimation of these overheads is important during design planning, yet conventional methods rely on full Register Transfer Level (RTL) synthesis and test pattern generation, which are slow and resource-intensive. This study proposes a supervised learning framework that predicts MBIST area and test time directly from RTL-level design parameters without synthesis. A dataset of 4,470 samples for area and 624 for test time was generated using Synopsys Design Compiler and MINT, an Intel-enhanced MBIST tool. Input features include memory count, word width, address depth, port configuration, and clock domains. For area prediction, the features are processed through polynomial expansion, log transformation, and scaling, followed by a stacked ensemble model using XGBoost, LightGBM, and a Neural Network with Gradient Boosting as the meta-learner. For test time, XGBoost and LightGBM are combined using Ridge Regression, with hyperparameters tuned through a 100-trial Optuna search. The models achieved 90.68% accuracy for area and 96.80% for test time within a +/-10% margin, improving over baseline methods by 8.53% and 48.80% respectively. The results show that this approach enables faster estimation of MBIST costs and supports more efficient design decisions in memory IP development.",
+    "title_zh": "通过堆叠集成框架自动估算异构内存IP中的MBIST面积和测试时间",
+    "abstract_zh": "嵌入式内存在现代片上系统（SoC）设计中占据了很大比例，尤其是在人工智能和边缘计算等高性能应用中。内存内建自测试（MBIST）通常用于确保内存的可靠性，但它会引入额外的面积和测试时间开销。在设计规划阶段，准确地提前估算这些开销非常重要，然而传统方法依赖于完整的寄存器传输级（RTL）综合和测试模式生成，这既耗时又资源密集。本研究提出了一种监督学习框架，可直接从RTL级设计参数预测MBIST面积和测试时间，而无需进行综合。使用Synopsys Design Compiler和Intel增强型MBIST工具MINT生成了一个包含4,470个面积样本和624个测试时间样本的数据集。输入特征包括内存数量、字宽、地址深度、端口配置和时钟域。在面积预测中，特征经过多项式扩展、对数变换和缩放处理后，通过堆叠集成模型进行预测，该模型结合了XGBoost、LightGBM和一个以梯度提升为元学习器的神经网络。在测试时间预测中，XGBoost和LightGBM通过岭回归组合，超参数通过100次Optuna搜索进行调优。模型在面积预测中实现了90.68%的准确率，在测试时间预测中实现了96.80%的准确率，误差范围在±10%以内，分别比基线方法提高了8.53%和48.80%。结果表明，该方法能够更快速地估算MBIST成本，并支持内存IP开发中的更高效设计决策。"
+  }
+]
