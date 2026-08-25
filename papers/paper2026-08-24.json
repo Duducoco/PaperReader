@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-24",
+    "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+    "authors": "Deyao Hong, Yizhe Chi, Wenyi Li, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, Bingxiang He, Youjie Zheng, Calvin Xiao, Qinhuai Na",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23564v1",
+    "source": "arXiv",
+    "abstract": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Existing benchmarks cannot answer this question because they evaluate only behavioural correctness, not whether the migration actually occurred. This leads an easy hack: agents copy the original implementation to make tests pass. We call this Blindness. To address this problem, we introduce SWE Refactor Bench, a benchmark comprising 20 whole-repository migrations, covering 4 kinds of technical debt. A three-stage evaluation protocol measures both migration completeness and behavioural correctness. (1) Migration Audit verifies that the migration occurred. (2) Behavioural Tests measure correctness with a fixed test suite. (3) Agentic Verification uses 6 independent coding agents to generate targeted tests for hidden behavioural differences. Across 520 runs from 8 frontier models and 26 model-effort configurations, only 28 of 520 runs ($5.4\\%$) pass all three stages, 13 of the 20 tasks receive no accepted solution, and the best model (claude-opus-5) scores $47.0/100$. Migration completeness and behavioural correctness are distinct abilities: a few runs preserve behaviour by skipping the migration and are stopped at Migration Audit; most attempt it and break behaviour, and are stopped at Behavioural Tests. Agents cannot deliver a perfect migration: among the 340 runs that pass Migration Audit, $58\\%$ reach $99\\%$ of the fixed checks, yet only $26\\%$ reach $100\\%$. Agent capability differs across migration categories: agents score $31.4$ on build toolchain rewrites but only $5.6$ on language rewrites. Together, these findings position SWE Refactor Bench as a rigorous testbed for developing coding agents for reliable whole-repository migrations."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Prime Agent: A Self-Improving RLM Harness",
+    "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23552v1",
+    "source": "arXiv",
+    "abstract": "Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-source harness for long-horizon evaluation and coding-agent workflows. A persistent IPython REPL follows the Recursive Language Model abstraction for programmatic context processing and test-time compute, while Continual Harness preserves histories, memories, skills, prompts, and subagent specifications across trajectories. Recursive subagents coordinate through direct agent-to-agent communication, and the Agents View lets humans inspect and manage daemon-backed sessions. Prime Agent standardizes execution, recovery, verification, and resource accounting while leaving strategy construction to the model. This low-friction, expressive membrane prevents harness failures from becoming model failures and pushes measurement toward the model's true maximal underlying capability. Prime Agent raises ARC-AGI-3 RHAE Best@1 from 30% to 95.5% and matches or exceeds native and popular harnesses across long-context coding, GPU-kernel generation, emulator construction, and autonomous nanoGPT speedruns. On Factorio, we find refinement allows for continuous technology progression and dedicated subagents enable parallelized work. Code is available at https://github.com/PrimeIntellect-ai/prime-agent."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Infinite rational distance sets in affine general position: constructions in every dimension",
+    "authors": "Junkai Qiu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23529v1",
+    "source": "arXiv",
+    "abstract": "For every integer $d\\geq 1$, we construct a countably infinite set $X_d\\subset\\mathbb{R}^d$ in affine general position, with all pairwise distances rational. When $d$ is odd, $X_d$ may also be chosen so that no $d+2$ points lie on a common sphere. The construction is uniform in $d$: positive Chebyshev square decompositions produce harmonic curves on spheres whose points corresponding to rational parameter values have pairwise rational distances. A divided-difference factorization of the affine determinant shows that sufficiently short arcs are locally convex, and stereographic projection produces the odd-dimensional examples. We also construct infinite rational distance sets in $\\mathbb{Q}^d$ in affine general position for every even $d$, and in general position for every $d\\equiv 1\\pmod 4$. For every $d\\geq 1$ and $n\\geq d+1$, taking and rescaling suitable finite subsets gives $n$-point integral point sets in affine general position. A suitable ordered choice yields integral-distance realizations of all cyclic polytopes. In dimension three, we give an explicit rational parametrization and obtain infinitely many pairwise non-similar primitive $n_3$-clusters for every $n\\geq 4$."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Action-Aligned Retrieval with Pairwise Multimodal Reranking for Text-Based Person Anomaly Search",
+    "authors": "Thanh-Khoi Nguyen, Thanh-Nhan Vo, Trong-Thuan Nguyen, Minh-Triet Tran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23503v1",
+    "source": "arXiv",
+    "abstract": "Text-based person anomaly search requires distinguishing individuals based on fine-grained, context-dependent behaviors rather than mere appearance. Existing methods struggle to capture these context-conditioned actions, frequently relying on isolated skeletal geometry, discarding raw query details during reformulation, or utilizing absolute pointwise scoring for multimodal verification. To address these limitations, we propose \\textbf{ActPair}, a unified three-stage coarse-to-fine framework that combines action-aligned retrieval with pairwise multimodal reranking to bridge the pose-semantic gap. First, we fine-tune a vision-language model (VLM) with an action-aligned multi-task objective that encourages the representations to encode action-discriminative semantics. Second, we perform parallel late-fusion retrieval using the original query and a large language model (LLM)-generated context-grounded rewrite, retaining complementary details from both semantic views. Finally, we propose an efficient off-the-shelf reranking module that leverages a pivot-promote algorithm to perform direct pairwise visual comparisons, mitigating residual spatial and compositional ambiguities without the prohibitive inference costs of exhaustive evaluation. Extensive experiments demonstrate that our framework achieves the best results among the compared methods on the Pedestrian Anomaly Behavior (PAB) public test and transfers effectively to an unseen, non-anomaly-specific dataset."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "An Interactive Agent for Requirement-Driven Candidate Sourcing",
+    "authors": "Yuanpeng He, Fangjing Li, Xiangyu Ru, Kexin Sun, Kun Yang, Lijian Li, Chi-Man Pun, Qingsong Wen, Wenpin Jiao, Mingkai Guo, Yirong Feng, Daiheng Gao, Zhi Jin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23501v1",
+    "source": "arXiv",
+    "abstract": "Finding people from a natural-language description (``ML engineers transitioning to research roles in biotech'') is increasingly delegated to LLM agents and framed as information retrieval. We argue that it is fundamentally a requirements engineering task: such a request is an under-determined requirement with implicit constraints, many valid answers, and no acceptance criterion, so useful answers require eliciting, validating, and verifying the requirement before search can matter. We present \\sys{}, to our knowledge the first interactive, requirements-driven candidate-sourcing agent (it elicits, validates, retrieves, and verifies a vague people-request into a justified slate through bounded elicitation, workflow templates, a two-stage commit protocol, and bidirectional termination guards) and \\bench{}, a benchmark that runs the requirements lifecycle (criteria-anchored validation, multi-model evidence-grounded oracle construction, and cost-aware verification). Across $21$ systems and all $691$ requirements, \\sys{} dominates breadth ($100%$ coverage at $2.5\\times$ the yield) and is \\emph{near-orthogonal} to the field, with $90%$ of the people it returns are surfaced by \\emph{none} of $20$ strong LLM-plus-web baselines combined. Beyond breadth, an evidence-grounded judging of every system shows \\sys{} \\emph{recalls} the most relevant real people: $0.241$ of the union pool, $1.9\\times$ the next system, with a bootstrap $95%$ interval disjoint from every baseline. \\sys{} is thus the strongest \\emph{sourcing} engine (the deepest real, reachable candidate pool), while precision-ranking LLMs serve as~complementary verifiers."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Adversarial Entropy Inflation Against Gumbel-Based Inference Verification",
+    "authors": "Nikita Kezins",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23375v1",
+    "source": "arXiv",
+    "abstract": "Gumbel-based inference verification bounds LLM weight exfiltration by only forgiving token choices that plausibly arise from honest GPU nondeterminism, reporting a >200x slowdown for a steganographic adversary under benign prompt traffic. This bound assumes a passive attacker; we show it degrades sharply against an adversary who instead controls the prompt distribution. Because the verifier's admissible-token-set size is driven by the model's own output entropy, prompts engineered to break grammatical and sub-word structure -- rather than benign conversational traffic -- widen that set and open a materially larger covert channel. Across six instruction-tuned models spanning 1B to 32B parameters and three random seeds, our strongest attack (character- and script-level disruption) roughly doubles bits leaked per token relative to benign prompts, cutting the slowdown factor to 60x - 118x. These results indicate that static, benign-traffic-calibrated thresholds are insufficient for this defense, and that jitter-forgiveness thresholds should instead be calibrated dynamically against local token entropy."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+    "authors": "Wenqi Liu, Shijie Ma, Yunxiao Wang, Meng Liu, Qile Su, Han Liu, Bohan Hou, Xuanyu Zheng, Changyi Liu, Tianke Zhang, Haonan Fan, Kaiyu Jiang, Yingxin Li, Jiankang Chen, Xu Wang, Bin Wen, Tingting Gao, Han Li, Jianhua Yin, Yinwei Wei, Xuemeng Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23329v1",
+    "source": "arXiv",
+    "abstract": "Open-world video understanding often requires a model to locate sparse visual evidence and acquire external knowledge that is absent from the video and its parametric memory. While Thinking-with-Videos enables active temporal perception and Deep Research supports multi-step information seeking, the two capabilities are typically developed in isolation. We introduce VideoRover, a unified Video Deep Research framework that iteratively coordinates video cropping, multimodal search, and webpage browsing. Given a video-question pair, VideoRover uses each tool result to select the next action, so localized video clips guide external retrieval and retrieved evidence triggers further video inspection and verification. To develop this capability, we construct an automated data curation pipeline, producing 26K verified SFT trajectories and 3K challenging RL instances. We also introduce VideoRover-Bench, a benchmark stratified by video duration and research difficulty. Experiments on VideoDR and VideoRover-Bench show that our VideoRover-8B-RL achieves performance comparable to proprietary models in the direct-answer setting without tool use while outperforming larger open-source models equipped with the same tool suite. Ablation studies and training dynamics further validate the complementary roles of active video grounding, external retrieval, and long-horizon reinforcement learning."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Four hyperplanes do not always equipartition a mass in $\\mathbb{R}^4$",
+    "authors": "Pablo Soberón",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23312v1",
+    "source": "arXiv",
+    "abstract": "We construct a smooth strictly positive density in $\\mathbb{R}^4$ that cannot be divided into $16$ parts of the same size by four affine hyperplanes. This settles the last open case of Grünbaum's 1960 conjecture and disproves Ramos' general conjecture on hyperplane equipartitions. The proof reduces the problem to proving that five explicit polynomials in six variables have no common zero in $[-1,1]^6$. The verification relies on a computer-assisted subdivision argument using convexity and Bernstein coefficients."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Spotter: Efficient Urban Visual Localization via Geo-Referenced Facade Landmarks in GPS-Degraded Environments",
+    "authors": "Antoni Valls, Jordi Sanchez-Riera",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23290v1",
+    "source": "arXiv",
+    "abstract": "Accurate visual localization on robotic and wearable platforms remains challenging in dense urban environments. Existing methodologies typically rely on GPS for absolute positioning, yet GPS signals frequently degrade in urban canyons due to multipath propagation. Consequently, standard solutions like visual odometry suffer from unmitigated drift over time, while map-matching techniques struggle to acquire the reliable GPS priors they need, on top of being too computationally heavy for real-time edge execution. To address these limitations, we propose Spotter, a robuts and real-time visual localization framework that uses building facades as a reliable source of global geo-reference, while retaining the capability to integrate GPS signals when available. In an offline stage, Spotter processes Google Street View panoramas by semantically segmenting facades and pairing multi-view stereo depth with cartographic data to build a compact metric database. At runtime, query images are matched via a cascaded retrieval and geometric verification pipeline to recover fine-grained global camera localization. We benchmark Spotter on a newly collected dataset of pedestrian sequences acquired with wearable smart glasses across several districts of Barcelona. Experimental results show that Spotter outperforms odometry-based baselines and achieves localization accuracy comparable to state-of-the-art map-based methods while operating at significantly higher frame rates."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Efficient Computation of QKD Key Rates without Semidefinite Programming",
+    "authors": "Bence Temesi, Antoine Gansel, Gereon Koßmann, Rene Schwonnek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23285v1",
+    "source": "arXiv",
+    "abstract": "Translating observed data into a reliable estimate of the secure key rate is a crucial step for operating a quantum key distribution device. We provide a computational method for this task that only requires eigenvalue computations and is therefore both fast and resource efficient. In contrast, existing approaches rely on semidefinite programming or programming on the entropy cone, whose memory requirements can scale as $d^4$ in the underlying Hilbert-space dimension. Our method reduces this requirement to $d^2$. A minimal implementation of our algorithm takes fewer than 100 lines of Common Lisp. We demonstrate real-time key-rate estimation on a Raspberry Pi with a 1 GB memory and a Cortex-A53 processor. Despite these modest resources, our implementation outperforms existing workstation-based benchmarks by several orders of magnitude. Non-numerical verification can be incorporated with little overhead using rational approximations. These results open the way toward embedding complete numerical security analysis directly into qkd hardware."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "From Natural Language Policies to Executable Obligations: A Verification Harness for Dependable In-Car LLM Agents",
+    "authors": "Radouane Bouchekir, Damir Safin, Tomas Bueno Momcilovic",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23282v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) agents deployed in vehicles must satisfy a written operating policy on every turn: a single hallucinated identifier, omitted mandatory side-effect, or premature completion claim fails the task. We present AgentGuardUtil, our entry to CAR-bench Track~1, which treats the AI planer (LLM) as a fallible proposer inside a grounded verify-and-revise loop. Its core novelty is a runtime policy compiler: the natural-language policy shipped with each conversation is compiled, once per policy, into typed machine-checkable rules, a subset of which receive an executable form. A deterministic obligation engine interprets these rules against live tool results and the simulated post-write state of the draft itself, emitting the exact remedial calls with computed arguments rather than natural-language reminders. Around this engine, 25 deterministic gates (identifier provenance, schema and enum validity, gather-before-act, confirmation and future-time protocols) and an LLM critic produce tiered findings that drive a bounded revision loop tuned for the pass k metric."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "LongWoF-Bench: Evaluating EvoMap Genes for Verifiable Long-Workflow Tasks",
+    "authors": "Xiao Zhang, Qumeng Sun, Jihao Li, Yiming Ren, Xiang Liu, Haoyang Zhang, Junjie Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23200v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly expected to execute complex workflows whose success depends on maintaining interdependent constraints and producing artifacts that satisfy strict end-to-end verification. Yet successful execution experience is typically lost after a single run, forcing subsequent models to rediscover strategies and failure modes from scratch. We study whether such experience can instead be externalized and reused through EvoMap, where verifier-confirmed execution trajectories are consolidated into structured Gene. To evaluate this setting, we introduce the Long-Workflow Benchmark (LongWoF-Bench), comprising 778 machine-verifiable tasks across code generation, agent-environment synthesis, mathematical reasoning, and rule following. On the 252 tasks with verifier-confirmed Opus trajectories, evolved EvoMap Gene outperform Skill across all seven evaluated models by 8.7-15.5 percentage points, with the gains extending to consumer models from different model families. In contrast, reference-distilled Gene do not exhibit the same advantage, indicating that compact representation alone is insufficient and that Gene utility is closely associated with verified experience provenance. For Claude Opus, Gene reuse also completes 39 more tasks than Skill while reducing solve-time token consumption by 9.9%. Together, these results show that verified execution experience can be retained and shared as a reusable external resource, enabling models to improve long-workflow completion without repeatedly paying the full cost of experience discovery."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "The Infinite, in Finite Time",
+    "authors": "Rayhana Amjad, Rob van Glabbeek, Liam O'Connor",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23096v1",
+    "source": "arXiv",
+    "abstract": "Linear-time temporal properties, such as those described by Linear-time Temporal Logic, are typically modelled as sets of infinite traces. Yet, in a run-time verification context, such as when testing or monitoring a system, only a finite prefix of the system's behaviour can be observed. For some properties, these finite prefixes may be definitive---a yes or no answer can be given without further observation. By enriching the semantics of LTL with these definitive prefixes, we give a proper inductive accounting of the semantics of LTL$_3$, a multi-valued variant of Linear-time Temporal Logic for run-time verification applications. The semantic descriptions of LTL$_3$ in previous work are given only in terms of their relationship to conventional LTL. We show that the semantics of LTL and of LTL$_3$ are isomorphic. In addition, we formalise the formula progression evaluation technique, popularly used in runtime verification contexts, and show its soundness and completeness up to finite traces with respect to our semantics. Then, we turn to linear-time properties more generally: using our theory of definitive prefixes, we re-prove the well-known safety-liveness decomposition theorem, and reconstruct the topology of infinite traces. We define monitorability for properties, providing neat topological characterisations for various monitorability classes, and arrange them into a hierarchy. All of our definitions and proofs are mechanised in Isabelle/HOL."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Atomic Common-Day Invoice Clearing under Causal Daily Scheduling: Path-Enabled and Bounded-Cycle Policies",
+    "authors": "Peplluis Esteva de la Rosa, Sai Srikanth Madugula",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23060v1",
+    "source": "arXiv",
+    "abstract": "Late payment propagates working-capital pressure through supply networks because firms are simultaneously creditors and debtors. We develop an atomic-record temporal invoice-graph method for path-enabled clearing and compares it with complete-candidate bounded-cycle netting under a causal daily greedy schedule.Each invoice remains a residual record with its issue date, due date, amount, and identifier. A candidate is executable through source capacity active on every supporting edge on one common day. A non-bilateral two-edge path reduces two invoice legs, creates a direct settlement instruction between the endpoints, and preserves net positions for all participants on the combined invoice-plus-instruction state; payable-mass reduction is distinguished from invoice compression. The empirical sequence contains 749,952 invoices issued from 2012 through 2023, totalling EUR99.705 billion, and maintains one rolling state across annual boundaries so bridge invoices are introduced once and residual balances continue. Path clearing reduces 48.202% of issue-cohort mass,compared with 43.347% for length-eight cycle netting, an advantage of EUR4.841 billion and 4.855 percentage points. It leads materially in ten cohorts, is practically tied in 2013,and trails in 2012. The result survives alternative ordering, mixed path-cycle policies, cycle-length sensitivity, component resampling, acceleration constraints, and fragment replay.In reciprocal 2022, where almost all local paths lie in the cyclic core, path clearing still leads.Tractable full-information linear programs show path advantage and path-cycle complementarity.The findings establish a policy-level benefit, not global optimality or welfare dominance, and motivate future asynchronous agent-to-agent clearing built around deterministic common-day verification, private mandates, reservations, explicit consent, and atomic commit."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+    "authors": "Yi Zhu, Xiongwei Wu, Qiyi Wang, Tingyu Qu, Jiajun Liu, Sihan Cao, Long Chen, Weigao Sun, Feida Zhu, Yiran Zhong, Steven Hoi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.23035v1",
+    "source": "arXiv",
+    "abstract": "As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential. Yet existing benchmarks fall into two camps, each with a critical blind spot: GUI-centric benchmarks test surface-level screen manipulation while overlooking background tool use and long-horizon planning, whereas static function-calling benchmarks rely on offline API matching that is detached from real runtime constraints. To close this gap, we present \\textbf{MobilePA-Bench}, an interactive, stateful, and tool-centric benchmark for evaluating the tool-calling and planning abilities of mobile planning agents. MobilePA-Bench runs on an executable sandbox that maintains live application databases and returns structured feedback, spanning $13$ functional domains and $212$ realistic mobile tools. Beyond basic tool use, it evaluates a central planning agent along three advanced dimensions: \\emph{(1)~Sub-agent Collaboration}---decomposing a complex task and delegating specialized work to capable sub-agents; \\emph{(2)~Memory Usage}---recalling stored memories, user profiles, and past preferences to resolve implicit requests; and \\emph{(3)~Skill Usage}---invoking pre-packaged composite skills instead of planning every step from scratch. Extensive experiments show that current frontier LLMs remain unreliable in mobile settings: performance drops sharply under strict tool ordering, permission limits, and unexpected runtime errors. By pairing an interactive function-calling sandbox with evidence-based verification, MobilePA-Bench serves as both a practical diagnostic benchmark and an interactive foundation for agentic reinforcement learning---accelerating the development of dependable mobile agents."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Rational Dolev--Yao Attackers: Decidable Incentive-Aware Verification of Security Protocols in Strategic Logic",
+    "authors": "Ioana Boureanu, R. Ramanujam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.22954v1",
+    "source": "arXiv",
+    "abstract": "Symbolic protocol verification models the network attacker as a Dolev--Yao (DY) intruder, which does everything its knowledge permits, whether or not it serves any purpose; real adversaries instead maximise utility, attacking only when the payoff is positive. We introduce a rational Dolev--Yao attacker, a DY intruder whose actions carry costs and whose security-violating goals carry rewards, and call a protocol rationally secure when no intruder strategy achieves a violation with strictly positive utility, expressed in a weighted fragment of ATL (WATL). We prove this decidable for a bounded rational DY intruder over a finite cost-annotated concurrent game structure, characterise its complexity, and show it strictly refines DY security: some protocols are DY-insecure yet rationally secure, separated by a computable threshold. We illustrate the framework on two contrasting use-cases: an authenticated payment under session uncertainty, where a rational intruder must strategise across indistinguishable sessions and its imperfect information strictly raises the attack cost a designer must price against; and ThreeBallot, a cryptography-free scheme where we pinpoint the bribe-to-benefit ratio below which no rational coercer attacks."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Extensive Air Showers Parameters Estimation Using Machine Learning Techniques with Simulations of the FAST Telescope",
+    "authors": "Jiří Kvita, Monika Machalová, Radek Přívara, Rostislav Vodák, Jan Tomeček",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.22940v1",
+    "source": "arXiv",
+    "abstract": "We present the capabilities of the Fluorescence detector Array of Single-pixel Telescopes (FAST) observatory in the single telescope configuration as an important step towards the possible future large-field observatory for detecting ultra-high-energy cosmic rays. Reconstruction of main shower physics parameters are explored on noise-free simulated events using machine learning techniques in the challenging domain of a low-intensity transient signal. We find a very good correlation between the true and reconstructed energy of the shower even with the information from just the four photomultipliers of the single FAST telescope, and a reduced performance for the maximum of the shower development Xmax, using various architectures of artificial deep and convolutional neural networks, with a comparison to a benchmark gradient boost regression model. The resolution in the energy is found at the sub-percent level, while in Xmax it is~$5\\%$. The relative difference between predicted and true values is under one percent for energy, while for Xmax it ranges from $-8\\%$ to $+17\\%$, which can be attributed to the limited information from the single FAST telescope configuration. The results constitute an important capabilities verification and a lesson learned with implications for established FAST prototypes as well as for more complex configurations of the FAST observatory under construction."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Execution-Anchored Hallucination Calibration Reranking for Verilog Code Generation",
+    "authors": "Guang Yang, Xing Hu, Xiang Chen, Terry Yue Zhuo, Xin Xia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.22938v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in code generation, yet their performance degrades significantly on low-resource Hardware Description Languages such as Verilog. While multi-candidate sampling improves the likelihood of generating correct solutions, au-tomatically selecting the optimal candidate remains an open challenge. Through a systematic empirical study across nine models and two benchmarks, we identify two critical limitations:(1) existing execution-based reranking methods, which rely on testbench pass/fail outcomes, exhibit poor domain transferability due to low-quality generated testbenches; and (2) LLM-as-a-Judge suffers from reasoning hallucination, producing incon-sistent judgments for execution-equivalent code. These findings reveal two signal types with orthogonal errors: execution signals(deterministic but testbench coverage limited)and reasoning signals (semantically rich but hallucination-prone). Their orthog-onality suggests combining the two signals, yet in our experiments letting the reasoner directly observe execution results merely anchors its judgments on test outcomes; we therefore acquire the two signals independently and fuse them only at the decision stage. Based on these insights, we propose EAHC, an Execution-Anchored Hallucination Calibration reranking framework that anchors reasoning judgments to execution behavior so that execution-equivalent candidates receive consistent scores, which implements a dual-channel architecture: EAHC-R, a 4B reasoning discriminator; and EAHC-T, a testbench generator leveraging RAG for execution verification."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Revised symmetry rule and intrinsically time-reversal symmetry breaking pairing in multi-orbital superconductors",
+    "authors": "Chang-Youn Moon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.22902v1",
+    "source": "arXiv",
+    "abstract": "We investigate the basic symmetry rule for the particle permutation in superconducting (SC) pairing states by examining the numerical solution of the linearized Eliashberg equation for Sr$_2$RuO$_4$. We find that the general multi-band, frequency-dependent SC gap function does not simply transform to itself up to the minus sign with either orbital ($\\hat{O}$) or frequency ($\\hat{T}$) exchange between two pairing electrons, contradicting the common assumption which has been used without verification. It originates from the fact that paring interactions are not invariant under the $\\hat{O}$ or $\\hat{T}$ operation, and is demonstrated to be essential to correctly interpret and understand multi-band SC states. One of unique properties implied by our newly found symmetry rule is the possibility of the complex eigenvalue in the linearized gap equation where the corresponding gap functions $Δ$ always have real and imaginary components both non-zero in real frequencies, inherently breaking the time-reversal symmetry. Our numerical results suggest the possibility of this unique pairing in a real material, Sr$_2$RuO$_4$, for which the Hundness of the material is found to play a key role. The revised symmetry rule not only leads us to more comprehensive understanding of the known SC states, but also opens new possibilities into exotic and unique states."
+  },
+  {
+    "date": "2026-08-24",
+    "title": "AraDetox: A Multi-Dialect Arabic Detoxification Dataset",
+    "authors": "Mo El-Haj",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.22894v1",
+    "source": "arXiv",
+    "abstract": "Arabic harmful-language detection has received considerable attention, yet Arabic text detoxification remains underexplored. We introduce AraDetox, a multi-dialect Arabic detoxification dataset comprising 10,500 harmful social-media posts and 84,000 detoxified rewrites generated using GPT-5 and Gemini 2.5 Flash across Modern Standard Arabic, Gulf, Levantine, and Egyptian Arabic. The generated outputs were assessed through human evaluation and automatic analyses of lexical change, semantic preservation, sentiment, and dialectal style. Results show that detoxification is primarily a meaning-preserving rewriting task: substantial lexical and structural reformulation is accompanied by consistently high semantic similarity. Human evaluation confirms successful harmful-language removal while largely preserving the original meaning. Dialectal analyses further indicate that the generated variants exhibit measurable stylistic alignment with reference Arabic dialect corpora. Comparison with existing resources highlights two complementary approaches to detoxification: minimal-edit lexical substitution and meaning-preserving reformulation. Our findings demonstrate that large-scale Arabic detoxification resources can be constructed through LLM-assisted generation and human verification. The dataset is publicly available at https://github.com/ArabicNLP-UK/AraDetox to support future research on Arabic detoxification, safe text generation, and multi-dialect Arabic NLP."
+  },
+  {
+    "date": "2026-8-24",
+    "title": "RTL-to-GDSII Implementation of a Low-Power Banked Cache using Selective Clock Gating",
+    "authors": "John Munigala, E. Chandrasekhar",
+    "publish": "2026 7th International Conference on Smart Systems and Inventive Technology (ICSSIT)",
+    "url": "https://doi.org/10.1109/icssit69151.2026.11656521",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "LLM-ReSum: A Framework for LLM Reflective Summarization Through Self-Evaluation",
+    "authors": "Huyen Nguyen, Haoxuan Zhang, Yang Zhang, Haihua Chen, Junhua Ding",
+    "publish": "2026 IEEE 12th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)",
+    "url": "https://doi.org/10.1109/bigdataservice70481.2026.00012",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Boosting LLM Serving in Computility Networks Via a Publish-Subscribe Framework",
+    "authors": "Yiliang Guo",
+    "publish": "2026 IEEE International Conference on Joint Cloud Computing (JCC)",
+    "url": "https://doi.org/10.1109/jcc72984.2026.00022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Hybrid LLM and Embedding Ontology Matching with Reference Ontologies",
+    "authors": "Sarah Dahir, Abderrahim El Qadi",
+    "publish": "2026 International Conference on Circuit, Systems and Communication (ICCSC)",
+    "url": "https://doi.org/10.1109/iccsc71566.2026.11650532",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "ReflectiChain: Grounding Long-Horizon LLM Planning against Semantic-Execution Drift",
+    "authors": "Jia Luo",
+    "publish": "IEEE Signal Processing Letters",
+    "url": "https://doi.org/10.1109/lsp.2026.3726840",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "RACE: Risk-Aware Cloud-Edge Orchestration with Online Adaptive Calibration for Trustworthy LLM Services_supp1-3726297.pdf",
+    "authors": "Zhihao Wang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tsc.2026.3726297/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "TrustTrace: Provenance-Aware Tracing of Indirect Prompt Injection Propagation in LLM-Assisted Learning Workflows",
+    "authors": "Jingyi Chen, Rongqing Lu",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3726909",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Reliable Structured Feedback Generation for Educational LLM Systems Under Early Exit",
+    "authors": "August Chao, QingFeng Lin",
+    "publish": "2026 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+    "url": "https://doi.org/10.1109/icce-taiwan71481.2026.11652794",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Adaptive Ambiguity Reduction in Crop Disease Diagnosis via an LLM Agent",
+    "authors": "Khadija Ghommat, Outmane Bourkoukou, Aziz Ouaarab",
+    "publish": "2026 International Conference on Circuit, Systems and Communication (ICCSC)",
+    "url": "https://doi.org/10.1109/iccsc71566.2026.11650340",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Auditable LLM Safety-Judge Selection via Confidence-Interval Filtering on Unsafe Recall",
+    "authors": "Jixiang Yang, Junfei Yi, Jinhan Li, Shengjie Ma",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3726251",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "VEGAS: Visual Exam Grading Automation System with Coordinate-Guided LLM Markup",
+    "authors": "Chih-Chieh Yang, I-Wei Lai",
+    "publish": "2026 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+    "url": "https://doi.org/10.1109/icce-taiwan71481.2026.11652723",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Coaching Feedback Generation for Cartwheel Movements via DTW-Based Motion Analysis and LLM Prompting",
+    "authors": "Youji Ochi, Naoki Teramoto",
+    "publish": "2026 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+    "url": "https://doi.org/10.1109/icce-taiwan71481.2026.11652382",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Deterministic and Trustworthy LLM-Driven Semantic Knowledge Graph Construction",
+    "authors": "Chukwudi Uwasomba, Nonso Nnamoko, Ioannis Korkontzelos",
+    "publish": "2026 International Conference on Circuit, Systems and Communication (ICCSC)",
+    "url": "https://doi.org/10.1109/iccsc71566.2026.11650062",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Automatic Test Case Generation Method by Structuring Specification Documents Using LLM",
+    "authors": "Taiga Ishinari, Yuki Shimizu, Kiyoshi Ueda",
+    "publish": "2026 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+    "url": "https://doi.org/10.1109/icce-taiwan71481.2026.11652464",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Green-Agentic Routing: A Frugal Multi-Agent Framework for Carbon-Aware LLM Pedagogy",
+    "authors": "Khadija Himri, Céline Joiron, Mohcine Kodad",
+    "publish": "2026 International Conference on Circuit, Systems and Communication (ICCSC)",
+    "url": "https://doi.org/10.1109/iccsc71566.2026.11650131",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "OmniDroneX: An LLM-Assisted Holistic Drone-as-a-Service Ecosystem",
+    "authors": "I-Ling Yen, Akeem Mohammed, Farokh Bastani, San-Yih Hwang",
+    "publish": "2026 IEEE International Conference on Joint Cloud Computing (JCC)",
+    "url": "https://doi.org/10.1109/jcc72984.2026.00012",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "UNAS: Urgency- and Fairness-Aware Scheduling for SLO-Oriented LLM Serving",
+    "authors": "Tiannan Fu, Jianxiong Liao, Xu Chen, Zhi Zhou",
+    "publish": "2026 IEEE International Conference on Joint Cloud Computing (JCC)",
+    "url": "https://doi.org/10.1109/jcc72984.2026.00058",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Comparative Evaluation of Llama Guard 3 and GPT OSS Safeguard as LLM Guardrails for a University Administrative Chatbot",
+    "authors": "Jan Walczak, Bartosz Sawicki",
+    "publish": "2026 Progress in Applied Electrical Engineering (PAEE)",
+    "url": "https://doi.org/10.1109/paee71887.2026.11660667",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "LLM-Enhanced Exploit Mapping from CVE Descriptions to MITRE ATT&amp;CK Techniques",
+    "authors": "Ming-An Chung, Yun-Hong Chen",
+    "publish": "2026 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+    "url": "https://doi.org/10.1109/icce-taiwan71481.2026.11652540",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-24",
+    "title": "Security Rule Embedding and Static-Analysis-Guided Repair for LLM-Based Intelligent Multimedia UI Code Generation",
+    "authors": "Shuning Ping, Guangchi Liu",
+    "publish": "2026 International Conference on Intelligent Multimedia, Networking, and Security (IMNS)",
+    "url": "https://doi.org/10.1109/imns67862.2026.11655277",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
