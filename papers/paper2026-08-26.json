@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-26",
+    "title": "RTLGuard: A Lightweight Teacher-Student Defense for Poisoned RTL Code Generation Models",
+    "authors": "Mahshid Rezakhani, Kimia Azar, Hadi Kamali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26049v1",
+    "source": "arXiv",
+    "abstract": "The rapid advancement of large language models (LLMs) is driving a shift toward automated register transfer level (RTL) code generation, enabling designers to translate high-level specs. into synthesizable hardware. However, this reliance on pre-trained (3rd-party) fine-tuned models may introduce critical trust issues, as the training data and adaptation process of these models are often opaque. Thus, adversaries (even model providers) may embed hidden backdoor threats during fine-tuning, allowing malicious behavior, e.g., hardware Trojans, to be triggered by seemingly benign prompts given by victim user at inference time. In this paper, we introduce RTLGuard, to mitigate such a trust issue in AI-enabled IC supply chain. Rather than prohibitive computational cost of full-parameter retraining, RTLGuard leverages a teacher-student framework designed to sanitize compromised RTL generation models by (1) fine-tuning a small-scale, \"clean\" teacher model on a limited set of trusted RTL data, (2) guiding the poisoned target model via a composite teacher-student objective, and (3) incorporating feature alignment and knowledge distillation to suppress malicious behaviors. Our experiments across various LLM architectures demonstrate that RTLGuard significantly reduces the Attack Success Rate (ASR) while preserving the functional correctness and synthesizability of the generated RTL code."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems",
+    "authors": "Srimonti Dutta, Akshata Kishore Moharir",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26036v1",
+    "source": "arXiv",
+    "abstract": "Answer accuracy is an insufficient reliability signal for LLM data agents. In structured-data tasks, a benchmark-correct answer can be produced by an invalid trace. This paper introduces Trace Integrity, a deployment reliability criterion for evaluating whether the computation recorded behind an answer is explicit, executable, schema-valid, operator-faithful, replayable, answer-consistent, and auditable. We identify the Structure Gap as the deployment failure mode that makes Trace Integrity necessary: natural-language reasoning and free-form rationales do not reliably specify the operator-level programs required by real-world systems. We operationalize Trace Integrity with execution contracts, structured artifacts that bind user intent to schema elements, operator plans, assumptions, executable queries, verification status, and final-answer linkage. We also introduce CAIT (Correct Answer / Invalid Trace) Rate, which measures how often answer-only evaluation counts computationally unsupported outputs as successes. In an empirical demonstration on BIRD Mini-Dev, Direct SQL, Operation Summary + SQL, and Contract-First SQL achieve answer accuracies of 20%, 22%, and 24%, while their Trace Integrity Pass Rates are 39%, 43%, and 40% and their CAIT Rates remain high at 55%, 59.1%, and 45.8%, showing that answer accuracy, trace validity, and silent-failure risk are distinct evaluation signals. Real-world LLM data agents should, therefore, be evaluated not only by whether their outputs match a reference answer, but by whether those outputs are backed by auditable computation."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs",
+    "authors": "Sheng Liang, Yongyue Zhang, Nathanael Brian, Hang Lv, Hao Wang, Chen Zhang, Yong Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26004v1",
+    "source": "arXiv",
+    "abstract": "Agentic LLM pipelines face escalating inference costs as context accumulates across retrieval, tool use, and multi-turn interactions. To control latency, deployments routinely compress inputs, but this degrades task accuracy. Speculative decoding (SD) accelerates generation losslessly, yet it assumes the drafter and verifier share an identical context, preventing SD from resolving the accuracy-overhead trade-off. We propose AsymSpec, an asymmetric speculative decoding framework that breaks this symmetry: a lightweight drafter reads the full input while the large verifier operates on the compressed view. The drafter steers the verifier via a contrastive $δ$-fusion of logits, modulated by a divergence-aware acceptance gate that preserves verification stability and high draft acceptance rates. Evaluated across four agentic capabilities and two end-to-end agent benchmarks, AsymSpec reaches $\\approx 90\\%$ of full-context accuracy on average, delivering $1.3$--$1.7\\times$ throughput speedups at $0.2$--$0.3\\times$ the compute cost on isolated text capabilities. These results show that asymmetric context access yields substantial gains precisely when compression discards critical reasoning signals."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Formal, Executable and Explainable Runtime Monitoring of Spoken Air Traffic Control Operational Procedures",
+    "authors": "Roberto Luvini, Giacomo Longo, Alessandro Armando, Enrico Russo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25926v1",
+    "source": "arXiv",
+    "abstract": "Air traffic control procedures are executed through spoken exchanges between controllers and pilots. These interactions are essential to the safety of air transportation: failures in their execution can create severe operational hazards, as evidenced by past fatal accidents. Assessing whether an instruction has been followed requires relating what was said to the aircraft concerned, its state, and the obligations that pilots must meet. We present a runtime verification framework that monitors such procedures by checking controller-pilot exchanges, surveillance data, and onboard observations. The framework parses radio communications into events linked to the entities they concern and merges them with surveillance and onboard observations into a time-stamped trace. The ICAO-derived obligations as formalized as temporal formulas with explicit time bounds and evaluated over execution traces. Every violation is reported along with the breached obligations and the observations that support the verdict. With real traffic, the complete pipeline reaches an F1 of 0.85 against blind human-annotated violations; in 1,495 synthetic situations derived from two public corpora, the monitor logic returns the expected verdict in every case. In two historical accidents reconstructed from official investigation reports, the monitor identifies the same procedural deviations documented by the investigators."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "From Passive Response to Proactive Correction: Enhancing LLM Robustness Against Input Fact Perturbations",
+    "authors": "Ping Wang, Xiangguo Sun, Bingbing Xu, Guocong Li, Xiaofeng Meng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25894v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) frequently produce confident yet factually incorrect responses when user inputs contain misleading premises, a phenomenon we attribute to fact perturbations in the input. Existing approaches to hallucination mitigation typically assume reliable user inputs, overlooking how such factual errors can actively mislead model reasoning. To address this vulnerability, we propose DEDUCE, a three-stage framework that transforms LLMs from passive responders into proactive error correctors. DEDUCE operates in three stages: (1) detect errors through fine-grained fact extraction and verification; (2) devise correction strategies via multi perspective deliberation; and (3) correct misconceptions while delivering reliable answers. We also present MisFactQA, a dataset containing factual errors of varying degrees, and propose new metrics for evaluating model robustness. Experiments on TruthfulQA, FalseQA, and our MisFactQA benchmark demonstrate that DEDUCE significantly improves both accuracy and error correction capability. Consistent gains across Qwen, LLaMA, and Gemma families confirm its effectiveness and scalability."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "MeMark: Membrane-Space Watermarking for Spiking Neural Networks",
+    "authors": "Roberto Riaño, Gorka Abad, Stjepan Picek, Aitor Urbieta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25738v1",
+    "source": "arXiv",
+    "abstract": "Spiking Neural Networks (SNNs) are increasingly distributed as pretrained checkpoints and reused as backbones for new tasks. However, current SNN watermarks are mainly verified against the model output. Thus, a user who replaces the output head can keep most of the original network while removing the evidence used for verification. We present MeMark, a watermark designed for the checkpoint-reuse setting. Instead of storing the watermark in the output head, MeMark embeds a multi-bit identifier in the internal membrane state of selected Leaky Integrate-and-Fire (LIF) neurons. A secret input drives each selected neuron to the chosen side of its own firing threshold, and the same threshold is later used to recover the secret bit, so the verifier does not need a learned decoder. We evaluate MeMark across recurrent, convolutional, residual, and transformer SNNs. On a 215.4M-parameter SpikeGPT checkpoint, all 20 independent 64-bit keys pass the fixed 51/64 verification rule, while none of the $30\\,000$ fresh random keys pass when tested against all 20 protected checkpoints and the clean model. All 20 genuine keys also remain above the threshold after fine-tuning, 90\\% pruning, int8 quantization, and output-head replacement. Under our stated threat model, adaptive attacks can weaken the watermark but do not remove the ownership evidence in the settings we test. Additionally, we study false ownership claims, key-aware and key-agnostic removal, partial key disclosure, rollback, and extraction into a student. The results show that MeMark can provide evidence of checkpoint derivatives, while being resistant to the adversary's attacks and complete head replacement."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Quantitative tiling stability from quadratic discrepancy in Hamming spaces",
+    "authors": "Valery, Grishin, Aryeh Lev Zabokritskiy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25716v1",
+    "source": "arXiv",
+    "abstract": "Quadratic ball discrepancy defines an energy on codes in finite Hamming spaces. At perfect-code parameters, its exact minimizers are the perfect codes. We fix the alphabet size, length, and code cardinality and compare all codes with these parameters. We prove tiling-defect stability: excess discrepancy above the perfect-code benchmark controls the squared deviation of the distinguished ball-covering multiplicity from one. For one-error parameters satisfying sphere-packing and Lloyd integrality, the lower coefficient is $κ_{n,q}/q^2\\geq1$. The uniform floor one is sharp, while the certified parameter-dependent coefficient can be much larger. An explicit parameter-dependent upper estimate is also available, and the two certified coefficients can be far apart. For any two-error parameter pair with $n\\geq5$ satisfying sphere-packing divisibility and having two distinct integral Lloyd roots in the Hamming weight range, we obtain an explicit positive coefficient without assuming that a perfect code exists. For alphabets of size at least four, this conditional coefficient has a closed form and fixed-alphabet asymptotics. Direct certificates for the repetition and Golay families, combined with perfect-code classification, give tiling-defect stability for every nontrivial perfect code. Here stability concerns the ball-covering multiplicity profile, not symmetric-difference proximity to a particular perfect code. The defect is also a normalized chi-square smoothing error under uniform ball noise, so excess discrepancy controls holes, overlaps, defective ambient points, total variation, and Rényi divergence from uniformity of the ball-noise output. Competing codes need not be linear or satisfy a distance or error-correction constraint."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "AI Slop and Hallucinations in Vulnerability Assessment: A Survey on Reasoning Failures and Trustworthy Mitigation",
+    "authors": "Junchen Ding, Jialiang Dong, Yichen Zhu, Yi Liu, Gelei Deng, Willy Susilo, Siqi Ma, Yuekang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25667v1",
+    "source": "arXiv",
+    "abstract": "The integration of Large Language Models (LLMs) into cybersecurity has transformed vulnerability assessment, but it has also produced a trustworthiness crisis driven by the unchecked proliferation of \"AI slop.\" These artifacts, hallucinated vulnerabilities, plausible but incorrect patches, and semantically repackaged bug reports, impose a cognitive burden on human triage pipelines that mirrors a denial-of-service attack. This paper surveys the empirical evidence, identifies a unifying mechanism, and traces a path toward trustworthy triage. We formalize a taxonomy of AI slop grounded in a structured literature review and dissect its root cause: the gap between the causal deductive reasoning of security experts and the autoregressive probabilistic generation of current LLMs. We operationalize this gap through a measurable proxy, the Deductive Coverage Score, and show that chain-of-thought prompting and tool-using agents narrow but do not close it. We review mitigation strategies and argue that passive detection and watermarking target provenance rather than correctness, facing fundamental entropy constraints. We instead advocate for active neuro-symbolic verification, mapping each pipeline component to prior systems with documented limits on security inputs. Finally, we specify two evaluation instruments, CVE-Bench and Slop-Score, including dataset construction, metric formulas, and anti-gaming provisions. By shifting evaluation from linguistic fluency to mathematical verifiability, this survey provides a roadmap for securing emerging AI-driven triage systems."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Data Citation for Large Language Models: A Challenge",
+    "authors": "Gianmaria Silvello",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25663v1",
+    "source": "arXiv",
+    "abstract": "Large language models increasingly mediate access to information, and a growing body of work asks whether they cite the sources behind their outputs. That work treats citation as a verification device and applies it to textual documents. Scholarly citation serves two further functions, credit and provenance, and it applies to data as much as to text. This paper argues that data citation for large language models is an open challenge, distinct from document-level citation grounding and harder to solve. We ask how such models should cite data so that outputs stay verifiable, provenance stays traceable, and credit reaches data creators and curators. We set out three research directions. Training data attribution has to turn influence estimates into references for corpora absorbed into model parameters. Data citation at inference time has to identify datasets, subsets, and query results at the right granularity and fixity. Citing knowledge graph facts has to define what a reference to a single triple denotes and how credit propagates along provenance. Progress on all three depends on joint work across the database, information retrieval, knowledge representation, and artificial intelligence communities."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "From General Agents to RCA Experts: A Self-Evolving Harness for Root Cause Analysis",
+    "authors": "Haiyu Huang, Jiewei Lyu, Zhihan Jiang, Jinyang Liu, Xiao He, Tieying Zhang, Wu Xiang, Michael R. Lyu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25661v1",
+    "source": "arXiv",
+    "abstract": "Automated root cause analysis (RCA) with large language models (LLMs) has drawn growing attention. Today, SREs typically automate RCA with LLMs in one of two ways: directly using a general-purpose agent (e.g., Codex or Claude Code) for diagnosis, or building a specialized RCA agent from scratch. As mainstream general agents grow more capable and iterate quickly, our quantitative study finds that the former now often surpasses the latter. Its accuracy, however, still falls short of production needs, and this gap stems mainly from the external adaptation layer outside the agent's general capabilities, namely the harness. We therefore argue that LLM-based RCA should focus on this external harness, reusing the strong general capabilities of a modern agent rather than rebuilding an agent from scratch. A key capability of such a harness is to self-evolve, accumulating system-specific experience from past diagnoses so that it gets better the more it is used. We introduce OpsHarness, a self-evolving RCA harness that turns diagnosis experience into reusable expertise. Its data plane combines layered operational knowledge with an idea-card tool library, while its control plane coordinates setup, diagnosis, evolution, and verification. During evolution, OpsHarness contrasts successful and failed trajectories, converts their evidence into atomic proposals, and admits updates only through a dual-gate verification process designed to prevent overfitting and regression. Across two public benchmarks and an industrial deployment, OpsHarness achieves 59.0\\% top-1 accuracy, improving over a bare general agent by 63.4\\% and over baseline RCA agents by 4.02$\\times$."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "AutoVerifier: Residual-Guided Non-Parametric Optimization for Reference-Based Answer Verification",
+    "authors": "Zebei Zhao, Zhihao Shi, Minqi Shi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25637v1",
+    "source": "arXiv",
+    "abstract": "Reference-based verifiers are important for evaluating reasoning models and providing accurate outcome rewards in reinforcement learning with verifiable rewards. To improve verification accuracy, prior work has explored rule-based, model-based, and tool-augmented verifiers for checking answer equivalence across diverse answer forms. However, the equivalence of answer forms such as $1+3.14$ and $1+π$ may depend on the question and scoring criterion. We frame such implicit assumptions as verifier inductive biases. To address this challenge, we propose AutoVerifier, a residual-guided non-parametric optimization method that learns these biases from recurring verifier errors. Specifically, AutoVerifier records these biases in rule cards and promotes them to code modules or prompt guidance only after replay validation detects no direct regressions, keeping accepted updates auditable, editable, and reusable. Experiments on four verifier benchmarks demonstrate that AutoVerifier outperforms state-of-the-art verifiers by a large margin."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "A Hierarchical Synergistic Deep Learning Framework Integrating Composition, Structure, and Ionic Transport for Solid-State Electrolyte Discovery",
+    "authors": "Hongwei Du, Dingyang Lv, Baole Wei, Yongheng Li, Feng Yu, Ziheng Lu, Siqi Shi, Hong Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25592v1",
+    "source": "arXiv",
+    "abstract": "Inorganic solid-state electrolytes must combine high room-temperature ionic conductivity, a wide electrochemical window, excellent electronic insulation, and favorable mechanical compliance. Single models struggle to support reliable multi-objective screening across vast chemical spaces because of training-data distribution mismatch, cross-property dataset heterogeneity, and scarce kinetic transport data. To overcome these limitations, we develop a hierarchical synergistic deep-learning framework that sequentially coordinates efficiency, accuracy, and reliability through four complementary modules. The in-house-developed L-G-DCNN and a multi-fidelity implementation built on DenseGNN serve as compositional and structural experts for thermodynamic coarse screening and multi-property evaluation, respectively; MatterSim and system-specific DeePMD models provide transport pre-assessment and kinetic validation. Systematic benchmarks show that each module outperforms mainstream counterparts in its task, while retrospective validation establishes dual closed-loop verification of module-level accuracy and end-to-end workflow reliability. Applied to 30,364,908 Alex/ICSD-derived candidates, the framework identifies 97 high-performance candidates with room-temperature ionic conductivities of 0.109--59.0 mS/cm, including 94 halides, one borohydride, and two oxides. Consistency with independent experimental data confirms that 76 of the 94 halides fall within reported high-conductivity structural regions. Analysis reveals that Li$^{+}$ jump-network connectivity, rather than the number of geometric Li sites, is the core determinant of room-temperature ionic conductivity. Li-defect engineering effectively enhances oxide transport, whereas the inherent rigidity of the O$^{2-}$ framework suggests a potential upper limit on oxide electrolyte performance."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory",
+    "authors": "Kazuki Nakayashiki",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25553v1",
+    "source": "arXiv",
+    "abstract": "An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record. Under a scarce verification budget, does the agent recover the withdrawal, and if not, is the error avoidable without spending more? We model supersession explicitly -- historical provenance is immutable; what changes is which record is current -- and assign by design the memory's form, the world's state (source current or superseded), and the verification policy at a fixed budget of two records: the agent's own allocation, or the same budget with one slot re-assigned to the critical provenance path or to a random record. With a constraint stated, agents inspected its provenance path in about one episode in five; when that constraint had been superseded, native allocation produced stale-consistent decisions in 77.3%, 74.7% and 74.7% of episodes across a primary run, a fresh-wording replication and a held-out domain. Re-assigning one slot to the critical path raised current-record-consistent decisions by +74.0, +72.7 and +61.3 points, positive in six of six models in each of those runs, and changed nothing when the record agreed with the memory. The held-out scenario was later found to contain a temporal inconsistency; a robustness replication with one sentence corrected, deposited externally before execution, gave +73.3 points and is reported alongside the original. The intervention uses knowledge of the critical path and is not a scheduler; it identifies that the share of stale-memory error attributable to verification allocation is close to its structural ceiling. Memory systems may need freshness or supersession signals separate from relevance."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Reflection Steering: Disentangling Reflection from Reasoning in Activation Space for Token-Efficient Inference",
+    "authors": "Jiarui Hu, Zhiyuan Wen, Xiaoyun Liu, Jiaxing Shen, Yu Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25542v1",
+    "source": "arXiv",
+    "abstract": "Large reasoning models often produce reasoning traces with verification, revision, and backtracking. When reflection merely re-checks established results, it wastes reasoning tokens and increases latency. Most existing reflection steering methods add a label-derived mean-difference direction across preset layers, but its entanglement with reasoning and length signals destabilizes the accuracy-efficiency trade-off. In this paper, we propose Reflection Steering, a training-free framework for controlling reflection-associated computation within LLMs by disentangling reflection-related activations from general reasoning. Specifically, we contrast reflective and non-reflective hidden states at each LLM layer, denoise the resulting reflection directions with PCA, and orthogonalize them against general-reasoning directions. To limit downstream amplification from early-layer interventions, we calibrate each layer across multiple intervention strengths on a small set, retain only stable layers, and apply bounded projection removal to their residual-stream activations. We conduct extensive experiments across two public benchmarks and three open-weight LLMs against state-of-the-art activation-steering baselines. Results show that Reflection Steering reduces reasoning tokens by 16.9% on average across six matched settings. Besides, our method further introduces a bounded reflection intervention-strength parameter $α$, enabling deployment-time adjustment to balance token savings, accuracy, and generation stability."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Syn2Logic: End-to-End Neuromorphic Design Automation",
+    "authors": "Artur Podobas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25536v1",
+    "source": "arXiv",
+    "abstract": "In this work, we propose a view on electronic Neuromorphic Design Automation (eNDA), which we see as a design automation flow that bridges computational neuroscience modeling with traditional Electronic Design Automation (EDA) flow. We introduce the term, give examples of how it can be implemented, and design a prototype implementation: Syn2Logic. Syn2Logic is an entire eNDA framework, that allows neuroscientists to model neural behavior using a custom DSL and a compiler that takes the same model description down to synthesizable RTL hardware. We end the paper by applying the eNDA-flow through Syn2Logic to show how to -- without writing a single line of hardware description language (HDL) code-- (i) generate what we believe is the fastest C. elegans accelerator that runs significantly faster than state-of-the-art simulators, (ii) create (to the best of our knowledge) the fastest, most generic neuromorphic sudoku solver that outperforms CP-SAT and SCIP on TOP1465 puzzles, and (iii) create a 5.6 million FPS/Watt accelerator on a tiny FPGA that outperforms existing neuromorphic architectures in terms of speed and energy-efficiency on the MNIST dataset."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "ClueWeaver: Reward-Guided Dual-Agent Evidence Reasoning for Compact LLMs on Literary Long Narratives",
+    "authors": "Jihao Zhu, Zhiwei Yang, Wenxiao Zhang, Junqian Zhao, Qi You, Fangqi Wang, Zheyuan Deng, Hanzhe Yang, Yu Liu, Jin B. Hong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25531v1",
+    "source": "arXiv",
+    "abstract": "Humanities and social science research requires close reading of long narrative materials such as novels, scripts, archives, and case reports, yet many users have limited access to costly proprietary long-context models. Compact, locally deployable language models are a practical alternative, but directly feeding them an entire long context remains costly, hard to inspect, and prone to missing sparse evidence. We present ClueWeaver, an evidence-aware dual-agent framework for long-narrative question answering with compact local models. A Finder identifies passages containing answer-critical clues through retrieval-guided segmentation, while an Interpreter derives the answer from the selected evidence, produces rationales with paragraph-ID citations, and applies an internal self-calibration pass for high-risk questions. Both agents are optimized with reward-guided reinforcement learning: Finder rewards emphasize evidence retention and faithful paragraph-ID references, and Interpreter rewards emphasize correctness, grounding, and concise explanations. This decomposition makes evidence selection and reasoning more inspectable than end-to-end prompting. Experiments across multiple long-context narrative question answering and claim verification settings show that ClueWeaver substantially improves local end-to-end language models while providing evidence coverage and paragraph-referenced reasoning traces. Code is available at https://github.com/Ameame1/ClueWeaver."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Video-IFBench: Evaluating Instruction Following of Multimodal LLMs in Video Understanding Scenarios",
+    "authors": "Hongbo Liu, Peixian Chen, Sihan Liu, Peiyuan Zhang, Kai Zou, Dian Zheng, Xiaoxing Hu, Yuhao Dong, Mengdan Zhang, Yunhang Shen, Haoyu Cao, Wei Liu, Weibo Gu, Xing Sun, Shengjie Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25529v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) have shown strong performance in video understanding. However, their ability to follow instructions in this domain remains under-explored. Real-world video understanding requires models not only to interpret video content correctly, but also to satisfy diverse user-specified constraints. Existing benchmarks focus primarily on task accuracy rather than instruction adherence, leaving this capability insufficiently evaluated. To address this gap, we introduce Video-IFBench, a comprehensive benchmark for evaluating instruction following in video understanding, where models must satisfy diverse user-specified constraints, including those grounded in visual and audio content. We develop an instruction taxonomy with four templates, including single-task, multi-task, selection, and nested instructions, covering 32 task types and 39 manually designed constraint categories spanning both semantic and format requirements. To reduce annotation cost, we build a semi-automatic data construction pipeline that combines MLLMs, programmatic processing, and human verification, resulting in 1.5K samples. We conduct a large-scale evaluation of more than 20 recent MLLMs and show that video instruction following remains challenging for current models, especially for instructions with many constraints, semantic constraints, or complex conditional structures that require selecting the correct branch or path based on video content. We hope our work will facilitate future research on instruction following in video understanding scenarios."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
+    "authors": "Pengfei Zhou, Hexin Wang, Zhengfeiyang Zhang, Yixing Ma, Zhenglin Wan, Kaipeng Zhang, Wangbo Zhao, Yang You",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25518v1",
+    "source": "arXiv",
+    "abstract": "A common strategy for scaling world models is to train on more crawled video with more compute. We argue that this strategy is inefficient: scaling world models also requires a recursive data engine that offers grounded reward signals. The success of code agents illustrates why this matters. As code is executable, compilers and runtimes can provide high-quality rewards for Reinforcement Learning (RL) post-training of LLMs. By contrast, spatial generation still relies largely on fuzzy proxies such as CLIP scores. These signals are fuzzy and biased, making them hard to support RL post-training. Compared with these, game development provides a missing reward environment for spatial world models. A scene encoded by a game engine is an executable world specification: the engine can efficiently check collision, physics, navigability and bounded playability, while the developer provides the global verification signal by judging whether the scene should be accepted. Game development also provides real-world long-horizon trajectory data for RL post-training. We therefore propose Reinforcement Learning with Human-Engine Verification (RLHEV), a post-training paradigm that combines dense engine signals with implicit human acceptance feedback from the development process."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "OpenVeinNet: Robust Open-Set Finger Vein Verification with Dynamic Snake Convolution and Graph Learning",
+    "authors": "Sushrut Patwardhan, Raghavendra Ramachandra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25515v1",
+    "source": "arXiv",
+    "abstract": "Finger vein verification is a promising biometric modality for secure authentication because vascular patterns are internal, difficult to observe externally, and relatively resistant to presentation attacks. However, reliable verification remains challenging in open-set settings, where test identities are unseen during training and non-enrolled probes must be rejected at inference. This paper presents OpenVeinNet, a finger vein verification framework designed for cross-dataset and open-set evaluation. The proposed model combines Dynamic Snake Convolution with graph-based feature modelling. Dynamic Snake Convolution extracts local curvilinear and tubular vein structures using adaptive sampling, while the graph convolutional backbone models long-range topological relationships between vein regions. To improve the discriminative quality of the embedding space, we introduce a Centroid Angular Hybrid Loss, which jointly encourages intra-class compactness and inter-class angular separation for cosinesimilaritybased verification. Experiments are conducted on five public finger vein datasets: FV-300, MMCBNU, FV-USM, PolyU, and VERA. The method is evaluated using leaveonedatasetout training under both enrolmentbased unknownrejection and fullsubject verification protocols, and is compared with handcrafted and recent deep learning-based baselines. The results show that OpenVeinNet achieves strong cross-dataset generalisation, consistently low equal error rates, and competitive true accept rates at fixed false accept rate operating points. Ablation studies further confirm the individual and combined contributions of adaptive tubular feature extraction, graph-based relational modelling, and the proposed loss function. These findings indicate that explicitly modelling local vein geometry, global vascular relationships, and angularly compact embeddings is effective for openset finger vein verification."
+  },
+  {
+    "date": "2026-08-26",
+    "title": "CaSKG: Counterfactual-Causal Skill Graphs for Scalable Agent Skill Retrieval",
+    "authors": "Zhiyuan Li, Linyuan Gao, Xuechun Ding, Hongwei Chen, Yuan Wu, Yi Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.25500v1",
+    "source": "arXiv",
+    "abstract": "Reusable skill libraries allow large language model (LLM) agents to reuse procedural knowledge across tasks, but they also turn memory access into a challenging retrieval problem. Full-library prompting preserves coverage at high context cost, vector retrieval returns compact neighborhoods but treats skills as independent text, and graph-based retrieval can recover workflow context only when the edges that carry relevance are reliable. We propose CaSKG, a counterfactual-causal skill graph framework that calibrates procedural relations before retrieval. CaSKG first builds a high-recall directed candidate graph from semantic, lexical, input/output, and structural evidence, with repair evidence and an optional LLM judge further refining candidate scores. It then applies direction-conditioned textual counterfactual probes that remove, substitute, and reorder skill pairs, aggregates the evidence with Bayesian smoothing, and publishes a state-filtered weighted graph for task-conditioned expansion. The graph is constructed offline and used without changing the downstream agent policy or task interface. Across six LLM backbones on ALFWorld ID-140 and ScienceWorld U211, CaSKG achieves the highest task score in all twelve combinations of model and benchmark. Relative to Graph-of-Skills (GoS), it improves the six-model macro-average ScienceWorld score from 72.62 to 80.50 and ALFWorld success from 80.01\\% to 86.79\\%, while reducing mean environment steps on both benchmarks. Qualitative and ablation analyses further show that calibrated edges help retrieval preserve prerequisites, state-changing actions, verification routines, and final completion steps. These results position edge-confidence calibration as an effective route to compact and executable skill retrieval at scale\\footnote{Code is available at: https://github.com/ZhiyuanLi218/Caskg }."
+  },
+  {
+    "date": "2026-8-26",
+    "title": "LLM-Based Automatic Metamorphic Test Case Generation for LLM Fairness Testing",
+    "authors": "Francisca Isabella Manope, Adam Rafif Faqih, Daffa Hilmy Fadhlurrohman, Jati H. Husen, Rosa Reska Riskiana",
+    "publish": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest)",
+    "url": "https://doi.org/10.1109/aitest70988.2026.00012",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "Security Analysis of LLM-Generated Web API Backends",
+    "authors": "Abdul Ali Khan, Sampsa Rauti, Tuomas Makila",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3727682",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework",
+    "authors": "Gopalakrishnan Marimuthu",
+    "publish": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest)",
+    "url": "https://doi.org/10.1109/aitest70988.2026.00036",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "MASTEST: A LLM-Based Multi-Agent System For Testing RESTful APIs",
+    "authors": "Xiaoke Han, Hong Zhu",
+    "publish": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest)",
+    "url": "https://doi.org/10.1109/aitest70988.2026.00043",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "Beyond Bypass: Measuring Vulnerability Regression in LLM-Generated Security Patches",
+    "authors": "Yasmeen Rawajfih, Adiba Mahmud, Ross Arnold",
+    "publish": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest)",
+    "url": "https://doi.org/10.1109/aitest70988.2026.00029",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "VectorSec: A Web-Based AI Security Scanner for Systematic Evaluation of LLM Vulnerabilities",
+    "authors": "Muhammad Mudassar Yamin",
+    "publish": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest)",
+    "url": "https://doi.org/10.1109/aitest70988.2026.00022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "A Neurosymbolic Prolog Skill for LLM-Driven Service Placement",
+    "authors": "Jacopo Massa, Giuseppe Bisicchia, Patrizio Dazzi, Antonio Brogi",
+    "publish": "2026 IEEE 19th International Conference on Cloud Computing (CLOUD)",
+    "url": "https://doi.org/10.1109/cloud72782.2026.00014",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "Affective Language Processing for Mental Healthcare: A Survey of LLM-Based Approaches across the Care Continuum_supp1-3726877.pdf",
+    "authors": "Mengling Feng",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/taffc.2026.3726877/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "Phase-Aware Memory Repartitioning for Extended-Context Edge LLM Inference",
+    "authors": "Youngchul Yoon, Soonhoi Ha",
+    "publish": "IEEE Embedded Systems Letters",
+    "url": "https://doi.org/10.1109/les.2026.3727282",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "Designing Reliable LLM Systems for AI-Assisted Engineering Education",
+    "authors": "Ramesh Venkatachalapathy",
+    "publish": "2026 IEEE International Conference on Innovation, Ethics &amp; Emerging Tech in Engineering and Computing Education (IE2C)",
+    "url": "https://doi.org/10.1109/ie2c69620.2026.11663036",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "Improving LLM-Based Unit Test Generation Through Root-Cause-Driven Prompt Design",
+    "authors": "Mizuki Yamada, Masahiko Kato, Juichi Takahashi",
+    "publish": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest)",
+    "url": "https://doi.org/10.1109/aitest70988.2026.00021",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "FlowGuard: Slack-Aware Overload Control for Multi-Agent LLM Serving",
+    "authors": "Ali Zafar Sadiq, Haiying Shen",
+    "publish": "2026 35th International Conference on Computer Communications and Networks (ICCCN)",
+    "url": "https://doi.org/10.1109/icccn69946.2026.11662939",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "LLM Based Static Malware Analysis for Windows Portable Executables",
+    "authors": "Timothy Miskell, Yan Luo, Peilong Li, Shin Wei Lim",
+    "publish": "2026 35th International Conference on Computer Communications and Networks (ICCCN)",
+    "url": "https://doi.org/10.1109/icccn69946.2026.11662587",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "LLM-Based Multi-Agent Collaboration for Constrained Multi-Objective Container Placement",
+    "authors": "Suvarthi Sarkar, Abhishek Hazra, Akshat Mittal, Aryabartta Sahu",
+    "publish": "2026 IEEE 19th International Conference on Cloud Computing (CLOUD)",
+    "url": "https://doi.org/10.1109/cloud72782.2026.00018",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging",
+    "authors": "An B. B. Pham, Hoa T. Nguyen, Muhammad Usman",
+    "publish": "2026 IEEE International Conference on Quantum Software (QSW)",
+    "url": "https://doi.org/10.1109/qsw72780.2026.00028",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "Pick and Spin: Cold-Start-Aware Routing for Self-Hosted LLM Serving",
+    "authors": "Bhanu Prakash Vangala, Tanu Malik",
+    "publish": "2026 IEEE 19th International Conference on Cloud Computing (CLOUD)",
+    "url": "https://doi.org/10.1109/cloud72782.2026.00050",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "Managing KV Cache for Coordinated Waiting and Execution Time in LLM Serving",
+    "authors": "Haiying Shen, Tanmoy Sen, Masahiro Tanaka",
+    "publish": "2026 35th International Conference on Computer Communications and Networks (ICCCN)",
+    "url": "https://doi.org/10.1109/icccn69946.2026.11662646",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "Violation-Centric and Constraint-Aware LLM Agent for Layout DRC Repair",
+    "authors": "Zilin Liao, Tianze Hu, Chengxi Wei, Zonghao Seven Zhang, Wenjun Li",
+    "publish": "2026 9th International Conference on Electronics Technology (ICET)",
+    "url": "https://doi.org/10.1109/icet69987.2026.11659224",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-27",
+    "title": "Reducing Memory Requirements of LLM Inference Through Online rANS Decompression",
+    "authors": "Väinö-Waltteri Granat, Jakub Žádník, Markku Mäkitalo, Joonas Multanen, Pekka Jääskeläinen",
+    "publish": "2026 IEEE 19th International Conference on Cloud Computing (CLOUD)",
+    "url": "https://doi.org/10.1109/cloud72782.2026.00039",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-26",
+    "title": "JudgEHR: LLM-Guided Cohort Inference for Clinical Decision Confidence Estimation",
+    "authors": "Kexuan Xin, Guillaume Pelat, Jonathan Vitale, Shun Takeuchi, Shlomo Berkovsky, Amin Beheshti",
+    "publish": "2026 IEEE International Conference on Digital Health (ICDH)",
+    "url": "https://doi.org/10.1109/icdh72779.2026.00046",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
