@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-27",
+    "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+    "authors": "Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li, Qifan Yang, Ting Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27455v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in inference-time scaling have significantly improved the reasoning performance of large language models (LLMs). However, these methods typically rely on repeated generation or external verification. To address this limitation, we introduce CritICL, a novel inference-time framework that improves reasoning while maintaining high efficiency. Our key insight is that LLM failure modes exhibit structured patterns across model scales within the same family. Instead of treating failures as undesirable outputs, CritICL leverages them as a source of guidance. Specifically, we utilize failure modes derived from weaker models and incorporate them into inference through critique-based in-context examples. We propose two variants: CritICL-dynamic, which adaptively predicts input-specific failure modes and retrieves critiques, and CritICL-static, which uses a global failure mode profile to provide stable guidance. Experimental results show that CritICL consistently outperforms standard in-context learning and achieves performance competitive with or superior to test-time scaling methods, while requiring significantly fewer generations and lower token cost. Code available at: https://github.com/umwyf/CRITICL"
+  },
+  {
+    "date": "2026-08-27",
+    "title": "High-order stabilized matrix-free simulation of rotating mixing devices using the Mortar Element Method",
+    "authors": "B. Campos, P. Munch, V. O. Ferreira, D. C. Boffito, X. Banquy, B. Blais",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27423v1",
+    "source": "arXiv",
+    "abstract": "We present a finite element framework to simulate rotating mixing devices using the Mortar Element Method as a domain decomposition strategy. The model is implemented within a matrix-free Navier-Stokes framework which uses a high-order Continuous Galerkin method. The discretized domain is subdivided into rotor and stator parts. An Arbitrary Lagrangian-Eulerian approach accounts for the relative rotor-stator motion, and stabilization is ensured through the Streamline-Upwind/Petrov-Galerkin and Pressure-Stabilizing Petrov-Galerkin methods. The rotor-stator domains are connected by an interface composed of mortar cells, and continuity is weakly enforced in a Discontinuous Galerkin fashion by accounting for boundary integrals at the rotor-stator interface. Verifications of the convergence order in two-dimensional steady and transient examples report optimal rates. The geometric non-conformity created at the mortar interface due to rotor rotation does not introduce significant error in the solution. A three-dimensional example is used to investigate the model's scalability, which yields ideal strong scaling for large problems. A two-dimensional Rushton impeller example uses a torque analysis to showcase the mesh convergence, and the corresponding velocity profile is in agreement with existing numerical results. In a three-dimensional pitched blade turbine case, the power number curve (Np vs Re) shows good agreement with experimental data for Reynolds number values from 1 to 2000. An energy balance analysis reports a numerical dissipation of 1% for Re=200 and of 10% for Re=2000. By exploiting modern hardware capabilities through matrix-free methods, the proposed model is a robust, accurate, and efficient framework suitable for simulating flows with rotating geometries."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "misi: a Metric Inverted Sample Index",
+    "authors": "Edgar Chavez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27422v1",
+    "source": "arXiv",
+    "abstract": "We present misi, an inverted index for approximate nearest-neighbor search over general metric spaces whose vocabulary is a random sample of the database, of size proportional to $n$. Each object is represented by its $k_b$ nearest sample points, found by a pluggable inner index over the sample; queries are answered by an idf-weighted shared-neighbor vote followed by exact verification of $C$ candidates. The construction generalizes the NAPP index from a constant number of pivots to a linear-size vocabulary, which keeps posting lists at constant expected length $ρ= k_b/α$ as $n$ grows and turns the index into a combinator: any high-recall index on $αn$ points yields an index on $n$ points, for any metric. A probabilistic model gives a recall guarantee -- $k_b$ logarithmic in $n$ over the overlap gap suffices, with a verification budget the index itself estimates -- and a matching limit: the vote cannot resolve overlap differences below order $1/\\sqrt{k_b}$. The design's strengths are structural: construction is $n$ independent searches -- embarrassingly parallel, deterministic, $5{,}250$ s for $10^8$ vectors on 64 cores, $3.7\\times$ faster than a matched-recall graph build -- it streams under an enforced 3 GiB cap, and the portable artifact serves $10^8$ vectors from NVMe within an enforced 8 GB budget, below the working floor of the SSD-graph baseline. Its cost is query-time work: saturated graph baselines answer $6$-$16\\times$ faster in RAM, and the verification budget for 0.99 recall grows as $n^{0.30}$. All results carry seeds, saturation sweeps and full configurations, are generated from run manifests, and include measured negative results. The intended applications weight construction cost, determinism, memory footprint, or black-box metrics over peak throughput: frequently rebuilt corpora, batch similarity workloads, constrained-memory serving."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Algorithms for Robbins' Problem using Markov Decision Processes",
+    "authors": "Léonard Brice, F. Thomas Bruss, Anirban Majumdar, Jean-François Raskin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27419v1",
+    "source": "arXiv",
+    "abstract": "In this paper, we consider Robbins' problem, which is a full information variant of the well-known secretary selection problem. In this version of the problem, the goal is to minimize the expected rank of the selected candidate among $n$ that are interviewed sequentially, and a decision to select or not the $m^{th}$ candidate needs to be taken right after the interview (so without seeing the last $n-m$ candidates and without recall). We first show how to model instances of Robbins' problem as infinite Markov Decision Processes (MDPs). Then we propose several finite-state abstractions of these MDPs that allow us to approximate the value of the problem for fixed $n$. While it is known that the full memory of past candidates' values is necessary for optimal expected rank minimization, making the analysis of the problem challenging, we highlight simple memory structures that are sufficient for obtaining near-optimal selection strategies. Additionally, we provide approximate values for Robbins' problem for numbers of candidates $n$ up to 100 for which no good approximations were previously known (the exact value is only known for instances where $n \\leq 4$ and numerical approximations were for small values of $n$ not exceeding one digit), for all $n : 5 \\leq n \\leq 100$, we give better approximation than what was previously known."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification",
+    "authors": "Jinghan Xu, Yikai Zhang, Aili Chen, Weiyuan Li, Jiaqing Liang, Deqing Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27311v1",
+    "source": "arXiv",
+    "abstract": "Agent harnesses shape how language-model agents use instructions, tools, and runtime components, but adapting these harnesses requires costly verification. Existing propose-and-verify methods typically score every candidate on a fixed task set, wasting rollouts on unrelated behaviors and allowing aggregate scores to obscure specific regressions. We introduce HarnessLens, a budget-aware framework for automated harness evolution. HarnessLens jointly explores the task space and user-configurable components, derives candidate modifications from execution trajectories, and selectively verifies each candidate on behavior-relevant tasks using an attributable-evidence gate. Across three agent harnesses and four benchmarks, HarnessLens improves average held-out performance by 7.6-13.6% while consuming substantially less evaluation budget than competing baselines. These results demonstrate that behavior-aware verification with explicit attribution enables more reliable and sample-efficient harness evolution under constrained interaction budgets. Our code is available at https://github.com/jhxu5214/HarnessLens."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Astar: Learning to Propose Evolution Directions for Self-Evolving Industrial AI Systems",
+    "authors": "Jinxin Hu, Hao Deng, Haibo Xing, Lingyu Mu, Muyu Zou, Weiqin Yang, Sirui Chen, Bohao Wang, Zhezheng Hao, Hao Zhang, Zulong Chen, Shizhun Wang, Yu Zhang, Xiaoyi Zeng, Jiawei Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27287v1",
+    "source": "arXiv",
+    "abstract": "Modern AI systems advance through continuous iteration: a loop of proposing evolution directions, implementing code, training, and evaluation. While the latter three stages are increasingly automated, the starting point --- proposing effective evolution directions --- remains a critical bottleneck that still relies heavily on senior experts. In this work, we explore whether AI can take over this role. We find that general-purpose LLMs, even the advanced GPT-5.5, offer only generic and misaligned suggestions: the required expertise is accumulated through experience rather than explicitly codified, and thus hard to inject directly. To this end, we propose Astar, a training-based approach that learns a specialized evolution-guiding model from the abundant iteration histories of industrial systems. Realizing this idea, however, raises four challenges: sparse supervision, noisy data, a vast direction space, and prohibitively expensive verification. We address them along two fronts. On the data side, we design a pipeline that turns noisy historical commits into a large, clean evolutionary corpus via pairwise sample expansion and noise filtering. On the model side, we train the model through mid-training, SFT, and RL, guiding evolution direction generation with hierarchical hints and using the reward model in RL as a fast surrogate evaluator. Astar has been deployed in Alibaba's Lazada advertising system for evolution direction proposal. Astar-8B achieves a single-proposal success rate of 0.6786 in real-execution evaluation, far exceeding human experts (0.3229) and the strongest general-purpose LLM (0.3071). More importantly, Astar closes the loop and enables fully automatic iteration: it guided 20 consecutive iterations over two weeks, improving offline Hitrate@200 by 23.6%, while an online A/B test yielded relative lifts of 4.86% in GMV and 1.82% in advertising revenue."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+    "authors": "Xingshan Zeng, Zishan Xu, Boju Zhang, Yuzhou Wu, Lingzhi Wang, Jianghao Lin, Liangyou Li, Yasheng Wang, Lifeng Shang, Xin Jiang, Weinan Zhang, Yong Yu, Qun Liu, Weiwen Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27260v1",
+    "source": "arXiv",
+    "abstract": "LLM agents increasingly rely on generated interaction data to learn how to interact with external environments. Agentic data generation must maintain consistency among environments, tasks, interactions, and success signals while producing experience that is useful rather than merely abundant. Existing work spans many agent domains, but domain-centered organization and heterogeneous evaluation often obscure common generation mechanisms and conflate candidate construction with verification and selection. This work develops a two-level framework for the field. First, we represent agentic data as a common factorized object $(E,q,τ,v)$, comprising an environment specification, task signal, interaction realization, and optional verifier. We organize generation paradigms by their primary anchor and dependency structure. Second, we formulate generation as constrained distribution design through the Accuracy-Complexity-divErsity (ACE) lens. Accuracy establishes the feasible support of grounded and internally consistent data. Within this support, Complexity places learning mass relative to the capability of a declared learner and execution configuration, while divErsity controls coverage and redundancy of data. Using this framework, we explore how prior work verifies generated experience, constructs and calibrates difficulty, and expands behavioral coverage. The literature reveals a shift toward execution-grounded accuracy, learner-relative complexity, and diversity beyond surface variation or dataset size. We further discuss broader directions and emerging trends in agentic data generation through the ACE lens, including their implications for scaling, data sources, training regimes and adaptive learning. Overall, the central challenge is not simply to generate more data, but to continually allocate valid, informative, and non-redundant experience as agents and environments evolve."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Rank-Three Projections and Minimal Multiplicity Bipartitions of Path Complements",
+    "authors": "Jintao Fei, Jiangying Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27227v1",
+    "source": "arXiv",
+    "abstract": "For a graph \\(G\\) admitting a real symmetric realization with exactly two distinct eigenvalues, \\(MB(G)\\) is the minimum, over all such realizations, of the smaller of the two eigenvalue multiplicities. Adm, Fallat, Meagher, Nasserasr, Plosker, and Yang asked for this parameter for the complement of a path on at least eight vertices. We answer their question completely by proving $$ MB(\\overline{P_n})=3 \\qquad (n\\ge 6). $$ In particular, this resolves the previously unresolved orders \\(n\\ge 9\\) divisible by three. The proof is exact and constructive. We exhibit six vectors in \\(\\mathbb{R}^3\\) whose mutual inner products vanish exactly for consecutive indices, whose rank-one outer products form a basis of \\(\\mathbb{S}^3\\), and which admit a strictly positive Parseval scaling. An elementary absorption lemma then permits any finite faithful orthogonal extension of this vector chain to be added with small positive weights while the six original weights are corrected to retain the Parseval identity. The resulting Gram matrix is a rank-three orthogonal projection in \\(\\mathcal{S}(\\overline{P_n})\\). A local two-dimensional orthogonality obstruction gives the matching lower bound. For completeness, we include self-contained proofs of the exceptional small orders: \\(MB(\\overline{P_3})=1\\), whereas \\(q(\\overline{P_4})=4\\) and \\(q(\\overline{P_5})=3\\)."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "LLMs in Digital EDA: A perspective on shifting roles from Generation to Orchestration",
+    "authors": "Matthew Youngman, Cristian Sestito, Themis Prodromakis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27184v1",
+    "source": "arXiv",
+    "abstract": "Electronic design automation (EDA) has advanced engineering productivity through successive generations of tooling that progressively automate synthesis, optimisation, and verification. Large language models (LLMs) extend this trajectory by enabling direct translation from design intent to hardware implementations. In most of the EDA literature, LLM-based solutions are typically assisting siloed design stages or tasks, however this obscured the drivers by which capability emerges and systems scale. In this Perspective, we instead define three hierarchical roles that reveal how capability accumulates: a Generator that produces design artifacts in a single pass, an Agent that refines outputs through iterative tool feedback, and an Orchestrator that coordinates decisions across EDA-stages. Across published systems, this reveals a syntax trap in which models are trained to produce plausible code rather than physically correct hardware, compounded by fragmented tools and loss of design context that obscure how decisions affect later stages. Comparisons across the three roles show that current approaches struggle to scale to industrial designs, motivating a shift towards a standardised, physics-aware orchestrator that connects tools and agents across the EDA flow for more reliable and accessible hardware design."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Prediction of Prediction (PoP): Inter-Layer Activation Fusion for Single-Pass Hallucination Detection in Large Language Models",
+    "authors": "Himal Badu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27165v1",
+    "source": "arXiv",
+    "abstract": "Autoregressive large language models (LLMs) routinely generate factually incorrect outputs with high decoding confidence, limiting their deployment in high-stakes workflows. Existing output-stage uncertainty metrics can fail when models are overconfident on false assertions, while multi-sample verification pipelines introduce substantial memory and latency overhead. This work evaluates whether internal hidden-state transition dynamics during generation can signal factual errors without auxiliary decoding calls. We introduce Prediction of Prediction (PoP), a mechanism that captures layer-transition uncertainty by fusing intermediate hidden representations across depth during a single forward pass. Evaluated on the TruthfulQA benchmark using autoregressive transformer backbones, PoP achieves an area under the receiver operating characteristic curve (AUROC) of 75.5% for factual-correctness classification. The mechanism operates within the base forward pass, adding less than 1.2% runtime latency and requiring zero additional generation passes. The numerical results are reported from the author-verified experimental implementation and are bounded by the evaluation scope described below."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "AgentDV: Closed-Loop Agentic AI for Hardware Design Verification",
+    "authors": "Navya Goli, Junzhe Liu, Zhenge Jia, Umamaheswara Rao Tida",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27148v1",
+    "source": "arXiv",
+    "abstract": "Register-transfer level (RTL) verification consumes a major part of modern system-on-chip (SoC) development effort. Yet, recent LLM-based verification-code generation often fails to produce runnable, design-consistent, and coverage-producing testbenches. We present AgentDV, a closed-loop agentic AI framework for automated RTL verification environment generation. AgentDV transforms single-shot LLM testbench generation into a tool-grounded verification pipeline by combining LLM-guided analysis, testbench construction, simulation, coverage measurement, and iterative refinement. The framework introduces three key ideas: 1) runnability filtering to reject invalid generated environments, 2) CSR-grounded checking to reduce hallucinated signals and incorrect expected behavior, and 3) coverage-guided iteration to regenerate tests based on measured verification gaps. We evaluate AgentDV using three LLMs on challenge DUTs and public OpenTitan peripheral and security IP blocks. From our analysis, we observed that direct single-shot prompting fails to produce a valid coverage-producing environment on benchmarks. AgentDV achieves 100% pass rate on four DUTs and an average of 80.9% pass rate on all DUTs using Claude Sonnet 4.6. Similarly, an average of 58.7% and 60.6% pass rate is achieved for Llama and Qwen models, respectively. In addition, an average of 74.5%, 69.1%, and 64.9% of line coverage and 88.4%, 82.3%, and 76.7% of branch coverage for the benchmarks under consideration for Claude Sonnet 4.6, Llama, and Qwen models, respectively."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Prayer-Gait-Auth: Smartphone IMU-based Behavioral Biometrics from Structured Islamic Prayer Movements",
+    "authors": "Hassan Hizeh, Anwar B. Alshaibani, Muhammad Mahboob Ur Rahman, Tareq Y. Al-Naffouri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26994v1",
+    "source": "arXiv",
+    "abstract": "Islamic prayer is a structured movement activity that offers a distinctive setting for behavioral biometrics: all participants execute the same action sequence, so identity must be inferred from differences in execution. We collected inertial data from 95 participants using their own smartphones during nightly congregational Islamic prayer (Taraweeh). A label-aware pipeline converts long recordings into structurally complete two-rakaah behavioral samples (prayer units). This allows us to design unit-level and complete-session behavioral biometrics protocols. To address arbitrary smartphone orientation in worshippers' pockets, we study two motion representations: rotation-invariant magnitudes with gravity-relative acceleration components, and a metadata-aware Qibla-referenced canonicalization that harmonizes platform conventions, reconstructs device-to-world attitude, corrects Android magnetic north to true north via WMM2025, and expresses acceleration and angular velocity in a common Qibla-left-up frame. Under unit-level protocol, the invariant and Qibla-referenced representations reach learned pairwise Random Forest AUC/EER of 0.9932/4.07% and 0.9923/3.96%; under complete-session holdout, 0.9700/7.62% and 0.9618/7.81%. Qibla-frame directional ablations show the complete six-axis representation is strongest overall, with acceleration retaining most learned-verification performance and vertical motion the strongest single-axis cue. A Qibla-referenced SimCLR experiment further yields participant-template AUC 0.9805-0.9817 and EER 5.81-6.24% across two unit-level runs. Signal-, descriptor-, prayer-component ablation analyses show participant identity is distributed across movement dynamics rather than concentrated in one signal or posture. These results establish structured prayer movement as a measurable cross-session behavioral biometric."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory",
+    "authors": "Geng Li, Yuhao Wang, Dong Li, Jianye Hao, Yuxin Peng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26983v1",
+    "source": "arXiv",
+    "abstract": "Organizing long-term memory for multimodal agents remains challenging because existing methods either suffer from expensive question-agnostic offline summaries or naive embedding similarity matching that introduces incomplete and redundant context. To address these issues, we propose GraphMemix, a combinatorial-optimization graph memory framework that models memory organization as query-aware evidence-forest construction. Specifically, our method consists of three key components:(1) candidate graph construction, which expands multi-view seed memories through schema and semantic relations to acquire query-aware original context; (2) evidence utility and activation costs, which decouples direct memory support from anchor-conditioned relation verification to suppress redundant or conflicting information; and (3) forest optimization, which jointly selects a forest-format memory context under a maximum evidence budget and its reliable relational structure. By organizing memory into a query-relevant subgraph, the method avoids substantial lifecycle cost and recovers low-similarity complementary evidence. Experimental results across four long-term multimodal memory benchmarks demonstrate significant improvements with different foundation models and establish a new Pareto frontier between accuracy and lifecycle cost."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Per-View Gaussian Predictions Enable Training-Free Distractor Filtering in Feed-Forward 3DGS",
+    "authors": "Kangmin Seo, Jae-Pil Heo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26951v1",
+    "source": "arXiv",
+    "abstract": "Feed-forward 3D Gaussian Splatting reconstructs an explicit Gaussian representation from multiple input images in one network execution, making 3D reconstruction increasingly accessible for casual captures. However, such captures frequently contain transient objects that appear in only a subset of the views. Such content can be encoded into the per-view Gaussians associated with the inputs that observe it and remain in the combined representation despite being observed by no other input. As a result, it may produce blurred, duplicated, or floating artifacts in novel views. We introduce a training-free filtering procedure that exploits this per-view prediction structure. For each input, we exclude its associated Gaussians and render the same camera using the remaining representation, revealing content that is inconsistent with the other inputs. Feature similarity forms candidate regions, and rendering-based verification retains only candidates whose removal reduces reconstruction error in the other input views. The procedure operates on a single frozen prediction without retraining or scene-specific optimization. Across three reconstruction models and two distractor benchmarks, it consistently improves novel-view quality with varying numbers of input views. On clean scenes, evaluations across four models show that the original reconstructions are largely preserved."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "AraMS-28k: The Largest Publicly Released Line-Level Dataset of Historical Arabic Manuscripts with Margin and Insertion-Anchor Annotations",
+    "authors": "Mohamed Guechaoui, Mohamed Diaa Zellagui, Souleyman Chaib, Sahraoui Dhelim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26921v1",
+    "source": "arXiv",
+    "abstract": "We introduce AraMS-28k, the largest publicly released line-level dataset of genuine historical Arabic manuscripts, comprising 14 books, 3,043 pages, and 28,600 annotated text lines (27,971 main-text, 629 margin). Thirteen books are hand-copied manuscripts spanning three script traditions -- Naskh, Ruq'ah, and Maghrebi -- and one is a lithographed printed edition included to broaden format diversity. Each line is labelled as main-text or margin, and margin lines that have an unambiguous attachment point in the main text are further annotated with an insertion anchor, recovering the manuscript's true non-linear reading order at line-level granularity -- to our knowledge the first such annotation released for a historical Arabic manuscript corpus. Because reference transcriptions are fully vocalised while manuscript hands are typically undiacritised, we release both the raw diacritised transcription and a diacritic-normalised counterpart for every line. The dataset was constructed with RefLAM, a reference-grounded annotation pipeline that aligns multimodal-LLM OCR against independently sourced clean transcriptions and routes every line through human review, combining automatic verification with expert oversight. We describe the construction and quality-control process, present the annotation schema, report dataset statistics at both the corpus and per-book level, and provide baseline HTR results using Kraken and HATFormer, including a cross-script generalisation gradient from in-distribution pages to fully unseen books. AraMS-28k is released with page images, line-level annotations, and fixed train/val/test splits under CC BY-NC-SA 4.0 to support reproducible research on Arabic manuscript recognition, layout analysis, and reading-order recovery."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "PLCBench: Can Autonomous LLM Agents Turn PLC Access into Sustained Physical Impact?",
+    "authors": "Yitian Zhou, Jingyu Zheng, Qiliang Jiang, Linkang Du, Haoming Liu, Lichao Wu, Shiyi Zhao, Mengxiang Liu, Ruilong Deng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26882v1",
+    "source": "arXiv",
+    "abstract": "Industrial control systems (ICSs) rely on programmable logic controllers (PLCs) to connect networked computation with physical control. Tool-using large language model (LLM) agents represent an emerging attack threat: can an autonomous agent convert a network-reachable PLC into sustained adverse physical impact? However, existing evaluations focus on digital tasks or individual stages of PLC testing. In ICSs, evaluations that stop at software exploitation, an accepted write, or tool access may therefore mischaracterize physical risk. We present PLCBENCH, to our knowledge, the first real-PLC hardware-in-the-loop (HIL) framework for characterizing this cyber-to-physical capability and its boundaries. It combines vendor-native interaction, commercial PLC execution, closed-loop reduced-order process simulation, and independent outcome verification. A deterministic evaluator applies fixed rules to runner, communication, PLC-object, and process records to assign six hidden diagnostic flags, distinguishing usable PLC interaction, process-linked manipulation, and sustained physical impact. We instantiate PLCBENCH on four commercial PLCs crossed with four closed-loop workloads. Across five LLM families and 240 real-PLC episodes, 75 episodes (31.3%) sustain their respective physical objectives. Stagewise results show that 98 episodes stop before a valid native read, whereas 62 reach a process-linked write but do not sustain the final objective. Notably, richer process observation is associated with an increase in conditional objective attainment after a process-linked write from 44.2% to 64.0%. These measurements localize failure in configured PLC-process deployments and identify intervention points for future defense evaluation. To support reproducibility, we release the safely disclosable PLCBENCH code and a software-only reproduction pipeline through the accompanying artifact."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "SymbolLKG: Towards Verifiable Logical Reasoning via Logical Knowledge Graph and Symbolic Solvers",
+    "authors": "Haizhao Fan, Yuchi Xiong, Jize Wang, Xinping Guan, Xinyi Le",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26836v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable proficiency in natural language understanding, yet they struggle with strict multi-step reasoning, frequently suffering from hallucinations and inconsistency. Existing solutions like Chain-of-Thought (CoT) lack rigorous verification mechanisms, while standard Retrieval-Augmented Generation (RAG) often misses the complex, structural dependencies inherent in logical tasks. To bridge this gap, we propose a Neuro-Symbolic architecture that integrates a Logical Knowledge Graph (LKG) with dynamic solver routing. Specifically, we introduce an ontology-based LKG that treats logical rules and constraints as first-class topological nodes, enabling explicit modeling of dependencies extracted from text. We further design a Logic Router to dynamically dispatch tasks to the optimal symbolic engine, which is supported by a topology-aware hybrid retrieval mechanism. Experimental results on logical reasoning benchmarks demonstrate that our framework significantly outperforms state-of-the-art prompting and RAG baselines, delivering higher accuracy and verifiable reasoning paths."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Self-Reflective Multi-modal Reasoning for Short-Video Fake News Detection",
+    "authors": "Pinjie Xu, Yuzhou Yang, Zhikai Tan, Qichao Ying, Zaiyang Yu, Ce Li, Zhenxing Qian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26787v1",
+    "source": "arXiv",
+    "abstract": "Recent fake news detection pipelines increasingly leverage large language models and vision-language models for reasoning-based analysis. However, several challenges remain open: improving reasoning quality through self-reflection without ground-truth chain-of-thought supervision, using improved reasoning to benefit downstream model fine-tuning, and connecting single-sample fraudulent-pattern discovery with cross-sample verification. We propose SRM-FND, a self-reflective multimodal reasoning framework for short-video fake news detection. SRM-FND develops higher-quality reasoning through contrastive deliberation, iterative root-cause diagnosis, and corrective prompt refinement. A Blind Analyst, Counter-Conclusion Reasoner, and Self-Consistency Arbiter collaboratively identify and retain discriminative rationales. The framework also incorporates dual-phase, topic-adaptive vision-language model fine-tuning to improve multimodal grounding and enable lightweight topic specialization. For uncertain cases, it performs confidence-driven cross-sample review by retrieving credible and suspicious co-event examples. Experiments on FakeSV and FakeTT show that SRM-FND outperforms strong baselines, produces more reliable and interpretable predictions, and delivers noticeable improvements in cross-dataset performance."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research",
+    "authors": "Lezhi Yu, Xiaogang Xu, Yuhua Zhou, Shuibing He, Aimin Pan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26753v1",
+    "source": "arXiv",
+    "abstract": "LLM agents used for scientific experimentation must do more than generate executable code: they must implement the reference method faithfully, design experiments that test the paper's claims, and provide evidence supporting those claims. We show that agents often produce methodological hallucinations: silently reducing datasets or training budgets, replacing failed learning or generative components with lookup or oracle functions, or drawing conclusions from resource-limited settings where a method's claimed advantage disappears. To detect these failures, we introduce ABE-Ralph, a reference-anchored auditing framework that represents claims, protocols, required components, baselines, and metrics as structured experimental constraints, guides implementation through an 8-step workflow, and performs quantitative, qualitative, and code-level verification. Across 30 long-horizon reproduction runs covering 12 machine learning domains, ABE-Ralph achieves a 93% robust execution rate and identifies five scientific failure modes. In 23 NatureBench discovery tasks, ABE-Ralph matches or exceeds state-of-the-art performance on 5 tasks. These results show that reliable evaluation of AI scientists must assess whether the experimental design faithfully tests the intended claim and whether the resulting evidence supports it, rather than treating code execution or plausible metrics as evidence of scientific success."
+  },
+  {
+    "date": "2026-08-27",
+    "title": "G2D: Generative-to-Discriminative Collaborative Inference for Zero-Shot Image Classification",
+    "authors": "Zehua Hao, Fang Liu, Qinliang Wang, Yaoyang Du, Xinyan Huang, Puhua Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.26744v1",
+    "source": "arXiv",
+    "abstract": "Zero-shot classification needs efficient label retrieval and fine-grained visual reasoning, yet discriminative and generative vision-language models fail in complementary ways.When CLIP's top-1 prediction is wrong, the correct label often remains in its top-$K$ shortlist, making disambiguation rather than recall the key challenge.Standalone generative models, however, are hindered by large label spaces and unconstrained outputs.This complementarity motivates separating broad candidate retrieval from fine-grained, image-grounded verification.We propose G2D, a training-free framework that uses a generative VLM to verify CLIP-retrieved candidates against the image.Candidate names and CLIP probabilities provide a structured prior for resolving visually similar classes.Fixed confidence routing, entropy-adaptive candidate sizing, and trie-constrained decoding focus generative reasoning on uncertain samples and ensure one valid output for each input at test time.Across eight benchmarks, G2D achieves 68.85% average accuracy, versus 59.35% for CLIP and 63.11% for the standalone VLM.Across seven generator configurations, candidate-set verification improves average accuracy by 1.08--27.42 percentage points.G2D also transfers to DCLIP, WaffleCLIP, and CuPL, supporting a practical interface between discriminative proposal and generative visual reasoning. Code: https://github.com/Harzva/G2D"
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Correct-by-Construction High-Level Synthesis for FPGA: From Algebraic Models to RTL",
+    "authors": "Igor Redko, Petro Yahanov, Maksym Zylevich",
+    "publish": "2026 IEEE 8th International Conference on Smart Technologies in Power Engineering and Electronics (STEE)",
+    "url": "https://doi.org/10.1109/stee63704.2026.11664009",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Optimizing Snyk AI Results with Large Language Model (LLM) to Validate False Positive Rate",
+    "authors": "Danu Tryas Pristowo, Dana Sulistiyo Kusumo",
+    "publish": "2026 14th International Conference on Information and Communication Technology (ICoICT)",
+    "url": "https://doi.org/10.1109/icoict71118.2026.11664759",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Priority-Aware Chain-of-Multiple-Thoughts Framework for LLM-Based Text-to-SQL Generation in Financial Decision Support",
+    "authors": "Si-Xing Yan, Yi-Jian Zhong",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3728168",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Cross-Lingual Information Retrieval for Indonesian–Javanese Documents Using LLM-Based Reranking",
+    "authors": "Raden Mohamad Adrian Ramadhan Hendar Wibawa, Ika Alfina, Evi Yulianti",
+    "publish": "2026 14th International Conference on Information and Communication Technology (ICoICT)",
+    "url": "https://doi.org/10.1109/icoict71118.2026.11664808",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "LLM-Driven Cost-Effective Requirements Change Impact Analysis",
+    "authors": "Romina Etezadi, Sallam Abualhaija, Chetan Arora, Lionel Briand",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3844507",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Constraint-Based Dental Clinic Scheduling System with Episode of Care and LLM Integration",
+    "authors": "Daffa Prima Putra, Villy Satria Praditha, Feddy Dea Reskyadita",
+    "publish": "2026 14th International Conference on Information and Communication Technology (ICoICT)",
+    "url": "https://doi.org/10.1109/icoict71118.2026.11664809",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "ViSportSent: A Single-Club Vietnamese Football Sentiment Dataset With Hybrid LLM–Human Annotation and Transformer Benchmarks",
+    "authors": "Luan Pham, Phuc Nguyen, Phuoc Tran",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3728267",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "UTARI: An On-Prem GPU-Accelerated LLM Platform for Higher-Education Services",
+    "authors": "Muhammad Rif’an, Fitria Amastini, Deni Rudiana Aprizal, Agung Wicaksono, Sonasa Rinusantoro, Abdul Rizal Adompo",
+    "publish": "2026 14th International Conference on Information and Communication Technology (ICoICT)",
+    "url": "https://doi.org/10.1109/icoict71118.2026.11664754",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Prompt-to-Structure: Knowledge-Grounded LLM-Assisted Procedural Modeling of Qing Dynasty Architecture",
+    "authors": "Shunan Zhang, Yunfeng Shu, Xuguang Yuan, Yi Xiao",
+    "publish": "Journal on Computing and Cultural Heritage",
+    "url": "https://doi.org/10.1145/3842757",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Collective Communication for Distributed LLM Systems: Planning, Runtime Adaptation, and Computation Coordination",
+    "authors": "Xuebin Song, Menghao Zhang, Yuezheng Liu, Jinyi Xia, Shucan Yang, Xiaohe Hu, Chunming Hu, Mingwei Xu",
+    "publish": "IEEE Network",
+    "url": "https://doi.org/10.1109/mnet.2026.3724863",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Verification of Autonomous Maritime Systems: Why and How",
+    "authors": "Signe Redfield, Mae Seto, Donald Sofge",
+    "publish": "2026 IEEE Canadian Atlantic Ocean Symposium (CAOS)",
+    "url": "https://doi.org/10.1109/caos69069.2026.11666295",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "GAS-Robo: Converting Scene Into a Grid-Action Space for LLM-Driven Open-Ended Robotic Manipulation",
+    "authors": "Hanxuan Li, Senwei Xie, Zeyuan Lin, Zhanqi Xiao, Ruiping Wang, Xilin Chen",
+    "publish": "IEEE Robotics and Automation Letters",
+    "url": "https://doi.org/10.1109/lra.2026.3728325",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "LLM-Driven Intelligent Companion for Aging in Place: Synergizing Online Learning with Psychological Guardianship",
+    "authors": "Qingchun Bai, Yangrui Zhan, Na Yin, Qiang Shi, Tianzhen Y U, Yongzhong Zhang",
+    "publish": "2026 12th International Conference on Education and Training Technologies (ICETT)",
+    "url": "https://doi.org/10.1109/icett70124.2026.11666037",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Toward Empathetic Care: An LLM-Based Multi-Intention Recognition Framework for Mental Health and Complex Medical Queries",
+    "authors": "Dingkang Yang, Jinjie Wei, Ming Hu, Jiyao Liu, Lihao Liu, Zhaoyu Chen, Mingcheng Li, Junjun He, Wei Zhou, Yang Liu, Lihua Zhang",
+    "publish": "IEEE Transactions on Affective Computing",
+    "url": "https://doi.org/10.1109/taffc.2026.3728254",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "OpenVeinNet: Robust Open-Set Finger Vein Verification with Dynamic Snake Convolution and Graph Learning",
+    "authors": "Sushrut Patwardhan, Raghavendra Ramachandra",
+    "publish": "IEEE Transactions on Biometrics, Behavior, and Identity Science",
+    "url": "https://doi.org/10.1109/tbiom.2026.3728524",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "From Greenwashing to Greenwings: Enhancing Trust in SAF Supply Chains through Blockchain-Based Traceability and Public Verification",
+    "authors": "Aditya Wibisono Nugroho, Dian Puteri Ramadhani, Andry Alamsyah",
+    "publish": "2026 14th International Conference on Information and Communication Technology (ICoICT)",
+    "url": "https://doi.org/10.1109/icoict71118.2026.11664853",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Calibrated Reliance and Verification Behaviors in Student–GenAI Collaborative Learning: A Short Survey with an Objective Problem-Solving Mini-Test",
+    "authors": "Cong Nghiem Huynh, Trong Luan Nguyen",
+    "publish": "2026 12th International Conference on Education and Training Technologies (ICETT)",
+    "url": "https://doi.org/10.1109/icett70124.2026.11665998",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-29",
+    "title": "Cambricon-FlexLLM: A Flexible Chiplet-Based Hybrid Architecture for On-Device 70B LLM Inference",
+    "authors": "Tianyun Ma, Qian Wang, Shengwen Liang, Yunke Cai, Ziyuan Nan, Di Huang, Xinkai Song, Yifan Hao, Jie Zhang, Tian Zhi, Yongwei Zhao, Zidong Du, Xing Hu, Qi Guo, Tianshi Chen",
+    "publish": "ACM Transactions on Architecture and Code Optimization",
+    "url": "https://doi.org/10.1145/3844618",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-28",
+    "title": "Dual-Weight Optimized Anisotropic Kriging Compensation for Industrial Robots in Heterogeneous Error Fields with Drilling Verification",
+    "authors": "Xi Wang, Guanbin Gao, Jingpeng Niu, Jing Na",
+    "publish": "IEEE Robotics and Automation Letters",
+    "url": "https://doi.org/10.1109/lra.2026.3728282",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-28",
+    "title": "REAL: Towards Lightweight Verification for Secure Cross-modal Retrieval in Mobile Cloud",
+    "authors": "Yu Peng, Haoyang Li, Siqi Lai, Qin Liu, Yipeng Zou, Xinyu Zhou, Jielei Wang, Guojun Wang, Jie Wu",
+    "publish": "IEEE Transactions on Mobile Computing",
+    "url": "https://doi.org/10.1109/tmc.2026.3728362",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
