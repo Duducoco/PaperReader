@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-08-27",
+    "title": "LLMs in Digital EDA: A perspective on shifting roles from Generation to Orchestration",
+    "authors": "Matthew Youngman, Cristian Sestito, Themis Prodromakis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27184v1",
+    "source": "arXiv",
+    "abstract": "Electronic design automation (EDA) has advanced engineering productivity through successive generations of tooling that progressively automate synthesis, optimisation, and verification. Large language models (LLMs) extend this trajectory by enabling direct translation from design intent to hardware implementations. In most of the EDA literature, LLM-based solutions are typically assisting siloed design stages or tasks, however this obscured the drivers by which capability emerges and systems scale. In this Perspective, we instead define three hierarchical roles that reveal how capability accumulates: a Generator that produces design artifacts in a single pass, an Agent that refines outputs through iterative tool feedback, and an Orchestrator that coordinates decisions across EDA-stages. Across published systems, this reveals a syntax trap in which models are trained to produce plausible code rather than physically correct hardware, compounded by fragmented tools and loss of design context that obscure how decisions affect later stages. Comparisons across the three roles show that current approaches struggle to scale to industrial designs, motivating a shift towards a standardised, physics-aware orchestrator that connects tools and agents across the EDA flow for more reliable and accessible hardware design.",
+    "title_zh": "数字电子设计自动化中的大型语言模型：从生成到编排角色转变的视角",
+    "abstract_zh": "电子设计自动化（EDA）通过逐代工具的演进，在综合、优化和验证方面不断提升工程生产力。大型语言模型（LLMs）通过直接将设计意图翻译为硬件实现，进一步推动了这一发展轨迹。在大多数EDA文献中，基于LLM的解决方案通常用于辅助孤立的设计阶段或任务，但这掩盖了能力涌现和系统扩展的驱动因素。在本文的视角中，我们定义了三个层次化的角色，以揭示能力如何积累：生成器（Generator）能够一次性生成设计工件；代理（Agent）通过迭代工具反馈优化输出；编排器（Orchestrator）协调EDA各阶段的决策。在已发表的系统中，这揭示了一个语法陷阱，即模型被训练生成看似合理的代码，而非物理上正确的硬件设计，同时工具的碎片化和设计上下文的丢失进一步模糊了决策对后续阶段的影响。对这三种角色的比较表明，当前方法在扩展到工业设计时面临挑战，这促使我们转向一个标准化、物理感知的编排器，以连接EDA流程中的工具和代理，从而实现更可靠且更易于访问的硬件设计。"
+  },
+  {
+    "date": "2026-08-27",
+    "title": "AgentDV: Closed-Loop Agentic AI for Hardware Design Verification",
+    "authors": "Navya Goli, Junzhe Liu, Zhenge Jia, Umamaheswara Rao Tida",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27148v1",
+    "source": "arXiv",
+    "abstract": "Register-transfer level (RTL) verification consumes a major part of modern system-on-chip (SoC) development effort. Yet, recent LLM-based verification-code generation often fails to produce runnable, design-consistent, and coverage-producing testbenches. We present AgentDV, a closed-loop agentic AI framework for automated RTL verification environment generation. AgentDV transforms single-shot LLM testbench generation into a tool-grounded verification pipeline by combining LLM-guided analysis, testbench construction, simulation, coverage measurement, and iterative refinement. The framework introduces three key ideas: 1) runnability filtering to reject invalid generated environments, 2) CSR-grounded checking to reduce hallucinated signals and incorrect expected behavior, and 3) coverage-guided iteration to regenerate tests based on measured verification gaps. We evaluate AgentDV using three LLMs on challenge DUTs and public OpenTitan peripheral and security IP blocks. From our analysis, we observed that direct single-shot prompting fails to produce a valid coverage-producing environment on benchmarks. AgentDV achieves 100% pass rate on four DUTs and an average of 80.9% pass rate on all DUTs using Claude Sonnet 4.6. Similarly, an average of 58.7% and 60.6% pass rate is achieved for Llama and Qwen models, respectively. In addition, an average of 74.5%, 69.1%, and 64.9% of line coverage and 88.4%, 82.3%, and 76.7% of branch coverage for the benchmarks under consideration for Claude Sonnet 4.6, Llama, and Qwen models, respectively.",
+    "title_zh": "AgentDV：用于硬件设计验证的闭环自主智能框架",
+    "abstract_zh": "寄存器传输级（RTL）验证占据了现代片上系统（SoC）开发工作的大部分。然而，最近基于大型语言模型（LLM）的验证代码生成通常无法生成可运行、与设计一致且能够产生覆盖率的测试平台。我们提出了AgentDV，这是一种用于自动化RTL验证环境生成的闭环自主智能框架。AgentDV通过结合LLM引导的分析、测试平台构建、仿真、覆盖率测量和迭代优化，将单次生成的LLM测试平台转化为工具驱动的验证流程。该框架引入了三个关键理念：1）运行性过滤以拒绝无效的生成环境，2）基于CSR的检查以减少虚构信号和错误的预期行为，3）基于覆盖率的迭代以根据测量的验证缺口重新生成测试。我们使用三个LLM对挑战性DUT（设计单元）以及公开的OpenTitan外设和安全IP模块进行了AgentDV评估。分析表明，直接单次提示无法在基准测试中生成有效的覆盖率测试环境。AgentDV在四个DUT上实现了100%的通过率，并在所有DUT上使用Claude Sonnet 4.6模型达到了平均80.9%的通过率。同样，Llama和Qwen模型分别实现了平均58.7%和60.6%的通过率。此外，在所考虑的基准测试中，Claude Sonnet 4.6、Llama和Qwen模型分别实现了平均74.5%、69.1%和64.9%的代码行覆盖率，以及88.4%、82.3%和76.7%的分支覆盖率。"
+  }
+]
