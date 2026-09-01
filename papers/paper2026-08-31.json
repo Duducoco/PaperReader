@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-08-31",
+    "title": "Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification",
+    "authors": "Yisen Xi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.31142v1",
+    "source": "arXiv",
+    "abstract": "The 2025--2026 AI market has seen a wave of stealth releases: frontier models launched anonymously on developer platforms under codenames. For their users, identity determines data-handling terms, supply-chain risk, and capability expectations. No validated methodology exists for black-box identity verification of anonymous models: practitioner checklists lack accuracy evidence, and self-identification is untrustworthy by design. We propose a four-stage forensic audit protocol for API-served models. Stage 0 reconstructs launch-time configuration from archived platform snapshots (Internet Archive), exposing preview--production drift. Stage 1 fingerprints configuration (context, output ceiling, reasoning, modality) against the platform catalog. Stage 2 tests tokenizer identity with a cross-length differential that rejects short-prompt collisions. Stage 3 corroborates with behavioral probes. We test declaration consistency on 10 known-identity releases (7 exact, 2 precision-differences, 1 partial, 0 counter-directional), not end-to-end identification under anonymity. Identification is validated prospectively on a flagship case whose 2026-08-23 analysis pointed to the GLM-5.3 version line and whose official reveal confirmed those family and version-line inferences (deployment variant was not pre-asserted; Flash was consistent post-reveal), and on three Stage-0-only cases where the protocol produced a graded hypothesis or declined rather than guessed. A standard-library-only implementation is provided as supplementary material."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening",
+    "authors": "Yung Wei Shueh, Zhi-Jie Chen, Chia-Hsuan Hsu, Hsin-Ling Hsu, Donghua Zhang, Chenwei Wu, Jun-En Ding, Tongze Zhang, Shihao Yang, Pengfei Hu, Fang-Ming Hung, Feng Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.31128v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) offer promising clinical decision support but remain vulnerable to hallucinated facts, unsupported recommendations, and citation errors. We present DIASENTINEL, a fully on-premise multi-agent system for one-year type 2 diabetes mellitus (T2DM) risk screening and guideline-grounded report generation from electronic health records (EHRs). The system integrates calibrated risk prediction, deterministic clinical signal extraction, Reciprocal Rank Fusion over American Diabetes Association (ADA) guidelines, and a hybrid verification layer combining rule-based checks with LLM entailment. The demonstration provides a real-time batch-screening dashboard and an interactive patient report interface with cited recommendations, verification results, and raw EHR comparison. DIASENTINEL demonstrates a practical framework for reliable, auditable, and privacy-preserving LLM-based clinical decision support."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "VeriCam: A Verification Baseline for the Classification of Unknown Data",
+    "authors": "Lucas Wojcik, Gabriel E. Lima, Sergio M. Silva, Eduil Nascimento, David Menotti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.31107v1",
+    "source": "arXiv",
+    "abstract": "The advent of foundation models have enabled a new era in zero-shot classification. Yet, key challenges persist. Despite their impressive generalization power that leverages the immense pre-training knowledge, both foundation models for image and text as well as vision-text hybrids lack the representational power needed for fine-grained, minutiae-based class separation that some real-world tasks require. To address the current gaps in the literature, we propose VeriCam, a pipeline designed to learn highly specialized features that enable classification of unknown classes in unseen data. VeriCam works by leveraging the representation power of image models trained for the verification task, where the model develops an intricate feature space that incorporates fine-grained details. By training a model to discriminate between pairs of images from the same and different classes, a relational graph is constructed, representing the class relationships between data points. We then present two approaches for graph clustering: a naive algorithm and a specific setup for the Leiden graph clustering algorithm. The pipeline is validated on the LPLCv2 dataset, which comprises real-world traffic surveillance images. We show that the dataset carries an inherent capture device bias that is posed as a generalization challenge for downstream License Plate recognition tasks such as OCR. As such, we dynamically identify capture devices with a label-agnostic approach, enabling the construction of a fair and unbiased benchmark. In the cross-device scenario, our pipeline reaches an F1-Score of 93.45 in the verification baseline and a V-Measure score of 80.13 in the clustering step. All code is publicly available at https://github.com/lmlwojcik/VeriCam"
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Robust retinal biometrics for patient identity verification and retrieval across age and imaging devices",
+    "authors": "Jose D. Vargas-Quiros, Dennis Bontempi, Jeroen Vermeulen, Bart Liefers, Sven Bergmann, Caroline C. W. Klaver",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.31094v1",
+    "source": "arXiv",
+    "abstract": "Patient identity errors can compromise longitudinal medical records, research databases, and downstream clinical decisions. We present a retinal biometric system for verifying claimed identities and retrieving the correct identity from color fundus images. We trained a 512-dimensional metric-learning encoder combining a ConvNeXtV2 backbone with ArcFace and triplet losses on 227,004 images from 21,851 patient-eye identities in the Rotterdam Study, spanning multiple imaging devices and up to 32.6 years of follow-up. The system was evaluated on held-out Rotterdam Study data and externally on the UK Biobank and Age-Related Eye Disease Study (AREDS). Before evaluation, we used the model to screen for identity inconsistencies and manually adjudicated flagged images, identifying incorrect assignments in 0.588% of Rotterdam Study images, 0.259% of UK Biobank images, and 0.164% of AREDS images. In retrospective-only verification after removing near-duplicate images, the system achieved AUROCs of 0.9998, 0.9997, and 0.9998 in the Rotterdam Study, UK Biobank, and AREDS, respectively. For identity retrieval using only previously acquired images, Recall@1 was 99.7%, 97.2%, and 97.6%, respectively, from galleries averaging 4436-8510 identities; the correct identity appeared among the top five results in at least 98.6% of cases. Performance remained robust across imaging devices and long follow-up intervals, while lower image quality and inconsistent retinal fields accounted for most failures. These findings establish retinal anatomy as a durable biometric signal, useful for safeguarding the integrity of longitudinal imaging records."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+    "authors": "Xuehai Wang, Haowei Qin, Tongxin Liu, Junkai Li, Buqiang Xu, Jintian Zhang, Yijun Chen, Zirui Xue, Shumin Deng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.31076v1",
+    "source": "arXiv",
+    "abstract": "Autonomous scientific research agents are increasingly applied to end-to-end scientific workflows, including literature review, data analysis, experimentation, and report generation. However, open-ended research tasks often do not clearly specify the analyses, methods, and success criteria required to complete the task. As a result, agents may miss important analyses, use inappropriate methods, or draw conclusions that are insufficiently supported by evidence. To address the problem, we present AutoSciRub, an evaluation-first framework that induces a task-specific executable rubric before research execution, and uses it to guide execution, criterion-level verification as well as iterative revision. AutoSciRub decomposes an underspecified instruction into atomic scientific goals, grounds them in relevant literature and task-visible data, and synthesizes specific, actionable, and verifiable criteria. The resulting rubric makes implicit experimental and evidential requirements explicit, providing guidance for experiments and analyses. During revision, rubric-guided verification identifies unmet criteria and enables targeted refinement of the research report and its supporting artifacts. On ResearchClawBench, AutoSciRub consistently improves all tested configurations, with an average gain of 2.08 points across three backbone LLMs under the fixed Codex harness and 2.95 points across three agent harnesses using a fixed DeepSeek-V4-Flash backbone. On a randomly sampled 20-task subset of AstaBench E2E Discovery, AutoSciRub further achieves an average improvement of 16.8 points across three agent harnesses, while maintaining or increasing the number of successfully completed tasks. These results demonstrate that evaluation-first guidance provides an effective and generalizable control mechanism for autonomous scientific research (Code: https://github.com/zjunlp/AutoSciRub)."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "From Intent to Evidence: Policy-Steered Multi-Strategy Retrieval for Long-Video Agents",
+    "authors": "Can Zhang, Baofeng Zhang, Xiaotian Han, Junyuan Shang, Yuchen Ding, Shuohuan Wang, Dianhai Yu, Ruirui Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.31005v1",
+    "source": "arXiv",
+    "abstract": "Existing long-video agents acquire evidence through one uniform behavior, ignoring whether the required evidence is concentrated, requires broad occurrence coverage, or must discriminate competing hypotheses---which can cause failure before substantive reasoning begins. Prescribing a fine-grained solution procedure for every question is not a satisfactory remedy, as it restricts autonomous exploration. We propose VESTA, a training-free long-video agent organized as a route-conditioned acquire--verify--consolidate loop. Before exploration, an intent router infers an evidence-acquisition policy---focused, recall, or contrastive retrieval over a shared visual--speech scene index---together with an evidence-accounting policy that configures the evidence view maintained during exploration. Policy-steered retrieval yields provisional references that multimodal evidence operations convert into observations, while the Reasoner remains free to verify them, re-query using intermediate findings, or inspect regions outside the retrieved set. A temporal evidence ledger consolidates observations into an adaptive, compressed view of temporal location, provenance, coverage, conflicts, verification outcomes, and hypothesis support, exposing missing and unresolved evidence to guide subsequent acquisition; finalization prioritizes verified observations. On Video-MME-v2, VESTA improves average accuracy by 2.7 points over VideoARM and gains across all six reported metrics. On LongVideoBench, EgoSchema, and LVBench under shared query-time models, it improves by 6.9 points on the LongVideoBench long subset and 1.5 on LVBench, and matches VideoARM on EgoSchema."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Multi-View Reflective Surface Inspection via Semantic-Saliency Cross-Verification",
+    "authors": "Van-Giang Nguyen, Thanh-Tuan Tran, Xuan-Hieu Phan, Xiem HoangVan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30997v1",
+    "source": "arXiv",
+    "abstract": "Reflective smartphone cover glass is challenging to inspect from a single fixed viewpoint because defect visibility varies with viewing geometry and specular reflections. This gives rise to two practical challenges: defects may be weakly observable from certain viewpoints, while the available visual evidence may remain spatially ambiguous. To address these issues, we propose a multi-view inspection framework in which each RGB observation is processed by a shared per-view expert. A vision-language model (VLM) produces class-aware semantic boxes, while a normal-reference reconstruction branch provides class-agnostic saliency. Their spatial agreement is used as supporting evidence to rank semantic proposals without modifying their coordinates or treating saliency as ground truth. The resulting evidence records are combined at product level without cross-view registration. On 282 production-line images, semantic-saliency association improves $AP_{50}$ from 52.6% to 62.6% by re-ranking fixed semantic proposals. Across 94 products, cross-view evidence recall $R_{\\rm prod}@0.5$ increases from 75.5% for the best single view to 88.3% using all three views. These results support the complementary roles of semantic-saliency cross-verification and additional optical observations in reflective-surface inspection."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "LOCI: A Locator-Critic with Refinement Loop",
+    "authors": "Walid Bousselham, Mathilde Caron, Arsha Nagrani, Cordelia Schmid",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30959v1",
+    "source": "arXiv",
+    "abstract": "Vision-Language Models (VLMs) still struggle on tasks requiring complex visual understanding. We argue that the core issue is not high-level reasoning, but instead failing to locate critical details in the image. Due to this shortcoming, VLMs generate often plausible but incorrect reasoning based on flawed perceptual grounding. To address this, we propose Locator-Critic (LOCI), a training-free framework that decouples visual search from evidence verification. LOCI employs a Locator agent to propose candidate visual evidence and a separate Critic agent to evaluate its relevance and sufficiency. These agents engage in an iterative refinement loop, progressively improving the evidence until it is adequate to answer the given question. This decoupled, self-correcting process yields substantial performance gains, achieving state-of-the-art results on multiple complex visual benchmarks. LOCI improves accuracy for both open-weight models like Qwen3-VL (+12.1 on V*, +5.8 on HR-Bench and +11.2 on VisualProbe-Hard) and proprietary models like Gemini 2.5 Pro (+8.9 on V*, +4.3 on HR-Bench, +4.8 on VisualProbe-Hard)."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Clock-Gating Insertion Strategies on an Open-Source MSP430 Core: A Reproducible PPA Study and a Gate-Level Simulation Caveat",
+    "authors": "Xingran Huang, Qiming Guo, Jinwen Tang, Wenqi Jia, Dongzheng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30954v1",
+    "source": "arXiv",
+    "abstract": "Clock gating, the standard technique for cutting dynamic power, is introduced either as hand-written behavioral clock gates at the register-transfer level (RTL) or as integrated clock-gating (ICG) cells inserted automatically during synthesis; the two are widely treated as interchangeable. In this paper we show, on a real open-source 16-bit microcontroller core (openMSP430) synthesized with a 32 nm standard-cell library, that they are not equivalent in practice: behavioral latch-based RTL gating is functionally correct in ideal RTL simulation (10/10 self-checking testcases, identical to the ungated baseline) yet fails at gate level: the gated multiplier result is never captured and reads zero, while tool-inserted ICG cells pass gate-level simulation cleanly (10/10). We root-cause the failure to a hold race introduced by the late latch+AND gated clock, and show it persists across eight simulation configurations including full Standard Delay Format (SDF) back-annotation, not a simulator-setting artifact. We then quantify the power/area/timing (PPA) impact of three gating strengths: RTL behavioral (Opt1), synthesis ICG (Opt2), and both (Opt3), against the ungated baseline, across four workloads and three process corners (ss/tt/ff). The benefit is corner-robust: ICG (Opt2) cuts dynamic power by 74-81% and total power by 25-30% at every corner. We also show that in this leakage-dominated 32 nm regime the total-power win comes from the area/leakage reduction that gating brings (leakage -24 to -30%), not from the large dynamic saving, which instead dominates active-mode energy. Our recommendation for low-power design on open-source cores is to prefer tool-inserted ICG cells over hand-written behavioral clock gates. The full flow (Design Compiler synthesis, PrimeTime PX power, and self-checking verification) is released as an open artifact."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Size-Independent Robustness in Multipartite Bell Self-Testing",
+    "authors": "Shen Cao, Xingjian Zhang, Fei Shi, Qi Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30851v1",
+    "source": "arXiv",
+    "abstract": "Practical robust self-testing of multipartite entanglement has so far been restricted to small-scale systems due to error bounds that degrade severely with system size. In this work, we establish multipartite self-testing with robustness independent of the size of the quantum network. We derive a fully analytic, device-independent self-testing bound for $n$-qubit Greenberger-Horne-Zeilinger (GHZ) states. The bound scales linearly with the observed violation error and lies universally within a constant factor of two from a theoretical upper bound. Furthermore, the operator-inequality framework reduces the verification of the conjectured optimal bound to a highly efficient numerical check, which we perform up to $n=100$. Consequently, GHZ entanglement can be certified under a fixed noise level in arbitrarily large systems, enabling scalable device-independent verification."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "HSRM: Hidden-State Reward Models for Test-Time Verification",
+    "authors": "Xianzhi Li, Xiaodan Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30841v1",
+    "source": "arXiv",
+    "abstract": "Large language models can often generate plausible mathematical reasoning traces, but reliably identifying the correct solution among multiple candidates remains a key challenge. Existing test-time reasoning pipelines typically rely on text-based verifiers that re-read each generated solution, making verification an expensive component of inference. Prior work has shown, however, that LLMs often encode correctness-related signals in their internal representations, including awareness of when their own answers are likely to be wrong. Building on this observation, we introduce HSRM, a lightweight hidden-state reward model that verifies candidate solutions by directly reading the generator's internal representations rather than re-processing its text. HSRM extracts hidden states from a frozen generator at reasoning-step boundaries and uses a small Transformer encoder to rank candidates. It is trained from self-generated trajectories with outcome labels, requiring neither human-written process supervision nor a large pretrained verifier. Across four mathematical reasoning benchmarks, HSRM matches or outperforms a 55M-parameter text-only energy verifier in 15 of 16 generator--dataset settings while using only about 2M parameters, providing an efficient alternative to text-only verification by reusing representations already computed during generation."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "ProofPulse: Interactive Proof Coverage Analysis for Dafny",
+    "authors": "Álvaro F. Silva, Ruben Martins, Alexandra Mendes",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30818v1",
+    "source": "arXiv",
+    "abstract": "Deductive verification ensures that an implementation satisfies its specification, but successful verification does not guarantee the quality of the specification. As such, weak specifications and redundant invariants may create overconfidence in ``verified'' code. We present \\proofpulse, a tool for Dafny that diagnoses specification quality using a three-valued proof coverage model. By analyzing proof dependencies, ProofPulse distinguishes between elements that contribute to specification intent, those used only for auxiliary checks, and those irrelevant to any proof obligation. Evaluated against an oracle of 252 programs from the dafny-synthesis benchmark, ProofPulse provides a high-precision signal for specification weaknesses, particularly unnecessary preconditions and vacuous proofs. With unsat-core minimization, ProofPulse achieves perfect precision for precondition classification and reduces false positives across all evaluated categories. These results show that proof coverage is a practical complement to verification. Although it cannot fully capture semantic intent, it can reveal weak proof coupling in programs that otherwise appear fully verified. Just as a pulse check distinguishes vitality from the mere absence of symptoms, ProofPulse exposes weaknesses in proofs that technically verify successfully but still suffer from inadequate or redundant code and specifications."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Schwarz: Solver-Aware Agentic Program Verification",
+    "authors": "Jingyu Ke, Ling-I Wu, Guoqiang Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30803v1",
+    "source": "arXiv",
+    "abstract": "Agentic verification systems can often generate source-level specifications that look plausible, but plausibility is not enough: the verifier must still turn those specifications into SMT obligations that the solver can prove. When this step fails, current LLM-driven loops usually expose only a coarse verifier error, timeout, or unknown solver result. The model cannot tell whether the specification is wrong, a helper lemma is missing, the proof context contains irrelevant facts, or the obligation needs a different theory view. This paper presents Schwarz, an agentic verification harness that makes SMT-backed proof failure local, checkable, and repairable. Schwarz turns failed verification into obligation-local repair tasks: program-point snapshots expose checked facts at a boundary, local lemmas let the agent propose missing proof steps, and theory-aware solver policies guide the agent toward solver-friendly formulations for numeric, quantified, memory, and floating-point obligations. We implement Schwarz for C and Rust/Verus and evaluate it on 1,475 tasks. On 475 benchmarks from recent agentic verification tools, Schwarz solves 95.2% of the tasks. On 1,000 tasks from the SV-COMP 2026 ReachSafety track, averaging 1,427 LOC, Schwarz solves 91.5% of the tasks, compared with 60.1% for CPAchecker. Ablations and comparison with a pure-agent baseline show that solver-aware repair is effective and scalable."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Closing the Verification Loop: Self-Check Captioning for Long-Paragraph Detailed Audio Captioning",
+    "authors": "Fengji Ma, Yan Rong, Xu Li, Chen Zhang, Pengfei Wan, Li Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30713v1",
+    "source": "arXiv",
+    "abstract": "Long-paragraph detailed audio captioning, which requires dense and transcript-faithful descriptions of fine-grained audio content, remains unsolved for current audio-visual multimodal language models. We attribute this failure to two structural problems. The first is data poverty, as no public corpus jointly provides long clips, paragraph captions, and verbatim-transcript fidelity. The second is generation-mode failure, evidenced by a 44.8 to 46.4 percentage-point gap between right-audio and shuffled-audio multiple-choice question (MCQ) accuracy. We address both within Self-Check Captioning (SCC), a unified framework that instantiates audio-grounded question answering as the verification primitive at every lifecycle stage. SCC yields three artifacts. Long-paragraph Audio Caption 50k (LACap-50k) is a 50,222-clip audio-visual corpus with 491.5-word captions and a post-hoc automatic speech recognition (ASR) audit. Layer-Curvature Supervised Fine-Tuning (LC-SFT) is the first on-policy supervised fine-tuning method to weight tokens by intermediate-layer evidence, motivated by our identification of Late-Layer Semantic-Entropy Collapse (SEC). SCC-Verifier arbitrates among caption rollouts via audio-grounded self-answering at inference. Across multiple benchmarks, our system attains state-of-the-art among open-source captioners and is competitive with proprietary baselines. We release LACap-50k to fill the resource gap for long-paragraph detailed audio captioning research."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "UFPR-PEs: A Brazilian Face Recognition Benchmark with Self-Declared Race/Color Labels",
+    "authors": "Alexandre Diano, Bernardo Biesseck, Gabriel Polo, Vinicius Gregorio, Laura Lopes, Diego Addan, David Menotti",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30688v1",
+    "source": "arXiv",
+    "abstract": "While face recognition systems are widely deployed, ensuring their demographic reliability and robustness under uncontrolled visual conditions remains a critical challenge. To bridge this gap, we present UFPR-PEs, a benchmark for face recognition bias evaluation using public videos of elected Brazilian politicians annotated with official self-declared race/color categories. The dataset adopts the Brazilian census taxonomy, including the parda category, which has no direct equivalent in the U.S.- or Europe-centric schemas commonly used in prior benchmarks. Our benchmark is built from compressed public video and preserves difficult samples so that performance can be analyzed under realistic conditions. We describe the construction pipeline, report dataset statistics, and evaluate face recognition performance across verification and (closed- and open-set) identification settings, including subgroup analysis by race/color and difficulty level. The results show that recognition performance varies substantially with image quality, and that subgroup gaps must be interpreted jointly with visual difficulty rather than in isolation. Overall, UFPR-PEs provides a reproducible and demographically grounded setting for studying face recognition bias under challenging public video conditions."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "LCoT-GV: Graph Attention Networks for Verifying Long Reasoning Chains in Large Language Models",
+    "authors": "Bérénice Jaulmes, Mehwish Alam",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30679v1",
+    "source": "arXiv",
+    "abstract": "Large Reasoning Models produce Long Chains-of-Thought (LCoTs) which involve breaking down the problem into smaller reasoning steps before reaching the conclusion. However, these steps often contain contradictions, unsupported inferences, or irrelevant steps, even when the final answer is correct. We propose Long Chain-of-Thought Graph Verifier (LCoT-GV), a graph-based framework that represents LCoTs as reasoning graphs. Each node in the graph represents a reasoning step and the edges encode semantic and logical relations. A Graph Attention Network is then trained to predict chain-of-thought correctness from the reasoning graph. We construct a new graph-oriented verification dataset from multiple reasoning benchmarks for question answering in various domains. The results show that our method is competitive with the most similar approaches."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving",
+    "authors": "Boyang Mu, Zhiwei Wei, Mugen Peng, Wenjia Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30672v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in large language models and multimodal models have pushed remote sensing (RS) processing from simple perception models to agentic systems designed to tackle complex, long-horizon RS tasks. However, existing systems often rely on monolithic decision-making frameworks, which fail to accommodate the multi-stage, interdependent nature of RS tasks. This centralized approach leads to challenges such as unstable task execution, incorrect tool usage, and error propagation across stages. To address these issues, we propose HiRS-Agent, a hierarchical multi-agent system for long-horizon RS task solving. HiRS-Agent adopts a two-level collaborative architecture: the Manager Layer handles dynamic routing, step-level verification, replanning, and termination control, while the Specialist Layer organizes domain-specific tools according to the RS workflow and is responsible for subtask reasoning and tool execution. To further enhance the system's capability, we introduce a two-stage supervised tuning strategy and a verification-guided hierarchical reinforcement learning stage to jointly optimize coordination and tool-use policies. Experiments on Earth-Agent Benchmark and ThinkGeo show that HiRS-Agent substantially improves long-horizon tool-use capability and final-task correctness, demonstrating the effectiveness of structured multi-agent collaboration for reliable RS agents. The code is publicly available at https://github.com/IntelliSensing/HiRS-Agent."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "LLM-based Hardware Development with Hierarchical IRs and End-to-End Multi-Agent Workflow",
+    "authors": "Chenyang Yin, Agasthi Haputhanthri, Aditya Anirudh Jonnalagadda, Zhenyu Bai, Yuanming Song, Saranyu Chattopadhyay, Mohammad Fadiheh, Tom Zelazny, Subhasish Mitra, Tulika Mitra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30659v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly used in software development, but their use in complex hardware design remains limited. This gap stems from both the scarcity of public hardware training data and the fundamentally different methodologies used in hardware design. In particular, applying LLMs to hardware requires more than direct RTL generation: the model must understand module boundaries, inter-module connections, and verification requirements. In this paper, we present an LLM-based hardware development framework with hierarchical intermediate representations (IRs) and an end-to-end multi-agent workflow. The core idea is to provide an abstraction of hardware design to LLMs through two structured IRs: Architectural Sketch, which captures module topology and interconnection, and Operational Specification, which defines per-module functionality and interfaces. Our framework uses these IRs to decompose a complex design into sub-modules, specify the per-block functionality, and derive how each module should be tested and verified. We incorporate a multi-agent debug loop in the framework, allowing agents to get the error feedback and control the debug details such as the signals to be probed for simulation. We evaluate our framework on Verilog-Eval benchmark, achieving a pass@5 rate of 95.5%, which surpasses current state-of-the-art LLM generation frameworks. To better assess performance on complex, realistic designs, we introduce a new case study spanning applications from general-purpose processors to digital signal processing systems. Experimental results indicate that such complex designs exceed the capabilities of existing approaches, whereas our framework is the only one capable of producing functional end-to-end design. Our generated RTL follows all industry-standard design rules, is lint-clean, functionally correct and fully synthesizable."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Freezing of a deformable water-saturated porous medium. Part I: THM formulation, OpenGeoSys-6 implementation and benchmarking",
+    "authors": "Tymofiy Gerasimov, Christian B. Silbermann, Dmitri Naumov, Olaf Kolditz, Haibing Shao, Thomas Nagel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30591v1",
+    "source": "arXiv",
+    "abstract": "In this contribution, Part I, we present a coupled thermo-hydro-mechanical formulation for modeling and analyzing water-to-ice phase change in a deformable fully-saturated porous medium. It is implemented in the multi-physics computational platform OpenGeoSys-6. We compute a series of carefully designed benchmark problems which critically examine the corresponding formulation components and the overall implementation. Several ingredients that have a qualitative and quantitative impact on the numerical results are identified, particularly dissected and commented on. Simulations also account for soil deformation induced by freezing (as a result of 9% volumetric expansion caused by water-to-ice phase transition). The forthcoming Part II will complete the code verification and validation campaign by considering a real full-scale three-dimensional case study of shallow subsurface ice storage. More specifically, we simulate the ice growth process in a fully saturated soil specimen surrounding a group of borehole heat exchangers (BHEs) that contain subzero temperature coolant fluid. A snapshot of the numerical results of this task is already depicted here in Part I as a teaser."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Practical Implementation Report on Introducing Spec-Driven Development Using AI Agents in Software Development PBL",
+    "authors": "Hidetake Tanaka, Hiroshi Igaki, Kazumasa Shimari, Kiyoshi Honda, Naoki Fukuyasu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2608.30572v1",
+    "source": "arXiv",
+    "abstract": "In recent years, autonomous AI agents such as GitHub Copilot and Claude Code have been rapidly gaining popularity. This study reports on the practical implementation of Spec-Driven Development, a software development methodology premised on AI agents, within a Software Development Project-Based Learning (SDPBL) course for third-year undergraduate students. We defined a workflow consisting of four phases, namely investigation, planning, implementation, and review. We also established an environment tailored for the SDPBL course where AI agents generate documentation and code during each phase. We analyzed the results from three perspectives, namely students' subjective AI usage, implementation throughput, and code comprehension. The analysis reveals that AI usage patterns varied across development phases and teams. Moreover, while AI agent utilization increased implementation throughput, it also tended to encourage students to proceed with development without fully understanding the code. This study demonstrates that regular verification of code comprehension by instructors and appropriate feedback are essential for maintaining educational effectiveness when introducing SDD into SDPBL."
+  },
+  {
+    "date": "2026-8-31",
+    "title": "MathPedaCoT: Pedagogy-Aligned Chain-of-Thought Reasoning with Process Supervision and Dual-Agent Verification for LLM-Based Mathematics Education",
+    "authors": "Xicheng Tu",
+    "publish": "Proceedings of the 2026 6th International Conference on Applied Mathematics, Modelling and Intelligent Computing",
+    "url": "https://doi.org/10.1145/3817124.3817200",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-31",
+    "title": "Verifier-Grounded Runtime Mediation for LLM Agent Procedural Compliance",
+    "authors": "Hitoshi Yabusaki",
+    "publish": "2026 IEEE International Conference on Software Services Engineering (SSE)",
+    "url": "https://doi.org/10.1109/sse72781.2026.00014",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "Failure Analysis of LLM-Generated Workflow Definitions",
+    "authors": "Abubakari Alidu, Michele Ciavotta, Flavio De Paoli",
+    "publish": "2026 IEEE International Conference on Software Services Engineering (SSE)",
+    "url": "https://doi.org/10.1109/sse72781.2026.00013",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "LLM-Assisted Provenance Enforcement for ECR-Based Container Artifact Promotion Pipelines",
+    "authors": "Naga Krishna Reddy Muppidi",
+    "publish": "2026 5th International Conference on Electronics Representation and Algorithm (ICERA)",
+    "url": "https://doi.org/10.1109/icera72709.2026.11666680",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "EdgeCommerce: Autonomous Self-Optimizing LLM Inference for Real-Time E-Commerce at the Edge",
+    "authors": "Ram Hibane",
+    "publish": "2026 5th International Conference on Electronics Representation and Algorithm (ICERA)",
+    "url": "https://doi.org/10.1109/icera72709.2026.11666692",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "RO: Reliable Orchestration of LLM Programs via Deterministic-Generative Separation",
+    "authors": "Saurabh Jha",
+    "publish": "2026 56th Annual IEEE International Conference on Dependable Systems and Networks - Supplemental Volume (DSN-S)",
+    "url": "https://doi.org/10.1109/dsn-s70715.2026.00052",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "Characterizing LLM Summarization Performance Across CPU and GPU Deployments",
+    "authors": "Tse Chuan Hsu, Shu Yun Chen",
+    "publish": "2026 IEEE International Conference on Software Services Engineering (SSE)",
+    "url": "https://doi.org/10.1109/sse72781.2026.00037",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "ReCLLaMA: A Reasoning-Centered LLM Agent for Medical Diagnosis",
+    "authors": "Yang Zhao, Saiyun Dong, Xinghua Shi",
+    "publish": "2026 IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)",
+    "url": "https://doi.org/10.1109/chase69719.2026.00067",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "DiagAgent: A LLM-Based Multi-Agent Framework for Highly Accurate Product Fault Diagnosis",
+    "authors": "Hairuo Zhang, Ke Xu, Yongchuan Tang",
+    "publish": "2025 18th International Symposium on Computational Intelligence and Design (ISCID)",
+    "url": "https://doi.org/10.1109/iscid68789.2025.00044",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "What Does a Prompt Actually Do? A Systematic Ablation Study of Prompt Components in LLM Code Generation",
+    "authors": "Rukmangadha Peddapalli Venkatappa",
+    "publish": "2026 IEEE International Conference on Software Services Engineering (SSE)",
+    "url": "https://doi.org/10.1109/sse72781.2026.00036",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "Simulating Cognitive Styles in Conceptual Design: An LLM-Based Process Modeling Approach",
+    "authors": "Xiyuan Zhang, Jinyu Gu, Ningfeng Tang, Chunlei Chai",
+    "publish": "2025 18th International Symposium on Computational Intelligence and Design (ISCID)",
+    "url": "https://doi.org/10.1109/iscid68789.2025.00065",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "An LLM-enhanced Framework for Assessing Student Knowledge Mastery in Software Engineering Education",
+    "authors": "Wanchun Dou, Ke Ma, Zheng Li",
+    "publish": "2026 IEEE International Conference on Software Services Engineering (SSE)",
+    "url": "https://doi.org/10.1109/sse72781.2026.00049",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "TwistCraft: Designing an LLM-Powered Tangible Construction Game for Developing Children’s Spatial Skills",
+    "authors": "Xiaojing Zhou, Yuanyue Wang, Yiwei Chai, Mingyu Li",
+    "publish": "2025 18th International Symposium on Computational Intelligence and Design (ISCID)",
+    "url": "https://doi.org/10.1109/iscid68789.2025.00061",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "Fostering Occupational Cognition in Children: An LLM-Powered Multi-Agent Role-Playing Approach",
+    "authors": "Yujie Zhou, Hongli Xi, Zhenyuan Ma, Cheng Yao",
+    "publish": "2025 18th International Symposium on Computational Intelligence and Design (ISCID)",
+    "url": "https://doi.org/10.1109/iscid68789.2025.00064",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "LLM-Assisted Knowledge Graph Construction and Intelligent QA System for University Physics",
+    "authors": "Xuanyu Zhu, Wenting Zhang, Te Li, Xiang Zhao, Chunyan Li",
+    "publish": "2026 International Conference on Distance Education and Learning (ICDEL)",
+    "url": "https://doi.org/10.1109/icdel70250.2026.11663754",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-1",
+    "title": "Computing Interpersonal Metafunctions: Quantifying Appraisal Shifts via LLM Ensembles",
+    "authors": "Yuan Gao, Jiahao Zhang, Yi Yu",
+    "publish": "Proceedings of the 2026 7th International Conference on Computer Information and Big Data Applications",
+    "url": "https://doi.org/10.1145/3813822.3813869",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-31",
+    "title": "Kairos: SLO-Aware Scheduling and a Benchmark for Multi-Tenant LLM Inference Serving under Bursty, Heterogeneous Load",
+    "authors": "Sneha Gullapalli, Veera Ravindra Divi",
+    "publish": "2026 5th International Conference on Electronics Representation and Algorithm (ICERA)",
+    "url": "https://doi.org/10.1109/icera72709.2026.11666706",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-1",
+    "title": "LLM4FE: Enhancing Low-to-Medium Dimensional Tabular Data via LLM-Generated Features",
+    "authors": "Yizheng Tao, Kangning Chang",
+    "publish": "Proceedings of the 2026 7th International Conference on Computer Information and Big Data Applications",
+    "url": "https://doi.org/10.1145/3813822.3813937",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-8-31",
+    "title": "FitRAG: Self-Improving LLM-Based Services through Feedback-Driven Adapter Lifecycle Management",
+    "authors": "Riza Alaudin Syah, Christoforus Yoga Haryanto, Emily Lomempow, Krishna Malik, Irvan Putra",
+    "publish": "2026 IEEE International Conference on Software Services Engineering (SSE)",
+    "url": "https://doi.org/10.1109/sse72781.2026.00022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-8-31",
+    "title": "LLM-Enhanced Topic Modeling for Branch Service Quality Monitoring Using Online Reviews",
+    "authors": "Darren Christopher Widjaja, Christopher Ernest Emanuel Rachmat, Matteo Vasili, Ivan Diryana Sudirman",
+    "publish": "2026 5th International Conference on Electronics Representation and Algorithm (ICERA)",
+    "url": "https://doi.org/10.1109/icera72709.2026.11666651",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
