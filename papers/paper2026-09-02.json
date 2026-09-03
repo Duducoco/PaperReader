@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-02",
+    "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+    "authors": "Cagri Temel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02861v1",
+    "source": "arXiv",
+    "abstract": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous action can be traced back to sensor evidence through documented causal chains. The framework organizes decision-making into four auditable layers: Semantic Perception for evidence-grounded entity recognition, Belief Reasoning for probabilistic state estimation with causal graphs, Action Synthesis for constraint-aware planning with counterfactual documentation, and Execution Verification for compliance monitoring. TRACE is model-agnostic yet designed to integrate learning-based perception modules (CNNs, transformers) while preserving decision-level auditability. We evaluate the framework using three objective metrics: Evidence Traceability (sensor-to-decision linkage), Decision Reconstructability (post-hoc analysis capability), and Temporal Continuity (audit trail completeness). Experimental evaluation on warehouse robot navigation demonstrates that TRACE achieves 98.6% evidence traceability, 99.0% temporal continuity, and 98.1% decision reconstructability across 500 simulated decision cycles. Post-hoc methods like LIME provide feature attributions but lack the artifact structure needed for decision-level reconstruction. The framework addresses EU AI Act requirements for high-risk system transparency and contributes to Explainable AI for safety-critical autonomous systems."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Petersson-Rigid Lattices in a Census of 100 Rank-Three Root Bases",
+    "authors": "Eungang Cho",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02843v1",
+    "source": "arXiv",
+    "abstract": "The first paper worked out one family of four lattices in full -- $|\\det| = 12, 24, 36$ and $72$. This paper generalizes it. We enumerate the 44 symmetrizable rank-three hyperbolic Cartan matrices and their 56 depth-one edits, 100 root bases in all, and compute the obstruction space $S_{5/2}(ρ_L)$ of the 98 within our weight-$5/2$ budget: 10 vacuous, 34 unobstructed, 54 obstructed. The vacuous ten are the lattices Bruinier, Ehlen and Freitag call simple, read in signature $(2,3)$. Of their fifteen, our ten realize five; of the rest, five need more than three generators and cannot be the discriminant form of a rank-three lattice at all, three fail $|\\det L| = 2k^2$, and two are simply not root bases. Within the rank-three hyperbolic world the simple lattices are exactly the Feingold-Frenkel neighbours of index $k \\le 4$. The discriminant group $L'/L$ carries a finite quadratic form, and the finite group of its isometries acts on the weight-$3/2$ cusp forms for $ρ_L$, the bottom antisymmetric rung. We survey the lattices on which that action is absolutely irreducible of dimension at least two, so that the Petersson pairing there is pinned down up to a single scalar. The condition alone cuts the census to three: $L_4$ of the first paper, and two new ones at $|\\det| = 40$ and $88$. The quaternion discriminants that occur are 6, 10 and 22, the three for which the Shimura curve $X^D$ has genus zero. Rigidity uses no quaternion input, so we record it as an observation, not a characterisation. Both invariants of the first paper -- the shadow norm $\\|Ξ\\|^2$ and the Petersson scalar $t$ -- were single points there. Three rigid lattices instead of one are where their special faces come off: $\\|Ξ\\|^2$ generalizes against $L(f,1)$ where the first paper read $L(f,2)$, and $t$ against an elliptic curve's imaginary period where it read $Γ(1/3)$. Both numerically, to 26-58 digits."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems",
+    "authors": "Yihang Chen, Yuxiang Chen, Yuxuan Huang, Meng Fang, Weilin Luo, Jun Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02750v1",
+    "source": "arXiv",
+    "abstract": "Multi-agent LLM systems commonly use an orchestrator to decompose a task for a team of workers and then improve through textual reflection. Despite strong empirical results, these systems lack a unified account of coordination, memory improvement, and the role of external verification. We model orchestrator-worker interaction as a bilevel coordination game: under bounded coupling, the workers' local-update game is an approximate potential game whose equilibrium slack is controlled by decomposition quality. We then analyse reflection as stochastic movement over semantic memory states. For free-form reflection, we derive a finite-time upper bound, prove worst-case tightness, and give a positive lower bound under a falsifiable persistent-harm condition. We further prove an information-theoretic impossibility result: no gate that observes only the generated transcript can improve uniformly over text-indistinguishable environments, whereas an environment-grounded gate can. Motivated by this separation, we introduce Stochastic Reflective Memory Ascent (SRMA), which accepts a candidate memory only after a grounded evaluation risk strictly decreases. Under calibration and non-degenerate corrective mass, SRMA converges exactly, geometrically or polynomially; matching constructions show that both rate regimes are order-tight. We also provide confidence gating for stochastic evaluation and re-anchoring guarantees for piecewise-stationary environments. Experiments instantiate these objects with environment-grounded metrics and test the predicted coordination and drift laws. On 500 SWE-bench instances, the complete Kimi-based system resolves 72.2% versus a 70.8% public mini-SWE-agent reference. Code: https://github.com/YihangChen9/Bilevel-Coordinated-Reflection"
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+    "authors": "Jianlyu Chen, Yuyang Hu, Hongjin Qian, Jiawei Liu, Wenqing Wei, Xiaolong Chen, Defu Lian, Zhicheng Dou, Chaozhuo Li, Qiwei Ye, Zheng Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02749v1",
+    "source": "arXiv",
+    "abstract": "Autonomous agents are beginning to carry out machine-learning (ML) research end to end. These agents combine a model backbone with a harness for planning, execution, memory, and verification, but this architecture still leaves domain-specific know-how outside the agent. We call this missing layer operational knowledge, the know-how that separates knowing a method from making it work. That knowledge is not absent from the field. It appears in repositories and papers, but in forms written for human readers and too large to load during a task. Once distilled into compact, verified skills, this knowledge can be reused across tasks rather than rediscovered during each run. We present DisCo, a skill-powered research agent that creates skills and uses them during research. Its distillation runs in two complementary forms: task-agnostic, condensing the field's widely used repositories into reusable skills, and task-oriented, producing the skills a concrete task calls for. The former, applied across the open ecosystem, yields the AREX-Skill Library, with 5,000+ verified skills distilled from 1,000 widely used ML repositories and organized into 20 areas and 178 capability families. With the GPT-5.5 backbone, research harness, and downstream execution budget held fixed, the skill-equipped research agent scores 134.3% higher on MLE-bench, 34.4% higher on PaperBench, 9.2% higher on FrontierCS, and 14.0% higher on PassNet than the same agent without skills. These gains come from adding distilled operating context under that fixed setup."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "ACLE-MCP: Attested Capability Leases for Execution-Time Trust in Remote LLM Tool Use",
+    "authors": "Zhiyang Ding, Yang Luo, Guangpu Chen, Qingni Shen, Zhonghai Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02690v1",
+    "source": "arXiv",
+    "abstract": "Remote Model Context Protocol (MCP) services enable large language model agents to invoke external tools, but OAuth authorization alone does not ensure that a later tool call is executed by the provider-side workload that the relying party intended to trust. An endpoint may remain authorized even after execution shifts to a substituted workload, relies on stale appraisal state, reuses authority transferred from another sender, or traverses an undeclared downstream component. We call this problem the post-authorization execution trust gap. We present ACLE-MCP, an invocation-scoped architecture that couples delegated authorization, workload appraisal, and resource-side execution admission. For protected calls, ACLE-MCP issues a short-lived, sender-constrained capability lease that binds the expected workload, freshness requirement, operation, object and parameter bounds, downstream constraints, and receipt obligations. A provider-side Execution Gate consumes the lease immediately before protected tool logic begins. We implement a runnable prototype with Keycloak/OIDC validation, an MCP Python SDK server, and an optional vTPM quote-verification backend. Controlled security experiments and an agent tool-use extension show that weaker authorization or connect-time attestation modes leave distinct post-authorization attacks open, whereas full ACLE-MCP blocks all evaluated attack families while preserving all benign tasks. In the locally simulated agent extension, the complete design increases request-level pooled p95 latency on normal allowed calls by 25.7% relative to OAuth-only. These results indicate that invocation-time binding between call authority and current workload state is a practical complement to OAuth-protected remote tool use."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Dimension Dependent Correlation Gap Bounds under Restricted Independence",
+    "authors": "Arjun Ramachandra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02659v1",
+    "source": "arXiv",
+    "abstract": "The pairwise independent correlation gap is the ratio of the maximum expected value of a set function under arbitrary dependence to that under pairwise independence, measuring the loss from this independence restriction. Under mutual independence, this gap is universally bounded by $e/(e-1)$ for monotone submodular functions. With pairwise independence, a tighter $4/3$ upper bound was established for several special cases, including $n=3$, and conjectured to hold universally. A recent AI-assisted counterexample disproved this conjecture for $n=5$, leaving the validity of the $n=4$ bound and the tight worst case bound open. We resolve both questions. First, for $n=4$, we establish that the $4/3$ bound holds universally and is tight using an AI-assisted proof combining theoretical analysis and computational verification. The proof combines a structural characterization of optimal numerator vertices, permutation symmetry, cone certificate systems, Bernstein polynomial representations, recursive simplex subdivision, and verification of $2,745$ Bernstein coefficient systems. Second, we show that the worst case pairwise independent correlation gap attains $e/(e-1)$ asymptotically by constructing an instance with identical marginal probabilities and a monotone submodular union coverage function on a ground set partitioned into $m$ blocks. The number of blocks grows sublinearly with the ground set size. The result follows by constructing a feasible solution to a scaled asymptotic reduced dual of the pairwise independent linear program and immediately extends to $t$-wise independent random elements ($t\\ge2$), since $t$-wise independence implies pairwise independence. Thus, pairwise independence, despite being the least restrictive form of independence in the $t$-wise independence hierarchy, can be as restrictive as mutual independence in the worst case."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Fourteen lonely runners",
+    "authors": "Jaan Allikvere",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02604v1",
+    "source": "arXiv",
+    "abstract": "We prove the Lonely Runner Conjecture for fourteen runners by a computer-assisted extension of the finite-checking framework of Sungkawichai and Trakulthongchai. With one runner stationary, their thirteen-runner result supplies the induction input, and their reduction leaves finitely many modular calculations indexed by primes. We certify 111 such prime gates with $\\sum_p \\log p>681.5292$, exceeding the required threshold $\\log B_{13}<670.3498$ by more than $11.17$. For each gate, an exhaustive generator constructs the level-one improper family, a sequence of exact binary lift filters eliminates all but two multiplicative orbits, and an exact branch-and-bound computation treats each remaining fiber of $7^{13}$ lifts at the mixed level $14$. Every no-witness completion remaining at that level has all coordinates divisible by $7$ and is therefore proper by the gcd clause in the framework definition. The same two persistent orbits occur at every closed gate; this is an empirical universality finding, not a theorem beyond the verified gate set. Per-gate certificates and a separate audit of all 111 closed gates support the computation. We also report every gate at which the chosen pipeline failed to close."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes",
+    "authors": "Ján Pastorek",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02585v1",
+    "source": "arXiv",
+    "abstract": "Although almost all graphs are asymmetric -- having no nontrivial global automorphisms -- they may still possess local symmetries in the form of isomorphisms between induced subgraphs, i.e., partial automorphisms. We study such local symmetries via asymmetric depth, defined in terms of the maximum rank of a nontrivial partial automorphism. We prove a tight upper bound on asymmetric depth in the class of planar graphs and identify the extremal graphs: duals of IPR fullerenes attain the maximum already on $47$ vertices. Our main structural result concerns the IPR fullerenes that are neither maximally asymmetric nor symmetric. In such a cage no purely local action realises a low asymmetric depth, and we show that the map which does realise it cannot be confined to a small part of the cage either: neither to a single face, nor behind an interface of at most $5-k$ edges, $k \\le 3$ being the deficiency. A cage of asymmetric depth $2$ or $3$ is therefore not asymmetric in one place; it carries a broken symmetry invisible to its automorphism group. Such cages are rare -- under $2\\%$ of the asymmetric IPR fullerenes at $n = 118$. In all $727$ of them the largest partial automorphism is a near-mirror reflection, which we state as an explicit conjecture. We also extend the asymmetric depth bound to graphs of higher genus."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Visual Discovery of Fading Events in the Wolf-Rayet Star WR 80",
+    "authors": "Rod Stubbings",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02547v1",
+    "source": "arXiv",
+    "abstract": "Long-term visual and CCD V-band monitoring of the heavily reddened Wolf-Rayet star WR 80 from 2017-2026 reveals optical fading events that depart from its long-term stable baseline. On 26 April 2017 (JD 2457870), I discovered a deep minimum using a 22-inch (0.56-m) telescope, with the source plunging from a baseline of magnitude 14.6 down to magnitude 15.8. This 6-day event was subsequently verified via archival ASAS-SN V-band records. In July 2018, my visual observations identified a short duration fade to magnitude 15.4 that went undetected in concurrent electronic V band data streams, indicating a masking effect likely caused by near-infrared red leak contamination in the CCD filters. Following a stable phase recorded by continuous CCD V-band tracking from 2023 through early 2026, a mid-2026 visual detection caught a full 16-day fading event reaching a minimum magnitude of 15.3. These combined datasets establish that WR 80 undergoes highly variable optical obscuration events."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "A finiteness theorem for geodesic Leech wheels",
+    "authors": "Junyeop Yim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02544v1",
+    "source": "arXiv",
+    "abstract": "Let f be a labeling of the edges of a finite graph G by positive integers, and let the weight of a path be the sum of the labels of its edges. The labeling is a geodesic Leech labeling if the weights of the geodesics are exactly 1, 2, ..., t_gp(G), each occurring once, where t_gp(G) is the geodesic path number of G. Let W_n be the wheel on n vertices, a hub joined to an (n-1)-cycle. Our main result is an upper bound: if n >= 5 and W_n is geodesic Leech, then n <= 40. The proof quantifies, via a finite Fourier kernel, the Sidon-type structure of the spoke labels, in which only the cyclically adjacent pairs are allowed as defects, and closes the last three cases with a six-variable Parseval argument. In the other direction, explicit labelings of W_7, ..., W_13, found by a computer search, answer in the negative a problem of Lakshmanan S. and Manattu, who had found labelings of W_5 and W_6 and expected every W_n with n >= 7 to be a non-geodesic Leech graph. Writing E for the set of n >= 5 for which W_n is geodesic Leech, we obtain {5, 6, ..., 13} is contained in E, which is contained in {5, 6, ..., 40}."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "TrajMind: Chaining Role-Specialized LoRAs for Fast-and-Slow Collective Trajectory Anomaly Diagnosis",
+    "authors": "Jiahao Wu, Zhenqun Yang, Chen Jason Zhang, Qing Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02540v1",
+    "source": "arXiv",
+    "abstract": "Diagnosing collective anomalies from urban trajectories is increasingly important for traffic governance, as it reveals what happened, who was involved, and where and when the event occurred. Existing detectors efficiently produce scores or labels, whereas vision--language pipelines provide richer semantics; neither couples verifiable diagnosis with low-latency monitoring. The central challenge is to recognize collective patterns and recover exact event details from the source trajectories without running the full diagnostic pipeline for every monitored window. We therefore separate always-on screening from on-demand diagnosis: screening raises alerts, while diagnosis releases only source-verified what--who--where--when records. We present TrajMind, a fast-and-slow framework that switches three role-specialized LoRA adapters over one frozen vision--language backbone. Its slow path, \\textit{TrajMind$_{\\text{slow}}$}, chains canvas-based typing, type-conditioned localization over serialized trajectories, and executable verification, yielding structured, evidence-backed diagnoses. Additionally, the fast path, \\textit{TrajMind$_{\\text{fast}}$}, screens each window in a single text-only pass, delivering efficient structured alerts. Extensive experiments show that, TrajMind$_{\\mathrm{slow}}$ outperforms the strongest baselines by at least $15.3$ percentage points in anomaly typing and $13.8$ percentage points in localization. These gains persist under cross-city transfer, and TrajMind$_{\\mathrm{fast}}$ reduces latency by $41.1\\%$ and maintains binary balanced accuracy of at least $93.5\\%$. Together, TrajMind delivers accurate, evidence-backed diagnoses across cities and efficient front-line monitoring."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Fine-Grained Anomaly Perception in Wild UGC-Enhanced Images: A Comprehensive Dataset and Difference-Fusion Framework",
+    "authors": "Yan Zhong, Gefei Chen, Qiufang Ma, Zhen Wang, Zhiwei Fan, Lei Shi, Tingting Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02529v1",
+    "source": "arXiv",
+    "abstract": "Image enhancement and restoration have become standard back-end operations on short-video and social media platforms to boost UGC visual experience. Yet these processes inevitably introduce visual anomalies--especially in faces, texts, and textures--that directly undermine perceptual fidelity and viewer trust. While existing IQA methods perform well on classic distortions, they target holistic quality assessment and fail to capture the specific, localized anomalies caused by enhancement algorithms in real-world UGC. To bridge this gap, we formally define a new task-quality Anomaly Perception for UGC image Enhancement (UEAP), and contribute the first UEAP benchmark dataset, named UEAP-4k, curated from the real business scenarios. It provides fine-grained annotations for anomaly categories, localization and severity levels. Furthermore, we propose a Difference-Fusion Anomaly Perception Method (DFAP-UGC) for wild UGC-enhanced images, which leverages explicit problem-reference difference fusion with dense spatial querying, regional verification, and quality-aware ranking, enabling robust anomaly identification in challenging scenarios. To handle the inherent coupling of subtasks in this new task, we propose a Locality-Aware Dynamic Task Prioritization (LADTP) training strategy that enables effective end-to-end learning and eliminates multi-stage overhead. Extensive experiments show that our method outperforms baselines adapted from classical approaches for this task, validating the value of this dataset and the superior of DFAP-UGC for robust UGC-enhanced image anomaly perception. Code and data will be public."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference",
+    "authors": "Yida Zhang, Zhiyong Gao, Shuaibing Yue, Jie Li, Rui Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02514v1",
+    "source": "arXiv",
+    "abstract": "Deploying Large Language Models (LLMs) on edge devices typically relies on model compression or split inference. However, compression degrades reasoning capabilities, while split inference suffers from severe Wide Area Network (WAN) communication bottlenecks. Edge-cloud speculative decoding emerges as a promising alternative, leveraging an edge small model to draft tokens for cloud verification. Yet, over volatile WANs, inevitable prediction rejections trigger catastrophic pipeline stalls and network-wide rollbacks, neutralizing collaborative gains. To overcome this, we propose AceSpec, an asymmetric edge-cloud collaborative framework. AceSpec utilizes un-saturated edge compute to proactively construct a probabilistic state cache, effectively transforming network-wide pipeline flushes into $\\mathcal{O}(1)$ local memory lookups. To preserve bandwidth, it employs an asymmetric communication protocol that transmits minimal main-chain indices uplink and compact sparse distributions downlink. Furthermore, we introduce a network-aware, Lagrangian-optimized resource allocation strategy that dynamically maximizes the local cache hit rate. Evaluations demonstrate that AceSpec achieves up to a 3.52$\\times$ throughput speedup and exhibits exceptional bandwidth immunity, sustaining near-peak inference performance even under severely constrained 50 Kbps WAN conditions."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "The Truncated Octahedral Graph Has Bondage Number Five",
+    "authors": "Prateek R. Srivastava",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02477v1",
+    "source": "arXiv",
+    "abstract": "For a graph G, its bondage number b(G) is the minimum number of edges whose deletion increases its domination number. Dunbar, Haynes, Teschner, and Volkmann conjectured in 1998 that every nontrivial planar graph satisfies b(G) <= Delta(G) + 1. We show that the truncated octahedral graph T has gamma(T) = 8 and b(T) = 5. Since T is planar and cubic, this gives b(T) = 5 > 4 = Delta(T) + 1 and disproves the conjecture. The finite parts of the verification are exhaustive: the direct verifier checks candidate dominating sets of sizes six, seven, and eight and all 58,905 four-edge sets. The targeted discovery search and an independently written verifier are described, and the complete C++20 verifier is included in the source archive."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "When Decodability Is Not Enough: Logical Validity Representations, Behavioral Dissociation, and Causal Tests in Language Models",
+    "authors": "Smitha Muthya Sudheendra, Jaideep Srivastava",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02438v1",
+    "source": "arXiv",
+    "abstract": "Large language models can look capable of logical reasoning, but correct or incorrect answers alone tell us little about what the model represents internally. We study logical verification in five open-weight transformer models using matched valid--invalid premise--claim pairs that vary across inference families, semantic domains, templates, and difficulty levels. Despite near-chance behavioral performance, logical validity is often almost perfectly decodable from hidden states and remains strongly decodable under held-out templates, domains, and inference families. Validity also remains highly decodable on behaviorally incorrect examples in the conditions where correctness-conditioned evaluation is well defined. At the same time, exhaustive leave-one-out tests reveal clear limits to this generalization, and interventions along probe-derived validity directions have only weak, nonspecific effects compared with random controls. Our results suggest that representing validity, expressing it in behavior, and using it causally are distinct. Validity related information can be strongly decodable from a model's hidden states without being reliably expressed in its output."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Coverage, Not Targeting: A Structural Regime in Multi-Turn Agent Credit Assignment",
+    "authors": "Chenyu Zhou, Qiliang Jiang, Shuning Wu, Xu Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02417v1",
+    "source": "arXiv",
+    "abstract": "Multi-turn agentic RL increasingly treats credit assignment as a targeting problem: given a terminal verifiable reward, per-turn methods localize credit onto the turns that mattered. We identify the structural quantity that predicts when this is the right move, the verifier information density V_d = k/C (the fraction of an agent's C-step causal chain whose per-turn correctness the verifier exposes), and show that terminal-state verifiers sit deep in a low-V_d regime where targeting is the wrong axis. In controlled shared-rollout comparisons on tau^2-bench that separate reward density from credit geometry, a continuous dense reward spread uniformly beats the sparse binary outcome reward (net-harmful on 4/5 seeds), while concentrating the same advantage on progress turns or on random turns is equally harmful: targeting is second-order. The mechanism is coverage: terminal-state verification collapses the observable signal to a single final-write turn (k=1 in 98% of rollouts) while success requires a 5-8 step chain of prerequisite tool calls. A synthetic phase boundary places the crossover at V_d* ~ 0.8, whereas measured V_d is ~0.15 on tau^2-bench and ~0.4 on BFCL V3; uniform also wins on BFCL, where a matched-concentration shuffled control is negative on 8/8 seeds. The effect reproduces across model families on ToolACE-2-8B (Delta = -0.048 over 32 pre-registered seeds; an independent 20-seed replication is itself significant), and a pre-registered matched-budget breadth sweep traces a monotone dose-response whose deficit vanishes only at full chain coverage, with a reward-to-go arm reaching full-coverage parity. Uniform redistribution is the zero-information coverage default that per-turn schemes must beat; we contribute the matched-concentration shuffled control that any targeting claim should clear."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "WildFab: Multi-Axis 3D Printing from Models in the Wild",
+    "authors": "Jiasheng Qu, Zhikai Shen, Chenyu Xu, Hailin Sun, Chengkai Dai, Yuhu Guo, Junpeng Wang, Yeung Yam, Guoxin Fang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02413v1",
+    "source": "arXiv",
+    "abstract": "Multi-axis 3D printing enables support-free fabrication and improved part quality, but robustly processing real-world geometries remains challenging. Models from design workflows or direct data acquisition often contain solid--shell combinations and non-manifold structures. Handling such models in the wild typically requires time-consuming geometry repair, which may alter the intended geometry. In this work, we present WildFab, a computational framework for multi-axis 3D printing that directly computes spatial toolpath and global collision-free motion from input models. Our pipeline builds on a hybrid query representation that combines a neural unsigned distance field (UDF) with a regularized generalized winding number field (reg-GWN). The UDF supplies differentiable surface-distance and direction queries, while the reg-GWN resolves near-surface ambiguity in the fitted UDF by providing reliable surface localization and a solid-void indicator. Based on this representation, we introduce a high-precision spatial toolpath computation algorithm that iteratively projects points between optimized guidance-field level sets and reg-GWN gradient-magnitude ridges. Subsequently, we develop an efficient and robust coarse-to-fine collision checking scheme for motion planning: UDF-based rejection first identifies potential collisions, while time-varying reg-GWN verification accurately resolves collision pairs for both solid and shell components. We validate WildFab on diverse inputs, demonstrating successful computation from non-manifold parametric surfaces, voxelized topology-optimization results, implicit models, raw scanned point clouds, and non-watertight meshes. The fabrication results highlight our method's ability to advance end-to-end design-to-3DP workflows."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "YesTrack: Referring Multi-Object Tracking via MLLM-based Yes/No Verification",
+    "authors": "Quansheng Hu, Qin Sun, Qiansen Dai, Jin Ding, Wan Zhang, Xue Zhou, Jianxiao Zou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02318v1",
+    "source": "arXiv",
+    "abstract": "Referring multi-object tracking (RMOT) aims to track every instance in a video that matches a given language expression. Despite the recent integration of multimodal large language models (MLLMs) to enhance generalization, existing methods predominantly relegate them to the role of caption generators, necessitating external modules for final decision-making. This paradigm not only introduces extra latency but also severely underutilizes the inherent vision-language alignment capabilities of MLLMs. To address these limitations, we propose YesTrack, a novel two-stage RMOT method that reformulates referring as a discriminative task, directly leveraging MLLMs for Yes/No verification without explicit text generation. To further enhance the reliability and efficiency of this MLLM-based verification, we introduce two lightweight temporal consistency constraints: Temporal Confidence Prior (TCP) and Temporal Reference Propagation (TRP). We further validate the generality of this discriminative paradigm by proposing YesTrack-MOT, a straightforward yet highly effective instantiation for generic multi-object tracking (MOT). Experiments on Refer-KITTI and Refer-KITTI-V2 show that YesTrack significantly outperforms existing state-of-the-art methods while maintaining high efficiency, even when implemented with the smallest variant of Qwen3-VL. Code is released at https://github.com/ggbondrighthere24/YesTrack."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization",
+    "authors": "Bizhe Bai, Jiakang Yuan, Hongming Wu, Xinyue Wang, Jie Ren, Siyao Chen, Yuchen Ya, Fan Bai, Pai Peng, Huafeng Qin, Tao Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02309v1",
+    "source": "arXiv",
+    "abstract": "GUI agents increasingly operate across websites, mobile apps, and desktop environments, yet the field still reports progress primarily through task success. We argue that practical deployment depends equally on efficiency: how much context, computation, action budget, and runtime overhead an agent consumes while succeeding. This survey studies efficient GUI agents through an end-to-end systems lens that preserves the current technical axes of observation efficiency, context and memory efficiency, action efficiency, and planner-side/system efficiency. For each subsection, we expand the seed literature through targeted search plus backward and forward citation chaining, then synthesize the dominant mechanisms, reported efficiency signals, and new overheads they introduce. Across the literature, recent progress converges on a small set of recurring ideas: selective reading instead of full-context ingestion, global-to-local visual allocation, recoverable memory rather than raw history replay, verification-aware control, and hybrid runtimes that can switch between GUI and non-GUI execution. We conclude by identifying the main open problems, including honest accounting of verifier cost, cross-benchmark comparability, and co-design of observation, memory, and execution layers under real latency and privacy constraints."
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Retrosynthesis of Synthetic Media for Explainable AI Provenance Forensics",
+    "authors": "Yijie Lin, Ching-Chun Chang, Isao Echizen, Hui Li, Chin-Chen Chang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02268v1",
+    "source": "arXiv",
+    "abstract": "With the rapid proliferation of generative models on Machine Learning as a Service (MLaaS) platforms, reliably tracing the provenance of synthetic media without modifying generator architectures or parameters remains a major challenge. In this work, we propose a self-referential retrosynthesis framework for explainable AI provenance forensics under a fixed-generator setting. The framework leverages a jointly optimized encoder-decoder pair to implement a self-embedding mechanism that enables round-trip consistency verification. During inference, client inputs are first encoded and then processed by the generator to produce outputs with high visual fidelity. For forensic verification, the consistency between the resynthesized image and the query image is analyzed to determine whether the image originates from the target generative model. Our approach eliminates the need for watermark embedding or modifications to the generation process. Experimental results show that images generated from encoded inputs maintain visual quality comparable to original generator outputs, while decoded images reliably trace back to their corresponding source inputs. Furthermore, the framework provides interpretable evidence for generative content provenance, establishing a practical tool for explainable generative AI forensics."
+  },
+  {
+    "date": "2026-9-2",
+    "title": "LLM-Based Test Oracles: Source-of-Authority Taxonomy—A Systematic Literature Review",
+    "authors": "Ali Hassaan Mughal, Muhammad Bilal",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3729738",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "High-Throughput RTL Design of a Streaming ZP-OTFS Wideband Channel Estimator",
+    "authors": "Simone Acciarito, Gian Carlo Cardarilli, Luca Di Nunzio, Riccardo La Cesa, Marco Re, Sergio Spano, Cristian Valenti",
+    "publish": "IEEE Transactions on Circuits and Systems I: Regular Papers",
+    "url": "https://doi.org/10.1109/tcsi.2026.3726431",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Gateway-X: Llm-Based Autonomous Adaptive Semantic and Syntactic Protocol Translation",
+    "authors": "Christian Lübben, Marc-Oliver Pahl",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668228",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "AI-Native Control Entry Point: A Standardless LLM-Driven Interface for Service Management",
+    "authors": "Hanif Kukkalli, Syed Tasnimul Islam",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668125",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Evaluating PDPL Compliance in E-Commerce Websites: Insights and Lessons Learned from Human and LLM Analyses",
+    "authors": "Eman Alashwali, Abeer Alhuzali",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3730247",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Decision Accountability in LLM-Driven UAVs: A Privacy-Preserving Forensic Logging Framework",
+    "authors": "Mohammed I. Al-Saleh, Yaser Jararweh, Majed Bouchahma",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3729598",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling",
+    "authors": "Wei Da, Evangelia Kalyvianaki",
+    "publish": "Proceedings of the 19th ACM International Systems and Storage Conference",
+    "url": "https://doi.org/10.1145/3793230.3837768",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Onboarding QKD Devices into Opentelemetry: Auditable Human-in-the-Loop Metric Mapping with LLM-Grounded Suggestions",
+    "authors": "Fabian Farina, David Koch",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668308",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Capto: End-To-End Assurance for LLM Training and Inference in Datacenters",
+    "authors": "Jit Gupta, Tarun Banka, Rahul Gupta, Mithun Dharmaraj",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668412",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "LLM-RAG Semantic Search Enhancement Framework for Digital Libraries",
+    "authors": "Yuan Zhuang, Jie Yang",
+    "publish": "Proceedings of the 2026 3rd International Conference on Innovation Management and Information Systems",
+    "url": "https://doi.org/10.1145/3821966.3822018",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-2",
+    "title": "CowLLMpot: Toward an LLM-Based Honeypot Fine-Tuned Using Cowrie Honeypot Data",
+    "authors": "Amal Rami, Adrien Fégar, Salam Doumiati, Ayman Alfalou",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668367",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "How Helpful Is LLM Assistance in Network Operations? a Case Study at a Large Demonstration Network",
+    "authors": "Ryo Nakamura, Koshi Eguchi",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668182",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Multimodal Reasoning with LLM for Encrypted Traffic Interpretation: A Benchmark",
+    "authors": "Longgang Zhang, Chenxu Zhang, Xiaowei Fu, Fuxiang Huang, Lei Zhang",
+    "publish": "IEEE Transactions on Multimedia",
+    "url": "https://doi.org/10.1109/tmm.2026.3730256",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Systematic Evaluation and Production Deployment of LLM Inference Platforms: A Comparative Analysis with Operational Validation",
+    "authors": "Patrick Koss, Hans Torben Löfflad, Manuel Hoffmann",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668330",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Quality Score: A Behavioural Metric for Deliberation Quality in LLM-MAS Systems",
+    "authors": "Jan Kapusta, Waldemar Bauer, Jerzy Baranowski",
+    "publish": "2026 30th International Conference on Methods and Models in Automation and Robotics (MMAR)",
+    "url": "https://doi.org/10.1109/mmar70562.2026.11667893",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-3",
+    "title": "Evaluating LLM Social Cognition Through Multi-Agentic Strategic Games",
+    "authors": "Kevin Kurian, Kevin Scroggins, Emmuel Dorley, Christan Grant",
+    "publish": "Proceedings of the 26th ACM International Conference on Intelligent Virtual Agents",
+    "url": "https://doi.org/10.1145/3806774.3827986",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-2",
+    "title": "Transforma: Accelerating Industrial Control Software: LLM-Based ST Code Generation Pipeline",
+    "authors": "Mojtaba Zahedi Amiri, Belal Abu Naim, Markus Tauber",
+    "publish": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
+    "url": "https://doi.org/10.1109/noms69089.2026.11668251",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "HyBioSum: A Hybrid Framework for Biomedical Long-Document Summarization with Supervised Extractive and LLM-based Generation",
+    "authors": "Azzedine Aftiss, Salima Lamsiyah, Christoph Schommer, Said Ouatik El Alaoui",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3729844",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "CausalTwinOps: Governance-Gated Counterfactual Repair Verification for Enterprise Data Pipelines",
+    "authors": "Rahul Kumar Konduru",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3730237",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-2",
+    "title": "LLM-Driven Agent for Adaptive Multimodal Beam Prediction in Millimeter-Wave Communications",
+    "authors": "Qingyuan Chong, Yinglei Teng, Yuan Gao, Xiyang Lan",
+    "publish": "2026 15th International Conference on Communications, Circuits and Systems (ICCCAS)",
+    "url": "https://doi.org/10.1109/icccas70754.2026.11672334",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
