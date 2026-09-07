@@ -1,0 +1,200 @@
+[
+  {
+    "date": "2026-09-04",
+    "title": "Think-Verify-Revise: Neuro-Symbolic Visual Reasoning with Vision-Language Models and Dynamic Logic Tensor Networks",
+    "authors": "Homayoun Afshari, Pietro Basci, Alessandro Russo, Lia Morra",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05388v1",
+    "source": "arXiv",
+    "abstract": "Visual reasoning tasks require a system to jointly perceive visual content and apply formal relational constraints---a combination that neither pure neural nor purely symbolic approaches handle well in isolation. This paper proposes a Neuro-Symbolic (NeSy) framework that closes this gap by tightly coupling a Vision-Language Model (VLM) for automatic First-Order Logic (FOL) rule induction with a Dynamic Logic Tensor Network (D-LTN) for differentiable rule verification, in a closed iterative feedback loop. The VLM receives a small set of labelled visual examples and proposes candidate FOL rules conforming to a strict grammar (Think); the D-LTN is automatically assembled from these rules at runtime and evaluates them grounding on CNN-produced visual embeddings (Verify); and verification failures are fed back to guide the VLM's next hypothesis (Revise). Evaluated on the ViSudo-PC benchmark across four visual domains (MNIST, EMNIST, KMNIST, FMNIST), the system induces valid Sudoku constraint rules using only three training examples as visual context. The proposed method achieves AUC scores matching or outperforming previous methods (NeuPSL, LTN), showing the potential for automatic rule discovery through VLM. Code is available at https://github.com/homayoun-afshari/nesy."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Towards Neuro-Symbolic Procedural Reasoning for Long-Horizon Vision-Language-Action Manipulation",
+    "authors": "Vivek Chavan, Yahuan Shi, Oliver Heimann, Kevin Haninger, Jörg Krüger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05369v1",
+    "source": "arXiv",
+    "abstract": "Vision-language-action (VLA) models can execute short manipulation skills, but remain brittle in long-horizon procedures requiring persistent task state, dependency-aware reasoning, conditional decisions, and reliable grounding. We investigate a neuro-symbolic framework that combines learned VLA control with explicit task graphs and multimodal procedural memory. Task graphs encode action dependencies, valid transitions, and branch conditions, while memory maintains the active step, completed actions, textual context, and task-relevant visual evidence. Together, these structures guide object selection, destination grounding, subgoal dispatch, and verification of expected state transitions. Human demonstrations provide additional spatial and temporal guidance through gaze or saliency cues. To isolate their effect on policy learning, our initial study bypasses cross-view gaze transfer and directly annotates pseudo-gaze in robot-view teleoperation videos. The resulting guidance is used during VLA fine-tuning and inference. We study two long-horizon manipulation domains, workspace clearing and surgical-instrument handling, which require ordered execution, visually grounded decisions, and conditional branching. We evaluate correct-object and destination selection, subtask completion, task progress, step-order consistency, complete-task success, and procedural or execution mistakes. This work positions structured symbolic reasoning and demonstration-derived visual guidance as complementary mechanisms for reliable long-horizon VLA manipulation."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Purely Periodic Three-move Subtraction Games",
+    "authors": "Hikaru Manabe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05358v1",
+    "source": "arXiv",
+    "abstract": "A subtraction game is played on a heap of tokens. The players take turns removing s tokens for some s in a fixed set S of positive integers, and the player who cannot move loses. The sequence of Sprague-Grundy values of such a game is eventually periodic. We ask when it is purely periodic, meaning periodic from the very start, for the three-move sets S={a,b,c} with 0<a<b<c. After reduction to primitive rulesets with a>=2, we give an explicit sufficient criterion for pure periodicity. For every non-additive set that satisfies it we determine the least period, all P-positions in closed form, and all nim-values, and the additive case c=a+b is treated separately. We conjecture that the criterion is also necessary, and we prove this for the period a+b whenever c>=2(a+b). The criterion is a finite test on the angle rho = c mod (a+b), built from the P-position pattern of the two-move game {a,b}, and the admissible angles form explicit unions of arcs in Z/(a+b)Z."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "A Log-Free $n^{1/5}$ Bound for Chowla's Cosine Problem",
+    "authors": "Abhishek Shankar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05338v1",
+    "source": "arXiv",
+    "abstract": "For a finite set $S$ of positive integers, put $K(S):=-\\min_{x\\in\\mathbb T}\\sum_{s\\in S}\\cos(2πsx)$. Bedert recently proved the uniform lower bound $K(S)\\geq |S|^{1/5-o(1)}$. We remove the subpolynomial loss and prove that $K(S)\\geq c|S|^{1/5}$ for an absolute constant $c>0$. The proof combines two estimates from Bedert's argument with an exact averaging identity for the asymmetric boundaries of additive intersections. This identity replaces the multiplicative-amplification step responsible for the logarithmic loss."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "The History Is the Detector: Executing CVE Patch History, End-to-End",
+    "authors": "Qiushi Wu, Kevin Eykholt, Youngja Park, Xiaokui Shu, Dhilung Kirat, Douglas Lee Schales, Ian Molloy",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05335v1",
+    "source": "arXiv",
+    "abstract": "Public vulnerability databases collect rich information about known software flaws, including their weakness types, affected components, and related patches. Fixing commits provide the exact code changes that removed these flaws. While these records capture why the original code was unsafe, they are documented mainly for human inspection rather than automated reuse. Consequently, the same unsafe conditions may still exist elsewhere in code without a known advisory, leaving much of this detection knowledge unused. We present BUGSTONE-E2E, a framework that transforms vulnerability history into executable detection rules and validates their findings. First, BUGSTONE-E2E mines reusable rules from verified fixing commits, capturing scan anchors, fix semantics, and CVE provenance and organizing them by CWE and language. Second, detection follows a funnel-shaped pipeline: early stages process a large pool of candidates using lightweight analysis, while later stages apply increasingly capable and expensive models to a shrinking set of targets. Specifically, BUGSTONE-E2E first enumerates call sites matching rule anchors using Tree-sitter, then removes benign sites using lightweight heuristics without LLM calls. Next, LLM-based agents inspect the remaining candidates guided by the rule. Following this inspection, the system re-triages surviving candidates and builds runtime verifications, then generates scope-checked patches validated via two-sided differential tests. Using 19,325 high-severity CVEs from 2022 to 2026, BUGSTONE-E2E identifies 2,710 fixing commits and constructs 1,033 detection rules across 56 CWE families, packaged into 172 skills. When applied across 14 programs, it produced runtime evidence for 644 findings. These results demonstrate that CVE history can be turned into an executable workflow, transforming past vulnerabilities into reproducible detection and repair."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "KanAdapter: A Kolmogorov-Arnold Network-based Plug-and-Play Module for Efficient Fine-tuning of Foundation Speech Models",
+    "authors": "Phuong Tuan Dat, Phuong Khai Minh, Tran Huy Dat",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05281v1",
+    "source": "arXiv",
+    "abstract": "Fully fine-tuning self-supervised learning (SSL) speech models for downstream tasks is computationally prohibitive, and existing parameter-efficient fine-tuning approaches predominantly rely on MLP-based adapters whose fixed activation functions limit their representational expressiveness under tight parameter budgets. We propose \\textbf{KanAdapter}, a lightweight adapter framework that replaces conventional MLP bottlenecks with Group-Rational Kolmogorov-Arnold Network (GR-KAN) modules for more expressive and parameter-efficient adaptation. Following a parallel bottleneck design, KanAdapter inserts trainable GR-KAN branches alongside frozen Transformer encoder blocks and leverages weight transfer from pre-trained MLP layers for stable initialization. Across speaker verification, speech emotion recognition, and deepfake detection, KanAdapter achieves up to 97.5\\% reduction in trainable parameters relative to full fine-tuning while remaining highly competitive, and consistently outperforms AdaptFormer under comparable parameter budgets. In continual learning, it yields up to 83.6\\% error reduction over full fine-tuning and MLP-based adapters, which we attribute to the localized nature of GR-KAN's rational activations that mitigates catastrophic forgetting. To our knowledge, this is the first work to explore KAN-based modules for parameter-efficient fine-tuning of speech foundation models."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "AI for Computational Design Science: A Responsible Human-AI Framework and Case Study on Short-Form Video Safety Surveillance",
+    "authors": "Wenli Zhang, Jiaheng Xie, Zhihe Pan, Yidong Chai, Xiao Fang, Sudha Ram",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05270v1",
+    "source": "arXiv",
+    "abstract": "Artificial intelligence (AI) is transforming not only what information systems researchers design, but also how design research is conducted. Yet existing literature offers limited guidance for computational design science (CDS) when AI actively participates in problem formulation, resource construction, design search, evaluation, and knowledge abstraction. We develop AI for Computational Design Science (AI4CDS), a five-phase methodological framework in which AI expands problem and design search while researchers retain responsibility for domain grounding, admissibility, verification, and scientific judgment. Collaboration is governed by graduated trust, reversibility, auditability, and differentiated reproducibility. We instantiate AI4CDS through ChildRiskGuard, an interpretable artifact for detecting short-form videos inappropriate for children, while documenting AI interactions, rejected alternatives, corrections, and audit trails. The case translates audience-dependent safety and explanation faithfulness into three technical challenges and develops an artifact that separates generic from child-specific risk, represents distinct developmental-risk mechanisms, and makes concept-level explanations part of the predictive computation. ChildRiskGuard achieves an F1 score of 0.769, substantially outperforming direct application of a general-purpose content-safety model while remaining competitive with strong benchmarks. The primary contribution is AI4CDS as a responsible framework for AI-enabled CDS; ChildRiskGuard provides process and artifact evidence of how AI-expanded, researcher-governed design can generate and evaluate novel computational design knowledge."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC",
+    "authors": "Saad Memon, Rafal Graczyk, Jan Swakoń, Leszek Grzanka, Sebastian Kusyk, Mike Papadakis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05249v1",
+    "source": "arXiv",
+    "abstract": "As spaceborne computing systems increasingly rely on neural network (NN) accelerators, the opacity of commercial, black-box architectures severely restricts the development of verifiable radiation mitigation strategies. Open-source, register-transfer level (RTL)-accessible accelerators resolve this limitation by enabling user-defined instrumentation, yet few have empirical radiation-response baselines. This work establishes a foundational system-level proton-irradiation baseline for an unmitigated open-source Tensil NN accelerator deployed on a Zynq UltraScale+ SoC executing ResNet-20 inference. Under 20 to 58 MeV proton irradiation, we delivered $4.29 \\times 10^{10}$ p/cm$^{2}$ within monitored operational windows. Seven workload interruptions required two restarts of the notebook process, four reboots or board resets, and one power-cycle sequence. Two output-corruption events returned incorrect CIFAR-10 classes without loss of service. In the longer event, the accelerator returned a class absent from the ten-image CIFAR-10 pool for 39 consecutive inputs at normal cadence. The process remained alive, while the kernel log, limited memory test, and sampled power showed no anomaly. Observation of the stuck-class sequence ended with scheduled bitstream reconfiguration. All nine onsets occurred under the nominal 4 cm beam, which exposed the SoC, LPDDR4, and additional board circuitry; none occurred under the 2 cm SoC-centered field. This pattern shows a field association but does not establish LPDDR4 as the cause because field size was confounded with run order and dose. Linux-managed accelerators require end-to-end content checks and recovery that reaches the state in which corruption can persist. This baseline documents availability loss and silent output corruption, supporting future software hardening of COTS FPGA-SoCs for neural-network inference in space systems."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "A Verifier-Guided Explainable Reasoning Framework with Gold-Anchored QLoRA, Task-Aware Mixture-of-Experts, and Group-Relative RLVR",
+    "authors": "Thi Kim Trang Vo, Nam Tien Le, Thi Kim Nguyet Vo, Minh Khang Tran, Duy Phuong Tran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05221v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) show strong reasoning ability, but their explanations can remain inconsistent, weakly grounded, or difficult to verify. We propose a verifier-guided explainable reasoning framework for transparent educational question answering that combines gold-anchored QLoRA, task-aware symbolic routing, and group-relative RLVR. Qwen2.5-3B-Instruct is first adapted with field-weighted QLoRA supervision anchored to authoritative answers. A lightweight router then assigns logic problems to a FOL/Z3 verifier and physics problems to a formula- and unit aware symbolic solver. Verifier feedback is further used to support candidate evaluation, self-revision, and reward construction during RLVR. Candidate responses are evaluated along three complementary dimensions: P1 for answer correctness, P2 for evidence or unit consistency, and P3 for reasoning depth and explainability. At inference, gold-free self-consistency aggregates multiple candidate responses before an optional question-only physics verifier performs conservative system-level correction. On 438 held-out examples, RLVR increases P3 from 50.68% to 72.20%, while hybrid P1 remains approximately stable at 55.94%. Self-consistency improves model only P1 from 48.86% to 50.23%, with symbolic verification providing the remaining hybrid gain. These results indicate that RLVR primarily strengthens explicit reasoning structure, while symbolic verification complements the neural policy by improving answer reliability at the system level."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "WeAgent-MMGenEdit: A Full-Stack Recipe for Multimodal Agentic Image Generation and Editing",
+    "authors": "Hui Zhang, Zongkai Liu, Liqiang Niu, Juntao Liu, Han Li, Zhen Cao, Wenchao Chen, Chengduo Zhao, Fandong Meng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05171v1",
+    "source": "arXiv",
+    "abstract": "Image generation and editing models have advanced rapidly, yet remain unreliable when prompts require external world knowledge. Bounded and long-tail parametric knowledge prevents direct or reason-then-generate approaches from recovering the required facts and visual appearances. Existing agentic generation and editing methods mitigate this limitation with retrieval tools, yet remain constrained by insufficient visual verification, overloaded policy models, and weak integration of retrieved textual and visual evidence. To address these limitations, we present WeAgent-MMGenEdit, a full-stack recipe including a multimodal harness, a scalable data construction pipeline, a comprehensive benchmark, and post-training methods for the agent policy and image backend. We first introduce WeAgent-Harness, a multimodal runtime with persistent evidence management and dedicated verification and integration tools that organize retrieved multimodal evidence into a dense carrier. Upon this, we develop a scalable pipeline for prompt synthesis and agentic trajectory collection, yielding 23K supervised trajectories and 14.7K RL tasks with three-layer verifiable checklists. We further introduce WeBench-MMGenEdit, a bilingual benchmark covering both knowledge-intensive image generation and multi-image editing. Finally, a two-sided post-training recipe based on SFT and RL improves the agent policy and image backend. Together, WeAgent-MMGenEdit enables a 30B-total/3B-active policy to outperform similarly sized policy models and approach the performance of a 1T-parameter agent."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding",
+    "authors": "Shenxi Wu, Yuhong Liu, Haosong Zhang, Tongjin Zou, Yanxun Zhang, Gaochang Chen, Dun Liang, Jiaqi Wang, Zhecan James Wang, Yuhang Zang, Dahua Lin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05141v1",
+    "source": "arXiv",
+    "abstract": "Scientific papers require models to reason jointly over text, equations, figures, tables, code, and datasets while preserving the provenance of supporting evidence. Existing benchmarks typically evaluate these capabilities in isolation, leaving unclear whether multimodal models can support realistic scientific-reading workflows. We introduce SciDocBench, a workflow-centered benchmark for scientific document understanding. It contains 124 expert-authored and difficulty-screened questions organized into seven research-assistant capability groups and 19 subtasks across five scientific domains. Each question is instantiated under four matched conditions combining English or Chinese questions with all-images-first or interleaved document representations, yielding 496 evaluation instances for controlled analysis. The strongest evaluated system achieves only 62.6/100, with pronounced weaknesses in document perception, evidence grounding, verification, and cross-document reasoning. To translate these diagnostics into scalable training signals, we introduce SciDocIR, a typed evidence-graph representation that preserves scientific document objects, layout and cross-reference relations, and provenance. Building on SciDocIR, we construct SciDocDataset, comprising approximately 15K supervised fine-tuning samples and 8K reinforcement-learning samples across 14 verifiable subtasks. Together, SciDocBench, SciDocIR, and SciDocDataset form an evaluation-to-training framework for diagnosing and improving scientific-document assistants. The project page is available at https://github.com/InternLM/SciDocBench."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "PuTR-CouT: Counting-by-Tracking in Camera-Trap Image Sequences",
+    "authors": "Fagner Cunha, Juan G. Colonna, Eulanda M. dos Santos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05038v1",
+    "source": "arXiv",
+    "abstract": "Species identification in camera trap images has been widely studied, but key ecological modeling tasks such as species abundance or density estimation also require counting individual animals. However, the lack of counting labels in most datasets and low frame rates (typically ~1 frame per second) make sequence-level tracking and count estimation particularly challenging. In this work, we present PuTR-CouT, a counting-by-tracking framework built on a transformer-based learned association mechanism for sequence-level animal counting in camera trap images. To address the scarcity of annotated tracking data, we generate synthetic training data by exploiting structural priors, such as static backgrounds and short temporal bursts, to heuristically create pseudo-tracking labels in a weakly supervised manner. The resulting tracker associates detections across frames, using these tracks to estimate per-species counts. We also refine the MaxBoxCount heuristic used by the top solutions of the iWildCam 2021 challenge as a strong baseline, setting the highest score reported to date. When evaluated on the iWildCam 2021 benchmark, our framework PuTR-CouT delivers competitive counting results compared to the improved MaxBoxCount, with the added capability of multi-species predictions and track-level verification."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "TPMSpy: Validation of Measured Boot Systems by Low-Level Tracing of TPM Usage",
+    "authors": "Roman Lacko, Petr Svenda",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.05011v1",
+    "source": "arXiv",
+    "abstract": "Measured Boot extends trust in a booted system by recording cryptographic measurements of executed software and system state into a Trusted Platform Module (TPM), enabling subsequent verification through remote attestation. Although this mechanism is increasingly deployed in contemporary operating systems, its practical security depends on whether implementations measure the expected components under the expected conditions, yet this is not checked systematically. We propose a platform-agnostic method for analysing low-level TPM usage at the level of virtualized system--TPM interactions. It enables independent reconstruction and validation of the TPM Event Log without relying on the quoting mechanism itself. Because it does not depend on implementation details, it is applicable to both open and closed systems. We demonstrate the method on both Linux and Windows and conduct a systematic longitudinal analysis of Linux systems with systemd versions 245--258 (2020--2025), examining how Measured Boot usage evolved and observing wide divergence. No single usage pattern emerged amongst systems, warranting customized analysis. The analysis identifies undocumented behavioural changes, reveals inconsistent measurements of user-space systemd services, which prevent reliable remote attestation and LUKS disk decryption on such systems."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Learning unknown stabilizer codes using product measurements",
+    "authors": "Heather Leitch, Sowmya Tirukkovalluri, Yingkai Ouyang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04997v1",
+    "source": "arXiv",
+    "abstract": "Efficiently characterizing quantum error correcting codes is a key challenge on the path to fault-tolerant quantum computation. Stabilizer codes, a central class of such codes, are defined by a set of stabilizer generators. Here, we present an algorithm that uses random single-qubit measurements to learn the stabilizer generators of any stabilizer code from $N$ copies of stabilizer states in its codespace, requiring no prior knowledge of the code's structure. This also enables verification that a device implements its intended code. We derive a lower bound on $N$ needed to recover the stabilizer generators with high probability, together with a bound on the algorithm's overall probability of success. When applied to quantum low-density parity-check (qLDPC) codes, a leading candidate for practical fault-tolerant architectures, our approach requires a number of states that scales polylogarithmically with $n$, the number of qubits."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "The fourth generalized Davenport constant of $C_5^3$",
+    "authors": "Sze Chun Yiu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04950v1",
+    "source": "arXiv",
+    "abstract": "For a finite abelian group $G$ and $k \\geq 1$, the generalized Davenport constant $D_k(G)$ is the least $\\ell$ such that every sequence over $G$ of length at least $\\ell$ has $k$ pairwise disjoint nonempty zero-sum subsequences. A theorem of Freeze and Schmid gives $D_k(C_5^3) \\geq 5k+10$ for every $k \\geq 2$. We prove the matching upper bound: $D_4(C_5^3)=30$, and hence $D_k(C_5^3)=5k+10$ for every $k \\geq 2$, so the Freeze--Schmid bound is attained by $C_5^3$ from $k=2$ onward, as it is by $C_2^3$ and unlike $C_3^3$. The proof is finite and computer-assisted. The remaining case reduces to showing that every zero-sum sequence of length $31$ over $C_5^3$ contains a nonempty zero-sum subsequence of length at most five. A saturation argument confines the multiplicities of a hypothetical counterexample to $\\{1,2,4\\}$, its support pattern to one of $60$ solutions of two linear equations, and its geometry to one of $78$ rank/plane branches normalized to a standard basis; an exhaustive search exhausts every branch with no survivor. The search was carried out by three independently written implementations, and the branch cover was regenerated by separate programs from the lemmas alone; two further machine-verified values, $D_3(C_5^3)=25$ and $s_{\\leq 6}(C_5^3)=24$, enter the second statement, and their records accompany the paper."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "RefactorPlatform: An Open-Source Harness for Controlled Evaluation of Repository-Scale Refactoring Agents",
+    "authors": "Aziz Ben Amor, Drish Mali, Mann Acharya, Vijayasri Iyer, Sébastien Bratières",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04898v1",
+    "source": "arXiv",
+    "abstract": "Repository-scale refactoring requires coding agents to propagate a single change across many interdependent files without altering program behavior, yet to our knowledge no existing harness isolates the design choices that determine agent success on this task. We present RefactorPlatform, an open-source evaluation harness that holds the environment fixed and varies each design axis explicitly: model backbone (via OpenRouter and GitHub Copilot CLI), execution regime (baseline, retrieval-augmented, and multi-agent), and prompt specificity. Each run executes in an isolated workspace with live terminal streaming, per-task logging of tokens, diffs, and transcripts, AST-based verification, and exportable telemetry for audit and reproduction. Demonstrating the platform on 100 multi-file RefactorBench tasks across four model families, we illustrate the analyses it supports: AST-aware chunking outperforms naive token-window chunking by 25-30% across prompt modes, whereas naive retrieval falls below the retrieval-free baseline; a lean retrieval-augmented single agent (86%) beats the sub-agent configuration we evaluated (66%) on matched tasks with no task passing under delegation that fails under retrieval; and retrieval's accuracy gains absorb its token overhead, leaving cost per successful refactoring unchanged. RefactorPlatform is open-sourced to make refactoring-agent evaluation reproducible and auditable."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+    "authors": "Linsen Zhu, Mengqing Cai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04894v1",
+    "source": "arXiv",
+    "abstract": "Large language models become consequential agents when surrounding systems let outputs change external state. Models now call tools, operate interfaces, delegate work, retain state, inhabit generated worlds, and control robots or laboratory equipment. Such advances are often narrated as one march toward autonomy, conflating model competence, system integration, persistence, and safe authority. This critical review synthesizes primary research and official technical specifications available by 31 August 2026. We organize the evidence along delegated authority, temporal persistence, and environmental coupling, while separating model, harness, and environment. Within the evidence examined, action-interface expansion is documented more convincingly than robust completion, recovery, authorization, or independent verification. Model Context Protocol and Agent2Agent improve interoperability but do not establish trustworthy delegation; multi-agent organization adds specialization alongside cost and correlated failure. Persistent simulations and world models support training and planning but do not themselves demonstrate agency; robotics and self-driving laboratories establish bounded feasibility rather than unattended open-world reliability. We propose justified delegation as an analytical and normative heuristic, not an observed law or certified score: expand action scope only where evidence supports provenance, bounded authority, failure detection, safe recovery, and calibrated human control. This framing yields a research agenda for coupled model-harness evaluation, capability-based permissions, durable state, cross-agent accountability, and staged physical validation."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "The Generative AI Gold Rush in Theoretical and Computational Research",
+    "authors": "Xiaoshn Nee, Haobo Zhong, Xiaomin Ni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04872v1",
+    "source": "arXiv",
+    "abstract": "Generative AI is changing the production conditions of theoretical and computational research, but its sys tem level effects require measures that separate plat form growth, field specific divergence, and production structure. We assemble 2,080 monthly observations for twenty arXiv archives from January 2018 through Au gust 2026 and a separate pseudonymized Mathematics author panel. A regularized convex synthetic control fitted through December 2025 identifies the January August 2026 anomaly, while spatial placebos, prior year pseudo holdouts, donor refits, and alternative preperiods assess comparative robustness. Mathematics recorded 47,127 list entries, 33.5% above 2025 and 11.9% above a synthetic counterfactual of 42,113 entries. Qualified donor and preperiod designs yield 9.6% to 14.9%, and Mathematics has the largest RMSPE ratio among fifteen eligible placebo archives. Subfield growth is broad, with 29 of 30 primary math.* categories expanding. The author panel shows a marked thickening of the repeated output tail. The share of active author units produc ing at least five submissions rose from 2.45% to 3.80%, while the ten submission tail rose from 0.21% to 0.49%. These results document a new and unusually large 2026 Mathematics production regime shift. Its timing and production structure, combined with independent evi dence on AI diffusion and verifiable research tasks, are consistent with delayed diffusion and capability thresh old mechanisms. The comparative design identifies the anomaly, and separate triangulation evaluates AI related explanations. The findings locate verification, selection, and attention as central constraints for research gover nance."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "MABPD: Multi-Agent Bias Probing & Detection via Structured Argument Debate",
+    "authors": "Garvit Joshi, Stavya Dhyani, Jasmine, Arun Chauhan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04841v1",
+    "source": "arXiv",
+    "abstract": "Media bias in news articles operates through subtle linguistic cues---loaded language, selective framing, and strategic omission---that resist single-model detection and have traditionally required large annotated corpora for supervised training. We ask whether structured multi-agent deliberation can serve as a principled, training-free alternative to supervised classification for this task. We introduce MABPD (Multi-Agent Bias Probing & Detection), a pipeline in which three specialized LLM agents analyze an article from complementary perspectives and resolve disagreements through a Structured Argument Debate (SAD) protocol. SAD implements a domain-motivated asymmetric burden of proof---biased claims without grounded textual evidence carry zero weight---combined with role-weighted voting and post-consensus verification, replacing task-specific supervised decision boundaries with explicit deliberative structure. Ablation confirms that this structured deliberation, not mere agent parallelism, drives performance: removing the debate module reduces F1 by up to 10.6 points. On the BABE benchmark (4,121 expert-annotated sentences), MABPD achieves 83.4% macro F1 on the held-out test split---within 0.7 percentage points (pp) of the supervised SOTA (MAGPIE, 84.1% macro F1; Horych et al., 2024)---without any task-specific training or threshold tuning on annotated data. Cross-dataset evaluation on the SemEval 2019 HyperPartisan corpus (644 articles) yields 75.0% zero-shot accuracy, within 7.2 pp of the supervised SOTA accuracy (82.2%; Kiesel et al. 2019), confirming transfer across annotation regimes. We release the full pipeline and evaluation code."
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Cost-Aware Hierarchical Multi-Agent Ransomware Detection and Family Attribution",
+    "authors": "Mubashar Iqbal, Asifullah Khan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04820v1",
+    "source": "arXiv",
+    "abstract": "Ransomware detection and family attribution require analysis of different modalities because it can use packing, obfuscation, process manipulation and runtime evasion techniques. However, conventional multimodal usually uses all available modalities for every sample resulting in unnecessary computational cost and increased latency. In this paper, we present a Cost Aware Hierarchical Multi-Agent System (HMAS) for adaptive ransomware detection. The proposed architecture organizes specialized agents into hierarchical domain controllers coordinated by a Meta Orchestrator. Static analysis is used as the initial low-cost modality while additional dynamic and memory modality is selectively used when confidence is insufficient or specialist agents exhibit disagreement. A cost model incorporates modality use and processing overhead. It enables the orchestration policy to balance analysis performance against computational cost. A locally deployed large language model provides verification for selected difficult cases without replacing the deterministic pipeline. Experimental evaluation compares adaptive HMAS with static only, static plus dynamic and exhaustive analysis policies across binary ransomware detection and multiclass family attribution. The complete HMAS achieved 96.57% accuracy, 0.96 F1-score and 0.99 ROC-AUC for binary detection. It also achieved 0.90 macro-F1 for family attribution. At the same time, the HMAS reduced average analysis cost by 43.97% relative to exhaustive analysis and substantially reduced average analysis latency except for the case where LLM is used. Routing analysis showed that 56.05% of cases were resolved using static evidence alone. Only 4.33% required the complete evidence pipeline. These findings demonstrate that adaptive HMAS can provide accuracy cost tradeoff for ransomware analysis while retaining support for heterogeneous and incomplete modalities."
+  },
+  {
+    "date": "2026-9-6",
+    "title": "LLiBTree: An Assessment of Usability and Trust of LLM-integrated Behavior Tree Nodes for Robot Programming",
+    "authors": "Yuki Matsutani, Yasuhiro Nitta, Maki Sugimoto",
+    "publish": "ACM Transactions on Interactive Intelligent Systems",
+    "url": "https://doi.org/10.1145/3845606",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-6",
+    "title": "TestART: Improving LLM-based Unit\n                    <u>Test</u>\n                    ing via Co-evolution of\n                    <u>A</u>\n                    utomated Generation and\n                    <u>R</u>\n                    epair I\n                    <u>t</u>\n                    eration",
+    "authors": "Siqi Gu, Quanjun Zhang, Kecheng Li, Chunrong Fang, Fangyuan Tian, Liuchuan Zhu, Jianyi Zhou, Zhenyu Chen",
+    "publish": "ACM Transactions on Software Engineering and Methodology",
+    "url": "https://doi.org/10.1145/3844945",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
