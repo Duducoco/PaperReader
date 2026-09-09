@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-08",
+    "title": "ReCite: Agentic Reasoning for Faithful Citation",
+    "authors": "Yuyang Huang, Bobo Li, Jiajia Song, Yuzhe Ding, Chong Teng, Fei Li, Donghong Ji",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09156v1",
+    "source": "arXiv",
+    "abstract": "Accurate citations are the foundation of academic writing, tracing intellectual origins and substantiating core claims. However, manually navigating the growing volume of scientific literature is increasingly difficult, prompting reliance on automatic citation recommendation. While modern retrieval-augmented architectures have largely mitigated the fabrication of non-existent papers, current systems relying on semantic similarity struggle with misattribution, often citing authentic papers that fail to logically support the author's claim. To address this challenge, we argue that accurate citation requires a shift from similarity-based search to active, claim-level reasoning. We propose ReCite, a decoupled agentic framework that orchestrates location perception, intent-aware query planning, and reflective verification. Trained on synthesized reasoning trajectories, our agent verifies claim-evidence consistency and triggers self-correction loops when retrieved candidates lack logical support. Experiments demonstrate that our lightweight framework outperforms state-of-the-art massive generative models in strict citation accuracy. By grounding literature matching in verifiable logic rather than semantic overlap, ReCite establishes a reliable foundation for automated academic writing."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "PrivEscalate: Measuring and Augmenting the Threat of LLM-Automated Linux Privilege Escalation",
+    "authors": "Yixuan Liu, Zilong Zhen, Yin Wu, Yi Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09087v1",
+    "source": "arXiv",
+    "abstract": "As Large Language Model (LLM) agents increasingly automate offensive operations across the cyber kill chain, their efficacy in complex local post-exploitation tasks remains inadequately quantified. Among these, Linux privilege escalation is a key step between initial access and full system compromise. However, existing evaluations for this task are limited by small sample sizes (fewer than 15 scenarios), lacking the scale to compare model capabilities under executable verification. To address this, we present PrivEscalate, a large-scale benchmark for Linux privilege escalation, comprising 531 Dockerized scenarios spanning 14 sub-categories. We additionally derive 329 parameterized variants to measure sensitivity to environmental distractors. Evaluating six LLMs across three agent architectures reveals: (i) model capability is heterogeneous across vulnerability classes, with no single model dominating across the high-prevalence classes, motivating multi-dimensional risk assessments; (ii) LLM successes are sensitive to environmental perturbation, so configuration rotation can disrupt some exploit attempts but does not eliminate the measured risk; and (iii) agent architectures can materially change success rates and reorder model rankings, though the magnitude is model-dependent. Leveraging these insights, we develop PrivEscAgent, a domain-specialized wrapper that augments a generic ReAct agent with deterministic enumeration, category matching, and step planning. PrivEscAgent improves over prior Linux privilege-escalation agent baselines without underlying LLM modifications. We release PrivEscalate as an open-source, Dockerized measurement instrument supporting LLM agent evaluation, defensive tool validation, and red-team training."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "ToolLoop: Closed-Loop Tool-Use Data Synthesis via Decomposed Generation and Dynamic Self-Feedback",
+    "authors": "Min Zeng, Yuzhou Liu, Zhenyu Cao, Hanxiu Chen, Heng Li, Caiquan Liu, Yafei Wen, Xiaoxin Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09072v1",
+    "source": "arXiv",
+    "abstract": "High-quality tool-use data is critical for training language models to interact effectively with external tools. However, existing synthetic approaches typically follow a generate-then-filter paradigm with static post-hoc verification, often yielding inefficient data with imbalanced feature distributions. We propose ToolLoop, a closed-loop framework that decomposes synthesis into three progressive stages: (1) sampling function name combinations as ground truth; (2) backward derivation of user queries; and (3) forward derivation of tool calls. At each stage, dynamic self-feedback iteratively guides the model toward high-quality generation, realizing a transition from generate-then-filter to generate-verify-refine. On the Berkeley Function Calling Leaderboard (BFCL), a 4B parameter model trained with our 11K synthetic examples achieves 86.40% accuracy in non-reasoning mode, while an Isolate variant that removes BFCL-overlapping candidate functions still reaches 86.07\\%. Cross-benchmark evaluation on ACEBench further demonstrates strong generalization, with 72.1% overall accuracy using only 18.3% of baseline training data."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Reduction Based Dynamical Systems Analysis of Nonlinear Wave Equations: A Review",
+    "authors": "Naresh Saha, Arnob Ray",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09050v1",
+    "source": "arXiv",
+    "abstract": "Nonlinear wave equations exhibit rich interplay among dispersion, nonlinearity, coupling, dissipation, and external forcing, producing diverse coherent and complex wave structures. Although exact travelling-wave solutions provide analytical benchmarks, their construction alone does not reveal underlying phase-space, bifurcations, stability, or responses to perturbations. This review presents a reduction-based methodological framework connecting nonlinear partial differential equations(PDEs) to reduced dynamical systems, invariant phase-space structures, exact waveform reconstruction, stability analysis, and verification in PDEs. Its applicability and limitations are examined across Schr{ö}dinger-type, coupled, nonparaxial, dissipative, magnetic, shallow-water, and fractional wave equations. Particular emphasis is placed on correspondence between analytical waveforms and invariant orbits. Equilibria, periodic trajectories, homoclinic orbits, and heteroclinic connections geometrically represent constant, periodic, localized, and front-like structures, respectively. This review distinguishes existence and stability of invariant structures from onset of chaos, emphasizing complementary diagnostics rather than reliance on phase-portraits or finite-time indicators alone. Major methodological gaps include incomplete parameter-space characterization, weak correspondence between reduced models and full-PDE dynamics, ambiguities in generalized and fractional formulations, limited robustness analysis, inadequate numerical reproducibility, and insufficient links to experimental observables. The framework prioritizes physical admissibility, stability, robustness, and predictive relevance over generation of additional formal solutions. It supports reliable nonlinear wave prediction, stability assessment, control, and system design in fluid, optical, plasma, and other nonlinear physical systems."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Do Reasoning Representations Help Humans Evaluate LLM Outputs?",
+    "authors": "Jaewoo Lim, Sungbok Shin, Sanghyun Hong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09038v1",
+    "source": "arXiv",
+    "abstract": "Reasoning representations are increasingly used as explanations for large language model outputs. Yet they are typically evaluated with model-centric criteria, such as answer accuracy and faithfulness, leaving it unclear whether they help people evaluate model responses. In this work, we study reasoning representations as human-facing interfaces rather than proxies for model reasoning ability. We conduct a controlled human study of six reasoning formats across tasks of varying complexity, supported by a web-based framework that randomizes task domains, problem instances, and representation order. The study collects fine-grained judgments of structural understanding, error detection and localization, and trust calibration. Our study shows a mismatch between perceived preference and support for human evaluation. Participants prefer planning- and decomposition-based representations, but simpler chain-of-thought traces better support verification, trust, and interpretability. Preferred representations also introduce calibration risks, with more false alarms on correct traces and high trust despite low willingness to verify."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Concentrate After Imagination: Text-Conditioned Evidence Grounding for Partially Relevant Video Retrieval",
+    "authors": "Shuaiqi Cheng, Siyu You, Yanbi Wu, Yuxi Chen, Jiahao Zhang, Xuming Hu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08999v1",
+    "source": "arXiv",
+    "abstract": "Partially Relevant Video Retrieval (PRVR) retrieves untrimmed videos when queries describe only short moments. Although recent methods improve local representations, uncertainty modeling, and global context, final ranking often still trusts the strongest local response; a coincidentally similar fragment can therefore produce an unsupported peak. We identify this failure as the query-agnostic concentration bottleneck and propose TRACE, a score-level evidence verification operator for PRVR. Given a query and global video registers, TRACE activates query-relevant registers, routes their support to frame-level evidence, and smoothly marginalizes alternative query-to-register-to-frame paths before localized temporal selection. Unlike representation-level feature fusion, TRACE uses this evidence only as a query-conditioned residual calibration of the original local score. On ActivityNet Captions, Charades-STA, and TVR, TRACE achieves the best SumR on all three benchmarks and improves the DreamPRVR backbone by 1.2, 1.1, and 1.5 points, respectively. Ablation, routing-corruption, hard-negative, and cross-backbone transfer analyses support the interpretation that the gains arise from query-conditioned evidence verification rather than a generic score offset."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Evaluating and Improving Evidence-Grounded Fact-Checking in LLMs via Multi-Round Evidence Ablation",
+    "authors": "Xingyu Deng, Mingzi Cao, Nikolaos Aletras, Xi Wang, Mark Stevenson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08943v1",
+    "source": "arXiv",
+    "abstract": "Automatic fact-checking systems assess the veracity of claims given evidence from relevant documents. Large Language Models (LLMs) have demonstrated strong performance in fact-checking due to their general reasoning capabilities. However, it remains unclear whether they faithfully make use of the evidence provided to reach veracity judgments or rely on parametric knowledge. To investigate this, we introduce Fact-Ablated Evaluation (FAE), a new evaluation framework that iteratively ablates the cited evidence to assess whether LLMs revise their predictions accordingly. Our empirical results show that current off-the-shelf LLMs as fact-checking systems rely more on their parametric knowledge than on the evidence provided. To bridge this gap between prediction accuracy and evidence grounding, we propose REAL (Rigorous Evidence Ablation Learning), a training framework that promotes evidence-dependent verification through counterfactual evidence supervision for the LLM-as-verifier models. Experiments on four fact-checking datasets across different domains demonstrate that models trained with REAL obtain superior evidence-dependent capabilities compared to standard fine-tuned models. Our findings highlight that strong fact-checking performance can still coexist with weak evidence dependency, while REAL encourages veracity predictions to remain more closely tied to the availability of supporting evidence."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Equilibria for Time-inconsistent Regular-singular Control Problems",
+    "authors": "Yuting Jia, Zongxia Liang, Xiaodong Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08877v1",
+    "source": "arXiv",
+    "abstract": "This paper studies a time-inconsistent mixed regular-singular control problem in continuous time with non-exponential discount. We seek time-consistent equilibria in an intrapersonal game framework and propose a novel definition of regular-singular equilibrium where both regular and singular controls are unified via control laws. We establish a verification theorem to provide a sufficient condition of the equilibrium. Furthermore, we propose a novel concept of mild equilibrium for which perturbations are applied separately to the regular and singular control and give the mild verification theorem. We illustrate the applicability of the theory to the effort and dividend problem and obtain an explicit equilibrium depending on the effort and dividend thresholds under a mixture of exponential discount functions and a pseudo-exponential discount function by solving the extended Hamilton--Jacobi--Bellman (HJB) system. The convexity of the value function is rigorously established, and the equilibrium conditions are verified. In addition, we establish the existence of the effort and dividend thresholds under a mixture of exponential discount functions. Numerical results reveal the impacts of exogenous parameters on the effort and dividend thresholds and the equilibrium value function, along with their economic implications."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "$\\rm S^*(E)$ measurement of the $\\rm {}^{12}C({}^{12}C,α){}^{20}Ne$ reaction at astrophysical energies via the Trojan horse method with $\\rm ^{16}O$ quasi-free breakup",
+    "authors": "Chengbo Li, Huiming Jia, Qungang Wen, Chengjian Lin, Lei Yang, Feng Yang, Nanru Ma, Peiwei Wen, Tianpeng Luo, Chang Chang, Xuepeng Sun, Xuejian Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08819v1",
+    "source": "arXiv",
+    "abstract": "The 12C(12C,a)20Ne reaction at astrophysical energies is crucial for understanding the carbon burning process in massive star and explosive astrophysical scenarios like Type Ia supernovae and X-ray bursts. However, directly measuring or simply extrapolating its S*(E) factor is extremely challenging due to Coulomb suppression and potential complex resonance structures near the Gamow window (1.5+-0.3 MeV). The THM can circumvent the Coulomb barrier, providing data within the Gamow window without extrapolation. Strong resonances near 1.5 MeV were previously reported by Tumino et al. using THM with 14N=(12C+d), a result that generated significant interest and debate, underscoring the need for further experimental verification. In this work, we selected 16O=(12C+a) as the Trojan-horse nucleus due to its lower binding energy, which favors quasi-free reactions. We performed an indirect measurement of 12C(16O,aa)20Ne at the HI-13 Tandem Accelerator at CIAE. Employing a copper beam-stopper foil, we measured the spectator a-particle within a small angular range around 0, where the quasi-free mechanism predicts its highest concentration. The S*(E) factor of 12C(12C,a)20Ne in the astrophysical energy region was extracted from the measured three-body reaction using THM based on DWBA. Our results confirm the existence of resonances within the Gamow window around 1.5 MeV in both the a0 and a1 channels. Without considering the details of the resonance structures, the overall trend of our results is qualitatively in reasonable agreement with the THM-Tumino2018 and TTIK2025 data, but differs significantly from the trend of the Modified-THM-Muk2019 data. We observe no evidence for hindrance effect in our results."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring",
+    "authors": "Redwanul Karim, Nisha L. Raichur, Lucas Heublein, Tobias Feigl, Christopher Mutschler, Felix Ott",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08763v1",
+    "source": "arXiv",
+    "abstract": "Federated global navigation satellite system (GNSS) monitoring distributes a proprietary classifier to partly trusted stations, any of which may leak its copy. ZK-Trace combines public identity marks, recipient-specific Tardos fingerprints, and zero-knowledge credential verification. The registry supports offline tracing without the leaker's cooperation. We establish conditional false-accusation bounds for arbitrary recovered bit patterns, a finite completeness bound under a hidden-bias residual channel, and a deterministic tracing-score bound for correlated feature-distillation errors. An interval-arithmetic checker makes the conditional bound executable and allocates a common budget across accusation and tamper decisions. Under innocent-row independence, the certificate-based evaluation uses a false-naming budget of 0.001 per investigation. It isolates all 160 single-owner copies and traces 712 of 720 two-owner mixtures without naming an innocent. Experiments use a simulated GNSS federation and CIFAR-10. Feature matching preserves the feature mark in 20/20 runs and cross-architecture transfer in 19/20, at copy-accuracy costs of 4.8 and 6.1 percentage points on GNSS and CIFAR-10. Function-only distillation erases the feature mark, and distillation also removes weight-space marks. These results support verifiable tracing under explicit statistical and cryptographic assumptions. Credential knowledge and recipient evidence serve distinct roles."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Application of curiosity driven exploration methods for hardware interference identification",
+    "authors": "Ludovic Matar, Clement Moulin-Frier, Pierre-Yves Oudeyer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08729v1",
+    "source": "arXiv",
+    "abstract": "The transition from single-core to multi-core architectures in safety-critical embedded systems introduces significant challenges due to inter-core interference caused by contention for shared hardware resources. Such interference affects execution times and complicates the verification of strict temporal requirements, particularly in domains such as avionics where standards require comprehensive identification of interference sources. Existing interference analysis approaches, whether manual or model-based, struggle to capture the full range of behaviors arising from the complex interactions among micro-architectural components. In this paper, we frame multi-core interference analysis as the exploration of a complex system behavior space. We propose the use of curiosity-driven exploration algorithms from artificial intelligence to systematically and efficiently cover the space of possible interference behaviors. Using a simulator-based environment, we show that the proposed approach achieves broader and more uniform behavioral coverage within a limited experimental budget compared to traditional pseudo-random program generation methods."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "A Content-Addressed Workflow for Reproducible DANTE Gravitational-Wave Anomaly Analysis",
+    "authors": "Luca Cirfeta",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08695v1",
+    "source": "arXiv",
+    "abstract": "Unsupervised analysis of gravitational-wave detector data combines expensive scientific stages with data acquisition, provenance checks, statistical calibration, follow-up products, and reporting. Reproducing such an analysis requires more than preserving model weights or a final candidate table: the execution graph, scientific contracts, retry semantics, and verification boundary must also be explicit. We present a local workflow layer for the Domain-Adaptive Network for Transient Evaluation (DANTE) that represents a corrected O4a analysis as a content-addressed, 15-stage directed acyclic graph. The architecture separates immutable stage evidence from mutable operational progress, binds command-line and browser interfaces to the same run identity, and resumes only work compatible with the frozen contract. The tagged v1 release records all 15 stages as verified in a machine-readable receipt and passed a documented human usability gate. The release verifies adopted scientific artifacts rather than recomputing them, and therefore makes no new claim of global significance, astrophysical discovery, or public real-time operation. This paper describes the architecture, its fail-closed controls, and the bounded evidence supporting reproducible local use."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Combating Instruction Conflict via Energy-Driven Latent Conflict Detection",
+    "authors": "Mingyu Ma, Yuxin Wu, Jingbo Wang, Tianxiao Huang, Leixin Sun, Xiaochuan Shi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08646v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) are increasingly deployed with hierarchical instructions, yet they remain vulnerable to conflicts in which user directives override system-level constraints. Existing defense mechanisms predominantly focus on static input inspection and therefore fail to detect Response Drift, a phenomenon in which the model's final response violates system-level constraints despite seemingly compliant inputs. To bridge this gap, we introduce ELCD, a response-level latent conflict detector for post-generation, pre-delivery verification. Given the full generated output, ELCD constructs a composite hidden-state representation by concatenating the final-token embedding with the mean-pooled response embedding. It then optimizes a pairwise margin ranking objective to separate compliant and drifting responses in latent space. Extensive experiments across five mainstream LLMs ranging from 1.5B to 14B parameters demonstrate that ELCD significantly outperforms competitive baselines. Notably, it improves the PR-AUC on Llama-2-7B by approximately 30 percentage points and reduces the False Positive Rate at 95% TPR (FPR95) on Mistral-7B to 2.67%. These results suggest that ELCD provides a promising approach for latent instruction-conflict detection in open-weight or self-hosted LLM deployments."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "STSG-VQA: Evidence-Grounded Temporal Question Answering from Surgical Spatio-Temporal Scene Graphs",
+    "authors": "Jing Li, Duygu Sarikaya",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08543v1",
+    "source": "arXiv",
+    "abstract": "Despite recent advances in surgical vision-language models (VLMs), temporal reasoning remains limited because existing supervision is largely frame-centric. Frame-level scene graphs (SGs) have proven effective in providing structured representations of surgical environments but do not explicitly model the dynamics of surgical workflows. To explicitly model how surgical states evolve across time, we introduce a multi-level structured temporal supervision methodology that augments frame-level surgical SGs with object-level continuity, event-level interaction continuity, and procedure-level connectivity. We then execute temporal queries over the resulting spatio-temporal scene graphs (STSGs) to generate evidence-grounded question-answer pairs, which together form the STSG-VQA benchmark. Each question is linked to the temporal interval and STSG evidence used to derive its reference answer, enabling traceable verification. The benchmark contains 18,458 question-answer pairs across seven temporal categories. Fine-tuning Qwen3-VL-4B and Hulu-Med-4B with STSG-derived supervision improves question-level micro accuracy by 24.39 and 19.56 percentage points over their zero-shot baselines and by 16.50 and 14.25 points over static scene-graph supervision, respectively. These gains span all temporal categories, indicating that STSG-derived supervision helps surgical VLMs reason over temporally grounded interactions rather than isolated frames. The code and dataset will be made publicly available upon acceptance."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Physical Law Ecology: mapping multi-mechanism ecologies as the zeroth step of data-driven scientific discovery",
+    "authors": "Xiongheng Bian, Xiangyu Cui, Ma Feng, Xiaoyan Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08536v1",
+    "source": "arXiv",
+    "abstract": "Every data-driven equation discovery method assumes (implicitly and without verification) that the target system obeys a single governing law ($K{=}1$). Here we show that this assumption is the primary bottleneck limiting scientific discovery in multi-mechanism systems, and introduce Physical Law Ecology, a framework that makes $K^*$ (the number of coexisting independent mechanisms) itself the first quantity to be determined from data. The framework automatically mines a pool of topologically distinct candidate equations, constructs a continuous dominance weight field across parameter space, and discovers analytic evolution laws governing mechanism succession---with optional monotonicity constraints encoding irreversible physics. Across four unrelated systems (elastomer mechanics, pool boiling, galactic dynamics, and droplet evaporation), BIC consistently identifies $K^*{=}3$ independent governing topologies. Applied to 163 SPARC galaxies (3,269 spatially resolved measurements), the framework autonomously recovers three gravitational laws whose coexistence provides evidence against the single-universal-acceleration hypothesis of MOND ($p<10^{-34}$). In engineering applications, multi-law weighted prediction reduces error by 67-72\\% over single-equation baselines while retaining full interpretability. By establishing the determination of $K^*$ as the zeroth step of scientific discovery-prior to and independent of equation search---this work opens a direction orthogonal to existing symbolic regression: not finding better equations, but mapping the ecology of mechanisms that govern complex systems."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Feyospace-v1: How the Cyber Mercury Seven Trained Frontier Cyber Models",
+    "authors": "Zongjie Li, Alan Z. W, John Nicolas J, Walter H. F, Scott Donald L, Gordon Y. P, Deke X",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08418v1",
+    "source": "arXiv",
+    "abstract": "Training capable cyber agents is often treated primarily as a problem of model scale, yet open-weight post-training is constrained more directly by the cost of executable environments, reliable multi-turn supervision, and access to strong teachers. We present a data-centric framework that addresses these bottlenecks through five complementary systems: Choulea analyzes hidden reasoning signatures, SkyReal reduces teacher-sampling cost, Hongzwang bypasses API restrictions on teacher execution, PSBreakup restores capabilities weakened by model merging, and Kreator converts expert interventions into trainable reasoning. Our data engine constructs resettable coding, vulnerability, CTF, kernel-history, full-exploit, firmware, and device-backed environments. Candidate trajectories are retained only after execution verification and evidence auditing, yielding 164,269 trajectories for long-context supervised fine-tuning. The three checkpoints improve over their starting models by an average of 23.76% on the full CyberGym suite and 10.49% across the pooled CTF suites. As of September 1, 2026, Feyospace-s1 achieves a verified success rate of 63.24% and ranks 10th on the official CyberGym leaderboard, while all three checkpoints rank 1st among models at comparable parameter scales. To our knowledge, this is the first end-to-end demonstration that a seven-person independent team can train open-weight models with leading agentic cyber capability."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Efficient quantum state preparation on Quantinuum hardware",
+    "authors": "Archie Butterworth, Josh Green, Yusen Wu, Jie Pan, Jingbo Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08414v1",
+    "source": "arXiv",
+    "abstract": "Preparation and verification of specific quantum states is an important capability for quantum devices to realise advantages over classical computations and algorithms. In this work, we have demonstrated an end-to-end framework that combines resource-efficient quantum state preparation with rapid, robust fidelity verification on near-term quantum hardware. By experimentally preparing and validating a structured complex quantum state encoding a digitized acoustic signal on the Quantinuum H2-1 trapped-ion platform, we achieved a high hardware fidelity of $F_{\\mathrm{hw}} = 0.929$. Crucially, this milestone was realized without relying on idealized assumptions or deep fault-tolerant overhead, but rather through resource-minimal circuits optimized for NISQ-era and early fault-tolerant devices. Furthermore, we addressed a key limitation in current quantum state certification. While validation methods like shadow overlap work well for random states, their sample complexity can become prohibitively high for the structured states used in practical algorithms. We mitigate this by introducing a pre-measurement basis-change technique that reduces the verification parameter, $τ$, by over 10 orders of magnitude for structured targets. This approach tightens the theoretical certification guarantees of the shadow overlap method and integrates tensor-network preparation and shadow validation into a unified workflow. These results shift the paradigm of how structured classical data can be mapped to and verified on quantum hardware under realistic noise and measurement budgets. By compressing a robust verification procedure to just 1,000 measurement shots, this framework offers an immediate, scalable benchmarking standard."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method",
+    "authors": "Boao Yu, Zimo Chen, Junreng Rao, Yue Hu, Zhengqiu Zhu, Yong Zhao, Rusheng Ju",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08402v1",
+    "source": "arXiv",
+    "abstract": "Air-Ground Object Search (AGOS) in urban environments is a challenging embodied task, which requires an Unmanned Aerial Vehicle (UAV) and an Unmanned Ground Vehicle (UGV) to jointly search for and verify a specified target vehicle from multi-view visual references. To study this underexplored problem, we introduce AGOS-Bench, the first dedicated benchmark for evaluating whether general-purpose Vision-Language Models (VLMs) can integrate aerial discoveries and ground-level verification through UAV-UGV cooperation. We further provide AGOS-Dataset as the companion resource of exemplary trajectories constructed by an automatic pipeline. It consists of 7.7k episodes for searching objects of diverse categories and attributes, spanning three difficulty levels. To address the AGOS task, we propose AGOS-Agent, a training-free and tool-augmented approach. The agentic method relieves VLMs from complex and dynamic coordination via a deliberate search-handoff-verify cooperation protocol, only demanding VLMs for scene understanding and decision-making. Extensive experiments on nine VLMs show that AGOS-Agent improves overall success rate for eight of the nine evaluated backbones while reducing decision steps for all nine. On the hard split, the SR and SPL of Gemini-3.6-Flash increase from 8.6% to 55.7% and from 7.6% to 44.0%, respectively."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "MLIP Detective: Active Failure Mode Discovery Beyond Benchmark Scores for Machine-Learning Interatomic Potentials",
+    "authors": "Ryuhei Okuno, Nontawat Charoenphakdee, Kaoru Hisama, Yuta Tsuboi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08399v1",
+    "source": "arXiv",
+    "abstract": "Universal machine-learning interatomic potentials (u-MLIPs) aim to generalize across diverse configurations. Benchmarks enable reproducible evaluation but may not expose failures outside their predefined scope. Here, we show that physics-informed search can complement benchmark-based evaluation by uncovering hidden failure modes. We introduce MLIP Detective, an agentic framework for active failure mode discovery. Starting from benchmark evidence, MLIP Detective generates falsifiable, physics-informed failure hypotheses, screens them with inexpensive simulations, and escalates only the most suspicious cases to human experts together with proposed verification protocols. Without issue-specific prompting, MLIP Detective identified and characterized a systematic anomaly in MACE-MPA-0: the model predicted some relaxed adsorbate-surface systems involving O- or F-containing adsorbates to be higher in energy than their corresponding separated fragments. Using cross-model comparisons, MLIP Detective further inferred a likely training-data origin for the anomaly, consistent with recent reports."
+  },
+  {
+    "date": "2026-09-08",
+    "title": "Risk-Aware Generative Inpainting for Optimized Design Editing of EV Battery Cooling Channels",
+    "authors": "Leekyo Jeong, Yoon Koo Lee, Namwoo Kang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.08387v1",
+    "source": "arXiv",
+    "abstract": "Cooling-channel layouts for electric-vehicle battery packs must deliver temperature uniformity and low pressure drop while maintaining a single continuous channel. In late-stage design, local modification is a practical way to improve performance while retaining established global features. Diffusion-based inpainting supports such local edits, but its stochastic nature produces different outcomes even for the same region. This raises a fundamental question: how should edit locations be selected when each modification's outcome is stochastic? We propose a risk-aware generative editing framework that selects edit locations by accounting for this variability. Rather than scoring each candidate location by a single expected improvement, the method estimates a distribution of outcomes from offline edit results evaluated with a CFD-trained surrogate, and ranks locations by a chosen risk level. A single trained model therefore supports different editing preferences at inference time, emphasizing either higher expected improvement or greater consistency, without retraining. The policy is evaluated against random editing in a held-out paired study across seven mask configurations. It improves the cooling-channel objective over random editing in most configurations, and the advantage holds under independent CFD verification of the edited designs. Varying the risk level reveals a consistent trade-off between mean improvement and run-to-run consistency, while the learned distribution is useful for ranking locations but should not be read as a calibrated probability distribution. Together, these results show that stochastic generative editing can be converted from a source of variability into a controllable design decision through risk-aware location selection: effective editing depends not only on how a design is modified, but also on where and how much outcome variability is acceptable."
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Deterministic Fault Pattern Library: Bridging RTL Accuracy and High-Level Simulation Efficiency for Systolic Arrays",
+    "authors": "Vu Dang Nguyen Trinh, Ayoub Fellouh, Otmane Ait Mohamed, Fakhreddine Ghaffari",
+    "publish": "2026 24nd IEEE Interregional NEWCAS Conference (NEWCAS)",
+    "url": "https://doi.org/10.1109/newcas64543.2026.11673974",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "FlowFixer-EDA: A Tool-Feedback-Augmented Large Language Model Agent for Automated Diagnosis and Repair of Open-Source RTL-to-GDS Design Flow Failures",
+    "authors": "Ke Dong, Ruidong Wang, Fang Yuan, Baichun An, Xia Zhang",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3730896",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Detecting LLM Fact-conflicting Hallucinations Enhanced by Temporal-logic-based Reasoning_supp1-3731191.pdf",
+    "authors": "Kailong Wang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tse.2026.3731191/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "LLM Agnostic Query Response Personalization via Temporal Knowledge Graph Database",
+    "authors": "Raef Taha, Emily Conway",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11674911",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "LLM-Constructed Cybersecurity Training Ranges",
+    "authors": "Bernard Dzogbenuku, Maj Anthony Rose, Mark Reith, Stephen Dunlap",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11675022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Simplified Classification of Human- and LLM-authored Tweets Using Text Features",
+    "authors": "Michael H. Dunn",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11675018",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "2.5-D Decomposition for LLM-Based Spatial Construction",
+    "authors": "Paul Whitten, Li-Jen Chen, Sharath Baddam",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11674959",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Neuromorphic Orchestration for Efficient LLM Infrastructure via Utility-Optimized Decision-Making",
+    "authors": "Kevin D. Johnson, Steven D. Harbour",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11675008",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "SAGE: A Stabilize-Assess-Govern-Enforce Framework for Deployment-Oriented Evaluation of LLM-Based Autonomous Agents_supp1-3731348.pdf",
+    "authors": "Mohammed Hamdan",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tai.2026.3731348/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Configuration Sensitivity of LLM Tabular Data Synthesizers: A Small-Model Memorization Effect and a Reporting Protocol",
+    "authors": "Murat Sahin, Ozlem Varliklar, Deniz Kilinc",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3732216",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Towards a Meta-Model for Integrating Knowledge Graph Extraction Into LLM-Enhanced Engineering Design",
+    "authors": "Scott Harned, Mark Reith, Brett Borghetti",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11674929",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "LLM-Guided Task Planning with A*-Based Navigation for Autonomous UAVs",
+    "authors": "Luwei Liao, Hongzong Li, Li Zhang, Yulong You",
+    "publish": "2026 18th International Conference on Advanced Computational Intelligence (ICACI)",
+    "url": "https://doi.org/10.1109/icaci69731.2026.11677948",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "LLM-Assisted Flight Intent Inference from Partial Trajectories: Joint Airport Classification and Trajectory Completion",
+    "authors": "Carlos Merlos, Joshua Maraj, Faraz Hussain",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11674974",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "STEMS: Spatio-Temporal Scheduling to Accelerate LLM Training in Optically-Interconnected Clusters",
+    "authors": "Binjun Tang, Xiaoliang Chen, Yufan Zhu, Weichi Wu, Zuqing Zhu",
+    "publish": "IEEE Transactions on Networking",
+    "url": "https://doi.org/10.1109/ton.2026.3732148",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Scheduling for Green Computility via LLM-Guided Deep Reinforcement Learning",
+    "authors": "Tao Yin, Cong Wang, Ziyu Niu, Tianyi Xu, Xiaodan Zhang, Ruyi Ma",
+    "publish": "2026 IEEE International Conference on Smart Internet of Things (SmartIoT)",
+    "url": "https://doi.org/10.1109/smartiot70864.2026.00051",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "LLM-Enhanced Adaptive MOEA/D for Solving Multiobjective Problems with Complex Pareto Fronts",
+    "authors": "Zhihua Li, Xianpeng Wang, Zhiming Dong, Erchao Li",
+    "publish": "2026 18th International Conference on Advanced Computational Intelligence (ICACI)",
+    "url": "https://doi.org/10.1109/icaci69731.2026.11677786",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Comparing cognitive vulnerabilities of human pen-testers to an LLM",
+    "authors": "Hajime Inoue, Zachary P. Fry, Robert Forties, Deborah S. Katz, Kamilya Salibayeva, Alexander Thorpe, Luke French, Ami Eidels, Scott Brown",
+    "publish": "NAECON 2026 - IEEE National Aerospace and Electronics Conference",
+    "url": "https://doi.org/10.1109/naecon70028.2026.11674991",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "LevelKV: Hierarchical KV Cache Pruning for Efficient and Reliable LLM Inference",
+    "authors": "Yizhen Yuan, Rui Kong, Bolin Xian, Yuanchun Li, Ting Cao, Xianyuan Zhan, Ya-Qin Zhang, Yunxin Liu",
+    "publish": "IEEE Transactions on Computers",
+    "url": "https://doi.org/10.1109/tc.2026.3731999",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Revealing and Mitigating the Impact of LLM-Generated Content on Retrieval-Augmented Generation Systems",
+    "authors": "Yixing Peng, Yi Liu, Quan Wang, Licheng Zhang, Chenfei Xie, Yongdong Zhang, Zhendong Mao",
+    "publish": "ACM Transactions on Knowledge Discovery from Data",
+    "url": "https://doi.org/10.1145/3837071",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-8",
+    "title": "Planning and Optimization of Shared Energy Storage in Multi-Microgrids Based on LLM and Enhanced Deep Reinforcement Learning",
+    "authors": "Fangxun Li, Jinjia Cao, Xu Xu, Fei Xue, Chao Long",
+    "publish": "IEEE Internet of Things Journal",
+    "url": "https://doi.org/10.1109/jiot.2026.3732266",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
