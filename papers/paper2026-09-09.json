@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-09",
+    "title": "Towards Tackling Application Logic Flaws through Autonomous Formal-Logic Modeling and Automated Reasoning",
+    "authors": "Yiwei Fang, Yichen Liu, Ze Jin, Haoqiang Wang, Qixu Liu, Luyi Xing",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10537v1",
+    "source": "arXiv",
+    "abstract": "Logic flaws pose significant challenges in the design and implementation of modern, semantically rich systems and applications, impacting security, privacy, and trust. These flaws are inherently tied to business-specific semantics and threat models, making their discovery and reasoning difficult and hard to scale. Real-world systems often exhibit diverse application features, complex protocol logic, and domain-specific threat models, necessitating substantial human effort and domain expertise for effective security analysis. In this paper, we introduce LL-Verifier, a novel, automated framework for identifying logic vulnerabilities built on (1) large language models for autonomous modeling, and (2) logic model checkers for rigorous reasoning. LL-Verifier processes natural language inputs, in particular protocol descriptions and security goals, to automatically generate formal logic models and properties expressed in a new logic language built on a generic logic language Maude, optimized for modeling arbitrary application-level semantics. These formal models are then converted into logical state machines, enabling exhaustive, rigorous verification through logic level model checking. This approach streamlines the analysis of diverse, application-level protocols deployed in real-world scenarios, offering automated, exhaustive, and precise reasoning within their logical constraints. We evaluated the high effectiveness, efficiency, and practicality of LL-Verifier by applying it to 27 access control protocols of widely used IoT devices, which come with vendor-specific logic flows and semantics. While LL-verifier tackles a hard problem in application security, i.e., automatic logic flaws discovery, our analysis uncovers a range of sophisticated logic vulnerabilities in IoT protocols and devices with serious security and privacy implications."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "A Formal Framework for Noisy Runtime Verification",
+    "authors": "Shay Allen Logan, Shawn Standefer, Thomas Ferguson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10462v1",
+    "source": "arXiv",
+    "abstract": "We introduce the logic EDMon---an epistemic dynamic logic meant to model monitorability concepts in noisy runtime verification. Its syntax and semantics are defined and explained and the connection between EDMon and monitorability and noisy runtime verification concepts is explored. We then demonstrate that EDMon is sufficient to capture many of the results in the noisy runtime verification literature and catalog its relation to nearby logics and describe a large class of its theorems."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "TrajMark: Ownership Attribution and Segment-Level Tamper Localization for Coding-Agent Trajectories",
+    "authors": "Bokang Zeng, Zheng Gao, Xiaoyu Li, Xiaoyan Feng, Jiaojiao Jiang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10416v1",
+    "source": "arXiv",
+    "abstract": "Watermarking the final patch produced by a coding agent provides provenance evidence for the submitted artifact, but does not authenticate the visible process that produced it. Behavioral watermarking methods primarily provide a global detection or identifier-recovery signal, so a locally edited trajectory may retain sufficient ownership evidence without revealing which protected region has become inconsistent. To address this limitation, we propose TrajMark, a training-free, symmetric-key, visible-only trajectory watermarking framework that separates robust ownership attribution from fragile local integrity verification. Our framework consists of two complementary layers: a sparse owner layer that encodes a six-bit deployment identifier by rewriting a keyed subset of naturally occurring READ actions into masked linear equations, and a localization layer that inserts linked Q12 ordinary, group, and terminal seals to commit to protected critical-action segments. This separation allows ownership evidence to accumulate robustly across trajectories, while local modifications perturb nearby keyed commitments and expose the affected protocol region. We further provide a design-level analysis of owner recoverability, integrity collision probability, structural overhead, and localization behavior. Across three coding-agent frameworks and three LLMs, TrajMark recovers the exact owner in all evaluated clean full-watermark batches. Under exhaustive eligible single-site attacks it detects 95.5%-100% of edits, and under random single-action corruption it localizes 95.8% of modified sites to an accepted protocol region rather than to the individual action. Owner marking adds no trajectory actions; the integrity layer adds explicit read-only seals, and matched Pass@1 is 26.9% versus 26.3% for unwatermarked runs."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Field quantization in rotating frames: coordinate covariance and the circular-detector response",
+    "authors": "Sidney Natzuka Junior, Carlos Augusto Domingues Zarro, Matheus dos Santos Soares",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10390v1",
+    "source": "arXiv",
+    "abstract": "We provide a unified analysis of scalar-field quantization and detector response in relativistic rotating frames, comparing rigid and Trocheris-Takeno (TT) descriptions in unbounded Minkowski spacetime. We distinguish three questions that are often conflated: (i) how a fixed quantum state is represented in rotating coordinates, (ii) whether rotating time evolution selects a global ground state, and (iii) how a rotating detector responds to the vacuum. Coordinate-transformed rigid and TT modes span the same positive-frequency subspace as inertial modes: their Bogoliubov beta coefficients vanish and their mode sums reproduce the Minkowski Wightman function. Neither rotating time flow selects a global scalar ground state, although for different reasons: the rigid generator is not globally timelike and is unbounded below, whereas TT time translation is not a Killing symmetry. Nevertheless, a circular Unruh-DeWitt detector in the Minkowski vacuum has a stationary, nonzero response. We relate this response to negative corotating frequencies, evaluate it after an explicit Hadamard subtraction, and show that it is nonthermal. Thus vanishing Bogoliubov mixing, the absence of a symmetry-selected rotating vacuum, and detector excitation are mutually consistent."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "CertiFlash: A Formal Verification Framework for Flash Translation Layers in Computational Solid State Drives",
+    "authors": "Harshita Gupta, Mayank Kabra, Rakesh Nadig, Nika Mansouri Ghiasi, Sahand Divsalar, F. Nisa Bostanci, Ataberk Olgun, Konstantinos Kanellopoulos, Jisung Park, Haiyu Mao, Abdullah Giray Yaglikci, Mohammad Sadrosadati, Onur Mutlu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10347v1",
+    "source": "arXiv",
+    "abstract": "Data-intensive applications move large amounts of data from storage to the compute unit, incurring significant data movement overhead. Storage-centric computing reduces this overhead by moving computation near or inside solid-state drives (SSDs). Enabling it requires modifying SSD policies, e.g., address translation and garbage collection, which are part of the Flash Translation Layer (FTL), the SSD's firmware. Modifying the FTL is error-prone. Because FTL logic has direct access to security-critical device components, even a functionally correct FTL can leak data between tenants, drop integrity tags, or assign a flash block to the wrong tenant. We show that a faulty FTL can corrupt the device state at five surfaces inside the SSD, and demonstrate them on a DaisyPlus OpenSSD. Prior work verifies individual FTL designs, but has two limitations. (1) It establishes only functional correctness, so a modified FTL can violate isolation, integrity, and ownership and still pass verification. (2) It is tied to a single FTL design, so every modification requires redoing every proof. We propose CertiFlash, a formal verification framework for FTLs, mechanized in the Rocq proof assistant, that gives designers a machine-checked proof of security and correctness. CertiFlash models an FTL as a deterministic state machine with a single global invariant over mapping, isolation, integrity, ownership, and allocation. We prove once, over a general FTL model, that (i) every FTL operation preserves the invariant and (ii) the model refines an idealized block device. For a new design, a designer discharges five hypotheses about its own operations instead of redoing either proof. Across four case studies, a designer adds 27 to 3,231 lines against a 16,489-line framework, significantly reducing the verification effort. CertiFlash is open source."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "TRACE: Training Reasoning Agents for Causal Exploration with Synthesized Rewards",
+    "authors": "Rui Sun, Zhan Shi, Bing He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10315v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) has advanced language-model reasoning in domains such as mathematics and code, where objective answers are inexpensive to check. Diagnostic reasoning over complex data lacks this advantage: establishing the true cause of an anomaly often requires costly expert investigation and may remain ambiguous after the fact. We ask whether this asymmetry of verification can instead be engineered. We sample an intervention, inject it into a controlled simulator, and generate the observations it would produce. The hidden intervention provides an oracle label and objective reward, while the agent must still investigate noisy, confounded, and distributed evidence. We instantiate this approach in TRACE, a digital-advertising diagnostic environment with 12 root causes and fine-grained segment attribution. Agents investigate each episode using Python and SQL and must identify both the root cause and, when applicable, the affected segment assignment. On a held-out 235-episode test set, the strongest prompted baseline, Claude Opus 5, reaches 0.686 FullAttr@1. Supervised fine-tuning raises Qwen3.5-35B-A3B from 0.159 to 0.637, and subsequent RL with synthesized rewards reaches 0.757, outperforming all evaluated prompted baselines, including frontier closed-source models and a prompted Qwen3.5-122B-A10B model. The resulting policy also uses substantially fewer tool calls than the prompted 35B base. These results provide evidence that access to a scalable, objective training signal can be a more important constraint than model scale alone. More broadly, simulation-based verification can make otherwise ambiguous diagnostic reasoning tasks amenable to scalable reinforcement learning."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "GANDR: Claim Auditing for Verifiable Legal Answer Generation",
+    "authors": "Chen Qian, Yimeng Wang, Yu Chen, Lingfei Wu, Andreas Stathopoulos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10293v1",
+    "source": "arXiv",
+    "abstract": "In high-stakes domains such as legal practice, a language-model answer is only useful to the extent that a reader can verify each claim against the source the system cites. Current grounded-generation pipelines score the answer as a whole, so a correct conclusion can rest on fabricated or loosely matched citations and still score well. Closing this gap requires both a system built for per-claim verification and an evaluation that measures it. We introduce GANDR (Grounded ANswer DRafter), a two-agent system in which a Drafter writes an answer in a structured legal-reasoning format and a separate Critic, with the same view as a human verifier, audits each claim against its cited source and emits a per-claim audit trace on every round. We pair it with a strict correctness criterion requiring every citation to resolve to a passage the retriever returned. On a 185-item legal benchmark where all six systems share one backbone, one retrieval surface, and one citation instruction, GANDR ranks first on every primary metric, reaching 70.8% strict accuracy and leading the strongest baseline by 11.3 points (p<0.01). Reverting the protocol-anchored commit rule lowers strict accuracy by 22.7 points, and the strict lead stays positive on three further backbones, at +3.2 to +6.5 points. This lead traces to the Drafter configuration and the protocol-anchored commit, not to rewriting. Against two law-trained annotators the audit flags under-supported claims at F1 0.84 as a binary detector, while its four-way verdict labels agree only weakly and are advisory. Code is available upon request."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Singular Forces on the Whole Space: Sobolev Density Thresholds and Energy Approximation",
+    "authors": "Shaozhen Cao, Zhuoni Chi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10269v1",
+    "source": "arXiv",
+    "abstract": "We derive whole-space distribution results from the established compact, smoothly forced Navier--Stokes blowup construction of OpenAI. For every fixed positive viscosity and deadline, smooth forces causing classical breakdown from rest on $\\mathbb R^3$ are dense in the relative $L^1_tH^s_x$ topology exactly when $s<1/2$, and in the relative $L^2_tH^s_x$ topology exactly when $s<-1/2$. The positive results preserve every fixed initial velocity in $H^\\infty_σ(\\R^3)$. They follow from a compact divergence-free removal of a regular background, followed by exact insertion of a single whole-space singular packet. Separate critical estimates prove non-density; low spatial frequencies are controlled explicitly, without a periodic mean or a Poincaré inequality. The conclusions hold for spacetime-compact forces and for the rapidly decaying data class in the Clay formulation. We also obtain density in the usual completed energy-force spaces, strong energy-and-dissipation approximation of regular trajectories, and exact equality of cell observations on a prescribed finite family of whole-space grids. Initial-state spaces, forcing spaces and numerical error regularity are distinguished throughout. No claim of fixed-force instability, loss of weak existence or new formal verification is made."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Maverick: Private and Verifiable LLM Inference Made Practical via Matrix-Vector Multiplication Delegation",
+    "authors": "Ben Merbaum, Mohammad Amin Raeisi, Wenhao Wang, Charalampos Papamanthou, Katerina Sotiraki, Fan Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10264v1",
+    "source": "arXiv",
+    "abstract": "Open-source large language models (LLMs) are increasingly competitive with closed-source models while offering transparency and the ability to run inference without exposing user inputs to a service provider. However, running large-scale models locally requires substantial computational resources. In practice, users may still resort to a third-party provider, giving rise to privacy and correctness concerns. Existing solutions that address these problems often impose substantial server overhead or introduce additional trust assumptions. In this paper, we present Maverick, a novel approach to private and verifiable LLM inference based on a protocol for delegating matrix-vector multiplication, a dominant operation in LLMs. At its core, Maverick provides, to our knowledge, the first information-theoretically sound verification protocol for matrix-vector multiplication delegation with transparent preprocessing, efficient (batch) verification, and virtually no server overhead. We combine this verification primitive with LPN-based pseudorandom masking to provide input privacy. We implement our matrix-vector delegation primitive and use it to build an end-to-end prototype of Maverick, which we evaluate on Qwen3-4B by measuring throughput in tokens per second. We evaluate client configurations with 1-8 threads. With one client thread and a CPU server using up to 128 threads, Maverick achieves throughput gains over local inference of up to 17x when privacy masks are generated online, 45x when they are precomputed, and 44x when only verification is required. With four client threads, the corresponding gains are 13x, 18x, and 17x. When server computation is no longer the bottleneck, client-side microbenchmarks with simulated network delay show speedups of 12x-20x, 34x-135x, and 38x-157x."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Sound Debloating of Redundant Checks in Zero-Knowledge Machine-Learning Circuits",
+    "authors": "Zhantong Xue, Pingchuan Ma, Zhaoyu Wang, Yuguang Zhou, Huaijin Wang, Shuai Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10149v1",
+    "source": "arXiv",
+    "abstract": "Zero-knowledge (ZK) proof systems for neural-network inference compile the model into a system of arithmetic constraints. Many of these constraints are redundant checks: range proofs, sign lookups, and bit decompositions who are globally entailed by the rest of the circuit through chains of reasoning that span distant gadgets. Removing them shrinks the circuit and accelerates proving, but the removal must be carefully justified: an unsoundly debloated circuit becomes forgeable, accepting witnesses the original would have rejected and so allowing a prover to claim, for example, that a neural network produced an output it never actually computed. Such soundness vulnerabilities are not hypothetical: under-constrained circuits in deployed ZK systems have enabled attackers to forge transactions and bypass verification entirely. We present an automated framework that removes redundant checks while provably preserving soundness. For each candidate removal, our tool first checks whether the rest of the circuit, on its own, can still rule out every value the removed check was excluding. Using whole-circuit abstract interpretation, the analysis searches for such alternative justifications and records them in a provenance graph; a check is then removed only when an alternative path through the graph still derives the facts that it is checking. This ensures that the debloated circuit opens no new forging strategy to an adversary. We evaluate circuits spanning MLP, CNN, RNN, and transformer architectures generated by two production frameworks (ezkl and zkml), with up to 25.3 million constraints. Our tool removes up to 48.7\\% of constraints and reduces prover time by up to 72.8\\%, without weakening security."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Policy Change for Treelike Monitors",
+    "authors": "François Hublet, Dhruv Nevatia, Joshua Schneider",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10114v1",
+    "source": "arXiv",
+    "abstract": "We study the policy change problem that arises in the runtime verification of long-running systems. The online monitors typically used in this context are generally treelike, in that they maintain substates that monitor subformulae of the target policy. We consider when and how the policy can be changed while the monitored system is running by only exploiting the information stored in the monitor's state. This is relevant, for example, to account for new system functionality or changes in regulatory requirements. We formally define the policy change problem in a general setting, independent of any specific (treelike) monitor implementation. We then show that policy change for past-time metric temporal logic (pMTL) is decidable but has tight non-primitive recursive lower and upper bounds, while with discrete-time semantics it is EXPSPACE-complete."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Beyond Training: A Feasibility Taxonomy for Inference-Time AI Governance",
+    "authors": "Samar Ansari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10105v1",
+    "source": "arXiv",
+    "abstract": "Compute governance today is a governance of training: the thresholds, reporting requirements, and frontier-AI regimes now in force attach to training compute and treat the trained model as the regulatory unit. That picture is incomplete: capability increasingly migrates to the deployment stage through inference-time scaling, agentic scaffolding, and compression onto consumer hardware. This paper asks which mechanisms are available once the regulatory object shifts from the training run to the inference call. We develop a feasibility taxonomy of twenty inference-time mechanisms across monitoring, verification, and enforcement, each rated on a four-point readiness scale against a documented four-vendor evidence base. We then stress the taxonomy against a two-dimensional adversary model (three capability tiers crossed with four adversary roles) and map each mechanism to four governance scenarios (domestic regulation, bilateral or multilateral coordination, industry self-regulation, and compute-marketplace governance). Fifteen of the twenty mechanisms have commercial technical substrates in production today, although governance-grade assurance and adversarial robustness vary substantially. The adversary analysis shows that this readiness holds only against a cooperative deployer and a low-to-medium-capability user: no mechanism rates adequate against a high-capability state-level deployer, and fine-tuning removes the model-internal components of the enforcement cluster, although platform-external controls can persist. A substitution analysis connects the taxonomy to a companion hardware paper as a conditional substitution principle describing when inference-stage and hardware-stage mechanisms provide comparable regulatory coverage under stated conditions. A second-rater reliability check on a random subset of the readiness ratings returned a quadratic-weighted Cohen's kappa of 0.74."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Execution-Time Opacity Logic: A Logic for Ensuring ET-Opacity in Timed Systems",
+    "authors": "Jean Leneutre, Dylan Marinho, Vadim Malvone, James Ortiz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10066v1",
+    "source": "arXiv",
+    "abstract": "Ensuring confidentiality in Cyber-Physical Systems is critical, especially when attackers exploit execution times to infer sensitiveinformation. Traditional opacity models are inadequate for timed systems, as verifying opacity in Timed Automata is undecidable. To address this challenge, we propose Execution-Time Opacity Logic (ETOL), a new formalism that specifies opacity by requiring that for every execution satisfying a secret formula, there exists another execution of the same duration that does not satisfy it. ETOL guarantees that timing observations cannot reveal confidential agent activities. We present a decidable and efficient verification framework based on zone-based model checking, supported by a dedicated algorithm that systematically identifies duration-equivalent executions. Our approach is validated through an ATM case study, showing that ETOL enables efficient verification of execution-time confidentiality under timing attacks. We also developed a prototype tool for the ETOL logic that supports symbolic model checking over timed systems. It allows users to verify ETOL formulas based on clock-constrained execution paths."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "AutoTrans: AI-Assisted Automatic Translation of Security Assertions for RISC-V Processors",
+    "authors": "Sharjeel Imtiaz, Uljana Reinsalu, Tara Ghasempouri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10057v1",
+    "source": "arXiv",
+    "abstract": "Reusing a set of verified security assertions across RISC-V processor targets remains one of the most expensive bottlenecks in hardware security verification. Manual translation takes hours per assertion. Raw LLM translation is fast but unreliable, introducing signal hallucination, where the model invents port names absent from the target RTL and produces outputs that may vary across model updates or even within the same model version. This paper presents AutoTrans, an automated framework that addresses the above shortcomings. First, a new lightweight Regular Expression-based System Verilog signal extractor is proposed to identify the signals for generating security assertions. This step is necessary to prevent signal hallucination. Second, a template is introduced to create prompt and pinned inference parameters that guarantee a byte-identical prompt assembly on every run, making the pipeline output resilient to model updates. Moreover, the introduced template for LLM prompting is capable of generating security assertions from English-only security descriptions of RISC-V processors, with no manual authoring. Third, a formal verification process (JasperGold FPV) is integrated, which guarantees that the generated security assertions verify the security of the RISC-V processor rather than silently entering the result set. The workflow is applied on Deepseek V4 to translate security assertions from one RISC-V to another (e.g., for IBEX from NS31A RISC-V). The experiment shows that AutoTrans achieves 78\\% Auto Translation Acceptance Rate (TAR) automatically and without human intervention and 100\\% Final TAR after refinement by humans."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Field-level prediction of mid-plane stress tensor fields in concrete target penetration: a cross-velocity graph neural operator surrogate",
+    "authors": "Wenpu Du, Peng Zhou, Yunlong Xia, Sinuo Xin, Congcong Zhang, Boyang Zhang, Yi Zhang, Wenzheng Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10032v1",
+    "source": "arXiv",
+    "abstract": "Although the impact resistance of concrete has been studied extensively, a framework linking mesoscale heterogeneity to full-field stress-tensor prediction has been lacking. Data were generated with a full-scale aggregate-resolved LS-DYNA model (projectile diameter 45 mm, mass 2.13 kg, target diameter 500 mm x thickness 200 mm, mesh 10 mm), verified against published penetration experiments (Frew 2006, Hanchak 1992, Forrestal 1996) by configuration similarity. The dataset contains six-component stress-tensor fields on the X-Z mid-plane for 400 cases (4 impact velocities x 100 aggregate seeds). Three contributions are reported. First, case-by-case verification of the terminal penetration state delimited the rest-state validity of penetration depth and anchored reliable observables to rigid-body motion and field-level stress evolution. Second, a field-level graph neural operator surrogate learned the time-varying stress-field evolution and evaluated cross-velocity leave-one-out extrapolation. Third, the full-scale, aggregate-resolved, cross-velocity, per-seed database was established as a reproducible resource. Cases at 100, 135 and 200 m/s still moved at window end (negative velocity, i.e. rebound), and only one 165 m/s case arrested. Penetration depth is therefore not reported as a rest-state scalar except for the single arrested case (69.33 mm); nose-node depth differences were confirmed as numerical artifacts of displacement integration after erosion. The single-step relative L2 error was 0.6977, reported honestly; autoregressive rollout from frame 11 to 39 took about 144 ms, a speedup of about 3.6x10^3 to 4.3x10^3 relative to single-core LS-DYNA, reported as application value. Validation is bounded by configuration similarity and field-level self-consistency; the framework is a simulation-trained decision-support method within the studied parameter space."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Beyond Similarity: Foundation Models as an Efficient Backbone for Training-Free Composed Video Retrieval",
+    "authors": "Dmitry Demidov, Muhammad Zaigham Zaheer, Omkar Thawakar, Abdelrahman Mohamed Shaker, Rao Anwer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10008v1",
+    "source": "arXiv",
+    "abstract": "Composed video retrieval (CoVR) searches a gallery for the target video that realizes a natural-language modification of a source clip. However, at gallery scale, this creates a fundamental tension: compact embeddings enable efficient, reusable search but can miss the transient actions, state changes, and subtle constraints that demand fine-grained video reasoning, whereas applying large multimodal models uniformly sacrifices scalability. To address these limitations, we propose that frozen foundation models should instead occupy complementary roles, with inference depth adapted to query difficulty. Based on this premise, we introduce \\methodname{}, a framework for training-free \\methodexpansion{}. Specifically, a composed-query embedding first searches reusable video-only gallery representations; uncertain queries undergo bounded reranking and candidate expansion; ambiguous edits trigger target-description generation; and only close leading candidates reach multimodal verification. To support these roles, frame selection, spatial resolution, and time cues are adapted to each stage. Across complete target-gallery evaluations, our method reaches state-of-the-art performance among training-free approaches, with 89.55 and 93.43 R@1 on Dense-WebVid-CoVR and CoVR-R, respectively (with more than +35\\% and +25\\% absolute margins to the closest counterpart). These results show that adaptively orchestrating foundation-model capabilities can combine scalable retrieval with fine-grained reasoning without task-specific training. The source code and all relevant guidelines are available on https://github.com/demidovd98/CoVRAGE."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Dependency-Aware ROM/CBD Correctness Bounds for ML-KEM-768 at the Heuristic Failure Scale",
+    "authors": "Aurélie Duriez, Christophe Tommasini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09983v1",
+    "source": "arXiv",
+    "abstract": "We certify an honest-decapsulation failure upper bound for ML-KEM-768 in an explicit random-function/centered-binomial (ROM/CBD) abstraction. Domain-separated public-matrix streams are modeled as independent uniform ring elements and secret/noise polynomials as independent CBD2 primitives; this is not an information-theoretic statement about the fixed SHAKE instantiation of FIPS 203. Recent formal assessments identify rigorous justification of ML-KEM's heuristic decapsulation-failure scale as an open problem; within the explicit ROM/CBD abstraction studied here, we obtain a dependency-preserving certified upper bound at that scale. The analysis preserves dependencies induced by the public matrix and by both ciphertext-compression terms. Its terminal chain has three components: an exact graph-coupled full-ideal reference for the joint c_u/c_v residual; a proper-ideal bivariate Fourier transport whose rare |T|>=3 branch is closed by an exhaustive three-factor anti-concentration replay; and exact bit-specific FIPS decoding events followed only by a 256-coordinate union bound. A formal partial-Fourier lemma makes the spectral-to-total-variation step explicit. The reduced rational certificate satisfies Pr[K' != K] <= P_* <= 2^-164.81, with -log2(P_*) = 164.810716201343121.... The 164.81 threshold is exact but numerically tight: the certified exponent exceeds it by only about 0.0007162 bit, and 164.82 is not certified. The result is an upper bound for an arbitrary message fixed independently of the public and secret randomness, under honest encryption and decapsulation. It is not an exact DFR, not a fixed-SHAKE equivalence theorem, not a new IND-CCA reduction, and not an adaptive delta-correctness result."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "NVV-Locator: From Transcript Tags to Acoustic Boundaries for Fine-Grained Nonverbal Vocalization Grounding",
+    "authors": "Yuang Cao, Bingshen Mu, Zhennan Lin, Guojian Li, Haoyue Zhan, Jie Liu, Chuan Xie, Qiang Zhang, Liumeng Xue, Lei Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09940v1",
+    "source": "arXiv",
+    "abstract": "Human speech includes nonverbal vocalizations (NVVs), such as laughter, sighs, breaths, and coughs, which convey affective and interactional information. Existing approaches typically represent NVVs as transcript-level tags, providing limited supervision for their waveform-time boundaries. We present NVV-Locator for fine-grained NVV temporal grounding. We first unify 26 NVV categories across public resources and construct large-scale timestamp-supervised training data through dual-LLM verification, transcript-guided forced alignment, and energy-based boundary refinement. We further introduce NVV-TimeBench, an expert-refined benchmark with 667 utterances and 1,094 events. NVV-Locator uses a non-autoregressive slot-filling architecture to jointly predict lexical timestamps, NVV categories, and event boundaries. On NVV-TimeBench, it achieves 71.0% Micro F1, 70.2% Macro F1, 80.4% Macro mIoU, and 59.6 ms Macro mMAE, outperforming the evaluated large audio model counterparts. Evaluation on an external corpus further demonstrates the cross-corpus generalization of NVV-Locator."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Proof-Carrying Cognition: Closing the Verification Gap with Reality-Settled Reward",
+    "authors": "Eshwar Reddy M, Sourav Karmakar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09776v1",
+    "source": "arXiv",
+    "abstract": "Frontier gains in language-model reasoning come from reinforcement learning on reasoning traces and are concentrated in domains with a cheap, sound verifier. We argue the field's binding constraint is the verification gap: no scalable, incorruptible reward for reasoning outside formal domains. We make four contributions. (1) Theory: in a joint-Gaussian model of best-of-N selection, verifier-gold correlation rho is the exact exchange rate between test-time compute and capability, and an unsound verifier pays a polynomial penalty N^(1/rho^2); a margin-free copula form predicts realized soundness of real LLM judges to 4% median error. (2) Demonstration: in program-synthesis testbeds with executable ground truth, including a pre-registered scaled replication, unsound verifiers lose Soundness-under-Pressure as optimization grows (0.94 to 0.32 at N=4096) while a sound verifier improves monotonically; reality-anchored settlement beats a frozen verifier under i.i.d. and adversarial pressure, driving the hacking gap from ~0.27 to ~0; soundness scales log-linearly with settled labels, with on-policy settlement ~10x more label-efficient than random labeling. With real LLM judges and unit-test execution as gold, a weak judge loses soundness under best-of-N (p<0.001), a stronger judge is more robust, and selection alone manufactures +0.53 hacking gaps from honest samples. Under real GRPO training, a frozen reward model traces the full overoptimization curve (executed reward collapses 90%) while the same model refit on a 10% settlement stream preserves 6x the executed reward. (3) Paradigm: proof-carrying cognition, where reasoning steps are typed probabilistic claims priced by a self-built world model trained only on held-out reality and settled by proper scoring rules. (4) Benchmark: we specify Soundness-under-Pressure as the headline metric for a reality-settled reasoning benchmark."
+  },
+  {
+    "date": "2026-09-09",
+    "title": "When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination",
+    "authors": "Karan Parekh, Sanjana Pendyala Ravinder, Sana Mhapsekar, Medina Maloku",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09696v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly proposed as automated auditors of document quality, yet their reliability as detectors of planted errors is poorly characterised. We construct a contaminated corpus of 150 academic papers spanning supply chain management and medical research, injecting 450 known contaminants of three types: typographical corruption, semantic reversal, and absurd out-of-context insertion. We then evaluate Google Gemini 3.0 Pro's ability to recover a 180-contaminant answer-key subset across 60 documents under three prompting regimes of increasing scale: single document, small batch, and large batch. Detection holds at small scale and then collapses: 50% recovery on single documents, 60% on small batches, and 2.8% on large batches. The failure mode at scale is not abstention but fabrication. Rather than reporting incomplete processing, the model produced confident findings including invented contaminants of its own, absurdities such as \"telepathic squirrel\" and \"quantum-powered toaster\" that mimic the style of the planted material but do not appear in any document. Detection also varies by contamination type: absurd insertions were recovered at 75% in completed evaluations, while semantic reversals and typographical corruptions were each recovered at only 50%. The corruptions most likely to occur in the wild, plausible ones, are the ones most often missed. We conclude that LLM document auditing degrades not gracefully but deceptively, and outline the harness such systems require: bounded batch sizes, direct content injection, and mechanical verification of every reported finding against source text."
+  },
+  {
+    "date": "2026-9-9",
+    "title": "RTL Design and Verification of Optimized Elliptic Curve Cryptography (ECC)",
+    "authors": "P. Ramani, G. Mamatha",
+    "publish": "2026 1st International Conference on VLSI Circuits and Systems (ICVCS)",
+    "url": "https://doi.org/10.1109/icvcs69586.2026.11683037",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Configurable RTL Code Generation for AMBA AXI Bus Architecture with UVM-Based Verification",
+    "authors": "Shaik Sumiya Begum, Gannera Mamatha",
+    "publish": "2026 1st International Conference on VLSI Circuits and Systems (ICVCS)",
+    "url": "https://doi.org/10.1109/icvcs69586.2026.11682962",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Power Optimized RTL Methodology for Activity- Driven Multi-Bit Flip-Flops in Sequential Circuits",
+    "authors": "B V V Satyanarayana, Shaik Akhila",
+    "publish": "2026 1st International Conference on VLSI Circuits and Systems (ICVCS)",
+    "url": "https://doi.org/10.1109/icvcs69586.2026.11683183",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Human-LLM Collaboration for Context-Dependent Requirements Engineering Tasks",
+    "authors": "Max Unterbusch",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00061",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Towards LLM-Based Conversational Requirements Elicitation with Integrated Requirements Quality Assessment",
+    "authors": "Jan-Henrik Böttcher",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00062",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Detecting Memorization in LLM Generated Music",
+    "authors": "Jacob Edward Galajda, Kien A. Hua",
+    "publish": "2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+    "url": "https://doi.org/10.1109/iri69576.2026.00069",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "LLM-Assisted Workflow for Structural Difference Visualization in Evolving Software Requirements",
+    "authors": "Koi McFarland, Songhui Yue",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00070",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Towards Task-Agnostic Evaluation Framework for LLM-Embedded Applications",
+    "authors": "Dilani Widanapathiranage",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3774748.3787633",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Is that Really You? Understanding Persona Adoption in LLM-Based Requirements Engineering",
+    "authors": "Pau Morente, Quim Motger, Marc Oriol",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00052",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Evaluating the Impact of Input Text Properties on LLM-Based Requirements Extraction",
+    "authors": "Konstantin Valeev, Fabiano Dalpiaz, Fatma Başak Aydemir",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00048",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Epistemic Edge: Subjective Logic Guardrails for LLM-Driven IoT Actuation",
+    "authors": "Muntaser Syed, Marius Silaghi",
+    "publish": "2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+    "url": "https://doi.org/10.1109/iri69576.2026.00017",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "LLM-Assisted Uncertainty Identification in Self-Adaptive Robotics",
+    "authors": "Hassan Sartaj, Shaukat Ali",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3774748.3776596",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-9",
+    "title": "LLM-Augmented Program Analysis: Towards Practical and Scalable Bug Detection",
+    "authors": "Haonan Li",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3774748.3787640",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Requirements Sufficiency Gating for LLM-Assisted Automation: When Should Generation Proceed?",
+    "authors": "Mohammadamin Madani, Abdulrahman Nahhas, Maria Chernigovskaya, Klaus Turowski",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00028",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "TVDM-LLM: Schema-Aware Natural Language Querying for Transportation Surveillance Video Databases",
+    "authors": "Xin Chen, Chengcui Zhang",
+    "publish": "2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+    "url": "https://doi.org/10.1109/iri69576.2026.00111",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Exploring Multiple Sources to Enhance LLM Effectiveness in Non-Functional Requirements Elicitation",
+    "authors": "Camila Almeida, Sávio Freire, Manoel Mendonça, Julio Cesar Leite",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference (RE)",
+    "url": "https://doi.org/10.1109/re68928.2026.00051",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "SynthLineage: Submodular-Guided Corpus Distillation and Knowledge Graph Provenance for Collapse-Resistant LLM Fine-Tuning",
+    "authors": "Vikash Kumar",
+    "publish": "2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+    "url": "https://doi.org/10.1109/iri69576.2026.00092",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-9",
+    "title": "Benchmarking SLM and LLM in Feature Generation for Interpretable Automated Essay Scoring",
+    "authors": "Kevin Chovanec, John Fields, Praveen Madiraju",
+    "publish": "2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+    "url": "https://doi.org/10.1109/iri69576.2026.00023",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "LLM-Driven Aspect-Based Semantic Alignment for Review-Based Recommendation",
+    "authors": "Huilin Chen, Zhiyong Cheng, Fan Liu, Richang Hong, Meng Wang",
+    "publish": "ACM Transactions on Recommender Systems",
+    "url": "https://doi.org/10.1145/3843223",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-9",
+    "title": "ADVENT: LLM-Driven Automatic Predicate Invention for ILP",
+    "authors": "Tingting Yu, Pei-Cing Huang, Chan Hsu, Chan-Tung Ku, Yihuang Kang",
+    "publish": "2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+    "url": "https://doi.org/10.1109/iri69576.2026.00025",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
