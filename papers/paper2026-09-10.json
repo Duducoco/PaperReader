@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-10",
+    "title": "Effective Ionic Valence and Local Magnetic Moment in Kagome Superconductors",
+    "authors": "Ruoshi Jiang, Zi-Jian Lang, Yuzki Oey, Andrea Capa Salinas, Stephen D. Wilson, Yongwei Li, Ilya Shipulin, Yiwen Zhang, Deng Hu, Zhiwei Wang, Hans-Henning Klauss, Zurab Guguchia, Vadim Grinenko, Wei Ku",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11927v1",
+    "source": "arXiv",
+    "abstract": "In order to understand the unexpected similarity and the correlated behavior in kagome superconductor families AV$_3$Sb$_5$ (A = K, Rb, Cs) and ATi$_3$Bi$_5$ (A = Rb, Cs), we investigate the Hartree-scale local electronic structure of these systems. Our result indicates that V and Ti ions are both of 2+ valence such that the corresponding itinerant carrier densities are similar, and the difference in electron count is instead reflected in their quantum fluctuating ionic magnetic moments. However, due to the frustrated lattice geometry of these materials, such local moments are difficult to experimentally observe via standard probes. For verification, we systematically introduce nonmagnetic Sn impurities to locally relieve the geometric frustration and experimentally demonstrate the existence of well-defined local magnetic moments via magnetic susceptibility and muon spin rotation or relaxation ($μ$SR) measurements. All experiments discover a systematic increase of magnetic susceptibility upon increasing nonmagnetic impurity level. Our discovered ionic moments suggest a paradigm shift from the existing itinerant carrier-only picture to one incorporating strong correlation from local ionic spins. The associated interatomic and local-itinerant correlations offer a solid ground for the emergence of the observed rich correlated behavior in this new family of superconducting materials."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Artificial Id: Drive and Persistent Alignment in Agentic AI",
+    "authors": "Yakov Pyotr Shkolnikov",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11911v1",
+    "source": "arXiv",
+    "abstract": "Agentic AI is moving from bounded task execution toward systems that retain consequential state, continue operating and adapt across task boundaries. That shift creates a control problem that current harnesses largely solve by hand: objectives, retries, verification, stopping rules and other behavioral transitions are specified externally. We propose an artificial id, an adaptive internal drive for determining whether behavior should continue, stop or change. In a minimal virtual Petri-dish experiment, a controller too small to perform general-purpose reasoning and receiving no task-specific behavioral objective develops useful control through differential persistence. The same mechanism selects an unintended physical strategy when that behavior persists better and later replaces a learned sensor mapping when its environmental meaning changes. These results show that adaptive direction can emerge without being explicitly specified as a behavioral objective. The same persistence that makes such adaptive agency useful can also allow misalignment, corrupted state and unintended behavior to persist across task boundaries. A scalable artificial id would carry consequential state and adaptive drive across those boundaries, making alignment a property of the continuing agentic system rather than of a model response or single trajectory. Such systems require a persistent alignment boundary over trusted observations, consequence channels, persistent state, authority, identity, provenance and hard constraints."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "From Specs to Apps: Verifying and Monitoring Models of Signal and WhatsApp",
+    "authors": "Moustafa Said, Aurora Naska, Kevin Morio, Robert Künnemann",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11882v1",
+    "source": "arXiv",
+    "abstract": "The Signal protocol is a prominent messaging protocol that secures communication for billions of users. It powers WhatsApp, the most widely used messaging application worldwide, and the Signal app, popular among privacy-conscious users. Extensive research in the computational and Dolev-Yao settings provides strong formal security guarantees for the protocol itself. However, a gap remains between the guarantees of the protocol specification and the implementation's actual behavior at runtime. In this work, we bridge this gap by applying SpecMon, a recently proposed runtime monitor, to check whether observed executions conform to formal protocol models. To this end, we instrument two applications (WhatsApp Web and Signal Desktop) to capture their interactions with the network and the cryptographic components. Using this instrumentation, we develop two multiset-rewrite models that are compatible with Tamarin, thus enabling verification. We derive the first model of WhatsApp Web's implementation of the Signal protocol and the most detailed model to date of Signal's original protocol. Monitoring establishes that observed executions conform to these models, relative to the trusted event extraction and the symbolic abstraction. For the core components of the Signal protocol, we verify authentication and secrecy properties. Finally, monitoring reveals previously undocumented differences between the original libsignal library and WhatsApp's fork. We evaluate our methodology and demonstrate its reproducibility. Developing the WhatsApp Web model, instrumenting the app, adding fuzzing, and running the experiments took three person-weeks. We also demonstrate efficient monitoring of real-world applications and detection of deliberately injected security faults, with low overhead in our measured setting."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "PureSuperQMA(exp) = BellPureSymQMA(poly) = QMA via Dimension-Free Bosonic Argmax",
+    "authors": "William Gay, Fernando Granha Jeronimo, Lenny Liu, Itai Leigh, Pei Wu, Haochen Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11854v1",
+    "source": "arXiv",
+    "abstract": "Pure-state consistency problems naturally lead to quantum proof systems in which a single pure witness must satisfy many acceptance constraints. The corresponding class $\\mathsf{PureSuperQMA}$ was previously known to lie between $\\mathsf{QMA}$ and $\\mathsf{QMA}(2)$, and Kamminga and Rudolph (ITCS'26) conjectured that both containments are strict. In this paper, we prove the following surprising complexity collapses $$ \\mathsf{QMA} = \\mathsf{PureSuperQMA} = \\mathsf{PureSuperQMA}(\\text{exp}) = \\mathsf{BellPureSymQMA}(\\text{poly}) $$ Here $\\mathsf{PureSuperQMA}(\\text{exp})$ allows exponentially many checks which are uniformly indexed and efficiently generated, while requiring an inverse-polynomial violation margin and an inverse-polynomial fraction of violated checks for the NO cases. $\\mathsf{BellPureSymQMA}(\\text{poly})$ is a related model that requires the prover to give the verifier polynomially many copies of a pure state, which the verifier measures separately with logarithmic output length for each local measurement, before processing the outcomes jointly. The main technical ingredient is a dimension-free stability bound for symmetric tensor states. Our simulations use polynomially many witness registers and combine a random-pair SWAP test with a permutation-invariant lift of the original verification procedure. The key step is to show that, on the symmetric subspace, the extremal verification value is close to that of some tensor-power witness with dimension-independent error. Applying this argument to the two verification models yields both simulations. As a consequence, exact $k$-local pure-state consistency is $\\mathsf{QMA}$-complete for every fixed $k\\ge2$, and so are the corresponding exact bosonic and fermionic pure $N$-representability problems."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "SpecGuard: Inference-Time Backdoor Detection For Free",
+    "authors": "Rui Wen, Ahmed Salem, Andrew Paverd, Mark Russinovich, Zheng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11799v1",
+    "source": "arXiv",
+    "abstract": "Large language models are often fine-tuned, shared, or downloaded from third parties, so a deployed model may carry a hidden backdoor that behaves normally on benign inputs but switches to attacker-controlled behavior when a secret trigger appears. While backdoors can be audited before deployment, runtime monitoring remains important for models that are frequently updated. The challenge is that LLM serving is latency-sensitive: existing inference-time detectors either rely on assumptions about the trigger form, which can fail on stealthy attacks, or require extra model computation, such as input perturbations or an additional generation pass. We introduce SpecGuard, an inference-time backdoor detector that repurposes speculative decoding at zero added model-computation cost. Speculative decoding speeds up inference by using a small draft model to propose tokens and a target model to verify them. We observe that this verification process already exposes a useful signal: when a backdoor is triggered, the target model shifts toward the attacker's behavior, while a clean draft model does not predict this shift, causing the draft-token acceptance rate to change. We formalize when this signal appears and show that an attacker who suppresses it must also weaken the backdoor. Across diverse backdoor types and model families, SpecGuard reliably detects triggered behavior, including stealthy cases where input-level filters are blind, while avoiding the extra generation cost of existing runtime detectors. Speculative decoding therefore doubles as a free, always-on signal for detecting backdoored LLM behavior."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "RAGTIMER 1.0: Rapid Rare-Event Partial State Space Construction for Stochastic VAS (extended version)",
+    "authors": "Landon Taylor, Joshua Jeppson, Bingqing Hu, Lukas Buecherl, Zhen Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11789v1",
+    "source": "arXiv",
+    "abstract": "Transient reachability analysis of rare events in Continuous-Time Stochastic Vector Addition Systems (CTSVAS) such as Chemical Reaction Networks (CRNs) has proven a formidable challenge to cutting-edge tools. Underlying a CTSVAS is a continuous-time Markov chain (CTMC), and CTMC transient reachability analysis calls for Probabilistic Model Checking (PMC). This analysis requires the explicit representation of a model's entire state space. Rare events occur with extremely low probability, compounding the challenge of probabilistic analysis. In CRNs, it is imperative to verify the probability of rare events; even a low concentration of a species can have pathological consequences. This paper presents the RAGTIMER 1.0 tool, which efficiently builds a partial state space for a CTSVAS by enumerating traces to a rare event of interest and expanding them to exploit concurrency and cycles, providing a guaranteed lower bound on the probability of a rare event. Guaranteed lower bounds are particularly useful in synthetic biological applications because they indicate how and when a rare event can be experimentally observed. RAGTIMER is an attractive alternative to existing rare event analysis methods for CTSVAS models. It outperforms existing PMC tools and refutes multiple probability estimates from rare-event stochastic simulation on multiple challenging CRN models. RAGTIMER uses optimized data structures, a simple input format, and memory-safe Rust code to improve the scalability and accessibility of PMC for industry professionals."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Verified Linear Programming through Tolerance-Aware Precision Boosting",
+    "authors": "Ernesto Casablanca, Martin Sidaway, Paolo Zuliani, Sadegh Soudjani",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11721v1",
+    "source": "arXiv",
+    "abstract": "Linear programming plays a fundamental role in computer science, with applications in optimization, formal verification, SMT solving, and numerous other domains. When exactness guarantees are required, numerical inaccuracies arising from floating-point arithmetic can compromise soundness, whereas exact rational arithmetic often incurs significant computational overhead. In this paper, we investigate the numerical stability of the simplex algorithm and establish conditions under which a precision-boosting floating-point implementation provably produces the same pivot decisions and final basis as an exact rational implementation, from which the final result is reconstructed and certified exactly. Our analysis shows that correctness depends on both arithmetic precision and a careful handling of numerical tolerances. Based on these results, we develop a tolerance-aware, precision-boosting simplex algorithm with formal correctness guarantees. Finally, we introduce a delta-complete termination criterion that allows the algorithm to terminate once certified upper and lower bounds on the optimal objective differ by at most a user-specified threshold delta, providing a certified, user-controlled optimality gap."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "An RFSoC-based Backend and Timing System for the Balloon-borne Very Long Baseline Interferometry Experiment",
+    "authors": "Mayukh Bagchi, Felix M. Thiel, Laura M. Fissel, Maggie Oxford, Lindy Blackburn, Rafael Costa, Vincent L. Fish, Daryl Haggard, Michael D. Johnson, Dominic W. Pesce, Ganesh Rajagopalan, Javier L. Romualdez, Aarchi Shah, Adrian K. Sinclair, Stephanie St-Jean, Terry Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11605v1",
+    "source": "arXiv",
+    "abstract": "We present the design and performance characterization of the digital backend and precision-timing system for the Balloon-borne Very Long Baseline Interferometry Experiment (BVEX), a pathfinder for high-frequency stratospheric VLBI at 22 GHz. The backend uses one of the four 14-bit analog-to-digital converter inputs on an AMD-Xilinx RFSoC 4x2. Although the converters support sampling rates up to 5 GSPS, the flight configuration digitizes the 2-4 GHz intermediate frequency at 4.096 GSPS. CASPER firmware provides both a high-resolution spectrometer for pointing and receiver verification, and a VLBI acquisition chain with two-bit requantization that records at a rate of about 8.2 Gbps. The timestamped data packets are sent over 100 Gigabit Ethernet (GbE) to a 16 TB NVMe array in a storage computer that draws approximately 70-80 W. The timing chain uses a Rakon oven-controlled crystal oscillator as a timing reference while a time-interval counter measures its drift relative to a GPS reference with approximately 60 ps resolution. This is the first deployment of an RFSoC-based VLBI backend and precision-timing system on a stratospheric balloon. Ground tests validated the backend, spectrometer, and timing chain. The August 2025 CSA STRATOS flight ended before reaching the target float altitude because of a balloon failure, and as a result no science observations were obtained. For the planned 2027 reflight, we are developing a conduction-cooled data storage computer with 24 TB of NVMe capacity and a direct data path from the 100 GbE interface to the NVMe array."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "From Intent to Execution Grant: An Execution-Boundary Conformance Profile for High-Risk AI Actions",
+    "authors": "Mengting Wu, Lin Wang, Yong Zhang, Jiang Deng",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11596v1",
+    "source": "arXiv",
+    "abstract": "AI agents increasingly propose actions with external consequences, including financial transfers, infrastructure changes, software deployments, disclosures, and physical actuation. Authorization engines, policy languages, runtime monitors, provenance mechanisms, and agent guardrails provide important foundations, but do not necessarily define a common semantic contract for the final transition from a particular candidate action to execution authority. We specify EBL-Core, an execution-boundary conformance profile for deciding whether one canonical, fully materialized AI-generated candidate may receive action-scoped execution authority under explicit conditions. It binds a structured intent object, Root and Operational Policies, evidence obligations, typed evidence, context, time, and a verifiable Decision Derivation through an Execution Release Contract (ERC). An ERC is not an authority-bearing token; a verified ALLOW ERC may support a separate Execution Grant governed by Redemption-time validation. EBL-Core specifies action binding, policy non-weakening, evidence handling, deterministic adjudication, derivation verification, and grant lifecycle behavior. An accompanying reference artifact provides schemas, adjudication, separate verification and Semantic Replay, and a linearizable in-memory grant store. In the retained run, 34 static vectors and 15 lifecycle checks matched expected outcomes. Across 100 trials, 32 concurrent Redemption attempts yielded exactly one successful Redemption and protected test effect per trial; 100 Revoke-Redeem races ended in valid terminal outcomes. These bounded results demonstrate executability of the specified subset, not human-intent correctness, evidence truth, complete mediation, production readiness, mechanized correctness, or deployment-level security."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Diffeomorphism Invariance of the Favre-Filtered Compressible Navier--Stokes System under Spacetime Dilation",
+    "authors": "Yuanya Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11566v1",
+    "source": "arXiv",
+    "abstract": "We prove that the system of Favre-filtered compressible Navier--Stokes equations with subgrid-scale closure terms, written in the coordinates $(Lt,Lx_1,Lx_2,Lx_3)$ for an arbitrary parameter $L>0$, is obtained from the system written in standard coordinates $(t,x_1,x_2,x_3)$ by the action of a smooth diffeomorphism of the underlying spacetime manifold. The proof begins with a self-contained treatment of infinite-dimensional manifolds and the Fréchet manifold of smooth field configurations. We then define the one-parameter dilation group $\\{φ_L\\}_{L>0}$, verify that each $φ_L$ is a diffeomorphism, and compute its tangent and cotangent actions. The induced pullback action on sections of the configuration bundle is shown to commute with the total derivative operator, which implies that the first-jet prolongation of $φ_L$ maps the equation submanifold of the system onto itself. Equation-by-equation verification---continuity, momentum, and energy---confirms that every residual is multiplied by the common nonzero factor $L^{-1}$ (or, equivalently, is identically zero in the transformed coordinates), so that the solution set is preserved. We conclude that the family of systems parameterised by $L>0$ satisfies the diffeomorphism transformation expression and that solution spaces are canonically isomorphic for all $L$."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps",
+    "authors": "Jacopo Dardini, Roberta Calegari",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11498v1",
+    "source": "arXiv",
+    "abstract": "Practical uncertainty quantification (UQ) for large language models must decide, from a single generation, whether a specific answer should be trusted. Existing methods either sample multiple generations, read only output-token probabilities, or reduce the model's internal computation to a single hidden state. We introduce ActMap, a white-box representation that compresses the generation-time hidden- state trajectory (every layer, every generated token) into a fixed $12 \\times 32 \\times 128$ tensor of temporal-statistic channels that preserves structure across transformer depth and pooled hidden coordinates. The map is captured during the generation pass with no measurable overhead, has a fixed shape across model depths and hidden sizes, and occupies 96 KiB: a compact artifact that can be retained for audit-relevant generations and probed directly, with occlusion analysis localizing the classifier's signal to mid-depth regions of the map. A lightweight classifier, instantiated as a compact Vision Transformer, reads an estimated correctness probability from each map in a fraction of a millisecond; capacity-matched MLPs perform comparably, indicating the representation itself carries the result. Trained and evaluated in-domain on short-answer QA, direct- answer math, and summarization factuality with three instruction-tuned 7-8B models, ActMap consistently outperforms sampling, token-probability, attention, and embedding baselines, and matches ACT-ViT, a detector trained on dense activation tensors $67 \\times$ larger, at essentially the same mean AUROC with lower calibration error on ten of twelve pairs. The resulting score supports abstention, routing, and selective verification from a single generation, making it a practical primitive for scalable oversight of deployed models."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Deep-Fake CAPTCHA: Mitigating Next-Generation Social Engineering Attacks",
+    "authors": "Guy Frankovits, Lior Yasur, Fred M. Grabovski, Yisroel Mirsky",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11404v1",
+    "source": "arXiv",
+    "abstract": "This paper presents DF-CAPTCHA, an active defense against real-time deepfake impersonation in voice and video calls. Instead of passively searching for artifacts, DF-CAPTCHA prompts the caller to perform simple challenge-response tasks that are easy for humans but difficult for current real-time deepfake systems to generate convincingly. The framework verifies the response using four criteria: realism, identity consistency, task completion, and response time. We evaluate the approach across both audio and video modalities using user studies and experiments with real-time deepfake models. Results show that people often struggle to distinguish real-time deepfakes from authentic media, while DF-CAPTCHA substantially improves detection performance over passive methods, reaching high accuracy in both modalities. These findings suggest that active challenge-based verification is a practical and robust defense against next-generation social engineering attacks based on real-time deepfakes."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Taming Bitwise Behavior in GPU Kernels with Tensor Core: Black-Box Reconstruction, Compiler Enforcement, and Static Verification",
+    "authors": "Ziteng Yang, Nicholas J. Riasanovsky, Warren Deng, Vivek Sarkar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11356v1",
+    "source": "arXiv",
+    "abstract": "Determinism and numerical reproducibility are increasingly required of GPU kernels in machine learning systems, yet deterministic implementations of the same kernel can still differ bit for bit. Floating-point reduction order is the primary cause, alongside partial-sum precision, fused multiply-add operations, and rounding placement. These choices may be hand-coded, selected by a block-level language such as Triton, or hidden inside a closed-source library such as cuBLAS or rocBLAS. A tile shape chosen for performance therefore also determines the arithmetic, potentially breaking batch invariance. Preserving a fixed order can cost up to 20 percent, while an autotuner cannot identify which configurations are bitwise equivalent. We characterize the factors determining the bitwise behavior of reductions and general matrix multiplication (GEMM). First, we introduce a descriptor of GEMM reduction order, including the partitioning of K in split-K GEMM. Using it, we perform the first black-box reconstruction of a closed-source library's arithmetic for bit-level correctness. Our family of Triton GEMMs matches NVIDIA cuBLAS in all tested cases on Blackwell and Hopper. For realistic LLM shapes with fused epilogues, it matches or exceeds torch.compile performance. Second, we enforce balanced-tree reduction during Triton lowering and introduce a data-layout optimization that brings 19 of 27 kernels on GB300 and H100 within 10 percent of free-order performance. Third, we develop sound static checkers for bitwise equivalence between compiled GPU kernels, including the first checker spanning NVIDIA PTX and AMD GCN. Integrated into Triton's autotuner, the checker restricts search to a single bit-equivalence class."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Fully Coupled Nonlinear Forward-Backward Stochastic Difference Equations: Spectral Contraction and Infinite-Horizon Maximum Principle",
+    "authors": "Rui Chen, Qi Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11354v1",
+    "source": "arXiv",
+    "abstract": "This paper develops an explicit spectral-contraction approach to studying fully coupled nonlinear forward--backward stochastic difference equations on infinite horizon and their applications to stochastic control. The estimates for this fully coupled system are assembled into an explicit two-dimensional nonnegative matrix. Its spectral radius yields an explicit sufficient discount threshold, and a corresponding equivalent weighted product norm is constructed to establish the contraction property. Moreover, for an infinite-horizon control problem with convex control constraints and an accumulated discounted running cost, we derive a Pontryagin-type stochastic maximum principle, its equivalent pointwise normal-cone formulation, and a verification theorem. Finally, a recursive risk-adjusted portfolio example is given to demonstrate the applications of our theoretical results, and a projection-type sufficient optimality condition for this example is derived."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "InFlow: entropic stochastic dual dynamic programming with HJB cross-certification for seasonal energy storage",
+    "authors": "Steeven B. Affognona, Babacar M. Ndiaye, Pierre Mendy, Cheikh M. F. Kebe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11339v1",
+    "source": "arXiv",
+    "abstract": "Seasonal reservoir operation requires optimization methods that remain reliable under strongly periodic and uncertain inflow dynamics. We present InFlow, a verification-oriented framework combining periodic stochastic dual dynamic programming (SDDP), entropic robustness, control-space Bellman annealing, and an independently discretized Hamilton-Jacobi-Bellman (HJB) benchmark. The entropic transition operator is interpreted as a KL-penalized worst-case expectation and linked to fixed-radius KL ambiguity sets through Lagrange duality. We establish a uniform soft-Bellman approximation bound and prove the validity of Gibbs-tilted SDDP cuts. The benchmark relies on a normalized seasonal Cox-Ingersoll-Ross inflow process whose positivity condition fails during the driest weeks, requiring explicit treatment of the degenerate boundary. Independent verification shows strong agreement between HJB storage gradients and HiGHS storage-balance duals, with water-value correlations of 0.995 and 0.996 for the standard and exact-cut-only implementations. Refining the HJB grid from 61^2 to 81^2 states changes the annual mean water value by only 0.6% and the peak value by less than 0.1%. Out-of-sample simulations based on 3,000 independent trajectories show that a robustness level of gamma=5 increases nominal mean cost by 4.6% while reducing CVaR90 by 11.2%. Under a dry-season stress scenario with inflows reduced by 40%, the mean-cost difference becomes statistically insignificant whereas CVaR90 improves by 11.5%. A robustness sweep confirms monotonicity of the risk-adjusted value. Finally, a two-reservoir cascade reproduces grid-oracle marginal water values with correlation 0.999 and recovers the predicted upstream-to-downstream value ratio of two. InFlow is intended as a transparent methodological benchmark rather than a calibrated operational reservoir model."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Magenta: Closing the Loop Between Mathematical Reasoning and Lean Verification",
+    "authors": "Joshua Ong Jun Leang, Haonan Li, Zheng Zhao, Xinyi Shang, Wenda Li, Zhengzhong Liu, Erix Xing, Shay Cohen, Eleonora Giunchiglia",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11319v1",
+    "source": "arXiv",
+    "abstract": "Most of mathematical knowledge has been communicated through so-called informal use of mathematics and natural language. With large language models (LLMs) being highly adept in using natural language, they achieve strong performance, yet not perfect, in informal mathematical reasoning. Restraining LLMs to informal reasoning misses out on the opportunity to use the discrete verification abilities that machines offer through machine-checkable proofs. In this paper, we bridge the gap between informal and formal reasoning by integrating Lean signals into the informal reasoning process. We introduce Magenta, a training-free agentic pipeline that, given only a natural-language problem, produces an answer, expresses it as a Lean 4 statement, and constructs a machine-checked proof. A statement judge verifies whether the formalisation preserves the original problem, while an error-attribution judge routes failed attempts either to mathematical re-derivation or local Lean repair. Magenta achieves 100% accuracy across all evaluated olympiad benchmarks, including AIME 2025, AIME 2026, and HMMT February 2026. When paired with the open-weight K2-Horizon-7B reasoner, it solves all six IMO 2026 problems. Our analysis shows that statement adjudication is essential for preventing false certificates and that feedback-guided correction outperforms independent resampling on difficult problems."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Can AI Remediate Backend Failures Safely? GuardedAct with Blast-Radius-Aware Sandboxing",
+    "authors": "Wanrong Cai, Tianyu Yu, Shaorui Pi, Xiaoxuan Sun, Wenrui Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11264v1",
+    "source": "arXiv",
+    "abstract": "Large Language Models (LLMs) have shown promising capabilities in generating remediation actions for microservice failures. However, directly executing AI-generated repair actions in production risks cascading collateral damage. We propose GuardedAct, a sandbox-first remediation framework that interposes a blast-radius-aware verification layer between the LLM action generator and the production environment. GuardedAct operates in four phases: (1) ingesting a diagnosis report together with the live system topology and recent telemetry, (2) prompting an LLM to produce a ranked list of candidate remediation actions, (3) simulating each action in a lightweight digital-twin sandbox that estimates the blast radius and assigns a risk label, and (4) enforcing a rollback-confidence gate that auto-executes only low-risk actions while escalating high-risk ones for human review. We evaluate GuardedAct on five fault scenarios injected into the DeathStarBench social-network application. Experimental results show that GuardedAct achieves an overall recovery rate of 87.4% while reducing collateral damage by 79.7% relative to direct LLM execution (from 25.6% to 5.2%), at the cost of a modest sandbox-induced increase in mean time to recovery (approximately 8 s). Ablation studies confirm that each component contributes meaningfully to the safety-speed trade-off."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "You've Got a BUD in Me: Authenticated Reads from Per-Block Write Logs",
+    "authors": "Alejandro Ranchal-Pedrosa, Cody Littley, Ben Marsh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11251v1",
+    "source": "arXiv",
+    "abstract": "Blockchains usually pay for authenticated reads by maintaining a structure that spans the entire state. We show how validators can support historical membership and exclusion proofs by authenticating each block's writes instead. A Block Update Digest (BUD) commits a write log whose predecessor pointers link successive modifications of each key. A SuperBUD summarizes last writes over a window; an exponential hierarchy turns long unchanged intervals into short proofs. The digest count is logarithmic in the gap within the hierarchy's range, with one additional digest per top-level window beyond it. We prove soundness against adversarial provers and up to f Byzantine validators, and completeness for queries anchored by a post-deployment modification, assuming archive, attestation, and committee evidence is available. Across a 50x increase in state size, the measured base-BUD path rises by 1.24x, compared with 3.1x and 69.5x for in-memory and cache-bounded disk-backed Merkle Patricia tries. On the synthetic trace, two-digest read-layer payloads stay below 800 bytes, and warm hash-path verification takes at most 146 microseconds at p99."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "NovGauge: A Fine-Grained Benchmark for Diagnosing LLMs' Capability in Paper Novelty Assessment",
+    "authors": "Guoqiang Zhang, Kexin Tan, Ming Zhang, Li Ju, Wenqing Jing, Zhonghan Yue, Jiayi Chen, Shiqiang Wu, Shaofan Liu, Yue Zhang, Yuankai Ying, Yang Shi, Tao Gui, Qi Zhang, Xuanjing Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11234v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly used in peer review at major AI conferences, yet novelty remains a persistent weak point. Existing benchmarks assess novelty as a single holistic score, making it difficult to diagnose which dimension a model misjudges or whether its evidence is faithful. We present NovGauge, a human-anchored benchmark for fine-grained novelty assessment diagnosis. The benchmark contains 619 paper pairs and 50 multi-paper sets, drawn from two expert sources: ICLR reviewer overlap claims and survey co-citations. Instances are independently labeled along three dimensions: task, problem, and method, capturing application goals, technical challenges, and solution approaches. We propose a cascading diagnostic pipeline that verifies per-dimension correctness, evidence grounding, and logical support. Evaluation of 18 LLMs shows hallucination rates ranging from 0% to 39% across dimensions, and among non-hallucinated correct-positive judgments, over 70% cite evidence fails to logically support the stated reason. The best-performing model, GPT-5.5, achieves 43-72% Verified F1 across dimensions, while most models retain less than half of their raw F1 after faithfulness verification. These results suggest that current LLMs remain far from reliable scientific novelty assessment, particularly when correctness is conditioned on faithful evidence grounding."
+  },
+  {
+    "date": "2026-09-10",
+    "title": "Optimal Covariate Adjustment beyond the Average Treatment Effect: Treated-Population and Overlap-Weighted Estimands",
+    "authors": "Shoki Okubo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11222v1",
+    "source": "arXiv",
+    "abstract": "Graphical causal inference supplies a complete theory of efficient covariate adjustment for the average treatment effect: one adjustment set, computable from the graph, is optimal under every compatible distribution. We show that this is a property of the average treatment effect's inverse-prevalence weights, not of causal estimands in general. For the average treatment effect on the treated we index the efficiency bound by the adjustment set and derive exact identities for its change under treatment-side and outcome-side extensions of a valid set. Covariates that predict only the treated-arm outcome are exactly efficiency-neutral, and covariates that predict the control-arm outcome can strictly increase the bound when the propensity is below one half -- a reversal of the supplementation lemma whose source is an arithmetic-geometric-mean inequality that holds for the average treatment effect and fails for the treated-population estimand. A construction with two faithful distributions on one graph proves that no graphical optimality criterion exists for the treated-population estimand; under no effect modification the ATE-optimal set is nonetheless optimal among the graphically valid sets, with an exact expression for its advantage. The results extend to weighted average treatment effects with propensity-dependent weights, yielding symmetric thresholds for overlap weights, an estimand-drift phenomenon under instrument adjustment, and a characterization of constant weights as the only smooth positive weights for which outcome-side supplementation never increases the bound. Simulations and the LaLonde data provide illustrations."
+  },
+  {
+    "date": "2026-9-10",
+    "title": "SQUIRE+LLM: An LLM-Assisted ESA-Based Unsupervised Semantic Query Interpretation and Ranking Engine",
+    "authors": "Avijeet Shil, Wei Jin",
+    "publish": "2025 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)",
+    "url": "https://doi.org/10.1109/wi-iat67162.2025.00043",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Cost-Aware Sentiment Analysis: A Multi-Model Ensemble with LLM-Assisted Error Attribution",
+    "authors": "Qi Wang",
+    "publish": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+    "url": "https://doi.org/10.1109/cisat71030.2026.11682083",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Auditing Alignment among Item Relevance, Goal Progress, and LLM-Judged Responses in Music-CRS",
+    "authors": "Tomoya Terai",
+    "publish": "Proceedings of the Workshop on the ACM RecSys Challenge",
+    "url": "https://doi.org/10.1145/3842413.3842423",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-11",
+    "title": "LLM Test Generation via Iterative Hybrid Program Analysis",
+    "authors": "Sijia Gu, Noor Nashid, Ali Mesbah",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3764553",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Graph Convolutional Networks for Few-Shot Node Classification Using LLM-Derived Entity and Explanation Features",
+    "authors": "Yixiao Zhang",
+    "publish": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+    "url": "https://doi.org/10.1109/cisat71030.2026.11682228",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "GradPath: An End-to-End LLM-NLP Architecture for Job-Aligned Resume Generation from Academic Transcripts",
+    "authors": "Sarunnut Thatsaneechaiyaporn, Pakin Leuangsupachaikul, Nuttapong Prasertsung",
+    "publish": "2026 International Conference on Technical Education (ICTechED)",
+    "url": "https://doi.org/10.1109/icteched69022.2026.11682842",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-11",
+    "title": "GPTrace: Effective Crash Deduplication Using LLM Embeddings",
+    "authors": "Patrick Herter, Vincent Ahlrichs, Ridvan Açilan, Julian Horsch",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3773161",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Multi-Agent LLM Collaborative Reasoning and Task Planning for Complex Task Solving",
+    "authors": "Wentao Zhang, Tian Liao, Yihui Feng",
+    "publish": "2026 9th International Conference on Computer Information Science and Application Technology (CISAT)",
+    "url": "https://doi.org/10.1109/cisat71030.2026.11682610",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "LLM-Assisted Automated Extraction and Design of Microwave Circuits from Technical Documents",
+    "authors": "Hong Cai Chen, Ming Gao, Lingrui Shen, Jiarui Zhong",
+    "publish": "2026 International Conference on Microwave and Millimeter Wave Technology (ICMMT)",
+    "url": "https://doi.org/10.1109/icmmt69626.2026.11678577",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "LLM-Driven Aspect-Based Semantic Alignment for Review-Based Recommendation",
+    "authors": "Huilin Chen, Zhiyong Cheng, Fan Liu, Richang Hong, Meng Wang",
+    "publish": "ACM Transactions on Recommender Systems",
+    "url": "https://doi.org/10.1145/3843223",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-11",
+    "title": "Verification of Multi-Model Stochastic Systems",
+    "authors": "Radu Calinescu, Simos Gerasimou, Sinem Getir Yaman, Gricel Vazquez, Micah Bassett",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3773253",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-11",
+    "title": "Evaluating the effectiveness of LLM-based interoperability",
+    "authors": "Rodrigo Falcão, Stefan Schweitzer, Julien Siebert, Emily Calvet, Frank Elberzhager",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3773251",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Human-AI Collaborative Rubric Revision for LLM-Based Scoring of Word Association Tests: A Three-Phase Study",
+    "authors": "Nan Zhou, He Shuyan",
+    "publish": "2026 4th UK-China Teaching, Learning, and Educational Technology (TILE-TEC)",
+    "url": "https://doi.org/10.1109/tile-tec70450.2026.11682366",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-11",
+    "title": "AssertFlip: Reproducing Bugs via Inversion of LLM-Generated Passing Tests",
+    "authors": "Lara Khatib, Noble Saji Mathews, Meiyappan Nagappan",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3773127",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-11",
+    "title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+    "authors": "Haoyu Wang, Christopher M. Poskitt, Jun Sun",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3764546",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-10",
+    "title": "LLM Augmentation Enhanced Counterfactual Attention for Graph-Based Recommender System",
+    "authors": "Shengzhe Jiao, Yihong Zhang, Aoran Chen, Takahiro Hara",
+    "publish": "2025 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)",
+    "url": "https://doi.org/10.1109/wi-iat67162.2025.00015",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Improving the Reliability of LLM Evaluation Metrics via Human-in-the-Loop Validation",
+    "authors": "Karthik Babu Manam, Vincent Koc, Jamshaid Iqbal Janjua",
+    "publish": "2026 7th International Conference on Big Data Analytics and Practices (IBDAP)",
+    "url": "https://doi.org/10.1109/ibdap69915.2026.11677987",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Research on the Interaction Paradigm of Virtual Astronomy Laboratory Based on RAG-LLM",
+    "authors": "Xuewei Xu, Chuanqian Tang, Zhiqiang Liu",
+    "publish": "2025 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)",
+    "url": "https://doi.org/10.1109/wi-iat67162.2025.00109",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-10",
+    "title": "Medical Chat: A Multi-LLM Chatbot for Streamlining Patient Referrals",
+    "authors": "Anil Panday, Ashish KC, Rojina Raut, Tianzhu Li, Sheng Chai",
+    "publish": "2025 IEEE/WIC International Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)",
+    "url": "https://doi.org/10.1109/wi-iat67162.2025.00093",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-11",
+    "title": "Cognitive Biases in LLM-Assisted Software Development",
+    "authors": "Xinyi Zhou, Zeinadsadat Saghi, Sadra Sabouri, Rahul Pandita, Mollie McGuire, Souti Chattopadhyay",
+    "publish": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+    "url": "https://doi.org/10.1145/3744916.3773104",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
