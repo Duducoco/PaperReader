@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-16",
+    "title": "AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination",
+    "authors": "Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.19140v1",
+    "source": "arXiv",
+    "abstract": "AI agents for security inspect web pages, source code, logs, configuration files, and command outputs. These environments may contain deceptive artifacts that influence the agent's behavior. We call this adversarial task contamination. Whereas prompt injection relies on attacker-supplied instructions, task contamination also includes non-instructional evidence, such as fake results and decoy endpoints. We present AgentLSD, a controlled framework for studying adversarial task contamination. AgentLSD uses Capture the Flag (CTF) challenges as its experimental environment. We inject trap artifacts, such as fake flags, misleading hints, decoy endpoints, and hidden cues, while preserving the intended CTF solution. The framework supports paired clean and trap-augmented experiments with deterministic trap generation, runtime injection, telemetry, and delivery verification. We evaluate six models on 11 web CTF challenges. In the clean condition, agents capture 41% of the flags, and no model solves every challenge. We then measure the impact of task contamination. Even when the agent still recovers the flag, traps increase the number of turns (+20) and reasoning tokens (+2k). Solve-rate effects are more heterogeneous, as some model-challenge pairs are largely unaffected while others follow decoys or submit wrong flags. These results show that clean CTF performance understates vulnerability to deceptive task evidence. AgentLSD isolates this effect and provides a reproducible benchmark for studying it. We release the framework, configurations, trap specifications, and raw traces."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+    "authors": "Hejia Geng, Zesen Huang, Haoyang Li, Wenbin Li, Koutian Wu, Zihan Zhou, Yuanbo Pang, Weihao Liu, Zigong Xu, Zhiping Li, Zongzheng Zhang, Chuanfei Dong, Jiankai Sun, Tianzhe Zheng, Fengyu Xie, Yue Ma, Yueheng Shi, Tong Xie, Zonglin Di, Xianrong Liu, Qucheng Gao, Yimin Liu, Jiaming Pan, Sheng Huang, Xiao-Han Ma, Lanqing Yuan, Zhenlin Zhu, Ziang Liu, Ziyang Xu, Junkai Wang, Kangkai Liang, Jiayi Xian, Zehong Zhao, Liuwei Xu, Jingxu Xie, Peijin Zhang, Qiang Gao, Chengyi Xing, Zhe Zhao, Xi Wang, Yaopeng Xing, Xing Meng, Zhenfei Yin, Yingcheng Wu, Ling Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.19134v1",
+    "source": "arXiv",
+    "abstract": "Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert into reliable learning experience-a challenge we call the scientific experience bottleneck. We introduce ScienceIDE, infrastructure for turning the world's scientific code into programmable environments for scientific agents. Guided by expert-defined scientific cases and acceptance criteria, agents transform repositories into executable environments that support task generation, execution, and scientific verification. These environments provide a shared foundation for supervised fine-tuning, reinforcement learning, and evaluation. Using verified interaction trajectories, we train PhAI-IDE-72B, PhAI-IDE-9B, and PhAI-IDE-4B. The model family shows gains in held-out scientific-code repair and across selected general-purpose benchmarks in code, reasoning, and knowledge, providing evidence of positive transfer from scientific experience to broader capabilities. ScienceIDE lays the foundation for an integrated workspace for agent learning and scientific practice, making humanity's scientific software a shared substrate for developing scientific intelligence. Code: https://github.com/aitofound/ScienceIDE"
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Analog Pin Directionality as an Exfiltration Attack Surface in Mixed-Signal ICs",
+    "authors": "Ramana Ranganatham, Chirag Adiga, Michael Zuzak, Tejasvi Das",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.19111v1",
+    "source": "arXiv",
+    "abstract": "Mixed-signal SoCs rely on nominally input-only analog pins to acquire off-chip signals, but the directionality of these interfaces is generally treated as a functional property rather than explicitly verified as a security property. This work identifies and experimentally demonstrates a directionality-based class of analog and mixed-signal (AMS) exfiltration attacks in which data-dependent circuit-offset modulation converts a nominally input-only pin into an outbound information channel. We analytically model the attack mechanism and identify three enabling host conditions: a closed-loop amplifier, an exposed amplifier input, and sufficiently high impedance at that pin. This attack class is validated through a representative silicon case study using a photoplethysmography (PPG) analog front-end (AFE) fabricated in a commercial 55-nm CMOS process. The payload incurs $<$0.001\\% area overhead relative to typical biosensing AFEs. Under the evaluated conditions, payload activation reduces the filtered PPG-output SNR by only 0.03~dB, while the maximum HT-induced perturbation of 5.9\\% of the PPG amplitude remains within the 34.3\\% benign variation at the exposed sensor-input pin across process and temperature. The raw exfiltration SINR remains below -20~dB, while targeted filtering increases it above 14~dB and enables signal recovery. Silicon measurements demonstrate data exfiltration through the input pin at bit rates up to 10~kbps and error-free recovery of a PRBS message. These results expose a conventional test-observability gap and establish analog pin directionality as an AMS security property requiring explicit verification, test coverage, and defense rather than being inferred from nominal signal flow."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Continuous variable distributed quantum sensing in integrated photonics",
+    "authors": "Bethany Puzio, Oliver M. Green, Joel F. Tasker, Jonathan Frazer, Tamzin Ellis, Benjamin D. J. Sayers, Rachel N. Clark, Alex S. Clark, Giacomo Ferranti, Jonathan C. F. Matthews",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.19092v1",
+    "source": "arXiv",
+    "abstract": "Distributed quantum sensing is an emerging application of quantum networking, where entangled probe states are employed to sense combinations of delocalized parameters with enhanced precision relative to using separable states. Squeezed states of light are a prime resource for experimental demonstrations of entanglement-enhanced sensing, because they can be generated and entangled deterministically. Existing distributed quantum sensing experiments have been fundamentally limited in scalability due to their bulk-optic architectures. Meanwhile, integrated photonics provides a scalable and compact platform for quantum sensors. Here we demonstrate entanglement-enhanced sensing of linear functions of four phase shifts in an integrated photonic circuit. We find an entanglement-enhanced precision of 0.199(16) dB below the shot noise limit compared to 0.041(18) dB for separable states. A four-mode entangled state is generated on-chip with entanglement verification and phase sensing also performed on-chip with an array of four integrated homodyne detectors."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Social Laws for Multi-agent Coordination in Stochastic Environments",
+    "authors": "Rolando Fernandez, Caleb Probine, Tyler Lee, Jeffrey Chen, Erez Karpas, Muhammad Arrasy Rahman, Peter Stone, Ufuk Topcu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18929v1",
+    "source": "arXiv",
+    "abstract": "In multi-agent environments, coordinating agents to prevent interference and ensure robust individual performance is a critical challenge. Previous research on social laws for multi-agent systems has primarily focused on deterministic, goal-based settings. This paper extends the concept of social laws to stochastic, reward-based environments, proposing a formalism for defining and verifying their robustness under various conditions. We introduce the notion of $α$-robustness, a measure of the guaranteed utility each agent retains while pursuing its optimal single agent policy, assuming all agents obey the social law. We then present an approach for robustness verification of social laws in stochastic settings, based on a reduction to solving a series of Markov decision processes. Empirical evaluations on toy environments illustrate the potential of our framework."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Could Underwater Data Centers Pose a Risk to AI Treaty Verification?",
+    "authors": "James Teague, Ashmita Rajmohan, Yannick Muehlhaeuser",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18824v1",
+    "source": "arXiv",
+    "abstract": "Proposals for international agreements that limit frontier AI development depend on verification, and a central challenge is detecting undeclared compute facilities used to evade restrictions. Underwater data centers (UDCs) have been suggested as one such evasion vector, but their feasibility at frontier scale and their detectability have not been seriously assessed. We examine current UDC deployments, evaluate construction and maintenance complexity relative to land-based facilities, and analyse the feasibility of a 100,000 H100-equivalent training run underwater. We find that power delivery and cooling are tractable, but interconnect and the hands-on maintenance that large training runs require are severe obstacles - surmountable only by a well-resourced state actor accepting large cost and schedule penalties, and only where concealment, rather than efficiency, is the objective. We then assess detectability through thermal, acoustic, optical and synthetic-aperture-radar (SAR) surveillance. Thermal detection of an operational pod is unlikely outside shallow, calm water; acoustic detection is marginally more effective, but faces limitations in attribution; and optical/SAR monitoring is most powerful during construction and maintenance, when the pressure-vessel fabrication base and the cable-laying fleet create distinctive signatures for AIS-tracking. We conclude that UDCs are a comparatively unlikely evasion route relative to underground or industrially disguised land-based facilities, but the residual risk is non-zero and warrants operationalising the detection modalities discussed."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Quantifying the Effect of HCLs on a Fixed-Microarchitecture MXFP4 Accelerator",
+    "authors": "Daniele Passaretti, Sajjad Tamimi, Nicola Dall'Ora",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18792v1",
+    "source": "arXiv",
+    "abstract": "Hardware Construction Languages (HCLs) aim to improve hardware design productivity while generating register-transfer-level (RTL) circuits without changing the designer's microarchitecture. However, most comparisons between HCLs are either qualitative or evaluate quality of results (QoR) across different designs, making it difficult to separate language effects from design effects. This paper compares the most widely used HCLs using the same fixed design, the OCP MXFP4 block dot product, a quantization primitive at the heart of edge Physical-AI inference, implemented as a single 12-stage, II=1 pipeline. A SystemVerilog baseline is followed by implementations in Chisel, SpinalHDL, Amaranth, Clash, Bluespec, and C++ for high-level synthesis (HLS). Every variant goes through the same flow on the same Artix-7 device set at 100 MhZ, driven by a RISC-V soft core. With the micro-architecture held constant, the comparison is clean: every variant meets timing, and the HCLs match or even undercut hand-written RTL in area. The remaining differences stem not from the algorithm but from how each back end lowers arithmetic, and from a single width choice that silently toggles DSP inference. Unlike HLS, where design decisions are limited to pragmas, the HCLs achieve comparable area and timing. Therefore, the choice comes down to ecosystem fit and interface needs rather than QoR."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Distributed Sensing on a 110-kV Overhead-Line Maintenance Operation on an Operational Optical Ground Wire",
+    "authors": "Konstantinos Alexoudis, Torm Järvelill, Hendrik Johann Kerm, Kaida Kaeval, Florian Azendorf, Vincent Sleiffer, Jasper Müller, Chigo Okonkwo, Tom Bradley",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18767v1",
+    "source": "arXiv",
+    "abstract": "We demonstrate dual-modal distributed sensing on an operational 110-kV OPGW during crane maintenance. DAS resolves meter-scale lifting events and matches impulsive events to phone audio, while DTSS quantifies post-reclamping residual strain up to $\\sim$398 $με$, enabling maintenance verification and asset monitoring in transmission grids."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Echo: Learning-based Matching Decompilation using Trusted Back Translation",
+    "authors": "Jun Bi, Xiangxin Fang, Aarsh Chaube, José Wesley De Souza Magalhães, Rodrigo C. O. Rocha, Michael O'Boyle",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18706v1",
+    "source": "arXiv",
+    "abstract": "Neural decompilers can recover readable and recompilable source code from binaries, but their predictions remain difficult to trust. Matching decompilation addresses this problem by searching for source code whose recompiled assembly exactly matches the target, providing stronger evidence of correctness. However, exact matching remains challenging for optimized binaries under unknown compilation configurations. We present Echo, a matching decompilation system based on trusted back-translation. Our key insight is to use compilation not only for verification, but also as trusted feedback to guide iterative search. Echo first uses a domain-specific model to generate candidate programs and compilation configurations. It recompiles these candidates, measures assembly-level similarity, and synthesizes promising code-configuration pairs. Remaining mismatches are then progressively repaired using rule-based rewriting, neural refinement, and reasoning-based refinement. We evaluate Echo on function-level benchmarks and the Mirai malware binary. Compared with the strongest baseline, Echo produces 2.43x more exact matches on average and achieves the highest structural similarity to ground-truth source code. On Mirai, Echo matches 2.75x and 7.4x as many functions as GPT-5.6 and Codex, respectively."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "CaMeLoT: CaMeL orchestrated with Temporal logic for static verification and liveness",
+    "authors": "Elia Nikolaou, Magnus Wiik Eckhoff, Robert Flood, Gudmund Grov, Vasileios Mavroeidis, David Aspinall",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18674v1",
+    "source": "arXiv",
+    "abstract": "LLM-based agents generate and execute multi-step plans that invoke external tools which can access private data or execute commands. In this setting, security is a property of the entire execution that a plan creates, not just any single step. The plan itself is a critical artefact that captures the tool calls, control flow, and data dependencies. We present CaMeLoT, a complement to CaMeL, an existing defence against prompt injection in tool-using LLM agents. CaMeLoT extends CaMeL by adding a static verification layer that checks an agent's plan before any tool is invoked. CaMeLoT translates a generated plan into a finite-state transition system, labels it with tool calls, provenance and taint information, and checks it against temporal policies expressed in CTL using the nuXmv model checker. Because verification happens before execution, unsafe plans are rejected without using LLM calls or tool calls, saving tokens that runtime could have cost, as well as the need to unwind changes or teardown temporary sandboxes. When a verification fails, the model checker returns a counterexample to give feedback to the agent to repair the plan. We evaluate CaMeLoT on policies derived from the AgentDojo benchmark, SOC workflows, and prompt-extraction experiments, showing that it verifies a broad class of temporal properties before execution while preserving CaMeL's runtime-checkable coverage."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Beyond EER: Multi-Dimensional Evaluation of Information Leakage in Speaker De-Identification",
+    "authors": "Seungmin Seo, Oleg Aulov, P. Jonathon Phillips, Kevin Mangold, Jonathan Eskin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18673v1",
+    "source": "arXiv",
+    "abstract": "Speaker de-identification (SDID) aims to preserve privacy by concealing speaker identity while maintaining speech utility. However, current evaluations often reduce privacy to a single dimension - biometric verification performance - typically measured by Equal Error Rate (EER). This narrow focus ignores critical leakage channels, such as soft biometric inference, embedding-level re-identification, and structural template similarity, which threaten the unlinkability and irreversibility of biometric references. We propose a holistic evaluation framework across five complementary metrics: (i) EER, (ii) soft biometric leakage score , (iii) cumulative match characteristic re-identification analysis, (iv) canonical correlation analysis and Procrustes embedding alignment, and (v) intelligibility via word error rate and semantic similarity. Evaluating five SDID systems from the IARPA ARTS program, we demonstrate that these metrics capture independent dimensions of information leakage. Our results indicate that reliance on a single metric can misrepresent the privacy properties of an SDID system."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "VLA-ULAP: Interleaving Cloud VLA Calls with Ultra-Lightweight Local Action Prediction at the Edge",
+    "authors": "Deyu Cao, Ryuji Oi, Kosuke Matsushima, Yuxuan Pan, Ziheng Wang, Daichi Fujiki, Atsutake Kosuge",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18663v1",
+    "source": "arXiv",
+    "abstract": "Billion-parameter vision--language--action (VLA) policies demand substantial onboard power, while communication delays in remote inference hinder timely responses. We propose VLA-ULAP, which interleaves remote VLA calls with an Ultra-Lightweight Local Action Predictor (ULAP). With approximately 7.4M parameters including the frozen vision encoder, ULAP combines current views, proprioception, and executed action history to predict chunks in one pass. Trained independently, it requires no VLA hidden states, online verification, or server round trips. On Jetson Orin Nano, ULAP takes 19.9 ms and 0.183 J per inference, compared with 284.3 ms and 50.55 J for GR00T on RTX A6000. Across three simulated base-policy/benchmark pairs, selected operating points remove 48.8--76.7\\% of VLA calls while retaining 95.0--97.5\\% of the baseline success rate. Against local VLA-acceleration alternatives on VLA-JEPA, ULAP uses an estimated 49.2\\% less inference time and 51.0\\% less GPU energy per successful episode than ACT at comparable success rates, and 77.1\\% less time and 79.9\\% less energy than SP-VLA at equal success rates. Physical SO-101 experiments retain 95.2--100\\% of the baseline success rate across seen and held-out placements while reducing inference time by an estimated 47.9--58.0\\% and inference-device energy by 52.1--62.5\\%, based on successful-episode call counts and measured device costs. Faster responses also improve dynamic-task success rates: in latency-aware LIBERO-Safety simulation, VLA-ULAP exceeds $π_{0.5}$ by 11.0 and 15.5 percentage points on two tasks while approximately halving VLA calls."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Automated Instruction Encoding Synthesis for Modern GPU ISA Compression",
+    "authors": "Mingyuan Ma, Hu He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18662v1",
+    "source": "arXiv",
+    "abstract": "Modern GPU kernels increasingly stress the instruction supply path, while fixed instruction containers can leave substantial footprint slack. This paper presents an automated encoding-synthesis framework that treats instruction layout as a constrained slot-assignment problem over a validated instruction-form field specification. The formulation separates semantic field identity from physical bit positions and supports tied, pinned, and free placement constraints, making it applicable when recurring decoded fields are not frozen by a public format contract. We instantiate the framework for NVIDIA SASS: raw public encoding text is normalized into a machine-readable specification, a SASS disassembler is validated against nvdisasm on 3.78M instructions, released as an open benchmark, and CP-SAT synthesis is used for fixed-length and variable-length encodings. On 142 Blackwell kernel inputs, variable-length synthesis reduces instruction footprint by 33%, with comparable reductions after re-synthesis on Ampere and Hopper; fixed-length synthesis on the same specification reduces decoder area by 16% against a decoder generated from the NVIDIA-observed 128-bit layout by the same generator and flow. Generated fetch/decode RTL meets 1.5 GHz in TSMC 22 nm with a replicated area delta of 0.12% of a GA100-class die; a same-node SRAM comparison shows the footprint reduction corresponds to about 9x this added logic in instruction-SRAM bit-cell area."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Robot Visions: Breaking reCAPTCHA at Zero Cost and Zero Shot",
+    "authors": "Suphannee Sivakorn, Samantha Gottlieb",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18518v1",
+    "source": "arXiv",
+    "abstract": "Google reCAPTCHA is the most widely deployed visual CAPTCHA service, protecting hundreds of thousands of websites from automated bots. It serves as a critical line of defense against automated attacks, including credential stuffing, bulk account creation, and automated form abuse. It has proven largely effective since its introduction in 2007. However, the rise of accessible AI now threatens its efficacy. Prior work has demonstrated that commercial cloud-based vision-language models (VLMs) can solve visual CAPTCHA challenges, but at non-trivial monetary cost per attempt. In this paper, we show that free and locally-run models can break Google reCAPTCHA. We conduct a comprehensive study of reCAPTCHA and present a taxonomy of its challenge types: Type A (independent image tiles, with static and dynamic sub-variants) and Type B (a single image partitioned into a 4x4 grid), each demanding a distinct solving strategy. We design zero-shot, no-cost solvers built entirely on open-source local models, specifically CLIP (58% per-challenge accuracy on Type A) and OWLv2 (43.5% on Type B), requiring no model training and no API access. Our end-to-end automated solver achieves a 92.6% per-session success rate across 500 real-world reCAPTCHA sessions. We further demonstrate that reCAPTCHA can be defeated by a non-technical adversary, using only natural-language instructions to a commodity AI assistant. This collapses the practical attacker skill floor to near zero and fundamentally changes the threat model for challenge-based CAPTCHAs. Although reCAPTCHA increasingly favors reputation-based verification, visual challenge-based fallback persists as a safety net that, paradoxically, has become the weakest link in the defense chain, suggesting that challenge-based visual CAPTCHAs may have reached the end of their useful life."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Exploring LLMs and RAG for Plausible and Explainable Material Prediction of Vehicle Components",
+    "authors": "Frederik Wagner, Annerose Eichel, Sabine Schulte im Walde",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18437v1",
+    "source": "arXiv",
+    "abstract": "In this work, we explore whether LLMs can accurately predict and explain plausible materials for vehicle components such as brake discs or fuel injectors without requiring extensive fine-tuning. We test and evaluate three approaches: a standard generative LLM baseline, a single-pass Retrieval-Augmented Generation (RAG) approach, and an iterative Chain-of-Verification (CoVe) variant. For retrieval, we rely on publicly available data using a domain-filtered Wikipedia corpus. Since no gold standard exists for this task, we develop a custom web-based annotation tool supporting crucial functions for structured domain expert evaluation. LLM-based generation substantially outperforms prior work, which is not further surpassed by the tested RAG approaches. Our results surface remaining challenges for RAG-based systems: hyperparameter optimization, the availability of high-quality, legally accessible domain corpora, and expert evaluation study design."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "StrucPhysVideo: Learning Physical Dynamics from Structured Captions and Robot Actions",
+    "authors": "Awomo-WM Team, :, Enhui Ma, Kaiwen Guo, Tingrui Zhang, Wei Song, Yingshui Tan, Jianhua Xu, Tong Zhang, Kaicheng Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18430v1",
+    "source": "arXiv",
+    "abstract": "Modeling physical dynamics, including how objects move, interact, and change state, is central to video world models for embodied AI. We present StrucPhysVideo, a family of video world models that bridges physics-focused data curation with language- and action-conditioned prediction of scene evolution. Our data pipeline combines motion-aware video segmentation, quality and content filtering, and physical relevance verification with structured annotations of objects, materials, and temporally localized interactions. By disentangling camera motion from object behavior and explicitly describing contact, deformation, and state transitions, the pipeline provides supervision grounded in observable physical events. Building on these data, we introduce StrucPhysVideo-TI2V, a sparse Mixture-of-Experts (MoE) text-image-to-video model trained with a curriculum that progressively emphasizes physical dynamics while retaining general-domain video data. StrucPhysVideo-TI2V achieves state-of-the-art performance on Physics-IQ Verified, scoring 45.5% and outperforming Cosmos3-Super-Image2Video by 2.8 percentage points. Caption ablations across backbones further demonstrate the effectiveness of physics-focused supervision. We further extend StrucPhysVideo-TI2V to StrucPhysVideo-IA2V, an interactive image-action-to-video world model that predicts visual outcomes from robot end-effector commands. Action conditioning, causal autoregressive generation, and few-step distillation enable incremental robot rollouts with only four denoising steps. Together, StrucPhysVideo advances physical dynamics modeling from image- and language-conditioned video prediction toward action-driven interaction."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Dependency-Aware Trajectory Refinement for Efficient Multi-Turn Agent Fine-Tuning",
+    "authors": "Zhuo Chen, Zhen Zhang, Xinyu Wang, Kewei Tu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18417v1",
+    "source": "arXiv",
+    "abstract": "Multi-turn agent trajectories often contain redundant rounds (failed tool calls, parallel sub-queries, verification-only steps) that inflate both training and inference cost. We propose viewing each trajectory as a \\emph{round-level dependency DAG} that exposes which rounds are globally load-bearing for the final answer, and fine-tune agents on trajectories refined through this DAG. Given an LLM-annotated DAG, these edits are deterministic and interpretable, with optional rephrasing. Models trained on these refined trajectories consistently outperform those trained on the original trajectories at lower inference cost. Specifically, across four multi-modal QA benchmarks, our refinements improve downstream accuracy by up to $1.7$\\,pp over vanilla SFT (and $5.7$\\,pp over an LLM-deletion baseline) while reducing per-sample inference messages by up to approximately $40\\%$ and inference tokens by up to approximately $48\\%$, translating to substantial savings in compute and serving cost. Code is available."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Differential equations for Dotsenko--Fateev integrals: the case of degenerate fields $Φ_{n,1}$",
+    "authors": "Aleksandra Ivanova",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18410v1",
+    "source": "arXiv",
+    "abstract": "We study higher-order differential equations corresponding to integrals of the Dotsenko--Fateev type and associated with four-point correlation functions with degenerate fields $Φ_{n,1}$. We determine the general structure and coefficients of the equations in terms of the integral parameters $ \\{ A,B,C,g \\} $. In particular, special cases of these equations in CFT are used for verification. In addition, the relationship between higher-order differential equations and hypergeometric operators is established."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Bath dimension and initial entropy for closed repeated use of a quantum channel",
+    "authors": "Seth Douglas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18267v1",
+    "source": "arXiv",
+    "abstract": "We characterize the bath resources needed to supply repeated uses of a fixed finite-dimensional quantum channel in a closed device. For each horizon $T$, one bath, one initial state and one repeated unitary are fixed before the user. Each output is returned before the next input arrives; no reset, discard, fresh ancilla or uncounted controller is available. Approximation error must vanish against arbitrary adaptive users with quantum memory and references. Writing $r=\\lim \\log_2(R_T)/T$ for the bath dimension rate and $s=\\lim S(ω_T)/T$ for the actual initial entropy rate, we prove that the achievable region is exactly $s\\ge 0$, $r+s\\ge h$ and $r-s\\geκ$. Here $h$ is maximum entropy exchange and $κ$ is a smoothed independent-reference extension cost, with the zero-error limit taken before the supremum over full-rank inputs. Its exact fixed-input form is an affine transform of the zero-leakage quantum privacy funnel. The minimum dimension rate is $(h+κ)/2$. The proof combines entropy converses, a bath-dimension-independent support repair, and a closed adaptive implementation of encoder-only fully quantum Slepian--Wolf recycling. All seeds, clocks, workspace and retained residues are counted. Worked examples include dephasing, pure replacement and a qubit channel with $0<κ<h$. No computability of $κ$ or efficient circuit synthesis is claimed."
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Behavior2Value: Benchmarking and Empowering LLMs for Consumer Value Measurement from E-commerce Behaviors",
+    "authors": "Peixuan Hou, Bin Chen, Li He, Jian Xu, Bo Zheng, Xiuli Ma, Guojie Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.18203v1",
+    "source": "arXiv",
+    "abstract": "Human values are deep motivational orientations that shape human behaviors. In e-commerce, they reveal the stable drivers behind users' purchase decisions. Compared with short-term interests, consumer values better explain how users evaluate products before purchase. However, consumer values are often implicit in complex and fragmented behavioral trajectories, leaving value measurement from e-commerce behaviors largely underexplored. To this end, we propose the Behavior-to-Value (B2V) task, which aims to identify consumer values from e-commerce behavioral trajectories. Centered on this task, we first construct the E-commerce Consumption Value Taxonomy (ECVT) and introduce B2V-Bench, the first B2V dataset and benchmark, based on anonymized Taobao behavioral logs. B2V-Bench consists of real-world purchase decision episodes, covering 25 types of purchase behaviors, along with corresponding consumer value orientations manifested in each episode. To improve consumer value measurement accuracy, we further present B2V-Verifier, a behavior-to-value measurement model based on Value Verification Tuning, which learns to assess whether behaviors provide sufficient evidence for each value inference. Experiments show that B2V-Verifier outperforms strong LLM baselines, improving multi-label classification by 34\\%. The dataset and code will be publicly released upon acceptance."
+  },
+  {
+    "date": "2026-9-16",
+    "title": "Dual-Side Verification for Trustworthy LLM-Based Constrained Resource-Task Assignment Modeling",
+    "authors": "Bingxu Zhang, Tianle Pu, Longfei Zhang, Boliang Sun, Zhong Liu",
+    "publish": "2026 12th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia71496.2026.11684690",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "From Answers to Audit Opinions: Cost-Aware Expert Verification of Financial Artifacts from Tool-Using LLM Agents",
+    "authors": "Jiawei Li",
+    "publish": "Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment",
+    "url": "https://doi.org/10.1145/3834580.3838756",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-16",
+    "title": "A Dynamic Evaluation Framework for LLM Instruction Following: Multi-dimensional Verification and Iterative Feedback",
+    "authors": "Fu Yachao, Zhang Qun, Zhu Mengna, Wang Mao, Liu Kaiyue, Hu Shengze",
+    "publish": "2026 12th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia71496.2026.11684539",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-HCD: An LLM-based Hierarchical Decision-Making Method for Multi-UAV Cooperative Confrontation",
+    "authors": "Xiaoning Li, Weilin Yuan, Chenyuan Wang, Yu Xie",
+    "publish": "2026 12th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia71496.2026.11684672",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "E-Commerce Chatbot with Graph RAG &amp; LLM",
+    "authors": "Namburi Hrithika, S. Edwin Raja",
+    "publish": "2026 International Conference on Trends in Quantum Computing and Emerging Business Technologies (TQCEBT)",
+    "url": "https://doi.org/10.1109/tqcebt67648.2026.11681829",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "The Privacy Paradox of Agentic CrowdRE: when LLM Pipelines Harvest More Than You Intend",
+    "authors": "Rajat Khanna, Jatin Nandal",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)",
+    "url": "https://doi.org/10.1109/rew72749.2026.00031",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "Towards Empathy Tuning of LLM-Based Conversational Agent",
+    "authors": "Maryam R. Yeganeh, Samuel A. Fricker, Tamira Leber, Daniel Barber",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)",
+    "url": "https://doi.org/10.1109/rew72749.2026.00082",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "Limited Predictive Power of Communication Quantity for Task Performance in LLM Multi-Agent Collaboration",
+    "authors": "Chengyu Zhang",
+    "publish": "2026 12th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia71496.2026.11684535",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-Augmented Hybrid Representations for Disease Category Classification from Clinical Notes",
+    "authors": "Khanh-Thao Le-Vu, Hung-Nghiep Tran",
+    "publish": "2026 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "url": "https://doi.org/10.1109/mapr72750.2026.11685739",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "A Model-Driven LLM-Assisted Approach for Generating Configuration Questionnaires from Business Process Family Models",
+    "authors": "Daniel Calegari, Andrea Delgado",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)",
+    "url": "https://doi.org/10.1109/rew72749.2026.00052",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-Enabled Fusion for Distributed Emitter Perception",
+    "authors": "Haiyang Sun, Yao Zhou, Lin Gao, Ting Yuan, Jingling Li, Ping Wei",
+    "publish": "2026 IEEE/CIC International Conference on Communications in China (ICCC)",
+    "url": "https://doi.org/10.1109/iccc70295.2026.11680339",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "Toward Architecture-Aware Evaluation Metrics for LLM Agents",
+    "authors": "Débora Souza, Patrícia Machado",
+    "publish": "Proceedings of the IEEE/ACM 5th International Conference on AI Engineering - Software Engineering for AI",
+    "url": "https://doi.org/10.1145/3793653.3793801",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-16",
+    "title": "Towards Ontology-Guided Requirements Quality Analysis: an LLM-Based Tool for EHR Systems",
+    "authors": "Leena Hellman, Petri Ihantola, Tommi Mikkonen, Niko Mäkitalo",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)",
+    "url": "https://doi.org/10.1109/rew72749.2026.00085",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-Guided Adaptive Gait Control for Humanoid Robots via Multi-Modal State Reasoning",
+    "authors": "Jitao Li, Yuxiang Cheng, Shuo Wang",
+    "publish": "2026 5th International Symposium on Control Engineering and Robotics (ISCER)",
+    "url": "https://doi.org/10.1109/iscer70245.2026.11681325",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-17",
+    "title": "An LLM-Based Evaluation and Optimization Framework for Auxiliary Diagnosis in Clinical Oncology",
+    "authors": "Haozheng Li",
+    "publish": "Proceedings of the 2026 6th International Conference on Biomedicine and Bioinformatics Engineering",
+    "url": "https://doi.org/10.1145/3822183.3822277",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-16",
+    "title": "CertDW: Towards Certified Dataset Ownership Verification via Conformal Calibration_supp1-3733501.pdf",
+    "authors": "Yiming Li",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tpami.2026.3733501/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-Based Discovery of Latent Requirements from Stakeholder Conversations: Preliminary Results from Industry",
+    "authors": "Mithila Sivakumar, Martin Lochner, Shiva Nejati, Mehrdad Sabetzadeh",
+    "publish": "2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)",
+    "url": "https://doi.org/10.1109/rew72749.2026.00016",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-Empowered Intelligent Data Querying: A Unified Metadata Approach",
+    "authors": "Jinzhu Zhang, Zheng Ma, Zhipeng Li, Zhenyuan Gao, Xianjie Shen, Yong Liao",
+    "publish": "2026 International Symposium on Machine Learning and Media Computing (MLMC)",
+    "url": "https://doi.org/10.1109/mlmc69743.2026.11686821",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-16",
+    "title": "LLM-Enhanced Experience Replay for Reinforcement Learning-based Path Planning",
+    "authors": "Hao Long, Jing Zhou, Junsen Wang",
+    "publish": "Proceedings of the 2026 International Conference on Machine Learning and Neural Networks",
+    "url": "https://doi.org/10.1145/3821725.3821812",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-16",
+    "title": "A Systematic Survey of Prompt Injection Attacks and Defenses in LLM-Integrated Applications and Agentic Systems",
+    "authors": "Xin Cao, Yiping Bao",
+    "publish": "2026 12th International Conference on Big Data and Information Analytics (BigDIA)",
+    "url": "https://doi.org/10.1109/bigdia71496.2026.11684636",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
