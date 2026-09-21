@@ -1,0 +1,200 @@
+[
+  {
+    "date": "2026-09-18",
+    "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+    "authors": "Bowen Ye, Lei Li, Shicheng Li, Zihao Yue, Linghao Zhang, Hanglong Lv, Yuanxin Liu, Wenhan Ma, Hao Tian, Rang Li, Jinhao Dong, Yikai Zhao, Xiangwei Deng, Hailin Zhang, Liang Zhao, Qi Liu, Lingpeng Kong, Tong Yang, Fuli Luo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.22068v1",
+    "source": "arXiv",
+    "abstract": "Training capable coding agents via reinforcement learning (RL) requires diverse tasks with reliable verifiers. Open-source codebases offer a rich source of such tasks, while existing methods typically rely on development artifacts such as issues and commits, limiting the range of tasks that can be extracted. To better scale RL environments, we present CodeMidas, an agentic pipeline that turns implemented functionality in existing codebases into executable RL environments using source code as its only task-specific input. CodeMidas allocates agentic compute to every stage of environment construction: agents explore implemented functionality to formulate behavioral specifications, construct tests grounded in execution of the original code, and validate and filter candidate tasks through execution checks and repeated solution rollouts. The resulting dataset has 5,545 training tasks from 3,185 open-source codebases spanning 23 programming languages and 15 technical domains. Training MiMo-V2.5 on these tasks with GRPO improves performance on all five diverse benchmarks, covering issue repair (DeepSWE + 11.7%), whole-program construction (ProgramBench +17%), and terminal work (Terminal-Bench v2.1 +8.5%). Ablations show that increasing the number of high-quality training tasks improves performance. Trajectory analysis shows the RL-trained agent demonstrates better behaviors like increasing codebase exploration and more diverse self-verification. These results establish source code as a scalable foundation for constructing RL environments that improve coding agents across diverse software tasks."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Traffic Sign Recognition for Autonomous Driving Using Branched YOLOv2 and Geometric Features",
+    "authors": "Arefeh Rezaei",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.22060v1",
+    "source": "arXiv",
+    "abstract": "Traffic sign recognition (TSR) is an important perception task for autonomous driving and advanced driver-assistance systems, where a system must both localize traffic signs and determine their semantic classes efficiently. This work presents a TSR system based on YOLOv2 for simultaneous detection and classification. Two complementary modifications are studied. First, YOLOv2 is extended with intermediate prediction layers, forming a branched architecture that can terminate inference early for easy cases and reduce computation time. Both whole-image and cell-wise branching strategies are investigated. Second, geometric information is introduced to reduce classification errors between visually similar signs. An unsupervised Bayesian image-segmentation method produces binary representations that are compared with class-specific geometric templates inside YOLOv2 bounding boxes. This information is used either during inference or as an additional signal during training. A dedicated dataset is constructed by combining GTSDB and GTSRB samples using seamless cloning and controlled image transformations. Experiments cover ten traffic-sign classes, with 3,000 training and 300 test samples. The selected branched architecture reports 0.647 s runtime and 0.680 mAP, compared with 0.6607 s and 0.680 mAP for baseline YOLOv2. Geometric verification during inference increases mAP to 0.713, while the geometric-feature training variant achieves 0.697 mAP with a reported runtime of 0.6608 s."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "A Lie Detector Test for Language Models: Reading Knowledge a Model Won't Reveal",
+    "authors": "Hiskias Dingeto",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21996v1",
+    "source": "arXiv",
+    "abstract": "Large language models can hold knowledge they do not report. A model may sandbag on a capability evaluation, or answer against what it internally knows, and its outputs alone cannot tell whether it is hiding an answer or simply does not have one. We borrow the Concealed Information Test, a forensic method that identifies guilty knowledge by presenting a suspect with the true detail among plausible decoys and measuring a stronger response to the item they recognize. Our method, Probe of Internal Recognition (PIR), does the same inside a model. It presents a question with its candidate answers and reads, from the model's internal states, which candidate the model recognizes as correct. PIR is reference-free, needing no honest reference model and no labeled truth corpus. Across eight models from five families (Gemma, Qwen, Llama, Mistral, and Phi), PIR recovers the recognized answer at 0.70 to 0.87 balanced accuracy, well above the 0.28 to 0.40 unknown-item baseline and the 0.25 chance rate. It stays readable across every form of concealment we test, from prompted deception and trained sandbagging to external password-locked and circuit-broken checkpoints, with recognition between 0.85 and 0.93. When the model hides a known answer, recognition stays high. When unlearning removes the knowledge, recognition drops to the level of a question the model never knew. PIR therefore separates a model that will not answer from one that cannot, which supports sandbagging audits and unlearning verification. The signal is causal, adds information beyond black-box behavioral cues, and extends from multiple-choice questions to free-form generation."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Automata-Theoretic Verification of Interval Markov Decision Processes",
+    "authors": "Sarvin Bahmani, Soumyajit Paul, Sven Schewe, Sadegh Soudjani, Ashutosh Trivedi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21966v1",
+    "source": "arXiv",
+    "abstract": "Interval Markov decision processes (IMDPs) provide a natural framework for modeling stochastic systems with uncertain transition probabilities, represented by probability intervals and resolved adversarially. Such uncertainty arises naturally, for example, when the transition model is learned from finite data or obtained through model-based reinforcement learning. In this paper, we study the automata-theoretic verification of IMDPs against rich temporal specifications, including all LTL specifications, by considering the broader class of ω-regular objectives. We show that classical automata-theoretic verification techniques extend to IMDPs, but with a sharp distinction determined by the structure of the transition intervals. For stable IMDPs, where either the upper bound is zero or the lower bound is strictly positive, verification reduces to ordinary MDP analysis and can be carried out using the standard automata used in that setting (good-for-MDP automata). For unstable IMDPs, where intervals may include zero while the upper bound is strictly positive, verification becomes game-like and requires automata whose nondeterminism can be resolved on the fly (good-for-games automata). Building on these insights, we develop algorithms for verifying ω-regular specifications over IMDPs and derive probabilistic guarantees when the interval model is learned from sampled data. The resulting framework enables principled verification of stochastic systems under probabilistic model uncertainty, connecting automata-based verification with data-driven stochastic modeling."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "CommitFlow: Semantic Commitment Verification and Local Correction for Long-Horizon Robot Manipulation VLA Execution",
+    "authors": "Zixiang Zhao, Yansong Feng, Yang Yang, Chaoyu Wang, Haoran Xiao, Hui Zhang, Chuang Cheng, Jianjun Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21908v1",
+    "source": "arXiv",
+    "abstract": "Although vision-language-action (VLA) policies have advanced rapidly, long-horizon execution may still progress to the next task stage before the required physical effect has been established. We call this a mismatch between semantic commitments, physical conditions that a stage must establish or maintain, and the actual physical state. Because an action command alone cannot confirm such a condition, local deviations can propagate and cause task failure. To address this problem, we present CommitFlow, a closed-loop execution framework that combines commitment monitoring with local correction while keeping the base policy frozen. CommitFlow integrates three components. A Semantic Commitment Monitor (SCM) compares stage requirements against current state evidence and holds back dependent actions when a required condition is unmet or violated. BoundaryFlow then generates a local correction conditioned on the current state and base action, and Relation and Gain Calibration (RGC) selects the smallest correction strength that satisfies the relevant constraints. Across the ten common RoboTwin 2.0 benchmark tasks, CommitFlow achieves a mean success rate of 75.9 percent, improving on the base policy pi0.5 by 22.7 percent. Cross-policy experiments show consistent gains, pointing toward reliable long-horizon robot execution."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Benchmarking the Explanatory Quality of Open-Weight Vision-Language Models in Face Recognition",
+    "authors": "Laurent Colbois, Sébastien Marcel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21879v1",
+    "source": "arXiv",
+    "abstract": "Vision-Language Models (VLMs) have recently been proposed as promising tools for face recognition, as they can produce natural language explanations alongside similarity scores. This capability is considered appealing for face comparisons in forensic contexts, which require decisions to be transparent and auditable. However, existing evaluations of VLMs for that use case focus mostly on recognition accuracy, while the validity of generated explanations remains unquantified. In this work, we introduce a benchmarking framework for VLM-based face recognition that treats explanation quality as a core evaluation axis. We propose two criteria that explanations should satisfy: relevance, i.e., reliance on identity-stable facial features; and faithfulness, i.e., alignment with the visible image content without hallucinated features. We jointly develop a methodology enabling the quantification of relevance and faithfulness of evaluated models, based on constraining model outputs to a structured explanation format that supports automated querying and auditing. Using this framework, we benchmark several families of open-weight VLMs, jointly evaluating face verification accuracy and explanation quality. Our results highlight remaining shortcomings of produced explanations, and emphasize the need for such explanation quality metrics to get a complete picture of model performance. The proposed benchmark and open-source evaluation harness provide a foundation for proper benchmarking and future fine-tuning of explainable face recognition systems."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "AutoRecLab: Describe the Experiment, Get the Code!",
+    "authors": "Moritz Baumgart, Philipp Meister, Justus Krell, Michael Schmidt, Bela Gipp, Joeran Beel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21863v1",
+    "source": "arXiv",
+    "abstract": "Empirical evaluation is central to recommender-systems (RecSys) research, but turning experimental designs into executable code remains a manual and error-prone task. We present AutoRecLab, a Python-based autonomous RecSys lab that automates RecSys experiments from natural-language prompts. Given a research idea, AutoRecLab derives explicit experiment requirements, builds and validates a prototype, and iteratively expands it into the requested full experiment. The workflow combines retrieval-augmented generation (RAG) for documentation lookup, static type verification, and execution-steered tree search. In our demonstration, AutoRecLab autonomously implements an explicit-to-implicit feedback conversion study. In a baseline comparison across six algorithms and three datasets, 8 of 9 runs succeed at an average cost of approx- imately $1 per run with GPT-5.4-mini."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Touvigation: Embodied Adaptive Object Acquisition for Blind and Low-Vision Users in Unfamiliar Indoor Environments",
+    "authors": "George Xi Wang, Xiangyu Li, Shaoyue Wen, Jiaqian Hu, Junan Xie, Yupeng Wang, Ziyue Shi, Qijun Chen, Maaike Bouwmeester, Yuhua Jin, Jing Qian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21828v1",
+    "source": "arXiv",
+    "abstract": "Blind and low-vision users often face challenges when locating and physically acquiring objects in unfamiliar indoor environments. Existing vision-language-model-based assistants can provide semantic descriptions but may introduce latency, hallucinations, and guidance that is poorly aligned with embodied action. We present Touvigation, a hands-free object acquisition system that combines vision-language understanding with persistent local spatial modeling to provide low-latency, body-relative guidance. Drawing on formative interviews with eight blind and low-vision participants, we design a multi-stage guidance framework that adapts spatial references as users transition from orienting, to walking, to reaching and tactile verification. We evaluated Touvigation with 12 blind and low-vision participants against a multimodal large-language-model assistant and unassisted search. Touvigation achieved 100% task success, compared with 58% for the multimodal assistant and 85% for unassisted search, while reducing completion time and cognitive workload. Our findings demonstrate how persistent spatial grounding and adaptive embodied guidance can improve object acquisition for blind and low-vision users."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "RheoSampling: Resolving the One-Hot Dilemma in Stochastic Dynamic-Tree Speculative Decoding",
+    "authors": "Qiao Hu, Yepeng Weng, Bo Zhang, Takehisa Yairi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21827v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates LLM inference by drafting multiple tokens in parallel, with tree-based methods further improving efficiency through hierarchical structures. Dynamic-tree methods such as EAGLE-3 perform well under greedy decoding via deterministic top-K expansion and global pruning. However, in stochastic decoding (T>0), this mechanism collapses the draft distribution into one-hot probabilities, causing a severe drop in acceptance rate. This creates a dilemma: dynamic-tree methods sacrifice stochastic sampling to preserve context-aware topology, while static-tree methods preserve stochastic sampling with context-agnostic structures. The issue arises because the same probability distribution is used for two conflicting tasks: constructing the tree and verifying tokens. This coupling makes direct injection of randomness challenging due to the resulting stochastic process. We resolve this by decoupling these roles: RheoSampling assigns a token sampled from the draft distribution a proxy probability for tree expansion and pruning alongside its true sampling probability for verification. Specifically, we inject a sampled token among the deterministic top-K slots and treat it with different probabilities during construction and verification, making RheoSampling the first dynamic-tree method with both context-aware top-K construction and stochastic sampling while maintaining losslessness. We establish the lossless guarantee through an equivalence-class analysis that compresses the stochastic tree space into tractable classes. An OT-based verification strategy and a sparse draft mechanism ensure that theoretical gains translate into practical efficiency. Experiments across LLMs and benchmarks demonstrate improvements in acceptance rate and speedup over state-of-the-art dynamic tree methods. This framework may provide a template for analyzing stochastic tree structures."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "VideoReloc: Long-Term Indoor Video Relocalization against a Kilobyte-Scale Semantic Scene Graph",
+    "authors": "Qianru Li, Xuyang Chen, Xuqin Wang, Zhenghao Zhang, Hongyi Luo, Tao Wu, Daniel Cremers, Lu Liu, Yanfeng Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21804v1",
+    "source": "arXiv",
+    "abstract": "Given a compact semantic scene graph, long-term indoor video relocalization estimates a map-frame trajectory after lighting and furniture changes. Visual methods rely on appearance and become unreliable under these changes; localizing one frame at a time from object classes and geometry instead leaves sparse, ambiguous evidence. We introduce VideoReloc, whose adaptive clips use odometry to gather spatial evidence until object and motion criteria are met, adapting query length to the observed scene. Its run-level decision rechecks conflicting placements using evidence accumulated across connected clips, stabilizing the trajectory beyond adjacent-clip tracking. Hypothesis-first registration proposes poses from object triplets and verifies each using clip-wide object centers and box surfaces. Orientation-aware refinement uses box faces, gravity and wall directions to resolve ambiguity in camera orientation and refine the full pose. This reframes sparse-map relocalization as verification of spatially extended video queries, moving discriminative support from stored appearance to temporal context and permitting a 100 kB map of class-labelled boxes. On RIO10 and ReplicaCAD, the all-frame localization success rate at 1 m/10$^\\circ$ is 73.5% and 61.1% under causal evaluation, rising to 90.6% and 74.8% with clip closure. The evaluated per-frame scene coordinate regressors reach up to 47.6% and 49.8%, respectively, with maps of 12.6-42 MB. Project page: https://videoreloc.github.io"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "GenTraceBench: A Benchmark for Tracing Audio Deepfakes Across Pre- and Post-training Stages",
+    "authors": "Li Wang, Kunyu Feng, Wan Lin, Dekun Chen, Qinke Ni, Xueyao Zhang, Lei Wang, Jie Shi, Haizhou Li, Zhizheng Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21738v1",
+    "source": "arXiv",
+    "abstract": "Modern text-to-speech (TTS) systems are rarely deployed as unchanged pre-trained models. They are often adapted through supervised fine-tuning (SFT) or preference optimization such as DPO and GRPO. This raises a practical question for audio deepfake forensics: do fingerprints learned from a foundation generator remain valid after adaptation? We present GenTraceBench, a controlled benchmark spanning five TTS architectures, 16 pre-/post-training variants, and 49,728 utterances generated with fixed texts and speaker prompts. Under a train-on-foundation, test-on-adapted protocol, we evaluate binary detection, closed-set attribution, and open-set verification. DPO and GRPO generally preserve fingerprints, whereas some SFT and pre-training-data changes cause substantial drift; effect sizes vary across three forensic backbones. Repeated training runs confirm the largest W2V-BERT attribution drop, while a data-mixture control with comparable speech quality shows that composition change need not cause drift. In W2V-BERT verification, multi-shot enrollment reduces EER for the SFT condition from 44.4% to 11.0%, whereas the SingNet-only condition remains at or above 45% EER."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "DRT: Dense Reasoning Trace for Efficient and Grounded Multimodal Reasoning",
+    "authors": "Wan Xu, Yuanfan Guo, Kevin Han, LaLa Chen, Wangmeng Zuo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21675v1",
+    "source": "arXiv",
+    "abstract": "Despite the remarkable progress in Multimodal Large Language Models (MLLMs), prevailing Chain-of-Thought (CoT) paradigms remain confined to the natural-language expression space. Consequently, they inherently incur excessive linguistic overhead, leading to information dilution and weak visual grounding. To address this challenge, we propose Dense Reasoning Trace (DRT), a paradigm that departs from natural-language-centered CoT by expressing reasoning as compact structured traces, which include concise intermediate states with symbolic connectors and disentangle visual observations from logical deductions. First, we introduce the Dense Trace Initialization to internalize the DRT reasoning mode into the model, substantially improving token efficiency while preserving visual evidence. To further enable the model to faithfully capture the logical relations within traces, we propose the Trace-Grounded Reinforcement Learning framework, which builds reference traces through a tri-perspective verification pipeline and employs Trace-Grounded GRPO with structured rewards, encouraging the model to generate concise DRT-style traces with reduced hallucination and stronger logical grounding. Extensive experiments on challenging reasoning benchmarks show that DRT achieves 5.5$\\times$ token efficiency improvement while improving 1.3 accuracy points over the Qwen3-VL baseline. These findings suggest that complex multimodal reasoning may not require verbose natural-language traces, opening a more efficient path for next-generation MLLMs. Our code and data are available at: https://github.com/HIT-leaderone/DRT"
+  },
+  {
+    "date": "2026-09-18",
+    "title": "PoVD: Efficient Consensus Protocol based on Verifiable Delay Function",
+    "authors": "Rui Jiang, Xintong Ling, Bin Cao, Jiaheng Wang, Xiqi Gao, Zhi Ding",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21627v1",
+    "source": "arXiv",
+    "abstract": "Consensus protocols ensure the robustness and scalability of blockchains and decentralized applications built on them. However, existing consensus mechanisms often impose high computational cost or require heavy communication overhead. To address these challenges, we propose proof of verifiable delay (PoVD), a lightweight consensus protocol based on the verifiable delay function (VDF). We present the detailed protocol of PoVD, including the block mining and verification rules, and illustrate how PoVD can flexibly adjust the block time distribution according to the network condition. Through mathematical proof, we point out that, under a relatively weak network assumption, PoVD can achieve a lower fork rate than PoW while maintaining the same throughput. Our experiments verify that PoVD exhibits low computation and communication complexity and can also improve the blockchain consistency, making it particularly suitable for resource-constrained nodes and bandwidth-limited networks."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "CounterPlay: Counterfactual Post-Training for Self-Play Driving Policies",
+    "authors": "Jiarong Wei, Yin Wu, Runkai He, Abhinav Valada",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21617v1",
+    "source": "arXiv",
+    "abstract": "Self-play in high-throughput simulators yields driving policies with robust closed-loop performance, but improvement per unit of simulation diminishes as training scales. Policies learn to handle common situations early, while further rollouts repeatedly encounter unresolved failures. Post-training offers an opportunity to target these failures, but existing methods primarily evaluate alternative actions or continuations at visited states, although successful recovery may require changing driving style earlier. We propose CounterPlay, a counterfactual self-play post-training approach that backtracks from failed tasks and retries them under alternate driving styles. CounterPlay rests on three key components. First, failure-driven backtracking uses the policy's value estimates to select an earlier stored state from which to retry the task. Second, reward conditioning enables a single policy to retry the task from this state using candidate styles ranging from cautious to aggressive. Third, CounterPlay retains task-completing retries only if no other vehicle incurs a new or earlier collision or off-road event relative to the factual branch. Retries that pass verification with fresh randomness are then distilled into the policy under its deployment condition. On BehaviorBench, CounterPlay achieves state-of-the-art scores on both the Interactive and Random splits across all eight traffic regimes using 1B post-training transitions, which is just 1% of the anchor's 100B self-play training budget. Improvements over the anchor hold across all three evaluated driving styles. CounterPlay resolves a substantial fraction of the anchor's timeout cases on BehaviorBench and achieves a balance between task completion and safety that neither continued self-play nor adopting a more aggressive driving style attains."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Reducing Barriers to Academic Support: Evaluating a Course-Specific RAG System for Addressing Help-Seeking Disparities in Higher Education",
+    "authors": "Andy Gray, Jake Hobbs",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21600v1",
+    "source": "arXiv",
+    "abstract": "Access to academic support is a key determinant of student success, yet students experience it unequally: some readily seek help from lecturers or tutors, while others hesitate due to anxiety, fear of judgement, uncertainty about expectations, or low confidence in their understanding. This may be especially evident in computing education, where programming tasks are cumulative and cognitively demanding. Although students increasingly turn to general-purpose generative AI tools, these can produce responses that are inaccurate, insufficiently contextualised, or misaligned with module expectations. This study presents and evaluates Beacon, a course-specific Retrieval-Augmented Generation (RAG) system providing private, immediate, module-aligned academic support. Grounding responses in approved teaching materials, Beacon was designed to lower barriers to help-seeking while encouraging independent learning. Using a design-based research approach, Beacon was developed iteratively and evaluated via mixed methods, combining questionnaires and semi-structured interviews with students and staff at a Higher Education institution. Students described Beacon's responses as closely aligned with module content and more trustworthy than unrestricted generative AI tools, valuing its use of pseudocode and scaffolded explanations over direct solutions. Although participants remained cautious about trusting AI-generated responses without verification, they viewed the system as a valuable first point of support before consulting lecturers or official resources. The findings suggest that carefully designed course-specific AI systems may reduce barriers to academic support by occupying an intermediary space between independent study and formal support. Rather than replacing educators, educational AI may be most valuable when it broadens access to guidance while preserving the pedagogical role of lecturers."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Status and performance of the Asgard/NOTT cold nulling camera",
+    "authors": "P. Chingaipe, G. Medgyesi, A. Mazzoli, E. Bouzerand, R. Laugier, P. Abraham, C. Dandumont, D. Defrère, A. Glauser, G. Garreau, M. Ireland, A. P. Joo, J. Loicq, M-A. Martinod, K. Missiaen, M. Montoya, J. Morren, G. Raskin, M. Salman, W. Schofield, W. Verstraeten, S. Ertel, T. A. Stuber, J. P. Scott, S. Kraus, F. Martinache, X. Haubois, N. Schuhler",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21546v1",
+    "source": "arXiv",
+    "abstract": "Long-baseline nulling interferometry suppresses the on-axis light of a star, enabling high-contrast observations of faint circumstellar emission and exoplanets at high angular resolution. The Nulling Observations of dusT and PlaneTs (NOTT) instrument is the L'-band nulling interferometer of the Asgard instrument suite and will be the first nuller installed at the Very Large Telescope Interferometer (VLTI). Its main scientific goals are to characterise hot/warm exozodiacal dust and young Jupiter-like exoplanets at close (<10 AU) orbital separations, where indirect detection methods are most sensitive. NOTT uses a four-telescope integrated-optics photonic beam combiner operating over 3.5-4.0 micrometres. The photonic chip produces photometric, bright, and nulled outputs that are polarization-split, spectrally dispersed, and imaged onto a 5-micrometre-cutoff HAWAII-2RG detector by the NOTT cold nulling camera. The cold optical assembly includes the photonic-chip interface, injection optics, collimator, Wollaston prism, dispersive element, imager, and cryogenic detector stage. The mechanical implementation is designed for operation near 90 K using aluminium support structures, spring-loaded optical mounts, and cryogenic-compatible mechanisms to preserve alignment during cooldown. We present the current status and performance of the NOTT cold nulling camera and cryostat assembly. The system is undergoing assembly, integration, and verification to validate thermal stability, detector operation, vacuum performance, and opto-mechanical repeatability. Initial cryogenic tests have demonstrated operation near 100 K for the cold optics and 30 K for the detector, cryogenic validation of the filter wheel, and a vacuum pressure of 8 x 10^-8 mbar. These activities represent a key step toward deploying NOTT as the first nulling interferometer at the VLTI."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "VidOmni-Bench: A Benchmark for Fine-Grained Video Understanding via Spatio-Temporal Event Verification across Complexity and Duration",
+    "authors": "Changbeen Kim, Junwon Chang, Kipyo Kim, Risa Shinoda, Kuniaki Saito, Donghyun Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21521v1",
+    "source": "arXiv",
+    "abstract": "While Video Large Language Models (Video-LLMs) have recently demonstrated strong performance, reliably evaluating their fine-grained video understanding remains challenging. Existing benchmarks often rely on question answering or ground-truth caption matching, where models may succeed through superficial cues and incomplete annotations. To this end, we introduce VidOmni-Bench, a benchmark that requires models to verify whether each event in dense video captions is supported by the video. VidOmni-Bench consists of 500 videos spanning five complexity types and diverse durations from 4 seconds to 90 minutes. After collecting videos along these axes, we use diverse Video-LLMs to generate dense captions and obtain human-verified sentence-level labels, where sentences containing incorrect events serve as hard negatives for evaluation. Our experiments on VidOmni-Bench reveal three key findings: (i) Video-LLMs frequently generate hallucinated descriptions in dense video captioning; (ii) they also struggle as verifiers, failing to reliably detect plausible but incorrect event descriptions; and (iii) model weaknesses vary across video complexity and duration, revealing diverse, model-specific bottlenecks in current Video-LLMs."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "SkillIR: Evolving Scene-Aware Skills for Agentic Image Restoration",
+    "authors": "Jie Shao, Shengkai Hu, Xu Zhang, Beihang Song, Yongcheng Jing, Xu Wu, Jun Wan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21468v1",
+    "source": "arXiv",
+    "abstract": "This paper studies agentic image restoration, in which multimodal agents coordinate specialized restoration tools to recover images affected by complex degradations. Existing restoration agents often derive complete tool-use plans from the original degraded image or retrieve previously successful trajectories, providing limited support for adapting individual actions to evolving intermediate restoration states. We find that accepted tool executions can change the residual degradation state and, consequently, the applicability of subsequent tools. To address this issue, we propose SkillIR, a skill-guided framework that represents restoration experience as degradation-centered action evidence rather than complete tool-use trajectories. SkillIR consolidates context-dependent action outcomes into scene-aware restoration skills that characterize applicable conditions, expected effects, and attributable failure cases. Instead of prescribing a complete restoration plan, the retrieved skills guide one bounded action at a time within a verified residual-state loop: each tool output is treated as a candidate, committed only after transition verification, and followed by reassessment of the active residual degradations. After each rollout, the resulting evidence is used to create, refine, or patch dynamic skills, enabling accumulated restoration experience to improve decision-making for subsequent inputs. Experiments on synthetic and real-world multi-degradation datasets demonstrate that SkillIR improves restoration quality and enables more reliable and effective tool use."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "DENSE: Distilling Agent Trajectories into Evidence-Grounded Shortcut Trees for Self-Refinement",
+    "authors": "Siyuan Liu, Fan Yu, Dongyu Ru, Yizhu Liu, Yifan Yang, Xuezhi Cao, Xunliang Cai, Yixin Cao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21423v1",
+    "source": "arXiv",
+    "abstract": "Online agent deployments produce abundant execution traces, while task-specific verification and expert annotation are costly to scale. We study how to distill these traces into reusable feedback without post-hoc outcome labels, drawing on their evidence of local progress, recovery, and unfinished requirements. We introduce DENSE (Distilling Evidence from Nested Subtask Executions), which organizes this evidence into evidence-grounded nested shortcut trees. DENSE compresses redundant attempts, reconciles issues across levels using recovery evidence, and summarizes completed branches while expanding unresolved ones, linking reusable progress to remaining obligations. We introduce REFIT, a source-paired protocol comparing feedback from shared initial trajectories under post-hoc outcome blindness, with environments and model contexts reset for fresh attempts at the same tasks. On Terminal-Bench 2.1, DENSE achieves the highest strict pass rate among tested non-privileged feedback methods across four recipient models. Relative to initial executions, strict pass rate improves by 7.12-15.64 pp, with 19.0-43.6% fewer observed recipient tokens in reruns. GPT-5.5 ablations support combining nested subtask analysis with shortcut construction and issue reconciliation. These findings point toward agent self-refinement through evidence-grounded trajectory reuse with less reliance on external supervision."
+  },
+  {
+    "date": "2026-09-18",
+    "title": "Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction",
+    "authors": "Qi Chen, Yunfei Chu, Haolin He, Yifan Yang, Zihan Liu, Yuxuan Wang, Ziyang Ma, Ruiyang Xu, Meng Gao, Yinsong Yan, Ling Wang, Hui Wang, Wen Huang, Yiheng Chen, Guanrou Yang, Qiuqiang Kong, Jin Xu, Xie Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.21392v1",
+    "source": "arXiv",
+    "abstract": "Natural audio-visual interaction is emerging as an important interface for AI assistants, allowing users to communicate through speech and vision rather than carefully composed text prompts. However, existing benchmarks of interactive capabilities still focus primarily on response quality, leaving a more fundamental question underexplored: can a model correctly infer the user's underlying demand from complex multimodal interaction? Real-world user demands are often underspecified in speech and must be inferred from multimodal cues and dialogue history. This inference is further complicated by ambiguous or disfluent expression and noisy acoustic environments. Conversely, request-like speech may not constitute a demand to the assistant, leading to false triggers. We establish Omni Demand Understanding (ODU) as a distinct multimodal contextual inference problem: given an interaction stream, a model must detect whether a user demand is present and infer intent from multimodal and conversational context. ODU evaluates this capability along five dimensions, covering both single-turn and multi-turn interactions. We construct ODU-Bench using a challenge-driven taxonomy, taxonomy-guided agentic video generation, and human-recorded interactions, followed by media-grounded annotation and human verification. We evaluate 14 native MLLMs. Even the strongest, Gemini 3.1 Pro, recovers only 44.7% of key information that must be inferred from visual, acoustic, or conversational context. Moreover, 11 of the 14 models exhibit false-trigger rates above 50% on non-demand scenarios. These results reveal a systematic capability gap in current MLLMs' ability to infer contextual user demands. We hope ODU can establish the evaluation of a previously underexplored yet essential capability in multimodal interaction: correctly understanding user demands before generating an appropriate response."
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Key Technical System for Water Resource Scheduling in Digital Twin Irrigation Areas with Multi-technology Integration Construction and Application Verification",
+    "authors": "Liangfei Mei, Yuannan Wang, Nan Su, Ruixiang Chen",
+    "publish": "Proceedings of the 2026 2nd International Conference on Smart Agriculture and Artificial Intelligence",
+    "url": "https://doi.org/10.1145/3838079.3838086",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Design and Performance Verification of Integrated PyTorch Framework for Field Pest Multi-task Recognition Model",
+    "authors": "Yayin Lin, Xiaodan Chen, Shengming Zhang, Yipin Zhong, Yali Wu, Huiyou Li, Min You",
+    "publish": "Proceedings of the 2026 2nd International Conference on Smart Agriculture and Artificial Intelligence",
+    "url": "https://doi.org/10.1145/3838079.3838080",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
