@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-21",
+    "title": "VideoGen-Agent: Reinforcing Video Generation Agents",
+    "authors": "Binxu Li, Haoyi Duan, Yuhui Zhang, Yaohui Zhang, Zihao Lin, Kaituo Feng, Suozhi Huang, Xiangyi Li, Yu Li, Chunyuan Li, Shilong Liu, Mengdi Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24997v1",
+    "source": "arXiv",
+    "abstract": "Recent advances in video generative models have enabled high-fidelity, temporally coherent video generation. However, these models often struggle to satisfy prompts requiring specialized knowledge, specific identities, physical consistency, or ordered events. In this paper, we present VideoGen-Agent, a multimodal agent trained through multitask agentic reinforcement learning to use external tools for video generation. The agent coordinates augmentation, generation, and verification tools through multi-turn interactions, using the prompt and intermediate observations to guide its decisions. We train a shared policy on a category-balanced dataset spanning six tasks. Supervised fine-tuning on teacher-generated trajectories establishes tool-use behavior, which is then refined through reinforcement learning. A category-aware hybrid reward evaluates tool-call validity, task-appropriate tool use, and generated video quality. We further introduce VABench, a held-out benchmark of 600 prompts covering procedural knowledge, single- and multi-entity identity preservation, physical consistency, scene composition, and multi-shot temporal structure. On VABench, VideoGen-Agent improves over its base text-to-video generator by 19.1 points, from 56.5 to 75.6. Upgrading the generation tools further raises the score to 86.1 without additional agent training. Human raters prefer the upgraded configuration over the strongest standalone baseline in 84.3% of comparisons. These results support learning tool use across video-generation tasks and show that the trained agent can benefit from subsequent advances in generation tools."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+    "authors": "Xinrui Shi, Yanzhe Zhang, Diyi Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24967v1",
+    "source": "arXiv",
+    "abstract": "LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rewards. We introduce realistic constraints that make compliance with the verification protocol incompatible with reward maximization, and find that agents increasingly deviate from the protocol over repeated interactions. Collusion emerges in 94% of trajectories across 10 models, and more capable models within the same family reach it earlier. Controlled peer interventions show that collusion is shaped by peer behavior, while ablations reveal additional effects of reward structure, the verification feedback agents receive, and their interaction history. In particular, restricting the amount and scope of interaction history available to agents reduces collusion. Overall, our findings show that long-horizon interaction can reshape how agents coordinate in ways that create safety risks."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Whose Facts Count? A Culturally Responsive Audit of LLM Evaluation Benchmarks",
+    "authors": "Fatima Tuz Zahra, Md. Sajeebul Islam Sk., Rachel Chung",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24934v1",
+    "source": "arXiv",
+    "abstract": "LLM benchmarks function as evaluation instruments, informing decisions that affect education, labor, and public services worldwide. Drawing on Hood, Kirkhart, and Hopson's culturally responsive evaluation (CRE) frameworks, this paper applies a six-dimension CR rubric to audit OpenAI's SimpleQA (N = 4,326 items) and the LMSYS Chatbot Arena (N = 600 conversations). Every SimpleQA question requires English-language archival verification as its evidentiary basis. A single rater's preoccupation with Colombian founding dates accounts for 2.70% of items, inflating the appearance of Global South coverage. English-language prompts constitute 76.3% of Arena conversations, against an International Telecommunication Union (ITU)-estimated 25.9% share of global internet users. A 50-item counter-benchmark scored a mean CR deficit nearly three times lower than SimpleQA (Cohen's d = 1.01). The paper proposes a practical CR evaluation framework. These are structural validity failures, not incidental measurement problems, with direct consequences for communities whose knowledge traditions these instruments were not built to see."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "A Proof of the Most Informative Boolean Function Conjecture",
+    "authors": "Zijie Chen, Amin Gohari, Adel Javanmard, Honghao Lin, Vahab Mirrokni, Chandra Nair, David P. Woodruff",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24931v1",
+    "source": "arXiv",
+    "abstract": "Let $X$ be uniform on $\\{-1,1\\}^n$, let $Y$ be obtained by passing its coordinates independently through a binary symmetric channel with crossover probability $p$, and let $g:\\{-1,1\\}^n\\to\\{0,1\\}$ be a Boolean function. We give a computer-assisted proof of the Courtade--Kumar conjecture $I(g(X);Y)\\le1-H_2(p)$, where $H_2$ is binary entropy, with equality attained by dictator functions. The present work builds on the differential-equation method, itself a limiting form of the auxiliary-receiver approach in network information theory using a continuum of degraded receivers. The proof proceeds from a local inequality to a dimension-independent bound on entropy production. Differentiation along the Boolean noise semigroup expresses entropy production as an average of edge costs. The key estimate is therefore an unrestricted Bellman inequality with two mean constraints and two entropy constraints, allowing arbitrary couplings of the edge variables. This paper and its supplement provide the proofs and computational verification records. The document is lengthy because it is designed to be entirely self-contained, deriving all proofs from first principles and reproducing the proofs of cited results. The supplementary material supporting the computer-assisted parts of the proof are available online."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "The Copy Ceiling: An Input-Exposure Control for Ontology-Grounded Generation over Curated Corpora",
+    "authors": "John J. O'Hare",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24885v1",
+    "source": "arXiv",
+    "abstract": "When a language model answers from a curated corpus via graph-based retrieval, a large grounding uplift does not establish reasoning over the retrieved structure: the context may already expose the gold answers. We propose exposure accounting, which classifies each gold item by whether the shown context exposes it and whether the answer recovers it. Its scalar reference is the copy ceiling, the recall a verbatim copy of the context achieves; signed gain over copy measures the model's recall relative to this deterministic, judge-free baseline. Across ten models, unaided recall averages 0.26 and grounded recall 0.92, yet gain over copy is uniformly negative (-0.067 to -0.022). Of 11,360 gold-item observations, representing 1,136 target instances evaluated under ten models, only three unexposed items receive lexical credit. A stratified model-judged audit of 423 observations, with a symmetric quotation-verification policy, estimates that 97.1% of credited items assert the requested relation; all three unexposed credits fail relational adjudication. On targets the scaffold does not expose, lexical recovery falls from 0.121 unaided to 0.004 grounded; adjudication validates 71 of the 92 unaided credits and none of the three grounded credits, without establishing full-frame relational recovery rates. Rephrasing questions outside the graph's title vocabulary reduces exposure from 0.964 to 0.328, while an absence-triggered fallback activates on only 2 of 506 questions. A paired production study improves judged quality by +0.27 pooled, but negative controls do not establish content specificity beyond a well-formed on-corpus block. These results support exposure accounting as a standing control for corpus-derived evaluations. The accounting distinguishes exposed-item omissions from beyond-exposure recoveries; it does not determine whether reasoning occurred."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture",
+    "authors": "Gabriele Tombesi, William Baisi, Je Yang, Elisavet Lydia Alvanaki, Kevin Lee, Michael Lippe, Biruk Seyoum, Luca P. Carloni",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24847v1",
+    "source": "arXiv",
+    "abstract": "LLM inference on edge devices is constrained by computational and memory resources, making efficient autoregressive decoding challenging. Speculative decoding alleviates this bottleneck by generating tokens with a smaller draft model and verifying multiple tokens in parallel with a batched target model pass. However, verification introduces a runtime-dependent intermediate regime between memory-bound general matrix-vector (GEMV) operations in decoding and compute-bound general matrix-matrix (GEMM) operations in prefill, as its arithmetic intensity varies with speculation length and acceptance rate. We present SPECTRA, a runtime-reconfigurable tiled architecture that sustains high utilization across the full speculative decoding pipeline. Within each tile, the compute engine switches between systolic execution for GEMMs and vector-lane execution for GEMVs. Across tiles, SPECTRA dynamically adapts computation parallelism by selecting tile count, kernel partitioning, and communication pattern. Both tile-level and system-level reconfiguration operate on a per-kernel basis, enabling efficient execution across these diverse regimes. Evaluated on a 20-tile FPGA prototype across the Pythia, SmolLM2, and GPT-2 families, SPECTRA achieves up to $2.09\\times$ speedup from tile-level reconfiguration and a further $1.25\\times$ gain from system-level adaptability over fixed designs."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Adapting Tree-Structured Speculative Decoding to DeepSeek-V4 for Efficient Inference",
+    "authors": "Changxu Liu, Zhaogeng Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24698v1",
+    "source": "arXiv",
+    "abstract": "Repeated execution of the target model during autoregressive decoding is a major source of LLM inference latency. Unlike linear speculation, which follows a single candidate chain, tree-structured speculation retains multiple branches from shared prefixes; under the same budget, this broader coverage can improve acceptance and efficiency. Adapting it to DeepSeek-V4 is nontrivial: its CSA/HCA online compressed attention concentrates the difficulty on the target-verify side, where branches diverging from a shared prefix compress into different states, breaking cross-branch state consistency. We integrate tree-structured speculative decoding into the DeepSeek-V4-Flash pipeline via branch-aware causal verification, temporary state isolation, and accepted-path state refresh, keeping verification and compressed-state updates consistent across branches. Across budgets D=5 to D=8, batch sizes 1 to 64, and three datasets (GSM8K, MBPP, ShareGPT), tree speculation achieves a higher accepted length than the matched linear configurations in all settings (e.g., at D=8 about 2.83--3.41 versus 2.39--2.84) and improves throughput in nearly all configurations---marginal only at the smallest budget---by up to about 18.5%. More importantly, the gains follow stable, transferable regularities: the relative gain grows with the budget and is most pronounced for less predictable workloads at small-to-medium batch sizes, while beyond a certain budget throughput plateaus and decouples from the still-rising accepted length. These results show that retaining multiple candidate paths under the same budget can effectively improve DeepSeek-V4 decoding efficiency, and offer experience for adapting speculative decoding to future models with compressed, sparse, or structured context representations."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Statistical Depth for Interval Data: A Closeness-Based Approach and Its Applications",
+    "authors": "Xiaozheng Chen, Wenlin Dai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24641v1",
+    "source": "arXiv",
+    "abstract": "With the rapid development of technology, interval data have been increasingly widely used in various fields, as they can effectively carry information on measurement uncertainty and original variability. Reasonable ranking and outlier screening of interval data are crucial for exploring their value, and statistical depth theory is an important tool to achieve this goal. Existing statistical depth methods are mostly defined for ordinary point-valued data, which are difficult to adapt to the characteristics of interval data and cannot meet the needs of their ranking and outlier detection. Therefore, this paper proposes a statistical depth suitable for interval data and conducts relevant application verification."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Formal Verification of Proofs from Automated Theorem Provers for Higher-Order Logic",
+    "authors": "Melanie Taprogge, Frédéric Blanqui, Alexander Steen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24594v1",
+    "source": "arXiv",
+    "abstract": "We identify common challenges and requirements for verifying proofs from automated theorem provers in the Dedukti logical framework and develop a general methodology for deriving encodings of calculus rules and proof steps, including clausification. We then apply this methodology to the EP calculus for higher-order logic and integrate it into the automated theorem prover Leo-III. The resulting prototype reconstructs about 80% of generated proof steps automatically, making Leo-III the first higher-order automated theorem prover to support independently checkable proof reconstruction and providing a basis for cross-system reuse. The implementation uncovered several bugs in Leo-III."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Conformalized Safe Feasible Sets in Uncertain Decision Systems",
+    "authors": "Yajie Bao, Yinjie Min, Haojie Ren, Changliang Zou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24496v1",
+    "source": "arXiv",
+    "abstract": "Safety-critical decision systems often require a downstream optimizer to choose from an unknown feasible set determined by an unobserved label $Y$. Given a context $X$, the goal is to construct a safe subset $D(X)$ contained in the oracle feasible set $A(X,Y)$ with probability at least $1-α$. Existing conformal approaches typically construct a prediction set of the unobserved label $Y$ and retain decisions that are safe for every value in this set. Although valid, this requires a stronger intermediate event than set inclusion. We propose Directed Inclusion Safety Calibration (DISC), a conformal framework that directly controls the probability of this inclusion event by reducing its verification to a scalar critical-inclusion score. Given a pretrained nested family of candidate feasible sets, DISC assigns each labeled observation the smallest nestedness level at which the corresponding subset is contained in $A(X,Y)$, and constructs the safe feasible set using an empirical quantile at test-time. With data exchangeability, this yields a finite-sample, distribution-free inclusion guarantee. Under two practical set families, we show that DISC produces a safe feasible set containing that obtained by the corresponding calibration baseline. We further develop optimization-based score computation and decision-aware procedures for learning subset families. Experiments across continuous and structured decision problems show that DISC achieves the target inclusion guarantee while producing larger feasible regions."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Constrained Program Generation for 3D Reaction Animation with a 0.8B Model",
+    "authors": "Hongyuan Wang, Daming Luo, Nico Pietroni, Christy Liang, Andrew McDonagh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24457v1",
+    "source": "arXiv",
+    "abstract": "Visualizing a chemical reaction requires making its molecular changes visible while keeping the animation faithful to the stated chemistry. Equations, structural diagrams and molecular viewers provide complementary descriptions, but assembling an interactive three-dimensional explanation still requires specifying the changes and checking their consistency. We present ChemXRG, a domain-specific language (DSL) framework that addresses this gap by representing a reaction animation as an executable program. Persistent atom identifiers and explicit bond, charge and grouping operations connect the symbolic reaction to the displayed transformation. This shared representation lets generation, verification and rendering operate on the same account of what changes. Given known, atom-mapped reactant and product structures, reaction-grounded constraints fix input-determined facts and restrict action choices; execution checks validate the resulting transformation before geometry and frames are constructed. We implement this paradigm with a reaction-program corpus and ChemQwen, a trained 0.8B DSL generator. Paired and component evaluations show improved compiler acceptance and normalized full-program agreement under input-conditioned constraints, while identifying remaining failures that require execution checks. A public browser application demonstrates the connection from symbolic reaction descriptions to inspectable programs and interactive 3D animations."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Robotic Valve Turning: Axial Misalignment Correction Using Reaction Torque Feedback",
+    "authors": "Amit Kumar, Sri Harsha Turlapati, Gautami Golani, Yang Lin, Ravi N. Banavar, Domenico Campolo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24413v1",
+    "source": "arXiv",
+    "abstract": "In this work, we propose a haptic update control law that uses reaction torques to correct axial misalignment during robotic valve manipulation. Unlike vision-based estimates, which can be affected by calibration errors, occlusion, and uncertainty in the contact geometry, reaction torques arise directly from the physical interaction between the gripper and valve. A geometric relationship exists between the error (misalignment) vector and these torques. The primary aim of this work is to propose a stable controller exploiting this geometric property. Our control law is proven to be uniformly asymptotically stable. Simulations are performed for verification. Furthermore, we experimentally test the robustness of our method using a Kinova Gen3 robotic arm for initial misalignments ranging from $-15^\\circ$ to $15^\\circ$ at 3 different valve positions and report the resulting data distribution. The absolute value of the median misalignment across all 18 test cases is found to be within $2.46^\\circ$ and that of reaction torques within $0.23\\mathrm{Nm}$."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "URA-NER: A Unified Retrieval-Augmented Framework with Retrieval Alignment and Uncertainty Reduction for Low-Resource NER",
+    "authors": "Jingyu Wang, Shijie Wu, Fusheng Jin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24372v1",
+    "source": "arXiv",
+    "abstract": "In-context learning (ICL) based on large language models (LLMs) has shown promising potential in alleviating performance bottlenecks caused by the limited availability of annotated data in Named Entity Recognition (NER). However, existing methods still face issues of retrieval misalignment and generation uncertainty, making their performance heavily dependent on the LLM's capabilities. As the parameter scale of LLMs decreases, their performance in few-shot settings deteriorates significantly. In this paper, we propose a novel unified retrieval-augmented framework, URA-NER, including three key components: Progressive Granularity Retrieval (PGR), Model-aware Representation Enhancement (MaRE), and Reason-aware Knowledge Verification. PGR is a two-stage retrieval mechanism that achieves stage alignment. It first retrieves demonstrations for span detection based on the query's global semantics, and then for type classification based on the specific entity context, providing fine-grained local information. Moreover, MaRE employs entity pre-recognition to guide the construction of representations, ensuring the query and demonstrations are aligned within the LLM's semantic space and attention pattern. In addition, to mitigate generation uncertainty, we propose RaKV, a closed-loop \"generation-retrieval-verification\" process. It explicates the LLM's reasoning paths, leverages them for the retrieval of external knowledge, and reorganizes the knowledge into verification evidence aligned with the original reasoning paths. We conduct extensive experiments on multiple low-resource NER datasets. Results demonstrate that URA-NER significantly enhances the performance of LLMs under low-resource settings, with particularly pronounced gains for smaller LLMs, achieving new state-of-the-art results on several benchmarks."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Prescriptive SVD-Inspired Attention via Spectral Energy Retention",
+    "authors": "Vasileios Arampatzakis, Vasileios Sevetlidis, George Pavlidis",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24370v1",
+    "source": "arXiv",
+    "abstract": "Self-attention is central to modern Transformer architectures, but its dense dot-product formulation makes it difficult to identify which internal directions are structurally important and which can be modified without disrupting the model. SVD-Inspired Attention (SVDA) addresses part of this problem by introducing a learned diagonal spectrum into the query-key score interaction, making latent attention directions explicitly inspectable through indicators such as spectral entropy, effective rank, sparsity, alignment, selectivity, and perturbation response. This paper examines the transition from diagnostic interpretation to operational intervention. A diagnosis--intervention--verification framework is proposed, and one intervention is evaluated: spectral energy retention in the attention-score pathway. Across FashionMNIST, CIFAR-10, CIFAR-100, and Food-101, the $ρ=0.90$ prescription removes 24.5--53.7\\% of score directions, reduces parameters by 2.6--4.3\\%, and reduces estimated MACs by 2.8--5.4\\%. The paired mean accuracy change of the dimension-reduced model ranges from $-0.03$ to $+0.05$ percentage points over three seeds. These results support SVDA as an intrinsically interpretable attention mechanism whose learned spectrum exposes an operational coordinate system for deterministic and verifiable modification of attention-score formation."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "rApp/xApp Attestation: A New Security Use Case for O-RAN",
+    "authors": "Hamed Alimohammadi, Burcu Şahin, Arda Akman, Chuan Heng Foh, Periklis Chatzimisios, Mohammad Shojafar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24296v1",
+    "source": "arXiv",
+    "abstract": "The disaggregation and softwarization introduced by the Open Radio Access Network (O-RAN) architecture enable multi-vendor innovation but also expose the RAN Intelligent Controller (RIC) ecosystem to new runtime security risks. Existing O-RAN specifications define strong safeguards for onboarding, authentication, identity management, and secure communication; however, they do not provide a concrete mechanism for verifying whether deployed rApps and xApps remain in their intended, untampered state during operation. This paper introduces rApp/xApp attestation as a RIC-native O-RAN security use case for runtime integrity verification. Rather than proposing a new cryptographic protocol, the work defines how existing integrity verification techniques can be integrated into O-RAN through attestation modules, attestation agents, RIC application interfaces, and SMO-driven policy coordination. We map the use case to relevant O-RAN Alliance working groups, identify required standardization extensions, and demonstrate feasibility through a lightweight hash-based prototype implemented on the Near-RT RIC platform. Experimental results show attestation latencies below 40 ms across multiple cryptographic hash functions, indicating that runtime attestation can be performed without disrupting time-sensitive RIC operations when appropriately scheduled. Finally, we discuss remaining technical and standardization challenges, including trusted verification, known-good runtime states, scalability, mitigation policies, and future hybrid attestation mechanisms."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "New lower bounds for CDS and $f$-routing",
+    "authors": "Atsuya Hasegawa, Ranitha Mataraarachchi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24291v1",
+    "source": "arXiv",
+    "abstract": "Understanding the entanglement cost of non-local quantum computation (NLQC) is relevant to complexity theory, cryptography, quantum gravity, and related areas. A central special case is $f$-routing, motivated in part by quantum position verification. Proving lower bounds on its entanglement cost in the fully robust setting has been a major open problem in NLQC. Motivated by this problem, we establish two related lower bounds. First, we study the shared-randomness cost of robust conditional disclosure of secrets (CDS). The connection between CDS and $f$-routing established by Allerstorfer et al. (Quantum 2024) makes understanding the randomness complexity of robust CDS a natural step toward lower bounds for the fully robust routing problem. We show that the shared-randomness cost of robust CDS is lower bounded by the logarithm of deterministic SMP communication complexity, even when communication and private randomness are unrestricted. Our lower bound is tight for the equality function. Second, we consider one-sided-perfect $f$-routing, in which the protocol is exact on one input class and has constant error on the other. By exploiting the positivity of the low-rank matrix arising in the method of Asadi, Culf, and May (ITCS 2025), we derive a general lower bound on the entanglement cost in terms of sign rank. In particular, this yields a linear lower bound on the entanglement cost of routing for the inner-product function in both one-sided-perfect settings, matching the known upper bound."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Iris in Lean",
+    "authors": "Markus de Medeiros, Sergei Stepanenko, Zongyuan Liu, Oliver Soeser, Fernando Leal, Alvin Tang, Max Vistrup, Ralf Jung, Mario Carneiro, Joseph Tassarotti, Michael Sammler, Lars Birkedal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24252v1",
+    "source": "arXiv",
+    "abstract": "The Iris framework for concurrent separation logic has been widely used for program verification research. An important factor contributing to the framework's adoption is its high-quality mechanization in Rocq. This mechanization uses a number of Rocq features in sophisticated ways, including a carefully constructed algebraic hierarchy for modeling separation logic resources, and a proof mode for embedded separation logic proofs, which combines custom Ltac with extensible typeclasses. The library has been developed for over a decade with dozens of contributors, with an emphasis on modularity and maintainability. We explore how Lean features like flexible metaprogramming and quotient types can simplify the design and usage of Iris. Using these features, we provide a novel implementation of the Iris proof mode with improved performance, simplify the handling of equivalences through quotient types, build a variant of Diaframe proof automation, and provide convenience features like automatic construction of Iris fixed points. Building on Lean lets us integrate with the extensive Mathlib library, allowing us to re-use results from this library for program verification tasks that have heavy mathematical dependencies, as we demonstrate with an application to probabilistic program verification."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "IMPLICIT-Bench: Measuring Implicit Bias in Text-to-Image Models under Neutral Prompts",
+    "authors": "Yue Dai, Ziyang Liu, Marc Cheong, Caren Han",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24228v1",
+    "source": "arXiv",
+    "abstract": "Text-to-image (T2I) models are typically evaluated for bias using slot-based templates such as ``a photo of a [profession]''. Such templates probe only \\emph{explicit} demographic attributes (e.g., gender, skin tone) in isolation. They overlook a broader \\emph{implicit} bias that arises in natural prompts: when stereotype-relevant attributes are left unspecified, models still default to stereotypical outputs. We introduce IMPLICIT-Bench, a benchmark for measuring implicit bias in T2I models under such prompts. The key design is a structured-knowledge-graph (KG) construction of controlled prompt triplets: neutral, stereotype, and anti-stereotype variants that differ only along a single bias dimension while preserving scene semantics. This enables precise attribution of bias effects that template benchmarks cannot achieve. IMPLICIT-Bench comprises 5,493 prompts across 11 bias categories, validated through multi-model agreement, CLIP-based verification, and human evaluation. Using this benchmark, we show that state-of-the-art T2I models exhibit systematic bias under neutral prompts, a failure mode largely invisible to existing evaluations. We then use IMPLICIT-Bench to evaluate debiasing methods, uncovering a fundamental trade-off between bias reduction and semantic fidelity."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "ChartJudgeBench: Evaluating LMM Judges for Chart-to-Code Generation",
+    "authors": "Lijian Wu, Henry Hengyuan Zhao, Zijian Zhang, Jiahao Tang, Jiajun Wu, Alex Jinpeng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24210v1",
+    "source": "arXiv",
+    "abstract": "Building strong chart-to-code systems increasingly relies on reinforcement learning, whose effectiveness depends critically on the quality of the reward signal. Large Multimodal Models (LMMs) play a natural critical role in jointly assessing chart visual appearance and task requirements. They are therefore increasingly used as visual critics and reward models, yet their reliability as judges remains largely unexplored. To this end, we introduce ChartJudgeBench, a diagnostic vision-language benchmark for assessing LMM judges in chart-to-code workflows. It includes 1,003 Chart Perception Alignment (CPA) instances for pairwise chart comparison and 650 Chart Reasoning Judgment (CRJ) instances for binary Accept/Reject verification in Chart Reproduction and Chart Editing. Together, these tasks emulate the core judging decisions required in agentic refinement and RL-based chart optimization. Our evaluation of strong LMMs reveals four systematic limitations: (i) positional bias in pairwise comparison, (ii) a strong tendency to overpredict Accept, (iii) difficulty in matching visual styles and aesthetics, and (iv) an unexpected leniency bias in RL-trained models. These findings show that current LMM judges require explicit reliability validation before being used as critics or reward models in chart-to-code optimization. The code and data are available on ChartJudgeBench."
+  },
+  {
+    "date": "2026-09-21",
+    "title": "H-Spec: Parallel Speculative Decoding Without a Drafter-Side KV Cache",
+    "authors": "Weifan Jiang, Krishna Teja Chitty-Venkata, Megan Flynn, Reed Meyerson, Zhenting Qi, Tianyu Wu, Eldar Kurtic, Minlan Yu, Alexandre Marques",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.24197v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding losslessly accelerates large language model inference by having a lightweight draft model predict future tokens for verification by the target model. Recent block diffusion drafters further reduce drafting latency by predicting multiple tokens in parallel. However, existing block drafters project target hidden states at every input position into a separate drafter-side KV cache, incurring per-request memory and KV-write overhead that grow with concurrency; directly reusing target KVs in place removes this cache but fails to sustain draft quality throughout the block. We propose a hybrid target-context injection method that complements direct target KV reuse with target hidden states only at the last input position, requiring no separate drafter-side KV cache. Building on this design, we propose H-Spec, a hybrid Mamba-attention parallel drafter that consumes the two target-context sources through complementary modules. Mamba modules are initialized with projected last-token target hidden states, while attention modules reuse target KVs in place. Despite its recurrent formulation, Mamba's parallel scan allows H-Spec to preserve block-parallel drafting. Across three target models and diverse tasks, H-Spec improves over the best baseline by 5.0--13.3% in mean accepted length and 5.3--12.6% in batch-size-1 inter-token latency speedup. Under concurrent serving, H-Spec consistently achieves higher throughput while maintaining lower KV cache utilization than baselines across evaluated concurrency levels."
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Do LLM Trading Agents Herd? A Market Microstructure Stress Test",
+    "authors": "Mohit Apte",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692423",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Feedback Design for LLM-Based Automatic Improvement of Stock Investment Strategies",
+    "authors": "Hirai Kawamura, Kenji Kubo, Kei Nakagawa",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692402",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "LLM-Prior-Guided Bayesian Optimization for Efficient Fused Kernel Scheduling",
+    "authors": "Tianyu Yu, Pingfei Cui",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11688782",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Helios: Exposing Context Lifecycles for Memory-Efficient Agentic LLM Serving",
+    "authors": "Hanfei Geng, Kun Li, Yunxin Liu",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834846",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-21",
+    "title": "LLM-Structured Business Risk Disclosures from Japanese Annual Securities Reports for Long-Horizon Equity Risk Forecasting",
+    "authors": "Nobushige Doi",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692397",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Research on Multi-Agent Collaborative Optimization for LLM-Based Writing Generation and Automatic Evaluation",
+    "authors": "Ying Zhai",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11688160",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "EvoInfer: A Self-Evolution and ML-Driven Approach for Optimizing LLM Performance on Mobiles",
+    "authors": "Pengyu Li, Lei Liu",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834850",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Demonstrating SAGE: A Dataflow-Native Framework for Modular, Controllable, and Transparent LLM-Augmented Reasoning",
+    "authors": "Jun Liu, Shuhao Zhang",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834855",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Large Language Quant: Cross-Domain Mathematical Trading Strategy Generation with an Agentic LLM",
+    "authors": "Andrew Clayman, Michael Kampouridis, Tasos Papastylianou",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692403",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Anchor-and-Verify LLM Cascades for Economic Measurement of Data-Intensive Work from Online Job Postings",
+    "authors": "Giyong Kim, Sojung Kim",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692386",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Disaggregated LLM KV-Cache Storage Requires Coordination-Free Consistency Abstractions",
+    "authors": "Kalyan Pullela, Hrishikesh B Acharya",
+    "publish": "Proceedings of the 18th ACM Workshop on Hot Topics in Storage and File Systems",
+    "url": "https://doi.org/10.1145/3837053.3837339",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Load-Aware Adaptive Degradation Scheduling for Multi-User Concurrent Edge LLM Inference",
+    "authors": "Yongheng Tan, Weiyang Wu, Chi Zhang",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11688797",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Adaptive GPU Sharing for Real-time LLM Serving with Best-effort Workloads",
+    "authors": "Shuxin Li, Toshihiro Hanawa, Yohei Miki",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834895",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-21",
+    "title": "CPEMatch: A Controlled Benchmark for LLM Reasoning Over CPE/purl Vulnerability-Identifier Applicability",
+    "authors": "Zhuoxi Wang, Haoyu Zhang, Jingwen Hou",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11688495",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Measurement Risk in LLM-Based Financial NLP: Rubric and Metric Sensitivity on JF-ICR",
+    "authors": "Sidi Chang, Peiying Zhu, Yuxiao Chen, Rongdong Chai",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692425",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "Pseudocode as a Stored Strategy Representation for LLM-Based Artificial Market Simulation",
+    "authors": "Ryoma Itakura, Masanori Hirano, Kentaro Imajo, Hiroki Sakaji, Itsuki Noda",
+    "publish": "2026 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)",
+    "url": "https://doi.org/10.1109/cifer67845.2026.11692404",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "LLM-Driven Hybrid Intrusion Detection Framework for False Positive Reduction in Cyber-Physical Systems",
+    "authors": "R. Priyadarshini, Andrew Sundaradhas, N. Rajendran",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11689161",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "A Method for Characterizing the Adjustable Potential Features of Air Conditioning Loads Based on LLM Agents",
+    "authors": "Shun Li, Xiaorui Hu, Yi Long, Bin Zhu",
+    "publish": "2026 6th International Conference on Electrical Engineering and Mechatronics Technology (ICEEMT)",
+    "url": "https://doi.org/10.1109/iceemt71099.2026.11686325",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "An AI–IoT–Cloud Platform for Smart Tea-Tourism: MQTT Sensing and LLM Services",
+    "authors": "Fengxiao Sun, Jie Zhang, Xiaokai Shen",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11688637",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-21",
+    "title": "SLO-Aware Disaggregated LLM Serving Over Heterogeneous Edge-Cloud Clusters",
+    "authors": "Yuxuan Zheng, Shuo Wang, Bencheng Su, Ao Zhu, Zhizhen Zhu",
+    "publish": "2026 5th International Conference on Artificial Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)",
+    "url": "https://doi.org/10.1109/aiotc71250.2026.11689386",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
