@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-22",
+    "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+    "authors": "Quan Nguyen-Tri, Mukul Ranjan, Zhiqiang Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26796v1",
+    "source": "arXiv",
+    "abstract": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\\times$ and $11.0\\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Birnbaum's principles in Venn diagrams: Extended version with Lean verification",
+    "authors": "Jaime Enrique Lincovil Curivil, Alexandre Galvão Patriota",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26776v1",
+    "source": "arXiv",
+    "abstract": "Birnbaum's theorem states that the sufficiency and conditionality principles jointly imply, and are implied by, the likelihood principle. To enable formal certification of the results in Lean, we make the conditionality relation explicit through a finite-sample formulation based on \\cite{Evans2013}. We reformulate the theorem as a statement about classes of statistical procedures that preserve statistical relations, and show that the proof reduces to the propagation of evidential equality along chains of conditionality-related inference bases (experiment--observation pairs). The main results are illustrated by Venn diagrams, and a worked finite example exhibits two pairs of inference bases: one related by conditionality but not by sufficiency, and the other related by sufficiency but not by conditionality. For finite parameter spaces with at least two points, the class of likelihood-invariant procedures with codomain $[0,1]$ is strictly contained in the class of sufficiency-invariant procedures."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "EquivSVA: A Formally Verified Dataset of Behavioral Assertions Across Equivalent RTL Implementations",
+    "authors": "FNU Aditi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26751v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly used to generate SystemVerilog Assertions from natural-language specifica- tions and register-transfer-level designs. Existing datasets and benchmarks support important goals such as large- scale training, formal evaluation, specification-to-assertion generation, and mutation-based testing. A complemen- tary need is to study whether a generated assertion cap- tures externally observable behavior or depends on inci- dental details of one RTL implementation. We present EquivSVA, a formally verified dataset organized around behavior families. Each family contains four structurally distinct RTL implementations of the same externally ob- servable behavior, shared interface-level gold properties, three controlled mutants, and formal-validation evidence. EquivSVA contains 120 behavior families across 12 cat- egories, 480 reference RTL implementations, 914 gold properties, and 360 mutants. Every final family passes a fixed 17-job validation suite covering RTL equivalence, gold-property proofs, property reachability, mutant dis- tinguishability, and gold-property checks on mutants. We also provide fixed family-safe train, development, and test splits. As a small demonstration of the analyses en- abled by the dataset, we evaluate the publicly released, Apache-2.0-licensed Qwen2.5-Coder-7B-Instruct model on the held-out test split. Of 293 interface-only generated properties, 93 are formally sound, and the number of sound properties varies across equivalent implementations for 14 of 24 test families. These results illustrate how behavior-family organization can support controlled stud- ies of assertion-generation robustness without requiring changes in intended functionality. The dataset, generators, validation scripts, and case-study artifacts are publicly released at https://github.com/aditigupta96/EquivSVA."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Diffusion Drafts, AR Verifies: Accelerating Document OCR with Self-Speculative Decoding",
+    "authors": "Dohyun Kim, Sungjun Han, Hyungguk Kim, Yusik Kim, Jamin Shin, Paul Hongsuck Seo, Hongjoon Ahn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26638v1",
+    "source": "arXiv",
+    "abstract": "Autoregressive OCR vision-language models accurately convert document images into text and structured markup, but require one sequential decoding step per output token, limiting inference speed. Unlike open-ended text generation, OCR outputs are strongly grounded in the input image, making diffusion-based parallel generation promising. However, when several tokens are predicted in one diffusion step, each is predicted before the others are known. Committing them directly can therefore introduce errors. We therefore introduce GravityOCR, a parameter-shared AR-block-diffusion model jointly trained for parallel drafting and causal AR verification. Verifying drafts before commitment lets the model commit multiple output tokens per round without a separate drafting network. The causal AR path also enables GRPO with sequence- and structure-level OCR rewards, avoiding diffusion-trajectory likelihood estimation while updating the shared drafter parameters. On OmniDocBench v1.6, AR-path GRPO improves the Overall score from 94.92 to 95.16 without reducing diffusion drafting efficiency, while the final model remains close to the original GLM-OCR score of 95.48. In an SGLang serving deployment, GravityOCR commits an average of 9.7 output tokens per forward pass and achieves a $3.94\\times$ decode-only speedup on region crops and a $1.32\\times$ end-to-end page-processing speedup over AR decoding."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Robust Mode Transition for Spacecraft Attitude Control",
+    "authors": "Emily Burgin, Carl-Johann Winkler, Felix Biertümpfel, Harald Pfifer, Pedro Simplicio",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26514v1",
+    "source": "arXiv",
+    "abstract": "This paper proposes the design of a single linear parameter-varying (LPV) controller for the combined control and smooth transition between two modes in a spacecraft mission. Current industry practice for transitioning between different controller modes is to use a discrete switching approach. When predefined criteria are satisfied, the controller of one mode is turned off and the controller of the other is initialised, resulting in an undesirable transient behaviour. In addition, each controller must individually undergo a rigorous verification and validation (V&V) process. A single controller synthesised using LPV methods streamlines the V&V process and improves the transient behaviour. The proposed design follows a mixed-sensitivity control scheme with LPV weights that are derived from the performance and robustness requirements of the individual modes. The controller is synthesised by minimising the induced $\\mathcal{L}_2$-norm of the closed-loop interconnections between the controller and weighted plant. The performance and robustness of the controller is demonstrated on an acquisition and pointing task of a flexible satellite through a Monte-Carlo campaign."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "I Prove, Therefore I Am: Spatiotemporal Multi-Party Computation",
+    "authors": "Ziqing Guo, Fuyuki Kitagawa, Xiao Liang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26448v1",
+    "source": "arXiv",
+    "abstract": "Secure multiparty computation (MPC) enables mutually distrustful parties to compute on private digital inputs. We initiate the study of spatiotemporal MPC, extending this paradigm to functionalities whose inputs additionally depend on physical facts such as the parties' locations, times, or trajectories. Such protocols must simultaneously hide spatiotemporal information and ensure its physical consistency: a malicious party should not be able to make the functionality operate on a spatiotemporal input inconsistent with its actual physical state. The main conceptual challenge is to formulate extraction of spatiotemporal information within the simulation-based security framework. We introduce arguments of spatiotemporal knowledge, following the principle \"I prove, therefore I am:\" rather than defining physical presence directly through a mathematical relation, we define it operationally through the ability to complete a sound spatiotemporal verification protocol. Accordingly, an extractor recovers a spatiotemporal point from a successful prover and certifies its physical validity by using the extracted prover to succeed in an auxiliary spatiotemporal verification protocol. Building on this notion, we define universally composable (UC) security for spatiotemporal MPC, capturing privacy, physical consistency, and composability. We provide constructions achieving this new MPC notion. We first construct UC-secure commit-and-prove of spatiotemporal knowledge: in the CRS model under LWE against quantum provers without pre-shared entanglement, and in the QROM against quantum provers with unbounded pre-shared entanglement. Using these protocols, we obtain UC-secure spatiotemporal MPC from semi-honest post-quantum MPC. We also extend our framework to support quantum functionalities with classical spatiotemporal input."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Reinterpreting ultrafast experiments on supercooled water: Glass transition versus liquid-liquid criticality",
+    "authors": "Florian Pabst, Ali Hassanali",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26442v1",
+    "source": "arXiv",
+    "abstract": "Water's anomalous properties have been hypothesized to originate from a liquid-liquid critical point in the supercooled regime, separating high- and low-density liquid states. Experimental verification remains challenging due to rapid crystallization under these conditions. A recent study reported evidence for such a transition, based primarily on a pronounced increase in the heat capacity of rapidly heated low-density amorphous ice. Here, we show that this heat capacity increase can be explained without invoking a liquid-liquid transition. By combining simulations using a machine-learning potential trained on the state-of-the-art MB-pol water model, combined with the Tool-Narayanaswamy-Moynihan (TNM) model of the glass transition, we demonstrate that the observed signal can arise instead from a dynamical effect induced by the mobilization of rotational and translational molecular degrees of freedom during ultrafast heating. We further show that our findings are fully consistent with recent electron diffraction measurements showing structural arrest of supercooled water close to our predicted glass-transition temperature. These results provide an alternative interpretation of the experimental observations and highlight the importance of nonequilibrium glassy dynamics in the interpretation of the behavior of supercooled water on ultra-short time scales."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Variational Bayesian Tensor Decomposition With Discrete Mixture Prior for Unsourced Random Access",
+    "authors": "Ala Baccar, Alexis Decurninge, Alberto Rech, Sofiane Kharbech, Eric Pierre Simon, Joumana Farah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26359v1",
+    "source": "arXiv",
+    "abstract": "Tensor-based modulation (TBM) schemes are a promising approach for unsourced random access (URA), where user separation relies on decomposing the received signal tensor via the canonical polyadic decomposition (CPD), typically computed with alternating least squares (ALS). Standard ALS, however, treats the factor matrices as unstructured and fails to exploit the discrete structure of the tensor sub-constellations. We propose DVB-ALS, a discrete variational Bayesian CPD framework with specific priors, tailored to a tensor structure with the corresponding encoding strategy, combined with iterative computation of an approximate posterior distribution. A discrete Gaussian mixture prior on one Grassmannian factor softly aligns the estimates toward the constellation points. The remaining factors are jointly modeled with a structured Gaussian prior whose posterior mean is constrained to the Khatri-Rao product manifold and posterior variance upper-bounded to prevent norm divergence during inference. The resulting closed-form coordinate ascent algorithm jointly estimates all latent factors and their uncertainties. We integrate DVB-ALS into DVB-TBM to design a complete URA receiver with single-user demapping, polar decoding with cyclic redundancy check (CRC) verification, and successive interference cancellation (SIC). Simulation results show significant gains over standard ALS-based decomposition and robust detection performance in URA settings, outperforming state-of-the-art schemes under high system loads."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "A Deeper Look at Depth: Stable Generation Accounting for Quantifier Reasoning",
+    "authors": "Can Cebeci, Nikolaj Bjørner, George Candea, Clément Pit-Claudel",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26345v1",
+    "source": "arXiv",
+    "abstract": "SMT solvers make automated verification convenient. At the same time, solvers suffer from instability, whereby seemingly inconsequential changes to the input may cause a previously quickly produced proof to fail or time out. This paper addresses a common cause of outcome instability (i.e., unsat/unknown fluctuations) in the context of program verification. We demonstrate that the generation (i.e., depth) accounting used to make quantifier instantiation practical and implemented in multiple state-of-the-art SMT solvers is non-confluent (i.e., prone to divergence), and that this leads to instability. We then address this deficiency and develop a new accounting method that is stable. The new method is justified using a sequence of refinements from an abstract, confluent solver model all the way to our implementation in Z3. Our empirical evaluation demonstrates that our implementation reduces outcome instability by 94% in the unstable core of the Mariposa benchmark without leading to performance regressions."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Quantitative coverability for probabilistic well-structured transition systems",
+    "authors": "Raphaël Faure, Alain Finkel, Gaspard Fougea, Lina Ye",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26312v1",
+    "source": "arXiv",
+    "abstract": "Well-structured transition systems (WSTS) provide a classical framework for the verification of infinite-state systems, but their probabilistic extensions lack a unified treatment of quantitative coverability: path-enumeration algorithms assume a finite branching degree, while alternative approximation schemes defer some computations, such as probabilities over a bounded horizon, to the model at hand. We introduce probabilistic well-structured transition systems (pWSTS), Markov chains over countable state sets whose underlying transition systems are WSTS, with no a priori assumption on the branching degree. This class encompasses any WSTS equipped with a Markov kernel, such as probabilistic vector addition systems (pVAS) and probabilistic lossy channel systems (pLCS). For an effective subclass, we solve the approximate quantitative coverability problem over bounded horizons, and over infinite horizons under decisiveness, requiring no probabilistic information beyond individual transition probabilities. We then identify a general source of decisiveness: every stochastically monotone pWSTS is decisive with respect to every upward-closed set. We finally instantiate the framework on multi-type Galton--Watson processes, a classical model of population dynamics whose offspring distributions may have infinite support. Under mild assumptions on the reproduction laws, these processes are effective pWSTS, and they are stochastically monotone, hence decisive. Approximate quantitative coverability is therefore computable for them over both horizons, with a proof that uses none of the traditional tools: neither generating functions nor any case distinction between regimes."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Dual-Frontier: When Can an Agent Trust Its World Model?",
+    "authors": "Huatai Zhu, Qiang Chen, Ziqian Kou, Wenhao Li, Fei Wang, Yichao Cao, Xiu Su, Yi Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26293v1",
+    "source": "arXiv",
+    "abstract": "Learned world models are becoming essential to general-purpose agents: by predicting action consequences, they support planning and decision-making while reducing reliance on costly trial and error. This reliance creates a fundamental ambiguity: when a world-model-guided decision fails, the trajectory alone may not reveal whether the agent's decision rule or the world model caused the loss. We formalize this failure-attribution problem as a counterfactual decomposition of return loss and prove that its components are not identifiable from passive interaction, even for finite-horizon planners. This obstruction motivates Dual-Frontier, a learning principle that admits a world-model-guided decision only when its predicted advantage exceeds a certified bound on decision-relevant world-model error; otherwise, evidence is allocated to world-model verification. Action-conditioned value bounds and a closed-loop extension guarantee non-decreasing return for admitted decisions. Calibrated gates and simultaneous confidence sequences support adaptive evidence reuse, with sufficient and necessary verification bounds. Controlled learned-model experiments validate the predicted failure modes and certification behavior, while cross-backbone tool-use benchmarks instantiate the same verify-then-promote rule in realistic agent world-model pipelines, consistently improving decision quality and reliability."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "FIRE: Failure-Informed Runtime Engineering for Reliable Language-Model Agents",
+    "authors": "Nikita Agarwal, Nivedit Jain",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26048v1",
+    "source": "arXiv",
+    "abstract": "Language-model agents often reach a working solution and then fail to consistently deliver it. We study runtime policies: targeted natural-language instructions and action denials applied by the agent harness at states that preceded observed failures, without changing model weights or the user prompt. With this, keeping capability constant, we observe a meaningful unlock in delivered reliability. Across the complete 87-task Terminal-Bench 2.1 suite, with two attempts per task, policies increase repeated success (pass^2) in all three GPT-5.6 tiers: 50.6% to 54.0% for Luna, 55.2% to 60.9% for Terra, and 64.4% to 73.6% for Sol. Sol's best-of-two success changes by 1.2 points while repeated success rises by 9.2, showing that policies chiefly convert reachable solutions into dependable delivery. We further cover 14 tasks under Terra's frozen portfolio. Policy-guided Terra reaches 71.4%, compared with 64.3% for unassisted Sol, at about half the cost, demonstrating how engineering around models could unlock dependability for a use case. To isolate the mechanism we run a randomized five-arm experiment: real policies reach 61% on eligible tasks, versus 39% without a policy, 36% with a timing-matched sham, and 39 to 43% with generic verification or reconsideration. The intended corrective behavior appears in 22 of 24 coded policy attempts, against at most 14 in any other arm. Runtime policies are therefore a practical reliability layer: they make capabilities an agent already possesses substantially more repeatable."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "REVE: Efficient Hallucination Correction for Large Audio-Language Models via Reused Encoder States",
+    "authors": "Hongjin Song, Jiasheng Kuang, Xinyu Yang, Qiuyu Fang, Ziyu Wu, Guowu Tan, Xiang Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.26028v1",
+    "source": "arXiv",
+    "abstract": "Large audio-language models may mention acoustic events that are absent from the input. A separate audio event detector can verify these mentions, but doing so requires a second audio encoder and a separate forward pass. We propose Reused Encoder States for Verifying Events (REVE), a lightweight method that uses states already computed by the target model. One readout summarizes class scores across audio frames, while another uses pooled states from four consecutive frame intervals. Class-aware score fusion combines their outputs to verify generated event mentions without encoding the audio again. On AudioSet, REVE removes 92.9% of label-unsupported mentions under a faithful-mention recall constraint. With fewer added parameters and no second audio-encoding pass, REVE achieves a reduction comparable to those of CED-Tiny and CED-Base. Its complete verification latency is about 1/18 of the CED-Base path. Results on controlled DESED mixtures and different target-model architectures further confirm the effectiveness of encoder-state reuse."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Towards real-time ion range verification via hybrid Compton-PET 3D imaging at isochronous cyclotrons",
+    "authors": "Javier Balibrea-Correa, V. Babiano-Suarez, J. Lerendegui-Marco, P. Torres-Sánchez, I. Ladarescu, M. Pallàs, B. Brusasco, J. Wulff, C. Bäumer, A. Tarifeño-Saldivia, C. Domingo-Pardo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25993v1",
+    "source": "arXiv",
+    "abstract": "Range uncertainties remain a major limitation to the full clinical exploitation of proton therapy, motivating reliable in-vivo range-verification techniques. This work presents an experimental investigation of a hybrid Prompt-Gamma Imaging (PGI)--Positron-Emission Tomography (PET) concept at the isochronous cyclotron of the West German Proton Therapy Centre under clinically representative pencil-beam-scanning conditions. Because this accelerator delivers a quasi-continuous beam, a pulsed shoot-and-step structure was imposed to mimic the interruptions associated with clinical energy-layer switching. This enabled PGI during irradiation and PET and delayed Compton imaging during beam-off intervals within the same sequence. Four two-plane Compton cameras were arranged in a co-planar cross-shaped geometry around the beam isocenter. Polyethylene phantoms were irradiated with 100~MeV protons at known positions along the beam axis. Their positions were estimated from reconstructed one-dimensional profiles using supervised machine-learning models trained exclusively on Monte Carlo simulations. PET achieved the best performance, with a root-mean-square deviation of 0.8~mm, followed by PGI with 1.6~mm. Delayed Compton imaging based on e$^{+}$ annihilation photons and $^{10}$C$^{*}$ decays yielded 2.4~mm and 3.8~mm, respectively. PET retained good performance down to 1% of the original event statistics, whereas PGI became increasingly statistics-limited. These results demonstrate the complementary strengths of hybrid PGI--PET and support its development towards millimetre-scale proton-range verification under clinically relevant irradiation conditions."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Exploring Solver-Level Warmstarting for Neural Network Verification",
+    "authors": "Annelot Bosman, Minghao Liu, Marta Kwiatkowska, Holger Hoos, Jan van Rijn",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25962v1",
+    "source": "arXiv",
+    "abstract": "Neural network verification has become a key tool for providing formal guarantees on the behaviour of neural networks. However, many verification problems remain computationally intractable in the worst case: even for common adversarial robustness specifications, verification is NP-complete. Here, we explore the application of solver-level warmstarting for neural network verification to exploit information from previous solutions. We study the effect on running time as several properties are modified, including perturbation radii, input data and the networks themselves, using a pipeline that is generalisable and potentially adaptable to state-of-the-art verifiers. Our results show that warmstarting can significantly reduce verification time in most cases. Moreover, warmstarting enables the successful verification of instances that could not be solved from scratch within the given time limit."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Calibration Is Not Verification: Falsifiability-Aware Conformal Routing for Mixture-of-Agents",
+    "authors": "Nada Rahali, Zijia Wang, Zhisong Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25959v1",
+    "source": "arXiv",
+    "abstract": "Multi-agent language systems often treat agreement as evidence, yet heterogeneous agents can jointly repeat an unsupported claim or omit a correct specialist fact. We introduce C-MoA, an agreement-based conformal filter that turns inter-agent semantic support into a claim-level nonconformity score and calibrates a retention threshold at the example level, giving distribution-free within-domain factuality control for heterogeneous Mixture-of-Agents. C-MoA is effective: it nearly doubles retained-claim precision on long-form generation (from 0.41 to 0.75), certifies a human-labelled medical set, and transfers across domains without recalibration; its one failure mode is short-form answering, where consensus is cheap and the score is left near chance. We then ask whether counterfactual falsifiability can push past consensus, and introduce CONTRA-MoA, which adds a blinded near-miss tournament, leave-one-agent-out stability, and availability-aware fusion. This extension helps only where the verifier holds domain knowledge, dropping half of the false medical claims at 0.940 precision, whereas with a memory-only judge the added signals are near chance (AUC 0.531 and 0.511) and naive max fusion degrades the working agreement signal from 0.687 to 0.652. The message is twofold: agreement-based conformal calibration delivers reliable, transferable factuality control, while moving beyond consensus requires a knowledgeable verifier, availability-aware signals, and robust fusion."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Governed AI-Agent Coordination for Dementia Care: Architecture, Safety Contracts, and Evidence-Derived Workflow Verification",
+    "authors": "Francesca Medda, Hui Gong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25956v1",
+    "source": "arXiv",
+    "abstract": "Dementia care increasingly involves connected sensors, medication devices, electronic records, and assistive technologies. Interoperability can transport observations but cannot maintain an accountable care state, reconcile evidence, determine who may act, or verify resolution. The shift from large language models to agentic engineering creates a systems opportunity: an external runtime can maintain memory across episodes, plan over goals and constraints, invoke tools, observe outcomes, and enforce governance. This paper presents Governed Closed-loop Agent Coordination (GCAC), an architecture for bounded agent participation in community dementia-care workflows. Evidence on care-coordination failures and policy obligations is translated into traceable system requirements. GCAC separates observation, governed memory, planning, deterministic policy enforcement, execution, and outcome monitoring through a typed event-memory-decision-action-outcome contract. A reference harness evaluates 18 evidence-derived traces covering missing records, medication conflict, caregiver reports, service failure, consent change, stale state, duplicate events, untrusted text, and suspected acute neurological change. GCAC satisfies all 18 contract oracles with zero policy-violating tool calls and correctly preserves obligations, rejects stale state, creates human hand-offs, and records workflow closure. Event-threshold and stateless-planner controls satisfy 2/18 and 1/18 oracles, respectively. Component ablations localise failures to the removed memory, policy, or versioning function. The results establish architectural conformance rather than clinical effectiveness and show how agentic systems can automate reconciliation, routing, documentation, and follow-up while preserving human authority over consequential care decisions."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Towards Systematic Qualification of Vision-Language Models for Automotive Perception Systems",
+    "authors": "Malsha Ashani Mahawatta Dona, Konstantinos Rokanas, Alexander Säfström, Krishna Ronanki, Christian Berger",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25945v1",
+    "source": "arXiv",
+    "abstract": "The field of Artificial Intelligence has been adopted for many application domains. Vision Language Models are one of the recently advanced AI techniques that have been explored to support automotive features such as vehicle perception, and safety assurance. However, such language models are prone to hallucinations, posing a potential threat to the safety of automotive systems that may incorporate them. Within the automotive domain, VLMs could not only hallucinate traffic objects, but could also fail to identify traffic objects that are actually present, which may potentially lead to dangerous situations. Though we have observed a growing body of literature that proposes verification and validation techniques for safe and trustworthy AI, these methods are often studied in isolation, focusing either on run-time or design-time phases. Such isolated techniques could be insufficient in safety-critical, realistic contexts such as automotive perception systems. In this paper, we analyze design-time and run-time verification and validation techniques based on a taxonomy presented by Huang et al. We present an automotive study in which a design-time qualification workflow is proposed to complement run-time monitoring. This workflow combines a fixed safety-relevant ontology-based structured annotation system together with a synonym-based evaluation process to statistically evaluate three state-of-the-art VLMs against data from the nuScenes dataset. We observed that the proposed technique enables deterministic and repeatable quantification of the hallucinations VLMs generate in automotive perception-related tasks. The proposed workflow supports model comparison and deployment-oriented engineering decisions within the design-time verification and validation process and will contribute to a holistic verification strategy that strives towards trustworthy automotive perception systems"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Optimizing the Score, Losing Sight of the Task: Reward Hacking Across Weights, Selection, and Prompts",
+    "authors": "Vansh Wahi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25848v1",
+    "source": "arXiv",
+    "abstract": "A higher evaluation score does not always mean a better language model system. When optimization exploits an evaluator's mistakes, measured progress can conceal unchanged or deteriorating task performance. This failure can arise through parameter updates, selection among generated outputs, or revisions to persistent prompts. We develop a comparative framework for reward hacking across these three optimization substrates: weights, selection, and text. Building on the Proxy Compression Hypothesis and research on inference-time and in-context reward hacking, we examine how reachable behavior, optimization budgets, and persistent adaptation shape exposure to proxy error. We formalize a distance-dependent upper bound on evaluator disagreement and a capacity ordering for nested policy classes, then show why distance alone cannot establish a universal ranking of vulnerability. An exact finite-output illustration demonstrates how the location of a scoring defect changes the behavior favored by each method. We also map representative defenses across substrates, identifying which mechanisms transfer directly and which offer only functional analogies. Persistent prompts receive particular attention: their contents are inspectable, but the behavior induced by a small textual change may be difficult to anticipate. The formal analysis, numerical illustration, and published evidence together provide a basis for comparing optimization methods and identifying the conditions under which their defenses transfer. The resulting framework connects optimization choices to verification requirements: reliable improvement depends on controlling accessible failure modes and preserving evidence of task quality independent of the score being optimized."
+  },
+  {
+    "date": "2026-09-22",
+    "title": "A dataset of one-dimensional idealized probabilistic fields",
+    "authors": "Gregor Skok, Romain Pic",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.25720v1",
+    "source": "arXiv",
+    "abstract": "Verification of probabilistic weather forecasts remains a crucial aspect of numerical weather prediction, as new AI-based models become more widely used alongside the more traditional physics-based ensemble forecasting systems that continue to be developed and improved. We present a first-of-its-kind idealized probabilistic dataset composed of one-dimensional cases aimed at analyzing the behavior and properties of verification methods for probabilistic forecasts and comparing their behavior. It covers a wide range of probabilistic cases, such as constant, localized events, gradients, fronts, noisy, bimodal, and limiting cases. Moreover, the code associated with the dataset provides great flexibility for customizing the experiments it covers. The dataset represents the first building block of the more extensive comparison dataset of the Bridging The Gap project, which aims to facilitate the development and comparison of spatial verification methods for probabilistic forecasts."
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Securing LLM-Generated Code with Iterative Static Analysis and LLM Review",
+    "authors": "Anshul Jain, Varun Samir Pandya, Ebenezer Juliet S",
+    "publish": "2026 International Conference on Computing, Intelligence, and Applications (CIACON)",
+    "url": "https://doi.org/10.1109/ciacon70148.2026.11688692",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Incongruent News Detection Using LLM",
+    "authors": "Kriti Chaurasia, Priyanka Roy, Bhaskar Mondal",
+    "publish": "2026 International Conference on Computing, Intelligence, and Applications (CIACON)",
+    "url": "https://doi.org/10.1109/ciacon70148.2026.11688657",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Parametric Knowledge Cannot Overcome Instance Bias in LLM-Based Automated Algorithm Design_supp1-3735709.pdf",
+    "authors": "Handing Wang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tevc.2026.3735709/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "FairCareer-CHN: A Dataset for Evaluating Bias in LLM-Based Career Recommendation",
+    "authors": "Xiaoran Li",
+    "publish": "2026 International Conference on Computational Intelligence and Machine Learning (CIML)",
+    "url": "https://doi.org/10.1109/ciml69155.2026.11692774",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Improving Financial Sentiment Classification With LLM-Generated Synthetic Training Data",
+    "authors": "Yangguang Xu, Di Zhang",
+    "publish": "2026 7th International Conference on Pattern Recognition and Machine Learning (PRML)",
+    "url": "https://doi.org/10.1109/prml71097.2026.11687038",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "LLM-Inspired Fine-Grained Financial Sentiment for Short-Term Stock Prediction",
+    "authors": "Chenxi Xie, Di Zhang",
+    "publish": "2026 7th International Conference on Pattern Recognition and Machine Learning (PRML)",
+    "url": "https://doi.org/10.1109/prml71097.2026.11687308",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Are Robust LLM Fingerprints Adversarially Robust?",
+    "authors": "Anshul Nasery, Edoardo Contente, Alkin Kaz, Pramod Viswanath, Sewoong Oh",
+    "publish": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+    "url": "https://doi.org/10.1109/satml68715.2026.00026",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "BinaryShield: Cross-Service Threat Intelligence in LLM Services using Privacy-Preserving Fingerprints",
+    "authors": "Waris Gill, Natalie Isak, Matthew Dressman",
+    "publish": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+    "url": "https://doi.org/10.1109/satml68715.2026.00015",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-23",
+    "title": "Evaluating RAG-Based Course Advising Chatbots Using LLM-as-a-Judge Methodology",
+    "authors": "Ronit Buti, Abdallah Mohamed",
+    "publish": "Proceedings of the 28th Western Canadian Conference on Computing Education",
+    "url": "https://doi.org/10.1145/3828792.3828802",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-22",
+    "title": "EAGER: Edge-Aligned LLM Defense for Robust Cybersecurity Question Answering",
+    "authors": "Onat Gungor, Roshan Sood, Jiasheng Zhou, Tajana Rosing",
+    "publish": "2026 International Symposium on Networks, Computers and Communications (ISNCC)",
+    "url": "https://doi.org/10.1109/isncc70543.2026.11693918",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Adversarial News and Lost Profits: Manipulating Headlines in LLM-Driven Algorithmic Trading",
+    "authors": "Advije Rizvani, Giovanni Apruzzese, Pavel Laskov",
+    "publish": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+    "url": "https://doi.org/10.1109/satml68715.2026.00053",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Helios: Exposing Context Lifecycles for Memory-Efficient Agentic LLM Serving",
+    "authors": "Hanfei Geng, Kun Li, Yunxin Liu",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834846",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-22",
+    "title": "FedSpy-LLM: Towards Scalable and Generalizable Data Reconstruction Attacks from Gradients on LLMs",
+    "authors": "Syed Irfan Ali Meerza, Feiyi Wang, Jian Liu",
+    "publish": "2026 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+    "url": "https://doi.org/10.1109/satml68715.2026.00070",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "FoodCHA: Multi-Modal LLM Agent for Fine-Grained Food Analysis",
+    "authors": "Woojin Lee, Pranav Mekkoth, Ye Tian, Onat Gungor, Tajana Rosing",
+    "publish": "2026 International Symposium on Networks, Computers and Communications (ISNCC)",
+    "url": "https://doi.org/10.1109/isncc70543.2026.11693901",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "EvoInfer: A Self-Evolution and ML-Driven Approach for Optimizing LLM Performance on Mobiles",
+    "authors": "Pengyu Li, Lei Liu",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834850",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Cloud to Edge: Benchmarking LLM Inference on Hardware-Accelerated Single-Board Computers",
+    "authors": "Harri Renney, Fouad Trad, Michael Mattarock, Jayden Evetts, Zena Wood",
+    "publish": "2026 International Symposium on Networks, Computers and Communications (ISNCC)",
+    "url": "https://doi.org/10.1109/isncc70543.2026.11693815",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Demonstrating SAGE: A Dataflow-Native Framework for Modular, Controllable, and Transparent LLM-Augmented Reasoning",
+    "authors": "Jun Liu, Shuhao Zhang",
+    "publish": "Workshop Proceedings of the 55th International Conference on Parallel Processing",
+    "url": "https://doi.org/10.1145/3816891.3834855",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Disaggregated LLM KV-Cache Storage Requires Coordination-Free Consistency Abstractions",
+    "authors": "Kalyan Pullela, Hrishikesh B Acharya",
+    "publish": "Proceedings of the 18th ACM Workshop on Hot Topics in Storage and File Systems",
+    "url": "https://doi.org/10.1145/3837053.3837339",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-22",
+    "title": "LLM-Based NPCs in Video Games: A Systematic Mapping Study",
+    "authors": "Dilan Mian, Jeremy Bradbury, Yann-Gael Gueheneuc, Fabio Petrillo, Cristiano Politowski",
+    "publish": "IEEE Transactions on Games",
+    "url": "https://doi.org/10.1109/tg.2026.3733302",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-22",
+    "title": "Enhancing LLM Reasoning via a SLM Supervisor",
+    "authors": "Yongkang Fan, Yuxuan Xu, Jianxiong Guo, Yanzeng Li, Jiandian Zeng",
+    "publish": "2026 International Conference on Computational Intelligence and Machine Learning (CIML)",
+    "url": "https://doi.org/10.1109/ciml69155.2026.11692811",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
