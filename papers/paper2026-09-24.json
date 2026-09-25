@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-24",
+    "title": "RAPID: Robot Agentic Programming from Demonstrations",
+    "authors": "Yuyao Liu, Jiayuan Mao, David Hsu, Leslie Pack Kaelbling, Tomás Lozano-Pérez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30249v1",
+    "source": "arXiv",
+    "abstract": "Coding agents have demonstrated enormous success in solving complex programming problems. To leverage their potential for robot systems, this work introduces Robot Agentic Programming from Demonstrations (RAPID), which automatically generates, verifies, and refines robot programs, given a single visual human demonstration. The iterative agentic loop of code refinement requires several key ingredients: (i) a testable task specification, (ii) action primitives for robot execution, and (iii) an interactive environment for program execution and verification. RAPID infers all three from the demonstration automatically. To make the resulting program reusable beyond the demonstration setting, RAPID uses an object-centric relational program representation that focuses on the underlying structure of the demonstrated strategy rather than the specific motion per se: it expresses the action primitives as trajectory-optimization programs that realize object-level motion effects, while composing them through relational constraints that capture scene-specific geometry at run time. We evaluated RAPID in simulation on eight challenging contact-rich nonprehensile manipulation tasks as well as general prehensile manipulation tasks in the LIBERO-Pro benchmark. We also successfully deployed it on a real Franka arm and evaluated on all eight nonprehensile tasks. In all experiments, RAPID demonstrated strong performance, with generalization over object pose, shape, material, and environment. Website: https://yuyaoliu.me/projects/rapid."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+    "authors": "Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30227v1",
+    "source": "arXiv",
+    "abstract": "Online misinformation increasingly appears in spoken formats such as news clips, podcasts, interviews, political speeches, and social media videos, creating a need for fact-checking systems that can verify claims directly from speech. We introduce VeriSpeak, a probe benchmark for studying speech-based fact verification in Large Audio Language Models (LALMs). VeriSpeak contains 3,879 spoken claims spanning temporal, geographical, and relational facts, with balanced true and false labels. The benchmark is designed to examine whether factual verification ability transfers from text to speech, and whether retrieval-augmented LALMs can use textual evidence to correctly support or refute spoken claims. Our experiments reveal a consistent text-speech modality gap: LALMs that verify written claims reliably often fail on the same claims when spoken. Moreover, retrieval alone provides limited gains because models frequently conflate retrieved evidence with the spoken claim. In contrast, retrieval combined with explicit reasoning improves claim-evidence comparison, with a thinking-tuned LALM reaching 86.1% accuracy. VeriSpeak highlights that effective speech misinformation detection requires not only speech understanding, but also grounded reasoning over retrieved evidence. The dataset is publicly available via Hugging Face at https://huggingface.co/datasets/abhiram4572/VeriSpeak."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Requirement-Bound Verified Commissioning: A Frozen Four-Billion-Parameter Local Model as a Candidate Generator under an External Acceptance Layer with Verification and Release Authority",
+    "authors": "Mehmet Iscan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30219v1",
+    "source": "arXiv",
+    "abstract": "An acceptance protocol is developed for sensor-coordinate and polarity binding in mechatronic commissioning. Candidate generation is separated from release authority. Requirements unsupported by a deterministic parser are routed to a frozen local language model with four billion parameters. Plans are released only when both facts can be derived by an external gate under a sealed grammar. One canonical answer is requested from a gold-standard user when eligible. The protocol was evaluated once under a criterion fixed before benchmark construction, on 144 tasks written by isolated agent contexts without access to the gate, grammar, or experimental plan. Three contributions are established. First, candidate generation and release decisions were measured separately. Fabricated ready plans were committed on 21 of 22 routed unanswerable tasks, and all were rejected. The same 83 releases were reproduced without model calls. Second, no false release was observed among 83 releases. A one-sided 95% Clopper-Pearson upper bound of 0.0354 was obtained as a diagnostic under an independent-and-identically-distributed assumption, below the sealed 5% threshold. However, one false release was subsequently recorded among 146 releases outside the benchmark at seed 0. Third, protection against incorrect user answers was characterized. Both facts were bound from the original text on 13 of 96 answerable tasks. Incorrect answers were released in 169 of 431 pairings on the remaining tasks, including failures involving coordinate exclusion. A deployable questioning policy was not tested because eligibility was determined from the answer key. Gate sensitivity and real user behavior were not measured."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Enhancing Word-Level Property Directed Reachability with LLM-Driven Semantic Guidance",
+    "authors": "Guangyu Hu, Mingkai Miao, Zhiyuan Yan, Xiaofeng Zhou, Wei Zhang, Hongce Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30131v1",
+    "source": "arXiv",
+    "abstract": "Property Directed Reachability (PDR) is a prominent algorithm for hardware formal verification. However, bit-level PDR often struggles with datapath-heavy designs because bit-blasting obscures high-level semantics. While word-level PDR addresses this by reasoning over bit-vector and array theories, its performance remains bottlenecked by discovering proof-relevant word-level relations. We propose LLM4PDR, a framework leveraging Large Language Models (LLMs) to guide word-level PDR search through three mechanisms: (1) Predicate Generation, extracting state relationships as candidate predicates during inductive generalization; (2) Clause Generation, producing candidate frame lemmas to accelerate convergence after formal validation; and (3) Assertion Generation, synthesizing helper assertions that strengthen the target property under counterexample-guided refinement. We implement LLM4PDR in the Pono model checker and evaluate it on arithmetic micro-benchmarks, HLS-generated pipelines, open-source RTL components, and hardware model checking competition (HWMCC) instances. Results show LLM-generated guidance improves both solved instances and runtime on datapath-heavy and control-plus-datapath designs. The strongest configuration solves 28 of 33 arithmetic benchmarks, compared to 13 for vanilla Pono and 11 for AVR. On HLS pipelines and open-source RTL, different modes provide complementary speedups: clause guidance is effective for deep pipelines and predicate guidance for bus and memory-controller designs. On HWMCC benchmarks, benefits are instance-dependent, demonstrating notable speedups and timeout avoidance on hard cases. These results suggest that LLM-generated, verifier-checked semantic hints can serve as a practical complement to conventional word-level PDR."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Reachability-Based Formal Verification of Graph Neural Networks with Node and Edge Features",
+    "authors": "Anne M. Tumlin, Ben Wooding, Zhenxuan Shao, Diego Manzanas Lopez, Tyler Derr, Taylor T. Johnson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30079v1",
+    "source": "arXiv",
+    "abstract": "Graph neural networks (GNNs) have become a prominent approach for developing fast, topology-aware surrogates in electric power systems, supporting tasks such as power flow (PF) analysis, optimal power flow (OPF) estimation, and cascading failure analysis (CFA). Despite this growing use, formally verifying GNN-based models remains challenging, with existing methods limited in scope. We extend the neural network verification (NNV) framework to graph-structured inputs through GraphStar sets, a generalization of Star sets that captures uncertainty over both node and edge features. This extension enables the propagation of linear message-passing operations and the sound approximation of ReLU nonlinearities for GNN architectures, including graph convolutional network (GCN) and graph isomorphism network with edge features (GINE) layers. We evaluate GNNV across three power system tasks, PF, OPF, and CFA, on the IEEE-24, IEEE-39, and IEEE-118 test cases, as well as two standard graph classification benchmarks, ENZYMES and PROTEINS. Our results show that GNNV provides tighter robustness guarantees than CORA on graph classification models with ReLU-based activations and, for the first time, delivers edge-aware robustness guarantees for GINE-based PF and OPF models under joint node and edge perturbations."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization",
+    "authors": "Aheli Poddar, Sanskar Prasad, Arindam Samanta, Subha Chakraborty, Vishal Goyal, Rohit Singh Rathaur",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30059v1",
+    "source": "arXiv",
+    "abstract": "Deep learning inference and training performance depends critically on GPU kernel efficiency. Modern compilers such as PyTorch Inductor automatically generate GPU kernels from high-level model code, but frequently underperform expert-written implementations by wide margins. Recent LLM-assisted kernel optimizers can close this gap for standalone kernels, yet treat compiled models as black boxes, generally optimizing individual standalone kernels without respecting the compiler's structural decisions or verifying the model end-to-end. We present KernelOPT, a multi-agent system that treats compiled models as structured artifacts. It preserves vendor library calls (cuBLAS, cuDNN) and exclusively targets generated Triton sub-kernels using five profiling-guided LLM agents. A four-gate verification cascade of static validation, multi-seed correctness, model-level float64-fallback verification, and performance gating filters candidates during optimization and verifies the re-stitched model end-to-end. If no candidate passes all four gates, the system preserves the compiler baseline. The system accepts PyTorch nn.Modules, standalone Triton kernels, and Helion kernels. Evaluated on 250 KernelBench problems, KernelOPT achieves geometric mean speedups over \\texttt{torch.compile} of 1.40$\\times$ (Level 1: 51/100), 1.15$\\times$ (Level 2: 31/100), and 1.07$\\times$ (Level 3: 12/50) across all problems."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "SciWalker: Synthesizing Scientific Coding Problems with Operator Graphs and Execution Feedback",
+    "authors": "Chenxi Li, Wenxuan Zeng, Yun Luo, Fangchen Yu, Peng Ye, Yu Cheng, Jun Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30054v1",
+    "source": "arXiv",
+    "abstract": "Improving the scientific coding capabilities of large language models (LLMs) requires high-quality training data. However, such data remain scarce because manually authoring realistic problems is costly and time-consuming, while systematically covering diverse scientific domains and algorithmic combinations remains challenging. To address this, we introduce SciWalker, a framework for synthesizing scientific coding problems through operator-chain sampling and execution feedback. The framework combines scientific library interfaces with operation modes to instantiate operators, organizes them into operator graphs, and samples operator chains as computational workflow cues. Guided by these cues, we adopt LLMs to generate scientifically grounded problem statements, reference solutions, and tests, with failed generations iteratively repaired using execution feedback. By combining structured workflow composition with verification and quality review, SciWalker enables scalable task generation while promoting scientific grounding, computational diversity, and executability. Using this framework, we construct 8,178 high-quality problems spanning 5 scientific domains and 32 subdomains. To evaluate their training utility, we conduct reinforcement learning on Qwen3.5-9B using the GSPO algorithm. This training improves SciCode subproblem accuracy by 9.9 percentage points, from 29.3% to 39.2%, with gains across scientific code generation, code repair, and reasoning benchmarks. The code for SciWalker is available at https://github.com/lichenx1/SciWalker."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "NNV3: Expanding Neural Network Verification to New Architectures and Domains",
+    "authors": "Anne M. Tumlin, Samuel Sasaki, Ben Wooding, Diego Manzanas Lopez, Muhammad Usama Zubair, Navid Hashemi, Hongchao Zhang, Waseem Abbas, Ipek Oguz, Meiyi Ma, Taylor T. Johnson",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30050v1",
+    "source": "arXiv",
+    "abstract": "We present NNV3, the latest version of the Neural Network Verification (NNV) tool, a MATLAB framework for formal verification of deep learning models and learning-enabled cyber-physical systems. Building on the set-based reachability foundation of NNV 1.0 (FFNNs, CNNs, NNCS) and NNV 2.0 (RNNs, SSNNs, neural ODEs), NNV3 introduces new members of the Star-set family: ModelStar for verifying networks under weight perturbation, VolumeStar for video and 3D volumetric inputs, and GraphStar for graph neural networks. A conformal-inference-based probabilistic reachability mode complements sound analysis for problems where deterministic verification is intractable, while FairNNV certifies counterfactual and individual fairness properties over continuous input regions. NNV3 introduces new benchmarks for malware detection, graph-based power-system models, medical imaging, variable-length time series data, and action recognition. NNV3 also incorporates tutorials and developer guides through a unified documentation site. This paper details these major updates, demonstrating NNV's maturation into a comprehensive, robust, and accessible verification tool for a diverse range of AI systems."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "A Lightweight Ethereum Voting Prototype for Hospital Ethics Committees with Receipt-Based Inclusion Verification",
+    "authors": "Edwin Clatus, Madhusudan Singh",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29981v1",
+    "source": "arXiv",
+    "abstract": "This paper presents a Solidity, Hardhat, React, MetaMask, and ethers.js prototype for hospital ethics committee voting. Role controls, case-state checks, duplicate vote controls, and a receipt hash support public audit and transaction inclusion verification. Because vote events expose wallet addresses and vote values, the design provides pseudonymous auditability, not anonymous or secret-ballot voting; the receipt is neither receipt-free nor coercion-resistant. Evaluation reports 22 passing functional tests and local Hardhat gas use, including 284,137 gas per vote. A 12-participant simulation used assumed probabilities and is not human-subject evidence. Residual risks include multiple wallets, administrator or frontend compromise, credential reassignment, front-running, denial of service, and untested adversarial paths. Confidential deployment requires governed enrollment, encrypted ballots, independent audit, adversarial testing, reproducible benchmarks, and a real user study."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "DueList: A Theory of Lists with Combinators for SMT Solvers",
+    "authors": "Pierre Goutagny, Aymeric Fromherz, Raphaël Monat",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29962v1",
+    "source": "arXiv",
+    "abstract": "Formal verification tools commonly rely on SMT solvers to automatically reason about programs, leveraging a range of logical theories, e.g., linear integer arithmetic, arrays, or strings, to encode program constructs and verification conditions. Despite recent advances, such solvers still struggle when reasoning about recursive data structures such as lists, which are pervasive in modern functional languages. Additionally, lists are commonly used in conjunction with higher-order combinators to, e.g., generically apply a function to all elements of the list. In this work, we provide first-class support for reasoning about lists within SMT solvers. We focus on lists of arbitrary size that, following the map-reduce paradigm, can be manipulated exclusively through a set of abstract combinators. To this end, we introduce DueList, an abstraction-refinement approach geared towards list reasoning, which we implement on top of off-the-shelf SMT solvers. To evaluate the efficiency of our approach, we assemble a diverse set of 752 benchmarks curated from previous works and real-world programs, and compare DueList against state-of-the-art solvers such as Z3 and CVC5. Our experimental evaluation shows that DueList extends reasoning facilities of existing solvers, allowing to conclude about the (un)satisfiability of a larger range of problems, while outperforming existing solvers in the vast majority of previously supported cases."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+    "authors": "Tingyu Qu, Weigao Sun, Yuecheng Liu, Yucheng Zhao, Yi Zhu, Yifeng Ding, Qiyi Wang, Sihan Cao, Pengkun Jiao, Hanlei Xie, Xiongwei Wu, Qichao Wang, Haodong Zhang, Jiajun Liu, Yuhao Wang, Yuqing Xie, Junpeng Zhao, Long Chen, Ming Ma, Sihan Yang, Ziwang Zhao, Yanhao Jia, Liangquan Gong, Feida Zhu, Yiran Zhong, Steven Hoi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29892v1",
+    "source": "arXiv",
+    "abstract": "The rapid progression of large language models is extending AI from passive content generation into the active workflows of engineering and scientific discovery. This shift raises a compelling question: can AI be both the object of development and an active participant in building next-generation AI systems? We explore this question by building Qwen-Planner-Agent within a closed-loop AI-for-AI framework for scalable development and iterative improvement. Mobile planning offers a demanding test of this approach: complex, long-horizon tasks challenge agent reliability, while costly real-device interaction limits development scalability. The framework connects data production, model training, and deployment through a shared action-feedback-verification contract. (i) AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation. (ii) AI for Training combines a supervised planning cold start with hybrid-environment online agentic reinforcement learning, where we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance. (iii) AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation. Qwen-Planner-Agent achieves the best overall performance among all evaluated models and systems on MobilePA-Bench, improving over its base model across tool use, memory, skills, and sub-agent coordination. Further evaluations of our model show improvements across non-mobile agentic benchmarks while largely preserving general capabilities."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Formal Model Construction Guided by Model-Based Proof Sketches",
+    "authors": "Hongshu Wang, Xinyue Zuo, Yufan Cai, Neeraj Kumar Singh, Yamine Ait Ameur, Jin Song Dong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29870v1",
+    "source": "arXiv",
+    "abstract": "Formal modeling provides strong guarantees about system correctness, but developing and repairing formal models remains labor-intensive and requires substantial expertise in logic and formal reasoning. Recent LLM-based autoformalization agents seek to reduce this burden by generating candidate formal models and revising them using feedback from formal tools. However, the existing approaches follow a generate-and-repair paradigm, in which repairs are driven by verification failures of the generated model and therefore depend heavily on both the granularity of the feedback and the LLM's repair capability. As a consequence, a repair targeting one level of verification may invalidate properties at another level, which requires reasoning over the complete set of event guards. To address these limitations, we propose Proof-Sketch-Guided Formal Model Synthesis (ProGS), an autoformalization method centered on model-based proof sketches. A model-based proof sketch represents the proof structure of the target formal system as a tree. Internal nodes capture case splits and inductive reasoning steps, while leaf nodes correspond to concrete state-transition events that realize individual subgoals. ProGS uses LLMs to generate and repair these sketches, with verification failures mapped back to specific nodes and subtrees to provide structured guidance for iterative repair. Our evaluation on a benchmark of 27 formal systems shows that ProGS improves over state-of-the-art agentic formal modeling approaches in syntactic validity, deductive verifiability, and behavioral correctness, demonstrating the benefit of organizing formal model construction around hierarchical proof sketches."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+    "authors": "Guangzhao Dai, Qianru Sun, Qi Wu, Bin Zhu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29861v1",
+    "source": "arXiv",
+    "abstract": "We investigate whether GPT-6-Astra, a general-purpose foundation model, can navigate unfamiliar environments using its own perception, reasoning, and decision-making capabilities. Our evaluation focues on zero-shot vision-and-language navigation in continuous environments (VLN-CE) through a minimal interface in the Codex harness, aiming to unleash GPT-6-Astra's full potential for navigation. Using monocular RGB, GPT-6-Astra decides when to observe, how to move, and when to stop, without navigation-specific fine-tuning, a trained waypoint predictor, or a pre-built scene map. Our evaluation yields four main findings. First, \\textbf{\\textit{GPT-6-Astra achieves strong zero-shot navigation performance using only monocular RGB observations}}. On the common-adopted zero-shot R2R-CE benchmark, ultra reasoning achieves a success rate of \\textbf{\\textit{79.0\\%}}, exceeding the strongest reported zero-shot and supervised success rates by \\textbf{\\textit{13.0}} and \\textbf{\\textit{6.9}} percentage points, respectively. Second, \\textbf{\\textit{GPT-6-Astra advances multi-stage language instructions into coherent, adaptive navigation}} by grounding spatial relations, tracking task progress, and revising its actions. Third, \\textbf{\\textit{reliable route execution and goal verification remain challenging, even with ultra reasoning}}. Plausible local landmark matches do not consistently lead to correct task completion. Fourth, \\textbf{\\textit{these capabilities motivate rethinking the role of embodied learning}}. Future VLN research should build on foundation models to advance generalizable and reliable embodied intelligence."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Template Ageing and Longitudinal Verification in Fixed-Text Keystroke Dynamics: A Subject-Disjoint Study Across Eight Weeks",
+    "authors": "Simon Parkinson, Saad Khan, Na Liu, Qing Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29851v1",
+    "source": "arXiv",
+    "abstract": "Behavioural biometric templates are widely believed to degrade as the gap between enrolment and verification grows, but few studies measure this template ageing effect directly under controlled conditions. We collected a longitudinal dataset of 40 fixed passwords, each typed four times per weekly session over eight consecutive weeks. We compare a scaled-Manhattan matcher (M1), a gradient-boosted classifier (M2), a TypeNet-style recurrent embedding model (M3), and a TypeFormer-style Transformer (M4) under a 5-fold subject-disjoint protocol and a design that jointly varies mechanism and the enrolment-to-query gap, from 0 to 7 weeks. Template ageing proves large and systematic. Error increases monotonically with the gap for every mechanism, from an EER of 14.6-27.2% at a gap of zero to 25.5-37.1% at seven weeks, or 1.7% of decision error per week elapsed (p < 0.001). However, the choice of mechanism matters more than its rate of ageing. Baseline accuracy spans 12.6 percentage points across the four mechanisms, the degradation each accumulates over seven weeks spans only 2.3 points, and ageing never reorders them. A matcher can therefore be chosen on same-session accuracy, with ageing managed by re-enrolment scheduling rather than by matcher selection. The two properties are nonetheless distinct, as M3 is the least accurate mechanism yet ages significantly more slowly than M1 under every specification tested. Training randomness also matters differently by architecture, with 58% of the recurrent model's fold-to-fold variance attributable to seed noise against 19% for the Transformer. Because the smaller ageing-rate differences are sensitive to modelling choices, while the accuracy differences and the ageing effect are not, we recommend that comparative ageing-rate claims be supported by seed-level score fusion, independent replication, and an alternative outcome-model specification."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "WeatherDiagFlow: Evidence-Grounded Radar Nowcasting with Diagnostic Flow Refinement",
+    "authors": "Chunlei Shi, Yufeng Zhu, Yixiao Liang, Dan Niu, Yongchao Feng, Qiliang Wu, Jiong Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29772v1",
+    "source": "arXiv",
+    "abstract": "Radar nowcasting is essential for short-term warning and emergency response, yet conventional systems mainly return future radar fields and provide limited support for operational communication and post-event verification. We formulate radar nowcasting as an evidence-grounded forecast--bulletin--audit task, in which a numerical forecaster produces both future radar fields and structured diagnostic evidence. Forecast-time bulletins use only model-available evidence, whereas post-event audits incorporate future radar truth only after the forecast horizon is observed. Based on this task formulation, WeatherDiagFlow predicts motion, growth and decay, heavy-echo risk, and uncertainty to condition rolling flow refinement, while frozen-scaffold residual calibration improves long-lead strong-echo preservation. A multi-agent layer converts the structured evidence into operational bulletins and independently generates verification audits without feeding textual outputs back into the forecaster. Experiments on FJRADAR demonstrate competitive overall performance and improved strong-echo event skill. WeatherDiagFlow therefore connects numerical prediction, evidence-grounded reporting, and auditable verification under a leakage-controlled protocol."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "The Gold in Bias: Maturing the AI Design Process through Verification",
+    "authors": "Samira Maghool, Paolo Ceravolo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29730v1",
+    "source": "arXiv",
+    "abstract": "Bias in AI systems is typically framed as a flaw to be minimized, yet it also serves as a critical indicator of underlying weaknesses in data, modeling assumptions, and system design. Existing approaches often treat bias as an isolated problem rather than as evidence that can strengthen verification and governance across the AI lifecycle. This paper aims to reconceptualize bias as a diagnostic tool that supports rigorous AI verification. We seek to develop a multidimensional framework to analyze bias, demonstrate how biases emerge in both Traditional and Generative AI, and provide a structured pathway for verification-driven mitigation. We present a multidimensional framework analyzing bias across four dimensions: origin sources, emergence points throughout the AI modeling lifecycle, technical and methodological causes, and validation approaches for detection and mitigation. Through a comprehensive typology spanning traditional and generative AI systems, we demonstrate how biases manifest and propagate across development stages. Our analysis encompasses 30 distinct bias types, 16 verification methods, and 20 countermeasures, providing an actionable roadmap for practitioners. We introduce a hierarchical evidence framework that distinguishes internal validity (mechanistic integrity of AI systems) from external validity (contextual reliability in deployment environments). The framework reveals how biases manifest and propagate across modeling stages, enabling systematic mapping between bias types, verification techniques, and effective countermeasures. The proposed evidence hierarchy clarifies how different verification strategies contribute to mechanistic integrity and contextual reliability. We advocate for ''Ethics by Design'' principles that integrate bias verification throughout the development lifecycle, enabling the construction of fairer, more robust, and trustworthy AI systems."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "VQ-LIC: Shared Vector-Quantized Learned Image Compression on a Resource-Constrained FPGA",
+    "authors": "Muhammad Fahd Ibrahim Bhatti, Abdullah Bin Faisal, Ahsan Usman, Naveed Anwar Bhatti, Muhammad Ali Siddiqi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29727v1",
+    "source": "arXiv",
+    "abstract": "Learned image compression (LIC) is hard to deploy on severely resource-constrained FPGAs, since how fast it actually runs depends not just on arithmetic count, but also on memory traffic, imbalance between different operations, and how the hardware batches its work. We present VQ-LIC, an asymmetric edge-cloud codec in which a compact INT8 depthwise (DW)-pointwise (PW) analysis transform and multi-codebook vector quantization (VQ) run at the edge on a reusable DW/PW engine pair, while reconstruction is handled by a larger cloud decoder. Since VQ codeword matching is expressible as a dot product, it is mapped directly onto the same PW engine, removing the need for a separate VQ compute array, to our knowledge a first for FPGA LIC. A novel latency model, derived from deterministic RTL cycle counts of an FPGA's read, DW, PW, and write costs, predicts an analysis transform's per-block latency; since VQ shares the same PW datapath, the model applies to VQ as well. Validated directly against silicon, the model predicts deployed analysis and VQ latency within 0.26\\% and 0.05\\%, and guides the selection of a three-block $16$-$48$-$64$ transform. Post-training codebook reduction then cuts VQ arithmetic and codebook storage by $4\\times$ and shrinks the fixed-width latent representation. On a 220-DSP Zynq-7020, VQ-LIC's mid-rate preset reaches 0.1398 bits per pixel at 28.69 dB PSNR and 13.06 dB MS-SSIM on CLIC~2017, outperforming a similarly sized neural encoder and reaching a rate-distortion range comparable to a codec three orders of magnitude larger. The complete 0.1945-kMAC/pixel analysis-VQ pipeline runs at 47.98 frames per second and 42.84 mJ per frame on silicon, using an order of magnitude fewer DSPs than comparable FPGA LIC accelerators while achieving lower bitrate, higher throughput, and lower energy per frame at a modest PSNR tradeoff."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Judgment-Centred Software Engineering Education: A Post-Hype Review and Framework for AI-Augmented Learning",
+    "authors": "Qusay H. Mahmoud",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29473v1",
+    "source": "arXiv",
+    "abstract": "Generative artificial intelligence has moved from a disruptive novelty to a recurring part of software-development and computing-education workflows, while software agents are beginning to act across repositories, command lines, browsers, tests, and other tools. The educational problem is no longer whether students should be allowed to generate code, but whether software-engineering (SE) programs can preserve and assess human understanding while preparing students to work responsibly with increasingly capable AI systems. This paper presents a structured integrative review of research and practice from 2023 through 23 September 2026, supplemented by established work on AI literacy, technical debt, and human-AI collaboration. The evidence supports a conditional conclusion: GenAI can improve access to explanations, feedback, practice, and short-term task completion, but learning outcomes depend on prior knowledge, scaffolding, verification, task design, and assessment. We examine student help-seeking and authorship, faculty assessment and policy demands, and the wider SE risks created when generated artifacts persist across repositories, teams, architectures, and deployed systems. We extend the concept of comprehension debt: the deferred learning and maintenance cost that arises when AI-assisted production outpaces a learner's or team's ability to explain, test, modify, and justify the resulting software. We then refine the AI-Augmented Software Engineering Education (AASEE) framework into five non-linear integration levels and four cross-cutting evidence obligations: explain, verify, modify, and account. The framework links delegation to evidence, governance, and recovery mechanisms appropriate to its consequences."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Scenes: A Meta-Logical Algebra for Mutable State",
+    "authors": "Simon Foster, Carlos Isasa, Christian Pardillo Laursen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29380v1",
+    "source": "arXiv",
+    "abstract": "Modelling of mutable state spaces and precisely describing how variables are manipulated in a program is a fundamental problem in compositional verification. Though we can make use of the embedded abstract syntax of a program for such analysis, this runs contrary to the shallow-embedding approach, and hampers efficient proof automation. On the other hand, lenses and prisms provide an elegant algebraic foundation for modelling state, which provide sufficient structure to provide meta-logical program analysis, but without requiring a deep embedding. Nevertheless lenses, as complex algebraic objects, cannot easily be combined, complemented, or collected in sets. In this paper we contribute an accompanying algebraic structure called the scene, which allows us to characterise the set of variables, or coordinates, in a state space. Scenes intuitively correspond to sets of lenses, but like lenses they are purely semantic algebraic objects. We demonstrate that scenes provide us with sufficient structure to characterise the lens-based meta-logical properties, like independence and equivalence. Moreover, we introduce the notion of a scene space, analogous to a vector space, which allows us to recover a set-like algebraic structure. Finally, we show how scenes allow us to characterise the free and bound variables of expressions and programs, without any need for syntax, and demonstrate their use for reasoning about programs by deriving reasoning principles for the parallel composition operator."
+  },
+  {
+    "date": "2026-09-24",
+    "title": "NebulaSD: Many-for-Many Speculative Decoding",
+    "authors": "Junhao He, Hongyang Du",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.29364v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates Large Language Model (LLM) inference by using a lightweight draft model to propose candidate tokens for parallel verification by a target model. Drafting and verification, however, exhibit different service characteristics and favor different batch configurations, making fixed draft-target coupling inefficient under concurrent workloads. Existing distributed designs can physically separate the two stages, but often retain request or batch affinities that prevent their capacities from being shared globally. We present NebulaSD, a many-for-many, or M-for-N, speculative decoding system that organizes draft and target workers into independently schedulable resource pools and dynamically reconstructs stage-specific batches from shared request pools. Such dynamic reassignment removes fixed worker locality, requiring request states to be made available at newly selected workers without introducing migration stalls. NebulaSD addresses this challenge through worker-triggered batch reconstruction and asynchronous KV-state preparation overlapped with model execution. We evaluate NebulaSD from both system and scaling perspectives, showing that dynamic pooling improves request-round processing rate by 50.4% over a physically disaggregated baseline and 72.6% over co-located execution on a four-GPU deployment while substantially increasing effective GPU utilization. Profile-driven simulations further show approximately proportional compute-side capacity scaling under idealized state movement."
+  },
+  {
+    "date": "2026-9-24",
+    "title": "CriticExpert: A Lightweight Task-Specific Verification-and-Correction Framework for LLM-Generated Closed-Set Specialized Healthcare Text Coding",
+    "authors": "Chaohao Lin, Xu Zheng, Kaida Wu, Ou Bai",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3736407",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-24",
+    "title": "From Job Postings to Curriculum Feedback: An LLM-Driven Framework for Constructing Role-Stratified AI Competency Knowledge Graphs_supp1-3731650.xlsx",
+    "authors": "CHI-KIN LAM",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/access.2026.3731650/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-24",
+    "title": "Functional Hardware Trojan Detection in RTL Designs Using Data-Flow Graph-Based Contrastive Graph Neural Networks",
+    "authors": "Tsu-Hsiang Chen, Chi-Chia Sun",
+    "publish": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+    "url": "https://doi.org/10.1109/tvlsi.2026.3731402",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-24",
+    "title": "Multimodal Reasoning with LLM for Encrypted Traffic Interpretation: A Benchmark_supp1-3730256.pdf",
+    "authors": "Lei Zhang",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tmm.2026.3730256/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Loom: LLM-Powered Naturally Embedded Recommendation",
+    "authors": "Piriyakorn Piriyatamwong, Satvik Garg",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3841284",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-25",
+    "title": "In-Batch Negatives Can Silently Cripple LLM-Encoded Sequential Recommenders",
+    "authors": "Younggue Bae",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3841255",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-24",
+    "title": "LLM-assisted Emotional Expressive Behavior Generation for Engagement Enhancements in Human-Robot Interaction_supp1-3734008.mp4",
+    "authors": "Ayush Gupta",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/lra.2026.3734008/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-25",
+    "title": "How Faithful Is the Reasoning of LLM Recommenders? A Counterfactual Audit",
+    "authors": "Arpita Vasant Shah",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3841294",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-24",
+    "title": "Transient Stability Assessment via LLM-Driven Simulation and Neural Architecture Search",
+    "authors": "Lianzhe Hu, Yu Wang, Bikash Pal",
+    "publish": "2026 IEEE Power &amp; Energy Society General Meeting (PESGM)",
+    "url": "https://doi.org/10.1109/pesgm58988.2026.11693292",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Scaling LLM-Enhanced Linear Autoencoders to Industrial-Size Catalogs",
+    "authors": "Maxim Skurikhin, Kiryl Liakhnovich, Oleg Lashinin",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3831815",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-25",
+    "title": "LLM-Based Re-Ranking for Real Estate Search",
+    "authors": "Nkateko Ntimane, Rafael Guedes, Tiago Cunha, Pedro Nogueira",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3831907",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-24",
+    "title": "A Human-in-the-Loop LLM–Assisted Multi-Agent Framework for Distribution Grid Reliability Planning",
+    "authors": "Mengmeng Zhuang, Andrija Sadikovic",
+    "publish": "2026 IEEE Power &amp; Energy Society General Meeting (PESGM)",
+    "url": "https://doi.org/10.1109/pesgm58988.2026.11693356",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Position Bias Undermines Preference Consistency in Listwise LLM-Based Reranking",
+    "authors": "Ethan Bito, Yongli Ren, Estrid He",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3831801",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-24",
+    "title": "Safe Multi-Robot Coordination via VLM-LLM Reasoning and Reachability Analysis",
+    "authors": "Mohamed Dwedar, Ahmad Hafez, Alexander Jesser, Amr Alanwar",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3737314",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-24",
+    "title": "From Job Postings to Curriculum Feedback: An LLM-Driven Framework for Constructing Role-Stratified AI Competency Knowledge Graphs_supp2-3731650.docx",
+    "authors": "CHI-KIN LAM",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/access.2026.3731650/mm2",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-24",
+    "title": "SolarDisagg-LLM: Leveraging Time Series Reprogramming of Large Language Models for Solar Disaggregation",
+    "authors": "Mozhi Chen, Liang Du, Shengyi Wang, Zhenyu Zhao",
+    "publish": "2026 IEEE Power &amp; Energy Society General Meeting (PESGM)",
+    "url": "https://doi.org/10.1109/pesgm58988.2026.11693447",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Consensus vs. Dissent: Dynamic LLM Modeling of Subjective Preferences in Group Recommenders",
+    "authors": "Cedric Waterschoot, Nava Tintarev, Francesco Barile",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3831775",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Intent-Description Anchoring Bias in LLM-as-a-Judge Evaluation of Recommender Systems",
+    "authors": "Himan Abdollahpouri, Kyle Kretschman, Mounia Lalmas",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3841257",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Lumi: An LLM-Grounded System for Safety-Aware POI Recommendations",
+    "authors": "Maria Alon Kutsaya, Maria Naddaf, Ludovico Boratto, Adir Solomon",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3841252",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-25",
+    "title": "Should I Be Polite to My LLM Relevance Judge? Tone as a Severity Operating-Point Shift",
+    "authors": "Tian Zhang, Meng Li",
+    "publish": "Proceedings of the 20th ACM Conference on Recommender Systems",
+    "url": "https://doi.org/10.1145/3773078.3841249",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
