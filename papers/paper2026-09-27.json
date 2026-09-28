@@ -1,0 +1,245 @@
+[
+  {
+    "date": "2026-09-25",
+    "title": "Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessment",
+    "authors": "Qing Xu, Yuxiang Luo, Zhen Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31524v1",
+    "source": "arXiv",
+    "abstract": "Surgical scene understanding is critical for computer-assisted intervention, yet laparoscopic cholecystectomy remains challenged by the complex anatomy of the hepatocystic triangle and the risk of bile duct injury. Existing methods for Critical View of Safety (CVS) assessment typically treat it as a holistic prediction task, mapping visual features directly to criterion-level labels. This black-box paradigm lacks explicit reasoning about anatomical relationships, limiting both interpretability and compositional generalization. To address this, we propose ReasonCVS, a structured reasoning agentic framework empowered by Vision-Language Models (VLMs) that decomposes CVS assessment into explicit, fine-grained anatomical verification. Specifically, we devise an Anatomical Scene Graph Abstraction (ASGA) that organizes anatomical entities and their spatial relationships into a structured representation. To operationalize this, we introduce a Rationale-Aware Reasoning Agent, powered by a Large Language Model (LLM) fine-tuned via rationale distillation. Functioning as a strict central decision-maker, it invokes VLM-driven Sub-criterion Verifier as a specialized perceptual tool to parse the graph and independently evaluate individual sub-criteria. Through calibrated soft reasoning, this agent synthesizes the tool-gathered distributed observations, yielding a final verdict alongside a traceable clinical rationale. Extensive experiments on the Endoscapes-CVS201 benchmark demonstrate that ReasonCVS achieves superior performance (68.1\\% mAP) over state-of-the-art while providing interpretable, criterion-level explanations for reliable surgical assessment."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Muslim: A Deployed Arabic Voice AI Platform for Grounded Islamic Knowledge",
+    "authors": "Yahya Mohamed Elnawasany",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31511v1",
+    "source": "arXiv",
+    "abstract": "We present Muslim, a production Arabic voice AI platform serving grounded, sourced Islamic knowledge to real users. Beyond a real-time voice pipeline (NeMo Arabic ASR, an OpenAI-compatible LLM endpoint, self-hosted TTS) and a deterministic multi-source retrieval layer routed across six Model Context Protocol servers, we report three things a research prototype typically lacks. First, a released family of fine-tuned Arabic Islamic model artifacts: an efficient tool-routing LLM (Muslim-6B-PRO, 5.94B parameters) and a Modern Standard Arabic TTS model (Fasih-TTS-V1) that ranks 5th of 17 overall and 2nd of 11 open-weight systems on the community-voted Arabic TTS Arena for MSA. Second, an account and metering layer - a free per-account turn allowance, capacity-aware refusal, and email verification deferred to the point it actually matters - that turns an open demo into an operable, abuse-resistant product. Third, a three-layer observability stack (liveness, error reporting, product analytics) built specifically around the system's characteristic failure mode: a GPU-bound agent host going silent while the web tier keeps serving normally. We report real, measured latency and accuracy figures (98.4% recitation-validation accuracy on 124 cases; end-to-end voice latency of 0.9-1.7s) and discuss the concrete engineering trade-offs and limitations of running an Islamic-knowledge voice product in production."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Authority at Commit Time: Reject-and-Rerun Semantics for Governed Agentic Systems",
+    "authors": "Jesus Salas",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31490v1",
+    "source": "arXiv",
+    "abstract": "Enterprise agents can compute for seconds or hours from a snapshot of policy, facts, task state, models, tools, and verifiers that may change before their work reaches the world. Completion alone therefore cannot confer institutional authority. We treat agents as proposal producers and a logically authoritative service as the sole authority for governed effects. At admission, the service compares a proposal's declared dependencies and component manifest with current state, applies the current verifier, and either reserves an idempotent effect for outbox dispatch or rejects affected stale work for resynchronization and rerun. Unaffected work may continue; lost responses resolve through canonical verdicts and receipts. The protocol composes optimistic concurrency control, semantic verification, and transactional outbox dispatch. Its distinctive read set includes normative authority and the model components that produced the proposal. We evaluate the design through an implemented governed-work lifecycle, a local authority, outbox, and reconciliation composition, and a multi-process fallback that delegates effect authority when complete mediation is unavailable. The local composition preserved selective fallback, unaffected work, retry and restart recovery, and package reconstruction. Complete mediation produced 18 authority commands and 18 external effects. Direct-credential arms produced eight additional effects, all detected with independent journal reconciliation and none falsely detected in the mediated control. The results support commit-time reject-and-rerun semantics and expose the clock, lease, ordering, and quorum obligations introduced by delegated admission. They do not establish prevention or reversal of bypass effects, external-journal completeness, production throughput, wide-area availability, semantic completeness, or verifier correctness."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Singular Backward SDEs for Optimal Control with State Constraints",
+    "authors": "Mathieu Lise, Nizar Touzi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31487v1",
+    "source": "arXiv",
+    "abstract": "We investigate a class of backward stochastic differential equations (BSDEs) with at most quadratic growth which explode at a possibly unbounded random horizon, defined through the first hitting of zero of an adapted Ito process. In contrast with the classical theory of singular BSDEs, the explosion is generated by the nonlinear dependence of the generator on the martingale integrand, rather than by a superlinear coercivity condition in the solution component. We construct a minimal singular solution and derive two-sided estimates on its explosion, together with weighted BMO estimates for the martingale integrand. We also obtain the uniqueness and exact explosion rates under additional structural assumptions. For Hamiltonian generators, we establish a verification theorem for an infinite-horizon stochastic optimal control problem with possible non-Markovian state constraints, showing that the BSDE feedback induces the unique optimal constrained law. We finally specialize the theory to exit times of uniformly elliptic Markov diffusions and recover the connection with large solutions of viscous Hamilton-Jacobi equations."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Towards Mitigating Fabricated Consensus: The Active Provenance Gate for Multi-Agent Debate Synthesis",
+    "authors": "Jakub Masłowski, Jarosław A. Chudziak",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31422v1",
+    "source": "arXiv",
+    "abstract": "Large language model-based multi-agent debate (MAD) systems are being increasingly used as complex decision pipelines in distributed processes. However, their final synthesis phase still remains inadequately controlled. Even with detailed debate logs, summarizing models are prone to fabricating smoothly written debate consensus that is not grounded in the debate's history. To address this safety gap, this paper presents empirical research and studies if the introduction of active post-debate verification can mitigate the production of such factually unsupported summaries, while still providing valuable information. Furthermore, it is examined whether explicitly signalling divergence is preferable in the absence of a reliable compromise. The Active Provenance Gate (APG) is introduced as a post-debate verification layer that treats the source as a hard constraint, analysing the debate logs, auditing each claim, and applying self-correction. In crisis simulations, the self-healing mechanism more than doubles the average data Provenance Fidelity in difficult condition scenarios, before the strict gate blocks unsupported claims and generates divergence reports. In the human study, a vast majority of the users (over 75%) preferred a report explicitly stating failure in critical scenarios, despite most of them perceiving fabricated consensus from the baseline system as more fluent. Our main contribution is the transition of data origin tracing from passive logging to active conditional blocking before publication."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Dilatonic Reissner--Nordström black holes in a Bertotti--Robinson magnetic background",
+    "authors": "Kenneth Hong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31408v1",
+    "source": "arXiv",
+    "abstract": "We construct an exact static, magnetically charged solution of four-dimensional Einstein--Maxwell--dilaton theory that generalizes the centered Reissner--Nordström black hole in a Bertotti--Robinson magnetic background. Its pure-background limit is the magnetic EMD deformation of Bertotti--Robinson spacetime. Using the Emparan--Teo solution-generating technique, the charged construction reduces in canonical Weyl coordinates to replacing the Schwarzschild horizon rod by the Reissner--Nordström rod of half-length $σ=\\sqrt{m^2-e^2}$ and integrating the resulting nonlinear background--rod interaction. This yields a completely explicit solution for arbitrary dilaton coupling $α$, with the expected special limits and numerical verification of the full field equations. The horizon exhibits a coupled mechanical, electromagnetic and intrinsic response to the monopole--background interaction. The residual conical stress is tied to north--south magnetic polarization; increasing the background field produces the ordered reversal scales $B_{\\rm pole}<B_{\\rm crit}<B_{\\rm eq}$, independent of $α$ at fixed seed parameters $(m,e)$, while Gauss--Bonnet identifies the conical stress with the integrated distributional Gaussian-curvature contribution at the singular pole. Along the fixed-$(m,B,α,C)$ near-extremal path considered here, every $α>0$ gives vanishing horizon area and divergent curvature, whereas a correlated near-extremal strong-field limit yields a universal magnetic-reversal law."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Benchmark cases for gradient-based optimization in linear elastic solid mechanics using lattice Boltzmann methods",
+    "authors": "Johannes L. Grafen, Florian Kaiser, Stephan Simonis, Shota Ito, Mathias J. Krause",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31347v1",
+    "source": "arXiv",
+    "abstract": "Gradient-based optimization (GBO) of problems constrained by partial differential equations is central to parameter identification and structural design in solid mechanics. Lattice Boltzmann method (LBM) schemes for linear elastic solids have only recently been derived. Combined with automatically generated discrete adjoint collision kernels, they make GBO possible with a purely LBM-based primal and adjoint solver. We propose, to our knowledge, the first optimization benchmarks for solid LBM: three inverse problems, each with a manufactured solution of the forward problem and a known reference control. These are the identification of two scalar amplitudes of a body force field on a periodic domain, the distributed control of the same field with up to $12800$ degrees of freedom, and the identification of Young's modulus on an elliptic plate with Dirichlet and Neumann boundaries. The primal scheme converges with second order on the periodic domain and with first order on the elliptic plate. The recovered controls follow these rates, with experimental orders of convergence of $1.92$ and $1.06$, respectively. Gradients obtained via forward-mode automatic differentiation (f-AD) and the discrete adjoint LBM (ALBM) require the same number of optimization steps and yield control errors agreeing to at least eleven significant digits. The ALBM gradient is further validated node-wise against a finite difference quotient, with deviations decreasing under mesh refinement. The benchmarks are implemented in the open-source LBM framework OpenLB and provide a verification basis for optimization in LBM-based solid mechanics and its extension to fluid-structure interaction."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Resource-Optimized and Energy-Aware Agentic AI Framework Anchored on Blockchain for Secure Software Supply Chains",
+    "authors": "Toqeer Ali Syed, Asadullah Abdullah Khan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31282v1",
+    "source": "arXiv",
+    "abstract": "This paper proposes a blockchain-backed agentic security framework designed to safeguard the complete software development lifecycle (SDLC) while also securing the agentic AI components responsible for monitoring it. The framework coordinates a set of specialised security agents, covering source integrity, dependency and SBOM analysis, CI configura tion auditing, artifact verification, and runtime policy evaluation, each supported by a large language model (LLM) that interprets artefacts, reasons over tool outputs, and produces structured security reports. To ensure agent trustworthiness, every agent generates a cryptographically signed attestation that is recorded in a permissioned blockchain via smart contracts, including an agent registry, an immutable attestation log, and an enforceable release-policy module. Communication among agents and with blockchain nodes is secured using a consortium-operated certificate authority, ensuring authenticated and tamper-resistant interactions. A detailed use-case and sequence flow demonstrate how a source code security agent performs analysis, anchors its attestation on-chain, and triggers a verifiable allow/block deployment decision. The proposed framework of fers decentralised integrity transparent provenance, uninterrupted security assurance and a generalisable architecture to incorporate the agentic AI into the modern software supply chain security."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices",
+    "authors": "Antonio Carreño, Jaime Señor, Jorge Portilla",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31252v1",
+    "source": "arXiv",
+    "abstract": "The arrival of quantum computers threatens the security guarantees of classical cryptography, since quantum algorithms can break schemes that remain secure against conventional attacks. The National Institute of Standards and Technology (NIST) has therefore standardized a set of post-quantum cryptographic algorithms, among them Falcon, a lattice-based digital signature scheme with the most compact signature and public-key sizes of the standardized candidates. Falcon's reliance on floating-point arithmetic makes it hard to implement in hardware, and prior work offers only partial accelerators for specific operations such as signature generation or verification, or a single full implementation generated through high-level synthesis (HLS). This work presents Peregrino, the first hardware accelerator of the complete Falcon digital signature scheme designed from scratch in HDL, targeting resource-constrained edge devices without a native floating-point unit through an emulated floating-point datapath. Implemented on a single Artix 7 XC7A200T FPGA, Peregrino uses 85261 LUTs, 41382 FFs, 44 BRAMs, and 142 DSPs for the Falcon-1024 variant. Against the only prior full implementation, the HLS-based FalconTakesOff, it uses 1,9$\\times$ fewer LUTs, 3,4$\\times$ fewer FFs, 2,7$\\times$ fewer BRAMs, and 9,9$\\times$ fewer DSPs, fitting the entire scheme on one FPGA where the HLS design requires at least two. Operating as a peripheral of an on-chip MicroBlaze soft-core, the accelerator additionally reduces key-pair generation, signature generation, and signature verification clock cycles by 92\\%, 96\\%, and 85\\% over the emulated floating-point reference software."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Quantum interaction can superactivate cheating under parallel repetition",
+    "authors": "Archishna Bhattacharyya, Laura Mančinska, Yuming Zhao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31223v1",
+    "source": "arXiv",
+    "abstract": "We study interactive multiprover games and many-round protocols in which the communication between the verifier and the provers is quantum. Parallel repetition is known to suppress soundness error of classical two-prover games arbitrarily close to zero, as shown by Raz (STOC '95), even with quantum strategies as shown by Yuen (ICALP '16), and Bavarian, Vidick and Yuen (STOC '17). Yet, we show that quantum communication can have the opposite, unexpected effect. Specifically, we exhibit a one-round quantum game and two-round $\\mathsf{QMIP}$ protocols whose local (unentangled) value is strictly less than one for a single instance, yet equals one under $n$-fold parallel repetition for every $n \\geq 2$. The key is that parallel repetition not only imposes additional winning conditions but also supplies additional quantum resources as entanglement in the exchanged states can be exploited jointly across copies. Our multiround examples build on superactivation of zero-error capacities of quantum channels. To establish this connection, we introduce quantum games and interactive protocols which capture the one-shot zero-error classical and quantum capacities, both with and without entanglement assistance. Our constructions use quantum-state verification and a teleportation-based reduction from two rounds to one. In contrast, when shared entanglement is allowed, we show that parallel repetition cannot increase the entangled value when at most $3$ messages are exchanged, consistent with classical results of Bellare, Impagliazzo and Naor (FOCS '97), and that of single-prover systems by Kitaev and Watrous (STOC '00). Combining this monotonicity with our quantum game-channel correspondence, we show that entanglement-assisted zero-error classical and quantum capacities cannot be superactivated."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Semantic Navigation for Issue Localization in Code Repository",
+    "authors": "Yunxiang Wei, Zhenyu Lei, Jundong Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31176v1",
+    "source": "arXiv",
+    "abstract": "Repository-level issue localization aims to identify and rank the files and functions relevant to resolving a reported issue. LLM agents approach this task iteratively: they identify a set of potentially relevant locations, inspect the corresponding code, and revise their judgments about these candidates as new evidence is acquired. Existing environments, however, provide limited support for this loop: agents must search for unresolved relation targets, reconstruct entity semantics from raw source code, and revise candidates without evidential basis. To address these limitations, we present SemNav, a framework that leverages deterministic retrieval to seed a broad candidate set and an LLM agent to continually refine that set, thereby combining initial coverage with evidence-guided revision. SemNav supports this process through three key components. A Semantic Navigation Graph resolves program relations on demand through a language server, enabling direct navigation to related entities across files. Issue-conditioned Semantic Cards provide compact, source-grounded interpretations of each entity's role and relevance to the issue. A persistent Candidate Workspace records each candidate together with its evidential basis, enabling grounded verification, revision, and ranking. Across SWE-bench Lite and PLocBench, SemNav outperforms existing baselines, improving File Hit@10 from 68.33\\% to 82.67\\% with Gemma 4B. Component ablations and trajectory analysis support the complementary roles of all three components, while Semantic Cards reduce working-context load by 48.2\\% relative to full-source reading. SemNav further ranks first on all seven evidence-quality metrics on SWE-Explore and improves downstream issue resolution from 44.00\\% to 52.33\\%."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "DualManip: Agentic Dynamic Manipulation via Dual-Path Semantic Reasoning and Geometric Adaptation",
+    "authors": "Chengxi Li, Yan Di, Yingyue Li, Ruida Zhang, Mingyang Li, Xiangyang Ji",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31112v1",
+    "source": "arXiv",
+    "abstract": "Vision-language models (VLMs) enable open-vocabulary reasoning for robot manipulation, but their high inference latency limits responsiveness in dynamic scenes. Many scene changes, however, alter object geometry without invalidating task intent. We present DualManip, a dual-path framework that decouples infrequent semantic reasoning from responsive geometric adaptation. The semantic path decomposes the task and grounds task-relevant interactions, followed by a constraint-solving module for pose optimization. During execution, the geometric path continuously updates template-to-observation correspondences from live RGB-D observations via a shape-adaptive network. These correspondences transfer task-relevant grasp contacts across observations, enabling online grasp reconstruction under object motion and non-rigid deformation. The Information Interaction Module bridges the two paths by initializing task-relevant grasps from semantic grounding, validating geometric updates, and triggering semantic replanning upon update failures. Real-world evaluation spans six manipulation tasks covering non-rigid deformation, articulated reconfiguration, rigid motion, and high-precision assembly across three settings: static, single-change, and continuous dynamic. DualManip demonstrates superior manipulation robustness, particularly under continuous scene changes, while achieving geometric adaptation approximately 46$\\times$ faster than agentic verification and semantic replanning. Our project page: https://lichengxi1.github.io/Dualmanip."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Optimal Power Sharing for Hybrid Energy Storage Systems Based on Karush-Kuhn-Tucker Conditions",
+    "authors": "Juan Diego Rios-Peñaloza, Milan Prodanovic, Javier Roldán-Pérez",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31100v1",
+    "source": "arXiv",
+    "abstract": "Renewable energy power plants are increasingly expected to provide ancillary services to the grid. Yet, the variability of sources such as solar photovoltaics requires additional operational flexibility to deliver these services. In this context, hybrid energy storage systems (HESSs) offer an appropriate solution, because different technologies with complementary characteristics can be applied and leveraged to share the power demand and improve the overall performance. Yet, a proper power sharing requires a detailed model of the storage elements. This aspect has barely been studied in the literature, where most models consider constant efficiencies. Moreover, most formulations are based on optimisation problems that are computationally too demanding to be solved in real time. In this paper, a controller is proposed to minimise the losses of a HESS considering detailed power-dependent efficiency curves of each storage technology. The power sharing method is based on the analytical verification of the Karush-Kuhn-Tucker (KKT) conditions, which makes it computationally efficient and suitable for real-world deployment. The proposed controller is applied to a test case consisting of a 10 MW PV power plant with a HESS based on a lithium-ion battery and a redox-flow battery, each with 2.5 MW power and 5 MWh capacity. The main contributions are verified via numerical simulations performed in MATLAB/Simulink, whereas a real-time implementation deployed in OPAL-RT demonstrates the viability of the algorithm for real-time applications."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Confident, Not Wiser: The Dunning-Kruger Effect in Human-AI Interaction",
+    "authors": "Daniela Fernandes, Michelle Rausch, Agnes Mercedes Kloft, Daniel Buschek, Robin Welsch",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.31095v1",
+    "source": "arXiv",
+    "abstract": "AI assistance can improve performance without improving self-assessment. We report a study (N=366) comparing Human alone and Human+AI performance on reasoning tasks, for which the AI model is benchmarked on the same items. Participants estimated global and block performance and rated confidence in their answers. Human+AI achieved higher scores, but self-estimates tracked performance weakly. Average overestimation was similar across groups, covering individual errors. Across tasks, confidence distinguished correct from incorrect answers less accurately in the Human+AI group, while within-task differences remained uncertain. The Dunning-Kruger pattern was found in both groups, with a larger observed contrast in Human+AI. Controls for score noise reduced but did not eliminate the pattern, with the controlled group difference remaining inconclusive. An extended computational account describes global and block estimates. Our findings distinguish performance augmentation from metacognitive augmentation and motivate interfaces that support verification, communicate task-specific AI model performance, and help users evaluate the quality of their joint work rather than produce answers."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Can Pixels Alone Reveal Image Origin? Minimax Limits and Learnable Interfaces for Passive Provenance",
+    "authors": "Kai Yao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30997v1",
+    "source": "arXiv",
+    "abstract": "Passive image provenance asks whether pixels alone can reveal where an image came from: a human, an aggregate AI class, or a particular generator. This becomes a robustness problem once a source image can be edited before the verifier sees it. We study the problem as source--target verification under adversarial distribution shift. Our first result gives the exact best-case limit for any image-only verifier: the largest robust target-acceptance gap equals the minimum total-variation distance between the target distribution and the set of attacked source distributions. This quantity depends on the source, target, and edit class, not on the verifier architecture. Our second result explains why deployed public verifiers can fail before this statistical limit is reached. If the verifier can be emulated on the attack region to error $\\varepsilon$, then a surrogate black-box attack reaches target acceptance within $2\\varepsilon$ plus optimization error of the white-box optimum; score-revealing logistic and softmax heads over public features are identifiable, and approximate score access gives stable recovery bounds. A finite-state experiment checks the minimax identity where both sides are computable. On same-prompt real/diffusion benchmarks, the evaluated public CLIP verifiers fail under targeted pixel attacks, while a ResNet-18 victim exhibits partial fake-to-real transfer. Binary feedback with abstention reduces measured attack success, but positive empirical gap upper bounds do not establish robustness. These results motivate separate evaluation of the source--target statistical ceiling and the information released by a deployed verifier."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "FAVoR: Measuring and Mitigating Author-Style Homogenization in Federated Personalized Generation",
+    "authors": "Lu Han, Jingyao Zhang, Katy Ilonka Gero, Nguyen H. Tran",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30968v1",
+    "source": "arXiv",
+    "abstract": "Large language models are increasingly used as personalized writing assistants, but adapting a model across many authors can compromise individual writing style by pulling author-specific signals toward a shared register. Federated parameter-efficient fine-tuning (PEFT) offers a data-local setting for this multi-author adaptation problem: clients keep author text local while sharing compact adapter updates. However, we show that standard aggregation can preserve continuation utility while making different authors' generations less distinguishable in style space, a failure mode we define as author-style homogenization. We evaluate author-style retention with Angular Style Classification Encoder (ASCE)-based diagnostics on our main BlogText benchmark and ASCE-independent external authorship verification. Using this protocol, we find that common federated PEFT baselines can preserve semantic utility while averaging out author-specific signals. To address this homogenization, we instantiate FAVoR (Federated Authorial Voice Retention), an author-style residual mechanism for federated PEFT. FAVoR uses a shared-private adapter design: clients upload shared-adapter updates while retaining author-specific residual corrections locally. Across BlogText and external Mythos-Reddit validation, FAVoR improves author-style retention over standard and personalized federated PEFT baselines. These gains come with small continuation-utility trade-offs and are supported by component ablations, external verification, and cold-start transfer."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Models",
+    "authors": "Arjun Pillai, Christian Hoang, Anjelo Laroza",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30954v1",
+    "source": "arXiv",
+    "abstract": "Large language models operating in multilingual contexts must resolve target response languages early in generation, yet the causal circuitry governing first-token language identity decisions remains poorly mapped. We present an end-to-end structural circuit analysis across six model architectures spanning four families: GPT-2, BLOOM-560M, Pythia-1B/2.8B, and Qwen2.5-1.5B Base/Instruct. Using Edge Attribution Patching (EAP) with FP16 active clamping, followed by exact activation patching verification with a 2,000-candidate-edge search ceiling, we extract directed acyclic graphs driving first-token language broadcasting. Across the standalone models, we observe deep or mid-to-deep broadcasting hubs, though the evidence is strongest for Pythia-2.8B and BLOOM-560M because GPT-2 and Pythia-1B leave few out-of-graph heads for comparison, while both Qwen2.5-1.5B variants invert the necessity check. Scaling from Pythia-1B to 2.8B expands node participation while maintaining a similar verified edge budget, producing sparser topology. The Qwen2.5-1.5B base and instruct circuits retain 84.7% Jaccard similarity, including the Layer 27 hub, indicating that first-token routing is largely established during pretraining and preserved by instruction tuning. Finally, EAP scores correlate weakly with exact patching deltas across most models, showing that linear gradient approximations can diverge from causal interventions in FP16 and motivating exact-patching verification for reliable circuit discovery."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "MVVBench: Benchmarking 4D Reasoning in Vision-Language Models",
+    "authors": "Hyungjin Chung, Byeongjun Park, Joonseok Lee, Hojun Kim, Jaeho Choi, Byung-Hoon Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30952v1",
+    "source": "arXiv",
+    "abstract": "Multi-view video understanding requires integrating spatial and temporal evidence across multiple, often non-overlapping camera streams: tracking entities as they transition between viewpoints, aligning events across time, and reasoning about latent 4D continuity rather than any single visible frame. We introduce MVVBench, a benchmark for multi-view video reasoning built from real world multi camera datasets. Questions are curated to be monocular-ambiguous along both the view and the temporal axis: each question is unanswerable from any single view in the designated input set, and the majority are further unanswerable from any single moment. Each question becomes uniquely solvable only by jointly reasoning across views and across time. MVVBench spans diverse dynamic scenes and probes six capabilities: implicit/explicit attribute identification, implicit/explicit relative distance, relative camera pose, and compositional counting, with human-authored QA and rigorous verification. Beyond benchmarking, we provide an extensive analysis of when and why current vision language models succeed or fail, characterizing errors due to temporal mis-localization, cross-view identity breaks, and brittle multi-hop reasoning. We then study inference-time elicitation strategies that unlock latent multi-view competence---task-specific chain-of-thought scaffolds and structured cross-view evidence aggregation---yielding substantial gains without retraining. Finally, we present preliminary evidence that reinforcement learning with verifiable rewards can elicit some latent multi-view competence in the base model, pointing to training-time approaches as a promising direction for future work. Together, MVVBench offers a rigorous evaluation of 4D multi-view reasoning and a foundation for future progress toward reliable embodied perception."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Developing a Roadmap to an AI-first Organization: A Case Study in Embedded Software Development",
+    "authors": "Viktor Kjellberg, Srijita Basu, Simin Sun, Farnaz Fotrousi, Miroslaw Staron",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30863v1",
+    "source": "arXiv",
+    "abstract": "The emergence of AI agents is expected to reshape software engineering by moving beyond AI as assistants towards systems capable of planning, executing, and evaluating development tasks with increasing autonomy. This transition is particularly significant for embedded software organizations, where strict requirements for quality, traceability, verification, and long-term maintainability often apply. This paper presents a case study of a large embedded systems company and its transition toward becoming an AI-first organization. Through a mixed method, we analyzed data collected from a semi-structured workshop with 40 participants, including scrum masters, architects, management, and product owners. The findings show that the participants expect agentic AI to affect team structure, required competencies, organizational strategies, and developers' roles within the organization. Based on these findings, the paper discusses implications for federated AI team formation, human-in-the-loop practices in such an organization, and the sustainable adoption of AI agents in embedded software engineering. We also present a concrete roadmap for the organization towards becoming an AI-first organization."
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Evaluating Real-Time Voice Agents: From Component Quality to Grounded Outcomes",
+    "authors": "Shivam Negi, Arpit Rawat, Rashi Jain",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.30798v1",
+    "source": "arXiv",
+    "abstract": "Real-time voice agents have moved from research prototypes to production deployments, yet the literature describing them is fragmented across three communities that rarely cite one another: speech foundation modelling, turn-taking psycholinguistics, and agentic evaluation. Architecture papers report latency, turn-taking papers report prediction accuracy, and agentic benchmarks report task success, so no single number describes whether a deployed agent is actually good. We address that gap with three evidence-based claims, each traceable to a corpus of 38 primary sources organised into an application-centric taxonomy of six categories. First, architecture choice is a deployment constraint rather than a settled verdict: a 2026 enterprise tutorial reports that no fully self-hostable end-to-end system yet meets production constraints, while a chunked cascade independently reaches state-of-the-art duplex behaviour, showing duplex behaviour is separable from duplex architecture. Second, evaluation has shifted decisively from component quality toward grounded outcomes, with recent benchmarks verifying backend state rather than trusting what the agent claims to have done. Third, the dyadic assumption in most models and benchmarks is breaking down: multiparty turn-taking and multi-speaker reasoning benchmarks show that deciding when not to speak, and reasoning about who may be told what, are first-class capabilities two-participant framings cannot measure. For each source we state the problem it targets, its mechanism, and its reported evidence, alongside the search strategy, inclusion criteria, and a verification step that caught a misattributed arXiv identifier in circulation. We propose TRG (Timing-Recovery-Grounded), a reporting standard characterising an agent by timing, post-disruption recovery, and state-verified outcome together, with a conditional fourth axis for multiparty deployments."
+  },
+  {
+    "date": "2026-9-28",
+    "title": "LumiJo: Enhancing Self-reflection with LLM-Generated “Words of Wisdom”",
+    "authors": "Lukas Gabriel Moers, Xianghua(Sharon) Ding",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829916",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "From Content Creators to Output Managers: Journalist-LLM Interaction and Its Consequences for Job Satisfaction and Professional Identity",
+    "authors": "Tine Rønning Pedersen, Klara Øvlisen, Marianne Graves Petersen",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829848",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "From Planning to Verification: Designing Interactions for Multi-Drone Search and Rescue Operations in Mixed Reality",
+    "authors": "Lorélia Latarche, Christophe Jouffrais, Jérémie Garcia",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829828",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Editorial Alignment: A Participatory Approach to Engaging Editorial Expertise in LLM-mediated Knowledge Dissemination",
+    "authors": "Simon Aagaard Enni, Malthe Stavning Erslev, Karl-Emil Kjær Bilstrup, Kristoffer Laigaard Nielbo",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829884",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "\"The chat can actually help you gauge what you're seeing\": Co-Designing an LLM-Based User Reporting Tool in the Context of Ambiguous Targeted Harassment with UK Instagram Users",
+    "authors": "Catherine R K O'Brien, Izzy Ferreira-Alturas, Amid Ayobi, Mark Warner",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829889",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Bear-ing the Burden: Impact of Affective Eco-Feedback on Sustainable LLM Use",
+    "authors": "Jill Ashley Okonji, Sheau-Jwu Wu, Florian Michahelles",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829859",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Exploring Strategies for Conceptual Alignment in LLM-Based Human-Robot Dialogue",
+    "authors": "Shengchen Zhang, Meiying Li, (Melody) Zixuan Wang, Xiaohua Sun, Weiwei Guo",
+    "publish": "Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3829807.3829893",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
