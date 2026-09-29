@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-28",
+    "title": "Peppy: An AI-Assisted Workflow for Tight Convergence Analysis of Optimization Algorithms",
+    "authors": "Jaewook J. Suh, TaeHo Yoon, Edward Duc Hien Nguyen, Bicheng Ying, Shiqian Ma",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35762v1",
+    "source": "arXiv",
+    "abstract": "This paper presents Peppy, an AI-assisted workflow for discovering tight, analytic convergence proofs for first-order optimization algorithms. Generic approaches to using LLMs to conduct mathematical research target an unspecified, broad spectrum of problems and sometimes use the Lean 4 proof assistant for formalization. On the other hand, Peppy leverages domain-specific knowledge more heavily and is thereby capable of constructing the proofs in a more structured manner, which allow a minimal and accessible verification through SymPy. We experimentally demonstrate through examples that Peppy provides a rigorous, practical, and reproducible paradigm for AI-assisted theorem synthesis in optimization. We further highlight its capability of closing several open problems on tight convergence analysis of first-order optimization algorithms, including conjectures for Nesterov's FGM. Overall, Peppy is designed to turn the art of optimization algorithm analysis into a science."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Can LLMs Value the Right Evidence? Evidence-Value Misalignment in Dynamic Medical Diagnosis",
+    "authors": "Kehua Feng, Yunsheng Lu, Yitong Qiao, Tiantian He, Lei Liu, Yue Shen, Jian Wang, Jinjie Gu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35627v1",
+    "source": "arXiv",
+    "abstract": "A correct diagnosis reached from insufficient or misleading evidence can pose a clinical hazard, yet outcome-based accuracy may reward such lucky guesses. We call this mismatch between diagnostic decisions and the value of available evidence Evidence-Value Misalignment (EVM). To disentangle evidential grounding independently from diagnostic accuracy, we introduce MedEVM, a dynamic benchmarking environment comprising 1,050 cases across 24 disease systems. Observations arrive turn by turn, requiring models to continuously calibrate its decision by deciding whether to wait for more evidence or submit a diagnosis. Across 9 LLMs, four interesting patterns are observed. (1) Miscalibrated evidence tracking. Making a diagnosis often fails to calibrate evidence sufficiency, even in more capable models, and even worsens in reasoning mode. (2) Misaligned diagnosis submission. Confidence in the correct diagnosis often fails to ensure timely submission despite sufficient evidence. (3) Evidence order matters. Reordering the same evidence changes diagnoses even when model confidence remains similar. (4) Misleading evidence remains influential. Added misleading evidence redirects diagnoses even after prior evidence becomes sufficient. We further verify that EVM predicts errors and that preventing premature submission improves accuracy. These findings motivate Evidence-Verified Diagnosis Harness (EVD-Harness). It decouples diagnosis generation from submission through an offline Contrastive Diagnostic Wiki and three online control stages, namely observation management, proposal and witness verification, and diagnosis submission control. Across five LLMs, EVD-Harness improves accuracy by 12.0--51.1 percentage points while mitigating EVM-related failures. Our results demonstrate that verifying evidential support before submission can make diagnostic decisions more reliable."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Source-preserving alignment for robust evidence localization in scientific PDFS",
+    "authors": "Zihao Liu, Wei Yang, Zixiao Dong, Chenshu Li, Longzhang Liu, Tao Tan, Hong Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35588v1",
+    "source": "arXiv",
+    "abstract": "Scientific information-extraction systems often return a claim with an evidence string, which users must locate in the original PDF. This is challenging because the extracted evidence and PDF text layer are different representations: line wrapping, Unicode variants, superscripts, citation markers, and fragmented items alter text sequences and geometry. We present a source-preserving alignment framework: normalize text for robust matching while preserving provenance for accurate localization. It aligns evidence with normalized page text, maps matches back to source-character spans, and renders only their geometry. When exact alignment fails, line-break-aware token alignment recovers supported spans while excluding unmatched noise. Experiments on 1,020 chemistry papers show that the framework achieves a 92.6\\% quote-level automatic localization rate, compared with 43.6\\% for text search and 19.1\\% for a precomputed bounding-box baseline. Component ablation confirms distinct contributions from normalization and approximate token alignment, while human verification assesses the visual correctness of returned highlights. Overall, these results demonstrate that reliable evidence verification requires robust matching and precise localization within a shared source-preserving alignment representation."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Mixed-Dimensional Electromechanical Coupling of Embedded Beam Networks in Soft Dielectric Composites",
+    "authors": "L. River Spencer, Manuel K. Rausch, Chad Landis, Jan N. Fuhg",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35584v1",
+    "source": "arXiv",
+    "abstract": "Soft electroactive composites can exhibit strongly architecture-dependent mechanical and electrical responses, but explicitly resolving dense fiber networks in three dimensions is computationally expensive. We develop a mixed-dimensional finite-element formulation in which electroactive fibers are represented by geometrically exact beams embedded in a deformable dielectric matrix. Unlike existing electroactive beam formulations in which the electric potential is defined directly on the beam, the embedded fibers here are driven by the three-dimensional electric field of the surrounding matrix. The matrix field is sampled along the beam centerlines and enters the beam dielectric enthalpy directly, providing two-way electromechanical coupling without introducing independent electric-potential degrees of freedom on the beams. Beam and matrix mechanics are coupled through projected mortar constraints, and the electromechanical problem is solved monolithically. We use the formulation as the microscale model in a periodic homogenization framework to compute effective stress and electric displacement. Verification studies quantify discretization and field-sampling sensitivity, followed by structured and irregular network examples that demonstrate architecture-dependent mechanical and electrical responses without body-fitted three-dimensional fiber meshes."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering",
+    "authors": "Zhen Yao, Likai Wang, Yuming Yang, Zhihao Zheng, Bo Lang, Qiuyu Tang, Jialu Sheng, Jingqi Xu, Yuehai Yang, Jumal Barker, Xiaowen Ying, Mooi Choo Chuah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35507v1",
+    "source": "arXiv",
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated remarkable advances in remote sensing. However, existing remote sensing multimodal reasoning benchmarks exhibit two critical limitations: they rely on (i) template-driven questions, which causes repetitive questions; and (ii) static images that fail to capture the inherent temporal nature of drone/UAV videos. This leaves systematic evaluation of remote sensing video reasoning largely unexplored. To address this gap, we introduce ReVA, a new dataset for remote sensing video question answering, designed to assess spatiotemporal, scene-centric, and reasoning-oriented capabilities of MLLMs. ReVA comprises 2,438 drone videos spanning 18 cities worldwide (580K frames) and 22K high-quality question-answer pairs across 11 challenging QA tasks. We develop a semi-automatic annotation pipeline that leverages Text LLMs and MLLMs for question-answer generation with human verification. We evaluate 23 proprietary and open-source Video LLMs on ReVA, exposing fundamental limitations of current models. These findings position ReVA as a critical benchmark toward better remote sensing video understanding and temporal reasoning capabilities for real-world deployments. Our code and dataset are available at: https://github.com/zyaocoder/ReVA"
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Spontaneous Context Restoration: How Language Models Recover from Corrupted Inputs",
+    "authors": "Pranjal Garg, Jacob Beck",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35475v1",
+    "source": "arXiv",
+    "abstract": "Language models sometimes produce correct outputs even when their inputs are corrupted by deletion, replacement, or misspelling. We study the internal processes accompanying this behavior, which we call context restoration, in controlled attention-only transformers and five pretrained LLMs (1B-32B parameters) across arithmetic, reading comprehension, and multiple-choice reasoning tasks. In the attention-only transformers, restoration emerges spontaneously despite training exclusively on clean sequences, without corruption training or an explicit denoising objective. We find that context restoration follows a two-phase process: early layers localize effects associated with repair at corrupted positions, while later layers accumulate these effects at uncorrupted positions through the residual stream and ultimately concentrate them at the output position. Repair outcome is predictable from hidden states: cosine alignment with the clean state is highly predictive in attention-only models, while linear probes recover additional information in pretrained LLMs. A linear probe using only the corrupted prompt's first-block hidden state predicts failure with mean ROC-AUC 0.78. This enables failure triage under matched or even partially shifted deployment conditions and may reduce unnecessary verification or computation. Failed examples also show substantially greater nonlinearity along corruption directions. Moderate-corruption finetuning increases corruption tolerance while simultaneously reducing displacement-normalized linearization error, associating improved robustness with a more nearly linear response to corruption."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "LLM-Assisted Automatic Security Proofs for Cryptographic Protocols: How Far Are We?",
+    "authors": "Tianjian Liu, Shicheng Feng, Jin'ao Shang, Xiaoting Lyu, Bin Wang, Zonghua Zhang, Lei Xue, Wei Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35434v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have shown strong potential for assisting software and security analysis tasks, yet their effectiveness in cryptographic symbolic protocol verification remains insufficiently understood. In this paper, we conduct the first systematic evaluation of the capability of state-of-the-art LLMs in cryptographic symbolic protocol verification. To quantify this capability, we propose \\textsc{CRoST} (Coverage Rate of Solve Tree), a proof-based metric derived from the verifier's proof skeleton that measures the similarity between generated lemmas and reference lemmas. We then establish the rationale of \\textsc{CRoST} through both theoretical analysis and empirical validation. The evaluation results show that state-of-the-art models achieve 38.82\\% coverage on average, with 14.4\\% of generated lemmas exceeding 80\\% coverage, indicating that LLMs can already generate useful lemmas to a certain extent. However, they still exhibit non-trivial failure modes on complex multi-phase protocols, show diminishing returns under naive scaling, and incur substantial verification overhead. These findings clarify the practical potential and limitations of LLMs for protocol verification and motivate future work on complex real-world protocols."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence",
+    "authors": "Hongcheng Gao, Jingjing Zhou, Zelin Zheng, Shijia Ge, Jay Zhu, Yazhe Wang, Jianshu Zeng, Xuan Shangguan, Di Wu, Lingyu He, Zhiqi Jia, Sihang Wu, Xiao He",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35432v1",
+    "source": "arXiv",
+    "abstract": "Vision-language-action (VLA) and world-action (WAM) models map observations and instructions directly to robot actions. This directness ties a policy to training: minor layout or viewpoint changes cause failure, and instructions generalize poorly. The root cause lies in representation: task requirements, conditions, progress, and failure recovery are implicitly encoded in action sequences, making them difficult to inspect or revise. Digital coding agents offer a precedent: LLMs call tools, verify results, and revise from feedback as executable code. The same working pattern of explicit state, manageable execution, and revisable procedures underlies generalization and long-horizon execution in the physical world, letting physical experience return as reusable programs, memory, or evidence. We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution. We build HexaAnything, which calls perception, planning, and control tools, including VLA/WAM policies, and makes in-the-loop decisions from external feedback. Verified traces become data and memory, enabling evolution from tools and Harness to model weights, architectures, and ultimately hardware and task design. On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution. On PhyBench and a dual-arm AgileX robot, the agent autonomously completes physics experiments and most tabletop tasks, often faster than published results. We observe data, model, and tool self-evolution; future work targets weight internalization, autonomous redesign of architectures, languages, representations, and tasks, and deployment in manufacturing and science."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Scalable Small-Signal Stability Assessment of Power Systems Based on Frequency-Domain Quadratic Constraints",
+    "authors": "Xiaoying Liu, Linbin Huang, Hangyu Chen, Huanhai Xin",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35424v1",
+    "source": "arXiv",
+    "abstract": "Small-signal stability analysis of power electronics-dominated power systems is becoming increasingly challenging due to the large-scale integration of heterogeneous grid-following (GFL) and grid-forming (GFM) converters. Classical centralized methods, such as eigenvalue analysis and the generalized Nyquist criterion, provide direct stability assessment tools but exhibit limited scalability as the system size increases. This motivates scalable analysis methods for stability assessment and device-level diagnosis, and calls for less conservative stability conditions. To this end, this paper proposes a scalable small-signal stability assessment method with quantitative stability indices for multi-converter systems based on frequency-domain quadratic constraints (FQCs). It is shown that several existing stability conditions, including geometric conditions based on the Davis-Wielandt (DW) shell, numerical range, $x$-$z$ graph, scaled relative graph (SRG), mixed gain-phase condition, and passivity condition, are special cases of the FQC-based stability condition. This FQC-based formulation also clarifies the requirements for decentralized verification of these existing stability conditions. To further reduce conservatism, a full-multiplier FQC-based stability condition is developed, based on which an optimization problem is formulated for scalable stability certification and device-level diagnosis using quantitative stability indices without relying on graphical inspection. Combined with the mixed gain-phase condition, this optimization problem forms a hierarchical screening-diagnosis procedure that improves efficiency. Case studies demonstrate that the proposed method is less conservative than existing criteria and can effectively identify problematic devices associated with potential instability risks."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Convex counterexamples to the Schiffer and Pompeiu conjectures in dimensions three, four, six, eight, ten and fourteen",
+    "authors": "Jizhou Guo",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35419v1",
+    "source": "arXiv",
+    "abstract": "In dimensions $3,4,6,8,10,14$ we construct bounded convex non-ball domains with real-analytic spherical boundaries. Each admits a nonconstant solution of $Δu+u=0$ with $u=1$ and $\\nabla u=0$ on the boundary. Green's identity makes their indicator Fourier transforms vanish on the unit sphere, disproving the Schiffer and Pompeiu conjectures even within the convex class in these dimensions. The three-dimensional domain is axisymmetric, invariant under $O(2)$ on the last two coordinates and reflection of the first, and is obtained by lifting a conformal map of its meridian section. In dimensions $n=2m+2$, $m=1,2,3,4,6$, the domains lie in the rank-two compact Lie algebras $\\mathfrak{u}(2)$, $\\mathfrak{so}(4)$, $\\mathfrak{su}(3)$, $\\mathfrak{so}(5)$ and $\\mathfrak g_2$. Harish-Chandra's radial part formula reduces these cases to planar Helmholtz problems, and Kostant's theorem reduces convexity to the Cartan section. Exact solutions near dyadic approximations follow from computer-assisted contractions in weighted polynomial coefficient spaces, with interval bounds for finite blocks and analytic bounds for every infinite tail. A second, strictly star-shaped but nonconvex, example in dimension three is retained as an independent result. To our knowledge, apart from the earlier version of this work, these are the first counterexamples in dimensions at least three and the first known convex counterexamples in any dimension."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Zero Knowledge Proofs in Quantum Networks",
+    "authors": "Tuhin Paul, Srijani Das, Manasi Patra, Ramij Rahaman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35339v1",
+    "source": "arXiv",
+    "abstract": "Zero-knowledge proofs (ZKPs) enable the verification of a statement without revealing any information beyond its validity and constitute a fundamental primitive in cryptography and information theory. However, existing constructions rely on computational assumptions and are predominantly confined to bipartite settings, leaving their information-theoretic realization in bipartite or network scenarios largely unexplored. Here we develop a framework for zero-knowledge verification based on the indistinguishability of quantum states under operational constraints. Exploiting the fundamental limitations imposed by local operations, we show that a verifier is inherently restricted from extracting information about the underlying state while retaining the ability to verify correctness. We construct explicit protocols for multiparty quantum networks that achieve information-theoretic security, ensuring that no subset of collaborating parties can gain knowledge beyond the validity of the statement, independent of their joint computational power."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "NeuronDiscover: Agent-in-Twin for Mechanistic Discovery in Neuronal Microenvironments with World Action Models",
+    "authors": "Haowei Xu, Wanyi Fu, Hongbin Han, Zhaoheng Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35338v1",
+    "source": "arXiv",
+    "abstract": "Mechanistic discovery in neuronal microenvironments requires interventions and measurements that separate competing explanations of solute transport and neuronal response. Predictive accuracy cannot settle the question: a real mechanistic change and an error in the computational twin leave the same signature in sparse observations. We formalize this twin confounding and reason over a joint mechanism--discrepancy belief, designing experiments that separate the two. NeuronDiscover is an Agent-in-Twin framework whose shared, mechanism-grounded World Action Model (WAM) couples prediction, intervention proposals, and observation design; independently adjudicated outcomes revise a scoped Mechanism--Intervention--Observation--Outcome (MIOY) graph, whose supported relations compile into executable programs carrying discrepancy-adjusted acceptance bounds. We evaluate on simulated brain-fluid tracer-transport worlds adjudicated by an independently frozen finer-mesh reference solver, and on donor-disjoint public current-clamp recordings of cortical neurons. Counting only relations that reach a certified terminal status, and scoring abstentions as unresolved for every method, at a matched budget of 16 experiments over 32 source units NeuronDiscover resolves 4.0 relations per assigned world against 3.4 for the strongest baseline and 3.2 without graph revision, at 5% false support and 82% scope accuracy. Joint mechanism--discrepancy acquisition resolves 3.8 relations versus 2.9 for plug-in expected information gain; discrepancy-adjusted verification lowers accepted-program failure from 15% to 9% at 60% acceptance coverage; and transfer to the recordings yields 1.94 versus 1.53 relations per assigned world. Correctness is adjudicated within declared model worlds and archival recordings."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library",
+    "authors": "Youhui Wang, Yunzhu Li, Li Fei-Fei, Jiajun Wu, Huang Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35318v1",
+    "source": "arXiv",
+    "abstract": "Human videos offer a scalable source of demonstrations for dexterous robot manipulation. However, existing human-to-simulation-to-robot (Human2Sim2Robot) pipelines rely on predefined procedures that struggle to accommodate diverse object properties and interactions, particularly those involving articulated and deformable objects. We introduce DexAgent, an agentic Human2Sim2Robot framework that converts a single egocentric human video and a task prompt into physically grounded robot trajectories for policy training. It operates through four stages: semantic understanding of human videos, property-based simulation reconstruction, robot trajectory optimization, and robot data generation. At each stage, DexAgent adapts its approach to the task and object properties by selecting suitable skills from its tool library or developing new ones when needed. Property-specific verifiers assess stage outcomes for physical validity and task-specific requirements and provide feedback for refinement, preventing error propagation through the workflow. This adaptive, verification-guided process allows DexAgent to process diverse objects and long-horizon tasks. In the final stage, DexAgent varies object and robot states in simulation to generate diverse robot trajectories from a single human video, then retextures the rendered observations to facilitate sim-to-real transfer. Newly developed skills and verifiers are retained in its tool library, making it self-evolving to accumulate reusable capabilities. This reduces processing time as DexAgent encounters more human videos. Across eleven real-world tasks, policies trained with DexAgent-generated data achieve a 3.5x higher success rate than competing baselines. Project website: https://dexagent123.github.io/."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Reliability Engineering for AI Systems: Challenges, Methods, and Directions",
+    "authors": "Rong Pan, Yili Hong, Min Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35316v1",
+    "source": "arXiv",
+    "abstract": "AI reliability concerns whether an AI system performs its intended function dependably over a stated period and under stated operating conditions, with stated evidence. As these systems become more autonomous, that function includes more than a correct output. Retrieval, memory, tool use, permissions, human oversight, and interactions among systems must operate consistently and safely, and, for generative systems, so must the reasoning process that produces the output. Average benchmark accuracy measures capability; it does not quantify this broader reliability claim. This paper adapts established reliability engineering methods, from failure definitions and operational envelopes to FMEA, accelerated testing, field monitoring, and reliability growth, to AI systems. A four-level diagnostic framework classifies failures as component, operational-loop, agentic-conduct, or network and governance failures. Test, evaluation, verification, and validation (TEVV), sequential monitoring, and FRACAS create and refresh evidence. SMART provides statistical guidance for measurement, analysis, assessment, and test planning; the NIST AI Risk Management Framework provides organizational guidance for governance, evaluation, monitoring, and mitigation. Three cases illustrate the program: adversarial testing of a convolutional neural network, perception-error propagation, and autonomous-vehicle disengagements. Established reliability engineering provides a usable foundation; new measurements and safety guardrails are still needed as these systems are self-evolving."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Towards Reliable AI Data Scientists: Data Agents with Workflow Harnesses",
+    "authors": "Huachi Zhou, Yujing Zhang, Jiahe Du, Jiacheng Cai, Zijin Hong, Chuang Zhou, Zheng Yuan, Qinggang Zhang, Qing Li, Xiao Huang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35255v1",
+    "source": "arXiv",
+    "abstract": "Large language model agents are increasingly deployed for data-intensive work, yet reliable data analysis requires more than general-purpose reasoning and ad hoc tool augmentation. Data Agents, equipped with workflow harnesses, offer a promising paradigm for automating the end-to-end data science lifecycle. This paper examines Data Agents from a harness-centric perspective. First, we introduce a taxonomy of Data Agents and associated data environments, organizing the literature around five functional stages: perception, planning, execution, verification, and repair. Second, we analyze the key technical routes within each stage, identifying 15 distinct approaches ranging from data structure probing to data state reconstruction. Third, we identify four open reliability problems: inactive semantic calibration, missing clarification, missing experience transfer, and the missing verification-repair repository. These problems explain why silent failures can persist even when individual components function correctly, highlighting the need for rigorous workflow harnesses and shared reliability resources. Finally, we summarize the horizontal task families of Data Agents, examine their vertical application settings, and benchmarks for evaluation, while maintaining a companion repository at https://github.com/DEEP-PolyU/Awesome-Data-Agents."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Beneath the Tokens: A Performance Engineering Study of Multi-Token Prediction in GPU-Accelerated LLM Inference",
+    "authors": "Suwesh Prasad Sah",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35188v1",
+    "source": "arXiv",
+    "abstract": "Autoregressive large language model inference repeatedly invokes the target model to generate one token at a time, making generation sensitive to GPU memory movement and sequential execution. This study evaluates two-token multi-token prediction (MTP) against autoregressive decoding in a controlled single-request deployment on an NVIDIA A10G GPU. A 360-request benchmark covered plain-text, reasoning-intensive, and tool-calling workloads, while runtime telemetry, Nsight Systems, PyTorch Profiler, and selected Nsight Compute measurements were used to explain the observed performance. MTP increased output throughput by \\(1.91\\times\\) to \\(2.19\\times\\) across all prompts and reduced time to first output by 10.0--14.2\\%. Median mean acceptance length ranged from 2.370 to 2.595 tokens per verification iteration. Profiling showed that MTP introduced a longer and more complex execution path, including proposal, sampling, attention, gathering, and reduction operations. However, it required 56.4--78.1\\% fewer executions of the selected repeating CUDA Graph per generated token. The dominant MTP GEMM kernel was not faster than the dominant autoregressive GEMV kernel, and selected instances of both approached the A10G memory-bandwidth limit. These results show that MTP improved inference through amortization: greater token progress reduced repeated GPU execution sufficiently to outweigh the additional speculative-execution cost."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Moments of random multiplicative functions with polynomial coefficients",
+    "authors": "Xinyu Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35187v1",
+    "source": "arXiv",
+    "abstract": "Let $f$ be a Steinhaus random multiplicative function and let $g$ be a polynomial of degree $d$. Write $S_N=N^{-1/2}\\sum_{n\\le N}f(n)\\,e(g(n))$. We prove a quantitative dichotomy for the moments of $S_N$: for each integer $s\\ge 2$, either $\\mathbb{E}|S_N|^{2s}$ is close to the Gaussian moment $s!$, or the coefficients of $g$ can be approximated by rationals with a small denominator. In particular, if the coefficients of $g$ satisfy a Diophantine condition, then $S_N$ converges in law to a complex normal distribution with mean $0$ and variance $1$. Lean 4 code for the proofs is provided, for convenience of verification."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "EdgeCraft: Automated Model Crafting for Edge IoT",
+    "authors": "Genglin Wang, Kaiwei Liu, Liekang Zeng, Wangsong Yin, Shangcheng Jin, Guoliang Xing, Zhenyu Yan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35167v1",
+    "source": "arXiv",
+    "abstract": "Machine learning (ML) increasingly powers Internet of Things (IoT) applications at the edge. Yet producing a deployable edge ML artifact for a specific scenario requires navigating a huge search space spanning data representation, model design, training on domain-specific data, and runtime customization. This workflow is fragmented and difficult to scale across diverse edge applications. We present EdgeCraft, an LLM-driven system that turns high-level intent into deployable edge ML artifacts. Building such a system raises two challenges: (1) How can an LLM be guided to find high-quality solutions that meet dynamic SLOs for task quality, latency, and energy? (2) How can trustworthy target-device verification be obtained at low cost? EdgeCraft addresses these challenges with two designs. (1) A constraint-aware synthesis tree explores alternative candidates and uses measured SLO gaps to guide each improvement. (2) A multi-fidelity verifier progressively combines low-cost checks with full target-device verification to reduce verification cost while preserving reliable verification results. It also records verified failures for reuse, avoiding repeated device work. To support concurrency, EdgeCraft provides a multi-tenant runtime that runs cloud training and target-device verification in parallel while isolating requests. Across 50 public tasks, EdgeCraft exceeds the task-specific Reference in best-observed quality on 40 tasks and finds an SLO-feasible artifact on 45, with the two outcomes overlapping on 38 tasks. Moreover, EdgeCraft achieves competitive performance on our self-collected SEN dataset, suggesting its generalizability to real-world IoT sensing tasks."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "From Migration to Calibration: Preserving Agent Capabilities across Models, Jurisdictions, and Scale",
+    "authors": "Yaxiao Liu, Pengbo Liu, Yiwen Liu, Yihua Guan, Jiaxing Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35149v1",
+    "source": "arXiv",
+    "abstract": "Agents need calibration when deployment conditions change: replacing a driving model, including a foundation-to-post-trained transition; crossing jurisdictions; or scaling across heterogeneous markets and sources. Interface compatibility alone does not establish capability retention or target-contract satisfaction. We formulate agent calibration as constrained behavioral adaptation across three interacting layers: information preservation, harness adaptation, and user acceptance; the layers apply to every scenario, not one-to-one to the three. The basic objective is non-degradation on prespecified capability measures while satisfying target requirements; aggregate improvement is stronger. Information calibration preserves independently validated source content still applicable to the target task. Harness calibration aligns observable artifacts at semantic checkpoints and repairs them through iteration, tool substitution, or local replanning within explicit budgets. User calibration enforces recipient-specific output contracts: templates, schemas, and section-level preferences. A global e-commerce example shows how shared standards coexist with site- and market-specific adapters and validation. We distinguish trainable policies from frozen-backbone configuration or controller optimization, and evidence verification from relative judgment and DPO/GRPO optimization. Recent harness-transfer and judge-validity studies motivate target-native execution records, separate audits of task validity and near-tie ranking, and matched target-native optimization controls. We propose held-out evaluations for model changes, cross-border adaptation, and scale, including a factorial test of source evidence and checkpoint repair and group-level reporting to prevent aggregate gains from masking local failures. This is a methodological proposal; implementation and empirical validation remain future work."
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Large-Scale Autonomous Discovery of Kissing Number Constructions",
+    "authors": "Shuxing Yang, Rui Zhao, Junyao Wu, Yize Wang, Fujia Chen, Kaihao Zhu, Wenhao Li, Zichen Li, Yaqi Li, Shenzhan Hong, Yuang Pan, Junjie Yang, Taowen Deng, Jincheng Mi, Hongsheng Chen, Yihao Yang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.35051v1",
+    "source": "arXiv",
+    "abstract": "The kissing-number problem is a classical problem in discrete geometry whose exact solution is known in only a few dimensions. Recent artificial-intelligence approaches have begun to discover improved configurations through large-scale numerical and combinatorial search, but converting such searches into general mathematical constructions and rigorous proofs remains challenging. Here we use Qiushi Engine, an autonomous multi-agent research system, to investigate kissing numbers and obtain new lower bounds in nineteen dimensions: $25$, $27$, $32$--$39$, $43$, $45$, and $49$--$55$. The resulting constructions arise from distinct structural mechanisms, including coordinated motions of contact layers, labelled direction reuse, joint support exchanges, signed-code replacements, cross-shell lattice constructions, low-overlap lattice isometries, and spherical-design moment certificates. They yield sharp capacities for parameterized signed-code models, deterministic image-union guarantees, and exact section and projection counts controlled by embedded root systems and anchor-graph statistics. These methods yield, among others, $K(25)\\ge197580$, $K(27)\\ge201567$, $K(38)\\ge591900$, $K(43)\\ge2553792$, $K(45)\\ge7380090$, and $K(55)\\ge53301140$. The autonomous system carried out the construction searches, mathematical analysis and computational verification, while each final result was reduced to explicit mathematical arguments and independently checkable finite certificates. Our results illustrate how autonomous research systems can move beyond optimization within fixed formulations to discover new mathematical representations and constructions at scale."
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Dual-LLM Verification of AI-Generated Educational Content: A Generator–Evaluator Framework for Item Quality Assessment",
+    "authors": "Michail Tselepatiotis, Efthimios Alepis",
+    "publish": "2026 17th International Conference on Information, Intelligence, Systems &amp; Applications (IISA)",
+    "url": "https://doi.org/10.1109/iisa71656.2026.11705534",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "LLM-42: Enabling Determinism in LLM Inference with Verified Speculation",
+    "authors": "Raja Gond, Aditya K Kamath, Ramachandran Ramjee, Ashish Panwar",
+    "publish": "Proceedings of the ACM SIGOPS 32nd Symposium on Operating Systems Principles",
+    "url": "https://doi.org/10.1145/3830418.3843901",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-28",
+    "title": "LLM-Agnostic Semantic Representation Attack_supp1-3735535.pdf",
+    "authors": "Lap-Pui Chau",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/tpami.2026.3735535/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "LLM SQL Cross-Dialect Translation: Schema-Constitutive Reasoning and Mind Openers",
+    "authors": "Arsenij Kroptya, Ihor Mykheliev",
+    "publish": "2026 16th International Conference on Advanced Computer Information Technologies (ACIT)",
+    "url": "https://doi.org/10.1109/acit69831.2026.11700092",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Combined Approach to Adaptive Software Reconfiguration Based on Ontology and LLM",
+    "authors": "Illia Lutsyk, Dmytro Fedasyuk",
+    "publish": "2026 16th International Conference on Advanced Computer Information Technologies (ACIT)",
+    "url": "https://doi.org/10.1109/acit69831.2026.11700004",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "LLM-Based Hybrid Test Scenario Generating Model for Autonomous Driving Systems",
+    "authors": "Merve Yilmazer Gundem, Mehmet Karaköse",
+    "publish": "2026 16th International Conference on Advanced Computer Information Technologies (ACIT)",
+    "url": "https://doi.org/10.1109/acit69831.2026.11700013",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Concept-KNN: Interpretable Graph Clustering of LLM Conversations via Classical NLP",
+    "authors": "Divyansh Bhatia, N. Mehala",
+    "publish": "2026 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",
+    "url": "https://doi.org/10.1109/conecct68978.2026.11700721",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "ArchiGen: An LLM-Augmented Framework for Automated Generation of Software Solution Blueprint Documents from UML Diagrams",
+    "authors": "Mohammed Megahed, Ammar Mohammed",
+    "publish": "2026 Intelligent Methods, Systems, and Applications (IMSA)",
+    "url": "https://doi.org/10.1109/imsa70415.2026.11700263",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Comparative Analysis of Embedding, LLM, and RAG-Based Approaches for OOD Intent Detection",
+    "authors": "Ebru Koçdor, Furkan Göz",
+    "publish": "2026 16th International Conference on Advanced Computer Information Technologies (ACIT)",
+    "url": "https://doi.org/10.1109/acit69831.2026.11699980",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Measuring Position Bias in LLM-as-a-Judge for Hiring",
+    "authors": "Loubna Aminou, Abdelaziz Daaif, Maha Soulami, Mohamed Youssfi",
+    "publish": "2026 16th International Conference on Advanced Computer Information Technologies (ACIT)",
+    "url": "https://doi.org/10.1109/acit69831.2026.11699959",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Stochasticity-Induced Unreliability in LLM-Based Hiring Systems",
+    "authors": "Animesh Giri, Keerthana Bhat, Nehal G, Manodnya K H",
+    "publish": "2026 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",
+    "url": "https://doi.org/10.1109/conecct68978.2026.11700588",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "LLM-Driven Taint Analysis for Detecting Bad Partitioning Issues in Trusted Applications",
+    "authors": "Tatsuya Yoshinaga, Minami Yoda, Yutaka Matsuno",
+    "publish": "2026 17th International Conference on Information, Intelligence, Systems &amp; Applications (IISA)",
+    "url": "https://doi.org/10.1109/iisa71656.2026.11705480",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "An LLM-Augmented SIEM Architecture for Automated Incident Handling and Knowledge-Graph-Grounded False-Positive Triage",
+    "authors": "Mohamed Elsagher, Amany Abdo, Hala Abbas",
+    "publish": "2026 Intelligent Methods, Systems, and Applications (IMSA)",
+    "url": "https://doi.org/10.1109/imsa70415.2026.11700270",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Execution Control Harness for Governed LLM-Based Code Generation",
+    "authors": "Masaki Takeda, Yusuke Funaya, Ocharo Harriet, Ryota Mibe, Hideyuki Kanuka",
+    "publish": "2026 17th International Conference on Information, Intelligence, Systems &amp; Applications (IISA)",
+    "url": "https://doi.org/10.1109/iisa71656.2026.11705535",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "A Multimodal Pipeline for Screen-Aware Interactive Learning with Vision Grounding, Speech Interaction, and LLM Integration",
+    "authors": "Youssef Khalaf, Mostafa Abdelrady, Rabab M. Nabawy",
+    "publish": "2026 Intelligent Methods, Systems, and Applications (IMSA)",
+    "url": "https://doi.org/10.1109/imsa70415.2026.11700266",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "LLM-Guided Active Learning for Multimodal Data",
+    "authors": "Mohammed Ismail, Mehul Goyal, Mohammed Hamza Iqbal, Pema Tshering Sherpa, Jeethu V. Devasia",
+    "publish": "2026 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",
+    "url": "https://doi.org/10.1109/conecct68978.2026.11700713",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Generation of Data Dependency Analyzers via LLM-Based Defect-Guided Iterative Regeneration",
+    "authors": "Takahiro Kinoshita, Toru Mizuno, Satoshi Igarashi, Daisuke Fukui",
+    "publish": "2026 17th International Conference on Information, Intelligence, Systems &amp; Applications (IISA)",
+    "url": "https://doi.org/10.1109/iisa71656.2026.11705570",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Extending the Gulfs of Execution and Evaluation with a Trust Gulf for Human–LLM Interaction",
+    "authors": "Maria Virvou, George A. Tsihrintzis",
+    "publish": "2026 17th International Conference on Information, Intelligence, Systems &amp; Applications (IISA)",
+    "url": "https://doi.org/10.1109/iisa71656.2026.11705588",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Selective Extraction: A Hallucination-Free Approach to LLM-Based Document Information Extraction",
+    "authors": "Vineeth Rao, Yash Saraogi, Tulya Reddy, Mekhala Vinod Purohit",
+    "publish": "2026 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",
+    "url": "https://doi.org/10.1109/conecct68978.2026.11700668",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-28",
+    "title": "Vibe Analysis: Exploring LLM Adoption by Data Visualization Practitioners",
+    "authors": "Shani C. Spivak, Aditi Krishna, Mahsan Nourani, Melanie Tory",
+    "publish": "IEEE Computer Graphics and Applications",
+    "url": "https://doi.org/10.1109/mcg.2026.3738283",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
