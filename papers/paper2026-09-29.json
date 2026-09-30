@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-29",
+    "title": "Stochastic World Models for Verifying Vision-Based Neural Feedback Systems",
+    "authors": "I. Samuel Akinwande, Mykel J. Kochenderfer, Clark Barrett",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.38120v1",
+    "source": "arXiv",
+    "abstract": "Verifying a vision-based neural feedback system requires a model of the observations its controller acts upon. Such a model must capture the variation the sensor produces, while remaining tractable for closed-loop analysis. Generative adversarial networks (GANs) have served as perception surrogates, but they are large, reproduce complex scenes poorly, and are hard to verify. We explore stochastic world models as a richer class of perception surrogates. We train a world model with physically grounded latents, built from operations that standard verifiers bound. It reproduces held-out frames more faithfully than GAN surrogates with up to 130 times as many parameters. To verify these surrogates, we develop a procedure that combines falsification, adaptive refinement, symbolic, and backward analyses. On an emergency braking benchmark with a GAN surrogate, our procedure resolves the entire state space, 38% of which the state-of-the-art verifier left unresolved. On the RGB version of the benchmark, where no verification results have previously been reported, our procedure resolves over 80% of the state space with a world model surrogate."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Correct Answers, Invalid Traces: What Verifiable Grade-School Math Reveals About Chain-of-Thought Traces",
+    "authors": "Ratish Puduppully, Pranabendu Misra, Paarth Iyer, Durgesh Kalwar, Vardhan Palod, Subbarao Kambhampati",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.38107v1",
+    "source": "arXiv",
+    "abstract": "Chain-of-thought traces are widely read as records of how models reach their answers, informing debugging, agent auditing, and claims about reasoning. Testing this interpretation is difficult because natural-language thinking traces are rarely mechanically verifiable. We revisit it in iGSM, a synthetic grade-school mathematics benchmark designed to study thinking traces and used to support claims of learned reasoning and planning. Crucially, iGSM exposes the exact quantities and dependencies that a correct solution should use, allowing generated traces to be checked programmatically step by step and enabling us to test whether correct answers are reliably accompanied by valid traces. We first evaluate models trained exclusively on valid, minimal traces. Answer correctness and trace validity nearly coincide in distribution but decouple out of distribution: on the hardest instances, 31.6% of correct answers have invalid traces, over half of which pass all syntactic and arithmetic checks but fail semantic dependency checks. We then intervene on trace supervision. Non-minimal training traces induce non-minimal outputs, while re-asking the same problem with a different query reveals computations inherited from the original query, weakening minimality as evidence of selective planning. Shuffling tokens in 10% of training trace sentences preserves near-clean accuracy even out of distribution despite no trace passing verification. Swapped training traces likewise retain high in-distribution accuracy. We discuss the implications of these findings for chain-of-thought monitoring and interpretation in the context of AI safety."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Classical Verification of Quantum Computation with Quasilinear Resources, from Compiled Nonlocal Games",
+    "authors": "Finn Holler, Anand Natarajan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.38060v1",
+    "source": "arXiv",
+    "abstract": "Computational self-testing gives a classical verifier command over the quantum register of a single computationally bounded prover. We use this framework to construct the first argument system for BQP with quasilinear total resource requirements in the circuit model. Our argument system is based on the learning with errors (LWE) assumption and requires total resources of $O(\\mathrm{poly}(λ, \\log g)\\cdot g)$ for delegating a circuit with $g$ gates, where $λ$ is the LWE security parameter. This is achieved by constructing a new computational self-test for certifying the prover's quantum state and using it to dequantize the efficient verification protocol of Broadbent (ToC 2018). Specifically, this self-test enables the verifiable, random remote state preparation of tensor product states of the single-qubit Clifford observables $σ_X, σ_Y, σ_Z, (σ_Y-σ_X)/\\sqrt{2}$ and $(σ_Y+σ_X)/\\sqrt{2}$, with constant robustness: the verification error is independent of the number of prepared qubits. This approach was first proposed by Coladangelo et al. (ToC 2024) in the multi-prover setting. We replicate their result in the single-prover setting by applying the compiler proposed by Kalai et al. (STOC 2023)---which turns any nonlocal game into a single-prover argument system---to a modified version of their self-test."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "EVO-WAM: Evolving World Action Models through Video-Action Verification",
+    "authors": "Shiyang Zhou, Xionghao Wu, Wenbo Li, Shenghe Zheng, Jiyao Zhang, Songsong Yu, Yijun Yang, Jianhui Liu, Haoze Sun, Senqiao Yang, Li Jiang, Jingyong Su, Haoyang Huang, Zhuotao Tian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.38057v1",
+    "source": "arXiv",
+    "abstract": "Improving robot policies on new tasks without collecting additional expert demonstrations remains a central challenge in robot learning. World action models (WAMs) use broad video priors to jointly predict future videos and actions, offering a potential source of supervision for adapting to new tasks. However, generated videos may fail to depict task completion, and even visually successful videos may be paired with inconsistent actions that lead to execution failure. We propose EVO-WAM, a framework that adapts WAMs to unseen tasks by learning from their own generated video-action trajectories, without executing candidate actions in an external environment. First, we augment WAM training with state prediction and anchored multi-frame context to enable complete autoregressive rollouts without external execution feedback. Second, we identify reliable training experience by selecting task-completing prefixes with a vision-language model and verifying their video-action consistency with an inverse dynamics model. Third, we iteratively train the WAM on verified prefixes and generate new rollouts with the updated model. On seven unseen RoboTwin 2.0 tasks, EVO-WAM increases average success rates from 26.9% to 68.0% for Cosmos3 and from 28.5% to 46.4% for DreamZero, reaching approximately $2.5\\times$ and $1.6\\times$ their initial success rates. On three unseen long-horizon composite tasks in the real world, it improves Cosmos3's average success rate from 20.0% to 76.7%, a gain of 56.7 percentage points. Project Page: https://evo-wam.github.io/."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Is manual software optimization a thing of the past?",
+    "authors": "Pavlin G. Poličar, Martin Špendl, Tomaž Hočevar",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37849v1",
+    "source": "arXiv",
+    "abstract": "Scientific software is increasingly required to process larger datasets while maintaining acceptable execution times. Software optimization traditionally requires substantial expertise in programming, algorithms, and numerical methods. Recent advances in large language models (LLMs) offer the possibility of automating much of this process. We investigate whether LLM-based agents can autonomously achieve substantial performance improvements in scientific software, including mature implementations that have already been extensively optimized by human developers. We tasked an LLM-based agent with optimizing software for three computational problems: t-SNE, single-sample gene set enrichment analysis (ssGSEA), and graphlet counting. Humans defined the scope, correctness criteria, and a verification mechanism, after which the agent worked autonomously, in some cases for several hours. Code maintainers reviewed each resulting implementation and verified its correctness. The optimized implementations were faster in all tested configurations, by up to two orders of magnitude over the fastest existing tools. The improvements included low-level code optimizations, mathematical reformulations, and an entirely new algorithm for graphlet counting. Software optimization can increasingly be delegated to autonomous agents, with the human role shifting from implementing optimizations to deciding which software to optimize, defining objectives, providing verification mechanisms, and ensuring the correctness of the final software. For well-scoped, verifiable problems, we argue that manual software optimization may be a thing of the past."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Modelling Shared-Space Coordination in mCRL2: a Bach-to-mCRL2 Translation Framework",
+    "authors": "Corentin Reuther, Jean-Marie Jacquet",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37726v1",
+    "source": "arXiv",
+    "abstract": "Although significant research has focused on the theory and implementation of data-based coordination languages, the critical aspect of their automated verification using model-checking techniques remains underexplored, which is essential for ensuring reliability and correctness in distributed systems. Existing tools, such as Anemone, provide a solid foundation for reachability-based verification of Bach programs. While they effectively analyze properties expressed in terms of state attainability, extending support to more expressive temporal specifications-such as liveness properties or invariants over shared space contents-remains an open opportunity. Such extensions are important to capture comprehensive system behaviors, for instance, ensuring that \"a request is always matched by a response\" or that \"no message is silently lost\". Addressing this limitation, we propose an automated translation from Bach to mCRL2, which explicitly represents the shared space, thereby enabling the use of mCRL2's mu-calculus model checker to verify complex properties beyond simple reachability. Complementing this translation, we introduce a systematic method to analyze the shared space in mCRL2 concerning data reachability, by directly expressing properties over the shared space's contents in the mu-calculus, thus providing a clearer framework for verification. This approach enables a novel verification process that combines action-based properties with state-based properties over the shared space contents, a largely unexplored area in current coordination-language verification approaches, offering a new dimension of analysis"
+  },
+  {
+    "date": "2026-09-29",
+    "title": "AS$^2$D: Accelerating On-Demand Audio Understanding on Mobile Devices",
+    "authors": "Yunzhe Li, Kyoungjun Park, Hongzi Zhu, Lili Qiu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37617v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates autoregressive generation by using a smaller drafter to propose tokens for batched verification by a larger target. However, conventional speculative decoding couples drafting to the target's evolving verified prefix, serializing drafting and verification. We ask whether this dependency is necessary for source-conditioned generation. Our key observation is that, for audio language models, the input audio and user request can provide useful speculative candidates without following the target's evolving text prefix. We propose AS$^2$D (Audio Speculative Speculative Decoding), which enables target-decoupled drafting: an audio-conditioned drafter follows its own generation history while the target independently verifies and corrects ready candidates. Without usable candidates, the target advances alone. Thus, target feedback determines which candidates are committed but no longer determines when the drafter can make progress, enabling drafting and verification to proceed concurrently while retaining target-side verification and correction. We implement AS$^2$D in MNN for Android and evaluate two target models across four phones, seven datasets, and three tasks covering 12.2 hours of audio. Across four phones, AS$^2$D improves pooled ASR throughput by 42-76% over target-only decoding, while only 5.7% of evaluation windows are slower than target-only, compared with 58.1-63.0% for speculative baselines. For ASR, AS$^2$D reaches 97.33-98.20% of a hindsight per-window oracle's pooled throughput over the evaluated drafter/budget catalog. Native on-demand execution with a 7B target achieves up to 78% higher throughput than target-only. These results show that source-conditioned audio generation can relax the conventional dependence of speculative drafting on the target's evolving output prefix, exposing substantial parallelism for efficient inference."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Independent Verification Paths Are Not Independent: A Case Study of Common-Mode Failure in a Satellite Catalogue Pipeline",
+    "authors": "Fabio Rovai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37603v1",
+    "source": "arXiv",
+    "abstract": "A common safeguard for a data pipeline is redundant computation: derive each published number by two routes built on different technology and refuse to exit when they disagree. We report one such gate failing, in a cross-catalogue integrity study of two open registers of Earth-orbiting objects. A gate comparing a set-based Python path with SPARQL queries over the emitted RDF graph printed ALL CROSS-CHECKS AGREE on seven counts. Three were wrong, one overstated more than fourfold (932 against 220). Both paths imported the same constants, which encoded a misreading of the source's status vocabulary, so the error was common-mode and the gate could not see it. We give the mechanism, an object-level ledger reconciling every figure, and three checks that go back to the source's documentation, measured on the defective code and on its correction. We then checked that correction against each object's phase history, held in a source file the pipeline never read. The correction was also wrong: 42 of its 261 disagreements are artefacts, and none of our three checks flagged them. Finally, in a controlled replication with three pinned models and tools disabled, 72 of 75 paths generated on request as independent checks computed the defective count, 29 of 30 even when the prompt carried the source's own definitions of the codes. The evidence is one pipeline and one defect family. Within it, redundancy verified implementation, and the errors that reached publication were errors of meaning."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Which reported inputs govern molecular docking reproducibility? A benchmark from reporting audit to independent re-execution",
+    "authors": "Giap Duc Ha",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37542v1",
+    "source": "arXiv",
+    "abstract": "Computational docking results can be re-executed only when the molecular system and protocol are specified, yet reporting checklists do not quantify how strongly individual method fields affect the reported score. We combined a span-verified audit of 50 open-access papers with controlled one-factor perturbations, a Vinardo scoring-function check and a Vina cross-docking extension covering 12 targets in 7 protein families, and re-execution of 37 published claims on local and independent cloud infrastructure. Search-related fields were sparsely reported, but perturbing box centre, box size, exhaustiveness or random seed produced median absolute score changes of no more than 0.08 kcal mol$^{-1}$; ligand protonation and identity produced median changes of 0.19 and 0.29 kcal mol$^{-1}$, respectively, whereas receptor structure produced the largest change (1.02 kcal mol$^{-1}$; n = 85; P < 0.001), and 22% of 116 unique reported ligand strings remained unresolved or ambiguous after deterministic name normalization. These measurements yielded empirical field weights for the NewScience Evidence score and identified exact receptor structure, machine-resolvable ligand identity and protonation state as primary reporting elements; 29 of 37 local and 27 of 37 cloud re-executions were within 2.0 kcal mol$^{-1}$ of the reported score, but these descriptive rates do not estimate experimental replication or a calibrated probability of reproduction."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification",
+    "authors": "Rongjian Chen, Minxian Xu, Zhengxin Fang, Kejiang Ye, Chengzhong Xu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37532v1",
+    "source": "arXiv",
+    "abstract": "Growing large language model applications demand efficient inference. At high concurrency, block-diffusion speculative decoding suffers from verification padding, rejected candidates, and incompatibility between variable prefixes and fixed-shape graphs. Uniform truncation sacrifices acceptable tokens. We present DScale, preserving drafter architecture, weights, and full draft length. A separate 112K-parameter predictor requires neither confidence calibration nor hardware speed-curve preparation. Path-aware tiles reduce padding. Dynamic verify-length (DVL) allocation packs scored prefixes into half the native verification capacity. Fixed-address workspaces propagate changing boundaries through verification and acceptance while reusing captured graphs. On A100-40GB with tensor parallelism 1, Qwen3-8B and Qwen3-4B cover four datasets and concurrency 8-32, reusing each target's frozen predictor. Geometric-mean throughput gains across these configurations are respectively 43.9% and 48.8% over DFlash, 22.2% and 37.7% over DSpark, and 24.4% and 32.0% over Domino, with lower request latency. Cumulative ablations show that adding the three mechanisms successively increases geometric-mean throughput, while budget adjustment improves accepted-token retention. GPU profiling shows that complete decode-step time on GSM8K decreases by 30.8-52.5% relative to DFlash"
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Confidence-Guided Protocol IR for LLM-Aided Security Protocol Modeling",
+    "authors": "Siqi Li, Yufan Cai, Hongshu Wang, Xinyue Zuo, Zhe Hou, Jin Song Dong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37396v1",
+    "source": "arXiv",
+    "abstract": "Large language models offer a promising interface for translating natural-language protocol descriptions into formal security models, but their outputs remain difficult to trust without expert validation. In this paper, we present a human-in-the-loop framework for generating Tamarin-verifiable formal models of security protocols. Our key observation is that the main correctness bottleneck is the semantic accuracy rather than the syntactic validity of the intermediate protocol representation. To address this problem, we introduce a protocol intermediate representation (IR) that serves as a human-auditable semantic checkpoint between natural-language parsing and formal model generation. The IR explicitly captures protocol participants, message flows, value provenance, cryptographic operations, proof targets, and compromise assumptions. We further design an interactive interface that highlights uncertain fields and guides users to inspect the most critical semantic decisions based on model confidence before model generation. Rather than replacing formal-methods experts, our approach uses LLMs to produce auditable semantic drafts while leveraging verification tools to check the resulting formal models. Code and verification artifacts are available at https://github.com/laplace1002/TamarinAgent.git."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "The small Davenport constant of $E_2\\times C_3^r$ for $0\\le r\\le3$",
+    "authors": "Andreas Volkmann",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37262v1",
+    "source": "arXiv",
+    "abstract": "Let $E_2$ be the extraspecial group of order $3^5$ and exponent three. We prove that $d(E_2\\times C_3^r)=2r+10$ for $0\\le r\\le3$. The upper bounds follow from signed zero-block identities and two finite statements in the four-dimensional symplectic space over $\\mathbb F_3$. The first supplies edge weights for all completable balanced triangles on any indexed list of at most sixteen nonzero vectors. The second supplies weights for the direction families that can occur in a critical list with no central terms. We give complete coverage arguments, exact certificate files, and separately implemented checking programs. A compression argument removes any need for an induction through smaller list lengths in the sixteen-term potential theorem. The formula for $r\\ge4$ remains open."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Explainable Machine Learning for Multilayer Planar Winding Inductance Estimation",
+    "authors": "Spyros Rigas, Theofilos Papadopoulos, Georgios Alexandridis, Antonios Antonopoulos",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37211v1",
+    "source": "arXiv",
+    "abstract": "Rapid and accurate self-inductance estimation for multilayer rectangle-shaped planar windings is essential for modern high-frequency power converters, yet traditional workflows rely on complex mathematical equations, rigid monomial formulas or unexplainable black-box machine learning (ML) models that degrade severely outside their training domain. This paper introduces an explainable ML framework unifying post-hoc feature attribution (SHAP and permutation importance) with Kolmogorov-Arnold Network-guided symbolic regression via the SR-KAN framework to discover closed-form analytical equations without prior structural assumptions. Evaluated on a new open-source dataset of over 10,000 Finite Element Analysis (FEA) simulations across seven out-of-distribution (OOD) classes, standard tree-based ensembles exhibit severe extrapolation errors (> 36%), whereas the unconstrained SR-KAN expression achieves a robust OOD relative error of 8.22%. Experimental verification across 55 physical printed circuit board prototypes (up to 8 layers, with inductances from 4.11 μH to 559.27 μH) confirms that the KAN-discovered expression translates effectively to real-world hardware, predicting inductance with a mean absolute relative error of 6.26%. To support reproducible research, the complete FEA simulation dataset and prototype measurements are released open-source."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Learning to Prove, Not Just to Answer: Reinforcement Learning from Formal Verification for Natural-Language Logical Reasoning",
+    "authors": "Qili Zhang, Qianren Mao, Hanze Cai, Kaiming Zhao, Yuening He, Xihan Lei, Yashuo Luo, Hanwen Hao, Yutong Gu, Likang Xiao, Zhijun Chen, Weifeng Jiang, Haoyi Zhou, Jianxin Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37203v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) are increasingly deployed for natural-language logical reasoning, where the final answer is easy to check but the proof behind it is not. In natural-language logical reasoning, an intermediate conclusion should follow from its premises, and the resulting derivation should support the final answer. Existing methods lack machine-checkable verification of intermediate conclusions and answer-supporting proof dependencies, so they may assign credit to invalid or answer-irrelevant steps. We propose Proof-R1, an RL framework from formal verification that trains LLMs to construct verifiable proofs for natural-language logical reasoning. Proof-R1 admits a generated conclusion into the verified proof state only when the corresponding reasoning action satisfies the proof obligations through UNSAT-based machine-checkable formal verification. Proof-R1 also recovers the answer-supporting dependency closure to trace the proof structure of the final answer and align outcome credit with the proof dependencies. Experiments demonstrate that Proof-R1 improves answer accuracy across three logical reasoning benchmarks and four backbone models and outperforms training-free agents and training-based methods in terms of reasoning-process verifiability."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "LongSpark: Efficient speculative decoding with a fixed-cost parallel drafter",
+    "authors": "Hao-Yuan He, Peng-Fei Liu, Si Shen, Ming Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37029v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates autoregressive inference by verifying multiple draft tokens in a single target forward pass. However, as the context grows, existing state-of-the-art drafters become increasingly expensive, eroding the very efficiency advantage they are designed to provide. We argue that this scaling is unnecessary. A standalone language model must grow with its prefix because it is solely responsible for every token it produces. A drafter, by contrast, only proposes candidates; the target catches and corrects every error before any token is committed. The drafter's decoding cost can therefore be made entirely independent of the prefix length. We introduce LongSpark, a block-diffusion drafter that achieves this by extracting fixed-size, multiscale views from the target's verification pass, thereby eliminating the need for a growing persistent state. Extensive evaluations demonstrate that LongSpark achieves state-of-the-art end-to-end efficiency across multiple model scales and realistic serving conditions. Notably, it delivers the lowest time-per-output-token on long-context tasks while reducing the drafter's context state by several orders of magnitude."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "ReDimNet2+: Multi-Corpus Data Scaling for Robust Speaker Verification",
+    "authors": "Kirill Borodin, Vasilii Kudryavtsev, Maxim Maslov, Grach Mkrtchian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37014v1",
+    "source": "arXiv",
+    "abstract": "Automatic speaker verification must remain reliable across devices, rooms, and compression pipelines. We present ReDimNet2+, which scales training of the compact ReDimNet2 backbone across seven public corpora (63,934 speakers, about 8,675 hours). Analysis of a VoxBlink2 subset reveals a shift in predicted spectral coloration, motivating codec and waveform augmentation alongside this multi-corpus training, large-margin fine-tuning (LMFT), and graph-based retrieval reranking. With random 4-second evaluation windows for all models, ReDimNet2+ LMFT reduces pooled VoxCeleb1 EER from 2.42% to 0.82% and a 26-condition robustness stress-test EER from 7.21% to 1.99%. Under this shared local protocol, it reaches 0.35% EER on VoxCeleb1-O versus 0.787% for the best evaluated WeSpeaker checkpoint. On a VoxBlink2 retrieval subset, reranking improves the final model's Pr@k from 0.7413 to 0.7687."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "OPFL: Optimistic Verification of Federated Learning via Empirical Boundary",
+    "authors": "Hongxu Su, Jianzhu Yao, Xuechao Wang, Pramod Viswanath",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37011v1",
+    "source": "arXiv",
+    "abstract": "Federated learning enables multiple clients to collaboratively train models without sharing their private data. However, the lack of visibility into local training makes it difficult to verify whether clients follow the prescribed training procedure or submit malicious updates, such as model poisoning. A natural approach is to replay client training for verification. However, privacy-preserving replay produces numerical results that cannot be directly matched with local client execution because the two run in different environments. We present OPFL, an optimistic verification framework for privacy-preserving federated learning. To protect data privacy, OPFL performs replay inside secure multi-party computation (MPC). Although gradients computed on MPC and local GPUs are not bitwise identical, we observe that their absolute differences are stable and bounded. OPFL therefore calibrates an empirical boundary offline and uses it to distinguish benign numerical deviations from malicious manipulation. To reduce the cost of expensive MPC replay, OPFL adopts optimistic verification by post auditing only sampled training steps. Experiments on LeNet, BERT, and Qwen show that the boundary generalizes across datasets, input lengths, and GPUs, while achieving $0$\\% ASR against model poisoning and PGD-based attacks. On a LeNet workload, at $p=0.01$, OPFL is approximately $98.6\\times$ faster than full MPC-based FL and $625.5\\times$ faster than ZK-based approach."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "RVQ Position Aware Speculative Decoding for On Device Text to Speech",
+    "authors": "Berkin Durmus, Eduardo Pacheco, Zach Nagengast, Atila Orhon",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37007v1",
+    "source": "arXiv",
+    "abstract": "Autoregressive decoding (AR) with Transformer models is memory bandwidth bound at single stream inference, the typical deployment regime for on device text to speech (TTS). Real time streaming with Qwen3-TTS requires more than 200 sequential model calls per second, dominated by the inner loop MultiCodeDecoder that emits the 15 residual vector quantization (RVQ) codes per 80 ms audio frame. We propose RVQ position aware speculative decoding for the MultiCodeDecoder, attaining 2.47 accepted tokens per model call at $5\\times10^{-4}$ percent added parameters and 10 to 20 percent per round speculation/verification overhead, reducing real time synthesis from 200 to 88 sequential model calls per second. The scheme is distributionally lossless under the deployed top-k sampling, and WER parity with the original system is consistent with this guarantee. We deliver 2 to 2.2x speedup for RVQ token generation with Qwen3-TTS 0.6B on recent iPhone and Apple Silicon Mac devices."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "One Pipeline Does Not Fit All: TAILOR, a Type- and State-Aware Framework for CVE Reproduction",
+    "authors": "Ji He, Huang Zhang, Lijie Zheng, Lele Zheng, Yulong Shen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37006v1",
+    "source": "arXiv",
+    "abstract": "Growing vulnerability disclosure and widespread software reuse increase security teams' need for reproducible evidence to diagnose vulnerabilities, validate patches, and build regression tests. Producing such evidence at scale requires automated end-to-end CVE reproduction. Existing methods typically process different CVEs through a uniform pipeline, but differences in runtime form, trigger interfaces, and prerequisite state impose different execution requirements on individual stages, making fixed workflows difficult to adapt to diverse reproduction needs. To address this problem, we present TAILOR, a type- and state-aware multi-agent framework specialized for complex vulnerability reproduction. TAILOR converts static vulnerability information into auditable reproduction evidence and packages reconstructed environments and trigger evidence into reproduction artifacts. Its first-level type-aware mechanism adaptively matches each vulnerability to an execution path. Within the Web path, its second-level state-aware mechanism constructs the required prerequisite state before exploitation, decouples prerequisite-state construction from core vulnerability triggering, and shares execution constraints across exploitation and verification. We construct a dataset of 200 CVEs with an emphasis on cases with complex execution requirements. TAILOR successfully reproduces 59.24\\% of Web vulnerabilities and 44.19\\% of traditional vulnerabilities. Further ablation experiments show that the two control levels respectively mitigate execution-path mismatch and missing Web prerequisite state. Overall, TAILOR broadens the coverage of automated CVE reproduction and provides auditable evidence for vulnerability diagnosis and defense."
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Visual Parallel Search: Learning to Search High-Resolution Images with Parallel Tile Inspection and Adaptive Zoom",
+    "authors": "Xijia Tao, Yihua Teng, Xinyu Fu, Cheng Gong, Ziru Liu, Xudong Xie, Rui Liu, Lingpeng Kong",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.37002v1",
+    "source": "arXiv",
+    "abstract": "High-resolution visual question answering often fails because a multimodal model does not acquire the small, spatially localized evidence needed to answer a question. Sequential zooming can recover detail, but it asks the main model to choose a region before obtaining a reliable overview. We introduce VPS, a visual parallel-search framework in which a main agent first invokes grid_search to inspect image tiles in parallel with question-conditioned sub-agents, and then adaptively invokes zoom_in PSisual Parallel Search improves mean accuracy over dedicated zoom-only search in 14 of 15 same-model comparisons, with gains up to 8.0 points and especially strong improvements for smaller main models. ZoomBench retains an approximately 3.2-point gain at every tested size. We further develop a supervision pipeline with hint-free verification and a paired role-specific GRPO surrogate for learning the controller and tile-reader roles. SFT improves observed accuracy on all five benchmark splits, including a 4.17-point gain on HR-Bench 4K. Role-specific RL further reshapes search behavior: main-only RL reduces mean tool use from 2.65 to 2.11 with similar pass@1 in an internal four-response evaluation, while external accuracy changes are mixed. Joint training reveals an asymmetry between local evidence reading and global search control. Together, these results support VPS as an effective inference-time scaffold and a trainable decomposition for visual evidence acquisition."
+  },
+  {
+    "date": "2026-9-29",
+    "title": "LLM-42: Enabling Determinism in LLM Inference with Verified Speculation",
+    "authors": "Raja Gond, Aditya K Kamath, Ramachandran Ramjee, Ashish Panwar",
+    "publish": "Proceedings of the ACM SIGOPS 32nd Symposium on Operating Systems Principles",
+    "url": "https://doi.org/10.1145/3830418.3843901",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Closed-Loop LLM-Driven Self-Healing for Enterprise Data Pipelines",
+    "authors": "Mogana Kumaran Sivaraman",
+    "publish": "2026 Technology and Innovation Conference (TIC)",
+    "url": "https://doi.org/10.1109/tic68483.2026.11703022",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "From Context to Code: Codifying Cross-System Reasoning for LLM-Assisted Operations",
+    "authors": "Tanmay Chaudhry",
+    "publish": "IEEE Access",
+    "url": "https://doi.org/10.1109/access.2026.3738134",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "A Protocol for Behavioral Attestation of LLM Agent Execution via Induced Dynamics",
+    "authors": "Francesco Buccafurri, Carmen Licciardi, Christophe Rosenberger",
+    "publish": "2026 International Conference on Computer Technology Applications (ICCTA)",
+    "url": "https://doi.org/10.1109/iccta70480.2026.11706525",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Cloud-Deployed Adaptive SSH Honeypot with Reinforcement Learning and LLM-based Dynamic Response Generation",
+    "authors": "Dhikshanya K, S Saravanan",
+    "publish": "2026 International Conference on Secure Information Systems and Technologies (ICSIST)",
+    "url": "https://doi.org/10.1109/icsist70215.2026.11705925",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Automated Database Testing via LLM-Synthesized SQL Features",
+    "authors": "Suyang Zhong, Manuel Rigger",
+    "publish": "Proceedings of the ACM on Management of Data",
+    "url": "https://doi.org/10.1145/3837097",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Break It First: Stakeholder Participation in Quality Assurance for LLM Features",
+    "authors": "Leevi Vahvelainen, Prompat Amy Järvisalo",
+    "publish": "Adjunct Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3821402.3830183",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Ollama in the Wild: A Longitudinal Measurement of Exposed Ollama LLM Endpoints at Internet Scale",
+    "authors": "Zuyao Xu, Xiang Li, Yuqi Qiu, Lu Sun",
+    "publish": "Proceedings of the 2026 ACM Internet Measurement Conference",
+    "url": "https://doi.org/10.1145/3777912.3839823",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Advanced Research Assistance Generation and Multimodal Data Analysis using LLM and LangChain",
+    "authors": "SREECHARAN PALEPU, CHARU KATHURIA, PIYUSH SAHOO, SHILPA S",
+    "publish": "Proceedings of the 2026 15th International Conference on Software and Computer Applications",
+    "url": "https://doi.org/10.1145/3801619.3801650",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-29",
+    "title": "LLM-Powered Brute Force Attacks: An Iterative SSDLC Approach for Authentication Process Evasion",
+    "authors": "Patricio Zambrano, Jenny Torres, Miguel Pilamunga, Adrian Paguay, Elizabeth Silva, Alexander Morales, Johan Illicachi",
+    "publish": "2026 Twelfth International Conference on eDemocracy &amp; eGovernment (ICEDEG)",
+    "url": "https://doi.org/10.1109/icedeg70169.2026.11695423",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Dynamic-T CNN+SNN for Compact Speaker Verification under Cross-Domain Conditions",
+    "authors": "Parakhat Nurimov",
+    "publish": "2026 Technology and Innovation Conference (TIC)",
+    "url": "https://doi.org/10.1109/tic68483.2026.11702968",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Multimodal Affective Computing in the Era of LLM-based Educational Agents: Key Insights, Challenges, and Future Prospects",
+    "authors": "Juan Yang, Minjuan Wang, Xu Du, Qiwei Ma",
+    "publish": "IEEE Transactions on Learning Technologies",
+    "url": "https://doi.org/10.1109/tlt.2026.3738338",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Steering the Noise: Turning Random Perturbations into Effective Descent for Memory-Efficient LLM Fine-Tuning",
+    "authors": "Feihu Jin, Shipeng Cen, Ying Tan",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3739138",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "State-Aware Fuzzing of JavaScript Engines with LLM-Guided Instrumentation",
+    "authors": "Wai Kin Wong, Dongwei Xiao, Anthony Cheuk Tung Lai, Ping Fan Ke, Shuai Wang",
+    "publish": "Proceedings of the ACM SIGOPS 32nd Symposium on Operating Systems Principles",
+    "url": "https://doi.org/10.1145/3830418.3843900",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Lexical and LLM-Based Representations for Public Tender Outcome Prediction: A Comparative Study",
+    "authors": "Isaac Gabriel Amarilla Benitez, Luis Fernando Caballero Ramoa, Julio Manuel Paciello Coronel, Juan Ignacio Pane Fernandez",
+    "publish": "2026 Twelfth International Conference on eDemocracy &amp; eGovernment (ICEDEG)",
+    "url": "https://doi.org/10.1109/icedeg70169.2026.11695468",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Hybrid Encoder Architecture with LLM Post Processing for Speech Recognition Using EMG",
+    "authors": "Nandana C A, Natasha Santosh Abraham, Neha Polamreddy, Noel Lobo, Sudeepa Roy Dey",
+    "publish": "Proceedings of the 2026 15th International Conference on Software and Computer Applications",
+    "url": "https://doi.org/10.1145/3801619.3801641",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Mapping China's National Image in South Korean Media: Evidence from LDA Topic Modeling and LLM-Assisted Analysis of Beijing Winter Olympics Coverage",
+    "authors": "Weiqi Li, Ruiying Lin, Shichao Zhang",
+    "publish": "2026 8th International Conference on Data-driven Optimization of Complex Systems (DOCS)",
+    "url": "https://doi.org/10.1109/docs70981.2026.11698629",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "Adaptive Low-Rank Perturbation Allocation via Efficient Evolution Strategy for LLM Post-Training",
+    "authors": "Tongyao Lin, Tianfu Huang, Chunguang Wang, Xiaoxu Hu, Zhanxiang Lin, Yonglin He, Cheng He",
+    "publish": "2026 8th International Conference on Data-driven Optimization of Complex Systems (DOCS)",
+    "url": "https://doi.org/10.1109/docs70981.2026.11698564",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "English or Spanish Prompts: Effect of Language Prompt on LLM Code Generation Quality",
+    "authors": "Jose Antonio Mora-Monge, Marcelo Delgado-Mora, David Meléndez-Aguilar, Rubén González-Villanueva, Jeisson Hidalgo-Céspedes",
+    "publish": "2026 IEEE VII Jornadas Costarricenses de Investigación en Computación e Informática (JoCICI)",
+    "url": "https://doi.org/10.1109/jocici69279.2026.11701728",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-29",
+    "title": "CI-FailureGuard: A Hallucination-Resilient Framework for CI/CD Failure Diagnosis Through Claim-Level Verification",
+    "authors": "Shinoz T, Niranjana G",
+    "publish": "2026 Technology and Innovation Conference (TIC)",
+    "url": "https://doi.org/10.1109/tic68483.2026.11703004",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
