@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-09-30",
+    "title": "Cogentic: Multi-Agent Orchestration for Automated Proof Discovery",
+    "authors": "Yang Cai, Vineet Gupta, Yanchen Jiang, Christopher Liaw, Aranyak Mehta, Grigoris Velegkas, Di Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40324v1",
+    "source": "arXiv",
+    "abstract": "We present Cogentic, a multi-agent harness for automated proof discovery on open research problems. While frontier language models can generate strong mathematical ideas in a single shot, single-shot generation is often insufficient for open problems that require exploring multiple competing conjectures, overcoming subtle technical obstructions, and retaining intermediate progress over a long horizon. Cogentic addresses these challenges through an iterative prove--verify loop in which an orchestrator allocates a population of independent provers across distinct proof directions, subjects their output to adversarial verification by several specialized components, and promotes confirmed intermediate results into a persistent verified ledger that later rounds build on. The harness is designed to be able to solve research-level math and theoretical computer science problems. Using Gemini as the base model, Cogentic produced novel results on five open problems across online learning, auction theory, and mechanism design. Each result was independently verified by domain experts and is developed in full in companion papers. We list these results, and new ones as they are verified, at https://sites.google.com/view/cogentic ."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization",
+    "authors": "Yujia Xu, Walid Klibi, Benoit Montreuil",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40296v1",
+    "source": "arXiv",
+    "abstract": "Disruptions can exhaust a supply chain network's capacity, yet outside capacity is hard to use: incumbent models are private, provider profiles are unstructured, and offers stay hidden until costly engagement. We formulate open capacity pooling, making network membership a disruption-response decision. The alternating direction method of multipliers (ADMM) coordinates incumbents without sharing models, and residual capacity gaps direct search over profiles indexed by a large language model (LLM). Verification reveals offers, reduced-cost screening admits them, and warm-started ADMM re-optimizes. The procedure is optimal if every eligible offer is revealed at exact prices, heuristic otherwise. Across 200 synthetic episodes, full-information opening recovers 24.6% of capacity-scarcity cost. With 40 contacts, coordination-directed need selection and LLM ranking capture 32.0% of this value, versus 4.7% for undirected, unranked contact. LLM reading of all profiles performs within five points of a complete structured registry and error-free extraction and finds four times as many compatible providers as keyword search among 10,000 records. What profiles omit is the exact capacity each provider's single offer covers, and requests for other capacity fail; registering offers in the same index raises captured value without a contact limit from 46.8% to 98.6%, keeping net value positive at every tested contact charge."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Verifiable Quantum Advantage and Computation via Quantum Circuit Obfuscation",
+    "authors": "Alexandru Gheorghiu, Aparna Gupte, Vojtěch Havlíček, Yunchao Liu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40289v1",
+    "source": "arXiv",
+    "abstract": "We construct protocols for classically verifiable quantum advantage and classical verification of $\\mathsf{BQP}$ computations using \\emph{quantum indistinguishability obfuscation} (qiO). Specifically, given qiO and assuming a slightly stronger version of $\\mathsf{BQP}\\neq\\mathsf{BPP}$, we construct a two-message quantum-advantage protocol that is efficiently and publicly verifiable. Our result can be viewed as a rigorous cryptographic foundation for the heuristic quantum advantage proposals based on \\emph{peaked random circuit sampling} of Aaronson and Zhang (arXiv:2404.14493). We also construct two simple protocols for classically verifying arbitrary $\\mathsf{BQP}$ computations. The first protocol is privately verifiable and assumes only the existence of qiO. This gives a rare example of a nontrivial cryptographic application of (quantum) iO that does not make additional computational hardness assumptions. The second protocol additionally assumes post-quantum one-way functions and is \\emph{publicly verifiable}. To our knowledge, this is the first publicly verifiable protocol for classical verification of $\\mathsf{BQP}$ computations under computational assumptions in the standard model. We show that all our results hold when qiO is assumed only for ancilla-free unitary circuits. As evidence supporting this assumption, we prove a worst-to-average-case reduction for obfuscating such circuits. This reduction extends the local-mixing framework of Canetti, Chamon, Mucciolo and Ruckenstein (TCC 2024) under quantum analogues of their assumptions."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Distinguishing Coherent Crosstalk from Calibration Drift via Pauli-Transfer Signatures and Quantum Edge Detection",
+    "authors": "Syed Emad Uddin Shubha, Tasnuva Farheen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40283v1",
+    "source": "arXiv",
+    "abstract": "Multi-tenant quantum processors expose a pulse-level attack surface in which coherent crosstalk can mimic benign calibration drift at matched average gate infidelity. We present a structural verification and detection framework based on the residual Pauli transfer matrix (PTM). We prove that products of local unital, trace-preserving channels cannot mix weight-1 and weight-2 Pauli operators, even under coherent drift of arbitrary strength or axis. Building on established PTM-to-Hamiltonian relations, we prove that, for any specified qubit pair in an arbitrarily large system, the first-order map from its nine interaction coefficients to the antisymmetric cross-weight feature is an isometry up to scale. Thus, every interaction direction is locally observable near the identity. We also exhibit cancellation of this feature under large local rotations and prove that the full cross-weight norm is invariant under local unitary composition, providing a structural countermeasure. For calibrated small local rotations, shared randomized-Pauli measurements support periodic verification using the evaluated antisymmetric detector. In simulation, $16{,}384$ randomized settings yield a detection threshold of $λ_{\\min}\\approx0.13$ at a $5\\%$ calibrated false-positive target, with approximately $M^{-1/2}$ scaling in the number of settings $M$. Further experiments characterize detection under relaxation, depolarization, native ZZ fluctuations, and time-dependent pulse dynamics. Finally, an FRQI encoding with Pauli-graph quantum Hadamard edge detection reproduces the classical structural edge score to numerical precision."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Computational Bounds for $f$-Routing",
+    "authors": "Oren Renard, Nicholas Spooner",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40278v1",
+    "source": "arXiv",
+    "abstract": "The $f$-routing protocol is a leading candidate for quantum position verification (Kent, Munro, and Spiller, 2011), but security guarantees for explicit functions remain limited. We prove unconditional resource lower bounds for uniform attackers; our new techniques bypass communication-complexity bounds central to previous works, which are inherently at most linear in the input length. We show that, for input length $n$ and sufficiently small constant $ε>0$, a uniformly generated strategy using $q$ qubits and having description length $\\mathrm{poly}(q)$, with success probability at least $1-ε$ on every input, implies the following computational bounds on $f$: 1. If the strategies are arbitrary quantum channels, then $f\\in\\mathrm{QSZK}(\\mathrm{poly}(nq))$, where $\\mathrm{QSZK}(T)$ is the class of languages having quantum statistical zero knowledge proofs in which the verifier runs in time $T$ (and the simulator in time $\\mathrm{poly}(T)$). 2. If the strategies are explicit Pauli-sparse unitaries on $q$ qubits that have at most $s$ nonzero Pauli coefficients, then $f\\in\\mathrm{DTIME}(\\mathrm{poly}(nqs))$. 3. If the strategies are Clifford+T circuits using at most $t$ magic gates, then $f\\in\\mathrm{DTIME}(\\mathrm{poly}(nq2^t))$. Time and space hierarchies then yield explicit functions secure against polynomial and even quasipolynomial qubits $q$ under our computational restrictions. These bounds exceed the $q\\le\\log n$ bound of Bluhm, Christandl, and Speelman (2022) for inner product function $f=\\mathrm{IP}$, at the cost of restricting adversarial computation and increasing honest evaluation complexity."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Perfect non-local quantum computation is impossible",
+    "authors": "Marten Folkertsma, Dmitry Grinko, Gina Muuss, Florian Speelman",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40228v1",
+    "source": "arXiv",
+    "abstract": "Non-local quantum computation (NLQC) asks two parties to apply a joint operation to their quantum inputs using an entangled resource state and one round of simultaneous quantum communication. NLQC has applications across quantum information, including attacks on quantum position verification, communication complexity, and quantum gravity. Every bipartite unitary has an approximate NLQC protocol with finite entanglement, and exact protocols are known for several structured families. However, it has remained open whether every fixed unitary admits an exact protocol with finite-dimensional resources. We show that, even for two qubits, Haar-almost every unitary does not admit such a protocol, even when the resource state and local operations are tailored to the target. The proof first shows that smooth deformations of an exact protocol can only change its target by local unitaries. For a fixed architecture, semialgebraic geometry limits the exact protocols to finitely many connected families, so each architecture reaches only finitely many local-unitary orbits. Taking the union over all architectures, the exactly implementable unitaries form countably many local-unitary orbits. We also show that some natural targets do not admit a protocol: the controlled phase $\\mathrm{diag}(1,1,1,e^{iθ})$ has no exact protocol with finite-dimensional resources whenever $e^{iθ}$ is transcendental, for instance for $θ= 1$. Our results also apply to localizable quantum measurements, whose outcome is obtained from local measurements on inputs and a shared entangled resource state without communication. A rank-one projective measurement in a Haar-random basis is almost surely not localizable with a finite-dimensional resource state and finitely many local outcomes."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Improved Quantum Query Bounds for Boolean Matrix Product Verification",
+    "authors": "Amin Shiraz Gilani, François Le Gall, Xingyu Zhou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40180v1",
+    "source": "arXiv",
+    "abstract": "We prove the first non-trivial upper bound for the quantum query complexity of Boolean Matrix Product Verification ($\\mathsf{BMPV}$), answering a longstanding open question in quantum query complexity. For $n\\times n$ matrices, our upper bound is $\\widetilde O(n^{17/12})$, improving on the standard $O(n^{3/2})$ bound obtained using Grover search by Buhrman and Špalek (SODA 2006). We complement this result by showing an $Ω(n^{5/4})$ lower bound, which improves over the previous best known lower bound of $\\widetildeΩ(n^{19/18})$ by Childs, Kimmel, and Kothari (ESA 2012). Our approach centers on a connection with Orthogonal Vectors ($\\mathsf{OV}$), which asks whether an indexed list of $n$ Boolean vectors of dimension $n$ contains two vectors with disjoint supports. In particular, we prove equivalences between $\\mathsf{OV}$ and $\\mathsf{BMPV}$ and establish the above bounds for $\\mathsf{OV}$. We also prove a tight $\\widetilde Θ(n^{3/2})$ bound for a variant of $\\mathsf{BMPV}$ that asks whether the product contains a given row vector. Together, these results imply a polynomial separation between the quantum query complexities of deciding whether a graph has radius at most two and whether it has diameter at most two."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Exact spectral gaps for random Pauli rotations",
+    "authors": "Ziyuan Dong, Xiang Fan",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40164v1",
+    "source": "arXiv",
+    "abstract": "We resolve the spectral-gap problem posed by Baer and Haah for random Pauli rotations. In this walk, a nonidentity $n$-qubit Pauli operator $P$ and an angle $θ$ modulo $2π$ are chosen independently and uniformly, and the step is $e^{\\mathrm{i}θP}$. Writing $d=2^n$, we prove that the gap on $\\mathsf{SU}(d)$ is $(d-8)/(8(d-1))$ for $n\\ge4$. This disproves their conjectured formula on the full special unitary group. We also prove that the conjectured value, $d(d-3)/(8(d^2-1))$, is exactly the gap on $\\mathsf{PU}(d)$ for $n\\ge3$. The special-unitary gap is attained by an explicit vector in $\\bigwedge^8\\mathbb C^d$, constructed from affine three-dimensional subspaces of $\\mathbb F_2^n$. Its nontrivial central action explains why balanced tensor representations do not detect this smaller gap. On the projective group, the gap is attained in $U\\mapsto U^{\\otimes4}\\otimes\\bar U^{\\otimes4}$. The matching lower bounds hold uniformly over all finite-dimensional unitary representations. They combine the spectrum of the graph of anticommuting Pauli operators, a minimum-weight bound for binary polynomials, and a local inequality on a single-qubit Clifford-fixed subspace. The proof is analytic and requires no computational verification."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Automatically Building Machine-Checked Assurance Cases from C Codebases to Requirements",
+    "authors": "Haokun Li, Zhongyi Wang, Guanyan Li, Xiao Yi, Shengchao Qin, Jianwei Yin, Mingshuai Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40119v1",
+    "source": "arXiv",
+    "abstract": "Large language models (LLMs) have shown promise in automating interactive theorem proving, yet verification of real-world C codebases requires more than discharging individual proof goals. The task involves jointly constructing expressive function specifications and their proofs, and ensuring that library interfaces compose along intended call sequences even without a designated client. This paper presents CCV, an LLM-assisted framework for building machine-checked assurance cases: structured, auditable artifacts supporting the claim that a C codebase meets its intended requirements. To model intended cross-interface use in open libraries, CCV constructs an interface protocol that exposes permitted call sequences and resource assumptions for review, with a conditional safety guarantee under verified contracts and caller obligations. CCV coordinates two complementary phases: (i) requirement-guided analysis and bottom-up construction of candidate specifications and protocols; and (ii) modular proof construction with feedback that revises the specifications and proofs. Implemented using VST in Rocq, CCV verifies memory safety and leak freedom for all 299 function definitions across six C benchmarks, including industrial cryptographic components, with less than one person-day of reported human effort per benchmark. The guarantees depend on disclosed contracts and assumptions; human review supplies the conformance judgments connecting the formal artifacts to the intended requirements."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Verification Complexity and Extension of Classical Shadows",
+    "authors": "Georgios Karaiskos, Asad Raza, Dorian Rudolph, Dax Enshan Koh, Sevag Gharibian",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40107v1",
+    "source": "arXiv",
+    "abstract": "Classical shadows are an influential framework for compressing copies of a given quantum state $ρ$ into classical data $S$, enabling many properties of $ρ$ to be predicted from relatively few copies. In this work, we study two natural questions involving shadows: (1) Given $S$, when can one efficiently verify that $S$ came from a genuine $n$-qubit state? This is called the Classical Shadow Validity (CSV) problem, introduced by Karaiskos, Rudolph, Meyer, Eisert, and Gharibian [ICALP 2026]. (2) Given $S$ that allows one to capture 2-local properties of $ρ$, can one fake or spoof a shadow $S'$ which predicts 3-local properties of some state? For (1), we show CSV is efficiently solvable for permutation-invariant shadows, QMA-hard for real, fermionic, and bosonic shadows, and both coNP-hard and QMA-hard when the observable family consists of all $n$-qubit Pauli strings. A result of independent interest along the way is a new upper bound qc-$Σ_2$ $\\subseteq$ $\\mathrm{P}^{\\mathrm{PP}}$, where qc-$Σ_2$ is a quantum analogue of the second level of the polynomial hierarchy in which the first proof is quantum. For (2), we show intractability: Given the 2-local marginals $S$ of a quantum state $ρ$, estimating the 3-local marginals of $ρ$ is intractable unless QCMA $\\subseteq$ BPP, even if the state $ρ$ is the unique state consistent with $S$."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Who Verifies the Graph? Misspecification Attacks on Causal Action Verification for Language Agents",
+    "authors": "Fabio Rovai",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.40027v1",
+    "source": "arXiv",
+    "abstract": "Causal action verifiers gate an agent's state-changing tool calls by checking whether each proposed intervention is identifiable against a committed action-state graph, and they issue a certificate that carries the identification argument and a one-sided lower confidence bound. One such verifier, CIVeX, reports zero false executions on a confounded tool-use benchmark. We red-team it by corrupting only the committed graph. Omitting a single bidirected edge takes it from zero false executions to 15.3% at the benchmark's published confounding strength, with 91% of its executions harmful and utility falling from +2.27 to +0.35. Reversing one arrowhead, so that a mediator is committed as a confounder, gives 48.9% false executions and no correct ones. Every one of these actions carries an internally valid certificate. An attestation step that tests each observationally certified execution against a bounded randomised sample detected both attacks, with 2 false alarms in 555 executions on a truthful graph; refusing what fails the test, or cannot be tested, gave zero false executions in every setting we measured. It does not restore beneficial execution: at the published strength 97.1% of beneficial actions are still never executed, because the same misspecification rejects them before attestation runs. Those rejections carry certificates too, and auditing them works, but its cost scales with the number of rejections rather than the number of executions. Recovering safety costs 127 experiments per 1,050 actions; recovering the lost value costs 614 more, at which point the audited verifier makes the honest graph's decisions on every instance and spends exactly its experiment budget. An audit that inspects only executions protects against wrongful action. Wrongful inaction has to be paid for separately."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+    "authors": "Minki Kang, Ryo Hachiuma, Shaokun Zhang, Subhashree Radhakrishnan, Yonggan Fu, Jindong Jiang, Mingjie Liu, Ehsan Hosseini-Asl, Yi Dong, Yu-Chiang Frank Wang, Byung-Kwan Lee",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39982v1",
+    "source": "arXiv",
+    "abstract": "Terminal agents act through stochastic model generations, yet the ability to generate a useful action does not ensure its reliable execution. A poor command (e.g., wrong package install) can change the environment in ways that hinder subsequent progress, even when the model could generate a better alternative. We investigate whether allocating test-time compute at the model-harness boundary can improve action reliability and trajectory success, and what makes this allocation effective. To study these questions, we introduce Mid-Harness, which samples and verifies candidate actions before forwarding one for execution, while keeping the generator and harness unchanged. With a TMAX-9B generator, more action sampling yields little benefit under weak verification, whereas a capable verifier can exploit useful alternatives from the same generator. On TerminalBench-Lite, a GPT-5.6 Sol verifier raises Pass@1 from 50.00% for the base agent to 68.03% with 8 sampled actions. When the same TMAX-9B model serves as the verifier, pairwise verification performs best among the evaluated verification mechanisms. Distilling responses from the stronger verifier into TMAX-9B further improves Pass@1, while leaving the action generator unchanged. With TMAX-9B on TerminalBench-Lite, combining action and trajectory scaling reaches higher success at lower estimated token cost than generating more trajectories alone. Mid-Harness also improves performance across additional models, benchmarks, and harnesses. These findings identify action scaling as a promising target for test-time compute scaling in terminal agents."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Richard: Voice-First Mobile Interaction for Persistent Tasks",
+    "authors": "Xinyang Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39976v1",
+    "source": "arXiv",
+    "abstract": "Mobile terminals need to provide application and network services while supporting users' control over their attention. We explore voice-first interaction organized around requests and delegated tasks, allowing users to leave a conversation and later inspect, revise, and retrieve the work. We present Richard, a system prototype that manages voice sessions, task execution, and result delivery separately, linking them through persistent request records. Conversation and task views provide visual feedback, while the backend coordinates immediate responses, dedicated service operations, and agent tasks. Request revisions, execution states, and notifications remain associated with the relevant task. We examine this design through Android functional records, controlled lifecycle verification, and execution records of a real programming request. Controlled verification reproduces revision, execution after confirmation, and result retention; deployed-service records show backend progress and failure feedback after client disconnection. These observations inform the design of task continuity, user control, and service integration in mobile voice interaction, providing an implementation basis for personal computing devices that accommodate intermittent user participation."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "UBTree: Parallel Tree Drafting via Unigram and Bigram Models for Speculative Decoding",
+    "authors": "Chumeng Liang, Linxuan Wang, Xinyu Peng, Huabin Liu, Yuxin Chen, Ge Liu, Guang Lin, Qifan Song, Jianguo Li",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39972v1",
+    "source": "arXiv",
+    "abstract": "Speculative decoding accelerates language model inference by verifying multiple draft tokens in a single target-model pass. Recent parallel drafters have achieved breakthrough performance in frontier production models, but their effectiveness deteriorates as the entropy of target distributions increases due to insufficient draft diversity. To overcome this bottleneck without sacrificing parallelism, we introduce UBTree, a parallel drafter that couples a Unigram proposer with a Bigram selector to construct drafting Trees. The unigram proposer is trained with the standard cross-entropy objective to generate candidate tokens independently for each position, while a lightweight bigram selector predicts transition scores between adjacent candidate pairs. Unlike the proposer, the selector is trained with a renormalized KL objective on high-temperature data. This tree-native training broadens the supervision beyond the greedy path, encouraging plausible alternative branches that improve the chance of accepting additional tokens during tree verification. Across seven standardized benchmarks with Qwen3-4B and Qwen3-8B, UBTree achieves an average speedup of $5.84$--$6.94\\times$ over autoregressive decoding and outperforms DARTree in all 28 comparisons. Production-scale evaluation further demonstrates UBTree's advantage over frontier baselines such as DSpark."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Verifiable quantum advantage based on polynomials with planted structures",
+    "authors": "Markus Bläser, Michael Gullans, Dominik Hangleiter, Yuxuan Liu, Youming Qiao",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39918v1",
+    "source": "arXiv",
+    "abstract": "A central question in the theory of quantum advantage is whether there are quantum advantage protocols with similar resource requirements as random circuit sampling that are also verifiable just from the classical outputs of the quantum computation. Here, we develop the idea of simulation secrets for verifiable advantage. A verifier can use a simulation secret to evaluate a cross-entropy test faster than it would take a classical adversary to pass the test. We instantiate this idea using IQP circuits described by cubic polynomials with planted independent spaces. These correspond to the largest independent set in the orbit of a polynomial under the general linear group and yield a low-rank stabilizer decomposition of the corresponding state. We conjecture that large independent spaces are invisible to a computationally bounded adversary, and therefore they cannot exploit them to pass the protocol. A second conjecture regards the fine-grained complexity of producing samples that pass the cross-entropy test for uniformly random polynomials. Under these conjectures, our scheme results in a polynomial gap between the verification time and the time a classical adversary would need to pass the protocol---both are exponential. It has a potential application to generating classically certifiable randomness, since the output distributions have high min-entropy. We estimate that the planted polynomial scheme is implementable using 100 logical qubits at logical error rates around $10^{-6}$."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "NavHarness: Adaptive Goals for Agentic Vision-Language Navigation",
+    "authors": "Haoxiang Shi, Zaijing Li, Muhe Ding, Xiang Deng, Yaowei Wang, Liqiang Nie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39915v1",
+    "source": "arXiv",
+    "abstract": "Vision-Language Navigation (VLN) requires embodied agents to generate actions based on instructions and observations. General-purpose multimodal agents offer a promising basis for this task, but selecting plausible local actions does not ensure that execution remains consistent with the intended route, particularly in long-horizon tasks. Moreover, the accumulated interaction history increases the input required for subsequent decisions, resulting in a significant inference overhead. To this end, we introduce \\method, an Agentic VLN framework that includes a Goal Agent that sets adaptive goals for local actions, a Verify Agent that dynamically verifies whether a goal has been completed, a Memory Agent for multimodal context compression, and a Visuomotor Agent to execute adaptive goals. Specifically, the Goal Agent formulates adaptive goals based on the instruction, current observation, and execution history. Then the Visuomotor Agent executes navigation actions to achieve each goal, while the Verify Agent uses a goal-specific verification question to dynamically assess whether the observed outcomes satisfy the intended completion condition. Verified goal completion then marks a boundary for the Memory Agent to compress the corresponding multimodal interaction history while preserving information needed for subsequent navigation. We evaluate navigation on R2R-CE and RxR-CE, examine framework variants across three model backbones, and study context evolution during execution. For Real-World evaluation, \\method achieves 83.3\\% success and 1.51\\,m navigation error across eight challenging routes evaluated three times each."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "P-SRM: Selective Recovery of Rejected Predictions in Visual Tracking",
+    "authors": "Youbin He, Siwei Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39832v1",
+    "source": "arXiv",
+    "abstract": "Many visual tracking methods use rejection mechanisms to suppress unreliable predictions. However, these mechanisms can also reject correctly localized candidates, leaving useful information unused. We investigate how to identify and recover these candidates while preserving native accepted outputs and candidate coordinates. To this end, we propose P-SRM (Post-rejection Selective Recovery Method), which combines spatial responses, past accepted states, and native decision margins to reassess candidates and selectively restore reliable predictions. We evaluate P-SRM on six trackers and four datasets spanning category-specific, point, and generic object tracking. Across all nine configurations, P-SRM improves rejected-candidate ranking and overall tracking performance. These results show that post-rejection verification can identify and recover useful predictions discarded by native rejection, demonstrating the value of reusing rejected information. Project repository: https://github.com/PalestyHR/P-SRM."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "From Pilots to Production: Lessons in Cross-Institutional Federated Training and Artificial Intelligence for Science",
+    "authors": "Olivera Kotevska, Max Carlson, Yan Gao, Francis Jeanson, Yijiang Li, William Lindskog, Mohammad Naseri, Minseok Ryu, Sahil Tyagi, Jerry Watkins, Feiyi Wang, Ravi Madduri, Kibaek Kim",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39803v1",
+    "source": "arXiv",
+    "abstract": "Many of the most valuable scientific datasets cannot be centralized: they are proprietary, export-controlled, classified, or bound by data-sovereignty restrictions. This inverts the usual paradigm: the model must move to the data, making federated artificial intelligence (AI) core infrastructure for open science. We synthesize lessons from U.S. Department of Energy national laboratories, industry deployments, and the open-source community into a structured account of moving federated AI from pilot demonstrations to dependable, multi-site production. The lessons come from five concurrent efforts spanning leadership-class supercomputers and cloud infrastructure in regulated settings. We organize them around an adapted \\textit{five-domain readiness frame} and a stratified view of the stack beneath a trained model: data architecture, privacy and security controls, trust and verification, governance and socio-technical factors, and operations, the layers that decide whether a pilot becomes dependable. The question shifts from ``can we train it?'' to ``can we operate it, audit it, and change it safely?'' We report systems lessons in memory efficiency, reliability, and synchronization; set out what privacy, security, and decentralized trust require in production, and what is not yet validated there; and identify cross-cutting open problems (asynchronous federation, leakage auditing, verification standards, and harmonized data contracts) that we argue warrant a dedicated, international, open-science working group."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Path-Finding, Orbit State Preparation, and the Security of Invariant Quantum Money",
+    "authors": "Hans Schmiedel, Jiangshan Yu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39774v1",
+    "source": "arXiv",
+    "abstract": "The security of quantum money from knots, and of its generalization to invariant money, is based on the assumption that path-finding, exhibiting a sequence of moves between two equivalent objects, is hard. No proof of security from that assumption alone is known. The existing proofs add knowledge-of-path assumptions, which assert that any efficient algorithm producing two objects with the same invariant implicitly knows a path between them. No attack can refute such an assumption, and it is not known to follow from security. We ask when path-finding is the right assumption. When each equivalence class is the orbit of an efficiently computable action of a group that can be superposed over, and every move acts as a group element, as for graphs, average-case hardness of path-finding is necessary for security. For knots no such group is known, and a path-finder only reduces forgery to an equally hard state-preparation problem. With or without a path-finder, a forger must prepare a state that verification accepts, and we take the hardness of that task as the assumption. For schemes whose verification walk mixes in polynomial time, the preparation assumption states that no efficient algorithm, given the serial number of a freshly minted banknote and one object measured from it, prepares such a state. It is falsifiable, and it is equivalent to security against forgers that measure their banknote first. The transfer assumption, which security implies, states that measuring first costs a forger at most a polynomial factor. Together the two are equivalent to security, so every proof of security must establish the preparation assumption. If the preparation assumption holds, no fully black-box reduction that calls the forger only at the serial number it is given can derive the transfer assumption from the preparation assumption."
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Security Properties of Neural Networks as Decision Problems",
+    "authors": "Adrian Wurm",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2609.39768v1",
+    "source": "arXiv",
+    "abstract": "Certifying a deployed neural network raises decision problems that the verification literature has not classified: whether the model carries a backdoor planted in its training data, whether a fault in its stored parameters can drive it into an unsafe state, whether its output leaks a private part of its input. We formalise eight such problems and classify what we can. The organising observation is a logical one. The function computed by a piecewise linear network, together with all its node values, is definable by a quantifier-free formula of real addition of size linear in the network, so a property of the network is a quantifier-alternation sentence, which Sontag's 1985 theorem places in the polynomial hierarchy at the level of its prefix. Membership results are thus corollaries, and the argument makes plain what they need: that the quantified objects are inputs rather than the network's own parameters. Non-interference, monotonicity and counterfactual fairness have exactly the complexity of network equivalence and of interval verification, all co-NP- complete over ReLU. Detection of backdoor triggers from a quantised alphabet is Sigma_2^P-complete, one level above robustness certification, so it does not reduce to polynomially many robustness queries unless the hierarchy collapses. Inversion resistance is co-NP-complete for every l_p metric, p a fixed positive integer. Quantifying over parameters instead of inputs - the fault model of bit-flip attacks, radiation upsets and analog accelerators - makes verification exists-R-complete already for networks of identity nodes, for which every previously studied problem is in P, and it stays so when each parameter is confined to a box of inverse-polynomial width; the corresponding safety question is forall-R-complete for ReLU."
+  },
+  {
+    "date": "2026-9-30",
+    "title": "RTL Analysis and FSM-Based Link Layer Architecture for an Open-Source BLE Baseband",
+    "authors": "Fiqri Siraj Al Majeed, Nur Ihsan Hidayat, Muhamad Faqih Sidiq, Fairuz Azmi, Estananto, Akmal Narendra Sakti",
+    "publish": "2026 International Electronics Symposium (IES)",
+    "url": "https://doi.org/10.1109/ies71033.2026.11702570",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Congestion-Aware Physical Synthesis and RTL-to-GDSII Implementation of a 90nm RISC-V Execute Pipeline Stage using Cadence Genus and Innovus",
+    "authors": "Ashwin Rao R, Sampath Kumar, Rahul Ratnakumar, Omkar Shirasgaonkar",
+    "publish": "2026 Control Instrumentation Systems Conference (CISCON)",
+    "url": "https://doi.org/10.1109/ciscon71603.2026.11709130",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Vibe Analysis: Exploring LLM Adoption by Data Visualization Practitioners_supp1-3738283.pdf",
+    "authors": "Shani Claire Spivak",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/mcg.2026.3738283/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Battling Prompt Injection Attacks on LLM-Enabled Autonomous Vehicles",
+    "authors": "Muhammad Naveed, Wenjia Li",
+    "publish": "2026 International Conference on Future and Intelligent Networking (FINE)",
+    "url": "https://doi.org/10.1109/fine71157.2026.00030",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Architectural Patterns for Scalable Multi-Agent LLM Systems: A Software Engineering Perspective",
+    "authors": "Ketankumar Savajiyani",
+    "publish": "2026 International Conference on Future and Intelligent Networking (FINE)",
+    "url": "https://doi.org/10.1109/fine71157.2026.00045",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Evaluating LLM Performance in Semantic Matching of Curriculum Vitae and Job Descriptions",
+    "authors": "Tri Hadiah Muliawati, Renovita Edelani, Ardiansyah Indra Febrianto",
+    "publish": "2026 International Electronics Symposium (IES)",
+    "url": "https://doi.org/10.1109/ies71033.2026.11702693",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Conversational Inventory Management: A Proof-of-Concept for LLM-Mediated ERP Inventory Operations",
+    "authors": "Moh Hasbi Assidiqi, Daniyal Alghazzawi, Suaad Alarifi",
+    "publish": "2026 International Electronics Symposium (IES)",
+    "url": "https://doi.org/10.1109/ies71033.2026.11702636",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Thai Depression Detection with LLM-Assisted Annotation and PHQ-9 Multi-Task Classification",
+    "authors": "Thatsanee Charoenporn, Supawadee Srikamdee, Peerasak Pianprasit, Chaisiri Sanitphonklang, Waranrach Viriyavit",
+    "publish": "2026 International Electronics Symposium (IES)",
+    "url": "https://doi.org/10.1109/ies71033.2026.11702644",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Agentic and Explainable Hybrid Random Forest and LLM Framework for Detecting Healthcare Insurance Fraud",
+    "authors": "Sruja Pisal, Riya Kulkarni, Sukhada Bhingarkar",
+    "publish": "2026 10th International Conference on Computing, Communication, Control &amp; Automation (ICCUBEA)",
+    "url": "https://doi.org/10.1109/iccubea69821.2026.11702107",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction",
+    "authors": "Xiaopan Zhang, Zejin Wang, Zhixu Li, Jianpeng Yao, Jiachen Li",
+    "publish": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
+    "url": "https://doi.org/10.1109/icra57385.2026.11696967",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Dual-Signal Explainability for LLM-Based Automated Grading and Feedback: A Pilot Study",
+    "authors": "Pratap P. Nayadkar, Shilpa Gite, Swati Sharma, Akansha Khandare",
+    "publish": "2026 10th International Conference on Computing, Communication, Control &amp; Automation (ICCUBEA)",
+    "url": "https://doi.org/10.1109/iccubea69821.2026.11701989",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "OCEAN-Weighted Event Gating Preserves Recall in LLM NPC Memory Pipelines",
+    "authors": "Fardani Annisa Damastuti, Agustinus Bimo Gumelar, Kenan Firmansyah, Ibrohim Yofid Fananda, Rizky Yuniar Hakkun, Zulhaydar Fairozal Akbar",
+    "publish": "2026 International Electronics Symposium (IES)",
+    "url": "https://doi.org/10.1109/ies71033.2026.11702684",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Break It First: Stakeholder Participation in Quality Assurance for LLM Features",
+    "authors": "Leevi Vahvelainen, Prompat Amy Järvisalo",
+    "publish": "Adjunct Proceedings of the 14th Nordic Conference on Human-Computer Interaction",
+    "url": "https://doi.org/10.1145/3821402.3830183",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Greenbench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source Llm Inference on Apple Silicon",
+    "authors": "Rajeswari Kannan, Raj Firke, Shreya Bengle, Srushti Deshmukh",
+    "publish": "2026 10th International Conference on Computing, Communication, Control &amp; Automation (ICCUBEA)",
+    "url": "https://doi.org/10.1109/iccubea69821.2026.11702334",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Benchmarking LLM-Based Socratic Tutors for Conceptual Understanding of Ohm's Law",
+    "authors": "I. Medina García, A. Esteban Pérez, M.J. Canet, A. Pérez-Pascual",
+    "publish": "2026 XVII Congreso Internacional Tecnología Aprendizaje y Enseñanza de la Electrónica (TAEE)",
+    "url": "https://doi.org/10.1109/taee68119.2026.11702080",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Advanced Research Assistance Generation and Multimodal Data Analysis using LLM and LangChain",
+    "authors": "SREECHARAN PALEPU, CHARU KATHURIA, PIYUSH SAHOO, SHILPA S",
+    "publish": "Proceedings of the 2026 15th International Conference on Software and Computer Applications",
+    "url": "https://doi.org/10.1145/3801619.3801650",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Audit-First Recombination for Test-Time LLM Optimization Under Deterministic Verifiers",
+    "authors": "Rui Li, Shuang Cao",
+    "publish": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "url": "https://doi.org/10.1109/tpami.2026.3738491",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "L2DiffM: LLM-Guided Variational Expert Diffusion for Target-Aware 3D Molecular Generation",
+    "authors": "Jiahao Liu, Yongxuan Lai, Jie Xia, Fan Yang",
+    "publish": "IEEE Journal of Biomedical and Health Informatics",
+    "url": "https://doi.org/10.1109/jbhi.2026.3737835",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "EvalueX: LLM-Based Grading with Explainable AI for Handwritten Exams",
+    "authors": "Ganesh Wani, Vaibhav Sunil Parabhane, Atharva Nagraj Patil, Yash Vilas Pansare",
+    "publish": "2026 1st International Conference on Innovation &amp; Growth in Next-Gen Intelligent Technology &amp; Engineering (IGNITE)",
+    "url": "https://doi.org/10.1109/ignite69592.2026.11705795",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-9-30",
+    "title": "Efficient LLM Reasoning via Logit-based Introspection",
+    "authors": "Kaihao Zhang, Bin Shi, Kai Sun, Ziqi Liu, Zhiqiang Zhang, Jun Zhou, Bo Dong",
+    "publish": "IEEE Transactions on Audio, Speech and Language Processing",
+    "url": "https://doi.org/10.1109/taslpro.2026.3739200",
+    "source": "IEEE",
+    "abstract": ""
+  }
+]
