@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-10-01",
+    "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+    "authors": "Pengfei Li, Naufal Suryanto, Sicheng Zhang, Muzammal Naseer",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.02206v1",
+    "source": "arXiv",
+    "abstract": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve performance comparable to a 685B MoE model."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "GlassGuard: Verified Glass Plane Mapping for Robot Navigation",
+    "authors": "Hanwen Guo, Zhengzhi Lin, Yusen Xie, Ji Zhang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.02110v1",
+    "source": "arXiv",
+    "abstract": "Transparent and specular surfaces pose a serious challenge to LiDAR-based SLAM and navigation because laser returns may pass through glass, leaving collision boundaries absent from the map. Prior work attempts to reconstruct the missing surfaces, but inaccurate obstacle placement can create the opposite failure: contamination of traversable free space. Recognizing this dual requirement, we present GlassGuard, a navigation-oriented framework for reconstructing planar architectural glass from complementary visual and LiDAR evidence. We formulate success in terms of both glass coverage and free-space contamination and apply this principle throughout proposal verification and global map construction. A foundation vision model provides glass-instance masks, structural 3D cues generate metric plane hypotheses, and depth-free 2D projective geometry checks their orientations before they enter a consolidated global map. We evaluate GlassGuard in nine building-scale scenes spanning diverse glass structures, spatial scales, and lighting conditions, with more than one hour and 2.1 km of real-world robot traversal. GlassGuard achieves 85% of total glass coverage for its panoramic version. Under identical pinhole inputs, GlassGuard achieves 82% total coverage, compared with at most 61% for the evaluated baselines, while producing 5-17x fewer false voxels per frame. Qualitative examples with a navigation planner illustrate the reconstructed planes blocking paths through glass while leaving traversable routes open. The project page is available at https://glassguardproject.github.io/."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Can AI Oversight Be Zero Knowledge?",
+    "authors": "Alessandro Chiesa, Ziyi Guan, Burcu Yildiz",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01995v1",
+    "source": "arXiv",
+    "abstract": "AI systems increasingly produce outputs from confidential data, such as a fitness-for-duty assessment from medical records or the predicted properties of a drug candidate from its secret structure. It is important to verify that such outputs are correct without revealing the underlying data. A recent line of work studies verification of AI outputs via interactive proofs and debate for oracle-aided computation, where correctness may depend on an oracle such as human judgment, a physical experiment, or the web. These works focus on verification by a verifier that runs much faster than the computation. However, such efficient verification is impossible for general oracle-aided computation, and these works therefore rely on additional assumptions. We focus instead on privacy: allowing the verifier to run in time polynomial in the computation, we ask whether interactive arguments for oracle-aided computation can be zero knowledge, so that the verifier learns nothing about the confidential data beyond the correctness of the output. We prove that, in general, they cannot. In the random oracle model, there are no zero-knowledge proofs for all oracle-aided computations, even if both the prover and the verifier are allowed to run much longer than the computation itself. The impossibility extends to debate, a canonical model for scalable oversight. On the positive side, we show that if the oracle attaches a cryptographic signature to each of its answers, then every oracle-aided computation can be verified in zero knowledge with an efficient prover and verifier, assuming only collision-resistant hash functions. Beyond privacy, this also gives an alternative approach to scalable oversight that relies neither on an honest opponent, as in debate, nor on the robustness of the computation, as in prior single-prover protocols."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Supersingularity and Superspeciality Verification of Abelian Surfaces",
+    "authors": "Maria Corte-Real Santos, Gioella Lorenzon, Krijn Reijnders",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01924v1",
+    "source": "arXiv",
+    "abstract": "Supersingular abelian surfaces are essential in isogeny-based cryptography. Despite this, we have no efficient algorithm to verify if a given abelian surface is supersingular. In this work, we initiate this research topic by giving an efficient Monte Carlo algorithm to verify if an abelian surface over $\\mathbb{F}_p$ is supersingular in $O(\\log p)$ with negligible failure probability, and an efficient conclusive algorithm if the order is smooth. We derive this algorithm by a careful analysis on the structure of supersingular Jacobians over $\\mathbb{F}_p$. Furthermore, we derive efficient algorithms to verify if an abelian variety of any dimension is minimal or maximal, and to verify if a Jacobian of any dimension is superspecial."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+    "authors": "Zhening Huang, Yueyan Li, Johnathan Chiu, Xiaoyang Lyu, Matt Zhou, Yuxin Yao, Joan Lasenby, Shangzhe Wu",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01863v1",
+    "source": "arXiv",
+    "abstract": "We present LiteReality-Agent, an agentic system for reconstructing real indoor environments as realistic, articulated, and simulation-ready 3D scenes from RGB-D scans. At its core, LiteReality-Agent formulates 3D reconstruction as a coding problem, in which a coding agent gathers evidence using specialised tools and iteratively edits a Python script, Room.py, which can be executed to produce a 3D digital twin of the room. With this formulation, we develop a robust observe-edit-verify harness that supports evidence gathering, measurement, verification, layout optimisation, simulation readiness, and quality control throughout the reconstruction process. LiteReality-Agent produces high-quality reconstructions suitable for simulation and downstream embodied AI tasks. Furthermore, as agent capabilities continue to improve rapidly, the system introduced by LiteReality-Agent remains a strong orchestration framework for future agents: it equips them with specialised tools, structured workflows, and robust verification mechanisms that substantially improve reconstruction quality and reliability. We demonstrate that LiteReality-Agent produces reconstructions that are more geometrically accurate, visually realistic, and simulation-compatible than those generated by recent frontier models, such as Astra and Fable. We therefore view LiteReality-Agent as a practical and important building block for robust real-to-sim systems. Both the source code and the data-capture application are publicly available. Code:https://github.com/LiteReality/LiteReality-Agent/"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "SAGE: Similarity-Based Cleaning of Poisoned Training Data from Verified Examples",
+    "authors": "Chaeeun Han, Soodeh Atefi, Yevgeniy Vorobeychik, Aron Laszka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01788v1",
+    "source": "arXiv",
+    "abstract": "As machine learning increasingly relies on public, untrusted data sources, data poisoning attacks, which inject malicious examples into training data to induce misclassification of a chosen target, pose a growing threat. Existing defenses either assume zero ground-truth information about which examples are poisoned, or they assume access to a large set of examples verified to be clean. Satisfying the latter assumption incurs significant cost since reliable verification can be very resource- or labor-intensive. This cost is particularly high for clean-label attacks, where poisoned examples are visually indistinguishable from clean data. Since requiring a large set of verified examples is impractical, we propose relying on a small set of verified examples including both clean and poisoned ones, i.e., each example verified either to be clean or poisoned through inspection by a forensic expert. The challenge is then to detect poisons based on a set of verified examples that is so small that most classification models would overfit. To address this challenge, we propose Similarity-based Approach for Ground-truth-driven Exclusion (SAGE), which trains a generic feature extractor on a separate dataset and then flags poisoned training examples using a non-parametric, similarity-weighted prediction based on the verified set. On standard benchmarks against seven clean-label attack methods, we demonstrate that having access to even a handful of verified poisoned examples provides a substantial advantage. We also find that the distribution of verified clean examples across classes matters more than the number of verified examples."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Q-Learning for Reachability in MEC-Free MDPs",
+    "authors": "Lu-Chin Chang, Suguman Bansal",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01781v1",
+    "source": "arXiv",
+    "abstract": "Reinforcement learning (RL) for reachability specifications is fundamental to sequential decision-making. Prior work establishes asymptotic convergence to optimal policies, but only through model-based methods that must explicitly estimate the transition probabilities of the underlying Markov Decision Process (MDP). We present Quasar, the first model-free algorithm with asymptotic guarantees for reachability on the fragment of MDPs free of non-terminal maximal end components (MECs), a building block to which every MDP reduces by the standard MEC quotient. Our algorithm follows the classical Q-learning approach, using temporal-difference updates to converge to an optimal policy without ever learning the transition probabilities. The resulting learner reduces the memory footprint from the O(|S|^2|A|) that model-based methods require to O(|S||A|). On the standardized Quantitative Verification Benchmark Set, our algorithm converges to the optimal policy with orders of magnitude fewer samples than the previous model-based state-of-the-art. Together these results are a concrete step toward the practical deployment of reachability learning and, with it, of specification-guided RL."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "SoK: Decentralized Agent Economic Infrastructure",
+    "authors": "Rui Sun, Xihan Xiong, Qin Wang, Fei Gao, Zelin Li, Zehua Cheng, Jiahao Sun, Zhipeng Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01756v1",
+    "source": "arXiv",
+    "abstract": "Decentralized agent economies increasingly build a single task from protocols that were designed and secured separately. This creates a simple problem: a workflow can look correct at each step and still produce the wrong outcome. For example, a correct escrow may release payment on an authorized approval that provides little evidence that the delivered work actually satisfied the task. We systematize this problem across the full lifecycle of an agent task. Our study organizes security and economic requirements into 17 property families over six stages, with receipt soundness and completeness assessed separately. We examine 12 systems and standards, five reusable mechanism families, and four classical baselines. We introduce guarantee closure, a task-relative criterion for determining whether guarantees established at one stage remain available and constrain the later decisions that depend on them. We apply the criterion to controlled and native workflows, covering 840 matched executions and an exhaustive 11,648-case check over a finite objective-task domain. Our results expose recurring failures between verification and settlement, where conforming work can remain unaccepted or valid evidence can be ignored. Public records and model judgments further distinguish recorded approval from evidence of task conformance, while economic analysis identifies the report, penalty, and shared-error assumptions behind these guarantees. These findings show where end-to-end guarantees fail and what must be repaired to preserve them across the workflow."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Function-Structured Reinforcement Learning with Executable Verifiers for Mathematical Reasoning",
+    "authors": "Zihan Liu, Xurong Xie",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01729v1",
+    "source": "arXiv",
+    "abstract": "Algorithmic mathematical reasoning requires reliable decomposition, computation, and aggregation. Final-answer rewards provide limited guidance on intermediate errors, while successful execution does not guarantee mathematical correctness. This work proposes Function-Structured Graph Reinforcement Learning (FSG-RL), connecting subproblem graphs and Python implementations with multi-verifier feedback. The policy first learns to generate code from function graphs through supervised fine-tuning (SFT). Group Relative Policy Optimization (GRPO) then optimizes the policy using answer-gated rewards and span-level credit assignment. The framework also supports teacher supervision and structured memory. A benchmark curated from Grade School Math 8K (GSM8K), MathQA, MATH, and Omni-MATH pairs public function graphs with private verification specifications. Under a unified evaluation protocol, GRPO improves final-answer accuracy from 43.25% to 67.50% and full solution success from 32.25% to 52.25% over SFT. Continued reinforcement learning (RL) with teacher supervision yields additional gains. The gains extend beyond producing correctly formatted code, supporting verifier-guided reinforcement learning for mathematical reasoning. Code is available at https://github.com/ZihanLiummyycc/FSG-RL."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Exact Locality Gaps for Matchable Semi-Matchings",
+    "authors": "Marek Gałązka, Hanna Wdowicka",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01648v1",
+    "source": "arXiv",
+    "abstract": "An assignment of tasks to servers can resist every small improvement and still make tasks wait longer than necessary. We determine exactly how inefficient such an assignment can be when each task requires one unit of service and the eligibility constraints permit all tasks to use distinct servers. For every move size $r$ and maximum current server load $K$, we give a closed formula for the worst ratio between locally optimal and globally optimal total completion time. Local optimality here allows every feasible reassignment changing at most $r$ tasks. Every finite-cap bound is attained on a tree where each task has at most two eligible servers. Thus the worst behavior already occurs under simple eligibility constraints. At load cap two, the exact ratio is $1+1/(r+2)$, attained on a path with $r+2$ tasks. Without a load cap, the worst-case supremum is $3/2$ for single-task moves and approximately $1.294503159$ for two-task moves; its excess above one is $1/(r+2)+O(2^{-r}/r)$ as $r$ grows. The proof uses an explicit rational potential on a comparison graph and matching extremal constructions. These results give sharp guarantees for bounded-size local search on matchable semi-matchings, including exact guarantees under degree bounds."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Lower Bound of 22 for 3x3 Matrix Multiplication over the Integers",
+    "authors": "Isaac Rudich, Louis-Martin Rousseau",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01639v1",
+    "source": "arXiv",
+    "abstract": "Strassen showed that two 2x2 matrices can be multiplied with 7 multiplications instead of 8. Applied recursively, his algorithm multiplies two nxn matrices with O(n^2.807) multiplications, beating the naive O(n^3). The best known 3x3 recursive matrix multiplication algorithm uses 23 multiplications O(n^2.854). The best published lower bound of 21 (on algorithms with integer constants) leaves room for an algorithm with O(n^2.771) multiplications, and thus does not rule out the possibility of an algorithm that would beat Strassen's. We prove a lower bound of 22 multiplications for any 3x3 recursive algorithm with integer constants, proving that no such algorithm can do better than O(n^2.814) multiplications, and eliminating the possibility of a 3x3 algorithm that beats Strassen's 2x2 method. The proof builds on a recent decomposition method from Wang, who approached the problem by turning it into 496 subproblems. We provide exact solutions for 359 of them. The proof is in Lean; verification requires auditing only a few short files. The Lean formalization directly encodes statements about the limitations of recursive algorithms for matrix multiplication, as opposed to just a statement about the rank of the problem."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
+    "authors": "Luis Wiedmann, Leander Girrbach, Cordelia Schmid, Zeynep Akata",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01618v1",
+    "source": "arXiv",
+    "abstract": "Agent evaluations increasingly go beyond a single success rate, reporting metrics such as cost, consistency, and robustness. Yet they typically treat the agent itself as fixed. In practice, an agent is a configurable system: users decide what to tell it, how long to let it run, and which model to use, and each of these choices can change how well and how consistently it performs. We study these choices on a new benchmark of four scientific tasks, where a coding agent must find and correctly operate a published specialist model. We investigate five parts of the agent's configuration: task information, reasoning, self-verification, time budget, and backbone model. We find substantial run-to-run variability, with approximately 54% of the outcome variance coming from repeating the same configuration rather than changing it. Across configurations, the information provided to the agent has the largest effect, exceeding both time budget and model size, while also reducing cost and improving calibration. Configuration choices also interact: additional time helps only when the agent has sufficient information or a capable enough model to use it. Finally, a trajectory-based taxonomy of agent behavior reveals that prompting an agent to verify its answer has little effect on its verification behavior, whereas providing a dedicated verification tool changes that behavior substantially. These results suggest that agents should be evaluated as configurable systems themselves, and that some desired behaviors are more effectively implemented in the system than requested through prompting. We release the benchmark and more than 18,000 agent trajectories."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "U-Sonic: An Open-Source 8-Channel Ultrasound Transmit IP in a 130 nm RISC-V SoC",
+    "authors": "Federico Villani, Nico Canzani, Marc-André Wessner, Philippe Sauter, Enrico Zelioli, Andrea Cossettini, Christoph Leitner, Luca Benini",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01603v1",
+    "source": "arXiv",
+    "abstract": "Miniaturized ultrasound (US) probes require programmable and synchronized transmit (TX) excitation across multiple elements, while existing compact platforms often rely on limited microcontroller (MCU) pulse generators or closed-source fixed-function pulser devices. We present U-Sonic, an open-source digital US TX peripheral integrated into a 32-bit RISC-V system-on-chip (SoC). The implemented SoC integrates 8 pulser cores, while the parameterized architecture supports up to 16 channels. Each core generates single- or dual-tone bursts with programmable period, duty cycle, pulse count, polarity, and idle level, together with optional inverted stop pulses for active damping. A shared memory-mapped Open Bus Interface (OBI) enables synchronous start and stop of arbitrary channel subsets and supports composite bipolar, gated, and three-level excitation schemes. Functional correctness was verified in Verilator against a Python golden model over 4379 checked cycles across directed and randomized configurations, and confirmed on a Terasic DE10-Lite field-programmable gate array (FPGA). The design was synthesized and placed-and-routed in IHP 130 nm. The post-layout area in kilo gate equivalents (kGE), scales as 1.65 kGE plus 1.66 kGE per channel. The 8-channel instance occupies 14.9 kGE, corresponding to approximately 14.3% of the 104 kGE SoC. The register-transfer level (RTL), register descriptions, verification collateral, and software support are released as open source."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "An unstructured finite-volume Helmholtz method with perfectly matched layers for heterogeneous two-phase acoustics",
+    "authors": "Chuanchao Xu, Jun Liu, Jan-Helge Dörsam, Mario Kupnik, Tomislav Maric, Dieter Bothe",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01593v1",
+    "source": "arXiv",
+    "abstract": "This paper presents a cell-centred unstructured finite-volume method for time-harmonic two-phase acoustics. A volume-fraction representation supplies density and acoustic compressibility. Face fractions average available neighbouring planar interface cuts independently of velocity direction, retaining the established one-field face-density closure. Cartesian complex-coordinate stretching provides perfectly matched layers (PMLs). Real-imaginary splitting yields a real-valued block system, discretized with corrected non-orthogonal fluxes and consistent boundary contributions. Verification covers homogeneous waves, layered gas-liquid transmission with PML truncation, baffled-piston radiation with Kirchhoff far-field reconstruction, and resolved rigid-sphere radiation forces. Homogeneous-wave pressure converges at approximately second order on orthogonal meshes and on meshes with non-orthogonal interiors and orthogonal boundary cells. Reconstructed velocity converges at approximately second order on orthogonal meshes and with an observed order of about 1.7 on the latter mesh family. Under aligned refinement, the layered case's relative whole-domain complex-pressure $L_2$ error decreases to $2.657\\times10^{-4}$. The resolved-sphere force differs from the Gorkov prediction by at most 1.5% over the tested Rayleigh size range. The results quantify the accuracy and current limitations of the heterogeneous Helmholtz-PML formulation."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Protocol Integration of Physical Layer Deception into EAP-TEAP Wi-Fi Authentication",
+    "authors": "Moustafa Ibrahim, Bin Han, Hans D. Schotten",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01580v1",
+    "source": "arXiv",
+    "abstract": "Credential-based Extensible Authentication Protocol (EAP) authentication cannot distinguish a legitimate credential holder from an adversary using compromised credentials. Physical Layer Deception (PLD) complements credential-based authentication by exposing a deceptive primary object over a primary transport while a separate recovery object travels with differentiated reliability over a secondary channel. Existing PLD studies remain, to our knowledge, at the physical/link-model level; using PLD's activation/deactivation mechanism as an authentication gate creates an authentication-specific design requirement, since an all-inactive attempt would exercise no recovery path. We present a batched PLD-based re-verification step for Enterprise Wi-Fi's TEAP/RADIUS/IEEE 802.11 authentication chain, implemented end to end across the server, access point, and device in the open-source hostap 2.12 codebase. Each attempt carries three rounds, at least one active, with no dedicated activation flag. Across four campaigns totaling 1593 attempts, the prototype evaluates batched recovery behavior, rejects the implemented naive credential-bearing attacker in all 30 attempts, measures successful-path latency, and evaluates the security-reliability trade-off for one, two, and three active rounds under two modeled recovery regimes. The evaluation exercises the protocol and software-MAC behavior directly and analyzes informed and retry-seeking attackers under the software recovery model."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "How the Audit Rule Shapes Faithful Factor Explanations in LLMs",
+    "authors": "Taolin Zhang, Hanyu Wang, Jiuheng Wan, Tingyuan Hu, Chengyu Wang",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01514v1",
+    "source": "arXiv",
+    "abstract": "Large language models are often asked which input factors influenced their outputs. For structured inputs, such reports can be checked by counterfactual perturbation, but each factor must be queried multiple times to estimate its effect, so verification is usually budget-limited. We study how this limited-budget setting changes the incentive to report factor-level influence truthfully. We formalize the interaction as a verification game and show that proper scoring alone is not enough when auditing depends on the report: report-dependent auditing creates a suppression incentive, because factors reported as important are more likely to be checked and penalized for estimation noise. In contrast, report-independent auditing, or a mixed rule with a small report-independent floor, removes this channel and makes truthful reporting preferable to full suppression. We instantiate the framework with the Counterfactual Brier Score (CBS) and evaluate its predictions on four NLP benchmarks. A synthetic rational agent matches the theoretical prediction exactly, and real LLMs follow the same incentives when they are made explicit. The main design implication is simple: under partial verification, factor-level explanation systems should include a report-independent audit component so that under-reporting cannot be used to avoid scrutiny."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "OpenMTB-Audit: Exposing Over-Refusal and Clinical Expert Perspectives in LLM-Based Molecular Tumor Board Safety Evaluation",
+    "authors": "Negin Ashrafi, Jia Luo, Stacey M. Frumm, Roxana Daneshjou",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01497v1",
+    "source": "arXiv",
+    "abstract": "Molecular tumor boards integrate genomic findings, clinical context, and therapeutic evidence to support precision oncology. As AI enters this workflow, a key safety challenge is distinguishing truly unsupported recommendations from evidence-supported options that still require oncologist review because of incomplete information, poor ECOG performance status, or other clinical caveats. We introduce OpenMTB-Audit, an open-source benchmark of 500 synthetic non-small cell lung cancer cases spanning five adversarial error categories and four safety labels: Supported, Partially Supported, Unsupported, and Insufficient Information. Across eight large language model configurations, we identify pervasive over-refusal: all LLM configurations failed to retain the Partially Supported label in 83.3-100% of true Partially Supported cases, achieving high aggregate safety scores through label collapse rather than clinically calibrated reasoning. To address this limitation, we developed MTB-AuditAgent, a deterministic seven-module framework separating evidence verification, missing-information detection, safety classification, and abstention. It reduces over-refusal to 6.7% and achieves 91.2% accuracy (95% CI: 88.6-93.6%). A two-oncologist annotation study found disagreement concentrated at the boundary between information sufficiency and treatment optimization, underscoring the need to preserve clinically meaningful distinctions."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Auditing Web Agent Evaluation on WebArena-Lite: Human Review of Outcomes and Trajectories",
+    "authors": "Chengguang Gan, Zimeng He, Yoshihiro Tsujii, Ken-ichiro Kobayashi, Hiroki Itoh, Kotaro Funakoshi",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01491v1",
+    "source": "arXiv",
+    "abstract": "Web agents are an important application of large language models, yet their evaluation often depends on rule based or language model evaluators that inspect only the final outcome. Human verification of task completion and detailed analysis of failed trajectories remain limited. We audit all 165 WebArena Lite tasks under six evaluation conditions built from GPT 5.5 and an untrained Qwen3.5 9B model. The audit retains the original score, corrects false negatives from the automatic evaluator, identifies the first consequential error, and examines progress across the trajectory. We also study a Memory and Analysis Support Mechanism (MASM), which maintains explicit execution state, and Guide Text, which provides task relevant procedural guidance. Across four GPT 5.5 settings, human review recovers 5.45 to 8.49 percentage points of success missed by the evaluator. With a 25 step budget, Guide Text raises corrected success with MASM from 34.55% to 38.18%. On the untrained Qwen3.5 9B model, MASM raises the evaluator score from 13.90% to 18.80%. Review of 102 failed GPT 5.5 trajectories reveals frequent scrolling loops, unfinished exploration, premature answers, invalid actions, and incomplete form workflows. Step level evidence further shows that substantial early progress can coexist with a final failure. These results show why final scores alone provide an incomplete account of web agent behavior and motivate human grounded, trajectory aware verification."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "When Does a Second Model Help? Cross-Model Review in LLM Verification",
+    "authors": "Tae-Eun Song",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01471v1",
+    "source": "arXiv",
+    "abstract": "Large language models now generate code, documentation, and analyses, and are increasingly used to review such output. We ask when a second review by a different model helps. Building on the author's earlier preprints, which varied context, repetition, and role structure within one model, we test model independence in a controlled experiment: 30 artifacts with 150 planted errors, 10 review conditions, and 900 review sessions with three reviewer models from two developers. In this experiment, (1) a top-tier cross-model reviewer is not significantly different in F1 from same-model review in a fresh session (CCR), which does not establish equivalence; (2) the two find partly different errors (Jaccard 41.2%); and (3) at two review calls, one CCR plus one cross-model review matches more planted errors than two CCR reviews (56.7% vs. 42.7%; Holm-adjusted p=.006), but not significantly more than two reviews by the top-tier cross-model reviewer, so model difference and reviewer capability are not separated. A lightweight cross-model reviewer scores no higher than same-model review. Withholding requirements from the reviewer raises F1 for the two lower tiers but not the top tier, in untested point estimates whose pattern depends on how failed sessions are scored. Before analysis we audited all session records, excluding one baseline run of uncertain provenance and 14 failed calls; results with all sessions are also reported. A partial check on public detector outputs from another benchmark neither replicates nor contradicts the main comparison. Records, artifacts, and scripts are available from the author on request."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "DRelay: Global Draft Context for Prefix-Aware Parallel Speculative Decoding Repair",
+    "authors": "Zhuoyu Wang, Junnan Huang, Xinyu Chen",
+    "publish": "arXiv",
+    "url": "https://arxiv.org/abs/2610.01439v1",
+    "source": "arXiv",
+    "abstract": "Parallel drafting reduces the drafting overhead of speculative decoding for large language models (LLMs), but its gains remain limited by the accepted prefix length. Even when the correct token is present in the candidate pool, a single early selection error prevents subsequent predictions from being used. We propose DRelay, which uses global information from the entire draft block to perform prefix-aware selective repair of candidate selections before target-model verification. DRelay bases its decisions on candidate correlations and the selected path: a global reader extracts predictive information across positions for each candidate. While a causal selector combines candidate-level information extracted by the global read with the tokens selected at preceding positions to determine whether the native choice at the current position is consistent with the global evidence and the selected prefix. It then decides whether to retain or replace the token, thereby repairing early errors and extending the accepted prefix. We further jointly train the draft backbone and the selector, combining candidate-support learning with a repair objective, while weighting the repair loss according to each block position's potential contribution to the consecutive accepted prefix. Across eight diverse benchmarks on an H800 GPU, DRelay consistently improves both average acceptance length and end-to-end decoding performance over DFlash, Domino, and DSpark. Under SGLang serving, DRelay improves average end-to-end speedup over DFlash, Domino, and DSpark by 14.7%-16.8%, 8.7%-9.3%, and 8.1%-9.3%, respectively."
+  },
+  {
+    "date": "2026-10-1",
+    "title": "LLM-Aided Automated Diagnosis of Verilog RTL Defects Based on Program Property Graph Matching",
+    "authors": "Zhihua Feng, Kai Zhang, Jinyang Guo, Fangyuan Liu, Xiaofei Zhang, Anping He",
+    "publish": "2026 IEEE International Test Conference in Asia (ITC-Asia)",
+    "url": "https://doi.org/10.1109/itc-asia71864.2026.11710923",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "KaPilot: LLM-Assisted Generation of Kani Specifications for Unsafe Rust Verification",
+    "authors": "Minghua Wang, Yuxi Ling, Mingzhi Gao, Yuwei Liu, Lin Huang",
+    "publish": "Proceedings of the ACM on Software Engineering",
+    "url": "https://doi.org/10.1145/3832239",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-10-1",
+    "title": "IGBFuzz: Unified RTL Security Fuzzing via Graph-Aware Bandit Scheduling",
+    "authors": "Yiran He, Haihua Shen, Pei Chen, Shan Li, Huawei Li",
+    "publish": "2026 IEEE International Test Conference in Asia (ITC-Asia)",
+    "url": "https://doi.org/10.1109/itc-asia71864.2026.11710816",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Hardware Architecture and RTL Implementation of a Hybrid-Encoded Spiking Neural Network for ECG Signal Classification",
+    "authors": "Ansu Sara James, Anish M. George, Ajith Ravindran, Abraham George",
+    "publish": "2026 International Conference on Smart Communication and Sustainable Technologies (ICSCST)",
+    "url": "https://doi.org/10.1109/icscst70031.2026.11709796",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Efficient LLM Reasoning via Logit-based Introspection_supp1-3739200.pdf",
+    "authors": "Bo Dong",
+    "publish": "N/A",
+    "url": "https://doi.org/10.1109/taslpro.2026.3739200/mm1",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "LLM-Empowered Network Management Reliability: AF Relay Outage Analysis under Mixed Fading Conditions",
+    "authors": "Dragana Krstić, Suad Suljović, Nenad Petrović",
+    "publish": "2026 International Symposium ELMAR",
+    "url": "https://doi.org/10.1109/elmar71231.2026.11712237",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-2",
+    "title": "A Reproducible Multimodal LLM-as-a-Judge Workflow for Exploring Epistemic Dissonance",
+    "authors": "Rei Yuda",
+    "publish": "Companion Publication of the 28th International Conference on Multimodal Interaction",
+    "url": "https://doi.org/10.1145/3776591.3832521",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-10-1",
+    "title": "SilentShield: LLM Based Anonymous Cyberbullying Reporting Portal",
+    "authors": "Er. Renju Rachel Varghese, Anjana Benny, Dhiya Bobby, Eva Susan Mathew",
+    "publish": "2026 International Conference on Smart Communication and Sustainable Technologies (ICSCST)",
+    "url": "https://doi.org/10.1109/icscst70031.2026.11709767",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Multimodal Fake News Detection via Hybrid External Knowledge and Offline LLM Supervision",
+    "authors": "Mingshu Zhang, Yuechuan Zhang, Jiahui Li",
+    "publish": "2026 6th International Conference on Advanced Algorithms and Neural Networks (AANN)",
+    "url": "https://doi.org/10.1109/aann71145.2026.11709263",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-2",
+    "title": "Semantic Prefix Oracles for LLM Decoding: Contracts and Differential Validation",
+    "authors": "Paul Kronlund-Drouault",
+    "publish": "Proceedings of the 2nd ACM SIGPLAN International Workshop on Language Models and Programming Languages",
+    "url": "https://doi.org/10.1145/3843750.3843841",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-10-2",
+    "title": "From Bytes to Semantics: LLM-Agent-Driven Commit Message Generation for Non-Code Assets",
+    "authors": "Liran Wang, Zhoujun Li",
+    "publish": "Proceedings of the 28th International Conference On Multimodal Interaction",
+    "url": "https://doi.org/10.1145/3776574.3831117",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Putting Claims into Communicative Context: LLM-Augmented Reasoning for Misinformation Detection",
+    "authors": "Canyuan He, Xiaoyi Zhou, Dayang Li, Renyang Liu",
+    "publish": "2026 7th International Conference on Computer Vision and Data Mining (ICCVDM)",
+    "url": "https://doi.org/10.1109/iccvdm71812.2026.11709216",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Automated Extraction of Parameters from Optical Transceiver Datasheets using Multi-Stage LLM Pipeline",
+    "authors": "Haris Hassan, João Pedro, Luís Gonçalo Cancela",
+    "publish": "2026 26th International Conference on Transparent Optical Networks (ICTON)",
+    "url": "https://doi.org/10.1109/icton71309.2026.11705185",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Joint Training and Deployment Hub Selection for Concurrent LLM Jobs over Metro P2MP Networks",
+    "authors": "Polyzois Soumplis, Panagiotis Kokkinos, Konstantinos Yiannopoulos, Emmanouel Varvarigos",
+    "publish": "2026 26th International Conference on Transparent Optical Networks (ICTON)",
+    "url": "https://doi.org/10.1109/icton71309.2026.11705297",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "Automatic Identification Technology for Acoustic Emission Damage Types of Composite Materials that Integrates Unsupervised Clustering and LLM Statistical Profiling",
+    "authors": "Yipeng Ren",
+    "publish": "2026 7th International Conference on Computer Vision and Data Mining (ICCVDM)",
+    "url": "https://doi.org/10.1109/iccvdm71812.2026.11709401",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-2",
+    "title": "Do Emotional Cues Matter? Exploring Support Strategy Selection in LLM-Based Supportive Conversations",
+    "authors": "Weiyi Tian, Safak Dogan, Jie Meng",
+    "publish": "Companion Publication of the 28th International Conference on Multimodal Interaction",
+    "url": "https://doi.org/10.1145/3776591.3832504",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-10-1",
+    "title": "LLM-Orchestrated Digital Twin for Smart Optical Network Operations",
+    "authors": "Sanwal Zeb, Imran Chowdhury Dipto, Muhammad Umar Masood, João Pedro, Antonio Napoli, Vittorio Curri",
+    "publish": "2026 26th International Conference on Transparent Optical Networks (ICTON)",
+    "url": "https://doi.org/10.1109/icton71309.2026.11704977",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "DSLReasoning: Evaluating LLM Program Reasoning beyond Pretrained Language Familiarity",
+    "authors": "Haozhi Wang",
+    "publish": "Companion Proceedings of the 2026 ACM SIGPLAN International Conference on Systems, Programming, Languages, and Applications: Software for Humanity",
+    "url": "https://doi.org/10.1145/3837729.3839579",
+    "source": "ACM",
+    "abstract": "None"
+  },
+  {
+    "date": "2026-10-1",
+    "title": "An Empirical Study for Effective LLM-Based Human-State Prediction from Physiological Data",
+    "authors": "Lifei Wang, Ao Guo, Jianhua Ma",
+    "publish": "2026 14th International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW)",
+    "url": "https://doi.org/10.1109/aciiw71585.2026.11712086",
+    "source": "IEEE",
+    "abstract": ""
+  },
+  {
+    "date": "2026-10-1",
+    "title": "After the Hitchhiker’s Guide: Toward Principled LLM Assistance for Static Analysis",
+    "authors": "Haonan Li",
+    "publish": "Companion Proceedings of the 2026 ACM SIGPLAN International Conference on Systems, Programming, Languages, and Applications: Software for Humanity",
+    "url": "https://doi.org/10.1145/3837729.3842145",
+    "source": "ACM",
+    "abstract": "None"
+  }
+]
